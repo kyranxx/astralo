@@ -1,10 +1,6 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2024-04-10',
-});
-
 const products = {
     weekly: { name: 'Osobný Horoskop na Týždeň', price: 399 },
     monthly: { name: 'Osobný Horoskop na Mesiac', price: 999 },
@@ -14,6 +10,10 @@ const products = {
 };
 
 export const POST: APIRoute = async ({ request }) => {
+    const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
+        apiVersion: '2024-04-10',
+    });
+
     const data = await request.json();
     const { productKey, formData } = data;
 
