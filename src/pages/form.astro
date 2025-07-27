@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Sparkles, ArrowLeft } from 'lucide-astro';
+
+const horoscopeTypes = [
+  {
+    id: "daily",
+    name: "Denný horoskop",
+    price: 2.99,
+  },
+  {
+    id: "weekly",
+    name: "Týždenný horoskop",
+    price: 4.99,
+  },
+  {
+    id: "love",
+    name: "Láska & Vzťahy",
+    price: 7.99,
+  },
+  {
+    id: "career",
+    name: "Kariéra & Financie",
+    price: 7.99,
+  },
+  {
+    id: "full",
+    name: "Kompletná analýza",
+    price: 12.99,
+  },
+];
+
+const typeId = Astro.url.searchParams.get('type');
+console.log("Received typeId:", typeId);
+const selectedType = horoscopeTypes.find(t => t.id === typeId);
+
+if (!selectedType) {
+    return new Response("Horoscope type not found", { status: 404 });
+}
+---
+
+<Layout title="Vyplňte údaje">
+  <div
+    class="min-h-screen flex flex-col font-sans"
+    style="background-image: url('/astro-background.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  >
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <header class="relative z-10 bg-black/70 backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="p-2 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg shadow-md">
+                <Sparkles class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <div class="text-center sm:text-left">
+                <h1 class="text-xl sm:text-2xl font-extrabold text-white tracking-wide">AstroVision</h1>
+                <p class="text-white/70 text-xs sm:text-sm font-light">Profesionálne astrologické služby</p>
+              </div>
+            </div>
+            <div class="text-center sm:text-right">
+              <p class="text-white/80 text-xs sm:text-sm font-light">✨ Viac ako 50,000 spokojných klientov</p>
+              <p class="text-amber-300 text-xs sm:text-sm font-medium">🔒 100% bezpečné platby</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <main class="relative z-10 flex-1 flex items-center justify-center p-4 py-8">
+      <div class="max-w-md mx-auto w-full">
+        <div class="mb-6">
+          <a href="/" class="text-white hover:bg-white/10 mb-4 w-full sm:w-auto text-base sm:text-lg px-6 py-3 rounded-lg inline-flex items-center">
+            <ArrowLeft class="w-4 h-4 mr-2" />
+            Späť na výber
+          </a>
+
+          <div class="text-center px-4 mt-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 drop-shadow-lg">
+              {selectedType.name}
+            </h2>
+            <p class="text-white/90 drop-shadow-md font-light">Vyplňte vaše údaje</p>
+          </div>
+        </div>
+
+        <div class="bg-black/60 backdrop-blur-xl border-white/20 shadow-2xl rounded-lg">
+          <div class="p-6 sm:p-8">
+            <form class="space-y-5 sm:space-y-7">
+              <div class="space-y-2">
+                <label for="name" class="text-white font-medium text-sm">Meno</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Vaše meno"
+                  class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label for="birthDate" class="text-white font-medium text-sm">Dátum narodenia</label>
+                <input
+                  id="birthDate"
+                  name="birthDate"
+                  type="date"
+                  class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label for="birthTime" class="text-white font-medium text-sm">Čas narodenia</label>
+                <input
+                  id="birthTime"
+                  name="birthTime"
+                  type="time"
+                  class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label for="birthPlace" class="text-white font-medium text-sm">Miesto narodenia</label>
+                <input
+                  id="birthPlace"
+                  name="birthPlace"
+                  type="text"
+                  placeholder="Mesto, krajina"
+                  class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
+                />
+              </div>
+
+              <div class="pt-4">
+                <button
+                  type="submit"
+                  class="w-full h-14 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold text-base sm:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center"
+                >
+                  <Sparkles class="w-5 h-5 mr-2" />
+                  Zaplatiť {selectedType.price.toFixed(2)}€
+                </button>
+              </div>
+
+              <div class="text-center pt-4 border-t border-white/20">
+                <p class="text-white/80 text-sm font-light">🔒 Bezpečná platba • Okamžité doručenie</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="relative z-10 bg-black/70 backdrop-blur-md border-t border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
+            <div>
+              <h3 class="text-white font-bold mb-2">AstroVision</h3>
+              <p class="text-white/70 text-sm font-light">
+                Profesionálne astrologické služby s viac ako 10-ročnou tradíciou.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-white font-bold mb-2">Kontakt</h3>
+              <p class="text-white/70 text-sm font-light">info@astrovision.sk</p>
+              <p class="text-white/70 text-sm font-light">+421 900 123 456</p>
+            </div>
+            <div>
+              <h3 class="text-white font-bold mb-2">Záruky</h3>
+              <p class="text-white/70 text-sm font-light">✓ 30-dňová záruka vrátenia peňazí</p>
+              <p class="text-white/70 text-sm font-light">✓ 100% bezpečné platby</p>
+            </div>
+          </div>
+          <div class="border-t border-white/10 mt-6 pt-4 text-center">
+            <p class="text-white/60 text-sm font-light">© 2024 AstroVision. Všetky práva vyhradené.</p>
+          </div>
+        </div>
+      </footer>
+  </div>
+</Layout>

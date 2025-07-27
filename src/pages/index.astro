@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Sparkles, Calendar, Star, Heart, Briefcase, Quote } from 'lucide-astro';
+
+const horoscopeTypes = [
+  {
+    id: "daily",
+    name: "Denný horoskop",
+    description: "Predpoveď na dnes",
+    price: 2.99,
+    icon: Calendar,
+  },
+  {
+    id: "weekly",
+    name: "Týždenný horoskop",
+    description: "Predpoveď na celý týždeň",
+    price: 4.99,
+    icon: Star,
+  },
+  {
+    id: "love",
+    name: "Láska & Vzťahy",
+    description: "Milostný horoskop",
+    price: 7.99,
+    icon: Heart,
+    popular: true,
+  },
+  {
+    id: "career",
+    name: "Kariéra & Financie",
+    description: "Profesionálny úspech",
+    price: 7.99,
+    icon: Briefcase,
+  },
+  {
+    id: "full",
+    name: "Kompletná analýza",
+    description: "Detailný rozbor osobnosti",
+    price: 12.99,
+    icon: Sparkles,
+    popular: true,
+  },
+]
+
+const testimonials = [
+  {
+    name: "Mária K.",
+    location: "Bratislava",
+    text: "Najpresnejší horoskop, aký som kedy dostala. Všetko sa naplnilo presne tak, ako bolo predpovedané!",
+    rating: 5,
+  },
+  {
+    name: "Peter S.",
+    location: "Košice",
+    text: "Kariérny horoskop mi pomohol urobiť správne rozhodnutie. Odporúčam každému!",
+    rating: 5,
+  },
+  {
+    name: "Jana M.",
+    location: "Žilina",
+    text: "Úžasná presnosť a detaily. Konečne som pochopila svoju osobnosť.",
+    rating: 5,
+  },
+]
+---
+
+<Layout title="AstroVision - Váš Horoskop">
+  <div class="min-h-screen flex flex-col font-sans">
+
+    <header class="relative z-10 bg-black/70 backdrop-blur-md border-b border-white/10 shadow-lg">
+      <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="p-2 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg shadow-md">
+              <Sparkles class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            </div>
+            <div class="text-center sm:text-left">
+              <h1 class="text-xl sm:text-2xl font-extrabold text-white tracking-wide">AstroVision</h1>
+              <p class="text-white/70 text-xs sm:text-sm font-light">Profesionálne astrologické služby</p>
+            </div>
+          </div>
+          <div class="text-center sm:text-right">
+            <p class="text-white/80 text-xs sm:text-sm font-light">✨ Viac ako 50,000 spokojných klientov</p>
+            <p class="text-amber-300 text-xs sm:text-sm font-medium">🔒 100% bezpečné platby</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative z-10 flex-1 flex items-center justify-center p-4 py-8">
+      <div class="w-full max-w-4xl">
+        <div class="text-center">
+          <div class="mb-6 sm:mb-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3 sm:mb-4 drop-shadow-lg px-4 leading-tight">
+              Vyberte si typ horoskopu
+            </h2>
+            <p class="text-lg sm:text-xl text-white/90 drop-shadow-md px-4 font-light">
+              Ktorá oblasť vášho života vás zaujíma najviac?
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {horoscopeTypes.map((type) => (
+              <a href={`/form?type=${type.id}`} class="backdrop-blur-xl border-white/15 hover:bg-black/60 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] relative shadow-xl rounded-lg block">
+                {type.popular && (
+                  <div class="absolute -top-2 -right-2 bg-amber-500 text-black font-bold text-xs px-3 py-1 rounded-full shadow-md">
+                    POPULÁRNE
+                  </div>
+                )}
+                <div class="p-5 sm:p-7 text-center">
+                  <div class="flex justify-center mb-4 text-amber-400">
+                    <type.icon class="w-6 h-6" />
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">{type.name}</h3>
+                  <p class="text-white/70 text-sm mb-4 font-light">{type.description}</p>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-amber-300">{type.price.toFixed(2)}€</div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div class="mt-10 sm:mt-16">
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg">
+              Čo hovoria naši klienti
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {testimonials.map((testimonial) => (
+                <div class="backdrop-blur-xl border-white/15 shadow-lg rounded-lg">
+                  <div class="p-5 sm:p-7">
+                    <div class="flex justify-center mb-4">
+                      <Quote class="w-7 h-7 text-amber-400" />
+                    </div>
+                    <p class="text-white/90 text-sm sm:text-base mb-4 italic leading-relaxed">
+                      "{testimonial.text}"
+                    </p>
+                    <div class="text-center">
+                      <div class="flex justify-center mb-2">
+                        {[...Array(testimonial.rating)].map(() => (
+                          <Star class="w-4 h-4 text-amber-400 fill-current" />
+                        ))}
+                      </div>
+                      <p class="text-white font-semibold text-sm">{testimonial.name}</p>
+                      <p class="text-white/60 text-xs font-light">{testimonial.location}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="relative z-10 bg-black/70 backdrop-blur-md border-t border-white/10 shadow-lg">
+      <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
+          <div>
+            <h3 class="text-white font-bold mb-2">AstroVision</h3>
+            <p class="text-white/70 text-sm font-light">
+              Profesionálne astrologické služby s viac ako 10-ročnou tradíciou.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-2">Kontakt</h3>
+            <p class="text-white/70 text-sm font-light">info@astrovision.sk</p>
+            <p class="text-white/70 text-sm font-light">+421 900 123 456</p>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-2">Záruky</h3>
+            <p class="text-white/70 text-sm font-light">✓ 30-dňová záruka vrátenia peňazí</p>
+            <p class="text-white/70 text-sm font-light">✓ 100% bezpečné platby</p>
+          </div>
+        </div>
+        <div class="border-t border-white/10 mt-6 pt-4 text-center">
+          <p class="text-white/60 text-sm font-light">© 2024 AstroVision. Všetky práva vyhradené.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</Layout>
