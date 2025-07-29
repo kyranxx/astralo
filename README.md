@@ -1,4 +1,4 @@
-# Astro Starter Kit: Minimal
+# Horoscope App
 
 ```sh
 npm create astro@latest -- --template minimal

@@ -1,43 +1,43 @@
-[05:50:34.600] Running build in Washington, D.C., USA (East) – iad1
-[05:50:34.601] Build machine configuration: 2 cores, 8 GB
-[05:50:34.645] Cloning github.com/kyranxx/horoscope (Branch: main, Commit: 0f73293)
-[05:50:34.656] Skipping build cache, deployment was triggered without cache.
-[05:50:35.205] Cloning completed: 559.000ms
-[05:50:35.670] Running "vercel build"
-[05:50:36.814] Vercel CLI 44.5.0
-[05:50:37.865] Installing dependencies...
-[05:50:44.800] 
-[05:50:44.800] added 418 packages in 7s
-[05:50:44.801] 
-[05:50:44.801] 185 packages are looking for funding
-[05:50:44.801]   run `npm fund` for details
-[05:50:44.863] Running "npm run build"
-[05:50:44.974] 
-[05:50:44.975] > pale-phase@0.0.1 build
-[05:50:44.975] > astro build
-[05:50:44.975] 
-[05:50:46.498] 03:50:46 [content] Syncing content
-[05:50:46.502] 03:50:46 [content] Synced content
-[05:50:46.503] 03:50:46 [types] Generated 147ms
-[05:50:46.503] 03:50:46 [build] output: "static"
-[05:50:46.504] 03:50:46 [build] mode: "static"
-[05:50:46.504] 03:50:46 [build] directory: /vercel/path0/dist/
-[05:50:46.504] 03:50:46 [build] Collecting build info...
-[05:50:46.504] 03:50:46 [build] ✓ Completed in 200ms.
-[05:50:46.506] 03:50:46 [build] Building static entrypoints...
-[05:50:53.223] 03:50:53 [vite] [32m✓ built in 6.68s[39m
-[05:50:53.224] 03:50:53 [build] ✓ Completed in 6.72s.
-[05:50:53.229] 
-[05:50:53.230]  generating static routes 
-[05:50:53.460] Neither apiKey nor config.authenticator provided
-[05:50:53.460]   Location:
-[05:50:53.460]     /vercel/path0/node_modules/stripe/esm/stripe.core.js:152:23
-[05:50:53.460]   Stack trace:
-[05:50:53.462]     at Stripe._setAuthenticator (file:///vercel/path0/node_modules/stripe/esm/stripe.core.js:152:23)
-[05:50:53.462]     at file:///vercel/path0/dist/pages/api/checkout.astro.mjs?time=1753674653230:4:16
-[05:50:53.462]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
-[05:50:53.462]     at async generatePages (file:///vercel/path0/node_modules/astro/dist/core/build/generate.js:96:21)
-[05:50:53.462]     at async AstroBuilder.build (file:///vercel/path0/node_modules/astro/dist/core/build/index.js:154:5)
-[05:50:53.534] Error: Command "npm run build" exited with 1
-[05:50:53.702] 
-[05:50:56.624] Exiting build container
+[05:35:06.927] Running build in Washington, D.C., USA (East) – iad1
+[05:35:06.928] Build machine configuration: 2 cores, 8 GB
+[05:35:06.942] Cloning github.com/kyranxx/horoscope (Branch: main, Commit: 0f73293)
+[05:35:06.955] Skipping build cache, deployment was triggered without cache.
+[05:35:07.520] Cloning completed: 578.000ms
+[05:35:08.690] Running "vercel build"
+[05:35:09.666] Vercel CLI 44.5.0
+[05:35:10.273] Installing dependencies...
+[05:35:17.588] 
+[05:35:17.589] added 418 packages in 7s
+[05:35:17.590] 
+[05:35:17.590] 185 packages are looking for funding
+[05:35:17.590]   run `npm fund` for details
+[05:35:17.652] Running "npm run build"
+[05:35:17.768] 
+[05:35:17.769] > pale-phase@0.0.1 build
+[05:35:17.769] > astro build
+[05:35:17.769] 
+[05:35:19.238] 03:35:19 [content] Syncing content
+[05:35:19.242] 03:35:19 [content] Synced content
+[05:35:19.243] 03:35:19 [types] Generated 141ms
+[05:35:19.244] 03:35:19 [build] output: "static"
+[05:35:19.244] 03:35:19 [build] mode: "static"
+[05:35:19.244] 03:35:19 [build] directory: /vercel/path0/dist/
+[05:35:19.244] 03:35:19 [build] Collecting build info...
+[05:35:19.245] 03:35:19 [build] ✓ Completed in 183ms.
+[05:35:19.246] 03:35:19 [build] Building static entrypoints...
+[05:35:26.311] 03:35:26 [vite] [32m✓ built in 7.03s[39m
+[05:35:26.312] 03:35:26 [build] ✓ Completed in 7.07s.
+[05:35:26.337] 
+[05:35:26.338]  generating static routes 
+[05:35:26.635] Neither apiKey nor config.authenticator provided
+[05:35:26.637]   Location:
+[05:35:26.637]     /vercel/path0/node_modules/stripe/esm/stripe.core.js:152:23
+[05:35:26.638]   Stack trace:
+[05:35:26.638]     at Stripe._setAuthenticator (file:///vercel/path0/node_modules/stripe/esm/stripe.core.js:152:23)
+[05:35:26.638]     at file:///vercel/path0/dist/pages/api/checkout.astro.mjs?time=1753760126337:4:16
+[05:35:26.638]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+[05:35:26.638]     at async generatePages (file:///vercel/path0/node_modules/astro/dist/core/build/generate.js:96:21)
+[05:35:26.639]     at async AstroBuilder.build (file:///vercel/path0/node_modules/astro/dist/core/build/index.js:154:5)
+[05:35:26.714] Error: Command "npm run build" exited with 1
+[05:35:26.897] 
+[05:35:29.693] Exiting build container
