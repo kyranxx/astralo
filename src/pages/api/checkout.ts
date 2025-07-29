@@ -1,6 +1,10 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
+export const GET: APIRoute = async () => {
+    return new Response(JSON.stringify({ message: 'Method Not Allowed' }), { status: 405 });
+};
+
 const products = {
     weekly: { name: 'Osobný Horoskop na Týždeň', price: 399 },
     monthly: { name: 'Osobný Horoskop na Mesiac', price: 999 },
@@ -11,7 +15,7 @@ const products = {
 
 export const POST: APIRoute = async ({ request }) => {
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-        apiVersion: '2024-04-10',
+        apiVersion: '2025-06-30.basil',
     });
 
     const data = await request.json();
