@@ -85,7 +85,12 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground;
+    @apply bg-background text-foreground;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
     background-image: url('/background.png');
     background-size: cover;
     background-position: center;
