@@ -85,16 +85,18 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-}
-
-@media (min-width: 640px) {
-  body {
+    @apply text-foreground;
     background-image: url('/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    background-size: auto;
+    background-position: top;
   }
 }
