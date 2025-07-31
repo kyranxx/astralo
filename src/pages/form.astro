@@ -35,7 +35,20 @@ console.log("Received typeId:", typeId);
 const selectedType = horoscopeTypes.find(t => t.id === typeId);
 
 if (!selectedType) {
-    return new Response("Horoscope type not found", { status: 404 });
+  return Astro.redirect('/');
+}
+
+if (Astro.request.method === 'POST') {
+  const data = await Astro.request.formData();
+  const name = data.get('name');
+  const birthDate = data.get('birthDate');
+  const birthTime = data.get('birthTime');
+  const birthPlace = data.get('birthPlace');
+
+  // Here you would typically process the payment and generate the horoscope
+  // For now, we'll just redirect to a success page
+
+  return Astro.redirect(`/success?type=${typeId}`);
 }
 ---
 

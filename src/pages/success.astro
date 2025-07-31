@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { CheckCircle } from 'lucide-astro';
+
+const horoscopeTypes = [
+  {
+    id: "daily",
+    name: "Denný horoskop",
+  },
+  {
+    id: "weekly",
+    name: "Týždenný horoskop",
+  },
+  {
+    id: "love",
+    name: "Láska & Vzťahy",
+  },
+  {
+    id: "career",
+    name: "Kariéra & Financie",
+  },
+  {
+    id: "full",
+    name: "Kompletná analýza",
+  },
+];
+
+const typeId = Astro.url.searchParams.get('type');
+const selectedType = horoscopeTypes.find(t => t.id === typeId);
+---
+
+<Layout title="Platba úspešná">
+  <div class="min-h-screen flex items-center justify-center text-center">
+    <div class="max-w-md mx-auto">
+      <CheckCircle class="w-16 h-16 text-green-500 mx-auto mb-4" />
+      <h1 class="text-3xl font-bold text-white mb-2">Platba úspešná!</h1>
+      <p class="text-white/80 text-lg mb-6">
+        Ďakujeme za vašu objednávku {selectedType ? `pre ${selectedType.name}` : ''}.
+      </p>
+      <a href="/" class="text-white hover:bg-white/10 px-6 py-3 rounded-lg inline-flex items-center">
+        Späť na hlavnú stránku
+      </a>
+    </div>
+  </div>
+</Layout>
