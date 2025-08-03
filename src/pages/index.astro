@@ -1,43 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Sparkles, Calendar, Star, Heart, Briefcase, Quote } from 'lucide-astro';
+import { Calendar, Star, BookUser, Users, Quote } from 'lucide-astro';
+
+const icons = {
+  Calendar,
+  Star,
+  BookUser,
+  Users,
+};
 
 const horoscopeTypes = [
   {
-    id: "daily",
-    name: "Denný horoskop",
-    description: "Predpoveď na dnes",
-    price: 2.99,
-    icon: Calendar,
-  },
-  {
     id: "weekly",
-    name: "Týždenný horoskop",
-    description: "Predpoveď na celý týždeň",
-    price: 4.99,
-    icon: Star,
+    name: "Osobný Horoskop na Týždeň",
+    description: "Cieľová dĺžka: ~400 slov",
+    price: 3.99,
+    icon: "Calendar",
   },
   {
-    id: "love",
-    name: "Láska & Vzťahy",
-    description: "Milostný horoskop",
-    price: 7.99,
-    icon: Heart,
+    id: "monthly",
+    name: "Osobný Horoskop na Mesiac",
+    description: "Cieľová dĺžka: ~1000 slov",
+    price: 9.99,
+    icon: "Star",
     popular: true,
   },
   {
-    id: "career",
-    name: "Kariéra & Financie",
-    description: "Profesionálny úspech",
-    price: 7.99,
-    icon: Briefcase,
+    id: "yearly",
+    name: "Osobný Horoskop na Rok",
+    description: "Cieľová dĺžka: ~2500 slov",
+    price: 24.99,
+    icon: "Star",
   },
   {
-    id: "full",
-    name: "Kompletná analýza",
-    description: "Detailný rozbor osobnosti",
-    price: 12.99,
-    icon: Sparkles,
+    id: "natal",
+    name: "Osobná Rodná Mapa (Natal Chart)",
+    description: "Cieľová dĺžka: ~800 slov",
+    price: 4.99,
+    icon: "BookUser",
+  },
+  {
+    id: "partner",
+    name: "Partnerský Horoskop (Synastria)",
+    description: "Cieľová dĺžka: ~1200 slov",
+    price: 14.99,
+    icon: "Users",
     popular: true,
   },
 ]
@@ -62,22 +69,15 @@ const testimonials = [
     rating: 5,
   },
 ]
+
 ---
-
-<Layout title="AstroVision - Váš Horoskop">
+<Layout title="AstroVision - Váš Horoskop" backgroundImage="/background5.png">
   <div class="min-h-screen flex flex-col font-sans">
-
     <header class="relative z-10 bg-black/70 backdrop-blur-md border-b border-white/10 shadow-lg">
       <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4">
         <div class="flex items-center justify-center">
-          <div class="flex items-center gap-3">
-            <div class="p-2 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg shadow-md">
-              <Sparkles class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-            </div>
-            <div class="text-center">
-              <h1 class="text-xl sm:text-2xl font-extrabold text-white tracking-wide">AstroVision</h1>
-              <p class="text-white/70 text-xs sm:text-sm font-light">Profesionálne astrologické služby</p>
-            </div>
+          <div class="flex items-center justify-center">
+            <img src="/logo.png" alt="AstroVision Logo" class="w-auto h-12 sm:h-14" />
           </div>
         </div>
       </div>
@@ -105,7 +105,10 @@ const testimonials = [
                 )}
                 <div class="p-4 sm:p-6 text-center">
                   <div class="flex justify-center mb-4 text-amber-400">
-                    <type.icon class="w-6 h-6" />
+                    {(() => {
+                      const Icon = icons[type.icon];
+                      return <Icon class="w-6 h-6" client:none />;
+                    })()}
                   </div>
                   <h3 class="text-lg sm:text-2xl font-bold text-white mb-2">{type.name}</h3>
                   <p class="text-white/70 text-sm mb-4 font-light">{type.description}</p>
@@ -122,19 +125,19 @@ const testimonials = [
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {testimonials.map((testimonial) => (
                 <div class="backdrop-blur-xl border-white/15 shadow-lg rounded-lg">
-                  <div class="p-4 sm:p-6">
-                    <div class="flex justify-center mb-4">
-                      <Quote class="w-7 h-7 text-amber-400" />
-                    </div>
-                    <p class="text-white/90 text-sm sm:text-base mb-4 italic leading-relaxed">
+                <div class="p-4 sm:p-6">
+                  <div class="flex justify-center mb-4">
+                    <Quote class="w-7 h-7 text-amber-400" client:none />
+                  </div>
+                  <p class="text-white/90 text-sm sm:text-base mb-4 italic leading-relaxed">
                       "{testimonial.text}"
                     </p>
                     <div class="text-center">
-                      <div class="flex justify-center mb-2">
-                        {[...Array(testimonial.rating)].map(() => (
-                          <Star class="w-4 h-4 text-amber-400 fill-current" />
-                        ))}
-                      </div>
+                    <div class="flex justify-center mb-2">
+                      {[...Array(testimonial.rating)].map(() => (
+                        <Star class="w-4 h-4 text-amber-400 fill-current" client:none />
+                      ))}
+                    </div>
                       <p class="text-white font-semibold text-sm">{testimonial.name}</p>
                       <p class="text-white/60 text-xs font-light">{testimonial.location}</p>
                     </div>

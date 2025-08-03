@@ -1,45 +1,130 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { CheckCircle } from 'lucide-astro';
+import { CheckCircle, Download, Loader } from 'lucide-astro';
 
 const horoscopeTypes = [
-  {
-    id: "daily",
-    name: "Denný horoskop",
-  },
-  {
-    id: "weekly",
-    name: "Týždenný horoskop",
-  },
-  {
-    id: "love",
-    name: "Láska & Vzťahy",
-  },
-  {
-    id: "career",
-    name: "Kariéra & Financie",
-  },
-  {
-    id: "full",
-    name: "Kompletná analýza",
-  },
+    { id: "weekly", name: "Osobný Horoskop na Týždeň" },
+    { id: "monthly", name: "Osobný Horoskop na Mesiac" },
+    { id: "yearly", name: "Osobný Horoskop na Rok" },
+    { id: "natal", name: "Osobná Rodná Mapa (Natal Chart)" },
+    { id: "partner", name: "Partnerský Horoskop (Synastria)" },
 ];
 
-const typeId = Astro.url.searchParams.get('type');
-const selectedType = horoscopeTypes.find(t => t.id === typeId);
+const sessionId = Astro.url.searchParams.get('session_id');
+
+if (!sessionId) {
+    return Astro.redirect('/');
+}
 ---
 
-<Layout title="Platba úspešná">
-  <div class="min-h-screen flex items-center justify-center text-center">
-    <div class="max-w-md mx-auto">
-      <CheckCircle class="w-16 h-16 text-green-500 mx-auto mb-4" />
-      <h1 class="text-3xl font-bold text-white mb-2">Platba úspešná!</h1>
-      <p class="text-white/80 text-lg mb-6">
-        Ďakujeme za vašu objednávku {selectedType ? `pre ${selectedType.name}` : ''}.
-      </p>
-      <a href="/" class="text-white hover:bg-white/10 px-6 py-3 rounded-lg inline-flex items-center">
-        Späť na hlavnú stránku
-      </a>
+<Layout title="Váš Horoskop je Pripravený">
+  <div class="min-h-screen flex items-center justify-center p-4" style="background-image: url('/background2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div id="horoscope-container" class="w-full max-w-2xl mx-auto bg-black/70 backdrop-blur-xl border border-white/20 shadow-2xl rounded-lg p-8 text-white text-center">
+      
+      <div id="loading-state">
+        <Loader class="w-16 h-16 text-amber-400 mx-auto mb-4 animate-spin" />
+        <h1 class="text-3xl font-bold mb-2">Generujem váš horoskop...</h1>
+        <p class="text-white/80 text-lg">Tento proces môže chvíľu trvať. Prosím, neobnovujte stránku.</p>
+      </div>
+
+      <div id="success-state" class="hidden">
+        <CheckCircle class="w-16 h-16 text-green-500 mx-auto mb-4" />
+        <h1 class="text-3xl font-bold mb-2">Váš horoskop je pripravený!</h1>
+        <p id="product-name" class="text-amber-300 font-semibold text-lg mb-6"></p>
+        
+        <div id="horoscope-content" class="text-left bg-white/5 p-6 rounded-lg border border-white/15 my-6 max-h-96 overflow-y-auto">
+          <!-- Horoscope text will be injected here -->
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button id="download-pdf" class="bg-amber-500 hover:bg-amber-600 text-black font-bold px-6 py-3 rounded-lg inline-flex items-center justify-center transition-colors">
+                <Download class="w-5 h-5 mr-2" />
+                Stiahnuť ako PDF
+            </button>
+            <a href="/" class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg inline-flex items-center justify-center transition-colors">
+                Späť na hlavnú stránku
+            </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </Layout>
+
+<script define:vars={{ sessionId, horoscopeTypes }}>
+    async function fetchHoroscope() {
+        try {
+            const response = await fetch('/api/horoscope', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sessionId }),
+            });
+
+            if (!response.ok) throw new Error('Failed to fetch horoscope');
+
+            const data = await response.json();
+            
+            document.getElementById('loading-state').classList.add('hidden');
+            document.getElementById('success-state').classList.remove('hidden');
+            
+            const product = horoscopeTypes.find(t => t.id === data.product);
+            document.getElementById('product-name').textContent = product ? product.name : 'Váš Horoskop';
+            document.getElementById('horoscope-content').innerHTML = `<p>${data.horoscope.replace(/\n/g, '<br>')}</p>`;
+
+        } catch (error) {
+            console.error(error);
+            document.getElementById('loading-state').innerHTML = `
+                <h1 class="text-2xl font-bold text-red-500">Chyba pri generovaní horoskopu</h1>
+                <p class="text-white/80 mt-2">Prosím, skúste to znova neskôr alebo kontaktujte podporu.</p>
+            `;
+        }
+    }
+
+    fetchHoroscope();
+
+    document.getElementById('download-pdf').addEventListener('click', async () => {
+        const { PDFDocument, rgb, StandardFonts } = await import('https://cdn.skypack.dev/pdf-lib');
+
+        const pdfDoc = await PDFDocument.create();
+        const page = pdfDoc.addPage();
+        
+        const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
+        const titleFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
+
+        const productName = document.getElementById('product-name').textContent;
+        const horoscopeText = document.getElementById('horoscope-content').innerText;
+
+        let y = page.getHeight() - 50;
+
+        page.drawText(productName, {
+            x: 50,
+            y,
+            font: titleFont,
+            size: 24,
+            color: rgb(0, 0, 0),
+        });
+
+        y -= 40;
+
+        const lines = horoscopeText.split('\n');
+        for (const line of lines) {
+            page.drawText(line, {
+                x: 50,
+                y,
+                font,
+                size: 12,
+                color: rgb(0, 0, 0),
+            });
+            y -= 15;
+        }
+
+        const pdfBytes = await pdfDoc.save();
+        
+        const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = `${productName.toLowerCase().replace(/ /g, '_')}.pdf`;
+        link.click();
+    });
+</script>

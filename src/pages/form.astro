@@ -1,32 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Sparkles, ArrowLeft } from 'lucide-astro';
+import { Sparkles, ArrowLeft, User, Users } from 'lucide-astro';
 
 const horoscopeTypes = [
   {
-    id: "daily",
-    name: "Denný horoskop",
-    price: 2.99,
+    id: "weekly",
+    name: "Osobný Horoskop na Týždeň",
+    price: 3.99,
   },
   {
-    id: "weekly",
-    name: "Týždenný horoskop",
+    id: "monthly",
+    name: "Osobný Horoskop na Mesiac",
+    price: 9.99,
+  },
+  {
+    id: "yearly",
+    name: "Osobný Horoskop na Rok",
+    price: 24.99,
+  },
+  {
+    id: "natal",
+    name: "Osobná Rodná Mapa (Natal Chart)",
     price: 4.99,
   },
   {
-    id: "love",
-    name: "Láska & Vzťahy",
-    price: 7.99,
-  },
-  {
-    id: "career",
-    name: "Kariéra & Financie",
-    price: 7.99,
-  },
-  {
-    id: "full",
-    name: "Kompletná analýza",
-    price: 12.99,
+    id: "partner",
+    name: "Partnerský Horoskop (Synastria)",
+    price: 14.99,
   },
 ];
 
@@ -38,24 +38,12 @@ if (!selectedType) {
   return Astro.redirect('/');
 }
 
-if (Astro.request.method === 'POST') {
-  const data = await Astro.request.formData();
-  const name = data.get('name');
-  const birthDate = data.get('birthDate');
-  const birthTime = data.get('birthTime');
-  const birthPlace = data.get('birthPlace');
-
-  // Here you would typically process the payment and generate the horoscope
-  // For now, we'll just redirect to a success page
-
-  return Astro.redirect(`/success?type=${typeId}`);
-}
 ---
 
 <Layout title="Vyplňte údaje">
   <div
     class="min-h-screen flex flex-col font-sans"
-    style="background-image: url('/astro-background.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    style="background-image: url('/background2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
     <div class="absolute inset-0 bg-black/60"></div>
 
@@ -97,48 +85,68 @@ if (Astro.request.method === 'POST') {
 
         <div class="bg-black/60 backdrop-blur-xl border-white/20 shadow-2xl rounded-lg">
           <div class="p-6 sm:p-8">
-            <form class="space-y-5 sm:space-y-7">
-              <div class="space-y-2">
-                <label for="name" class="text-white font-medium text-sm">Meno</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Vaše meno"
-                  class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
-                />
-              </div>
-
-              <div class="space-y-2">
-                <label for="birthDate" class="text-white font-medium text-sm">Dátum narodenia</label>
-                <input
-                  id="birthDate"
-                  name="birthDate"
-                  type="date"
-                  class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
-                />
-              </div>
-
-              <div class="space-y-2">
-                <label for="birthTime" class="text-white font-medium text-sm">Čas narodenia</label>
-                <input
-                  id="birthTime"
-                  name="birthTime"
-                  type="time"
-                  class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
-                />
-              </div>
-
-              <div class="space-y-2">
-                <label for="birthPlace" class="text-white font-medium text-sm">Miesto narodenia</label>
-                <input
-                  id="birthPlace"
-                  name="birthPlace"
-                  type="text"
-                  placeholder="Mesto, krajina"
-                  class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4"
-                />
-              </div>
+            <form id="payment-form" class="space-y-5 sm:space-y-7">
+              {selectedType.id === 'partner' ? (
+                <>
+                  <div class="border-b border-white/20 pb-6 space-y-5">
+                    <h3 class="text-lg font-semibold text-white flex items-center gap-2"><User className="w-5 h-5 text-amber-400" /> Osoba 1</h3>
+                    <div class="space-y-2">
+                      <label for="name1" class="text-white font-medium text-sm">Meno</label>
+                      <input id="name1" name="name1" type="text" placeholder="Meno prvej osoby" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthDate1" class="text-white font-medium text-sm">Dátum narodenia</label>
+                      <input id="birthDate1" name="birthDate1" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthTime1" class="text-white font-medium text-sm">Čas narodenia</label>
+                      <input id="birthTime1" name="birthTime1" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthPlace1" class="text-white font-medium text-sm">Miesto narodenia</label>
+                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                  </div>
+                  <div class="space-y-5 pt-6">
+                    <h3 class="text-lg font-semibold text-white flex items-center gap-2"><Users className="w-5 h-5 text-amber-400" /> Osoba 2</h3>
+                    <div class="space-y-2">
+                      <label for="name2" class="text-white font-medium text-sm">Meno</label>
+                      <input id="name2" name="name2" type="text" placeholder="Meno druhej osoby" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthDate2" class="text-white font-medium text-sm">Dátum narodenia</label>
+                      <input id="birthDate2" name="birthDate2" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthTime2" class="text-white font-medium text-sm">Čas narodenia</label>
+                      <input id="birthTime2" name="birthTime2" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="birthPlace2" class="text-white font-medium text-sm">Miesto narodenia</label>
+                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div class="space-y-2">
+                    <label for="name" class="text-white font-medium text-sm">Meno</label>
+                    <input id="name" name="name" type="text" placeholder="Vaše meno" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                  </div>
+                  <div class="space-y-2">
+                    <label for="birthDate" class="text-white font-medium text-sm">Dátum narodenia</label>
+                    <input id="birthDate" name="birthDate" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                  </div>
+                  <div class="space-y-2">
+                    <label for="birthTime" class="text-white font-medium text-sm">Čas narodenia</label>
+                    <input id="birthTime" name="birthTime" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                  </div>
+                  <div class="space-y-2">
+                    <label for="birthPlace" class="text-white font-medium text-sm">Miesto narodenia</label>
+                    <input id="birthPlace" name="birthPlace" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
+                  </div>
+                </>
+              )}
 
               <div class="pt-4">
                 <button
@@ -186,3 +194,25 @@ if (Astro.request.method === 'POST') {
       </footer>
   </div>
 </Layout>
+
+<script define:vars={{ typeId }}>
+  const form = document.getElementById('payment-form');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    const response = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ productKey: typeId, ...data }),
+    });
+    
+    const { url } = await response.json();
+    if (url) {
+      window.location.href = url;
+    }
+  });
+</script>

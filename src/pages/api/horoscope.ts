@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+const stripe = new Stripe('sk_test_51QC4Q2GkhBz4CXszcZn9kZ6RIaBH2lSvLrDAw1nnXRwk4tQ3pXEKr79U6zDDVjFne3dDotHHyW5NGCtQl1IG4fGI00dOvATdZL', {
   apiVersion: '2025-06-30.basil',
 });
 
@@ -20,36 +20,43 @@ export const POST: APIRoute = async ({ request }) => {
             return new Response(JSON.stringify({ error: 'No metadata found for this session.' }), { status: 400 });
         }
 
-        const { date, time, city, productKey } = formData;
+        const { productKey } = formData;
 
-        // 1. Fetch Astrological Data
-        const astroApiUrl = new URL('https://api.freeastrologyapi.com/chart');
-        // Note: Geocoding city to lat/lon would be needed for full accuracy.
-        // For now, we'll use a placeholder or omit it if the API allows.
-        // This API seems to not require it for basic planet positions.
-        astroApiUrl.searchParams.append('dob', date);
-        astroApiUrl.searchParams.append('time', time);
-        
-        const astroResponse = await fetch(astroApiUrl.toString());
-        if (!astroResponse.ok) {
-            throw new Error('Failed to fetch astrological data.');
+        let prompt;
+
+        if (productKey === 'partner') {
+            const { birthDate1, birthTime1, birthPlace1, name1, birthDate2, birthTime2, birthPlace2, name2 } = formData;
+            prompt = `Si skúsený a výrečný astrológ. Vygeneruj podrobný partnerský horoskop (synastria) pre dve osoby v slovenskom jazyku.
+            Osoba 1: ${name1}, narodená ${birthDate1} o ${birthTime1} v ${birthPlace1}.
+            Osoba 2: ${name2}, narodená ${birthDate2} o ${birthTime2} v ${birthPlace2}.
+            Zameraj sa na kľúčové aspekty ich vzťahu, silné stránky, výzvy a potenciál pre dlhodobú harmóniu.`;
+        } else {
+            const { birthDate, birthTime, birthPlace, name } = formData;
+            let horoscopeType = '';
+            switch (productKey) {
+                case 'weekly': horoscopeType = 'týždenný horoskop'; break;
+                case 'monthly': horoscopeType = 'mesačný horoskop'; break;
+                case 'yearly': horoscopeType = 'ročný horoskop'; break;
+                case 'natal': horoscopeType = 'osobnú rodnú mapu'; break;
+            }
+            prompt = `Si skúsený a výrečný astrológ. Vygeneruj podrobný a pútavý ${horoscopeType} pre ${name}, narodeného ${birthDate} o ${birthTime} v ${birthPlace} v slovenskom jazyku. Zameraj sa na kľúčové planéty a ich význam.`;
         }
-        const astroData = await astroResponse.json();
-        const planetsData = JSON.stringify(astroData.planets); // Simplified for the prompt
 
-        // 2. Generate Horoscope with Perplexity AI
-        const prompt = `Si skúsený a výrečný astrológ. Na základe nasledujúcich astrologických dát (pozície planét), vygeneruj podrobnú a pútavú osobnú rodnú mapu v slovenskom jazyku. Zameraj sa na kľúčové planéty (Slnko, Luna, Ascendent, Mars, Venuša) a vysvetli ich význam v znameniach a domoch jednoduchým a povzbudivým spôsobom. Dáta: ${planetsData}`;
+        const perplexity = await fetch('http://localhost:3333/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: prompt,
+            }),
+        });
 
-        // NOTE: This is where the call to the Perplexity MCP would happen.
-        // Since I cannot directly call another tool from within an API route that is being written to a file,
-        // we will simulate the AI response for now. The logic and prompt are ready for the final integration.
-        const simulatedAiResponse = {
-            horoscope: `(Simulovaná AI Odpoveď) Na základe vašich jedinečných dát, Slnko vo vašom znamení naznačuje silnú vôľu a vodcovské schopnosti. Vaša Luna odhaľuje hlboké emocionálne prepojenie s rodinou, zatiaľ čo pozícia Venuše hovorí o vašej túžbe po harmónii vo vzťahoch. Detailná analýza vašich planetárnych pozícií odhalí viac o vašej životnej ceste.`
-        };
+        const { response: horoscope } = await perplexity.json();
 
         return new Response(JSON.stringify({
-            horoscope: simulatedAiResponse.horoscope,
-            product: formData.productKey,
+            horoscope,
+            product: productKey,
         }), { status: 200 });
 
     } catch (error) {

@@ -14,12 +14,12 @@ const products = {
 };
 
 export const POST: APIRoute = async ({ request }) => {
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    const stripe = new Stripe('sk_test_51QC4Q2GkhBz4CXszcZn9kZ6RIaBH2lSvLrDAw1nnXRwk4tQ3pXEKr79U6zDDVjFne3dDotHHyW5NGCtQl1IG4fGI00dOvATdZL', {
         apiVersion: '2025-06-30.basil',
     });
 
     const data = await request.json();
-    const { productKey, formData } = data;
+    const { productKey, ...formData } = data;
 
     const product = products[productKey as keyof typeof products];
 
@@ -44,10 +44,10 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
             ],
             mode: 'payment',
             success_url: `${request.headers.get('origin')}/success?session_id={CHECKOUT_SESSION_ID}`,
-            cancel_url: `${request.headers.get('origin')}/`,
+            cancel_url: `${request.headers.get('origin')}/form?type=${productKey}`,
             metadata: {
-                ...formData,
                 productKey,
+                ...formData
             }
         });
 
