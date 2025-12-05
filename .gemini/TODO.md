@@ -1,56 +1,52 @@
-# Astralo TODO - Next Chat
+# Astralo TODO - Completed
 
-## 🎯 PRIORITY: Consolidate Page Architecture
+## ✅ COMPLETED: Consolidated Page Architecture (December 5, 2024)
 
-### Problem
-Currently there are duplicate pages for English vs other languages:
-- `/index.astro` (English, hardcoded) vs `/[lang]/index.astro` (other langs, uses translations)
-- `/form/[type].astro` (English, hardcoded) vs `/[lang]/form/[type].astro` (other langs, uses translations)
+### What Was Done
 
-This causes:
-1. ❌ Changes in one don't appear in the other
-2. ❌ 2x maintenance work
-3. ❌ Features get out of sync (e.g., "What's included" section was missing in Turkish)
+1. **Updated `/[lang]/index.astro`** 
+   - Removed `.filter(l => l !== 'en')` from `getStaticPaths()`
+   - English now lives at `/en/` instead of root `/`
 
-### Solution
-Consolidate to **single files** that handle ALL languages (like success.astro now does):
+2. **Updated `/[lang]/form/[type].astro`**
+   - Removed `.filter(l => l !== 'en')` 
+   - English forms now at `/en/form/[type]`
 
-1. **Delete** `/form/[type].astro` and update `/[lang]/form/[type].astro` to:
-   - Include 'en' in getStaticPaths()
-   - Handle English at `/en/form/[type]` instead of `/form/[type]`
-   
-2. **Delete** `/index.astro` and update `/[lang]/index.astro` to:
-   - Include 'en' in getStaticPaths()
-   - Handle English at `/en/` or redirect `/` to `/en/`
+3. **Converted `/index.astro` to redirect**
+   - Root `/` now 301 redirects to `/en/`
 
-3. **Update redirects/links** throughout the app to use the new paths
+4. **Deleted duplicate files**
+   - `/form/[type].astro` - deleted (was English-only duplicate)
+   - `/form.astro` - deleted (was old Slovak-only form)
 
-### Files to Modify
-- `src/pages/[lang]/index.astro` - Add 'en' to getStaticPaths, sync all features
-- `src/pages/[lang]/form/[type].astro` - Add 'en' to getStaticPaths
-- `src/pages/index.astro` - DELETE or redirect to /en/
-- `src/pages/form/[type].astro` - DELETE
-- `src/components/Footer.astro` - Update legal links
-- `src/components/LanguageSwitcher.astro` - Update paths
-- Check all internal links
+5. **Updated `LanguageSwitcher.astro`**
+   - Changed `code === 'en' ? '/' : ...` to just `/${code}/`
+   - All languages now use consistent URL structure
 
-### Reference: How success.astro works now
-```typescript
-// Reads lang from URL params
-const langParam = Astro.url.searchParams.get('lang') || 'en';
-const currentLang = (isValidLocale(langParam) ? langParam : 'en') as SupportedLocale;
-const t = getTranslations(currentLang);
-```
+6. **Updated `Footer.astro`**
+   - Logo links to `/${lang}/` dynamically
+   - Legal paths use `/${lang}/legal` for all languages
 
-### What was fixed this session
-- ✅ Success page now uses translations (single file, all languages)
-- ✅ Checkout passes lang to success URL
-- ✅ Form page [lang] version now has "What's included" section
-- ✅ All 33 locales have form.description and benefits
-- ✅ Footer cleaned up (no Slovakia text, no email)
-- ✅ Hero features line removed
-- ✅ PDF font fetching fixed
-- ✅ Contact page imports fixed
+7. **Created legal page redirects**
+   - Added `/[lang]/legal/terms.astro` → redirects to `/legal/terms`
+   - Added `/[lang]/legal/privacy.astro` → redirects to `/legal/privacy`
+   - Added `/[lang]/legal/refund.astro` → redirects to `/legal/refund`
+   - Added `/[lang]/legal/cookies.astro` → redirects to `/legal/cookies`
+   - Added `/[lang]/legal/contact.astro` → redirects to `/legal/contact`
+
+8. **Updated legal pages**
+   - All `href="/"` links changed to `href="/en/"`
+
+9. **Updated admin page**
+   - Back link changed to `/en/`
+
+### Benefits
+
+- ✅ Single source of truth for each page type
+- ✅ Changes automatically apply to ALL languages
+- ✅ No more sync issues between English and other languages
+- ✅ Consistent URL structure: `/{lang}/...`
+- ✅ Build verified: all pages compile successfully
 
 ---
 
@@ -59,5 +55,6 @@ const t = getTranslations(currentLang);
 - Files: `src/locales/*.ts` (excluding types.ts and index.ts)
 
 ## Notes
-- Legal pages in English are fine (only Slovakia needs Slovak first)
+- Legal pages remain in English for all locales (redirected from `/{lang}/legal/*` to `/legal/*`)
+- Slovakia may need Slovak legal documents in the future
 - Success page has inline translations for 10 languages, fallback to English for others

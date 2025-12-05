@@ -6,7 +6,7 @@ import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon } fr
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
 
 export function getStaticPaths() {
-  const locales = getSupportedLocales().filter(l => l !== 'en'); // English is at root
+  const locales = getSupportedLocales(); // All languages including English at /en/
   return locales.map(lang => ({ params: { lang } }));
 }
 

@@ -33,7 +33,7 @@ const translations = {
 };
 
 const t = translations[lang as keyof typeof translations] || translations.en;
-const legalBasePath = lang === 'en' ? '/legal' : `/${lang}/legal`;
+const legalBasePath = `/${lang}/legal`;
 ---
 
 <footer class="relative mt-auto bg-black/60 backdrop-blur-xl border-t border-white/10">
@@ -43,7 +43,7 @@ const legalBasePath = lang === 'en' ? '/legal' : `/${lang}/legal`;
       
       <!-- Logo - Made bigger -->
       <div class="text-center sm:text-left">
-        <a href="/" class="inline-block">
+        <a href={`/${lang}/`} class="inline-block">
           <img src="/logo.png" alt="Astralo" class="h-14" />
         </a>
       </div>

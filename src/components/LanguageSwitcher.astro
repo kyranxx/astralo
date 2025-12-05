@@ -72,7 +72,7 @@ const allLangs = orderedLangs;
       {allLangs.map((code) => {
         const locale = locales[code];
         const isActive = code === lang;
-        const href = code === 'en' ? '/' : `/${code}/`;
+        const href = `/${code}/`;
         
         return (
           <a

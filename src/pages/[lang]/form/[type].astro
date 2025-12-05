@@ -13,7 +13,7 @@ const horoscopeTypes = [
 ];
 
 export function getStaticPaths() {
-  const locales = getSupportedLocales().filter(l => l !== 'en');
+  const locales = getSupportedLocales(); // All languages including English at /en/form/
   const types = ['daily', 'weekly', 'monthly', 'partner'];
   
   const paths = [];
