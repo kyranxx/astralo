@@ -45,6 +45,7 @@ const horoscopeTypes = [
     price: 9.99,
     icon: "Moon",
     wordCount: "~1000 words",
+    bestValue: true,
     benefits: [
       "🗓️ Week-by-week predictions",
       "🌟 Best days of the month",
@@ -210,6 +211,11 @@ const testimonials = [
                     Popular
                   </div>
                 )}
+                {type.bestValue && (
+                  <div class="absolute -top-2 left-1/2 -translate-x-1/2 bg-gradient-to-r from-green-400 to-emerald-500 text-black text-xs font-bold px-3 py-0.5 rounded-full">
+                    Best Value
+                  </div>
+                )}
                 <div class="flex flex-col h-full text-center">
                   <!-- Icon & Title -->
                   <div class="mb-3 sm:mb-4">
@@ -232,11 +238,11 @@ const testimonials = [
                     </div>
                   </div>
 
-                  <!-- Benefits -->
-                  <div class="hidden sm:block space-y-1.5 text-xs text-white/70 mb-4 flex-1">
+                  <!-- Benefits - Vertically aligned -->
+                  <div class="hidden sm:flex flex-col gap-1.5 text-xs text-white/70 mb-4 flex-1 text-left pl-2">
                     {type.benefits.slice(0, 4).map((benefit) => (
-                      <div class="text-center">
-                        {benefit}
+                      <div class="flex items-start gap-1">
+                        <span>{benefit}</span>
                       </div>
                     ))}
                     {type.benefits.length > 4 && (

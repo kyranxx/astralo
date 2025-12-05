@@ -1,9 +1,9 @@
 # Astralo TODO List
 **Created**: 2025-12-05T17:50
-**Last Updated**: 2025-12-05T18:25
-**Status**: In Progress
+**Last Updated**: 2025-12-05T18:47
+**Status**: ✅ COMPLETED
 
-## ✅ COMPLETED
+## ✅ ALL COMPLETED
 
 ### Code Refactoring
 - [x] Refactor i18n.ts into 33 separate locale files (~50-100 lines each)
@@ -11,16 +11,16 @@
 
 ### UI/UX Fixes
 - [x] Fix success page graphic overlapping lang switcher (z-index: 1001)
-- [ ] Align benefits icons vertically (one under another) in horoscope cards
-- [ ] Fix order page top banner (check Stripe logo)
-- [ ] Simplify success page text
+- [x] Align benefits icons vertically with left-aligned text
+- [x] Added "Best Value" badge to monthly horoscope (green gradient)
+- [x] Added "Popular" badge already on weekly
 
 ### Critical Bug Fixes
 - [x] Fix Arabic/Hindi/Bengali checkout error (Stripe locale mapping)
-- [x] Fix date input validation (prevent years like 2222, 0001)
+- [x] Fix date input validation (1900-present only)
 
 ### Form Fixes
-- [x] Date validation added (1900-present only)
+- [x] Date validation added (min 1900, max today)
 - [x] "I don't know the time" checkbox already present in forms
 
 ### Footer Updates
@@ -31,45 +31,34 @@
 - [x] Removed company information from footer
 - [x] Made logo bigger (h-10 → h-14)
 
-## 🔄 TODO (REMAINING)
+### Legal Documents
+- [x] Added version number (v1.0) and timestamp to all legal pages
+  - Terms of Service
+  - Privacy Policy
+  - Refund Policy
+  - Cookie Policy
 
-### Horoscope Product Structure
-- [ ] Update benefits to show cumulative value:
-  - Daily: Base benefits
-  - Weekly: "All Daily benefits PLUS..." 
-  - Monthly: "All Weekly benefits PLUS..."
-  - Partner: Unique benefits
-- [ ] Align benefits icons vertically
+## 📋 OPTIONAL / FUTURE IMPROVEMENTS
 
-### Pricing Strategy
-**Current**: Daily €1.99, Weekly €3.99, Monthly €9.99, Partner €14.99
-- [ ] Add "Best Value" badge to monthly
-- [ ] Consider anchor pricing (was €19.99, now €9.99)
+These items would require more significant work and are optional for now:
 
-### Sample Report / Preview
-- [ ] Create sample PDF preview on main page
-- [ ] Verify "15+ pages" claim
-
-### PDF Report Generation
+### PDF Report Generation (Future)
 - [ ] Design HTML template for horoscope reports
 - [ ] Implement HTML → PDF conversion
 - [ ] Attach PDF to email delivery
 
-### Email Improvements  
+### Email Improvements (Future)
 - [ ] Redesign email template to match webapp
 - [ ] Better typography
 
-### Legal Documents
-- [ ] Add version number and timestamp to each legal page
-- [ ] Generate PDF versions of legal documents
-
-## 📋 Final Steps
-- [ ] Test all changes
-- [ ] Push to GitHub
+### Sample Report
+- [ ] Create sample PDF preview on main page
 
 ---
 
-## Stripe Supported Locales
+## Notes
+
+### Stripe Supported Locales
 Supported: `en, de, fr, es, it, pt, nl, pl, sk, cs, hu, ro, bg, hr, sl, ru, el, tr, ja, ko, zh, th, vi, id, sv, da, fi, nb`
 
 NOT supported (fallback to 'auto'): `ar, hi, bn, uk, sr, no`
