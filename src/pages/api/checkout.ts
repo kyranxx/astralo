@@ -6,10 +6,10 @@ export const GET: APIRoute = async () => {
 };
 
 const products = {
-    daily: { name: 'Denný Horoskop', price: 199 },
-    weekly: { name: 'Týždenný Horoskop', price: 399 },
-    monthly: { name: 'Mesačný Horoskop', price: 999 },
-    partner: { name: 'Partnerský Horoskop', price: 1499 },
+    daily: { name: 'Daily Horoscope', price: 199 },
+    weekly: { name: 'Weekly Horoscope', price: 399 },
+    monthly: { name: 'Monthly Horoscope', price: 999 },
+    partner: { name: 'Partner Horoscope', price: 1499 },
 };
 
 export const POST: APIRoute = async ({ request }) => {
