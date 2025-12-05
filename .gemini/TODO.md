@@ -1,68 +1,63 @@
-# Astralo TODO List
-**Created**: 2025-12-05T17:50
-**Last Updated**: 2025-12-05T19:00
-**Status**: ✅ ALL COMPLETE
+# Astralo TODO - Next Chat
 
-## ✅ ALL TASKS COMPLETED
+## 🎯 PRIORITY: Consolidate Page Architecture
 
-### Code Refactoring
-- [x] Split i18n.ts into 33 separate locale files (~50-100 lines each)
-- [x] Optimized language switcher order (major markets first)
+### Problem
+Currently there are duplicate pages for English vs other languages:
+- `/index.astro` (English, hardcoded) vs `/[lang]/index.astro` (other langs, uses translations)
+- `/form/[type].astro` (English, hardcoded) vs `/[lang]/form/[type].astro` (other langs, uses translations)
 
-### UI/UX Fixes  
-- [x] Fixed success page z-index overlap
-- [x] Aligned benefits icons vertically with left-aligned text
-- [x] Added "Best Value" badge to monthly (green)
-- [x] "Popular" badge on weekly (amber)
+This causes:
+1. ❌ Changes in one don't appear in the other
+2. ❌ 2x maintenance work
+3. ❌ Features get out of sync (e.g., "What's included" section was missing in Turkish)
 
-### Bug Fixes
-- [x] Fixed Arabic/Hindi/Bengali Stripe checkout (locale fallback to 'auto')
-- [x] Added date validation (1900-present only)
-- [x] Fixed PDF font fetching (use jsdelivr CDN instead of GitHub raw)
-- [x] Fixed contact page import paths
+### Solution
+Consolidate to **single files** that handle ALL languages (like success.astro now does):
 
-### Form Improvements
-- [x] Date validation implemented
-- [x] "I don't know time" checkbox present
+1. **Delete** `/form/[type].astro` and update `/[lang]/form/[type].astro` to:
+   - Include 'en' in getStaticPaths()
+   - Handle English at `/en/form/[type]` instead of `/form/[type]`
+   
+2. **Delete** `/index.astro` and update `/[lang]/index.astro` to:
+   - Include 'en' in getStaticPaths()
+   - Handle English at `/en/` or redirect `/` to `/en/`
 
-### Footer Updates
-- [x] Removed email - replaced with contact form link
-- [x] Created contact form page (/legal/contact)
-- [x] Created contact API (sends to blanarikdaniel@gmail.com)
-- [x] Removed company information
-- [x] Removed "Slovakia, EU" text
-- [x] Made logo bigger (h-14)
+3. **Update redirects/links** throughout the app to use the new paths
 
-### Legal Documents
-- [x] Added version number (v1.0) to all legal pages
+### Files to Modify
+- `src/pages/[lang]/index.astro` - Add 'en' to getStaticPaths, sync all features
+- `src/pages/[lang]/form/[type].astro` - Add 'en' to getStaticPaths
+- `src/pages/index.astro` - DELETE or redirect to /en/
+- `src/pages/form/[type].astro` - DELETE
+- `src/components/Footer.astro` - Update legal links
+- `src/components/LanguageSwitcher.astro` - Update paths
+- Check all internal links
 
-### Pricing Strategy
-- [x] Anchor pricing implemented (crossed-out original prices)
-- [x] "Best Value" badge on monthly
-- [x] "Popular" badge on weekly
+### Reference: How success.astro works now
+```typescript
+// Reads lang from URL params
+const langParam = Astro.url.searchParams.get('lang') || 'en';
+const currentLang = (isValidLocale(langParam) ? langParam : 'en') as SupportedLocale;
+const t = getTranslations(currentLang);
+```
 
-### PDF Generation (Already Implemented)
-- [x] PDF generator exists (src/lib/pdf-generator.ts)
-- [x] Legal documents generated as PDFs
-- [x] PDFs attached to customer emails
-
-### Email Template (Already Implemented)
-- [x] Beautiful HTML email template (src/pages/api/send-email.ts)
-- [x] Gradient header with logo
-- [x] Formatted horoscope content
-- [x] Legal document attachments
-- [x] Multi-language support
+### What was fixed this session
+- ✅ Success page now uses translations (single file, all languages)
+- ✅ Checkout passes lang to success URL
+- ✅ Form page [lang] version now has "What's included" section
+- ✅ All 33 locales have form.description and benefits
+- ✅ Footer cleaned up (no Slovakia text, no email)
+- ✅ Hero features line removed
+- ✅ PDF font fetching fixed
+- ✅ Contact page imports fixed
 
 ---
 
+## Languages Count
+- **33 total** (English + 32 others)
+- Files: `src/locales/*.ts` (excluding types.ts and index.ts)
+
 ## Notes
-
-### Current Pricing (50% discount shown)
-- Daily: €3.99 → €1.99
-- Weekly: €7.99 → €3.99 (Popular)
-- Monthly: €19.99 → €9.99 (Best Value)
-- Partner: €29.99 → €14.99
-
-### Stripe Supported Locales
-Supported: `en, de, fr, es, it, pt, nl, pl, sk, cs, hu, ro, bg, hr, sl, ru, el, tr, ja, ko, zh, th, vi, id, sv, da, fi, nb`
-NOT supported (fallback to 'auto'): `ar, hi, bn, uk, sr, no`
+- Legal pages in English are fine (only Slovakia needs Slovak first)
+- Success page has inline translations for 10 languages, fallback to English for others
