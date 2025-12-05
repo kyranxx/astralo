@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const pl: Translations = {
     meta: {
         title: 'Astralo - Profesjonalne Horoskopy | Dokładne Prognozy Astrologiczne',
-        description: 'Otrzymaj spersonalizowany horoskop stworzony z wykorzystaniem zaawansowanej technologii AI. Dokładne prognozy dla horoskopów dziennych, tygodniowych, miesięcznych i partnerskich.',
-        keywords: 'horoskop, astrologia, zodiak, prognozy, spersonalizowany horoskop, horoskop AI',
+        description: 'Otrzymaj spersonalizowany horoskop. Dokładne prognozy dla horoskopów dziennych, tygodniowych, miesięcznych i partnerskich.',
+        keywords: 'horoskop, astrologia, zodiak, prognozy, spersonalizowany horoskop',
     },
     header: {
-        badge: 'Horoskopy AI',
+        badge: 'Spersonalizowane Horoskopy',
         online: 'Online',
     },
     promo: {

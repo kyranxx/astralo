@@ -1,4 +1,147 @@
 ---
-// Redirect /{lang}/legal/privacy to /legal/privacy
-return Astro.redirect('/legal/privacy', 301);
+import Layout from '../../../layouts/Layout.astro';
+import Footer from '../../../components/Footer.astro';
+import LanguageSwitcher from '../../../components/LanguageSwitcher.astro';
+import { ArrowLeft, Shield } from 'lucide-astro';
+import { getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../lib/i18n';
+
+export function getStaticPaths() {
+  const locales = getSupportedLocales();
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+
+const backText: Record<string, string> = {
+  en: 'Back', sk: 'Späť', cs: 'Zpět', de: 'Zurück', fr: 'Retour', es: 'Volver',
+  it: 'Indietro', pt: 'Voltar', nl: 'Terug', pl: 'Wróć', ru: 'Назад', ja: '戻る',
+  zh: '返回', ko: '뒤로', sr: 'Nazad', hu: 'Vissza', ro: 'Înapoi', bg: 'Назад',
+  uk: 'Назад', tr: 'Geri', ar: 'رجوع', hi: 'वापस', th: 'กลับ', vi: 'Quay lại',
+  da: 'Tilbage', fi: 'Takaisin', no: 'Tilbake', sv: 'Tillbaka', el: 'Πίσω',
+  hr: 'Natrag', sl: 'Nazaj', id: 'Kembali', bn: 'ফিরে যান'
+};
 ---
+
+<Layout title="Privacy Policy - Astralo" lang={currentLang}>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">{backText[currentLang] || 'Back'}</span>
+          </a>
+          <a href={`/${currentLang}/`}><img src="/logo.png" alt="Astralo" class="h-9" /></a>
+          <LanguageSwitcher lang={currentLang} />
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 px-4 py-8 sm:py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-strong rounded-2xl p-6 sm:p-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <Shield class="w-6 h-6 text-blue-400" />
+            </div>
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-bold text-white">Privacy Policy</h1>
+              <p class="text-white/50 text-sm">Version 1.0 • Last updated: December 5, 2024</p>
+            </div>
+          </div>
+          
+          <div class="prose prose-invert max-w-none space-y-6 text-white/80 text-sm sm:text-base">
+            
+            <div class="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4 mb-6">
+              <p class="text-blue-200 text-sm">
+                <strong>GDPR Compliance:</strong> This policy complies with the EU General Data Protection Regulation (GDPR). 
+                As a Slovak company, we adhere to EU data protection standards.
+              </p>
+            </div>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">1. Data Controller</h2>
+              <p>
+                <strong>Apollo Tech s.r.o.</strong><br />
+                Slovakia, European Union<br />
+                Email: info@astralo.online
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">2. Data We Collect</h2>
+              <p>We collect the following personal data:</p>
+              
+              <h3 class="text-lg font-semibold text-white mt-4 mb-2">Essential Data (Required)</h3>
+              <ul class="list-disc pl-6 space-y-1">
+                <li><strong>Email address</strong> - For delivery of horoscope and order confirmation</li>
+                <li><strong>Name</strong> - For personalization of horoscope</li>
+                <li><strong>Date of birth</strong> - Required for astrological calculations</li>
+                <li><strong>Time of birth</strong> - For accurate Rising Sign calculation</li>
+                <li><strong>Place of birth</strong> - For house placement calculations</li>
+              </ul>
+              
+              <h3 class="text-lg font-semibold text-white mt-4 mb-2">Payment Data</h3>
+              <ul class="list-disc pl-6 space-y-1">
+                <li>Payment processing is handled by <strong>Stripe</strong></li>
+                <li>We do not store credit card numbers</li>
+                <li>Country and postal code may be collected for tax purposes</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">3. Legal Basis for Processing</h2>
+              <p>Under GDPR, we process your data based on:</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li><strong>Contract fulfillment</strong> - To provide the horoscope service you purchased</li>
+                <li><strong>Legal obligation</strong> - To comply with tax and accounting requirements</li>
+                <li><strong>Legitimate interest</strong> - To improve our services and prevent fraud</li>
+                <li><strong>Consent</strong> - For marketing communications (optional)</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">4. Your Rights (GDPR)</h2>
+              <p>Under GDPR, you have the right to:</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li><strong>Access</strong> - Request a copy of your personal data</li>
+                <li><strong>Rectification</strong> - Correct inaccurate data</li>
+                <li><strong>Erasure</strong> - Request deletion ("right to be forgotten")</li>
+                <li><strong>Portability</strong> - Receive your data in a portable format</li>
+                <li><strong>Objection</strong> - Object to processing based on legitimate interest</li>
+                <li><strong>Withdrawal</strong> - Withdraw consent at any time</li>
+              </ul>
+              <p class="mt-3">
+                To exercise these rights, contact us at: <strong>info@astralo.online</strong>
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">5. Data Security</h2>
+              <p>We implement appropriate security measures including:</p>
+              <ul class="list-disc pl-6 space-y-1 mt-2">
+                <li>SSL/TLS encryption for all data transmission</li>
+                <li>Secure server infrastructure</li>
+                <li>Limited employee access to personal data</li>
+                <li>Regular security audits</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">6. Contact</h2>
+              <p>
+                For privacy-related inquiries:<br />
+                <strong>Email:</strong> info@astralo.online<br />
+                <strong>Company:</strong> Apollo Tech s.r.o., Slovakia
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer lang={currentLang} />
+  </div>
+</Layout>

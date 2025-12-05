@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const id: Translations = {
-    meta: { title: 'Astralo - Horoskop Profesional', description: 'Dapatkan horoskop pribadi dengan teknologi AI.', keywords: 'horoskop, astrologi, zodiak' },
-    header: { badge: 'AI Horoskop', online: 'Online' },
+    meta: { title: 'Astralo - Horoskop Profesional', description: 'Dapatkan horoskop pribadi. Prediksi akurat untuk tanda zodiak Anda.', keywords: 'horoskop, astrologi, zodiak, horoskop pribadi' },
+    header: { badge: 'Horoskop Pribadi', online: 'Online' },
     promo: { offer: 'PENAWARAN TERBATAS: Diskon 50%!', delivery: 'Pengiriman instan', customers: '50.000+ pelanggan puas', secure: 'Pembayaran aman' },
     hero: { title: 'Horoskop Pribadi Anda', subtitle: 'Akhirnya horoskop yang akurat • Dibuat khusus untuk Anda', features: '✨ Pengiriman instan • 🔒 Pembayaran aman • ⭐ 50.000+ pelanggan' },
     products: { daily: { name: 'Horoskop Harian', description: 'Prediksi detail untuk 24 jam ke depan', wordCount: '~200 kata', benefits: ['🍀 Angka keberuntungan', '📅 Waktu terbaik', '💎 Warna disarankan', '⭐ Saran hari ini'] }, weekly: { name: 'Horoskop Mingguan', description: 'Tinjauan minggu dengan tanggal penting', wordCount: '~400 kata', benefits: ['🎯 Hari keberuntungan', '💰 Ramalan keuangan', '❤️ Cinta', '💼 Karir'] }, monthly: { name: 'Horoskop Bulanan', description: 'Analisis bulanan dengan acara utama', wordCount: '~1000 kata', benefits: ['🌟 Hari terbaik', '💎 Batu keberuntungan', '🌈 Gelombang energi', '🎨 Warna'] }, partner: { name: 'Horoskop Pasangan', description: 'Analisis kompatibilitas', wordCount: '~1200 kata', benefits: ['💕 Kompatibilitas', '🔮 Kekuatan', '⚠️ Area pertumbuhan', '💫 Masa depan bersama'] } },

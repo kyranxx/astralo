@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const ja: Translations = {
-    meta: { title: 'Astralo - プロフェッショナル星占い', description: 'AI技術でパーソナライズされた星占いを手に入れましょう。', keywords: '星占い、占星術、星座' },
-    header: { badge: 'AI星占い', online: 'オンライン' },
+    meta: { title: 'Astralo - プロフェッショナル星占い', description: 'パーソナライズされた星占いを手に入れましょう。毎日、毎週、毎月、相性占いの正確な予測。', keywords: '星占い、占星術、星座, パーソナル星占い' },
+    header: { badge: 'パーソナル星占い', online: 'オンライン' },
     promo: { offer: '期間限定: 50%オフ!', delivery: '即時配信', customers: '50,000人以上の満足顧客', secure: '安全な支払い' },
     hero: { title: 'あなたの個人星占い', subtitle: 'ついに正確な星占い • あなた専用に作成', features: '✨ 即時配信 • 🔒 安全な支払い • ⭐ 50,000人以上の顧客' },
     products: { daily: { name: '今日の運勢', description: '次の24時間の詳細な予測', wordCount: '約200語', benefits: ['🍀 ラッキーナンバー', '📅 最適な時間', '💎 おすすめの色', '⭐ 今日のアドバイス'] }, weekly: { name: '週間運勢', description: '重要な日付を含む週の概要', wordCount: '約400語', benefits: ['🎯 ラッキーデー', '💰 金運予報', '❤️ 恋愛', '💼 仕事運'] }, monthly: { name: '月間運勢', description: '主要イベントを含む月間分析', wordCount: '約1000語', benefits: ['🌟 最良の日', '💎 ラッキーストーン', '🌈 エネルギー波', '🎨 ラッキーカラー'] }, partner: { name: '相性占い', description: '相性分析', wordCount: '約1200語', benefits: ['💕 相性度', '🔮 強み', '⚠️ 成長分野', '💫 共有の未来'] } },

@@ -1,5 +1,221 @@
 ---
-// Redirect /{lang}/legal/terms to /legal/terms
-// Legal pages are only in English for now
-return Astro.redirect('/legal/terms', 301);
+import Layout from '../../../layouts/Layout.astro';
+import Footer from '../../../components/Footer.astro';
+import LanguageSwitcher from '../../../components/LanguageSwitcher.astro';
+import { ArrowLeft, Scale } from 'lucide-astro';
+import { getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../lib/i18n';
+
+export function getStaticPaths() {
+  const locales = getSupportedLocales();
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+
+// Back button text by language
+const backText: Record<string, string> = {
+  en: 'Back', sk: 'Späť', cs: 'Zpět', de: 'Zurück', fr: 'Retour', es: 'Volver',
+  it: 'Indietro', pt: 'Voltar', nl: 'Terug', pl: 'Wróć', ru: 'Назад', ja: '戻る',
+  zh: '返回', ko: '뒤로', sr: 'Nazad', hu: 'Vissza', ro: 'Înapoi', bg: 'Назад',
+  uk: 'Назад', tr: 'Geri', ar: 'رجوع', hi: 'वापस', th: 'กลับ', vi: 'Quay lại',
+  da: 'Tilbage', fi: 'Takaisin', no: 'Tilbake', sv: 'Tillbaka', el: 'Πίσω',
+  hr: 'Natrag', sl: 'Nazaj', id: 'Kembali', bn: 'ফিরে যান'
+};
 ---
+
+<Layout 
+  title="Terms of Service - Astralo"
+  lang={currentLang}
+>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">{backText[currentLang] || 'Back'}</span>
+          </a>
+          <a href={`/${currentLang}/`}><img src="/logo.png" alt="Astralo" class="h-9" /></a>
+          <LanguageSwitcher lang={currentLang} />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content (in English) -->
+    <main class="flex-1 px-4 py-8 sm:py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-strong rounded-2xl p-6 sm:p-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center">
+              <Scale class="w-6 h-6 text-amber-400" />
+            </div>
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-bold text-white">Terms of Service</h1>
+              <p class="text-white/50 text-sm">Version 1.0 • Last updated: December 5, 2024</p>
+            </div>
+          </div>
+          
+          <div class="prose prose-invert max-w-none space-y-6 text-white/80 text-sm sm:text-base">
+            
+            <div class="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mb-6">
+              <p class="text-amber-200 text-sm">
+                <strong>Important:</strong> This agreement is governed by the laws of the Slovak Republic and the European Union. 
+                By using our services, you agree to submit to the exclusive jurisdiction of Slovak courts.
+              </p>
+            </div>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">1. Company Information</h2>
+              <p>
+                <strong>Apollo Tech s.r.o.</strong><br />
+                Registered in Slovakia (EU)<br />
+                Email: info@astralo.online<br />
+                Website: astralo.online
+              </p>
+              <p class="mt-2">
+                These Terms of Service govern your use of the Astralo website and services operated by Apollo Tech s.r.o., 
+                a company registered under the laws of the Slovak Republic.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">2. Service Description</h2>
+              <p>
+                Astralo provides personalized horoscope services including:
+              </p>
+              <ul class="list-disc pl-6 space-y-1 mt-2">
+                <li>Daily Horoscope (€1.99)</li>
+                <li>Weekly Horoscope (€3.99)</li>
+                <li>Monthly Horoscope (€9.99)</li>
+                <li>Partner Compatibility Horoscope (€14.99)</li>
+              </ul>
+              <p class="mt-3">
+                All horoscopes are personalized based on the birth data you provide and are delivered digitally via email as PDF documents.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">3. Entertainment Purpose Disclaimer</h2>
+              <p>
+                <strong>Our horoscope services are provided for entertainment purposes only.</strong> 
+                Astrological readings should not be relied upon for making important life decisions including but not limited to 
+                financial, medical, legal, or relationship decisions.
+              </p>
+              <p class="mt-2">
+                We make no guarantees regarding the accuracy or reliability of astrological predictions. 
+                Users acknowledge that astrology is not a science and results may vary.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">4. User Requirements</h2>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>You must be at least 18 years old or have parental consent</li>
+                <li>You must provide accurate birth information (date, time, place)</li>
+                <li>You must provide a valid email address for delivery</li>
+                <li>You agree not to redistribute or resell our content</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">5. Payment Terms</h2>
+              <p>
+                All payments are processed securely through <strong>Stripe</strong>, a certified PCI-DSS Level 1 payment processor.
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Prices are displayed in Euros (€) and include all applicable taxes</li>
+                <li>Payment is required before horoscope generation and delivery</li>
+                <li>We accept major credit/debit cards (Visa, Mastercard, etc.)</li>
+                <li>Invoices are provided in English and sent to your email</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">6. Delivery</h2>
+              <p>
+                Upon successful payment, your personalized horoscope will be:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Generated within 2-5 minutes</li>
+                <li>Delivered as a PDF to your email address</li>
+                <li>Available for download for 14 days</li>
+              </ul>
+              <p class="mt-2">
+                If you do not receive your horoscope within 30 minutes, please contact us at info@astralo.online.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">7. Refund Policy</h2>
+              <p>
+                Due to the digital and personalized nature of our products, refunds are handled on a case-by-case basis. 
+                Please see our <a href={`/${currentLang}/legal/refund`} class="text-amber-400 hover:underline">Refund Policy</a> for full details.
+              </p>
+              <p class="mt-2">
+                In accordance with EU consumer protection laws, you have the right to withdraw from a purchase within 14 days, 
+                unless the digital content has already been delivered with your prior consent.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">8. Intellectual Property</h2>
+              <p>
+                All content including horoscope readings, website design, logos, and software is owned by Apollo Tech s.r.o. 
+                and protected by Slovak and international copyright laws.
+              </p>
+              <p class="mt-2">
+                You may not copy, distribute, or commercially use any content without written permission.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">9. Limitation of Liability</h2>
+              <p>
+                To the maximum extent permitted by Slovak and EU law:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Apollo Tech s.r.o. shall not be liable for any indirect, incidental, or consequential damages</li>
+                <li>Our maximum liability is limited to the amount you paid for the service</li>
+                <li>We do not guarantee uninterrupted or error-free service</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">10. Governing Law</h2>
+              <p>
+                These Terms are governed by and construed in accordance with the laws of the <strong>Slovak Republic</strong> 
+                and applicable European Union regulations.
+              </p>
+              <p class="mt-2">
+                Any disputes shall be resolved exclusively in the courts of the Slovak Republic, 
+                without prejudice to your rights under EU consumer protection laws.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">11. Changes to Terms</h2>
+              <p>
+                We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. 
+                Continued use of our services constitutes acceptance of modified terms.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">12. Contact</h2>
+              <p>
+                For questions about these Terms, please contact us at:<br />
+                <strong>Email:</strong> info@astralo.online<br />
+                <strong>Company:</strong> Apollo Tech s.r.o., Slovakia
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer lang={currentLang} />
+  </div>
+</Layout>

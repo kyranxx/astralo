@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const hr: Translations = {
-    meta: { title: 'Astralo - Profesionalni Horoskopi', description: 'Dobijte personalizirani horoskop s AI tehnologijom.', keywords: 'horoskop, astrologija, zodijak' },
-    header: { badge: 'AI Horoskopi', online: 'Online' },
+    meta: { title: 'Astralo - Profesionalni Horoskopi', description: 'Dobijte personalizirani horoskop. Točna predviđanja za vaš znak zodiaka.', keywords: 'horoskop, astrologija, zodijak, personalizirani horoskop' },
+    header: { badge: 'Personalizirani Horoskopi', online: 'Online' },
     promo: { offer: 'OGRANIČENA PONUDA: 50% popusta!', delivery: 'Trenutna dostava', customers: '50.000+ zadovoljnih kupaca', secure: 'Sigurno plaćanje' },
     hero: { title: 'Vaš Osobni Horoskop', subtitle: 'Konačno točan horoskop • Kreiran posebno za vas', features: '✨ Trenutna dostava • 🔒 Sigurna plaćanja • ⭐ 50.000+ kupaca' },
     products: { daily: { name: 'Dnevni Horoskop', description: 'Detaljna predviđanja za sljedećih 24 sata', wordCount: '~200 riječi', benefits: ['🍀 Sretni broj', '📅 Najbolje vrijeme', '💎 Preporučena boja', '⭐ Dnevni savjet'] }, weekly: { name: 'Tjedni Horoskop', description: 'Pregled tjedna s važnim datumima', wordCount: '~400 riječi', benefits: ['🎯 Sretni dan', '💰 Financijska prognoza', '❤️ Ljubav', '💼 Karijera'] }, monthly: { name: 'Mjesečni Horoskop', description: 'Mjesečna analiza s ključnim događajima', wordCount: '~1000 riječi', benefits: ['🌟 Najbolji dan', '💎 Sretno kamenje', '🌈 Energetski valovi', '🎨 Boje'] }, partner: { name: 'Partnerski Horoskop', description: 'Analiza kompatibilnosti', wordCount: '~1200 riječi', benefits: ['💕 Kompatibilnost', '🔮 Snage', '⚠️ Područja rasta', '💫 Zajednička budućnost'] } },

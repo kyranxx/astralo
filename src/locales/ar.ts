@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const ar: Translations = {
-    meta: { title: 'Astralo - أبراج احترافية', description: 'احصل على برجك المخصص بتقنية الذكاء الاصطناعي.', keywords: 'برج، فلك، أبراج' },
-    header: { badge: 'أبراج AI', online: 'متصل' },
+    meta: { title: 'Astralo - أبراج احترافية', description: 'احصل على برجك المخصص. تنبؤات دقيقة لبرجك.', keywords: 'برج، فلك، أبراج, برج شخصي' },
+    header: { badge: 'أبراج شخصية', online: 'متصل' },
     promo: { offer: 'عرض محدود: خصم 50%!', delivery: 'توصيل فوري', customers: '+50,000 عميل راضٍ', secure: 'دفع آمن' },
     hero: { title: 'برجك الشخصي', subtitle: 'أخيراً برج دقيق • مصمم خصيصاً لك', features: '✨ توصيل فوري • 🔒 دفع آمن • ⭐ +50,000 عميل' },
     products: { daily: { name: 'البرج اليومي', description: 'توقعات مفصلة للـ 24 ساعة القادمة', wordCount: '~200 كلمة', benefits: ['🍀 رقم الحظ', '📅 أفضل وقت', '💎 اللون الموصى به', '⭐ نصيحة اليوم'] }, weekly: { name: 'البرج الأسبوعي', description: 'نظرة على الأسبوع مع التواريخ المهمة', wordCount: '~400 كلمة', benefits: ['🎯 يوم الحظ', '💰 توقعات مالية', '❤️ الحب', '💼 المهنة'] }, monthly: { name: 'البرج الشهري', description: 'تحليل شهري مع الأحداث الرئيسية', wordCount: '~1000 كلمة', benefits: ['🌟 أفضل يوم', '💎 أحجار الحظ', '🌈 موجات الطاقة', '🎨 الألوان'] }, partner: { name: 'برج الشريك', description: 'تحليل التوافق', wordCount: '~1200 كلمة', benefits: ['💕 التوافق', '🔮 نقاط القوة', '⚠️ مجالات النمو', '💫 مستقبل مشترك'] } },

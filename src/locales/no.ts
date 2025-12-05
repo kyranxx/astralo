@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const no: Translations = {
-    meta: { title: 'Astralo - Profesjonelle Horoskoper', description: 'Få ditt personlige horoskop med AI-teknologi.', keywords: 'horoskop, astrologi, stjernetegn' },
-    header: { badge: 'AI Horoskop', online: 'Online' },
+    meta: { title: 'Astralo - Profesjonelle Horoskoper', description: 'Få ditt personlige horoskop. Nøyaktige spådommer for ditt stjernetegn.', keywords: 'horoskop, astrologi, stjernetegn, personlig horoskop' },
+    header: { badge: 'Personlige Horoskop', online: 'Online' },
     promo: { offer: 'BEGRENSET TILBUD: 50% rabatt!', delivery: 'Umiddelbar levering', customers: '50 000+ fornøyde kunder', secure: 'Sikker betaling' },
     hero: { title: 'Ditt Personlige Horoskop', subtitle: 'Endelig et nøyaktig horoskop • Laget spesielt for deg', features: '✨ Umiddelbar levering • 🔒 Sikre betalinger • ⭐ 50 000+ kunder' },
     products: { daily: { name: 'Daglig Horoskop', description: 'Detaljerte spådommer for de neste 24 timene', wordCount: '~200 ord', benefits: ['🍀 Lykketall', '📅 Beste tid', '💎 Anbefalt farge', '⭐ Dagens råd'] }, weekly: { name: 'Ukehoroskop', description: 'Ukeoversikt med viktige datoer', wordCount: '~400 ord', benefits: ['🎯 Lykkedag', '💰 Økonomisk prognose', '❤️ Kjærlighet', '💼 Karriere'] }, monthly: { name: 'Månedshoroskop', description: 'Månedsanalyse med viktige hendelser', wordCount: '~1000 ord', benefits: ['🌟 Beste dag', '💎 Lykkesteiner', '🌈 Energibølger', '🎨 Farger'] }, partner: { name: 'Partnerhoroskop', description: 'Kompatibilitetsanalyse', wordCount: '~1200 ord', benefits: ['💕 Kompatibilitet', '🔮 Styrker', '⚠️ Vekstområder', '💫 Felles fremtid'] } },

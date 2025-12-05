@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const nl: Translations = {
     meta: {
         title: 'Astralo - Professionele Horoscopen | Nauwkeurige Astrologische Voorspellingen',
-        description: 'Krijg je gepersonaliseerde horoscoop gemaakt met geavanceerde AI-technologie. Nauwkeurige voorspellingen voor dagelijkse, wekelijkse, maandelijkse en partner horoscopen.',
-        keywords: 'horoscoop, astrologie, sterrenbeeld, voorspellingen, gepersonaliseerde horoscoop, AI horoscoop',
+        description: 'Krijg je gepersonaliseerde horoscoop. Nauwkeurige voorspellingen voor dagelijkse, wekelijkse, maandelijkse en partner horoscopen.',
+        keywords: 'horoscoop, astrologie, sterrenbeeld, voorspellingen, gepersonaliseerde horoscoop',
     },
     header: {
-        badge: 'AI Horoscopen',
+        badge: 'Gepersonaliseerde Horoscopen',
         online: 'Online',
     },
     promo: {

@@ -46,38 +46,141 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         let currentPage = doc.addPage([595, 842]); // A4
         const { width, height } = currentPage.getSize();
         const margin = 50;
-        const fontSize = 11;
-        const lineHeight = 16;
+        const fontSize = 10;
+        const lineHeight = 15;
         const maxWidth = width - (margin * 2);
-        let y = height - margin;
 
-        // Title
-        currentPage.drawText(title, { x: margin, y, size: 18, font: boldFont, color: rgb(0, 0, 0) });
-        y -= 40;
+        // Colors matching website
+        const gold = rgb(0.984, 0.749, 0.141); // #fbbf24
+        const darkBlue = rgb(0.102, 0.102, 0.180); // #1a1a2e
+        const gray = rgb(0.4, 0.4, 0.4);
+        const black = rgb(0, 0, 0);
+
+        // Draw header on first page
+        const drawHeader = (page: any) => {
+            // Header background
+            page.drawRectangle({
+                x: 0,
+                y: height - 80,
+                width: width,
+                height: 80,
+                color: darkBlue,
+            });
+
+            // Gold accent line
+            page.drawRectangle({
+                x: 0,
+                y: height - 84,
+                width: width,
+                height: 4,
+                color: gold,
+            });
+
+            // Astralo text
+            const astraloText = 'ASTRALO';
+            const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 22);
+            page.drawText(astraloText, {
+                x: (width - astraloWidth) / 2,
+                y: height - 50,
+                size: 22,
+                font: boldFont,
+                color: gold,
+            });
+
+            // Document type
+            const typeWidth = font.widthOfTextAtSize('Legal Document', 10);
+            page.drawText('Legal Document', {
+                x: (width - typeWidth) / 2,
+                y: height - 68,
+                size: 10,
+                font: font,
+                color: rgb(0.8, 0.8, 0.8),
+            });
+        };
+
+        // Draw footer on each page
+        const drawFooter = (page: any) => {
+            // Footer line
+            page.drawLine({
+                start: { x: margin, y: 40 },
+                end: { x: width - margin, y: 40 },
+                thickness: 1,
+                color: gold,
+            });
+
+            // Footer text
+            const footerText = `© ${new Date().getFullYear()} Astralo | astralo.online | Apollo Tech s.r.o.`;
+            const footerWidth = font.widthOfTextAtSize(footerText, 8);
+            page.drawText(footerText, {
+                x: (width - footerWidth) / 2,
+                y: 25,
+                size: 8,
+                font: font,
+                color: gray,
+            });
+        };
+
+        // Draw header on first page
+        drawHeader(currentPage);
+
+        let y = height - 110; // Start below header
+
+        // Document title
+        const titleWidth = boldFont.widthOfTextAtSize(title, 18);
+        currentPage.drawText(title, {
+            x: (width - titleWidth) / 2,
+            y,
+            size: 18,
+            font: boldFont,
+            color: darkBlue,
+        });
+        y -= 15;
+
+        // Date line
+        const dateText = `Last updated: December 5, 2024`;
+        const dateWidth = font.widthOfTextAtSize(dateText, 9);
+        currentPage.drawText(dateText, {
+            x: (width - dateWidth) / 2,
+            y,
+            size: 9,
+            font: font,
+            color: gray,
+        });
+        y -= 35;
 
         const paragraphs = content.split('\n');
 
         for (const paragraph of paragraphs) {
             if (paragraph.trim() === '') {
-                y -= lineHeight;
+                y -= lineHeight / 2;
                 continue;
             }
 
             const words = paragraph.split(' ');
             let line = '';
 
+            // Check if this is a section header (starts with number and period)
+            const isSectionHeader = /^\d+\./.test(paragraph.trim());
+
             for (const word of words) {
                 const testLine = line + (line ? ' ' : '') + word;
-                const textWidth = font.widthOfTextAtSize(testLine, fontSize);
+                const textWidth = (isSectionHeader ? boldFont : font).widthOfTextAtSize(testLine, isSectionHeader ? 12 : fontSize);
 
                 if (textWidth > maxWidth) {
                     // Draw current line
-                    currentPage.drawText(line, { x: margin, y, size: fontSize, font, color: rgb(0, 0, 0) });
+                    currentPage.drawText(line, {
+                        x: margin,
+                        y,
+                        size: isSectionHeader ? 12 : fontSize,
+                        font: isSectionHeader ? boldFont : font,
+                        color: isSectionHeader ? darkBlue : black,
+                    });
                     y -= lineHeight;
                     line = word;
 
                     // Create new page if needed
-                    if (y < margin + lineHeight) {
+                    if (y < 60) {
+                        drawFooter(currentPage);
                         currentPage = doc.addPage([595, 842]);
                         y = height - margin;
                     }
@@ -88,16 +191,26 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
 
             // Draw remaining line
             if (line.trim()) {
-                currentPage.drawText(line, { x: margin, y, size: fontSize, font, color: rgb(0, 0, 0) });
-                y -= lineHeight * 1.5; // Extra space after paragraph
+                currentPage.drawText(line, {
+                    x: margin,
+                    y,
+                    size: isSectionHeader ? 12 : fontSize,
+                    font: isSectionHeader ? boldFont : font,
+                    color: isSectionHeader ? darkBlue : black,
+                });
+                y -= isSectionHeader ? lineHeight * 1.8 : lineHeight * 1.3;
             }
 
             // Create new page if needed
-            if (y < margin + lineHeight * 2) {
+            if (y < 60) {
+                drawFooter(currentPage);
                 currentPage = doc.addPage([595, 842]);
                 y = height - margin;
             }
         }
+
+        // Draw footer on last page
+        drawFooter(currentPage);
 
         return await doc.save();
     };
@@ -296,3 +409,239 @@ You can control and manage cookies in your browser settings. Please note that di
         ];
     }
 }
+
+// Horoscope PDF Generator with beautiful design
+interface HoroscopeData {
+    customerName: string;
+    productName: string;
+    productKey: string;
+    horoscopeContent: string;
+    birthDate: string;
+    birthPlace: string;
+    birthTime: string;
+    lang: string;
+}
+
+export async function generateHoroscopePDF(data: HoroscopeData): Promise<{ filename: string; content: Uint8Array }> {
+    const { customerName, productName, horoscopeContent, birthDate, birthPlace, birthTime, lang } = data;
+
+    const doc = await PDFDocument.create();
+    doc.registerFontkit(fontkit);
+
+    // Try to get custom fonts, fallback to standard
+    let font, boldFont;
+    try {
+        const fontBytes = await getFont();
+        const boldFontBytes = await getBoldFont();
+        if (fontBytes && boldFontBytes) {
+            font = await doc.embedFont(fontBytes);
+            boldFont = await doc.embedFont(boldFontBytes);
+        } else {
+            throw new Error('Custom fonts not available');
+        }
+    } catch {
+        font = await doc.embedFont(StandardFonts.Helvetica);
+        boldFont = await doc.embedFont(StandardFonts.HelveticaBold);
+    }
+
+    let page = doc.addPage([595, 842]); // A4
+    const { width, height } = page.getSize();
+    const margin = 50;
+    let y = height - margin;
+
+    // Colors
+    const gold = rgb(0.984, 0.749, 0.141); // #fbbf24
+    const darkBlue = rgb(0.102, 0.102, 0.180); // #1a1a2e
+    const gray = rgb(0.4, 0.4, 0.4);
+    const black = rgb(0, 0, 0);
+
+    // Draw header background
+    page.drawRectangle({
+        x: 0,
+        y: height - 120,
+        width: width,
+        height: 120,
+        color: darkBlue,
+    });
+
+    // Draw gold accent line
+    page.drawRectangle({
+        x: 0,
+        y: height - 124,
+        width: width,
+        height: 4,
+        color: gold,
+    });
+
+    // Title in header
+    const titleText = 'ASTRALO';
+    const titleWidth = boldFont.widthOfTextAtSize(titleText, 28);
+    page.drawText(titleText, {
+        x: (width - titleWidth) / 2,
+        y: height - 55,
+        size: 28,
+        font: boldFont,
+        color: gold,
+    });
+
+    // Subtitle
+    const subtitleText = lang === 'sk' ? 'Váš Osobný Horoskop' : 'Your Personal Horoscope';
+    const subtitleWidth = font.widthOfTextAtSize(subtitleText, 14);
+    page.drawText(subtitleText, {
+        x: (width - subtitleWidth) / 2,
+        y: height - 75,
+        size: 14,
+        font: font,
+        color: rgb(0.9, 0.9, 0.9),
+    });
+
+    // Product name
+    const productWidth = boldFont.widthOfTextAtSize(productName, 18);
+    page.drawText(productName, {
+        x: (width - productWidth) / 2,
+        y: height - 105,
+        size: 18,
+        font: boldFont,
+        color: gold,
+    });
+
+    y = height - 160;
+
+    // Customer info section
+    const infoLabels = lang === 'sk'
+        ? { name: 'Meno:', birth: 'Dátum narodenia:', place: 'Miesto:', time: 'Čas:' }
+        : { name: 'Name:', birth: 'Birth Date:', place: 'Place:', time: 'Time:' };
+
+    page.drawText(`${infoLabels.name} ${customerName}`, { x: margin, y, size: 11, font: boldFont, color: black });
+    y -= 18;
+
+    if (birthDate) {
+        page.drawText(`${infoLabels.birth} ${birthDate}`, { x: margin, y, size: 10, font, color: gray });
+        y -= 16;
+    }
+    if (birthPlace) {
+        page.drawText(`${infoLabels.place} ${birthPlace}`, { x: margin, y, size: 10, font, color: gray });
+        y -= 16;
+    }
+    if (birthTime) {
+        page.drawText(`${infoLabels.time} ${birthTime}`, { x: margin, y, size: 10, font, color: gray });
+        y -= 16;
+    }
+
+    // Decorative line
+    y -= 10;
+    page.drawLine({
+        start: { x: margin, y },
+        end: { x: width - margin, y },
+        thickness: 1,
+        color: gold,
+    });
+    y -= 25;
+
+    // Parse and format horoscope content
+    const cleanContent = horoscopeContent
+        .replace(/#{1,6}\s/g, '') // Remove markdown headers
+        .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold markdown
+        .replace(/\*(.*?)\*/g, '$1'); // Remove italic markdown
+
+    const paragraphs = cleanContent.split('\n\n').filter(p => p.trim());
+    const maxWidth = width - (margin * 2);
+    const fontSize = 10;
+    const lineHeight = 14;
+
+    for (const paragraph of paragraphs) {
+        const words = paragraph.replace(/\n/g, ' ').split(' ').filter(w => w);
+        let line = '';
+
+        // Check for special sections (emoji at start)
+        const isSpecial = paragraph.match(/^(🍀|📅|💎|⭐|🌟|💰|❤️|💼|🎯)/);
+
+        if (isSpecial) {
+            // Draw special section with gold background
+            const boxY = y + 5;
+            const boxHeight = 28;
+            page.drawRectangle({
+                x: margin - 5,
+                y: boxY - boxHeight + 5,
+                width: maxWidth + 10,
+                height: boxHeight,
+                color: rgb(0.996, 0.953, 0.780), // Light gold
+                borderColor: gold,
+                borderWidth: 1,
+            });
+        }
+
+        for (const word of words) {
+            const testLine = line + (line ? ' ' : '') + word;
+            // Handle emojis in width calculation
+            const testWidth = font.widthOfTextAtSize(testLine.replace(/[\u{1F300}-\u{1F9FF}]/gu, 'XX'), fontSize);
+
+            if (testWidth > maxWidth) {
+                page.drawText(line, { x: margin, y, size: fontSize, font, color: black });
+                y -= lineHeight;
+                line = word;
+
+                // New page if needed
+                if (y < margin + 50) {
+                    page = doc.addPage([595, 842]);
+                    y = height - margin;
+                }
+            } else {
+                line = testLine;
+            }
+        }
+
+        if (line.trim()) {
+            page.drawText(line, { x: margin, y, size: fontSize, font, color: black });
+            y -= lineHeight * 1.8;
+        }
+
+        // New page if needed
+        if (y < margin + 50) {
+            page = doc.addPage([595, 842]);
+            y = height - margin;
+        }
+    }
+
+    // Footer
+    const footerText = lang === 'sk' ? 'Nech vás hviezdy vedú na vašej ceste ✨' : 'May the stars guide you on your journey ✨';
+    y -= 20;
+    page.drawLine({
+        start: { x: margin, y: y + 10 },
+        end: { x: width - margin, y: y + 10 },
+        thickness: 1,
+        color: gold,
+    });
+    y -= 10;
+
+    const footerWidth = font.widthOfTextAtSize(footerText.replace('✨', ''), 10);
+    page.drawText(footerText.replace('✨', ''), {
+        x: (width - footerWidth) / 2,
+        y,
+        size: 10,
+        font,
+        color: gray,
+    });
+
+    y -= 20;
+    const copyrightText = `© ${new Date().getFullYear()} Astralo | astralo.online`;
+    const copyrightWidth = font.widthOfTextAtSize(copyrightText, 8);
+    page.drawText(copyrightText, {
+        x: (width - copyrightWidth) / 2,
+        y,
+        size: 8,
+        font,
+        color: gray,
+    });
+
+    const pdfBytes = await doc.save();
+
+    // Generate filename
+    const dateStr = new Date().toISOString().split('T')[0];
+    const filename = lang === 'sk'
+        ? `Horoskop_${productName.replace(/\s+/g, '_')}_${dateStr}.pdf`
+        : `Horoscope_${productName.replace(/\s+/g, '_')}_${dateStr}.pdf`;
+
+    return { filename, content: pdfBytes };
+}
+

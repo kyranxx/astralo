@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const hu: Translations = {
     meta: {
         title: 'Astralo - Professzionális Horoszkópok | Pontos Asztrológiai Előrejelzések',
-        description: 'Kapja meg személyre szabott horoszkópját fejlett AI technológiával. Pontos előrejelzések napi, heti, havi és partner horoszkópokhoz.',
-        keywords: 'horoszkóp, asztrológia, csillagjegy, előrejelzések, személyre szabott horoszkóp, AI horoszkóp',
+        description: 'Kapja meg személyre szabott horoszkópját. Pontos előrejelzések napi, heti, havi és partner horoszkópokhoz.',
+        keywords: 'horoszkóp, asztrológia, csillagjegy, előrejelzések, személyre szabott horoszkóp',
     },
     header: {
-        badge: 'AI Horoszkópok',
+        badge: 'Személyre Szabott Horoszkópok',
         online: 'Online',
     },
     promo: {

@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const ro: Translations = {
     meta: {
         title: 'Astralo - Horoscoape Profesionale | Predicții Astrologice Precise',
-        description: 'Obțineți horoscopul personalizat creat cu tehnologie AI avansată. Predicții precise pentru horoscoape zilnice, săptămânale, lunare și de cuplu.',
-        keywords: 'horoscop, astrologie, zodiac, predicții, horoscop personalizat, horoscop AI',
+        description: 'Obțineți horoscopul personalizat. Predicții precise pentru horoscoape zilnice, săptămânale, lunare și de cuplu.',
+        keywords: 'horoscop, astrologie, zodiac, predicții, horoscop personalizat',
     },
     header: {
-        badge: 'Horoscoape AI',
+        badge: 'Horoscoape Personalizate',
         online: 'Online',
     },
     promo: {

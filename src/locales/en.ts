@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const en: Translations = {
     meta: {
         title: 'Astralo - Professional Horoscopes | Accurate Astrological Predictions',
-        description: 'Get your personalized horoscope created with advanced AI technology. Accurate predictions for daily, weekly, monthly, and partner compatibility.',
-        keywords: 'horoscope, astrology, zodiac, predictions, personalized horoscope, AI horoscope',
+        description: 'Get your personalized horoscope. Accurate predictions for daily, weekly, monthly, and partner compatibility.',
+        keywords: 'horoscope, astrology, zodiac, predictions, personalized horoscope',
     },
     header: {
-        badge: 'AI-Powered Horoscopes',
+        badge: 'Personalized Horoscopes',
         online: 'Online Now',
     },
     promo: {

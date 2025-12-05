@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const cs: Translations = {
     meta: {
         title: 'Astralo - Profesionální Horoskopy | Přesné Astrologické Předpovědi',
-        description: 'Získejte personalizovaný horoskop vytvořený pokročilou AI technologií. Přesné předpovědi pro denní, týdenní, měsíční a partnerský horoskop.',
-        keywords: 'horoskop, astrologie, znamení, předpovědi, personalizovaný horoskop, AI horoskop',
+        description: 'Získejte personalizovaný horoskop. Přesné předpovědi pro denní, týdenní, měsíční a partnerský horoskop.',
+        keywords: 'horoskop, astrologie, znamení, předpovědi, personalizovaný horoskop',
     },
     header: {
-        badge: 'AI Horoskopy',
+        badge: 'Personalizované Horoskopy',
         online: 'Online',
     },
     promo: {

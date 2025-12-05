@@ -27,7 +27,8 @@ const getFlagUrl = (code: string) => {
     sv: 'se', // Swedish → Sweden
     da: 'dk', // Danish → Denmark
     vi: 'vn', // Vietnamese → Vietnam
-    // Languages where code matches (sk, de, fr, es, it, pt, nl, pl, hu, ro, bg, hr, sr, ru, tr, th, id, fi, no)
+    sr: 'rs', // Serbian → Serbia (rs is the country code, not sr)
+    // Languages where code matches (sk, de, fr, es, it, pt, nl, pl, hu, ro, bg, hr, ru, tr, th, id, fi, no)
     // These will fall through to use their language code as country code
   };
   const flagCode = codeMap[code] || code;

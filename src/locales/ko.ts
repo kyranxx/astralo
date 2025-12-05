@@ -1,8 +1,8 @@
 import type { Translations } from './types';
 
 const ko: Translations = {
-    meta: { title: 'Astralo - 전문 운세', description: 'AI 기술로 개인 맞춤 운세를 받아보세요.', keywords: '운세, 점성술, 별자리' },
-    header: { badge: 'AI 운세', online: '온라인' },
+    meta: { title: 'Astralo - 전문 운세', description: '개인 맞춤 운세를 받아보세요. 매일, 매주, 매월 및 궁합 운세의 정확한 예측.', keywords: '운세, 점성술, 별자리, 개인 운세' },
+    header: { badge: '개인 맞춤 운세', online: '온라인' },
     promo: { offer: '한정 할인: 50% 할인!', delivery: '즉시 배송', customers: '50,000+ 만족 고객', secure: '안전한 결제' },
     hero: { title: '당신의 개인 운세', subtitle: '드디어 정확한 운세 • 당신만을 위해 제작', features: '✨ 즉시 배송 • 🔒 안전한 결제 • ⭐ 50,000+ 고객' },
     products: { daily: { name: '오늘의 운세', description: '다음 24시간 상세 예측', wordCount: '약 200단어', benefits: ['🍀 행운의 숫자', '📅 최적의 시간', '💎 추천 색상', '⭐ 오늘의 조언'] }, weekly: { name: '주간 운세', description: '중요한 날짜가 포함된 주간 개요', wordCount: '약 400단어', benefits: ['🎯 행운의 날', '💰 재정 예측', '❤️ 연애', '💼 직장'] }, monthly: { name: '월간 운세', description: '주요 이벤트가 포함된 월간 분석', wordCount: '약 1000단어', benefits: ['🌟 최고의 날', '💎 행운의 돌', '🌈 에너지 파동', '🎨 색상'] }, partner: { name: '궁합 운세', description: '궁합 분석', wordCount: '약 1200단어', benefits: ['💕 궁합도', '🔮 강점', '⚠️ 성장 영역', '💫 공유 미래'] } },

@@ -3,11 +3,11 @@ import type { Translations } from './types';
 const pt: Translations = {
     meta: {
         title: 'Astralo - Horóscopos Profissionais | Previsões Astrológicas Precisas',
-        description: 'Obtenha o seu horóscopo personalizado criado com tecnologia IA avançada. Previsões precisas para horóscopos diários, semanais, mensais e de casal.',
-        keywords: 'horóscopo, astrologia, zodíaco, previsões, horóscopo personalizado, horóscopo IA',
+        description: 'Obtenha o seu horóscopo personalizado. Previsões precisas para horóscopos diários, semanais, mensais e de casal.',
+        keywords: 'horóscopo, astrologia, zodíaco, previsões, horóscopo personalizado',
     },
     header: {
-        badge: 'Horóscopos IA',
+        badge: 'Horóscopos Personalizados',
         online: 'Online',
     },
     promo: {
