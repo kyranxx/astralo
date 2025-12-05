@@ -2,25 +2,12 @@ import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
 
 async function getFont() {
-    try {
-        // Use a more reliable CDN for fonts
-        const response = await fetch('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.0.8/files/roboto-latin-400-normal.woff');
-        if (!response.ok) throw new Error('Font fetch failed');
-        return await response.arrayBuffer();
-    } catch (e) {
-        console.error('Failed to fetch font, using standard font', e);
-        return null;
-    }
+    // Use standard fonts for better reliability
+    return null;
 }
 
 async function getBoldFont() {
-    try {
-        const response = await fetch('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.0.8/files/roboto-latin-700-normal.woff');
-        if (!response.ok) throw new Error('Font fetch failed');
-        return await response.arrayBuffer();
-    } catch (e) {
-        return null;
-    }
+    return null;
 }
 
 export async function generateLegalPDFs(language: string = 'en'): Promise<{ filename: string; content: Uint8Array }[]> {
@@ -224,8 +211,8 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
 Prístupom a používaním služieb Astralo (astralo.online) akceptujete a súhlasíte s podmienkami tejto zmluvy.
 
 2. Popis služby
-Astralo poskytuje personalizované horoskopy generované umelou inteligenciou vrátane denných, týždenných, mesačných a partnerských analýz kompatibility.
-Všetky horoskopy sú generované pomocou pokročilých algoritmov umelej inteligencie založených na astrologických princípoch a údajoch o narodení, ktoré poskytnete.
+Astralo poskytuje personalizované horoskopy vrátane denných, týždenných, mesačných a partnerských analýz kompatibility.
+Všetky horoskopy sú generované pomocou pokročilých algoritmov založených na astrologických princípoch a údajoch o narodení, ktoré poskytnete.
 
 3. Povinnosti používateľa
 - Musíte poskytnúť presné informácie o narodení pre generovanie horoskopu
@@ -311,8 +298,8 @@ Môžete kontrolovať a spravovať cookies v nastaveniach vášho prehliadača. 
 By accessing and using Astralo services (astralo.online), you accept and agree to be bound by the terms and provision of this agreement.
 
 2. Service Description
-Astralo provides AI-generated personalized horoscope services including daily, weekly, monthly, and partner compatibility readings.
-All horoscope readings are generated using advanced artificial intelligence algorithms based on astrological principles and the birth data you provide.
+Astralo provides personalized horoscope services including daily, weekly, monthly, and partner compatibility readings.
+All horoscope readings are generated using advanced algorithms based on astrological principles and the birth data you provide.
 
 3. User Responsibilities
 - You must provide accurate birth information for horoscope generation
