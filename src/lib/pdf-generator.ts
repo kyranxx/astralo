@@ -3,18 +3,19 @@ import fontkit from '@pdf-lib/fontkit';
 
 async function getFont() {
     try {
-        const response = await fetch('https://github.com/google/fonts/raw/main/apache/roboto/Roboto-Regular.ttf');
+        // Use a more reliable CDN for fonts
+        const response = await fetch('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.0.8/files/roboto-latin-400-normal.woff');
         if (!response.ok) throw new Error('Font fetch failed');
         return await response.arrayBuffer();
     } catch (e) {
-        console.error('Failed to fetch font, falling back to standard font', e);
+        console.error('Failed to fetch font, using standard font', e);
         return null;
     }
 }
 
 async function getBoldFont() {
     try {
-        const response = await fetch('https://github.com/google/fonts/raw/main/apache/roboto/Roboto-Bold.ttf');
+        const response = await fetch('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.0.8/files/roboto-latin-700-normal.woff');
         if (!response.ok) throw new Error('Font fetch failed');
         return await response.arrayBuffer();
     } catch (e) {
