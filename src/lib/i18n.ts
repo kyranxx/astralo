@@ -10,8 +10,8 @@
 export type { SupportedLocale, LocaleConfig, Translations } from '../locales/types';
 import type { SupportedLocale, LocaleConfig, Translations } from '../locales/types';
 
-// Import translations
-import { translations } from '../locales/translations';
+// Import translations from individual locale files
+import { translations } from '../locales/index';
 export { translations };
 
 // Locale configurations
