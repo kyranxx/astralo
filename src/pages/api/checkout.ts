@@ -6,28 +6,61 @@ export const GET: APIRoute = async () => {
 };
 
 const products = {
-    weekly: { name: 'Osobný Horoskop na Týždeň', price: 399 },
-    monthly: { name: 'Osobný Horoskop na Mesiac', price: 999 },
-    yearly: { name: 'Osobný Horoskop na Rok', price: 2499 },
-    natal: { name: 'Osobná Rodná Mapa', price: 499 },
+    daily: { name: 'Denný Horoskop', price: 199 },
+    weekly: { name: 'Týždenný Horoskop', price: 399 },
+    monthly: { name: 'Mesačný Horoskop', price: 999 },
     partner: { name: 'Partnerský Horoskop', price: 1499 },
 };
 
 export const POST: APIRoute = async ({ request }) => {
-    const stripe = new Stripe('sk_test_51QC4Q2GkhBz4CXszcZn9kZ6RIaBH2lSvLrDAw1nnXRwk4tQ3pXEKr79U6zDDVjFne3dDotHHyW5NGCtQl1IG4fGI00dOvATdZL', {
-        apiVersion: '2025-06-30.basil',
+    const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
+
+    if (!stripeKey) {
+        return new Response(JSON.stringify({ error: 'Stripe configuration missing' }), { status: 500 });
+    }
+
+    const stripe = new Stripe(stripeKey, {
+        apiVersion: '2024-11-20.acacia' as any,
     });
 
-    const data = await request.json();
+    let data;
+    try {
+        if (request.headers.get('Content-Type')?.includes('application/json')) {
+            data = await request.json();
+        } else {
+            const text = await request.text();
+            console.log('Raw request body:', text);
+            data = text ? JSON.parse(text) : {};
+        }
+        console.log('Parsed request data:', data);
+    } catch (e) {
+        console.error('Error parsing request body:', e);
+        return new Response(JSON.stringify({ error: 'Invalid JSON in request body' }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' }
+        });
+    }
+
     const { productKey, ...formData } = data;
+
+    console.log('==================== CHECKOUT REQUEST ====================');
+    console.log('Product Key:', productKey);
+    console.log('Form Data:', JSON.stringify(formData, null, 2));
+    console.log('=========================================================');
 
     const product = products[productKey as keyof typeof products];
 
     if (!product) {
-        return new Response(JSON.stringify({ error: 'Invalid product' }), { status: 400 });
+        console.error('Invalid product key:', productKey);
+        return new Response(JSON.stringify({ error: 'Invalid product' }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 
     try {
+        const origin = request.headers.get('origin') || `http://localhost:${import.meta.env.DEV ? '4321' : '3000'}`;
+
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: [
@@ -43,8 +76,22 @@ export const POST: APIRoute = async ({ request }) => {
                 },
             ],
             mode: 'payment',
-            success_url: `${request.headers.get('origin')}/success?session_id={CHECKOUT_SESSION_ID}`,
-            cancel_url: `${request.headers.get('origin')}/form?type=${productKey}`,
+            invoice_creation: {
+                enabled: true,
+                invoice_data: {
+                    description: product.name,
+                    metadata: {
+                        productKey,
+                        ...formData
+                    },
+                },
+            },
+            automatic_tax: {
+                enabled: true,
+            },
+            locale: (data.lang as Stripe.Checkout.SessionCreateParams.Locale) || 'en',
+            success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url: `${origin}/${data.lang === 'en' ? '' : data.lang + '/'}form/${productKey}`,
             metadata: {
                 productKey,
                 ...formData
@@ -52,8 +99,21 @@ export const POST: APIRoute = async ({ request }) => {
         });
 
         return new Response(JSON.stringify({ url: session.url }), { status: 200 });
-    } catch (error) {
-        console.error(error);
-        return new Response(JSON.stringify({ error: 'Error creating checkout session' }), { status: 500 });
+    } catch (error: any) {
+        console.error('==================== STRIPE CHECKOUT ERROR ====================');
+        console.error('Error type:', error.type);
+        console.error('Error message:', error.message);
+        console.error('Error code:', error.code);
+        console.error('Error param:', error.param);
+        console.error('Full error object:', JSON.stringify(error, null, 2));
+        console.error('Stack trace:', error.stack);
+        console.error('============================================================');
+        return new Response(JSON.stringify({
+            error: 'Error creating checkout session',
+            details: error.message
+        }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 };

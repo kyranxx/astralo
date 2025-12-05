@@ -1,218 +1,289 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Sparkles, ArrowLeft, User, Users } from 'lucide-astro';
+import { ArrowLeft, Sparkles, User, Users } from 'lucide-astro';
 
 const horoscopeTypes = [
-  {
-    id: "weekly",
-    name: "Osobný Horoskop na Týždeň",
-    price: 3.99,
-  },
-  {
-    id: "monthly",
-    name: "Osobný Horoskop na Mesiac",
-    price: 9.99,
-  },
-  {
-    id: "yearly",
-    name: "Osobný Horoskop na Rok",
-    price: 24.99,
-  },
-  {
-    id: "natal",
-    name: "Osobná Rodná Mapa (Natal Chart)",
-    price: 4.99,
-  },
-  {
-    id: "partner",
-    name: "Partnerský Horoskop (Synastria)",
-    price: 14.99,
-  },
+  { id: "daily", name: "Denný Horoskop", price: 1.99 },
+  { id: "weekly", name: "Týždenný Horoskop", price: 3.99 },
+  { id: "monthly", name: "Mesačný Horoskop", price: 9.99 },
+  { id: "partner", name: "Partnerský Horoskop", price: 14.99 },
 ];
 
-const typeId = Astro.url.searchParams.get('type');
-console.log("Received typeId:", typeId);
+const url = new URL(Astro.request.url);
+const typeId = url.searchParams.get('type');
 const selectedType = horoscopeTypes.find(t => t.id === typeId);
 
 if (!selectedType) {
   return Astro.redirect('/');
 }
-
 ---
 
-<Layout title="Vyplňte údaje">
-<div
-    class="min-h-screen flex flex-col font-sans"
-    style="background-image: url('/background2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"
-  >
-    <div class="absolute inset-0 bg-black/60"></div>
-
-    <header class="relative z-10 bg-black/70 backdrop-blur-md border-b border-white/10 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4">
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div class="flex items-center gap-3">
-              <div class="p-2 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg shadow-md">
-                <Sparkles class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div class="text-center sm:text-left">
-                <h1 class="text-xl sm:text-2xl font-extrabold text-white tracking-wide">AstroVision</h1>
-                <p class="text-white/70 text-xs sm:text-sm font-light">Profesionálne astrologické služby</p>
-              </div>
-            </div>
-            <div class="text-center sm:text-right">
-              <p class="text-white/80 text-xs sm:text-sm font-light">✨ Viac ako 50,000 spokojných klientov</p>
-              <p class="text-amber-300 text-xs sm:text-sm font-medium">🔒 100% bezpečné platby</p>
-            </div>
-          </div>
+<Layout title={`${selectedType.name} - Astralo`}>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-4 sm:py-5">
+        <div class="flex items-center justify-center">
+          <img src="/logo.png" alt="Astralo" class="h-12 sm:h-14" />
         </div>
-      </header>
+      </div>
+    </header>
 
-    <main class="relative z-10 flex-1 flex items-center justify-center p-4 py-8">
-      <div class="max-w-md mx-auto w-full">
-        <div class="mb-6">
-          <a href="/" class="text-white hover:bg-white/10 mb-4 w-full sm:w-auto text-base sm:text-lg px-6 py-3 rounded-lg inline-flex items-center">
-            <ArrowLeft class="w-4 h-4 mr-2" />
-            Späť na výber
-          </a>
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-4 py-8 sm:py-12">
+      <div class="w-full max-w-lg">
+        <!-- Back Button -->
+        <a 
+          href="/" 
+          class="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors group"
+        >
+          <ArrowLeft class="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+          <span>Späť</span>
+        </a>
 
-          <div class="text-center px-4 mt-4">
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 drop-shadow-lg">
+        <!-- Form Card -->
+        <div class="glass-strong rounded-2xl p-6 sm:p-8 animate-fade-in-up">
+          <!-- Title -->
+          <div class="text-center mb-8">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white mb-2">
               {selectedType.name}
-            </h2>
-            <p class="text-white/90 drop-shadow-md font-light">Vyplňte vaše údaje</p>
+            </h1>
+            <p class="text-white/60">Vyplňte vaše údaje</p>
           </div>
-        </div>
 
-        <div class="bg-black/60 backdrop-blur-xl border-white/20 shadow-2xl rounded-lg">
-          <div class="p-6 sm:p-8">
-            <form id="payment-form" class="space-y-5 sm:space-y-7">
-              {selectedType.id === 'partner' ? (
-                <>
-                  <div class="border-b border-white/20 pb-6 space-y-5">
-                    <h3 class="text-lg font-semibold text-white flex items-center gap-2"><User className="w-5 h-5 text-amber-400" /> Osoba 1</h3>
-                    <div class="space-y-2">
-                      <label for="name1" class="text-white font-medium text-sm">Meno</label>
-                      <input id="name1" name="name1" type="text" placeholder="Meno prvej osoby" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthDate1" class="text-white font-medium text-sm">Dátum narodenia</label>
-                      <input id="birthDate1" name="birthDate1" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthTime1" class="text-white font-medium text-sm">Čas narodenia</label>
-                      <input id="birthTime1" name="birthTime1" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthPlace1" class="text-white font-medium text-sm">Miesto narodenia</label>
-                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
+          <!-- Form -->
+          <form id="payment-form" class="space-y-5">
+            {selectedType.id === 'partner' ? (
+              <>
+                {/* Person 1 */}
+                <div class="space-y-4 pb-6 border-b border-white/10">
+                  <h3 class="text-lg font-semibold text-white flex items-center gap-2">
+                    <User class="w-5 h-5 text-amber-400" />
+                    Osoba 1
+                  </h3>
+                  
+                  <div>
+                    <label for="name1" class="block text-white/80 text-sm mb-2">Meno</label>
+                    <input 
+                      id="name1" 
+                      name="name1" 
+                      type="text" 
+                      placeholder="Vaše meno" 
+                      required
+                      class="input w-full"
+                    />
                   </div>
-                  <div class="space-y-5 pt-6">
-                    <h3 class="text-lg font-semibold text-white flex items-center gap-2"><Users className="w-5 h-5 text-amber-400" /> Osoba 2</h3>
-                    <div class="space-y-2">
-                      <label for="name2" class="text-white font-medium text-sm">Meno</label>
-                      <input id="name2" name="name2" type="text" placeholder="Meno druhej osoby" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthDate2" class="text-white font-medium text-sm">Dátum narodenia</label>
-                      <input id="birthDate2" name="birthDate2" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthTime2" class="text-white font-medium text-sm">Čas narodenia</label>
-                      <input id="birthTime2" name="birthTime2" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                    <div class="space-y-2">
-                      <label for="birthPlace2" class="text-white font-medium text-sm">Miesto narodenia</label>
-                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div class="space-y-2">
-                    <label for="name" class="text-white font-medium text-sm">Meno</label>
-                    <input id="name" name="name" type="text" placeholder="Vaše meno" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                  </div>
-                  <div class="space-y-2">
-                    <label for="birthDate" class="text-white font-medium text-sm">Dátum narodenia</label>
-                    <input id="birthDate" name="birthDate" type="date" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                  </div>
-                  <div class="space-y-2">
-                    <label for="birthTime" class="text-white font-medium text-sm">Čas narodenia</label>
-                    <input id="birthTime" name="birthTime" type="time" class="h-12 bg-white/10 border-white/30 text-white focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                  </div>
-                  <div class="space-y-2">
-                    <label for="birthPlace" class="text-white font-medium text-sm">Miesto narodenia</label>
-                    <input id="birthPlace" name="birthPlace" type="text" placeholder="Mesto, krajina" class="h-12 bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:bg-white/20 focus:border-amber-400 rounded-lg text-base sm:text-lg w-full px-4" />
-                  </div>
-                </>
-              )}
 
-              <div class="pt-4">
-                <button
-                  type="submit"
-                  class="w-full h-14 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold text-base sm:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center"
-                >
-                  <Sparkles class="w-5 h-5 mr-2" />
-                  Zaplatiť {selectedType.price.toFixed(2)}€
-                </button>
-              </div>
+                  <div>
+                    <label for="birthDate1" class="block text-white/80 text-sm mb-2">Dátum narodenia</label>
+                    <input 
+                      id="birthDate1" 
+                      name="birthDate1" 
+                      type="date" 
+                      min="1900-01-01"
+                      max="" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
 
-              <div class="text-center pt-4 border-t border-white/20">
-                <p class="text-white/80 text-sm font-light">🔒 Bezpečná platba • Okamžité doručenie</p>
-              </div>
-            </form>
-          </div>
+                  <div>
+                    <label for="birthTime1" class="block text-white/80 text-sm mb-2">Čas narodenia</label>
+                    <input 
+                      id="birthTime1" 
+                      name="birthTime1" 
+                      type="time" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="birthPlace1" class="block text-white/80 text-sm mb-2">Miesto narodenia</label>
+                    <input 
+                      id="birthPlace1" 
+                      name="birthPlace1" 
+                      type="text" 
+                      placeholder="Mesto, krajina" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Person 2 */}
+                <div class="space-y-4 pt-2">
+                  <h3 class="text-lg font-semibold text-white flex items-center gap-2">
+                    <Users class="w-5 h-5 text-amber-400" />
+                    Osoba 2
+                  </h3>
+                  
+                  <div>
+                    <label for="name2" class="block text-white/80 text-sm mb-2">Meno</label>
+                    <input 
+                      id="name2" 
+                      name="name2" 
+                      type="text" 
+                      placeholder="Meno partnera" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="birthDate2" class="block text-white/80 text-sm mb-2">Dátum narodenia</label>
+                    <input 
+                      id="birthDate2" 
+                      name="birthDate2" 
+                      type="date" 
+                      min="1900-01-01"
+                      max=""
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="birthTime2" class="block text-white/80 text-sm mb-2">Čas narodenia</label>
+                    <input 
+                      id="birthTime2" 
+                      name="birthTime2" 
+                      type="time" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="birthPlace2" class="block text-white/80 text-sm mb-2">Miesto narodenia</label>
+                    <input 
+                      id="birthPlace2" 
+                      name="birthPlace2" 
+                      type="text" 
+                      placeholder="Mesto, krajina" 
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div>
+                  <label for="name" class="block text-white/80 text-sm mb-2">Meno</label>
+                  <input 
+                    id="name" 
+                    name="name" 
+                    type="text" 
+                    placeholder="Vaše meno" 
+                    required
+                    class="input w-full"
+                  />
+                </div>
+
+                <div>
+                  <label for="birthDate" class="block text-white/80 text-sm mb-2">Dátum narodenia</label>
+                  <input 
+                    id="birthDate" 
+                    name="birthDate" 
+                    type="date" 
+                    min="1900-01-01"
+                    max=""
+                    required
+                    class="input w-full"
+                  />
+                </div>
+
+                <div>
+                  <label for="birthTime" class="block text-white/80 text-sm mb-2">Čas narodenia</label>
+                  <input 
+                    id="birthTime" 
+                    name="birthTime" 
+                    type="time" 
+                    required
+                    class="input w-full"
+                  />
+                </div>
+
+                <div>
+                  <label for="birthPlace" class="block text-white/80 text-sm mb-2">Miesto narodenia</label>
+                  <input 
+                    id="birthPlace" 
+                    name="birthPlace" 
+                    type="text" 
+                    placeholder="Mesto, krajina" 
+                    required
+                    class="input w-full"
+                  />
+                </div>
+              </>
+            )}
+
+            {/* Submit Button */}
+            <div class="pt-4">
+              <button type="submit" class="btn-primary w-full">
+                <Sparkles class="w-5 h-5" />
+                Zaplatiť {selectedType.price.toFixed(2)}€
+              </button>
+            </div>
+
+            {/* Trust Badges */}
+            <div class="text-center pt-4 border-t border-white/10">
+              <p class="text-white/60 text-sm">
+                🔒 Bezpečná platba cez Stripe • Okamžité doručenie
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     </main>
 
-    <footer class="relative z-10 bg-black/70 backdrop-blur-md border-t border-white/10 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4 py-6">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
-            <div>
-              <h3 class="text-white font-bold mb-2">AstroVision</h3>
-              <p class="text-white/70 text-sm font-light">
-                Profesionálne astrologické služby s viac ako 10-ročnou tradíciou.
-              </p>
-            </div>
-            <div>
-              <h3 class="text-white font-bold mb-2">Kontakt</h3>
-              <p class="text-white/70 text-sm font-light">info@astrovision.sk</p>
-              <p class="text-white/70 text-sm font-light">+421 900 123 456</p>
-            </div>
-            <div>
-              <h3 class="text-white font-bold mb-2">Záruky</h3>
-              <p class="text-white/70 text-sm font-light">✓ 30-dňová záruka vrátenia peňazí</p>
-              <p class="text-white/70 text-sm font-light">✓ 100% bezpečné platby</p>
-            </div>
-          </div>
-          <div class="border-t border-white/10 mt-6 pt-4 text-center">
-            <p class="text-white/60 text-sm font-light">© 2024 AstroVision. Všetky práva vyhradené.</p>
-          </div>
-        </div>
-      </footer>
+    <!-- Footer -->
+    <footer class="glass-strong border-t border-white/10 mt-auto">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+        <p class="text-white/50 text-sm">
+          © 2024 Astralo
+        </p>
+      </div>
+    </footer>
   </div>
 </Layout>
 
-<script define:vars={{ typeId }}>
+<script is:inline define:vars={{ typeId }}>
+  // Set max date to today for all birth date inputs
+  const today = new Date().toISOString().split('T')[0];
+  document.querySelectorAll('input[type="date"]').forEach(input => {
+    input.setAttribute('max', today);
+  });
+
   const form = document.getElementById('payment-form');
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    const originalHTML = submitButton.innerHTML;
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<svg class="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> <span>Spracovávam...</span>';
+    
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     
-    const response = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ productKey: typeId, ...data }),
-    });
-    
-    const { url } = await response.json();
-    if (url) {
-      window.location.href = url;
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ productKey: typeId, ...data }),
+      });
+      
+      const { url } = await response.json();
+      if (url) {
+        window.location.href = url;
+      }
+    } catch (error) {
+      console.error(error);
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalHTML;
+      alert('Chyba pri spracovaní platby. Prosím, skúste to znova.');
     }
   });
 </script>

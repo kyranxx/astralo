@@ -1,0 +1,579 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import { ArrowLeft, Sparkles, User, Calendar, Clock, MapPin, Heart, Shield, Zap, Mail, HelpCircle } from 'lucide-astro';
+
+const horoscopeTypes = [
+  { id: "daily", name: "Daily Horoscope", originalPrice: 3.99, price: 1.99 },
+  { id: "weekly", name: "Weekly Horoscope", originalPrice: 7.99, price: 3.99 },
+  { id: "monthly", name: "Monthly Horoscope", originalPrice: 19.99, price: 9.99 },
+  { id: "partner", name: "Partner Horoscope", originalPrice: 29.99, price: 14.99 },
+];
+
+export function getStaticPaths() {
+  return [
+    { params: { type: 'daily' } },
+    { params: { type: 'weekly' } },
+    { params: { type: 'monthly' } },
+    { params: { type: 'partner' } },
+  ];
+}
+
+const { type } = Astro.params;
+const selectedType = horoscopeTypes.find(t => t.id === type);
+
+if (!selectedType) {
+  return Astro.redirect('/');
+}
+---
+
+<Layout title={`${selectedType.name} - Astralo`} lang="en">
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Top Promo Banner -->
+    <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 py-2 px-4 text-center">
+      <div class="flex items-center justify-center gap-3 text-black/90 text-sm font-medium">
+        <span class="animate-pulse">🔥</span>
+        <span><strong>50% OFF</strong> - Limited Time!</span>
+        <span class="hidden sm:inline">• ⚡ Instant Delivery</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href="/" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">Back</span>
+          </a>
+          <a href="/" class="block hover:opacity-80 transition-opacity">
+            <img src="/logo.png" alt="Astralo" class="h-10" />
+          </a>
+          <LanguageSwitcher lang="en" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-4 py-8 sm:py-12">
+      <div class="max-w-2xl mx-auto">
+        
+        <!-- Title Section -->
+        <div class="text-center mb-10 animate-fade-in-up">
+          <div class="inline-flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30">
+              <Sparkles class="w-6 h-6 text-white" />
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-white via-amber-100 to-white bg-clip-text text-transparent">
+              {selectedType.name}
+            </h1>
+          </div>
+          <p class="text-white/70 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+            Get an accurate astrological reading specially for you. Fill in your details and we'll instantly prepare your personal horoscope.
+          </p>
+          
+          <!-- Price with discount -->
+          <div class="mt-6 inline-flex items-center gap-3 glass px-6 py-3 rounded-full">
+            <span class="text-white/40 text-sm line-through">{selectedType.originalPrice.toFixed(2)}€</span>
+            <span class="text-2xl font-bold text-amber-400">
+              {selectedType.price.toFixed(2)}€
+            </span>
+            <div class="bg-red-500/20 text-red-400 text-xs font-bold px-2 py-1 rounded">-50%</div>
+            <div class="w-px h-6 bg-white/20"></div>
+            <span class="text-white/60 text-sm">🔒 Secure payment</span>
+          </div>
+
+          <!-- What's included -->
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto bg-white/5 p-6 rounded-2xl border border-white/10">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                <span class="text-lg">📄</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">Detailed PDF Report</p>
+                <p class="text-white/50 text-sm">15+ pages of insights</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
+                <span class="text-lg">🌟</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">Personal Analysis</p>
+                <p class="text-white/50 text-sm">Based on exact birth time</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center">
+                <span class="text-lg">🔮</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">Future Predictions</p>
+                <p class="text-white/50 text-sm">Transits & progressions</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center">
+                <span class="text-lg">💡</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">Actionable Advice</p>
+                <p class="text-white/50 text-sm">For career & love</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="glass-strong rounded-3xl p-8 sm:p-10 mb-8 border border-white/10 shadow-2xl animate-fade-in-up" style="animation-delay: 0.1s;">
+          
+          <form id="payment-form" class="space-y-6">
+            {selectedType.id === 'partner' ? (
+              <div class="space-y-8">
+                {/* Person 1 */}
+                <div class="space-y-5">
+                  <div class="flex items-center gap-3 pb-4 border-b border-white/10">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-400/20 to-blue-600/20 flex items-center justify-center">
+                      <User class="w-5 h-5 text-blue-400" />
+                    </div>
+                    <h3 class="text-xl font-bold text-white">First Person</h3>
+                  </div>
+                  
+                  <div class="space-y-4">
+                    <div>
+                      <label for="name1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <User class="w-5 h-5 text-amber-400" />
+                        Your name
+                      </label>
+                      <input 
+                        id="name1" 
+                        name="name1" 
+                        type="text" 
+                        placeholder="Enter name" 
+                        autocomplete="name"
+                        required
+                        class="input w-full text-lg p-4"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="email1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <Mail class="w-5 h-5 text-amber-400" />
+                        Email address
+                      </label>
+                      <input 
+                        id="email1" 
+                        name="email1" 
+                        type="email" 
+                        placeholder="your@email.com" 
+                        autocomplete="email"
+                        required
+                        class="input w-full text-lg p-4"
+                      />
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label for="birthDate1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Calendar class="w-5 h-5 text-amber-400" />
+                          Date of birth
+                          <div class="group/tooltip relative">
+                            <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                              Used to calculate planetary positions at the moment of your birth.
+                            </div>
+                          </div>
+                        </label>
+                        <input 
+                          id="birthDate1" 
+                          name="birthDate1" 
+                          type="date" 
+                          autocomplete="bday"
+                          required
+                          class="input w-full text-lg p-4"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="birthTime1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Clock class="w-5 h-5 text-amber-400" />
+                          Time of birth
+                          <div class="group/tooltip relative">
+                            <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                              Crucial for your Rising Sign. If unknown, we'll use 12:00 PM.
+                            </div>
+                          </div>
+                        </label>
+                        <input 
+                          id="birthTime1" 
+                          name="birthTime1" 
+                          type="time" 
+                          required
+                          class="input w-full text-lg p-4"
+                        />
+                        <div class="flex items-center gap-2 mt-2">
+                          <input type="checkbox" id="unknownTime1" class="w-5 h-5 rounded border-white/20 bg-white/5 text-amber-500 focus:ring-amber-500/50" />
+                          <label for="unknownTime1" class="text-sm text-white/60 cursor-pointer select-none">I don't know my time of birth</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="birthPlace1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <MapPin class="w-5 h-5 text-amber-400" />
+                        Place of birth
+                        <div class="group/tooltip relative">
+                          <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                          <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                            Determines your Ascendant and the position of houses in your chart.
+                          </div>
+                        </div>
+                      </label>
+                      <input 
+                        id="birthPlace1" 
+                        name="birthPlace1" 
+                        type="text" 
+                        placeholder="City, Country" 
+                        autocomplete="address-level2"
+                        required
+                        class="input w-full text-lg p-4"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Person 2 */}
+                <div class="space-y-5">
+                  <div class="flex items-center gap-3 pb-4 border-b border-white/10">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400/20 to-pink-600/20 flex items-center justify-center">
+                      <Heart class="w-5 h-5 text-pink-400" />
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Second Person</h3>
+                  </div>
+                  
+                  <div class="space-y-4">
+                    <div>
+                      <label for="name2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <User class="w-5 h-5 text-amber-400" />
+                        Partner's name
+                      </label>
+                      <input 
+                        id="name2" 
+                        name="name2" 
+                        type="text" 
+                        placeholder="Enter name" 
+                        autocomplete="name"
+                        required
+                        class="input w-full text-lg p-4"
+                      />
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label for="birthDate2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Calendar class="w-5 h-5 text-amber-400" />
+                          Date of birth
+                          <div class="group/tooltip relative">
+                            <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                              Used to calculate planetary positions at the moment of birth.
+                            </div>
+                          </div>
+                        </label>
+                        <input 
+                          id="birthDate2" 
+                          name="birthDate2" 
+                          type="date" 
+                          autocomplete="bday"
+                          required
+                          class="input w-full text-lg p-4"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="birthTime2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Clock class="w-5 h-5 text-amber-400" />
+                          Time of birth
+                          <div class="group/tooltip relative">
+                            <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                              Crucial for the Rising Sign. If unknown, we'll use 12:00 PM.
+                            </div>
+                          </div>
+                        </label>
+                        <input 
+                          id="birthTime2" 
+                          name="birthTime2" 
+                          type="time" 
+                          required
+                          class="input w-full text-lg p-4"
+                        />
+                        <div class="flex items-center gap-2 mt-2">
+                          <input type="checkbox" id="unknownTime2" class="w-5 h-5 rounded border-white/20 bg-white/5 text-amber-500 focus:ring-amber-500/50" />
+                          <label for="unknownTime2" class="text-sm text-white/60 cursor-pointer select-none">I don't know the time of birth</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="birthPlace2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <MapPin class="w-5 h-5 text-amber-400" />
+                        Place of birth
+                        <div class="group/tooltip relative">
+                          <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                          <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                            Determines the Ascendant and the position of houses in the chart.
+                          </div>
+                        </div>
+                      </label>
+                      <input 
+                        id="birthPlace2" 
+                        name="birthPlace2" 
+                        type="text" 
+                        placeholder="City, Country" 
+                        autocomplete="address-level2"
+                        required
+                        class="input w-full text-lg p-4"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div class="space-y-5">
+                <div>
+                  <label for="name" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <User class="w-5 h-5 text-amber-400" />
+                    Your name
+                  </label>
+                  <input 
+                    id="name" 
+                    name="name" 
+                    type="text" 
+                    placeholder="Enter your name" 
+                    autocomplete="name"
+                    required
+                    class="input w-full text-lg p-4"
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <Mail class="w-5 h-5 text-amber-400" />
+                    Email address
+                  </label>
+                  <input 
+                    id="email" 
+                    name="email" 
+                    type="email" 
+                    placeholder="your@email.com" 
+                    autocomplete="email"
+                    required
+                    class="input w-full text-lg p-4"
+                  />
+                  <p class="text-white/50 text-xs mt-1">We'll send your horoscope PDF, invoice and legal documents to this email</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="birthDate" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                      <Calendar class="w-5 h-5 text-amber-400" />
+                      Date of birth
+                      <div class="group/tooltip relative">
+                        <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                          Used to calculate planetary positions at the moment of your birth.
+                        </div>
+                      </div>
+                    </label>
+                    <input 
+                      id="birthDate" 
+                      name="birthDate" 
+                      type="date" 
+                      autocomplete="bday"
+                      required
+                      class="input w-full text-lg p-4"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="birthTime" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                      <Clock class="w-5 h-5 text-amber-400" />
+                      Time of birth
+                      <div class="group/tooltip relative">
+                        <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                          Crucial for your Rising Sign. If unknown, we'll use 12:00 PM.
+                        </div>
+                      </div>
+                    </label>
+                    <input 
+                      id="birthTime" 
+                      name="birthTime" 
+                      type="time" 
+                      required
+                      class="input w-full text-lg p-4"
+                    />
+                    <div class="flex items-center gap-2 mt-2">
+                      <input type="checkbox" id="unknownTime" class="w-5 h-5 rounded border-white/20 bg-white/5 text-amber-500 focus:ring-amber-500/50" />
+                      <label for="unknownTime" class="text-sm text-white/60 cursor-pointer select-none">I don't know my time of birth</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="birthPlace" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <MapPin class="w-5 h-5 text-amber-400" />
+                    Place of birth
+                    <div class="group/tooltip relative">
+                      <HelpCircle class="w-5 h-5 text-white/40 hover:text-white/80 cursor-help transition-colors" />
+                      <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/90 backdrop-blur border border-white/10 rounded-xl text-sm text-white/90 opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all z-50 text-center pointer-events-none shadow-xl">
+                        Determines your Ascendant and the position of houses in your chart.
+                      </div>
+                    </div>
+                  </label>
+                  <input 
+                    id="birthPlace" 
+                    name="birthPlace" 
+                    type="text" 
+                    placeholder="City, Country" 
+                    autocomplete="address-level2"
+                    required
+                    class="input w-full text-lg p-4"
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Submit Button */}
+            <div class="pt-6">
+              <button type="submit" id="submit-btn" class="group relative w-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:via-amber-600 hover:to-amber-700 text-black font-bold px-8 py-5 rounded-xl shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-amber-500/60">
+                <span class="flex items-center justify-center gap-3">
+                  <Sparkles class="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                  <span class="text-lg">Continue to payment - {selectedType.price.toFixed(2)}€</span>
+                  <Zap class="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* Trust Indicators */}
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+          <div class="glass rounded-xl p-4 text-center">
+            <Shield class="w-8 h-8 text-green-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">100% Secure</p>
+            <p class="text-white/50 text-xs">SSL encryption</p>
+          </div>
+          <div class="glass rounded-xl p-4 text-center">
+            <Zap class="w-8 h-8 text-amber-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">Instant</p>
+            <p class="text-white/50 text-xs">Delivery in 2 min</p>
+          </div>
+          <div class="glass rounded-xl p-4 text-center">
+            <Heart class="w-8 h-8 text-pink-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">Guarantee</p>
+            <p class="text-white/50 text-xs">30-day guarantee</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer lang="en" />
+
+    <!-- Premium Loading Overlay -->
+    <div id="payment-overlay" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 bg-black/60 backdrop-blur-md">
+      <div class="text-center relative px-4">
+        <div class="absolute inset-0 bg-amber-500/20 blur-3xl rounded-full animate-pulse"></div>
+        <div class="relative bg-black/40 border border-white/10 p-8 rounded-3xl backdrop-blur-xl shadow-2xl transform scale-95 transition-all duration-500" id="payment-modal">
+          <div class="w-20 h-20 mx-auto mb-6 relative">
+            <div class="absolute inset-0 border-4 border-amber-500/30 rounded-full animate-[spin_3s_linear_infinite]"></div>
+            <div class="absolute inset-2 border-4 border-t-amber-400 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <Sparkles class="w-8 h-8 text-amber-400 animate-pulse" />
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Preparing your Horoscope</h3>
+          <p class="text-white/60 text-lg">Redirecting to secure payment...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ type }}>
+  const form = document.getElementById('payment-form');
+  
+  // Handle unknown time checkboxes
+  ['unknownTime', 'unknownTime1', 'unknownTime2'].forEach(id => {
+    const checkbox = document.getElementById(id);
+    if (checkbox) {
+      checkbox.addEventListener('change', (e) => {
+        // Find the corresponding time input (it's in the previous sibling container or nearby)
+        // Structure: input -> div(checkbox)
+        // The time input is the previous element sibling of the div containing the checkbox
+        const timeInput = e.target.parentElement.previousElementSibling;
+        if (timeInput && timeInput.type === 'time') {
+          timeInput.disabled = e.target.checked;
+          if (e.target.checked) {
+            timeInput.value = '12:00';
+          } else {
+            timeInput.value = '';
+          }
+        }
+      });
+    }
+  });
+  
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    
+    const overlay = document.getElementById('payment-overlay');
+    const modal = document.getElementById('payment-modal');
+    
+    // Show overlay
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.remove('scale-95');
+    modal.classList.add('scale-100');
+    
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    const payload = { productKey: type, lang: 'en', ...data };
+    console.log('Sending payload:', payload);
+    
+    try {
+      // Add a small artificial delay for the animation to be seen and feel "processed"
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.error || 'Payment initialization failed');
+      }
+
+      if (result.url) {
+        window.location.href = result.url;
+      } else {
+        throw new Error('No URL in response');
+      }
+    } catch (error) {
+      console.error('Payment error:', error);
+      
+      // Hide overlay
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('scale-100');
+      modal.classList.add('scale-95');
+      
+      alert(error.message || 'Error processing payment. Please try again or contact support.');
+    }
+  });
+</script>

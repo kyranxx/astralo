@@ -1,0 +1,116 @@
+---
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+
+const translations = {
+  en: {
+    companyName: 'Apollo Tech s.r.o.',
+    country: 'Slovakia, EU',
+    termsOfService: 'Terms of Service',
+    privacyPolicy: 'Privacy Policy',
+    refundPolicy: 'Refund Policy',
+    cookiePolicy: 'Cookie Policy',
+    contact: 'Contact',
+    email: 'info@astralo.online',
+    paymentMethods: 'Secure payments via',
+    allRightsReserved: 'All rights reserved.',
+    jurisdiction: 'Slovak law applies',
+  },
+  sk: {
+    companyName: 'Apollo Tech s.r.o.',
+    country: 'Slovensko, EÚ',
+    termsOfService: 'Obchodné podmienky',
+    privacyPolicy: 'Ochrana súkromia',
+    refundPolicy: 'Reklamačný poriadok',
+    cookiePolicy: 'Cookies',
+    contact: 'Kontakt',
+    email: 'info@astralo.online',
+    paymentMethods: 'Bezpečné platby cez',
+    allRightsReserved: 'Všetky práva vyhradené.',
+    jurisdiction: 'Platí slovenské právo',
+  },
+};
+
+const t = translations[lang as keyof typeof translations] || translations.en;
+const legalBasePath = lang === 'en' ? '/legal' : `/${lang}/legal`;
+---
+
+<footer class="relative mt-auto bg-black/60 backdrop-blur-xl border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-8 sm:py-10">
+    <!-- Main Footer Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      
+      <!-- Logo & Company -->
+      <div class="text-center sm:text-left">
+        <a href="/" class="inline-block mb-3">
+          <img src="/logo.png" alt="Astralo" class="h-10" />
+        </a>
+        <p class="text-white/80 text-sm font-medium">{t.companyName}</p>
+        <p class="text-white/50 text-xs">{t.country}</p>
+      </div>
+      
+      <!-- Legal Links -->
+      <div class="text-center sm:text-left">
+        <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">Legal</h3>
+        <nav class="flex flex-col gap-2">
+          <a href={`${legalBasePath}/terms`} class="text-white/70 text-sm hover:text-amber-400 transition-colors">{t.termsOfService}</a>
+          <a href={`${legalBasePath}/privacy`} class="text-white/70 text-sm hover:text-amber-400 transition-colors">{t.privacyPolicy}</a>
+          <a href={`${legalBasePath}/refund`} class="text-white/70 text-sm hover:text-amber-400 transition-colors">{t.refundPolicy}</a>
+          <a href={`${legalBasePath}/cookies`} class="text-white/70 text-sm hover:text-amber-400 transition-colors">{t.cookiePolicy}</a>
+        </nav>
+      </div>
+      
+      <!-- Contact -->
+      <div class="text-center sm:text-left">
+        <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">{t.contact}</h3>
+        <a href="mailto:info@astralo.online" class="text-white/70 text-sm hover:text-amber-400 transition-colors block mb-2">
+          {t.email}
+        </a>
+        <p class="text-white/40 text-xs mt-3">{t.jurisdiction}</p>
+      </div>
+      
+      <!-- Payment Methods -->
+      <div class="text-center sm:text-left">
+        <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">{t.paymentMethods}</h3>
+        <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
+          <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
+            <img src="/visa-brandmark-blue-1960x622.webp" alt="Visa" class="h-4 w-auto" />
+          </div>
+          <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
+            <img src="/ma_symbol_opt_73_3x.png" alt="Mastercard" class="h-5 w-auto" />
+          </div>
+          <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
+            <img src="/Stripe wordmark - Blurple - Large.png" alt="Stripe" class="h-4 w-auto" />
+          </div>
+        </div>
+        
+        <!-- Trust badges -->
+        <div class="flex items-center justify-center sm:justify-start gap-2 mt-4">
+          <span class="text-green-400 text-xs flex items-center gap-1">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            SSL Secured
+          </span>
+          <span class="text-white/30">•</span>
+          <span class="text-blue-400 text-xs flex items-center gap-1">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            GDPR
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="pt-6 border-t border-white/10 text-center">
+      <p class="text-white/40 text-xs">
+        © {new Date().getFullYear()} {t.companyName} • {t.allRightsReserved}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,38 +1,139 @@
 ---
 import '../styles/global.css';
+import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
 	title: string;
 	backgroundImage?: string;
+	lang?: string;
+	canonicalUrl?: string;
 }
 
-const { title, backgroundImage } = Astro.props;
+const { 
+	title, 
+	backgroundImage = "/background5.png",
+	lang = "en",
+	canonicalUrl = "https://astralo.online/"
+} = Astro.props;
+
+// Language-specific meta descriptions
+const metaDescriptions = {
+	sk: "Profesionálne horoskopy vytvorené na mieru. Denné, týždenné, mesačné a partnerské horoskopy s presným astrologickým výkladom. Viac ako 50,000 spokojných klientov.",
+	en: "Professional horoscopes created especially for you. Daily, weekly, monthly and partner horoscopes with precise astrological interpretation. Over 50,000 satisfied customers.",
+	de: "Professionelle Horoskope speziell für Sie erstellt. Tages-, Wochen-, Monats- und Partnerhoroskope mit präziser astrologischer Interpretation.",
+	fr: "Horoscopes professionnels créés spécialement pour vous. Horoscopes quotidiens, hebdomadaires, mensuels et de partenaire avec interprétation astrologique précise.",
+	es: "Horóscopos profesionales creados especialmente para ti. Horóscopos diarios, semanales, mensuales y de pareja con interpretación astrológica precisa.",
+};
+
+const currentDescription = metaDescriptions[lang as keyof typeof metaDescriptions] || metaDescriptions.sk;
+
+// Available languages for hreflang
+const languages = [
+	{ code: 'en', url: 'https://astralo.online/' },
+	{ code: 'sk', url: 'https://astralo.online/sk/' },
+	{ code: 'fr', url: 'https://astralo.online/fr/' },
+];
 ---
 
 <!doctype html>
-<html lang="sk">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={currentDescription} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="horoskop, denný horoskop, týždenný horoskop, mesačný horoskop, partnerský horoskop, astrológia" />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href={canonicalUrl} />
+		
+		<!-- Hreflang Tags for Multi-language SEO -->
+		{languages.map(({ code, url }) => (
+			<link rel="alternate" hreflang={code} href={url} />
+		))}
+		<link rel="alternate" hreflang="x-default" href="https://astralo.online/" />
+		
+		<!-- Open Graph Tags -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={currentDescription} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content="https://astralo.online/og-image.png" />
+		<meta property="og:locale" content={`${lang}_${lang.toUpperCase()}`} />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={currentDescription} />
+		<meta name="twitter:image" content="https://astralo.online/og-image.png" />
+		
+		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		<!-- Generator -->
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Title -->
 		<title>{title}</title>
+		
+		<!-- Structured Data (JSON-LD) -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Astralo",
+			"description": currentDescription,
+			"url": "https://astralo.online",
+			"telephone": "+421900123456",
+			"email": "info@astralo.online",
+			"priceRange": "€€",
+			"image": "https://astralo.online/logo.png",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "SK"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.9",
+				"reviewCount": "50000"
+			},
+			"offers": [
+				{
+					"@type": "Offer",
+					"name": "Denný Horoskop",
+					"price": "1.99",
+					"priceCurrency": "EUR"
+				},
+				{
+					"@type": "Offer",
+					"name": "Týždenný Horoskop",
+					"price": "3.99",
+					"priceCurrency": "EUR"
+				},
+				{
+					"@type": "Offer",
+					"name": "Mesačný Horoskop",
+					"price": "9.99",
+					"priceCurrency": "EUR"
+				},
+				{
+					"@type": "Offer",
+					"name": "Partnerský Horoskop",
+					"price": "14.99",
+					"priceCurrency": "EUR"
+				}
+			]
+		})} />
 	</head>
 	<body>
+		<div class="cosmic-bg"></div>
 		{backgroundImage && (
 			<div
-				class="fixed inset-0 w-full h-full bg-cover bg-center -z-10"
+				class="cosmic-overlay"
 				style={`background-image: url(${backgroundImage});`}
 			></div>
 		)}
-		<main class="relative z-10">
-			<slot />
-		</main>
+		<slot />
+		
+		<!-- Cookie Consent -->
+		<CookieConsent lang={lang} />
 	</body>
 </html>
-<style>
-	body {
-		background-color: #000;
-	}
-</style>

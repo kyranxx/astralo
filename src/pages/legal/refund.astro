@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import { ArrowLeft, RotateCcw } from 'lucide-astro';
+---
+
+<Layout 
+  title="Refund Policy - Astralo"
+  lang="en"
+>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href="/" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">Back</span>
+          </a>
+          <a href="/"><img src="/logo.png" alt="Astralo" class="h-9" /></a>
+          <LanguageSwitcher lang="en" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-4 py-8 sm:py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-strong rounded-2xl p-6 sm:p-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center">
+              <RotateCcw class="w-6 h-6 text-green-400" />
+            </div>
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-bold text-white">Refund Policy</h1>
+              <p class="text-white/50 text-sm">Last updated: December 5, 2024</p>
+            </div>
+          </div>
+          
+          <div class="prose prose-invert max-w-none space-y-6 text-white/80 text-sm sm:text-base">
+            
+            <div class="bg-green-500/10 border border-green-500/20 rounded-xl p-4 mb-6">
+              <p class="text-green-200 text-sm">
+                <strong>EU Consumer Rights:</strong> This policy complies with EU Directive 2011/83/EU on consumer rights. 
+                As a Slovak company, we respect your statutory rights.
+              </p>
+            </div>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">1. Digital Content Nature</h2>
+              <p>
+                Astralo provides <strong>personalized digital content</strong> (horoscope PDFs) that is:
+              </p>
+              <ul class="list-disc pl-6 space-y-1 mt-2">
+                <li>Individually generated based on your birth data</li>
+                <li>Delivered immediately upon payment</li>
+                <li>Non-returnable once generated</li>
+              </ul>
+              <p class="mt-3">
+                Under EU consumer law, you acknowledge that by completing your purchase, you consent to 
+                immediate delivery and waive your 14-day withdrawal right once the digital content is delivered.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">2. When Refunds Are Granted</h2>
+              <p>We will provide a <strong>full refund</strong> if:</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li><strong>Technical failure:</strong> You did not receive your horoscope due to our technical error</li>
+                <li><strong>Non-delivery:</strong> The horoscope was not delivered within 24 hours</li>
+                <li><strong>Incorrect product:</strong> You received the wrong horoscope type</li>
+                <li><strong>Duplicate charge:</strong> You were charged multiple times for the same order</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">3. When Refunds May Be Considered</h2>
+              <p>We may consider refunds on a case-by-case basis for:</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Significant errors in the horoscope content</li>
+                <li>Accidental purchase (within 1 hour and before opening)</li>
+                <li>Other exceptional circumstances</li>
+              </ul>
+              <p class="mt-3">
+                Contact us at <strong>info@astralo.online</strong> with your order details.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">4. When Refunds Are Not Granted</h2>
+              <p>Refunds will <strong>not</strong> be provided for:</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Dissatisfaction with horoscope predictions (entertainment product)</li>
+                <li>Providing incorrect birth data</li>
+                <li>Not checking email (including spam folder)</li>
+                <li>Change of mind after delivery</li>
+                <li>Requesting the horoscope was already viewed/downloaded</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">5. Refund Process</h2>
+              <ol class="list-decimal pl-6 space-y-2">
+                <li>Email us at <strong>info@astralo.online</strong> with:
+                  <ul class="list-disc pl-6 mt-1">
+                    <li>Your order number or email address</li>
+                    <li>Reason for refund request</li>
+                    <li>Date of purchase</li>
+                  </ul>
+                </li>
+                <li>We will respond within <strong>2 business days</strong></li>
+                <li>Approved refunds are processed within <strong>5-10 business days</strong></li>
+                <li>Refunds are issued to the original payment method via Stripe</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">6. Partial Refunds</h2>
+              <p>
+                In some cases, we may offer partial refunds or store credit as an alternative resolution.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">7. Your Statutory Rights</h2>
+              <p>
+                This policy does not affect your statutory rights under Slovak and EU consumer protection law.
+              </p>
+              <p class="mt-2">
+                Under EU law, consumers have the right to withdraw from a distance contract within 14 days. 
+                However, this right does not apply to digital content once delivery has begun with your prior consent.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">8. Dispute Resolution</h2>
+              <p>
+                If you are not satisfied with our refund decision, you may:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>Request a review by contacting info@astralo.online</li>
+                <li>Use the EU Online Dispute Resolution platform: 
+                  <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" class="text-amber-400 hover:underline">ec.europa.eu/consumers/odr</a>
+                </li>
+                <li>Contact Slovak consumer protection authorities</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-xl font-bold text-white mt-6 mb-3">9. Contact</h2>
+              <p>
+                For refund requests or questions:<br />
+                <strong>Email:</strong> info@astralo.online<br />
+                <strong>Company:</strong> Apollo Tech s.r.o., Slovakia<br />
+                <strong>Response time:</strong> Within 2 business days
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer lang="en" />
+  </div>
+</Layout>

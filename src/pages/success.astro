@@ -1,130 +1,224 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { CheckCircle, Download, Loader } from 'lucide-astro';
+import Footer from '../components/Footer.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { CheckCircle, Mail, Home, Sparkles, Star } from 'lucide-astro';
 
 const horoscopeTypes = [
-    { id: "weekly", name: "Osobný Horoskop na Týždeň" },
-    { id: "monthly", name: "Osobný Horoskop na Mesiac" },
-    { id: "yearly", name: "Osobný Horoskop na Rok" },
-    { id: "natal", name: "Osobná Rodná Mapa (Natal Chart)" },
-    { id: "partner", name: "Partnerský Horoskop (Synastria)" },
+  { id: "daily", name: "Daily Horoscope" },
+  { id: "weekly", name: "Weekly Horoscope" },
+  { id: "monthly", name: "Monthly Horoscope" },
+  { id: "partner", name: "Partner Horoscope" },
 ];
 
 const sessionId = Astro.url.searchParams.get('session_id');
 
 if (!sessionId) {
-    return Astro.redirect('/');
+  return Astro.redirect('/');
 }
 ---
 
-<Layout title="Váš Horoskop je Pripravený">
-  <div class="min-h-screen flex items-center justify-center p-4" style="background-image: url('/background2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="absolute inset-0 bg-black/60"></div>
-    <div id="horoscope-container" class="w-full max-w-2xl mx-auto bg-black/70 backdrop-blur-xl border border-white/20 shadow-2xl rounded-lg p-8 text-white text-center">
-      
-      <div id="loading-state">
-        <Loader class="w-16 h-16 text-amber-400 mx-auto mb-4 animate-spin" />
-        <h1 class="text-3xl font-bold mb-2">Generujem váš horoskop...</h1>
-        <p class="text-white/80 text-lg">Tento proces môže chvíľu trvať. Prosím, neobnovujte stránku.</p>
+<Layout title="Success - Astralo" lang="en">
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center">
+            <img src="/logo.png" alt="Astralo" class="h-9" />
+          </a>
+          <LanguageSwitcher lang="en" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-4 py-12">
+      <!-- Background Elements -->
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-500/20 rounded-full blur-[100px]"></div>
       </div>
 
-      <div id="success-state" class="hidden">
-        <CheckCircle class="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h1 class="text-3xl font-bold mb-2">Váš horoskop je pripravený!</h1>
-        <p id="product-name" class="text-amber-300 font-semibold text-lg mb-6"></p>
-        
-        <div id="horoscope-content" class="text-left bg-white/5 p-6 rounded-lg border border-white/15 my-6 max-h-96 overflow-y-auto">
-          <!-- Horoscope text will be injected here -->
-        </div>
+      <div class="w-full max-w-2xl relative z-10">
+        <div class="glass-strong rounded-2xl p-6 sm:p-10 animate-fade-in border border-white/10">
+          
+          <!-- Loading State -->
+          <div id="loading-state" class="text-center py-8">
+            <div class="relative inline-flex items-center justify-center w-20 h-20 mb-6">
+              <div class="absolute inset-0 bg-amber-400/20 rounded-full animate-ping"></div>
+              <div class="relative w-20 h-20 rounded-full bg-gradient-to-br from-amber-400/20 to-purple-500/20 border border-white/10 flex items-center justify-center">
+                <Sparkles class="w-8 h-8 text-amber-400 animate-pulse" />
+              </div>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold text-white mb-3">
+              Preparing Your Horoscope...
+            </h1>
+            <p class="text-white/60 text-base max-w-md mx-auto">
+              Analyzing your birth chart and planetary positions.
+            </p>
+          </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button id="download-pdf" class="bg-amber-500 hover:bg-amber-600 text-black font-bold px-6 py-3 rounded-lg inline-flex items-center justify-center transition-colors">
-                <Download class="w-5 h-5 mr-2" />
-                Stiahnuť ako PDF
-            </button>
-            <a href="/" class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg inline-flex items-center justify-center transition-colors">
-                Späť na hlavnú stránku
+          <!-- Success State -->
+          <div id="success-state" class="hidden text-center">
+            <!-- Success Icon -->
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-green-400/20 to-emerald-600/20 border border-white/10 mb-6">
+              <CheckCircle class="w-10 h-10 text-green-400" />
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">
+              Horoscope Generated!
+            </h1>
+            
+            <!-- Product Name -->
+            <div class="flex items-center justify-center gap-2 text-amber-400 font-medium uppercase tracking-wider mb-6">
+              <Star class="w-4 h-4 fill-current" />
+              <span id="product-name"></span>
+              <Star class="w-4 h-4 fill-current" />
+            </div>
+
+            <!-- Email Box -->
+            <div class="relative mb-8">
+              <div class="glass rounded-2xl p-6 sm:p-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-amber-400/20 to-purple-500/20 border border-white/10 mb-4">
+                  <Mail class="w-8 h-8 text-amber-400" />
+                </div>
+                
+                <h2 class="text-xl sm:text-2xl font-bold text-white mb-3">
+                  Check Your Email! 📬
+                </h2>
+                
+                <p class="text-white/80 mb-3">
+                  Your personalized horoscope has been sent to:
+                </p>
+                
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
+                  <Mail class="w-4 h-4 text-amber-400" />
+                  <span id="customer-email" class="text-white font-medium"></span>
+                </div>
+
+                <div class="text-white/60 text-sm space-y-1">
+                  <p>✨ Your horoscope is in the email body</p>
+                  <p>📄 Legal documents are attached</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Status -->
+            <div id="email-status" class="mb-6 hidden">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm">
+                <div class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></div>
+                <span>Sending your horoscope...</span>
+              </div>
+            </div>
+
+            <div id="email-success" class="mb-6 hidden">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
+                <CheckCircle class="w-4 h-4" />
+                <span>Email sent successfully!</span>
+              </div>
+            </div>
+
+            <!-- Back Button -->
+            <a href="/" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors">
+              <Home class="w-5 h-5" />
+              <span>Back to Home</span>
             </a>
+
+            <p class="text-white/40 text-xs mt-6">
+              Didn't receive the email? Check your spam folder or contact<br />
+              <a href="mailto:info@astralo.online" class="text-amber-400 hover:underline">info@astralo.online</a>
+            </p>
+          </div>
+
+          <!-- Error State -->
+          <div id="error-state" class="hidden text-center py-8">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500/10 mb-4 border border-red-500/20">
+              <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </div>
+            <h1 class="text-xl font-bold text-white mb-2">Something went wrong</h1>
+            <p class="text-white/70 mb-6 text-sm">We couldn't generate your horoscope. Please contact support.</p>
+            <a href="/" class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-amber-500 text-black font-semibold">
+              <Home class="w-4 h-4" />
+              Back to Home
+            </a>
+          </div>
+
         </div>
       </div>
+    </main>
 
-    </div>
+    <Footer lang="en" />
   </div>
 </Layout>
 
-<script define:vars={{ sessionId, horoscopeTypes }}>
-    async function fetchHoroscope() {
-        try {
-            const response = await fetch('/api/horoscope', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ sessionId }),
-            });
+<script is:inline define:vars={{ sessionId, horoscopeTypes }}>
+  let horoscopeData = null;
 
-            if (!response.ok) throw new Error('Failed to fetch horoscope');
+  async function fetchHoroscope() {
+    try {
+      const response = await fetch('/api/horoscope', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId }),
+      });
 
-            const data = await response.json();
-            
-            document.getElementById('loading-state').classList.add('hidden');
-            document.getElementById('success-state').classList.remove('hidden');
-            
-            const product = horoscopeTypes.find(t => t.id === data.product);
-            document.getElementById('product-name').textContent = product ? product.name : 'Váš Horoskop';
-            document.getElementById('horoscope-content').innerHTML = `<p>${data.horoscope.replace(/\n/g, '<br>')}</p>`;
+      if (!response.ok) throw new Error('Failed to fetch horoscope');
 
-        } catch (error) {
-            console.error(error);
-            document.getElementById('loading-state').innerHTML = `
-                <h1 class="text-2xl font-bold text-red-500">Chyba pri generovaní horoskopu</h1>
-                <p class="text-white/80 mt-2">Prosím, skúste to znova neskôr alebo kontaktujte podporu.</p>
-            `;
-        }
+      const data = await response.json();
+      horoscopeData = data;
+      
+      document.getElementById('loading-state').classList.add('hidden');
+      document.getElementById('success-state').classList.remove('hidden');
+      
+      const product = horoscopeTypes.find(t => t.id === data.product);
+      const productName = product ? product.name : 'Your Horoscope';
+      document.getElementById('product-name').textContent = productName;
+      document.getElementById('customer-email').textContent = data.email;
+
+      sendEmail(data, productName);
+
+    } catch (error) {
+      console.error(error);
+      document.getElementById('loading-state').classList.add('hidden');
+      document.getElementById('error-state').classList.remove('hidden');
     }
+  }
 
-    fetchHoroscope();
+  async function sendEmail(data, productName) {
+    const statusDiv = document.getElementById('email-status');
+    const successDiv = document.getElementById('email-success');
+    statusDiv.classList.remove('hidden');
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: data.email,
+          customerName: data.name,
+          horoscopeContent: data.horoscope,
+          productName: productName,
+          lang: data.lang || 'en'
+        })
+      });
+      
+      if (!response.ok) throw new Error('Failed to send email');
 
-    document.getElementById('download-pdf').addEventListener('click', async () => {
-        const { PDFDocument, rgb, StandardFonts } = await import('https://cdn.skypack.dev/pdf-lib');
+      statusDiv.classList.add('hidden');
+      successDiv.classList.remove('hidden');
+    } catch (e) {
+      console.error('Email failed', e);
+      statusDiv.innerHTML = `
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
+          <span>Failed to send email. Contact support.</span>
+        </div>
+      `;
+    }
+  }
 
-        const pdfDoc = await PDFDocument.create();
-        const page = pdfDoc.addPage();
-        
-        const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
-        const titleFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
-
-        const productName = document.getElementById('product-name').textContent;
-        const horoscopeText = document.getElementById('horoscope-content').innerText;
-
-        let y = page.getHeight() - 50;
-
-        page.drawText(productName, {
-            x: 50,
-            y,
-            font: titleFont,
-            size: 24,
-            color: rgb(0, 0, 0),
-        });
-
-        y -= 40;
-
-        const lines = horoscopeText.split('\n');
-        for (const line of lines) {
-            page.drawText(line, {
-                x: 50,
-                y,
-                font,
-                size: 12,
-                color: rgb(0, 0, 0),
-            });
-            y -= 15;
-        }
-
-        const pdfBytes = await pdfDoc.save();
-        
-        const blob = new Blob([pdfBytes], { type: 'application/pdf' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = `${productName.toLowerCase().replace(/ /g, '_')}.pdf`;
-        link.click();
-    });
+  fetchHoroscope();
 </script>
