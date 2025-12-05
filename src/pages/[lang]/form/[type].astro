@@ -1,0 +1,346 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Footer from '../../../components/Footer.astro';
+import LanguageSwitcher from '../../../components/LanguageSwitcher.astro';
+import { ArrowLeft, Sparkles, User, Calendar, Clock, MapPin, Heart, Shield, Zap, Mail, HelpCircle } from 'lucide-astro';
+import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
+
+const horoscopeTypes = [
+  { id: "daily", price: 1.99, originalPrice: 3.99 },
+  { id: "weekly", price: 3.99, originalPrice: 7.99 },
+  { id: "monthly", price: 9.99, originalPrice: 19.99 },
+  { id: "partner", price: 14.99, originalPrice: 29.99 },
+];
+
+export function getStaticPaths() {
+  const locales = getSupportedLocales().filter(l => l !== 'en');
+  const types = ['daily', 'weekly', 'monthly', 'partner'];
+  
+  const paths = [];
+  for (const lang of locales) {
+    for (const type of types) {
+      paths.push({ params: { lang, type } });
+    }
+  }
+  return paths;
+}
+
+const { lang, type } = Astro.params;
+const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+const t = getTranslations(currentLang);
+
+const selectedType = horoscopeTypes.find(t => t.id === type);
+if (!selectedType) {
+  return Astro.redirect(`/${currentLang}/`);
+}
+
+const productName = t.products[type as keyof typeof t.products]?.name || type;
+---
+
+<Layout title={`${productName} - Astralo`} lang={currentLang}>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Top Promo Banner -->
+    <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 py-2 px-4 text-center">
+      <div class="flex items-center justify-center gap-3 text-black/90 text-sm font-medium">
+        <span class="animate-pulse">🔥</span>
+        <span><strong>50% OFF</strong></span>
+        <span class="hidden sm:inline">• ⚡ {t.promo.delivery}</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">{currentLang === 'sk' ? 'Späť' : 'Back'}</span>
+          </a>
+          <a href={`/${currentLang}/`} class="block hover:opacity-80 transition-opacity">
+            <img src="/logo.png" alt="Astralo" class="h-10" />
+          </a>
+          <LanguageSwitcher lang={currentLang} />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-4 py-8 sm:py-12">
+      <div class="max-w-2xl mx-auto">
+        
+        <!-- Title Section -->
+        <div class="text-center mb-10 animate-fade-in-up">
+          <div class="inline-flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30">
+              <Sparkles class="w-6 h-6 text-white" />
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-white via-amber-100 to-white bg-clip-text text-transparent">
+              {productName}
+            </h1>
+          </div>
+          
+          <!-- Price with discount -->
+          <div class="mt-6 inline-flex items-center gap-3 glass px-6 py-3 rounded-full">
+            <span class="text-white/40 text-sm line-through">{selectedType.originalPrice.toFixed(2)}€</span>
+            <span class="text-2xl font-bold text-amber-400">
+              {selectedType.price.toFixed(2)}€
+            </span>
+            <div class="bg-red-500/20 text-red-400 text-xs font-bold px-2 py-1 rounded">-50%</div>
+            <div class="w-px h-6 bg-white/20"></div>
+            <span class="text-white/60 text-sm">🔒 {t.promo.secure}</span>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="glass-strong rounded-3xl p-8 sm:p-10 mb-8 border border-white/10 shadow-2xl">
+          
+          <form id="payment-form" class="space-y-6">
+            {type === 'partner' ? (
+              <div class="space-y-8">
+                {/* Person 1 */}
+                <div class="space-y-5">
+                  <div class="flex items-center gap-3 pb-4 border-b border-white/10">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-400/20 to-blue-600/20 flex items-center justify-center">
+                      <User class="w-5 h-5 text-blue-400" />
+                    </div>
+                    <h3 class="text-xl font-bold text-white">{currentLang === 'sk' ? 'Prvá osoba' : 'First Person'}</h3>
+                  </div>
+                  
+                  <div class="space-y-4">
+                    <div>
+                      <label for="name1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <User class="w-5 h-5 text-amber-400" />
+                        {t.form.name}
+                      </label>
+                      <input id="name1" name="name1" type="text" placeholder={t.form.name} autocomplete="name" required class="input w-full text-lg p-4" />
+                    </div>
+
+                    <div>
+                      <label for="email1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <Mail class="w-5 h-5 text-amber-400" />
+                        {t.form.email}
+                      </label>
+                      <input id="email1" name="email1" type="email" placeholder={t.form.email} autocomplete="email" required class="input w-full text-lg p-4" />
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label for="birthDate1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Calendar class="w-5 h-5 text-amber-400" />
+                          {t.form.birthDate}
+                        </label>
+                        <input id="birthDate1" name="birthDate1" type="date" autocomplete="bday" required class="input w-full text-lg p-4" />
+                      </div>
+
+                      <div>
+                        <label for="birthTime1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Clock class="w-5 h-5 text-amber-400" />
+                          {t.form.birthTime}
+                        </label>
+                        <input id="birthTime1" name="birthTime1" type="time" required class="input w-full text-lg p-4" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="birthPlace1" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <MapPin class="w-5 h-5 text-amber-400" />
+                        {t.form.birthPlace}
+                      </label>
+                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder={t.form.birthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Person 2 */}
+                <div class="space-y-5">
+                  <div class="flex items-center gap-3 pb-4 border-b border-white/10">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400/20 to-pink-600/20 flex items-center justify-center">
+                      <Heart class="w-5 h-5 text-pink-400" />
+                    </div>
+                    <h3 class="text-xl font-bold text-white">{currentLang === 'sk' ? 'Druhá osoba' : 'Second Person'}</h3>
+                  </div>
+                  
+                  <div class="space-y-4">
+                    <div>
+                      <label for="name2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <User class="w-5 h-5 text-amber-400" />
+                        {t.form.partnerName}
+                      </label>
+                      <input id="name2" name="name2" type="text" placeholder={t.form.partnerName} autocomplete="name" required class="input w-full text-lg p-4" />
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label for="birthDate2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Calendar class="w-5 h-5 text-amber-400" />
+                          {t.form.partnerBirthDate}
+                        </label>
+                        <input id="birthDate2" name="birthDate2" type="date" autocomplete="bday" required class="input w-full text-lg p-4" />
+                      </div>
+
+                      <div>
+                        <label for="birthTime2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                          <Clock class="w-5 h-5 text-amber-400" />
+                          {t.form.partnerBirthTime}
+                        </label>
+                        <input id="birthTime2" name="birthTime2" type="time" required class="input w-full text-lg p-4" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label for="birthPlace2" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                        <MapPin class="w-5 h-5 text-amber-400" />
+                        {t.form.partnerBirthPlace}
+                      </label>
+                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder={t.form.partnerBirthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div class="space-y-5">
+                <div>
+                  <label for="name" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <User class="w-5 h-5 text-amber-400" />
+                    {t.form.name}
+                  </label>
+                  <input id="name" name="name" type="text" placeholder={t.form.name} autocomplete="name" required class="input w-full text-lg p-4" />
+                </div>
+
+                <div>
+                  <label for="email" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <Mail class="w-5 h-5 text-amber-400" />
+                    {t.form.email}
+                  </label>
+                  <input id="email" name="email" type="email" placeholder={t.form.email} autocomplete="email" required class="input w-full text-lg p-4" />
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="birthDate" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                      <Calendar class="w-5 h-5 text-amber-400" />
+                      {t.form.birthDate}
+                    </label>
+                    <input id="birthDate" name="birthDate" type="date" autocomplete="bday" required class="input w-full text-lg p-4" />
+                  </div>
+
+                  <div>
+                    <label for="birthTime" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                      <Clock class="w-5 h-5 text-amber-400" />
+                      {t.form.birthTime}
+                    </label>
+                    <input id="birthTime" name="birthTime" type="time" required class="input w-full text-lg p-4" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="birthPlace" class="flex items-center gap-2 text-white/90 text-base font-medium mb-2">
+                    <MapPin class="w-5 h-5 text-amber-400" />
+                    {t.form.birthPlace}
+                  </label>
+                  <input id="birthPlace" name="birthPlace" type="text" placeholder={t.form.birthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                </div>
+              </div>
+            )}
+
+            {/* Submit Button */}
+            <div class="pt-6">
+              <button type="submit" id="submit-btn" class="group relative w-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:via-amber-600 hover:to-amber-700 text-black font-bold px-8 py-5 rounded-xl shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-amber-500/60">
+                <span class="flex items-center justify-center gap-3">
+                  <Sparkles class="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                  <span class="text-lg">{t.form.submit} - {selectedType.price.toFixed(2)}€</span>
+                  <Zap class="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* Trust Indicators */}
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          <div class="glass rounded-xl p-4 text-center">
+            <Shield class="w-8 h-8 text-green-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">100% {currentLang === 'sk' ? 'Bezpečné' : 'Secure'}</p>
+            <p class="text-white/50 text-xs">SSL</p>
+          </div>
+          <div class="glass rounded-xl p-4 text-center">
+            <Zap class="w-8 h-8 text-amber-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">{t.whyUs.instant.title}</p>
+            <p class="text-white/50 text-xs">2 min</p>
+          </div>
+          <div class="glass rounded-xl p-4 text-center">
+            <Heart class="w-8 h-8 text-pink-400 mx-auto mb-2" />
+            <p class="text-white/90 font-medium text-sm">{currentLang === 'sk' ? 'Garancia' : 'Guarantee'}</p>
+            <p class="text-white/50 text-xs">30 {currentLang === 'sk' ? 'dní' : 'days'}</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer lang={currentLang} />
+
+    <!-- Loading Overlay -->
+    <div id="payment-overlay" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 bg-black/60 backdrop-blur-md">
+      <div class="text-center relative px-4">
+        <div class="absolute inset-0 bg-amber-500/20 blur-3xl rounded-full animate-pulse"></div>
+        <div class="relative bg-black/40 border border-white/10 p-8 rounded-3xl backdrop-blur-xl shadow-2xl transform scale-95 transition-all duration-500" id="payment-modal">
+          <div class="w-20 h-20 mx-auto mb-6 relative">
+            <div class="absolute inset-0 border-4 border-amber-500/30 rounded-full animate-[spin_3s_linear_infinite]"></div>
+            <div class="absolute inset-2 border-4 border-t-amber-400 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <Sparkles class="w-8 h-8 text-amber-400 animate-pulse" />
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">{t.form.processing}</h3>
+          <p class="text-white/60 text-lg">{currentLang === 'sk' ? 'Presmerovávam na platbu...' : 'Redirecting to payment...'}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ type, currentLang }}>
+  const form = document.getElementById('payment-form');
+  
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    
+    const overlay = document.getElementById('payment-overlay');
+    const modal = document.getElementById('payment-modal');
+    
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.remove('scale-95');
+    modal.classList.add('scale-100');
+    
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    const payload = { productKey: type, lang: currentLang, ...data };
+    
+    try {
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.error || 'Payment initialization failed');
+      }
+
+      if (result.url) {
+        window.location.href = result.url;
+      }
+    } catch (error) {
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('scale-100');
+      modal.classList.add('scale-95');
+      
+      alert(error.message || 'Error processing payment.');
+    }
+  });
+</script>
