@@ -10,7 +10,7 @@ const vi: Translations = {
     trust: { customers: 'Khách hài lòng', rating: 'Đánh giá trung bình', delivery: 'Giao hàng ngay' },
     testimonials: { title: 'Khách hàng nói gì' },
     whyUs: { title: 'Tại sao chọn Astralo?', technology: { title: 'Công nghệ', description: 'Công nghệ hiện đại' }, instant: { title: 'Ngay lập tức', description: 'Sẵn sàng trong vài phút' }, professional: { title: 'Chuyên nghiệp', description: 'Nguyên tắc chiêm tinh' }, verified: { title: 'Đã xác minh', description: '50.000+ khách hàng' } },
-    form: { title: 'Nhận tử vi', name: 'Họ tên', email: 'Email', birthDate: 'Ngày sinh', birthTime: 'Giờ (tùy chọn)', birthPlace: 'Nơi sinh', partnerName: 'Tên đối tác', partnerBirthDate: 'Ngày sinh đối tác', partnerBirthTime: 'Giờ đối tác', partnerBirthPlace: 'Nơi sinh đối tác', submit: 'Tiếp tục thanh toán', processing: 'Đang xử lý...' },
+    form: { title: 'Nhận tử vi', description: 'Fill in your details.', name: 'Họ tên', email: 'Email', birthDate: 'Ngày sinh', birthTime: 'Giờ (tùy chọn)', birthPlace: 'Nơi sinh', partnerName: 'Tên đối tác', partnerBirthDate: 'Ngày sinh đối tác', partnerBirthTime: 'Giờ đối tác', partnerBirthPlace: 'Nơi sinh đối tác', submit: 'Tiếp tục thanh toán', processing: 'Đang xử lý...' },
     success: { title: 'Cảm ơn!', message: 'Thanh toán thành công.', checkEmail: 'Tử vi sẽ được gửi đến email của bạn.' },
     footer: { rights: 'Bảo lưu mọi quyền.', terms: 'Điều khoản', privacy: 'Riêng tư', refund: 'Hoàn tiền', cookies: 'Cookies' },
 };

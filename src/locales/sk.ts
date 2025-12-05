@@ -68,6 +68,7 @@ const sk: Translations = {
     },
     form: {
         title: 'Získajte svoj horoskop',
+        description: 'Získajte presné astrologické čítanie špeciálne pre vás. Vyplňte svoje údaje a okamžite pripravíme váš osobný horoskop.',
         name: 'Celé meno',
         email: 'E-mailová adresa',
         birthDate: 'Dátum narodenia',
@@ -79,6 +80,16 @@ const sk: Translations = {
         partnerBirthPlace: 'Miesto narodenia partnera/partnerky',
         submit: 'Pokračovať k platbe',
         processing: 'Spracovávam...',
+    },
+    benefits: {
+        pdfReport: 'Detailná PDF Správa',
+        pages: '15+ strán informácií',
+        personal: 'Osobná Analýza',
+        birthTime: 'Na základe času narodenia',
+        predictions: 'Predpovede Budúcnosti',
+        transits: 'Tranzity a progresie',
+        advice: 'Praktické Rady',
+        careerLove: 'Pre kariéru a lásku',
     },
     success: {
         title: 'Ďakujeme!',

@@ -10,7 +10,8 @@ const tr: Translations = {
     trust: { customers: 'Mutlu müşteri', rating: 'Ortalama puan', delivery: 'Anında teslimat' },
     testimonials: { title: 'Müşterilerimiz ne diyor' },
     whyUs: { title: 'Neden Astralo?', technology: { title: 'Teknoloji', description: 'Modern teknoloji' }, instant: { title: 'Anında', description: 'Dakikalar içinde hazır' }, professional: { title: 'Profesyonel', description: 'Astrolojik prensipler' }, verified: { title: 'Doğrulanmış', description: '50.000+ müşteri' } },
-    form: { title: 'Burç yorumunuzu alın', name: 'Tam ad', email: 'E-posta', birthDate: 'Doğum tarihi', birthTime: 'Saat (isteğe bağlı)', birthPlace: 'Doğum yeri', partnerName: 'Partner adı', partnerBirthDate: 'Partner doğum tarihi', partnerBirthTime: 'Partner saati', partnerBirthPlace: 'Partner doğum yeri', submit: 'Ödemeye devam et', processing: 'İşleniyor...' },
+    form: { title: 'Burç yorumunuzu alın', description: 'Size özel doğru bir astrolojik okuma alın. Bilgilerinizi doldurun, kişisel burç yorumunuzu hemen hazırlayalım.', name: 'Tam ad', email: 'E-posta', birthDate: 'Doğum tarihi', birthTime: 'Saat (isteğe bağlı)', birthPlace: 'Doğum yeri', partnerName: 'Partner adı', partnerBirthDate: 'Partner doğum tarihi', partnerBirthTime: 'Partner saati', partnerBirthPlace: 'Partner doğum yeri', submit: 'Ödemeye devam et', processing: 'İşleniyor...' },
+    benefits: { pdfReport: 'Detaylı PDF Rapor', pages: '15+ sayfa içerik', personal: 'Kişisel Analiz', birthTime: 'Doğum saatine dayalı', predictions: 'Gelecek Tahminleri', transits: 'Transitler ve ilerlemeler', advice: 'Uygulanabilir Tavsiyeler', careerLove: 'Kariyer ve aşk için' },
     success: { title: 'Teşekkürler!', message: 'Ödemeniz başarılı.', checkEmail: 'Burç yorumunuz e-postanıza gönderilecek.' },
     footer: { rights: 'Tüm hakları saklıdır.', terms: 'Şartlar', privacy: 'Gizlilik', refund: 'İade', cookies: 'Çerezler' },
 };

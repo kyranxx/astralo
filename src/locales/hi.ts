@@ -10,7 +10,7 @@ const hi: Translations = {
     trust: { customers: 'संतुष्ट ग्राहक', rating: 'औसत रेटिंग', delivery: 'तुरंत डिलीवरी' },
     testimonials: { title: 'हमारे ग्राहक क्या कहते हैं' },
     whyUs: { title: 'Astralo क्यों चुनें?', technology: { title: 'तकनीक', description: 'आधुनिक तकनीक' }, instant: { title: 'तुरंत', description: 'मिनटों में तैयार' }, professional: { title: 'पेशेवर', description: 'ज्योतिषीय सिद्धांत' }, verified: { title: 'सत्यापित', description: '50,000+ ग्राहक' } },
-    form: { title: 'अपना राशिफल प्राप्त करें', name: 'पूरा नाम', email: 'ईमेल', birthDate: 'जन्म तिथि', birthTime: 'समय (वैकल्पिक)', birthPlace: 'जन्म स्थान', partnerName: 'साथी का नाम', partnerBirthDate: 'साथी की जन्म तिथि', partnerBirthTime: 'साथी का समय', partnerBirthPlace: 'साथी का जन्म स्थान', submit: 'भुगतान जारी रखें', processing: 'प्रोसेसिंग...' },
+    form: { title: 'अपना राशिफल प्राप्त करें', description: 'Fill in your details.', name: 'पूरा नाम', email: 'ईमेल', birthDate: 'जन्म तिथि', birthTime: 'समय (वैकल्पिक)', birthPlace: 'जन्म स्थान', partnerName: 'साथी का नाम', partnerBirthDate: 'साथी की जन्म तिथि', partnerBirthTime: 'साथी का समय', partnerBirthPlace: 'साथी का जन्म स्थान', submit: 'भुगतान जारी रखें', processing: 'प्रोसेसिंग...' },
     success: { title: 'धन्यवाद!', message: 'भुगतान सफल।', checkEmail: 'आपका राशिफल आपके ईमेल पर भेजा जाएगा।' },
     footer: { rights: 'सर्वाधिकार सुरक्षित।', terms: 'शर्तें', privacy: 'गोपनीयता', refund: 'रिफंड', cookies: 'कुकीज़' },
 };

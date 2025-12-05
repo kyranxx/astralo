@@ -3,31 +3,206 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import { CheckCircle, Mail, Home, Sparkles, Star } from 'lucide-astro';
+import { isValidLocale, getTranslations, type SupportedLocale } from '../lib/i18n';
+
+// Get lang from URL params
+const langParam = Astro.url.searchParams.get('lang') || 'en';
+const currentLang = (isValidLocale(langParam) ? langParam : 'en') as SupportedLocale;
+const t = getTranslations(currentLang);
+
+// Success page specific translations (inline for simplicity)
+const successT = {
+  en: {
+    preparing: 'Preparing Your Horoscope...',
+    analyzing: 'Analyzing your birth chart and planetary positions.',
+    generated: 'Horoscope Generated!',
+    checkEmail: 'Check Your Email! 📬',
+    sentTo: 'Your personalized horoscope has been sent to:',
+    inEmail: 'Your horoscope is in the email body',
+    docsAttached: 'Legal documents are attached',
+    sending: 'Sending your horoscope...',
+    emailSent: 'Email sent successfully!',
+    backHome: 'Back to Home',
+    didntReceive: "Didn't receive the email? Check your spam folder or contact",
+    error: 'Something went wrong',
+    errorDesc: "We couldn't generate your horoscope. Please contact support.",
+    emailFailed: 'Failed to send email. Contact support.'
+  },
+  sk: {
+    preparing: 'Pripravujeme váš horoskop...',
+    analyzing: 'Analyzujeme vašu pôrodnú kartu a polohy planét.',
+    generated: 'Horoskop vygenerovaný!',
+    checkEmail: 'Skontrolujte email! 📬',
+    sentTo: 'Váš personalizovaný horoskop bol odoslaný na:',
+    inEmail: 'Váš horoskop je v tele emailu',
+    docsAttached: 'Právne dokumenty sú v prílohe',
+    sending: 'Odosielame váš horoskop...',
+    emailSent: 'Email úspešne odoslaný!',
+    backHome: 'Späť domov',
+    didntReceive: 'Nedostali ste email? Skontrolujte spam alebo kontaktujte',
+    error: 'Niečo sa pokazilo',
+    errorDesc: 'Nepodarilo sa vygenerovať horoskop. Kontaktujte podporu.',
+    emailFailed: 'Odosielanie zlyhalo. Kontaktujte podporu.'
+  },
+  cs: {
+    preparing: 'Připravujeme váš horoskop...',
+    analyzing: 'Analyzujeme vaši porodní kartu a polohy planet.',
+    generated: 'Horoskop vygenerován!',
+    checkEmail: 'Zkontrolujte email! 📬',
+    sentTo: 'Váš personalizovaný horoskop byl odeslán na:',
+    inEmail: 'Váš horoskop je v těle emailu',
+    docsAttached: 'Právní dokumenty jsou v příloze',
+    sending: 'Odesíláme váš horoskop...',
+    emailSent: 'Email úspěšně odeslán!',
+    backHome: 'Zpět domů',
+    didntReceive: 'Nedostali jste email? Zkontrolujte spam nebo kontaktujte',
+    error: 'Něco se pokazilo',
+    errorDesc: 'Nepodařilo se vygenerovat horoskop. Kontaktujte podporu.',
+    emailFailed: 'Odeslání selhalo. Kontaktujte podporu.'
+  },
+  de: {
+    preparing: 'Ihr Horoskop wird vorbereitet...',
+    analyzing: 'Analyse Ihres Geburtshoroskops und der Planetenpositionen.',
+    generated: 'Horoskop erstellt!',
+    checkEmail: 'Überprüfen Sie Ihre E-Mail! 📬',
+    sentTo: 'Ihr personalisiertes Horoskop wurde gesendet an:',
+    inEmail: 'Ihr Horoskop befindet sich im E-Mail-Text',
+    docsAttached: 'Rechtliche Dokumente sind beigefügt',
+    sending: 'Ihr Horoskop wird gesendet...',
+    emailSent: 'E-Mail erfolgreich gesendet!',
+    backHome: 'Zurück zur Startseite',
+    didntReceive: 'E-Mail nicht erhalten? Überprüfen Sie Ihren Spam-Ordner oder kontaktieren Sie',
+    error: 'Etwas ist schiefgelaufen',
+    errorDesc: 'Wir konnten Ihr Horoskop nicht erstellen. Bitte kontaktieren Sie den Support.',
+    emailFailed: 'E-Mail-Versand fehlgeschlagen. Kontaktieren Sie den Support.'
+  },
+  fr: {
+    preparing: 'Préparation de votre horoscope...',
+    analyzing: 'Analyse de votre thème natal et des positions planétaires.',
+    generated: 'Horoscope généré!',
+    checkEmail: 'Vérifiez votre email! 📬',
+    sentTo: 'Votre horoscope personnalisé a été envoyé à:',
+    inEmail: "Votre horoscope est dans le corps de l'email",
+    docsAttached: 'Les documents légaux sont en pièce jointe',
+    sending: 'Envoi de votre horoscope...',
+    emailSent: 'Email envoyé avec succès!',
+    backHome: "Retour à l'accueil",
+    didntReceive: "Vous n'avez pas reçu l'email? Vérifiez vos spams ou contactez",
+    error: "Quelque chose s'est mal passé",
+    errorDesc: "Nous n'avons pas pu générer votre horoscope. Veuillez contacter le support.",
+    emailFailed: "Échec de l'envoi. Contactez le support."
+  },
+  es: {
+    preparing: 'Preparando tu horóscopo...',
+    analyzing: 'Analizando tu carta natal y posiciones planetarias.',
+    generated: '¡Horóscopo generado!',
+    checkEmail: '¡Revisa tu email! 📬',
+    sentTo: 'Tu horóscopo personalizado ha sido enviado a:',
+    inEmail: 'Tu horóscopo está en el cuerpo del email',
+    docsAttached: 'Los documentos legales están adjuntos',
+    sending: 'Enviando tu horóscopo...',
+    emailSent: '¡Email enviado con éxito!',
+    backHome: 'Volver al inicio',
+    didntReceive: '¿No recibiste el email? Revisa tu carpeta de spam o contacta',
+    error: 'Algo salió mal',
+    errorDesc: 'No pudimos generar tu horóscopo. Por favor contacta soporte.',
+    emailFailed: 'Fallo al enviar. Contacta soporte.'
+  },
+  it: {
+    preparing: 'Preparazione del tuo oroscopo...',
+    analyzing: 'Analisi del tuo tema natale e posizioni planetarie.',
+    generated: 'Oroscopo generato!',
+    checkEmail: 'Controlla la tua email! 📬',
+    sentTo: 'Il tuo oroscopo personalizzato è stato inviato a:',
+    inEmail: "Il tuo oroscopo è nel corpo dell'email",
+    docsAttached: 'I documenti legali sono allegati',
+    sending: 'Invio del tuo oroscopo...',
+    emailSent: 'Email inviata con successo!',
+    backHome: 'Torna alla home',
+    didntReceive: "Non hai ricevuto l'email? Controlla lo spam o contatta",
+    error: 'Qualcosa è andato storto',
+    errorDesc: 'Non siamo riusciti a generare il tuo oroscopo. Contatta il supporto.',
+    emailFailed: "Invio fallito. Contatta il supporto."
+  },
+  pt: {
+    preparing: 'Preparando o seu horóscopo...',
+    analyzing: 'Analisando o seu mapa astral e posições planetárias.',
+    generated: 'Horóscopo gerado!',
+    checkEmail: 'Verifique o seu email! 📬',
+    sentTo: 'O seu horóscopo personalizado foi enviado para:',
+    inEmail: 'O seu horóscopo está no corpo do email',
+    docsAttached: 'Os documentos legais estão em anexo',
+    sending: 'A enviar o seu horóscopo...',
+    emailSent: 'Email enviado com sucesso!',
+    backHome: 'Voltar ao início',
+    didntReceive: 'Não recebeu o email? Verifique o spam ou contacte',
+    error: 'Algo correu mal',
+    errorDesc: 'Não conseguimos gerar o seu horóscopo. Por favor contacte o suporte.',
+    emailFailed: 'Falha ao enviar. Contacte o suporte.'
+  },
+  pl: {
+    preparing: 'Przygotowujemy Twój horoskop...',
+    analyzing: 'Analizujemy Twój horoskop urodzeniowy i pozycje planet.',
+    generated: 'Horoskop wygenerowany!',
+    checkEmail: 'Sprawdź swoją skrzynkę! 📬',
+    sentTo: 'Twój spersonalizowany horoskop został wysłany na:',
+    inEmail: 'Twój horoskop jest w treści emaila',
+    docsAttached: 'Dokumenty prawne są w załączniku',
+    sending: 'Wysyłamy Twój horoskop...',
+    emailSent: 'Email wysłany pomyślnie!',
+    backHome: 'Powrót do strony głównej',
+    didntReceive: 'Nie otrzymałeś emaila? Sprawdź spam lub skontaktuj się',
+    error: 'Coś poszło nie tak',
+    errorDesc: 'Nie udało się wygenerować horoskopu. Skontaktuj się z pomocą.',
+    emailFailed: 'Wysyłanie nie powiodło się. Skontaktuj się z pomocą.'
+  },
+  tr: {
+    preparing: 'Burcunuz hazırlanıyor...',
+    analyzing: 'Doğum haritanız ve gezegen pozisyonlarınız analiz ediliyor.',
+    generated: 'Burç oluşturuldu!',
+    checkEmail: 'E-postanızı kontrol edin! 📬',
+    sentTo: 'Kişiselleştirilmiş burcunuz şu adrese gönderildi:',
+    inEmail: 'Burcunuz e-posta içeriğinde',
+    docsAttached: 'Yasal belgeler ekte',
+    sending: 'Burcunuz gönderiliyor...',
+    emailSent: 'E-posta başarıyla gönderildi!',
+    backHome: 'Ana sayfaya dön',
+    didntReceive: 'E-posta almadınız mı? Spam klasörünü kontrol edin veya iletişime geçin',
+    error: 'Bir şeyler yanlış gitti',
+    errorDesc: 'Burcunuz oluşturulamadı. Lütfen destekle iletişime geçin.',
+    emailFailed: 'Gönderme başarısız. Destekle iletişime geçin.'
+  }
+};
+
+// Get translations for current lang, fallback to English
+const st = successT[currentLang as keyof typeof successT] || successT.en;
 
 const horoscopeTypes = [
-  { id: "daily", name: "Daily Horoscope" },
-  { id: "weekly", name: "Weekly Horoscope" },
-  { id: "monthly", name: "Monthly Horoscope" },
-  { id: "partner", name: "Partner Horoscope" },
+  { id: "daily", name: t.products.daily.name },
+  { id: "weekly", name: t.products.weekly.name },
+  { id: "monthly", name: t.products.monthly.name },
+  { id: "partner", name: t.products.partner.name },
 ];
 
 const sessionId = Astro.url.searchParams.get('session_id');
 
 if (!sessionId) {
-  return Astro.redirect('/');
+  return Astro.redirect(currentLang === 'en' ? '/' : `/${currentLang}/`);
 }
+
+const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
 ---
 
-<Layout title="Success - Astralo" lang="en">
+<Layout title={`${t.success.title} - Astralo`} lang={currentLang}>
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Header -->
     <header class="glass-strong border-b border-white/10">
       <div class="max-w-5xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href="/" class="flex items-center">
+          <a href={homeUrl} class="flex items-center">
             <img src="/logo.png" alt="Astralo" class="h-9" />
           </a>
-          <LanguageSwitcher lang="en" />
+          <LanguageSwitcher lang={currentLang} />
         </div>
       </div>
     </header>
@@ -52,10 +227,10 @@ if (!sessionId) {
               </div>
             </div>
             <h1 class="text-2xl sm:text-3xl font-bold text-white mb-3">
-              Preparing Your Horoscope...
+              {st.preparing}
             </h1>
             <p class="text-white/60 text-base max-w-md mx-auto">
-              Analyzing your birth chart and planetary positions.
+              {st.analyzing}
             </p>
           </div>
 
@@ -68,7 +243,7 @@ if (!sessionId) {
 
             <!-- Title -->
             <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">
-              Horoscope Generated!
+              {st.generated}
             </h1>
             
             <!-- Product Name -->
@@ -86,11 +261,11 @@ if (!sessionId) {
                 </div>
                 
                 <h2 class="text-xl sm:text-2xl font-bold text-white mb-3">
-                  Check Your Email! 📬
+                  {st.checkEmail}
                 </h2>
                 
                 <p class="text-white/80 mb-3">
-                  Your personalized horoscope has been sent to:
+                  {st.sentTo}
                 </p>
                 
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
@@ -99,8 +274,8 @@ if (!sessionId) {
                 </div>
 
                 <div class="text-white/60 text-sm space-y-1">
-                  <p>✨ Your horoscope is in the email body</p>
-                  <p>📄 Legal documents are attached</p>
+                  <p>✨ {st.inEmail}</p>
+                  <p>📄 {st.docsAttached}</p>
                 </div>
               </div>
             </div>
@@ -109,25 +284,25 @@ if (!sessionId) {
             <div id="email-status" class="mb-6 hidden">
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm">
                 <div class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></div>
-                <span>Sending your horoscope...</span>
+                <span>{st.sending}</span>
               </div>
             </div>
 
             <div id="email-success" class="mb-6 hidden">
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm">
                 <CheckCircle class="w-4 h-4" />
-                <span>Email sent successfully!</span>
+                <span>{st.emailSent}</span>
               </div>
             </div>
 
             <!-- Back Button -->
-            <a href="/" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors">
+            <a href={homeUrl} class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors">
               <Home class="w-5 h-5" />
-              <span>Back to Home</span>
+              <span>{st.backHome}</span>
             </a>
 
             <p class="text-white/40 text-xs mt-6">
-              Didn't receive the email? Check your spam folder or contact<br />
+              {st.didntReceive}<br />
               <a href="mailto:info@astralo.online" class="text-amber-400 hover:underline">info@astralo.online</a>
             </p>
           </div>
@@ -139,11 +314,11 @@ if (!sessionId) {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
             </div>
-            <h1 class="text-xl font-bold text-white mb-2">Something went wrong</h1>
-            <p class="text-white/70 mb-6 text-sm">We couldn't generate your horoscope. Please contact support.</p>
-            <a href="/" class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-amber-500 text-black font-semibold">
+            <h1 class="text-xl font-bold text-white mb-2">{st.error}</h1>
+            <p class="text-white/70 mb-6 text-sm">{st.errorDesc}</p>
+            <a href={homeUrl} class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-amber-500 text-black font-semibold">
               <Home class="w-4 h-4" />
-              Back to Home
+              {st.backHome}
             </a>
           </div>
 
@@ -151,11 +326,11 @@ if (!sessionId) {
       </div>
     </main>
 
-    <Footer lang="en" />
+    <Footer lang={currentLang} />
   </div>
 </Layout>
 
-<script is:inline define:vars={{ sessionId, horoscopeTypes }}>
+<script is:inline define:vars={{ sessionId, horoscopeTypes, st }}>
   let horoscopeData = null;
 
   async function fetchHoroscope() {
@@ -214,7 +389,7 @@ if (!sessionId) {
       console.error('Email failed', e);
       statusDiv.innerHTML = `
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
-          <span>Failed to send email. Contact support.</span>
+          <span>${st.emailFailed}</span>
         </div>
       `;
     }

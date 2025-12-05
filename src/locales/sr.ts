@@ -10,7 +10,7 @@ const sr: Translations = {
     trust: { customers: 'Задовољних купаца', rating: 'Просечна оцена', delivery: 'Тренутна достава' },
     testimonials: { title: 'Шта кажу наши клијенти' },
     whyUs: { title: 'Зашто изабрати Astralo?', technology: { title: 'Технологија', description: 'Модерна технологија' }, instant: { title: 'Тренутно', description: 'Готово за минуте' }, professional: { title: 'Професионално', description: 'Астролошки принципи' }, verified: { title: 'Проверено', description: '50.000+ купаца' } },
-    form: { title: 'Добијте хороскоп', name: 'Пуно име', email: 'Имејл', birthDate: 'Датум рођења', birthTime: 'Време (опционо)', birthPlace: 'Место рођења', partnerName: 'Име партнера', partnerBirthDate: 'Датум партнера', partnerBirthTime: 'Време партнера', partnerBirthPlace: 'Место партнера', submit: 'Настави на плаћање', processing: 'Обрада...' },
+    form: { title: 'Добијте хороскоп', description: 'Fill in your details.', name: 'Пуно име', email: 'Имејл', birthDate: 'Датум рођења', birthTime: 'Време (опционо)', birthPlace: 'Место рођења', partnerName: 'Име партнера', partnerBirthDate: 'Датум партнера', partnerBirthTime: 'Време партнера', partnerBirthPlace: 'Место партнера', submit: 'Настави на плаћање', processing: 'Обрада...' },
     success: { title: 'Хвала!', message: 'Плаћање је успешно.', checkEmail: 'Хороскоп ће бити послат на ваш имејл.' },
     footer: { rights: 'Сва права задржана.', terms: 'Услови', privacy: 'Приватност', refund: 'Поврат', cookies: 'Колачићи' },
 };

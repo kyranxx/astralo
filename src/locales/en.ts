@@ -68,6 +68,7 @@ const en: Translations = {
     },
     form: {
         title: 'Get Your Horoscope',
+        description: 'Get an accurate astrological reading specially for you. Fill in your details and we\'ll instantly prepare your personal horoscope.',
         name: 'Full Name',
         email: 'Email Address',
         birthDate: 'Date of Birth',
@@ -79,6 +80,16 @@ const en: Translations = {
         partnerBirthPlace: "Partner's Place of Birth",
         submit: 'Continue to Payment',
         processing: 'Processing...',
+    },
+    benefits: {
+        pdfReport: 'Detailed PDF Report',
+        pages: '15+ pages of insights',
+        personal: 'Personal Analysis',
+        birthTime: 'Based on exact birth time',
+        predictions: 'Future Predictions',
+        transits: 'Transits & progressions',
+        advice: 'Actionable Advice',
+        careerLove: 'For career & love',
     },
     success: {
         title: 'Thank You!',

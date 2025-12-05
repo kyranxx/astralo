@@ -84,6 +84,7 @@ export interface Translations {
     };
     form: {
         title: string;
+        description: string;
         name: string;
         email: string;
         birthDate: string;
@@ -95,6 +96,16 @@ export interface Translations {
         partnerBirthPlace: string;
         submit: string;
         processing: string;
+    };
+    benefits?: {
+        pdfReport: string;
+        pages: string;
+        personal: string;
+        birthTime: string;
+        predictions: string;
+        transits: string;
+        advice: string;
+        careerLove: string;
     };
     success: {
         title: string;

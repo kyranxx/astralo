@@ -68,6 +68,7 @@ const pt: Translations = {
     },
     form: {
         title: 'Obtenha o seu horóscopo',
+        description: 'Obtenha uma leitura astrológica precisa especialmente para si. Preencha os seus dados e prepararemos o seu horóscopo pessoal instantaneamente.',
         name: 'Nome completo',
         email: 'Endereço de email',
         birthDate: 'Data de nascimento',
@@ -79,6 +80,16 @@ const pt: Translations = {
         partnerBirthPlace: 'Local de nascimento do(a) parceiro(a)',
         submit: 'Continuar para pagamento',
         processing: 'A processar...',
+    },
+    benefits: {
+        pdfReport: 'Relatório PDF Detalhado',
+        pages: '15+ páginas de informação',
+        personal: 'Análise Pessoal',
+        birthTime: 'Baseado na hora de nascimento',
+        predictions: 'Previsões do Futuro',
+        transits: 'Trânsitos e progressões',
+        advice: 'Conselhos Práticos',
+        careerLove: 'Para carreira e amor',
     },
     success: {
         title: 'Obrigado!',

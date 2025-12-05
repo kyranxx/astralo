@@ -78,6 +78,9 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
               {productName}
             </h1>
           </div>
+          <p class="text-white/70 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+            {t.form.description}
+          </p>
           
           <!-- Price with discount -->
           <div class="mt-6 inline-flex items-center gap-3 glass px-6 py-3 rounded-full">
@@ -88,6 +91,46 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
             <div class="bg-red-500/20 text-red-400 text-xs font-bold px-2 py-1 rounded">-50%</div>
             <div class="w-px h-6 bg-white/20"></div>
             <span class="text-white/60 text-sm">🔒 {t.promo.secure}</span>
+          </div>
+
+          <!-- What's included -->
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto bg-white/5 p-6 rounded-2xl border border-white/10">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                <span class="text-lg">📄</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">{t.benefits?.pdfReport || 'Detailed PDF Report'}</p>
+                <p class="text-white/50 text-sm">{t.benefits?.pages || '15+ pages of insights'}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
+                <span class="text-lg">🌟</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">{t.benefits?.personal || 'Personal Analysis'}</p>
+                <p class="text-white/50 text-sm">{t.benefits?.birthTime || 'Based on exact birth time'}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center">
+                <span class="text-lg">🔮</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">{t.benefits?.predictions || 'Future Predictions'}</p>
+                <p class="text-white/50 text-sm">{t.benefits?.transits || 'Transits & progressions'}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center">
+                <span class="text-lg">💡</span>
+              </div>
+              <div>
+                <p class="text-white font-medium text-base">{t.benefits?.advice || 'Actionable Advice'}</p>
+                <p class="text-white/50 text-sm">{t.benefits?.careerLove || 'For career & love'}</p>
+              </div>
+            </div>
           </div>
         </div>
 

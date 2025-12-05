@@ -68,6 +68,7 @@ const hu: Translations = {
     },
     form: {
         title: 'Kapja meg horoszkópját',
+        description: 'Kapjon pontos asztrológiai elemzést kifejezetten Önnek. Töltse ki adatait és azonnal elkészítjük személyes horoszkópját.',
         name: 'Teljes név',
         email: 'Email cím',
         birthDate: 'Születési dátum',
@@ -79,6 +80,16 @@ const hu: Translations = {
         partnerBirthPlace: 'Partner születési helye',
         submit: 'Tovább a fizetéshez',
         processing: 'Feldolgozás...',
+    },
+    benefits: {
+        pdfReport: 'Részletes PDF Jelentés',
+        pages: '15+ oldal információ',
+        personal: 'Személyes Elemzés',
+        birthTime: 'Születési idő alapján',
+        predictions: 'Jövőbeli Előrejelzések',
+        transits: 'Tranzitok és progressziók',
+        advice: 'Gyakorlati Tanácsok',
+        careerLove: 'Karrierhez és szerelemhez',
     },
     success: {
         title: 'Köszönjük!',

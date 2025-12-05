@@ -68,6 +68,7 @@ const es: Translations = {
     },
     form: {
         title: 'Obtén tu horóscopo',
+        description: 'Obtén una lectura astrológica precisa especialmente para ti. Completa tus datos y prepararemos tu horóscopo personal al instante.',
         name: 'Nombre completo',
         email: 'Correo electrónico',
         birthDate: 'Fecha de nacimiento',
@@ -79,6 +80,16 @@ const es: Translations = {
         partnerBirthPlace: 'Lugar de nacimiento de la pareja',
         submit: 'Continuar al pago',
         processing: 'Procesando...',
+    },
+    benefits: {
+        pdfReport: 'Informe PDF Detallado',
+        pages: '15+ páginas de información',
+        personal: 'Análisis Personal',
+        birthTime: 'Basado en hora de nacimiento',
+        predictions: 'Predicciones del Futuro',
+        transits: 'Tránsitos y progresiones',
+        advice: 'Consejos Prácticos',
+        careerLove: 'Para carrera y amor',
     },
     success: {
         title: '¡Gracias!',

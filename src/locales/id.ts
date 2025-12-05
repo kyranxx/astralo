@@ -10,7 +10,7 @@ const id: Translations = {
     trust: { customers: 'Pelanggan puas', rating: 'Rating rata-rata', delivery: 'Pengiriman instan' },
     testimonials: { title: 'Kata pelanggan kami' },
     whyUs: { title: 'Mengapa Astralo?', technology: { title: 'Teknologi', description: 'Teknologi modern' }, instant: { title: 'Instan', description: 'Siap dalam menit' }, professional: { title: 'Profesional', description: 'Prinsip astrologi' }, verified: { title: 'Terverifikasi', description: '50.000+ pelanggan' } },
-    form: { title: 'Dapatkan horoskop', name: 'Nama lengkap', email: 'Email', birthDate: 'Tanggal lahir', birthTime: 'Waktu (opsional)', birthPlace: 'Tempat lahir', partnerName: 'Nama pasangan', partnerBirthDate: 'Tanggal lahir pasangan', partnerBirthTime: 'Waktu pasangan', partnerBirthPlace: 'Tempat lahir pasangan', submit: 'Lanjut ke pembayaran', processing: 'Memproses...' },
+    form: { title: 'Dapatkan horoskop', description: 'Fill in your details.', name: 'Nama lengkap', email: 'Email', birthDate: 'Tanggal lahir', birthTime: 'Waktu (opsional)', birthPlace: 'Tempat lahir', partnerName: 'Nama pasangan', partnerBirthDate: 'Tanggal lahir pasangan', partnerBirthTime: 'Waktu pasangan', partnerBirthPlace: 'Tempat lahir pasangan', submit: 'Lanjut ke pembayaran', processing: 'Memproses...' },
     success: { title: 'Terima kasih!', message: 'Pembayaran berhasil.', checkEmail: 'Horoskop akan dikirim ke email Anda.' },
     footer: { rights: 'Hak cipta dilindungi.', terms: 'Ketentuan', privacy: 'Privasi', refund: 'Pengembalian', cookies: 'Cookies' },
 };

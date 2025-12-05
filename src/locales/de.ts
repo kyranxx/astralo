@@ -68,6 +68,7 @@ const de: Translations = {
     },
     form: {
         title: 'Holen Sie sich Ihr Horoskop',
+        description: 'Erhalten Sie eine genaue astrologische Deutung speziell für Sie. Füllen Sie Ihre Daten aus und wir bereiten sofort Ihr persönliches Horoskop vor.',
         name: 'Vollständiger Name',
         email: 'E-Mail-Adresse',
         birthDate: 'Geburtsdatum',
@@ -79,6 +80,16 @@ const de: Translations = {
         partnerBirthPlace: 'Geburtsort des Partners',
         submit: 'Weiter zur Zahlung',
         processing: 'Verarbeitung...',
+    },
+    benefits: {
+        pdfReport: 'Detaillierter PDF-Bericht',
+        pages: '15+ Seiten Erkenntnisse',
+        personal: 'Persönliche Analyse',
+        birthTime: 'Basierend auf Geburtszeit',
+        predictions: 'Zukunftsvorhersagen',
+        transits: 'Transite & Progressionen',
+        advice: 'Praktische Ratschläge',
+        careerLove: 'Für Karriere & Liebe',
     },
     success: {
         title: 'Vielen Dank!',

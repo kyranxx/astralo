@@ -10,7 +10,7 @@ const bg: Translations = {
     trust: { customers: 'Доволни клиенти', rating: 'Средна оценка', delivery: 'Мигновена доставка' },
     testimonials: { title: 'Какво казват клиентите' },
     whyUs: { title: 'Защо да изберете Astralo?', technology: { title: 'Технология', description: 'Модерна технология' }, instant: { title: 'Мигновено', description: 'Готов за минути' }, professional: { title: 'Професионално', description: 'Астрологични принципи' }, verified: { title: 'Проверено', description: '50 000+ клиенти' } },
-    form: { title: 'Получете хороскоп', name: 'Пълно име', email: 'Имейл', birthDate: 'Дата на раждане', birthTime: 'Час (незадължително)', birthPlace: 'Място на раждане', partnerName: 'Име на партньор', partnerBirthDate: 'Дата на партньор', partnerBirthTime: 'Час на партньор', partnerBirthPlace: 'Място на партньор', submit: 'Към плащане', processing: 'Обработка...' },
+    form: { title: 'Получете хороскоп', description: 'Fill in your details.', name: 'Пълно име', email: 'Имейл', birthDate: 'Дата на раждане', birthTime: 'Час (незадължително)', birthPlace: 'Място на раждане', partnerName: 'Име на партньор', partnerBirthDate: 'Дата на партньор', partnerBirthTime: 'Час на партньор', partnerBirthPlace: 'Място на партньор', submit: 'Към плащане', processing: 'Обработка...' },
     success: { title: 'Благодарим!', message: 'Плащането е успешно.', checkEmail: 'Хороскопът ще бъде изпратен на вашия имейл.' },
     footer: { rights: 'Всички права запазени.', terms: 'Условия', privacy: 'Поверителност', refund: 'Възстановяване', cookies: 'Бисквитки' },
 };

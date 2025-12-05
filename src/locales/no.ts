@@ -10,7 +10,7 @@ const no: Translations = {
     trust: { customers: 'Fornøyde kunder', rating: 'Gjennomsnittlig vurdering', delivery: 'Umiddelbar levering' },
     testimonials: { title: 'Hva kundene våre sier' },
     whyUs: { title: 'Hvorfor velge Astralo?', technology: { title: 'Teknologi', description: 'Moderne teknologi' }, instant: { title: 'Umiddelbart', description: 'Klar på minutter' }, professional: { title: 'Profesjonelt', description: 'Astrologiske prinsipper' }, verified: { title: 'Verifisert', description: '50 000+ kunder' } },
-    form: { title: 'Få horoskopet ditt', name: 'Fullt navn', email: 'E-post', birthDate: 'Fødselsdato', birthTime: 'Tid (valgfritt)', birthPlace: 'Fødested', partnerName: 'Partners navn', partnerBirthDate: 'Partners fødselsdato', partnerBirthTime: 'Partners tid', partnerBirthPlace: 'Partners fødested', submit: 'Fortsett til betaling', processing: 'Behandler...' },
+    form: { title: 'Få horoskopet ditt', description: 'Fill in your details.', name: 'Fullt navn', email: 'E-post', birthDate: 'Fødselsdato', birthTime: 'Tid (valgfritt)', birthPlace: 'Fødested', partnerName: 'Partners navn', partnerBirthDate: 'Partners fødselsdato', partnerBirthTime: 'Partners tid', partnerBirthPlace: 'Partners fødested', submit: 'Fortsett til betaling', processing: 'Behandler...' },
     success: { title: 'Takk!', message: 'Betalingen var vellykket.', checkEmail: 'Horoskopet ditt sendes til e-posten din.' },
     footer: { rights: 'Alle rettigheter reservert.', terms: 'Vilkår', privacy: 'Personvern', refund: 'Refusjon', cookies: 'Informasjonskapsler' },
 };

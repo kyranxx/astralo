@@ -10,7 +10,7 @@ const ar: Translations = {
     trust: { customers: 'عملاء راضون', rating: 'متوسط التقييم', delivery: 'توصيل فوري' },
     testimonials: { title: 'ماذا يقول عملاؤنا' },
     whyUs: { title: 'لماذا تختار Astralo؟', technology: { title: 'التكنولوجيا', description: 'تكنولوجيا حديثة' }, instant: { title: 'فوري', description: 'جاهز في دقائق' }, professional: { title: 'احترافي', description: 'مبادئ فلكية' }, verified: { title: 'موثق', description: '+50,000 عميل' } },
-    form: { title: 'احصل على برجك', name: 'الاسم الكامل', email: 'البريد الإلكتروني', birthDate: 'تاريخ الميلاد', birthTime: 'الوقت (اختياري)', birthPlace: 'مكان الميلاد', partnerName: 'اسم الشريك', partnerBirthDate: 'تاريخ الشريك', partnerBirthTime: 'وقت الشريك', partnerBirthPlace: 'مكان الشريك', submit: 'متابعة الدفع', processing: 'جاري المعالجة...' },
+    form: { title: 'احصل على برجك', description: 'Fill in your details.', name: 'الاسم الكامل', email: 'البريد الإلكتروني', birthDate: 'تاريخ الميلاد', birthTime: 'الوقت (اختياري)', birthPlace: 'مكان الميلاد', partnerName: 'اسم الشريك', partnerBirthDate: 'تاريخ الشريك', partnerBirthTime: 'وقت الشريك', partnerBirthPlace: 'مكان الشريك', submit: 'متابعة الدفع', processing: 'جاري المعالجة...' },
     success: { title: 'شكراً!', message: 'تم الدفع بنجاح.', checkEmail: 'سيتم إرسال برجك إلى بريدك الإلكتروني.' },
     footer: { rights: 'جميع الحقوق محفوظة.', terms: 'الشروط', privacy: 'الخصوصية', refund: 'الاسترداد', cookies: 'ملفات تعريف الارتباط' },
 };

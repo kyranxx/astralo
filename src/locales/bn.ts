@@ -10,7 +10,7 @@ const bn: Translations = {
     trust: { customers: 'সন্তুষ্ট গ্রাহক', rating: 'গড় রেটিং', delivery: 'তাৎক্ষণিক ডেলিভারি' },
     testimonials: { title: 'গ্রাহকরা কী বলেন' },
     whyUs: { title: 'কেন Astralo বেছে নেবেন?', technology: { title: 'প্রযুক্তি', description: 'আধুনিক প্রযুক্তি' }, instant: { title: 'তাৎক্ষণিক', description: 'মিনিটে প্রস্তুত' }, professional: { title: 'পেশাদার', description: 'জ্যোতিষ নীতি' }, verified: { title: 'যাচাইকৃত', description: '৫০,০০০+ গ্রাহক' } },
-    form: { title: 'রাশিফল পান', name: 'পুরো নাম', email: 'ইমেইল', birthDate: 'জন্ম তারিখ', birthTime: 'সময় (ঐচ্ছিক)', birthPlace: 'জন্মস্থান', partnerName: 'সঙ্গীর নাম', partnerBirthDate: 'সঙ্গীর জন্ম তারিখ', partnerBirthTime: 'সঙ্গীর সময়', partnerBirthPlace: 'সঙ্গীর জন্মস্থান', submit: 'পেমেন্টে যান', processing: 'প্রক্রিয়াকরণ...' },
+    form: { title: 'রাশিফল পান', description: 'Fill in your details.', name: 'পুরো নাম', email: 'ইমেইল', birthDate: 'জন্ম তারিখ', birthTime: 'সময় (ঐচ্ছিক)', birthPlace: 'জন্মস্থান', partnerName: 'সঙ্গীর নাম', partnerBirthDate: 'সঙ্গীর জন্ম তারিখ', partnerBirthTime: 'সঙ্গীর সময়', partnerBirthPlace: 'সঙ্গীর জন্মস্থান', submit: 'পেমেন্টে যান', processing: 'প্রক্রিয়াকরণ...' },
     success: { title: 'ধন্যবাদ!', message: 'পেমেন্ট সফল।', checkEmail: 'আপনার রাশিফল ইমেইলে পাঠানো হবে।' },
     footer: { rights: 'সর্বস্বত্ব সংরক্ষিত।', terms: 'শর্তাবলী', privacy: 'গোপনীয়তা', refund: 'ফেরত', cookies: 'কুকিজ' },
 };

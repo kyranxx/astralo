@@ -10,7 +10,7 @@ const zh: Translations = {
     trust: { customers: '满意客户', rating: '平均评分', delivery: '即时配送' },
     testimonials: { title: '客户评价' },
     whyUs: { title: '为什么选择Astralo?', technology: { title: '技术', description: '最新技术' }, instant: { title: '即时', description: '几分钟完成' }, professional: { title: '专业', description: '占星原则' }, verified: { title: '已验证', description: '50,000+客户' } },
-    form: { title: '获取运势', name: '姓名', email: '邮箱', birthDate: '出生日期', birthTime: '时间（可选）', birthPlace: '出生地', partnerName: '伴侣姓名', partnerBirthDate: '伴侣出生日期', partnerBirthTime: '伴侣时间', partnerBirthPlace: '伴侣出生地', submit: '继续支付', processing: '处理中...' },
+    form: { title: '获取运势', description: 'Fill in your details.', name: '姓名', email: '邮箱', birthDate: '出生日期', birthTime: '时间（可选）', birthPlace: '出生地', partnerName: '伴侣姓名', partnerBirthDate: '伴侣出生日期', partnerBirthTime: '伴侣时间', partnerBirthPlace: '伴侣出生地', submit: '继续支付', processing: '处理中...' },
     success: { title: '谢谢!', message: '支付成功。', checkEmail: '运势将发送到您的邮箱。' },
     footer: { rights: '版权所有。', terms: '条款', privacy: '隐私', refund: '退款', cookies: 'Cookies' },
 };

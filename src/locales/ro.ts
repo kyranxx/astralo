@@ -68,6 +68,7 @@ const ro: Translations = {
     },
     form: {
         title: 'Obține horoscopul tău',
+        description: 'Obții o lectură astrologică precisă special pentru tine. Completează datele și îți pregătim imediat horoscopul personal.',
         name: 'Nume complet',
         email: 'Adresă email',
         birthDate: 'Data nașterii',
@@ -79,6 +80,16 @@ const ro: Translations = {
         partnerBirthPlace: 'Locul nașterii partenerului',
         submit: 'Continuă la plată',
         processing: 'Se procesează...',
+    },
+    benefits: {
+        pdfReport: 'Raport PDF Detaliat',
+        pages: '15+ pagini de informații',
+        personal: 'Analiză Personală',
+        birthTime: 'Bazat pe ora nașterii',
+        predictions: 'Predicții de Viitor',
+        transits: 'Tranzituri și progresii',
+        advice: 'Sfaturi Acționabile',
+        careerLove: 'Pentru carieră și dragoste',
     },
     success: {
         title: 'Mulțumim!',

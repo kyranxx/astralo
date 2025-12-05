@@ -10,7 +10,7 @@ const el: Translations = {
     trust: { customers: 'Ικανοποιημένοι πελάτες', rating: 'Μέση βαθμολογία', delivery: 'Άμεση παράδοση' },
     testimonials: { title: 'Τι λένε οι πελάτες μας' },
     whyUs: { title: 'Γιατί να επιλέξετε Astralo;', technology: { title: 'Τεχνολογία', description: 'Σύγχρονη τεχνολογία' }, instant: { title: 'Άμεσα', description: 'Έτοιμο σε λεπτά' }, professional: { title: 'Επαγγελματικό', description: 'Αστρολογικές αρχές' }, verified: { title: 'Επαληθευμένο', description: '50.000+ πελάτες' } },
-    form: { title: 'Αποκτήστε ωροσκόπιο', name: 'Πλήρες όνομα', email: 'Email', birthDate: 'Ημερομηνία γέννησης', birthTime: 'Ώρα (προαιρετικό)', birthPlace: 'Τόπος γέννησης', partnerName: 'Όνομα συντρόφου', partnerBirthDate: 'Ημερομηνία συντρόφου', partnerBirthTime: 'Ώρα συντρόφου', partnerBirthPlace: 'Τόπος συντρόφου', submit: 'Συνέχεια στην πληρωμή', processing: 'Επεξεργασία...' },
+    form: { title: 'Αποκτήστε ωροσκόπιο', description: 'Fill in your details.', name: 'Πλήρες όνομα', email: 'Email', birthDate: 'Ημερομηνία γέννησης', birthTime: 'Ώρα (προαιρετικό)', birthPlace: 'Τόπος γέννησης', partnerName: 'Όνομα συντρόφου', partnerBirthDate: 'Ημερομηνία συντρόφου', partnerBirthTime: 'Ώρα συντρόφου', partnerBirthPlace: 'Τόπος συντρόφου', submit: 'Συνέχεια στην πληρωμή', processing: 'Επεξεργασία...' },
     success: { title: 'Ευχαριστούμε!', message: 'Η πληρωμή ήταν επιτυχής.', checkEmail: 'Το ωροσκόπιό σας θα σταλεί στο email σας.' },
     footer: { rights: 'Με επιφύλαξη παντός δικαιώματος.', terms: 'Όροι', privacy: 'Απόρρητο', refund: 'Επιστροφή', cookies: 'Cookies' },
 };

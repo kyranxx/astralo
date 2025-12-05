@@ -10,7 +10,7 @@ const ru: Translations = {
     trust: { customers: 'Довольных клиентов', rating: 'Средняя оценка', delivery: 'Мгновенная доставка' },
     testimonials: { title: 'Что говорят наши клиенты' },
     whyUs: { title: 'Почему выбрать Astralo?', technology: { title: 'Технология', description: 'Современная технология' }, instant: { title: 'Мгновенно', description: 'Готово за минуты' }, professional: { title: 'Профессионально', description: 'Астрологические принципы' }, verified: { title: 'Проверено', description: '50 000+ клиентов' } },
-    form: { title: 'Получите гороскоп', name: 'Полное имя', email: 'Email', birthDate: 'Дата рождения', birthTime: 'Время (необязательно)', birthPlace: 'Место рождения', partnerName: 'Имя партнера', partnerBirthDate: 'Дата партнера', partnerBirthTime: 'Время партнера', partnerBirthPlace: 'Место партнера', submit: 'Перейти к оплате', processing: 'Обработка...' },
+    form: { title: 'Получите гороскоп', description: 'Fill in your details.', name: 'Полное имя', email: 'Email', birthDate: 'Дата рождения', birthTime: 'Время (необязательно)', birthPlace: 'Место рождения', partnerName: 'Имя партнера', partnerBirthDate: 'Дата партнера', partnerBirthTime: 'Время партнера', partnerBirthPlace: 'Место партнера', submit: 'Перейти к оплате', processing: 'Обработка...' },
     success: { title: 'Спасибо!', message: 'Оплата успешна.', checkEmail: 'Гороскоп будет отправлен на ваш email.' },
     footer: { rights: 'Все права защищены.', terms: 'Условия', privacy: 'Конфиденциальность', refund: 'Возврат', cookies: 'Cookies' },
 };

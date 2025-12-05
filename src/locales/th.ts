@@ -10,7 +10,7 @@ const th: Translations = {
     trust: { customers: 'ลูกค้าพอใจ', rating: 'คะแนนเฉลี่ย', delivery: 'จัดส่งทันที' },
     testimonials: { title: 'ลูกค้าพูดถึงเรา' },
     whyUs: { title: 'ทำไมเลือก Astralo?', technology: { title: 'เทคโนโลยี', description: 'เทคโนโลยีทันสมัย' }, instant: { title: 'ทันที', description: 'พร้อมในไม่กี่นาที' }, professional: { title: 'มืออาชีพ', description: 'หลักโหราศาสตร์' }, verified: { title: 'ยืนยันแล้ว', description: '50,000+ ลูกค้า' } },
-    form: { title: 'รับดวงของคุณ', name: 'ชื่อ-นามสกุล', email: 'อีเมล', birthDate: 'วันเกิด', birthTime: 'เวลา (ไม่บังคับ)', birthPlace: 'สถานที่เกิด', partnerName: 'ชื่อคู่รัก', partnerBirthDate: 'วันเกิดคู่รัก', partnerBirthTime: 'เวลาคู่รัก', partnerBirthPlace: 'สถานที่เกิดคู่รัก', submit: 'ดำเนินการชำระเงิน', processing: 'กำลังดำเนินการ...' },
+    form: { title: 'รับดวงของคุณ', description: 'Fill in your details.', name: 'ชื่อ-นามสกุล', email: 'อีเมล', birthDate: 'วันเกิด', birthTime: 'เวลา (ไม่บังคับ)', birthPlace: 'สถานที่เกิด', partnerName: 'ชื่อคู่รัก', partnerBirthDate: 'วันเกิดคู่รัก', partnerBirthTime: 'เวลาคู่รัก', partnerBirthPlace: 'สถานที่เกิดคู่รัก', submit: 'ดำเนินการชำระเงิน', processing: 'กำลังดำเนินการ...' },
     success: { title: 'ขอบคุณ!', message: 'ชำระเงินสำเร็จ', checkEmail: 'ดวงจะส่งไปยังอีเมลของคุณ' },
     footer: { rights: 'สงวนลิขสิทธิ์', terms: 'เงื่อนไข', privacy: 'ความเป็นส่วนตัว', refund: 'คืนเงิน', cookies: 'คุกกี้' },
 };

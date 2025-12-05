@@ -102,7 +102,7 @@ export const POST: APIRoute = async ({ request }) => {
                 if (supported.includes(lang)) return lang as Stripe.Checkout.SessionCreateParams.Locale;
                 return 'auto' as Stripe.Checkout.SessionCreateParams.Locale; // Fallback for unsupported
             })(),
-            success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+            success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&lang=${data.lang || 'en'}`,
             cancel_url: `${origin}/${data.lang === 'en' ? '' : data.lang + '/'}form/${productKey}`,
             metadata: {
                 productKey,

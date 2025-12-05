@@ -68,6 +68,7 @@ const nl: Translations = {
     },
     form: {
         title: 'Ontvang je horoscoop',
+        description: 'Ontvang een nauwkeurige astrologische lezing speciaal voor jou. Vul je gegevens in en we bereiden direct je persoonlijke horoscoop voor.',
         name: 'Volledige naam',
         email: 'E-mailadres',
         birthDate: 'Geboortedatum',
@@ -79,6 +80,16 @@ const nl: Translations = {
         partnerBirthPlace: 'Geboorteplaats van partner',
         submit: 'Doorgaan naar betaling',
         processing: 'Verwerken...',
+    },
+    benefits: {
+        pdfReport: 'Gedetailleerd PDF Rapport',
+        pages: '15+ pagina\'s inzichten',
+        personal: 'Persoonlijke Analyse',
+        birthTime: 'Gebaseerd op geboortetijd',
+        predictions: 'Toekomstige Voorspellingen',
+        transits: 'Transits en progressies',
+        advice: 'Praktisch Advies',
+        careerLove: 'Voor carrière en liefde',
     },
     success: {
         title: 'Bedankt!',

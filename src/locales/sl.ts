@@ -10,7 +10,7 @@ const sl: Translations = {
     trust: { customers: 'Zadovoljnih strank', rating: 'Povprečna ocena', delivery: 'Takojšnja dostava' },
     testimonials: { title: 'Kaj pravijo naše stranke' },
     whyUs: { title: 'Zakaj izbrati Astralo?', technology: { title: 'Tehnologija', description: 'Moderna tehnologija' }, instant: { title: 'Takoj', description: 'Pripravljeno v minutah' }, professional: { title: 'Profesionalno', description: 'Astrološka načela' }, verified: { title: 'Preverjeno', description: '50.000+ strank' } },
-    form: { title: 'Pridobite horoskop', name: 'Polno ime', email: 'E-pošta', birthDate: 'Datum rojstva', birthTime: 'Čas (neobvezno)', birthPlace: 'Kraj rojstva', partnerName: 'Ime partnerja', partnerBirthDate: 'Datum partnerja', partnerBirthTime: 'Čas partnerja', partnerBirthPlace: 'Kraj partnerja', submit: 'Nadaljuj na plačilo', processing: 'Obdelava...' },
+    form: { title: 'Pridobite horoskop', description: 'Fill in your details.', name: 'Polno ime', email: 'E-pošta', birthDate: 'Datum rojstva', birthTime: 'Čas (neobvezno)', birthPlace: 'Kraj rojstva', partnerName: 'Ime partnerja', partnerBirthDate: 'Datum partnerja', partnerBirthTime: 'Čas partnerja', partnerBirthPlace: 'Kraj partnerja', submit: 'Nadaljuj na plačilo', processing: 'Obdelava...' },
     success: { title: 'Hvala!', message: 'Plačilo je uspešno.', checkEmail: 'Horoskop bo poslan na vaš e-poštni naslov.' },
     footer: { rights: 'Vse pravice pridržane.', terms: 'Pogoji', privacy: 'Zasebnost', refund: 'Vračilo', cookies: 'Piškotki' },
 };

@@ -10,7 +10,7 @@ const fi: Translations = {
     trust: { customers: 'Tyytyväisiä asiakkaita', rating: 'Keskiarviointi', delivery: 'Välitön toimitus' },
     testimonials: { title: 'Mitä asiakkaamme sanovat' },
     whyUs: { title: 'Miksi valita Astralo?', technology: { title: 'Teknologia', description: 'Moderni teknologia' }, instant: { title: 'Välitön', description: 'Valmis minuuteissa' }, professional: { title: 'Ammattimainen', description: 'Astrologiset periaatteet' }, verified: { title: 'Vahvistettu', description: '50 000+ asiakasta' } },
-    form: { title: 'Hanki horoskooppisi', name: 'Koko nimi', email: 'Sähköposti', birthDate: 'Syntymäaika', birthTime: 'Aika (valinnainen)', birthPlace: 'Syntymäpaikka', partnerName: 'Kumppanin nimi', partnerBirthDate: 'Kumppanin syntymäaika', partnerBirthTime: 'Kumppanin aika', partnerBirthPlace: 'Kumppanin syntymäpaikka', submit: 'Jatka maksuun', processing: 'Käsitellään...' },
+    form: { title: 'Hanki horoskooppisi', description: 'Fill in your details.', name: 'Koko nimi', email: 'Sähköposti', birthDate: 'Syntymäaika', birthTime: 'Aika (valinnainen)', birthPlace: 'Syntymäpaikka', partnerName: 'Kumppanin nimi', partnerBirthDate: 'Kumppanin syntymäaika', partnerBirthTime: 'Kumppanin aika', partnerBirthPlace: 'Kumppanin syntymäpaikka', submit: 'Jatka maksuun', processing: 'Käsitellään...' },
     success: { title: 'Kiitos!', message: 'Maksu onnistui.', checkEmail: 'Horoskooppisi lähetetään sähköpostiisi.' },
     footer: { rights: 'Kaikki oikeudet pidätetään.', terms: 'Ehdot', privacy: 'Tietosuoja', refund: 'Palautus', cookies: 'Evästeet' },
 };
