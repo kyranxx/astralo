@@ -9,24 +9,53 @@ const { lang } = Astro.props;
 const currentLocale = locales[lang as SupportedLocale] || locales.en;
 
 // Flag CDN - using flagcdn.com for real flag images
+// flagcdn.com uses lowercase ISO 3166-1 alpha-2 country codes, NOT language codes
 const getFlagUrl = (code: string) => {
   const codeMap: Record<string, string> = {
-    en: 'gb', // UK flag for English
-    ar: 'sa', // Saudi Arabia for Arabic
-    zh: 'cn', // China for Chinese
-    hi: 'in', // India for Hindi
-    bn: 'bd', // Bangladesh for Bengali
-    ja: 'jp', // Japan
-    ko: 'kr', // South Korea
+    // Languages where language code differs from country code
+    en: 'gb', // English → United Kingdom
+    cs: 'cz', // Czech → Czechia
+    el: 'gr', // Greek → Greece
+    ar: 'sa', // Arabic → Saudi Arabia
+    hi: 'in', // Hindi → India
+    ja: 'jp', // Japanese → Japan
+    ko: 'kr', // Korean → South Korea
+    zh: 'cn', // Chinese → China
+    bn: 'bd', // Bengali → Bangladesh
+    uk: 'ua', // Ukrainian → Ukraine
+    sl: 'si', // Slovenian → Slovenia
+    sv: 'se', // Swedish → Sweden
+    da: 'dk', // Danish → Denmark
+    vi: 'vn', // Vietnamese → Vietnam
+    // Languages where code matches (sk, de, fr, es, it, pt, nl, pl, hu, ro, bg, hr, sr, ru, tr, th, id, fi, no)
+    // These will fall through to use their language code as country code
   };
   const flagCode = codeMap[code] || code;
   return `https://flagcdn.com/w40/${flagCode}.png`;
 };
 
-// Popular languages first
-const popularLangs: SupportedLocale[] = ['en', 'sk', 'cs', 'de', 'fr', 'es', 'it', 'pl', 'pt', 'nl'];
-const otherLangs = Object.keys(locales).filter(l => !popularLangs.includes(l as SupportedLocale)) as SupportedLocale[];
-const allLangs = [...popularLangs, ...otherLangs];
+// Language order - optimized for user experience
+// Tier 1: Major global markets
+// Tier 2: Central European (your primary markets)
+// Tier 3: Other European
+// Tier 4: Nordic
+// Tier 5: Asian
+// Tier 6: South Asian & Middle East
+const orderedLangs: SupportedLocale[] = [
+  // Major global markets
+  'en', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl',
+  // Central European (primary market)
+  'sk', 'cs', 'hu', 'ro',
+  // Other European
+  'bg', 'hr', 'sl', 'sr', 'uk', 'ru', 'el', 'tr',
+  // Nordic
+  'sv', 'da', 'fi', 'no',
+  // Asian
+  'ja', 'ko', 'zh', 'th', 'vi', 'id',
+  // South Asian & Middle East
+  'hi', 'bn', 'ar',
+];
+const allLangs = orderedLangs;
 ---
 
 <div class="lang-switcher">
@@ -63,6 +92,7 @@ const allLangs = [...popularLangs, ...otherLangs];
 <style>
   .lang-switcher {
     position: relative;
+    z-index: 1001;
   }
 
   .lang-btn {

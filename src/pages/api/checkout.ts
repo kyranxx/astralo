@@ -89,7 +89,19 @@ export const POST: APIRoute = async ({ request }) => {
             automatic_tax: {
                 enabled: true,
             },
-            locale: (data.lang as Stripe.Checkout.SessionCreateParams.Locale) || 'en',
+            // Map locale to Stripe-supported locales
+            // Stripe supports: en, de, fr, es, it, pt, nl, pl, sk, cs, hu, ro, bg, hr, sl, 
+            // ru, el, tr, ja, ko, zh, th, vi, id, sv, da, fi, nb (Norwegian)
+            // NOT supported: ar, hi, bn, uk, sr, no (use nb instead)
+            locale: (() => {
+                const supported = ['en', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'sk', 'cs',
+                    'hu', 'ro', 'bg', 'hr', 'sl', 'ru', 'el', 'tr', 'ja', 'ko', 'zh', 'th',
+                    'vi', 'id', 'sv', 'da', 'fi', 'nb', 'et', 'lv', 'lt', 'ms', 'mt', 'fil'];
+                const lang = data.lang as string;
+                if (lang === 'no') return 'nb' as Stripe.Checkout.SessionCreateParams.Locale; // Norwegian mapping
+                if (supported.includes(lang)) return lang as Stripe.Checkout.SessionCreateParams.Locale;
+                return 'auto' as Stripe.Checkout.SessionCreateParams.Locale; // Fallback for unsupported
+            })(),
             success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${origin}/${data.lang === 'en' ? '' : data.lang + '/'}form/${productKey}`,
             metadata: {
