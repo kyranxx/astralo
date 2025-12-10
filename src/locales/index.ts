@@ -41,11 +41,12 @@ import da from './da';
 import fi from './fi';
 import no from './no';
 import bn from './bn';
+import he from './he';
 
 // All translations map
 export const translations: Record<SupportedLocale, Translations> = {
     en, sk, cs, de, fr, es, it, pt, nl, pl,
     hu, ro, bg, hr, sl, sr, uk, ru, el, tr,
     ar, hi, ja, ko, zh, th, vi, id, sv, da,
-    fi, no, bn,
+    fi, no, bn, he,
 };

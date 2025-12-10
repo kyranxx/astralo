@@ -71,10 +71,8 @@ export const POST: APIRoute = async ({ request }) => {
             data = await request.json();
         } else {
             const text = await request.text();
-            console.log('Raw request body:', text);
             data = text ? JSON.parse(text) : {};
         }
-        console.log('Parsed request data:', data);
     } catch (e) {
         console.error('Error parsing request body:', e);
         return new Response(JSON.stringify({ error: 'Invalid JSON in request body' }), {
@@ -84,11 +82,6 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const { productKey, ...formData } = data;
-
-    console.log('==================== CHECKOUT REQUEST ====================');
-    console.log('Product Key:', productKey);
-    console.log('Form Data:', JSON.stringify(formData, null, 2));
-    console.log('=========================================================');
 
     const productPrice = productPrices[productKey as keyof typeof productPrices];
     const lang = (data.lang as string) || 'en';
@@ -119,7 +112,6 @@ export const POST: APIRoute = async ({ request }) => {
             sanitizedFormData[key] = sanitizeForStripe(value);
         }
 
-        console.log('Sanitized form data for Stripe:', sanitizedFormData);
 
         // Determine Stripe locale
         const getStripeLocale = (lang: string): Stripe.Checkout.SessionCreateParams.Locale => {

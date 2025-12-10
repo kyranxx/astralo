@@ -236,14 +236,3 @@ export function cleanOldPDFs(): number {
 
     return deletedCount;
 }
-
-// Save horoscope PDF and return URL
-export function saveHoroscopePDF(orderId: string, pdfBuffer: Uint8Array): string {
-    ensureDirectories();
-
-    const filename = `horoscope_${orderId}.pdf`;
-    const filePath = path.join(PDFS_DIR, filename);
-    fs.writeFileSync(filePath, Buffer.from(pdfBuffer));
-
-    return `/pdfs/${filename}`;
-}

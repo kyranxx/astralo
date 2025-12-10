@@ -12,10 +12,6 @@ const stripe = new Stripe(stripeKey);
 export const POST: APIRoute = async ({ request }) => {
     const { sessionId } = await request.json();
 
-    console.log('==================== HOROSCOPE REQUEST ====================');
-    console.log('Session ID:', sessionId);
-    console.log('===========================================================');
-
     if (!sessionId) {
         return new Response(JSON.stringify({ error: 'Session ID is required' }), { status: 400 });
     }
@@ -129,7 +125,7 @@ STYLE REQUIREMENTS:
 
         const { GoogleGenerativeAI } = await import('@google/generative-ai');
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
         const result = await model.generateContent(prompt);
         const horoscope = result.response.text();

@@ -246,8 +246,8 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   const prevPageBtn = document.getElementById('prevPage') as HTMLButtonElement;
   const nextPageBtn = document.getElementById('nextPage') as HTMLButtonElement;
   
-  // Check saved password
-  const savedPassword = localStorage.getItem('astralo_admin_password');
+  // Check saved password (session only - cleared when browser closes)
+  const savedPassword = sessionStorage.getItem('astralo_admin_session');
   if (savedPassword) {
     adminPassword = savedPassword;
     showDashboard();
@@ -261,7 +261,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       const response = await fetch(`/api/admin?action=stats&password=${encodeURIComponent(password)}`);
       if (response.ok) {
         adminPassword = password;
-        localStorage.setItem('astralo_admin_password', password);
+        sessionStorage.setItem('astralo_admin_session', password);
         showDashboard();
       } else {
         loginError.classList.remove('hidden');

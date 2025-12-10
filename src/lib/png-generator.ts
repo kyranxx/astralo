@@ -30,7 +30,6 @@ async function getBrowser(): Promise<Browser> {
                 headless: 'shell',
             }).then(browser => {
                 browserInstance = browser as Browser;
-                console.log('✅ Puppeteer (Vercel/Chromium) browser launched');
                 return browserInstance;
             });
         } else {
@@ -42,7 +41,6 @@ async function getBrowser(): Promise<Browser> {
                 args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--font-render-hinting=none']
             }).then(browser => {
                 browserInstance = browser;
-                console.log('✅ Puppeteer (local) browser launched');
                 return browser;
             });
         }
@@ -415,7 +413,6 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                 args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             browser = rtlBrowserInstance;
-            console.log(`🔄 Fresh browser launched for RTL language: ${lang}`);
         } else {
             browser = await getBrowser();
         }
@@ -486,7 +483,6 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                 const body = document.body;
                 return body ? body.scrollHeight : 0;
             });
-            console.log(`📐 Fallback body height for ${lang}: ${effectiveContentHeight}px`);
         }
 
         // Estimate available content space per page (roughly 700px for first page, 850px for subsequent)
@@ -580,7 +576,6 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
             }
         }
 
-        console.log(`✅ Generated ${results.length} horoscope page(s) for ${lang} (${results.reduce((sum, r) => sum + r.content.length, 0) / 1024 | 0}KB total)`);
 
         return results;
     } catch (error) {
@@ -593,7 +588,6 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
         // Close fresh RTL browser if we created one
         if (isRTL && rtlBrowserInstance) {
             try { await rtlBrowserInstance.close(); } catch (e) { /* ignore */ }
-            console.log(`🔄 Fresh RTL browser closed for: ${lang}`);
         }
         releaseLock();
     }

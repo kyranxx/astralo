@@ -4,10 +4,7 @@ import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from '../../lib/pdf-generator';
 import {
   addOrder,
-  updateOrder,
-  findOrderBySessionId,
   generateOrderId,
-  saveHoroscopePDF,
   type Order
 } from '../../lib/orders';
 
@@ -159,48 +156,15 @@ export const POST: APIRoute = async ({ request }) => {
   return new Response(JSON.stringify({ received: true }), { status: 200 });
 };
 
-// Country code to name mapping
+// Country code to name mapping using native Intl API
 function getCountryName(code: string): string {
-  const countries: Record<string, string> = {
-    'SK': 'Slovakia',
-    'CZ': 'Czech Republic',
-    'DE': 'Germany',
-    'AT': 'Austria',
-    'PL': 'Poland',
-    'HU': 'Hungary',
-    'US': 'United States',
-    'GB': 'United Kingdom',
-    'FR': 'France',
-    'IT': 'Italy',
-    'ES': 'Spain',
-    'NL': 'Netherlands',
-    'BE': 'Belgium',
-    'CH': 'Switzerland',
-    'SE': 'Sweden',
-    'NO': 'Norway',
-    'DK': 'Denmark',
-    'FI': 'Finland',
-    'IE': 'Ireland',
-    'PT': 'Portugal',
-    'RO': 'Romania',
-    'BG': 'Bulgaria',
-    'HR': 'Croatia',
-    'SI': 'Slovenia',
-    'RS': 'Serbia',
-    'UA': 'Ukraine',
-    'RU': 'Russia',
-    'CA': 'Canada',
-    'AU': 'Australia',
-    'NZ': 'New Zealand',
-    'JP': 'Japan',
-    'KR': 'South Korea',
-    'CN': 'China',
-    'IN': 'India',
-    'BR': 'Brazil',
-    'MX': 'Mexico',
-    'AR': 'Argentina',
-  };
-  return countries[code] || code || 'Unknown';
+  if (!code) return 'Unknown';
+  try {
+    const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+    return regionNames.of(code.toUpperCase()) || code;
+  } catch {
+    return code;
+  }
 }
 
 async function sendConfirmationEmail(

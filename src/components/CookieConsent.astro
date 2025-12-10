@@ -288,14 +288,12 @@ const cookieLink = lang === 'en' ? '/legal/cookies' : `/${lang}/legal/cookies`;
       localStorage.setItem('cookieConsent', 'accepted');
       banner?.classList.add('hidden');
       // Enable analytics, etc.
-      console.log('Cookies accepted');
     });
     
     declineBtn?.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'declined');
       banner?.classList.add('hidden');
       // Disable non-essential cookies
-      console.log('Cookies declined');
     });
   });
 </script>

@@ -12,8 +12,9 @@ export const GET: APIRoute = async ({ url }) => {
     const action = url.searchParams.get('action') || 'stats';
     const password = url.searchParams.get('password');
 
-    // Simple password protection (change this in production!)
-    if (password !== 'astralo2024') {
+    // Password protection using environment variable
+    const adminPassword = import.meta.env.ADMIN_PASSWORD;
+    if (!adminPassword || password !== adminPassword) {
         return new Response(JSON.stringify({ error: 'Unauthorized' }), {
             status: 401,
             headers: { 'Content-Type': 'application/json' }
@@ -111,8 +112,9 @@ export const POST: APIRoute = async ({ request }) => {
     const body = await request.json();
     const { action, password, orderId, reason } = body;
 
-    // Simple password protection
-    if (password !== 'astralo2024') {
+    // Password protection using environment variable
+    const adminPassword = import.meta.env.ADMIN_PASSWORD;
+    if (!adminPassword || password !== adminPassword) {
         return new Response(JSON.stringify({ error: 'Unauthorized' }), {
             status: 401,
             headers: { 'Content-Type': 'application/json' }

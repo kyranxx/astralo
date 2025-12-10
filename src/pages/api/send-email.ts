@@ -22,7 +22,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     try {
         const data = await request.json();
-        const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime, productKey } = data;
+        const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime } = data;
 
         if (!email || !horoscopeContent) {
             return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
