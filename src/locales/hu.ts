@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const hu: Translations = {
     meta: {
-        title: 'Astralo - Professzionális Horoszkópok | Pontos Asztrológiai Előrejelzések',
-        description: 'Kapja meg személyre szabott horoszkópját. Pontos előrejelzések napi, heti, havi és partner horoszkópokhoz.',
-        keywords: 'horoszkóp, asztrológia, csillagjegy, előrejelzések, személyre szabott horoszkóp',
+        title: 'Astralo - Napi Horoszkóp Ingyen 2024 | Pontos Csillagjegy Előrejelzések',
+        description: 'Kapja meg INGYENES horoszkópját ma! ⭐ Napi, heti és havi horoszkóp. Szerelmi horoszkóp, partner egyezőség és karrier. 50.000+ elégedett ügyfél. Azonnali kézbesítés!',
+        keywords: 'napi horoszkóp, ingyenes horoszkóp, horoszkóp 2024, csillagjegyek, szerelmi horoszkóp, partner horoszkóp, heti horoszkóp, havi horoszkóp, asztrológia, kos horoszkóp, bika horoszkóp, ikrek horoszkóp, pontos horoszkóp',
     },
     header: {
         badge: 'Személyre Szabott Horoszkópok',
@@ -32,13 +32,13 @@ const hu: Translations = {
             name: 'Heti Horoszkóp',
             description: 'Átfogó áttekintés hetéről fontos dátumokkal és ajánlásokkal',
             wordCount: '~400 szó',
-            benefits: ['🎯 Szerencsenap', '💰 Pénzügyi előrejelzés', '❤️ Szerelem és kapcsolatok', '💼 Karrier tanácsok'],
+            benefits: ['✅ Minden a napiból', '🎯 Szerencsenap', '💰 Pénzügyi előrejelzés', '❤️ Szerelem és karrier'],
         },
         monthly: {
             name: 'Havi Horoszkóp',
             description: 'Részletes havi elemzés kulcsfontosságú eseményekkel és lehetőségekkel',
             wordCount: '~1000 szó',
-            benefits: ['🌟 A hónap legjobb napja', '💎 Szerencsekövek', '🌈 Energia hullámok', '🎨 Szerencseszínek'],
+            benefits: ['✅ Minden a hetiből', '🌟 A hónap legjobb napja', '💎 Szerencsekövek', '🌈 Energia hullámok'],
         },
         partner: {
             name: 'Partner Horoszkóp',
@@ -80,6 +80,13 @@ const hu: Translations = {
         partnerBirthPlace: 'Partner születési helye',
         submit: 'Tovább a fizetéshez',
         processing: 'Feldolgozás...',
+        firstPerson: 'Első személy',
+        secondPerson: 'Második személy',
+        back: 'Vissza',
+        secure: 'Biztonságos',
+        guarantee: 'Garancia',
+        days: 'nap',
+        redirecting: 'Átirányítás a fizetéshez...',
     },
     benefits: {
         pdfReport: 'Részletes PDF Jelentés',
@@ -102,6 +109,19 @@ const hu: Translations = {
         privacy: 'Adatvédelmi irányelvek',
         refund: 'Visszatérítési feltételek',
         cookies: 'Cookie szabályzat',
+    },
+    pdfPreview: {
+        title: 'Mit kap',
+        description: 'Személyre szabott horoszkópja gyönyörűen megtervezett PDF dokumentumként, amely tartalmazza:',
+        portrait: 'Személyes asztrológiai portré',
+        portraitDesc: 'Pontos születési adatai alapján',
+        lucky: 'Szerencseszámok és színek',
+        luckyDesc: 'Személyre szabott ajánlások a napjához',
+        predictions: 'Részletes előrejelzések',
+        predictionsDesc: 'Szerelem, karrier, pénzügyek és egészség',
+        advice: 'Gyakorlati tanácsok',
+        adviceDesc: 'Gyakorlati útmutató a kozmikus energiák kihasználásához',
+        footer: 'Azonnali kézbesítés emailben • Professzionális PDF formátum • Örökre az Öné',
     },
 };
 

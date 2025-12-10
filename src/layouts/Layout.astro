@@ -1,91 +1,205 @@
 ---
 import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
+import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
 
 interface Props {
 	title: string;
 	backgroundImage?: string;
 	lang?: string;
 	canonicalUrl?: string;
+	description?: string;
+	keywords?: string;
 }
 
 const { 
 	title, 
 	backgroundImage = "/background5.png",
 	lang = "en",
-	canonicalUrl = "https://astralo.online/"
+	canonicalUrl,
+	description,
+	keywords
 } = Astro.props;
 
-// Language-specific meta descriptions
-const metaDescriptions = {
-	sk: "Profesionálne horoskopy vytvorené na mieru. Denné, týždenné, mesačné a partnerské horoskopy s presným astrologickým výkladom. Viac ako 50,000 spokojných klientov.",
-	en: "Professional horoscopes created especially for you. Daily, weekly, monthly and partner horoscopes with precise astrological interpretation. Over 50,000 satisfied customers.",
-	de: "Professionelle Horoskope speziell für Sie erstellt. Tages-, Wochen-, Monats- und Partnerhoroskope mit präziser astrologischer Interpretation.",
-	fr: "Horoscopes professionnels créés spécialement pour vous. Horoscopes quotidiens, hebdomadaires, mensuels et de partenaire avec interprétation astrologique précise.",
-	es: "Horóscopos profesionales creados especialmente para ti. Horóscopos diarios, semanales, mensuales y de pareja con interpretación astrológica precisa.",
+// Get translations for current language
+const currentLang = isValidLocale(lang) ? lang as SupportedLocale : 'en';
+const t = getTranslations(currentLang);
+
+// Use passed props or fall back to translation defaults
+const currentDescription = description || t.meta.description;
+const currentKeywords = keywords || t.meta.keywords;
+
+// Generate canonical URL based on current language
+const siteUrl = 'https://astralo.online';
+const currentPath = Astro.url.pathname;
+// Remove any trailing slash for consistency, unless it's just /
+const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
+const computedCanonicalUrl = canonicalUrl || `${siteUrl}${cleanPath}`;
+
+// All 33 supported languages for hreflang tags (critical for international SEO)
+const allLanguages = [
+	{ code: 'en', hreflang: 'en', name: 'English' },
+	{ code: 'sk', hreflang: 'sk', name: 'Slovak' },
+	{ code: 'cs', hreflang: 'cs', name: 'Czech' },
+	{ code: 'de', hreflang: 'de', name: 'German' },
+	{ code: 'fr', hreflang: 'fr', name: 'French' },
+	{ code: 'es', hreflang: 'es', name: 'Spanish' },
+	{ code: 'it', hreflang: 'it', name: 'Italian' },
+	{ code: 'pt', hreflang: 'pt', name: 'Portuguese' },
+	{ code: 'nl', hreflang: 'nl', name: 'Dutch' },
+	{ code: 'pl', hreflang: 'pl', name: 'Polish' },
+	{ code: 'hu', hreflang: 'hu', name: 'Hungarian' },
+	{ code: 'ro', hreflang: 'ro', name: 'Romanian' },
+	{ code: 'bg', hreflang: 'bg', name: 'Bulgarian' },
+	{ code: 'hr', hreflang: 'hr', name: 'Croatian' },
+	{ code: 'sl', hreflang: 'sl', name: 'Slovenian' },
+	{ code: 'sr', hreflang: 'sr', name: 'Serbian' },
+	{ code: 'uk', hreflang: 'uk', name: 'Ukrainian' },
+	{ code: 'ru', hreflang: 'ru', name: 'Russian' },
+	{ code: 'el', hreflang: 'el', name: 'Greek' },
+	{ code: 'tr', hreflang: 'tr', name: 'Turkish' },
+	{ code: 'ar', hreflang: 'ar', name: 'Arabic' },
+	{ code: 'hi', hreflang: 'hi', name: 'Hindi' },
+	{ code: 'bn', hreflang: 'bn', name: 'Bengali' },
+	{ code: 'th', hreflang: 'th', name: 'Thai' },
+	{ code: 'vi', hreflang: 'vi', name: 'Vietnamese' },
+	{ code: 'id', hreflang: 'id', name: 'Indonesian' },
+	{ code: 'ja', hreflang: 'ja', name: 'Japanese' },
+	{ code: 'ko', hreflang: 'ko', name: 'Korean' },
+	{ code: 'zh', hreflang: 'zh', name: 'Chinese' },
+	{ code: 'sv', hreflang: 'sv', name: 'Swedish' },
+	{ code: 'da', hreflang: 'da', name: 'Danish' },
+	{ code: 'no', hreflang: 'no', name: 'Norwegian' },
+	{ code: 'fi', hreflang: 'fi', name: 'Finnish' },
+];
+
+// Generate hreflang URL for language code
+const getHreflangUrl = (langCode: string) => {
+	const basePath = currentPath
+		.replace(/^\/[a-z]{2}(\/|$)/, '/') // Remove existing lang prefix
+		.replace(/^\/+/, '/'); // Normalize slashes
+    
+    // English is at root, others at /[lang]
+    if (langCode === 'en') {
+        return `${siteUrl}${basePath === '/' ? '' : basePath}`;
+    }
+	return `${siteUrl}/${langCode}${basePath === '/' ? '/' : basePath}`;
 };
 
-const currentDescription = metaDescriptions[lang as keyof typeof metaDescriptions] || metaDescriptions.sk;
+// Language-specific OG locale mapping
+const ogLocaleMap: Record<string, string> = {
+	en: 'en_US', sk: 'sk_SK', cs: 'cs_CZ', de: 'de_DE', fr: 'fr_FR',
+	es: 'es_ES', it: 'it_IT', pt: 'pt_PT', nl: 'nl_NL', pl: 'pl_PL',
+	hu: 'hu_HU', ro: 'ro_RO', bg: 'bg_BG', hr: 'hr_HR', sl: 'sl_SI',
+	sr: 'sr_RS', uk: 'uk_UA', ru: 'ru_RU', el: 'el_GR', tr: 'tr_TR',
+	ar: 'ar_SA', hi: 'hi_IN', bn: 'bn_BD', th: 'th_TH', vi: 'vi_VN',
+	id: 'id_ID', ja: 'ja_JP', ko: 'ko_KR', zh: 'zh_CN', sv: 'sv_SE',
+	da: 'da_DK', no: 'nb_NO', fi: 'fi_FI'
+};
 
-// Available languages for hreflang
-const languages = [
-	{ code: 'en', url: 'https://astralo.online/' },
-	{ code: 'sk', url: 'https://astralo.online/sk/' },
-	{ code: 'fr', url: 'https://astralo.online/fr/' },
-];
+// Direction for RTL languages
+const rtlLanguages = ['ar'];
+const dir = rtlLanguages.includes(currentLang) ? 'rtl' : 'ltr';
+
+// Structured data with localized product names
+const productNames: Record<string, { daily: string; weekly: string; monthly: string; partner: string }> = {
+	en: { daily: 'Daily Horoscope', weekly: 'Weekly Horoscope', monthly: 'Monthly Horoscope', partner: 'Partner Horoscope' },
+	sk: { daily: 'Denný Horoskop', weekly: 'Týždenný Horoskop', monthly: 'Mesačný Horoskop', partner: 'Partnerský Horoskop' },
+	de: { daily: 'Tageshoroskop', weekly: 'Wochenhoroskop', monthly: 'Monatshoroskop', partner: 'Partnerhoroskop' },
+	fr: { daily: 'Horoscope du Jour', weekly: 'Horoscope de la Semaine', monthly: 'Horoscope du Mois', partner: 'Horoscope de Couple' },
+	es: { daily: 'Horóscopo Diario', weekly: 'Horóscopo Semanal', monthly: 'Horóscopo Mensual', partner: 'Horóscopo de Pareja' },
+};
+
+const localizedProducts = productNames[currentLang] || productNames.en;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={dir}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={currentDescription} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="keywords" content="horoskop, denný horoskop, týždenný horoskop, mesačný horoskop, partnerský horoskop, astrológia" />
 		
-		<!-- Canonical URL -->
-		<link rel="canonical" href={canonicalUrl} />
+		<!-- Primary SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={currentDescription} />
+		<meta name="keywords" content={currentKeywords} />
+		<meta name="author" content="Astralo" />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		
-		<!-- Hreflang Tags for Multi-language SEO -->
-		{languages.map(({ code, url }) => (
-			<link rel="alternate" hreflang={code} href={url} />
+		<!-- Canonical URL (Critical for SEO) -->
+		<link rel="canonical" href={computedCanonicalUrl} />
+		
+		<!-- Hreflang Tags for International SEO (All 33 Languages) -->
+		{allLanguages.map(({ code, hreflang }) => (
+			<link rel="alternate" hreflang={hreflang} href={getHreflangUrl(code)} />
 		))}
-		<link rel="alternate" hreflang="x-default" href="https://astralo.online/" />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
-		<!-- Open Graph Tags -->
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Astralo" />
+		<meta property="og:url" content={computedCanonicalUrl} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={currentDescription} />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content={canonicalUrl} />
-		<meta property="og:image" content="https://astralo.online/og-image.png" />
-		<meta property="og:locale" content={`${lang}_${lang.toUpperCase()}`} />
+		<meta property="og:image" content={`${siteUrl}/og-image.png`} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Astralo - Professional Horoscopes" />
+		<meta property="og:locale" content={ogLocaleMap[currentLang] || 'en_US'} />
+		{allLanguages.filter(l => l.code !== currentLang).map(({ code }) => (
+			<meta property="og:locale:alternate" content={ogLocaleMap[code] || 'en_US'} />
+		))}
 		
-		<!-- Twitter Card -->
+		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={computedCanonicalUrl} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={currentDescription} />
-		<meta name="twitter:image" content="https://astralo.online/og-image.png" />
+		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+		
+		<!-- Performance: Preconnect to critical third-party origins -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
 		
 		<!-- Generator -->
 		<meta name="generator" content={Astro.generator} />
 		
-		<!-- Title -->
-		<title>{title}</title>
+		<!-- Mobile Web App Capable -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="theme-color" content="#0a0a1a" />
 		
-		<!-- Structured Data (JSON-LD) -->
+		<!-- Structured Data (JSON-LD) for Rich Snippets -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Astralo",
+			"alternateName": "Astralo Horoscopes",
+			"url": siteUrl,
+			"description": currentDescription,
+			"inLanguage": lang,
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": `${siteUrl}${lang === 'en' ? '' : '/' + lang}/`,
+				"query-input": "required name=search_term_string"
+			}
+		})} />
+		
 		<script is:inline type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
 			"name": "Astralo",
 			"description": currentDescription,
-			"url": "https://astralo.online",
-			"telephone": "+421900123456",
+			"url": siteUrl,
 			"email": "info@astralo.online",
 			"priceRange": "€€",
-			"image": "https://astralo.online/logo.png",
+			"image": `${siteUrl}/logo.png`,
 			"address": {
 				"@type": "PostalAddress",
 				"addressCountry": "SK"
@@ -93,35 +207,78 @@ const languages = [
 			"aggregateRating": {
 				"@type": "AggregateRating",
 				"ratingValue": "4.9",
+				"bestRating": "5",
+				"worstRating": "1",
 				"reviewCount": "50000"
 			},
 			"offers": [
 				{
 					"@type": "Offer",
-					"name": "Denný Horoskop",
+					"name": localizedProducts.daily,
 					"price": "1.99",
-					"priceCurrency": "EUR"
+					"priceCurrency": "EUR",
+					"availability": "https://schema.org/InStock"
 				},
 				{
 					"@type": "Offer",
-					"name": "Týždenný Horoskop",
+					"name": localizedProducts.weekly,
 					"price": "3.99",
-					"priceCurrency": "EUR"
+					"priceCurrency": "EUR",
+					"availability": "https://schema.org/InStock"
 				},
 				{
 					"@type": "Offer",
-					"name": "Mesačný Horoskop",
+					"name": localizedProducts.monthly,
 					"price": "9.99",
-					"priceCurrency": "EUR"
+					"priceCurrency": "EUR",
+					"availability": "https://schema.org/InStock"
 				},
 				{
 					"@type": "Offer",
-					"name": "Partnerský Horoskop",
+					"name": localizedProducts.partner,
 					"price": "14.99",
-					"priceCurrency": "EUR"
+					"priceCurrency": "EUR",
+					"availability": "https://schema.org/InStock"
 				}
 			]
 		})} />
+		
+		<!-- Organization Schema -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Astralo",
+			"url": siteUrl,
+			"logo": `${siteUrl}/logo.png`,
+			"sameAs": [],
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "info@astralo.online",
+				"contactType": "customer service",
+				"availableLanguage": allLanguages.map(l => l.name)
+			}
+		})} />
+		
+		<!-- BreadcrumbList Schema -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": `${siteUrl}${lang === 'en' ? '' : '/' + lang}/`
+				}
+			]
+		})} />
+		
+		<!-- Critical CSS inline for faster FCP -->
+		<style is:inline>
+			/* Critical above-the-fold styles */
+			body { margin: 0; background: #0a0a1a; color: #fff; }
+			.cosmic-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #0a0a1a 0%, #1a0f2e 50%, #0f1729 100%); z-index: -2; }
+		</style>
 	</head>
 	<body>
 		<div class="cosmic-bg"></div>

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const ro: Translations = {
     meta: {
-        title: 'Astralo - Horoscoape Profesionale | Predicții Astrologice Precise',
-        description: 'Obțineți horoscopul personalizat. Predicții precise pentru horoscoape zilnice, săptămânale, lunare și de cuplu.',
-        keywords: 'horoscop, astrologie, zodiac, predicții, horoscop personalizat',
+        title: 'Astralo - Horoscop Zilnic Gratuit 2024 | Predicții Zodii Precise',
+        description: 'Obțineți horoscopul GRATUIT azi! ⭐ Horoscop zilnic, săptămânal și lunar. Horoscop dragoste, compatibilitate și carieră. 50.000+ clienți mulțumiți. Livrare instantană!',
+        keywords: 'horoscop zilnic, horoscop gratuit, horoscop 2024, zodii, horoscop dragoste, compatibilitate zodii, horoscop săptămânal, horoscop lunar, astrologie, berbec horoscop, taur horoscop, gemeni horoscop, horoscop precis',
     },
     header: {
         badge: 'Horoscoape Personalizate',
@@ -32,13 +32,13 @@ const ro: Translations = {
             name: 'Horoscop Săptămânal',
             description: 'Prezentare completă a săptămânii cu date importante și recomandări',
             wordCount: '~400 cuvinte',
-            benefits: ['🎯 Zi norocoasă', '💰 Prognoză financiară', '❤️ Dragoste și relații', '💼 Sfaturi de carieră'],
+            benefits: ['✅ Tot din zilnic', '🎯 Zi norocoasă', '💰 Prognoză financiară', '❤️ Dragoste și carieră'],
         },
         monthly: {
             name: 'Horoscop Lunar',
             description: 'Analiză lunară detaliată cu evenimente cheie și oportunități',
             wordCount: '~1000 cuvinte',
-            benefits: ['🌟 Cea mai bună zi a lunii', '💎 Pietre norocoase', '🌈 Valuri de energie', '🎨 Culori norocoase'],
+            benefits: ['✅ Tot din săptămânal', '🌟 Cea mai bună zi a lunii', '💎 Pietre norocoase', '🌈 Valuri de energie'],
         },
         partner: {
             name: 'Horoscop de Cuplu',
@@ -80,6 +80,13 @@ const ro: Translations = {
         partnerBirthPlace: 'Locul nașterii partenerului',
         submit: 'Continuă la plată',
         processing: 'Se procesează...',
+        firstPerson: 'Prima persoană',
+        secondPerson: 'A doua persoană',
+        back: 'Înapoi',
+        secure: 'Sigur',
+        guarantee: 'Garanție',
+        days: 'zile',
+        redirecting: 'Redirecționare către plată...',
     },
     benefits: {
         pdfReport: 'Raport PDF Detaliat',
@@ -102,6 +109,19 @@ const ro: Translations = {
         privacy: 'Politica de confidențialitate',
         refund: 'Politica de rambursare',
         cookies: 'Politica de cookies',
+    },
+    pdfPreview: {
+        title: 'Ce vei primi',
+        description: 'Horoscopul tău personalizat livrat ca document PDF frumos conceput, care include:',
+        portrait: 'Portret astrologic personal',
+        portraitDesc: 'Bazat pe datele tale exacte de naștere',
+        lucky: 'Numere și culori norocoase',
+        luckyDesc: 'Recomandări personalizate pentru ziua ta',
+        predictions: 'Predicții detaliate',
+        predictionsDesc: 'Dragoste, carieră, finanțe și sănătate',
+        advice: 'Sfaturi practice',
+        adviceDesc: 'Ghid practic pentru a profita de energiile cosmice',
+        footer: 'Livrare instantanee pe email • Format PDF profesional • Al tău pentru totdeauna',
     },
 };
 

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const de: Translations = {
     meta: {
-        title: 'Astralo - Professionelle Horoskope | Genaue Astrologische Vorhersagen',
-        description: 'Erhalten Sie Ihr personalisiertes Horoskop. Genaue Vorhersagen für tägliche, wöchentliche, monatliche und Partner-Horoskope.',
-        keywords: 'Horoskop, Astrologie, Sternzeichen, Vorhersagen, personalisiertes Horoskop',
+        title: 'Astralo - Tageshoroskop Heute Kostenlos 2024 | Genaue Sternzeichen Vorhersagen',
+        description: 'Holen Sie sich Ihr GRATIS Tageshoroskop heute! ⭐ Tägliche, wöchentliche & monatliche Vorhersagen. Liebeshoroskop, Partnerhoroskop & Karriere. 50.000+ zufriedene Kunden. Sofortige Lieferung!',
+        keywords: 'Tageshoroskop heute, Horoskop kostenlos, Wochenhoroskop, Monatshoroskop, Sternzeichen, Liebeshoroskop, Partnerhoroskop, Astrologie, Horoskop 2024, Steinbock Horoskop, Widder Horoskop, Wassermann Horoskop, genaues Horoskop, Geburtshoroskop',
     },
     header: {
         badge: 'Personalisierte Horoskope',
@@ -32,13 +32,13 @@ const de: Translations = {
             name: 'Wochenhoroskop',
             description: 'Umfassender Überblick über Ihre Woche mit wichtigen Terminen und Empfehlungen',
             wordCount: '~400 Wörter',
-            benefits: ['🎯 Glückstag', '💰 Finanzvorhersage', '❤️ Liebe & Beziehungen', '💼 Karriere-Rat'],
+            benefits: ['✅ Alles vom Tageshoroskop', '🎯 Glückstag', '💰 Finanzvorhersage', '❤️ Liebe & Karriere'],
         },
         monthly: {
             name: 'Monatshoroskop',
             description: 'Detaillierte Monatsanalyse mit wichtigen Ereignissen und Chancen',
             wordCount: '~1000 Wörter',
-            benefits: ['🌟 Bester Tag des Monats', '💎 Glückssteine', '🌈 Energiewellen', '🎨 Glücksfarben'],
+            benefits: ['✅ Alles vom Wochenhoroskop', '🌟 Bester Tag des Monats', '💎 Glückssteine', '🌈 Energiewellen'],
         },
         partner: {
             name: 'Partnerhoroskop',
@@ -80,6 +80,13 @@ const de: Translations = {
         partnerBirthPlace: 'Geburtsort des Partners',
         submit: 'Weiter zur Zahlung',
         processing: 'Verarbeitung...',
+        firstPerson: 'Erste Person',
+        secondPerson: 'Zweite Person',
+        back: 'Zurück',
+        secure: 'Sicher',
+        guarantee: 'Garantie',
+        days: 'Tage',
+        redirecting: 'Weiterleitung zur Zahlung...',
     },
     benefits: {
         pdfReport: 'Detaillierter PDF-Bericht',
@@ -102,6 +109,19 @@ const de: Translations = {
         privacy: 'Datenschutz',
         refund: 'Rückerstattungsrichtlinie',
         cookies: 'Cookie-Richtlinie',
+    },
+    pdfPreview: {
+        title: 'Was Sie erhalten',
+        description: 'Ihr personalisiertes Horoskop als wunderschön gestaltetes PDF-Dokument mit:',
+        portrait: 'Persönliches astrologisches Porträt',
+        portraitDesc: 'Basierend auf Ihren genauen Geburtsdaten',
+        lucky: 'Glückszahlen & Farben',
+        luckyDesc: 'Personalisierte Empfehlungen für Ihren Tag',
+        predictions: 'Detaillierte Vorhersagen',
+        predictionsDesc: 'Liebe, Karriere, Finanzen & Gesundheit',
+        advice: 'Praktische Ratschläge',
+        adviceDesc: 'Praktische Anleitung zur Nutzung kosmischer Energien',
+        footer: 'Sofortige Lieferung per E-Mail • Professionelles PDF-Format • Für immer Ihres',
     },
 };
 

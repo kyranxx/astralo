@@ -1,0 +1,5 @@
+---
+// Server-side 301 redirect: /en/form/[type] → /form/[type] (English is at root)
+const { type } = Astro.params;
+return Astro.redirect(`/form/${type}`, 301);
+---

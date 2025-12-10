@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const nl: Translations = {
     meta: {
-        title: 'Astralo - Professionele Horoscopen | Nauwkeurige Astrologische Voorspellingen',
-        description: 'Krijg je gepersonaliseerde horoscoop. Nauwkeurige voorspellingen voor dagelijkse, wekelijkse, maandelijkse en partner horoscopen.',
-        keywords: 'horoscoop, astrologie, sterrenbeeld, voorspellingen, gepersonaliseerde horoscoop',
+        title: 'Astralo - Horoscoop Vandaag Gratis 2024 | Nauwkeurige Sterrenbeeld Voorspellingen',
+        description: 'Krijg je GRATIS horoscoop vandaag! ⭐ Dagelijkse, wekelijkse & maandelijkse voorspellingen. Liefdeshoroscoop, partner compatibiliteit & carrière. 50.000+ tevreden klanten. Directe levering!',
+        keywords: 'horoscoop vandaag, horoscoop gratis, horoscoop 2024, sterrenbeeld, liefdeshoroscoop, partnerhoroscoop, weekhoroscoop, maandhoroscoop, astrologie, ram horoscoop, stier horoscoop, tweelingen horoscoop, nauwkeurige horoscoop, geboortehoroscoop',
     },
     header: {
         badge: 'Gepersonaliseerde Horoscopen',
@@ -32,13 +32,13 @@ const nl: Translations = {
             name: 'Weekhoroscoop',
             description: 'Volledig overzicht van je week met belangrijke data en aanbevelingen',
             wordCount: '~400 woorden',
-            benefits: ['🎯 Geluksdag', '💰 Financiële voorspelling', '❤️ Liefde & relaties', '💼 Carrière advies'],
+            benefits: ['✅ Alles van dagelijks', '🎯 Geluksdag', '💰 Financiële voorspelling', '❤️ Liefde & carrière'],
         },
         monthly: {
             name: 'Maandhoroscoop',
             description: 'Gedetailleerde maandanalyse met belangrijke gebeurtenissen en kansen',
             wordCount: '~1000 woorden',
-            benefits: ['🌟 Beste dag van de maand', '💎 Geluksstenen', '🌈 Energiegolven', '🎨 Gelukskleuren'],
+            benefits: ['✅ Alles van wekelijks', '🌟 Beste dag van de maand', '💎 Geluksstenen', '🌈 Energiegolven'],
         },
         partner: {
             name: 'Partner Horoscoop',
@@ -80,6 +80,13 @@ const nl: Translations = {
         partnerBirthPlace: 'Geboorteplaats van partner',
         submit: 'Doorgaan naar betaling',
         processing: 'Verwerken...',
+        firstPerson: 'Eerste persoon',
+        secondPerson: 'Tweede persoon',
+        back: 'Terug',
+        secure: 'Veilig',
+        guarantee: 'Garantie',
+        days: 'dagen',
+        redirecting: 'Doorsturen naar betaling...',
     },
     benefits: {
         pdfReport: 'Gedetailleerd PDF Rapport',
@@ -102,6 +109,19 @@ const nl: Translations = {
         privacy: 'Privacybeleid',
         refund: 'Retourbeleid',
         cookies: 'Cookiebeleid',
+    },
+    pdfPreview: {
+        title: 'Wat je ontvangt',
+        description: 'Je gepersonaliseerde horoscoop geleverd als prachtig ontworpen PDF-document, inclusief:',
+        portrait: 'Persoonlijk astrologisch portret',
+        portraitDesc: 'Gebaseerd op je exacte geboortegegevens',
+        lucky: 'Geluksgetallen & kleuren',
+        luckyDesc: 'Gepersonaliseerde aanbevelingen voor je dag',
+        predictions: 'Gedetailleerde voorspellingen',
+        predictionsDesc: 'Liefde, carrière, financiën & gezondheid',
+        advice: 'Praktisch advies',
+        adviceDesc: 'Praktische begeleiding om kosmische energieën te benutten',
+        footer: 'Directe levering per email • Professioneel PDF-formaat • Voor altijd van jou',
     },
 };
 

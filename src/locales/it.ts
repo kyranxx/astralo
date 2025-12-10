@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const it: Translations = {
     meta: {
-        title: 'Astralo - Oroscopi Professionali | Previsioni Astrologiche Accurate',
-        description: 'Ottieni il tuo oroscopo personalizzato. Previsioni accurate per oroscopi giornalieri, settimanali, mensili e di coppia.',
-        keywords: 'oroscopo, astrologia, zodiaco, previsioni, oroscopo personalizzato',
+        title: 'Astralo - Oroscopo di Oggi Gratis 2024 | Previsioni Segni Zodiacali',
+        description: 'Ottieni il tuo oroscopo GRATIS oggi! ⭐ Oroscopo giornaliero, settimanale e mensile. Affinità di coppia, carriera e previsioni. 50.000+ clienti soddisfatti. Consegna istantanea!',
+        keywords: 'oroscopo di oggi, oroscopo gratis, oroscopo 2024, segni zodiacali, oroscopo amore, affinità di coppia, oroscopo settimanale, oroscopo mensile, tema natale, ascendente, previsioni astrologiche, oroscopo personalizzato, tarocchi, astrologia',
     },
     header: {
         badge: 'Oroscopi Personalizzati',
@@ -32,13 +32,13 @@ const it: Translations = {
             name: 'Oroscopo Settimanale',
             description: 'Panoramica completa della tua settimana con date importanti e raccomandazioni',
             wordCount: '~400 parole',
-            benefits: ['🎯 Giorno fortunato', '💰 Previsioni finanziarie', '❤️ Amore e relazioni', '💼 Consigli di carriera'],
+            benefits: ['✅ Tutto dal giornaliero', '🎯 Giorno fortunato', '💰 Previsioni finanziarie', '❤️ Amore e carriera'],
         },
         monthly: {
             name: 'Oroscopo Mensile',
             description: 'Analisi mensile dettagliata con eventi chiave e opportunità',
             wordCount: '~1000 parole',
-            benefits: ['🌟 Miglior giorno del mese', '💎 Pietre fortunate', '🌈 Onde di energia', '🎨 Colori della fortuna'],
+            benefits: ['✅ Tutto dal settimanale', '🌟 Miglior giorno del mese', '💎 Pietre fortunate', '🌈 Onde di energia'],
         },
         partner: {
             name: 'Oroscopo di Coppia',
@@ -80,6 +80,13 @@ const it: Translations = {
         partnerBirthPlace: 'Luogo di nascita del partner',
         submit: 'Continua al pagamento',
         processing: 'Elaborazione...',
+        firstPerson: 'Prima persona',
+        secondPerson: 'Seconda persona',
+        back: 'Indietro',
+        secure: 'Sicuro',
+        guarantee: 'Garanzia',
+        days: 'giorni',
+        redirecting: 'Reindirizzamento al pagamento...',
     },
     benefits: {
         pdfReport: 'Rapporto PDF Dettagliato',
@@ -102,6 +109,19 @@ const it: Translations = {
         privacy: 'Privacy Policy',
         refund: 'Politica di rimborso',
         cookies: 'Politica sui cookie',
+    },
+    pdfPreview: {
+        title: 'Cosa riceverai',
+        description: 'Il tuo oroscopo personalizzato consegnato come documento PDF splendidamente progettato, che include:',
+        portrait: 'Ritratto astrologico personale',
+        portraitDesc: 'Basato sui tuoi dati di nascita esatti',
+        lucky: 'Numeri e colori fortunati',
+        luckyDesc: 'Raccomandazioni personalizzate per la tua giornata',
+        predictions: 'Previsioni dettagliate',
+        predictionsDesc: 'Amore, carriera, finanze e salute',
+        advice: 'Consigli pratici',
+        adviceDesc: 'Guida pratica per sfruttare le energie cosmiche',
+        footer: 'Consegna istantanea via email • Formato PDF professionale • Tuo per sempre',
     },
 };
 

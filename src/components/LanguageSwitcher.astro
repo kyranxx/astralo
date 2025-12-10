@@ -17,6 +17,7 @@ const getFlagUrl = (code: string) => {
     cs: 'cz', // Czech → Czechia
     el: 'gr', // Greek → Greece
     ar: 'sa', // Arabic → Saudi Arabia
+    he: 'il', // Hebrew → Israel
     hi: 'in', // Hindi → India
     ja: 'jp', // Japanese → Japan
     ko: 'kr', // Korean → South Korea
@@ -54,7 +55,7 @@ const orderedLangs: SupportedLocale[] = [
   // Asian
   'ja', 'ko', 'zh', 'th', 'vi', 'id',
   // South Asian & Middle East
-  'hi', 'bn', 'ar',
+  'hi', 'bn', 'ar', 'he',
 ];
 const allLangs = orderedLangs;
 ---
@@ -73,7 +74,8 @@ const allLangs = orderedLangs;
       {allLangs.map((code) => {
         const locale = locales[code];
         const isActive = code === lang;
-        const href = `/${code}/`;
+        // English at root (/), other languages at /[lang]/
+        const href = code === 'en' ? '/' : `/${code}/`;
         
         return (
           <a

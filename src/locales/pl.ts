@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const pl: Translations = {
     meta: {
-        title: 'Astralo - Profesjonalne Horoskopy | Dokładne Prognozy Astrologiczne',
-        description: 'Otrzymaj spersonalizowany horoskop. Dokładne prognozy dla horoskopów dziennych, tygodniowych, miesięcznych i partnerskich.',
-        keywords: 'horoskop, astrologia, zodiak, prognozy, spersonalizowany horoskop',
+        title: 'Astralo - Horoskop Na Dziś Za Darmo 2024 | Dokładne Przepowiednie Zodiakalne',
+        description: 'Pobierz swój DARMOWY horoskop dziś! ⭐ Horoskopy dzienne, tygodniowe i miesięczne. Miłość, kariera i przepowiednie. 50 000+ zadowolonych klientów. Natychmiastowa dostawa!',
+        keywords: 'horoskop na dziś, horoskop darmowy, horoskop 2024, znaki zodiaku, horoskop miłosny, horoskop partnerski, horoskop tygodniowy, horoskop miesięczny, astrologia, baran horoskop, byk horoskop, bliźnięta horoskop, dokładny horoskop, horoskop urodzeniowy',
     },
     header: {
         badge: 'Spersonalizowane Horoskopy',
@@ -32,13 +32,13 @@ const pl: Translations = {
             name: 'Horoskop Tygodniowy',
             description: 'Kompleksowy przegląd Twojego tygodnia z ważnymi datami i zaleceniami',
             wordCount: '~400 słów',
-            benefits: ['🎯 Szczęśliwy dzień', '💰 Prognoza finansowa', '❤️ Miłość i związki', '💼 Porady kariery'],
+            benefits: ['✅ Wszystko z dziennego', '🎯 Szczęśliwy dzień', '💰 Prognoza finansowa', '❤️ Miłość i kariera'],
         },
         monthly: {
             name: 'Horoskop Miesięczny',
             description: 'Szczegółowa analiza miesięczna z kluczowymi wydarzeniami i możliwościami',
             wordCount: '~1000 słów',
-            benefits: ['🌟 Najlepszy dzień miesiąca', '💎 Szczęśliwe kamienie', '🌈 Fale energii', '🎨 Kolory szczęścia'],
+            benefits: ['✅ Wszystko z tygodniowego', '🌟 Najlepszy dzień miesiąca', '💎 Szczęśliwe kamienie', '🌈 Fale energii'],
         },
         partner: {
             name: 'Horoskop Partnerski',
@@ -80,6 +80,13 @@ const pl: Translations = {
         partnerBirthPlace: 'Miejsce urodzenia partnera/partnerki',
         submit: 'Przejdź do płatności',
         processing: 'Przetwarzanie...',
+        firstPerson: 'Pierwsza osoba',
+        secondPerson: 'Druga osoba',
+        back: 'Wróć',
+        secure: 'Bezpieczne',
+        guarantee: 'Gwarancja',
+        days: 'dni',
+        redirecting: 'Przekierowanie do płatności...',
     },
     benefits: {
         pdfReport: 'Szczegółowy Raport PDF',
@@ -102,6 +109,19 @@ const pl: Translations = {
         privacy: 'Polityka prywatności',
         refund: 'Polityka zwrotów',
         cookies: 'Polityka cookies',
+    },
+    pdfPreview: {
+        title: 'Co otrzymasz',
+        description: 'Twój spersonalizowany horoskop dostarczony jako pięknie zaprojektowany dokument PDF, zawierający:',
+        portrait: 'Osobisty portret astrologiczny',
+        portraitDesc: 'Na podstawie Twoich dokładnych danych urodzenia',
+        lucky: 'Szczęśliwe liczby i kolory',
+        luckyDesc: 'Spersonalizowane zalecenia na Twój dzień',
+        predictions: 'Szczegółowe prognozy',
+        predictionsDesc: 'Miłość, kariera, finanse i zdrowie',
+        advice: 'Praktyczne porady',
+        adviceDesc: 'Praktyczne wskazówki do wykorzystania energii kosmicznych',
+        footer: 'Natychmiastowa dostawa na email • Profesjonalny format PDF • Twój na zawsze',
     },
 };
 

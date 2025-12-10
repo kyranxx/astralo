@@ -3,6 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { ArrowLeft, Shield } from 'lucide-astro';
+
+export const prerender = true;
 ---
 
 <Layout 
@@ -14,11 +16,11 @@ import { ArrowLeft, Shield } from 'lucide-astro';
     <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
       <div class="max-w-5xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href="/en/" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+          <a href="/" class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span class="text-sm">Back</span>
           </a>
-          <a href="/en/"><img src="/logo.png" alt="Astralo" class="h-9" /></a>
+          <a href="/"><img src="/logo.png" alt="Astralo" class="h-9" /></a>
           <LanguageSwitcher lang="en" />
         </div>
       </div>

@@ -12,8 +12,11 @@ const horoscopeTypes = [
   { id: "partner", price: 14.99, originalPrice: 29.99 },
 ];
 
+export const prerender = true;
+
 export function getStaticPaths() {
-  const locales = getSupportedLocales(); // All languages including English at /en/form/
+  // Exclude 'en' - English forms are served at /form/[type] without language prefix
+  const locales = getSupportedLocales().filter(lang => lang !== 'en');
   const types = ['daily', 'weekly', 'monthly', 'partner'];
   
   const paths = [];
@@ -39,12 +42,21 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
 
 <Layout title={`${productName} - Astralo`} lang={currentLang}>
   <div class="min-h-screen flex flex-col relative z-10">
-    <!-- Top Promo Banner -->
+    <!-- Top Secure Payment Banner -->
     <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 py-2 px-4 text-center">
-      <div class="flex items-center justify-center gap-3 text-black/90 text-sm font-medium">
-        <span class="animate-pulse">🔥</span>
-        <span><strong>50% OFF</strong></span>
-        <span class="hidden sm:inline">• ⚡ {t.promo.delivery}</span>
+      <div class="flex items-center justify-center gap-3 sm:gap-6 text-black/90 text-sm font-medium">
+        <span class="flex items-center gap-2">
+          <span>🔒</span>
+          <span class="font-bold">{t.promo.secure}</span>
+        </span>
+        <span class="flex items-center gap-1">
+          <img src="/Stripe wordmark - Blurple - Large.png" alt="Stripe" class="h-5" />
+        </span>
+        <span class="hidden sm:flex items-center gap-2 border-l border-black/20 pl-4">
+          <span class="animate-pulse">🔥</span>
+          <span><strong>50% OFF</strong></span>
+        </span>
+        <span class="hidden md:inline">• ⚡ {t.promo.delivery}</span>
       </div>
     </div>
 
@@ -54,7 +66,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
         <div class="flex items-center justify-between">
           <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            <span class="text-sm">{currentLang === 'sk' ? 'Späť' : 'Back'}</span>
+            <span class="text-sm">{t.form.back || 'Back'}</span>
           </a>
           <a href={`/${currentLang}/`} class="block hover:opacity-80 transition-opacity">
             <img src="/logo.png" alt="Astralo" class="h-10" />
@@ -146,7 +158,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-400/20 to-blue-600/20 flex items-center justify-center">
                       <User class="w-5 h-5 text-blue-400" />
                     </div>
-                    <h3 class="text-xl font-bold text-white">{currentLang === 'sk' ? 'Prvá osoba' : 'First Person'}</h3>
+                    <h3 class="text-xl font-bold text-white">{t.form.firstPerson || 'First Person'}</h3>
                   </div>
                   
                   <div class="space-y-4">
@@ -189,7 +201,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <MapPin class="w-5 h-5 text-amber-400" />
                         {t.form.birthPlace}
                       </label>
-                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder={t.form.birthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder={t.form.birthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
                     </div>
                   </div>
                 </div>
@@ -200,7 +212,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400/20 to-pink-600/20 flex items-center justify-center">
                       <Heart class="w-5 h-5 text-pink-400" />
                     </div>
-                    <h3 class="text-xl font-bold text-white">{currentLang === 'sk' ? 'Druhá osoba' : 'Second Person'}</h3>
+                    <h3 class="text-xl font-bold text-white">{t.form.secondPerson || 'Second Person'}</h3>
                   </div>
                   
                   <div class="space-y-4">
@@ -235,7 +247,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <MapPin class="w-5 h-5 text-amber-400" />
                         {t.form.partnerBirthPlace}
                       </label>
-                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder={t.form.partnerBirthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder={t.form.partnerBirthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
                     </div>
                   </div>
                 </div>
@@ -281,7 +293,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                     <MapPin class="w-5 h-5 text-amber-400" />
                     {t.form.birthPlace}
                   </label>
-                  <input id="birthPlace" name="birthPlace" type="text" placeholder={t.form.birthPlace} autocomplete="address-level2" required class="input w-full text-lg p-4" />
+                  <input id="birthPlace" name="birthPlace" type="text" placeholder={t.form.birthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
                 </div>
               </div>
             )}
@@ -303,7 +315,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
           <div class="glass rounded-xl p-4 text-center">
             <Shield class="w-8 h-8 text-green-400 mx-auto mb-2" />
-            <p class="text-white/90 font-medium text-sm">100% {currentLang === 'sk' ? 'Bezpečné' : 'Secure'}</p>
+            <p class="text-white/90 font-medium text-sm">100% {t.form.secure || 'Secure'}</p>
             <p class="text-white/50 text-xs">SSL</p>
           </div>
           <div class="glass rounded-xl p-4 text-center">
@@ -313,8 +325,8 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
           </div>
           <div class="glass rounded-xl p-4 text-center">
             <Heart class="w-8 h-8 text-pink-400 mx-auto mb-2" />
-            <p class="text-white/90 font-medium text-sm">{currentLang === 'sk' ? 'Garancia' : 'Guarantee'}</p>
-            <p class="text-white/50 text-xs">30 {currentLang === 'sk' ? 'dní' : 'days'}</p>
+            <p class="text-white/90 font-medium text-sm">{t.form.guarantee || 'Guarantee'}</p>
+            <p class="text-white/50 text-xs">30 {t.form.days || 'days'}</p>
           </div>
         </div>
       </div>
@@ -335,7 +347,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
             </div>
           </div>
           <h3 class="text-2xl font-bold text-white mb-2">{t.form.processing}</h3>
-          <p class="text-white/60 text-lg">{currentLang === 'sk' ? 'Presmerovávam na platbu...' : 'Redirecting to payment...'}</p>
+          <p class="text-white/60 text-lg">{t.form.redirecting || 'Redirecting to payment...'}</p>
         </div>
       </div>
     </div>

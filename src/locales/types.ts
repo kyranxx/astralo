@@ -5,7 +5,7 @@
 export type SupportedLocale =
     | 'en' | 'sk' | 'cs' | 'de' | 'fr' | 'es' | 'it' | 'pt' | 'nl'
     | 'pl' | 'hu' | 'ro' | 'bg' | 'hr' | 'sl' | 'sr' | 'uk' | 'ru'
-    | 'el' | 'tr' | 'ar' | 'hi' | 'ja' | 'ko' | 'zh' | 'th'
+    | 'el' | 'tr' | 'ar' | 'he' | 'hi' | 'ja' | 'ko' | 'zh' | 'th'
     | 'vi' | 'id' | 'sv' | 'da' | 'fi' | 'no' | 'bn';
 
 export interface LocaleConfig {
@@ -96,6 +96,13 @@ export interface Translations {
         partnerBirthPlace: string;
         submit: string;
         processing: string;
+        firstPerson?: string;
+        secondPerson?: string;
+        back?: string;
+        secure?: string;
+        guarantee?: string;
+        days?: string;
+        redirecting?: string;
     };
     benefits?: {
         pdfReport: string;
@@ -118,5 +125,18 @@ export interface Translations {
         privacy: string;
         refund: string;
         cookies: string;
+    };
+    pdfPreview?: {
+        title: string;
+        description: string;
+        portrait: string;
+        portraitDesc: string;
+        lucky: string;
+        luckyDesc: string;
+        predictions: string;
+        predictionsDesc: string;
+        advice: string;
+        adviceDesc: string;
+        footer: string;
     };
 }

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const fr: Translations = {
     meta: {
-        title: 'Astralo - Horoscopes Professionnels | Prédictions Astrologiques Précises',
-        description: 'Obtenez votre horoscope personnalisé. Prédictions précises pour horoscopes quotidiens, hebdomadaires, mensuels et de couple.',
-        keywords: 'horoscope, astrologie, zodiaque, prédictions, horoscope personnalisé',
+        title: 'Astralo - Horoscope du Jour Gratuit 2024 | Prédictions Signes Astrologiques',
+        description: 'Obtenez votre horoscope GRATUIT aujourd\'hui! ⭐ Horoscope quotidien, hebdomadaire & mensuel. Compatibilité amoureuse, carrière & voyance. 50 000+ clients satisfaits. Livraison instantanée!',
+        keywords: 'horoscope du jour, horoscope gratuit, horoscope 2024, signe astrologique, horoscope amour, compatibilité amoureuse, horoscope mensuel, horoscope hebdomadaire, thème astral, ascendant, prédictions astrologiques, horoscope personnalisé, voyance, astrologie',
     },
     header: {
         badge: 'Horoscopes Personnalisés',
@@ -32,13 +32,13 @@ const fr: Translations = {
             name: 'Horoscope Hebdomadaire',
             description: 'Aperçu complet de votre semaine avec dates importantes et recommandations',
             wordCount: '~400 mots',
-            benefits: ['🎯 Jour de chance', '💰 Prévisions financières', '❤️ Amour & relations', '💼 Conseils carrière'],
+            benefits: ['✅ Tout du quotidien', '🎯 Jour de chance', '💰 Prévisions financières', '❤️ Amour & carrière'],
         },
         monthly: {
             name: 'Horoscope Mensuel',
             description: 'Analyse mensuelle détaillée avec événements clés et opportunités',
             wordCount: '~1000 mots',
-            benefits: ['🌟 Meilleur jour du mois', '💎 Pierres porte-bonheur', '🌈 Vagues d\'énergie', '🎨 Couleurs de chance'],
+            benefits: ['✅ Tout de l\'hebdomadaire', '🌟 Meilleur jour du mois', '💎 Pierres porte-bonheur', '🌈 Vagues d\'énergie'],
         },
         partner: {
             name: 'Horoscope de Couple',
@@ -80,6 +80,13 @@ const fr: Translations = {
         partnerBirthPlace: 'Lieu de naissance du partenaire',
         submit: 'Continuer vers le paiement',
         processing: 'Traitement...',
+        firstPerson: 'Première personne',
+        secondPerson: 'Deuxième personne',
+        back: 'Retour',
+        secure: 'Sécurisé',
+        guarantee: 'Garantie',
+        days: 'jours',
+        redirecting: 'Redirection vers le paiement...',
     },
     benefits: {
         pdfReport: 'Rapport PDF Détaillé',
@@ -102,6 +109,19 @@ const fr: Translations = {
         privacy: 'Politique de confidentialité',
         refund: 'Politique de remboursement',
         cookies: 'Politique des cookies',
+    },
+    pdfPreview: {
+        title: 'Ce que vous recevrez',
+        description: 'Votre horoscope personnalisé livré sous forme de document PDF magnifiquement conçu, comprenant:',
+        portrait: 'Portrait astrologique personnel',
+        portraitDesc: 'Basé sur vos données de naissance exactes',
+        lucky: 'Numéros et couleurs chanceux',
+        luckyDesc: 'Recommandations personnalisées pour votre journée',
+        predictions: 'Prédictions détaillées',
+        predictionsDesc: 'Amour, carrière, finances et santé',
+        advice: 'Conseils pratiques',
+        adviceDesc: 'Guide pratique pour profiter des énergies cosmiques',
+        footer: 'Livraison instantanée par email • Format PDF professionnel • À conserver pour toujours',
     },
 };
 

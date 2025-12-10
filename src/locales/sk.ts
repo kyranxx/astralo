@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const sk: Translations = {
     meta: {
-        title: 'Astralo - Profesionálne Horoskopy | Presné Astrologické Predpovede',
-        description: 'Získajte personalizovaný horoskop. Presné predpovede pre denný, týždenný, mesačný a partnerský horoskop.',
-        keywords: 'horoskop, astrológia, znamenie, predpovede, personalizovaný horoskop',
+        title: 'Astralo - Horoskop Dnes Zadarmo 2024 | Presné Predpovede Znamení',
+        description: 'Získajte ZADARMO horoskop dnes! ⭐ Denný, týždenný a mesačný horoskop. Ľúbostný horoskop, partnerská zhoda a kariéra. 50 000+ spokojných zákazníkov. Okamžité doručenie!',
+        keywords: 'horoskop dnes, horoskop zadarmo, horoskop 2024, znamenia zverokruhu, ľúbostný horoskop, partnerský horoskop, týždenný horoskop, mesačný horoskop, astrológia, baran horoskop, býk horoskop, bliženci horoskop, presný horoskop, narodeniný horoskop',
     },
     header: {
         badge: 'Personalizované Horoskopy',
@@ -32,13 +32,13 @@ const sk: Translations = {
             name: 'Týždenný Horoskop',
             description: 'Komplexný prehľad vášho týždňa s dôležitými dátumami a odporúčaniami',
             wordCount: '~400 slov',
-            benefits: ['🎯 Šťastný deň', '💰 Finančná predpoveď', '❤️ Láska a vzťahy', '💼 Kariérna rada'],
+            benefits: ['✅ Všetko z denného', '🎯 Šťastný deň', '💰 Finančná predpoveď', '❤️ Láska a kariéra'],
         },
         monthly: {
             name: 'Mesačný Horoskop',
             description: 'Detailná mesačná analýza s kľúčovými udalosťami a príležitosťami',
             wordCount: '~1000 slov',
-            benefits: ['🌟 Najlepší deň mesiaca', '💎 Šťastné kamene', '🌈 Energetické vlny', '🎨 Farby šťastia'],
+            benefits: ['✅ Všetko z týždenného', '🌟 Najlepší deň mesiaca', '💎 Šťastné kamene', '🌈 Energetické vlny'],
         },
         partner: {
             name: 'Partnerský Horoskop',
@@ -80,6 +80,13 @@ const sk: Translations = {
         partnerBirthPlace: 'Miesto narodenia partnera/partnerky',
         submit: 'Pokračovať k platbe',
         processing: 'Spracovávam...',
+        firstPerson: 'Prvá osoba',
+        secondPerson: 'Druhá osoba',
+        back: 'Späť',
+        secure: 'Bezpečné',
+        guarantee: 'Garancia',
+        days: 'dní',
+        redirecting: 'Presmerovávam na platbu...',
     },
     benefits: {
         pdfReport: 'Detailná PDF Správa',
@@ -102,6 +109,19 @@ const sk: Translations = {
         privacy: 'Ochrana súkromia',
         refund: 'Podmienky vrátenia',
         cookies: 'Cookies',
+    },
+    pdfPreview: {
+        title: 'Čo dostanete',
+        description: 'Váš personalizovaný horoskop doručený ako krásne navrhnutý PDF dokument, ktorý obsahuje:',
+        portrait: 'Osobný astrologický portrét',
+        portraitDesc: 'Na základe vašich presných údajov o narodení',
+        lucky: 'Šťastné čísla a farby',
+        luckyDesc: 'Personalizované odporúčania pre váš deň',
+        predictions: 'Detailné predpovede',
+        predictionsDesc: 'Láska, kariéra, financie a zdravie',
+        advice: 'Praktické rady',
+        adviceDesc: 'Praktické vedenie na využitie kozmických energií',
+        footer: 'Okamžité doručenie na email • Profesionálny PDF formát • Navždy váš',
     },
 };
 

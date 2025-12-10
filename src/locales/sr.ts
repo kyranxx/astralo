@@ -32,13 +32,13 @@ const sr: Translations = {
             name: 'Nedeljni Horoskop',
             description: 'Pregled nedelje sa važnim datumima',
             wordCount: '~400 reči',
-            benefits: ['🎯 Srećan dan', '💰 Finansijska prognoza', '❤️ Ljubav', '💼 Karijera']
+            benefits: ['✅ Све из дневног', '💰 Finansijska prognoza', '❤️ Ljubav', '💼 Karijera']
         },
         monthly: {
             name: 'Mesečni Horoskop',
             description: 'Mesečna analiza sa ključnim događajima',
             wordCount: '~1000 reči',
-            benefits: ['🌟 Najbolji dan', '💎 Srećno kamenje', '🌈 Energetski talasi', '🎨 Boje']
+            benefits: ['✅ Све из недељног', '💎 Srećno kamenje', '🌈 Energetski talasi', '🎨 Boje']
         },
         partner: {
             name: 'Partnerski Horoskop',
@@ -79,7 +79,14 @@ const sr: Translations = {
         partnerBirthTime: 'Vreme partnera',
         partnerBirthPlace: 'Mesto partnera',
         submit: 'Nastavi na plaćanje',
-        processing: 'Obrada...'
+        processing: 'Obrada...',
+        firstPerson: 'Prva osoba',
+        secondPerson: 'Druga osoba',
+        back: 'Nazad',
+        secure: 'Sigurno',
+        guarantee: 'Garancija',
+        days: 'dana',
+        redirecting: 'Preusmeravanje na plaćanje...',
     },
     benefits: {
         pdfReport: 'Detaljan PDF Izveštaj',
@@ -102,6 +109,19 @@ const sr: Translations = {
         privacy: 'Privatnost',
         refund: 'Povrat',
         cookies: 'Kolačići'
+    },
+    pdfPreview: {
+        title: 'Шта ћете добити',
+        description: 'Ваш персонализовани хороскоп испоручен као прелепо дизајниран PDF документ, који укључује:',
+        portrait: 'Лични астролошки портрет',
+        portraitDesc: 'На основу ваших тачних података о рођењу',
+        lucky: 'Срећни бројеви и боје',
+        luckyDesc: 'Персонализоване препоруке за ваш дан',
+        predictions: 'Детаљне прогнозе',
+        predictionsDesc: 'Љубав, каријера, финансије и здравље',
+        advice: 'Практични савети',
+        adviceDesc: 'Практични водич за коришћење космичких енергија',
+        footer: 'Тренутна испорука на имејл • Професионални PDF формат • Заувек ваш',
     },
 };
 

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const en: Translations = {
     meta: {
-        title: 'Astralo - Professional Horoscopes | Accurate Astrological Predictions',
-        description: 'Get your personalized horoscope. Accurate predictions for daily, weekly, monthly, and partner compatibility.',
-        keywords: 'horoscope, astrology, zodiac, predictions, personalized horoscope',
+        title: 'Astralo - Free Daily Horoscope Today 2024 | Accurate Zodiac Predictions',
+        description: 'Get your FREE personalized horoscope today! ⭐ Daily, weekly & monthly predictions. Love compatibility, career advice & zodiac forecasts. 50,000+ happy customers. Instant delivery!',
+        keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2024, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
     },
     header: {
         badge: 'Personalized Horoscopes',
@@ -32,13 +32,13 @@ const en: Translations = {
             name: 'Weekly Horoscope',
             description: 'Comprehensive overview of your week with important dates and recommendations',
             wordCount: '~400 words',
-            benefits: ['🎯 Lucky day', '💰 Financial forecast', '❤️ Love & relationships', '💼 Career advice'],
+            benefits: ['✅ All from Daily', '🎯 Lucky day', '💰 Financial forecast', '❤️ Love & career'],
         },
         monthly: {
             name: 'Monthly Horoscope',
             description: 'Detailed monthly analysis with key events and opportunities',
             wordCount: '~1000 words',
-            benefits: ['🌟 Best day of month', '💎 Lucky stones', '🌈 Energy waves', '🎨 Colors of luck'],
+            benefits: ['✅ All from Weekly', '🌟 Best day of month', '💎 Lucky stones', '🌈 Energy waves'],
         },
         partner: {
             name: 'Partner Horoscope',
@@ -80,6 +80,13 @@ const en: Translations = {
         partnerBirthPlace: "Partner's Place of Birth",
         submit: 'Continue to Payment',
         processing: 'Processing...',
+        firstPerson: 'First Person',
+        secondPerson: 'Second Person',
+        back: 'Back',
+        secure: 'Secure',
+        guarantee: 'Guarantee',
+        days: 'days',
+        redirecting: 'Redirecting to payment...',
     },
     benefits: {
         pdfReport: 'Detailed PDF Report',
@@ -102,6 +109,19 @@ const en: Translations = {
         privacy: 'Privacy Policy',
         refund: 'Refund Policy',
         cookies: 'Cookie Policy',
+    },
+    pdfPreview: {
+        title: "What You'll Receive",
+        description: 'Your personalized horoscope delivered as a beautifully designed PDF document, complete with:',
+        portrait: 'Personal Astrological Portrait',
+        portraitDesc: 'Based on your exact birth data',
+        lucky: 'Lucky Numbers & Colors',
+        luckyDesc: 'Personalized recommendations for your day',
+        predictions: 'Detailed Predictions',
+        predictionsDesc: 'Love, career, finances & health insights',
+        advice: 'Actionable Advice',
+        adviceDesc: 'Practical guidance for making the most of cosmic energies',
+        footer: 'Delivered instantly to your email • Professional PDF format • Keep forever',
     },
 };
 

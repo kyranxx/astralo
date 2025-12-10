@@ -5,8 +5,11 @@ import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
 
+export const prerender = true;
+
 export function getStaticPaths() {
-  const locales = getSupportedLocales(); // All languages including English at /en/
+  // Exclude 'en' - English is served at root (/) without language prefix
+  const locales = getSupportedLocales().filter(lang => lang !== 'en');
   return locales.map(lang => ({ params: { lang } }));
 }
 
@@ -112,6 +115,11 @@ const testimonials = [
           <span>⭐</span>
           <span>{t.promo.customers}</span>
         </span>
+        <span class="hidden lg:flex items-center gap-2 border-l border-black/20 pl-4">
+          <span>🔒</span>
+          <span>{t.promo.secure}</span>
+          <img src="/Stripe wordmark - Blurple - Large.png" alt="Stripe" class="h-5 ml-1" />
+        </span>
       </div>
     </div>
 
@@ -186,10 +194,11 @@ const testimonials = [
                     </div>
                   </div>
 
-                  <div class="hidden sm:block space-y-1.5 text-xs text-white/70 mb-4 flex-1">
+                  <div class="hidden sm:flex flex-col items-start space-y-1.5 text-xs text-white/70 mb-4 flex-1 pl-3">
                     {type.benefits.slice(0, 4).map((benefit) => (
-                      <div class="text-center">
-                        {benefit}
+                      <div class="flex items-center gap-2 text-left">
+                        <span class="text-base flex-shrink-0">{benefit.split(' ')[0]}</span>
+                        <span>{benefit.split(' ').slice(1).join(' ')}</span>
                       </div>
                     ))}
                   </div>
@@ -204,6 +213,56 @@ const testimonials = [
               </a>
             );
           })}
+        </div>
+
+        <!-- PDF Sample Preview Section -->
+        <div class="glass-strong rounded-3xl p-6 sm:p-10 mb-12 sm:mb-16 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div class="order-2 lg:order-1">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-2xl">📄</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-white">{t.pdfPreview?.title || "What You'll Receive"}</h2>
+              </div>
+              <p class="text-white/70 mb-6">
+                {t.pdfPreview?.description || 'Your personalized horoscope delivered as a beautifully designed PDF document, complete with:'}
+              </p>
+              <ul class="space-y-3 text-white/80">
+                <li class="flex items-start gap-3">
+                  <span class="text-amber-400 mt-1">✨</span>
+                  <span><strong class="text-white">{t.pdfPreview?.portrait || 'Personal Astrological Portrait'}</strong> - {t.pdfPreview?.portraitDesc || 'Based on your exact birth data'}</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-amber-400 mt-1">🍀</span>
+                  <span><strong class="text-white">{t.pdfPreview?.lucky || 'Lucky Numbers & Colors'}</strong> - {t.pdfPreview?.luckyDesc || 'Personalized recommendations for your day'}</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-amber-400 mt-1">💫</span>
+                  <span><strong class="text-white">{t.pdfPreview?.predictions || 'Detailed Predictions'}</strong> - {t.pdfPreview?.predictionsDesc || 'Love, career, finances & health insights'}</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-amber-400 mt-1">🔮</span>
+                  <span><strong class="text-white">{t.pdfPreview?.advice || 'Actionable Advice'}</strong> - {t.pdfPreview?.adviceDesc || 'Practical guidance for making the most of cosmic energies'}</span>
+                </li>
+              </ul>
+              <p class="text-white/50 text-sm mt-6 flex items-center gap-2">
+                <span>⚡</span>
+                {t.pdfPreview?.footer || 'Delivered instantly to your email • Professional PDF format • Keep forever'}
+              </p>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center">
+              <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-amber-400/20 to-purple-500/20 blur-2xl rounded-3xl"></div>
+                <img 
+                  src="/pdf-sample-preview.png" 
+                  alt="Sample Horoscope PDF Preview" 
+                  class="relative w-full max-w-sm rounded-2xl shadow-2xl border border-white/10"
+                />
+                <div class="absolute -bottom-3 -right-3 bg-amber-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                  Premium PDF
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Trust Indicators -->

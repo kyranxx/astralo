@@ -42,7 +42,9 @@ export const POST: APIRoute = async ({ request }) => {
             no: 'Norwegian', bn: 'Bengali'
         };
 
+        // Now using local fonts for all languages including CJK - no more English fallback needed!
         const langName = languageNames[language] || 'English';
+        const useLangForPdf = langName; // All languages use their native script now
 
         // Progressive benefits based on product type
         const productBenefits: Record<string, string> = {
@@ -82,7 +84,7 @@ export const POST: APIRoute = async ({ request }) => {
 
         if (productKey === 'partner') {
             const { birthDate1, birthTime1, birthPlace1, name1, birthDate2, birthTime2, birthPlace2, name2 } = formData;
-            prompt = `You are a warm, professional astrologer. Write a detailed partner compatibility horoscope in ${langName} language.
+            prompt = `You are a warm, professional astrologer. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
 
 Person 1: ${name1}, born ${birthDate1} at ${birthTime1} in ${birthPlace1}
 Person 2: ${name2}, born ${birthDate2} at ${birthTime2} in ${birthPlace2}
@@ -97,13 +99,13 @@ STYLE REQUIREMENTS:
 - Start with an attention-grabbing opening
 - End with encouraging advice
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write in ${langName} language.`;
+- Write in ${useLangForPdf} language.`;
         } else {
             const { birthDate, birthTime, birthPlace, name } = formData;
             const benefits = productBenefits[productKey] || productBenefits.daily;
             const wordCount = { daily: 200, weekly: 400, monthly: 1000, partner: 1200 };
 
-            prompt = `You are a warm, professional astrologer. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${langName} language.
+            prompt = `You are a warm, professional astrologer. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${useLangForPdf} language.
 
 For: ${name}, born ${birthDate} at ${birthTime} in ${birthPlace}
 
@@ -117,7 +119,7 @@ STYLE REQUIREMENTS:
 - Include current planetary influences
 - End with positive affirmations
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write entirely in ${langName} language.`;
+- Write entirely in ${useLangForPdf} language.`;
         }
 
         const apiKey = import.meta.env.GEMINI_API_KEY;
