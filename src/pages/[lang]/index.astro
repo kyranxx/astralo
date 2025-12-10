@@ -160,7 +160,7 @@ const testimonials = [
         </div>
 
         <!-- Horoscope Cards -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16 max-w-5xl mx-auto">
           {horoscopeTypes.map((type, index) => {
             const Icon = iconMap[type.icon as keyof typeof iconMap];
             return (
@@ -179,10 +179,18 @@ const testimonials = [
                     <div class="inline-flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-400/20 to-amber-600/20 mb-2 sm:mb-3 mx-auto">
                       <Icon class="w-5 h-5 sm:w-7 sm:h-7 text-amber-400" />
                     </div>
-                    <h3 class="text-sm sm:text-xl font-bold text-white mb-1">
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-1">
                       {type.name}
                     </h3>
-                    <p class="text-white/50 text-xs">{type.wordCount}</p>
+                    <p class="hidden sm:block text-white/50 text-xs">{type.wordCount}</p>
+                    {/* Mobile-only benefits with emojis */}
+                    <div class="flex flex-wrap justify-center gap-1 mt-2 sm:hidden">
+                      {type.benefits.slice(0, 3).map((benefit) => (
+                        <span class="text-xs bg-white/5 rounded-full px-2 py-0.5 text-white/70">
+                          {benefit.split(' ')[0]}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   <div class="mb-3 sm:mb-5">

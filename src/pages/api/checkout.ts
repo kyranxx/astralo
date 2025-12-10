@@ -28,6 +28,7 @@ const productNames: Record<string, Record<string, string>> = {
     el: { daily: 'Ημερήσιο ωροσκόπιο', weekly: 'Εβδομαδιαίο ωροσκόπιο', monthly: 'Μηνιαίο ωροσκόπιο', partner: 'Ωροσκόπιο ζευγαριού' },
     tr: { daily: 'Günlük burç', weekly: 'Haftalık burç', monthly: 'Aylık burç', partner: 'Partner burcu' },
     ar: { daily: 'البرج اليومي', weekly: 'البرج الأسبوعي', monthly: 'البرج الشهري', partner: 'برج الشريك' },
+    he: { daily: 'הורוסקופ יומי', weekly: 'הורוסקופ שבועי', monthly: 'הורוסקופ חודשי', partner: 'הורוסקופ לזוג' },
     hi: { daily: 'दैनिक राशिफल', weekly: 'साप्ताहिक राशिफल', monthly: 'मासिक राशिफल', partner: 'पार्टनर राशिफल' },
     ja: { daily: '今日の運勢', weekly: '週間運勢', monthly: '月間運勢', partner: 'パートナー運勢' },
     ko: { daily: '오늘의 운세', weekly: '주간 운세', monthly: '월간 운세', partner: '커플 운세' },
