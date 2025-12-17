@@ -183,14 +183,6 @@ const testimonials = [
                       {type.name}
                     </h3>
                     <p class="hidden sm:block text-white/50 text-xs">{type.wordCount}</p>
-                    {/* Mobile-only benefits with emojis */}
-                    <div class="flex flex-wrap justify-center gap-1 mt-2 sm:hidden">
-                      {type.benefits.slice(0, 3).map((benefit) => (
-                        <span class="text-xs bg-white/5 rounded-full px-2 py-0.5 text-white/70">
-                          {benefit.split(' ')[0]}
-                        </span>
-                      ))}
-                    </div>
                   </div>
 
                   <div class="mb-3 sm:mb-5">
@@ -202,7 +194,7 @@ const testimonials = [
                     </div>
                   </div>
 
-                  <div class="hidden sm:flex flex-col items-start space-y-1.5 text-xs text-white/70 mb-4 flex-1 pl-3">
+                  <div class="flex flex-col items-start space-y-1.5 text-xs text-white/70 mb-5 flex-1 mx-auto sm:mx-0 sm:pl-3">
                     {type.benefits.slice(0, 4).map((benefit) => (
                       <div class="flex items-center gap-2 text-left">
                         <span class="text-base flex-shrink-0">{benefit.split(' ')[0]}</span>
