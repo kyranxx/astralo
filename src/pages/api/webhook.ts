@@ -94,7 +94,6 @@ export const POST: APIRoute = async ({ request }) => {
 
       // Save order to database
       addOrder(order);
-      console.log(`✅ Order ${orderId} saved to database`);
 
       // Prepare invoice/receipt info
       let invoicePdfBuffer: Buffer | null = null;
@@ -142,10 +141,8 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Handle refunds from Stripe dashboard
     if (event.type === 'charge.refunded') {
-      const charge = event.data.object;
       // Find order by payment intent and mark as refunded
       // This handles refunds made directly in Stripe dashboard
-      console.log('Charge refunded:', charge.id);
     }
 
   } catch (error: any) {
@@ -318,6 +315,4 @@ async function sendConfirmationEmail(
     html: html,
     attachments: attachments,
   });
-
-  console.log(`✅ Confirmation email sent to ${to} for order ${order.id}`);
 }
