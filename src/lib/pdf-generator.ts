@@ -141,45 +141,65 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         const gray = rgb(0.4, 0.4, 0.4);
         const black = rgb(0, 0, 0);
 
-        // Draw header on first page
+        // Draw header on first page - matching website glassmorphism style
         const drawHeader = (page: any) => {
-            // Header background
+            // Header background - dark with subtle gradient effect
             page.drawRectangle({
                 x: 0,
-                y: height - 80,
+                y: height - 90,
                 width: width,
-                height: 80,
+                height: 90,
                 color: darkBlue,
             });
 
-            // Gold accent line
+            // Gold accent line at bottom of header
             page.drawRectangle({
                 x: 0,
-                y: height - 84,
+                y: height - 94,
                 width: width,
                 height: 4,
                 color: gold,
             });
 
-            // Astralo text
+            // Small gold decorative lines at top
+            page.drawRectangle({
+                x: width / 2 - 60,
+                y: height - 12,
+                width: 120,
+                height: 2,
+                color: rgb(0.984, 0.749, 0.141),
+            });
+
+            // Stars decoration (text representation of ✦ ✧ ★ ✧ ✦)
+            const starsText = '★  ★  ★';
+            const starsWidth = font.widthOfTextAtSize(starsText, 10);
+            page.drawText(starsText, {
+                x: (width - starsWidth) / 2,
+                y: height - 28,
+                size: 10,
+                font: font,
+                color: gold,
+            });
+
+            // Astralo text - larger and more prominent
             const astraloText = 'ASTRALO';
-            const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 22);
+            const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 26);
             page.drawText(astraloText, {
                 x: (width - astraloWidth) / 2,
-                y: height - 50,
-                size: 22,
+                y: height - 55,
+                size: 26,
                 font: boldFont,
                 color: gold,
             });
 
-            // Document type
+            // Document type subtitle
             const typeWidth = font.widthOfTextAtSize('Legal Document', 10);
             page.drawText('Legal Document', {
                 x: (width - typeWidth) / 2,
-                y: height - 68,
+                y: height - 75,
                 size: 10,
                 font: font,
-                color: rgb(0.8, 0.8, 0.8),
+                color: rgb(0.7, 0.7, 0.7),
             });
         };
 
@@ -208,21 +228,46 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         // Draw header on first page
         drawHeader(currentPage);
 
-        let y = height - 110; // Start below header
+        let y = height - 120; // Start below header
 
-        // Document title
-        const titleWidth = boldFont.widthOfTextAtSize(title, 18);
+        // Icon box with star decoration (centered)
+        const iconBoxSize = 40;
+        const iconBoxX = (width - iconBoxSize) / 2;
+        currentPage.drawRectangle({
+            x: iconBoxX,
+            y: y - 5,
+            width: iconBoxSize,
+            height: iconBoxSize,
+            color: rgb(0.984, 0.749, 0.141), // Gold
+            opacity: 0.15,
+            borderColor: rgb(0.984, 0.749, 0.141),
+            borderWidth: 1.5,
+        });
+        // Star decoration inside box
+        const starText = '*';
+        const starWidth = boldFont.widthOfTextAtSize(starText, 28);
+        currentPage.drawText(starText, {
+            x: iconBoxX + (iconBoxSize - starWidth) / 2,
+            y: y + 5,
+            size: 28,
+            font: boldFont,
+            color: gold,
+        });
+        y -= 55;
+
+        // Document title - larger and bolder
+        const titleWidth = boldFont.widthOfTextAtSize(title, 22);
         currentPage.drawText(title, {
             x: (width - titleWidth) / 2,
             y,
-            size: 18,
+            size: 22,
             font: boldFont,
             color: darkBlue,
         });
-        y -= 15;
+        y -= 18;
 
-        // Date line
-        const dateText = `Last updated: December 5, 2024`;
+        // Version and date line
+        const dateText = `Version 1.0 • Last updated: December 5, 2024`;
         const dateWidth = font.widthOfTextAtSize(dateText, 9);
         currentPage.drawText(dateText, {
             x: (width - dateWidth) / 2,
@@ -231,7 +276,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             font: font,
             color: gray,
         });
-        y -= 35;
+        y -= 40;
 
         const paragraphs = content.split('\n');
 

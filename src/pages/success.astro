@@ -13,7 +13,11 @@ const t = getTranslations(currentLang);
 const successT = {
   en: {
     preparing: 'Preparing Your Horoscope...',
-    analyzing: 'Analyzing your birth chart and planetary positions.',
+    analyzing: 'Analyzing your birth chart...',
+    generating: 'Generating your horoscope...',
+    creatingPdf: 'Creating your PDF...',
+    sendingEmail: 'Sending to your email...',
+    complete: 'Complete!',
     generated: 'Horoscope Generated!',
     checkEmail: 'Check Your Email! 📬',
     sentTo: 'Your personalized horoscope has been sent to:',
@@ -29,7 +33,11 @@ const successT = {
   },
   sk: {
     preparing: 'Pripravujeme váš horoskop...',
-    analyzing: 'Analyzujeme vašu pôrodnú kartu a polohy planét.',
+    analyzing: 'Analyzujeme vašu pôrodnú kartu...',
+    generating: 'Generujeme váš horoskop...',
+    creatingPdf: 'Vytvárame vaše PDF...',
+    sendingEmail: 'Odosielame na váš email...',
+    complete: 'Hotovo!',
     generated: 'Horoskop vygenerovaný!',
     checkEmail: 'Skontrolujte email! 📬',
     sentTo: 'Váš personalizovaný horoskop bol odoslaný na:',
@@ -45,7 +53,11 @@ const successT = {
   },
   cs: {
     preparing: 'Připravujeme váš horoskop...',
-    analyzing: 'Analyzujeme vaši porodní kartu a polohy planet.',
+    analyzing: 'Analyzujeme vaši porodní kartu...',
+    generating: 'Generujeme váš horoskop...',
+    creatingPdf: 'Vytváříme vaše PDF...',
+    sendingEmail: 'Odesíláme na váš email...',
+    complete: 'Hotovo!',
     generated: 'Horoskop vygenerován!',
     checkEmail: 'Zkontrolujte email! 📬',
     sentTo: 'Váš personalizovaný horoskop byl odeslán na:',
@@ -61,7 +73,11 @@ const successT = {
   },
   de: {
     preparing: 'Ihr Horoskop wird vorbereitet...',
-    analyzing: 'Analyse Ihres Geburtshoroskops und der Planetenpositionen.',
+    analyzing: 'Analyse Ihres Geburtshoroskops...',
+    generating: 'Horoskop wird erstellt...',
+    creatingPdf: 'PDF wird erstellt...',
+    sendingEmail: 'An Ihre E-Mail senden...',
+    complete: 'Fertig!',
     generated: 'Horoskop erstellt!',
     checkEmail: 'Überprüfen Sie Ihre E-Mail! 📬',
     sentTo: 'Ihr personalisiertes Horoskop wurde gesendet an:',
@@ -77,7 +93,11 @@ const successT = {
   },
   fr: {
     preparing: 'Préparation de votre horoscope...',
-    analyzing: 'Analyse de votre thème natal et des positions planétaires.',
+    analyzing: 'Analyse de votre thème natal...',
+    generating: 'Génération de votre horoscope...',
+    creatingPdf: 'Création de votre PDF...',
+    sendingEmail: 'Envoi à votre email...',
+    complete: 'Terminé!',
     generated: 'Horoscope généré!',
     checkEmail: 'Vérifiez votre email! 📬',
     sentTo: 'Votre horoscope personnalisé a été envoyé à:',
@@ -93,7 +113,11 @@ const successT = {
   },
   es: {
     preparing: 'Preparando tu horóscopo...',
-    analyzing: 'Analizando tu carta natal y posiciones planetarias.',
+    analyzing: 'Analizando tu carta natal...',
+    generating: 'Generando tu horóscopo...',
+    creatingPdf: 'Creando tu PDF...',
+    sendingEmail: 'Enviando a tu email...',
+    complete: '¡Listo!',
     generated: '¡Horóscopo generado!',
     checkEmail: '¡Revisa tu email! 📬',
     sentTo: 'Tu horóscopo personalizado ha sido enviado a:',
@@ -109,7 +133,11 @@ const successT = {
   },
   it: {
     preparing: 'Preparazione del tuo oroscopo...',
-    analyzing: 'Analisi del tuo tema natale e posizioni planetarie.',
+    analyzing: 'Analisi del tuo tema natale...',
+    generating: 'Generazione del tuo oroscopo...',
+    creatingPdf: 'Creazione del tuo PDF...',
+    sendingEmail: 'Invio alla tua email...',
+    complete: 'Completato!',
     generated: 'Oroscopo generato!',
     checkEmail: 'Controlla la tua email! 📬',
     sentTo: 'Il tuo oroscopo personalizzato è stato inviato a:',
@@ -125,7 +153,11 @@ const successT = {
   },
   pt: {
     preparing: 'Preparando o seu horóscopo...',
-    analyzing: 'Analisando o seu mapa astral e posições planetárias.',
+    analyzing: 'Analisando o seu mapa astral...',
+    generating: 'Gerando o seu horóscopo...',
+    creatingPdf: 'Criando o seu PDF...',
+    sendingEmail: 'Enviando para o seu email...',
+    complete: 'Pronto!',
     generated: 'Horóscopo gerado!',
     checkEmail: 'Verifique o seu email! 📬',
     sentTo: 'O seu horóscopo personalizado foi enviado para:',
@@ -141,7 +173,11 @@ const successT = {
   },
   nl: {
     preparing: 'Uw horoscoop wordt voorbereid...',
-    analyzing: 'Analyse van uw geboortehoroscoop en planetenstanden.',
+    analyzing: 'Analyse van uw geboortehoroscoop...',
+    generating: 'Uw horoscoop wordt gegenereerd...',
+    creatingPdf: 'Uw PDF wordt aangemaakt...',
+    sendingEmail: 'Verzenden naar uw e-mail...',
+    complete: 'Klaar!',
     generated: 'Horoscoop gegenereerd!',
     checkEmail: 'Controleer uw e-mail! 📬',
     sentTo: 'Uw gepersonaliseerde horoscoop is verzonden naar:',
@@ -157,7 +193,11 @@ const successT = {
   },
   pl: {
     preparing: 'Przygotowujemy Twój horoskop...',
-    analyzing: 'Analizujemy Twój horoskop urodzeniowy i pozycje planet.',
+    analyzing: 'Analizujemy Twój horoskop...',
+    generating: 'Generowanie horoskopu...',
+    creatingPdf: 'Tworzenie PDF...',
+    sendingEmail: 'Wysyłanie na email...',
+    complete: 'Gotowe!',
     generated: 'Horoskop wygenerowany!',
     checkEmail: 'Sprawdź swoją skrzynkę! 📬',
     sentTo: 'Twój spersonalizowany horoskop został wysłany na:',
@@ -173,7 +213,11 @@ const successT = {
   },
   tr: {
     preparing: 'Burcunuz hazırlanıyor...',
-    analyzing: 'Doğum haritanız ve gezegen pozisyonlarınız analiz ediliyor.',
+    analyzing: 'Doğum haritanız analiz ediliyor...',
+    generating: 'Burcunuz oluşturuluyor...',
+    creatingPdf: 'PDF oluşturuluyor...',
+    sendingEmail: 'E-postanıza gönderiliyor...',
+    complete: 'Tamamlandı!',
     generated: 'Burç oluşturuldu!',
     checkEmail: 'E-postanızı kontrol edin! 📬',
     sentTo: 'Kişiselleştirilmiş burcunuz şu adrese gönderildi:',
@@ -189,7 +233,11 @@ const successT = {
   },
   hu: {
     preparing: 'Horoszkópja készítése folyamatban...',
-    analyzing: 'Születési térképének és bolygóállásainak elemzése.',
+    analyzing: 'Elemzés folyamatban...',
+    generating: 'Horoszkóp generálása...',
+    creatingPdf: 'PDF létrehozása...',
+    sendingEmail: 'Küldés az e-mailre...',
+    complete: 'Kész!',
     generated: 'Horoszkóp elkészült!',
     checkEmail: 'Ellenőrizze e-mailjét! 📬',
     sentTo: 'Személyre szabott horoszkópja elküldve ide:',
@@ -205,7 +253,11 @@ const successT = {
   },
   ro: {
     preparing: 'Pregătim horoscopul dvs...',
-    analyzing: 'Analizăm harta natală și pozițiile planetelor.',
+    analyzing: 'Analizăm harta natală...',
+    generating: 'Generăm horoscopul...',
+    creatingPdf: 'Creăm PDF-ul...',
+    sendingEmail: 'Trimitem la email...',
+    complete: 'Gata!',
     generated: 'Horoscop generat!',
     checkEmail: 'Verificați emailul! 📬',
     sentTo: 'Horoscopul personalizat a fost trimis la:',
@@ -221,7 +273,11 @@ const successT = {
   },
   bg: {
     preparing: 'Подготвяме вашия хороскоп...',
-    analyzing: 'Анализираме вашата рождена карта и позициите на планетите.',
+    analyzing: 'Анализираме картата...',
+    generating: 'Генериране на хороскоп...',
+    creatingPdf: 'Създаване на PDF...',
+    sendingEmail: 'Изпращане на имейл...',
+    complete: 'Готово!',
     generated: 'Хороскопът е готов!',
     checkEmail: 'Проверете имейла си! 📬',
     sentTo: 'Вашият персонализиран хороскоп беше изпратен на:',
@@ -237,7 +293,11 @@ const successT = {
   },
   hr: {
     preparing: 'Pripremamo vaš horoskop...',
-    analyzing: 'Analiziramo vašu rodnu kartu i položaje planeta.',
+    analyzing: 'Analiziramo kartu...',
+    generating: 'Generiranje horoskopa...',
+    creatingPdf: 'Stvaranje PDF-a...',
+    sendingEmail: 'Slanje na email...',
+    complete: 'Gotovo!',
     generated: 'Horoskop je generiran!',
     checkEmail: 'Provjerite email! 📬',
     sentTo: 'Vaš personalizirani horoskop poslan je na:',
@@ -253,7 +313,11 @@ const successT = {
   },
   sl: {
     preparing: 'Pripravljamo vaš horoskop...',
-    analyzing: 'Analiziramo vašo rojstno karto in položaje planetov.',
+    analyzing: 'Analiziramo karto...',
+    generating: 'Ustvarjanje horoskopa...',
+    creatingPdf: 'Ustvarjanje PDF...',
+    sendingEmail: 'Pošiljanje na e-pošto...',
+    complete: 'Končano!',
     generated: 'Horoskop ustvarjen!',
     checkEmail: 'Preverite e-pošto! 📬',
     sentTo: 'Vaš osebni horoskop je bil poslan na:',
@@ -269,7 +333,11 @@ const successT = {
   },
   sr: {
     preparing: 'Припремамо ваш хороскоп...',
-    analyzing: 'Анализирамо вашу рођендан карту и положаје планета.',
+    analyzing: 'Анализирамо карту...',
+    generating: 'Генерисање хороскопа...',
+    creatingPdf: 'Креирање PDF-а...',
+    sendingEmail: 'Слање на имејл...',
+    complete: 'Готово!',
     generated: 'Хороскоп генерисан!',
     checkEmail: 'Проверите имејл! 📬',
     sentTo: 'Ваш персонализовани хороскоп послат је на:',
@@ -285,7 +353,11 @@ const successT = {
   },
   uk: {
     preparing: 'Готуємо ваш гороскоп...',
-    analyzing: 'Аналізуємо вашу натальну карту та положення планет.',
+    analyzing: 'Аналізуємо...',
+    generating: 'Генеруємо гороскоп...',
+    creatingPdf: 'Створюємо PDF...',
+    sendingEmail: 'Надсилаємо...',
+    complete: 'Готово!',
     generated: 'Гороскоп створено!',
     checkEmail: 'Перевірте пошту! 📬',
     sentTo: 'Ваш персоналізований гороскоп надіслано на:',
@@ -296,12 +368,16 @@ const successT = {
     backHome: 'Повернутися додому',
     didntReceive: 'Не отримали листа? Перевірте спам або зверніться',
     error: 'Щось пішло не так',
-    errorDesc: 'Не вдалося створити гороскоп. Зверніться до підтримки.',
-    emailFailed: 'Не вдалося надіслати. Зверніться до підтримки.'
+    errorDesc: 'Не вдалося створити гороскоп.',
+    emailFailed: 'Не вдалося надіслати.'
   },
   ru: {
     preparing: 'Готовим ваш гороскоп...',
-    analyzing: 'Анализируем вашу натальную карту и положения планет.',
+    analyzing: 'Анализируем...',
+    generating: 'Генерация гороскопа...',
+    creatingPdf: 'Создание PDF...',
+    sendingEmail: 'Отправка...',
+    complete: 'Готово!',
     generated: 'Гороскоп создан!',
     checkEmail: 'Проверьте почту! 📬',
     sentTo: 'Ваш персональный гороскоп отправлен на:',
@@ -310,170 +386,210 @@ const successT = {
     sending: 'Отправляем ваш гороскоп...',
     emailSent: 'Письмо успешно отправлено!',
     backHome: 'Вернуться домой',
-    didntReceive: 'Не получили письмо? Проверьте спам или свяжитесь',
+    didntReceive: 'Не получили письмо? Проверьте спам',
     error: 'Что-то пошло не так',
-    errorDesc: 'Не удалось создать гороскоп. Обратитесь в поддержку.',
-    emailFailed: 'Не удалось отправить. Обратитесь в поддержку.'
+    errorDesc: 'Не удалось создать гороскоп.',
+    emailFailed: 'Не удалось отправить.'
   },
   el: {
-    preparing: 'Προετοιμασία του ωροσκοπίου σας...',
-    analyzing: 'Ανάλυση του γενέθλιου χάρτη και των θέσεων των πλανητών.',
+    preparing: 'Προετοιμασία...',
+    analyzing: 'Ανάλυση...',
+    generating: 'Δημιουργία ωροσκοπίου...',
+    creatingPdf: 'Δημιουργία PDF...',
+    sendingEmail: 'Αποστολή...',
+    complete: 'Ολοκληρώθηκε!',
     generated: 'Το ωροσκόπιο δημιουργήθηκε!',
     checkEmail: 'Ελέγξτε το email σας! 📬',
     sentTo: 'Το προσωπικό σας ωροσκόπιο στάλθηκε στο:',
     inEmail: 'Το ωροσκόπιο είναι στο σώμα του email',
     docsAttached: 'Τα νομικά έγγραφα επισυνάπτονται',
-    sending: 'Αποστολή του ωροσκοπίου σας...',
-    emailSent: 'Το email στάλθηκε επιτυχώς!',
-    backHome: 'Επιστροφή στην αρχική',
-    didntReceive: 'Δεν λάβατε το email; Ελέγξτε τα spam ή επικοινωνήστε',
+    sending: 'Αποστολή...',
+    emailSent: 'Το email στάλθηκε!',
+    backHome: 'Επιστροφή',
+    didntReceive: 'Δεν λάβατε το email;',
     error: 'Κάτι πήγε στραβά',
-    errorDesc: 'Δεν μπορέσαμε να δημιουργήσουμε το ωροσκόπιο. Επικοινωνήστε με την υποστήριξη.',
-    emailFailed: 'Η αποστολή απέτυχε. Επικοινωνήστε με την υποστήριξη.'
+    errorDesc: 'Δεν μπορέσαμε να δημιουργήσουμε το ωροσκόπιο.',
+    emailFailed: 'Η αποστολή απέτυχε.'
   },
   ar: {
     preparing: 'جاري إعداد برجك...',
-    analyzing: 'تحليل خريطة ولادتك ومواقع الكواكب.',
+    analyzing: 'تحليل...',
+    generating: 'إنشاء البرج...',
+    creatingPdf: 'إنشاء PDF...',
+    sendingEmail: 'إرسال...',
+    complete: 'تم!',
     generated: 'تم إنشاء البرج!',
-    checkEmail: 'تحقق من بريدك الإلكتروني! 📬',
+    checkEmail: 'تحقق من بريدك! 📬',
     sentTo: 'تم إرسال برجك الشخصي إلى:',
-    inEmail: 'برجك في نص البريد الإلكتروني',
+    inEmail: 'برجك في نص البريد',
     docsAttached: 'المستندات القانونية مرفقة',
     sending: 'جاري إرسال برجك...',
-    emailSent: 'تم إرسال البريد الإلكتروني بنجاح!',
+    emailSent: 'تم إرسال البريد!',
     backHome: 'العودة للرئيسية',
-    didntReceive: 'لم تستلم البريد؟ تحقق من مجلد البريد العشوائي أو تواصل معنا',
+    didntReceive: 'لم تستلم البريد؟',
     error: 'حدث خطأ ما',
-    errorDesc: 'لم نتمكن من إنشاء برجك. يرجى التواصل مع الدعم.',
-    emailFailed: 'فشل الإرسال. تواصل مع الدعم.'
+    errorDesc: 'لم نتمكن من إنشاء برجك.',
+    emailFailed: 'فشل الإرسال.'
   },
   hi: {
-    preparing: 'आपकी राशिफल तैयार हो रही है...',
-    analyzing: 'आपकी जन्म कुंडली और ग्रहों की स्थिति का विश्लेषण।',
+    preparing: 'आपकी राशिफल तैयार...',
+    analyzing: 'विश्लेषण...',
+    generating: 'राशिफल बना रहे...',
+    creatingPdf: 'PDF बना रहे...',
+    sendingEmail: 'भेज रहे...',
+    complete: 'हो गया!',
     generated: 'राशिफल तैयार!',
     checkEmail: 'अपना ईमेल देखें! 📬',
-    sentTo: 'आपकी वैयक्तिकृत राशिफल भेजी गई है:',
+    sentTo: 'आपकी राशिफल भेजी गई:',
     inEmail: 'आपकी राशिफल ईमेल में है',
-    docsAttached: 'कानूनी दस्तावेज़ संलग्न हैं',
-    sending: 'आपकी राशिफल भेजी जा रही है...',
-    emailSent: 'ईमेल सफलतापूर्वक भेजा गया!',
+    docsAttached: 'दस्तावेज़ संलग्न हैं',
+    sending: 'राशिफल भेज रहे...',
+    emailSent: 'ईमेल भेजा गया!',
     backHome: 'होम पर वापस',
-    didntReceive: 'ईमेल नहीं मिला? स्पैम फ़ोल्डर देखें या संपर्क करें',
+    didntReceive: 'ईमेल नहीं मिला?',
     error: 'कुछ गलत हो गया',
-    errorDesc: 'राशिफल नहीं बन सकी। कृपया सहायता से संपर्क करें।',
-    emailFailed: 'भेजने में विफल। सहायता से संपर्क करें।'
+    errorDesc: 'राशिफल नहीं बन सकी।',
+    emailFailed: 'भेजने में विफल।'
   },
   ja: {
     preparing: 'ホロスコープを準備中...',
-    analyzing: '出生図と惑星の位置を分析中。',
+    analyzing: '分析中...',
+    generating: 'ホロスコープ作成中...',
+    creatingPdf: 'PDF作成中...',
+    sendingEmail: '送信中...',
+    complete: '完了!',
     generated: 'ホロスコープ完成！',
     checkEmail: 'メールをご確認ください！📬',
-    sentTo: 'パーソナライズされたホロスコープを送信しました：',
+    sentTo: 'ホロスコープを送信しました：',
     inEmail: 'ホロスコープはメール本文にあります',
     docsAttached: '法的書類は添付されています',
     sending: 'ホロスコープを送信中...',
     emailSent: 'メールを送信しました！',
     backHome: 'ホームに戻る',
-    didntReceive: 'メールが届かない場合は、迷惑メールをご確認いただくか、お問い合わせください',
+    didntReceive: 'メールが届かない場合',
     error: 'エラーが発生しました',
-    errorDesc: 'ホロスコープを作成できませんでした。サポートにご連絡ください。',
-    emailFailed: '送信に失敗しました。サポートにご連絡ください。'
+    errorDesc: 'ホロスコープを作成できませんでした。',
+    emailFailed: '送信に失敗しました。'
   },
   ko: {
-    preparing: '운세를 준비 중입니다...',
-    analyzing: '출생 차트와 행성 위치를 분석 중입니다.',
+    preparing: '운세를 준비 중...',
+    analyzing: '분석 중...',
+    generating: '운세 생성 중...',
+    creatingPdf: 'PDF 생성 중...',
+    sendingEmail: '전송 중...',
+    complete: '완료!',
     generated: '운세 생성 완료!',
     checkEmail: '이메일을 확인하세요! 📬',
-    sentTo: '개인 맞춤 운세가 전송되었습니다:',
+    sentTo: '운세가 전송되었습니다:',
     inEmail: '운세는 이메일 본문에 있습니다',
-    docsAttached: '법적 문서가 첨부되어 있습니다',
-    sending: '운세를 전송 중입니다...',
-    emailSent: '이메일이 성공적으로 전송되었습니다!',
-    backHome: '홈으로 돌아가기',
-    didntReceive: '이메일을 받지 못했나요? 스팸 폴더를 확인하거나 문의하세요',
+    docsAttached: '법적 문서가 첨부됨',
+    sending: '운세를 전송 중...',
+    emailSent: '이메일 전송 완료!',
+    backHome: '홈으로',
+    didntReceive: '이메일을 받지 못했나요?',
     error: '문제가 발생했습니다',
-    errorDesc: '운세를 생성할 수 없습니다. 지원팀에 문의하세요.',
-    emailFailed: '전송 실패. 지원팀에 문의하세요.'
+    errorDesc: '운세를 생성할 수 없습니다.',
+    emailFailed: '전송 실패.'
   },
   zh: {
     preparing: '正在准备您的星座运势...',
-    analyzing: '正在分析您的出生图和行星位置。',
+    analyzing: '分析中...',
+    generating: '生成星座运势...',
+    creatingPdf: '创建PDF...',
+    sendingEmail: '发送中...',
+    complete: '完成!',
     generated: '星座运势已生成！',
     checkEmail: '请查收邮件！📬',
-    sentTo: '您的个性化星座运势已发送至：',
+    sentTo: '您的星座运势已发送至：',
     inEmail: '您的星座运势在邮件正文中',
     docsAttached: '法律文件已附上',
-    sending: '正在发送您的星座运势...',
+    sending: '正在发送...',
     emailSent: '邮件发送成功！',
     backHome: '返回首页',
-    didntReceive: '没有收到邮件？请检查垃圾邮件或联系我们',
+    didntReceive: '没有收到邮件？',
     error: '出了点问题',
-    errorDesc: '无法生成星座运势。请联系客服。',
-    emailFailed: '发送失败。请联系客服。'
+    errorDesc: '无法生成星座运势。',
+    emailFailed: '发送失败。'
   },
   th: {
     preparing: 'กำลังเตรียมดวงของคุณ...',
-    analyzing: 'วิเคราะห์แผนที่ดวงเกิดและตำแหน่งดาวเคราะห์',
+    analyzing: 'วิเคราะห์...',
+    generating: 'สร้างดวง...',
+    creatingPdf: 'สร้าง PDF...',
+    sendingEmail: 'กำลังส่ง...',
+    complete: 'เสร็จ!',
     generated: 'สร้างดวงแล้ว!',
-    checkEmail: 'ตรวจสอบอีเมลของคุณ! 📬',
-    sentTo: 'ดวงส่วนตัวของคุณถูกส่งไปยัง:',
-    inEmail: 'ดวงของคุณอยู่ในเนื้อหาอีเมล',
-    docsAttached: 'เอกสารทางกฎหมายแนบมาด้วย',
-    sending: 'กำลังส่งดวงของคุณ...',
+    checkEmail: 'ตรวจสอบอีเมล! 📬',
+    sentTo: 'ดวงส่วนตัวถูกส่งไปยัง:',
+    inEmail: 'ดวงของคุณอยู่ในอีเมล',
+    docsAttached: 'เอกสารแนบมาด้วย',
+    sending: 'กำลังส่งดวง...',
     emailSent: 'ส่งอีเมลสำเร็จ!',
     backHome: 'กลับหน้าหลัก',
-    didntReceive: 'ไม่ได้รับอีเมล? ตรวจสอบโฟลเดอร์สแปมหรือติดต่อ',
+    didntReceive: 'ไม่ได้รับอีเมล?',
     error: 'มีบางอย่างผิดพลาด',
-    errorDesc: 'ไม่สามารถสร้างดวงของคุณได้ กรุณาติดต่อฝ่ายสนับสนุน',
-    emailFailed: 'ส่งไม่สำเร็จ ติดต่อฝ่ายสนับสนุน'
+    errorDesc: 'ไม่สามารถสร้างดวงได้',
+    emailFailed: 'ส่งไม่สำเร็จ'
   },
   vi: {
-    preparing: 'Đang chuẩn bị tử vi của bạn...',
-    analyzing: 'Phân tích bản đồ sao và vị trí các hành tinh.',
+    preparing: 'Đang chuẩn bị tử vi...',
+    analyzing: 'Phân tích...',
+    generating: 'Tạo tử vi...',
+    creatingPdf: 'Tạo PDF...',
+    sendingEmail: 'Gửi...',
+    complete: 'Xong!',
     generated: 'Tử vi đã được tạo!',
-    checkEmail: 'Kiểm tra email của bạn! 📬',
-    sentTo: 'Tử vi cá nhân của bạn đã được gửi đến:',
-    inEmail: 'Tử vi của bạn nằm trong nội dung email',
-    docsAttached: 'Các tài liệu pháp lý đã được đính kèm',
-    sending: 'Đang gửi tử vi của bạn...',
-    emailSent: 'Email đã được gửi thành công!',
-    backHome: 'Quay về trang chủ',
-    didntReceive: 'Không nhận được email? Kiểm tra thư rác hoặc liên hệ',
+    checkEmail: 'Kiểm tra email! 📬',
+    sentTo: 'Tử vi đã được gửi đến:',
+    inEmail: 'Tử vi trong email',
+    docsAttached: 'Tài liệu đính kèm',
+    sending: 'Đang gửi...',
+    emailSent: 'Email đã gửi!',
+    backHome: 'Về trang chủ',
+    didntReceive: 'Không nhận được?',
     error: 'Đã xảy ra lỗi',
-    errorDesc: 'Không thể tạo tử vi của bạn. Vui lòng liên hệ hỗ trợ.',
-    emailFailed: 'Gửi thất bại. Liên hệ hỗ trợ.'
+    errorDesc: 'Không thể tạo tử vi.',
+    emailFailed: 'Gửi thất bại.'
   },
   id: {
-    preparing: 'Menyiapkan horoskop Anda...',
-    analyzing: 'Menganalisis peta kelahiran dan posisi planet.',
+    preparing: 'Menyiapkan horoskop...',
+    analyzing: 'Menganalisis...',
+    generating: 'Membuat horoskop...',
+    creatingPdf: 'Membuat PDF...',
+    sendingEmail: 'Mengirim...',
+    complete: 'Selesai!',
     generated: 'Horoskop selesai!',
-    checkEmail: 'Periksa email Anda! 📬',
-    sentTo: 'Horoskop pribadi Anda telah dikirim ke:',
-    inEmail: 'Horoskop Anda ada di badan email',
-    docsAttached: 'Dokumen hukum terlampir',
-    sending: 'Mengirim horoskop Anda...',
+    checkEmail: 'Periksa email! 📬',
+    sentTo: 'Horoskop dikirim ke:',
+    inEmail: 'Horoskop ada di email',
+    docsAttached: 'Dokumen terlampir',
+    sending: 'Mengirim horoskop...',
     emailSent: 'Email berhasil dikirim!',
     backHome: 'Kembali ke Beranda',
-    didntReceive: 'Tidak menerima email? Periksa spam atau hubungi',
+    didntReceive: 'Tidak menerima email?',
     error: 'Terjadi kesalahan',
-    errorDesc: 'Tidak dapat membuat horoskop Anda. Hubungi dukungan.',
-    emailFailed: 'Gagal mengirim. Hubungi dukungan.'
+    errorDesc: 'Tidak dapat membuat horoskop.',
+    emailFailed: 'Gagal mengirim.'
   },
   sv: {
-    preparing: 'Förbereder ditt horoskop...',
-    analyzing: 'Analyserar ditt födelsehoroskop och planetpositioner.',
+    preparing: 'Förbereder horoskop...',
+    analyzing: 'Analyserar...',
+    generating: 'Skapar horoskop...',
+    creatingPdf: 'Skapar PDF...',
+    sendingEmail: 'Skickar...',
+    complete: 'Klart!',
     generated: 'Horoskop genererat!',
     checkEmail: 'Kontrollera din e-post! 📬',
-    sentTo: 'Ditt personliga horoskop har skickats till:',
+    sentTo: 'Ditt horoskop har skickats till:',
     inEmail: 'Ditt horoskop finns i e-postmeddelandet',
     docsAttached: 'Juridiska dokument är bifogade',
-    sending: 'Skickar ditt horoskop...',
+    sending: 'Skickar horoskop...',
     emailSent: 'E-post skickad!',
     backHome: 'Tillbaka till startsidan',
-    didntReceive: 'Fick du inget e-postmeddelande? Kontrollera spam eller kontakta',
+    didntReceive: 'Fick du inget e-postmeddelande?',
     error: 'Något gick fel',
-    errorDesc: 'Vi kunde inte skapa ditt horoskop. Kontakta support.',
-    emailFailed: 'Kunde inte skicka. Kontakta support.'
+    errorDesc: 'Vi kunde inte skapa ditt horoskop.',
+    emailFailed: 'Kunde inte skicka.'
   },
   da: {
     preparing: 'Forbereder dit horoskop...',
@@ -538,6 +654,26 @@ const successT = {
     error: 'কিছু ভুল হয়েছে',
     errorDesc: 'রাশিফল তৈরি করা যায়নি। অনুগ্রহ করে সাপোর্টে যোগাযোগ করুন।',
     emailFailed: 'পাঠাতে ব্যর্থ। সাপোর্টে যোগাযোগ করুন।'
+  },
+  he: {
+    preparing: 'מכין את ההורוסקופ שלך...',
+    analyzing: 'מנתח את מפת הלידה שלך...',
+    generating: 'יוצר את ההורוסקופ שלך...',
+    creatingPdf: 'יוצר את הקובץ PDF...',
+    sendingEmail: 'שולח לאימייל שלך...',
+    complete: 'הושלם!',
+    generated: 'ההורוסקופ נוצר!',
+    checkEmail: 'בדוק את הדוא"ל שלך! 📬',
+    sentTo: 'ההורוסקופ המותאם אישית שלך נשלח אל:',
+    inEmail: 'ההורוסקופ שלך בגוף ההודעה',
+    docsAttached: 'מסמכים משפטיים מצורפים',
+    sending: 'שולח את ההורוסקופ שלך...',
+    emailSent: 'הדוא"ל נשלח בהצלחה!',
+    backHome: 'חזרה לדף הבית',
+    didntReceive: 'לא קיבלת את הדוא"ל? בדוק את תיקיית הספאם או פנה ל',
+    error: 'משהו השתבש',
+    errorDesc: 'לא הצלחנו ליצור את ההורוסקופ. נא לפנות לתמיכה.',
+    emailFailed: 'השליחה נכשלה. פנה לתמיכה.'
   }
 };
 
@@ -595,9 +731,17 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
             <h1 class="text-2xl sm:text-3xl font-bold text-white mb-3">
               {st.preparing}
             </h1>
-            <p class="text-white/60 text-base max-w-md mx-auto">
+            <p id="loading-stage" class="text-white/60 text-base max-w-md mx-auto mb-6">
               {st.analyzing}
             </p>
+            
+            <!-- Progress Bar -->
+            <div class="max-w-xs mx-auto">
+              <div class="w-full bg-white/10 rounded-full h-2 mb-2">
+                <div id="progress-bar" class="bg-gradient-to-r from-amber-400 to-amber-500 h-2 rounded-full transition-all duration-500" style="width: 10%"></div>
+              </div>
+              <p id="progress-text" class="text-amber-400/80 text-sm font-medium">10%</p>
+            </div>
           </div>
 
           <!-- Success State -->
@@ -681,7 +825,8 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
               </svg>
             </div>
             <h1 class="text-xl font-bold text-white mb-2">{st.error}</h1>
-            <p class="text-white/70 mb-6 text-sm">{st.errorDesc}</p>
+            <p id="error-description" class="text-white/70 mb-2 text-sm">{st.errorDesc}</p>
+            <p id="error-details" class="text-red-400/60 mb-6 text-xs italic font-mono break-all px-4"></p>
             <a href={homeUrl} class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-amber-500 text-black font-semibold">
               <Home class="w-4 h-4" />
               {st.backHome}
@@ -699,7 +844,43 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
 <script is:inline define:vars={{ sessionId, horoscopeTypes, st }}>
   let horoscopeData = null;
 
+  // Progress stages
+  const stages = [
+    { percent: 10, text: st.analyzing || 'Analyzing your birth chart...' },
+    { percent: 30, text: st.generating || 'Generating your horoscope...' },
+    { percent: 60, text: st.creatingPdf || 'Creating your PDF...' },
+    { percent: 80, text: st.sendingEmail || 'Sending to your email...' },
+    { percent: 100, text: st.complete || 'Complete!' }
+  ];
+  let currentStage = 0;
+
+  function updateProgress(percent, text) {
+    const bar = document.getElementById('progress-bar');
+    const textEl = document.getElementById('progress-text');
+    const stageEl = document.getElementById('loading-stage');
+    if (bar) bar.style.width = percent + '%';
+    if (textEl) textEl.textContent = percent + '%';
+    if (stageEl && text) stageEl.textContent = text;
+  }
+
+  function animateProgress() {
+    if (currentStage < stages.length - 1) {
+      currentStage++;
+      const stage = stages[currentStage];
+      updateProgress(stage.percent, stage.text);
+      
+      // Schedule next update (slower for later stages)
+      const delay = currentStage < 2 ? 2000 : 4000;
+      setTimeout(animateProgress, delay);
+    }
+  }
+
   async function fetchHoroscope() {
+    console.log('🚀 fetchHoroscope started for session:', sessionId);
+    
+    // Start progress animation
+    setTimeout(animateProgress, 1500);
+    
     try {
       const response = await fetch('/api/horoscope', {
         method: 'POST',
@@ -707,9 +888,35 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
         body: JSON.stringify({ sessionId }),
       });
 
-      if (!response.ok) throw new Error('Failed to fetch horoscope');
+      console.log('🚀 API Response status:', response.status);
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        const errorMsg = errorData.error || `HTTP error ${response.status}`;
+        const errorDetails = errorData.details || '';
+        
+        document.getElementById('loading-state').classList.add('hidden');
+        document.getElementById('error-state').classList.remove('hidden');
+        document.getElementById('error-details').textContent = errorDetails || errorMsg;
+        return;
+      }
 
       const data = await response.json();
+      console.log('🚀 Horoscope data received');
+      
+      // Check if horoscope was already generated for this session (prevents duplicate on page reload)
+      if (data.error === 'already_processed') {
+        console.log('🚀 Horoscope already generated, showing success state');
+        document.getElementById('loading-state').classList.add('hidden');
+        document.getElementById('success-state').classList.remove('hidden');
+        document.getElementById('product-name').textContent = 'Horoscope';
+        document.getElementById('customer-email').textContent = 'your email';
+        document.getElementById('email-status').textContent = st.emailSent;
+        document.getElementById('email-status').classList.remove('text-white/60');
+        document.getElementById('email-status').classList.add('text-green-400');
+        return;
+      }
+      
       horoscopeData = data;
       
       document.getElementById('loading-state').classList.add('hidden');
@@ -723,9 +930,10 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       sendEmail(data, productName);
 
     } catch (error) {
-      console.error(error);
+      console.error('❌ Horoscope fetch failed:', error);
       document.getElementById('loading-state').classList.add('hidden');
       document.getElementById('error-state').classList.remove('hidden');
+      document.getElementById('error-details').textContent = error.message;
     }
   }
 

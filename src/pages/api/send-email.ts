@@ -35,6 +35,7 @@ export const POST: APIRoute = async ({ request }) => {
             thank: string;
             horoscopeTitle: string;
             horoscopePdf: string;
+            attachedAsPng?: string;
             attached: string;
             attachedDesc: string;
             footer: string;
@@ -51,6 +52,7 @@ export const POST: APIRoute = async ({ request }) => {
                 thank: 'Thank you for choosing Astralo! Your personal horoscope has been crafted specially for you.',
                 horoscopeTitle: 'Your Personal Horoscope',
                 horoscopePdf: 'Your Horoscope PNG',
+                attachedAsPng: 'Attached as image file',
                 attached: 'Attached Documents',
                 attachedDesc: 'We\'ve also attached our legal documents for your reference.',
                 footer: 'May the stars guide you on your journey',
@@ -67,6 +69,7 @@ export const POST: APIRoute = async ({ request }) => {
                 thank: 'Ďakujeme, že ste si vybrali Astralo! Váš osobný horoskop bol vytvorený špeciálne pre vás.',
                 horoscopeTitle: 'Váš Osobný Horoskop',
                 horoscopePdf: 'Váš Horoskop PNG',
+                attachedAsPng: 'Priložený ako obrázok',
                 attached: 'Priložené Dokumenty',
                 attachedDesc: 'Priložili sme tiež naše právne dokumenty pre vašu informáciu.',
                 footer: 'Nech vás hviezdy vedú na vašej ceste',
@@ -414,6 +417,7 @@ export const POST: APIRoute = async ({ request }) => {
                 thank: 'شكراً لاختيارك Astralo! تم إعداد برجك الشخصي خصيصاً لك.',
                 horoscopeTitle: 'برجك الشخصي',
                 horoscopePdf: 'ملف PNG للبرج',
+                attachedAsPng: 'مرفق كملف صورة',
                 attached: 'المستندات المرفقة',
                 attachedDesc: 'قمنا أيضاً بإرفاق مستنداتنا القانونية لمرجعك.',
                 footer: 'لتهديك النجوم في رحلتك',
@@ -446,6 +450,7 @@ export const POST: APIRoute = async ({ request }) => {
                 thank: 'תודה שבחרת ב-Astralo! ההורוסקופ האישי שלך הוכן במיוחד עבורך.',
                 horoscopeTitle: 'ההורוסקופ האישי שלך',
                 horoscopePdf: 'הורוסקופ PNG',
+                attachedAsPng: 'מצורף כקובץ תמונה',
                 attached: 'מסמכים מצורפים',
                 attachedDesc: 'צירפנו גם את המסמכים המשפטיים שלנו לעיונך.',
                 footer: 'שהכוכבים ינחו אותך במסע שלך',
@@ -566,7 +571,7 @@ export const POST: APIRoute = async ({ request }) => {
 
                 <!-- Hero Section with Product Name -->
                 <tr>
-                    <td style="background: linear-gradient(180deg, #1a1a2e 0%, #2d1f4e 100%); background-color: #2d1f4e; padding: 40px 30px; text-align: center;">
+                    <td style="background: linear-gradient(180deg, #1a1a2e 0%, #2d1f4e 50%, #3b2667 100%); background-color: #2d1f4e; padding: 45px 35px; text-align: center;">
                         <!-- Decorative line -->
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
@@ -577,11 +582,11 @@ export const POST: APIRoute = async ({ request }) => {
                                 <td style="width: 30%; border-bottom: 1px solid rgba(251,191,36,0.3);">&nbsp;</td>
                             </tr>
                         </table>
-                        <!-- Product Badge -->
+                        <!-- Product Name - cleaner styling without harsh border -->
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 25px auto;">
                             <tr>
-                                <td style="background-color: rgba(251,191,36,0.15); border: 2px solid #fbbf24; border-radius: 30px; padding: 12px 30px;">
-                                    <h1 style="margin: 0; font-family: Georgia, serif; font-size: 24px; color: #fbbf24; font-weight: normal; letter-spacing: 1px;">
+                                <td style="background: linear-gradient(135deg, rgba(251,191,36,0.2) 0%, rgba(251,191,36,0.1) 100%); background-color: rgba(251,191,36,0.15); border-radius: 30px; padding: 14px 35px;">
+                                    <h1 style="margin: 0; font-family: Georgia, serif; font-size: 26px; color: #fbbf24; font-weight: normal; letter-spacing: 1px;">
                                         ${productName}
                                     </h1>
                                 </td>
@@ -623,7 +628,7 @@ export const POST: APIRoute = async ({ request }) => {
                                                     <tr>
                                                         <td>
                                                             <span style="display: inline-block; background-color: #fbbf24; color: #1a1a2e; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; padding: 5px 12px; border-radius: 15px; text-transform: uppercase; letter-spacing: 1px;">
-                                                                🔮 ${lang === 'sk' ? 'Vaše Čítanie' : 'Your Reading'}
+                                                                🔮 ${t.yourReading || 'Your Reading'}
                                                             </span>
                                                         </td>
                                                     </tr>
@@ -639,18 +644,18 @@ export const POST: APIRoute = async ({ request }) => {
                             </tr>
                         </table>
 
-                        <!-- PDF Attachment Card -->
+                        <!-- Image Attachment Card -->
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 25px;">
                             <tr>
                                 <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); background-color: #1e1b4b; border-radius: 12px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%); background-color: #1e1b4b; border-radius: 16px;">
                                         <tr>
-                                            <td style="padding: 25px; text-align: center;">
+                                            <td style="padding: 28px; text-align: center;">
                                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
                                                     <tr>
-                                                        <td style="vertical-align: middle; padding-right: 15px;">
-                                                            <div style="background-color: #fbbf24; width: 50px; height: 50px; border-radius: 12px; text-align: center; line-height: 50px;">
-                                                                <span style="font-size: 24px;">📄</span>
+                                                        <td style="vertical-align: middle; padding-right: 18px;">
+                                                            <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); background-color: #fbbf24; width: 52px; height: 52px; border-radius: 14px; text-align: center; line-height: 52px;">
+                                                                <span style="font-size: 26px;">🖼️</span>
                                                             </div>
                                                         </td>
                                                         <td style="vertical-align: middle; text-align: left;">
@@ -658,7 +663,7 @@ export const POST: APIRoute = async ({ request }) => {
                                                                 ${t.horoscopePdf}
                                                             </h3>
                                                             <p style="margin: 0; font-family: Arial, sans-serif; font-size: 13px; color: #a5b4fc;">
-                                                                ${lang === 'sk' ? 'Priložený ako PDF súbor' : 'Attached as PDF file'}
+                                                                ${t.attachedAsPng || 'Attached as image file'}
                                                             </p>
                                                         </td>
                                                     </tr>
@@ -769,19 +774,27 @@ export const POST: APIRoute = async ({ request }) => {
         const legalDocs = await generateLegalPDFs('en');
 
         // Generate horoscope as PNG image(s) - supports multi-page for long content
-        const horoscopeImages = await generateHoroscopeImage({
-            customerName: customerName || 'Customer',
-            productName,
-            horoscopeContent,
-            birthDate: birthDate || '',
-            birthPlace: birthPlace || '',
-            birthTime: birthTime || '',
-            lang,
-        });
+        // Wrapped in try-catch to ensure email sends even if image generation fails
+        let horoscopeImages: { filename: string; content: Buffer }[] = [];
+        try {
+            horoscopeImages = await generateHoroscopeImage({
+                customerName: customerName || 'Customer',
+                productName,
+                horoscopeContent,
+                birthDate: birthDate || '',
+                birthPlace: birthPlace || '',
+                birthTime: birthTime || '',
+                lang,
+            });
+            console.log(`✅ Generated ${horoscopeImages.length} image(s). Sizes: ${horoscopeImages.map(i => i.content.length + ' bytes').join(', ')}`);
+        } catch (imageError: any) {
+            console.error('⚠️ Image generation failed, sending email without image:', imageError.message);
+            // Continue without image - email will still be sent with the horoscope in HTML body
+        }
 
-        // Prepare attachments - horoscope image(s) first, then legal documents
+        // Prepare attachments - horoscope image(s) first (if available), then legal documents
         const attachments = [
-            // Horoscope image(s) - may be multiple pages for long content
+            // Horoscope image(s) - may be empty if generation failed
             ...horoscopeImages.map(img => ({
                 filename: img.filename,
                 content: img.content

@@ -9,11 +9,34 @@ if (!stripeKey) {
 
 const stripe = new Stripe(stripeKey);
 
+// In-memory cache to prevent duplicate horoscope generation for the same session
+// This prevents issues when success page reloads during dev (hot-reload) or user refreshes
+const processedSessions = new Set<string>();
+
 export const POST: APIRoute = async ({ request }) => {
-    const { sessionId } = await request.json();
+    console.log('🔮 Horoscope API: Request received');
+    let sessionId;
+    try {
+        const body = await request.json();
+        sessionId = body.sessionId;
+    } catch (e) {
+        console.error('🔮 Horoscope API: Failed to parse request body');
+        return new Response(JSON.stringify({ error: 'Invalid request body' }), { status: 400 });
+    }
+
+    console.log('🔮 Horoscope API: Session ID:', sessionId);
 
     if (!sessionId) {
         return new Response(JSON.stringify({ error: 'Session ID is required' }), { status: 400 });
+    }
+
+    // Check if this session was already processed (prevents duplicate generation on page reload)
+    if (processedSessions.has(sessionId)) {
+        console.log('🔮 Horoscope API: Session already processed, returning cached response indicator');
+        return new Response(JSON.stringify({
+            error: 'already_processed',
+            message: 'Horoscope already generated for this session'
+        }), { status: 200 });
     }
 
     try {
@@ -35,7 +58,7 @@ export const POST: APIRoute = async ({ request }) => {
             uk: 'Ukrainian', ru: 'Russian', el: 'Greek', tr: 'Turkish', ar: 'Arabic',
             hi: 'Hindi', ja: 'Japanese', ko: 'Korean', zh: 'Chinese', th: 'Thai',
             vi: 'Vietnamese', id: 'Indonesian', sv: 'Swedish', da: 'Danish', fi: 'Finnish',
-            no: 'Norwegian', bn: 'Bengali'
+            no: 'Norwegian', bn: 'Bengali', he: 'Hebrew', sr: 'Serbian'
         };
 
         // Now using local fonts for all languages including CJK - no more English fallback needed!
@@ -118,17 +141,20 @@ STYLE REQUIREMENTS:
 - Write entirely in ${useLangForPdf} language.`;
         }
 
-        const apiKey = import.meta.env.GEMINI_API_KEY;
+        const apiKey = import.meta.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
         if (!apiKey) {
+            console.error('🔮 Horoscope API: GEMINI_API_KEY is missing');
             throw new Error('GEMINI_API_KEY is not configured');
         }
 
+        console.log('🔮 Horoscope API: Generating content with Gemini...');
         const { GoogleGenerativeAI } = await import('@google/generative-ai');
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
 
         const result = await model.generateContent(prompt);
         const horoscope = result.response.text();
+        console.log('🔮 Horoscope API: Content generated successfully');
 
         // Get price based on product
         const products = {
@@ -139,14 +165,20 @@ STYLE REQUIREMENTS:
         };
         const price = products[productKey as keyof typeof products] || 0;
 
-        return new Response(JSON.stringify({
+        const responseData = JSON.stringify({
             horoscope,
             product: productKey,
             email: formData.email || formData.email1, // Handle partner form email
             name: formData.name || formData.name1,
             price,
             lang: language
-        }), { status: 200 });
+        });
+
+        // Mark session as processed AFTER successful generation
+        processedSessions.add(sessionId);
+        console.log('🔮 Horoscope API: Session marked as processed');
+
+        return new Response(responseData, { status: 200 });
 
     } catch (error: any) {
         console.error('==================== HOROSCOPE GENERATION ERROR ====================');
@@ -156,7 +188,11 @@ STYLE REQUIREMENTS:
         console.error('Full error object:', JSON.stringify(error, null, 2));
         console.error('Stack trace:', error.stack);
         console.error('====================================================================');
-        return new Response(JSON.stringify({ error: 'Invalid session ID or error fetching data.' }), {
+        return new Response(JSON.stringify({
+            error: 'Invalid session ID or error fetching data.',
+            details: error.message,
+            stack: error.stack
+        }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         });

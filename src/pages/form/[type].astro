@@ -159,7 +159,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <User class="w-5 h-5 text-amber-400" />
                         {t.form.name}
                       </label>
-                      <input id="name1" name="name1" type="text" placeholder={t.form.name} autocomplete="name" required class="input w-full text-lg p-4" />
+                      <input id="name1" name="name1" type="text" placeholder={t.form.name} autocomplete="name" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                     </div>
 
                     <div>
@@ -193,7 +193,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <MapPin class="w-5 h-5 text-amber-400" />
                         {t.form.birthPlace}
                       </label>
-                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder={t.form.birthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
+                      <input id="birthPlace1" name="birthPlace1" type="text" placeholder={t.form.birthPlace} autocomplete="off" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                     </div>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <User class="w-5 h-5 text-amber-400" />
                         {t.form.partnerName}
                       </label>
-                      <input id="name2" name="name2" type="text" placeholder={t.form.partnerName} autocomplete="name" required class="input w-full text-lg p-4" />
+                      <input id="name2" name="name2" type="text" placeholder={t.form.partnerName} autocomplete="name" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -239,7 +239,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                         <MapPin class="w-5 h-5 text-amber-400" />
                         {t.form.partnerBirthPlace}
                       </label>
-                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder={t.form.partnerBirthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
+                      <input id="birthPlace2" name="birthPlace2" type="text" placeholder={t.form.partnerBirthPlace} autocomplete="off" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                     </div>
                   </div>
                 </div>
@@ -251,7 +251,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                     <User class="w-5 h-5 text-amber-400" />
                     {t.form.name}
                   </label>
-                  <input id="name" name="name" type="text" placeholder={t.form.name} autocomplete="name" required class="input w-full text-lg p-4" />
+                  <input id="name" name="name" type="text" placeholder={t.form.name} autocomplete="name" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                 </div>
 
                 <div>
@@ -285,7 +285,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                     <MapPin class="w-5 h-5 text-amber-400" />
                     {t.form.birthPlace}
                   </label>
-                  <input id="birthPlace" name="birthPlace" type="text" placeholder={t.form.birthPlace} autocomplete="off" required class="input w-full text-lg p-4" />
+                  <input id="birthPlace" name="birthPlace" type="text" placeholder={t.form.birthPlace} autocomplete="off" required minlength="2" maxlength="50" class="input w-full text-lg p-4" />
                 </div>
               </div>
             )}

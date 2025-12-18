@@ -158,14 +158,17 @@ function generatePageHtml(
     const width = 794;
     const height = 1123;
 
-    // For RTL languages, use ONLY system fonts (Arial, Segoe UI have built-in Arabic/Hebrew support)
+    // For RTL languages, use Google Noto fonts which have full Arabic/Hebrew support
     // For LTR languages, use Google Fonts for better typography
     const fontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=block';
 
-    // For RTL: use pure system fonts that work reliably in headless Chrome
+    // RTL font URL - Noto Sans Arabic and Hebrew
+    const rtlFontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&display=block';
+
+    // For RTL: use Google Noto fonts for proper Arabic/Hebrew rendering
     // For LTR: use Google Fonts for better aesthetics
     const fontFamily = isRTL
-        ? "Arial, 'Segoe UI', Tahoma, 'Simplified Arabic', 'Traditional Arabic', sans-serif"
+        ? "'Noto Sans Arabic', 'Noto Sans Hebrew', Arial, 'Segoe UI', Tahoma, sans-serif"
         : "'Noto Sans', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Thai', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', Arial, sans-serif";
 
     return `
@@ -173,9 +176,11 @@ function generatePageHtml(
 <html lang="${lang}" dir="${isRTL ? 'rtl' : 'ltr'}">
 <head>
     <meta charset="UTF-8">
-    ${!isRTL ? `<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="${fontUrl}" rel="stylesheet">` : ''}
+    ${isRTL
+            ? `<link href="${rtlFontUrl}" rel="stylesheet">`
+            : `<link href="${fontUrl}" rel="stylesheet">`}
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -224,14 +229,52 @@ function generatePageHtml(
             pointer-events: none;
         }
         
-        .nebula {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(60px);
-            pointer-events: none;
-        }
-        .nebula-1 { width: 250px; height: 250px; top: 5%; left: 10%; background: rgba(138, 43, 226, 0.12); }
-        .nebula-2 { width: 200px; height: 200px; top: 20%; right: 5%; background: rgba(75, 0, 130, 0.1); }
+        .nebula {\r
+            position: absolute;\r
+            border-radius: 50%;\r
+            filter: blur(60px);\r
+            pointer-events: none;\r
+        }\r
+        .nebula-1 { width: 250px; height: 250px; top: 5%; left: 10%; background: rgba(138, 43, 226, 0.12); }\r
+        .nebula-2 { width: 200px; height: 200px; top: 20%; right: 5%; background: rgba(75, 0, 130, 0.1); }\r
+        \r
+        /* Zodiac constellation decorations */\r
+        .constellation {\r
+            position: absolute;\r
+            pointer-events: none;\r
+            opacity: 0.25;\r
+        }\r
+        .constellation-top-right {\r
+            top: 60px; right: 30px;\r
+            width: 120px; height: 120px;\r
+        }\r
+        .constellation-bottom-left {\r
+            bottom: 80px; left: 30px;\r
+            width: 100px; height: 100px;\r
+        }\r
+        .constellation svg {\r
+            width: 100%;\r
+            height: 100%;\r
+            fill: none;\r
+            stroke: rgba(251, 191, 36, 0.6);\r
+            stroke-width: 1;\r
+        }\r
+        .constellation circle {\r
+            fill: rgba(251, 191, 36, 0.8);\r
+        }\r
+        \r
+        /* Gold corner accents */\r
+        .corner-accent {\r
+            position: absolute;\r
+            width: 40px;\r
+            height: 40px;\r
+            border: 2px solid rgba(251, 191, 36, 0.3);\r
+            pointer-events: none;\r
+        }\r
+        .corner-tl { top: 30px; left: 30px; border-right: none; border-bottom: none; }\r
+        .corner-tr { top: 30px; right: 30px; border-left: none; border-bottom: none; }\r
+        .corner-bl { bottom: 30px; left: 30px; border-right: none; border-top: none; }\r
+        .corner-br { bottom: 30px; right: 30px; border-left: none; border-top: none; }
         
         .header {
             text-align: center;
@@ -333,6 +376,44 @@ function generatePageHtml(
             <div class="nebula nebula-1"></div>
             <div class="nebula nebula-2"></div>
             <div class="stars-bg"></div>
+            
+            <!-- Zodiac constellation decoration (top-right) - simplified Aries -->
+            <div class="constellation constellation-top-right">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="20" cy="30" r="3"/>
+                    <circle cx="50" cy="20" r="4"/>
+                    <circle cx="80" cy="35" r="3"/>
+                    <circle cx="45" cy="60" r="3"/>
+                    <circle cx="70" cy="80" r="4"/>
+                    <line x1="20" y1="30" x2="50" y2="20"/>
+                    <line x1="50" y1="20" x2="80" y2="35"/>
+                    <line x1="50" y1="20" x2="45" y2="60"/>
+                    <line x1="45" y1="60" x2="70" y2="80"/>
+                </svg>
+            </div>
+            
+            <!-- Zodiac constellation decoration (bottom-left) - simplified Gemini -->
+            <div class="constellation constellation-bottom-left">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="25" cy="20" r="3"/>
+                    <circle cx="75" cy="20" r="3"/>
+                    <circle cx="30" cy="50" r="2"/>
+                    <circle cx="70" cy="50" r="2"/>
+                    <circle cx="25" cy="80" r="3"/>
+                    <circle cx="75" cy="80" r="3"/>
+                    <line x1="25" y1="20" x2="30" y2="50"/>
+                    <line x1="30" y1="50" x2="25" y2="80"/>
+                    <line x1="75" y1="20" x2="70" y2="50"/>
+                    <line x1="70" y1="50" x2="75" y2="80"/>
+                    <line x1="30" y1="50" x2="70" y2="50"/>
+                </svg>
+            </div>
+            
+            <!-- Corner accents -->
+            <div class="corner-accent corner-tl"></div>
+            <div class="corner-accent corner-tr"></div>
+            <div class="corner-accent corner-bl"></div>
+            <div class="corner-accent corner-br"></div>
             ` : ''}
             
             <div class="header">
@@ -407,11 +488,23 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
         let browser;
 
         if (isRTL) {
-            const puppeteer = await import('puppeteer');
-            rtlBrowserInstance = await puppeteer.default.launch({
-                headless: true,
-                args: ['--no-sandbox', '--disable-setuid-sandbox']
-            });
+            if (isVercel) {
+                // Vercel: Use @sparticuz/chromium
+                const chromium = await import('@sparticuz/chromium');
+                const puppeteerCore = await import('puppeteer-core');
+                rtlBrowserInstance = await puppeteerCore.default.launch({
+                    args: chromium.default.args,
+                    executablePath: await chromium.default.executablePath(),
+                    headless: 'shell',
+                });
+            } else {
+                // Local: Use full Puppeteer
+                const puppeteer = await import('puppeteer');
+                rtlBrowserInstance = await puppeteer.default.launch({
+                    headless: true,
+                    args: ['--no-sandbox', '--disable-setuid-sandbox']
+                });
+            }
             browser = rtlBrowserInstance;
         } else {
             browser = await getBrowser();
@@ -424,46 +517,32 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
         // The generatePageHtml template already handles RTL with dir="rtl" and proper font-family
         const measureHtml = generatePageHtml(data, labels, formattedContent, 1, 1, true);
 
-
-
-        // For RTL languages, write to temp file and load via file:// URL
-        // This is the only approach that works reliably for RTL rendering in Puppeteer
+        // For RTL languages, use data URL approach which works better across environments
+        // The file:// approach doesn't work well on serverless
         if (isRTL) {
-            const fs = await import('fs');
-            const path = await import('path');
-            const os = await import('os');
+            // Convert HTML to base64 data URL
+            const base64Html = Buffer.from(measureHtml, 'utf-8').toString('base64');
+            const dataUrl = `data:text/html;charset=utf-8;base64,${base64Html}`;
 
-            const tempDir = os.tmpdir();
-            const tempFile = path.join(tempDir, `astralo-rtl-${Date.now()}.html`);
-
-            // Write HTML to temp file
-            fs.writeFileSync(tempFile, measureHtml, 'utf-8');
-
-
-            // Load via file:// URL
-            const fileUrl = `file://${tempFile.replace(/\\/g, '/')}`;
-            await page.goto(fileUrl, {
-                waitUntil: 'domcontentloaded',
+            await page.goto(dataUrl, {
+                waitUntil: 'networkidle0',
                 timeout: 60000
             });
 
-            // Clean up temp file after a delay
-            setTimeout(() => {
-                try { fs.unlinkSync(tempFile); } catch (e) { /* ignore */ }
-            }, 5000);
+            console.log(`📷 RTL PNG: Loaded HTML for ${lang}, waiting for fonts...`);
         } else {
             await page.setContent(measureHtml, {
-                waitUntil: 'networkidle2',
-                timeout: 60000
+                waitUntil: 'domcontentloaded',
+                timeout: 30000
             });
         }
 
         // Wait for fonts to be ready (system fonts should be instant)
         await page.evaluate(() => document.fonts.ready);
 
-        // Short wait for rendering
+        // Wait for rendering - longer for RTL to ensure fonts load
         if (isRTL) {
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await new Promise(resolve => setTimeout(resolve, 3000));
         } else {
             await new Promise(resolve => setTimeout(resolve, 500));
         }
@@ -474,7 +553,7 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
             return content ? content.scrollHeight : 0;
         });
 
-
+        console.log(`📷 PNG: Content height for ${lang}: ${contentHeight}px`);
 
         // For RTL, if contentHeight is 0, something is wrong - try getting body height instead
         let effectiveContentHeight = contentHeight;
@@ -483,6 +562,7 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                 const body = document.body;
                 return body ? body.scrollHeight : 0;
             });
+            console.log(`📷 RTL PNG: Fallback body height: ${effectiveContentHeight}px`);
         }
 
         // Estimate available content space per page (roughly 700px for first page, 850px for subsequent)
@@ -553,7 +633,7 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                     const fileUrl = `file://${tempFile.replace(/\\/g, '/')}`;
                     await page.goto(fileUrl, {
                         waitUntil: 'domcontentloaded',
-                        timeout: 60000
+                        timeout: 30000
                     });
 
                     setTimeout(() => {
@@ -561,8 +641,8 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                     }, 5000);
                 } else {
                     await page.setContent(pageHtml, {
-                        waitUntil: 'networkidle2',
-                        timeout: 60000
+                        waitUntil: 'domcontentloaded',
+                        timeout: 30000
                     });
                 }
                 await page.evaluate(() => document.fonts.ready);

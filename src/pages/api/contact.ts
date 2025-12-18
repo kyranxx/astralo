@@ -10,9 +10,37 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const { name, email, subject, message } = data;
+    const hcaptchaToken = data['h-captcha-response'];
 
     if (!name || !email || !subject || !message) {
         return new Response(JSON.stringify({ error: 'All fields are required' }), { status: 400 });
+    }
+
+    // ⚠️⚠️⚠️ TODO: RE-ENABLE HCAPTCHA BEFORE PRODUCTION! ⚠️⚠️⚠️
+    // Temporarily disabled for localhost testing (hCaptcha doesn't work on localhost)
+    const HCAPTCHA_DISABLED_FOR_DEV = true; // SET TO FALSE FOR PRODUCTION!
+
+    // Verify hCaptcha token
+    const hcaptchaSecret = import.meta.env.HCAPTCHA_SECRET;
+    if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && hcaptchaToken) {
+        try {
+            const verifyResponse = await fetch('https://api.hcaptcha.com/siteverify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `response=${hcaptchaToken}&secret=${hcaptchaSecret}`,
+            });
+            const verifyResult = await verifyResponse.json();
+
+            if (!verifyResult.success) {
+                console.error('hCaptcha verification failed:', verifyResult);
+                return new Response(JSON.stringify({ error: 'Captcha verification failed. Please try again.' }), { status: 400 });
+            }
+        } catch (e) {
+            console.error('hCaptcha verification error:', e);
+            // Allow through if hCaptcha service is down
+        }
+    } else if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && !hcaptchaToken) {
+        return new Response(JSON.stringify({ error: 'Please complete the captcha' }), { status: 400 });
     }
 
     // Send email via Resend
@@ -28,7 +56,7 @@ export const POST: APIRoute = async ({ request }) => {
         // Send to the owner
         await resend.emails.send({
             from: 'Astralo Contact <noreply@astralo.online>',
-            to: ['blanarikdaniel@gmail.com'],
+            to: ['apollotechsro@gmail.com'],
             replyTo: email,
             subject: `[Astralo Contact] ${subject} - from ${name}`,
             html: `
