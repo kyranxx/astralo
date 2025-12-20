@@ -32,13 +32,13 @@ const sr: Translations = {
             name: 'Nedeljni Horoskop',
             description: 'Pregled nedelje sa važnim datumima',
             wordCount: '~400 reči',
-            benefits: ['✅ Све из дневног', '💰 Finansijska prognoza', '❤️ Ljubav', '💼 Karijera']
+            benefits: ['✅ Sve iz dnevnog', '💰 Finansijska prognoza', '❤️ Ljubav', '💼 Karijera']
         },
         monthly: {
             name: 'Mesečni Horoskop',
             description: 'Mesečna analiza sa ključnim događajima',
             wordCount: '~1000 reči',
-            benefits: ['✅ Све из недељног', '💎 Srećno kamenje', '🌈 Energetski talasi', '🎨 Boje']
+            benefits: ['✅ Sve iz nedeljnog', '💎 Srećno kamenje', '🌈 Energetski talasi', '🎨 Boje']
         },
         partner: {
             name: 'Partnerski Horoskop',
@@ -111,17 +111,17 @@ const sr: Translations = {
         cookies: 'Kolačići'
     },
     pdfPreview: {
-        title: 'Шта ћете добити',
-        description: 'Ваш персонализовани хороскоп испоручен као прелепо дизајниран PDF документ, који укључује:',
-        portrait: 'Лични астролошки портрет',
-        portraitDesc: 'На основу ваших тачних података о рођењу',
-        lucky: 'Срећни бројеви и боје',
-        luckyDesc: 'Персонализоване препоруке за ваш дан',
-        predictions: 'Детаљне прогнозе',
-        predictionsDesc: 'Љубав, каријера, финансије и здравље',
-        advice: 'Практични савети',
-        adviceDesc: 'Практични водич за коришћење космичких енергија',
-        footer: 'Тренутна испорука на имејл • Професионални PDF формат • Заувек ваш',
+        title: 'Šta ćete dobiti',
+        description: 'Vaš personalizovani horoskop isporučen kao prelepo dizajniran PDF dokument, koji uključuje:',
+        portrait: 'Lični astrološki portret',
+        portraitDesc: 'Na osnovu vaših tačnih podataka o rođenju',
+        lucky: 'Srećni brojevi i boje',
+        luckyDesc: 'Personalizovane preporuke za vaš dan',
+        predictions: 'Detaljne prognoze',
+        predictionsDesc: 'Ljubav, karijera, finansije i zdravlje',
+        advice: 'Praktični saveti',
+        adviceDesc: 'Praktični vodič za korišćenje kosmičkih energija',
+        footer: 'Trenutna isporuka na imejl • Profesionalni PDF format • Zauvek vaš',
     },
 };
 

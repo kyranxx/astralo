@@ -93,7 +93,7 @@ export const POST: APIRoute = async ({ request }) => {
       };
 
       // Save order to database
-      addOrder(order);
+      await addOrder(order);
 
       // Prepare invoice/receipt info
       let invoicePdfBuffer: Buffer | null = null;
@@ -270,7 +270,7 @@ async function sendConfirmationEmail(
                   <td style="padding: 0 30px 32px;">
                     <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%); border-radius: 8px;">
                       <p style="margin: 0; color: #4c1d95; font-size: 14px;">
-                        Questions? Contact us at <a href="mailto:info@astralo.online" style="color: #4c1d95; font-weight: 600;">info@astralo.online</a>
+                        Questions? Contact us at <a href="mailto:apollotechsro@gmail.com" style="color: #4c1d95; font-weight: 600;">apollotechsro@gmail.com</a>
                       </p>
                     </div>
                   </td>

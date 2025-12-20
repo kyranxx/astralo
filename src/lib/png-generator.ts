@@ -620,25 +620,16 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                 const chunkContent = formatContent(chunks[i].join('\n'));
                 const pageHtml = generatePageHtml(data, labels, chunkContent, i + 1, totalPages, i === 0);
 
-                // For RTL, use file:// URL approach instead of setContent
+                // For RTL, use data URL approach for consistent behavior
                 if (isRTL) {
-                    const fs = await import('fs');
-                    const pathMod = await import('path');
-                    const os = await import('os');
+                    // Convert HTML to base64 data URL (same as measurement)
+                    const base64Html = Buffer.from(pageHtml, 'utf-8').toString('base64');
+                    const dataUrl = `data:text/html;charset=utf-8;base64,${base64Html}`;
 
-                    const tempDir = os.tmpdir();
-                    const tempFile = pathMod.join(tempDir, `astralo-rtl-page-${Date.now()}.html`);
-                    fs.writeFileSync(tempFile, pageHtml, 'utf-8');
-
-                    const fileUrl = `file://${tempFile.replace(/\\/g, '/')}`;
-                    await page.goto(fileUrl, {
-                        waitUntil: 'domcontentloaded',
-                        timeout: 30000
+                    await page.goto(dataUrl, {
+                        waitUntil: 'networkidle0',
+                        timeout: 60000
                     });
-
-                    setTimeout(() => {
-                        try { fs.unlinkSync(tempFile); } catch (e) { /* ignore */ }
-                    }, 5000);
                 } else {
                     await page.setContent(pageHtml, {
                         waitUntil: 'domcontentloaded',
@@ -646,9 +637,15 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                     });
                 }
                 await page.evaluate(() => document.fonts.ready);
-                await new Promise(resolve => setTimeout(resolve, isRTL ? 2000 : 300));
+                await new Promise(resolve => setTimeout(resolve, isRTL ? 4000 : 300));
 
-                const buffer = await page.screenshot({ type: 'png', clip: { x: 0, y: 0, width, height } }) as Buffer;
+                // For RTL, don't use clip as it can cause rendering issues
+                let buffer: Buffer;
+                if (isRTL) {
+                    buffer = await page.screenshot({ type: 'png' }) as Buffer;
+                } else {
+                    buffer = await page.screenshot({ type: 'png', clip: { x: 0, y: 0, width, height } }) as Buffer;
+                }
                 results.push({
                     filename: totalPages > 1 ? `Horoscope_${datePart}_Page${i + 1}.png` : `Horoscope_${datePart}.png`,
                     content: buffer

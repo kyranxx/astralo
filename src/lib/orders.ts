@@ -1,10 +1,9 @@
 /**
  * Orders Management System
- * Stores order data for admin dashboard with PDF links
+ * Stores order data in Supabase for admin dashboard
  */
 
-import fs from 'fs';
-import path from 'path';
+import { supabase, type OrderRow } from './supabase';
 
 export interface Order {
     id: string;
@@ -46,6 +45,9 @@ export interface Order {
     // Language
     lang: string;
 
+    // Email
+    emailSentAt?: string;
+
     // Refund info
     refundedAt?: string;
     refundReason?: string;
@@ -57,82 +59,195 @@ export interface OrdersData {
     lastUpdated: string;
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
-const ORDERS_FILE = path.join(DATA_DIR, 'orders.json');
-const PDFS_DIR = path.resolve(process.cwd(), 'public', 'pdfs');
-
-// Ensure directories exist
-function ensureDirectories() {
-    if (!fs.existsSync(DATA_DIR)) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
-    if (!fs.existsSync(PDFS_DIR)) {
-        fs.mkdirSync(PDFS_DIR, { recursive: true });
-    }
+// Convert database row to Order interface (snake_case to camelCase)
+function rowToOrder(row: OrderRow): Order {
+    return {
+        id: row.id,
+        stripeSessionId: row.stripe_session_id,
+        stripePaymentIntentId: row.stripe_payment_intent_id || undefined,
+        createdAt: row.created_at,
+        customerEmail: row.customer_email,
+        customerName: row.customer_name,
+        birthDate: row.birth_date || '',
+        birthTime: row.birth_time || undefined,
+        birthPlace: row.birth_place || undefined,
+        partnerName: row.partner_name || undefined,
+        partnerBirthDate: row.partner_birth_date || undefined,
+        partnerBirthTime: row.partner_birth_time || undefined,
+        partnerBirthPlace: row.partner_birth_place || undefined,
+        productKey: row.product_key,
+        productName: row.product_name,
+        amount: row.amount,
+        currency: row.currency,
+        country: row.country || '',
+        countryCode: row.country_code || '',
+        status: row.status,
+        horoscopePdfPath: row.horoscope_pdf_path || undefined,
+        horoscopePdfUrl: row.horoscope_pdf_url || undefined,
+        horoscopeContent: row.horoscope_content || undefined,
+        lang: row.lang,
+        emailSentAt: row.email_sent_at || undefined,
+        refundedAt: row.refunded_at || undefined,
+        refundReason: row.refund_reason || undefined,
+        stripeRefundId: row.stripe_refund_id || undefined,
+    };
 }
 
-// Load orders from file
-export function loadOrders(): OrdersData {
-    ensureDirectories();
+// Convert Order interface to database row (camelCase to snake_case)
+function orderToRow(order: Order): Partial<OrderRow> {
+    return {
+        id: order.id,
+        stripe_session_id: order.stripeSessionId,
+        stripe_payment_intent_id: order.stripePaymentIntentId || null,
+        created_at: order.createdAt,
+        customer_email: order.customerEmail,
+        customer_name: order.customerName,
+        birth_date: order.birthDate || null,
+        birth_time: order.birthTime || null,
+        birth_place: order.birthPlace || null,
+        partner_name: order.partnerName || null,
+        partner_birth_date: order.partnerBirthDate || null,
+        partner_birth_time: order.partnerBirthTime || null,
+        partner_birth_place: order.partnerBirthPlace || null,
+        product_key: order.productKey,
+        product_name: order.productName,
+        amount: order.amount,
+        currency: order.currency,
+        country: order.country || null,
+        country_code: order.countryCode || null,
+        status: order.status,
+        horoscope_pdf_path: order.horoscopePdfPath || null,
+        horoscope_pdf_url: order.horoscopePdfUrl || null,
+        horoscope_content: order.horoscopeContent || null,
+        lang: order.lang,
+        email_sent_at: order.emailSentAt || null,
+        refunded_at: order.refundedAt || null,
+        refund_reason: order.refundReason || null,
+        stripe_refund_id: order.stripeRefundId || null,
+    };
+}
 
-    if (!fs.existsSync(ORDERS_FILE)) {
+// Load all orders from Supabase
+export async function loadOrders(): Promise<OrdersData> {
+    const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+    if (error) {
+        console.error('Error loading orders from Supabase:', error);
         return { orders: [], lastUpdated: new Date().toISOString() };
     }
 
-    try {
-        const data = fs.readFileSync(ORDERS_FILE, 'utf-8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error('Error loading orders:', error);
-        return { orders: [], lastUpdated: new Date().toISOString() };
+    const orders = (data || []).map(rowToOrder);
+    return { orders, lastUpdated: new Date().toISOString() };
+}
+
+// Add new order to Supabase
+export async function addOrder(order: Order): Promise<void> {
+    const row = orderToRow(order);
+
+    const { error } = await supabase
+        .from('orders')
+        .insert(row);
+
+    if (error) {
+        console.error('Error adding order to Supabase:', error);
+        throw new Error(`Failed to add order: ${error.message}`);
     }
-}
-
-// Save orders to file
-export function saveOrders(data: OrdersData): void {
-    ensureDirectories();
-    data.lastUpdated = new Date().toISOString();
-    fs.writeFileSync(ORDERS_FILE, JSON.stringify(data, null, 2));
-}
-
-// Add new order
-export function addOrder(order: Order): void {
-    const data = loadOrders();
-    data.orders.push(order);
-    saveOrders(data);
 }
 
 // Update order by ID
-export function updateOrder(orderId: string, updates: Partial<Order>): Order | null {
-    const data = loadOrders();
-    const index = data.orders.findIndex(o => o.id === orderId);
+export async function updateOrder(orderId: string, updates: Partial<Order>): Promise<Order | null> {
+    // Convert camelCase updates to snake_case
+    const dbUpdates: Record<string, any> = {};
 
-    if (index === -1) return null;
+    if (updates.status !== undefined) dbUpdates.status = updates.status;
+    if (updates.refundedAt !== undefined) dbUpdates.refunded_at = updates.refundedAt;
+    if (updates.refundReason !== undefined) dbUpdates.refund_reason = updates.refundReason;
+    if (updates.stripeRefundId !== undefined) dbUpdates.stripe_refund_id = updates.stripeRefundId;
+    if (updates.horoscopePdfPath !== undefined) dbUpdates.horoscope_pdf_path = updates.horoscopePdfPath;
+    if (updates.horoscopePdfUrl !== undefined) dbUpdates.horoscope_pdf_url = updates.horoscopePdfUrl;
+    if (updates.horoscopeContent !== undefined) dbUpdates.horoscope_content = updates.horoscopeContent;
+    if (updates.emailSentAt !== undefined) dbUpdates.email_sent_at = updates.emailSentAt;
+    if (updates.stripePaymentIntentId !== undefined) dbUpdates.stripe_payment_intent_id = updates.stripePaymentIntentId;
 
-    data.orders[index] = { ...data.orders[index], ...updates };
-    saveOrders(data);
-    return data.orders[index];
+    const { data, error } = await supabase
+        .from('orders')
+        .update(dbUpdates)
+        .eq('id', orderId)
+        .select()
+        .single();
+
+    if (error) {
+        console.error('Error updating order in Supabase:', error);
+        return null;
+    }
+
+    return data ? rowToOrder(data) : null;
 }
 
 // Find order by Stripe session ID
-export function findOrderBySessionId(sessionId: string): Order | null {
-    const data = loadOrders();
-    return data.orders.find(o => o.stripeSessionId === sessionId) || null;
+export async function findOrderBySessionId(sessionId: string): Promise<Order | null> {
+    const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .eq('stripe_session_id', sessionId)
+        .single();
+
+    if (error) {
+        if (error.code !== 'PGRST116') { // Not found error
+            console.error('Error finding order by session ID:', error);
+        }
+        return null;
+    }
+
+    return data ? rowToOrder(data) : null;
 }
 
 // Find order by ID
-export function findOrderById(orderId: string): Order | null {
-    const data = loadOrders();
-    return data.orders.find(o => o.id === orderId) || null;
+export async function findOrderById(orderId: string): Promise<Order | null> {
+    const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .eq('id', orderId)
+        .single();
+
+    if (error) {
+        if (error.code !== 'PGRST116') { // Not found error
+            console.error('Error finding order by ID:', error);
+        }
+        return null;
+    }
+
+    return data ? rowToOrder(data) : null;
 }
 
-// Get statistics
-export function getStatistics() {
-    const data = loadOrders();
-    const orders = data.orders;
+// Get statistics from Supabase
+export async function getStatistics() {
+    const { data: orders, error } = await supabase
+        .from('orders')
+        .select('*')
+        .order('created_at', { ascending: false });
 
-    const completedOrders = orders.filter(o => o.status === 'completed');
-    const refundedOrders = orders.filter(o => o.status === 'refunded');
+    if (error) {
+        console.error('Error loading orders for statistics:', error);
+        return {
+            totalRevenue: 0,
+            totalOrders: 0,
+            completedOrders: 0,
+            refundedOrders: 0,
+            refundedAmount: 0,
+            revenueByCountry: [],
+            revenueByProduct: [],
+            monthlyData: [],
+            lastUpdated: new Date().toISOString()
+        };
+    }
+
+    const allOrders = (orders || []).map(rowToOrder);
+    const completedOrders = allOrders.filter(o => o.status === 'completed');
+    const refundedOrders = allOrders.filter(o => o.status === 'refunded');
 
     // Total revenue (completed orders only)
     const totalRevenue = completedOrders.reduce((sum, o) => sum + o.amount, 0);
@@ -179,7 +294,7 @@ export function getStatistics() {
 
     return {
         totalRevenue: totalRevenue / 100, // Convert cents to euros
-        totalOrders: orders.length,
+        totalOrders: allOrders.length,
         completedOrders: completedOrders.length,
         refundedOrders: refundedOrders.length,
         refundedAmount: refundedOrders.reduce((sum, o) => sum + o.amount, 0) / 100,
@@ -204,7 +319,7 @@ export function getStatistics() {
                 revenue: data.revenue / 100,
                 orders: data.orders
             })),
-        lastUpdated: data.lastUpdated
+        lastUpdated: new Date().toISOString()
     };
 }
 
@@ -215,24 +330,5 @@ export function generateOrderId(): string {
     return `AST-${timestamp}-${random}`;
 }
 
-// Clean old PDFs (older than 14 days)
-export function cleanOldPDFs(): number {
-    if (!fs.existsSync(PDFS_DIR)) return 0;
-
-    const now = Date.now();
-    const maxAge = 14 * 24 * 60 * 60 * 1000; // 14 days in milliseconds
-    let deletedCount = 0;
-
-    const files = fs.readdirSync(PDFS_DIR);
-    files.forEach(file => {
-        const filePath = path.join(PDFS_DIR, file);
-        const stats = fs.statSync(filePath);
-
-        if (now - stats.mtime.getTime() > maxAge) {
-            fs.unlinkSync(filePath);
-            deletedCount++;
-        }
-    });
-
-    return deletedCount;
-}
+// Note: cleanOldPDFs function removed as PDFs should be stored in Supabase Storage
+// or a CDN in production, not filesystem

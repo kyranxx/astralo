@@ -170,16 +170,47 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                 color: rgb(0.984, 0.749, 0.141),
             });
 
-            // Stars decoration (text representation of ✦ ✧ ★ ✧ ✦)
-            const starsText = '★  ★  ★';
-            const starsWidth = font.widthOfTextAtSize(starsText, 10);
-            page.drawText(starsText, {
-                x: (width - starsWidth) / 2,
-                y: height - 28,
-                size: 10,
-                font: font,
-                color: gold,
-            });
+            // Stars decoration - draw diamond shapes (like ✦ in email)
+            // Using geometric shapes for guaranteed rendering
+            const drawDiamond = (cx: number, cy: number, size: number, filled: boolean) => {
+                // Draw a diamond shape (rotated square)
+                if (filled) {
+                    page.drawRectangle({
+                        x: cx - size / 2,
+                        y: cy - size / 2,
+                        width: size,
+                        height: size,
+                        color: gold,
+                        rotate: { type: 'degrees' as any, angle: 45 },
+                        xSkew: { type: 'degrees' as any, angle: 0 },
+                        ySkew: { type: 'degrees' as any, angle: 0 },
+                    });
+                } else {
+                    page.drawRectangle({
+                        x: cx - size / 2,
+                        y: cy - size / 2,
+                        width: size,
+                        height: size,
+                        borderColor: gold,
+                        borderWidth: 1,
+                        rotate: { type: 'degrees' as any, angle: 45 },
+                        xSkew: { type: 'degrees' as any, angle: 0 },
+                        ySkew: { type: 'degrees' as any, angle: 0 },
+                    });
+                }
+            };
+
+            // Draw 5 diamonds pattern: ✦ ✧ ✦ ✧ ✦ (filled, outline, filled, outline, filled)
+            const starY = height - 28;
+            const centerX = width / 2;
+            const spacing = 18;
+            const diamondSize = 6;
+
+            drawDiamond(centerX - spacing * 2, starY, diamondSize, true);
+            drawDiamond(centerX - spacing, starY, diamondSize, false);
+            drawDiamond(centerX, starY, diamondSize, true);
+            drawDiamond(centerX + spacing, starY, diamondSize, false);
+            drawDiamond(centerX + spacing * 2, starY, diamondSize, true);
 
             // Astralo text - larger and more prominent
             const astraloText = 'ASTRALO';

@@ -4,8 +4,7 @@ import {
     loadOrders,
     getStatistics,
     updateOrder,
-    findOrderById,
-    cleanOldPDFs
+    findOrderById
 } from '../../lib/orders';
 
 export const GET: APIRoute = async ({ url }) => {
@@ -24,12 +23,13 @@ export const GET: APIRoute = async ({ url }) => {
     try {
         switch (action) {
             case 'stats':
-                return new Response(JSON.stringify(getStatistics()), {
+                const stats = await getStatistics();
+                return new Response(JSON.stringify(stats), {
                     headers: { 'Content-Type': 'application/json' }
                 });
 
             case 'orders':
-                const { orders } = loadOrders();
+                const { orders } = await loadOrders();
                 const page = parseInt(url.searchParams.get('page') || '1');
                 const limit = parseInt(url.searchParams.get('limit') || '20');
                 const status = url.searchParams.get('status');
@@ -81,21 +81,11 @@ export const GET: APIRoute = async ({ url }) => {
                 if (!orderId) {
                     return new Response(JSON.stringify({ error: 'Order ID required' }), { status: 400 });
                 }
-                const order = findOrderById(orderId);
+                const order = await findOrderById(orderId);
                 if (!order) {
                     return new Response(JSON.stringify({ error: 'Order not found' }), { status: 404 });
                 }
                 return new Response(JSON.stringify(order), {
-                    headers: { 'Content-Type': 'application/json' }
-                });
-
-            case 'cleanup':
-                const deleted = cleanOldPDFs();
-                return new Response(JSON.stringify({
-                    success: true,
-                    deletedFiles: deleted,
-                    message: `Cleaned up ${deleted} old PDF files`
-                }), {
                     headers: { 'Content-Type': 'application/json' }
                 });
 
@@ -128,7 +118,7 @@ export const POST: APIRoute = async ({ request }) => {
                     return new Response(JSON.stringify({ error: 'Order ID required' }), { status: 400 });
                 }
 
-                const order = findOrderById(orderId);
+                const order = await findOrderById(orderId);
                 if (!order) {
                     return new Response(JSON.stringify({ error: 'Order not found' }), { status: 404 });
                 }
@@ -157,7 +147,7 @@ export const POST: APIRoute = async ({ request }) => {
                 });
 
                 // Update order status
-                updateOrder(orderId, {
+                await updateOrder(orderId, {
                     status: 'refunded',
                     refundedAt: new Date().toISOString(),
                     refundReason: reason || 'Customer request',

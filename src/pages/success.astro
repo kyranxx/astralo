@@ -332,24 +332,24 @@ const successT = {
     emailFailed: 'Pošiljanje ni uspelo. Kontaktirajte podporo.'
   },
   sr: {
-    preparing: 'Припремамо ваш хороскоп...',
-    analyzing: 'Анализирамо карту...',
-    generating: 'Генерисање хороскопа...',
-    creatingPdf: 'Креирање PDF-а...',
-    sendingEmail: 'Слање на имејл...',
-    complete: 'Готово!',
-    generated: 'Хороскоп генерисан!',
-    checkEmail: 'Проверите имејл! 📬',
-    sentTo: 'Ваш персонализовани хороскоп послат је на:',
-    inEmail: 'Ваш хороскоп је у телу имејла',
-    docsAttached: 'Правни документи су у прилогу',
-    sending: 'Шаљемо ваш хороскоп...',
-    emailSent: 'Имејл успешно послат!',
-    backHome: 'Назад на почетну',
-    didntReceive: 'Нисте примили имејл? Проверите спам или контактирајте',
-    error: 'Нешто је пошло наопако',
-    errorDesc: 'Нисмо могли да генеришемо хороскоп. Контактирајте подршку.',
-    emailFailed: 'Слање није успело. Контактирајте подршку.'
+    preparing: 'Pripremamo vaš horoskop...',
+    analyzing: 'Analiziramo kartu...',
+    generating: 'Generisanje horoskopa...',
+    creatingPdf: 'Kreiranje PDF-a...',
+    sendingEmail: 'Slanje na imejl...',
+    complete: 'Gotovo!',
+    generated: 'Horoskop generisan!',
+    checkEmail: 'Proverite imejl! 📬',
+    sentTo: 'Vaš personalizovani horoskop poslat je na:',
+    inEmail: 'Vaš horoskop je u telu imejla',
+    docsAttached: 'Pravni dokumenti su u prilogu',
+    sending: 'Šaljemo vaš horoskop...',
+    emailSent: 'Imejl uspešno poslat!',
+    backHome: 'Nazad na početnu',
+    didntReceive: 'Niste primili imejl? Proverite spam ili kontaktirajte',
+    error: 'Nešto je pošlo naopako',
+    errorDesc: 'Nismo mogli da generišemo horoskop. Kontaktirajte podršku.',
+    emailFailed: 'Slanje nije uspelo. Kontaktirajte podršku.'
   },
   uk: {
     preparing: 'Готуємо ваш гороскоп...',
@@ -594,6 +594,10 @@ const successT = {
   da: {
     preparing: 'Forbereder dit horoskop...',
     analyzing: 'Analyserer dit fødselshoroskop og planetpositioner.',
+    generating: 'Genererer dit horoskop...',
+    creatingPdf: 'Opretter din PDF...',
+    sendingEmail: 'Sender til din e-mail...',
+    complete: 'Færdig!',
     generated: 'Horoskop genereret!',
     checkEmail: 'Tjek din e-mail! 📬',
     sentTo: 'Dit personlige horoskop er sendt til:',
@@ -610,6 +614,10 @@ const successT = {
   fi: {
     preparing: 'Valmistellaan horoskooppiasi...',
     analyzing: 'Analysoidaan syntymäkarttaasi ja planeettojen asemia.',
+    generating: 'Luodaan horoskooppiasi...',
+    creatingPdf: 'Luodaan PDF-tiedostoa...',
+    sendingEmail: 'Lähetetään sähköpostiisi...',
+    complete: 'Valmis!',
     generated: 'Horoskooppi luotu!',
     checkEmail: 'Tarkista sähköpostisi! 📬',
     sentTo: 'Henkilökohtainen horoskooppisi on lähetetty osoitteeseen:',
@@ -626,6 +634,10 @@ const successT = {
   no: {
     preparing: 'Forbereder horoskopet ditt...',
     analyzing: 'Analyserer fødselskartet og planetposisjonene dine.',
+    generating: 'Genererer horoskopet ditt...',
+    creatingPdf: 'Oppretter din PDF...',
+    sendingEmail: 'Sender til din e-post...',
+    complete: 'Ferdig!',
     generated: 'Horoskop generert!',
     checkEmail: 'Sjekk e-posten din! 📬',
     sentTo: 'Ditt personlige horoskop er sendt til:',
@@ -642,6 +654,10 @@ const successT = {
   bn: {
     preparing: 'আপনার রাশিফল প্রস্তুত হচ্ছে...',
     analyzing: 'আপনার জন্ম তালিকা এবং গ্রহের অবস্থান বিশ্লেষণ করা হচ্ছে।',
+    generating: 'আপনার রাশিফল তৈরি হচ্ছে...',
+    creatingPdf: 'আপনার PDF তৈরি হচ্ছে...',
+    sendingEmail: 'আপনার ইমেইলে পাঠানো হচ্ছে...',
+    complete: 'সম্পন্ন!',
     generated: 'রাশিফল তৈরি হয়েছে!',
     checkEmail: 'আপনার ইমেইল চেক করুন! 📬',
     sentTo: 'আপনার ব্যক্তিগত রাশিফল পাঠানো হয়েছে:',
@@ -783,18 +799,21 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
                   <span id="customer-email" class="text-white font-medium"></span>
                 </div>
 
-                <div class="text-white/60 text-sm space-y-1">
-                  <p>✨ {st.inEmail}</p>
-                  <p>📄 {st.docsAttached}</p>
-                </div>
+
               </div>
             </div>
 
-            <!-- Email Status -->
+            <!-- Email Status with Progress -->
             <div id="email-status" class="mb-6 hidden">
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm">
-                <div class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></div>
-                <span>{st.sending}</span>
+              <div class="max-w-xs mx-auto">
+                <div class="flex items-center justify-center gap-2 mb-3">
+                  <div class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></div>
+                  <span id="email-status-text" class="text-white/80 text-sm">{st.sending}</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2 mb-2">
+                  <div id="email-progress-bar" class="bg-gradient-to-r from-amber-400 to-amber-500 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <p id="email-progress-text" class="text-amber-400/80 text-sm font-medium text-center">0%</p>
               </div>
             </div>
 
@@ -940,7 +959,21 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
   async function sendEmail(data, productName) {
     const statusDiv = document.getElementById('email-status');
     const successDiv = document.getElementById('email-success');
+    const progressBar = document.getElementById('email-progress-bar');
+    const progressText = document.getElementById('email-progress-text');
     statusDiv.classList.remove('hidden');
+    
+    // Animate email progress - slower to match actual email sending time (includes PNG generation)
+    let emailProgress = 0;
+    const progressInterval = setInterval(() => {
+      if (emailProgress < 90) {
+        // Slower progression: ~30 seconds to reach 90%
+        emailProgress += Math.random() * 3 + 1; // 1-4% per tick
+        emailProgress = Math.min(emailProgress, 90);
+        if (progressBar) progressBar.style.width = emailProgress + '%';
+        if (progressText) progressText.textContent = Math.round(emailProgress) + '%';
+      }
+    }, 1500); // Every 1.5 seconds instead of 0.5
     
     try {
       const response = await fetch('/api/send-email', {
@@ -955,12 +988,21 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
         })
       });
       
+      clearInterval(progressInterval);
+      
       if (!response.ok) throw new Error('Failed to send email');
 
-      statusDiv.classList.add('hidden');
-      successDiv.classList.remove('hidden');
+      // Complete the progress
+      if (progressBar) progressBar.style.width = '100%';
+      if (progressText) progressText.textContent = '100%';
+      
+      setTimeout(() => {
+        statusDiv.classList.add('hidden');
+        successDiv.classList.remove('hidden');
+      }, 500);
     } catch (e) {
       console.error('Email failed', e);
+      clearInterval(progressInterval);
       statusDiv.innerHTML = `
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm">
           <span>${st.emailFailed}</span>

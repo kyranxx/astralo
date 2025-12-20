@@ -482,9 +482,13 @@ export const POST: APIRoute = async ({ request }) => {
             })
             .join('');
 
+        // Determine RTL direction for Arabic and Hebrew
+        const isRTL = ['ar', 'he'].includes(lang);
+        const dirAttr = isRTL ? 'dir="rtl"' : 'dir="ltr"';
+
         const html = `
 <!DOCTYPE html>
-<html lang="${lang}" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="${lang}" ${dirAttr} xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -726,8 +730,8 @@ export const POST: APIRoute = async ({ request }) => {
                             ${t.questions}
                         </p>
                         <p style="margin: 8px 0 0 0;">
-                            <a href="mailto:info@astralo.online" style="font-family: Arial, sans-serif; font-size: 15px; color: #7c3aed; font-weight: bold; text-decoration: none;">
-                                info@astralo.online
+                            <a href="mailto:apollotechsro@gmail.com" style="font-family: Arial, sans-serif; font-size: 15px; color: #7c3aed; font-weight: bold; text-decoration: none;">
+                                apollotechsro@gmail.com
                             </a>
                         </p>
                     </td>

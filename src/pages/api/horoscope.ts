@@ -118,7 +118,13 @@ STYLE REQUIREMENTS:
 - Start with an attention-grabbing opening
 - End with encouraging advice
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write in ${useLangForPdf} language.`;
+- Write in ${useLangForPdf} language.
+
+CRITICAL CONTENT GUIDELINES:
+- NEVER reference any specific religion, religious figures (Jesus, Muhammad, Buddha, etc.), or religious practices
+- Keep content universally spiritual and astrological - focus on planets, stars, cosmic energy
+- Avoid culturally sensitive topics (politics, religious holidays, dietary restrictions)
+- Be inclusive and respectful to all cultural backgrounds`;
         } else {
             const { birthDate, birthTime, birthPlace, name } = formData;
             const benefits = productBenefits[productKey] || productBenefits.daily;
@@ -138,7 +144,13 @@ STYLE REQUIREMENTS:
 - Include current planetary influences
 - End with positive affirmations
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write entirely in ${useLangForPdf} language.`;
+- Write entirely in ${useLangForPdf} language.
+
+CRITICAL CONTENT GUIDELINES:
+- NEVER reference any specific religion, religious figures (Jesus, Muhammad, Buddha, etc.), or religious practices
+- Keep content universally spiritual and astrological - focus on planets, stars, cosmic energy
+- Avoid culturally sensitive topics (politics, religious holidays, dietary restrictions)
+- Be inclusive and respectful to all cultural backgrounds`;
         }
 
         const apiKey = import.meta.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;

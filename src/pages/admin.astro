@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe } from 'lucide-astro';
+import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut } from 'lucide-astro';
 ---
 
 <Layout title="Admin Dashboard - Astralo" backgroundImage="/background4.png">
@@ -13,18 +13,18 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
             <img src="/logo.png" alt="Astralo" class="h-8 sm:h-10" />
             <div class="border-l border-white/20 pl-2 sm:pl-3">
               <h1 class="text-sm sm:text-lg font-bold text-white">Admin</h1>
-              <p class="text-xs text-white/60 hidden sm:block" id="lastUpdated">Loading...</p>
+              <p class="text-xs text-white/60 hidden" id="lastUpdated"></p>
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <button id="refreshBtn" class="p-2 sm:px-3 sm:py-2 rounded-lg bg-white/10 text-white text-sm flex items-center gap-2 hover:bg-white/20 transition-colors">
+            <button id="refreshBtn" class="p-2 sm:px-3 sm:py-2 rounded-lg bg-white/10 text-white text-sm flex items-center gap-2 hover:bg-white/20 transition-colors hidden">
               <RefreshCw class="w-4 h-4" />
               <span class="hidden sm:inline">Refresh</span>
             </button>
-            <a href="/" class="p-2 sm:px-3 sm:py-2 rounded-lg bg-white/10 text-white text-sm hover:bg-white/20 transition-colors">
-              <span class="hidden sm:inline">← Back</span>
-              <ArrowLeft class="w-4 h-4 sm:hidden" />
-            </a>
+            <button id="logoutBtn" class="p-2 sm:px-3 sm:py-2 rounded-lg bg-red-500/20 text-red-400 text-sm flex items-center gap-2 hover:bg-red-500/30 transition-colors hidden">
+              <LogOut class="w-4 h-4" />
+              <span class="hidden sm:inline">Logout</span>
+            </button>
           </div>
         </div>
       </div>
@@ -245,6 +245,32 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   const statusFilter = document.getElementById('statusFilter') as HTMLSelectElement;
   const prevPageBtn = document.getElementById('prevPage') as HTMLButtonElement;
   const nextPageBtn = document.getElementById('nextPage') as HTMLButtonElement;
+  const logoutBtn = document.getElementById('logoutBtn') as HTMLButtonElement;
+  
+  // Show header buttons when logged in
+  function showAdminButtons() {
+    refreshBtn?.classList.remove('hidden');
+    logoutBtn?.classList.remove('hidden');
+  }
+  
+  // Logout function
+  logoutBtn?.addEventListener('click', () => {
+    sessionStorage.removeItem('astralo_admin_session');
+    adminPassword = '';
+    window.location.reload();
+  });
+  
+  // Refresh button with loading state
+  refreshBtn?.addEventListener('click', () => {
+    refreshBtn.disabled = true;
+    const icon = refreshBtn.querySelector('svg');
+    icon?.classList.add('animate-spin');
+    
+    loadDashboardData().finally(() => {
+      refreshBtn.disabled = false;
+      icon?.classList.remove('animate-spin');
+    });
+  });
   
   // Check saved password (session only - cleared when browser closes)
   const savedPassword = sessionStorage.getItem('astralo_admin_session');
@@ -274,6 +300,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   function showDashboard() {
     loginContainer.classList.add('hidden');
     dashboardContainer.classList.remove('hidden');
+    showAdminButtons();
     loadDashboardData();
   }
   
@@ -308,7 +335,20 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       
       const lastUpdated = document.getElementById('lastUpdated');
       if (lastUpdated) {
-        lastUpdated.textContent = new Date(stats.lastUpdated).toLocaleTimeString();
+        const updateDate = new Date(stats.lastUpdated);
+        const formattedDate = updateDate.toLocaleDateString('en-GB', { 
+          day: '2-digit', 
+          month: '2-digit', 
+          year: 'numeric' 
+        });
+        const formattedTime = updateDate.toLocaleTimeString('en-GB', { 
+          hour: '2-digit', 
+          minute: '2-digit', 
+          second: '2-digit' 
+        });
+        lastUpdated.textContent = `Last updated: ${formattedDate} ${formattedTime}`;
+        lastUpdated.classList.remove('hidden');
+        lastUpdated.classList.add('sm:block');
       }
       
       // Chart
@@ -435,8 +475,6 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       console.error('Orders error:', error);
     }
   }
-  
-  refreshBtn?.addEventListener('click', loadDashboardData);
   
   let searchTimeout: ReturnType<typeof setTimeout>;
   searchInput?.addEventListener('input', () => {
