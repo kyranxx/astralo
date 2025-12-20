@@ -166,11 +166,11 @@ const testimonials = [
             return (
               <a
                 href={`/${currentLang}/form/${type.id}`}
-                class="horoscope-card group block relative glass-strong rounded-2xl sm:rounded-3xl p-3 sm:p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 no-underline border border-white/10 hover:border-amber-400/30 overflow-hidden"
+                class="horoscope-card group block relative glass-strong rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 no-underline border border-white/10 hover:border-amber-400/30 overflow-hidden"
                 style={`animation: fadeInUp 0.8s ease-out ${0.1 * index}s forwards; opacity: 0;`}
               >
                 {type.popular && (
-                  <div class="absolute -top-1 -right-1 bg-gradient-to-br from-amber-400 to-amber-600 text-black text-[8px] sm:text-[10px] font-black px-2 sm:px-4 py-1 sm:py-1.5 rounded-bl-xl sm:rounded-bl-2xl shadow-lg z-20 uppercase tracking-tighter">
+                  <div class="absolute -top-1 -right-1 bg-gradient-to-br from-amber-400 to-amber-600 text-black text-[9px] sm:text-[10px] font-black px-2 sm:px-4 py-1 sm:py-1.5 rounded-bl-xl sm:rounded-bl-2xl shadow-lg z-20 uppercase tracking-tighter">
                     {t.cta.popular}
                   </div>
                 )}
@@ -178,25 +178,25 @@ const testimonials = [
                 <div class="flex flex-col h-full relative z-10">
                   {/* Icon & Title Area */}
                   <div class="text-center mb-3 sm:mb-5">
-                    <div class="relative w-10 h-10 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-4">
+                    <div class="relative w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-4">
                       <div class="absolute inset-0 bg-amber-400/20 blur-xl rounded-full group-hover:bg-amber-400/30 transition-colors duration-500"></div>
                       <div class="relative flex items-center justify-center w-full h-full rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 group-hover:border-amber-400/50 transition-all duration-500">
-                        <Icon class="w-5 h-5 sm:w-8 sm:h-8 text-amber-400 group-hover:scale-110 transition-transform duration-500" />
+                        <Icon class="w-6 h-6 sm:w-8 sm:h-8 text-amber-400 group-hover:scale-110 transition-transform duration-500" />
                       </div>
                     </div>
-                    <h3 class="text-sm sm:text-2xl font-black text-white mb-0.5 sm:mb-1 group-hover:text-amber-400 transition-colors duration-300 leading-tight">
+                    <h3 class="text-base sm:text-2xl font-black text-white mb-0.5 sm:mb-1 group-hover:text-amber-400 transition-colors duration-300 leading-tight">
                       {type.name}
                     </h3>
-                    <p class="text-white/40 text-[8px] sm:text-[10px] font-medium uppercase tracking-widest">{type.wordCount}</p>
+                    <p class="text-white/40 text-[9px] sm:text-[10px] font-medium uppercase tracking-widest">{type.wordCount}</p>
                   </div>
 
                   {/* Pricing Section */}
                   <div class="flex flex-col items-center mb-3 sm:mb-6 py-2 sm:py-4 border-y border-white/5 bg-white/[0.02] rounded-xl sm:rounded-2xl">
-                    <div class="flex items-center gap-1 sm:gap-3">
-                      <span class="text-lg sm:text-3xl font-black text-white tracking-tighter">{type.price.toFixed(2)}€</span>
+                    <div class="flex items-center gap-2 sm:gap-3">
+                      <span class="text-xl sm:text-3xl font-black text-white tracking-tighter">{type.price.toFixed(2)}€</span>
                       <div class="flex flex-col items-start leading-none">
-                        <span class="text-[8px] sm:text-xs text-white/30 line-through">{type.originalPrice.toFixed(2)}€</span>
-                        <span class="text-[7px] sm:text-[10px] font-bold text-amber-500 uppercase">-50%</span>
+                        <span class="text-[10px] sm:text-xs text-white/30 line-through">{type.originalPrice.toFixed(2)}€</span>
+                        <span class="text-[9px] sm:text-[10px] font-bold text-amber-500 uppercase">-50%</span>
                       </div>
                     </div>
                   </div>
@@ -213,10 +213,10 @@ const testimonials = [
                     ))}
                   </div>
 
-                  {/* Mobile: Show only 2 benefits */}
-                  <div class="sm:hidden space-y-1 mb-3 text-[9px]">
+                  {/* Mobile: Show only 2 benefits with larger text */}
+                  <div class="sm:hidden space-y-1.5 mb-3 text-[11px]">
                     {type.benefits.slice(0, 2).map((benefit) => (
-                      <div class="flex items-center gap-1 text-white/70">
+                      <div class="flex items-center gap-1.5 text-white/70">
                         <span class="flex-shrink-0">{benefit.split(' ')[0]}</span>
                         <span class="truncate">{benefit.split(' ').slice(1).join(' ')}</span>
                       </div>
@@ -226,8 +226,8 @@ const testimonials = [
                   {/* Premium Button */}
                   <div class="mt-auto">
                     <div class="relative w-full overflow-hidden rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 p-[1px] group-hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-500">
-                      <div class="flex items-center justify-center gap-1 sm:gap-2 rounded-[7px] sm:rounded-[11px] bg-amber-500 px-2 sm:px-4 py-2 sm:py-3.5 font-black text-black text-[10px] sm:text-sm uppercase tracking-tight group-hover:bg-amber-400 transition-colors active:scale-95 duration-200">
-                        <Sparkles class="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
+                      <div class="flex items-center justify-center gap-1.5 sm:gap-2 rounded-[7px] sm:rounded-[11px] bg-amber-500 px-3 sm:px-4 py-2.5 sm:py-3.5 font-black text-black text-xs sm:text-sm uppercase tracking-tight group-hover:bg-amber-400 transition-colors active:scale-95 duration-200">
+                        <Sparkles class="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-pulse" />
                         <span>{t.cta.orderNow}</span>
                       </div>
                     </div>
