@@ -149,9 +149,11 @@ export const POST: APIRoute = async ({ request }) => {
                     },
                 },
             },
-            automatic_tax: {
-                enabled: true,
-            },
+            // automatic_tax disabled - not needed for small business under €10k EU threshold
+            // Enable later after OSS registration if EU sales exceed €10,000
+            // automatic_tax: {
+            //     enabled: true,
+            // },
             locale: getStripeLocale(data.lang as string || 'en'),
             success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&lang=${data.lang || 'en'}`,
             cancel_url: `${origin}/${data.lang === 'en' ? '' : data.lang + '/'}form/${productKey}`,
