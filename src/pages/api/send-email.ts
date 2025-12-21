@@ -576,16 +576,7 @@ export const POST: APIRoute = async ({ request }) => {
                 <!-- Hero Section with Product Name -->
                 <tr>
                     <td style="background: linear-gradient(180deg, #1a1a2e 0%, #2d1f4e 50%, #3b2667 100%); background-color: #2d1f4e; padding: 45px 35px; text-align: center;">
-                        <!-- Decorative line -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="width: 30%; border-bottom: 1px solid rgba(251,191,36,0.3);">&nbsp;</td>
-                                <td style="width: 40%; text-align: center; padding: 0 10px;">
-                                    <span style="color: #fbbf24; font-size: 20px;">☆</span>
-                                </td>
-                                <td style="width: 30%; border-bottom: 1px solid rgba(251,191,36,0.3);">&nbsp;</td>
-                            </tr>
-                        </table>
+
                         <!-- Product Name - cleaner styling without harsh border -->
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 25px auto;">
                             <tr>
@@ -649,52 +640,52 @@ export const POST: APIRoute = async ({ request }) => {
                         </table>
 
                         <!-- Image Attachment Card -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 25px;">
+                        <!-- Unified Attachments Card -->
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 30px;">
                             <tr>
                                 <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%); background-color: #1e1b4b; border-radius: 16px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
                                         <tr>
-                                            <td style="padding: 28px; text-align: center;">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <td style="padding: 35px;">
+                                                <!-- Main Horoscope Download -->
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                     <tr>
-                                                        <td style="vertical-align: middle; padding-right: 18px;">
-                                                            <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); background-color: #fbbf24; width: 52px; height: 52px; border-radius: 14px; text-align: center; line-height: 52px;">
-                                                                <span style="font-size: 26px;">🖼️</span>
+                                                        <td style="text-align: center;">
+                                                            <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); background-color: #fbbf24; width: 64px; height: 64px; border-radius: 16px; text-align: center; line-height: 64px; margin: 0 auto 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                                                                <span style="font-size: 32px;">🖼️</span>
                                                             </div>
-                                                        </td>
-                                                        <td style="vertical-align: middle; text-align: left;">
-                                                            <h3 style="margin: 0 0 5px 0; font-family: Arial, sans-serif; font-size: 16px; color: #fbbf24; font-weight: bold;">
+                                                            <h3 style="margin: 0 0 6px 0; font-family: Arial, sans-serif; font-size: 18px; color: #1e1b4b; font-weight: bold;">
                                                                 ${t.horoscopePdf}
                                                             </h3>
-                                                            <p style="margin: 0; font-family: Arial, sans-serif; font-size: 13px; color: #a5b4fc;">
+                                                            <p style="margin: 0; font-family: Arial, sans-serif; font-size: 14px; color: #64748b;">
                                                                 ${t.attachedAsPng || 'Attached as image file'}
                                                             </p>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
 
-                        <!-- Legal Docs Card -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 25px;">
-                            <tr>
-                                <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0;">
-                                        <tr>
-                                            <td style="padding: 22px;">
-                                                <p style="margin: 0 0 12px 0; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #334155;">
-                                                    📎 ${t.attached}
-                                                </p>
-                                                <p style="margin: 0 0 15px 0; font-family: Arial, sans-serif; font-size: 13px; color: #64748b; line-height: 20px;">
-                                                    ${t.attachedDesc}
-                                                </p>
-                                                <p style="margin: 0;">
-                                                    ${t.legalDocs.map(name => `<span style="display: inline-block; background-color: #e2e8f0; padding: 6px 12px; border-radius: 6px; font-family: Arial, sans-serif; font-size: 11px; color: #475569; margin: 3px 3px 3px 0;">${name}</span>`).join('')}
-                                                </p>
+                                                <!-- Divider -->
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 25px 0;">
+                                                            <div style="height: 1px; background-color: #e2e8f0;"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                <!-- Legal Docs -->
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <p style="margin: 0 0 16px 0; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px;">
+                                                                📎 ${t.attachedDesc}
+                                                            </p>
+                                                            <div>
+                                                                ${t.legalDocs.map(name => `<span style="display: inline-block; background-color: #ffffff; padding: 8px 16px; border-radius: 8px; border: 1px solid #cbd5e1; font-family: Arial, sans-serif; font-size: 12px; color: #475569; margin: 4px; font-weight: 500;">${name}</span>`).join('')}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </td>
                                         </tr>
                                     </table>

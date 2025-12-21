@@ -104,8 +104,8 @@ export const POST: APIRoute = async ({ request }) => {
         const sanitizeForStripe = (value: any): string => {
             if (value === null || value === undefined) return '';
             const str = String(value);
-            // Remove non-ASCII characters but preserve basic Latin characters
-            return str.replace(/[^\x20-\x7E]/g, '').substring(0, 500); // Stripe metadata limit is 500 chars
+            // Allow all characters, just limit length
+            return str.substring(0, 500);
         };
 
         const sanitizedFormData: Record<string, string> = {};

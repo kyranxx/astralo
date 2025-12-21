@@ -13,16 +13,40 @@ if (!supabaseUrl || !supabaseServiceKey) {
 }
 
 // Server-side client with service role (bypasses RLS)
-export const supabase = createClient(
-    supabaseUrl || '',
-    supabaseServiceKey || '',
-    {
-        auth: {
-            autoRefreshToken: false,
-            persistSession: false
-        }
+// We wrap this to prevent crash on module load if keys are missing
+let supabaseClient;
+
+try {
+    if (supabaseUrl && supabaseServiceKey) {
+        supabaseClient = createClient(
+            supabaseUrl,
+            supabaseServiceKey,
+            {
+                auth: {
+                    autoRefreshToken: false,
+                    persistSession: false
+                }
+            }
+        );
+    } else {
+        console.warn('⚠️ Supabase credentials missing. Database operations will fail.');
+        // Create a dummy client/proxy that logs errors instead of crashing immediately
+        // allowing the server to start
+        supabaseClient = {
+            from: () => ({
+                select: async () => ({ data: null, error: { message: 'Supabase not configured' } }),
+                insert: async () => ({ error: { message: 'Supabase not configured' } }),
+                update: async () => ({ error: { message: 'Supabase not configured' } }),
+                delete: async () => ({ error: { message: 'Supabase not configured' } }),
+            })
+        } as any;
     }
-);
+} catch (e) {
+    console.error('Failed to initialize Supabase client:', e);
+    supabaseClient = { from: () => ({ select: async () => ({ error: { message: 'Init failed' } }) }) } as any;
+}
+
+export const supabase = supabaseClient;
 
 // Database types
 export interface OrderRow {

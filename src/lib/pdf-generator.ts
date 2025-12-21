@@ -170,47 +170,45 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                 color: rgb(0.984, 0.749, 0.141),
             });
 
-            // Stars decoration - draw diamond shapes (like ✦ in email)
-            // Using geometric shapes for guaranteed rendering
-            const drawDiamond = (cx: number, cy: number, size: number, filled: boolean) => {
-                // Draw a diamond shape (rotated square)
+            // Stars decoration - draw 5-pointed star
+            const drawStar = (cx: number, cy: number, size: number, filled: boolean) => {
+                // SVG Path for a standard star (centered approx at 12,12 in 24x24 viewbox)
+                // We'll scale it to match the requested size
+                const starPath = 'M 12 2 L 15.09 8.26 L 22 9.27 L 17 14.14 L 18.18 21.02 L 12 17.77 L 5.82 21.02 L 7 14.14 L 2 9.27 L 8.91 8.26 Z';
+
+                // Scale factor: size is approx diameter. Path is 24x24.
+                const scale = size / 24;
+
                 if (filled) {
-                    page.drawRectangle({
-                        x: cx - size / 2,
-                        y: cy - size / 2,
-                        width: size,
-                        height: size,
+                    page.drawSvgPath(starPath, {
+                        x: cx - (12 * scale),
+                        y: cy - (12 * scale),
+                        scale: scale,
                         color: gold,
-                        rotate: { type: 'degrees' as any, angle: 45 },
-                        xSkew: { type: 'degrees' as any, angle: 0 },
-                        ySkew: { type: 'degrees' as any, angle: 0 },
+                        borderWidth: 0,
                     });
                 } else {
-                    page.drawRectangle({
-                        x: cx - size / 2,
-                        y: cy - size / 2,
-                        width: size,
-                        height: size,
+                    page.drawSvgPath(starPath, {
+                        x: cx - (12 * scale),
+                        y: cy - (12 * scale),
+                        scale: scale,
                         borderColor: gold,
                         borderWidth: 1,
-                        rotate: { type: 'degrees' as any, angle: 45 },
-                        xSkew: { type: 'degrees' as any, angle: 0 },
-                        ySkew: { type: 'degrees' as any, angle: 0 },
                     });
                 }
             };
 
-            // Draw 5 diamonds pattern: ✦ ✧ ✦ ✧ ✦ (filled, outline, filled, outline, filled)
+            // Draw 5 stars pattern: ★ ☆ ★ ☆ ★ (filled, outline, filled, outline, filled)
             const starY = height - 28;
             const centerX = width / 2;
-            const spacing = 18;
-            const diamondSize = 6;
+            const spacing = 22; // Slightly wider for stars
+            const starSize = 10; // Slightly larger
 
-            drawDiamond(centerX - spacing * 2, starY, diamondSize, true);
-            drawDiamond(centerX - spacing, starY, diamondSize, false);
-            drawDiamond(centerX, starY, diamondSize, true);
-            drawDiamond(centerX + spacing, starY, diamondSize, false);
-            drawDiamond(centerX + spacing * 2, starY, diamondSize, true);
+            drawStar(centerX - spacing * 2, starY, starSize, true);
+            drawStar(centerX - spacing, starY, starSize, false);
+            drawStar(centerX, starY, starSize + 2, true); // Center star slightly bigger
+            drawStar(centerX + spacing, starY, starSize, false);
+            drawStar(centerX + spacing * 2, starY, starSize, true);
 
             // Astralo text - larger and more prominent
             const astraloText = 'ASTRALO';
@@ -261,30 +259,43 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
 
         let y = height - 120; // Start below header
 
-        // Icon box with star decoration (centered)
-        const iconBoxSize = 40;
-        const iconBoxX = (width - iconBoxSize) / 2;
-        currentPage.drawRectangle({
-            x: iconBoxX,
-            y: y - 5,
-            width: iconBoxSize,
-            height: iconBoxSize,
-            color: rgb(0.984, 0.749, 0.141), // Gold
-            opacity: 0.15,
-            borderColor: rgb(0.984, 0.749, 0.141),
+        // Icon paths for different document types
+        // Terms (Document): Simple file shape
+        const iconPathTerms = 'M6 2C4.89 2 4 2.89 4 4V20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2H6ZM13 9V3.5L18.5 9H13Z';
+        // Privacy (Lock): Lock shape
+        const iconPathPrivacy = 'M12 2C9.24 2 7 4.24 7 7V10H6C4.9 10 4 10.9 4 12V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V12C20 10.9 19.1 10 18 10H17V7C17 4.24 14.76 2 12 2ZM15 10H9V7C9 5.34 10.34 4 12 4C13.66 4 15 5.34 15 7V10Z';
+        // Refund (Refresh/Arrow): Counter-clockwise arrow
+        const iconPathRefund = 'M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58 4 4.01 7.58 4.01 12C4.01 16.42 7.58 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z';
+        // Cookies (Cookie): Circle with bites/chips
+        const iconPathCookie = 'M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM6 12C6 11.45 6.45 11 7 11C7.55 11 8 11.45 8 12C8 12.55 7.55 13 7 13C6.45 13 6 12.55 6 12ZM10.5 5C11.33 5 12 5.67 12 6.5C12 7.33 11.33 8 10.5 8C9.67 8 9 7.33 9 6.5C9 5.67 9.67 5 10.5 5ZM16.5 7.5C17.33 7.5 18 8.17 18 9C18 9.83 17.33 10.5 16.5 10.5C15.67 10.5 15 9.83 15 9C15 8.17 15.67 7.5 16.5 7.5ZM14.5 16C15.33 16 16 16.67 16 17.5C16 18.33 15.33 19 14.5 19C13.67 19 13 18.33 13 17.5C13 16.67 13.67 16 14.5 16Z';
+
+        let selectedIconPath = iconPathTerms; // Default
+        const lowerTitle = title.toLowerCase();
+
+        if (lowerTitle.includes('privacy') || lowerTitle.includes('osobn') || lowerTitle.includes('súkromia')) {
+            selectedIconPath = iconPathPrivacy;
+        } else if (lowerTitle.includes('refund') || lowerTitle.includes('vrát') || lowerTitle.includes('reklam')) {
+            selectedIconPath = iconPathRefund;
+        } else if (lowerTitle.includes('cookie')) {
+            selectedIconPath = iconPathCookie;
+        }
+
+        // Draw Icon (centered)
+        const iconSize = 48; // Slightly smaller
+        const iconScale = iconSize / 24;
+        const iconX = (width) / 2 - (12 * iconScale);
+
+        // Draw outlined icon for more elegance
+        currentPage.drawSvgPath(selectedIconPath, {
+            x: iconX,
+            y: y - 10,
+            scale: iconScale,
+            borderColor: gold,
             borderWidth: 1.5,
+            color: undefined, // No fill, just outline
         });
-        // Star decoration inside box
-        const starText = '*';
-        const starWidth = boldFont.widthOfTextAtSize(starText, 28);
-        currentPage.drawText(starText, {
-            x: iconBoxX + (iconBoxSize - starWidth) / 2,
-            y: y + 5,
-            size: 28,
-            font: boldFont,
-            color: gold,
-        });
-        y -= 55;
+
+        y -= 75; // Increased spacing (was 60)
 
         // Document title - larger and bolder
         const titleWidth = boldFont.widthOfTextAtSize(title, 22);
