@@ -281,7 +281,7 @@ function generatePageHtml(
             padding: ${isFirstPage ? '25px' : '15px'} 20px 15px;
         }
         
-        .stars-decoration { color: #fbbf24; font-size: 14px; letter-spacing: 10px; margin-bottom: 10px; }
+        .stars-decoration { color: #fbbf24; font-size: 14px; letter-spacing: 10px; margin-bottom: 10px; font-family: Arial, sans-serif; }
         
         .logo {
             font-size: ${isFirstPage ? '42px' : '28px'};
@@ -417,7 +417,7 @@ function generatePageHtml(
             ` : ''}
             
             <div class="header">
-                <div class="stars-decoration">✦ ✧ ★ ✧ ✦</div>
+                <div class="stars-decoration">* * * * *</div>
                 <div class="logo">ASTRALO</div>
                 ${isFirstPage ? `<div class="subtitle">${escapeHtml(labels.personalHoroscope)}</div>` : ''}
             </div>

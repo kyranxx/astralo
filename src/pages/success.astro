@@ -963,17 +963,18 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
     const progressText = document.getElementById('email-progress-text');
     statusDiv.classList.remove('hidden');
     
-    // Animate email progress - slower to match actual email sending time (includes PNG generation)
+    // Real progress tracking - estimate ~25 seconds for PNG generation + email
+    const startTime = Date.now();
+    const estimatedDuration = 25000; // 25 seconds estimate
     let emailProgress = 0;
+    
     const progressInterval = setInterval(() => {
-      if (emailProgress < 90) {
-        // Slower progression: ~30 seconds to reach 90%
-        emailProgress += Math.random() * 3 + 1; // 1-4% per tick
-        emailProgress = Math.min(emailProgress, 90);
-        if (progressBar) progressBar.style.width = emailProgress + '%';
-        if (progressText) progressText.textContent = Math.round(emailProgress) + '%';
-      }
-    }, 1500); // Every 1.5 seconds instead of 0.5
+      const elapsed = Date.now() - startTime;
+      // Calculate progress proportionally, cap at 95% until complete
+      emailProgress = Math.min((elapsed / estimatedDuration) * 95, 95);
+      if (progressBar) progressBar.style.width = emailProgress + '%';
+      if (progressText) progressText.textContent = Math.round(emailProgress) + '%';
+    }, 200);
     
     try {
       const response = await fetch('/api/send-email', {
@@ -992,14 +993,15 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       
       if (!response.ok) throw new Error('Failed to send email');
 
-      // Complete the progress
+      // Complete the progress to 100%
       if (progressBar) progressBar.style.width = '100%';
       if (progressText) progressText.textContent = '100%';
       
+      // Hold at 100% for 3 seconds so user sees completion before transition
       setTimeout(() => {
         statusDiv.classList.add('hidden');
         successDiv.classList.remove('hidden');
-      }, 500);
+      }, 3000);
     } catch (e) {
       console.error('Email failed', e);
       clearInterval(progressInterval);

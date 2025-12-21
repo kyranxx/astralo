@@ -199,7 +199,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             };
 
             // Draw 5 stars pattern: ★ ☆ ★ ☆ ★ (filled, outline, filled, outline, filled)
-            const starY = height - 28;
+            const starY = height - 22;
             const centerX = width / 2;
             const spacing = 22; // Slightly wider for stars
             const starSize = 10; // Slightly larger
@@ -288,7 +288,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         // Draw outlined icon for more elegance
         currentPage.drawSvgPath(selectedIconPath, {
             x: iconX,
-            y: y - 10,
+            y: y - 5,
             scale: iconScale,
             borderColor: gold,
             borderWidth: 1.5,
