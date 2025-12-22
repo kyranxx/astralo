@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
-import { CheckCircle, Mail, Home, Sparkles, Star } from 'lucide-astro';
+import { CheckCircle, Mail, Home, Sparkles, Star, ChevronLeft } from 'lucide-astro';
 import { isValidLocale, getTranslations, type SupportedLocale } from '../lib/i18n';
 
 // Get lang from URL params
@@ -12,23 +12,23 @@ const t = getTranslations(currentLang);
 // Success page specific translations (inline for simplicity)
 const successT = {
   en: {
-    preparing: 'Preparing Your Horoscope...',
+    preparing: 'Preparing Your Reading...',
     analyzing: 'Analyzing your birth chart...',
-    generating: 'Generating your horoscope...',
+    generating: 'Creating your personalized reading...',
     creatingPdf: 'Creating your PDF...',
     sendingEmail: 'Sending to your email...',
     complete: 'Complete!',
-    generated: 'Horoscope Generated!',
+    generated: 'Reading Complete!',
     checkEmail: 'Check Your Email! 📬',
-    sentTo: 'Your personalized horoscope has been sent to:',
-    inEmail: 'Your horoscope is in the email body',
+    sentTo: 'Your personalized reading has been sent to:',
+    inEmail: 'Your reading is in the email body',
     docsAttached: 'Legal documents are attached',
-    sending: 'Sending your horoscope...',
+    sending: 'Sending to your email...',
     emailSent: 'Email sent successfully!',
     backHome: 'Back to Home',
     didntReceive: "Didn't receive the email? Check your spam folder or contact",
     error: 'Something went wrong',
-    errorDesc: "We couldn't generate your horoscope. Please contact support.",
+    errorDesc: "We couldn't generate your reading. Please contact support.",
     emailFailed: 'Failed to send email. Contact support.'
   },
   sk: {
@@ -717,10 +717,15 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
     <!-- Header -->
     <header class="glass-strong border-b border-white/10">
       <div class="max-w-5xl mx-auto px-4 py-3">
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-between">
+          <a href={homeUrl} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ChevronLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">{st.backHome}</span>
+          </a>
           <a href={homeUrl} class="flex items-center">
             <img src="/logo.png" alt="Astralo" class="h-9" />
           </a>
+          <div class="w-24"></div> <!-- Spacer for balance -->
         </div>
       </div>
     </header>
@@ -832,7 +837,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
 
             <p class="text-white/40 text-xs mt-6">
               {st.didntReceive}<br />
-              <a href="mailto:info@astralo.online" class="text-amber-400 hover:underline">info@astralo.online</a>
+              <a href="mailto:apollotechsro@gmail.com" class="text-amber-400 hover:underline">apollotechsro@gmail.com</a>
             </p>
           </div>
 

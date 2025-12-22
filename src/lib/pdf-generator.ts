@@ -259,15 +259,15 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
 
         let y = height - 120; // Start below header
 
-        // Icon paths for different document types
-        // Terms (Document): Simple file shape
-        const iconPathTerms = 'M6 2C4.89 2 4 2.89 4 4V20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2H6ZM13 9V3.5L18.5 9H13Z';
-        // Privacy (Lock): Lock shape
-        const iconPathPrivacy = 'M12 2C9.24 2 7 4.24 7 7V10H6C4.9 10 4 10.9 4 12V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V12C20 10.9 19.1 10 18 10H17V7C17 4.24 14.76 2 12 2ZM15 10H9V7C9 5.34 10.34 4 12 4C13.66 4 15 5.34 15 7V10Z';
-        // Refund (Refresh/Arrow): Counter-clockwise arrow
-        const iconPathRefund = 'M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58 4 4.01 7.58 4.01 12C4.01 16.42 7.58 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z';
-        // Cookies (Cookie): Circle with bites/chips
-        const iconPathCookie = 'M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM6 12C6 11.45 6.45 11 7 11C7.55 11 8 11.45 8 12C8 12.55 7.55 13 7 13C6.45 13 6 12.55 6 12ZM10.5 5C11.33 5 12 5.67 12 6.5C12 7.33 11.33 8 10.5 8C9.67 8 9 7.33 9 6.5C9 5.67 9.67 5 10.5 5ZM16.5 7.5C17.33 7.5 18 8.17 18 9C18 9.83 17.33 10.5 16.5 10.5C15.67 10.5 15 9.83 15 9C15 8.17 15.67 7.5 16.5 7.5ZM14.5 16C15.33 16 16 16.67 16 17.5C16 18.33 15.33 19 14.5 19C13.67 19 13 18.33 13 17.5C13 16.67 13.67 16 14.5 16Z';
+        // Icon paths for different document types - matching website's lucide icons
+        // Terms (Scale/Justice): Scales of justice icon
+        const iconPathTerms = 'M12 3C12.55 3 13 3.45 13 4V5H19C19.55 5 20 5.45 20 6C20 6.55 19.55 7 19 7H18.18L17 15H19C19.55 15 20 15.45 20 16C20 16.55 19.55 17 19 17H5C4.45 17 4 16.55 4 16C4 15.45 4.45 15 5 15H7L5.82 7H5C4.45 7 4 6.55 4 6C4 5.45 4.45 5 5 5H11V4C11 3.45 11.45 3 12 3ZM9.18 7L10 13H14L14.82 7H9.18ZM12 19C10.34 19 9 20.34 9 22H15C15 20.34 13.66 19 12 19Z';
+        // Privacy (Shield): Shield icon
+        const iconPathPrivacy = 'M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z';
+        // Refund (RotateCcw): Counter-clockwise rotate arrow
+        const iconPathRefund = 'M1 4V10H7M3.51 15C4.15 16.74 5.34 18.2 6.88 19.18C8.42 20.16 10.23 20.62 12.06 20.49C13.88 20.35 15.61 19.63 17 18.43C18.38 17.24 19.33 15.63 19.73 13.85C20.12 12.08 19.93 10.22 19.19 8.55C18.45 6.88 17.19 5.5 15.6 4.6C14.01 3.7 12.17 3.34 10.37 3.57C8.56 3.81 6.87 4.63 5.55 5.9L1 10';
+        // Cookies (Cookie): Cookie icon with chips
+        const iconPathCookie = 'M12 2C13.22 2 14.4 2.21 15.5 2.6C15.97 1.69 16.92 1 18 1C18.17 1 18.34 1.02 18.5 1.05C14.23 0.15 9.77 0.15 5.5 1.05C5.66 1.02 5.83 1 6 1C7.08 1 8.03 1.69 8.5 2.6C9.6 2.21 10.78 2 12 2ZM22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C13.05 2 14.07 2.14 15.04 2.4C14.4 3.2 14 4.23 14 5.36C14 5.78 14.06 6.19 14.16 6.57C12.58 7.13 11.5 8.62 11.5 10.36C11.5 12.63 13.37 14.5 15.64 14.5C16.69 14.5 17.64 14.11 18.36 13.46C18.67 13.73 19.02 13.96 19.4 14.15C19.78 15.24 20 16.4 20 17.64C20 19 19.5 20 18.5 21C19.91 19.69 21 17.92 21.58 15.93C21.85 14.72 22 13.39 22 12ZM8.5 8C9.61 8 10.5 8.9 10.5 10C10.5 11.1 9.61 12 8.5 12C7.4 12 6.5 11.1 6.5 10C6.5 8.9 7.4 8 8.5 8ZM7.5 14C8.05 14 8.5 14.45 8.5 15C8.5 15.55 8.05 16 7.5 16C6.95 16 6.5 15.55 6.5 15C6.5 14.45 6.95 14 7.5 14ZM11 16.5C11.83 16.5 12.5 17.17 12.5 18C12.5 18.83 11.83 19.5 11 19.5C10.17 19.5 9.5 18.83 9.5 18C9.5 17.17 10.17 16.5 11 16.5Z';
 
         let selectedIconPath = iconPathTerms; // Default
         const lowerTitle = title.toLowerCase();
@@ -420,7 +420,7 @@ Astralo a Apollo Tech s.r.o. nenesú zodpovednosť za žiadne nepriame, náhodn�
 8. Kontaktné informácie
 Apollo Tech s.r.o.
 Slovensko
-Email: info@astralo.online
+Email: apollotechsro@gmail.com
 `;
 
     const privacyContentSk = `
@@ -443,7 +443,7 @@ Implementujeme vhodné technické a organizačné opatrenia na ochranu vašich o
 Pre spracovanie platieb používame Stripe. Vaše platobné informácie spracováva bezpečne Stripe a nie sú uložené na našich serveroch.
 
 5. Vaše práva
-Máte právo na prístup, opravu alebo vymazanie svojich osobných údajov. Kontaktujte nás na info@astralo.online pre akékoľvek požiadavky týkajúce sa ochrany osobných údajov.
+Máte právo na prístup, opravu alebo vymazanie svojich osobných údajov. Kontaktujte nás na apollotechsro@gmail.com pre akékoľvek požiadavky týkajúce sa ochrany osobných údajov.
 `;
 
     const refundContentSk = `
@@ -458,7 +458,7 @@ Môžeme ponúknuť vrátenie peňazí, ak:
 - Horoskop bol vygenerovaný na základe nesprávnych údajov kvôli systémovej chybe
 
 3. Ako požiadať o vrátenie peňazí
-Kontaktujte nás na info@astralo.online s podrobnosťami objednávky a dôvodom žiadosti o vrátenie peňazí. Vašu požiadavku preskúmame do 48 hodín.
+Kontaktujte nás na apollotechsro@gmail.com s podrobnosťami objednávky a dôvodom žiadosti o vrátenie peňazí. Vašu požiadavku preskúmame do 48 hodín.
 `;
 
     const cookiesContentSk = `
@@ -507,7 +507,7 @@ Astralo and Apollo Tech s.r.o. shall not be liable for any indirect, incidental,
 8. Contact Information
 Apollo Tech s.r.o.
 Slovakia
-Email: info@astralo.online
+Email: apollotechsro@gmail.com
 `;
 
     const privacyContentEn = `
@@ -530,7 +530,7 @@ We implement appropriate technical and organizational measures to protect your p
 We use Stripe for payment processing. Your payment information is processed securely by Stripe and is not stored on our servers.
 
 5. Your Rights
-You have the right to access, correct, or delete your personal data. Contact us at info@astralo.online for any privacy-related requests.
+You have the right to access, correct, or delete your personal data. Contact us at apollotechsro@gmail.com for any privacy-related requests.
 `;
 
     const refundContentEn = `
@@ -545,7 +545,7 @@ We may offer a refund if:
 - The horoscope generated was clearly based on incorrect data due to a system error
 
 3. How to Request a Refund
-Please contact us at info@astralo.online with your order details and the reason for your refund request. We will review your request within 48 hours.
+Please contact us at apollotechsro@gmail.com with your order details and the reason for your refund request. We will review your request within 48 hours.
 `;
 
     const cookiesContentEn = `
