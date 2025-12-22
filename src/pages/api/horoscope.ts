@@ -103,54 +103,59 @@ export const POST: APIRoute = async ({ request }) => {
 
         if (productKey === 'partner') {
             const { birthDate1, birthTime1, birthPlace1, name1, birthDate2, birthTime2, birthPlace2, name2 } = formData;
-            prompt = `You are a warm, professional astrologer. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
+            prompt = `You are a friendly astrologer writing for everyday people. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
 
 Person 1: ${name1}, born ${birthDate1} at ${birthTime1} in ${birthPlace1}
 Person 2: ${name2}, born ${birthDate2} at ${birthTime2} in ${birthPlace2}
 
 ${productBenefits.partner}
 
-STYLE REQUIREMENTS:
-- Use relevant emojis throughout (💖❤️✨🌟💫⭐🔮🌙💕🪐💝)
-- Write in a warm, conversational tone
-- Short paragraphs (2-3 sentences max)
-- Make it engaging and practical
+WRITING STYLE - VERY IMPORTANT:
+- Use SIMPLE, everyday language that anyone can understand (avoid complex astrological jargon)
+- Write like you're talking to a friend, warm and approachable
+- Use short sentences and paragraphs (2-3 sentences max)
+- PROOFREAD for grammar - ensure the ${useLangForPdf} grammar is 100% correct
+- Use relevant emojis (💖❤️✨🌟💫⭐🔮🌙💕🪐💝)
 - Start with an attention-grabbing opening
 - End with encouraging advice
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write in ${useLangForPdf} language.
+- Write entirely in ${useLangForPdf} language with correct grammar and spelling.
 
-CRITICAL CONTENT GUIDELINES:
-- NEVER reference any specific religion, religious figures (Jesus, Muhammad, Buddha, etc.), or religious practices
-- Keep content universally spiritual and astrological - focus on planets, stars, cosmic energy
-- Avoid culturally sensitive topics (politics, religious holidays, dietary restrictions)
-- Be inclusive and respectful to all cultural backgrounds`;
+CONTENT RULES:
+- NEVER mention any religion, religious figures (Jesus, Muhammad, Buddha, etc.)
+- Focus on planets, stars, cosmic energy - universal spirituality only
+- Avoid politics, religious holidays, dietary restrictions
+- Be inclusive and positive`;
         } else {
             const { birthDate, birthTime, birthPlace, name } = formData;
             const benefits = productBenefits[productKey] || productBenefits.daily;
             const wordCount = { daily: 200, weekly: 400, monthly: 1000, partner: 1200 };
 
-            prompt = `You are a warm, professional astrologer. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${useLangForPdf} language.
+            prompt = `You are a friendly astrologer writing for everyday people. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${useLangForPdf} language.
 
 For: ${name}, born ${birthDate} at ${birthTime} in ${birthPlace}
 
 ${benefits}
 
-STYLE REQUIREMENTS:
-- Start with a warm greeting and astrological portrait
-- Use relevant emojis throughout (✨🌟💫⭐🔮🌙🪐💖🌸🎯💪🌈☀️)
-- Write in short paragraphs (2-3 sentences max)
+WRITING STYLE - VERY IMPORTANT:
+- Use SIMPLE, everyday language that anyone can understand
+- Avoid complex astrological jargon - explain things in plain terms
+- Write like you're talking to a friend, warm and approachable
+- Use short sentences (no long, complicated sentences)
+- Short paragraphs (2-3 sentences max)
+- PROOFREAD for grammar - ensure the ${useLangForPdf} grammar is 100% correct
+- Double-check spelling and sentence structure in ${useLangForPdf}
+- Use relevant emojis (✨🌟💫⭐🔮🌙🪐💖🌸🎯💪🌈☀️)
 - Make it practical and actionable
-- Include current planetary influences
-- End with positive affirmations
+- End with positive, encouraging words
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write entirely in ${useLangForPdf} language.
+- Write entirely in ${useLangForPdf} language with perfect grammar.
 
-CRITICAL CONTENT GUIDELINES:
-- NEVER reference any specific religion, religious figures (Jesus, Muhammad, Buddha, etc.), or religious practices
-- Keep content universally spiritual and astrological - focus on planets, stars, cosmic energy
-- Avoid culturally sensitive topics (politics, religious holidays, dietary restrictions)
-- Be inclusive and respectful to all cultural backgrounds`;
+CONTENT RULES:
+- NEVER mention any religion, religious figures (Jesus, Muhammad, Buddha, etc.)
+- Focus on planets, stars, cosmic energy - universal spirituality only
+- Avoid politics, religious holidays, dietary restrictions
+- Be inclusive and positive`;
         }
 
         const apiKey = import.meta.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;

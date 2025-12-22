@@ -184,17 +184,15 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                 }
             };
 
-            // Draw 5 stars pattern - adjusted for proper visual alignment
+            // Draw 5 stars pattern - all same size, same Y for perfect alignment
             const starY = height - 18;
             const centerX = width / 2;
             const spacing = 22;
-            const starSize = 8;
-            const centerStarSize = 10;
+            const starSize = 9; // All stars same size
 
             drawStar(centerX - spacing * 2, starY, starSize, true);
             drawStar(centerX - spacing, starY, starSize, false);
-            // Center star is larger, so adjust Y position up to keep baseline aligned
-            drawStar(centerX, starY + 1, centerStarSize, true);
+            drawStar(centerX, starY, starSize, true);  // Same Y as others
             drawStar(centerX + spacing, starY, starSize, false);
             drawStar(centerX + spacing * 2, starY, starSize, true);
 
@@ -269,22 +267,22 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             selectedIconPath = iconPathCookie;
         }
 
-        // Draw Icon (centered) - positioned higher above title
+        // Draw Icon (centered) - positioned above title with proper spacing
         const iconSize = 48;
         const iconScale = iconSize / 24;
         const iconX = (width) / 2 - (12 * iconScale);
 
-        // Draw outlined icon for more elegance - moved up from title
+        // Draw outlined icon for more elegance
         currentPage.drawSvgPath(selectedIconPath, {
             x: iconX,
-            y: y + 15, // Moved higher (was y - 5)
+            y: y - 10, // Balanced position above title
             scale: iconScale,
             borderColor: gold,
             borderWidth: 1.5,
             color: undefined, // No fill, just outline
         });
 
-        y -= 85; // More space below icon (was 75)
+        y -= 70; // Proper spacing below icon
 
         // Document title - larger and bolder
         const titleWidth = boldFont.widthOfTextAtSize(title, 22);

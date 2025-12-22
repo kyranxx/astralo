@@ -110,8 +110,15 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
             </div>
             <TrendingUp class="w-5 h-5 text-green-500" />
           </div>
-          <div class="space-y-2">
-            <div class="flex items-end gap-1 sm:gap-2 h-32 sm:h-40" id="revenueChart">
+          <div class="flex gap-2">
+            <!-- Y-axis labels -->
+            <div class="flex flex-col justify-between text-[10px] sm:text-xs text-white/40 h-32 sm:h-40 py-1" id="yAxisLabels">
+              <span id="yMax">€0</span>
+              <span id="yMid">€0</span>
+              <span>€0</span>
+            </div>
+            <!-- Chart bars -->
+            <div class="flex-1 flex items-end gap-1 sm:gap-2 h-32 sm:h-40" id="revenueChart">
               <div class="flex-1 bg-amber-500/20 rounded-t h-1/4"></div>
               <div class="flex-1 bg-amber-500/20 rounded-t h-1/3"></div>
               <div class="flex-1 bg-amber-500/20 rounded-t h-1/2"></div>
@@ -120,12 +127,13 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
               <div class="flex-1 bg-amber-500/20 rounded-t h-3/4"></div>
               <div class="flex-1 bg-amber-500/30 rounded-t h-full"></div>
             </div>
-            <div class="flex justify-between text-[10px] sm:text-xs text-white/40 overflow-x-auto" id="revenueLabels">
-              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
-              <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
-              <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
-            </div>
           </div>
+          <div class="flex pl-8 justify-between text-[10px] sm:text-xs text-white/40 overflow-x-auto" id="revenueLabels">
+            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+            <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+            <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+          </div>
+        </div>
         </div>
 
         <!-- Countries -->
@@ -415,6 +423,12 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       
       if (stats.monthlyData.length > 0) {
         const maxRevenue = Math.max(...stats.monthlyData.map((m: any) => m.revenue), 1);
+        
+        // Update Y-axis labels
+        const yMax = document.getElementById('yMax');
+        const yMid = document.getElementById('yMid');
+        if (yMax) yMax.textContent = `€${Math.round(maxRevenue)}`;
+        if (yMid) yMid.textContent = `€${Math.round(maxRevenue / 2)}`;
         
         chartContainer.innerHTML = stats.monthlyData.map((m: any) => {
           const height = Math.max((m.revenue / maxRevenue) * 100, 5);
