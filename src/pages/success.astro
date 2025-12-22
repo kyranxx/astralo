@@ -795,8 +795,8 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
                   {st.checkEmail}
                 </h2>
                 
-                <p class="text-white/80 mb-3">
-                  {st.sentTo}
+                <p id="email-delivery-status" class="text-white/80 mb-3">
+                  {st.sendingTo || 'Your personalized reading is being sent to:'}
                 </p>
                 
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
@@ -1002,6 +1002,10 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       if (progressBar) progressBar.style.width = '100%';
       if (progressText) progressText.textContent = '100%';
       
+      // Update status text
+      const statusText = document.getElementById('email-delivery-status');
+      if (statusText) statusText.textContent = st.sentTo || 'Your personalized reading has been sent to:';
+
       // Hold at 100% for 3 seconds so user sees completion before transition
       setTimeout(() => {
         statusDiv.classList.add('hidden');

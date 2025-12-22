@@ -76,24 +76,26 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           </p>
         </div>
 
-        <!-- Top Country -->
-        <div class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10">
+        <!-- Top Country - Clickable -->
+        <div id="topCountryCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-purple-500/30 transition-all">
           <div class="flex items-center justify-between mb-2">
             <p class="text-white/60 text-xs sm:text-sm">Top Country</p>
             <Globe class="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
           </div>
           <h3 class="text-lg sm:text-xl font-bold text-white truncate" id="topCountry">-</h3>
           <p class="text-xs text-white/40 mt-1" id="topCountryStats">-</p>
+          <p class="text-[10px] text-purple-400 mt-1">Click for all →</p>
         </div>
 
-        <!-- Top Product -->
-        <div class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10">
+        <!-- Top Product - Clickable -->
+        <div id="topProductCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-amber-500/30 transition-all">
           <div class="flex items-center justify-between mb-2">
             <p class="text-white/60 text-xs sm:text-sm">Best Seller</p>
             <Star class="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
           </div>
           <h3 class="text-sm sm:text-lg font-bold text-white truncate" id="topProduct">-</h3>
           <p class="text-xs text-white/40 mt-1" id="topProductStats">-</p>
+          <p class="text-[10px] text-amber-400 mt-1">Click for all →</p>
         </div>
       </div>
 
@@ -220,6 +222,56 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         </div>
       </div>
     </div>
+
+    <!-- Order Detail Modal -->
+    <div id="orderDetailModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden p-4 overflow-y-auto">
+      <div class="bg-[#1a1a2e] rounded-2xl p-6 max-w-2xl w-full border border-white/10 my-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-white">Order Details</h3>
+          <button id="closeOrderDetail" class="p-2 rounded-lg bg-white/10 text-white/70 hover:bg-white/20">✕</button>
+        </div>
+        <div id="orderDetailContent" class="space-y-4">
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div><span class="text-white/50">Order ID:</span> <span id="detailOrderId" class="text-white font-mono"></span></div>
+            <div><span class="text-white/50">Status:</span> <span id="detailStatus" class="font-semibold"></span></div>
+            <div><span class="text-white/50">Customer:</span> <span id="detailCustomer" class="text-white"></span></div>
+            <div><span class="text-white/50">Email:</span> <span id="detailEmail" class="text-white"></span></div>
+            <div><span class="text-white/50">Product:</span> <span id="detailProduct" class="text-amber-400"></span></div>
+            <div><span class="text-white/50">Amount:</span> <span id="detailAmount" class="text-green-400 font-bold"></span></div>
+            <div><span class="text-white/50">Country:</span> <span id="detailCountry" class="text-white"></span></div>
+            <div><span class="text-white/50">Date:</span> <span id="detailDate" class="text-white"></span></div>
+            <div><span class="text-white/50">Birth Date:</span> <span id="detailBirth" class="text-white"></span></div>
+            <div><span class="text-white/50">Language:</span> <span id="detailLang" class="text-white uppercase"></span></div>
+          </div>
+          <div class="border-t border-white/10 pt-4">
+            <h4 class="text-white font-bold mb-2">Horoscope Content</h4>
+            <div id="detailHoroscope" class="bg-black/30 rounded-lg p-4 max-h-64 overflow-y-auto text-white/80 text-sm whitespace-pre-wrap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Countries Modal -->
+    <div id="countriesModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden p-4">
+      <div class="bg-[#1a1a2e] rounded-2xl p-6 max-w-lg w-full border border-white/10 max-h-[80vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-white">All Countries</h3>
+          <button id="closeCountries" class="p-2 rounded-lg bg-white/10 text-white/70 hover:bg-white/20">✕</button>
+        </div>
+        <div id="allCountriesList" class="space-y-3"></div>
+      </div>
+    </div>
+
+    <!-- Products Modal -->
+    <div id="productsModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden p-4">
+      <div class="bg-[#1a1a2e] rounded-2xl p-6 max-w-lg w-full border border-white/10">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-white">All Products</h3>
+          <button id="closeProducts" class="p-2 rounded-lg bg-white/10 text-white/70 hover:bg-white/20">✕</button>
+        </div>
+        <div id="allProductsList" class="space-y-3"></div>
+      </div>
+    </div>
   </div>
 </Layout>
 
@@ -234,6 +286,10 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   let adminPassword = '';
   let currentPage = 1;
   const limit = 10;
+  
+  // Store data for detail modals
+  let allCountriesData: any[] = [];
+  let allProductsData: any[] = [];
   
   const loginContainer = document.getElementById('loginContainer') as HTMLElement;
   const dashboardContainer = document.getElementById('dashboardContainer') as HTMLElement;
@@ -325,12 +381,14 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         const top = stats.revenueByCountry[0];
         document.getElementById('topCountry')!.textContent = top.country;
         document.getElementById('topCountryStats')!.textContent = `€${top.revenue.toFixed(0)} · ${top.orders}`;
+        allCountriesData = stats.revenueByCountry;
       }
       
       if (stats.revenueByProduct.length > 0) {
         const top = stats.revenueByProduct[0];
         document.getElementById('topProduct')!.textContent = top.product;
         document.getElementById('topProductStats')!.textContent = `€${top.revenue.toFixed(0)} · ${top.orders}`;
+        allProductsData = stats.revenueByProduct;
       }
       
       const lastUpdated = document.getElementById('lastUpdated');
@@ -417,7 +475,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           const amount = (order.amount / 100).toFixed(2);
           
           return `
-            <tr class="border-b border-white/5 hover:bg-white/5">
+            <tr class="border-b border-white/5 hover:bg-white/5 cursor-pointer" onclick="openOrderDetail('${order.id}')">
               <td class="py-3 pr-3 text-white/60 text-xs font-mono">${order.id.slice(-8)}</td>
               <td class="py-3 pr-3">
                 <p class="text-white text-sm">${order.customerName}</p>
@@ -428,10 +486,11 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
               <td class="py-3 pr-3 text-white/50 text-sm">${date}</td>
               <td class="py-3 pr-3"><span class="${statusClass} text-sm">${order.status}</span></td>
               <td class="py-3 pr-3 text-right text-white font-medium">€${amount}</td>
-              <td class="py-3 text-center">
+              <td class="py-3 text-center" onclick="event.stopPropagation()">
+                <button onclick="openOrderDetail('${order.id}')" class="p-1.5 rounded bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 text-xs mr-1" title="View">👁</button>
                 ${order.status === 'completed' ? `
-                  <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1.5 rounded bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs">↩</button>
-                ` : '-'}
+                  <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1.5 rounded bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs" title="Refund">↩</button>
+                ` : ''}
               </td>
             </tr>
           `;
@@ -444,7 +503,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           const amount = (order.amount / 100).toFixed(2);
           
           return `
-            <div class="bg-white/5 rounded-lg p-3 border border-white/10">
+            <div class="bg-white/5 rounded-lg p-3 border border-white/10 cursor-pointer hover:bg-white/10" onclick="openOrderDetail('${order.id}')">
               <div class="flex justify-between items-start mb-2">
                 <div>
                   <p class="text-white font-medium text-sm">${order.customerName}</p>
@@ -454,8 +513,9 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
               </div>
               <div class="flex justify-between items-center">
                 <span class="text-white/50 text-xs">${date} · ${order.country || '-'}</span>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2" onclick="event.stopPropagation()">
                   <span class="text-amber-400 font-bold">€${amount}</span>
+                  <button onclick="openOrderDetail('${order.id}')" class="p-1 rounded bg-blue-500/20 text-blue-400 text-xs">👁</button>
                   ${order.status === 'completed' ? `
                     <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1 rounded bg-red-500/20 text-red-400 text-xs">↩</button>
                   ` : ''}
@@ -550,5 +610,95 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       btn.disabled = false;
       btn.textContent = 'Refund';
     }
+  });
+  
+  // Order detail modal
+  (window as any).openOrderDetail = async (orderId: string) => {
+    try {
+      const response = await fetch(`/api/admin?action=order&id=${encodeURIComponent(orderId)}&password=${encodeURIComponent(adminPassword)}`);
+      if (!response.ok) throw new Error('Failed to load order');
+      
+      const order = await response.json();
+      
+      document.getElementById('detailOrderId')!.textContent = order.id;
+      document.getElementById('detailCustomer')!.textContent = order.customerName;
+      document.getElementById('detailEmail')!.textContent = order.customerEmail;
+      document.getElementById('detailProduct')!.textContent = order.productName;
+      document.getElementById('detailAmount')!.textContent = `€${(order.amount / 100).toFixed(2)}`;
+      document.getElementById('detailCountry')!.textContent = order.country || '-';
+      document.getElementById('detailDate')!.textContent = new Date(order.createdAt).toLocaleString();
+      document.getElementById('detailBirth')!.textContent = order.birthDate || '-';
+      document.getElementById('detailLang')!.textContent = order.lang || 'en';
+      
+      const statusEl = document.getElementById('detailStatus')!;
+      statusEl.textContent = order.status;
+      statusEl.className = order.status === 'completed' ? 'text-green-400 font-semibold' : 'text-red-400 font-semibold';
+      
+      document.getElementById('detailHoroscope')!.textContent = order.horoscopeContent || 'No horoscope content available';
+      
+      document.getElementById('orderDetailModal')!.classList.remove('hidden');
+    } catch (error) {
+      console.error('Error loading order:', error);
+      alert('Failed to load order details');
+    }
+  };
+  
+  document.getElementById('closeOrderDetail')?.addEventListener('click', () => {
+    document.getElementById('orderDetailModal')!.classList.add('hidden');
+  });
+  
+  // Countries modal
+  document.getElementById('topCountryCard')?.addEventListener('click', () => {
+    const list = document.getElementById('allCountriesList')!;
+    if (allCountriesData.length === 0) {
+      list.innerHTML = '<p class="text-white/50">No data</p>';
+    } else {
+      list.innerHTML = allCountriesData.map((c: any, i: number) => `
+        <div class="flex items-center justify-between p-3 rounded-lg ${i === 0 ? 'bg-purple-500/20 border border-purple-500/30' : 'bg-white/5'}">
+          <div>
+            <p class="text-white font-medium">${i + 1}. ${c.country}</p>
+            <p class="text-white/40 text-xs">${c.orders} orders</p>
+          </div>
+          <div class="text-amber-400 font-bold">€${c.revenue.toFixed(0)}</div>
+        </div>
+      `).join('');
+    }
+    document.getElementById('countriesModal')!.classList.remove('hidden');
+  });
+  
+  document.getElementById('closeCountries')?.addEventListener('click', () => {
+    document.getElementById('countriesModal')!.classList.add('hidden');
+  });
+  
+  // Products modal
+  document.getElementById('topProductCard')?.addEventListener('click', () => {
+    const list = document.getElementById('allProductsList')!;
+    if (allProductsData.length === 0) {
+      list.innerHTML = '<p class="text-white/50">No data</p>';
+    } else {
+      list.innerHTML = allProductsData.map((p: any, i: number) => `
+        <div class="flex items-center justify-between p-3 rounded-lg ${i === 0 ? 'bg-amber-500/20 border border-amber-500/30' : 'bg-white/5'}">
+          <div>
+            <p class="text-white font-medium">${i + 1}. ${p.product}</p>
+            <p class="text-white/40 text-xs">${p.orders} orders</p>
+          </div>
+          <div class="text-green-400 font-bold">€${p.revenue.toFixed(0)}</div>
+        </div>
+      `).join('');
+    }
+    document.getElementById('productsModal')!.classList.remove('hidden');
+  });
+  
+  document.getElementById('closeProducts')?.addEventListener('click', () => {
+    document.getElementById('productsModal')!.classList.add('hidden');
+  });
+  
+  // Close modals on backdrop click
+  ['orderDetailModal', 'countriesModal', 'productsModal'].forEach(id => {
+    document.getElementById(id)?.addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) {
+        (e.target as HTMLElement).classList.add('hidden');
+      }
+    });
   });
 </script>

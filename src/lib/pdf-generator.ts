@@ -161,22 +161,9 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                 color: gold,
             });
 
-            // Small gold decorative lines at top
-            page.drawRectangle({
-                x: width / 2 - 60,
-                y: height - 12,
-                width: 120,
-                height: 2,
-                color: rgb(0.984, 0.749, 0.141),
-            });
-
             // Stars decoration - draw 5-pointed star
             const drawStar = (cx: number, cy: number, size: number, filled: boolean) => {
-                // SVG Path for a standard star (centered approx at 12,12 in 24x24 viewbox)
-                // We'll scale it to match the requested size
                 const starPath = 'M 12 2 L 15.09 8.26 L 22 9.27 L 17 14.14 L 18.18 21.02 L 12 17.77 L 5.82 21.02 L 7 14.14 L 2 9.27 L 8.91 8.26 Z';
-
-                // Scale factor: size is approx diameter. Path is 24x24.
                 const scale = size / 24;
 
                 if (filled) {
@@ -185,7 +172,6 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                         y: cy - (12 * scale),
                         scale: scale,
                         color: gold,
-                        borderWidth: 0,
                     });
                 } else {
                     page.drawSvgPath(starPath, {
@@ -198,24 +184,26 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
                 }
             };
 
-            // Draw 5 stars pattern: ★ ☆ ★ ☆ ★ (filled, outline, filled, outline, filled)
-            const starY = height - 22;
+            // Draw 5 stars pattern - adjusted for proper visual alignment
+            const starY = height - 18;
             const centerX = width / 2;
-            const spacing = 22; // Slightly wider for stars
-            const starSize = 10; // Slightly larger
+            const spacing = 22;
+            const starSize = 8;
+            const centerStarSize = 10;
 
             drawStar(centerX - spacing * 2, starY, starSize, true);
             drawStar(centerX - spacing, starY, starSize, false);
-            drawStar(centerX, starY, starSize + 2, true); // Center star slightly bigger
+            // Center star is larger, so adjust Y position up to keep baseline aligned
+            drawStar(centerX, starY + 1, centerStarSize, true);
             drawStar(centerX + spacing, starY, starSize, false);
             drawStar(centerX + spacing * 2, starY, starSize, true);
 
-            // Astralo text - larger and more prominent
+            // Astralo text - adjusted Y to be lower and avoid overlap
             const astraloText = 'ASTRALO';
             const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 26);
             page.drawText(astraloText, {
                 x: (width - astraloWidth) / 2,
-                y: height - 55,
+                y: height - 58,
                 size: 26,
                 font: boldFont,
                 color: gold,
@@ -225,11 +213,12 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             const typeWidth = font.widthOfTextAtSize('Legal Document', 10);
             page.drawText('Legal Document', {
                 x: (width - typeWidth) / 2,
-                y: height - 75,
+                y: height - 78,
                 size: 10,
                 font: font,
                 color: rgb(0.7, 0.7, 0.7),
             });
+
         };
 
         // Draw footer on each page
@@ -259,15 +248,15 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
 
         let y = height - 120; // Start below header
 
-        // Icon paths for different document types - matching website's lucide icons
-        // Terms (Scale/Justice): Scales of justice icon
-        const iconPathTerms = 'M12 3C12.55 3 13 3.45 13 4V5H19C19.55 5 20 5.45 20 6C20 6.55 19.55 7 19 7H18.18L17 15H19C19.55 15 20 15.45 20 16C20 16.55 19.55 17 19 17H5C4.45 17 4 16.55 4 16C4 15.45 4.45 15 5 15H7L5.82 7H5C4.45 7 4 6.55 4 6C4 5.45 4.45 5 5 5H11V4C11 3.45 11.45 3 12 3ZM9.18 7L10 13H14L14.82 7H9.18ZM12 19C10.34 19 9 20.34 9 22H15C15 20.34 13.66 19 12 19Z';
-        // Privacy (Shield): Shield icon
-        const iconPathPrivacy = 'M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z';
-        // Refund (RotateCcw): Counter-clockwise rotate arrow
-        const iconPathRefund = 'M1 4V10H7M3.51 15C4.15 16.74 5.34 18.2 6.88 19.18C8.42 20.16 10.23 20.62 12.06 20.49C13.88 20.35 15.61 19.63 17 18.43C18.38 17.24 19.33 15.63 19.73 13.85C20.12 12.08 19.93 10.22 19.19 8.55C18.45 6.88 17.19 5.5 15.6 4.6C14.01 3.7 12.17 3.34 10.37 3.57C8.56 3.81 6.87 4.63 5.55 5.9L1 10';
-        // Cookies (Cookie): Cookie icon with chips
-        const iconPathCookie = 'M12 2C13.22 2 14.4 2.21 15.5 2.6C15.97 1.69 16.92 1 18 1C18.17 1 18.34 1.02 18.5 1.05C14.23 0.15 9.77 0.15 5.5 1.05C5.66 1.02 5.83 1 6 1C7.08 1 8.03 1.69 8.5 2.6C9.6 2.21 10.78 2 12 2ZM22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C13.05 2 14.07 2.14 15.04 2.4C14.4 3.2 14 4.23 14 5.36C14 5.78 14.06 6.19 14.16 6.57C12.58 7.13 11.5 8.62 11.5 10.36C11.5 12.63 13.37 14.5 15.64 14.5C16.69 14.5 17.64 14.11 18.36 13.46C18.67 13.73 19.02 13.96 19.4 14.15C19.78 15.24 20 16.4 20 17.64C20 19 19.5 20 18.5 21C19.91 19.69 21 17.92 21.58 15.93C21.85 14.72 22 13.39 22 12ZM8.5 8C9.61 8 10.5 8.9 10.5 10C10.5 11.1 9.61 12 8.5 12C7.4 12 6.5 11.1 6.5 10C6.5 8.9 7.4 8 8.5 8ZM7.5 14C8.05 14 8.5 14.45 8.5 15C8.5 15.55 8.05 16 7.5 16C6.95 16 6.5 15.55 6.5 15C6.5 14.45 6.95 14 7.5 14ZM11 16.5C11.83 16.5 12.5 17.17 12.5 18C12.5 18.83 11.83 19.5 11 19.5C10.17 19.5 9.5 18.83 9.5 18C9.5 17.17 10.17 16.5 11 16.5Z';
+        // Icon paths for different document types - matching Lucide icons exactly
+        // Scale
+        const iconPathTerms = 'M16 16 19 8 22 16c-.87.65-1.92 1-3 1s-2.13-.35-3-1z M2 16 5 8 8 16c-.87.65-1.92 1-3 1s-2.13-.35-3-1z M7 21h10 M12 3v18 M3 7h18';
+        // Shield
+        const iconPathPrivacy = 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10';
+        // RotateCcw
+        const iconPathRefund = 'M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8 M3 3v5h5';
+        // Cookie
+        const iconPathCookie = 'M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5z M8.5 8.5v.01 M16 15.5v.01 M12 12v.01 M11 17v.01 M7 14v.01';
 
         let selectedIconPath = iconPathTerms; // Default
         const lowerTitle = title.toLowerCase();
@@ -280,22 +269,22 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             selectedIconPath = iconPathCookie;
         }
 
-        // Draw Icon (centered)
-        const iconSize = 48; // Slightly smaller
+        // Draw Icon (centered) - positioned higher above title
+        const iconSize = 48;
         const iconScale = iconSize / 24;
         const iconX = (width) / 2 - (12 * iconScale);
 
-        // Draw outlined icon for more elegance
+        // Draw outlined icon for more elegance - moved up from title
         currentPage.drawSvgPath(selectedIconPath, {
             x: iconX,
-            y: y - 5,
+            y: y + 15, // Moved higher (was y - 5)
             scale: iconScale,
             borderColor: gold,
             borderWidth: 1.5,
             color: undefined, // No fill, just outline
         });
 
-        y -= 75; // Increased spacing (was 60)
+        y -= 85; // More space below icon (was 75)
 
         // Document title - larger and bolder
         const titleWidth = boldFont.widthOfTextAtSize(title, 22);

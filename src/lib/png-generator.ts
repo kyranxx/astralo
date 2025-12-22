@@ -124,7 +124,11 @@ function formatContent(content: string): string {
         .split('\n')
         .filter(p => p.trim())
         .map(p => {
-            const trimmed = p.trim();
+            // Strip markdown bold (**text** and __text__)
+            let trimmed = p.trim()
+                .replace(/\*\*([^*]+)\*\*/g, '$1')
+                .replace(/__([^_]+)__/g, '$1');
+
             const isHeader = trimmed.length < 60 && !trimmed.includes('.') && !trimmed.startsWith('-');
             if (isHeader) {
                 return `<h3 class="section-header">${escapeHtml(trimmed)}</h3>`;
@@ -160,16 +164,21 @@ function generatePageHtml(
 
     // For RTL languages, use Google Noto fonts which have full Arabic/Hebrew support
     // For LTR languages, use Google Fonts for better typography
-    const fontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=block';
+    // Added Noto Color Emoji for robust emoji support across different environments
+    const fontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Color+Emoji&display=block';
 
-    // RTL font URL - Noto Sans Arabic and Hebrew
-    const rtlFontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&display=block';
+    // RTL font URL - Noto Sans Arabic and Hebrew + Noto Color Emoji
+    const rtlFontUrl = 'https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&family=Noto+Color+Emoji&display=block';
 
     // For RTL: use Google Noto fonts for proper Arabic/Hebrew rendering
     // For LTR: use Google Fonts for better aesthetics
+    // For RTL: use Google Noto fonts for proper Arabic/Hebrew rendering
+    // For LTR: use Google Fonts for better aesthetics
+    // Added emoji font fallbacks to fix missing emojis in PNGs
+    const emojiFonts = "'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji', EmojiSymbols";
     const fontFamily = isRTL
-        ? "'Noto Sans Arabic', 'Noto Sans Hebrew', Arial, 'Segoe UI', Tahoma, sans-serif"
-        : "'Noto Sans', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Thai', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', Arial, sans-serif";
+        ? `'Noto Sans Arabic', 'Noto Sans Hebrew', Arial, 'Segoe UI', Tahoma, sans-serif, ${emojiFonts}`
+        : `'Noto Sans', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Thai', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', Arial, sans-serif, ${emojiFonts}`;
 
     return `
 <!DOCTYPE html>
@@ -229,51 +238,51 @@ function generatePageHtml(
             pointer-events: none;
         }
         
-        .nebula {\r
-            position: absolute;\r
-            border-radius: 50%;\r
-            filter: blur(60px);\r
-            pointer-events: none;\r
-        }\r
-        .nebula-1 { width: 250px; height: 250px; top: 5%; left: 10%; background: rgba(138, 43, 226, 0.12); }\r
-        .nebula-2 { width: 200px; height: 200px; top: 20%; right: 5%; background: rgba(75, 0, 130, 0.1); }\r
-        \r
-        /* Zodiac constellation decorations */\r
-        .constellation {\r
-            position: absolute;\r
-            pointer-events: none;\r
-            opacity: 0.25;\r
-        }\r
-        .constellation-top-right {\r
-            top: 60px; right: 30px;\r
-            width: 120px; height: 120px;\r
-        }\r
-        .constellation-bottom-left {\r
-            bottom: 80px; left: 30px;\r
-            width: 100px; height: 100px;\r
-        }\r
-        .constellation svg {\r
-            width: 100%;\r
-            height: 100%;\r
-            fill: none;\r
-            stroke: rgba(251, 191, 36, 0.6);\r
-            stroke-width: 1;\r
-        }\r
-        .constellation circle {\r
-            fill: rgba(251, 191, 36, 0.8);\r
-        }\r
-        \r
-        /* Gold corner accents */\r
-        .corner-accent {\r
-            position: absolute;\r
-            width: 40px;\r
-            height: 40px;\r
-            border: 2px solid rgba(251, 191, 36, 0.3);\r
-            pointer-events: none;\r
-        }\r
-        .corner-tl { top: 30px; left: 30px; border-right: none; border-bottom: none; }\r
-        .corner-tr { top: 30px; right: 30px; border-left: none; border-bottom: none; }\r
-        .corner-bl { bottom: 30px; left: 30px; border-right: none; border-top: none; }\r
+        .nebula {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            pointer-events: none;
+        }
+        .nebula-1 { width: 250px; height: 250px; top: 5%; left: 10%; background: rgba(138, 43, 226, 0.12); }
+        .nebula-2 { width: 200px; height: 200px; top: 20%; right: 5%; background: rgba(75, 0, 130, 0.1); }
+        
+        /* Zodiac constellation decorations */
+        .constellation {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0.25;
+        }
+        .constellation-top-right {
+            top: 60px; right: 30px;
+            width: 120px; height: 120px;
+        }
+        .constellation-bottom-left {
+            bottom: 80px; left: 30px;
+            width: 100px; height: 100px;
+        }
+        .constellation svg {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: rgba(251, 191, 36, 0.6);
+            stroke-width: 1;
+        }
+        .constellation circle {
+            fill: rgba(251, 191, 36, 0.8);
+        }
+        
+        /* Gold corner accents */
+        .corner-accent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(251, 191, 36, 0.3);
+            pointer-events: none;
+        }
+        .corner-tl { top: 30px; left: 30px; border-right: none; border-bottom: none; }
+        .corner-tr { top: 30px; right: 30px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: 30px; left: 30px; border-right: none; border-top: none; }
         .corner-br { bottom: 30px; right: 30px; border-left: none; border-top: none; }
         
         .header {
@@ -281,7 +290,16 @@ function generatePageHtml(
             padding: ${isFirstPage ? '25px' : '15px'} 20px 15px;
         }
         
-        .stars-decoration { color: #fbbf24; font-size: 14px; letter-spacing: 10px; margin-bottom: 10px; font-family: Arial, sans-serif; }
+        .stars-decoration { 
+            color: #fbbf24; 
+            font-size: 14px; 
+            margin-bottom: 12px; 
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .star-icon { width: 12px; height: 12px; fill: #fbbf24; }
+        .star-icon.outline { fill: none; stroke: #fbbf24; stroke-width: 2px; }
         
         .logo {
             font-size: ${isFirstPage ? '42px' : '28px'};
@@ -417,7 +435,13 @@ function generatePageHtml(
             ` : ''}
             
             <div class="header">
-                <div class="stars-decoration">* * * * *</div>
+                <div class="stars-decoration">
+                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg class="star-icon outline" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" style="width: 14px; height: 14px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg class="star-icon outline" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
                 <div class="logo">ASTRALO</div>
                 ${isFirstPage ? `<div class="subtitle">${escapeHtml(labels.personalHoroscope)}</div>` : ''}
             </div>

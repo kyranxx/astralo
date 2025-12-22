@@ -49,36 +49,36 @@ export const POST: APIRoute = async ({ request }) => {
             en: {
                 subject: `Your ${productName} from Astralo ✨`,
                 greeting: 'Hello',
-                thank: 'Thank you for choosing Astralo! Your personal horoscope has been crafted specially for you.',
-                horoscopeTitle: 'Your Personal Horoscope',
-                horoscopePdf: 'Your Horoscope PNG',
-                attachedAsPng: 'Attached as image file',
-                attached: 'Attached Documents',
-                attachedDesc: 'We\'ve also attached our legal documents for your reference.',
-                footer: 'May the stars guide you on your journey',
+                thank: 'Thank you for choosing Astralo. Your unique path among the stars is unfolding, and we have carefully crafted this celestial map to guide you.',
+                horoscopeTitle: 'Your Celestial Map',
+                horoscopePdf: 'Digital Reading PNG',
+                attachedAsPng: 'Attached as high-quality image',
+                attached: 'Companion Documents',
+                attachedDesc: 'We\'ve also included our official legal documents for your complete peace of mind.',
+                footer: 'May your journey be illuminated by the wisdom of the stars.',
                 copyright: 'All rights reserved',
-                questions: 'Questions? Contact us at',
+                questions: 'Seek guidance? Speak to us at',
                 legalDocs: ['📄 Terms of Service', '🔒 Privacy Policy', '↩️ Refund Policy', '🍪 Cookie Policy'],
-                slogan: 'Your Stars • Your Destiny',
-                yourReading: 'Your Reading',
-                preheader: 'Your personal reading is ready',
+                slogan: 'Ancient Wisdom • Modern Guidance',
+                yourReading: 'Your Celestial Insights',
+                preheader: 'The stars have spoken. Your unique celestial guide is ready.',
             },
             sk: {
                 subject: `Váš ${productName} od Astralo ✨`,
                 greeting: 'Dobrý deň',
-                thank: 'Ďakujeme, že ste si vybrali Astralo! Váš osobný horoskop bol vytvorený špeciálne pre vás.',
-                horoscopeTitle: 'Váš Osobný Horoskop',
-                horoscopePdf: 'Váš Horoskop PNG',
-                attachedAsPng: 'Priložený ako obrázok',
+                thank: 'Ďakujeme, že ste si vybrali Astralo. Vaša jedinečná cesta medzi hviezdami sa odhaľuje a my sme pre vás starostlivo pripravili túto nebeskú mapu, ktorá vás bude viesť.',
+                horoscopeTitle: 'Vaša Nebeská Mapa',
+                horoscopePdf: 'Digitálne Čítanie PNG',
+                attachedAsPng: 'Priložené ako vysokokvalitný obrázok',
                 attached: 'Priložené Dokumenty',
-                attachedDesc: 'Priložili sme tiež naše právne dokumenty pre vašu informáciu.',
-                footer: 'Nech vás hviezdy vedú na vašej ceste',
+                attachedDesc: 'Pripravili sme pre vás aj oficiálne právne dokumenty pre váš úplný pokoj.',
+                footer: 'Nech je vaša cesta osvetlená múdrosťou hviezd.',
                 copyright: 'Všetky práva vyhradené',
-                questions: 'Otázky? Kontaktujte nás na',
+                questions: 'Hľadáte radu? Napíšte nám na',
                 legalDocs: ['📄 Obchodné podmienky', '🔒 Ochrana osobných údajov', '↩️ Podmienky vrátenia', '🍪 Zásady cookies'],
-                slogan: 'Vaše hviezdy • Váš osud',
-                yourReading: 'Vaše čítanie',
-                preheader: 'Vaše osobné čítanie je pripravené',
+                slogan: 'Staroveká Múdrosť • Moderné Vedenie',
+                yourReading: 'Vaše Nebeské Vhľady',
+                preheader: 'Hviezdy prehovorili. Váš jedinečný nebeský sprievodca je pripravený.',
             },
             cs: {
                 subject: `Váš ${productName} od Astralo ✨`,
@@ -284,6 +284,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Sva prava zadržana',
                 questions: 'Pitanja? Kontaktirajte nas na',
                 legalDocs: ['📄 Uslovi korišćenja', '🔒 Privatnost', '↩️ Povrat', '🍪 Kolačići'],
+                slogan: 'Vaše zvezde • Vaša sudbina',
+                yourReading: 'Vaše čitanje',
+                preheader: 'Vaše lično čitanje je spremno',
             },
             hu: {
                 subject: `${productName} az Astralótól ✨`,
@@ -297,6 +300,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Minden jog fenntartva',
                 questions: 'Kérdése van? Írjon nekünk',
                 legalDocs: ['📄 Felhasználási feltételek', '🔒 Adatvédelem', '↩️ Visszatérítés', '🍪 Sütik'],
+                slogan: 'Az Ön csillagai • Az Ön sorsa',
+                yourReading: 'Az Ön olvasata',
+                preheader: 'A személyes elemzése elkészült',
             },
             ro: {
                 subject: `${productName} de la Astralo ✨`,
@@ -310,6 +316,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Toate drepturile rezervate',
                 questions: 'Întrebări? Contactați-ne la',
                 legalDocs: ['📄 Termeni și condiții', '🔒 Confidențialitate', '↩️ Rambursare', '🍪 Cookie-uri'],
+                slogan: 'Stelele Tale • Destinul Tău',
+                yourReading: 'Citirea Ta',
+                preheader: 'Analiza ta personală este gata',
             },
             bg: {
                 subject: `Вашият ${productName} от Astralo ✨`,
@@ -323,6 +332,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Всички права запазени',
                 questions: 'Въпроси? Свържете се с нас на',
                 legalDocs: ['📄 Условия за ползване', '🔒 Поверителност', '↩️ Възстановяване', '🍪 Бисквитки'],
+                slogan: 'Вашите звезди • Вашата съдба',
+                yourReading: 'Вашият хороскоп',
+                preheader: 'Вашият личен хороскоп е готов',
             },
             uk: {
                 subject: `Ваш ${productName} від Astralo ✨`,
@@ -336,6 +348,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Усі права захищено',
                 questions: 'Питання? Зв\'яжіться з нами',
                 legalDocs: ['📄 Умови використання', '🔒 Конфіденційність', '↩️ Повернення', '🍪 Cookies'],
+                slogan: 'Ваші зірки • Ваша доля',
+                yourReading: 'Ваше читання',
+                preheader: 'Ваше персональне читання готове',
             },
             tr: {
                 subject: `Astralo'dan ${productName}'nuz ✨`,
@@ -381,6 +396,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'สงวนลิขสิทธิ์',
                 questions: 'มีคำถาม? ติดต่อเราที่',
                 legalDocs: ['📄 ข้อกำหนดการใช้งาน', '🔒 ความเป็นส่วนตัว', '↩️ การคืนเงิน', '🍪 คุกกี้'],
+                slogan: 'ดวงดาวของคุณ • โชคชะตาของคุณ',
+                yourReading: 'คำทำนายของคุณ',
+                preheader: 'คำทำนายส่วนตัวของคุณพร้อมแล้ว',
             },
             vi: {
                 subject: `${productName} từ Astralo ✨`,
@@ -394,6 +412,9 @@ export const POST: APIRoute = async ({ request }) => {
                 copyright: 'Đã đăng ký bản quyền',
                 questions: 'Câu hỏi? Liên hệ chúng tôi tại',
                 legalDocs: ['📄 Điều khoản dịch vụ', '🔒 Quyền riêng tư', '↩️ Hoàn tiền', '🍪 Cookie'],
+                slogan: 'Ngôi sao của bạn • Định mệnh của bạn',
+                yourReading: 'Bài luận của bạn',
+                preheader: 'Bài luận cá nhân của bạn đã sẵn sàng',
             },
             bn: {
                 subject: `Astralo থেকে আপনার ${productName} ✨`,
@@ -476,11 +497,16 @@ export const POST: APIRoute = async ({ request }) => {
                 // Check if this is a special section (lucky number, best time, etc)
                 const isSpecialSection = p.match(/^(🍀|📅|💎|⭐|🌟|💰|❤️|💼|🎯)/);
                 if (isSpecialSection) {
-                    return `<div style="margin: 0 0 16px 0; padding: 20px; background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); border-radius: 12px; line-height: 1.8; color: #fbbf24; font-weight: 600; font-size: 16px; border: 1px solid rgba(251, 191, 36, 0.3);">${p.replace(/\n/g, '<br>')}</div>`;
+                    return `
+                    <div style="margin: 30px 0; padding: 25px; background-color: #fffaf0; border-top: 2px solid #fbbf24; border-bottom: 2px solid #fbbf24; text-align: center;">
+                        <div style="font-family: 'Times New Roman', Georgia, serif; font-size: 20px; line-height: 1.6; color: #92400e; font-style: italic;">
+                            ${p.replace(/\n/g, '<br>')}
+                        </div>
+                    </div>`;
                 }
-                return `<p style="margin: 0 0 16px 0; line-height: 1.9; color: #374151; font-size: 16px;">${p.replace(/\n/g, '<br>')}</p>`;
+                return `<p style="margin: 0 0 25px 0; font-family: 'Times New Roman', Georgia, serif; font-size: 18px; line-height: 1.8; color: #1f2937;">${p.replace(/\n/g, '<br>')}</p>`;
             })
-            .join('');
+            .join('\n');
 
         // Determine RTL direction for Arabic and Hebrew
         const isRTL = ['ar', 'he'].includes(lang);
@@ -522,30 +548,21 @@ export const POST: APIRoute = async ({ request }) => {
         img { -ms-interpolation-mode: bicubic; border: 0; }
         a { text-decoration: none; color: #fbbf24; }
         a:hover { color: #f59e0b; }
-        .button-td-primary:hover { background: #f59e0b !important; }
         @media screen and (max-width: 600px) {
-            .email-container { width: 100% !important; }
-            .fluid { max-width: 100% !important; height: auto !important; }
-            .stack-column { display: block !important; width: 100% !important; }
+            .email-container { width: 100% !important; padding: 10px !important; }
+            .header-padding { padding: 30px 20px !important; }
+            .content-padding { padding: 30px 20px !important; }
+            .footer-padding { padding: 30px 20px !important; }
         }
     </style>
 </head>
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #0f0f23;">
     <center role="article" aria-roledescription="email" lang="${lang}" style="width: 100%; background-color: #0f0f23;">
-    <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #0f0f23;">
-    <tr><td>
-    <![endif]-->
-
         <!-- Preheader -->
         <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
             ✨ ${t.horoscopeTitle} - ${productName} | ${t.preheader || 'Your personal reading is ready'}
         </div>
-        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-        </div>
 
-        <!-- Email Container -->
         <div style="max-width: 600px; margin: 0 auto;" class="email-container">
             <!--[if mso]>
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
@@ -554,178 +571,121 @@ export const POST: APIRoute = async ({ request }) => {
 
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
                 
-                <!-- Top Decorative Bar -->
+                <!-- Logo & Header -->
                 <tr>
-                    <td style="background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%); background-color: #fbbf24; height: 4px; font-size: 0; line-height: 0;">&nbsp;</td>
-                </tr>
-
-                <!-- Logo & Stars Header -->
-                <tr>
-                    <td style="background-color: #1a1a2e; padding: 35px 30px 25px; text-align: center;">
-                        <!-- Stars decoration -->
-                        <p style="margin: 0 0 15px 0; font-size: 14px; color: #fbbf24; letter-spacing: 8px;">✦ ✧ ✦</p>
-                        <!-- Logo -->
-                        <img src="https://astralo.online/logo.png" width="160" height="auto" alt="Astralo" border="0" style="height: auto; font-family: Georgia, serif; font-size: 24px; color: #fbbf24;">
-                        <!-- Tagline -->
-                        <p style="margin: 15px 0 0 0; font-family: Georgia, serif; font-size: 13px; color: #9ca3af; letter-spacing: 3px; text-transform: uppercase;">
+                    <td class="header-padding" style="background-color: #1a1a2e; padding: 40px 30px; text-align: center;">
+                        <span style="font-size: 20px; color: #fbbf24; display: block; margin-bottom: 10px;">★</span>
+                        <img src="https://astralo.online/logo.png" width="180" height="auto" alt="Astralo" style="display: block; margin: 0 auto;">
+                        <p style="margin: 15px 0 0 0; font-family: 'Times New Roman', Georgia, serif; font-size: 13px; color: #9ca3af; letter-spacing: 4px; text-transform: uppercase;">
                             ${t.slogan || 'Your Stars • Your Destiny'}
                         </p>
                     </td>
                 </tr>
 
-                <!-- Hero Section with Product Name -->
+                <!-- Content Card Wrapper -->
                 <tr>
-                    <td style="background: linear-gradient(180deg, #1a1a2e 0%, #2d1f4e 50%, #3b2667 100%); background-color: #2d1f4e; padding: 45px 35px; text-align: center;">
-
-                        <!-- Product Name - cleaner styling without harsh border -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 25px auto;">
+                    <td style="background-color: #1a1a2e; padding: 0 15px 40px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
                             <tr>
-                                <td style="background: linear-gradient(135deg, rgba(251,191,36,0.2) 0%, rgba(251,191,36,0.1) 100%); background-color: rgba(251,191,36,0.15); border-radius: 30px; padding: 14px 35px;">
-                                    <h1 style="margin: 0; font-family: Georgia, serif; font-size: 26px; color: #fbbf24; font-weight: normal; letter-spacing: 1px;">
-                                        ${productName}
-                                </h1>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <!-- Main White Content Area -->
-                <tr>
-                    <td style="background-color: #ffffff; padding: 0;">
-                        
-                        <!-- Greeting Card -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 35px 35px 25px;">
-                                    <h2 style="margin: 0 0 12px 0; font-family: Georgia, serif; font-size: 24px; color: #1a1a2e; font-weight: normal;">
+                                <td class="content-padding" style="padding: 45px 40px;" ${dirAttr}>
+                                    
+                                    <!-- Greeting -->
+                                    <h2 style="margin: 0 0 15px 0; font-family: 'Times New Roman', Georgia, serif; font-size: 28px; color: #0f0f23; font-weight: normal; line-height: 1.2; text-align: ${isRTL ? 'right' : 'left'};">
                                         ${t.greeting}${customerName ? `, <span style="color: #7c3aed;">${customerName}</span>` : ''} ✨
                                     </h2>
-                                    <p style="margin: 0; font-family: Arial, sans-serif; font-size: 15px; line-height: 26px; color: #4b5563;">
+                                    <p style="margin: 0 0 35px 0; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #4b5563; text-align: ${isRTL ? 'right' : 'left'};">
                                         ${t.thank}
                                     </p>
-                                </td>
-                            </tr>
-                        </table>
 
-                        <!-- Horoscope Content Box -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 30px;">
-                            <tr>
-                                <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); background-color: #fef3c7; border-radius: 12px; border-left: 4px solid #fbbf24;">
-                                        <tr>
-                                            <td style="padding: 28px;">
-                                                <!-- Section Header -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 20px;">
-                                                    <tr>
-                                                        <td>
-                                                            <span style="display: inline-block; background-color: #fbbf24; color: #1a1a2e; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; padding: 5px 12px; border-radius: 15px; text-transform: uppercase; letter-spacing: 1px;">
-                                                                🔮 ${t.yourReading || 'Your Reading'}
-                                                            </span>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- Content -->
-                                                <div style="font-family: Georgia, serif; font-size: 15px; line-height: 28px; color: #374151;">
-                                                    ${formattedHoroscope}
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+                                    <!-- Reading Box -->
+                                    <div style="background: linear-gradient(135deg, #fafafa 0%, #f3f4f6 100%); border-radius: 20px; border-${isRTL ? 'right' : 'left'}: 5px solid #fbbf24; overflow: hidden; margin-bottom: 40px;">
+                                        <div style="padding: 30px;" ${dirAttr}>
+                                            <div style="margin-bottom: 25px; text-align: ${isRTL ? 'right' : 'left'};">
+                                                <span style="background-color: #fbbf24; color: #0f0f23; font-family: Arial, sans-serif; font-size: 11px; font-weight: 800; padding: 6px 14px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1.5px;">
+                                                    🔮 ${t.yourReading || 'Your Reading'}
+                                                </span>
+                                            </div>
+                                            <div style="font-family: 'Times New Roman', Georgia, serif; font-size: 17px; line-height: 1.8; color: #1f2937; text-align: ${isRTL ? 'right' : 'left'};">
+                                                ${formattedHoroscope}
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Unified Attachments Card -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 30px;">
-                            <tr>
-                                <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-                                        <tr>
-                                            <td style="padding: 28px; text-align: center;">
-                                                <p style="margin: 0 0 16px 0; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #475569; text-transform: uppercase; letter-spacing: 1px;">
-                                                    📎 ${t.attached}
-                                                </p>
-                                                <p style="margin: 0 0 16px 0; font-family: Arial, sans-serif; font-size: 13px; color: #64748b;">
-                                                    ${t.attachedDesc}
-                                                </p>
-                                                <div>
-                                                    ${t.legalDocs.map(name => `<span style="display: inline-block; background-color: #ffffff; padding: 8px 16px; border-radius: 8px; border: 1px solid #cbd5e1; font-family: Arial, sans-serif; font-size: 12px; color: #475569; margin: 4px; font-weight: 500;">${name}</span>`).join('')}
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <!-- Inspirational Quote -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 0 35px 35px;">
-                            <tr>
-                                <td>
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); background-color: #ede9fe; border-radius: 12px;">
+                                    <!-- Attachments Section -->
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 20px;">
                                         <tr>
                                             <td style="padding: 30px; text-align: center;">
-                                                <p style="margin: 0 0 10px 0; font-size: 28px;">✨</p>
-                                                <p style="margin: 0; font-family: Georgia, serif; font-size: 17px; line-height: 28px; color: #5b21b6; font-style: italic;">
-                                                    "${t.footer}"
+                                                <div style="margin-bottom: 12px;">
+                                                    <span style="font-size: 24px;">📎</span>
+                                                </div>
+                                                <h3 style="margin: 0 0 10px 0; font-family: Arial, sans-serif; font-size: 14px; font-weight: 800; color: #111827; text-transform: uppercase; letter-spacing: 1px;">
+                                                    ${t.attached}
+                                                </h3>
+                                                <p style="margin: 0 0 20px 0; font-family: Arial, sans-serif; font-size: 14px; color: #6b7280;">
+                                                    ${t.attachedDesc}
                                                 </p>
+                                                <div style="margin: 0 -5px;">
+                                                    ${t.legalDocs.map(name => `
+                                                        <div style="display: inline-block; background-color: #ffffff; padding: 8px 16px; border-radius: 100px; border: 1px solid #d1d5db; font-family: Arial, sans-serif; font-size: 12px; color: #374151; margin: 4px; font-weight: 600;">
+                                                            ${name}
+                                                        </div>
+                                                    `).join('')}
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
+
+                                </td>
+                            </tr>
+
+                            <!-- Quote / Sign-off -->
+                            <tr>
+                                <td style="padding: 0 40px 45px;">
+                                    <div style="background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); border-radius: 20px; padding: 35px; text-align: center; color: #ffffff;">
+                                        <p style="margin: 0 0 10px 0; font-size: 24px;">✨</p>
+                                        <p style="margin: 0; font-family: 'Times New Roman', Georgia, serif; font-size: 18px; line-height: 1.5; font-style: italic; opacity: 0.95;">
+                                            "${t.footer}"
+                                        </p>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
-
                     </td>
                 </tr>
 
-                <!-- Contact Section -->
+                <!-- Contact Info -->
                 <tr>
-                    <td style="background-color: #f1f5f9; padding: 25px 35px; text-align: center; border-top: 1px solid #e2e8f0;">
-                        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 14px; color: #64748b;">
+                    <td class="footer-padding" style="padding: 0 30px 40px; text-align: center;">
+                        <p style="margin: 0 0 10px 0; font-family: Arial, sans-serif; font-size: 14px; color: #9ca3af;">
                             ${t.questions}
                         </p>
-                        <p style="margin: 8px 0 0 0;">
-                            <a href="mailto:apollotechsro@gmail.com" style="font-family: Arial, sans-serif; font-size: 15px; color: #7c3aed; font-weight: bold; text-decoration: none;">
-                                apollotechsro@gmail.com
-                            </a>
-                        </p>
+                        <a href="mailto:apollotechsro@gmail.com" style="font-family: Arial, sans-serif; font-size: 15px; color: #fbbf24; font-weight: bold;">
+                            apollotechsro@gmail.com
+                        </a>
                     </td>
                 </tr>
 
                 <!-- Footer -->
                 <tr>
-                    <td style="background-color: #0f0f23; padding: 35px 30px; text-align: center;">
-                        <!-- Stars -->
-                        <p style="margin: 0 0 20px 0; font-size: 12px; color: #fbbf24; letter-spacing: 6px;">✦ ✧ ✦ ✧ ✦</p>
-                        <!-- Logo -->
-                        <img src="https://astralo.online/logo.png" width="100" height="auto" alt="Astralo" style="opacity: 0.7; margin-bottom: 20px;">
-                        <!-- Company Info -->
-                        <p style="margin: 0 0 8px 0; font-family: Arial, sans-serif; font-size: 12px; color: #6b7280;">
-                            Apollo Tech s.r.o. · Slovakia, EU
+                    <td style="background-color: #0a0a1a; padding: 40px 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+                        <img src="https://astralo.online/logo.png" width="120" height="auto" alt="Astralo" style="opacity: 0.5; margin-bottom: 25px;">
+                        <p style="margin: 0 0 8px 0; font-family: Arial, sans-serif; font-size: 11px; color: #6b7280; letter-spacing: 1px; text-transform: uppercase;">
+                            Apollo Tech s.r.o. • Slovakia, European Union
                         </p>
-                        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 12px; color: #4b5563;">
+                        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 11px; color: #4b5563;">
                             © ${new Date().getFullYear()} Astralo. ${t.copyright}.
                         </p>
+                        <div style="margin-top: 25px; font-size: 12px; color: #fbbf24; opacity: 0.5; letter-spacing: 8px;">
+                            ★ ☆ ★
+                        </div>
                     </td>
                 </tr>
-
-                <!-- Bottom Decorative Bar -->
-                <tr>
-                    <td style="background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%); background-color: #fbbf24; height: 4px; font-size: 0; line-height: 0;">&nbsp;</td>
-                </tr>
-
             </table>
 
             <!--[if mso]>
             </td></tr></table>
             <![endif]-->
         </div>
-
-    <!--[if mso | IE]>
-    </td></tr></table>
-    <![endif]-->
     </center>
 </body>
 </html>
