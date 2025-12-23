@@ -52,7 +52,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     <!-- Main Dashboard -->
     <main id="dashboardContainer" class="max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-8 hidden">
       <!-- Date Filter Buttons -->
-      <div class="bg-black/50 backdrop-blur-xl rounded-xl p-3 sm:p-4 border border-white/10 mb-4 sm:mb-6">
+      <div class="bg-black/50 backdrop-blur-xl rounded-xl p-3 sm:p-4 border border-white/10 mb-4 sm:mb-6 relative z-20">
         <div class="flex flex-wrap items-center gap-2">
           <div class="flex items-center gap-1 sm:gap-2 mr-2">
             <Calendar class="w-4 h-4 text-amber-400" />
@@ -82,7 +82,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
               <span>Month</span>
               <ChevronDown class="w-3 h-3" />
             </button>
-            <div id="monthDropdown" class="dropdown-menu absolute top-full left-0 mt-1 bg-[#1a1a2e]/95 backdrop-blur-xl border border-white/20 rounded-lg shadow-2xl z-50 hidden min-w-[150px] max-h-64 overflow-y-auto py-1">
+            <div id="monthDropdown" class="dropdown-menu absolute top-full left-0 mt-1 bg-[#0d0d1a] border border-amber-500/30 rounded-lg shadow-2xl hidden min-w-[160px] max-h-72 overflow-y-auto py-2" style="z-index: 9999;">
               <!-- Months will be populated dynamically -->
             </div>
           </div>
@@ -93,14 +93,14 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
               <span>Year</span>
               <ChevronDown class="w-3 h-3" />
             </button>
-            <div id="yearDropdown" class="dropdown-menu absolute top-full left-0 mt-1 bg-[#1a1a2e]/95 backdrop-blur-xl border border-white/20 rounded-lg shadow-2xl z-50 hidden min-w-[100px] py-1">
+            <div id="yearDropdown" class="dropdown-menu absolute top-full left-0 mt-1 bg-[#0d0d1a] border border-amber-500/30 rounded-lg shadow-2xl hidden min-w-[100px] py-2" style="z-index: 9999;">
               <!-- Years will be populated dynamically -->
             </div>
           </div>
         </div>
         
         <!-- Active filter display -->
-        <div id="activeFilterDisplay" class="mt-2 text-xs text-white/50 hidden">
+        <div id="activeFilterDisplay" class="mt-2 text-xs text-white/50">
           Showing: <span id="activeFilterText" class="text-amber-400">All Time</span>
         </div>
       </div>
@@ -426,11 +426,24 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     color: #fbbf24;
     border-color: rgba(251, 191, 36, 0.3);
   }
+  /* Dropdown button fixes */
+  .date-filter-btn:focus {
+    outline: none;
+  }
+  
+  .date-filter-btn svg {
+    flex-shrink: 0;
+  }
+  
+  /* Ensure hidden dropdowns are truly hidden */
+  .dropdown-menu.hidden {
+    display: none !important;
+  }
   
   .dropdown-menu {
     display: flex !important;
     flex-direction: column !important;
-    gap: 2px;
+    gap: 0;
   }
   
   .dropdown-menu::-webkit-scrollbar {
@@ -573,16 +586,10 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       activeBtn.classList.add('bg-amber-500/20', 'text-amber-400', 'border-amber-500/30');
     }
     
-    // Update active filter display
-    const displayEl = document.getElementById('activeFilterDisplay');
+    // Update active filter display - always show
     const textEl = document.getElementById('activeFilterText');
-    if (displayEl && textEl) {
-      if (currentDateFilter.label !== 'All Time') {
-        displayEl.classList.remove('hidden');
-        textEl.textContent = currentDateFilter.label;
-      } else {
-        displayEl.classList.add('hidden');
-      }
+    if (textEl) {
+      textEl.textContent = currentDateFilter.label;
     }
   }
   
@@ -1115,9 +1122,12 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   
   monthDropdownBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
+    e.preventDefault();
+    // First close year dropdown
+    yearDropdown?.classList.add('hidden');
+    // Then populate and toggle month dropdown
     populateMonthDropdown();
     monthDropdown?.classList.toggle('hidden');
-    yearDropdown?.classList.add('hidden');
   });
   
   // Year dropdown
@@ -1151,13 +1161,30 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   
   yearDropdownBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
+    e.preventDefault();
+    // First close month dropdown
+    monthDropdown?.classList.add('hidden');
+    // Then populate and toggle year dropdown
     populateYearDropdown();
     yearDropdown?.classList.toggle('hidden');
-    monthDropdown?.classList.add('hidden');
+  });
+  
+  // Prevent clicks inside dropdowns from closing them
+  monthDropdown?.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  
+  yearDropdown?.addEventListener('click', (e) => {
+    e.stopPropagation();
   });
   
   // Close dropdowns when clicking outside
-  document.addEventListener('click', () => {
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    // Don't close if clicking on dropdown buttons
+    if (target.closest('#monthDropdownBtn') || target.closest('#yearDropdownBtn')) {
+      return;
+    }
     monthDropdown?.classList.add('hidden');
     yearDropdown?.classList.add('hidden');
   });
