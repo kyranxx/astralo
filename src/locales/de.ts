@@ -23,25 +23,25 @@ const de: Translations = {
     },
     products: {
         daily: {
-            name: 'Tageshoroskop',
+            name: 'Tages\u00ADhoroskop',
             description: 'Ihr persönliches Tageshoroskop mit detaillierten Vorhersagen für die nächsten 24 Stunden',
             wordCount: '~200 Wörter',
             benefits: ['🍀 Glückszahl', '📅 Beste Zeit', '💎 Empfohlene Farbe', '⭐ Täglicher Rat'],
         },
         weekly: {
-            name: 'Wochenhoroskop',
+            name: 'Wochen\u00ADhoroskop',
             description: 'Umfassender Überblick über Ihre Woche mit wichtigen Terminen und Empfehlungen',
             wordCount: '~400 Wörter',
             benefits: ['✅ Alles vom Tageshoroskop', '🎯 Glückstag', '💰 Finanzvorhersage', '❤️ Liebe & Karriere'],
         },
         monthly: {
-            name: 'Monatshoroskop',
+            name: 'Monats\u00ADhoroskop',
             description: 'Detaillierte Monatsanalyse mit wichtigen Ereignissen und Chancen',
             wordCount: '~1000 Wörter',
             benefits: ['✅ Alles vom Wochenhoroskop', '🌟 Bester Tag des Monats', '💎 Glückssteine', '🌈 Energiewellen'],
         },
         partner: {
-            name: 'Partnerhoroskop',
+            name: 'Partner\u00ADhoroskop',
             description: 'Tiefe Analyse Ihrer Beziehung und Kompatibilität durch Synastrie',
             wordCount: '~1200 Wörter',
             benefits: ['💕 Kompatibilitätswert', '🔮 Beziehungsstärken', '⚠️ Wachstumsbereiche', '💫 Gemeinsame Zukunft'],

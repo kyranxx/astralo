@@ -29,19 +29,19 @@ const sv: Translations = {
             benefits: ['🍀 Lyckotal', '📅 Bästa tiden', '💎 Rekommenderad färg', '⭐ Dagens råd'],
         },
         weekly: {
-            name: 'Veckohoroskop',
+            name: 'Vecko\u00ADhoroskop',
             description: 'Komplett veckoöversikt med viktiga datum och rekommendationer',
             wordCount: '~400 ord',
             benefits: ['✅ Allt från dagligt', '💰 Ekonomisk prognos', '❤️ Kärlek och relationer', '💼 Karriärråd'],
         },
         monthly: {
-            name: 'Månadshoroskop',
+            name: 'Månads\u00ADhoroskop',
             description: 'Detaljerad månadsanalys med viktiga händelser och möjligheter',
             wordCount: '~1000 ord',
             benefits: ['✅ Allt från veckovis', '💎 Lyckostenar', '🌈 Energivågor', '🎨 Lyckofärger'],
         },
         partner: {
-            name: 'Partnerhoroskop',
+            name: 'Partner\u00ADhoroskop',
             description: 'Djup analys av ditt förhållande och kompatibilitet genom synastri',
             wordCount: '~1200 ord',
             benefits: ['💕 Kompatibilitetspoäng', '🔮 Relationsstyrkor', '⚠️ Tillväxtområden', '💫 Gemensam framtid'],

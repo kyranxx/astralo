@@ -23,19 +23,19 @@ const nl: Translations = {
     },
     products: {
         daily: {
-            name: 'Daghoroscoop',
+            name: 'Dag\u00ADhoroscoop',
             description: 'Je persoonlijke daghoroscoop met gedetailleerde voorspellingen voor de komende 24 uur',
             wordCount: '~200 woorden',
             benefits: ['🍀 Geluksgetal', '📅 Beste moment', '💎 Aanbevolen kleur', '⭐ Dagelijks advies'],
         },
         weekly: {
-            name: 'Weekhoroscoop',
+            name: 'Week\u00ADhoroscoop',
             description: 'Volledig overzicht van je week met belangrijke data en aanbevelingen',
             wordCount: '~400 woorden',
             benefits: ['✅ Alles van dagelijks', '🎯 Geluksdag', '💰 Financiële voorspelling', '❤️ Liefde & carrière'],
         },
         monthly: {
-            name: 'Maandhoroscoop',
+            name: 'Maand\u00ADhoroscoop',
             description: 'Gedetailleerde maandanalyse met belangrijke gebeurtenissen en kansen',
             wordCount: '~1000 woorden',
             benefits: ['✅ Alles van wekelijks', '🌟 Beste dag van de maand', '💎 Geluksstenen', '🌈 Energiegolven'],

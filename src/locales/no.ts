@@ -29,19 +29,19 @@ const no: Translations = {
             benefits: ['🍀 Lykketall', '📅 Beste tid', '💎 Anbefalt farge', '⭐ Dagens råd'],
         },
         weekly: {
-            name: 'Ukehoroskop',
+            name: 'Uke\u00ADhoroskop',
             description: 'Komplett ukeoversikt med viktige datoer og anbefalinger',
             wordCount: '~400 ord',
             benefits: ['✅ Alt fra daglig', '💰 Økonomisk prognose', '❤️ Kjærlighet og forhold', '💼 Karriereråd'],
         },
         monthly: {
-            name: 'Månedshoroskop',
+            name: 'Måneds\u00ADhoroskop',
             description: 'Detaljert månedsanalyse med viktige hendelser og muligheter',
             wordCount: '~1000 ord',
             benefits: ['✅ Alt fra ukentlig', '💎 Lykkesteiner', '🌈 Energibølger', '🎨 Lykkefarger'],
         },
         partner: {
-            name: 'Partnerhoroskop',
+            name: 'Partner\u00ADhoroskop',
             description: 'Dyp analyse av forholdet ditt og kompatibilitet gjennom synastri',
             wordCount: '~1200 ord',
             benefits: ['💕 Kompatibilitetsscore', '🔮 Forholdsstyrker', '⚠️ Vekstområder', '💫 Felles fremtid'],
