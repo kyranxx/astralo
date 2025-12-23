@@ -568,7 +568,8 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
         if (isRTL) {
             await new Promise(resolve => setTimeout(resolve, 3000));
         } else {
-            await new Promise(resolve => setTimeout(resolve, 500));
+            // Increased from 500ms to 1500ms to avoid empty PNG issue
+            await new Promise(resolve => setTimeout(resolve, 1500));
         }
 
         // Get the actual content height
@@ -661,7 +662,7 @@ export async function generateHoroscopeImage(data: HoroscopeImageData): Promise<
                     });
                 }
                 await page.evaluate(() => document.fonts.ready);
-                await new Promise(resolve => setTimeout(resolve, isRTL ? 4000 : 300));
+                await new Promise(resolve => setTimeout(resolve, isRTL ? 4000 : 1000)); // Increased for non-RTL
 
                 // For RTL, don't use clip as it can cause rendering issues
                 let buffer: Buffer;

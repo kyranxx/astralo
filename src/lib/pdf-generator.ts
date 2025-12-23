@@ -185,7 +185,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             };
 
             // Draw 5 stars pattern - all same size, same Y for perfect alignment
-            const starY = height - 18;
+            const starY = height - 12; // Moved higher (was height - 18)
             const centerX = width / 2;
             const spacing = 22;
             const starSize = 9; // All stars same size
@@ -267,22 +267,22 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             selectedIconPath = iconPathCookie;
         }
 
-        // Draw Icon (centered) - positioned above title with proper spacing
+        // Draw Icon (centered) - positioned higher above title
         const iconSize = 48;
         const iconScale = iconSize / 24;
         const iconX = (width) / 2 - (12 * iconScale);
 
-        // Draw outlined icon for more elegance
+        // Draw outlined icon for more elegance - moved higher
         currentPage.drawSvgPath(selectedIconPath, {
             x: iconX,
-            y: y - 10, // Balanced position above title
+            y: y + 5, // Higher position (was y - 10)
             scale: iconScale,
             borderColor: gold,
             borderWidth: 1.5,
             color: undefined, // No fill, just outline
         });
 
-        y -= 70; // Proper spacing below icon
+        y -= 75; // Proper spacing below icon for title
 
         // Document title - larger and bolder
         const titleWidth = boldFont.widthOfTextAtSize(title, 22);
