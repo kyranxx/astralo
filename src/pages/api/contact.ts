@@ -21,6 +21,8 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Verify hCaptcha token
     const hcaptchaSecret = import.meta.env.HCAPTCHA_SECRET;
+    console.log('Contact form: hCaptcha check - secret exists:', !!hcaptchaSecret, 'token exists:', !!hcaptchaToken);
+
     if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && hcaptchaToken) {
         try {
             const verifyResponse = await fetch('https://api.hcaptcha.com/siteverify', {
@@ -29,6 +31,7 @@ export const POST: APIRoute = async ({ request }) => {
                 body: `response=${hcaptchaToken}&secret=${hcaptchaSecret}`,
             });
             const verifyResult = await verifyResponse.json();
+            console.log('hCaptcha verification result:', JSON.stringify(verifyResult));
 
             if (!verifyResult.success) {
                 console.error('hCaptcha verification failed:', verifyResult);
@@ -39,7 +42,10 @@ export const POST: APIRoute = async ({ request }) => {
             // Allow through if hCaptcha service is down
         }
     } else if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && !hcaptchaToken) {
+        console.log('Contact form: No captcha token provided');
         return new Response(JSON.stringify({ error: 'Please complete the captcha' }), { status: 400 });
+    } else if (!hcaptchaSecret) {
+        console.log('Contact form: No HCAPTCHA_SECRET configured, skipping verification');
     }
 
     // Send email via SMTP (same as horoscope emails)
