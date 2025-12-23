@@ -135,6 +135,16 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         const lineHeight = 15;
         const maxWidth = width - (margin * 2);
 
+        // Load and embed logo image
+        let logoImage: any = null;
+        try {
+            const logoPath = join(process.cwd(), 'public', 'logo.png');
+            const logoBytes = await readFile(logoPath);
+            logoImage = await doc.embedPng(logoBytes);
+        } catch (e) {
+            console.log('Could not load logo for PDF, using text fallback');
+        }
+
         // Colors matching website
         const gold = rgb(0.984, 0.749, 0.141); // #fbbf24
         const darkBlue = rgb(0.102, 0.102, 0.180); // #1a1a2e
@@ -196,16 +206,29 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
             drawStar(centerX + spacing, starY, starSize, false);
             drawStar(centerX + spacing * 2, starY, starSize, true);
 
-            // Astralo text - adjusted Y to be lower and avoid overlap
-            const astraloText = 'ASTRALO';
-            const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 26);
-            page.drawText(astraloText, {
-                x: (width - astraloWidth) / 2,
-                y: height - 58,
-                size: 26,
-                font: boldFont,
-                color: gold,
-            });
+            // Astralo logo or text fallback
+            if (logoImage) {
+                // Draw logo image centered in header
+                const logoHeight = 35;
+                const logoWidth = (logoImage.width / logoImage.height) * logoHeight;
+                page.drawImage(logoImage, {
+                    x: (width - logoWidth) / 2,
+                    y: height - 65,
+                    width: logoWidth,
+                    height: logoHeight,
+                });
+            } else {
+                // Fallback to text if logo couldn't load
+                const astraloText = 'ASTRALO';
+                const astraloWidth = boldFont.widthOfTextAtSize(astraloText, 26);
+                page.drawText(astraloText, {
+                    x: (width - astraloWidth) / 2,
+                    y: height - 58,
+                    size: 26,
+                    font: boldFont,
+                    color: gold,
+                });
+            }
 
             // Document type subtitle
             const typeWidth = font.widthOfTextAtSize('Legal Document', 10);
@@ -464,37 +487,81 @@ Používame cookies na:
 Môžete kontrolovať a spravovať cookies v nastaveniach vášho prehliadača. Upozorňujeme, že deaktivácia cookies môže ovplyvniť funkcionalitu našej webovej stránky.
 `;
 
-    // ENGLISH LEGAL DOCUMENTS
+    // ENGLISH LEGAL DOCUMENTS (matching webapp content exactly)
     const termsContentEn = `
-1. Acceptance of Terms
-By accessing and using Astralo services (astralo.online), you accept and agree to be bound by the terms and provision of this agreement.
+IMPORTANT: This agreement is governed by the laws of the Slovak Republic and the European Union. By using our services, you agree to submit to the exclusive jurisdiction of Slovak courts.
+
+1. Company Information
+Apollo Tech s.r.o.
+Registered in Slovakia (EU)
+Email: apollotechsro@gmail.com
+Website: astralo.online
+
+These Terms of Service govern your use of the Astralo website and services operated by Apollo Tech s.r.o., a company registered under the laws of the Slovak Republic.
 
 2. Service Description
-Astralo provides personalized horoscope services including daily, weekly, monthly, and partner compatibility readings.
-All horoscope readings are generated using advanced algorithms based on astrological principles and the birth data you provide.
+Astralo provides personalized horoscope services including:
+- Daily Horoscope (€0.99)
+- Weekly Horoscope (€2.99)
+- Monthly Horoscope (€7.99)
+- Partner Compatibility Horoscope (€7.99)
 
-3. User Responsibilities
-- You must provide accurate birth information for horoscope generation
-- You are responsible for maintaining the confidentiality of your account
-- You agree not to misuse our services or violate any applicable laws
+All horoscopes are personalized based on the birth data you provide and are delivered digitally via email as PDF documents.
 
-4. Payment Terms
-All payments are processed securely through Stripe. Prices are listed in Euros (€) and include applicable taxes.
-Payment is required before horoscope delivery. All sales are final unless otherwise stated in our Refund Policy.
+3. Entertainment Purpose Disclaimer
+Our horoscope services are provided for entertainment purposes only. Astrological readings should not be relied upon for making important life decisions including but not limited to financial, medical, legal, or relationship decisions.
 
-5. Entertainment Purpose
-Our horoscope services are provided for entertainment purposes only. While we strive for accuracy, horoscopes should not be used as the sole basis for important life decisions.
+We make no guarantees regarding the accuracy or reliability of astrological predictions. Users acknowledge that astrology is not a science and results may vary.
 
-6. Intellectual Property
-All content, including horoscope readings, designs, and software, is owned by Apollo Tech s.r.o. and protected by copyright laws.
+4. User Requirements
+- You must be at least 18 years old or have parental consent
+- You must provide accurate birth information (date, time, place)
+- You must provide a valid email address for delivery
+- You agree not to redistribute or resell our content
 
-7. Limitation of Liability
-Astralo and Apollo Tech s.r.o. shall not be liable for any indirect, incidental, special, or consequential damages arising from use of our services.
+5. Payment Terms
+All payments are processed securely through Stripe, a certified PCI-DSS Level 1 payment processor.
+- Prices are displayed in Euros (€) and include all applicable taxes
+- Payment is required before horoscope generation and delivery
+- We accept major credit/debit cards (Visa, Mastercard, etc.)
+- Invoices are provided in English and sent to your email
 
-8. Contact Information
-Apollo Tech s.r.o.
-Slovakia
+6. Delivery
+Upon successful payment, your personalized horoscope will be:
+- Generated within 2-5 minutes
+- Delivered as a PDF to your email address
+- Available for download for 14 days
+
+If you do not receive your horoscope within 30 minutes, please contact us at apollotechsro@gmail.com.
+
+7. Refund Policy
+Due to the digital and personalized nature of our products, refunds are handled on a case-by-case basis. Please see our Refund Policy for full details.
+
+In accordance with EU consumer protection laws, you have the right to withdraw from a purchase within 14 days, unless the digital content has already been delivered with your prior consent.
+
+8. Intellectual Property
+All content including horoscope readings, website design, logos, and software is owned by Apollo Tech s.r.o. and protected by Slovak and international copyright laws.
+
+You may not copy, distribute, or commercially use any content without written permission.
+
+9. Limitation of Liability
+To the maximum extent permitted by Slovak and EU law:
+- Apollo Tech s.r.o. shall not be liable for any indirect, incidental, or consequential damages
+- Our maximum liability is limited to the amount you paid for the service
+- We do not guarantee uninterrupted or error-free service
+
+10. Governing Law
+These Terms are governed by and construed in accordance with the laws of the Slovak Republic and applicable European Union regulations.
+
+Any disputes shall be resolved exclusively in the courts of the Slovak Republic, without prejudice to your rights under EU consumer protection laws.
+
+11. Changes to Terms
+We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. Continued use of our services constitutes acceptance of modified terms.
+
+12. Contact
+For questions about these Terms, please contact us at:
 Email: apollotechsro@gmail.com
+Company: Apollo Tech s.r.o., Slovakia
 `;
 
     const privacyContentEn = `
