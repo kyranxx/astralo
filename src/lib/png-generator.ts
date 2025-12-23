@@ -293,20 +293,20 @@ function generatePageHtml(
         .stars-decoration { 
             color: #fbbf24; 
             font-size: 14px; 
-            margin-bottom: 12px; 
+            margin-bottom: 6px; 
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
         }
-        .star-icon { width: 12px; height: 12px; fill: #fbbf24; }
+        .star-icon { width: 10px; height: 10px; fill: #fbbf24; }
         .star-icon.outline { fill: none; stroke: #fbbf24; stroke-width: 2px; }
         
         .logo {
-            font-size: ${isFirstPage ? '42px' : '28px'};
-            font-weight: 700;
-            color: #fbbf24;
-            text-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
-            letter-spacing: 3px;
+            margin: 5px 0;
+        }
+        .logo img {
+            height: ${isFirstPage ? '50px' : '35px'};
+            width: auto;
         }
         
         .subtitle { font-size: 14px; color: rgba(255, 255, 255, 0.7); margin-top: 8px; }
@@ -442,7 +442,7 @@ function generatePageHtml(
                     <svg class="star-icon outline" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 </div>
-                <div class="logo">ASTRALO</div>
+                <div class="logo"><img src="https://astralo.online/logo.png" alt="Astralo" /></div>
                 ${isFirstPage ? `<div class="subtitle">${escapeHtml(labels.personalHoroscope)}</div>` : ''}
             </div>
             
