@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
 export const POST: APIRoute = async ({ request }) => {
     let data;
@@ -42,20 +42,28 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({ error: 'Please complete the captcha' }), { status: 400 });
     }
 
-    // Send email via Resend
-    const resendKey = import.meta.env.RESEND_API_KEY;
-    if (!resendKey) {
-        console.error('RESEND_API_KEY not configured');
+    // Send email via SMTP (same as horoscope emails)
+    const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
+    if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+        console.error('SMTP configuration missing');
         return new Response(JSON.stringify({ error: 'Email service not configured' }), { status: 500 });
     }
 
-    const resend = new Resend(resendKey);
+    const transporter = nodemailer.createTransport({
+        host: SMTP_HOST,
+        port: Number(SMTP_PORT) || 587,
+        secure: Number(SMTP_PORT) === 465,
+        auth: {
+            user: SMTP_USER,
+            pass: SMTP_PASS,
+        },
+    });
 
     try {
         // Send to the owner
-        await resend.emails.send({
-            from: 'Astralo Contact <noreply@astralo.online>',
-            to: ['apollotechsro@gmail.com'],
+        await transporter.sendMail({
+            from: `"Astralo Contact" <${SMTP_USER}>`,
+            to: 'apollotechsro@gmail.com',
             replyTo: email,
             subject: `[Astralo Contact] ${subject} - from ${name}`,
             html: `
@@ -77,9 +85,9 @@ export const POST: APIRoute = async ({ request }) => {
         });
 
         // Send confirmation to customer
-        await resend.emails.send({
-            from: 'Astralo <noreply@astralo.online>',
-            to: [email],
+        await transporter.sendMail({
+            from: `"Astralo" <${SMTP_USER}>`,
+            to: email,
             subject: 'We received your message - Astralo',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
