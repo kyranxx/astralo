@@ -202,11 +202,11 @@ const testimonials = [
                   </div>
 
                   {/* Benefits List - Hidden on mobile for compact view, show on sm+ */}
-                  <div class="hidden sm:block space-y-1.5 mb-6 min-h-[5.5rem]">
+                  <div class="hidden sm:block space-y-2 mb-6 min-h-[5.5rem]">
                     {type.benefits.slice(0, 4).map((benefit) => (
                       <div class="flex items-center gap-2 text-white/70 group-hover:text-white/90 transition-colors">
-                        <span class="text-sm flex-shrink-0">{benefit.split(' ')[0]}</span>
-                        <span class="text-[10px] sm:text-xs font-medium truncate">
+                        <span class="text-base flex-shrink-0">{benefit.split(' ')[0]}</span>
+                        <span class="text-sm font-medium truncate">
                           {benefit.split(' ').slice(1).join(' ')}
                         </span>
                       </div>
@@ -214,7 +214,7 @@ const testimonials = [
                   </div>
 
                   {/* Mobile: Show only 2 benefits with larger text */}
-                  <div class="sm:hidden space-y-1.5 mb-3 text-[11px] min-h-[2.5rem]">
+                  <div class="sm:hidden space-y-2 mb-3 text-xs min-h-[2.5rem]">
                     {type.benefits.slice(0, 2).map((benefit) => (
                       <div class="flex items-center gap-1.5 text-white/70">
                         <span class="flex-shrink-0">{benefit.split(' ')[0]}</span>
