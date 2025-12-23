@@ -77,32 +77,32 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         </div>
 
         <!-- Top Country - Clickable -->
-        <div id="topCountryCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-purple-500/30 transition-all">
+        <div id="topCountryCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-amber-500/30 transition-all group">
           <div class="flex items-center justify-between mb-2">
             <p class="text-white/60 text-xs sm:text-sm">Top Country</p>
             <Globe class="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
           </div>
           <h3 class="text-lg sm:text-xl font-bold text-white truncate" id="topCountry">-</h3>
           <p class="text-xs text-white/40 mt-1" id="topCountryStats">-</p>
-          <p class="text-[10px] text-purple-400 mt-1">Click for all →</p>
+          <p class="text-[10px] text-amber-400/70 group-hover:text-amber-400 mt-1 transition-colors">Click for all →</p>
         </div>
 
         <!-- Top Product - Clickable -->
-        <div id="topProductCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-amber-500/30 transition-all">
+        <div id="topProductCard" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 cursor-pointer hover:bg-black/60 hover:border-amber-500/30 transition-all group">
           <div class="flex items-center justify-between mb-2">
             <p class="text-white/60 text-xs sm:text-sm">Best Seller</p>
             <Star class="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
           </div>
           <h3 class="text-sm sm:text-lg font-bold text-white truncate" id="topProduct">-</h3>
           <p class="text-xs text-white/40 mt-1" id="topProductStats">-</p>
-          <p class="text-[10px] text-amber-400 mt-1">Click for all →</p>
+          <p class="text-[10px] text-amber-400/70 group-hover:text-amber-400 mt-1 transition-colors">Click for all →</p>
         </div>
       </div>
 
       <!-- Charts Row -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
         <!-- Revenue Chart -->
-        <div class="lg:col-span-2 bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-6 border border-white/10">
+        <div class="lg:col-span-2 bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-6 border border-white/10 relative overflow-hidden">
           <div class="flex items-center justify-between mb-4">
             <div>
               <h2 class="text-base sm:text-lg font-bold text-white">Revenue</h2>
@@ -110,37 +110,41 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
             </div>
             <TrendingUp class="w-5 h-5 text-green-500" />
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-3 relative z-10">
             <!-- Y-axis labels -->
-            <div class="flex flex-col justify-between text-[10px] sm:text-xs text-white/40 h-32 sm:h-40 py-1" id="yAxisLabels">
+            <div class="flex flex-col justify-between text-[10px] sm:text-xs text-white/50 h-32 sm:h-40 py-1 min-w-[45px] text-right" id="yAxisLabels">
               <span id="yMax">€0</span>
               <span id="yMid">€0</span>
               <span>€0</span>
             </div>
             <!-- Chart bars -->
-            <div class="flex-1 flex items-end gap-1 sm:gap-2 h-32 sm:h-40" id="revenueChart">
-              <div class="flex-1 bg-amber-500/20 rounded-t h-1/4"></div>
-              <div class="flex-1 bg-amber-500/20 rounded-t h-1/3"></div>
-              <div class="flex-1 bg-amber-500/20 rounded-t h-1/2"></div>
-              <div class="flex-1 bg-amber-500/20 rounded-t h-1/4"></div>
-              <div class="flex-1 bg-amber-500/20 rounded-t h-2/3"></div>
-              <div class="flex-1 bg-amber-500/20 rounded-t h-3/4"></div>
-              <div class="flex-1 bg-amber-500/30 rounded-t h-full"></div>
+            <div class="flex-1 flex items-end gap-1 sm:gap-2 h-32 sm:h-40 border-l border-b border-white/10 pl-2 pb-1" id="revenueChart">
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
+              <div class="chart-bar-skeleton"></div>
             </div>
           </div>
-          <div class="flex pl-8 justify-between text-[10px] sm:text-xs text-white/40 overflow-x-auto" id="revenueLabels">
+          <div class="flex pl-[52px] sm:pl-[56px] justify-between text-[10px] sm:text-xs text-white/40 mt-2" id="revenueLabels">
             <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
             <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
             <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
           </div>
-        </div>
+          <!-- Tooltip for chart -->
+          <div id="chartTooltip" class="absolute hidden bg-black/90 text-white text-xs px-2 py-1 rounded pointer-events-none z-20 border border-amber-500/30"></div>
         </div>
 
         <!-- Countries -->
         <div class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-6 border border-white/10">
           <h2 class="text-base sm:text-lg font-bold text-white mb-4">By Country</h2>
           <div class="space-y-3" id="countryList">
-            <p class="text-white/50 text-sm">No data yet</p>
+            <!-- Loading skeleton -->
+            <div class="country-skeleton"></div>
+            <div class="country-skeleton"></div>
+            <div class="country-skeleton"></div>
           </div>
         </div>
       </div>
@@ -179,20 +183,21 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           <table class="w-full">
             <thead>
               <tr class="border-b border-white/10">
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">ID</th>
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">Customer</th>
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">Product</th>
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">Country</th>
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">Date</th>
-                <th class="text-left text-white/60 text-xs font-medium pb-3 pr-3">Status</th>
-                <th class="text-right text-white/60 text-xs font-medium pb-3 pr-3">Amount</th>
-                <th class="text-center text-white/60 text-xs font-medium pb-3">Actions</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">ID</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Customer</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Product</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Country</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Date</th>
+                <th class="text-left text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Status</th>
+                <th class="text-right text-white/60 text-xs font-medium uppercase tracking-wider pb-3 pr-3">Amount</th>
+                <th class="text-center text-white/60 text-xs font-medium uppercase tracking-wider pb-3">Actions</th>
               </tr>
             </thead>
             <tbody id="ordersTableBody" class="text-sm">
-              <tr>
-                <td colspan="8" class="py-6 text-center text-white/50">Loading...</td>
-              </tr>
+              <!-- Loading skeleton rows -->
+              <tr class="border-b border-white/5"><td colspan="8" class="py-4"><div class="table-skeleton"></div></td></tr>
+              <tr class="border-b border-white/5"><td colspan="8" class="py-4"><div class="table-skeleton"></div></td></tr>
+              <tr class="border-b border-white/5"><td colspan="8" class="py-4"><div class="table-skeleton"></div></td></tr>
             </tbody>
           </table>
         </div>
@@ -287,6 +292,78 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   select option {
     background-color: #1a1a2e;
     color: white;
+  }
+  
+  /* Loading skeleton animations */
+  .chart-bar-skeleton {
+    flex: 1;
+    background: linear-gradient(90deg, rgba(251, 191, 36, 0.1) 0%, rgba(251, 191, 36, 0.2) 50%, rgba(251, 191, 36, 0.1) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px 4px 0 0;
+    height: 40%;
+  }
+  
+  .country-skeleton {
+    height: 48px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.05) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+  }
+  
+  .table-skeleton {
+    height: 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.05) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  /* Chart bar hover effect */
+  .chart-bar {
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  
+  .chart-bar:hover {
+    filter: brightness(1.3);
+    transform: scaleY(1.02);
+    transform-origin: bottom;
+  }
+  
+  /* Status badges */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .status-completed {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+  }
+  
+  .status-refunded {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+  }
+  
+  .status-pending {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.3);
   }
 </style>
 
@@ -430,30 +507,60 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         if (yMax) yMax.textContent = `€${Math.round(maxRevenue)}`;
         if (yMid) yMid.textContent = `€${Math.round(maxRevenue / 2)}`;
         
-        chartContainer.innerHTML = stats.monthlyData.map((m: any) => {
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        chartContainer.innerHTML = stats.monthlyData.map((m: any, i: number) => {
           const height = Math.max((m.revenue / maxRevenue) * 100, 5);
-          return `<div class="flex-1 bg-amber-500/20 hover:bg-amber-500/30 rounded-t transition-colors cursor-pointer" style="height: ${height}%" title="€${m.revenue.toFixed(0)}"></div>`;
+          const month = parseInt(m.month.split('-')[1]) - 1;
+          return `<div class="chart-bar flex-1 bg-gradient-to-t from-amber-500/30 to-amber-400/50 hover:from-amber-500/50 hover:to-amber-400/70 rounded-t cursor-pointer" style="height: ${height}%" data-revenue="€${m.revenue.toFixed(2)}" data-month="${monthNames[month]} ${m.month.split('-')[0]}"></div>`;
         }).join('');
         
-        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         labelsContainer.innerHTML = stats.monthlyData.map((m: any) => {
           const month = parseInt(m.month.split('-')[1]) - 1;
           return `<span>${monthNames[month]}</span>`;
         }).join('');
+        
+        // Add tooltip functionality
+        const tooltip = document.getElementById('chartTooltip');
+        chartContainer.querySelectorAll('.chart-bar').forEach(bar => {
+          bar.addEventListener('mouseenter', (e) => {
+            const target = e.target as HTMLElement;
+            if (tooltip) {
+              tooltip.textContent = `${target.dataset.month}: ${target.dataset.revenue}`;
+              tooltip.classList.remove('hidden');
+            }
+          });
+          bar.addEventListener('mousemove', (e) => {
+            const event = e as MouseEvent;
+            if (tooltip) {
+              const rect = chartContainer.getBoundingClientRect();
+              tooltip.style.left = `${event.clientX - rect.left + 10}px`;
+              tooltip.style.top = `${event.clientY - rect.top - 30}px`;
+            }
+          });
+          bar.addEventListener('mouseleave', () => {
+            if (tooltip) tooltip.classList.add('hidden');
+          });
+        });
       }
       
-      // Countries
+      // Countries - with improved styling
       const countryList = document.getElementById('countryList')!;
       if (stats.revenueByCountry.length > 0) {
-        countryList.innerHTML = stats.revenueByCountry.slice(0, 5).map((c: any) => `
-          <div class="flex items-center justify-between">
-            <div>
-              <p class="text-white text-sm">${c.country}</p>
-              <p class="text-white/40 text-xs">${c.orders} orders</p>
+        countryList.innerHTML = stats.revenueByCountry.slice(0, 5).map((c: any, i: number) => `
+          <div class="flex items-center justify-between p-2 rounded-lg ${i === 0 ? 'bg-amber-500/10 border border-amber-500/20' : 'hover:bg-white/5'} transition-colors">
+            <div class="flex items-center gap-2">
+              <span class="text-white/40 text-xs w-4">${i + 1}.</span>
+              <div>
+                <p class="text-white text-sm font-medium">${c.country}</p>
+                <p class="text-white/40 text-xs">${c.orders} orders</p>
+              </div>
             </div>
-            <div class="text-amber-400 font-bold text-sm">€${c.revenue.toFixed(0)}</div>
+            <div class="text-green-400 font-bold text-sm">€${c.revenue.toFixed(0)}</div>
           </div>
         `).join('');
+      } else {
+        countryList.innerHTML = '<p class="text-white/50 text-sm text-center py-4">No data yet</p>';
       }
     } catch (error) {
       console.error('Stats error:', error);
@@ -484,26 +591,26 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       } else {
         // Desktop rows
         tbody.innerHTML = data.orders.map((order: any) => {
-          const statusClass = order.status === 'completed' ? 'text-green-400' : order.status === 'refunded' ? 'text-red-400' : 'text-amber-400';
-          const date = new Date(order.createdAt).toLocaleDateString();
+          const statusBadgeClass = order.status === 'completed' ? 'status-completed' : order.status === 'refunded' ? 'status-refunded' : 'status-pending';
+          const date = new Date(order.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' });
           const amount = (order.amount / 100).toFixed(2);
           
           return `
-            <tr class="border-b border-white/5 hover:bg-white/5 cursor-pointer" onclick="openOrderDetail('${order.id}')">
-              <td class="py-3 pr-3 text-white/60 text-xs font-mono">${order.id.slice(-8)}</td>
-              <td class="py-3 pr-3">
-                <p class="text-white text-sm">${order.customerName}</p>
+            <tr class="border-b border-white/5 hover:bg-white/5 cursor-pointer transition-colors" onclick="openOrderDetail('${order.id}')">
+              <td class="py-4 pr-3 text-white/50 text-xs font-mono">#${order.id.slice(-8).toUpperCase()}</td>
+              <td class="py-4 pr-3">
+                <p class="text-white text-sm font-medium">${order.customerName}</p>
                 <p class="text-white/40 text-xs">${order.customerEmail}</p>
               </td>
-              <td class="py-3 pr-3 text-white/80 text-sm">${order.productName}</td>
-              <td class="py-3 pr-3 text-white/60 text-sm">${order.country || '-'}</td>
-              <td class="py-3 pr-3 text-white/50 text-sm">${date}</td>
-              <td class="py-3 pr-3"><span class="${statusClass} text-sm">${order.status}</span></td>
-              <td class="py-3 pr-3 text-right text-white font-medium">€${amount}</td>
-              <td class="py-3 text-center" onclick="event.stopPropagation()">
-                <button onclick="openOrderDetail('${order.id}')" class="p-1.5 rounded bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 text-xs mr-1" title="View">👁</button>
+              <td class="py-4 pr-3 text-amber-300/90 text-sm">${order.productName}</td>
+              <td class="py-4 pr-3 text-white/60 text-sm">${order.country || '-'}</td>
+              <td class="py-4 pr-3 text-white/50 text-sm">${date}</td>
+              <td class="py-4 pr-3"><span class="status-badge ${statusBadgeClass}">${order.status}</span></td>
+              <td class="py-4 pr-3 text-right text-green-400 font-semibold">€${amount}</td>
+              <td class="py-4 text-center" onclick="event.stopPropagation()">
+                <button onclick="openOrderDetail('${order.id}')" class="p-1.5 rounded-lg bg-white/5 text-white/60 hover:bg-white/10 hover:text-white text-xs mr-1 transition-colors" title="View">👁</button>
                 ${order.status === 'completed' ? `
-                  <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1.5 rounded bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs" title="Refund">↩</button>
+                  <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1.5 rounded-lg bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs transition-colors" title="Refund">↩</button>
                 ` : ''}
               </td>
             </tr>
@@ -512,26 +619,26 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         
         // Mobile cards
         mobileCards.innerHTML = data.orders.map((order: any) => {
-          const statusClass = order.status === 'completed' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400';
-          const date = new Date(order.createdAt).toLocaleDateString();
+          const statusBadgeClass = order.status === 'completed' ? 'status-completed' : order.status === 'refunded' ? 'status-refunded' : 'status-pending';
+          const date = new Date(order.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' });
           const amount = (order.amount / 100).toFixed(2);
           
           return `
-            <div class="bg-white/5 rounded-lg p-3 border border-white/10 cursor-pointer hover:bg-white/10" onclick="openOrderDetail('${order.id}')">
-              <div class="flex justify-between items-start mb-2">
+            <div class="bg-white/5 rounded-xl p-4 border border-white/10 cursor-pointer hover:bg-white/10 hover:border-white/20 transition-all" onclick="openOrderDetail('${order.id}')">
+              <div class="flex justify-between items-start mb-3">
                 <div>
-                  <p class="text-white font-medium text-sm">${order.customerName}</p>
-                  <p class="text-white/40 text-xs">${order.productName}</p>
+                  <p class="text-white font-medium">${order.customerName}</p>
+                  <p class="text-amber-300/80 text-sm">${order.productName}</p>
                 </div>
-                <span class="${statusClass} text-xs px-2 py-0.5 rounded">${order.status}</span>
+                <span class="status-badge ${statusBadgeClass}">${order.status}</span>
               </div>
               <div class="flex justify-between items-center">
                 <span class="text-white/50 text-xs">${date} · ${order.country || '-'}</span>
                 <div class="flex items-center gap-2" onclick="event.stopPropagation()">
-                  <span class="text-amber-400 font-bold">€${amount}</span>
-                  <button onclick="openOrderDetail('${order.id}')" class="p-1 rounded bg-blue-500/20 text-blue-400 text-xs">👁</button>
+                  <span class="text-green-400 font-bold">€${amount}</span>
+                  <button onclick="openOrderDetail('${order.id}')" class="p-1.5 rounded-lg bg-white/10 text-white/60 hover:text-white text-xs transition-colors">👁</button>
                   ${order.status === 'completed' ? `
-                    <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1 rounded bg-red-500/20 text-red-400 text-xs">↩</button>
+                    <button onclick="openRefundModal('${order.id}', '€${amount}')" class="p-1.5 rounded-lg bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs transition-colors">↩</button>
                   ` : ''}
                 </div>
               </div>
