@@ -223,12 +223,22 @@ export async function findOrderById(orderId: string): Promise<Order | null> {
     return data ? rowToOrder(data) : null;
 }
 
-// Get statistics from Supabase
-export async function getStatistics() {
-    const { data: orders, error } = await supabase
+// Get statistics from Supabase with optional date filtering
+export async function getStatistics(startDate?: string, endDate?: string) {
+    let query = supabase
         .from('orders')
         .select('*')
         .order('created_at', { ascending: false });
+
+    // Apply date filters if provided
+    if (startDate) {
+        query = query.gte('created_at', startDate);
+    }
+    if (endDate) {
+        query = query.lte('created_at', endDate);
+    }
+
+    const { data: orders, error } = await query;
 
     if (error) {
         console.error('Error loading orders for statistics:', error);
@@ -241,7 +251,9 @@ export async function getStatistics() {
             revenueByCountry: [],
             revenueByProduct: [],
             monthlyData: [],
-            lastUpdated: new Date().toISOString()
+            dailyData: [],
+            lastUpdated: new Date().toISOString(),
+            dateRange: { startDate, endDate }
         };
     }
 
@@ -283,13 +295,25 @@ export async function getStatistics() {
         last12Months[key] = { revenue: 0, orders: 0 };
     }
 
+    // Daily data for the filtered period
+    const dailyData: Record<string, { revenue: number; orders: number }> = {};
+
     completedOrders.forEach(order => {
         const date = new Date(order.createdAt);
-        const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-        if (last12Months[key]) {
-            last12Months[key].revenue += order.amount;
-            last12Months[key].orders += 1;
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        const dayKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+        if (last12Months[monthKey]) {
+            last12Months[monthKey].revenue += order.amount;
+            last12Months[monthKey].orders += 1;
         }
+
+        // Track daily data
+        if (!dailyData[dayKey]) {
+            dailyData[dayKey] = { revenue: 0, orders: 0 };
+        }
+        dailyData[dayKey].revenue += order.amount;
+        dailyData[dayKey].orders += 1;
     });
 
     return {
@@ -319,6 +343,14 @@ export async function getStatistics() {
                 revenue: data.revenue / 100,
                 orders: data.orders
             })),
+        dailyData: Object.entries(dailyData)
+            .map(([day, data]) => ({
+                day,
+                revenue: data.revenue / 100,
+                orders: data.orders
+            }))
+            .sort((a, b) => a.day.localeCompare(b.day)),
+        dateRange: { startDate, endDate },
         lastUpdated: new Date().toISOString()
     };
 }

@@ -23,7 +23,9 @@ export const GET: APIRoute = async ({ url }) => {
     try {
         switch (action) {
             case 'stats':
-                const stats = await getStatistics();
+                const startDate = url.searchParams.get('startDate') || undefined;
+                const endDate = url.searchParams.get('endDate') || undefined;
+                const stats = await getStatistics(startDate, endDate);
                 return new Response(JSON.stringify(stats), {
                     headers: { 'Content-Type': 'application/json' }
                 });

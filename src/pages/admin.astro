@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut } from 'lucide-astro';
+import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut, Calendar, ChevronDown } from 'lucide-astro';
 ---
 
 <Layout title="Admin Dashboard - Astralo" backgroundImage="/background4.png">
@@ -51,6 +51,60 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
 
     <!-- Main Dashboard -->
     <main id="dashboardContainer" class="max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-8 hidden">
+      <!-- Date Filter Buttons -->
+      <div class="bg-black/50 backdrop-blur-xl rounded-xl p-3 sm:p-4 border border-white/10 mb-4 sm:mb-6">
+        <div class="flex flex-wrap items-center gap-2">
+          <div class="flex items-center gap-1 sm:gap-2 mr-2">
+            <Calendar class="w-4 h-4 text-amber-400" />
+            <span class="text-white/60 text-xs sm:text-sm font-medium hidden sm:inline">Date Range:</span>
+          </div>
+          
+          <!-- Quick filters -->
+          <button id="filterToday" class="date-filter-btn px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+            Today
+          </button>
+          <button id="filter7Days" class="date-filter-btn px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+            Last 7 Days
+          </button>
+          <button id="filter30Days" class="date-filter-btn px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+            Last 30 Days
+          </button>
+          <button id="filterYTD" class="date-filter-btn px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+            YTD
+          </button>
+          <button id="filterAllTime" class="date-filter-btn active px-2 sm:px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-400 text-xs sm:text-sm border border-amber-500/30">
+            All Time
+          </button>
+          
+          <!-- Month dropdown -->
+          <div class="relative">
+            <button id="monthDropdownBtn" class="date-filter-btn flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+              <span>Month</span>
+              <ChevronDown class="w-3 h-3" />
+            </button>
+            <div id="monthDropdown" class="absolute top-full left-0 mt-1 bg-[#1a1a2e] border border-white/20 rounded-lg shadow-xl z-30 hidden min-w-[140px] max-h-60 overflow-y-auto">
+              <!-- Months will be populated dynamically -->
+            </div>
+          </div>
+          
+          <!-- Year dropdown -->
+          <div class="relative">
+            <button id="yearDropdownBtn" class="date-filter-btn flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs sm:text-sm hover:bg-amber-500/20 hover:text-amber-400 transition-all border border-transparent hover:border-amber-500/30">
+              <span>Year</span>
+              <ChevronDown class="w-3 h-3" />
+            </button>
+            <div id="yearDropdown" class="absolute top-full left-0 mt-1 bg-[#1a1a2e] border border-white/20 rounded-lg shadow-xl z-30 hidden min-w-[100px]">
+              <!-- Years will be populated dynamically -->
+            </div>
+          </div>
+        </div>
+        
+        <!-- Active filter display -->
+        <div id="activeFilterDisplay" class="mt-2 text-xs text-white/50 hidden">
+          Showing: <span id="activeFilterText" class="text-amber-400">All Time</span>
+        </div>
+      </div>
+
       <!-- Stats Grid - 2x2 on mobile, 4 on desktop -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
         <!-- Total Revenue -->
@@ -365,6 +419,36 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     color: #fbbf24;
     border: 1px solid rgba(251, 191, 36, 0.3);
   }
+  
+  /* Date filter buttons */
+  .date-filter-btn.active {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border-color: rgba(251, 191, 36, 0.3);
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    color: white;
+    transition: all 0.15s;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  
+  .dropdown-item:hover {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+  }
+  
+  .dropdown-item.active {
+    background: rgba(251, 191, 36, 0.3);
+    color: #fbbf24;
+  }
 </style>
 
 <script>
@@ -375,6 +459,113 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   // Store data for detail modals
   let allCountriesData: any[] = [];
   let allProductsData: any[] = [];
+  
+  // Date filter state
+  let currentDateFilter: { startDate?: string; endDate?: string; label: string } = { label: 'All Time' };
+  
+  // Date filter helper functions
+  function getStartOfDay(date: Date): Date {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0, 0);
+  }
+  
+  function getEndOfDay(date: Date): Date {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59, 999);
+  }
+  
+  function getDateRangeForToday(): { startDate: string; endDate: string } {
+    const now = new Date();
+    return {
+      startDate: getStartOfDay(now).toISOString(),
+      endDate: getEndOfDay(now).toISOString()
+    };
+  }
+  
+  function getDateRangeForLast7Days(): { startDate: string; endDate: string } {
+    const now = new Date();
+    const start = new Date(now);
+    start.setDate(start.getDate() - 6); // 6 days ago + today = 7 days
+    return {
+      startDate: getStartOfDay(start).toISOString(),
+      endDate: getEndOfDay(now).toISOString()
+    };
+  }
+  
+  function getDateRangeForLast30Days(): { startDate: string; endDate: string } {
+    const now = new Date();
+    const start = new Date(now);
+    start.setDate(start.getDate() - 29); // 29 days ago + today = 30 days
+    return {
+      startDate: getStartOfDay(start).toISOString(),
+      endDate: getEndOfDay(now).toISOString()
+    };
+  }
+  
+  function getDateRangeForYTD(): { startDate: string; endDate: string } {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 1); // Jan 1st of current year
+    return {
+      startDate: getStartOfDay(start).toISOString(),
+      endDate: getEndOfDay(now).toISOString()
+    };
+  }
+  
+  function getDateRangeForMonth(year: number, month: number): { startDate: string; endDate: string } {
+    const start = new Date(year, month, 1);
+    const end = new Date(year, month + 1, 0); // Last day of the month
+    return {
+      startDate: getStartOfDay(start).toISOString(),
+      endDate: getEndOfDay(end).toISOString()
+    };
+  }
+  
+  function getDateRangeForYear(year: number): { startDate: string; endDate: string } {
+    const start = new Date(year, 0, 1);
+    const end = new Date(year, 11, 31);
+    return {
+      startDate: getStartOfDay(start).toISOString(),
+      endDate: getEndOfDay(end).toISOString()
+    };
+  }
+  
+  function setActiveFilterButton(activeId: string) {
+    // Remove active class from all filter buttons
+    document.querySelectorAll('.date-filter-btn').forEach(btn => {
+      btn.classList.remove('active');
+      btn.classList.remove('bg-amber-500/20', 'text-amber-400', 'border-amber-500/30');
+      btn.classList.add('bg-white/10', 'text-white', 'border-transparent');
+    });
+    
+    // Add active class to the clicked button
+    const activeBtn = document.getElementById(activeId);
+    if (activeBtn) {
+      activeBtn.classList.add('active');
+      activeBtn.classList.remove('bg-white/10', 'text-white', 'border-transparent');
+      activeBtn.classList.add('bg-amber-500/20', 'text-amber-400', 'border-amber-500/30');
+    }
+    
+    // Update active filter display
+    const displayEl = document.getElementById('activeFilterDisplay');
+    const textEl = document.getElementById('activeFilterText');
+    if (displayEl && textEl) {
+      if (currentDateFilter.label !== 'All Time') {
+        displayEl.classList.remove('hidden');
+        textEl.textContent = currentDateFilter.label;
+      } else {
+        displayEl.classList.add('hidden');
+      }
+    }
+  }
+  
+  function applyDateFilter(filter: { startDate?: string; endDate?: string; label: string }, buttonId: string) {
+    currentDateFilter = filter;
+    setActiveFilterButton(buttonId);
+    loadStats(); // Reload stats with new filter
+  }
+  
+  // Month names for dropdown
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+  
   
   const loginContainer = document.getElementById('loginContainer') as HTMLElement;
   const dashboardContainer = document.getElementById('dashboardContainer') as HTMLElement;
@@ -451,7 +642,16 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   
   async function loadStats() {
     try {
-      const response = await fetch(`/api/admin?action=stats&password=${encodeURIComponent(adminPassword)}`);
+      // Build URL with date filter parameters
+      let url = `/api/admin?action=stats&password=${encodeURIComponent(adminPassword)}`;
+      if (currentDateFilter.startDate) {
+        url += `&startDate=${encodeURIComponent(currentDateFilter.startDate)}`;
+      }
+      if (currentDateFilter.endDate) {
+        url += `&endDate=${encodeURIComponent(currentDateFilter.endDate)}`;
+      }
+      
+      const response = await fetch(url);
       if (!response.ok) throw new Error('Failed');
       
       const stats = await response.json();
@@ -821,5 +1021,114 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         (e.target as HTMLElement).classList.add('hidden');
       }
     });
+  });
+  
+  // Date filter event listeners
+  document.getElementById('filterToday')?.addEventListener('click', () => {
+    const range = getDateRangeForToday();
+    applyDateFilter({ ...range, label: 'Today' }, 'filterToday');
+  });
+  
+  document.getElementById('filter7Days')?.addEventListener('click', () => {
+    const range = getDateRangeForLast7Days();
+    applyDateFilter({ ...range, label: 'Last 7 Days' }, 'filter7Days');
+  });
+  
+  document.getElementById('filter30Days')?.addEventListener('click', () => {
+    const range = getDateRangeForLast30Days();
+    applyDateFilter({ ...range, label: 'Last 30 Days' }, 'filter30Days');
+  });
+  
+  document.getElementById('filterYTD')?.addEventListener('click', () => {
+    const range = getDateRangeForYTD();
+    const year = new Date().getFullYear();
+    applyDateFilter({ ...range, label: `YTD ${year}` }, 'filterYTD');
+  });
+  
+  document.getElementById('filterAllTime')?.addEventListener('click', () => {
+    applyDateFilter({ label: 'All Time' }, 'filterAllTime');
+  });
+  
+  // Month dropdown
+  const monthDropdownBtn = document.getElementById('monthDropdownBtn');
+  const monthDropdown = document.getElementById('monthDropdown');
+  
+  // Populate month dropdown with last 24 months
+  function populateMonthDropdown() {
+    if (!monthDropdown) return;
+    
+    const now = new Date();
+    let html = '';
+    
+    for (let i = 0; i < 24; i++) {
+      const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const label = `${monthNames[month]} ${year}`;
+      html += `<button class="dropdown-item" data-year="${year}" data-month="${month}">${label}</button>`;
+    }
+    
+    monthDropdown.innerHTML = html;
+    
+    // Add click handlers
+    monthDropdown.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const year = parseInt((item as HTMLElement).dataset.year || '2024');
+        const month = parseInt((item as HTMLElement).dataset.month || '0');
+        const range = getDateRangeForMonth(year, month);
+        const label = `${monthNames[month]} ${year}`;
+        applyDateFilter({ ...range, label }, 'monthDropdownBtn');
+        monthDropdown.classList.add('hidden');
+      });
+    });
+  }
+  
+  monthDropdownBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    populateMonthDropdown();
+    monthDropdown?.classList.toggle('hidden');
+    yearDropdown?.classList.add('hidden');
+  });
+  
+  // Year dropdown
+  const yearDropdownBtn = document.getElementById('yearDropdownBtn');
+  const yearDropdown = document.getElementById('yearDropdown');
+  
+  // Populate year dropdown with available years
+  function populateYearDropdown() {
+    if (!yearDropdown) return;
+    
+    const currentYear = new Date().getFullYear();
+    let html = '';
+    
+    // Show current year and 4 previous years
+    for (let year = currentYear; year >= currentYear - 4; year--) {
+      html += `<button class="dropdown-item" data-year="${year}">${year}</button>`;
+    }
+    
+    yearDropdown.innerHTML = html;
+    
+    // Add click handlers
+    yearDropdown.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const year = parseInt((item as HTMLElement).dataset.year || '2024');
+        const range = getDateRangeForYear(year);
+        applyDateFilter({ ...range, label: `${year}` }, 'yearDropdownBtn');
+        yearDropdown.classList.add('hidden');
+      });
+    });
+  }
+  
+  yearDropdownBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    populateYearDropdown();
+    yearDropdown?.classList.toggle('hidden');
+    monthDropdown?.classList.add('hidden');
+  });
+  
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', () => {
+    monthDropdown?.classList.add('hidden');
+    yearDropdown?.classList.add('hidden');
   });
 </script>

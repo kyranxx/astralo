@@ -371,7 +371,17 @@ function generatePageHtml(
             margin: 0 50px;
         }
         
-        .footer-stars { color: #fbbf24; font-size: 11px; margin-bottom: 8px; }
+        .footer-stars { 
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .footer-star-icon { 
+            width: 12px; 
+            height: 12px; 
+            fill: #fbbf24; 
+        }
         .footer-text { color: rgba(255, 255, 255, 0.45); font-size: 11px; line-height: 1.5; }
         .page-number { color: rgba(255, 255, 255, 0.6); font-size: 12px; margin-top: 5px; }
         
@@ -475,7 +485,9 @@ function generatePageHtml(
             </div>
             
             <div class="footer">
-                <div class="footer-stars">★</div>
+                <div class="footer-stars">
+                    <svg class="footer-star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
                 <div class="footer-text">
                     ${escapeHtml(labels.generatedBy)}<br>
                     © 2024 astralo.online • ${escapeHtml(labels.allRightsReserved)}
