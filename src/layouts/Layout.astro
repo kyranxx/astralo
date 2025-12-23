@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
+import { productNames, productPrices, getProductPriceInEuros } from '../lib/products';
 
 interface Props {
 	title: string;
@@ -101,15 +102,7 @@ const ogLocaleMap: Record<string, string> = {
 const rtlLanguages = ['ar', 'he'];
 const dir = rtlLanguages.includes(currentLang) ? 'rtl' : 'ltr';
 
-// Structured data with localized product names
-const productNames: Record<string, { daily: string; weekly: string; monthly: string; partner: string }> = {
-	en: { daily: 'Daily Horoscope', weekly: 'Weekly Horoscope', monthly: 'Monthly Horoscope', partner: 'Partner Horoscope' },
-	sk: { daily: 'Denný Horoskop', weekly: 'Týždenný Horoskop', monthly: 'Mesačný Horoskop', partner: 'Partnerský Horoskop' },
-	de: { daily: 'Tageshoroskop', weekly: 'Wochenhoroskop', monthly: 'Monatshoroskop', partner: 'Partnerhoroskop' },
-	fr: { daily: 'Horoscope du Jour', weekly: 'Horoscope de la Semaine', monthly: 'Horoscope du Mois', partner: 'Horoscope de Couple' },
-	es: { daily: 'Horóscopo Diario', weekly: 'Horóscopo Semanal', monthly: 'Horóscopo Mensual', partner: 'Horóscopo de Pareja' },
-};
-
+// Get localized product names from centralized module
 const localizedProducts = productNames[currentLang] || productNames.en;
 ---
 

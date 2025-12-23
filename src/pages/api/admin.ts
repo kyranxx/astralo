@@ -28,9 +28,7 @@ export const GET: APIRoute = async ({ url }) => {
                 const startDate = url.searchParams.get('startDate') || undefined;
                 const endDate = url.searchParams.get('endDate') || undefined;
                 const stats = await getStatistics(startDate, endDate);
-                return new Response(JSON.stringify(stats), {
-                    headers: { 'Content-Type': 'application/json' }
-                });
+                return createJsonResponse(stats);
 
             case 'orders':
                 const { orders } = await loadOrders();
@@ -70,35 +68,31 @@ export const GET: APIRoute = async ({ url }) => {
                 const start = (page - 1) * limit;
                 const paginatedOrders = filteredOrders.slice(start, start + limit);
 
-                return new Response(JSON.stringify({
+                return createJsonResponse({
                     orders: paginatedOrders,
                     total: filteredOrders.length,
                     page,
                     limit,
                     totalPages: Math.ceil(filteredOrders.length / limit)
-                }), {
-                    headers: { 'Content-Type': 'application/json' }
                 });
 
             case 'order':
                 const orderId = url.searchParams.get('id');
                 if (!orderId) {
-                    return new Response(JSON.stringify({ error: 'Order ID required' }), { status: 400 });
+                    return createErrorResponse('Order ID required', 400);
                 }
                 const order = await findOrderById(orderId);
                 if (!order) {
-                    return new Response(JSON.stringify({ error: 'Order not found' }), { status: 404 });
+                    return createErrorResponse('Order not found', 404);
                 }
-                return new Response(JSON.stringify(order), {
-                    headers: { 'Content-Type': 'application/json' }
-                });
+                return createJsonResponse(order);
 
             default:
-                return new Response(JSON.stringify({ error: 'Invalid action' }), { status: 400 });
+                return createErrorResponse('Invalid action', 400);
         }
     } catch (error: any) {
         console.error('Admin API error:', error);
-        return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+        return createErrorResponse(error.message, 500);
     }
 };
 
@@ -115,22 +109,22 @@ export const POST: APIRoute = async ({ request }) => {
         switch (action) {
             case 'refund':
                 if (!orderId) {
-                    return new Response(JSON.stringify({ error: 'Order ID required' }), { status: 400 });
+                    return createErrorResponse('Order ID required', 400);
                 }
 
                 const order = await findOrderById(orderId);
                 if (!order) {
-                    return new Response(JSON.stringify({ error: 'Order not found' }), { status: 404 });
+                    return createErrorResponse('Order not found', 404);
                 }
 
                 if (order.status === 'refunded') {
-                    return new Response(JSON.stringify({ error: 'Order already refunded' }), { status: 400 });
+                    return createErrorResponse('Order already refunded', 400);
                 }
 
                 // Process Stripe refund
                 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
                 if (!stripeKey) {
-                    return new Response(JSON.stringify({ error: 'Stripe not configured' }), { status: 500 });
+                    return createErrorResponse('Stripe not configured', 500);
                 }
 
                 const stripe = new Stripe(stripeKey, {
@@ -138,7 +132,7 @@ export const POST: APIRoute = async ({ request }) => {
                 });
 
                 if (!order.stripePaymentIntentId) {
-                    return new Response(JSON.stringify({ error: 'No payment intent found for this order' }), { status: 400 });
+                    return createErrorResponse('No payment intent found for this order', 400);
                 }
 
                 const refund = await stripe.refunds.create({
@@ -154,19 +148,17 @@ export const POST: APIRoute = async ({ request }) => {
                     stripeRefundId: refund.id
                 });
 
-                return new Response(JSON.stringify({
+                return createJsonResponse({
                     success: true,
                     refundId: refund.id,
                     message: 'Refund processed successfully'
-                }), {
-                    headers: { 'Content-Type': 'application/json' }
                 });
 
             default:
-                return new Response(JSON.stringify({ error: 'Invalid action' }), { status: 400 });
+                return createErrorResponse('Invalid action', 400);
         }
     } catch (error: any) {
         console.error('Admin API error:', error);
-        return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+        return createErrorResponse(error.message, 500);
     }
 };
