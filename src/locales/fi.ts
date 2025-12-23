@@ -23,25 +23,25 @@ const fi: Translations = {
     },
     products: {
         daily: {
-            name: 'Päivähoroskooppi',
+            name: 'Päivä\u00ADhoroskooppi',
             description: 'Henkilökohtainen päivittäinen horoskooppisi yksityiskohtaisilla ennusteilla seuraavalle 24 tunnille',
             wordCount: '~200 sanaa',
             benefits: ['🍀 Onnennumero', '📅 Paras aika', '💎 Suositeltu väri', '⭐ Päivän neuvo'],
         },
         weekly: {
-            name: 'Viikkohoroskooppi',
+            name: 'Viikko\u00ADhoroskooppi',
             description: 'Täydellinen viikon yleiskatsaus tärkeillä päivämäärillä ja suosituksilla',
             wordCount: '~400 sanaa',
             benefits: ['✅ Kaikki päivittäisestä', '💰 Talousennuste', '❤️ Rakkaus ja suhteet', '💼 Uraneuvoja'],
         },
         monthly: {
-            name: 'Kuukausihoroskooppi',
+            name: 'Kuukausi\u00ADhoroskooppi',
             description: 'Yksityiskohtainen kuukausianalyysi tärkeillä tapahtumilla ja mahdollisuuksilla',
             wordCount: '~1000 sanaa',
             benefits: ['✅ Kaikki viikoittaisesta', '💎 Onnenkivet', '🌈 Energia-aallot', '🎨 Onnenvärit'],
         },
         partner: {
-            name: 'Kumppanihoroskooppi',
+            name: 'Kumppani\u00ADhoroskooppi',
             description: 'Syvällinen analyysi suhteestasi ja yhteensopivuudestasi synastrian avulla',
             wordCount: '~1200 sanaa',
             benefits: ['💕 Yhteensopivuuspisteet', '🔮 Suhteen vahvuudet', '⚠️ Kasvualueet', '💫 Yhteinen tulevaisuus'],
