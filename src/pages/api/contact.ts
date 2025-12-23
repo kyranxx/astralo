@@ -16,9 +16,8 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({ error: 'All fields are required' }), { status: 400 });
     }
 
-    // ⚠️⚠️⚠️ TODO: RE-ENABLE HCAPTCHA BEFORE PRODUCTION! ⚠️⚠️⚠️
-    // Temporarily disabled for localhost testing (hCaptcha doesn't work on localhost)
-    const HCAPTCHA_DISABLED_FOR_DEV = true; // SET TO FALSE FOR PRODUCTION!
+    // hCaptcha enabled for production
+    const HCAPTCHA_DISABLED_FOR_DEV = false;
 
     // Verify hCaptcha token
     const hcaptchaSecret = import.meta.env.HCAPTCHA_SECRET;
