@@ -6,18 +6,20 @@ import {
     updateOrder,
     findOrderById
 } from '../../lib/orders';
+import {
+    verifyAdminPassword,
+    createUnauthorizedResponse,
+    createJsonResponse,
+    createErrorResponse
+} from '../../lib/auth';
 
 export const GET: APIRoute = async ({ url }) => {
     const action = url.searchParams.get('action') || 'stats';
     const password = url.searchParams.get('password');
 
-    // Password protection using environment variable
-    const adminPassword = import.meta.env.ADMIN_PASSWORD;
-    if (!adminPassword || password !== adminPassword) {
-        return new Response(JSON.stringify({ error: 'Unauthorized' }), {
-            status: 401,
-            headers: { 'Content-Type': 'application/json' }
-        });
+    // Password protection using centralized auth
+    if (!verifyAdminPassword(password)) {
+        return createUnauthorizedResponse();
     }
 
     try {
@@ -104,13 +106,9 @@ export const POST: APIRoute = async ({ request }) => {
     const body = await request.json();
     const { action, password, orderId, reason } = body;
 
-    // Password protection using environment variable
-    const adminPassword = import.meta.env.ADMIN_PASSWORD;
-    if (!adminPassword || password !== adminPassword) {
-        return new Response(JSON.stringify({ error: 'Unauthorized' }), {
-            status: 401,
-            headers: { 'Content-Type': 'application/json' }
-        });
+    // Password protection using centralized auth
+    if (!verifyAdminPassword(password)) {
+        return createUnauthorizedResponse();
     }
 
     try {

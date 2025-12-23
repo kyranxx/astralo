@@ -225,6 +225,15 @@ export async function findOrderById(orderId: string): Promise<Order | null> {
 
 // Get statistics from Supabase with optional date filtering
 export async function getStatistics(startDate?: string, endDate?: string) {
+    // Import statistics utilities
+    const {
+        calculateRevenueByCountry,
+        calculateRevenueByProduct,
+        calculateMonthlyData,
+        calculateDailyData,
+        createEmptyStatistics
+    } = await import('./statistics');
+
     let query = supabase
         .from('orders')
         .select('*')
@@ -242,19 +251,7 @@ export async function getStatistics(startDate?: string, endDate?: string) {
 
     if (error) {
         console.error('Error loading orders for statistics:', error);
-        return {
-            totalRevenue: 0,
-            totalOrders: 0,
-            completedOrders: 0,
-            refundedOrders: 0,
-            refundedAmount: 0,
-            revenueByCountry: [],
-            revenueByProduct: [],
-            monthlyData: [],
-            dailyData: [],
-            lastUpdated: new Date().toISOString(),
-            dateRange: { startDate, endDate }
-        };
+        return createEmptyStatistics(startDate, endDate);
     }
 
     const allOrders = (orders || []).map(rowToOrder);
@@ -264,103 +261,24 @@ export async function getStatistics(startDate?: string, endDate?: string) {
     // Total revenue (completed orders only)
     const totalRevenue = completedOrders.reduce((sum, o) => sum + o.amount, 0);
 
-    // Revenue by country
-    const revenueByCountry: Record<string, { revenue: number; orders: number; countryCode: string }> = {};
-    completedOrders.forEach(order => {
-        const country = order.country || 'Unknown';
-        if (!revenueByCountry[country]) {
-            revenueByCountry[country] = { revenue: 0, orders: 0, countryCode: order.countryCode || '' };
-        }
-        revenueByCountry[country].revenue += order.amount;
-        revenueByCountry[country].orders += 1;
-    });
-
-    // Revenue by product
-    const revenueByProduct: Record<string, { revenue: number; orders: number }> = {};
-    completedOrders.forEach(order => {
-        const product = order.productName;
-        if (!revenueByProduct[product]) {
-            revenueByProduct[product] = { revenue: 0, orders: 0 };
-        }
-        revenueByProduct[product].revenue += order.amount;
-        revenueByProduct[product].orders += 1;
-    });
-
-    // Orders by month (last 12 months)
-    const last12Months: Record<string, { revenue: number; orders: number }> = {};
-    const now = new Date();
-    for (let i = 11; i >= 0; i--) {
-        const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
-        const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-        last12Months[key] = { revenue: 0, orders: 0 };
-    }
-
-    // Daily data for the filtered period
-    const dailyData: Record<string, { revenue: number; orders: number }> = {};
-
-    completedOrders.forEach(order => {
-        const date = new Date(order.createdAt);
-        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-        const dayKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-
-        if (last12Months[monthKey]) {
-            last12Months[monthKey].revenue += order.amount;
-            last12Months[monthKey].orders += 1;
-        }
-
-        // Track daily data
-        if (!dailyData[dayKey]) {
-            dailyData[dayKey] = { revenue: 0, orders: 0 };
-        }
-        dailyData[dayKey].revenue += order.amount;
-        dailyData[dayKey].orders += 1;
-    });
-
     return {
-        totalRevenue: totalRevenue / 100, // Convert cents to euros
+        totalRevenue: totalRevenue / 100,
         totalOrders: allOrders.length,
         completedOrders: completedOrders.length,
         refundedOrders: refundedOrders.length,
         refundedAmount: refundedOrders.reduce((sum, o) => sum + o.amount, 0) / 100,
-        revenueByCountry: Object.entries(revenueByCountry)
-            .map(([country, data]) => ({
-                country,
-                countryCode: data.countryCode,
-                revenue: data.revenue / 100,
-                orders: data.orders
-            }))
-            .sort((a, b) => b.revenue - a.revenue),
-        revenueByProduct: Object.entries(revenueByProduct)
-            .map(([product, data]) => ({
-                product,
-                revenue: data.revenue / 100,
-                orders: data.orders
-            }))
-            .sort((a, b) => b.revenue - a.revenue),
-        monthlyData: Object.entries(last12Months)
-            .map(([month, data]) => ({
-                month,
-                revenue: data.revenue / 100,
-                orders: data.orders
-            })),
-        dailyData: Object.entries(dailyData)
-            .map(([day, data]) => ({
-                day,
-                revenue: data.revenue / 100,
-                orders: data.orders
-            }))
-            .sort((a, b) => a.day.localeCompare(b.day)),
+        revenueByCountry: calculateRevenueByCountry(completedOrders),
+        revenueByProduct: calculateRevenueByProduct(completedOrders),
+        monthlyData: calculateMonthlyData(completedOrders),
+        dailyData: calculateDailyData(completedOrders),
         dateRange: { startDate, endDate },
         lastUpdated: new Date().toISOString()
     };
 }
 
-// Generate unique order ID
-export function generateOrderId(): string {
-    const timestamp = Date.now().toString(36).toUpperCase();
-    const random = Math.random().toString(36).substring(2, 6).toUpperCase();
-    return `AST-${timestamp}-${random}`;
-}
+// Re-export generateOrderId from formatters for backward compatibility
+export { generateOrderId } from './formatters';
 
 // Note: cleanOldPDFs function removed as PDFs should be stored in Supabase Storage
 // or a CDN in production, not filesystem
+
