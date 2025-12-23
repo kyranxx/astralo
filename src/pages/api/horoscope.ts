@@ -175,10 +175,10 @@ CONTENT RULES:
 
         // Get price based on product
         const products = {
-            daily: 1.99,
-            weekly: 3.99,
-            monthly: 9.99,
-            partner: 14.99,
+            daily: 0.99,
+            weekly: 2.99,
+            monthly: 7.99,
+            partner: 7.99,
         };
         const price = products[productKey as keyof typeof products] || 0;
 

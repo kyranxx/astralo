@@ -44,10 +44,10 @@ const productNames: Record<string, Record<string, string>> = {
 };
 
 const productPrices = {
-    daily: 199,
-    weekly: 399,
-    monthly: 999,
-    partner: 1499,
+    daily: 99,   // €0.99
+    weekly: 299, // €2.99
+    monthly: 799, // €7.99
+    partner: 799, // €7.99
 };
 
 const getProductName = (productKey: string, lang: string): string => {
