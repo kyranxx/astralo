@@ -4,8 +4,8 @@
  */
 
 import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
+import { zodiacCompatibility } from './articles/zodiac-compatibility-complete-guide/index';
 // These will be converted to folder structure as translations are added:
-import { zodiacCompatibility } from './articles/zodiac-compatibility';
 import { birthChartReading } from './articles/birth-chart-reading';
 import { weeklyHoroscope } from './articles/weekly-horoscope';
 import { monthlyHoroscope } from './articles/monthly-horoscope';
