@@ -219,7 +219,14 @@ const blogPosts: Record<string, any> = {
 };
 
 export function getStaticPaths() {
-  return Object.keys(blogPosts).map(slug => ({ params: { slug } }));
+  return [
+    { params: { slug: 'daily-horoscope-guide' } },
+    { params: { slug: 'zodiac-compatibility-complete-guide' } },
+    { params: { slug: 'birth-chart-reading-explained' } },
+    { params: { slug: 'weekly-horoscope-predictions' } },
+    { params: { slug: 'monthly-horoscope-january-2025' } },
+    { params: { slug: 'love-horoscope-relationship-advice' } }
+  ];
 }
 
 const { slug } = Astro.params;
