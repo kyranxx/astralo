@@ -123,6 +123,23 @@ const sl: Translations = {
         adviceDesc: 'Praktični vodnik za izkoriščanje kozmičnih energij',
         footer: 'Takojšnja dostava na e-pošto • Profesionalni PDF format • Za vedno vaš',
     },
+    faq: {
+        badge: 'PPV',
+        title: 'Pogosta Vprašanja',
+        subtitle: 'Vse, kar morate vedeti o naših horoskop storitvah',
+        q1: 'Kaj je Astralo?',
+        a1: 'Astralo je profesionalna spletna horoskop storitev, ki zagotavlja personalizirana astrološka branja na podlagi vaših natančnih rojstnih podatkov (datum, čas in kraj). Ponujamo dnevne, tedenske, mesečne horoskope in analizo partnerske združljivosti, dostavljene takoj kot lepo oblikovani PDF dokumenti na vaš e-poštni naslov.',
+        q2: 'Kako natančni so Astralo horoskopi?',
+        a2: 'Astralo horoskopi so ustvarjeni z uporabo naprednih astroloških algoritmov na podlagi vaših natančnih rojstnih podatkov. Z več kot 50.000 zadovoljnimi strankami in oceno 4,9/5 zvezdic, naša personalizirana branja zagotavljajo podrobne vpoglede za zabavne namene.',
+        q3: 'Kako hitro bom prejel svoj horoskop?',
+        a3: 'Vaš personalizirani horoskop je ustvarjen in dostavljen takoj na vaš e-poštni naslov v 2-5 minutah po plačilu. Prejeli boste profesionalni PDF dokument s popolnim astrološkim branjem.',
+        q4: 'Katere plačilne metode sprejemate?',
+        a4: 'Sprejemamo vse večje kreditne in debetne kartice (Visa, Mastercard, American Express) prek Stripe, varnega procesorja plačil s certifikatom PCI-DSS Level 1. Vse transakcije so zaščitene s šifriranjem SSL.',
+        q5: 'Koliko stanejo horoskopi?',
+        a5: 'Ponujamo štiri izdelke: Dnevni Horoskop za 0,99 €, Tedenski Horoskop za 2,99 €, Mesečni Horoskop za 7,99 € in Partnerski Horoskop za 7,99 €. Vse cene vključujejo takojšnjo dostavo.',
+        q6: 'Katere informacije potrebujem za naročilo?',
+        a6: 'Za vaš personaliziran horoskop potrebujete: polno ime, e-poštni naslov, datum rojstva, čas rojstva (neobvezno vendar priporočeno) in kraj rojstva. Za partnerske horoskope boste potrebovali tudi rojstne podatke vašega partnerja.',
+    },
 };
 
 export default sl;

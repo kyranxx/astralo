@@ -123,6 +123,23 @@ const vi: Translations = {
         adviceDesc: 'Hướng dẫn thực tế để tận dụng năng lượng vũ trụ',
         footer: 'Giao ngay qua email • Định dạng PDF chuyên nghiệp • Mãi mãi của bạn',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Câu Hỏi Thường Gặp',
+        subtitle: 'Tất cả những gì bạn cần biết về dịch vụ tử vi của chúng tôi',
+        q1: 'Astralo là gì?',
+        a1: 'Astralo là dịch vụ tử vi trực tuyến chuyên nghiệp cung cấp các bản đọc chiêm tinh cá nhân hóa dựa trên dữ liệu sinh chính xác của bạn (ngày, giờ và nơi sinh). Chúng tôi cung cấp tử vi hàng ngày, hàng tuần, hàng tháng và phân tích tương hợp cặp đôi, được giao ngay lập tức dưới dạng tài liệu PDF được thiết kế đẹp mắt đến email của bạn.',
+        q2: 'Tử vi Astralo chính xác như thế nào?',
+        a2: 'Tử vi Astralo được tạo ra bằng các thuật toán chiêm tinh tiên tiến dựa trên dữ liệu sinh chính xác của bạn. Với hơn 50.000 khách hàng hài lòng và đánh giá 4,9/5 sao, các bản đọc cá nhân hóa của chúng tôi cung cấp thông tin chi tiết cho mục đích giải trí.',
+        q3: 'Tôi sẽ nhận được tử vi nhanh như thế nào?',
+        a3: 'Tử vi cá nhân hóa của bạn được tạo và giao ngay lập tức đến email của bạn trong vòng 2-5 phút sau khi thanh toán. Bạn sẽ nhận được một tài liệu PDF chuyên nghiệp với bản đọc chiêm tinh đầy đủ của bạn.',
+        q4: 'Bạn chấp nhận phương thức thanh toán nào?',
+        a4: 'Chúng tôi chấp nhận tất cả các thẻ tín dụng và ghi nợ chính (Visa, Mastercard, American Express) thông qua Stripe, bộ xử lý thanh toán an toàn được chứng nhận PCI-DSS Level 1. Tất cả giao dịch được bảo vệ bằng mã hóa SSL.',
+        q5: 'Tử vi có giá bao nhiêu?',
+        a5: 'Chúng tôi cung cấp bốn sản phẩm: Tử Vi Hàng Ngày 0,99 €, Tử Vi Hàng Tuần 2,99 €, Tử Vi Hàng Tháng 7,99 € và Tử Vi Cặp Đôi 7,99 €. Tất cả các mức giá đều bao gồm giao hàng ngay.',
+        q6: 'Tôi cần thông tin gì để đặt hàng?',
+        a6: 'Để nhận tử vi cá nhân hóa, bạn cần: họ tên đầy đủ, địa chỉ email, ngày sinh, giờ sinh (tùy chọn nhưng khuyến nghị) và nơi sinh. Đối với tử vi cặp đôi, bạn cũng cần thông tin sinh của đối tác.',
+    },
 };
 
 export default vi;

@@ -123,6 +123,23 @@ const id: Translations = {
         adviceDesc: 'Panduan praktis untuk memanfaatkan energi kosmis',
         footer: 'Pengiriman instan ke email • Format PDF profesional • Milik Anda selamanya',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Pertanyaan yang Sering Diajukan',
+        subtitle: 'Semua yang perlu Anda ketahui tentang layanan horoskop kami',
+        q1: 'Apa itu Astralo?',
+        a1: 'Astralo adalah layanan horoskop online profesional yang menyediakan pembacaan astrologi personal berdasarkan data kelahiran Anda yang tepat (tanggal, waktu, dan tempat). Kami menawarkan horoskop harian, mingguan, bulanan, dan analisis kompatibilitas pasangan, dikirimkan secara instan sebagai dokumen PDF yang dirancang dengan indah ke email Anda.',
+        q2: 'Seberapa akurat horoskop Astralo?',
+        a2: 'Horoskop Astralo dibuat menggunakan algoritma astrologi canggih berdasarkan data kelahiran Anda yang tepat. Dengan lebih dari 50.000 pelanggan puas dan rating 4,9/5 bintang, pembacaan personal kami memberikan wawasan terperinci untuk tujuan hiburan.',
+        q3: 'Seberapa cepat saya akan menerima horoskop saya?',
+        a3: 'Horoskop personal Anda dihasilkan dan dikirimkan secara instan ke email Anda dalam 2-5 menit setelah pembayaran. Anda akan menerima dokumen PDF profesional dengan pembacaan astrologi lengkap Anda.',
+        q4: 'Metode pembayaran apa yang Anda terima?',
+        a4: 'Kami menerima semua kartu kredit dan debit utama (Visa, Mastercard, American Express) melalui Stripe, pemroses pembayaran aman bersertifikat PCI-DSS Level 1. Semua transaksi dilindungi dengan enkripsi SSL.',
+        q5: 'Berapa harga horoskop?',
+        a5: 'Kami menawarkan empat produk: Horoskop Harian 0,99 €, Horoskop Mingguan 2,99 €, Horoskop Bulanan 7,99 €, dan Horoskop Pasangan 7,99 €. Semua harga termasuk pengiriman instan.',
+        q6: 'Informasi apa yang saya butuhkan untuk memesan?',
+        a6: 'Untuk mendapatkan horoskop personal Anda, Anda memerlukan: nama lengkap, alamat email, tanggal lahir, waktu lahir (opsional tapi disarankan), dan tempat lahir. Untuk horoskop pasangan, Anda juga memerlukan detail kelahiran pasangan Anda.',
+    },
 };
 
 export default id;

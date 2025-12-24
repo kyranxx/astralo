@@ -123,6 +123,23 @@ const sr: Translations = {
         adviceDesc: 'Praktični vodič za korišćenje kosmičkih energija',
         footer: 'Trenutna isporuka na imejl • Profesionalni PDF format • Zauvek vaš',
     },
+    faq: {
+        badge: 'ČPP',
+        title: 'Često Postavljana Pitanja',
+        subtitle: 'Sve što treba da znate o našim horoskop uslugama',
+        q1: 'Šta je Astralo?',
+        a1: 'Astralo je profesionalna online horoskop usluga koja pruža personalizovana astrološka čitanja zasnovana na vašim tačnim podacima o rođenju (datum, vreme i mesto). Nudimo dnevne, nedeljne, mesečne horoskope i analizu partnerske kompatibilnosti, isporučene trenutno kao prelepo dizajnirani PDF dokumenti na vaš imejl.',
+        q2: 'Koliko su tačni Astralo horoskopi?',
+        a2: 'Astralo horoskopi su kreirani koristeći napredne astrološke algoritme zasnovane na vašim preciznim podacima o rođenju. Sa preko 50.000 zadovoljnih kupaca i ocenom 4,9/5 zvezdica, naša personalizovana čitanja pružaju detaljne uvide za zabavne svrhe.',
+        q3: 'Koliko brzo ću dobiti svoj horoskop?',
+        a3: 'Vaš personalizovani horoskop se generiše i isporučuje trenutno na vaš imejl u roku od 2-5 minuta od plaćanja. Dobićete profesionalni PDF dokument sa vašim potpunim astrološkim čitanjem.',
+        q4: 'Koje načine plaćanja prihvatate?',
+        a4: 'Prihvatamo sve glavne kreditne i debitne kartice (Visa, Mastercard, American Express) preko Stripe-a, sigurnog procesora plaćanja sa PCI-DSS Level 1 sertifikatom. Sve transakcije su zaštićene SSL enkripcijom.',
+        q5: 'Koliko koštaju horoskopi?',
+        a5: 'Nudimo četiri proizvoda: Dnevni Horoskop za 0,99 €, Nedeljni Horoskop za 2,99 €, Mesečni Horoskop za 7,99 € i Partnerski Horoskop za 7,99 €. Sve cene uključuju trenutnu isporuku.',
+        q6: 'Koje informacije mi trebaju za narudžbinu?',
+        a6: 'Za vaš personalizovani horoskop potrebni su vam: puno ime, imejl adresa, datum rođenja, vreme rođenja (opciono ali preporučeno) i mesto rođenja. Za partnerske horoskope trebaće vam i podaci o rođenju vašeg partnera.',
+    },
 };
 
 export default sr;
