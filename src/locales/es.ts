@@ -123,6 +123,23 @@ const es: Translations = {
         adviceDesc: 'Guía práctica para aprovechar las energías cósmicas',
         footer: 'Entrega instantánea por email • Formato PDF profesional • Para siempre tuyo',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Preguntas Frecuentes',
+        subtitle: 'Todo lo que necesitas saber sobre nuestros servicios de horóscopo',
+        q1: '¿Qué es Astralo?',
+        a1: 'Astralo es un servicio profesional de horóscopo en línea que proporciona lecturas astrológicas personalizadas basadas en tus datos de nacimiento exactos (fecha, hora y lugar). Ofrecemos horóscopos diarios, semanales, mensuales y análisis de compatibilidad de pareja, entregados instantáneamente como documentos PDF bellamente diseñados a tu email.',
+        q2: '¿Qué tan precisos son los horóscopos de Astralo?',
+        a2: 'Los horóscopos de Astralo se crean utilizando algoritmos astrológicos avanzados basados en tus datos de nacimiento precisos. Con más de 50,000 clientes satisfechos y una calificación de 4.9/5 estrellas, nuestras lecturas personalizadas proporcionan información detallada con fines de entretenimiento.',
+        q3: '¿Qué tan rápido recibiré mi horóscopo?',
+        a3: 'Tu horóscopo personalizado se genera y entrega instantáneamente a tu email en 2-5 minutos después del pago. Recibirás un documento PDF profesional con tu lectura astrológica completa.',
+        q4: '¿Qué métodos de pago aceptan?',
+        a4: 'Aceptamos todas las principales tarjetas de crédito y débito (Visa, Mastercard, American Express) a través de Stripe, un procesador de pagos seguro certificado PCI-DSS Nivel 1. Todas las transacciones están protegidas con encriptación SSL.',
+        q5: '¿Cuánto cuestan los horóscopos?',
+        a5: 'Ofrecemos cuatro productos: Horóscopo Diario a 0,99 €, Horóscopo Semanal a 2,99 €, Horóscopo Mensual a 7,99 € y Horóscopo de Pareja a 7,99 €. Todos los precios incluyen entrega instantánea.',
+        q6: '¿Qué información necesito para hacer un pedido?',
+        a6: 'Para obtener tu horóscopo personalizado, necesitas: tu nombre completo, dirección de email, fecha de nacimiento, hora de nacimiento (opcional pero recomendado) y lugar de nacimiento. Para horóscopos de pareja, también necesitarás la información de nacimiento de tu pareja.',
+    },
 };
 
 export default es;

@@ -123,6 +123,23 @@ const it: Translations = {
         adviceDesc: 'Guida pratica per sfruttare le energie cosmiche',
         footer: 'Consegna istantanea via email • Formato PDF professionale • Tuo per sempre',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Domande Frequenti',
+        subtitle: 'Tutto quello che devi sapere sui nostri servizi di oroscopo',
+        q1: 'Cos\'è Astralo?',
+        a1: 'Astralo è un servizio professionale di oroscopo online che fornisce letture astrologiche personalizzate basate sui tuoi dati di nascita esatti (data, ora e luogo). Offriamo oroscopi giornalieri, settimanali, mensili e analisi di compatibilità di coppia, consegnati istantaneamente come documenti PDF splendidamente progettati alla tua email.',
+        q2: 'Quanto sono accurati gli oroscopi di Astralo?',
+        a2: 'Gli oroscopi di Astralo sono creati utilizzando algoritmi astrologici avanzati basati sui tuoi dati di nascita precisi. Con oltre 50.000 clienti soddisfatti e una valutazione di 4,9/5 stelle, le nostre letture personalizzate forniscono informazioni dettagliate a scopo di intrattenimento.',
+        q3: 'Quanto tempo ci vuole per ricevere il mio oroscopo?',
+        a3: 'Il tuo oroscopo personalizzato viene generato e consegnato istantaneamente alla tua email entro 2-5 minuti dal pagamento. Riceverai un documento PDF professionale con la tua lettura astrologica completa.',
+        q4: 'Quali metodi di pagamento accettate?',
+        a4: 'Accettiamo tutte le principali carte di credito e debito (Visa, Mastercard, American Express) tramite Stripe, un processore di pagamenti sicuro certificato PCI-DSS Livello 1. Tutte le transazioni sono protette con crittografia SSL.',
+        q5: 'Quanto costano gli oroscopi?',
+        a5: 'Offriamo quattro prodotti: Oroscopo Giornaliero a 0,99 €, Oroscopo Settimanale a 2,99 €, Oroscopo Mensile a 7,99 € e Oroscopo di Coppia a 7,99 €. Tutti i prezzi includono la consegna istantanea.',
+        q6: 'Quali informazioni mi servono per ordinare?',
+        a6: 'Per ottenere il tuo oroscopo personalizzato, hai bisogno di: nome completo, indirizzo email, data di nascita, ora di nascita (opzionale ma consigliato) e luogo di nascita. Per gli oroscopi di coppia, avrai bisogno anche dei dati di nascita del tuo partner.',
+    },
 };
 
 export default it;

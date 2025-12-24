@@ -14,58 +14,64 @@ export const prerender = true;
 const blogPosts = [
   {
     slug: 'daily-horoscope-guide',
-    title: 'Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
+    title: '⭐ Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
     excerpt: 'Discover what the stars have in store for you today. Our comprehensive daily horoscope guide covers all 12 zodiac signs with accurate predictions for love, career, and finances.',
     date: '2024-12-20',
     readTime: '8 min',
     category: 'Horoscopes',
     keywords: ['daily horoscope', 'horoscope today', 'zodiac predictions', 'astrology today'],
-    featured: true
+    featured: true,
+    emoji: '⭐'
   },
   {
     slug: 'zodiac-compatibility-complete-guide',
-    title: 'Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
+    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
     excerpt: 'Find out which zodiac signs are most compatible with yours. Our in-depth compatibility guide reveals the best and worst love matches for every sign.',
     date: '2024-12-18',
     readTime: '12 min',
     category: 'Love & Relationships',
-    keywords: ['zodiac compatibility', 'love horoscope', 'star sign compatibility', 'astrological compatibility']
+    keywords: ['zodiac compatibility', 'love horoscope', 'star sign compatibility', 'astrological compatibility'],
+    emoji: '❤️'
   },
   {
     slug: 'birth-chart-reading-explained',
-    title: 'Birth Chart Reading: How to Understand Your Natal Chart',
+    title: '🔮 Birth Chart Reading: How to Understand Your Natal Chart',
     excerpt: 'Learn how to read and interpret your birth chart. Discover the meaning of planets, houses, and aspects in your unique astrological blueprint.',
     date: '2024-12-15',
     readTime: '10 min',
     category: 'Astrology Basics',
-    keywords: ['birth chart', 'natal chart', 'astrology chart', 'horoscope chart reading']
+    keywords: ['birth chart', 'natal chart', 'astrology chart', 'horoscope chart reading'],
+    emoji: '🔮'
   },
   {
     slug: 'weekly-horoscope-predictions',
-    title: 'Weekly Horoscope: What the Stars Predict for This Week',
+    title: '📅 Weekly Horoscope: What the Stars Predict for This Week',
     excerpt: 'Get your weekly horoscope forecast for all zodiac signs. Discover upcoming opportunities, challenges, and cosmic guidance for the week ahead.',
     date: '2024-12-22',
     readTime: '6 min',
     category: 'Horoscopes',
-    keywords: ['weekly horoscope', 'horoscope this week', 'weekly zodiac', 'astrology weekly']
+    keywords: ['weekly horoscope', 'horoscope this week', 'weekly zodiac', 'astrology weekly'],
+    emoji: '📅'
   },
   {
     slug: 'monthly-horoscope-january-2025',
-    title: 'Monthly Horoscope January 2025: All Zodiac Sign Predictions',
+    title: '🌙 Monthly Horoscope January 2025: All Zodiac Sign Predictions',
     excerpt: 'Your complete monthly horoscope for January 2025. Detailed predictions for each zodiac sign covering love, career, health, and finances.',
     date: '2024-12-24',
     readTime: '15 min',
     category: 'Horoscopes',
-    keywords: ['monthly horoscope', 'horoscope january 2025', 'zodiac monthly predictions', 'astrology forecast']
+    keywords: ['monthly horoscope', 'horoscope january 2025', 'zodiac monthly predictions', 'astrology forecast'],
+    emoji: '🌙'
   },
   {
     slug: 'love-horoscope-relationship-advice',
-    title: 'Love Horoscope 2024: Relationship Predictions for Every Sign',
+    title: '💕 Love Horoscope 2024: Relationship Predictions for Every Sign',
     excerpt: 'Is love written in your stars? Get personalized love horoscope predictions and relationship advice based on your zodiac sign.',
     date: '2024-12-10',
     readTime: '9 min',
     category: 'Love & Relationships',
-    keywords: ['love horoscope', 'relationship horoscope', 'romantic compatibility', 'love astrology']
+    keywords: ['love horoscope', 'relationship horoscope', 'romantic compatibility', 'love astrology'],
+    emoji: '💕'
   }
 ];
 
@@ -86,7 +92,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span class="text-sm">Home</span>
           </a>
-          <a href="/"><img src="/logo.png" alt="Astralo" class="h-9" /></a>
+          <a href="/"><img src="/logo.png" alt="Astralo" class="h-9" fetchpriority="high" /></a>
           <div class="w-16"></div>
         </div>
       </div>

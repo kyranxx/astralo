@@ -112,7 +112,7 @@ const testimonials = getTestimonials(currentLang);
       <div class="max-w-7xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
           <a href={`/${currentLang}/`} class="flex items-center">
-            <img src="/logo.png" alt="Astralo" class="h-9 sm:h-11" />
+            <img src="/logo.png" alt="Astralo" class="h-9 sm:h-11" fetchpriority="high" />
           </a>
           
           <div class="hidden lg:flex items-center gap-3">
@@ -260,6 +260,8 @@ const testimonials = getTestimonials(currentLang);
                   src="/pdf-sample-preview.png" 
                   alt="Sample Horoscope PDF Preview" 
                   class="relative w-full max-w-sm rounded-2xl shadow-2xl border border-white/10"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="absolute -bottom-3 -right-3 bg-amber-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                   Premium PDF

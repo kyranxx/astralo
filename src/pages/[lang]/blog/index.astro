@@ -1,0 +1,301 @@
+---
+/**
+ * Localized Blog Index Page - Multi-language SEO
+ * Lists all blog posts in the user's language
+ */
+
+import Layout from '../../../layouts/Layout.astro';
+import Footer from '../../../components/Footer.astro';
+import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
+import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
+
+export const prerender = true;
+
+// Generate paths for all languages except English (which is at root /blog)
+export function getStaticPaths() {
+  const locales = getSupportedLocales().filter(lang => lang !== 'en');
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+const t = getTranslations(currentLang);
+
+// Country-specific keywords for SEO
+const localizedKeywords: Record<string, { primary: string; secondary: string[] }> = {
+  de: { primary: 'Tageshoroskop', secondary: ['Horoskop heute', 'Sternzeichen Kompatibilität', 'Geburtshoroskop'] },
+  fr: { primary: 'Horoscope du jour', secondary: ['Horoscope gratuit', 'Compatibilité astrologique', 'Thème natal'] },
+  es: { primary: 'Horóscopo diario', secondary: ['Horóscopo hoy', 'Compatibilidad signos', 'Carta natal'] },
+  it: { primary: 'Oroscopo di oggi', secondary: ['Oroscopo del giorno', 'Affinità segni zodiacali', 'Tema natale'] },
+  pt: { primary: 'Horóscopo do dia', secondary: ['Horóscopo diário', 'Compatibilidade signos', 'Mapa astral'] },
+  nl: { primary: 'Daghoroscoop', secondary: ['Horoscoop vandaag', 'Sterrenbeeld compatibiliteit', 'Geboortehoroscoop'] },
+  pl: { primary: 'Horoskop dzienny', secondary: ['Horoskop na dziś', 'Kompatybilność znaków', 'Horoskop urodzeniowy'] },
+  cs: { primary: 'Denní horoskop', secondary: ['Horoskop dnes', 'Kompatibilita znamení', 'Natální horoskop'] },
+  sk: { primary: 'Denný horoskop', secondary: ['Horoskop dnes', 'Kompatibilita znamení', 'Pôrodný horoskop'] },
+  sv: { primary: 'Dagens horoskop', secondary: ['Horoskop idag', 'Stjärntecken kompatibilitet', 'Födelsehoroskop'] },
+  da: { primary: 'Dagligt horoskop', secondary: ['Horoskop i dag', 'Stjernetegn kompatibilitet', 'Fødselshoroskop'] },
+  no: { primary: 'Dagens horoskop', secondary: ['Horoskop i dag', 'Stjernetegn kompatibilitet', 'Fødselshoroskop'] },
+  fi: { primary: 'Päivän horoskooppi', secondary: ['Horoskooppi tänään', 'Horoskooppien yhteensopivuus', 'Syntymäkartta'] },
+  ru: { primary: 'Гороскоп на сегодня', secondary: ['Ежедневный гороскоп', 'Совместимость знаков', 'Натальная карта'] },
+  ja: { primary: '今日の運勢', secondary: ['毎日の星占い', '星座相性', '出生図'] },
+  ko: { primary: '오늘의 운세', secondary: ['별자리 운세', '궁합 테스트', '출생 차트'] },
+  zh: { primary: '今日星座运势', secondary: ['每日星座', '星座配对', '出生星图'] },
+  hu: { primary: 'Napi horoszkóp', secondary: ['Mai horoszkóp', 'Csillagjegy kompatibilitás'] },
+  ro: { primary: 'Horoscop zilnic', secondary: ['Horoscop azi', 'Compatibilitate zodii'] },
+  tr: { primary: 'Günlük burç yorumu', secondary: ['Bugünün burcu', 'Burç uyumu'] },
+  el: { primary: 'Ημερήσιο ζώδιο', secondary: ['Ζώδια σήμερα', 'Συμβατότητα ζωδίων'] },
+  ar: { primary: 'برج اليوم', secondary: ['توقعات الأبراج', 'توافق الأبراج'] },
+  hi: { primary: 'आज का राशिफल', secondary: ['दैनिक राशिफल', 'राशि मिलान'] },
+  th: { primary: 'ดวงวันนี้', secondary: ['ดูดวงรายวัน', 'ดวงคู่รัก'] },
+  vi: { primary: 'Tử vi hôm nay', secondary: ['Tử vi hàng ngày', 'Cung hoàng đạo hợp nhau'] },
+  id: { primary: 'Ramalan zodiak hari ini', secondary: ['Horoskop harian', 'Kecocokan zodiak'] },
+  bg: { primary: 'Дневен хороскоп', secondary: ['Хороскоп днес', 'Съвместимост на зодии'] },
+  hr: { primary: 'Dnevni horoskop', secondary: ['Horoskop danas', 'Kompatibilnost znakova'] },
+  sl: { primary: 'Dnevni horoskop', secondary: ['Horoskop danes', 'Združljivost znakov'] },
+  sr: { primary: 'Дневни хороскоп', secondary: ['Хороскоп данас', 'Компатибилност знакова'] },
+  uk: { primary: 'Гороскоп на сьогодні', secondary: ['Щоденний гороскоп', 'Сумісність знаків'] },
+  he: { primary: 'הורוסקופ יומי', secondary: ['מזל היום', 'התאמה בין מזלות'] },
+  bn: { primary: 'আজকের রাশিফল', secondary: ['দৈনিক রাশিফল', 'রাশি মিলন'] },
+};
+
+const keywords = localizedKeywords[currentLang] || localizedKeywords.en;
+
+// Localized blog content
+const blogTranslations: Record<string, { blogTitle: string; blogSubtitle: string; readArticle: string; readMore: string; seoTitle: string; seoDesc: string }> = {
+  de: {
+    blogTitle: 'Tageshoroskop & Astrologie Blog',
+    blogSubtitle: 'Ihre vertrauenswürdige Quelle für genaue Horoskope und astrologische Einblicke',
+    readArticle: 'Artikel lesen',
+    readMore: 'Mehr lesen →',
+    seoTitle: 'Astrologie Blog - Tageshoroskop, Sternzeichen Kompatibilität | Astralo',
+    seoDesc: 'Entdecken Sie unseren Astrologie-Blog für Tageshoroskope, Sternzeichen-Kompatibilität und Geburtshoroskop-Analysen.',
+  },
+  fr: {
+    blogTitle: 'Horoscope du Jour & Blog Astrologie',
+    blogSubtitle: 'Votre source fiable pour des horoscopes précis et des conseils astrologiques',
+    readArticle: 'Lire l\'article',
+    readMore: 'Lire plus →',
+    seoTitle: 'Blog Astrologie - Horoscope du Jour, Compatibilité | Astralo',
+    seoDesc: 'Découvrez notre blog astrologie pour horoscopes quotidiens, compatibilité et thèmes natals.',
+  },
+  es: {
+    blogTitle: 'Horóscopo Diario & Blog de Astrología',
+    blogSubtitle: 'Tu fuente confiable para horóscopos precisos y consejos astrológicos',
+    readArticle: 'Leer artículo',
+    readMore: 'Leer más →',
+    seoTitle: 'Blog Astrología - Horóscopo Diario, Compatibilidad | Astralo',
+    seoDesc: 'Explora nuestro blog de astrología para horóscopos diarios, compatibilidad y cartas natales.',
+  },
+  sk: {
+    blogTitle: 'Denný Horoskop & Astrologický Blog',
+    blogSubtitle: 'Váš spoľahlivý zdroj presných horoskopov a astrologických poznatkov',
+    readArticle: 'Čítať článok',
+    readMore: 'Čítať viac →',
+    seoTitle: 'Astrologický Blog - Denný Horoskop, Kompatibilita | Astralo',
+    seoDesc: 'Objavte náš astrologický blog pre denné horoskopy, kompatibilitu znamení a pôrodné horoskopy.',
+  },
+  cs: {
+    blogTitle: 'Denní Horoskop & Astrologický Blog',
+    blogSubtitle: 'Váš spolehlivý zdroj přesných horoskopů a astrologických poznatků',
+    readArticle: 'Číst článek',
+    readMore: 'Číst více →',
+    seoTitle: 'Astrologický Blog - Denní Horoskop, Kompatibilita | Astralo',
+    seoDesc: 'Objevte náš astrologický blog pro denní horoskopy, kompatibilitu znamení a natální horoskopy.',
+  },
+};
+
+// Fallback to English-style content
+const blogT = blogTranslations[currentLang] || {
+  blogTitle: t.testimonials?.title ? 'Daily Horoscope & Astrology Blog' : 'Daily Horoscope & Astrology Blog',
+  blogSubtitle: 'Your trusted source for accurate horoscopes and astrological insights',
+  readArticle: 'Read Article',
+  readMore: 'Read more →',
+  seoTitle: `Astrology Blog - Daily Horoscope & Predictions | Astralo`,
+  seoDesc: `Explore our astrology blog for daily horoscopes, zodiac compatibility guides, and birth chart readings.`,
+};
+
+// Blog posts data - same structure, will show in localized context
+const blogPosts = [
+  {
+    slug: 'daily-horoscope-guide',
+    title: '⭐ Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
+    excerpt: 'Discover what the stars have in store for you today.',
+    date: '2024-12-20',
+    readTime: '8 min',
+    category: 'Horoscopes',
+    featured: true,
+    emoji: '⭐'
+  },
+  {
+    slug: 'zodiac-compatibility-complete-guide',
+    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
+    excerpt: 'Find out which zodiac signs are most compatible with yours.',
+    date: '2024-12-18',
+    readTime: '12 min',
+    category: 'Love & Relationships',
+    emoji: '❤️'
+  },
+  {
+    slug: 'birth-chart-reading-explained',
+    title: '🔮 Birth Chart Reading: How to Understand Your Natal Chart',
+    excerpt: 'Learn how to read and interpret your birth chart.',
+    date: '2024-12-15',
+    readTime: '10 min',
+    category: 'Astrology Basics',
+    emoji: '🔮'
+  },
+  {
+    slug: 'weekly-horoscope-predictions',
+    title: '📅 Weekly Horoscope: What the Stars Predict for This Week',
+    excerpt: 'Get your weekly horoscope forecast for all zodiac signs.',
+    date: '2024-12-22',
+    readTime: '6 min',
+    category: 'Horoscopes',
+    emoji: '📅'
+  },
+  {
+    slug: 'monthly-horoscope-january-2025',
+    title: '🌙 Monthly Horoscope January 2025: All Zodiac Sign Predictions',
+    excerpt: 'Your complete monthly horoscope for January 2025.',
+    date: '2024-12-24',
+    readTime: '15 min',
+    category: 'Horoscopes',
+    emoji: '🌙'
+  },
+  {
+    slug: 'love-horoscope-relationship-advice',
+    title: '💕 Love Horoscope 2024: Relationship Predictions for Every Sign',
+    excerpt: 'Is love written in your stars?',
+    date: '2024-12-10',
+    readTime: '9 min',
+    category: 'Love & Relationships',
+    emoji: '💕'
+  }
+];
+
+const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
+---
+
+<Layout 
+  title={blogT.seoTitle}
+  description={blogT.seoDesc}
+  lang={currentLang}
+>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <!-- Header -->
+    <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+            <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <span class="text-sm">Home</span>
+          </a>
+          <a href={`/${currentLang}/`}><img src="/logo.png" alt="Astralo" class="h-9" fetchpriority="high" /></a>
+          <div class="w-16"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-4 py-12 sm:py-16">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-4">
+            <BookOpen class="w-5 h-5 text-amber-400" />
+            <span class="text-amber-400 text-sm font-medium">{keywords.primary}</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+            {blogT.blogTitle}
+          </h1>
+          <p class="text-white/70 text-lg max-w-2xl mx-auto">
+            {blogT.blogSubtitle}
+          </p>
+        </div>
+
+        <!-- Featured Post -->
+        {blogPosts.filter(p => p.featured).map(post => (
+          <a href={`/blog/${post.slug}`} class="block mb-12 group">
+            <div class="glass-strong rounded-3xl p-8 sm:p-10 border border-white/10 hover:border-amber-500/30 transition-all duration-300">
+              <div class="flex items-center gap-4 mb-4">
+                <span class="px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">Featured</span>
+                <span class="text-white/50 text-sm flex items-center gap-2">
+                  <Calendar class="w-4 h-4" />
+                  {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
+                </span>
+                <span class="text-white/50 text-sm">{post.readTime}</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors">
+                {post.title}
+              </h2>
+              <p class="text-white/70 text-lg mb-4">{post.excerpt}</p>
+              <div class="flex items-center gap-2 text-amber-400 font-medium">
+                <span>{blogT.readArticle}</span>
+                <ArrowRight class="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+              </div>
+            </div>
+          </a>
+        ))}
+
+        <!-- Blog Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.filter(p => !p.featured).map(post => (
+            <a href={`/blog/${post.slug}`} class="group">
+              <article class="glass-strong rounded-2xl p-6 h-full border border-white/10 hover:border-amber-500/30 transition-all duration-300 flex flex-col">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="px-2 py-1 bg-white/10 text-white/70 text-xs rounded-full">{post.category}</span>
+                  <span class="text-white/50 text-xs">{post.readTime}</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-200 transition-colors line-clamp-2">
+                  {post.title}
+                </h3>
+                <p class="text-white/60 text-sm mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-white/40">{new Date(post.date).toLocaleDateString(currentLang, { month: 'short', day: 'numeric' })}</span>
+                  <span class="text-amber-400 group-hover:underline">{blogT.readMore}</span>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+
+        <!-- SEO Content Section -->
+        <section class="mt-16 glass-strong rounded-2xl p-8 sm:p-10">
+          <h2 class="text-2xl font-bold text-white mb-4">
+            {keywords.primary}
+          </h2>
+          <div class="prose prose-invert max-w-none text-white/70">
+            <p>
+              {blogT.blogSubtitle}. {keywords.secondary.join(', ')}.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
+                <TrendingUp class="w-4 h-4" />
+                {t.cta?.orderNow || 'Get Your Horoscope'}
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <Footer lang={currentLang} />
+  </div>
+</Layout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

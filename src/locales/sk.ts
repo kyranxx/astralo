@@ -123,6 +123,23 @@ const sk: Translations = {
         adviceDesc: 'Praktické vedenie na využitie kozmických energií',
         footer: 'Okamžité doručenie na email • Profesionálny PDF formát • Navždy váš',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Často kladené otázky',
+        subtitle: 'Všetko, čo potrebujete vedieť o našich horoskopových službách',
+        q1: 'Čo je Astralo?',
+        a1: 'Astralo je profesionálna online horoskopová služba, ktorá poskytuje personalizované astrologické čítania na základe vašich presných údajov o narodení (dátum, čas a miesto). Ponúkame denné, týždenné, mesačné horoskopy a analýzu partnerského vzťahu, doručené okamžite ako krásne navrhnuté PDF dokumenty na váš email.',
+        q2: 'Aké presné sú horoskopy Astralo?',
+        a2: 'Horoskopy Astralo sú vytvorené pomocou pokročilých astrologických algoritmov založených na vašich presných údajoch narodenia. S viac ako 50 000 spokojnými zákazníkmi a hodnotením 4,9/5 hviezdičiek poskytujú naše personalizované čítania podrobné informácie pre zábavné účely.',
+        q3: 'Ako rýchlo dostanem svoj horoskop?',
+        a3: 'Váš personalizovaný horoskop sa vygeneruje a doručí okamžite na váš email do 2-5 minút po platbe. Dostanete profesionálny PDF dokument s vaším kompletným astrologickým čítaním.',
+        q4: 'Aké platobné metódy akceptujete?',
+        a4: 'Akceptujeme všetky hlavné kreditné a debetné karty (Visa, Mastercard, American Express) cez Stripe, bezpečný platobný procesor s certifikáciou PCI-DSS Level 1. Všetky transakcie sú chránené šifrovaním SSL.',
+        q5: 'Koľko stoja horoskopy?',
+        a5: 'Ponúkame štyri produkty: Denný horoskop za 0,99 €, Týždenný horoskop za 2,99 €, Mesačný horoskop za 7,99 € a Partnerský horoskop za 7,99 €. Všetky ceny zahŕňajú okamžité doručenie.',
+        q6: 'Aké informácie potrebujem na objednávku?',
+        a6: 'Na získanie vášho personalizovaného horoskopu potrebujete: vaše celé meno, emailovú adresu, dátum narodenia, čas narodenia (voliteľné, ale odporúčané) a miesto narodenia. Pre partnerské horoskopy budete potrebovať aj údaje o narodení vášho partnera.',
+    },
 };
 
 export default sk;

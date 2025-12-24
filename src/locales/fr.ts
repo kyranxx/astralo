@@ -123,6 +123,23 @@ const fr: Translations = {
         adviceDesc: 'Guide pratique pour profiter des énergies cosmiques',
         footer: 'Livraison instantanée par email • Format PDF professionnel • À conserver pour toujours',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Questions Fréquentes',
+        subtitle: 'Tout ce que vous devez savoir sur nos services d\'horoscope',
+        q1: 'Qu\'est-ce qu\'Astralo?',
+        a1: 'Astralo est un service d\'horoscope professionnel en ligne qui fournit des lectures astrologiques personnalisées basées sur vos données de naissance exactes (date, heure et lieu). Nous proposons des horoscopes quotidiens, hebdomadaires, mensuels et des analyses de compatibilité, livrés instantanément sous forme de documents PDF magnifiquement conçus par email.',
+        q2: 'Quelle est la précision des horoscopes Astralo?',
+        a2: 'Les horoscopes Astralo sont créés à l\'aide d\'algorithmes astrologiques avancés basés sur vos données de naissance précises. Avec plus de 50 000 clients satisfaits et une note de 4,9/5 étoiles, nos lectures personnalisées fournissent des informations détaillées à des fins de divertissement.',
+        q3: 'Combien de temps faudra-t-il pour recevoir mon horoscope?',
+        a3: 'Votre horoscope personnalisé est généré et livré instantanément à votre email dans les 2-5 minutes suivant le paiement. Vous recevrez un document PDF professionnel avec votre lecture astrologique complète.',
+        q4: 'Quels modes de paiement acceptez-vous?',
+        a4: 'Nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express) via Stripe, un processeur de paiement sécurisé certifié PCI-DSS Niveau 1. Toutes les transactions sont protégées par un cryptage SSL.',
+        q5: 'Combien coûtent les horoscopes?',
+        a5: 'Nous proposons quatre produits: Horoscope Quotidien à 0,99 €, Horoscope Hebdomadaire à 2,99 €, Horoscope Mensuel à 7,99 € et Horoscope de Couple à 7,99 €. Tous les prix incluent la livraison instantanée.',
+        q6: 'Quelles informations dois-je fournir pour commander?',
+        a6: 'Pour obtenir votre horoscope personnalisé, vous avez besoin de: votre nom complet, adresse email, date de naissance, heure de naissance (optionnel mais recommandé) et lieu de naissance. Pour les horoscopes de couple, vous aurez également besoin des informations de naissance de votre partenaire.',
+    },
 };
 
 export default fr;

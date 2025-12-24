@@ -123,6 +123,23 @@ const de: Translations = {
         adviceDesc: 'Praktische Anleitung zur Nutzung kosmischer Energien',
         footer: 'Sofortige Lieferung per E-Mail • Professionelles PDF-Format • Für immer Ihres',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Häufig gestellte Fragen',
+        subtitle: 'Alles, was Sie über unsere Horoskop-Dienste wissen müssen',
+        q1: 'Was ist Astralo?',
+        a1: 'Astralo ist ein professioneller Online-Horoskop-Service, der personalisierte astrologische Deutungen basierend auf Ihren genauen Geburtsdaten (Datum, Uhrzeit und Ort) bietet. Wir bieten tägliche, wöchentliche, monatliche Horoskope und Partnerschaftsanalysen, die sofort als wunderschön gestaltete PDF-Dokumente per E-Mail geliefert werden.',
+        q2: 'Wie genau sind die Horoskope von Astralo?',
+        a2: 'Astralo-Horoskope werden mit fortschrittlichen astrologischen Algorithmen erstellt, die auf Ihren präzisen Geburtsdaten basieren. Mit über 50.000 zufriedenen Kunden und einer Bewertung von 4,9/5 Sternen bieten unsere personalisierten Deutungen detaillierte Einblicke zu Unterhaltungszwecken.',
+        q3: 'Wie schnell erhalte ich mein Horoskop?',
+        a3: 'Ihr personalisiertes Horoskop wird innerhalb von 2-5 Minuten nach der Zahlung generiert und sofort an Ihre E-Mail gesendet. Sie erhalten ein professionelles PDF-Dokument mit Ihrer kompletten astrologischen Deutung.',
+        q4: 'Welche Zahlungsmethoden akzeptieren Sie?',
+        a4: 'Wir akzeptieren alle gängigen Kredit- und Debitkarten (Visa, Mastercard, American Express) über Stripe, einen sicheren PCI-DSS Level 1 zertifizierten Zahlungsanbieter. Alle Transaktionen sind durch SSL-Verschlüsselung geschützt.',
+        q5: 'Was kosten die Horoskope?',
+        a5: 'Wir bieten vier Produkte an: Tageshoroskop für 0,99 €, Wochenhoroskop für 2,99 €, Monatshoroskop für 7,99 € und Partnerhoroskop für 7,99 €. Alle Preise beinhalten sofortige Lieferung.',
+        q6: 'Welche Informationen benötige ich für die Bestellung?',
+        a6: 'Für Ihr personalisiertes Horoskop benötigen Sie: Ihren vollständigen Namen, E-Mail-Adresse, Geburtsdatum, Geburtszeit (optional, aber empfohlen) und Geburtsort. Für Partnerhoroskope benötigen Sie auch die Geburtsdaten Ihres Partners.',
+    },
 };
 
 export default de;
