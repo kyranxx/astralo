@@ -188,7 +188,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 			}
 		})} />
 		
-		<!-- Organization Schema (Enhanced - No LocalBusiness needed for online-only service) -->
+			<!-- Organization Schema (Enhanced - No LocalBusiness needed for online-only service) -->
 		<script is:inline type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
 			"@type": "Organization",
@@ -206,21 +206,6 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 				"email": "apollotechsro@gmail.com",
 				"contactType": "customer support",
 				"availableLanguage": ["English", "German", "French", "Spanish", "Italian", "Portuguese", "Dutch", "Polish", "Czech", "Slovak"]
-			},
-			"aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.9",
-				"bestRating": "5",
-				"worstRating": "1",
-				"ratingCount": "50000",
-				"reviewCount": "12847"
-			},
-			"offers": {
-				"@type": "AggregateOffer",
-				"lowPrice": "0.99",
-				"highPrice": "7.99",
-				"priceCurrency": "EUR",
-				"offerCount": "4"
 			}
 		})} />
 		
