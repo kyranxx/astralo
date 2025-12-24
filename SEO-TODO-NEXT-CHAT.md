@@ -45,13 +45,17 @@
 - [x] German (de) FAQ translations added
 - [x] French (fr) FAQ translations added
 - [x] Spanish (es) FAQ translations added
-- [ ] Remaining 28 languages need FAQ translations (see list below)
+- [x] Italian (it) FAQ translations added
+- [x] Portuguese (pt) FAQ translations added
+- [ ] Remaining 25 languages need FAQ translations:
+  - nl, pl, hu, ro, bg, hr, sl, sr, uk, ru, el, tr, ar, he, hi, ja, ko, zh, th, vi, id, sv, da, no, fi, bn
 
 ### ✅ MULTI-LANGUAGE BLOG EXPANSION - STARTED
 - [x] Created localized blog index template: src/pages/[lang]/blog/index.astro
 - [x] Added country-specific SEO keywords for all 33 languages
-- [x] Blog index generates for all non-English languages
-- [ ] Localized article content (translations needed for 6 articles × 32 languages)
+- [x] Blog index generates for all non-English languages (32 language versions)
+- [ ] Create localized article template (src/pages/[lang]/blog/[slug].astro)
+- [ ] Translate 6 articles × 32 languages = 192 localized article pages
 
 ---
 
