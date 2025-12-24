@@ -123,6 +123,23 @@ const fi: Translations = {
         adviceDesc: 'Käytännön opas kosmisten energioiden hyödyntämiseen',
         footer: 'Välitön toimitus sähköpostiin • Ammattimainen PDF-muoto • Ikuisesti sinun',
     },
+    faq: {
+        badge: 'UKK',
+        title: 'Usein Kysytyt Kysymykset',
+        subtitle: 'Kaikki mitä sinun tulee tietää horoskooppipalveluistamme',
+        q1: 'Mikä on Astralo?',
+        a1: 'Astralo on ammattimainen online-horoskooppipalvelu, joka tarjoaa henkilökohtaisia astrologisia tulkintoja tarkkaan syntymätietoosi (päivämäärä, aika ja paikka) perustuen. Tarjoamme päivittäisiä, viikoittaisia, kuukausittaisia horoskooppeja ja kumppaniyhteensopivuusanalyysiä, toimitettuna välittömästi kauniisti suunniteltuina PDF-dokumentteina sähköpostiisi.',
+        q2: 'Kuinka tarkkoja Astralon horoskooppit ovat?',
+        a2: 'Astralon horoskooppit luodaan käyttäen edistyneitä astrologisia algoritmeja, jotka perustuvat tarkkaan syntymätietoosi. Yli 50 000 tyytyväisen asiakkaan ja 4,9/5 tähden arvosanan myötä henkilökohtaiset tulkintamme tarjoavat yksityiskohtaista tietoa viihdetarkoituksiin.',
+        q3: 'Kuinka nopeasti saan horoskooppini?',
+        a3: 'Henkilökohtainen horoskooppisi luodaan ja toimitetaan välittömästi sähköpostiisi 2-5 minuutin kuluessa maksusta. Saat ammattimaisen PDF-dokumentin täydellisellä astrologisella tulkinnallasi.',
+        q4: 'Mitä maksutapoja hyväksytte?',
+        a4: 'Hyväksymme kaikki suurimmat luotto- ja pankkikortit (Visa, Mastercard, American Express) Stripen kautta, joka on turvallinen PCI-DSS Level 1 -sertifioitu maksunkäsittelijä. Kaikki tapahtumat on suojattu SSL-salauksella.',
+        q5: 'Paljonko horoskooppit maksavat?',
+        a5: 'Tarjoamme neljä tuotetta: Päivähoroskooppi 0,99 €, Viikkohoroskooppi 2,99 €, Kuukausihoroskooppi 7,99 € ja Kumppanihoroskooppi 7,99 €. Kaikki hinnat sisältävät välittömän toimituksen.',
+        q6: 'Mitä tietoja tarvitsen tilaukseen?',
+        a6: 'Henkilökohtaista horoskooppiasi varten tarvitset: koko nimesi, sähköpostiosoitteesi, syntymäpäiväsi, syntymäaikasi (valinnainen mutta suositeltava) ja syntymäpaikkasi. Kumppanihoroskooppeja varten tarvitset myös kumppanisi syntymätiedot.',
+    },
 };
 
 export default fi;

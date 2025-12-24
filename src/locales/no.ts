@@ -123,6 +123,23 @@ const no: Translations = {
         adviceDesc: 'Praktisk veiledning for å utnytte kosmiske energier',
         footer: 'Øyeblikkelig levering til e-post • Profesjonelt PDF-format • Ditt for alltid',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Ofte Stilte Spørsmål',
+        subtitle: 'Alt du trenger å vite om våre horoskoptjenester',
+        q1: 'Hva er Astralo?',
+        a1: 'Astralo er en profesjonell online horoskoptjeneste som leverer personlige astrologiske tolkninger basert på dine nøyaktige fødselsdata (dato, tid og sted). Vi tilbyr daglige, ukentlige, månedlige horoskoper og partnerkompatibilitetsanalyse, levert øyeblikkelig som vakkert designede PDF-dokumenter til din e-post.',
+        q2: 'Hvor nøyaktige er Astralos horoskoper?',
+        a2: 'Astralos horoskoper er skapt ved hjelp av avanserte astrologiske algoritmer basert på dine presise fødselsdata. Med over 50 000 fornøyde kunder og en vurdering på 4,9/5 stjerner gir våre personlige tolkninger detaljert innsikt for underholdningsformål.',
+        q3: 'Hvor fort får jeg horoskopet mitt?',
+        a3: 'Ditt personlige horoskop genereres og leveres øyeblikkelig til din e-post innen 2-5 minutter etter betaling. Du mottar et profesjonelt PDF-dokument med din komplette astrologiske tolkning.',
+        q4: 'Hvilke betalingsmetoder godtar dere?',
+        a4: 'Vi godtar alle større kredit- og debetkort (Visa, Mastercard, American Express) via Stripe, en sikker PCI-DSS Level 1-sertifisert betalingsbehandler. Alle transaksjoner er beskyttet med SSL-kryptering.',
+        q5: 'Hva koster horoskopene?',
+        a5: 'Vi tilbyr fire produkter: Daglig Horoskop til 0,99 €, Ukehoroskop til 2,99 €, Månedshoroskop til 7,99 € og Partnerhoroskop til 7,99 €. Alle priser inkluderer øyeblikkelig levering.',
+        q6: 'Hvilken informasjon trenger jeg for å bestille?',
+        a6: 'For å få ditt personlige horoskop trenger du: ditt fulle navn, e-postadresse, fødselsdato, fødselstidspunkt (valgfritt men anbefalt) og fødested. For partnerhoroskoper trenger du også partnerens fødselsopplysninger.',
+    },
 };
 
 export default no;

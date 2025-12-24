@@ -123,6 +123,23 @@ const da: Translations = {
         adviceDesc: 'Praktisk vejledning til at udnytte kosmiske energier',
         footer: 'Øjeblikkelig levering til email • Professionelt PDF-format • Dit for evigt',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Ofte Stillede Spørgsmål',
+        subtitle: 'Alt du behøver at vide om vores horoskoptjenester',
+        q1: 'Hvad er Astralo?',
+        a1: 'Astralo er en professionel online horoskoptjeneste, der leverer personlige astrologiske læsninger baseret på dine nøjagtige fødselsdata (dato, tid og sted). Vi tilbyder daglige, ugentlige, månedlige horoskoper og partnerkompatibilitetsanalyse, leveret øjeblikkeligt som smukt designede PDF-dokumenter til din e-mail.',
+        q2: 'Hvor præcise er Astralos horoskoper?',
+        a2: 'Astralos horoskoper er skabt ved hjælp af avancerede astrologiske algoritmer baseret på dine præcise fødselsdata. Med over 50.000 tilfredse kunder og en bedømmelse på 4,9/5 stjerner giver vores personlige læsninger detaljeret indsigt til underholdningsformål.',
+        q3: 'Hvor hurtigt får jeg mit horoskop?',
+        a3: 'Dit personlige horoskop genereres og leveres øjeblikkeligt til din e-mail inden for 2-5 minutter efter betaling. Du modtager et professionelt PDF-dokument med din komplette astrologiske læsning.',
+        q4: 'Hvilke betalingsmetoder accepterer I?',
+        a4: 'Vi accepterer alle større kredit- og debetkort (Visa, Mastercard, American Express) via Stripe, en sikker PCI-DSS Level 1-certificeret betalingsprocessor. Alle transaktioner er beskyttet med SSL-kryptering.',
+        q5: 'Hvad koster horoskoperne?',
+        a5: 'Vi tilbyder fire produkter: Dagligt Horoskop til 0,99 €, Ugehoroskop til 2,99 €, Månedshoroskop til 7,99 € og Partnerhoroskop til 7,99 €. Alle priser inkluderer øjeblikkelig levering.',
+        q6: 'Hvilke oplysninger skal jeg bruge for at bestille?',
+        a6: 'For at få dit personlige horoskop skal du bruge: dit fulde navn, e-mailadresse, fødselsdato, fødselstidspunkt (valgfrit men anbefalet) og fødested. Til partnerhoroskoper skal du også bruge din partners fødselsoplysninger.',
+    },
 };
 
 export default da;

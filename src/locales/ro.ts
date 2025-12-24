@@ -123,6 +123,23 @@ const ro: Translations = {
         adviceDesc: 'Ghid practic pentru a profita de energiile cosmice',
         footer: 'Livrare instantanee pe email • Format PDF profesional • Al tău pentru totdeauna',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Întrebări Frecvente',
+        subtitle: 'Tot ce trebuie să știi despre serviciile noastre de horoscop',
+        q1: 'Ce este Astralo?',
+        a1: 'Astralo este un serviciu profesional de horoscop online care oferă lecturi astrologice personalizate bazate pe datele tale exacte de naștere (dată, oră și loc). Oferim horoscoape zilnice, săptămânale, lunare și analiza compatibilității de cuplu, livrate instantaneu ca documente PDF frumos concepute prin email.',
+        q2: 'Cât de precise sunt horoscoapele Astralo?',
+        a2: 'Horoscoapele Astralo sunt create folosind algoritmi astrologici avansați bazați pe datele tale precise de naștere. Cu peste 50.000 de clienți mulțumiți și o evaluare de 4,9/5 stele, lecturile noastre personalizate oferă informații detaliate în scopuri de divertisment.',
+        q3: 'Cât durează să primesc horoscopul?',
+        a3: 'Horoscopul tău personalizat este generat și livrat instantaneu pe email în 2-5 minute de la plată. Vei primi un document PDF profesional cu lectura ta astrologică completă.',
+        q4: 'Ce metode de plată acceptați?',
+        a4: 'Acceptăm toate cardurile de credit și debit importante (Visa, Mastercard, American Express) prin Stripe, un procesor de plăți securizat certificat PCI-DSS Nivel 1. Toate tranzacțiile sunt protejate cu criptare SSL.',
+        q5: 'Cât costă horoscopurile?',
+        a5: 'Oferim patru produse: Horoscop Zilnic la 0,99 €, Horoscop Săptămânal la 2,99 €, Horoscop Lunar la 7,99 € și Horoscop de Cuplu la 7,99 €. Toate prețurile includ livrare instantanee.',
+        q6: 'Ce informații am nevoie pentru a comanda?',
+        a6: 'Pentru horoscopul tău personalizat, ai nevoie de: numele complet, adresa de email, data nașterii, ora nașterii (opțional dar recomandat) și locul nașterii. Pentru horoscoapele de cuplu, vei avea nevoie și de datele de naștere ale partenerului.',
+    },
 };
 
 export default ro;

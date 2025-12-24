@@ -123,6 +123,23 @@ const hr: Translations = {
         adviceDesc: 'Praktični vodič za korištenje kozmičkih energija',
         footer: 'Trenutna dostava na email • Profesionalni PDF format • Zauvijek vaš',
     },
+    faq: {
+        badge: 'ČPP',
+        title: 'Često Postavljana Pitanja',
+        subtitle: 'Sve što trebate znati o našim horoskop uslugama',
+        q1: 'Što je Astralo?',
+        a1: 'Astralo je profesionalna online horoskop usluga koja pruža personalizirana astrološka čitanja temeljena na vašim točnim podacima o rođenju (datum, vrijeme i mjesto). Nudimo dnevne, tjedne, mjesečne horoskope i analizu kompatibilnosti partnera, isporučene trenutno kao prekrasno dizajnirani PDF dokumenti na vaš email.',
+        q2: 'Koliko su točni Astralo horoskopi?',
+        a2: 'Astralo horoskopi su stvoreni koristeći napredne astrološke algoritme temeljene na vašim preciznim podacima o rođenju. S preko 50.000 zadovoljnih kupaca i ocjenom 4,9/5 zvjezdica, naša personalizirana čitanja pružaju detaljne uvide za zabavne svrhe.',
+        q3: 'Koliko brzo ću dobiti svoj horoskop?',
+        a3: 'Vaš personalizirani horoskop se generira i isporučuje trenutno na vaš email unutar 2-5 minuta od plaćanja. Dobit ćete profesionalni PDF dokument s vašim potpunim astrološkim čitanjem.',
+        q4: 'Koje načine plaćanja prihvaćate?',
+        a4: 'Prihvaćamo sve glavne kreditne i debitne kartice (Visa, Mastercard, American Express) putem Stripea, sigurnog procesora plaćanja s PCI-DSS Level 1 certifikatom. Sve transakcije su zaštićene SSL enkripcijom.',
+        q5: 'Koliko koštaju horoskopi?',
+        a5: 'Nudimo četiri proizvoda: Dnevni Horoskop za 0,99 €, Tjedni Horoskop za 2,99 €, Mjesečni Horoskop za 7,99 € i Partnerski Horoskop za 7,99 €. Sve cijene uključuju trenutnu dostavu.',
+        q6: 'Koje informacije trebam za narudžbu?',
+        a6: 'Za vaš personalizirani horoskop trebate: puno ime, email adresu, datum rođenja, vrijeme rođenja (opcionalno ali preporučeno) i mjesto rođenja. Za partnerske horoskope trebat ćete također podatke o rođenju vašeg partnera.',
+    },
 };
 
 export default hr;
