@@ -1,0 +1,137 @@
+---
+/**
+ * FAQ Section Component
+ * Displays frequently asked questions with expandable answers
+ * This visible FAQ complements the FAQ Schema for SEO
+ */
+
+import { ChevronDown, HelpCircle } from 'lucide-astro';
+import { getTranslations, type SupportedLocale } from '../lib/i18n';
+
+interface Props {
+  lang?: SupportedLocale;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = getTranslations(lang);
+
+// FAQ items - these match the FAQ Schema in Layout.astro
+const faqItems = [
+  {
+    question: t.faq?.q1 || "What is Astralo?",
+    answer: t.faq?.a1 || "Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email."
+  },
+  {
+    question: t.faq?.q2 || "How accurate are Astralo horoscopes?",
+    answer: t.faq?.a2 || "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes."
+  },
+  {
+    question: t.faq?.q3 || "How fast will I receive my horoscope?",
+    answer: t.faq?.a3 || "Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You'll receive a professional PDF document with your complete astrological reading."
+  },
+  {
+    question: t.faq?.q4 || "What payment methods do you accept?",
+    answer: t.faq?.a4 || "We accept all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, a secure PCI-DSS Level 1 certified payment processor. All transactions are protected with SSL encryption."
+  },
+  {
+    question: t.faq?.q5 || "How much do horoscopes cost?",
+    answer: t.faq?.a5 || "We offer four products: Daily Horoscope at €0.99, Weekly Horoscope at €2.99, Monthly Horoscope at €7.99, and Partner Compatibility at €7.99. All prices include instant delivery."
+  },
+  {
+    question: t.faq?.q6 || "What information do I need to order?",
+    answer: t.faq?.a6 || "To get your personalized horoscope, you need: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you'll also need your partner's birth information."
+  }
+];
+---
+
+<section class="py-16 sm:py-20" id="faq">
+  <div class="max-w-4xl mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-4">
+        <HelpCircle class="w-5 h-5 text-amber-400" />
+        <span class="text-amber-400 text-sm font-medium">{t.faq?.badge || 'FAQ'}</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        {t.faq?.title || 'Frequently Asked Questions'}
+      </h2>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">
+        {t.faq?.subtitle || 'Everything you need to know about our horoscope services'}
+      </p>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="space-y-4">
+      {faqItems.map((item, index) => (
+        <div class="faq-item glass-strong rounded-2xl overflow-hidden border border-white/10 hover:border-amber-500/30 transition-all duration-300">
+          <button 
+            class="faq-toggle w-full flex items-center justify-between p-5 sm:p-6 text-left group"
+            aria-expanded="false"
+            aria-controls={`faq-answer-${index}`}
+          >
+            <span class="text-white font-medium text-base sm:text-lg pr-4 group-hover:text-amber-200 transition-colors">
+              {item.question}
+            </span>
+            <ChevronDown class="w-5 h-5 text-amber-400 flex-shrink-0 faq-icon transition-transform duration-300" />
+          </button>
+          <div 
+            id={`faq-answer-${index}`}
+            class="faq-answer hidden px-5 sm:px-6 pb-5 sm:pb-6"
+          >
+            <p class="text-white/70 text-base leading-relaxed">
+              {item.answer}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const toggle = item.querySelector('.faq-toggle');
+      
+      toggle?.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-toggle')?.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', (!isActive).toString());
+      });
+    });
+  });
+</script>

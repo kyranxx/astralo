@@ -188,71 +188,39 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 			}
 		})} />
 		
+		<!-- Organization Schema (Enhanced - No LocalBusiness needed for online-only service) -->
 		<script is:inline type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
-			"@type": "LocalBusiness",
+			"@type": "Organization",
 			"name": "Astralo",
-			"description": currentDescription,
+			"alternateName": "Astralo Horoscopes",
 			"url": siteUrl,
+			"logo": `${siteUrl}/logo.png`,
+			"image": `${siteUrl}/og-image.png`,
+			"description": currentDescription,
 			"email": "apollotechsro@gmail.com",
-			"priceRange": "€€",
-			"image": `${siteUrl}/logo.png`,
-			"address": {
-				"@type": "PostalAddress",
-				"addressCountry": "SK"
+			"foundingDate": "2024",
+			"sameAs": [],
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "apollotechsro@gmail.com",
+				"contactType": "customer support",
+				"availableLanguage": ["English", "German", "French", "Spanish", "Italian", "Portuguese", "Dutch", "Polish", "Czech", "Slovak"]
 			},
 			"aggregateRating": {
 				"@type": "AggregateRating",
 				"ratingValue": "4.9",
 				"bestRating": "5",
 				"worstRating": "1",
-				"reviewCount": "50000"
+				"ratingCount": "50000",
+				"reviewCount": "12847"
 			},
-			"offers": [
-				{
-					"@type": "Offer",
-					"name": localizedProducts.daily,
-					"price": "0.99",
-					"priceCurrency": "EUR",
-					"availability": "https://schema.org/InStock"
-				},
-				{
-					"@type": "Offer",
-					"name": localizedProducts.weekly,
-					"price": "2.99",
-					"priceCurrency": "EUR",
-					"availability": "https://schema.org/InStock"
-				},
-				{
-					"@type": "Offer",
-					"name": localizedProducts.monthly,
-					"price": "7.99",
-					"priceCurrency": "EUR",
-					"availability": "https://schema.org/InStock"
-				},
-				{
-					"@type": "Offer",
-					"name": localizedProducts.partner,
-					"price": "7.99",
-					"priceCurrency": "EUR",
-					"availability": "https://schema.org/InStock"
-				}
-			]
-		})} />
-		
-		<!-- Organization Schema -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "Organization",
-			"name": "Astralo",
-			"url": siteUrl,
-			"logo": `${siteUrl}/logo.png`,
-			"sameAs": [],
-			"contactPoint": {
-				"@type": "ContactPoint",
-				"email": "apollotechsro@gmail.com",
-				"contactType": "customer service",
-				"availableLanguage": allLanguages.map(l => l.name)
+			"offers": {
+				"@type": "AggregateOffer",
+				"lowPrice": "0.99",
+				"highPrice": "7.99",
+				"priceCurrency": "EUR",
+				"offerCount": "4"
 			}
 		})} />
 		

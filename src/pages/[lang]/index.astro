@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
+import FAQ from '../../components/FAQ.astro';
 import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
@@ -356,6 +357,9 @@ const testimonials = getTestimonials(currentLang);
         </div>
       </div>
     </main>
+
+    <!-- FAQ Section -->
+    <FAQ lang={currentLang} />
 
     <Footer lang={currentLang} />
   </div>

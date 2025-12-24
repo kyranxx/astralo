@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const en: Translations = {
     meta: {
-        title: 'Astralo - Free Daily Horoscope Today 2024 | Accurate Zodiac Predictions',
-        description: 'Get your FREE personalized horoscope today! ⭐ Daily, weekly & monthly predictions. Love compatibility, career advice & zodiac forecasts. 50,000+ happy customers. Instant delivery!',
+        title: 'Astralo - Personalized Horoscope Readings | 50% OFF',
+        description: 'Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. 50,000+ happy customers. Instant PDF delivery!',
         keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2024, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
     },
     header: {
@@ -123,6 +123,24 @@ const en: Translations = {
         adviceDesc: 'Practical guidance for making the most of cosmic energies',
         footer: 'Delivered instantly to your email • Professional PDF format • Keep forever',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Frequently Asked Questions',
+        subtitle: 'Everything you need to know about our horoscope services',
+        q1: 'What is Astralo?',
+        a1: 'Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email.',
+        q2: 'How accurate are Astralo horoscopes?',
+        a2: 'Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes.',
+        q3: 'How fast will I receive my horoscope?',
+        a3: 'Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You\'ll receive a professional PDF document with your complete astrological reading.',
+        q4: 'What payment methods do you accept?',
+        a4: 'We accept all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, a secure PCI-DSS Level 1 certified payment processor. All transactions are protected with SSL encryption.',
+        q5: 'How much do horoscopes cost?',
+        a5: 'We offer four products: Daily Horoscope at €0.99, Weekly Horoscope at €2.99, Monthly Horoscope at €7.99, and Partner Compatibility at €7.99. All prices include instant delivery.',
+        q6: 'What information do I need to order?',
+        a6: 'To get your personalized horoscope, you need: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you\'ll also need your partner\'s birth information.',
+    },
 };
 
 export default en;
+
