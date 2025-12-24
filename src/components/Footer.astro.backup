@@ -5,22 +5,7 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 
-const translations: Record<string, {
-  country: string;
-  termsOfService: string;
-  privacyPolicy: string;
-  refundPolicy: string;
-  cookiePolicy: string;
-  contact: string;
-  contactUs: string;
-  paymentMethods: string;
-  allRightsReserved: string;
-  jurisdiction: string;
-  legal: string;
-  sslSecured: string;
-  resources: string;
-  blog: string;
-}> = {
+const translations = {
   en: {
     country: 'Slovakia, EU',
     termsOfService: 'Terms of Service',
@@ -87,7 +72,7 @@ const translations: Record<string, {
   },
   fr: {
     country: 'Slovaquie, UE',
-    termsOfService: "Conditions d'utilisation",
+    termsOfService: 'Conditions d\'utilisation',
     privacyPolicy: 'Politique de confidentialité',
     refundPolicy: 'Politique de remboursement',
     cookiePolicy: 'Politique des cookies',
@@ -96,8 +81,8 @@ const translations: Record<string, {
     paymentMethods: 'Paiements sécurisés via',
     allRightsReserved: 'Tous droits réservés.',
     jurisdiction: 'Le droit slovaque s\'applique',
-    legal: 'Légal',
-    sslSecured: 'SSL sécurisé',
+    legal: 'Mentions légales',
+    sslSecured: 'Sécurisé SSL',
     resources: 'Ressources',
     blog: 'Blog',
   },
@@ -129,11 +114,8 @@ const translations: Record<string, {
     allRightsReserved: 'Tutti i diritti riservati.',
     jurisdiction: 'Si applica la legge slovacca',
     legal: 'Legale',
-    sslSecured: 'SSL Sicuro',
-    resources: 'Risorse',
-    blog: 'Blog',
-  },
-  pt: {
+    
+    
     country: 'Eslováquia, UE',
     termsOfService: 'Termos de serviço',
     privacyPolicy: 'Política de privacidade',
@@ -145,11 +127,8 @@ const translations: Record<string, {
     allRightsReserved: 'Todos os direitos reservados.',
     jurisdiction: 'Aplica-se a lei eslovaca',
     legal: 'Legal',
-    sslSecured: 'SSL Seguro',
-    resources: 'Recursos',
-    blog: 'Blog',
-  },
-  nl: {
+    
+    
     country: 'Slowakije, EU',
     termsOfService: 'Servicevoorwaarden',
     privacyPolicy: 'Privacybeleid',
@@ -161,11 +140,8 @@ const translations: Record<string, {
     allRightsReserved: 'Alle rechten voorbehouden.',
     jurisdiction: 'Slowaaks recht is van toepassing',
     legal: 'Juridisch',
-    sslSecured: 'SSL Beveiligd',
-    resources: 'Bronnen',
-    blog: 'Blog',
-  },
-  pl: {
+    
+    
     country: 'Słowacja, UE',
     termsOfService: 'Regulamin',
     privacyPolicy: 'Polityka prywatności',
@@ -177,11 +153,8 @@ const translations: Record<string, {
     allRightsReserved: 'Wszelkie prawa zastrzeżone.',
     jurisdiction: 'Obowiązuje prawo słowackie',
     legal: 'Prawne',
-    sslSecured: 'SSL Zabezpieczony',
-    resources: 'Zasoby',
-    blog: 'Blog',
-  },
-  hu: {
+    
+    
     country: 'Szlovákia, EU',
     termsOfService: 'Szolgáltatási feltételek',
     privacyPolicy: 'Adatvédelmi irányelvek',
@@ -193,11 +166,8 @@ const translations: Record<string, {
     allRightsReserved: 'Minden jog fenntartva.',
     jurisdiction: 'Szlovák jog érvényes',
     legal: 'Jogi',
-    sslSecured: 'SSL Védett',
-    resources: 'Források',
-    blog: 'Blog',
-  },
-  ro: {
+    
+    
     country: 'Slovacia, UE',
     termsOfService: 'Termeni și condiții',
     privacyPolicy: 'Politica de confidențialitate',
@@ -209,11 +179,8 @@ const translations: Record<string, {
     allRightsReserved: 'Toate drepturile rezervate.',
     jurisdiction: 'Se aplică legislația slovacă',
     legal: 'Legal',
-    sslSecured: 'SSL Securizat',
-    resources: 'Resurse',
-    blog: 'Blog',
-  },
-  bg: {
+    
+    
     country: 'Словакия, ЕС',
     termsOfService: 'Условия за ползване',
     privacyPolicy: 'Политика за поверителност',
@@ -225,11 +192,8 @@ const translations: Record<string, {
     allRightsReserved: 'Всички права запазени.',
     jurisdiction: 'Прилага се словашкото право',
     legal: 'Правни',
-    sslSecured: 'SSL Защитен',
-    resources: 'Ресурси',
-    blog: 'Блог',
-  },
-  hr: {
+    
+    
     country: 'Slovačka, EU',
     termsOfService: 'Uvjeti korištenja',
     privacyPolicy: 'Politika privatnosti',
@@ -241,11 +205,8 @@ const translations: Record<string, {
     allRightsReserved: 'Sva prava pridržana.',
     jurisdiction: 'Primjenjuje se slovačko pravo',
     legal: 'Pravno',
-    sslSecured: 'SSL Zaštićeno',
-    resources: 'Resursi',
-    blog: 'Blog',
-  },
-  sl: {
+    
+    
     country: 'Slovaška, EU',
     termsOfService: 'Pogoji uporabe',
     privacyPolicy: 'Politika zasebnosti',
@@ -257,11 +218,8 @@ const translations: Record<string, {
     allRightsReserved: 'Vse pravice pridržane.',
     jurisdiction: 'Velja slovaško pravo',
     legal: 'Pravno',
-    sslSecured: 'SSL Zaščiteno',
-    resources: 'Viri',
-    blog: 'Blog',
-  },
-  sr: {
+    
+    
     country: 'Slovačka, EU',
     termsOfService: 'Uslovi korišćenja',
     privacyPolicy: 'Politika privatnosti',
@@ -273,27 +231,21 @@ const translations: Record<string, {
     allRightsReserved: 'Sva prava zadržana.',
     jurisdiction: 'Primenjuje se slovačko pravo',
     legal: 'Pravno',
-    sslSecured: 'SSL Zaštićeno',
-    resources: 'Resursi',
-    blog: 'Blog',
-  },
-  uk: {
+    
+    
     country: 'Словаччина, ЄС',
     termsOfService: 'Умови використання',
     privacyPolicy: 'Політика конфіденційності',
     refundPolicy: 'Політика повернення',
     cookiePolicy: 'Політика cookies',
     contact: 'Контакт',
-    contactUs: "Зв'яжіться з нами",
+    contactUs: 'Зв\'яжіться з нами',
     paymentMethods: 'Безпечні платежі через',
     allRightsReserved: 'Усі права захищені.',
     jurisdiction: 'Діє словацьке право',
     legal: 'Правове',
-    sslSecured: 'SSL Захищено',
-    resources: 'Ресурси',
-    blog: 'Блог',
-  },
-  ru: {
+    
+    
     country: 'Словакия, ЕС',
     termsOfService: 'Условия использования',
     privacyPolicy: 'Политика конфиденциальности',
@@ -305,11 +257,8 @@ const translations: Record<string, {
     allRightsReserved: 'Все права защищены.',
     jurisdiction: 'Действует словацкое право',
     legal: 'Правовое',
-    sslSecured: 'SSL Защищено',
-    resources: 'Ресурсы',
-    blog: 'Блог',
-  },
-  el: {
+    
+    
     country: 'Σλοβακία, ΕΕ',
     termsOfService: 'Όροι χρήσης',
     privacyPolicy: 'Πολιτική απορρήτου',
@@ -321,76 +270,87 @@ const translations: Record<string, {
     allRightsReserved: 'Με επιφύλαξη παντός δικαιώματος.',
     jurisdiction: 'Ισχύει το σλοβακικό δίκαιο',
     legal: 'Νομικά',
-    sslSecured: 'SSL Ασφαλές',
-    resources: 'Πόροι',
-    blog: 'Ιστολόγιο',
-  },
-  tr: {
+    
+    
     country: 'Slovakya, AB',
-    termsOfService: 'Kullanım koşulları',
-    privacyPolicy: 'Gizlilik politikası',
-    refundPolicy: 'İade politikası',
-    cookiePolicy: 'Çerez politikası',
+    termsOfService: 'Kullanım Şartları',
+    privacyPolicy: 'Gizlilik Politikası',
+    refundPolicy: 'İade Politikası',
+    cookiePolicy: 'Çerez Politikası',
     contact: 'İletişim',
     contactUs: 'Bize ulaşın',
     paymentMethods: 'Güvenli ödeme',
     allRightsReserved: 'Tüm hakları saklıdır.',
     jurisdiction: 'Slovak hukuku geçerlidir',
     legal: 'Yasal',
-    sslSecured: 'SSL Güvenli',
-    resources: 'Kaynaklar',
-    blog: 'Blog',
-  },
-  ar: {
+    
+    
     country: 'سلوفاكيا، الاتحاد الأوروبي',
     termsOfService: 'شروط الخدمة',
     privacyPolicy: 'سياسة الخصوصية',
     refundPolicy: 'سياسة الاسترداد',
     cookiePolicy: 'سياسة ملفات تعريف الارتباط',
-    contact: 'اتصل',
-    contactUs: 'اتصل بنا',
+    contact: 'اتصل بنا',
+    contactUs: 'تواصل معنا',
     paymentMethods: 'مدفوعات آمنة عبر',
     allRightsReserved: 'جميع الحقوق محفوظة.',
     jurisdiction: 'يسري القانون السلوفاكي',
     legal: 'قانوني',
-    sslSecured: 'SSL آمن',
-    resources: 'موارد',
-    blog: 'مدونة',
-  },
-  hi: {
-    country: 'स्लोवाकिया, ईयू',
+    
+    
+    country: 'स्लोवाकिया, यूरोपीय संघ',
     termsOfService: 'सेवा की शर्तें',
     privacyPolicy: 'गोपनीयता नीति',
-    refundPolicy: 'रिफंड नीति',
+    refundPolicy: 'वापसी नीति',
     cookiePolicy: 'कुकी नीति',
     contact: 'संपर्क',
     contactUs: 'हमसे संपर्क करें',
     paymentMethods: 'सुरक्षित भुगतान',
-    allRightsReserved: 'सर्वाधिकार सुरक्षित।',
+    allRightsReserved: 'सभी अधिकार सुरक्षित।',
     jurisdiction: 'स्लोवाक कानून लागू होता है',
     legal: 'कानूनी',
-    sslSecured: 'SSL सुरक्षित',
-    resources: 'संसाधन',
-    blog: 'ब्लॉग',
-  },
-  bn: {
-    country: 'স্লোভাকিয়া, ইইউ',
-    termsOfService: 'সেবার শর্তাবলী',
-    privacyPolicy: 'গোপনীয়তা নীতি',
-    refundPolicy: 'ফেরত নীতি',
-    cookiePolicy: 'কুকি নীতি',
-    contact: 'যোগাযোগ',
-    contactUs: 'আমাদের সাথে যোগাযোগ করুন',
-    paymentMethods: 'নিরাপদ পেমেন্ট',
-    allRightsReserved: 'সমস্ত অধিকার সংরক্ষিত।',
-    jurisdiction: 'স্লোভাক আইন প্রযোজ্য',
-    legal: 'আইনি',
-    sslSecured: 'SSL সুরক্ষিত',
-    resources: 'রিসোর্স',
-    blog: 'ব্লগ',
-  },
-  th: {
-    country: 'สโลวาเกีย, อียู',
+    
+    
+    country: 'スロバキア、EU',
+    termsOfService: '利用規約',
+    privacyPolicy: 'プライバシーポリシー',
+    refundPolicy: '返金ポリシー',
+    cookiePolicy: 'クッキーポリシー',
+    contact: 'お問い合わせ',
+    contactUs: 'お問い合わせ',
+    paymentMethods: '安全な決済',
+    allRightsReserved: '無断転載を禁じます。',
+    jurisdiction: 'スロバキア法が適用されます',
+    legal: '法的事項',
+    
+    
+    country: '슬로바키아, EU',
+    termsOfService: '이용약관',
+    privacyPolicy: '개인정보 처리방침',
+    refundPolicy: '환불 정책',
+    cookiePolicy: '쿠키 정책',
+    contact: '연락처',
+    contactUs: '문의하기',
+    paymentMethods: '안전한 결제',
+    allRightsReserved: '모든 권리 보유.',
+    jurisdiction: '슬로바키아 법률 적용',
+    legal: '법적 고지',
+    
+    
+    country: '斯洛伐克，欧盟',
+    termsOfService: '服务条款',
+    privacyPolicy: '隐私政策',
+    refundPolicy: '退款政策',
+    cookiePolicy: 'Cookie政策',
+    contact: '联系我们',
+    contactUs: '联系我们',
+    paymentMethods: '安全支付',
+    allRightsReserved: '版权所有。',
+    jurisdiction: '适用斯洛伐克法律',
+    legal: '法律',
+    
+    
+    country: 'สโลวาเกีย, สหภาพยุโรป',
     termsOfService: 'ข้อกำหนดการให้บริการ',
     privacyPolicy: 'นโยบายความเป็นส่วนตัว',
     refundPolicy: 'นโยบายการคืนเงิน',
@@ -399,13 +359,10 @@ const translations: Record<string, {
     contactUs: 'ติดต่อเรา',
     paymentMethods: 'การชำระเงินที่ปลอดภัย',
     allRightsReserved: 'สงวนลิขสิทธิ์',
-    jurisdiction: 'บังคับใช้กฎหมายสโลวัก',
+    jurisdiction: 'กฎหมายสโลวาเกียบังคับใช้',
     legal: 'กฎหมาย',
-    sslSecured: 'SSL ปลอดภัย',
-    resources: 'แหล่งข้อมูล',
-    blog: 'บล็อก',
-  },
-  vi: {
+    
+    
     country: 'Slovakia, EU',
     termsOfService: 'Điều khoản dịch vụ',
     privacyPolicy: 'Chính sách bảo mật',
@@ -414,78 +371,24 @@ const translations: Record<string, {
     contact: 'Liên hệ',
     contactUs: 'Liên hệ với chúng tôi',
     paymentMethods: 'Thanh toán an toàn qua',
-    allRightsReserved: 'Bản quyền được bảo lưu.',
-    jurisdiction: 'Áp dụng luật Slovakia',
+    allRightsReserved: 'Đã đăng ký bản quyền.',
+    jurisdiction: 'Luật Slovakia áp dụng',
     legal: 'Pháp lý',
-    sslSecured: 'SSL Bảo mật',
-    resources: 'Tài nguyên',
-    blog: 'Blog',
-  },
-  id: {
+    
+    
     country: 'Slovakia, UE',
-    termsOfService: 'Syarat layanan',
-    privacyPolicy: 'Kebijakan privasi',
-    refundPolicy: 'Kebijakan pengembalian',
-    cookiePolicy: 'Kebijakan cookie',
+    termsOfService: 'Ketentuan Layanan',
+    privacyPolicy: 'Kebijakan Privasi',
+    refundPolicy: 'Kebijakan Pengembalian',
+    cookiePolicy: 'Kebijakan Cookie',
     contact: 'Kontak',
     contactUs: 'Hubungi kami',
     paymentMethods: 'Pembayaran aman melalui',
-    allRightsReserved: 'Semua hak dilindungi.',
+    allRightsReserved: 'Hak cipta dilindungi.',
     jurisdiction: 'Hukum Slovakia berlaku',
     legal: 'Hukum',
-    sslSecured: 'SSL Aman',
-    resources: 'Sumber',
-    blog: 'Blog',
-  },
-  ja: {
-    country: 'スロバキア、EU',
-    termsOfService: '利用規約',
-    privacyPolicy: 'プライバシーポリシー',
-    refundPolicy: '返金ポリシー',
-    cookiePolicy: 'クッキーポリシー',
-    contact: 'お問い合わせ',
-    contactUs: 'お問い合わせ',
-    paymentMethods: '安全な支払い',
-    allRightsReserved: '全著作権所有。',
-    jurisdiction: 'スロバキア法が適用されます',
-    legal: '法的事項',
-    sslSecured: 'SSL保護',
-    resources: 'リソース',
-    blog: 'ブログ',
-  },
-  ko: {
-    country: '슬로바키아, EU',
-    termsOfService: '서비스 약관',
-    privacyPolicy: '개인정보 처리방침',
-    refundPolicy: '환불 정책',
-    cookiePolicy: '쿠키 정책',
-    contact: '연락처',
-    contactUs: '문의하기',
-    paymentMethods: '안전한 결제',
-    allRightsReserved: '모든 권리 보유.',
-    jurisdiction: '슬로바키아 법이 적용됩니다',
-    legal: '법적 사항',
-    sslSecured: 'SSL 보안',
-    resources: '리소스',
-    blog: '블로그',
-  },
-  zh: {
-    country: '斯洛伐克，欧盟',
-    termsOfService: '服务条款',
-    privacyPolicy: '隐私政策',
-    refundPolicy: '退款政策',
-    cookiePolicy: 'Cookie政策',
-    contact: '联系',
-    contactUs: '联系我们',
-    paymentMethods: '安全支付',
-    allRightsReserved: '版权所有。',
-    jurisdiction: '适用斯洛伐克法律',
-    legal: '法律',
-    sslSecured: 'SSL安全',
-    resources: '资源',
-    blog: '博客',
-  },
-  sv: {
+    
+    
     country: 'Slovakien, EU',
     termsOfService: 'Användarvillkor',
     privacyPolicy: 'Integritetspolicy',
@@ -497,11 +400,8 @@ const translations: Record<string, {
     allRightsReserved: 'Alla rättigheter förbehållna.',
     jurisdiction: 'Slovakisk lag gäller',
     legal: 'Juridiskt',
-    sslSecured: 'SSL-säkrad',
-    resources: 'Resurser',
-    blog: 'Blogg',
-  },
-  da: {
+    
+    
     country: 'Slovakiet, EU',
     termsOfService: 'Servicevilkår',
     privacyPolicy: 'Privatlivspolitik',
@@ -513,27 +413,8 @@ const translations: Record<string, {
     allRightsReserved: 'Alle rettigheder forbeholdes.',
     jurisdiction: 'Slovakisk lov gælder',
     legal: 'Juridisk',
-    sslSecured: 'SSL-sikret',
-    resources: 'Ressourcer',
-    blog: 'Blog',
-  },
-  no: {
-    country: 'Slovakia, EU',
-    termsOfService: 'Tjenestevilkår',
-    privacyPolicy: 'Personvernpolicy',
-    refundPolicy: 'Refusjonspolicy',
-    cookiePolicy: 'Informasjonskapselpolicy',
-    contact: 'Kontakt',
-    contactUs: 'Kontakt oss',
-    paymentMethods: 'Sikre betalinger via',
-    allRightsReserved: 'Alle rettigheter forbeholdt.',
-    jurisdiction: 'Slovakisk lov gjelder',
-    legal: 'Juridisk',
-    sslSecured: 'SSL-sikret',
-    resources: 'Ressurser',
-    blog: 'Blogg',
-  },
-  fi: {
+    
+    
     country: 'Slovakia, EU',
     termsOfService: 'Käyttöehdot',
     privacyPolicy: 'Tietosuojakäytäntö',
@@ -543,13 +424,36 @@ const translations: Record<string, {
     contactUs: 'Ota yhteyttä',
     paymentMethods: 'Turvalliset maksut',
     allRightsReserved: 'Kaikki oikeudet pidätetään.',
-    jurisdiction: 'Sovelletaan Slovakian lakia',
+    jurisdiction: 'Slovakian laki on voimassa',
     legal: 'Oikeudellinen',
-    sslSecured: 'SSL-suojattu',
-    resources: 'Resurssit',
-    blog: 'Blogi',
-  },
-  he: {
+    
+    
+    country: 'Slovakia, EU',
+    termsOfService: 'Vilkår for bruk',
+    privacyPolicy: 'Personvernregler',
+    refundPolicy: 'Refusjonsregler',
+    cookiePolicy: 'Informasjonskapsler',
+    contact: 'Kontakt',
+    contactUs: 'Kontakt oss',
+    paymentMethods: 'Sikre betalinger via',
+    allRightsReserved: 'Alle rettigheter reservert.',
+    jurisdiction: 'Slovakisk lov gjelder',
+    legal: 'Juridisk',
+    
+    
+    country: 'স্লোভাকিয়া, ইউরোপীয় ইউনিয়ন',
+    termsOfService: 'সেবার শর্তাবলী',
+    privacyPolicy: 'গোপনীয়তা নীতি',
+    refundPolicy: 'ফেরত নীতি',
+    cookiePolicy: 'কুকি নীতি',
+    contact: 'যোগাযোগ',
+    contactUs: 'আমাদের সাথে যোগাযোগ করুন',
+    paymentMethods: 'নিরাপদ পেমেন্ট',
+    allRightsReserved: 'সমস্ত অধিকার সংরক্ষিত।',
+    jurisdiction: 'স্লোভাক আইন প্রযোজ্য',
+    legal: 'আইনি',
+    
+    
     country: 'סלובקיה, האיחוד האירופי',
     termsOfService: 'תנאי שירות',
     privacyPolicy: 'מדיניות פרטיות',
@@ -562,12 +466,10 @@ const translations: Record<string, {
     jurisdiction: 'חוק סלובקיה חל',
     legal: 'משפטי',
     sslSecured: 'SSL מאובטח',
-    resources: 'משאבים',
-    blog: 'בלוג',
   },
 };
 
-const t = translations[lang] || translations.en;
+const t = translations[lang as keyof typeof translations] || translations.en;
 // English uses root paths, other languages use /[lang]/ prefix
 const basePath = lang === 'en' ? '' : `/${lang}`;
 const legalBasePath = `${basePath}/legal`;
@@ -596,12 +498,12 @@ const legalBasePath = `${basePath}/legal`;
         </nav>
         
         <!-- Resources/Blog Link -->
-        <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-2 mt-4">{t.resources}</h3>
+        <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-2 mt-4">{t.resources || 'Resources'}</h3>
         <a href={lang === 'en' ? '/blog' : `/${lang}/blog`} class="text-white/70 text-sm hover:text-amber-400 transition-colors inline-flex items-center gap-1">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
-          {t.blog}
+          {t.blog || 'Blog'}
         </a>
       </div>
       
@@ -612,7 +514,7 @@ const legalBasePath = `${basePath}/legal`;
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
-          {t.contactUs}
+          {t.contactUs || 'Contact us'}
         </a>
         <p class="text-white/40 text-xs mt-3">{t.jurisdiction}</p>
       </div>

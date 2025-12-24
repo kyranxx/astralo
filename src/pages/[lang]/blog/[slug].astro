@@ -592,7 +592,8 @@ const blogPosts: Record<string, any> = {
 
 // Generate all paths: lang × slug combinations
 export function getStaticPaths() {
-  const locales = getSupportedLocales().filter(lang => lang !== 'en');
+  // Hardcode locales to avoid import issues during static generation
+  const locales = ['sk', 'cs', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'hu', 'ro', 'bg', 'hr', 'sl', 'sr', 'uk', 'ru', 'el', 'tr', 'ar', 'hi', 'bn', 'th', 'vi', 'id', 'ja', 'ko', 'zh', 'sv', 'da', 'no', 'fi', 'he'];
   const slugs = Object.keys(blogPosts);
   
   const paths = [];
@@ -610,8 +611,10 @@ const t = getTranslations(currentLang);
 const ui = getUiTranslations(currentLang);
 const post = blogPosts[slug as string];
 
+// This should never happen since getStaticPaths only generates valid paths
+// But just in case, provide a fallback
 if (!post) {
-  return Astro.redirect(`/${currentLang}/blog`);
+  throw new Error(`Blog post not found: ${slug}`);
 }
 
 // Related posts (exclude current)
