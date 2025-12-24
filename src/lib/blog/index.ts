@@ -3,12 +3,14 @@
  * Aggregates all article translations and provides helper functions
  */
 
-import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide';
+import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
+// These will be converted to folder structure as translations are added:
 import { zodiacCompatibility } from './articles/zodiac-compatibility';
 import { birthChartReading } from './articles/birth-chart-reading';
 import { weeklyHoroscope } from './articles/weekly-horoscope';
 import { monthlyHoroscope } from './articles/monthly-horoscope';
 import { loveHoroscope } from './articles/love-horoscope';
+export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
 
 export interface BlogPostTranslation {
