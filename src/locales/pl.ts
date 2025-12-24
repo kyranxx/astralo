@@ -123,6 +123,23 @@ const pl: Translations = {
         adviceDesc: 'Praktyczne wskazówki do wykorzystania energii kosmicznych',
         footer: 'Natychmiastowa dostawa na email • Profesjonalny format PDF • Twój na zawsze',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Najczęściej Zadawane Pytania',
+        subtitle: 'Wszystko, co musisz wiedzieć o naszych usługach horoskopowych',
+        q1: 'Czym jest Astralo?',
+        a1: 'Astralo to profesjonalna usługa horoskopowa online, która dostarcza spersonalizowane odczyty astrologiczne oparte na Twoich dokładnych danych urodzenia (data, godzina i miejsce). Oferujemy horoskopy dzienne, tygodniowe, miesięczne oraz analizę partnerską, dostarczane natychmiast jako pięknie zaprojektowane dokumenty PDF na Twój email.',
+        q2: 'Jak dokładne są horoskopy Astralo?',
+        a2: 'Horoskopy Astralo są tworzone przy użyciu zaawansowanych algorytmów astrologicznych opartych na Twoich precyzyjnych danych urodzenia. Z ponad 50 000 zadowolonych klientów i oceną 4,9/5 gwiazdek, nasze spersonalizowane odczyty dostarczają szczegółowych informacji w celach rozrywkowych.',
+        q3: 'Jak szybko otrzymam swój horoskop?',
+        a3: 'Twój spersonalizowany horoskop jest generowany i dostarczany natychmiast na Twój email w ciągu 2-5 minut po płatności. Otrzymasz profesjonalny dokument PDF z pełnym odczytem astrologicznym.',
+        q4: 'Jakie metody płatności akceptujecie?',
+        a4: 'Akceptujemy wszystkie główne karty kredytowe i debetowe (Visa, Mastercard, American Express) przez Stripe, bezpieczny procesor płatności z certyfikatem PCI-DSS Level 1. Wszystkie transakcje są chronione szyfrowaniem SSL.',
+        q5: 'Ile kosztują horoskopy?',
+        a5: 'Oferujemy cztery produkty: Horoskop Dzienny za 0,99 €, Horoskop Tygodniowy za 2,99 €, Horoskop Miesięczny za 7,99 € i Horoskop Partnerski za 7,99 €. Wszystkie ceny zawierają natychmiastową dostawę.',
+        q6: 'Jakie informacje są potrzebne do zamówienia?',
+        a6: 'Do otrzymania spersonalizowanego horoskopu potrzebujesz: pełnego imienia i nazwiska, adresu email, daty urodzenia, godziny urodzenia (opcjonalnie, ale zalecane) i miejsca urodzenia. Dla horoskopów partnerskich potrzebujesz również danych urodzenia partnera.',
+    },
 };
 
 export default pl;
