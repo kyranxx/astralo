@@ -8,6 +8,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
+import { getBlogContent } from '../../../lib/blog-content';
 
 export const prerender = true;
 
@@ -114,64 +115,38 @@ const blogT = blogTranslations[currentLang] || {
   seoDesc: `Explore our astrology blog for daily horoscopes, zodiac compatibility guides, and birth chart readings.`,
 };
 
-// Blog posts data - same structure, will show in localized context
-const blogPosts = [
-  {
-    slug: 'daily-horoscope-guide',
-    title: '⭐ Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
-    excerpt: 'Discover what the stars have in store for you today.',
-    date: '2024-12-20',
-    readTime: '8 min',
-    category: 'Horoscopes',
-    featured: true,
-    emoji: '⭐'
-  },
-  {
-    slug: 'zodiac-compatibility-complete-guide',
-    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
-    excerpt: 'Find out which zodiac signs are most compatible with yours.',
-    date: '2024-12-18',
-    readTime: '12 min',
-    category: 'Love & Relationships',
-    emoji: '❤️'
-  },
-  {
-    slug: 'birth-chart-reading-explained',
-    title: '🔮 Birth Chart Reading: How to Understand Your Natal Chart',
-    excerpt: 'Learn how to read and interpret your birth chart.',
-    date: '2024-12-15',
-    readTime: '10 min',
-    category: 'Astrology Basics',
-    emoji: '🔮'
-  },
-  {
-    slug: 'weekly-horoscope-predictions',
-    title: '📅 Weekly Horoscope: What the Stars Predict for This Week',
-    excerpt: 'Get your weekly horoscope forecast for all zodiac signs.',
-    date: '2024-12-22',
-    readTime: '6 min',
-    category: 'Horoscopes',
-    emoji: '📅'
-  },
-  {
-    slug: 'monthly-horoscope-january-2025',
-    title: '🌙 Monthly Horoscope January 2025: All Zodiac Sign Predictions',
-    excerpt: 'Your complete monthly horoscope for January 2025.',
-    date: '2024-12-24',
-    readTime: '15 min',
-    category: 'Horoscopes',
-    emoji: '🌙'
-  },
-  {
-    slug: 'love-horoscope-relationship-advice',
-    title: '💕 Love Horoscope 2024: Relationship Predictions for Every Sign',
-    excerpt: 'Is love written in your stars?',
-    date: '2024-12-10',
-    readTime: '9 min',
-    category: 'Love & Relationships',
-    emoji: '💕'
-  }
+// Get localized blog content
+const localizedBlogContent = getBlogContent(currentLang);
+
+// Blog posts data with localized titles and excerpts
+const blogPostSlugs = [
+  'daily-horoscope-guide',
+  'zodiac-compatibility-complete-guide', 
+  'birth-chart-reading-explained',
+  'weekly-horoscope-predictions',
+  'monthly-horoscope-january-2025',
+  'love-horoscope-relationship-advice'
 ];
+
+const blogPostsBase = [
+  { slug: 'daily-horoscope-guide', date: '2024-12-20', readTime: '8 min', featured: true, emoji: '⭐' },
+  { slug: 'zodiac-compatibility-complete-guide', date: '2024-12-18', readTime: '12 min', featured: false, emoji: '❤️' },
+  { slug: 'birth-chart-reading-explained', date: '2024-12-15', readTime: '10 min', featured: false, emoji: '🔮' },
+  { slug: 'weekly-horoscope-predictions', date: '2024-12-22', readTime: '6 min', featured: false, emoji: '📅' },
+  { slug: 'monthly-horoscope-january-2025', date: '2024-12-24', readTime: '15 min', featured: false, emoji: '🌙' },
+  { slug: 'love-horoscope-relationship-advice', date: '2024-12-10', readTime: '9 min', featured: false, emoji: '💕' }
+];
+
+// Merge base data with localized content
+const blogPosts = blogPostsBase.map(post => {
+  const localizedPost = localizedBlogContent.posts[post.slug];
+  return {
+    ...post,
+    title: localizedPost?.title || getBlogContent('en').posts[post.slug].title,
+    excerpt: localizedPost?.excerpt || getBlogContent('en').posts[post.slug].excerpt,
+    category: localizedPost?.category || getBlogContent('en').posts[post.slug].category
+  };
+});
 
 const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
 ---
