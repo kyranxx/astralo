@@ -123,6 +123,23 @@ const hu: Translations = {
         adviceDesc: 'Gyakorlati útmutató a kozmikus energiák kihasználásához',
         footer: 'Azonnali kézbesítés emailben • Professzionális PDF formátum • Örökre az Öné',
     },
+    faq: {
+        badge: 'GYIK',
+        title: 'Gyakran Ismételt Kérdések',
+        subtitle: 'Minden, amit tudnia kell horoszkóp szolgáltatásainkról',
+        q1: 'Mi az Astralo?',
+        a1: 'Az Astralo egy professzionális online horoszkóp szolgáltatás, amely személyre szabott asztrológiai olvasásokat nyújt az Ön pontos születési adatai (dátum, idő és hely) alapján. Napi, heti, havi horoszkópokat és partner kompatibilitási elemzéseket kínálunk, amelyek azonnal, gyönyörűen megtervezett PDF dokumentumokként kerülnek kézbesítésre e-mailben.',
+        q2: 'Mennyire pontosak az Astralo horoszkópok?',
+        a2: 'Az Astralo horoszkópokat fejlett asztrológiai algoritmusok segítségével készítjük, az Ön pontos születési adatai alapján. Több mint 50 000 elégedett ügyféllel és 4,9/5 csillagos értékeléssel, személyre szabott olvasásaink részletes betekintést nyújtanak szórakoztatási célokra.',
+        q3: 'Milyen gyorsan kapom meg a horoszkópomat?',
+        a3: 'Személyre szabott horoszkópja a fizetés után 2-5 percen belül generálódik és azonnal kézbesítésre kerül az e-mail címére. Professzionális PDF dokumentumot kap a teljes asztrológiai olvasással.',
+        q4: 'Milyen fizetési módokat fogadnak el?',
+        a4: 'Minden főbb hitel- és betéti kártyát elfogadunk (Visa, Mastercard, American Express) a Stripe-on keresztül, amely egy PCI-DSS Level 1 tanúsítvánnyal rendelkező biztonságos fizetési feldolgozó. Minden tranzakció SSL titkosítással védett.',
+        q5: 'Mennyibe kerülnek a horoszkópok?',
+        a5: 'Négy terméket kínálunk: Napi Horoszkóp 0,99 €, Heti Horoszkóp 2,99 €, Havi Horoszkóp 7,99 € és Partner Horoszkóp 7,99 €. Minden ár tartalmazza az azonnali kézbesítést.',
+        q6: 'Milyen információra van szükségem a rendeléshez?',
+        a6: 'Személyre szabott horoszkópjához szüksége van: teljes névre, e-mail címre, születési dátumra, születési időre (opcionális, de ajánlott) és születési helyre. Partner horoszkópokhoz partnere születési adataira is szükség van.',
+    },
 };
 
 export default hu;

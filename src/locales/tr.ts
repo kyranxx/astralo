@@ -123,6 +123,23 @@ const tr: Translations = {
         adviceDesc: 'Kozmik enerjileri kullanmak için pratik rehber',
         footer: 'E-postaya anında teslimat • Profesyonel PDF formatı • Sonsuza kadar sizin',
     },
+    faq: {
+        badge: 'SSS',
+        title: 'Sıkça Sorulan Sorular',
+        subtitle: 'Burç yorumu hizmetlerimiz hakkında bilmeniz gereken her şey',
+        q1: 'Astralo nedir?',
+        a1: 'Astralo, kesin doğum verilerinize (tarih, saat ve yer) dayalı kişiselleştirilmiş astrolojik okumalar sunan profesyonel bir çevrimiçi burç yorumu hizmetidir. Günlük, haftalık, aylık burç yorumları ve partner uyumluluk analizleri sunuyoruz, bunlar güzelce tasarlanmış PDF belgeleri olarak anında e-postanıza teslim edilir.',
+        q2: 'Astralo burç yorumları ne kadar doğru?',
+        a2: 'Astralo burç yorumları, kesin doğum verilerinize dayalı gelişmiş astrolojik algoritmalar kullanılarak oluşturulur. 50.000\'den fazla memnun müşteri ve 4,9/5 yıldız değerlendirmesiyle, kişiselleştirilmiş okumalarımız eğlence amaçlı ayrıntılı bilgiler sağlar.',
+        q3: 'Burç yorumumu ne kadar çabuk alacağım?',
+        a3: 'Kişiselleştirilmiş burç yorumunuz ödeme sonrasında 2-5 dakika içinde oluşturulur ve anında e-postanıza teslim edilir. Tam astrolojik okumamızı içeren profesyonel bir PDF belgesi alacaksınız.',
+        q4: 'Hangi ödeme yöntemlerini kabul ediyorsunuz?',
+        a4: 'PCI-DSS Seviye 1 sertifikalı güvenli ödeme işlemcisi Stripe üzerinden tüm büyük kredi ve banka kartlarını (Visa, Mastercard, American Express) kabul ediyoruz. Tüm işlemler SSL şifrelemesiyle korunmaktadır.',
+        q5: 'Burç yorumları ne kadar?',
+        a5: 'Dört ürün sunuyoruz: Günlük Burç 0,99 €, Haftalık Burç 2,99 €, Aylık Burç 7,99 € ve Partner Burcu 7,99 €. Tüm fiyatlar anında teslimatı içerir.',
+        q6: 'Sipariş için hangi bilgilere ihtiyacım var?',
+        a6: 'Kişiselleştirilmiş burç yorumunuz için şunlara ihtiyacınız var: tam ad, e-posta adresi, doğum tarihi, doğum saati (isteğe bağlı ancak önerilir) ve doğum yeri. Partner burç yorumları için partnerinizin doğum bilgilerine de ihtiyacınız olacak.',
+    },
 };
 
 export default tr;
