@@ -627,7 +627,7 @@ if (!post) {
 
 // Get localized content, falling back to English post data
 const localizedPost = getPostTranslation(currentLang, slug as string);
-const displayTitle = localizedPost.title?.replace(/^[⭐❤️🔮📅🌙💕]\s*/, '') || post.displayTitle;
+const displayTitle = (localizedPost?.title || post.title || '').replace(/^[⭐❤️🔮📅🌙💕]\s*/, '') || post.displayTitle;
 const fullTitle = localizedPost.title || post.title;
 const metaDescription = localizedPost.metaDescription || post.metaDescription;
 const quickSummary = localizedPost.quickSummary || post.quickSummary;
