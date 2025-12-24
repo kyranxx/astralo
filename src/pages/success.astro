@@ -746,7 +746,7 @@ if (!sessionId) {
 const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
 ---
 
-<Layout title={`${t.success.title} - Astralo`} lang={currentLang}>
+<Layout title={`${t.success.title} - Astralo`} lang={currentLang} noIndex={true}>
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Header -->
     <header class="glass-strong border-b border-white/10">

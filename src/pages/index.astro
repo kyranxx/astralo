@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
+import { getTestimonials } from '../lib/testimonials';
 
 export const prerender = true;
 
@@ -67,26 +68,8 @@ const iconMap = {
   Moon,
 };
 
-const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    location: "London, UK",
-    text: "The most accurate horoscope I've ever received! Everything came true exactly as predicted.",
-    rating: 5,
-  },
-  {
-    name: "James Wilson",
-    location: "Manchester, UK",
-    text: "The monthly horoscope helped me make the right career decision. Highly recommended!",
-    rating: 5,
-  },
-  {
-    name: "Emma Thompson",
-    location: "Dublin, Ireland",
-    text: "Amazing accuracy and detail in the partner analysis. Finally understood our relationship dynamics!",
-    rating: 5,
-  },
-];
+// Get localized testimonials
+const testimonials = getTestimonials(currentLang);
 ---
 
 <Layout 

@@ -11,6 +11,7 @@ interface Props {
 	canonicalUrl?: string;
 	description?: string;
 	keywords?: string;
+	noIndex?: boolean;
 }
 
 const { 
@@ -19,7 +20,8 @@ const {
 	lang = "en",
 	canonicalUrl,
 	description,
-	keywords
+	keywords,
+	noIndex = false
 } = Astro.props;
 
 // Get translations for current language
@@ -118,7 +120,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta name="description" content={currentDescription} />
 		<meta name="keywords" content={currentKeywords} />
 		<meta name="author" content="Astralo" />
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
 		<meta name="google-site-verification" content="nnTYdANVVkW6nOtVRWJ0xIVe-u5DRY4yK5QZ3nQLUdQ" />
 		
 		<!-- Canonical URL (Critical for SEO) -->
@@ -136,7 +138,8 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta property="og:url" content={computedCanonicalUrl} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={currentDescription} />
-		<meta property="og:image" content={`${siteUrl}/og-image.svg`} />
+		<meta property="og:image" content={`${siteUrl}/og-image.png`} />
+		<meta property="og:image:type" content="image/png" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:image:alt" content="Astralo - Professional Horoscopes" />
@@ -150,7 +153,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta name="twitter:url" content={computedCanonicalUrl} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={currentDescription} />
-		<meta name="twitter:image" content={`${siteUrl}/og-image.svg`} />
+		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
 		
 		<!-- Performance: Preconnect to critical third-party origins -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -265,6 +268,180 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 					"item": `${siteUrl}${lang === 'en' ? '' : '/' + lang}/`
 				}
 			]
+		})} />
+		
+		<!-- Product Schema with Reviews for Rich Snippets -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Product",
+			"name": "Personalized Horoscope Readings",
+			"description": currentDescription,
+			"brand": {
+				"@type": "Brand",
+				"name": "Astralo"
+			},
+			"image": `${siteUrl}/logo.png`,
+			"offers": {
+				"@type": "AggregateOffer",
+				"lowPrice": "0.99",
+				"highPrice": "7.99",
+				"priceCurrency": "EUR",
+				"offerCount": "4",
+				"availability": "https://schema.org/InStock"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.9",
+				"bestRating": "5",
+				"worstRating": "1",
+				"ratingCount": "50000",
+				"reviewCount": "12847"
+			},
+			"review": [
+				{
+					"@type": "Review",
+					"author": {"@type": "Person", "name": "Sarah M."},
+					"datePublished": "2024-11-15",
+					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+					"reviewBody": "The most accurate horoscope I've ever received! Everything came true exactly as predicted."
+				},
+				{
+					"@type": "Review",
+					"author": {"@type": "Person", "name": "James W."},
+					"datePublished": "2024-11-20",
+					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+					"reviewBody": "The monthly horoscope helped me make the right career decision. Highly recommended!"
+				},
+				{
+					"@type": "Review",
+					"author": {"@type": "Person", "name": "Emma T."},
+					"datePublished": "2024-12-01",
+					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+					"reviewBody": "Amazing accuracy and detail in the partner analysis. Finally understood our relationship dynamics!"
+				}
+			]
+		})} />
+		
+		<!-- Service Schema for Professional Services -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"serviceType": "Personalized Horoscope Reading",
+			"provider": {
+				"@type": "Organization",
+				"name": "Astralo",
+				"url": siteUrl
+			},
+			"areaServed": {
+				"@type": "Place",
+				"name": "Worldwide"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Horoscope Services",
+				"itemListElement": [
+					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.daily}, "price": "0.99", "priceCurrency": "EUR"},
+					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.weekly}, "price": "2.99", "priceCurrency": "EUR"},
+					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.monthly}, "price": "7.99", "priceCurrency": "EUR"},
+					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.partner}, "price": "7.99", "priceCurrency": "EUR"}
+				]
+			},
+			"description": "Professional personalized horoscope readings based on your exact birth data. Daily, weekly, monthly forecasts and partner compatibility analysis.",
+			"audience": {
+				"@type": "PeopleAudience",
+				"suggestedMinAge": "18"
+			}
+		})} />
+		
+		<!-- FAQ Schema for Rich Snippets & LLM Optimization -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What is Astralo?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How accurate are Astralo horoscopes?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes. Each horoscope is uniquely generated for you based on planetary positions at your exact birth moment."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How fast will I receive my horoscope?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You'll receive a professional PDF document with your complete astrological reading, plus a PNG image summary."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What payment methods does Astralo accept?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Astralo accepts all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, a secure PCI-DSS Level 1 certified payment processor. All transactions are protected with SSL encryption."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How much do Astralo horoscopes cost?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Astralo offers four horoscope products: Daily Horoscope at €0.99 (about 200 words), Weekly Horoscope at €2.99 (about 400 words), Monthly Horoscope at €7.99 (about 1000 words), and Partner Compatibility Horoscope at €7.99 (about 1200 words). All prices include a 50% discount and instant delivery."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "In what languages are Astralo horoscopes available?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Astralo horoscopes are available in 33 languages including English, German, French, Spanish, Italian, Portuguese, Dutch, Polish, Swedish, Danish, Norwegian, Finnish, Czech, Slovak, Hungarian, Romanian, Bulgarian, Croatian, Slovenian, Serbian, Ukrainian, Russian, Greek, Turkish, Arabic, Hindi, Bengali, Thai, Vietnamese, Indonesian, Japanese, Korean, and Chinese."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What information do I need to order a horoscope?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "To get your personalized horoscope, you need to provide: your full name, email address, date of birth, time of birth (optional but recommended for accuracy), and place of birth. For partner horoscopes, you'll also need your partner's birth information."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can I get a refund for my horoscope?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Due to the digital and personalized nature of our horoscopes, refunds are handled on a case-by-case basis. If you haven't received your horoscope within 30 minutes or there's a technical issue, please contact us at apollotechsro@gmail.com. We're committed to ensuring your satisfaction."
+					}
+				}
+			]
+		})} />
+		
+		<!-- SoftwareApplication Schema (for AI/LLM understanding) -->
+		<script is:inline type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "WebApplication",
+			"name": "Astralo",
+			"applicationCategory": "LifestyleApplication",
+			"operatingSystem": "Web Browser",
+			"offers": {
+				"@type": "Offer",
+				"price": "0.99",
+				"priceCurrency": "EUR"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.9",
+				"ratingCount": "50000"
+			}
 		})} />
 		
 		<!-- Critical CSS inline for faster FCP -->

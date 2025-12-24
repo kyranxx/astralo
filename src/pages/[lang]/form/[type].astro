@@ -40,7 +40,7 @@ if (!selectedType) {
 const productName = t.products[type as keyof typeof t.products]?.name || type;
 ---
 
-<Layout title={`${productName} - Astralo`} lang={currentLang}>
+<Layout title={`${productName} - Astralo`} lang={currentLang} noIndex={true}>
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Top Secure Payment Banner -->
     <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 py-2 px-4 text-center">
