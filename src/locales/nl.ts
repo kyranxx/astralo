@@ -123,6 +123,23 @@ const nl: Translations = {
         adviceDesc: 'Praktische begeleiding om kosmische energieën te benutten',
         footer: 'Directe levering per email • Professioneel PDF-formaat • Voor altijd van jou',
     },
+    faq: {
+        badge: 'FAQ',
+        title: 'Veelgestelde Vragen',
+        subtitle: 'Alles wat je moet weten over onze horoscoopdiensten',
+        q1: 'Wat is Astralo?',
+        a1: 'Astralo is een professionele online horoscoopdienst die gepersonaliseerde astrologische lezingen biedt op basis van je exacte geboortegegevens (datum, tijd en plaats). We bieden dagelijkse, wekelijkse, maandelijkse horoscopen en partneranalyses, direct geleverd als prachtig ontworpen PDF-documenten naar je email.',
+        q2: 'Hoe nauwkeurig zijn Astralo horoscopen?',
+        a2: 'Astralo horoscopen worden gemaakt met geavanceerde astrologische algoritmes gebaseerd op je precieze geboortegegevens. Met meer dan 50.000 tevreden klanten en een 4,9/5 sterrenbeoordeling bieden onze gepersonaliseerde lezingen gedetailleerde inzichten voor amusementsdoeleinden.',
+        q3: 'Hoe snel ontvang ik mijn horoscoop?',
+        a3: 'Je gepersonaliseerde horoscoop wordt gegenereerd en direct naar je email verzonden binnen 2-5 minuten na betaling. Je ontvangt een professioneel PDF-document met je volledige astrologische lezing.',
+        q4: 'Welke betaalmethoden accepteren jullie?',
+        a4: 'We accepteren alle gangbare credit- en debetkaarten (Visa, Mastercard, American Express) via Stripe, een veilige PCI-DSS Level 1 gecertificeerde betalingsverwerker. Alle transacties zijn beschermd met SSL-encryptie.',
+        q5: 'Hoeveel kosten de horoscopen?',
+        a5: 'We bieden vier producten: Daghoroscoop voor €0,99, Weekhoroscoop voor €2,99, Maandhoroscoop voor €7,99 en Partnerhoroscoop voor €7,99. Alle prijzen zijn inclusief directe levering.',
+        q6: 'Welke informatie heb ik nodig om te bestellen?',
+        a6: 'Voor je gepersonaliseerde horoscoop heb je nodig: je volledige naam, e-mailadres, geboortedatum, geboortetijd (optioneel maar aanbevolen) en geboorteplaats. Voor partnerhoroscopen heb je ook de geboortegegevens van je partner nodig.',
+    },
 };
 
 export default nl;
