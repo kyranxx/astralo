@@ -7,6 +7,12 @@ export interface BlogPostTranslation {
     title: string;
     excerpt: string;
     category: string;
+    // Optional full article content fields
+    metaDescription?: string;
+    quickSummary?: string[];
+    keyTakeaways?: string[];
+    tableOfContents?: Array<{ id: string; title: string }>;
+    content?: string;
 }
 
 export interface BlogTranslations {

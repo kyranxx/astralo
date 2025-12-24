@@ -9,6 +9,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, Clock, Share2, Star, ArrowRight, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
+import { getPostTranslation } from '../../../lib/blog-content';
 
 export const prerender = true;
 
@@ -624,6 +625,17 @@ if (!post) {
   throw new Error(`Blog post not found: ${slug}`);
 }
 
+// Get localized content, falling back to English post data
+const localizedPost = getPostTranslation(currentLang, slug as string);
+const displayTitle = localizedPost.title?.replace(/^[⭐❤️🔮📅🌙💕]\s*/, '') || post.displayTitle;
+const fullTitle = localizedPost.title || post.title;
+const metaDescription = localizedPost.metaDescription || post.metaDescription;
+const quickSummary = localizedPost.quickSummary || post.quickSummary;
+const keyTakeaways = localizedPost.keyTakeaways || post.keyTakeaways;
+const tableOfContents = localizedPost.tableOfContents || post.tableOfContents;
+const articleContent = localizedPost.content || post.content;
+const category = localizedPost.category || post.category;
+
 // Related posts (exclude current)
 const relatedPosts = Object.entries(blogPosts)
   .filter(([s, p]) => s !== slug && p.category === post.category)
@@ -631,7 +643,7 @@ const relatedPosts = Object.entries(blogPosts)
 
 // Generate share URLs
 const currentUrl = `https://astralo.online/${currentLang}/blog/${slug}`;
-const shareText = encodeURIComponent(post.displayTitle);
+const shareText = encodeURIComponent(displayTitle);
 const shareUrls = {
   twitter: `https://twitter.com/intent/tweet?text=${shareText}&url=${encodeURIComponent(currentUrl)}`,
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
@@ -640,8 +652,8 @@ const shareUrls = {
 ---
 
 <Layout 
-  title={`${post.displayTitle} | Astralo Blog`}
-  description={post.metaDescription}
+  title={`${displayTitle} | Astralo Blog`}
+  description={metaDescription}
   keywords={post.keywords}
   lang={currentLang}
 >
@@ -729,7 +741,7 @@ const shareUrls = {
             <h3 class="text-lg font-bold text-white">{ui.quickSummary}</h3>
           </div>
           <ul class="space-y-2">
-            {post.quickSummary.map((point: string) => (
+            {quickSummary.map((point: string) => (
               <li class="flex items-start gap-3 text-white/80">
                 <span class="text-amber-400 mt-1">✓</span>
                 <span>{point}</span>
@@ -739,14 +751,14 @@ const shareUrls = {
         </div>
 
         <!-- Table of Contents -->
-        {post.tableOfContents && post.tableOfContents.length > 0 && (
+        {tableOfContents && tableOfContents.length > 0 && (
           <div class="glass rounded-2xl p-6 mb-8">
             <div class="flex items-center gap-2 mb-4">
               <List class="w-5 h-5 text-amber-400" />
               <h3 class="text-lg font-bold text-white">{ui.tableOfContents}</h3>
             </div>
             <nav class="space-y-2">
-              {post.tableOfContents.map((item: { id: string; title: string }, index: number) => (
+              {tableOfContents.map((item: { id: string; title: string }, index: number) => (
                 <a href={`#${item.id}`} 
                    class="flex items-center gap-3 text-white/70 hover:text-amber-400 transition-colors py-1">
                   <span class="text-amber-400/50 text-sm font-mono">{String(index + 1).padStart(2, '0')}</span>
@@ -767,7 +779,7 @@ const shareUrls = {
             prose-strong:text-amber-200
             prose-ul:text-white/80 prose-li:mb-2
             prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline"
-          set:html={post.content}
+          set:html={articleContent}
         />
 
         <!-- Key Takeaways Box -->
@@ -777,7 +789,7 @@ const shareUrls = {
             <h3 class="text-lg font-bold text-white">{ui.keyTakeaways}</h3>
           </div>
           <ul class="space-y-2">
-            {post.keyTakeaways.map((point: string) => (
+            {keyTakeaways.map((point: string) => (
               <li class="flex items-start gap-3 text-white/80">
                 <span class="text-green-400 mt-1">★</span>
                 <span>{point}</span>
