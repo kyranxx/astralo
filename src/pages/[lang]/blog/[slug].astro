@@ -9,7 +9,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, Clock, Share2, Star, ArrowRight, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getPostTranslation } from '../../../lib/blog-content';
+import { getArticleTranslation, articleMeta, getBlogUiTranslations, type BlogPostTranslation, type BlogPostMeta } from '../../../lib/blog';
 
 export const prerender = true;
 
@@ -618,23 +618,25 @@ const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
 const t = getTranslations(currentLang);
 const ui = getUiTranslations(currentLang);
 const post = blogPosts[slug as string];
+const meta = articleMeta[slug as string];
 
 // This should never happen since getStaticPaths only generates valid paths
 // But just in case, provide a fallback
-if (!post) {
+if (!post || !meta) {
   throw new Error(`Blog post not found: ${slug}`);
 }
 
-// Get localized content, falling back to English post data
-const localizedPost = getPostTranslation(currentLang, slug as string);
+// Get localized content from the new modular translations, falling back to English
+const localizedPost = getArticleTranslation(slug as string, currentLang);
 const displayTitle = (localizedPost?.title || post.title || '').replace(/^[⭐❤️🔮📅🌙💕]\s*/, '') || post.displayTitle;
-const fullTitle = localizedPost.title || post.title;
-const metaDescription = localizedPost.metaDescription || post.metaDescription;
-const quickSummary = localizedPost.quickSummary || post.quickSummary;
-const keyTakeaways = localizedPost.keyTakeaways || post.keyTakeaways;
-const tableOfContents = localizedPost.tableOfContents || post.tableOfContents;
-const articleContent = localizedPost.content || post.content;
-const category = localizedPost.category || post.category;
+const fullTitle = localizedPost?.title || post.title;
+const metaDescription = localizedPost?.metaDescription || post.metaDescription;
+const quickSummary = localizedPost?.quickSummary || post.quickSummary;
+const keyTakeaways = localizedPost?.keyTakeaways || post.keyTakeaways;
+const tableOfContents = localizedPost?.tableOfContents || post.tableOfContents;
+const articleContent = localizedPost?.content || post.content;
+const category = localizedPost?.category || post.category;
+const keywords = localizedPost?.keywords || post.keywords;
 
 // Related posts (exclude current)
 const relatedPosts = Object.entries(blogPosts)
@@ -643,18 +645,27 @@ const relatedPosts = Object.entries(blogPosts)
 
 // Generate share URLs
 const currentUrl = `https://astralo.online/${currentLang}/blog/${slug}`;
-const shareText = encodeURIComponent(displayTitle);
+// Safe encoding that handles any potential UTF-16 issues
+const safeEncode = (str: string) => {
+  try {
+    return encodeURIComponent(str);
+  } catch {
+    // If encoding fails, try to sanitize the string first
+    return encodeURIComponent(String(str).replace(/[\uD800-\uDFFF]/g, ''));
+  }
+};
+const shareText = safeEncode(displayTitle || '');
 const shareUrls = {
-  twitter: `https://twitter.com/intent/tweet?text=${shareText}&url=${encodeURIComponent(currentUrl)}`,
-  facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
-  linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`
+  twitter: `https://twitter.com/intent/tweet?text=${shareText}&url=${safeEncode(currentUrl)}`,
+  facebook: `https://www.facebook.com/sharer/sharer.php?u=${safeEncode(currentUrl)}`,
+  linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${safeEncode(currentUrl)}`
 };
 ---
 
 <Layout 
   title={`${displayTitle} | Astralo Blog`}
   description={metaDescription}
-  keywords={post.keywords}
+  keywords={keywords}
   lang={currentLang}
 >
   <!-- Reading Progress Bar -->
