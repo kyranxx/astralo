@@ -198,17 +198,12 @@ CONTENT RULES:
         return new Response(responseData, { status: 200 });
 
     } catch (error: any) {
-        console.error('==================== HOROSCOPE GENERATION ERROR ====================');
-        console.error('Session ID:', sessionId);
-        console.error('Error name:', error.name);
-        console.error('Error message:', error.message);
-        console.error('Full error object:', JSON.stringify(error, null, 2));
-        console.error('Stack trace:', error.stack);
-        console.error('====================================================================');
+        // Log detailed error server-side only
+        console.error('Horoscope generation error:', error.message);
+
+        // Return generic error to client (no stack traces or sensitive info)
         return new Response(JSON.stringify({
-            error: 'Invalid session ID or error fetching data.',
-            details: error.message,
-            stack: error.stack
+            error: 'Failed to generate horoscope. Please try again or contact support.'
         }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }

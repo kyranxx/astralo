@@ -3,6 +3,11 @@ import type { APIRoute } from 'astro';
 import { supabase } from '../../lib/supabase';
 
 export const GET: APIRoute = async ({ request }) => {
+    // Block in production - seeding should only be done in development
+    if (!import.meta.env.DEV) {
+        return new Response('Not available', { status: 404 });
+    }
+
     // Basic protection
     const url = new URL(request.url);
     const password = url.searchParams.get('password');

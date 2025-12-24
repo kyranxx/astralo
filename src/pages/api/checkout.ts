@@ -117,17 +117,11 @@ export const POST: APIRoute = async ({ request }) => {
 
         return new Response(JSON.stringify({ url: session.url }), { status: 200 });
     } catch (error: any) {
-        console.error('==================== STRIPE CHECKOUT ERROR ====================');
-        console.error('Error type:', error.type);
-        console.error('Error message:', error.message);
-        console.error('Error code:', error.code);
-        console.error('Error param:', error.param);
-        console.error('Full error object:', JSON.stringify(error, null, 2));
-        console.error('Stack trace:', error.stack);
-        console.error('============================================================');
+        // Log detailed error server-side only
+        console.error('Stripe checkout error:', error.message);
+
         return new Response(JSON.stringify({
-            error: 'Error creating checkout session',
-            details: error.message
+            error: 'Error creating checkout session. Please try again.'
         }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }

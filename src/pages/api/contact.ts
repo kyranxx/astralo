@@ -65,22 +65,37 @@ export const POST: APIRoute = async ({ request }) => {
         },
     });
 
+    // Escape HTML to prevent XSS in emails
+    const escapeHtml = (text: string): string => {
+        return text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    };
+
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeSubject = escapeHtml(subject);
+    const safeMessage = escapeHtml(message);
+
     try {
         // Send to the owner
         await transporter.sendMail({
             from: `"Astralo Contact" <${SMTP_USER}>`,
             to: 'apollotechsro@gmail.com',
             replyTo: email,
-            subject: `[Astralo Contact] ${subject} - from ${name}`,
+            subject: `[Astralo Contact] ${safeSubject} - from ${safeName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
                     <h2 style="color: #f59e0b;">New Contact Form Submission</h2>
-                    <p><strong>From:</strong> ${name} (${email})</p>
-                    <p><strong>Subject:</strong> ${subject}</p>
+                    <p><strong>From:</strong> ${safeName} (${safeEmail})</p>
+                    <p><strong>Subject:</strong> ${safeSubject}</p>
                     <hr style="border: 1px solid #eee;">
                     <div style="padding: 20px 0;">
                         <p><strong>Message:</strong></p>
-                        <p style="white-space: pre-wrap;">${message}</p>
+                        <p style="white-space: pre-wrap;">${safeMessage}</p>
                     </div>
                     <hr style="border: 1px solid #eee;">
                     <p style="color: #666; font-size: 12px;">
@@ -99,11 +114,11 @@ export const POST: APIRoute = async ({ request }) => {
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
                     <img src="https://astralo.online/logo.png" alt="Astralo" style="height: 40px; margin-bottom: 20px;">
                     <h2 style="color: #f59e0b;">Thank you for contacting us!</h2>
-                    <p>Hi ${name},</p>
+                    <p>Hi ${safeName},</p>
                     <p>We've received your message and will get back to you as soon as possible, typically within 24 hours.</p>
                     <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
                         <p><strong>Your message:</strong></p>
-                        <p style="white-space: pre-wrap; color: #666;">${message}</p>
+                        <p style="white-space: pre-wrap; color: #666;">${safeMessage}</p>
                     </div>
                     <p>Best regards,<br>The Astralo Team</p>
                 </div>

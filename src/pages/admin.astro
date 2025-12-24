@@ -499,6 +499,11 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   let currentPage = 1;
   const limit = 10;
   
+  // Helper to create fetch options with Authorization header
+  function authHeaders(): HeadersInit {
+    return { 'Authorization': `Bearer ${adminPassword}` };
+  }
+  
   // Store data for detail modals
   let allCountriesData: any[] = [];
   let allProductsData: any[] = [];
@@ -653,7 +658,9 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     const password = passwordInput.value;
     
     try {
-      const response = await fetch(`/api/admin?action=stats&password=${encodeURIComponent(password)}`);
+      const response = await fetch('/api/admin?action=stats', {
+        headers: { 'Authorization': `Bearer ${password}` }
+      });
       if (response.ok) {
         adminPassword = password;
         sessionStorage.setItem('astralo_admin_session', password);
@@ -680,7 +687,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   async function loadStats() {
     try {
       // Build URL with date filter parameters
-      let url = `/api/admin?action=stats&password=${encodeURIComponent(adminPassword)}`;
+      let url = '/api/admin?action=stats';
       if (currentDateFilter.startDate) {
         url += `&startDate=${encodeURIComponent(currentDateFilter.startDate)}`;
       }
@@ -688,7 +695,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         url += `&endDate=${encodeURIComponent(currentDateFilter.endDate)}`;
       }
       
-      const response = await fetch(url);
+      const response = await fetch(url, { headers: authHeaders() });
       if (!response.ok) throw new Error('Failed');
       
       const stats = await response.json();
@@ -810,7 +817,8 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       const status = statusFilter?.value || 'all';
       
       const response = await fetch(
-        `/api/admin?action=orders&password=${encodeURIComponent(adminPassword)}&page=${currentPage}&limit=${limit}&status=${status}&search=${encodeURIComponent(search)}`
+        `/api/admin?action=orders&page=${currentPage}&limit=${limit}&status=${status}&search=${encodeURIComponent(search)}`,
+        { headers: authHeaders() }
       );
       
       if (!response.ok) throw new Error('Failed');
@@ -945,10 +953,12 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     try {
       const response = await fetch('/api/admin', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${adminPassword}`
+        },
         body: JSON.stringify({
           action: 'refund',
-          password: adminPassword,
           orderId: currentRefundOrderId,
           reason
         })
@@ -973,7 +983,9 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   // Order detail modal
   (window as any).openOrderDetail = async (orderId: string) => {
     try {
-      const response = await fetch(`/api/admin?action=order&id=${encodeURIComponent(orderId)}&password=${encodeURIComponent(adminPassword)}`);
+      const response = await fetch(`/api/admin?action=order&id=${encodeURIComponent(orderId)}`, {
+        headers: authHeaders()
+      });
       if (!response.ok) throw new Error('Failed to load order');
       
       const order = await response.json();

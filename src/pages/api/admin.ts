@@ -8,14 +8,17 @@ import {
 } from '../../lib/orders';
 import {
     verifyAdminPassword,
+    getPasswordFromRequest,
     createUnauthorizedResponse,
     createJsonResponse,
     createErrorResponse
 } from '../../lib/auth';
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ request, url }) => {
     const action = url.searchParams.get('action') || 'stats';
-    const password = url.searchParams.get('password');
+
+    // Get password from Authorization header (preferred) or URL param (fallback)
+    const password = getPasswordFromRequest(request, url);
 
     // Password protection using centralized auth
     if (!verifyAdminPassword(password)) {
@@ -98,7 +101,10 @@ export const GET: APIRoute = async ({ url }) => {
 
 export const POST: APIRoute = async ({ request }) => {
     const body = await request.json();
-    const { action, password, orderId, reason } = body;
+    const { action, orderId, reason } = body;
+
+    // Get password from Authorization header
+    const password = getPasswordFromRequest(request);
 
     // Password protection using centralized auth
     if (!verifyAdminPassword(password)) {
