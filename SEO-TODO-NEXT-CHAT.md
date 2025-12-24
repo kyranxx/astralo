@@ -38,7 +38,7 @@
 - [x] Added Table of Contents for each article
 - [x] Added internal links to products within article CTAs
 
-### ✅ TASK 6: FAQ TRANSLATIONS - PARTIALLY COMPLETED
+### ✅ TASK 6: FAQ TRANSLATIONS - COMPLETED ✅
 - [x] English FAQ (already existed)
 - [x] Slovak (sk) FAQ translations added
 - [x] Czech (cs) FAQ translations added
@@ -47,8 +47,32 @@
 - [x] Spanish (es) FAQ translations added
 - [x] Italian (it) FAQ translations added
 - [x] Portuguese (pt) FAQ translations added
-- [ ] Remaining 25 languages need FAQ translations:
-  - nl, pl, hu, ro, bg, hr, sl, sr, uk, ru, el, tr, ar, he, hi, ja, ko, zh, th, vi, id, sv, da, no, fi, bn
+- [x] Dutch (nl) FAQ translations added
+- [x] Polish (pl) FAQ translations added
+- [x] Swedish (sv) FAQ translations added
+- [x] Russian (ru) FAQ translations added
+- [x] Japanese (ja) FAQ translations added
+- [x] Hungarian (hu) FAQ translations added
+- [x] Turkish (tr) FAQ translations added
+- [x] Romanian (ro) FAQ translations added
+- [x] Greek (el) FAQ translations added
+- [x] Korean (ko) FAQ translations added
+- [x] Chinese (zh) FAQ translations added
+- [x] Danish (da) FAQ translations added
+- [x] Norwegian (no) FAQ translations added
+- [x] Finnish (fi) FAQ translations added
+- [x] Bulgarian (bg) FAQ translations added
+- [x] Croatian (hr) FAQ translations added
+- [x] Slovenian (sl) FAQ translations added
+- [x] Serbian (sr) FAQ translations added
+- [x] Ukrainian (uk) FAQ translations added
+- [x] Arabic (ar) FAQ translations added
+- [x] Vietnamese (vi) FAQ translations added
+- [x] Hindi (hi) FAQ translations added
+- [x] Thai (th) FAQ translations added
+- [x] Indonesian (id) FAQ translations added
+- [x] Hebrew (he) FAQ translations added
+- [x] Bengali (bn) FAQ translations added
 
 ### ✅ MULTI-LANGUAGE BLOG EXPANSION - STARTED
 - [x] Created localized blog index template: src/pages/[lang]/blog/index.astro
