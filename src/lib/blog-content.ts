@@ -594,6 +594,826 @@ const blogContent: Record<string, BlogTranslations> = {
             readMore: 'Читать далее →',
             featured: 'Рекомендуемое'
         }
+    },
+    nl: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dagelijkse Horoscoop 2024: Complete Gids voor Uw Sterrenbeeld',
+                excerpt: 'Ontdek wat de sterren vandaag voor u in petto hebben.',
+                category: 'Horoscopen'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Sterrenbeeld Compatibiliteit: De Ultieme Liefdesgids 2024',
+                excerpt: 'Ontdek welke sterrenbeelden het beste bij u passen.',
+                category: 'Liefde & Relaties'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Geboortehoroscoop: Hoe U Uw Natal Chart Begrijpt',
+                excerpt: 'Leer hoe u uw geboortehoroscoop leest en interpreteert.',
+                category: 'Astrologie Basis'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Weekhoroscoop: Wat de Sterren Deze Week Voorspellen',
+                excerpt: 'Ontvang uw weekhoroscoop voor alle sterrenbeelden.',
+                category: 'Horoscopen'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Maandhoroscoop Januari 2025: Voorspellingen voor Alle Tekens',
+                excerpt: 'Uw complete maandhoroscoop voor januari 2025.',
+                category: 'Horoscopen'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Liefdeshoroscoop 2024: Relatievoorspellingen voor Elk Teken',
+                excerpt: 'Staat liefde in uw sterren geschreven?',
+                category: 'Liefde & Relaties'
+            }
+        },
+        ui: {
+            blogTitle: 'Dagelijkse Horoscoop & Astrologie Blog',
+            blogSubtitle: 'Uw betrouwbare bron voor nauwkeurige horoscopen',
+            readArticle: 'Lees Artikel',
+            readMore: 'Lees meer →',
+            featured: 'Uitgelicht'
+        }
+    },
+    pl: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Horoskop Dzienny 2024: Kompletny Przewodnik po Przepowiedniach',
+                excerpt: 'Odkryj, co gwiazdy mają dla Ciebie dzisiaj.',
+                category: 'Horoskopy'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Kompatybilność Znaków Zodiaku: Przewodnik Miłosny 2024',
+                excerpt: 'Dowiedz się, które znaki zodiaku najbardziej do Ciebie pasują.',
+                category: 'Miłość i Związki'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Czytanie Horoskopu Urodzeniowego: Jak Zrozumieć Swój Horoskop',
+                excerpt: 'Naucz się czytać i interpretować swój horoskop urodzeniowy.',
+                category: 'Podstawy Astrologii'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Horoskop Tygodniowy: Co Gwiazdy Przewidują Na Ten Tydzień',
+                excerpt: 'Otrzymaj swój tygodniowy horoskop dla wszystkich znaków.',
+                category: 'Horoskopy'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Horoskop Miesięczny Styczeń 2025: Przepowiednie dla Wszystkich',
+                excerpt: 'Twój kompletny horoskop miesięczny na styczeń 2025.',
+                category: 'Horoskopy'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Horoskop Miłosny 2024: Przepowiednie Związkowe dla Każdego',
+                excerpt: 'Czy miłość jest zapisana w Twoich gwiazdach?',
+                category: 'Miłość i Związki'
+            }
+        },
+        ui: {
+            blogTitle: 'Horoskop Dzienny i Blog Astrologiczny',
+            blogSubtitle: 'Twoje zaufane źródło dokładnych horoskopów',
+            readArticle: 'Czytaj Artykuł',
+            readMore: 'Czytaj więcej →',
+            featured: 'Polecane'
+        }
+    },
+    hu: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Napi Horoszkóp 2024: Teljes Útmutató a Csillagjegy Jóslatokhoz',
+                excerpt: 'Fedezze fel, mit tartogatnak ma a csillagok.',
+                category: 'Horoszkópok'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Csillagjegy Kompatibilitás: A Végső Szerelmi Útmutató 2024',
+                excerpt: 'Tudja meg, mely csillagjegyek illenek leginkább Önhöz.',
+                category: 'Szerelem & Kapcsolatok'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Születési Horoszkóp: Hogyan Értse Meg Natális Térképét',
+                excerpt: 'Tanulja meg olvasni és értelmezni születési horoszkópját.',
+                category: 'Asztrológia Alapok'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Heti Horoszkóp: Mit Jósolnak a Csillagok Erre a Hétre',
+                excerpt: 'Kapja meg heti horoszkópját minden csillagjegyhez.',
+                category: 'Horoszkópok'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Havi Horoszkóp 2025 Január: Minden Csillagjegy Jóslata',
+                excerpt: 'Teljes havi horoszkópja 2025 januárra.',
+                category: 'Horoszkópok'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Szerelmi Horoszkóp 2024: Kapcsolati Jóslatok Minden Jegyhez',
+                excerpt: 'A szerelem a csillagaiba van írva?',
+                category: 'Szerelem & Kapcsolatok'
+            }
+        },
+        ui: {
+            blogTitle: 'Napi Horoszkóp & Asztrológia Blog',
+            blogSubtitle: 'Megbízható forrása a pontos horoszkópoknak',
+            readArticle: 'Cikk Olvasása',
+            readMore: 'Tovább →',
+            featured: 'Kiemelt'
+        }
+    },
+    ro: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Horoscop Zilnic 2024: Ghid Complet pentru Predicțiile Tale',
+                excerpt: 'Descoperă ce îți rezervă astrele astăzi.',
+                category: 'Horoscoape'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Compatibilitate Zodiacală: Ghidul Suprem al Iubirii 2024',
+                excerpt: 'Află care zodii sunt cele mai compatibile cu a ta.',
+                category: 'Dragoste & Relații'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Citirea Hărții Natale: Cum să Înțelegi Horoscopul Natal',
+                excerpt: 'Învață să citești și să interpretezi harta ta natală.',
+                category: 'Bazele Astrologiei'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Horoscop Săptămânal: Ce Prezic Stelele Săptămâna Aceasta',
+                excerpt: 'Primește horoscopul săptămânal pentru toate zodiile.',
+                category: 'Horoscoape'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Horoscop Lunar Ianuarie 2025: Predicții pentru Toate Zodiile',
+                excerpt: 'Horoscopul tău lunar complet pentru ianuarie 2025.',
+                category: 'Horoscoape'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Horoscop Dragoste 2024: Predicții Relaționale pentru Fiecare',
+                excerpt: 'Este iubirea scrisă în stelele tale?',
+                category: 'Dragoste & Relații'
+            }
+        },
+        ui: {
+            blogTitle: 'Horoscop Zilnic & Blog Astrologie',
+            blogSubtitle: 'Sursa ta de încredere pentru horoscoape precise',
+            readArticle: 'Citește Articolul',
+            readMore: 'Citește mai mult →',
+            featured: 'Recomandat'
+        }
+    },
+    bg: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Дневен Хороскоп 2024: Пълно Ръководство за Прогнозите',
+                excerpt: 'Открийте какво ви предричат звездите днес.',
+                category: 'Хороскопи'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Съвместимост на Зодии: Пълното Любовно Ръководство 2024',
+                excerpt: 'Разберете кои зодии са най-съвместими с вашата.',
+                category: 'Любов & Отношения'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Четене на Рождена Карта: Как да Разберете Натала Си',
+                excerpt: 'Научете се да четете и тълкувате рождената си карта.',
+                category: 'Основи на Астрология'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Седмичен Хороскоп: Какво Предсказват Звездите Тази Седмица',
+                excerpt: 'Вземете седмичния си хороскоп за всички зодии.',
+                category: 'Хороскопи'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Месечен Хороскоп Януари 2025: Прогнози за Всички Зодии',
+                excerpt: 'Вашият пълен месечен хороскоп за януари 2025.',
+                category: 'Хороскопи'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Любовен Хороскоп 2024: Прогнози за Връзки за Всяка Зодия',
+                excerpt: 'Написана ли е любовта в звездите ви?',
+                category: 'Любов & Отношения'
+            }
+        },
+        ui: {
+            blogTitle: 'Дневен Хороскоп & Блог по Астрология',
+            blogSubtitle: 'Вашият надежден източник за точни хороскопи',
+            readArticle: 'Прочети Статията',
+            readMore: 'Прочети повече →',
+            featured: 'Препоръчано'
+        }
+    },
+    hr: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dnevni Horoskop 2024: Potpuni Vodič za Vaša Predviđanja',
+                excerpt: 'Otkrijte što vam zvijezde danas donose.',
+                category: 'Horoskopi'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Kompatibilnost Horoskopskih Znakova: Vodič za Ljubav 2024',
+                excerpt: 'Saznajte koji su znakovi najkompatibilniji s vašim.',
+                category: 'Ljubav & Veze'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Čitanje Natalne Karte: Kako Razumjeti Svoj Horoskop',
+                excerpt: 'Naučite čitati i tumačiti svoju natalnu kartu.',
+                category: 'Osnove Astrologije'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Tjedni Horoskop: Što Zvijezde Predviđaju Ovaj Tjedan',
+                excerpt: 'Dobijte svoj tjedni horoskop za sve znakove.',
+                category: 'Horoskopi'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Mjesečni Horoskop Siječanj 2025: Predviđanja za Sve Znakove',
+                excerpt: 'Vaš potpuni mjesečni horoskop za siječanj 2025.',
+                category: 'Horoskopi'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Ljubavni Horoskop 2024: Predviđanja Veza za Svaki Znak',
+                excerpt: 'Je li ljubav zapisana u vašim zvijezdama?',
+                category: 'Ljubav & Veze'
+            }
+        },
+        ui: {
+            blogTitle: 'Dnevni Horoskop & Blog o Astrologiji',
+            blogSubtitle: 'Vaš pouzdani izvor za točne horoskope',
+            readArticle: 'Pročitaj Članak',
+            readMore: 'Pročitaj više →',
+            featured: 'Istaknuto'
+        }
+    },
+    sl: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dnevni Horoskop 2024: Popoln Vodnik za Vaša Napovedovanja',
+                excerpt: 'Odkrijte, kaj vam danes prinašajo zvezde.',
+                category: 'Horoskopi'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Združljivost Zodiaka: Ultimativni Ljubezenski Vodnik 2024',
+                excerpt: 'Ugotovite, katera znamenja so z vami najbolj združljiva.',
+                category: 'Ljubezen & Odnosi'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Branje Natalne Karte: Kako Razumeti Svoj Rojstni Horoskop',
+                excerpt: 'Naučite se brati in interpretirati svojo natalno karto.',
+                category: 'Osnove Astrologije'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Tedenski Horoskop: Kaj Zvezde Napovedujejo Ta Teden',
+                excerpt: 'Pridobite svoj tedenski horoskop za vsa znamenja.',
+                category: 'Horoskopi'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Mesečni Horoskop Januar 2025: Napovedi za Vsa Znamenja',
+                excerpt: 'Vaš popoln mesečni horoskop za januar 2025.',
+                category: 'Horoskopi'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Ljubezenski Horoskop 2024: Napovedi Odnosov za Vsako Znamenje',
+                excerpt: 'Je ljubezen zapisana v vaših zvezdah?',
+                category: 'Ljubezen & Odnosi'
+            }
+        },
+        ui: {
+            blogTitle: 'Dnevni Horoskop & Blog o Astrologiji',
+            blogSubtitle: 'Vaš zaupanja vreden vir za natančne horoskope',
+            readArticle: 'Preberi Članek',
+            readMore: 'Preberi več →',
+            featured: 'Izpostavljeno'
+        }
+    },
+    sr: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dnevni Horoskop 2024: Potpuni Vodič za Vaša Predviđanja',
+                excerpt: 'Otkrijte šta vam zvezde danas donose.',
+                category: 'Horoskopi'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Kompatibilnost Znakova: Ultimativni Ljubavni Vodič 2024',
+                excerpt: 'Saznajte koji su znakovi najkompatibilniji s vašim.',
+                category: 'Ljubav & Veze'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Čitanje Natalne Karte: Kako da Razumete Svoj Horoskop',
+                excerpt: 'Naučite da čitate i tumačite svoju natalnu kartu.',
+                category: 'Osnove Astrologije'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Nedeljni Horoskop: Šta Zvezde Predviđaju Ove Nedelje',
+                excerpt: 'Dobijte svoj nedeljni horoskop za sve znakove.',
+                category: 'Horoskopi'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Mesečni Horoskop Januar 2025: Predviđanja za Sve Znakove',
+                excerpt: 'Vaš potpuni mesečni horoskop za januar 2025.',
+                category: 'Horoskopi'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Ljubavni Horoskop 2024: Predviđanja Veza za Svaki Znak',
+                excerpt: 'Da li je ljubav zapisana u vašim zvezdama?',
+                category: 'Ljubav & Veze'
+            }
+        },
+        ui: {
+            blogTitle: 'Dnevni Horoskop & Blog o Astrologiji',
+            blogSubtitle: 'Vaš pouzdan izvor za tačne horoskope',
+            readArticle: 'Pročitaj Članak',
+            readMore: 'Pročitaj više →',
+            featured: 'Istaknuto'
+        }
+    },
+    uk: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Щоденний Гороскоп 2024: Повний Посібник з Передбачень',
+                excerpt: 'Дізнайтесь, що зірки приготували для вас сьогодні.',
+                category: 'Гороскопи'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Сумісність Знаків Зодіаку: Повний Любовний Посібник 2024',
+                excerpt: 'Дізнайтесь, які знаки найбільш сумісні з вашим.',
+                category: 'Кохання та Стосунки'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Читання Натальної Карти: Як Зрозуміти Свій Гороскоп',
+                excerpt: 'Навчіться читати та інтерпретувати свою натальну карту.',
+                category: 'Основи Астрології'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Тижневий Гороскоп: Що Зірки Передбачають На Цей Тиждень',
+                excerpt: 'Отримайте свій тижневий гороскоп для всіх знаків.',
+                category: 'Гороскопи'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Місячний Гороскоп Січень 2025: Передбачення для Всіх Знаків',
+                excerpt: 'Ваш повний місячний гороскоп на січень 2025.',
+                category: 'Гороскопи'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Любовний Гороскоп 2024: Передбачення Стосунків для Кожного',
+                excerpt: 'Чи написане кохання у ваших зірках?',
+                category: 'Кохання та Стосунки'
+            }
+        },
+        ui: {
+            blogTitle: 'Щоденний Гороскоп & Блог Астрології',
+            blogSubtitle: 'Ваше надійне джерело точних гороскопів',
+            readArticle: 'Читати Статтю',
+            readMore: 'Читати далі →',
+            featured: 'Рекомендоване'
+        }
+    },
+    el: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Ημερήσιο Ωροσκόπιο 2024: Πλήρης Οδηγός Προβλέψεων',
+                excerpt: 'Ανακαλύψτε τι σας επιφυλάσσουν τα άστρα σήμερα.',
+                category: 'Ωροσκόπια'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Συμβατότητα Ζωδίων: Ο Απόλυτος Οδηγός Έρωτα 2024',
+                excerpt: 'Μάθετε ποια ζώδια ταιριάζουν καλύτερα με το δικό σας.',
+                category: 'Έρωτας & Σχέσεις'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Ανάγνωση Γενέθλιου Χάρτη: Πώς να Κατανοήσετε τον Χάρτη Σας',
+                excerpt: 'Μάθετε να διαβάζετε τον γενέθλιο χάρτη σας.',
+                category: 'Βασική Αστρολογία'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Εβδομαδιαίο Ωροσκόπιο: Τι Προβλέπουν τα Άστρα Αυτή την Εβδομάδα',
+                excerpt: 'Λάβετε το εβδομαδιαίο ωροσκόπιό σας για όλα τα ζώδια.',
+                category: 'Ωροσκόπια'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Μηνιαίο Ωροσκόπιο Ιανουάριος 2025: Προβλέψεις για Όλα τα Ζώδια',
+                excerpt: 'Το πλήρες μηνιαίο ωροσκόπιό σας για τον Ιανουάριο 2025.',
+                category: 'Ωροσκόπια'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Ερωτικό Ωροσκόπιο 2024: Προβλέψεις Σχέσεων για Κάθε Ζώδιο',
+                excerpt: 'Είναι ο έρωτας γραμμένος στα άστρα σας;',
+                category: 'Έρωτας & Σχέσεις'
+            }
+        },
+        ui: {
+            blogTitle: 'Ημερήσιο Ωροσκόπιο & Αστρολογικό Blog',
+            blogSubtitle: 'Η αξιόπιστη πηγή σας για ακριβή ωροσκόπια',
+            readArticle: 'Διαβάστε το Άρθρο',
+            readMore: 'Διαβάστε περισσότερα →',
+            featured: 'Προτεινόμενο'
+        }
+    },
+    tr: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Günlük Burç Yorumu 2024: Tahminleriniz için Tam Rehber',
+                excerpt: 'Yıldızların bugün sizin için neler hazırladığını keşfedin.',
+                category: 'Burç Yorumları'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Burç Uyumu: 2024 Aşk Rehberi',
+                excerpt: 'Hangi burçların sizinle en uyumlu olduğunu öğrenin.',
+                category: 'Aşk & İlişkiler'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Doğum Haritası Okuma: Natal Haritanızı Nasıl Anlarsınız',
+                excerpt: 'Doğum haritanızı okumayı ve yorumlamayı öğrenin.',
+                category: 'Astroloji Temelleri'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Haftalık Burç Yorumu: Bu Hafta Yıldızlar Ne Diyor',
+                excerpt: 'Tüm burçlar için haftalık yorumunuzu alın.',
+                category: 'Burç Yorumları'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Aylık Burç Yorumu Ocak 2025: Tüm Burçlar için Tahminler',
+                excerpt: 'Ocak 2025 için tam aylık burç yorumunuz.',
+                category: 'Burç Yorumları'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Aşk Burcu 2024: Her Burç için İlişki Tahminleri',
+                excerpt: 'Aşk yıldızlarınızda yazılı mı?',
+                category: 'Aşk & İlişkiler'
+            }
+        },
+        ui: {
+            blogTitle: 'Günlük Burç & Astroloji Blogu',
+            blogSubtitle: 'Doğru burç yorumları için güvenilir kaynağınız',
+            readArticle: 'Makaleyi Oku',
+            readMore: 'Devamını oku →',
+            featured: 'Öne Çıkan'
+        }
+    },
+    ar: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ الأبراج اليومية 2024: دليلك الشامل للتنبؤات',
+                excerpt: 'اكتشف ما تخبئه لك النجوم اليوم.',
+                category: 'الأبراج'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ توافق الأبراج: الدليل النهائي للحب 2024',
+                excerpt: 'اكتشف الأبراج الأكثر توافقاً معك.',
+                category: 'الحب والعلاقات'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 قراءة خريطة الميلاد: كيف تفهم خريطتك الفلكية',
+                excerpt: 'تعلم كيف تقرأ وتفسر خريطة ميلادك.',
+                category: 'أساسيات الفلك'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 الأبراج الأسبوعية: ماذا تتنبأ النجوم هذا الأسبوع',
+                excerpt: 'احصل على توقعاتك الأسبوعية لجميع الأبراج.',
+                category: 'الأبراج'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 الأبراج الشهرية يناير 2025: تنبؤات لجميع الأبراج',
+                excerpt: 'توقعاتك الشهرية الكاملة لشهر يناير 2025.',
+                category: 'الأبراج'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 أبراج الحب 2024: تنبؤات العلاقات لكل برج',
+                excerpt: 'هل الحب مكتوب في نجومك؟',
+                category: 'الحب والعلاقات'
+            }
+        },
+        ui: {
+            blogTitle: 'الأبراج اليومية ومدونة الفلك',
+            blogSubtitle: 'مصدرك الموثوق للأبراج الدقيقة',
+            readArticle: 'اقرأ المقال',
+            readMore: 'اقرأ المزيد →',
+            featured: 'مميز'
+        }
+    },
+    th: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ ดวงรายวัน 2024: คู่มือฉบับสมบูรณ์สำหรับคำทำนาย',
+                excerpt: 'ค้นพบสิ่งที่ดวงดาวเตรียมไว้ให้คุณวันนี้',
+                category: 'ดูดวง'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ ความเข้ากันของราศี: คู่มือความรักขั้นสูงสุด 2024',
+                excerpt: 'ค้นหาว่าราศีใดเข้ากับคุณมากที่สุด',
+                category: 'ความรักและความสัมพันธ์'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 อ่านแผนที่เกิด: วิธีเข้าใจดวงเกิดของคุณ',
+                excerpt: 'เรียนรู้วิธีอ่านและตีความแผนที่ดวงเกิดของคุณ',
+                category: 'พื้นฐานโหราศาสตร์'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 ดวงรายสัปดาห์: ดาวทำนายอะไรในสัปดาห์นี้',
+                excerpt: 'รับดวงรายสัปดาห์สำหรับทุกราศี',
+                category: 'ดูดวง'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 ดวงรายเดือน มกราคม 2025: คำทำนายสำหรับทุกราศี',
+                excerpt: 'ดวงรายเดือนฉบับสมบูรณ์สำหรับมกราคม 2025',
+                category: 'ดูดวง'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 ดวงความรัก 2024: คำทำนายความสัมพันธ์สำหรับทุกราศี',
+                excerpt: 'ความรักถูกเขียนไว้ในดวงดาวของคุณหรือไม่?',
+                category: 'ความรักและความสัมพันธ์'
+            }
+        },
+        ui: {
+            blogTitle: 'ดวงรายวันและบล็อกโหราศาสตร์',
+            blogSubtitle: 'แหล่งข้อมูลที่คุณไว้วางใจสำหรับดวงที่แม่นยำ',
+            readArticle: 'อ่านบทความ',
+            readMore: 'อ่านเพิ่มเติม →',
+            featured: 'แนะนำ'
+        }
+    },
+    vi: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Tử Vi Hàng Ngày 2024: Hướng Dẫn Đầy Đủ Về Dự Đoán',
+                excerpt: 'Khám phá những gì các vì sao dành cho bạn hôm nay.',
+                category: 'Tử Vi'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Tương Hợp Cung Hoàng Đạo: Hướng Dẫn Tình Yêu 2024',
+                excerpt: 'Tìm hiểu cung hoàng đạo nào hợp với bạn nhất.',
+                category: 'Tình Yêu & Quan Hệ'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Đọc Bản Đồ Sao: Cách Hiểu Lá Số Của Bạn',
+                excerpt: 'Học cách đọc và diễn giải bản đồ sao của bạn.',
+                category: 'Cơ Bản Chiêm Tinh'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Tử Vi Tuần: Các Vì Sao Dự Đoán Gì Tuần Này',
+                excerpt: 'Nhận tử vi tuần của bạn cho tất cả các cung.',
+                category: 'Tử Vi'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Tử Vi Tháng 1/2025: Dự Đoán Cho Tất Cả Các Cung',
+                excerpt: 'Tử vi tháng đầy đủ của bạn cho tháng 1/2025.',
+                category: 'Tử Vi'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Tử Vi Tình Yêu 2024: Dự Đoán Quan Hệ Cho Mọi Cung',
+                excerpt: 'Tình yêu có được viết trong các vì sao của bạn?',
+                category: 'Tình Yêu & Quan Hệ'
+            }
+        },
+        ui: {
+            blogTitle: 'Tử Vi Hàng Ngày & Blog Chiêm Tinh',
+            blogSubtitle: 'Nguồn đáng tin cậy cho tử vi chính xác',
+            readArticle: 'Đọc Bài Viết',
+            readMore: 'Đọc thêm →',
+            featured: 'Nổi Bật'
+        }
+    },
+    id: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Ramalan Zodiak Harian 2024: Panduan Lengkap Prediksi Anda',
+                excerpt: 'Temukan apa yang bintang-bintang siapkan untuk Anda hari ini.',
+                category: 'Ramalan'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Kecocokan Zodiak: Panduan Cinta Terbaik 2024',
+                excerpt: 'Cari tahu zodiak mana yang paling cocok dengan Anda.',
+                category: 'Cinta & Hubungan'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Membaca Bagan Kelahiran: Cara Memahami Natal Chart Anda',
+                excerpt: 'Pelajari cara membaca dan menafsirkan bagan kelahiran Anda.',
+                category: 'Dasar Astrologi'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Ramalan Mingguan: Apa yang Diprediksi Bintang Minggu Ini',
+                excerpt: 'Dapatkan ramalan mingguan Anda untuk semua zodiak.',
+                category: 'Ramalan'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Ramalan Bulanan Januari 2025: Prediksi untuk Semua Zodiak',
+                excerpt: 'Ramalan bulanan lengkap Anda untuk Januari 2025.',
+                category: 'Ramalan'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Ramalan Cinta 2024: Prediksi Hubungan untuk Setiap Zodiak',
+                excerpt: 'Apakah cinta tertulis di bintang-bintang Anda?',
+                category: 'Cinta & Hubungan'
+            }
+        },
+        ui: {
+            blogTitle: 'Ramalan Harian & Blog Astrologi',
+            blogSubtitle: 'Sumber terpercaya untuk ramalan akurat',
+            readArticle: 'Baca Artikel',
+            readMore: 'Baca selengkapnya →',
+            featured: 'Unggulan'
+        }
+    },
+    sv: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dagligt Horoskop 2024: Komplett Guide till Dina Förutsägelser',
+                excerpt: 'Upptäck vad stjärnorna har i beredskap för dig idag.',
+                category: 'Horoskop'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Stjärnteckens Kompatibilitet: Den Ultimata Kärleksguiden 2024',
+                excerpt: 'Ta reda på vilka stjärntecken som passar bäst med ditt.',
+                category: 'Kärlek & Relationer'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Födelsehoroskop: Hur du Förstår din Natalkarta',
+                excerpt: 'Lär dig läsa och tolka ditt födelsehoroskop.',
+                category: 'Astrologi Grunder'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Veckohoroskop: Vad Stjärnorna Förutspår Denna Vecka',
+                excerpt: 'Få ditt veckohoroskop för alla stjärntecken.',
+                category: 'Horoskop'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Månadshoroskop Januari 2025: Förutsägelser för Alla Tecken',
+                excerpt: 'Ditt kompletta månadshoroskop för januari 2025.',
+                category: 'Horoskop'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Kärlekshoroskop 2024: Relationsprognoser för Varje Tecken',
+                excerpt: 'Är kärleken skriven i dina stjärnor?',
+                category: 'Kärlek & Relationer'
+            }
+        },
+        ui: {
+            blogTitle: 'Dagligt Horoskop & Astrologiblogg',
+            blogSubtitle: 'Din pålitliga källa för exakta horoskop',
+            readArticle: 'Läs Artikeln',
+            readMore: 'Läs mer →',
+            featured: 'Utvalt'
+        }
+    },
+    da: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Dagligt Horoskop 2024: Komplet Guide til Dine Forudsigelser',
+                excerpt: 'Opdag hvad stjernerne har i vente for dig i dag.',
+                category: 'Horoskoper'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Stjernetegns Kompatibilitet: Den Ultimative Kærlighedsguide 2024',
+                excerpt: 'Find ud af hvilke stjernetegn der passer bedst til dit.',
+                category: 'Kærlighed & Forhold'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Fødselshoroskop: Sådan Forstår du dit Natal Chart',
+                excerpt: 'Lær at læse og fortolke dit fødselshoroskop.',
+                category: 'Astrologi Grundlæggende'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Ugehoroskop: Hvad Stjernerne Forudsiger Denne Uge',
+                excerpt: 'Få dit ugehoroskop for alle stjernetegn.',
+                category: 'Horoskoper'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Månedshoroskop Januar 2025: Forudsigelser for Alle Tegn',
+                excerpt: 'Dit komplette månedshoroskop for januar 2025.',
+                category: 'Horoskoper'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Kærlighedshoroskop 2024: Forholdsprognoser for Hvert Tegn',
+                excerpt: 'Er kærlighed skrevet i dine stjerner?',
+                category: 'Kærlighed & Forhold'
+            }
+        },
+        ui: {
+            blogTitle: 'Dagligt Horoskop & Astrologiblog',
+            blogSubtitle: 'Din pålidelige kilde til præcise horoskoper',
+            readArticle: 'Læs Artikel',
+            readMore: 'Læs mere →',
+            featured: 'Udvalgt'
+        }
+    },
+    no: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Daglig Horoskop 2024: Komplett Guide til Dine Spådommer',
+                excerpt: 'Oppdag hva stjernene har i vente for deg i dag.',
+                category: 'Horoskoper'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Stjernetegnenes Kompatibilitet: Den Ultimate Kjærlighetsguide 2024',
+                excerpt: 'Finn ut hvilke stjernetegn som passer best med ditt.',
+                category: 'Kjærlighet & Forhold'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Fødselshoroskop: Hvordan Forstå din Natalkart',
+                excerpt: 'Lær å lese og tolke ditt fødselshoroskop.',
+                category: 'Astrologi Grunnleggende'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Ukehoroskop: Hva Stjernene Spår Denne Uken',
+                excerpt: 'Få ditt ukehoroskop for alle stjernetegn.',
+                category: 'Horoskoper'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Månedshoroskop Januar 2025: Spådommer for Alle Tegn',
+                excerpt: 'Ditt komplette månedshoroskop for januar 2025.',
+                category: 'Horoskoper'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Kjærlighetshoroskop 2024: Forholdsprognoser for Hvert Tegn',
+                excerpt: 'Er kjærlighet skrevet i stjernene dine?',
+                category: 'Kjærlighet & Forhold'
+            }
+        },
+        ui: {
+            blogTitle: 'Daglig Horoskop & Astrologiblogg',
+            blogSubtitle: 'Din pålitelige kilde for nøyaktige horoskoper',
+            readArticle: 'Les Artikkel',
+            readMore: 'Les mer →',
+            featured: 'Utvalgt'
+        }
+    },
+    fi: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ Päivittäinen Horoskooppi 2024: Täydellinen Opas Ennusteisiin',
+                excerpt: 'Löydä mitä tähdet ovat varanneet sinulle tänään.',
+                category: 'Horoskooppi'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ Horoskooppien Yhteensopivuus: Lopullinen Rakkausopas 2024',
+                excerpt: 'Selvitä mitkä horoskooppimerkit sopivat parhaiten sinun kanssasi.',
+                category: 'Rakkaus & Suhteet'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 Syntymäkartan Lukeminen: Miten Ymmärrät Syntymäkarttasi',
+                excerpt: 'Opi lukemaan ja tulkitsemaan syntymäkarttaasi.',
+                category: 'Astrologian Perusteet'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 Viikkohoroskooppi: Mitä Tähdet Ennustavat Tälle Viikolle',
+                excerpt: 'Saa viikkohoroskooppisi kaikille horoskooppimerkeille.',
+                category: 'Horoskooppi'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 Kuukausihoroskooppi Tammikuu 2025: Ennusteet Kaikille Merkeille',
+                excerpt: 'Täydellinen kuukausihoroskooppisi tammikuulle 2025.',
+                category: 'Horoskooppi'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 Rakkaushoroskooppi 2024: Suhde-ennusteet Jokaiselle Merkille',
+                excerpt: 'Onko rakkaus kirjoitettu tähtesi?',
+                category: 'Rakkaus & Suhteet'
+            }
+        },
+        ui: {
+            blogTitle: 'Päivittäinen Horoskooppi & Astrologiablogi',
+            blogSubtitle: 'Luotettava lähteesi tarkoille horoskoopille',
+            readArticle: 'Lue Artikkeli',
+            readMore: 'Lue lisää →',
+            featured: 'Suositeltu'
+        }
+    },
+    he: {
+        posts: {
+            'daily-horoscope-guide': {
+                title: '⭐ הורוסקופ יומי 2024: מדריך מלא לתחזיות שלך',
+                excerpt: 'גלה מה הכוכבים מכינים לך היום.',
+                category: 'הורוסקופים'
+            },
+            'zodiac-compatibility-complete-guide': {
+                title: '❤️ התאמת מזלות: המדריך האולטימטיבי לאהבה 2024',
+                excerpt: 'גלה אילו מזלות הכי מתאימים אליך.',
+                category: 'אהבה ויחסים'
+            },
+            'birth-chart-reading-explained': {
+                title: '🔮 קריאת מפת לידה: איך להבין את המפה שלך',
+                excerpt: 'למד לקרוא ולפרש את מפת הלידה שלך.',
+                category: 'יסודות האסטרולוגיה'
+            },
+            'weekly-horoscope-predictions': {
+                title: '📅 הורוסקופ שבועי: מה הכוכבים מנבאים השבוע',
+                excerpt: 'קבל את ההורוסקופ השבועי שלך לכל המזלות.',
+                category: 'הורוסקופים'
+            },
+            'monthly-horoscope-january-2025': {
+                title: '🌙 הורוסקופ חודשי ינואר 2025: תחזיות לכל המזלות',
+                excerpt: 'ההורוסקופ החודשי המלא שלך לינואר 2025.',
+                category: 'הורוסקופים'
+            },
+            'love-horoscope-relationship-advice': {
+                title: '💕 הורוסקופ אהבה 2024: תחזיות זוגיות לכל מזל',
+                excerpt: 'האם האהבה כתובה בכוכבים שלך?',
+                category: 'אהבה ויחסים'
+            }
+        },
+        ui: {
+            blogTitle: 'הורוסקופ יומי ובלוג אסטרולוגיה',
+            blogSubtitle: 'המקור האמין שלך להורוסקופים מדויקים',
+            readArticle: 'קרא מאמר',
+            readMore: 'קרא עוד →',
+            featured: 'מומלץ'
+        }
     }
 };
 
@@ -609,4 +1429,5 @@ export function getPostTranslation(lang: string, slug: string): BlogPostTranslat
 }
 
 export default blogContent;
+
 
