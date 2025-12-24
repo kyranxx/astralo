@@ -592,9 +592,16 @@ const blogPosts: Record<string, any> = {
 
 // Generate all paths: lang × slug combinations
 export function getStaticPaths() {
-  // Hardcode locales to avoid import issues during static generation
+  // Hardcode locales and slugs to avoid import/order issues during static generation
   const locales = ['sk', 'cs', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'hu', 'ro', 'bg', 'hr', 'sl', 'sr', 'uk', 'ru', 'el', 'tr', 'ar', 'hi', 'bn', 'th', 'vi', 'id', 'ja', 'ko', 'zh', 'sv', 'da', 'no', 'fi', 'he'];
-  const slugs = Object.keys(blogPosts);
+  const slugs = [
+    'daily-horoscope-guide',
+    'zodiac-compatibility-complete-guide',
+    'birth-chart-reading-explained',
+    'weekly-horoscope-predictions',
+    'monthly-horoscope-january-2025',
+    'love-horoscope-relationship-advice'
+  ];
   
   const paths = [];
   for (const lang of locales) {
