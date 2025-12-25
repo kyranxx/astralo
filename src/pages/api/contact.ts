@@ -35,7 +35,14 @@ export const POST: APIRoute = async ({ request }) => {
 
             if (!verifyResult.success) {
                 console.error('hCaptcha verification failed:', verifyResult);
-                return new Response(JSON.stringify({ error: 'Captcha verification failed. Please try again.' }), { status: 400 });
+                const errorCodes = verifyResult['error-codes'] || [];
+                const errorMessage = errorCodes.includes('sitekey-secret-mismatch')
+                    ? 'hCaptcha configuration error. Please contact support.'
+                    : 'Captcha verification failed. Please try again.';
+                return new Response(JSON.stringify({
+                    error: errorMessage,
+                    debug: errorCodes.join(', ')
+                }), { status: 400 });
             }
         } catch (e) {
             console.error('hCaptcha verification error:', e);
