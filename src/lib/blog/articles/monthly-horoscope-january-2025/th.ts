@@ -1,0 +1,2 @@
+import type { BlogPostTranslation } from '../../types';
+export const th: BlogPostTranslation = { title: '🌙 ดวงรายเดือน มกราคม 2025', excerpt: 'คำทำนายรายเดือนสำหรับมกราคม 2025', category: 'คำทำนายรายเดือน', metaDescription: 'ดวงรายเดือน มกราคม 2025', keywords: 'ดวงรายเดือน มกราคม 2025', quickSummary: ['ดวงรายเดือนให้ภาพกว้างขึ้น', 'มกราคม 2025 นำจุดเริ่มต้นใหม่'], keyTakeaways: ['ดวงรายเดือนช่วยในการวางแผน', 'พลังปีใหม่เสริมการแสดงออก'], tableOfContents: [{ id: 'overview', title: 'ภาพรวม' }], content: '<h2 id="overview">มกราคม 2025</h2><p>ดวงรายเดือนสำหรับมกราคม 2025</p>' };

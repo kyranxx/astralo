@@ -6,10 +6,9 @@
 import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
 import { zodiacCompatibility } from './articles/zodiac-compatibility-complete-guide/index';
 import { birthChartReading } from './articles/birth-chart-reading-explained/index';
-// These will be converted to folder structure as translations are added:
-import { weeklyHoroscope } from './articles/weekly-horoscope';
-import { monthlyHoroscope } from './articles/monthly-horoscope';
-import { loveHoroscope } from './articles/love-horoscope';
+import { weeklyHoroscope } from './articles/weekly-horoscope-predictions/index';
+import { monthlyHoroscope } from './articles/monthly-horoscope-january-2025/index';
+import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
 
