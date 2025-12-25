@@ -9,6 +9,7 @@ import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
 import { getBlogContent } from '../../../lib/blog-content';
+import { getBlogUiTranslations } from '../../../lib/blog';
 
 export const prerender = true;
 
@@ -21,6 +22,7 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
 const t = getTranslations(currentLang);
+const blogUi = getBlogUiTranslations(currentLang);
 
 // Country-specific keywords for SEO
 const localizedKeywords: Record<string, { primary: string; secondary: string[] }> = {
@@ -57,63 +59,14 @@ const localizedKeywords: Record<string, { primary: string; secondary: string[] }
   uk: { primary: 'Гороскоп на сьогодні', secondary: ['Щоденний гороскоп', 'Сумісність знаків'] },
   he: { primary: 'הורוסקופ יומי', secondary: ['מזל היום', 'התאמה בין מזלות'] },
   bn: { primary: 'আজকের রাশিফল', secondary: ['দৈনিক রাশিফল', 'রাশি মিলন'] },
+  en: { primary: 'Daily Horoscope', secondary: ['Free horoscope', 'Zodiac compatibility', 'Birth chart'] },
 };
 
 const keywords = localizedKeywords[currentLang] || localizedKeywords.en;
 
-// Localized blog content
-const blogTranslations: Record<string, { blogTitle: string; blogSubtitle: string; readArticle: string; readMore: string; seoTitle: string; seoDesc: string }> = {
-  de: {
-    blogTitle: 'Tageshoroskop & Astrologie Blog',
-    blogSubtitle: 'Ihre vertrauenswürdige Quelle für genaue Horoskope und astrologische Einblicke',
-    readArticle: 'Artikel lesen',
-    readMore: 'Mehr lesen →',
-    seoTitle: 'Astrologie Blog - Tageshoroskop, Sternzeichen Kompatibilität | Astralo',
-    seoDesc: 'Entdecken Sie unseren Astrologie-Blog für Tageshoroskope, Sternzeichen-Kompatibilität und Geburtshoroskop-Analysen.',
-  },
-  fr: {
-    blogTitle: 'Horoscope du Jour & Blog Astrologie',
-    blogSubtitle: 'Votre source fiable pour des horoscopes précis et des conseils astrologiques',
-    readArticle: 'Lire l\'article',
-    readMore: 'Lire plus →',
-    seoTitle: 'Blog Astrologie - Horoscope du Jour, Compatibilité | Astralo',
-    seoDesc: 'Découvrez notre blog astrologie pour horoscopes quotidiens, compatibilité et thèmes natals.',
-  },
-  es: {
-    blogTitle: 'Horóscopo Diario & Blog de Astrología',
-    blogSubtitle: 'Tu fuente confiable para horóscopos precisos y consejos astrológicos',
-    readArticle: 'Leer artículo',
-    readMore: 'Leer más →',
-    seoTitle: 'Blog Astrología - Horóscopo Diario, Compatibilidad | Astralo',
-    seoDesc: 'Explora nuestro blog de astrología para horóscopos diarios, compatibilidad y cartas natales.',
-  },
-  sk: {
-    blogTitle: 'Denný Horoskop & Astrologický Blog',
-    blogSubtitle: 'Váš spoľahlivý zdroj presných horoskopov a astrologických poznatkov',
-    readArticle: 'Čítať článok',
-    readMore: 'Čítať viac →',
-    seoTitle: 'Astrologický Blog - Denný Horoskop, Kompatibilita | Astralo',
-    seoDesc: 'Objavte náš astrologický blog pre denné horoskopy, kompatibilitu znamení a pôrodné horoskopy.',
-  },
-  cs: {
-    blogTitle: 'Denní Horoskop & Astrologický Blog',
-    blogSubtitle: 'Váš spolehlivý zdroj přesných horoskopů a astrologických poznatků',
-    readArticle: 'Číst článek',
-    readMore: 'Číst více →',
-    seoTitle: 'Astrologický Blog - Denní Horoskop, Kompatibilita | Astralo',
-    seoDesc: 'Objevte náš astrologický blog pro denní horoskopy, kompatibilitu znamení a natální horoskopy.',
-  },
-};
-
-// Fallback to English-style content
-const blogT = blogTranslations[currentLang] || {
-  blogTitle: t.testimonials?.title ? 'Daily Horoscope & Astrology Blog' : 'Daily Horoscope & Astrology Blog',
-  blogSubtitle: 'Your trusted source for accurate horoscopes and astrological insights',
-  readArticle: 'Read Article',
-  readMore: 'Read more →',
-  seoTitle: `Astrology Blog - Daily Horoscope & Predictions | Astralo`,
-  seoDesc: `Explore our astrology blog for daily horoscopes, zodiac compatibility guides, and birth chart readings.`,
-};
+// Use centralized translations for blog UI elements
+const seoTitle = `${blogUi.blogTitle} | Astralo`;
+const seoDesc = blogUi.blogSubtitle;
 
 // Get localized blog content
 const localizedBlogContent = getBlogContent(currentLang);
@@ -152,8 +105,8 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
 ---
 
 <Layout 
-  title={blogT.seoTitle}
-  description={blogT.seoDesc}
+  title={seoTitle}
+  description={seoDesc}
   lang={currentLang}
 >
   <div class="min-h-screen flex flex-col relative z-10">
@@ -182,10 +135,10 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
             <span class="text-amber-400 text-sm font-medium">{keywords.primary}</span>
           </div>
           <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">
-            {blogT.blogTitle}
+            {blogUi.blogTitle}
           </h1>
           <p class="text-white/70 text-lg max-w-2xl mx-auto">
-            {blogT.blogSubtitle}
+            {blogUi.blogSubtitle}
           </p>
         </div>
 
@@ -194,7 +147,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
           <a href={`/${currentLang}/blog/${post.slug}`} class="block mb-12 group">
             <div class="glass-strong rounded-3xl p-8 sm:p-10 border border-white/10 hover:border-amber-500/30 transition-all duration-300">
               <div class="flex items-center gap-4 mb-4">
-                <span class="px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">Featured</span>
+                <span class="px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">{blogUi.featured}</span>
                 <span class="text-white/50 text-sm flex items-center gap-2">
                   <Calendar class="w-4 h-4" />
                   {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -206,7 +159,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               </h2>
               <p class="text-white/70 text-lg mb-4">{post.excerpt}</p>
               <div class="flex items-center gap-2 text-amber-400 font-medium">
-                <span>{blogT.readArticle}</span>
+                <span>{blogUi.readArticle}</span>
                 <ArrowRight class="w-4 h-4 group-hover:translate-x-2 transition-transform" />
               </div>
             </div>
@@ -228,7 +181,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
                 <p class="text-white/60 text-sm mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
                 <div class="flex items-center justify-between text-sm">
                   <span class="text-white/40">{new Date(post.date).toLocaleDateString(currentLang, { month: 'short', day: 'numeric' })}</span>
-                  <span class="text-amber-400 group-hover:underline">{blogT.readMore}</span>
+                  <span class="text-amber-400 group-hover:underline">{blogUi.readMore}</span>
                 </div>
               </article>
             </a>
@@ -242,7 +195,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
           </h2>
           <div class="prose prose-invert max-w-none text-white/70">
             <p>
-              {blogT.blogSubtitle}. {keywords.secondary.join(', ')}.
+              {blogUi.blogSubtitle}. {keywords.secondary.join(', ')}.
             </p>
             <div class="mt-6 flex flex-wrap gap-3">
               <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
