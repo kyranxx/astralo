@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
+import { supabase } from '../../lib/supabase';
 
 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
@@ -9,9 +10,8 @@ if (!stripeKey) {
 
 const stripe = new Stripe(stripeKey);
 
-// In-memory cache to prevent duplicate horoscope generation for the same session
-// This prevents issues when success page reloads during dev (hot-reload) or user refreshes
-const processedSessions = new Set<string>();
+// Set max duration for Vercel Serverless Functions to 60 seconds (requires Pro plan, will be 10s on Hobby)
+export const maxDuration = 60;
 
 export const POST: APIRoute = async ({ request }) => {
     console.log('🔮 Horoscope API: Request received');
@@ -30,13 +30,38 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({ error: 'Session ID is required' }), { status: 400 });
     }
 
-    // Check if this session was already processed (prevents duplicate generation on page reload)
-    if (processedSessions.has(sessionId)) {
-        console.log('🔮 Horoscope API: Session already processed, returning cached response indicator');
-        return new Response(JSON.stringify({
-            error: 'already_processed',
-            message: 'Horoscope already generated for this session'
-        }), { status: 200 });
+    // Check if this session was already completed in DB (prevents duplicate generation)
+    // We check specifically for completed status or if horoscope_content is already present
+    try {
+        const { data: existingOrder, error: fetchError } = await supabase
+            .from('orders')
+            .select('id, status, horoscope_content, customer_email, customer_name, product_key, lang, birth_date, birth_place, birth_time')
+            .eq('stripe_session_id', sessionId)
+            .single();
+
+        if (fetchError && fetchError.code !== 'PGRST116') { // PGRST116 is "Row not found"
+            console.error('🔮 Horoscope API: DB Check Error:', fetchError);
+            // Continue intentionally - if DB fails, we still try to generate to not block user
+        }
+
+        if (existingOrder && existingOrder.horoscope_content) {
+            console.log('🔮 Horoscope API: Order already has content, returning cached data');
+            const products = { daily: 0.99, weekly: 2.99, monthly: 7.99, partner: 7.99 };
+            const price = products[existingOrder.product_key as keyof typeof products] || 0;
+
+            return new Response(JSON.stringify({
+                error: 'already_processed', // Keep this flag so frontend knows to show "Success" immediately
+                message: 'Horoscope already generated',
+                horoscope: existingOrder.horoscope_content,
+                product: existingOrder.product_key,
+                email: existingOrder.customer_email,
+                name: existingOrder.customer_name,
+                price,
+                lang: existingOrder.lang
+            }), { status: 200 });
+        }
+    } catch (dbError) {
+        console.error('🔮 Horoscope API: Unexpected DB error:', dbError);
     }
 
     try {
@@ -182,6 +207,27 @@ CONTENT RULES:
         };
         const price = products[productKey as keyof typeof products] || 0;
 
+        // SAVE TO DATABASE - Prevent data loss
+        try {
+            console.log('🔮 Horoscope API: Saving content to Supabase...');
+            const { error: updateError } = await supabase
+                .from('orders')
+                .update({
+                    horoscope_content: horoscope,
+                    updated_at: new Date().toISOString()
+                })
+                .eq('stripe_session_id', sessionId);
+
+            if (updateError) {
+                console.error('🔮 Horoscope API: Failed to save content to DB:', updateError);
+                // We don't stop execution, user still needs potential email/response
+            } else {
+                console.log('🔮 Horoscope API: Content saved to DB successfully');
+            }
+        } catch (dbSaveError) {
+            console.error('🔮 Horoscope API: DB Save Exception:', dbSaveError);
+        }
+
         const responseData = JSON.stringify({
             horoscope,
             product: productKey,
@@ -190,10 +236,6 @@ CONTENT RULES:
             price,
             lang: language
         });
-
-        // Mark session as processed AFTER successful generation
-        processedSessions.add(sessionId);
-        console.log('🔮 Horoscope API: Session marked as processed');
 
         return new Response(responseData, { status: 200 });
 

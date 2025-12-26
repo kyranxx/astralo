@@ -3,6 +3,9 @@ import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from '../../lib/pdf-generator';
 import { generateHoroscopeImage } from '../../lib/png-generator';
 
+// Set max duration for Vercel Serverless Functions to 60 seconds (requires Pro plan, will be 10s on Hobby)
+export const maxDuration = 60;
+
 export const POST: APIRoute = async ({ request }) => {
     const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
 
