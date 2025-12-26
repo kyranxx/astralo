@@ -81,6 +81,9 @@ export const POST: APIRoute = async ({ request }) => {
         const session = await stripe.checkout.sessions.retrieve(sessionId);
         const formData = session.metadata;
 
+        // Customer email is stored in session, not in metadata
+        const customerEmail = session.customer_details?.email || session.customer_email || '';
+
         if (!formData) {
             return new Response(JSON.stringify({ error: 'No metadata found for this session.' }), { status: 400 });
         }
@@ -244,7 +247,7 @@ CONTENT RULES:
         const responseData = JSON.stringify({
             horoscope,
             product: productKey,
-            email: formData.email || formData.email1, // Handle partner form email
+            email: customerEmail, // Email from Stripe session, not metadata
             name: formData.name || formData.name1,
             price,
             lang: language,
