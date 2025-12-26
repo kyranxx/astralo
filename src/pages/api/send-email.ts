@@ -27,8 +27,18 @@ export const POST: APIRoute = async ({ request }) => {
         const data = await request.json();
         const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime } = data;
 
+        console.log('📧 Send Email API - Received data:', {
+            hasEmail: !!email,
+            hasHoroscopeContent: !!horoscopeContent,
+            horoscopeLength: horoscopeContent?.length || 0,
+            productName,
+            customerName,
+            lang
+        });
+
         if (!email || !horoscopeContent) {
-            return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+            console.error('📧 Send Email API - Missing required fields:', { email: !!email, horoscopeContent: !!horoscopeContent });
+            return new Response(JSON.stringify({ error: 'Missing required fields', details: { hasEmail: !!email, hasHoroscopeContent: !!horoscopeContent } }), { status: 400 });
         }
 
         // Expanded translations for all languages

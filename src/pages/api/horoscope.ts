@@ -247,7 +247,11 @@ CONTENT RULES:
             email: formData.email || formData.email1, // Handle partner form email
             name: formData.name || formData.name1,
             price,
-            lang: language
+            lang: language,
+            // Include birth data for email image generation
+            birthDate: formData.birthDate || formData.birthDate1,
+            birthPlace: formData.birthPlace || formData.birthPlace1,
+            birthTime: formData.birthTime || formData.birthTime1
         });
 
         return new Response(responseData, { status: 200 });

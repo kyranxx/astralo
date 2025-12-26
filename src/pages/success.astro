@@ -1024,7 +1024,10 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
           customerName: data.name,
           horoscopeContent: data.horoscope,
           productName: productName,
-          lang: data.lang || 'en'
+          lang: data.lang || 'en',
+          birthDate: data.birthDate || '',
+          birthPlace: data.birthPlace || '',
+          birthTime: data.birthTime || ''
         })
       });
       
