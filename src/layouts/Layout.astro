@@ -16,7 +16,7 @@ interface Props {
 
 const { 
 	title, 
-	backgroundImage = "/background5.png",
+	backgroundImage = "/background5.webp",
 	lang = "en",
 	canonicalUrl,
 	description,
@@ -159,8 +159,20 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		
+		<!-- Non-blocking Google Fonts loading using media swap technique -->
+		<link 
+			rel="stylesheet" 
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" 
+			media="print" 
+			onload="this.media='all'" 
+		/>
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" />
+		</noscript>
+		
 		<!-- Preload critical images for LCP -->
-		<link rel="preload" href="/logo.png" as="image" fetchpriority="high" />
+		<link rel="preload" href="/logo.webp" as="image" type="image/webp" fetchpriority="high" />
+		<link rel="preload" href={backgroundImage} as="image" type="image/webp" fetchpriority="high" />
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
