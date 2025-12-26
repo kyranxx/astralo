@@ -96,7 +96,7 @@ const testimonials = getTestimonials(currentLang);
         <span class="hidden lg:flex items-center gap-2 border-l border-black/20 pl-4">
           <span>🔒</span>
           <span>{t.promo.secure}</span>
-          <img src="/Stripe wordmark - Blurple - Large.png" alt="Stripe" class="h-5 ml-1" />
+          <img src="/Stripe wordmark - Blurple - Large.png" alt="Stripe" class="h-5 ml-1" width="50" height="20" />
         </span>
       </div>
     </div>
@@ -106,7 +106,7 @@ const testimonials = getTestimonials(currentLang);
       <div class="max-w-7xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center">
-            <img src="/logo.png" alt="Astralo" class="h-9 sm:h-11" fetchpriority="high" />
+            <img src="/logo.png" alt="Astralo" class="h-9 sm:h-11" fetchpriority="high" width="176" height="44" />
           </a>
           
           <div class="hidden lg:flex items-center gap-3">
@@ -162,9 +162,9 @@ const testimonials = getTestimonials(currentLang);
                         <Icon class="w-6 h-6 sm:w-8 sm:h-8 text-amber-400 group-hover:scale-110 transition-transform duration-500" />
                       </div>
                     </div>
-                    <h3 class="text-[11px] sm:text-2xl font-black text-white mb-0.5 sm:mb-1 group-hover:text-amber-400 transition-colors duration-300 leading-tight min-h-[3rem] sm:min-h-[4rem] flex items-center justify-center text-center px-0.5 break-words hyphens-auto">
+                    <h2 class="text-[11px] sm:text-2xl font-black text-white mb-0.5 sm:mb-1 group-hover:text-amber-400 transition-colors duration-300 leading-tight min-h-[3rem] sm:min-h-[4rem] flex items-center justify-center text-center px-0.5 break-words hyphens-auto">
                       {type.name}
-                    </h3>
+                    </h2>
                     <p class="text-white/60 text-[9px] sm:text-[10px] font-medium uppercase tracking-widest">{type.wordCount}</p>
                   </div>
 
@@ -256,6 +256,8 @@ const testimonials = getTestimonials(currentLang);
                   class="relative w-full max-w-sm rounded-2xl shadow-2xl border border-white/10"
                   loading="lazy"
                   decoding="async"
+                  width="384"
+                  height="540"
                 />
                 <div class="absolute -bottom-3 -right-3 bg-amber-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                   Premium PDF
