@@ -1016,19 +1016,29 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
     }, 200);
     
     try {
+      // Debug: log what we're sending to the email API
+      const emailPayload = {
+        email: data.email,
+        customerName: data.name,
+        horoscopeContent: data.horoscope,
+        productName: productName,
+        lang: data.lang || 'en',
+        birthDate: data.birthDate || '',
+        birthPlace: data.birthPlace || '',
+        birthTime: data.birthTime || ''
+      };
+      console.log('📧 Sending email with payload:', {
+        hasEmail: !!emailPayload.email,
+        hasHoroscopeContent: !!emailPayload.horoscopeContent,
+        horoscopeLength: emailPayload.horoscopeContent?.length || 0,
+        productName: emailPayload.productName,
+        lang: emailPayload.lang
+      });
+      
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: data.email,
-          customerName: data.name,
-          horoscopeContent: data.horoscope,
-          productName: productName,
-          lang: data.lang || 'en',
-          birthDate: data.birthDate || '',
-          birthPlace: data.birthPlace || '',
-          birthTime: data.birthTime || ''
-        })
+        body: JSON.stringify(emailPayload)
       });
       
       clearInterval(progressInterval);
