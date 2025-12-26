@@ -5,6 +5,7 @@
 
 export interface BlogUiTranslations {
     backToBlog: string;
+    home: string;
     quickSummary: string;
     tableOfContents: string;
     keyTakeaways: string;
@@ -25,6 +26,7 @@ export interface BlogUiTranslations {
 export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     en: {
         backToBlog: 'Back to Blog',
+        home: 'Home',
         quickSummary: '📌 Quick Summary',
         tableOfContents: '📑 Table of Contents',
         keyTakeaways: '🎯 Key Takeaways',
@@ -43,6 +45,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     de: {
         backToBlog: 'Zurück zum Blog',
+        home: 'Startseite',
         quickSummary: '📌 Schnelle Zusammenfassung',
         tableOfContents: '📑 Inhaltsverzeichnis',
         keyTakeaways: '🎯 Wichtige Erkenntnisse',
@@ -61,6 +64,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     fr: {
         backToBlog: 'Retour au Blog',
+        home: 'Accueil',
         quickSummary: '📌 Résumé Rapide',
         tableOfContents: '📑 Table des Matières',
         keyTakeaways: '🎯 Points Clés',
@@ -79,6 +83,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     es: {
         backToBlog: 'Volver al Blog',
+        home: 'Inicio',
         quickSummary: '📌 Resumen Rápido',
         tableOfContents: '📑 Índice',
         keyTakeaways: '🎯 Puntos Clave',
@@ -97,6 +102,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     it: {
         backToBlog: 'Torna al Blog',
+        home: 'Home',
         quickSummary: '📌 Riepilogo Rapido',
         tableOfContents: '📑 Indice',
         keyTakeaways: '🎯 Punti Chiave',
@@ -115,6 +121,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     pt: {
         backToBlog: 'Voltar ao Blog',
+        home: 'Início',
         quickSummary: '📌 Resumo Rápido',
         tableOfContents: '📑 Índice',
         keyTakeaways: '🎯 Pontos Principais',
@@ -133,6 +140,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     nl: {
         backToBlog: 'Terug naar Blog',
+        home: 'Home',
         quickSummary: '📌 Korte Samenvatting',
         tableOfContents: '📑 Inhoudsopgave',
         keyTakeaways: '🎯 Belangrijke Punten',
@@ -151,6 +159,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     pl: {
         backToBlog: 'Powrót do Bloga',
+        home: 'Strona główna',
         quickSummary: '📌 Krótkie Podsumowanie',
         tableOfContents: '📑 Spis Treści',
         keyTakeaways: '🎯 Kluczowe Wnioski',
@@ -169,6 +178,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     cs: {
         backToBlog: 'Zpět na Blog',
+        home: 'Domů',
         quickSummary: '📌 Rychlé Shrnutí',
         tableOfContents: '📑 Obsah',
         keyTakeaways: '🎯 Klíčové Body',
@@ -187,6 +197,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     sk: {
         backToBlog: 'Späť na Blog',
+        home: 'Domov',
         quickSummary: '📌 Rýchle Zhrnutie',
         tableOfContents: '📑 Obsah',
         keyTakeaways: '🎯 Kľúčové Body',
@@ -205,6 +216,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     ru: {
         backToBlog: 'Назад к Блогу',
+        home: 'Главная',
         quickSummary: '📌 Краткое Резюме',
         tableOfContents: '📑 Содержание',
         keyTakeaways: '🎯 Ключевые Выводы',
@@ -223,6 +235,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     ja: {
         backToBlog: 'ブログに戻る',
+        home: 'ホーム',
         quickSummary: '📌 概要',
         tableOfContents: '📑 目次',
         keyTakeaways: '🎯 重要ポイント',
@@ -241,6 +254,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     ko: {
         backToBlog: '블로그로 돌아가기',
+        home: '홈',
         quickSummary: '📌 빠른 요약',
         tableOfContents: '📑 목차',
         keyTakeaways: '🎯 핵심 포인트',
@@ -259,6 +273,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     zh: {
         backToBlog: '返回博客',
+        home: '首页',
         quickSummary: '📌 快速摘要',
         tableOfContents: '📑 目录',
         keyTakeaways: '🎯 关键要点',
@@ -277,6 +292,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     hi: {
         backToBlog: 'ब्लॉग पर वापस',
+        home: 'होम',
         quickSummary: '📌 त्वरित सारांश',
         tableOfContents: '📑 विषय सूची',
         keyTakeaways: '🎯 मुख्य बिंदु',
@@ -295,6 +311,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     bn: {
         backToBlog: 'ব্লগে ফিরুন',
+        home: 'হোম',
         quickSummary: '📌 দ্রুত সারাংশ',
         tableOfContents: '📑 সূচি',
         keyTakeaways: '🎯 মূল বিষয়',
@@ -313,6 +330,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     ar: {
         backToBlog: 'العودة للمدونة',
+        home: 'الرئيسية',
         quickSummary: '📌 ملخص سريع',
         tableOfContents: '📑 جدول المحتويات',
         keyTakeaways: '🎯 النقاط الرئيسية',
@@ -331,6 +349,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     th: {
         backToBlog: 'กลับไปที่บล็อก',
+        home: 'หน้าแรก',
         quickSummary: '📌 สรุปย่อ',
         tableOfContents: '📑 สารบัญ',
         keyTakeaways: '🎯 ประเด็นสำคัญ',
@@ -349,6 +368,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     vi: {
         backToBlog: 'Quay lại Blog',
+        home: 'Trang chủ',
         quickSummary: '📌 Tóm Tắt Nhanh',
         tableOfContents: '📑 Mục Lục',
         keyTakeaways: '🎯 Điểm Chính',
@@ -367,6 +387,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     id: {
         backToBlog: 'Kembali ke Blog',
+        home: 'Beranda',
         quickSummary: '📌 Ringkasan Cepat',
         tableOfContents: '📑 Daftar Isi',
         keyTakeaways: '🎯 Poin Penting',
@@ -385,6 +406,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     sv: {
         backToBlog: 'Tillbaka till Bloggen',
+        home: 'Hem',
         quickSummary: '📌 Snabb Sammanfattning',
         tableOfContents: '📑 Innehållsförteckning',
         keyTakeaways: '🎯 Viktiga Punkter',
@@ -403,6 +425,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     da: {
         backToBlog: 'Tilbage til Bloggen',
+        home: 'Hjem',
         quickSummary: '📌 Hurtig Oversigt',
         tableOfContents: '📑 Indholdsfortegnelse',
         keyTakeaways: '🎯 Vigtige Punkter',
@@ -421,6 +444,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     no: {
         backToBlog: 'Tilbake til Bloggen',
+        home: 'Hjem',
         quickSummary: '📌 Rask Sammendrag',
         tableOfContents: '📑 Innholdsfortegnelse',
         keyTakeaways: '🎯 Viktige Punkter',
@@ -439,6 +463,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     fi: {
         backToBlog: 'Takaisin Blogiin',
+        home: 'Etusivu',
         quickSummary: '📌 Nopea Yhteenveto',
         tableOfContents: '📑 Sisällysluettelo',
         keyTakeaways: '🎯 Tärkeimmät Kohdat',
@@ -457,6 +482,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     hu: {
         backToBlog: 'Vissza a Bloghoz',
+        home: 'Főoldal',
         quickSummary: '📌 Gyors Összefoglaló',
         tableOfContents: '📑 Tartalomjegyzék',
         keyTakeaways: '🎯 Kulcsfontosságú Pontok',
@@ -475,6 +501,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     ro: {
         backToBlog: 'Înapoi la Blog',
+        home: 'Acasă',
         quickSummary: '📌 Rezumat Rapid',
         tableOfContents: '📑 Cuprins',
         keyTakeaways: '🎯 Puncte Cheie',
@@ -493,6 +520,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     bg: {
         backToBlog: 'Обратно към Блога',
+        home: 'Начало',
         quickSummary: '📌 Бързо Резюме',
         tableOfContents: '📑 Съдържание',
         keyTakeaways: '🎯 Ключови Точки',
@@ -511,6 +539,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     hr: {
         backToBlog: 'Natrag na Blog',
+        home: 'Početna',
         quickSummary: '📌 Brzi Sažetak',
         tableOfContents: '📑 Sadržaj',
         keyTakeaways: '🎯 Ključne Točke',
@@ -529,6 +558,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     sl: {
         backToBlog: 'Nazaj na Blog',
+        home: 'Domov',
         quickSummary: '📌 Hiter Povzetek',
         tableOfContents: '📑 Kazalo',
         keyTakeaways: '🎯 Ključne Točke',
@@ -547,6 +577,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     sr: {
         backToBlog: 'Nazad na Blog',
+        home: 'Početna',
         quickSummary: '📌 Brzi Rezime',
         tableOfContents: '📑 Sadržaj',
         keyTakeaways: '🎯 Ključne Tačke',
@@ -565,6 +596,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     uk: {
         backToBlog: 'Назад до Блогу',
+        home: 'Головна',
         quickSummary: '📌 Короткий Огляд',
         tableOfContents: '📑 Зміст',
         keyTakeaways: '🎯 Ключові Висновки',
@@ -583,6 +615,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     el: {
         backToBlog: 'Επιστροφή στο Blog',
+        home: 'Αρχική',
         quickSummary: '📌 Γρήγορη Περίληψη',
         tableOfContents: '📑 Πίνακας Περιεχομένων',
         keyTakeaways: '🎯 Βασικά Σημεία',
@@ -601,6 +634,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     tr: {
         backToBlog: 'Bloga Dön',
+        home: 'Ana Sayfa',
         quickSummary: '📌 Hızlı Özet',
         tableOfContents: '📑 İçindekiler',
         keyTakeaways: '🎯 Önemli Noktalar',
@@ -619,6 +653,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
     },
     he: {
         backToBlog: 'חזרה לבלוג',
+        home: 'בית',
         quickSummary: '📌 סיכום מהיר',
         tableOfContents: '📑 תוכן עניינים',
         keyTakeaways: '🎯 נקודות מפתח',

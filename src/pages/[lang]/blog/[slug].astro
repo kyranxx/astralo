@@ -488,7 +488,7 @@ const shareUrls = {
       <article class="max-w-4xl mx-auto">
         <!-- Meta -->
         <div class="flex flex-wrap items-center gap-4 mb-6 text-sm">
-          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full">{post.category}</span>
+          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full">{category}</span>
           <span class="text-white/50 flex items-center gap-2">
             <Calendar class="w-4 h-4" />
             {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -501,7 +501,7 @@ const shareUrls = {
 
         <!-- Title with Emoji -->
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-          <span class="mr-2">{post.emoji}</span>{post.displayTitle}
+          <span class="mr-2">{post.emoji}</span>{displayTitle}
         </h1>
 
         <!-- Author & Share -->
