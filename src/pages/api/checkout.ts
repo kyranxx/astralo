@@ -1,12 +1,18 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 import { productPrices, getProductName, type ProductKey } from '../../lib/products';
+import { CheckoutSchema, validateReferer } from '../../lib/validation';
 
 export const GET: APIRoute = async () => {
     return new Response(JSON.stringify({ message: 'Method Not Allowed' }), { status: 405 });
 };
 
 export const POST: APIRoute = async ({ request }) => {
+    // 1. Security Check: Origin/Referer
+    if (!validateReferer(request)) {
+        return new Response(JSON.stringify({ error: 'Unauthorized origin' }), { status: 403 });
+    }
+
     const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
     if (!stripeKey) {
@@ -17,34 +23,44 @@ export const POST: APIRoute = async ({ request }) => {
         apiVersion: '2024-11-20.acacia' as any,
     });
 
-    let data;
+    let rawData;
     try {
         if (request.headers.get('Content-Type')?.includes('application/json')) {
-            data = await request.json();
+            rawData = await request.json();
         } else {
             const text = await request.text();
-            data = text ? JSON.parse(text) : {};
+            rawData = text ? JSON.parse(text) : {};
         }
     } catch (e) {
         console.error('Error parsing request body:', e);
-        return new Response(JSON.stringify({ error: 'Invalid JSON in request body' }), {
-            status: 400,
-            headers: { 'Content-Type': 'application/json' }
-        });
+        return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400 });
     }
 
-    const { productKey, ...formData } = data;
+    // 2. Input Validation
+    const validation = CheckoutSchema.safeParse(rawData);
+    if (!validation.success) {
+        console.error('Validation error:', validation.error.format());
+        return new Response(JSON.stringify({
+            error: 'Invalid request data',
+            details: validation.error.flatten()
+        }), { status: 400 });
+    }
+
+    const data = validation.data;
+    const { productKey } = data; // Type-safe now
+
+    // We can cast data to any since we know it has all fields from schema, but let's be cleaner
+    // Extract formData explicitly from recognized keys
+    // Simplified: we will just use `data` object as the source but exclude productKey for formData.
+    const { productKey: _pk, ...formData } = data; // Separate productKey
 
     const productPrice = productPrices[productKey as keyof typeof productPrices];
-    const lang = (data.lang as string) || 'en';
+    const lang = data.lang;
     const productName = getProductName(productKey, lang);
 
     if (!productPrice) {
-        console.error('Invalid product key:', productKey);
-        return new Response(JSON.stringify({ error: 'Invalid product' }), {
-            status: 400,
-            headers: { 'Content-Type': 'application/json' }
-        });
+        // Schema check should catch this already via enum, but double check
+        return new Response(JSON.stringify({ error: 'Invalid product' }), { status: 400 });
     }
 
     try {

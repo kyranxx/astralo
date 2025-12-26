@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 import { supabase } from '../../lib/supabase';
+import { HoroscopeRequestSchema, validateReferer } from '../../lib/validation';
 
 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
@@ -14,11 +15,23 @@ const stripe = new Stripe(stripeKey);
 export const maxDuration = 60;
 
 export const POST: APIRoute = async ({ request }) => {
+    // 1. Security Check: Origin/Referer
+    if (!validateReferer(request)) {
+        console.warn('🔮 Horoscope API: Unauthorized origin blocked');
+        return new Response(JSON.stringify({ error: 'Unauthorized origin' }), { status: 403 });
+    }
+
     console.log('🔮 Horoscope API: Request received');
     let sessionId;
     try {
         const body = await request.json();
-        sessionId = body.sessionId;
+        const validation = HoroscopeRequestSchema.safeParse(body);
+
+        if (!validation.success) {
+            console.error('🔮 Horoscope API: Validation failed', validation.error);
+            return new Response(JSON.stringify({ error: 'Invalid Session ID format' }), { status: 400 });
+        }
+        sessionId = validation.data.sessionId;
     } catch (e) {
         console.error('🔮 Horoscope API: Failed to parse request body');
         return new Response(JSON.stringify({ error: 'Invalid request body' }), { status: 400 });
