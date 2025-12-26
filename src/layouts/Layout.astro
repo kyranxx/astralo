@@ -462,7 +462,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 				if ('requestIdleCallback' in window) {
 					requestIdleCallback(loadClarity, { timeout: 3000 });
 				} else {
-					setTimeout(loadClarity, 3000);
+					setTimeout(loadClarity, 5000);
 				}
 			})();
 		</script>
