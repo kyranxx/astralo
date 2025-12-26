@@ -15,7 +15,7 @@ async function optimizeBackground() {
     try {
         await sharp(inputPath)
             .webp({
-                quality: 50, // Aggressive compression for background
+                quality: 40, // Super aggressive compression
                 effort: 6,   // Max effort
                 smartSubsample: true
             })

@@ -3,6 +3,12 @@ import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
 import { productNames, productPrices, getProductPriceInEuros } from '../lib/products';
+import '@fontsource/outfit/300.css';
+import '@fontsource/outfit/400.css';
+import '@fontsource/outfit/500.css';
+import '@fontsource/outfit/600.css';
+import '@fontsource/outfit/700.css';
+import '@fontsource/outfit/800.css';
 
 interface Props {
 	title: string;
@@ -155,12 +161,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta name="twitter:description" content={currentDescription} />
 		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
 		
-		<!-- Performance: Preconnect to critical third-party origins -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		
-		<!-- Google Fonts - Blocking load for text stability and faster LCP -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" />
+		<!-- Google Fonts replaced by self-hosted @fontsource/outfit -->
 		
 		<!-- Preload critical images for LCP -->
 		<link rel="preload" href="/logo.webp" as="image" type="image/webp" fetchpriority="high" />
