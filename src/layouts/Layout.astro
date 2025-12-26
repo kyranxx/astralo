@@ -115,7 +115,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 ---
 
 <!doctype html>
-<html lang={lang} dir={dir}>
+<html lang={lang} dir={dir} prefix="og: https://ogp.me/ns#">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -131,13 +131,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		
 		<!-- Canonical URL (Critical for SEO) -->
 		<link rel="canonical" href={computedCanonicalUrl} />
-		
-		<!-- Hreflang Tags for International SEO (All 33 Languages) -->
-		{allLanguages.map(({ code, hreflang }) => (
-			<link rel="alternate" hreflang={hreflang} href={getHreflangUrl(code)} />
-		))}
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
-		
+
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Astralo" />
@@ -160,6 +154,12 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={currentDescription} />
 		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+		
+		<!-- Hreflang Tags for International SEO (All 33 Languages) -->
+		{allLanguages.map(({ code, hreflang }) => (
+			<link rel="alternate" hreflang={hreflang} href={getHreflangUrl(code)} />
+		))}
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
 		<!-- Google Fonts replaced by self-hosted @fontsource/outfit -->
 		
