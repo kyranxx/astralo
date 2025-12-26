@@ -143,6 +143,7 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:image:alt" content="Astralo - Professional Horoscopes" />
+		<meta property="og:logo" content={`${siteUrl}/logo.png`} />
 		<meta property="og:locale" content={ogLocaleMap[currentLang] || 'en_US'} />
 		{allLanguages.filter(l => l.code !== currentLang).map(({ code }) => (
 			<meta property="og:locale:alternate" content={ogLocaleMap[code] || 'en_US'} />
