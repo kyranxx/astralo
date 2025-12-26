@@ -86,11 +86,23 @@
   background: hsl(var(--primary));
 }
 
-/* Smooth Animations */
+/* Smooth Animations - Optimized for CLS */
+/* NOTE: fadeInUp now uses opacity only to prevent CLS (layout shifts) */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Use this for non-critical elements where transform is OK */
+@keyframes fadeInUpTransform {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
 
   to {

@@ -414,9 +414,27 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		
 		<!-- Critical CSS inline for faster FCP -->
 		<style is:inline>
-			/* Critical above-the-fold styles */
-			body { margin: 0; background: #0a0a1a; color: #fff; }
-			.cosmic-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #0a0a1a 0%, #1a0f2e 50%, #0f1729 100%); z-index: -2; }
+			/* Critical above-the-fold styles - prevents FOUC and improves FCP/LCP */
+			*,*::before,*::after{box-sizing:border-box}
+			body{margin:0;background:#0a0a1a;color:#fff;font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
+			img{max-width:100%;height:auto;display:block}
+			a{color:inherit;text-decoration:none}
+			h1,h2,h3,h4{margin:0;font-weight:700}
+			.cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0a0a1a 0%,#1a0f2e 50%,#0f1729 100%);z-index:-2}
+			.cosmic-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;opacity:0.4;z-index:-1;mix-blend-mode:screen}
+			.glass-strong{background:rgba(0,0,0,0.6);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.15)}
+			.min-h-screen{min-height:100vh}
+			.flex{display:flex}
+			.flex-col{flex-direction:column}
+			.items-center{align-items:center}
+			.justify-between{justify-content:space-between}
+			.text-center{text-align:center}
+			.text-white{color:#fff}
+			.text-amber-400{color:#fbbf24}
+			.bg-gradient-to-r{background:linear-gradient(to right,var(--tw-gradient-stops))}
+			.from-amber-500{--tw-gradient-from:#f59e0b}
+			.via-amber-400{--tw-gradient-stops:#f59e0b,#fbbf24,var(--tw-gradient-to,#fbbf24)}
+			.to-amber-500{--tw-gradient-to:#f59e0b}
 		</style>
 		
 		<!-- Microsoft Clarity Analytics -->
