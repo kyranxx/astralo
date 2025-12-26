@@ -1027,13 +1027,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
         birthPlace: data.birthPlace || '',
         birthTime: data.birthTime || ''
       };
-      console.log('📧 Sending email with payload:', {
-        hasEmail: !!emailPayload.email,
-        hasHoroscopeContent: !!emailPayload.horoscopeContent,
-        horoscopeLength: emailPayload.horoscopeContent?.length || 0,
-        productName: emailPayload.productName,
-        lang: emailPayload.lang
-      });
+      console.log('📧 Email payload - hasEmail:', !!emailPayload.email, '| hasHoroscope:', !!emailPayload.horoscopeContent, '| length:', emailPayload.horoscopeContent?.length || 0, '| lang:', emailPayload.lang);
       
       const response = await fetch('/api/send-email', {
         method: 'POST',
