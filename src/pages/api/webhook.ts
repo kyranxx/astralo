@@ -1,7 +1,6 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
-import nodemailer from 'nodemailer';
-import { generateLegalPDFs } from '../../lib/pdf-generator';
+import { fulfillOrder } from '../../lib/fulfillment';
 import {
   addOrder,
   generateOrderId,
@@ -14,6 +13,9 @@ const products: Record<string, { name: string; price: number }> = {
   monthly: { name: 'Monthly Horoscope', price: 999 },
   partner: { name: 'Partner Horoscope', price: 1499 },
 };
+
+// Set max duration for Webhook to 60 seconds (requires Pro plan, will be 10s on Hobby)
+export const maxDuration = 60;
 
 export const POST: APIRoute = async ({ request }) => {
   const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
@@ -127,15 +129,20 @@ export const POST: APIRoute = async ({ request }) => {
         }
       }
 
-      // Send confirmation email
+      // TRIGGER FULL FULFILLMENT (Server-side)
       if (customerEmail) {
-        await sendConfirmationEmail(
-          customerEmail,
-          order,
-          invoicePdfBuffer,
-          invoiceFilename,
-          downloadUrl
-        );
+        // Run fulfillment in background or await it? 
+        // We await it to ensure it works, but catch errors to not fail the webhook response 
+        // (unless we want Stripe to retry).
+        // Since we have DB deduping in fulfillment, it's safer to attempt.
+        try {
+          await fulfillOrder(order, invoicePdfBuffer, invoiceFilename, downloadUrl);
+        } catch (fulfillmentError) {
+          console.error(`CRITICAL: Fulfillment failed for order ${orderId}`, fulfillmentError);
+          // We return 200 to Stripe so they don't retry partially successful order logic 
+          // (e.g. adding order to DB twice).
+          // Ideally we should have a queue, but this is serverless.
+        }
       }
     }
 
@@ -162,157 +169,4 @@ function getCountryName(code: string): string {
   } catch {
     return code;
   }
-}
-
-async function sendConfirmationEmail(
-  to: string,
-  order: Order,
-  invoicePdf: Buffer | null,
-  invoiceFilename: string,
-  link: string | null
-) {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
-
-  if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
-    console.error('SMTP configuration missing');
-    return;
-  }
-
-  const transporter = nodemailer.createTransport({
-    host: SMTP_HOST,
-    port: Number(SMTP_PORT) || 587,
-    secure: Number(SMTP_PORT) === 465,
-    auth: {
-      user: SMTP_USER,
-      pass: SMTP_PASS,
-    },
-  });
-
-  const legalDocs = await generateLegalPDFs(order.lang);
-
-  const html = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Payment Confirmation - Astralo</title>
-      </head>
-      <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
-        <table role="presentation" style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <td align="center" style="padding: 40px 20px;">
-              
-              <table role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                
-                <!-- Header -->
-                <tr>
-                  <td style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); padding: 40px 30px; text-align: center;">
-                    <img src="https://astralo.online/logo.png" alt="Astralo" style="height: 60px; margin-bottom: 16px;" />
-                    <h1 style="margin: 0; color: #fbbf24; font-size: 28px; font-weight: bold;">
-                      Payment Confirmed
-                    </h1>
-                    <div style="margin-top: 12px; color: #e5e7eb; font-size: 16px;">
-                      ✨ Thank you for your purchase ✨
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- Order Details -->
-                <tr>
-                  <td style="padding: 32px 30px;">
-                    <h2 style="margin: 0 0 16px 0; color: #1a1a2e; font-size: 22px; font-weight: 600;">
-                      Order #${order.id}
-                    </h2>
-                    
-                    <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
-                      <table style="width: 100%; border-collapse: collapse;">
-                        <tr>
-                          <td style="padding: 8px 0; color: #666;">Product:</td>
-                          <td style="padding: 8px 0; color: #1a1a2e; font-weight: 600; text-align: right;">${order.productName}</td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 8px 0; color: #666;">Amount:</td>
-                          <td style="padding: 8px 0; color: #fbbf24; font-weight: 600; text-align: right;">€${(order.amount / 100).toFixed(2)}</td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 8px 0; color: #666;">Date:</td>
-                          <td style="padding: 8px 0; color: #1a1a2e; text-align: right;">${new Date(order.createdAt).toLocaleDateString()}</td>
-                        </tr>
-                      </table>
-                    </div>
-                    
-                    <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px;">
-                      <h3 style="margin: 0 0 12px 0; color: #1a1a2e; font-size: 16px; font-weight: 600;">
-                        📎 Attached Documents
-                      </h3>
-                      <ul style="margin: 0; padding-left: 20px; color: #666; line-height: 2;">
-                        ${invoicePdf ? '<li>💳 Your Invoice</li>' : ''}
-                        <li>📄 Terms of Service</li>
-                        <li>🔒 Privacy Policy</li>
-                        <li>↩️ Refund Policy</li>
-                        <li>🍪 Cookie Policy</li>
-                      </ul>
-                    </div>
-
-                    ${link ? `
-                    <div style="margin-top: 20px; text-align: center;">
-                      <a href="${link}" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #1a1a2e; text-decoration: none; border-radius: 8px; font-weight: 600;">
-                        View ${invoicePdf ? 'Invoice' : 'Receipt'} Online
-                      </a>
-                    </div>
-                    ` : ''}
-                  </td>
-                </tr>
-
-                <!-- Footer Message -->
-                <tr>
-                  <td style="padding: 0 30px 32px;">
-                    <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%); border-radius: 8px;">
-                      <p style="margin: 0; color: #4c1d95; font-size: 14px;">
-                        Questions? Contact us at <a href="mailto:apollotechsro@gmail.com" style="color: #4c1d95; font-weight: 600;">apollotechsro@gmail.com</a>
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- Footer -->
-                <tr>
-                  <td style="background-color: #f9fafb; padding: 24px 30px; text-align: center; border-top: 1px solid #e5e7eb;">
-                    <img src="https://astralo.online/logo.png" alt="Astralo" style="height: 32px; margin-bottom: 12px; opacity: 0.6;" />
-                    <p style="margin: 0; color: #999; font-size: 12px;">
-                      © ${new Date().getFullYear()} Astralo. All rights reserved.
-                    </p>
-                  </td>
-                </tr>
-
-              </table>
-            </td>
-          </tr>
-        </table>
-      </body>
-      </html>
-    `;
-
-  const attachments = invoicePdf ? [
-    {
-      filename: invoiceFilename,
-      content: invoicePdf,
-    },
-    ...legalDocs.map(doc => ({
-      filename: doc.filename,
-      content: Buffer.from(doc.content)
-    }))
-  ] : legalDocs.map(doc => ({
-    filename: doc.filename,
-    content: Buffer.from(doc.content)
-  }));
-
-  await transporter.sendMail({
-    from: `"Astralo ✨" <${SMTP_USER}>`,
-    to: to,
-    subject: `Order Confirmed #${order.id} - Astralo ✨`,
-    html: html,
-    attachments: attachments,
-  });
 }
