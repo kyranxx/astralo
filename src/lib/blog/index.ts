@@ -9,28 +9,9 @@ import { birthChartReading } from './articles/birth-chart-reading-explained/inde
 import { weeklyHoroscope } from './articles/weekly-horoscope-predictions/index';
 import { monthlyHoroscope } from './articles/monthly-horoscope-january-2025/index';
 import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
+import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
-
-export interface BlogPostTranslation {
-    title: string;
-    excerpt: string;
-    category: string;
-    metaDescription: string;
-    keywords: string;
-    quickSummary: string[];
-    keyTakeaways: string[];
-    tableOfContents: Array<{ id: string; title: string }>;
-    content: string;
-}
-
-export interface BlogPostMeta {
-    slug: string;
-    emoji: string;
-    date: string;
-    readTime: string;
-    author: string;
-}
 
 // All article translations indexed by slug
 const articleTranslations: Record<string, Record<string, BlogPostTranslation>> = {

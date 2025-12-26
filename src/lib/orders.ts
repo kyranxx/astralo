@@ -255,18 +255,18 @@ export async function getStatistics(startDate?: string, endDate?: string) {
     }
 
     const allOrders = (orders || []).map(rowToOrder);
-    const completedOrders = allOrders.filter(o => o.status === 'completed');
-    const refundedOrders = allOrders.filter(o => o.status === 'refunded');
+    const completedOrders = allOrders.filter((o: Order) => o.status === 'completed');
+    const refundedOrders = allOrders.filter((o: Order) => o.status === 'refunded');
 
     // Total revenue (completed orders only)
-    const totalRevenue = completedOrders.reduce((sum, o) => sum + o.amount, 0);
+    const totalRevenue = completedOrders.reduce((sum: number, o: Order) => sum + o.amount, 0);
 
     return {
         totalRevenue: totalRevenue / 100,
         totalOrders: allOrders.length,
         completedOrders: completedOrders.length,
         refundedOrders: refundedOrders.length,
-        refundedAmount: refundedOrders.reduce((sum, o) => sum + o.amount, 0) / 100,
+        refundedAmount: refundedOrders.reduce((sum: number, o: Order) => sum + o.amount, 0) / 100,
         revenueByCountry: calculateRevenueByCountry(completedOrders),
         revenueByProduct: calculateRevenueByProduct(completedOrders),
         monthlyData: calculateMonthlyData(completedOrders),
