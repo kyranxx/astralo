@@ -3,15 +3,24 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import FAQ from '../components/FAQ.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon } from 'lucide-astro';
+import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon, BookOpen, ArrowRight } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { getTestimonials } from '../lib/testimonials';
+import { getAllArticleSlugs, getArticleTranslation, getArticleMeta } from '../lib/blog';
 
 export const prerender = true;
 
 // English is the default - served at root without /en prefix
 const currentLang: SupportedLocale = 'en';
 const t = getTranslations(currentLang);
+
+// Get latest blog articles for internal linking (SEO: prevents orphan pages)
+const allSlugs = getAllArticleSlugs();
+const latestArticles = allSlugs.slice(0, 3).map(slug => {
+  const translation = getArticleTranslation(slug, currentLang);
+  const meta = getArticleMeta(slug);
+  return { slug, translation, meta };
+}).filter(a => a.translation && a.meta);
 
 const horoscopeTypes = [
   {
@@ -353,6 +362,46 @@ const testimonials = getTestimonials(currentLang);
               <h3 class="text-white font-semibold text-sm sm:text-base mb-1 sm:mb-2">{t.whyUs.verified.title}</h3>
               <p class="text-white/60 text-xs sm:text-sm">{t.whyUs.verified.description}</p>
             </div>
+          </div>
+        </div>
+
+        <!-- Latest Articles Section (SEO: Internal Linking) -->
+        <div class="mb-12 sm:mb-16">
+          <div class="flex items-center justify-between mb-6 sm:mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+              <BookOpen class="w-6 h-6 sm:w-8 sm:h-8 text-amber-400" />
+              Latest Articles
+            </h2>
+            <a href="/blog/" class="flex items-center gap-1 text-amber-400 hover:text-amber-300 transition-colors text-sm sm:text-base font-medium">
+              View All
+              <ArrowRight class="w-4 h-4" />
+            </a>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {latestArticles.map((article, index) => (
+              <a 
+                href={`/blog/${article.slug}/`}
+                class="glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 group border border-white/10 hover:border-amber-400/30"
+                style={`animation: fadeInUp 0.8s ease-out ${0.1 * index}s forwards; opacity: 0;`}
+              >
+                <div class="flex items-start gap-3 mb-3">
+                  <span class="text-2xl">{article.meta?.emoji}</span>
+                  <div class="flex-1">
+                    <span class="text-xs text-amber-400 font-medium uppercase tracking-wider">{article.translation?.category}</span>
+                    <h3 class="text-white font-semibold text-base sm:text-lg group-hover:text-amber-400 transition-colors line-clamp-2">
+                      {article.translation?.displayTitle}
+                    </h3>
+                  </div>
+                </div>
+                <p class="text-white/60 text-sm line-clamp-2 mb-3">
+                  {article.translation?.excerpt}
+                </p>
+                <div class="flex items-center gap-2 text-xs text-white/50">
+                  <Clock class="w-3 h-3" />
+                  <span>{article.meta?.readTime} min read</span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </div>

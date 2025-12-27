@@ -50,7 +50,50 @@ export default defineConfig({
           he: 'he',
         },
       },
-      filter: (page) => !page.includes('/api/') && !page.includes('/admin'),
+      filter: (page) => !page.includes('/api/') && !page.includes('/admin') && !page.includes('/success'),
+      serialize(item) {
+        // Determine page type and set appropriate SEO values
+        const url = item.url;
+
+        // Homepage - highest priority
+        if (url.endsWith('.online/') || url.match(/\/[a-z]{2}\/$/)) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'daily';
+          item.priority = 1.0;
+        }
+        // Blog posts - high priority, updated weekly
+        else if (url.includes('/blog/') && !url.endsWith('/blog/')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'weekly';
+          item.priority = 0.8;
+        }
+        // Blog index
+        else if (url.endsWith('/blog/')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'daily';
+          item.priority = 0.9;
+        }
+        // Form pages - medium priority
+        else if (url.includes('/form/')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'monthly';
+          item.priority = 0.7;
+        }
+        // Legal pages - lower priority, rarely change
+        else if (url.includes('/legal/')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'yearly';
+          item.priority = 0.3;
+        }
+        // Default for other pages
+        else {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'monthly';
+          item.priority = 0.5;
+        }
+
+        return item;
+      }
     })
   ],
   output: 'server',

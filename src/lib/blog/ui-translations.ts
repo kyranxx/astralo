@@ -21,6 +21,8 @@ export interface BlogUiTranslations {
     readArticle: string;
     readMore: string;
     featured: string;
+    latestArticles: string;
+    viewAll: string;
 }
 
 export const blogUiTranslations: Record<string, BlogUiTranslations> = {
@@ -42,6 +44,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Read Article',
         readMore: 'Read more →',
         featured: 'Featured',
+        latestArticles: 'Latest Articles',
+        viewAll: 'View All',
     },
     de: {
         backToBlog: 'Zurück zum Blog',
@@ -61,6 +65,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Artikel lesen',
         readMore: 'Mehr lesen →',
         featured: 'Empfohlen',
+        latestArticles: 'Neueste Artikel',
+        viewAll: 'Alle anzeigen',
     },
     fr: {
         backToBlog: 'Retour au Blog',
@@ -80,6 +86,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Lire l\'article',
         readMore: 'Lire plus →',
         featured: 'À la une',
+        latestArticles: 'Derniers Articles',
+        viewAll: 'Voir tout',
     },
     es: {
         backToBlog: 'Volver al Blog',
@@ -99,6 +107,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Leer artículo',
         readMore: 'Leer más →',
         featured: 'Destacado',
+        latestArticles: 'Últimos Artículos',
+        viewAll: 'Ver todo',
     },
     it: {
         backToBlog: 'Torna al Blog',
@@ -118,6 +128,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Leggi articolo',
         readMore: 'Leggi di più →',
         featured: 'In evidenza',
+        latestArticles: 'Ultimi Articoli',
+        viewAll: 'Vedi tutti',
     },
     pt: {
         backToBlog: 'Voltar ao Blog',
@@ -137,6 +149,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Ler artigo',
         readMore: 'Ler mais →',
         featured: 'Destaque',
+        latestArticles: 'Artigos Recentes',
+        viewAll: 'Ver todos',
     },
     nl: {
         backToBlog: 'Terug naar Blog',
@@ -156,6 +170,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Lees Artikel',
         readMore: 'Lees meer →',
         featured: 'Uitgelicht',
+        latestArticles: 'Laatste Artikelen',
+        viewAll: 'Bekijk alles',
     },
     pl: {
         backToBlog: 'Powrót do Bloga',
@@ -175,6 +191,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Czytaj Artykuł',
         readMore: 'Czytaj więcej →',
         featured: 'Polecane',
+        latestArticles: 'Najnowsze Artykuły',
+        viewAll: 'Zobacz wszystkie',
     },
     cs: {
         backToBlog: 'Zpět na Blog',
@@ -194,6 +212,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Číst článek',
         readMore: 'Číst více →',
         featured: 'Doporučené',
+        latestArticles: 'Nejnovější Články',
+        viewAll: 'Zobrazit vše',
     },
     sk: {
         backToBlog: 'Späť na Blog',
@@ -213,6 +233,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Čítať článok',
         readMore: 'Čítať viac →',
         featured: 'Odporúčané',
+        latestArticles: 'Najnovšie Články',
+        viewAll: 'Zobraziť všetko',
     },
     ru: {
         backToBlog: 'Назад к Блогу',
@@ -232,6 +254,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Читать статью',
         readMore: 'Читать далее →',
         featured: 'Рекомендуемое',
+        latestArticles: 'Последние Статьи',
+        viewAll: 'Смотреть все',
     },
     ja: {
         backToBlog: 'ブログに戻る',
@@ -251,6 +275,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: '記事を読む',
         readMore: '続きを読む →',
         featured: '注目',
+        latestArticles: '最新記事',
+        viewAll: 'すべて見る',
     },
     ko: {
         backToBlog: '블로그로 돌아가기',
@@ -270,6 +296,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: '기사 읽기',
         readMore: '더 읽기 →',
         featured: '추천',
+        latestArticles: '최신 기사',
+        viewAll: '모두 보기',
     },
     zh: {
         backToBlog: '返回博客',
@@ -289,6 +317,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: '阅读文章',
         readMore: '阅读更多 →',
         featured: '精选',
+        latestArticles: '最新文章',
+        viewAll: '查看全部',
     },
     hi: {
         backToBlog: 'ब्लॉग पर वापस',
@@ -308,6 +338,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'लेख पढ़ें',
         readMore: 'और पढ़ें →',
         featured: 'विशेष',
+        latestArticles: 'नवीनतम लेख',
+        viewAll: 'सभी देखें',
     },
     bn: {
         backToBlog: 'ব্লগে ফিরুন',
@@ -327,6 +359,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'নিবন্ধ পড়ুন',
         readMore: 'আরও পড়ুন →',
         featured: 'বৈশিষ্ট্যযুক্ত',
+        latestArticles: 'সাম্প্রতিক নিবন্ধ',
+        viewAll: 'সব দেখুন',
     },
     ar: {
         backToBlog: 'العودة للمدونة',
@@ -346,6 +380,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'اقرأ المقال',
         readMore: 'اقرأ المزيد →',
         featured: 'مميز',
+        latestArticles: 'أحدث المقالات',
+        viewAll: 'عرض الكل',
     },
     th: {
         backToBlog: 'กลับไปที่บล็อก',
@@ -365,6 +401,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'อ่านบทความ',
         readMore: 'อ่านเพิ่มเติม →',
         featured: 'แนะนำ',
+        latestArticles: 'บทความล่าสุด',
+        viewAll: 'ดูทั้งหมด',
     },
     vi: {
         backToBlog: 'Quay lại Blog',
@@ -384,6 +422,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Đọc Bài Viết',
         readMore: 'Đọc thêm →',
         featured: 'Nổi Bật',
+        latestArticles: 'Bài Viết Mới Nhất',
+        viewAll: 'Xem tất cả',
     },
     id: {
         backToBlog: 'Kembali ke Blog',
@@ -403,6 +443,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Baca Artikel',
         readMore: 'Baca selengkapnya →',
         featured: 'Unggulan',
+        latestArticles: 'Artikel Terbaru',
+        viewAll: 'Lihat Semua',
     },
     sv: {
         backToBlog: 'Tillbaka till Bloggen',
@@ -422,6 +464,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Läs Artikeln',
         readMore: 'Läs mer →',
         featured: 'Utvalt',
+        latestArticles: 'Senaste Artiklarna',
+        viewAll: 'Visa alla',
     },
     da: {
         backToBlog: 'Tilbage til Bloggen',
@@ -441,6 +485,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Læs Artikel',
         readMore: 'Læs mere →',
         featured: 'Udvalgt',
+        latestArticles: 'Seneste Artikler',
+        viewAll: 'Se alle',
     },
     no: {
         backToBlog: 'Tilbake til Bloggen',
@@ -460,6 +506,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Les Artikkel',
         readMore: 'Les mer →',
         featured: 'Utvalgt',
+        latestArticles: 'Nyeste Artikler',
+        viewAll: 'Se alle',
     },
     fi: {
         backToBlog: 'Takaisin Blogiin',
@@ -479,6 +527,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Lue Artikkeli',
         readMore: 'Lue lisää →',
         featured: 'Suositeltu',
+        latestArticles: 'Uusimmat Artikkelit',
+        viewAll: 'Näytä kaikki',
     },
     hu: {
         backToBlog: 'Vissza a Bloghoz',
@@ -498,6 +548,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Cikk Olvasása',
         readMore: 'Tovább →',
         featured: 'Kiemelt',
+        latestArticles: 'Legújabb Cikkek',
+        viewAll: 'Összes megtekintése',
     },
     ro: {
         backToBlog: 'Înapoi la Blog',
@@ -517,6 +569,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Citește Articolul',
         readMore: 'Citește mai mult →',
         featured: 'Recomandat',
+        latestArticles: 'Cele Mai Recente Articole',
+        viewAll: 'Vezi toate',
     },
     bg: {
         backToBlog: 'Обратно към Блога',
@@ -536,6 +590,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Прочети Статията',
         readMore: 'Прочети повече →',
         featured: 'Препоръчано',
+        latestArticles: 'Последни Статии',
+        viewAll: 'Виж всички',
     },
     hr: {
         backToBlog: 'Natrag na Blog',
@@ -555,6 +611,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Pročitaj Članak',
         readMore: 'Pročitaj više →',
         featured: 'Istaknuto',
+        latestArticles: 'Najnoviji Članci',
+        viewAll: 'Prikaži sve',
     },
     sl: {
         backToBlog: 'Nazaj na Blog',
@@ -574,6 +632,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Preberi Članek',
         readMore: 'Preberi več →',
         featured: 'Izpostavljeno',
+        latestArticles: 'Najnovejši Članki',
+        viewAll: 'Prikaži vse',
     },
     sr: {
         backToBlog: 'Nazad na Blog',
@@ -593,6 +653,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Pročitaj Članak',
         readMore: 'Pročitaj više →',
         featured: 'Istaknuto',
+        latestArticles: 'Najnoviji Članci',
+        viewAll: 'Prikaži sve',
     },
     uk: {
         backToBlog: 'Назад до Блогу',
@@ -612,6 +674,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Читати Статтю',
         readMore: 'Читати далі →',
         featured: 'Рекомендоване',
+        latestArticles: 'Останні Статті',
+        viewAll: 'Переглянути всі',
     },
     el: {
         backToBlog: 'Επιστροφή στο Blog',
@@ -631,6 +695,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Διαβάστε το Άρθρο',
         readMore: 'Διαβάστε περισσότερα →',
         featured: 'Προτεινόμενο',
+        latestArticles: 'Τελευταία Άρθρα',
+        viewAll: 'Δείτε όλα',
     },
     tr: {
         backToBlog: 'Bloga Dön',
@@ -650,6 +716,8 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'Makaleyi Oku',
         readMore: 'Devamını oku →',
         featured: 'Öne Çıkan',
+        latestArticles: 'Son Makaleler',
+        viewAll: 'Tümünü gör',
     },
     he: {
         backToBlog: 'חזרה לבלוג',
@@ -669,5 +737,7 @@ export const blogUiTranslations: Record<string, BlogUiTranslations> = {
         readArticle: 'קרא מאמר',
         readMore: 'קרא עוד →',
         featured: 'מומלץ',
+        latestArticles: 'מאמרים אחרונים',
+        viewAll: 'הצג הכל',
     },
 };
