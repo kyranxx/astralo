@@ -106,7 +106,7 @@ export default defineConfig({
   ],
   output: 'server',
   adapter: vercel(),
-  trailingSlash: 'ignore',
+  trailingSlash: 'never',
   build: {
     format: 'file'
   }
