@@ -45,7 +45,7 @@ const currentPath = Astro.url.pathname;
 const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
 const computedCanonicalUrl = canonicalUrl || `${siteUrl}${cleanPath}`;
 
-// All 33 supported languages for hreflang tags (critical for international SEO)
+// All 34 supported languages for hreflang tags (critical for international SEO)
 const allLanguages = [
 	{ code: 'en', hreflang: 'en', name: 'English' },
 	{ code: 'sk', hreflang: 'sk', name: 'Slovak' },
@@ -80,19 +80,31 @@ const allLanguages = [
 	{ code: 'da', hreflang: 'da', name: 'Danish' },
 	{ code: 'no', hreflang: 'no', name: 'Norwegian' },
 	{ code: 'fi', hreflang: 'fi', name: 'Finnish' },
+	{ code: 'he', hreflang: 'he', name: 'Hebrew' },
 ];
 
 // Generate hreflang URL for language code
+// CRITICAL: URLs must match canonical URL format (no trailing slashes except for homepage)
 const getHreflangUrl = (langCode: string) => {
-	const basePath = currentPath
+	// Remove existing lang prefix and normalize
+	let basePath = currentPath
 		.replace(/^\/[a-z]{2}(\/|$)/, '/') // Remove existing lang prefix
-		.replace(/^\/+/, '/'); // Normalize slashes
+		.replace(/^\/+/, '/'); // Normalize leading slashes
+	
+	// Remove trailing slash for consistency (except root)
+	if (basePath !== '/' && basePath.endsWith('/')) {
+		basePath = basePath.slice(0, -1);
+	}
     
     // English is at root, others at /[lang]
     if (langCode === 'en') {
-        return `${siteUrl}${basePath === '/' ? '' : basePath}`;
+		// English homepage: https://astralo.online (no trailing slash)
+		// English other pages: https://astralo.online/blog/slug
+        return basePath === '/' ? siteUrl : `${siteUrl}${basePath}`;
     }
-	return `${siteUrl}/${langCode}${basePath === '/' ? '/' : basePath}`;
+	// Other languages homepage: https://astralo.online/sk (no trailing slash)
+	// Other languages pages: https://astralo.online/sk/blog/slug
+	return basePath === '/' ? `${siteUrl}/${langCode}` : `${siteUrl}/${langCode}${basePath}`;
 };
 
 // Language-specific OG locale mapping
@@ -103,7 +115,7 @@ const ogLocaleMap: Record<string, string> = {
 	sr: 'sr_RS', uk: 'uk_UA', ru: 'ru_RU', el: 'el_GR', tr: 'tr_TR',
 	ar: 'ar_SA', hi: 'hi_IN', bn: 'bn_BD', th: 'th_TH', vi: 'vi_VN',
 	id: 'id_ID', ja: 'ja_JP', ko: 'ko_KR', zh: 'zh_CN', sv: 'sv_SE',
-	da: 'da_DK', no: 'nb_NO', fi: 'fi_FI'
+	da: 'da_DK', no: 'nb_NO', fi: 'fi_FI', he: 'he_IL'
 };
 
 // Direction for RTL languages
@@ -156,11 +168,11 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		<meta name="twitter:description" content={currentDescription} />
 		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
 		
-		<!-- Hreflang Tags for International SEO (All 33 Languages) -->
+		<!-- Hreflang Tags for International SEO (All 34 Languages) -->
 		{allLanguages.map(({ code, hreflang }) => (
 			<link rel="alternate" hreflang={hreflang} href={getHreflangUrl(code)} />
 		))}
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+		<link rel="alternate" hreflang="x-default" href={siteUrl} />
 		
 		<!-- Google Fonts replaced by self-hosted @fontsource/outfit -->
 		
@@ -438,11 +450,13 @@ const localizedProducts = productNames[currentLang] || productNames.en;
 		{backgroundImage && (
 			<img
 				src={backgroundImage}
-				alt=""
+				alt="Cosmic background"
 				class="cosmic-overlay"
 				width="1920"
 				height="1080"
 				fetchpriority="high"
+				role="presentation"
+				aria-hidden="true"
 			/>
 		)}
 		<slot />

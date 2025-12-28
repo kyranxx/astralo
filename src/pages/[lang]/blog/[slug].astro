@@ -425,7 +425,10 @@ if (!post || !meta) {
 
 // Get localized content from the new modular translations, falling back to English
 const localizedPost = getArticleTranslation(slug as string, currentLang);
-const displayTitle = (localizedPost?.title || post.title || '').replace(/^[⭐❤️🔮📅🌙💕]\s*/, '') || post.displayTitle;
+// Strip ALL emojis from titles to prevent encoding issues (shows as � in some crawlers)
+// This regex matches common emojis, skin tone modifiers, and variation selectors
+const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]/gu, '').trim();
+const displayTitle = stripEmojis(localizedPost?.title || post.title || '') || post.displayTitle;
 const fullTitle = localizedPost?.title || post.title;
 const metaDescription = localizedPost?.metaDescription || post.metaDescription;
 const quickSummary = localizedPost?.quickSummary || post.quickSummary;

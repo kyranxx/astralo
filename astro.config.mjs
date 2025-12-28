@@ -50,7 +50,7 @@ export default defineConfig({
           he: 'he',
         },
       },
-      filter: (page) => !page.includes('/api/') && !page.includes('/admin') && !page.includes('/success'),
+      filter: (page) => !page.includes('/api/') && !page.includes('/admin') && !page.includes('/success') && !page.includes('/form/'),
       serialize(item) {
         // Determine page type and set appropriate SEO values
         const url = item.url;
