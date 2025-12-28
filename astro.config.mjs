@@ -50,34 +50,42 @@ export default defineConfig({
           he: 'he',
         },
       },
-      filter: (page) => !page.includes('/api/') && !page.includes('/admin') && !page.includes('/success') && !page.includes('/form/'),
+      filter: (page) => {
+        // Exclude API, admin, success, form pages, and /en/ redirects
+        if (page.includes('/api/')) return false;
+        if (page.includes('/admin')) return false;
+        if (page.includes('/success')) return false;
+        if (page.includes('/form/')) return false;
+        // Exclude /en/ pages - they're just 301 redirects to root
+        if (page.match(/\/en\//) || page.endsWith('/en')) return false;
+        return true;
+      },
       serialize(item) {
-        // Determine page type and set appropriate SEO values
-        const url = item.url;
+        // Normalize URL - remove trailing slash for consistency (except homepage)
+        let url = item.url;
+        if (url !== 'https://astralo.online/' && url.endsWith('/')) {
+          url = url.slice(0, -1);
+          item.url = url;
+        }
 
+        // Determine page type and set appropriate SEO values
         // Homepage - highest priority
-        if (url.endsWith('.online/') || url.match(/\/[a-z]{2}\/$/)) {
+        if (url === 'https://astralo.online' || url.match(/\/[a-z]{2}$/)) {
           item.lastmod = new Date().toISOString();
           item.changefreq = 'daily';
           item.priority = 1.0;
         }
         // Blog posts - high priority, updated weekly
-        else if (url.includes('/blog/') && !url.endsWith('/blog/')) {
+        else if (url.includes('/blog/') && !url.endsWith('/blog')) {
           item.lastmod = new Date().toISOString();
           item.changefreq = 'weekly';
           item.priority = 0.8;
         }
         // Blog index
-        else if (url.endsWith('/blog/')) {
+        else if (url.endsWith('/blog')) {
           item.lastmod = new Date().toISOString();
           item.changefreq = 'daily';
           item.priority = 0.9;
-        }
-        // Form pages - medium priority
-        else if (url.includes('/form/')) {
-          item.lastmod = new Date().toISOString();
-          item.changefreq = 'monthly';
-          item.priority = 0.7;
         }
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {
