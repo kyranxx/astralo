@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const sl: BlogPostTranslation = {
-    title: '⭐ Dnevni Horoskop 2024: Popoln Vodnik za Vaša Napovedovanja',
+    title: '⭐ Dnevni Horoskop 2026: Popoln Vodnik za Vaša Napovedovanja',
     excerpt: 'Odkrijte, kaj vam danes prinašajo zvezde.',
     category: 'Horoskopi',
     metaDescription: 'Dnevni horoskop za vseh 12 zodiakalna znamenja. Natančna napovedovanja za Ovna, Bika, Dvojčka, Raka, Leva, Devico, Tehtnico, Škorpijona, Strelca, Kozoroga, Vodnarja in Ribi.',
-    keywords: 'dnevni horoskop, horoskop danes, današnji horoskop, zodiakalna znamenja, horoskop 2024, brezplačen horoskop',
+    keywords: 'dnevni horoskop, horoskop danes, današnji horoskop, zodiakalna znamenja, horoskop 2026, brezplačen horoskop',
     quickSummary: [
         'Dnevni horoskopi temeljijo na položajih planetov glede na vaše znamenje',
         'Dnevno gibanje Lune močno vpliva na vaša čustva in izkušnje',

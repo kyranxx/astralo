@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-    title: '❤️ Sterrenbeeld Compatibiliteit: De Ultieme Liefdesgids 2024',
+    title: '❤️ Sterrenbeeld Compatibiliteit: De Ultieme Liefdesgids 2026',
     excerpt: 'Ontdek welke sterrenbeelden het meest compatibel zijn met de jouwe.',
     category: 'Liefde & Relaties',
     metaDescription: 'Ontdek uw sterrenbeeld compatibiliteit. De beste matches voor Ram, Stier, Tweelingen, Kreeft, Leeuw, Maagd, Weegschaal, Schorpioen, Boogschutter, Steenbok, Waterman en Vissen.',

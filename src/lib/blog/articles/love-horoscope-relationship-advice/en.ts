@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '💕 Love Horoscope: Relationship Advice for Your Zodiac Sign 2024',
+    title: '💕 Love Horoscope: Relationship Advice for Your Zodiac Sign 2026',
     excerpt: 'Get your love horoscope and relationship guidance based on your zodiac sign.',
     category: 'Love & Relationships',
     metaDescription: 'Love horoscope for all zodiac signs. Get relationship advice, romantic predictions and compatibility insights for Aries through Pisces.',

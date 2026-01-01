@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: '⭐ Horoscop Zilnic 2024: Ghid Complet pentru Predicțiile Tale',
+    title: '⭐ Horoscop Zilnic 2026: Ghid Complet pentru Predicțiile Tale',
     excerpt: 'Descoperă ce îți rezervă astrele astăzi.',
     category: 'Horoscoape',
     metaDescription: 'Horoscop zilnic pentru toate cele 12 zodii. Predicții precise pentru Berbec, Taur, Gemeni, Rac, Leu, Fecioară, Balanță, Scorpion, Săgetător, Capricorn, Vărsător și Pești.',
-    keywords: 'horoscop zilnic, horoscop azi, horoscop de azi, zodii, horoscop 2024, horoscop gratuit',
+    keywords: 'horoscop zilnic, horoscop azi, horoscop de azi, zodii, horoscop 2026, horoscop gratuit',
     quickSummary: [
         'Horoscoapele zilnice se bazează pe pozițiile planetelor în raport cu zodia ta',
         'Mișcarea zilnică a Lunii influențează puternic emoțiile și experiențele tale',

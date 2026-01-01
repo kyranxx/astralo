@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: '⭐ Napi Horoszkóp 2024: Teljes Útmutató a Jóslatokhoz',
+    title: '⭐ Napi Horoszkóp 2026: Teljes Útmutató a Jóslatokhoz',
     excerpt: 'Fedezze fel, mit tartogatnak ma a csillagok.',
     category: 'Horoszkópok',
     metaDescription: 'Napi horoszkóp mind a 12 csillagjegyhez. Pontos jóslatok a Kosnak, Bikának, Ikreknek, Ráknak, Oroszlánnak, Szűznek, Mérlegnek, Skorpiónak, Nyilasnak, Baknak, Vízöntőnek és Halaknak.',
-    keywords: 'napi horoszkóp, horoszkóp ma, mai horoszkóp, csillagjegyek, horoszkóp 2024, ingyenes horoszkóp',
+    keywords: 'napi horoszkóp, horoszkóp ma, mai horoszkóp, csillagjegyek, horoszkóp 2026, ingyenes horoszkóp',
     quickSummary: [
         'A napi horoszkópok a bolygók csillagjegyedhez viszonyított pozícióján alapulnak',
         'A Hold napi mozgása erősen befolyásolja érzelmeidet és tapasztalataidat',

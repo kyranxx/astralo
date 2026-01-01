@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const hu: Translations = {
     meta: {
-        title: 'Astralo - Napi Horoszkóp Ingyen 2024 | Pontos Csillagjegy Előrejelzések',
+        title: 'Astralo - Napi Horoszkóp Ingyen 2026 | Pontos Csillagjegy Előrejelzések',
         description: 'Kapja meg INGYENES horoszkópját ma! ⭐ Napi, heti és havi horoszkóp. Szerelmi horoszkóp, partner egyezőség és karrier. 50.000+ elégedett ügyfél. Azonnali kézbesítés!',
-        keywords: 'napi horoszkóp, ingyenes horoszkóp, horoszkóp 2024, csillagjegyek, szerelmi horoszkóp, partner horoszkóp, heti horoszkóp, havi horoszkóp, asztrológia, kos horoszkóp, bika horoszkóp, ikrek horoszkóp, pontos horoszkóp',
+        keywords: 'napi horoszkóp, ingyenes horoszkóp, horoszkóp 2026, csillagjegyek, szerelmi horoszkóp, partner horoszkóp, heti horoszkóp, havi horoszkóp, asztrológia, kos horoszkóp, bika horoszkóp, ikrek horoszkóp, pontos horoszkóp',
     },
     header: {
         badge: 'Személyre Szabott Horoszkópok',

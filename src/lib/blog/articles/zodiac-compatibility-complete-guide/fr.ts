@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: '❤️ Compatibilité des Signes: Guide Ultime de l\'Amour 2024',
+    title: '❤️ Compatibilité des Signes: Guide Ultime de l\'Amour 2026',
     excerpt: 'Découvrez quels signes du zodiaque sont les plus compatibles avec le vôtre.',
     category: 'Amour & Relations',
     metaDescription: 'Découvrez votre compatibilité astrologique. Les meilleurs partenaires pour Bélier, Taureau, Gémeaux, Cancer, Lion, Vierge, Balance, Scorpion, Sagittaire, Capricorne, Verseau et Poissons.',

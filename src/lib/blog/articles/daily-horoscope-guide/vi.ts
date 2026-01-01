@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: '⭐ Tử Vi Hàng Ngày 2024: Hướng Dẫn Đầy Đủ Về Dự Đoán',
+    title: '⭐ Tử Vi Hàng Ngày 2026: Hướng Dẫn Đầy Đủ Về Dự Đoán',
     excerpt: 'Khám phá những gì các vì sao dành cho bạn hôm nay.',
     category: 'Tử Vi',
     metaDescription: 'Tử vi hàng ngày cho cả 12 cung hoàng đạo. Dự đoán chính xác cho Bạch Dương, Kim Ngưu, Song Tử, Cự Giải, Sư Tử, Xử Nữ, Thiên Bình, Bọ Cạp, Nhân Mã, Ma Kết, Bảo Bình và Song Ngư.',
-    keywords: 'tử vi hàng ngày, tử vi hôm nay, 12 cung hoàng đạo, tử vi 2024, tử vi miễn phí',
+    keywords: 'tử vi hàng ngày, tử vi hôm nay, 12 cung hoàng đạo, tử vi 2026, tử vi miễn phí',
     quickSummary: [
         'Tử vi hàng ngày dựa trên vị trí các hành tinh so với cung của bạn',
         'Chuyển động hàng ngày của Mặt Trăng ảnh hưởng mạnh đến cảm xúc của bạn',

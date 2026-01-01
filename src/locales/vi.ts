@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const vi: Translations = {
     meta: {
-        title: 'Astralo - Tử Vi Miễn Phí Hôm Nay 2024 | Dự Đoán Cung Hoàng Đạo Chính Xác',
+        title: 'Astralo - Tử Vi Miễn Phí Hôm Nay 2026 | Dự Đoán Cung Hoàng Đạo Chính Xác',
         description: 'Nhận tử vi cá nhân miễn phí hôm nay! ⭐ Dự đoán hàng ngày, hàng tuần và hàng tháng. Tương hợp tình yêu, lời khuyên nghề nghiệp. 50.000+ khách hàng hài lòng. Giao hàng ngay!',
-        keywords: 'tử vi hàng ngày, tử vi miễn phí, tử vi hôm nay, tử vi hàng tuần, tử vi hàng tháng, tử vi tình yêu, cung hoàng đạo, chiêm tinh, tử vi 2024, tử vi cá nhân',
+        keywords: 'tử vi hàng ngày, tử vi miễn phí, tử vi hôm nay, tử vi hàng tuần, tử vi hàng tháng, tử vi tình yêu, cung hoàng đạo, chiêm tinh, tử vi 2026, tử vi cá nhân',
     },
     header: {
         badge: 'Tử Vi Cá Nhân',

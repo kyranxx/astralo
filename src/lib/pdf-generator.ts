@@ -319,7 +319,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         y -= 18;
 
         // Version and date line
-        const dateText = `Version 1.0 • Last updated: December 5, 2024`;
+        const dateText = `Version 1.0 • Last updated: December 5, 2026`;
         const dateWidth = font.widthOfTextAtSize(dateText, 9);
         currentPage.drawText(dateText, {
             x: (width - dateWidth) / 2,

@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: '⭐ 每日星座运势2024：星座预测完全指南',
+    title: '⭐ 每日星座运势2026：星座预测完全指南',
     excerpt: '探索今天星星为您准备了什么。',
     category: '星座运势',
     metaDescription: '12星座每日运势预测。白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、摩羯座、水瓶座和双鱼座的准确今日运势。',
-    keywords: '每日星座运势, 今日运势, 每天星座运势, 十二星座, 星座运势2024, 免费星座运势',
+    keywords: '每日星座运势, 今日运势, 每天星座运势, 十二星座, 星座运势2026, 免费星座运势',
     quickSummary: [
         '每日星座运势基于相对于您星座的行星位置',
         '月亮的每日运动强烈影响您的情绪和体验',

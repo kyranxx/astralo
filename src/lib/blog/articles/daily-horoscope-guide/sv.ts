@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: '⭐ Dagligt Horoskop 2024: Komplett Guide till Dina Förutsägelser',
+    title: '⭐ Dagligt Horoskop 2026: Komplett Guide till Dina Förutsägelser',
     excerpt: 'Upptäck vad stjärnorna har i beredskap för dig idag.',
     category: 'Horoskop',
     metaDescription: 'Dagligt horoskop för alla 12 stjärntecken. Exakta förutsägelser för Väduren, Oxen, Tvillingarna, Kräftan, Lejonet, Jungfrun, Vågen, Skorpionen, Skytten, Stenbocken, Vattumannen och Fiskarna.',
-    keywords: 'dagligt horoskop, horoskop idag, dagens horoskop, stjärntecken, horoskop 2024, gratis horoskop',
+    keywords: 'dagligt horoskop, horoskop idag, dagens horoskop, stjärntecken, horoskop 2026, gratis horoskop',
     quickSummary: [
         'Dagliga horoskop baseras på planetpositioner i förhållande till ditt stjärntecken',
         'Månens dagliga rörelse påverkar starkt dina känslor och upplevelser',

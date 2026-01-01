@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const tr: Translations = {
     meta: {
-        title: 'Astralo - Günlük Burç Yorumu Ücretsiz 2024 | Doğru Astroloji Tahminleri',
+        title: 'Astralo - Günlük Burç Yorumu Ücretsiz 2026 | Doğru Astroloji Tahminleri',
         description: 'ÜCRETSİZ burç yorumunuzu alın bugün! ⭐ Günlük, haftalık ve aylık burç yorumları. Aşk burcu, partner uyumu ve kariyer. 50.000+ mutlu müşteri. Anında teslimat!',
-        keywords: 'günlük burç yorumu, burç yorumu ücretsiz, burç yorumu 2024, koç burcu, boğa burcu, ikizler burcu, aşk burcu, partner uyumu, haftalık burç, aylık burç, astroloji, yıldız haritası, doğum haritası',
+        keywords: 'günlük burç yorumu, burç yorumu ücretsiz, burç yorumu 2026, koç burcu, boğa burcu, ikizler burcu, aşk burcu, partner uyumu, haftalık burç, aylık burç, astroloji, yıldız haritası, doğum haritası',
     },
     header: {
         badge: 'Kişisel Burç Yorumları',

@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: '⭐ Ramalan Zodiak Harian 2024: Panduan Lengkap Prediksi Anda',
+    title: '⭐ Ramalan Zodiak Harian 2026: Panduan Lengkap Prediksi Anda',
     excerpt: 'Temukan apa yang bintang-bintang siapkan untuk Anda hari ini.',
     category: 'Ramalan',
     metaDescription: 'Ramalan zodiak harian untuk semua 12 zodiak. Prediksi akurat untuk Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagitarius, Capricorn, Aquarius dan Pisces.',
-    keywords: 'ramalan harian, ramalan zodiak hari ini, zodiak, ramalan 2024, ramalan gratis',
+    keywords: 'ramalan harian, ramalan zodiak hari ini, zodiak, ramalan 2026, ramalan gratis',
     quickSummary: [
         'Ramalan harian didasarkan pada posisi planet relatif terhadap zodiak Anda',
         'Pergerakan Bulan harian sangat memengaruhi emosi dan pengalaman Anda',

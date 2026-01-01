@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const ko: Translations = {
     meta: {
-        title: 'Astralo - 무료 오늘의 운세 2024 | 정확한 별자리 운세',
+        title: 'Astralo - 무료 오늘의 운세 2026 | 정확한 별자리 운세',
         description: '오늘 무료 맞춤 운세를 받으세요! ⭐ 매일, 매주, 매월 운세. 연애 궁합, 직장 조언. 50,000+ 만족 고객. 즉시 배송!',
-        keywords: '오늘의 운세, 무료 운세, 운세 2024, 별자리, 연애 운세, 궁합, 주간 운세, 월간 운세, 점성술, 맞춤 운세',
+        keywords: '오늘의 운세, 무료 운세, 운세 2026, 별자리, 연애 운세, 궁합, 주간 운세, 월간 운세, 점성술, 맞춤 운세',
     },
     header: {
         badge: '맞춤 운세',

@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: '❤️ 星座相性診断: 究極の恋愛マッチングガイド 2024',
+    title: '❤️ 星座相性診断: 究極の恋愛マッチングガイド 2026',
     excerpt: 'あなたの星座と最も相性の良い星座を見つけましょう。',
     category: '恋愛・人間関係',
     metaDescription: '星座相性を発見。牡羊座、牡牛座、双子座、蟹座、獅子座、乙女座、天秤座、蠍座、射手座、山羊座、水瓶座、魚座のベストマッチ。',

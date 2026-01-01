@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const hr: Translations = {
     meta: {
-        title: 'Astralo - Besplatni Dnevni Horoskop Danas 2024 | Točna Predviđanja Zodijaka',
+        title: 'Astralo - Besplatni Dnevni Horoskop Danas 2026 | Točna Predviđanja Zodijaka',
         description: 'Dobijte svoj BESPLATNI personalizirani horoskop danas! ⭐ Dnevna, tjedna i mjesečna predviđanja. Ljubavna kompatibilnost, karijerski savjeti. 50.000+ zadovoljnih kupaca. Trenutna dostava!',
-        keywords: 'dnevni horoskop, besplatni horoskop, horoskop danas, tjedni horoskop, mjesečni horoskop, ljubavni horoskop, zodijak, astrologija, horoskop 2024, personalizirani horoskop',
+        keywords: 'dnevni horoskop, besplatni horoskop, horoskop danas, tjedni horoskop, mjesečni horoskop, ljubavni horoskop, zodijak, astrologija, horoskop 2026, personalizirani horoskop',
     },
     header: {
         badge: 'Personalizirani Horoskopi',

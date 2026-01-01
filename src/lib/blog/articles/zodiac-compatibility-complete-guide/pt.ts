@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-    title: '❤️ Compatibilidade dos Signos: O Guia Definitivo do Amor 2024',
+    title: '❤️ Compatibilidade dos Signos: O Guia Definitivo do Amor 2026',
     excerpt: 'Descubra quais signos do zodíaco são mais compatíveis com o seu.',
     category: 'Amor e Relacionamentos',
     metaDescription: 'Descubra sua compatibilidade astrológica. Os melhores pares para Áries, Touro, Gêmeos, Câncer, Leão, Virgem, Libra, Escorpião, Sagitário, Capricórnio, Aquário e Peixes.',

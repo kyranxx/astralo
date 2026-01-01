@@ -490,7 +490,7 @@ function generatePageHtml(
                 </div>
                 <div class="footer-text">
                     ${escapeHtml(labels.generatedBy)}<br>
-                    © 2024 astralo.online • ${escapeHtml(labels.allRightsReserved)}
+                    © 2026 astralo.online • ${escapeHtml(labels.allRightsReserved)}
                 </div>
                 ${totalPages > 1 ? `<div class="page-number">${escapeHtml(labels.pageOf || 'Page')} ${pageNum} / ${totalPages}</div>` : ''}
             </div>

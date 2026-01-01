@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const zh: Translations = {
     meta: {
-        title: 'Astralo - 免费每日星座运势 2024 | 准确的星座预测',
+        title: 'Astralo - 免费每日星座运势 2026 | 准确的星座预测',
         description: '今天获取您的免费个性化星座运势！⭐ 每日、每周和每月预测。爱情配对、事业建议。50,000+满意客户。即时配送！',
-        keywords: '每日运势, 免费星座, 今日运势, 每周运势, 每月运势, 爱情运势, 星座, 占星术, 运势 2024, 个性化运势',
+        keywords: '每日运势, 免费星座, 今日运势, 每周运势, 每月运势, 爱情运势, 星座, 占星术, 运势 2026, 个性化运势',
     },
     header: {
         badge: '个性化星座运势',

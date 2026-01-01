@@ -1122,7 +1122,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     // Add click handlers
     monthDropdown.querySelectorAll('.dropdown-item').forEach(item => {
       item.addEventListener('click', () => {
-        const year = parseInt((item as HTMLElement).dataset.year || '2024');
+        const year = parseInt((item as HTMLElement).dataset.year || '2026');
         const month = parseInt((item as HTMLElement).dataset.month || '0');
         const range = getDateRangeForMonth(year, month);
         const label = `${monthNames[month]} ${year}`;
@@ -1163,7 +1163,7 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
     // Add click handlers
     yearDropdown.querySelectorAll('.dropdown-item').forEach(item => {
       item.addEventListener('click', () => {
-        const year = parseInt((item as HTMLElement).dataset.year || '2024');
+        const year = parseInt((item as HTMLElement).dataset.year || '2026');
         const range = getDateRangeForYear(year);
         applyDateFilter({ ...range, label: `${year}` }, 'yearDropdownBtn');
         yearDropdown.classList.add('hidden');

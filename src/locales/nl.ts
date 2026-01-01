@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const nl: Translations = {
     meta: {
-        title: 'Astralo - Horoscoop Vandaag Gratis 2024 | Nauwkeurige Sterrenbeeld Voorspellingen',
+        title: 'Astralo - Horoscoop Vandaag Gratis 2026 | Nauwkeurige Sterrenbeeld Voorspellingen',
         description: 'Krijg je GRATIS horoscoop vandaag! ⭐ Dagelijkse, wekelijkse & maandelijkse voorspellingen. Liefdeshoroscoop, partner compatibiliteit & carrière. 50.000+ tevreden klanten. Directe levering!',
-        keywords: 'horoscoop vandaag, horoscoop gratis, horoscoop 2024, sterrenbeeld, liefdeshoroscoop, partnerhoroscoop, weekhoroscoop, maandhoroscoop, astrologie, ram horoscoop, stier horoscoop, tweelingen horoscoop, nauwkeurige horoscoop, geboortehoroscoop',
+        keywords: 'horoscoop vandaag, horoscoop gratis, horoscoop 2026, sterrenbeeld, liefdeshoroscoop, partnerhoroscoop, weekhoroscoop, maandhoroscoop, astrologie, ram horoscoop, stier horoscoop, tweelingen horoscoop, nauwkeurige horoscoop, geboortehoroscoop',
     },
     header: {
         badge: 'Gepersonaliseerde Horoscopen',

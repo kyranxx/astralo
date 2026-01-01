@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: '⭐ Horoscope du jour 2024: Guide complet de vos prédictions zodiacales',
+    title: '⭐ Horoscope du jour 2026: Guide complet de vos prédictions zodiacales',
     excerpt: 'Découvrez ce que les étoiles vous réservent aujourd\'hui.',
     category: 'Horoscopes',
     metaDescription: 'Horoscope du jour pour les 12 signes du zodiaque. Prédictions précises pour Bélier, Taureau, Gémeaux, Cancer, Lion, Vierge, Balance, Scorpion, Sagittaire, Capricorne, Verseau et Poissons.',
-    keywords: 'horoscope du jour, horoscope aujourd\'hui, horoscope quotidien, astrologie, horoscope 2024, horoscope gratuit',
+    keywords: 'horoscope du jour, horoscope aujourd\'hui, horoscope quotidien, astrologie, horoscope 2026, horoscope gratuit',
     quickSummary: [
         'Les horoscopes quotidiens sont basés sur les positions planétaires par rapport à votre signe',
         'Le mouvement quotidien de la Lune influence fortement vos émotions et expériences',

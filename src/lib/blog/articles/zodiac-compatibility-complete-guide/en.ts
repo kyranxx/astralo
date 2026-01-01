@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
+    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
     excerpt: 'Find out which zodiac signs are most compatible with yours.',
     category: 'Love & Relationships',
     metaDescription: 'Discover your zodiac compatibility with our complete guide. Find the best love matches for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius & Pisces.',

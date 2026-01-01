@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const de: BlogPostTranslation = {
-    title: '❤️ Sternzeichen Kompatibilität: Der ultimative Liebes-Guide 2024',
+    title: '❤️ Sternzeichen Kompatibilität: Der ultimative Liebes-Guide 2026',
     excerpt: 'Finden Sie heraus, welche Sternzeichen am besten zu Ihnen passen.',
     category: 'Liebe & Beziehungen',
     metaDescription: 'Entdecken Sie Ihre Sternzeichen-Kompatibilität mit unserem Guide. Die besten Liebespartner für Widder, Stier, Zwillinge, Krebs, Löwe, Jungfrau, Waage, Skorpion, Schütze, Steinbock, Wassermann & Fische.',

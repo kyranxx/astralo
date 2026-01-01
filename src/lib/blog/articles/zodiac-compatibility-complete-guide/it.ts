@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-    title: '❤️ Compatibilità Segni Zodiacali: La Guida Definitiva all\'Amore 2024',
+    title: '❤️ Compatibilità Segni Zodiacali: La Guida Definitiva all\'Amore 2026',
     excerpt: 'Scopri quali segni zodiacali sono più compatibili con il tuo.',
     category: 'Amore e Relazioni',
     metaDescription: 'Scopri la tua compatibilità zodiacale. I migliori match per Ariete, Toro, Gemelli, Cancro, Leone, Vergine, Bilancia, Scorpione, Sagittario, Capricorno, Acquario e Pesci.',

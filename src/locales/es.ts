@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const es: Translations = {
     meta: {
-        title: 'Astralo - Horóscopo de Hoy Gratis 2024 | Predicciones Signos Zodiaco',
+        title: 'Astralo - Horóscopo de Hoy Gratis 2026 | Predicciones Signos Zodiaco',
         description: '¡Obtén tu horóscopo GRATIS hoy! ⭐ Horóscopo diario, semanal y mensual. Compatibilidad amorosa, carrera y predicciones. 50,000+ clientes satisfechos. ¡Entrega instantánea!',
-        keywords: 'horóscopo de hoy, horóscopo gratis, horóscopo 2024, signos del zodiaco, horóscopo amor, compatibilidad signos, horóscopo semanal, horóscopo mensual, carta astral, ascendente, predicciones astrológicas, horóscopo personalizado, tarot, astrología',
+        keywords: 'horóscopo de hoy, horóscopo gratis, horóscopo 2026, signos del zodiaco, horóscopo amor, compatibilidad signos, horóscopo semanal, horóscopo mensual, carta astral, ascendente, predicciones astrológicas, horóscopo personalizado, tarot, astrología',
     },
     header: {
         badge: 'Horóscopos Personalizados',

@@ -6,7 +6,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: '❤️ Kompatybilność Znaków Zodiaku: Ostateczny Przewodnik Miłosny 2024',
+    title: '❤️ Kompatybilność Znaków Zodiaku: Ostateczny Przewodnik Miłosny 2026',
     excerpt: 'Sprawdź, które znaki zodiaku są najbardziej kompatybilne z Twoim.',
     category: 'Miłość i Związki',
     metaDescription: 'Odkryj swoją kompatybilność zodiakalną. Najlepsze dopasowania dla Barana, Byka, Bliźniąt, Raka, Lwa, Panny, Wagi, Skorpiona, Strzelca, Koziorożca, Wodnika i Ryb.',

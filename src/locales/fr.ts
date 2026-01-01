@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const fr: Translations = {
     meta: {
-        title: 'Astralo - Horoscope du Jour Gratuit 2024 | Prédictions Signes Astrologiques',
+        title: 'Astralo - Horoscope du Jour Gratuit 2026 | Prédictions Signes Astrologiques',
         description: 'Obtenez votre horoscope GRATUIT aujourd\'hui! ⭐ Horoscope quotidien, hebdomadaire & mensuel. Compatibilité amoureuse, carrière & voyance. 50 000+ clients satisfaits. Livraison instantanée!',
-        keywords: 'horoscope du jour, horoscope gratuit, horoscope 2024, signe astrologique, horoscope amour, compatibilité amoureuse, horoscope mensuel, horoscope hebdomadaire, thème astral, ascendant, prédictions astrologiques, horoscope personnalisé, voyance, astrologie',
+        keywords: 'horoscope du jour, horoscope gratuit, horoscope 2026, signe astrologique, horoscope amour, compatibilité amoureuse, horoscope mensuel, horoscope hebdomadaire, thème astral, ascendant, prédictions astrologiques, horoscope personnalisé, voyance, astrologie',
     },
     header: {
         badge: 'Horoscopes Personnalisés',

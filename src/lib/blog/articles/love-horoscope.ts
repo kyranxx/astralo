@@ -6,7 +6,7 @@ import type { BlogPostTranslation } from '../index';
 
 export const loveHoroscope: Record<string, BlogPostTranslation> = {
     en: {
-        title: '💕 Love Horoscope 2024: Relationship Predictions for Every Sign',
+        title: '💕 Love Horoscope 2026: Relationship Predictions for Every Sign',
         excerpt: 'Is love written in your stars?',
         category: 'Love & Relationships',
         metaDescription: 'Get your love horoscope predictions. Discover romantic compatibility and relationship timing for all zodiac signs.',

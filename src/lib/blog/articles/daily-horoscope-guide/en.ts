@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '⭐ Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
+    title: '⭐ Daily Horoscope 2026: Complete Guide to Your Zodiac Predictions',
     excerpt: 'Discover what the stars have in store for you today.',
     category: 'Horoscopes',
     metaDescription: 'Get your daily horoscope predictions for all 12 zodiac signs. Accurate horoscope today for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius & Pisces.',
-    keywords: 'daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope 2024, free daily horoscope',
+    keywords: 'daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope 2026, free daily horoscope',
     quickSummary: [
         'Daily horoscopes are based on planetary positions relative to your zodiac sign',
         'The Moon\'s daily movement strongly influences your emotions and experiences',

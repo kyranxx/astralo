@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const no: BlogPostTranslation = {
-    title: '⭐ Daglig Horoskop 2024: Komplett Guide til Dine Spådommer',
+    title: '⭐ Daglig Horoskop 2026: Komplett Guide til Dine Spådommer',
     excerpt: 'Oppdag hva stjernene har i vente for deg i dag.',
     category: 'Horoskoper',
     metaDescription: 'Daglig horoskop for alle 12 stjernetegn. Nøyaktige spådommer for Væren, Tyren, Tvillingene, Krepsen, Løven, Jomfruen, Vekten, Skorpionen, Skytten, Steinbukken, Vannmannen og Fiskene.',
-    keywords: 'daglig horoskop, horoskop i dag, dagens horoskop, stjernetegn, horoskop 2024, gratis horoskop',
+    keywords: 'daglig horoskop, horoskop i dag, dagens horoskop, stjernetegn, horoskop 2026, gratis horoskop',
     quickSummary: [
         'Daglige horoskoper er basert på planetposisjoner i forhold til stjernetegnet ditt',
         'Månens daglige bevegelse påvirker sterkt dine følelser og opplevelser',

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const pl: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Na Dziś Za Darmo 2024 | Dokładne Przepowiednie Zodiakalne',
+        title: 'Astralo - Horoskop Na Dziś Za Darmo 2026 | Dokładne Przepowiednie Zodiakalne',
         description: 'Pobierz swój DARMOWY horoskop dziś! ⭐ Horoskopy dzienne, tygodniowe i miesięczne. Miłość, kariera i przepowiednie. 50 000+ zadowolonych klientów. Natychmiastowa dostawa!',
-        keywords: 'horoskop na dziś, horoskop darmowy, horoskop 2024, znaki zodiaku, horoskop miłosny, horoskop partnerski, horoskop tygodniowy, horoskop miesięczny, astrologia, baran horoskop, byk horoskop, bliźnięta horoskop, dokładny horoskop, horoskop urodzeniowy',
+        keywords: 'horoskop na dziś, horoskop darmowy, horoskop 2026, znaki zodiaku, horoskop miłosny, horoskop partnerski, horoskop tygodniowy, horoskop miesięczny, astrologia, baran horoskop, byk horoskop, bliźnięta horoskop, dokładny horoskop, horoskop urodzeniowy',
     },
     header: {
         badge: 'Spersonalizowane Horoskopy',

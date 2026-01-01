@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const ro: Translations = {
     meta: {
-        title: 'Astralo - Horoscop Zilnic Gratuit 2024 | Predicții Zodii Precise',
+        title: 'Astralo - Horoscop Zilnic Gratuit 2026 | Predicții Zodii Precise',
         description: 'Obțineți horoscopul GRATUIT azi! ⭐ Horoscop zilnic, săptămânal și lunar. Horoscop dragoste, compatibilitate și carieră. 50.000+ clienți mulțumiți. Livrare instantană!',
-        keywords: 'horoscop zilnic, horoscop gratuit, horoscop 2024, zodii, horoscop dragoste, compatibilitate zodii, horoscop săptămânal, horoscop lunar, astrologie, berbec horoscop, taur horoscop, gemeni horoscop, horoscop precis',
+        keywords: 'horoscop zilnic, horoscop gratuit, horoscop 2026, zodii, horoscop dragoste, compatibilitate zodii, horoscop săptămânal, horoscop lunar, astrologie, berbec horoscop, taur horoscop, gemeni horoscop, horoscop precis',
     },
     header: {
         badge: 'Horoscoape Personalizate',

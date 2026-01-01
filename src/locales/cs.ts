@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const cs: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Dnes Zdarma 2024 | Přesné Předpovědi Znamení',
+        title: 'Astralo - Horoskop Dnes Zdarma 2026 | Přesné Předpovědi Znamení',
         description: 'Získejte ZDARMA horoskop dnes! ⭐ Denní, týdenní a měsíční horoskop. Láskový horoskop, partnerská shoda a kariéra. 50 000+ spokojených zákazníků. Okamžité doručení!',
-        keywords: 'horoskop dnes, horoskop zdarma, horoskop 2024, znamení zvěrokruhu, láskový horoskop, partnerský horoskop, týdenní horoskop, měsíční horoskop, astrologie, beran horoskop, býk horoskop, blíženci horoskop, přesný horoskop, narozeninový horoskop',
+        keywords: 'horoskop dnes, horoskop zdarma, horoskop 2026, znamení zvěrokruhu, láskový horoskop, partnerský horoskop, týdenní horoskop, měsíční horoskop, astrologie, beran horoskop, býk horoskop, blíženci horoskop, přesný horoskop, narozeninový horoskop',
     },
     header: {
         badge: 'Personalizované Horoskopy',

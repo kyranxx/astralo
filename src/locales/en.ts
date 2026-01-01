@@ -4,7 +4,7 @@ const en: Translations = {
     meta: {
         title: 'Astralo - Personalized Horoscope Readings | 50% OFF',
         description: 'Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. 50,000+ happy customers. Instant PDF delivery!',
-        keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2024, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
+        keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2026, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
     },
     header: {
         badge: 'Personalized Horoscopes',

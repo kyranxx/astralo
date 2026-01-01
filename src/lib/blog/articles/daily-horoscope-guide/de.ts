@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const de: BlogPostTranslation = {
-    title: '⭐ Tageshoroskop 2024: Kompletter Leitfaden für Ihre Sternzeichen-Vorhersagen',
+    title: '⭐ Tageshoroskop 2026: Kompletter Leitfaden für Ihre Sternzeichen-Vorhersagen',
     excerpt: 'Entdecken Sie, was die Sterne heute für Sie bereithalten.',
     category: 'Horoskope',
     metaDescription: 'Tageshoroskop für alle 12 Sternzeichen. Genaues Horoskop heute für Widder, Stier, Zwillinge, Krebs, Löwe, Jungfrau, Waage, Skorpion, Schütze, Steinbock, Wassermann & Fische.',
-    keywords: 'tageshoroskop, horoskop heute, sternzeichen heute, tägliches horoskop, horoskop 2024, kostenloses tageshoroskop',
+    keywords: 'tageshoroskop, horoskop heute, sternzeichen heute, tägliches horoskop, horoskop 2026, kostenloses tageshoroskop',
     quickSummary: [
         'Tageshoroskope basieren auf Planetenpositionen relativ zu Ihrem Sternzeichen',
         'Die tägliche Mondbewegung beeinflusst stark Ihre Emotionen und Erfahrungen',

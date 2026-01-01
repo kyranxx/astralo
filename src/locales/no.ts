@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const no: Translations = {
     meta: {
-        title: 'Astralo - Gratis Daglig Horoskop I Dag 2024 | Nøyaktige Stjernetegnspådommer',
+        title: 'Astralo - Gratis Daglig Horoskop I Dag 2026 | Nøyaktige Stjernetegnspådommer',
         description: 'Få ditt GRATIS personlige horoskop i dag! ⭐ Daglige, ukentlige og månedlige spådommer. Kjærlighetskompatibilitet, karriereråd. 50 000+ fornøyde kunder. Umiddelbar levering!',
-        keywords: 'daglig horoskop, gratis horoskop, horoskop i dag, ukehoroskop, månedshoroskop, kjærlighetshoroskop, stjernetegn, astrologi, horoskop 2024, personlig horoskop',
+        keywords: 'daglig horoskop, gratis horoskop, horoskop i dag, ukehoroskop, månedshoroskop, kjærlighetshoroskop, stjernetegn, astrologi, horoskop 2026, personlig horoskop',
     },
     header: {
         badge: 'Personlige Horoskop',

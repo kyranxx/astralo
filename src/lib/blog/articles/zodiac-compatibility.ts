@@ -7,7 +7,7 @@ import type { BlogPostTranslation } from '../index';
 
 export const zodiacCompatibility: Record<string, BlogPostTranslation> = {
     en: {
-        title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
+        title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
         excerpt: 'Find out which zodiac signs are most compatible with yours.',
         category: 'Love & Relationships',
         metaDescription: 'Discover your zodiac compatibility with our complete guide. Find the best love matches for all 12 zodiac signs.',

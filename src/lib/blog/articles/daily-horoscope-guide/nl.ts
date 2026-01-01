@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-    title: '⭐ Daghoroscoop 2024: Complete gids voor uw sterrenbeeld voorspellingen',
+    title: '⭐ Daghoroscoop 2026: Complete gids voor uw sterrenbeeld voorspellingen',
     excerpt: 'Ontdek wat de sterren vandaag voor u in petto hebben.',
     category: 'Horoscopen',
     metaDescription: 'Daghoroscoop voor alle 12 sterrenbeelden. Nauwkeurige horoscoop vandaag voor Ram, Stier, Tweelingen, Kreeft, Leeuw, Maagd, Weegschaal, Schorpioen, Boogschutter, Steenbok, Waterman en Vissen.',
-    keywords: 'daghoroscoop, horoscoop vandaag, dagelijkse horoscoop, sterrenbeeld, horoscoop 2024, gratis horoscoop',
+    keywords: 'daghoroscoop, horoscoop vandaag, dagelijkse horoscoop, sterrenbeeld, horoscoop 2026, gratis horoscoop',
     quickSummary: [
         'Daghoroscopen zijn gebaseerd op planetaire posities ten opzichte van uw sterrenbeeld',
         'De dagelijkse maanbeweging beïnvloedt sterk uw emoties en ervaringen',

@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: '⭐ Günlük Burç Yorumu 2024: Tahminleriniz için Tam Rehber',
+    title: '⭐ Günlük Burç Yorumu 2026: Tahminleriniz için Tam Rehber',
     excerpt: 'Yıldızların bugün sizin için neler hazırladığını keşfedin.',
     category: 'Burç Yorumları',
     metaDescription: 'Tüm 12 burç için günlük burç yorumu. Koç, Boğa, İkizler, Yengeç, Aslan, Başak, Terazi, Akrep, Yay, Oğlak, Kova ve Balık için doğru tahminler.',
-    keywords: 'günlük burç yorumu, burç yorumu bugün, günlük burç, burçlar, burç yorumu 2024, ücretsiz burç yorumu',
+    keywords: 'günlük burç yorumu, burç yorumu bugün, günlük burç, burçlar, burç yorumu 2026, ücretsiz burç yorumu',
     quickSummary: [
         'Günlük burç yorumları, burcunuza göre gezegen konumlarına dayanır',
         'Ay\'ın günlük hareketi duygularınızı ve deneyimlerinizi güçlü şekilde etkiler',

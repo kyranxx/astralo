@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const fi: Translations = {
     meta: {
-        title: 'Astralo - Ilmainen Päivähoroskooppi Tänään 2024 | Tarkat Horoskooppimerkkiennusteet',
+        title: 'Astralo - Ilmainen Päivähoroskooppi Tänään 2026 | Tarkat Horoskooppimerkkiennusteet',
         description: 'Hanki ILMAINEN henkilökohtainen horoskooppisi tänään! ⭐ Päivittäiset, viikottaiset ja kuukausittaiset ennusteet. Rakkausyhteensopivuus, uraohjeita. 50 000+ tyytyväistä asiakasta. Välitön toimitus!',
-        keywords: 'päivähoroskooppi, ilmainen horoskooppi, horoskooppi tänään, viikkohoroskooppi, kuukausihoroskooppi, rakkaushoroskooppi, horoskooppimerkki, astrologia, horoskooppi 2024, henkilökohtainen horoskooppi',
+        keywords: 'päivähoroskooppi, ilmainen horoskooppi, horoskooppi tänään, viikkohoroskooppi, kuukausihoroskooppi, rakkaushoroskooppi, horoskooppimerkki, astrologia, horoskooppi 2026, henkilökohtainen horoskooppi',
     },
     header: {
         badge: 'Henkilökohtainen Horoskooppi',

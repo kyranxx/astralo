@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: '⭐ Horoskop dzienny 2024: Kompletny przewodnik po przepowiedniach zodiakalnych',
+    title: '⭐ Horoskop dzienny 2026: Kompletny przewodnik po przepowiedniach zodiakalnych',
     excerpt: 'Odkryj, co gwiazdy mają dla Ciebie dzisiaj.',
     category: 'Horoskopy',
     metaDescription: 'Horoskop dzienny dla wszystkich 12 znaków zodiaku. Dokładne przepowiednie dla Barana, Byka, Bliźniąt, Raka, Lwa, Panny, Wagi, Skorpiona, Strzelca, Koziorożca, Wodnika i Ryb.',
-    keywords: 'horoskop dzienny, horoskop na dziś, horoskop codzienny, znaki zodiaku, horoskop 2024, darmowy horoskop',
+    keywords: 'horoskop dzienny, horoskop na dziś, horoskop codzienny, znaki zodiaku, horoskop 2026, darmowy horoskop',
     quickSummary: [
         'Horoskopy dzienne opierają się na pozycjach planet względem Twojego znaku',
         'Codzienny ruch Księżyca silnie wpływa na Twoje emocje i doświadczenia',

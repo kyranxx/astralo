@@ -30,12 +30,12 @@ const blogContent: Record<string, BlogTranslations> = {
     en: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Daily Horoscope 2024: Complete Guide to Your Zodiac Predictions',
+                title: '⭐ Daily Horoscope 2026: Complete Guide to Your Zodiac Predictions',
                 excerpt: 'Discover what the stars have in store for you today.',
                 category: 'Horoscopes'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2024',
+                title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
                 excerpt: 'Find out which zodiac signs are most compatible with yours.',
                 category: 'Love & Relationships'
             },
@@ -55,7 +55,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoscopes'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Love Horoscope 2024: Relationship Predictions for Every Sign',
+                title: '💕 Love Horoscope 2026: Relationship Predictions for Every Sign',
                 excerpt: 'Is love written in your stars?',
                 category: 'Love & Relationships'
             }
@@ -112,12 +112,12 @@ const blogContent: Record<string, BlogTranslations> = {
     hi: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ दैनिक राशिफल 2024: आपकी राशि भविष्यवाणी का संपूर्ण गाइड',
+                title: '⭐ दैनिक राशिफल 2026: आपकी राशि भविष्यवाणी का संपूर्ण गाइड',
                 excerpt: 'आज सितारों ने आपके लिए क्या रखा है जानें।',
                 category: 'राशिफल'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ राशि अनुकूलता: परम प्रेम मिलान गाइड 2024',
+                title: '❤️ राशि अनुकूलता: परम प्रेम मिलान गाइड 2026',
                 excerpt: 'जानें कौन सी राशि आपके साथ सबसे अधिक मेल खाती है।',
                 category: 'प्रेम और रिश्ते'
             },
@@ -137,7 +137,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'राशिफल'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 प्रेम राशिफल 2024: हर राशि के लिए रिश्ते की भविष्यवाणी',
+                title: '💕 प्रेम राशिफल 2026: हर राशि के लिए रिश्ते की भविष्यवाणी',
                 excerpt: 'क्या प्रेम आपके सितारों में लिखा है?',
                 category: 'प्रेम और रिश्ते'
             }
@@ -153,12 +153,12 @@ const blogContent: Record<string, BlogTranslations> = {
     de: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Tageshoroskop 2024: Kompletter Leitfaden zu Ihren Sternzeichen-Vorhersagen',
+                title: '⭐ Tageshoroskop 2026: Kompletter Leitfaden zu Ihren Sternzeichen-Vorhersagen',
                 excerpt: 'Entdecken Sie, was die Sterne heute für Sie bereithalten.',
                 category: 'Horoskope'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Sternzeichen-Kompatibilität: Der ultimative Liebes-Match-Leitfaden 2024',
+                title: '❤️ Sternzeichen-Kompatibilität: Der ultimative Liebes-Match-Leitfaden 2026',
                 excerpt: 'Finden Sie heraus, welche Sternzeichen am besten zu Ihnen passen.',
                 category: 'Liebe & Beziehungen'
             },
@@ -178,7 +178,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskope'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Liebeshoroskop 2024: Beziehungsvorhersagen für jedes Zeichen',
+                title: '💕 Liebeshoroskop 2026: Beziehungsvorhersagen für jedes Zeichen',
                 excerpt: 'Steht die Liebe in Ihren Sternen geschrieben?',
                 category: 'Liebe & Beziehungen'
             }
@@ -194,12 +194,12 @@ const blogContent: Record<string, BlogTranslations> = {
     fr: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Horoscope du jour 2024: Guide complet de vos prédictions zodiacales',
+                title: '⭐ Horoscope du jour 2026: Guide complet de vos prédictions zodiacales',
                 excerpt: 'Découvrez ce que les étoiles vous réservent aujourd\'hui.',
                 category: 'Horoscopes'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Compatibilité des signes: Le guide ultime des correspondances amoureuses 2024',
+                title: '❤️ Compatibilité des signes: Le guide ultime des correspondances amoureuses 2026',
                 excerpt: 'Découvrez quels signes sont les plus compatibles avec le vôtre.',
                 category: 'Amour & Relations'
             },
@@ -219,7 +219,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoscopes'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horoscope amour 2024: Prédictions relationnelles pour chaque signe',
+                title: '💕 Horoscope amour 2026: Prédictions relationnelles pour chaque signe',
                 excerpt: 'L\'amour est-il écrit dans vos étoiles?',
                 category: 'Amour & Relations'
             }
@@ -235,12 +235,12 @@ const blogContent: Record<string, BlogTranslations> = {
     es: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Horóscopo diario 2024: Guía completa de tus predicciones zodiacales',
+                title: '⭐ Horóscopo diario 2026: Guía completa de tus predicciones zodiacales',
                 excerpt: 'Descubre lo que las estrellas te deparan hoy.',
                 category: 'Horóscopos'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Compatibilidad de signos: La guía definitiva de parejas 2024',
+                title: '❤️ Compatibilidad de signos: La guía definitiva de parejas 2026',
                 excerpt: 'Descubre qué signos son más compatibles contigo.',
                 category: 'Amor y Relaciones'
             },
@@ -260,7 +260,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horóscopos'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horóscopo del amor 2024: Predicciones de relaciones para cada signo',
+                title: '💕 Horóscopo del amor 2026: Predicciones de relaciones para cada signo',
                 excerpt: '¿Está el amor escrito en tus estrellas?',
                 category: 'Amor y Relaciones'
             }
@@ -276,12 +276,12 @@ const blogContent: Record<string, BlogTranslations> = {
     it: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Oroscopo del giorno 2024: Guida completa alle previsioni zodiacali',
+                title: '⭐ Oroscopo del giorno 2026: Guida completa alle previsioni zodiacali',
                 excerpt: 'Scopri cosa ti riservano le stelle oggi.',
                 category: 'Oroscopi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Compatibilità segni zodiacali: La guida definitiva 2024',
+                title: '❤️ Compatibilità segni zodiacali: La guida definitiva 2026',
                 excerpt: 'Scopri quali segni sono più compatibili con il tuo.',
                 category: 'Amore e Relazioni'
             },
@@ -301,7 +301,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Oroscopi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Oroscopo dell\'amore 2024: Previsioni per ogni segno',
+                title: '💕 Oroscopo dell\'amore 2026: Previsioni per ogni segno',
                 excerpt: 'L\'amore è scritto nelle tue stelle?',
                 category: 'Amore e Relazioni'
             }
@@ -317,12 +317,12 @@ const blogContent: Record<string, BlogTranslations> = {
     pt: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Horóscopo do dia 2024: Guia completo das suas previsões',
+                title: '⭐ Horóscopo do dia 2026: Guia completo das suas previsões',
                 excerpt: 'Descubra o que as estrelas reservam para você hoje.',
                 category: 'Horóscopos'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Compatibilidade de signos: O guia definitivo 2024',
+                title: '❤️ Compatibilidade de signos: O guia definitivo 2026',
                 excerpt: 'Descubra quais signos são mais compatíveis com o seu.',
                 category: 'Amor e Relacionamentos'
             },
@@ -342,7 +342,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horóscopos'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horóscopo do amor 2024: Previsões para cada signo',
+                title: '💕 Horóscopo do amor 2026: Previsões para cada signo',
                 excerpt: 'O amor está escrito nas suas estrelas?',
                 category: 'Amor e Relacionamentos'
             }
@@ -358,12 +358,12 @@ const blogContent: Record<string, BlogTranslations> = {
     sk: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Denný horoskop 2024: Kompletný sprievodca vašimi predpoveďami',
+                title: '⭐ Denný horoskop 2026: Kompletný sprievodca vašimi predpoveďami',
                 excerpt: 'Zistite, čo pre vás hviezdy dnes pripravili.',
                 category: 'Horoskopy'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kompatibilita znamení: Ultimátny sprievodca láskou 2024',
+                title: '❤️ Kompatibilita znamení: Ultimátny sprievodca láskou 2026',
                 excerpt: 'Zistite, ktoré znamenia sú s vami najkompatibilnejšie.',
                 category: 'Láska a vzťahy'
             },
@@ -383,7 +383,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopy'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horoskop lásky 2024: Vzťahové predpovede pre každé znamenie',
+                title: '💕 Horoskop lásky 2026: Vzťahové predpovede pre každé znamenie',
                 excerpt: 'Je láska napísaná vo vašich hviezdach?',
                 category: 'Láska a vzťahy'
             }
@@ -399,12 +399,12 @@ const blogContent: Record<string, BlogTranslations> = {
     cs: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Denní horoskop 2024: Kompletní průvodce vašimi předpovědmi',
+                title: '⭐ Denní horoskop 2026: Kompletní průvodce vašimi předpovědmi',
                 excerpt: 'Zjistěte, co pro vás hvězdy dnes připravily.',
                 category: 'Horoskopy'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kompatibilita znamení: Ultimátní průvodce láskou 2024',
+                title: '❤️ Kompatibilita znamení: Ultimátní průvodce láskou 2026',
                 excerpt: 'Zjistěte, která znamení jsou s vámi nejkompatibilnější.',
                 category: 'Láska a vztahy'
             },
@@ -424,7 +424,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopy'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horoskop lásky 2024: Vztahové předpovědi pro každé znamení',
+                title: '💕 Horoskop lásky 2026: Vztahové předpovědi pro každé znamení',
                 excerpt: 'Je láska napsána ve vašich hvězdách?',
                 category: 'Láska a vztahy'
             }
@@ -440,12 +440,12 @@ const blogContent: Record<string, BlogTranslations> = {
     ja: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ 毎日の星占い2024：星座予測の完全ガイド',
+                title: '⭐ 毎日の星占い2026：星座予測の完全ガイド',
                 excerpt: '今日、星があなたに何を用意しているか発見しましょう。',
                 category: '星占い'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ 星座相性：究極の恋愛マッチングガイド2024',
+                title: '❤️ 星座相性：究極の恋愛マッチングガイド2026',
                 excerpt: 'あなたと最も相性の良い星座を見つけましょう。',
                 category: '恋愛と人間関係'
             },
@@ -465,7 +465,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: '星占い'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 恋愛星占い2024：各星座の恋愛予測',
+                title: '💕 恋愛星占い2026：各星座の恋愛予測',
                 excerpt: '愛はあなたの星に書かれていますか？',
                 category: '恋愛と人間関係'
             }
@@ -481,12 +481,12 @@ const blogContent: Record<string, BlogTranslations> = {
     ko: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ 오늘의 운세 2024: 별자리 예측 완벽 가이드',
+                title: '⭐ 오늘의 운세 2026: 별자리 예측 완벽 가이드',
                 excerpt: '오늘 별들이 당신에게 무엇을 준비했는지 알아보세요.',
                 category: '운세'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ 별자리 궁합: 최고의 연애 매칭 가이드 2024',
+                title: '❤️ 별자리 궁합: 최고의 연애 매칭 가이드 2026',
                 excerpt: '어떤 별자리가 당신과 가장 잘 맞는지 알아보세요.',
                 category: '사랑과 관계'
             },
@@ -506,7 +506,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: '운세'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 연애 운세 2024: 각 별자리의 관계 예측',
+                title: '💕 연애 운세 2026: 각 별자리의 관계 예측',
                 excerpt: '사랑이 당신의 별에 쓰여 있나요?',
                 category: '사랑과 관계'
             }
@@ -522,12 +522,12 @@ const blogContent: Record<string, BlogTranslations> = {
     zh: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ 每日星座运势2024：星座预测完全指南',
+                title: '⭐ 每日星座运势2026：星座预测完全指南',
                 excerpt: '探索今天星星为您准备了什么。',
                 category: '星座运势'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ 星座配对：终极爱情匹配指南2024',
+                title: '❤️ 星座配对：终极爱情匹配指南2026',
                 excerpt: '了解哪些星座与您最匹配。',
                 category: '爱情与关系'
             },
@@ -547,7 +547,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: '星座运势'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 爱情星座运势2024：每个星座的感情预测',
+                title: '💕 爱情星座运势2026：每个星座的感情预测',
                 excerpt: '爱情写在您的星星里吗？',
                 category: '爱情与关系'
             }
@@ -563,12 +563,12 @@ const blogContent: Record<string, BlogTranslations> = {
     ru: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Ежедневный гороскоп 2024: Полное руководство по прогнозам',
+                title: '⭐ Ежедневный гороскоп 2026: Полное руководство по прогнозам',
                 excerpt: 'Узнайте, что звёзды приготовили для вас сегодня.',
                 category: 'Гороскопы'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Совместимость знаков: Полный гид по любовной совместимости 2024',
+                title: '❤️ Совместимость знаков: Полный гид по любовной совместимости 2026',
                 excerpt: 'Узнайте, какие знаки наиболее совместимы с вашим.',
                 category: 'Любовь и отношения'
             },
@@ -588,7 +588,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Гороскопы'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Любовный гороскоп 2024: Прогнозы отношений для каждого знака',
+                title: '💕 Любовный гороскоп 2026: Прогнозы отношений для каждого знака',
                 excerpt: 'Написана ли любовь в ваших звёздах?',
                 category: 'Любовь и отношения'
             }
@@ -604,12 +604,12 @@ const blogContent: Record<string, BlogTranslations> = {
     nl: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dagelijkse Horoscoop 2024: Complete Gids voor Uw Sterrenbeeld',
+                title: '⭐ Dagelijkse Horoscoop 2026: Complete Gids voor Uw Sterrenbeeld',
                 excerpt: 'Ontdek wat de sterren vandaag voor u in petto hebben.',
                 category: 'Horoscopen'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Sterrenbeeld Compatibiliteit: De Ultieme Liefdesgids 2024',
+                title: '❤️ Sterrenbeeld Compatibiliteit: De Ultieme Liefdesgids 2026',
                 excerpt: 'Ontdek welke sterrenbeelden het beste bij u passen.',
                 category: 'Liefde & Relaties'
             },
@@ -629,7 +629,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoscopen'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Liefdeshoroscoop 2024: Relatievoorspellingen voor Elk Teken',
+                title: '💕 Liefdeshoroscoop 2026: Relatievoorspellingen voor Elk Teken',
                 excerpt: 'Staat liefde in uw sterren geschreven?',
                 category: 'Liefde & Relaties'
             }
@@ -645,12 +645,12 @@ const blogContent: Record<string, BlogTranslations> = {
     pl: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Horoskop Dzienny 2024: Kompletny Przewodnik po Przepowiedniach',
+                title: '⭐ Horoskop Dzienny 2026: Kompletny Przewodnik po Przepowiedniach',
                 excerpt: 'Odkryj, co gwiazdy mają dla Ciebie dzisiaj.',
                 category: 'Horoskopy'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kompatybilność Znaków Zodiaku: Przewodnik Miłosny 2024',
+                title: '❤️ Kompatybilność Znaków Zodiaku: Przewodnik Miłosny 2026',
                 excerpt: 'Dowiedz się, które znaki zodiaku najbardziej do Ciebie pasują.',
                 category: 'Miłość i Związki'
             },
@@ -670,7 +670,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopy'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horoskop Miłosny 2024: Przepowiednie Związkowe dla Każdego',
+                title: '💕 Horoskop Miłosny 2026: Przepowiednie Związkowe dla Każdego',
                 excerpt: 'Czy miłość jest zapisana w Twoich gwiazdach?',
                 category: 'Miłość i Związki'
             }
@@ -686,12 +686,12 @@ const blogContent: Record<string, BlogTranslations> = {
     hu: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Napi Horoszkóp 2024: Teljes Útmutató a Csillagjegy Jóslatokhoz',
+                title: '⭐ Napi Horoszkóp 2026: Teljes Útmutató a Csillagjegy Jóslatokhoz',
                 excerpt: 'Fedezze fel, mit tartogatnak ma a csillagok.',
                 category: 'Horoszkópok'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Csillagjegy Kompatibilitás: A Végső Szerelmi Útmutató 2024',
+                title: '❤️ Csillagjegy Kompatibilitás: A Végső Szerelmi Útmutató 2026',
                 excerpt: 'Tudja meg, mely csillagjegyek illenek leginkább Önhöz.',
                 category: 'Szerelem & Kapcsolatok'
             },
@@ -711,7 +711,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoszkópok'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Szerelmi Horoszkóp 2024: Kapcsolati Jóslatok Minden Jegyhez',
+                title: '💕 Szerelmi Horoszkóp 2026: Kapcsolati Jóslatok Minden Jegyhez',
                 excerpt: 'A szerelem a csillagaiba van írva?',
                 category: 'Szerelem & Kapcsolatok'
             }
@@ -727,12 +727,12 @@ const blogContent: Record<string, BlogTranslations> = {
     ro: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Horoscop Zilnic 2024: Ghid Complet pentru Predicțiile Tale',
+                title: '⭐ Horoscop Zilnic 2026: Ghid Complet pentru Predicțiile Tale',
                 excerpt: 'Descoperă ce îți rezervă astrele astăzi.',
                 category: 'Horoscoape'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Compatibilitate Zodiacală: Ghidul Suprem al Iubirii 2024',
+                title: '❤️ Compatibilitate Zodiacală: Ghidul Suprem al Iubirii 2026',
                 excerpt: 'Află care zodii sunt cele mai compatibile cu a ta.',
                 category: 'Dragoste & Relații'
             },
@@ -752,7 +752,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoscoape'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Horoscop Dragoste 2024: Predicții Relaționale pentru Fiecare',
+                title: '💕 Horoscop Dragoste 2026: Predicții Relaționale pentru Fiecare',
                 excerpt: 'Este iubirea scrisă în stelele tale?',
                 category: 'Dragoste & Relații'
             }
@@ -768,12 +768,12 @@ const blogContent: Record<string, BlogTranslations> = {
     bg: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Дневен Хороскоп 2024: Пълно Ръководство за Прогнозите',
+                title: '⭐ Дневен Хороскоп 2026: Пълно Ръководство за Прогнозите',
                 excerpt: 'Открийте какво ви предричат звездите днес.',
                 category: 'Хороскопи'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Съвместимост на Зодии: Пълното Любовно Ръководство 2024',
+                title: '❤️ Съвместимост на Зодии: Пълното Любовно Ръководство 2026',
                 excerpt: 'Разберете кои зодии са най-съвместими с вашата.',
                 category: 'Любов & Отношения'
             },
@@ -793,7 +793,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Хороскопи'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Любовен Хороскоп 2024: Прогнози за Връзки за Всяка Зодия',
+                title: '💕 Любовен Хороскоп 2026: Прогнози за Връзки за Всяка Зодия',
                 excerpt: 'Написана ли е любовта в звездите ви?',
                 category: 'Любов & Отношения'
             }
@@ -809,12 +809,12 @@ const blogContent: Record<string, BlogTranslations> = {
     hr: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dnevni Horoskop 2024: Potpuni Vodič za Vaša Predviđanja',
+                title: '⭐ Dnevni Horoskop 2026: Potpuni Vodič za Vaša Predviđanja',
                 excerpt: 'Otkrijte što vam zvijezde danas donose.',
                 category: 'Horoskopi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kompatibilnost Horoskopskih Znakova: Vodič za Ljubav 2024',
+                title: '❤️ Kompatibilnost Horoskopskih Znakova: Vodič za Ljubav 2026',
                 excerpt: 'Saznajte koji su znakovi najkompatibilniji s vašim.',
                 category: 'Ljubav & Veze'
             },
@@ -834,7 +834,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Ljubavni Horoskop 2024: Predviđanja Veza za Svaki Znak',
+                title: '💕 Ljubavni Horoskop 2026: Predviđanja Veza za Svaki Znak',
                 excerpt: 'Je li ljubav zapisana u vašim zvijezdama?',
                 category: 'Ljubav & Veze'
             }
@@ -850,12 +850,12 @@ const blogContent: Record<string, BlogTranslations> = {
     sl: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dnevni Horoskop 2024: Popoln Vodnik za Vaša Napovedovanja',
+                title: '⭐ Dnevni Horoskop 2026: Popoln Vodnik za Vaša Napovedovanja',
                 excerpt: 'Odkrijte, kaj vam danes prinašajo zvezde.',
                 category: 'Horoskopi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Združljivost Zodiaka: Ultimativni Ljubezenski Vodnik 2024',
+                title: '❤️ Združljivost Zodiaka: Ultimativni Ljubezenski Vodnik 2026',
                 excerpt: 'Ugotovite, katera znamenja so z vami najbolj združljiva.',
                 category: 'Ljubezen & Odnosi'
             },
@@ -875,7 +875,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Ljubezenski Horoskop 2024: Napovedi Odnosov za Vsako Znamenje',
+                title: '💕 Ljubezenski Horoskop 2026: Napovedi Odnosov za Vsako Znamenje',
                 excerpt: 'Je ljubezen zapisana v vaših zvezdah?',
                 category: 'Ljubezen & Odnosi'
             }
@@ -891,12 +891,12 @@ const blogContent: Record<string, BlogTranslations> = {
     sr: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dnevni Horoskop 2024: Potpuni Vodič za Vaša Predviđanja',
+                title: '⭐ Dnevni Horoskop 2026: Potpuni Vodič za Vaša Predviđanja',
                 excerpt: 'Otkrijte šta vam zvezde danas donose.',
                 category: 'Horoskopi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kompatibilnost Znakova: Ultimativni Ljubavni Vodič 2024',
+                title: '❤️ Kompatibilnost Znakova: Ultimativni Ljubavni Vodič 2026',
                 excerpt: 'Saznajte koji su znakovi najkompatibilniji s vašim.',
                 category: 'Ljubav & Veze'
             },
@@ -916,7 +916,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskopi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Ljubavni Horoskop 2024: Predviđanja Veza za Svaki Znak',
+                title: '💕 Ljubavni Horoskop 2026: Predviđanja Veza za Svaki Znak',
                 excerpt: 'Da li je ljubav zapisana u vašim zvezdama?',
                 category: 'Ljubav & Veze'
             }
@@ -932,12 +932,12 @@ const blogContent: Record<string, BlogTranslations> = {
     uk: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Щоденний Гороскоп 2024: Повний Посібник з Передбачень',
+                title: '⭐ Щоденний Гороскоп 2026: Повний Посібник з Передбачень',
                 excerpt: 'Дізнайтесь, що зірки приготували для вас сьогодні.',
                 category: 'Гороскопи'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Сумісність Знаків Зодіаку: Повний Любовний Посібник 2024',
+                title: '❤️ Сумісність Знаків Зодіаку: Повний Любовний Посібник 2026',
                 excerpt: 'Дізнайтесь, які знаки найбільш сумісні з вашим.',
                 category: 'Кохання та Стосунки'
             },
@@ -957,7 +957,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Гороскопи'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Любовний Гороскоп 2024: Передбачення Стосунків для Кожного',
+                title: '💕 Любовний Гороскоп 2026: Передбачення Стосунків для Кожного',
                 excerpt: 'Чи написане кохання у ваших зірках?',
                 category: 'Кохання та Стосунки'
             }
@@ -973,12 +973,12 @@ const blogContent: Record<string, BlogTranslations> = {
     el: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Ημερήσιο Ωροσκόπιο 2024: Πλήρης Οδηγός Προβλέψεων',
+                title: '⭐ Ημερήσιο Ωροσκόπιο 2026: Πλήρης Οδηγός Προβλέψεων',
                 excerpt: 'Ανακαλύψτε τι σας επιφυλάσσουν τα άστρα σήμερα.',
                 category: 'Ωροσκόπια'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Συμβατότητα Ζωδίων: Ο Απόλυτος Οδηγός Έρωτα 2024',
+                title: '❤️ Συμβατότητα Ζωδίων: Ο Απόλυτος Οδηγός Έρωτα 2026',
                 excerpt: 'Μάθετε ποια ζώδια ταιριάζουν καλύτερα με το δικό σας.',
                 category: 'Έρωτας & Σχέσεις'
             },
@@ -998,7 +998,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Ωροσκόπια'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Ερωτικό Ωροσκόπιο 2024: Προβλέψεις Σχέσεων για Κάθε Ζώδιο',
+                title: '💕 Ερωτικό Ωροσκόπιο 2026: Προβλέψεις Σχέσεων για Κάθε Ζώδιο',
                 excerpt: 'Είναι ο έρωτας γραμμένος στα άστρα σας;',
                 category: 'Έρωτας & Σχέσεις'
             }
@@ -1014,12 +1014,12 @@ const blogContent: Record<string, BlogTranslations> = {
     tr: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Günlük Burç Yorumu 2024: Tahminleriniz için Tam Rehber',
+                title: '⭐ Günlük Burç Yorumu 2026: Tahminleriniz için Tam Rehber',
                 excerpt: 'Yıldızların bugün sizin için neler hazırladığını keşfedin.',
                 category: 'Burç Yorumları'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Burç Uyumu: 2024 Aşk Rehberi',
+                title: '❤️ Burç Uyumu: 2026 Aşk Rehberi',
                 excerpt: 'Hangi burçların sizinle en uyumlu olduğunu öğrenin.',
                 category: 'Aşk & İlişkiler'
             },
@@ -1039,7 +1039,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Burç Yorumları'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Aşk Burcu 2024: Her Burç için İlişki Tahminleri',
+                title: '💕 Aşk Burcu 2026: Her Burç için İlişki Tahminleri',
                 excerpt: 'Aşk yıldızlarınızda yazılı mı?',
                 category: 'Aşk & İlişkiler'
             }
@@ -1055,12 +1055,12 @@ const blogContent: Record<string, BlogTranslations> = {
     ar: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ الأبراج اليومية 2024: دليلك الشامل للتنبؤات',
+                title: '⭐ الأبراج اليومية 2026: دليلك الشامل للتنبؤات',
                 excerpt: 'اكتشف ما تخبئه لك النجوم اليوم.',
                 category: 'الأبراج'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ توافق الأبراج: الدليل النهائي للحب 2024',
+                title: '❤️ توافق الأبراج: الدليل النهائي للحب 2026',
                 excerpt: 'اكتشف الأبراج الأكثر توافقاً معك.',
                 category: 'الحب والعلاقات'
             },
@@ -1080,7 +1080,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'الأبراج'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 أبراج الحب 2024: تنبؤات العلاقات لكل برج',
+                title: '💕 أبراج الحب 2026: تنبؤات العلاقات لكل برج',
                 excerpt: 'هل الحب مكتوب في نجومك؟',
                 category: 'الحب والعلاقات'
             }
@@ -1096,12 +1096,12 @@ const blogContent: Record<string, BlogTranslations> = {
     th: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ ดวงรายวัน 2024: คู่มือฉบับสมบูรณ์สำหรับคำทำนาย',
+                title: '⭐ ดวงรายวัน 2026: คู่มือฉบับสมบูรณ์สำหรับคำทำนาย',
                 excerpt: 'ค้นพบสิ่งที่ดวงดาวเตรียมไว้ให้คุณวันนี้',
                 category: 'ดูดวง'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ ความเข้ากันของราศี: คู่มือความรักขั้นสูงสุด 2024',
+                title: '❤️ ความเข้ากันของราศี: คู่มือความรักขั้นสูงสุด 2026',
                 excerpt: 'ค้นหาว่าราศีใดเข้ากับคุณมากที่สุด',
                 category: 'ความรักและความสัมพันธ์'
             },
@@ -1121,7 +1121,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'ดูดวง'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 ดวงความรัก 2024: คำทำนายความสัมพันธ์สำหรับทุกราศี',
+                title: '💕 ดวงความรัก 2026: คำทำนายความสัมพันธ์สำหรับทุกราศี',
                 excerpt: 'ความรักถูกเขียนไว้ในดวงดาวของคุณหรือไม่?',
                 category: 'ความรักและความสัมพันธ์'
             }
@@ -1137,12 +1137,12 @@ const blogContent: Record<string, BlogTranslations> = {
     vi: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Tử Vi Hàng Ngày 2024: Hướng Dẫn Đầy Đủ Về Dự Đoán',
+                title: '⭐ Tử Vi Hàng Ngày 2026: Hướng Dẫn Đầy Đủ Về Dự Đoán',
                 excerpt: 'Khám phá những gì các vì sao dành cho bạn hôm nay.',
                 category: 'Tử Vi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Tương Hợp Cung Hoàng Đạo: Hướng Dẫn Tình Yêu 2024',
+                title: '❤️ Tương Hợp Cung Hoàng Đạo: Hướng Dẫn Tình Yêu 2026',
                 excerpt: 'Tìm hiểu cung hoàng đạo nào hợp với bạn nhất.',
                 category: 'Tình Yêu & Quan Hệ'
             },
@@ -1162,7 +1162,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Tử Vi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Tử Vi Tình Yêu 2024: Dự Đoán Quan Hệ Cho Mọi Cung',
+                title: '💕 Tử Vi Tình Yêu 2026: Dự Đoán Quan Hệ Cho Mọi Cung',
                 excerpt: 'Tình yêu có được viết trong các vì sao của bạn?',
                 category: 'Tình Yêu & Quan Hệ'
             }
@@ -1178,12 +1178,12 @@ const blogContent: Record<string, BlogTranslations> = {
     id: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Ramalan Zodiak Harian 2024: Panduan Lengkap Prediksi Anda',
+                title: '⭐ Ramalan Zodiak Harian 2026: Panduan Lengkap Prediksi Anda',
                 excerpt: 'Temukan apa yang bintang-bintang siapkan untuk Anda hari ini.',
                 category: 'Ramalan'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Kecocokan Zodiak: Panduan Cinta Terbaik 2024',
+                title: '❤️ Kecocokan Zodiak: Panduan Cinta Terbaik 2026',
                 excerpt: 'Cari tahu zodiak mana yang paling cocok dengan Anda.',
                 category: 'Cinta & Hubungan'
             },
@@ -1203,7 +1203,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Ramalan'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Ramalan Cinta 2024: Prediksi Hubungan untuk Setiap Zodiak',
+                title: '💕 Ramalan Cinta 2026: Prediksi Hubungan untuk Setiap Zodiak',
                 excerpt: 'Apakah cinta tertulis di bintang-bintang Anda?',
                 category: 'Cinta & Hubungan'
             }
@@ -1219,12 +1219,12 @@ const blogContent: Record<string, BlogTranslations> = {
     sv: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dagligt Horoskop 2024: Komplett Guide till Dina Förutsägelser',
+                title: '⭐ Dagligt Horoskop 2026: Komplett Guide till Dina Förutsägelser',
                 excerpt: 'Upptäck vad stjärnorna har i beredskap för dig idag.',
                 category: 'Horoskop'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Stjärnteckens Kompatibilitet: Den Ultimata Kärleksguiden 2024',
+                title: '❤️ Stjärnteckens Kompatibilitet: Den Ultimata Kärleksguiden 2026',
                 excerpt: 'Ta reda på vilka stjärntecken som passar bäst med ditt.',
                 category: 'Kärlek & Relationer'
             },
@@ -1244,7 +1244,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskop'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Kärlekshoroskop 2024: Relationsprognoser för Varje Tecken',
+                title: '💕 Kärlekshoroskop 2026: Relationsprognoser för Varje Tecken',
                 excerpt: 'Är kärleken skriven i dina stjärnor?',
                 category: 'Kärlek & Relationer'
             }
@@ -1260,12 +1260,12 @@ const blogContent: Record<string, BlogTranslations> = {
     da: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Dagligt Horoskop 2024: Komplet Guide til Dine Forudsigelser',
+                title: '⭐ Dagligt Horoskop 2026: Komplet Guide til Dine Forudsigelser',
                 excerpt: 'Opdag hvad stjernerne har i vente for dig i dag.',
                 category: 'Horoskoper'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Stjernetegns Kompatibilitet: Den Ultimative Kærlighedsguide 2024',
+                title: '❤️ Stjernetegns Kompatibilitet: Den Ultimative Kærlighedsguide 2026',
                 excerpt: 'Find ud af hvilke stjernetegn der passer bedst til dit.',
                 category: 'Kærlighed & Forhold'
             },
@@ -1285,7 +1285,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskoper'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Kærlighedshoroskop 2024: Forholdsprognoser for Hvert Tegn',
+                title: '💕 Kærlighedshoroskop 2026: Forholdsprognoser for Hvert Tegn',
                 excerpt: 'Er kærlighed skrevet i dine stjerner?',
                 category: 'Kærlighed & Forhold'
             }
@@ -1301,12 +1301,12 @@ const blogContent: Record<string, BlogTranslations> = {
     no: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Daglig Horoskop 2024: Komplett Guide til Dine Spådommer',
+                title: '⭐ Daglig Horoskop 2026: Komplett Guide til Dine Spådommer',
                 excerpt: 'Oppdag hva stjernene har i vente for deg i dag.',
                 category: 'Horoskoper'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Stjernetegnenes Kompatibilitet: Den Ultimate Kjærlighetsguide 2024',
+                title: '❤️ Stjernetegnenes Kompatibilitet: Den Ultimate Kjærlighetsguide 2026',
                 excerpt: 'Finn ut hvilke stjernetegn som passer best med ditt.',
                 category: 'Kjærlighet & Forhold'
             },
@@ -1326,7 +1326,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskoper'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Kjærlighetshoroskop 2024: Forholdsprognoser for Hvert Tegn',
+                title: '💕 Kjærlighetshoroskop 2026: Forholdsprognoser for Hvert Tegn',
                 excerpt: 'Er kjærlighet skrevet i stjernene dine?',
                 category: 'Kjærlighet & Forhold'
             }
@@ -1342,12 +1342,12 @@ const blogContent: Record<string, BlogTranslations> = {
     fi: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ Päivittäinen Horoskooppi 2024: Täydellinen Opas Ennusteisiin',
+                title: '⭐ Päivittäinen Horoskooppi 2026: Täydellinen Opas Ennusteisiin',
                 excerpt: 'Löydä mitä tähdet ovat varanneet sinulle tänään.',
                 category: 'Horoskooppi'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ Horoskooppien Yhteensopivuus: Lopullinen Rakkausopas 2024',
+                title: '❤️ Horoskooppien Yhteensopivuus: Lopullinen Rakkausopas 2026',
                 excerpt: 'Selvitä mitkä horoskooppimerkit sopivat parhaiten sinun kanssasi.',
                 category: 'Rakkaus & Suhteet'
             },
@@ -1367,7 +1367,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'Horoskooppi'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 Rakkaushoroskooppi 2024: Suhde-ennusteet Jokaiselle Merkille',
+                title: '💕 Rakkaushoroskooppi 2026: Suhde-ennusteet Jokaiselle Merkille',
                 excerpt: 'Onko rakkaus kirjoitettu tähtesi?',
                 category: 'Rakkaus & Suhteet'
             }
@@ -1383,12 +1383,12 @@ const blogContent: Record<string, BlogTranslations> = {
     he: {
         posts: {
             'daily-horoscope-guide': {
-                title: '⭐ הורוסקופ יומי 2024: מדריך מלא לתחזיות שלך',
+                title: '⭐ הורוסקופ יומי 2026: מדריך מלא לתחזיות שלך',
                 excerpt: 'גלה מה הכוכבים מכינים לך היום.',
                 category: 'הורוסקופים'
             },
             'zodiac-compatibility-complete-guide': {
-                title: '❤️ התאמת מזלות: המדריך האולטימטיבי לאהבה 2024',
+                title: '❤️ התאמת מזלות: המדריך האולטימטיבי לאהבה 2026',
                 excerpt: 'גלה אילו מזלות הכי מתאימים אליך.',
                 category: 'אהבה ויחסים'
             },
@@ -1408,7 +1408,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 category: 'הורוסקופים'
             },
             'love-horoscope-relationship-advice': {
-                title: '💕 הורוסקופ אהבה 2024: תחזיות זוגיות לכל מזל',
+                title: '💕 הורוסקופ אהבה 2026: תחזיות זוגיות לכל מזל',
                 excerpt: 'האם האהבה כתובה בכוכבים שלך?',
                 category: 'אהבה ויחסים'
             }

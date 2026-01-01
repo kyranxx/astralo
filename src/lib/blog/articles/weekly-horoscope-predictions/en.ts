@@ -5,7 +5,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: Your Zodiac Predictions for This Week 2024',
+    title: '📅 Weekly Horoscope: Your Zodiac Predictions for This Week 2026',
     excerpt: 'Get your weekly horoscope predictions for all 12 zodiac signs.',
     category: 'Weekly Predictions',
     metaDescription: 'Weekly horoscope for all zodiac signs. Get your accurate weekly predictions for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius & Pisces.',

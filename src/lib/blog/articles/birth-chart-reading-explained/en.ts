@@ -5,7 +5,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '🔮 Birth Chart Reading: Understanding Your Natal Chart Guide 2024',
+    title: '🔮 Birth Chart Reading: Understanding Your Natal Chart Guide 2026',
     excerpt: 'Learn how to read and interpret your astrological birth chart.',
     category: 'Astrology Guide',
     metaDescription: 'Complete guide to birth chart reading. Learn about planets, houses, and aspects in your natal chart. Discover what your astrology chart reveals about your personality and life path.',

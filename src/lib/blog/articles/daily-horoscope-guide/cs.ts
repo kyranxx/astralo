@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const cs: BlogPostTranslation = {
-    title: '⭐ Denní horoskop 2024: Kompletní průvodce vašimi předpověďmi',
+    title: '⭐ Denní horoskop 2026: Kompletní průvodce vašimi předpověďmi',
     excerpt: 'Zjistěte, co pro vás hvězdy dnes připravily.',
     category: 'Horoskopy',
     metaDescription: 'Denní horoskop pro všech 12 znamení zvěrokruhu. Přesné předpovědi pro Berana, Býka, Blížence, Raka, Lva, Pannu, Váhy, Štíra, Střelce, Kozoroha, Vodnáře a Ryby.',
-    keywords: 'denní horoskop, horoskop dnes, každodenní horoskop, znamení zvěrokruhu, horoskop 2024, zdarma horoskop',
+    keywords: 'denní horoskop, horoskop dnes, každodenní horoskop, znamení zvěrokruhu, horoskop 2026, zdarma horoskop',
     quickSummary: [
         'Denní horoskopy jsou založeny na pozicích planet vzhledem k vašemu znamení',
         'Denní pohyb Měsíce silně ovlivňuje vaše emoce a zážitky',

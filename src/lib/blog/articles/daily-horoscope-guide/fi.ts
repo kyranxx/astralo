@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: '⭐ Päivittäinen Horoskooppi 2024: Täydellinen Opas Ennusteisiin',
+    title: '⭐ Päivittäinen Horoskooppi 2026: Täydellinen Opas Ennusteisiin',
     excerpt: 'Löydä mitä tähdet ovat varanneet sinulle tänään.',
     category: 'Horoskooppi',
     metaDescription: 'Päivittäinen horoskooppi kaikille 12 horoskooppimerkille. Tarkat ennusteet Oinaalle, Härälle, Kaksosille, Ravulle, Leijonalle, Neitsyelle, Vaa\'alle, Skorpionille, Jousimielle, Kauriille, Vesimiehelle ja Kaloille.',
-    keywords: 'päivittäinen horoskooppi, horoskooppi tänään, päivän horoskooppi, horoskooppimerkit, horoskooppi 2024, ilmainen horoskooppi',
+    keywords: 'päivittäinen horoskooppi, horoskooppi tänään, päivän horoskooppi, horoskooppimerkit, horoskooppi 2026, ilmainen horoskooppi',
     quickSummary: [
         'Päivittäiset horoskooppit perustuvat planeettojen asemiin suhteessa horoskooppimerkkiisi',
         'Kuun päivittäinen liike vaikuttaa voimakkaasti tunteisiisi ja kokemuksiisi',

@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: '❤️ 星座配对: 2024年终极爱情匹配指南',
+    title: '❤️ 星座配对: 2026年终极爱情匹配指南',
     excerpt: '了解哪些星座与您最配。',
     category: '爱情与关系',
     metaDescription: '了解您的星座配对。白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、摩羯座、水瓶座和双鱼座的最佳匹配。',

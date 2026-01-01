@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-    title: '⭐ Oroscopo del giorno 2024: Guida completa alle tue previsioni zodiacali',
+    title: '⭐ Oroscopo del giorno 2026: Guida completa alle tue previsioni zodiacali',
     excerpt: 'Scopri cosa ti riservano le stelle oggi.',
     category: 'Oroscopi',
     metaDescription: 'Oroscopo del giorno per tutti i 12 segni zodiacali. Previsioni accurate per Ariete, Toro, Gemelli, Cancro, Leone, Vergine, Bilancia, Scorpione, Sagittario, Capricorno, Acquario e Pesci.',
-    keywords: 'oroscopo del giorno, oroscopo oggi, oroscopo giornaliero, segni zodiacali, oroscopo 2024, oroscopo gratis',
+    keywords: 'oroscopo del giorno, oroscopo oggi, oroscopo giornaliero, segni zodiacali, oroscopo 2026, oroscopo gratis',
     quickSummary: [
         'Gli oroscopi giornalieri si basano sulle posizioni planetarie relative al tuo segno',
         'Il movimento quotidiano della Luna influenza fortemente le tue emozioni',

@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-    title: '⭐ Horóscopo do dia 2024: Guia completo das suas previsões zodiacais',
+    title: '⭐ Horóscopo do dia 2026: Guia completo das suas previsões zodiacais',
     excerpt: 'Descubra o que as estrelas reservam para você hoje.',
     category: 'Horóscopos',
     metaDescription: 'Horóscopo do dia para todos os 12 signos do zodíaco. Previsões precisas para Áries, Touro, Gêmeos, Câncer, Leão, Virgem, Libra, Escorpião, Sagitário, Capricórnio, Aquário e Peixes.',
-    keywords: 'horóscopo do dia, horóscopo hoje, horóscopo diário, signos do zodíaco, horóscopo 2024, horóscopo grátis',
+    keywords: 'horóscopo do dia, horóscopo hoje, horóscopo diário, signos do zodíaco, horóscopo 2026, horóscopo grátis',
     quickSummary: [
         'Horóscopos diários são baseados nas posições planetárias relativas ao seu signo',
         'O movimento diário da Lua influencia fortemente suas emoções e experiências',

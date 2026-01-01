@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: '❤️ 별자리 궁합: 사랑 매칭 완벽 가이드 2024',
+    title: '❤️ 별자리 궁합: 사랑 매칭 완벽 가이드 2026',
     excerpt: '어떤 별자리가 당신과 가장 잘 맞는지 알아보세요.',
     category: '사랑 & 관계',
     metaDescription: '별자리 궁합을 확인하세요. 양자리, 황소자리, 쌍둥이자리, 게자리, 사자자리, 처녀자리, 천칭자리, 전갈자리, 사수자리, 염소자리, 물병자리, 물고기자리 최고의 매칭.',

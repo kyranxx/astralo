@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const de: Translations = {
     meta: {
-        title: 'Astralo - Tageshoroskop Heute Kostenlos 2024 | Genaue Sternzeichen Vorhersagen',
+        title: 'Astralo - Tageshoroskop Heute Kostenlos 2026 | Genaue Sternzeichen Vorhersagen',
         description: 'Holen Sie sich Ihr GRATIS Tageshoroskop heute! ⭐ Tägliche, wöchentliche & monatliche Vorhersagen. Liebeshoroskop, Partnerhoroskop & Karriere. 50.000+ zufriedene Kunden. Sofortige Lieferung!',
-        keywords: 'Tageshoroskop heute, Horoskop kostenlos, Wochenhoroskop, Monatshoroskop, Sternzeichen, Liebeshoroskop, Partnerhoroskop, Astrologie, Horoskop 2024, Steinbock Horoskop, Widder Horoskop, Wassermann Horoskop, genaues Horoskop, Geburtshoroskop',
+        keywords: 'Tageshoroskop heute, Horoskop kostenlos, Wochenhoroskop, Monatshoroskop, Sternzeichen, Liebeshoroskop, Partnerhoroskop, Astrologie, Horoskop 2026, Steinbock Horoskop, Widder Horoskop, Wassermann Horoskop, genaues Horoskop, Geburtshoroskop',
     },
     header: {
         badge: 'Personalisierte Horoskope',

@@ -2,9 +2,9 @@ import type { Translations } from './types';
 
 const id: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Harian Gratis 2024 | Prediksi Zodiak Akurat',
+        title: 'Astralo - Horoskop Harian Gratis 2026 | Prediksi Zodiak Akurat',
         description: 'Dapatkan horoskop pribadi gratis hari ini! ⭐ Prediksi harian, mingguan, dan bulanan. Kecocokan cinta, saran karir. 50.000+ pelanggan puas. Pengiriman instan!',
-        keywords: 'horoskop harian, horoskop gratis, horoskop hari ini, horoskop mingguan, horoskop bulanan, horoskop cinta, zodiak, astrologi, horoskop 2024, horoskop pribadi',
+        keywords: 'horoskop harian, horoskop gratis, horoskop hari ini, horoskop mingguan, horoskop bulanan, horoskop cinta, zodiak, astrologi, horoskop 2026, horoskop pribadi',
     },
     header: {
         badge: 'Horoskop Pribadi',
