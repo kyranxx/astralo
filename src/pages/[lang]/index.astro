@@ -162,8 +162,7 @@ const testimonials = getTestimonials(currentLang);
             return (
               <a
                 href={`/${currentLang}/form/${type.id}`}
-                class="horoscope-card group block relative glass-strong rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 no-underline border border-white/10 hover:border-amber-400/30 overflow-hidden"
-                style={`animation: fadeInUp 0.8s ease-out ${0.1 * index}s forwards; opacity: 0;`}
+                class={`horoscope-card group block relative glass-strong rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 no-underline border border-white/10 hover:border-amber-400/30 overflow-hidden animate-on-load animate-delay-${index + 1}`}
               >
                 {type.popular && (
                   <div class="absolute -top-1 -right-1 bg-gradient-to-br from-amber-400 to-amber-600 text-black text-[9px] sm:text-[10px] font-black px-2 sm:px-4 py-1 sm:py-1.5 rounded-bl-xl sm:rounded-bl-2xl shadow-lg z-20 uppercase tracking-tighter">
@@ -315,8 +314,7 @@ const testimonials = getTestimonials(currentLang);
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {testimonials.map((testimonial, index) => (
               <div 
-                class="glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300"
-                style={`animation: fadeInUp 0.8s ease-out ${0.1 * index}s forwards; opacity: 0;`}
+                class={`glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 animate-on-load animate-delay-${index + 1}`}
               >
                 <div class="flex items-center gap-1 mb-3 sm:mb-4">
                   {[...Array(testimonial.rating)].map(() => (
@@ -388,8 +386,7 @@ const testimonials = getTestimonials(currentLang);
             {latestArticles.map((article, index) => (
               <a 
                 href={`/${currentLang}/blog/${article.slug}/`}
-                class="glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 group border border-white/10 hover:border-amber-400/30"
-                style={`animation: fadeInUp 0.8s ease-out ${0.1 * index}s forwards; opacity: 0;`}
+                class={`glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 group border border-white/10 hover:border-amber-400/30 animate-on-load animate-delay-${index + 1}`}
               >
                 <div class="flex items-start gap-3 mb-3">
                   <span class="text-2xl">{article.meta?.emoji}</span>
@@ -422,14 +419,6 @@ const testimonials = getTestimonials(currentLang);
 </Layout>
 
 <style>
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  /* Animation classes are now defined in global.css for consistency */
+  /* Fallback ensures visibility even if animation fails */
 </style>

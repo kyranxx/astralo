@@ -88,15 +88,31 @@
 
 /* Smooth Animations - Optimized for CLS */
 /* NOTE: fadeInUp now uses opacity only to prevent CLS (layout shifts) */
+/* CRITICAL: Elements start visible and animate - ensures content shows even if CSS fails */
 @keyframes fadeInUp {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
+
+/* Fallback: Ensure animated elements are visible by default */
+/* This prevents invisible content if animations fail to load */
+.animate-on-load {
+  opacity: 1; /* Visible by default */
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays using CSS custom properties */
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
 
 /* Use this for non-critical elements where transform is OK */
 @keyframes fadeInUpTransform {
