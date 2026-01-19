@@ -81,14 +81,17 @@ export const POST: APIRoute = async ({ request }) => {
         }
 
 
-        // Determine Stripe locale
+        // Determine Stripe locale - use 'auto' for English to let Stripe handle it, potentially avoiding specific module loading errors
         const getStripeLocale = (lang: string): Stripe.Checkout.SessionCreateParams.Locale => {
-            const supported = ['en', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'sk', 'cs',
+            if (!lang || lang === 'en') return 'auto'; // Use auto for default/en
+
+            const supported = ['de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'sk', 'cs',
                 'hu', 'ro', 'bg', 'hr', 'sl', 'ru', 'el', 'tr', 'ja', 'ko', 'zh', 'th',
                 'vi', 'id', 'sv', 'da', 'fi', 'nb', 'et', 'lv', 'lt', 'ms', 'mt', 'fil'];
+
             if (lang === 'no') return 'nb';
             if (supported.includes(lang)) return lang as Stripe.Checkout.SessionCreateParams.Locale;
-            return 'auto'; // Fallback for unsupported locales (ar, hi, bn, uk, sr)
+            return 'auto';
         };
 
         const session = await stripe.checkout.sessions.create({
