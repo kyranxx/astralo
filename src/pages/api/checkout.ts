@@ -20,7 +20,7 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const stripe = new Stripe(stripeKey, {
-        apiVersion: '2026-11-20.acacia' as any,
+        apiVersion: undefined, // Use default or account setting
     });
 
     let rawData;
@@ -137,7 +137,8 @@ export const POST: APIRoute = async ({ request }) => {
         console.error('Stripe checkout error:', error.message);
 
         return new Response(JSON.stringify({
-            error: 'Error creating checkout session. Please try again.'
+            error: 'Error creating checkout session. Please try again.',
+            details: error.message // Exposed temporarily for debugging
         }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
