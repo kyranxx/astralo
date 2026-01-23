@@ -5,10 +5,10 @@
 
 // Product price configuration (in cents)
 export const productPrices = {
-    daily: 99,    // €0.99
-    weekly: 299,  // €2.99
-    monthly: 799, // €7.99
-    partner: 799, // €7.99
+    daily: 19,    // €0.19
+    weekly: 59,   // €0.59
+    monthly: 159, // €1.59
+    partner: 159, // €1.59
 } as const;
 
 export type ProductKey = keyof typeof productPrices;
