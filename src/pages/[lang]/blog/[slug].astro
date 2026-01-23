@@ -488,10 +488,11 @@ const shareUrls = {
 
     <!-- Article -->
     <main class="flex-1 px-4 py-12">
-      <article class="max-w-4xl mx-auto">
+      <!-- Added glass-strong background panel for readability -->
+      <article class="max-w-4xl mx-auto glass-strong p-6 md:p-12 rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl">
         <!-- Meta -->
-        <div class="flex flex-wrap items-center gap-4 mb-6 text-sm">
-          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full">{category}</span>
+        <div class="flex flex-wrap items-center gap-4 mb-8 text-sm">
+          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full font-medium tracking-wide">{category}</span>
           <span class="text-white/50 flex items-center gap-2">
             <Calendar class="w-4 h-4" />
             {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -503,58 +504,58 @@ const shareUrls = {
         </div>
 
         <!-- Title with Emoji -->
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">
           <span class="mr-3 inline-block transform hover:scale-110 transition-transform duration-300">{post.emoji}</span>{displayTitle}
         </h1>
 
         <!-- Author & Share -->
-        <div class="flex items-center justify-between mb-8 pb-8 border-b border-white/10">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-              <Star class="w-5 h-5 text-white" />
+        <div class="flex items-center justify-between mb-10 pb-10 border-b border-white/10">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+              <Star class="w-6 h-6 text-white" />
             </div>
             <div>
-              <p class="text-white font-medium">{post.author}</p>
+              <p class="text-white font-bold text-lg">{post.author}</p>
               <p class="text-white/50 text-sm">{ui.expertAstrologer}</p>
             </div>
           </div>
           
           <!-- Social Share Buttons -->
-          <div class="flex items-center gap-2">
-            <span class="text-white/50 text-sm hidden sm:inline">{ui.share}</span>
+          <div class="flex items-center gap-3">
+            <span class="text-white/50 text-sm hidden sm:inline font-medium">{ui.share}:</span>
             <a href={shareUrls.twitter} target="_blank" rel="noopener noreferrer" 
-               class="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all"
+               class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
                title="Share on Twitter">
-              <Twitter class="w-4 h-4" />
+              <Twitter class="w-5 h-5" />
             </a>
             <a href={shareUrls.facebook} target="_blank" rel="noopener noreferrer"
-               class="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all"
+               class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
                title="Share on Facebook">
-              <Facebook class="w-4 h-4" />
+              <Facebook class="w-5 h-5" />
             </a>
             <a href={shareUrls.linkedin} target="_blank" rel="noopener noreferrer"
-               class="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all"
+               class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
                title="Share on LinkedIn">
-              <Linkedin class="w-4 h-4" />
+              <Linkedin class="w-5 h-5" />
             </a>
             <button id="copy-link" 
-                    class="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all"
+                    class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
                     title="Copy link">
-              <Link2 class="w-4 h-4" />
+              <Link2 class="w-5 h-5" />
             </button>
           </div>
         </div>
 
         <!-- Quick Summary Box -->
-        <div class="glass-strong rounded-2xl p-6 mb-8 border border-amber-500/30">
-          <div class="flex items-center gap-2 mb-4">
-            <BookOpen class="w-5 h-5 text-amber-400" />
-            <h3 class="text-lg font-bold text-white">{ui.quickSummary}</h3>
+        <div class="glass-strong rounded-2xl p-8 mb-12 border border-amber-500/20 bg-amber-500/5">
+          <div class="flex items-center gap-3 mb-6">
+            <BookOpen class="w-6 h-6 text-amber-400" />
+            <h3 class="text-xl font-bold text-white">{ui.quickSummary}</h3>
           </div>
-          <ul class="space-y-2">
+          <ul class="space-y-4">
             {quickSummary.map((point: string) => (
-              <li class="flex items-start gap-3 text-white/80">
-                <span class="text-amber-400 mt-1">✓</span>
+              <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
+                <span class="text-amber-400 mt-1.5 font-bold">✓</span>
                 <span>{point}</span>
               </li>
             ))}
@@ -563,17 +564,17 @@ const shareUrls = {
 
         <!-- Table of Contents -->
         {tableOfContents && tableOfContents.length > 0 && (
-          <div class="glass rounded-2xl p-6 mb-8">
-            <div class="flex items-center gap-2 mb-4">
-              <List class="w-5 h-5 text-amber-400" />
-              <h3 class="text-lg font-bold text-white">{ui.tableOfContents}</h3>
+          <div class="glass rounded-2xl p-8 mb-12 border border-white/5">
+            <div class="flex items-center gap-3 mb-6">
+              <List class="w-6 h-6 text-amber-400" />
+              <h3 class="text-xl font-bold text-white">{ui.tableOfContents}</h3>
             </div>
-            <nav class="space-y-2">
+            <nav class="space-y-3">
               {tableOfContents.map((item: { id: string; title: string }, index: number) => (
                 <a href={`#${item.id}`} 
-                   class="flex items-center gap-3 text-white/70 hover:text-amber-400 transition-colors py-1">
-                  <span class="text-amber-400/50 text-sm font-mono">{String(index + 1).padStart(2, '0')}</span>
-                  <span>{item.title}</span>
+                   class="flex items-center gap-4 text-white/70 hover:text-amber-400 transition-colors py-1 group">
+                  <span class="text-white/20 text-sm font-mono group-hover:text-amber-500/50 transition-colors">{String(index + 1).padStart(2, '0')}</span>
+                  <span class="text-lg">{item.title}</span>
                 </a>
               ))}
             </nav>
@@ -582,27 +583,29 @@ const shareUrls = {
 
         <!-- Content -->
         <div 
-          class="prose prose-lg prose-invert max-w-none
-            prose-headings:text-white prose-headings:font-bold prose-headings:scroll-mt-20
+          class="article-content prose prose-xl prose-invert max-w-none
+            prose-headings:text-white prose-headings:font-bold prose-headings:scroll-mt-32
             prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:pb-4 prose-h2:border-b prose-h2:border-white/10
             prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-amber-200
-            prose-p:text-white/80 prose-p:leading-loose prose-p:mb-8 text-lg
-            prose-strong:text-white prose-strong:font-bold
-            prose-ul:text-white/80 prose-li:mb-3
-            prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline"
+            prose-p:text-gray-100 prose-p:leading-8 prose-p:mb-10 prose-p:text-lg
+            prose-strong:text-amber-300 prose-strong:font-bold
+            prose-ul:text-gray-100 prose-li:mb-4 prose-ul:my-8 prose-li:leading-relaxed
+            prose-ol:text-gray-100 prose-ol:my-8 prose-ol:list-decimal prose-ol:pl-6
+            prose-a:text-amber-400 prose-a:no-underline hover:prose-a:text-amber-300 transition-colors
+            prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:bg-white/5 prose-blockquote:p-6 prose-blockquote:rounded-r-lg prose-blockquote:italic"
           set:html={articleContent}
         />
 
         <!-- Key Takeaways Box -->
-        <div class="glass-strong rounded-2xl p-6 mt-10 border border-green-500/30">
-          <div class="flex items-center gap-2 mb-4">
-            <Star class="w-5 h-5 text-green-400" />
-            <h3 class="text-lg font-bold text-white">{ui.keyTakeaways}</h3>
+        <div class="glass-strong rounded-2xl p-8 mt-16 border border-green-500/30 bg-green-500/5">
+          <div class="flex items-center gap-3 mb-6">
+            <Star class="w-6 h-6 text-green-400" />
+            <h3 class="text-xl font-bold text-white">{ui.keyTakeaways}</h3>
           </div>
-          <ul class="space-y-2">
+          <ul class="space-y-4">
             {keyTakeaways.map((point: string) => (
-              <li class="flex items-start gap-3 text-white/80">
-                <span class="text-green-400 mt-1">★</span>
+              <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
+                <span class="text-green-400 mt-1.5 font-bold">★</span>
                 <span>{point}</span>
               </li>
             ))}
@@ -610,10 +613,10 @@ const shareUrls = {
         </div>
 
         <!-- CTA -->
-        <div class="mt-12 glass-strong rounded-2xl p-8 text-center border border-amber-500/30">
-          <h3 class="text-2xl font-bold text-white mb-3">{ui.getPersonalized}</h3>
-          <p class="text-white/70 mb-6">{ui.basedOnBirthData}</p>
-          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-black font-bold rounded-full hover:bg-amber-400 transition-colors">
+        <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
+          <h3 class="text-3xl font-bold text-white mb-4">{ui.getPersonalized}</h3>
+          <p class="text-white/80 mb-8 text-lg">{ui.basedOnBirthData}</p>
+          <a href={`/${currentLang}/`} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
             <Star class="w-5 h-5" />
             {ui.orderNow}
           </a>
@@ -621,14 +624,14 @@ const shareUrls = {
 
         <!-- Related Posts -->
         {relatedPosts.length > 0 && (
-          <div class="mt-12">
-            <h3 class="text-xl font-bold text-white mb-6">{ui.relatedArticles}</h3>
-            <div class="grid md:grid-cols-2 gap-6">
+          <div class="mt-20 border-t border-white/10 pt-16">
+            <h3 class="text-2xl font-bold text-white mb-8">{ui.relatedArticles}</h3>
+            <div class="grid md:grid-cols-2 gap-8">
               {relatedPosts.map(([s, p]) => (
-                <a href={`/${currentLang}/blog/${s}`} class="glass rounded-xl p-5 block hover:border-amber-500/30 border border-white/10 transition-all group">
-                  <span class="text-2xl mb-2 inline-block">{p.emoji}</span>
-                  <span class="text-amber-400 text-xs block mb-1">{p.category}</span>
-                  <h4 class="text-white font-medium group-hover:text-amber-200 transition-colors">{p.displayTitle}</h4>
+                <a href={`/${currentLang}/blog/${s}`} class="glass rounded-2xl p-8 block hover:border-amber-500/30 border border-white/10 transition-all group hover:-translate-y-1">
+                  <span class="text-3xl mb-4 inline-block">{p.emoji}</span>
+                  <span class="text-amber-400 text-sm font-medium block mb-2 tracking-wide uppercase">{p.category}</span>
+                  <h4 class="text-xl text-white font-bold group-hover:text-amber-200 transition-colors">{p.displayTitle}</h4>
                 </a>
               ))}
             </div>
@@ -641,7 +644,7 @@ const shareUrls = {
   </div>
 </Layout>
 
-<style>
+<style is:global>
   /* Smooth scroll for anchor links */
   html {
     scroll-behavior: smooth;
@@ -650,6 +653,26 @@ const shareUrls = {
   /* Reading progress bar animation */
   #reading-progress {
     transform-origin: left;
+  }
+
+  /* Force Spacing for Blog Content - overriding any potential prose conflicts */
+  .article-content > p {
+    margin-bottom: 2.5rem !important; /* Huge space between paragraphs */
+    display: block !important;
+  }
+  
+  .article-content > h2 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .article-content > h3 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .article-content ul, .article-content ol {
+    margin-bottom: 2.5rem !important;
   }
 </style>
 
