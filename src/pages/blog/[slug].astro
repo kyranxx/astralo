@@ -743,8 +743,9 @@ const shareUrls = {
 
         <!-- Content -->
         <!-- Added prose-p:mb-10 relative to leading-loose for massive Medium-style gaps -->
+        <!-- Content -->
         <div 
-          class="prose prose-xl prose-invert max-w-none
+          class="article-content prose prose-xl prose-invert max-w-none
             prose-headings:text-white prose-headings:font-bold prose-headings:scroll-mt-32
             prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:pb-4 prose-h2:border-b prose-h2:border-white/10
             prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-amber-200
@@ -804,7 +805,7 @@ const shareUrls = {
   </div>
 </Layout>
 
-<style>
+<style is:global>
   /* Smooth scroll for anchor links */
   html {
     scroll-behavior: smooth;
@@ -813,6 +814,26 @@ const shareUrls = {
   /* Reading progress bar animation */
   #reading-progress {
     transform-origin: left;
+  }
+
+  /* Force Spacing for Blog Content - overriding any potential prose conflicts */
+  .article-content > p {
+    margin-bottom: 2.5rem !important; /* Huge space between paragraphs */
+    display: block !important;
+  }
+  
+  .article-content > h2 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .article-content > h3 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .article-content ul, .article-content ol {
+    margin-bottom: 2.5rem !important;
   }
 </style>
 
