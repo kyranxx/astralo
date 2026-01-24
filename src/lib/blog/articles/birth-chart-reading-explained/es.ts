@@ -1,80 +1,94 @@
 /**
- * birth-chart-reading-explained - ES
+ * Birth Chart Reading - Spanish (Español)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const es: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.", // Excerpt remains EN mostly
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}], // TO-DO: Translate TOC
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: '🔮 Lectura de Carta Natal: La Guía Completa de tu Mapa Cósmico',
+  excerpt: 'Desbloquea los secretos de tu personalidad con nuestra guía definitiva de lectura de cartas natales. Aprende a interpretar Planetas, Casas, Aspectos y los Nodos del Destino como un profesional.',
+  category: 'Conceptos Básicos',
+  metaDescription: 'Desbloquea los secretos de tu personalidad con nuestra guía definitiva. Aprende a interpretar Planetas, Casas, Aspectos y los Nodos del Destino.',
+  keywords: 'carta natal, carta astral, lectura de carta, tres grandes astrología, signo ascendente, signo lunar, casas astrológicas, aspectos planetarios',
+  quickSummary: [
+    'Tu carta natal es una captura de pantalla de 360 grados del cielo en el momento exacto de tu nacimiento',
+    'Los "Tres Grandes" (Sol, Luna, Ascendente) forman el trípode central de tu personalidad',
+    'Las 12 Casas describen "dónde" ocurren los eventos, mientras que los Planetas describen "qué" sucede',
+    'Los Aspectos (líneas que conectan planetas) revelan tus conflictos internos y talentos especiales'
+  ],
+  keyTakeaways: [
+    'El Ascendente es a menudo más preciso para la predicción que el Signo Solar',
+    'Los aspectos duros (Cuadraturas, Oposiciones) crean a las personas más exitosas a través de la resiliencia',
+    'El Nodo Norte revela la dirección kármica de tu alma en esta vida',
+    'Los informes generados por computadora son geniales, pero el matiz humano es irremplazable'
+  ],
+  tableOfContents: [
+    { id: 'what-is-birth-chart', title: 'El Plano de tu Alma' },
+    { id: 'the-big-three', title: 'Los Tres Grandes: Sol, Luna, Ascendente' },
+    { id: 'the-planets', title: 'Los Planetas: Interiores vs. Exteriores' },
+    { id: 'the-houses', title: 'El Escenario de las 12 Casas' },
+    { id: 'aspects', title: 'Aspectos: La Conversación Cósmica' },
+    { id: 'nodes', title: 'Los Nodos del Destino' }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">El Plano de tu Alma</h2>
+      <p>¿Alguna vez has sentido que no encajas del todo en la descripción de tu signo del Zodiaco? "¡Soy Leo, pero odio ser el centro de atención!" La razón probablemente esté oculta en tu <strong>carta natal</strong>. Si bien tu signo solar es importante, es solo una variable en una ecuación masiva y compleja.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Una carta natal es un mapa de los cielos calculado para la hora, fecha y ubicación exactas de tu nacimiento. Te coloca en el centro del universo, con los planetas dispuestos a tu alrededor. Piensa en ello como tu "ADN Cósmico".</p>
 
-      <h2 id="the-big-three">The Big Three: Sol, Luna, Ascendente</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Los Tres Grandes: Sol, Luna, Ascendente</h2>
+      <p>Antes de sumergirse en la geometría compleja, todo estudiante de astrología debe dominar sus "Tres Grandes". Estos tres puntos determinan la mayor parte de tu personalidad.</p>
       
-      <h3>1. The Sol ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. El Sol ☀️ (Identidad)</h3>
+      <p>El Sol representa tu ego consciente. Es tu combustible, tu impulso y la frecuencia energética que emites. Responde a la pregunta: <em>"¿Quién soy en mi núcleo?"</em></p>
 
-      <h3>2. The Luna 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. La Luna 🌙 (Emoción)</h3>
+      <p>La Luna representa tu mundo interior, tus instintos y tu subconsciente. Dicta cómo reaccionas cuando estás herido, hambriento o cansado. Responde a la pregunta: <em>"¿Qué necesito para sentirme seguro?"</em></p>
 
-      <h3>3. The Ascendant / Ascendente Signo 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. El Ascendente 🏹 (Máscara)</h3>
+      <p>El Signo Ascendente es el signo zodiacal que estaba ascendiendo en el horizonte oriental cuando naciste. Es tu "interfaz" con el mundo. Determina tu apariencia física y tu primera impresión.</p>
 
-      <h2 id="the-planets">The Planetas: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Los Planetas: Interiores vs. Exteriores</h2>
+      <p>En tu <strong>lectura de carta natal</strong>, los planetas son los actores que interpretan papeles en la historia de tu vida.</p>
       
-      <h3>The Personal Planetas (Fast Moving)</h3>
+      <h3>Los Planetas Personales (Movimiento Rápido)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Mercurio ☿️:</strong> El Mensajero. Rige tu intelecto y habla.</li>
+        <li><strong>Venus ♀:</strong> El Amante. Rige la atracción, el arte y el dinero.</li>
+        <li><strong>Marte ♂:</strong> El Guerrero. Rige la acción, la ira y la libido.</li>
       </ul>
 
-      <h3>The Social & Outer Planetas (Slow Moving)</h3>
+      <h3>Los Planetas Sociales y Exteriores (Movimiento Lento)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Júpiter ♃:</strong> El Gurú. Dónde encuentras suerte y expansión.</li>
+        <li><strong>Saturno ♄:</strong> El Capataz. Dónde enfrentas restricciones.</li>
+        <li><strong>Urano, Neptuno, Plutón:</strong> Los Planetas Generacionales. Afectan a un nivel profundo y subconsciente.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Casas</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">El Escenario: Las 12 Casas</h2>
+      <p>La carta se divide en 12 "Casas", como rebanadas de una pizza. Cada casa gobierna un área específica de la vida.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>Casa 1:</strong> Yo, Cuerpo, Apariencia.</li>
+        <li><strong>Casa 2:</strong> Dinero, Posesiones, Valores.</li>
+        <li><strong>Casa 3:</strong> Comunicación, Hermanos.</li>
+        <li><strong>Casa 4:</strong> Hogar, Familia.</li>
+        <li><strong>Casa 5:</strong> Creatividad, Romance, Hijos.</li>
+        <li><strong>Casa 6:</strong> Rutina Diaria, Salud.</li>
+        <li><strong>Casa 7:</strong> Matrimonio, Asociaciones.</li>
+        <li><strong>Casa 8:</strong> Muerte, Sexo, Transformación.</li>
+        <li><strong>Casa 9:</strong> Filosofía, Viajes.</li>
+        <li><strong>Casa 10:</strong> Carrera, Imagen Pública.</li>
+        <li><strong>Casa 11:</strong> Amigos, Redes.</li>
+        <li><strong>Casa 12:</strong> Subconsciente, Secretos.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspectos: La Conversación Cósmica</h2>
+      <p>Los planetas no trabajan aislados. Forman ángulos geométricos llamados "Aspectos".</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Aspectos Suaves (Trígono, Sextil):</strong> Estos son regalos. Los planetas se ayudan mutuamente.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Aspectos Duros (Cuadratura, Oposición):</strong> Estos son desafíos. Los planetas están luchando o bloqueándose mutuamente. Sin embargo, crean la energía necesaria para un alto rendimiento.</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
-      
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h2 id="nodes">Los Nodos del Destino</h2>
+      <p>Finalmente, busca los símbolos de herradura. El <strong>Nodo Norte</strong> representa tu destino. El <strong>Nodo Sur</strong> es tu vida pasada (o infancia temprana)—se siente familiar y fácil, pero quedarse allí lleva al estancamiento.</p>
     `
 };
