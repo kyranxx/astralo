@@ -1,73 +1,64 @@
 /**
  * Zodiac Compatibility - Polish (Polski)
- * SEO Keywords: kompatybilność znaków zodiaku, horoskop miłosny, dopasowanie znaków
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: '❤️ Kompatybilność Znaków Zodiaku: Ostateczny Przewodnik Miłosny 2026',
-    excerpt: 'Sprawdź, które znaki zodiaku są najbardziej kompatybilne z Twoim.',
-    category: 'Miłość i Związki',
-    metaDescription: 'Odkryj swoją kompatybilność zodiakalną. Najlepsze dopasowania dla Barana, Byka, Bliźniąt, Raka, Lwa, Panny, Wagi, Skorpiona, Strzelca, Koziorożca, Wodnika i Ryb.',
-    keywords: 'kompatybilność znaków zodiaku, horoskop miłosny, dopasowanie znaków, kompatybilność astrologiczna, horoskop partnerski',
+    title: '❤️ Zgodność znaków zodiaku: Definitywny przewodnik po kosmicznej miłości',
+    excerpt: 'Ostateczny przewodnik po zgodności znaków zodiaku na rok 2026. Wyjdź poza znaki słoneczne i dowiedz się, jak Żywioły, Wenus i Mars wpływają na Twoją romantyczną chemię.',
+    category: 'Miłość i związki',
+    metaDescription: 'Ostateczny przewodnik po zgodności znaków zodiaku na rok 2026. Dowiedz się, jak Żywioły, Wenus i Mars wpływają na Twoją romantyczną chemię i długoterminowy potencjał.',
+    keywords: 'zgodność zodiakalna, horoskop miłosny, synastria, dopasowanie znaków, wenus w miłości, mars i pasja, astrologia relacji',
     quickSummary: [
-        'Kompatybilność zodiaków opiera się na interakcji elementów astrologicznych',
-        'Znaki Ognia (Baran, Lew, Strzelec) pasują dobrze do znaków Powietrza',
-        'Znaki Ziemi (Byk, Panna, Koziorożec) harmonizują ze znakami Wody',
-        'Horoskop partnerski analizuje oba horoskopy urodzeniowe'
+        'Prawdziwa zgodność obejmuje porównanie pełnych kosmogramów (synastria), a nie tylko znaków słonecznych',
+        'Równowaga żywiołów (Ogień, Ziemia, Powietrze, Woda) jest podstawą harmonii w związku',
+        ' „Niezgodne” znaki często oferują największe możliwości wzrostu duszy',
+        'Wenus określa styl okazywania uczuć, podczas gdy Mars napędza pasję i styl rozwiązywania konfliktów'
     ],
     keyTakeaways: [
-        'Kompatybilność elementarna jest dobrym punktem wyjścia',
-        'Znaki przeciwne często mają intensywną atrakcję',
-        'Pełna karta synastrii zapewnia najdokładniejszą analizę',
-        'Każda para znaków może współpracować ze zrozumieniem'
+        'Szukaj trygonów (ten sam żywioł) dla łatwości i opozycji dla intensywnego przyciągania',
+        'Zgodność znaków księżycowych jest kluczowa dla wspólnego mieszkania i bezpieczeństwa emocjonalnego',
+        'Zgodność Merkurego dyktuje, jak dobrze razem rozwiązujecie problemy',
+        'Nie ma „idealnego” dopasowania; każda para ma swoje mocne strony i wyzwania'
     ],
     tableOfContents: [
-        { id: 'understanding-compatibility', title: 'Zrozumienie kompatybilności' },
-        { id: 'elements', title: 'Elementy kompatybilności' },
-        { id: 'best-matches', title: 'Najlepsze dopasowania' },
-        { id: 'partner-reading', title: 'Analiza kompatybilności' }
+        { id: 'beyond-sun-signs', title: 'Dlaczego znaki słoneczne to nie wszystko' },
+        { id: 'elemental-love', title: '4 żywioły w miłości' },
+        { id: 'love-planets', title: 'Wenus, Mars i Księżyc' },
+        { id: 'challenging-matches', title: 'Prawda o „złych” dopasowaniach' },
+        { id: 'best-matches-deep-dive', title: 'Głęboka analiza: Najlepsze dopasowania' },
+        { id: 'synastry', title: 'Zaawansowana wskazówka: Synastria' }
     ],
     content: `
-        <h2 id="understanding-compatibility">Zrozumienie kompatybilności znaków</h2>
-        <p><strong>Kompatybilność zodiaków</strong> bada, jak różne znaki astrologiczne współdziałają w związkach.</p>
-        
-        <h2 id="elements">Elementy kompatybilności</h2>
-        <ul>
-            <li><strong>🔥 Znaki Ognia (♈ Baran, ♌ Lew, ♐ Strzelec)</strong>: Pasjonaci i poszukiwacze przygód</li>
-            <li><strong>🌍 Znaki Ziemi (♉ Byk, ♍ Panna, ♑ Koziorożec)</strong>: Praktyczni i niezawodni</li>
-            <li><strong>💨 Znaki Powietrza (♊ Bliźnięta, ♎ Waga, ♒ Wodnik)</strong>: Intelektualni i komunikatywni</li>
-            <li><strong>💧 Znaki Wody (♋ Rak, ♏ Skorpion, ♓ Ryby)</strong>: Emocjonalni i intuicyjni</li>
-        </ul>
-        
-        <h2 id="best-matches">Najlepsze dopasowania zodiaków</h2>
-        <h3>♈ Kompatybilność Barana</h3>
-        <p><strong>Baran</strong> pasuje do Lwa, Strzelca, Bliźniąt i Wodnika.</p>
-        <h3>♉ Kompatybilność Byka</h3>
-        <p><strong>Byk</strong> harmonizuje z Panną, Koziorożcem, Rakiem i Rybami.</p>
-        <h3>♊ Kompatybilność Bliźniąt</h3>
-        <p><strong>Bliźnięta</strong> wyróżniają się z Wagą, Wodnikiem, Baranem i Lwem.</p>
-        <h3>♋ Kompatybilność Raka</h3>
-        <p><strong>Rak</strong> łączy się ze Skorpionem, Rybami, Bykiem i Panną.</p>
-        <h3>♌ Kompatybilność Lwa</h3>
-        <p><strong>Lew</strong> błyszczy z Baranem, Strzelcem, Bliźniętami i Wagą.</p>
-        <h3>♍ Kompatybilność Panny</h3>
-        <p><strong>Panna</strong> rozwija się z Bykiem, Koziorożcem, Rakiem i Skorpionem.</p>
-        <h3>♎ Kompatybilność Wagi</h3>
-        <p><strong>Waga</strong> harmonizuje z Bliźniętami, Wodnikiem, Lwem i Strzelcem.</p>
-        <h3>♏ Kompatybilność Skorpiona</h3>
-        <p><strong>Skorpion</strong> intensyfikuje z Rakiem, Rybami, Panną i Koziorożcem.</p>
-        <h3>♐ Kompatybilność Strzelca</h3>
-        <p><strong>Strzelec</strong> lata z Baranem, Lwem, Wagą i Wodnikiem.</p>
-        <h3>♑ Kompatybilność Koziorożca</h3>
-        <p><strong>Koziorożec</strong> buduje z Bykiem, Panną, Skorpionem i Rybami.</p>
-        <h3>♒ Kompatybilność Wodnika</h3>
-        <p><strong>Wodnik</strong> iskrzy z Bliźniętami, Wagą, Baranem i Strzelcem.</p>
-        <h3>♓ Kompatybilność Ryb</h3>
-        <p><strong>Ryby</strong> płyną z Rakiem, Skorpionem, Bykiem i Koziorożcem.</p>
-        
-        <h2 id="partner-reading">Analiza kompatybilności partnerskiej</h2>
-        <p>Dla pełnego zrozumienia swojej <strong>kompatybilności miłosnej</strong>, zamów spersonalizowany horoskop partnerski w Astralo.</p>
+      <h2 id="beyond-sun-signs">Dlaczego znaki słoneczne to nie wszystko</h2>
+      <p>Wszyscy to przerabialiśmy: sprawdzanie aplikacji, aby dowiedzieć się, czy nasz obiekt westchnień pasuje do nas. „O nie, ja jestem Lwem, a on Skorpionem — jesteśmy skazani na porażkę!” Ale zaczekaj chwilę. <strong>Zgodność zodiakalna</strong> jest nieskończenie bardziej złożona i pełna nadziei niż proste dopasowanie z tabeli.</p>
+      
+      <p>Podczas gdy Twój znak słoneczny reprezentuje Twoje ego i cel życiowy, związki buduje się na emocjach, komunikacji i wartościach. Aby naprawdę zrozumieć <strong>dopasowania miłosne</strong>, musimy spojrzeć na pełny obraz nieba.</p>
+
+      <h2 id="elemental-love">4 żywioły w miłości</h2>
+      <p>Najszybszym sposobem na ocenę początkowej chemii są żywioły. Znaki tego samego żywiołu zazwyczaj „mówią tym samym językiem”.</p>
+      
+      <ul>
+        <li><strong>Znaki Ognia (Baran, Lew, Strzelec):</strong> Potrzebują pasji, przygody i kogoś, kto nadąży za ich tempem.</li>
+        <li><strong>Znaki Ziemi (Byk, Panna, Koziorożec):</strong> Szukają stabilności, budowania i praktycznych dowodów miłości.</li>
+        <li><strong>Znaki Powietrza (Bliźnięta, Waga, Wodnik):</strong> Potrzebują stymulacji intelektualnej, rozmowy i wolności.</li>
+        <li><strong>Znaki Wody (Rak, Skorpion, Ryby):</strong> Szukają głębokiego połączenia emocjonalnego, intymności i zrozumienia bez słów.</li>
+      </ul>
+
+      <h2 id="love-planets">Prawdziwe planety miłości: Wenus, Mars i Księżyc</h2>
+      <p>W codziennym życiu kluczowe są te punkty:</p>
+      <ul>
+        <li><strong>Księżyc 🌙 (Bezpieczeństwo emocjonalne):</strong> W długoterminowym związku zgodność Księżyców jest najważniejsza. Określa, czego potrzebujesz, aby czuć się bezpiecznie.</li>
+        <li><strong>Wenus ♀ (Romantyzm i wartości):</strong> Określa Twój styl flirtowania i to, co cenisz u partnera.</li>
+        <li><strong>Mars ♂ (Pasja i kłótnie):</strong> To planeta libido i konfliktów. Pokazuje, jak się kłócicie i jak żyjecie pasją.</li>
+      </ul>
+
+      <h2 id="challenging-matches">Prawda o „złych” dopasowaniach</h2>
+      <p>A co, jeśli zakochasz się w „niezgodnym” znaku? Te relacje są często najbardziej <strong>transformujące</strong>. W astrologii tworzą tarcie, ale tarcie wytwarza ciepło! Wyzwania zmuszają Cię do wzrostu i wyjścia ze strefy komfortu.</p>
+
+      <h2 id="synastry">Zaawansowana zgodność: Synastria</h2>
+      <p>Prawdziwą odpowiedź na temat Twojego związku daje <strong>synastria</strong>. Polega ona na nałożeniu Twojego kosmogramu na kosmogram partnera, aby znaleźć głębokie połączenia.</p>
+      
+      <p>W Astralo nasze zaawansowane algorytmy nie podają tylko procentów. Tworzymy mapę duszy Twojego związku. Przestań zgadywać i zacznij rozumieć kosmiczny cel Twojego zjednoczenia.</p>
     `
 };

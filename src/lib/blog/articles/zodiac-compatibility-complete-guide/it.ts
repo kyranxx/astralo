@@ -1,73 +1,64 @@
 /**
  * Zodiac Compatibility - Italian (Italiano)
- * SEO Keywords: compatibilità segni zodiacali, oroscopo amore, affinità di coppia
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-    title: '❤️ Compatibilità Segni Zodiacali: La Guida Definitiva all\'Amore 2026',
-    excerpt: 'Scopri quali segni zodiacali sono più compatibili con il tuo.',
-    category: 'Amore e Relazioni',
-    metaDescription: 'Scopri la tua compatibilità zodiacale. I migliori match per Ariete, Toro, Gemelli, Cancro, Leone, Vergine, Bilancia, Scorpione, Sagittario, Capricorno, Acquario e Pesci.',
-    keywords: 'compatibilità segni zodiacali, oroscopo amore, affinità di coppia, compatibilità astrologica, oroscopo coppia',
+    title: '❤️ Compatibilità dei segni zodiacali: La guida definitiva all\'amore cosmico',
+    excerpt: 'La guida definitiva del 2026 alla compatibilità zodiacale. Vai oltre i segni solari e scopri come gli Elementi, Venere e Marte influenzano la tua chimica romantica.',
+    category: 'Amore e relazioni',
+    metaDescription: 'La guida definitiva del 2026 alla compatibilità zodiacale. Scopri come gli Elementi, Venere e Marte influenzano la tua chimica romantica e il tuo potenziale a lungo termine.',
+    keywords: 'compatibilità zodiacale, oroscopo dell\'amore, sinastria, compatibilità dei segni, venere nell\'amore, marte e passione, astrologia relazionale',
     quickSummary: [
-        'La compatibilità zodiacale si basa su come interagiscono gli elementi astrologici',
-        'I segni di Fuoco (Ariete, Leone, Sagittario) si abbinano bene con i segni d\'Aria',
-        'I segni di Terra (Toro, Vergine, Capricorno) armonizzano con i segni d\'Acqua',
-        'L\'oroscopo di coppia analizza entrambi i temi natali per insight profondi'
+        'La vera compatibilità implica il confronto dei temi natali completi (sinastria), non solo dei segni solari',
+        'L\'equilibrio elementale (Fuoco, Terra, Aria, Acqua) è la base dell\'armonia nella relazione',
+        'I segni "incompatibili" offrono spesso le migliori opportunità per la crescita dell\'anima',
+        'Venere determina lo stile di affetto, mentre Marte guida la passione e lo stile di conflitto'
     ],
     keyTakeaways: [
-        'La compatibilità elementare è un buon punto di partenza',
-        'I segni opposti hanno spesso un\'attrazione intensa',
-        'Un tema di sinastria completo offre l\'analisi più accurata',
-        'Qualsiasi coppia di segni può funzionare con comprensione'
+        'Cerca trigoni (stesso elemento) per la facilità e opposizioni per un\'attrazione intensa',
+        'La compatibilità dei segni lunari è fondamentale per la convivenza e la sicurezza emotiva',
+        'La compatibilità di Mercurio determina quanto bene risolvete i problemi insieme',
+        'Non esiste un partner "perfetto"; ogni coppia ha punti di forza e sfide'
     ],
     tableOfContents: [
-        { id: 'understanding-compatibility', title: 'Capire la compatibilità' },
-        { id: 'elements', title: 'Gli elementi della compatibilità' },
-        { id: 'best-matches', title: 'Migliori affinità' },
-        { id: 'partner-reading', title: 'Lettura di compatibilità' }
+        { id: 'beyond-sun-signs', title: 'Perché i segni solari non sono tutto' },
+        { id: 'elemental-love', title: 'I 4 elementi nell\'amore' },
+        { id: 'love-planets', title: 'Venere, Marte e la Luna' },
+        { id: 'challenging-matches', title: 'La verità sui match "difficili"' },
+        { id: 'best-matches-deep-dive', title: 'Analisi approfondita: I migliori match' },
+        { id: 'synastry', title: 'Consiglio esperto: La sinastria' }
     ],
     content: `
-        <h2 id="understanding-compatibility">Capire la compatibilità zodiacale</h2>
-        <p>La <strong>compatibilità zodiacale</strong> studia come i diversi segni astrologici interagiscono nelle relazioni.</p>
-        
-        <h2 id="elements">Gli elementi della compatibilità</h2>
-        <ul>
-            <li><strong>🔥 Segni di Fuoco (♈ Ariete, ♌ Leone, ♐ Sagittario)</strong>: Appassionati e avventurosi</li>
-            <li><strong>🌍 Segni di Terra (♉ Toro, ♍ Vergine, ♑ Capricorno)</strong>: Pratici e affidabili</li>
-            <li><strong>💨 Segni d'Aria (♊ Gemelli, ♎ Bilancia, ♒ Acquario)</strong>: Intellettuali e comunicativi</li>
-            <li><strong>💧 Segni d'Acqua (♋ Cancro, ♏ Scorpione, ♓ Pesci)</strong>: Emotivi e intuitivi</li>
-        </ul>
-        
-        <h2 id="best-matches">Migliori affinità zodiacali</h2>
-        <h3>♈ Compatibilità Ariete</h3>
-        <p><strong>L'Ariete</strong> è compatibile con Leone, Sagittario, Gemelli e Acquario.</p>
-        <h3>♉ Compatibilità Toro</h3>
-        <p><strong>Il Toro</strong> armonizza con Vergine, Capricorno, Cancro e Pesci.</p>
-        <h3>♊ Compatibilità Gemelli</h3>
-        <p><strong>I Gemelli</strong> eccellono con Bilancia, Acquario, Ariete e Leone.</p>
-        <h3>♋ Compatibilità Cancro</h3>
-        <p><strong>Il Cancro</strong> si connette con Scorpione, Pesci, Toro e Vergine.</p>
-        <h3>♌ Compatibilità Leone</h3>
-        <p><strong>Il Leone</strong> brilla con Ariete, Sagittario, Gemelli e Bilancia.</p>
-        <h3>♍ Compatibilità Vergine</h3>
-        <p><strong>La Vergine</strong> prospera con Toro, Capricorno, Cancro e Scorpione.</p>
-        <h3>♎ Compatibilità Bilancia</h3>
-        <p><strong>La Bilancia</strong> armonizza con Gemelli, Acquario, Leone e Sagittario.</p>
-        <h3>♏ Compatibilità Scorpione</h3>
-        <p><strong>Lo Scorpione</strong> intensifica con Cancro, Pesci, Vergine e Capricorno.</p>
-        <h3>♐ Compatibilità Sagittario</h3>
-        <p><strong>Il Sagittario</strong> vola con Ariete, Leone, Bilancia e Acquario.</p>
-        <h3>♑ Compatibilità Capricorno</h3>
-        <p><strong>Il Capricorno</strong> costruisce con Toro, Vergine, Scorpione e Pesci.</p>
-        <h3>♒ Compatibilità Acquario</h3>
-        <p><strong>L'Acquario</strong> scintilla con Gemelli, Bilancia, Ariete e Sagittario.</p>
-        <h3>♓ Compatibilità Pesci</h3>
-        <p><strong>I Pesci</strong> fluiscono con Cancro, Scorpione, Toro e Capricorno.</p>
-        
-        <h2 id="partner-reading">Lettura di compatibilità di coppia</h2>
-        <p>Per una comprensione completa della tua <strong>compatibilità amorosa</strong>, ottieni un oroscopo di coppia personalizzato su Astralo.</p>
+      <h2 id="beyond-sun-signs">Perché i segni solari non sono tutto</h2>
+      <p>Ci siamo passati tutti: controllare un\'app per vedere se il nostro interesse amoroso è compatibile con noi. "Oh no, io sono Leone e lui è Scorpione - siamo spacciati!" Ma aspetta un attimo. La <strong>compatibilità zodiacale</strong> è infinitamente più complessa e speranzosa di un semplice abbinamento da tabella.</p>
+      
+      <p>Mentre il tuo segno solare rappresenta il tuo ego e il tuo scopo di vita, le relazioni si costruiscono sulle emozioni, sulla comunicazione e sui valori. Per capire veramente le <strong>affinità amorose</strong>, dobbiamo guardare l\'intero quadro del cielo.</p>
+
+      <h2 id="elemental-love">I 4 elementi nell\'amore</h2>
+      <p>Il modo più veloce per misurare la chimica iniziale è attraverso gli elementi. I segni dello stesso elemento generalmente "parlano la stessa lingua".</p>
+      
+      <ul>
+        <li><strong>Segni di Fuoco (Ariete, Leone, Sagittario):</strong> Hanno bisogno di passione, avventura e di qualcuno che tenga il loro ritmo.</li>
+        <li><strong>Segni di Terra (Toro, Vergine, Capricorno):</strong> Cercano stabilità, costruzione e prove pratiche d\'amore.</li>
+        <li><strong>Segni d\'Aria (Gemelli, Bilancia, Acquario):</strong> Hanno bisogno di stimolazione intellettuale, conversazione e libertà.</li>
+        <li><strong>Segni d\'Acqua (Cancro, Scorpione, Pesci):</strong> Cercano una profonda connessione emotiva, intimità e comprensione senza parole.</li>
+      </ul>
+
+      <h2 id="love-planets">I veri pianeti dell\'amore: Venere, Marte e la Luna</h2>
+      <p>Per la vita di tutti i giorni, questi punti sono essenziali:</p>
+      <ul>
+        <li><strong>La Luna 🌙 (Sicurezza emotiva):</strong> In una relazione a lungo termine, la compatibilità lunare è sovrana. Determina di cosa hai bisogno per sentirti al sicuro.</li>
+        <li><strong>Venere ♀ (Romantismo e valori):</strong> Determina il tuo stile di corteggiamento e ciò che apprezzi in un partner.</li>
+        <li><strong>Marte ♂ (Passione e conflitti):</strong> È il pianeta della libido e dei conflitti. Mostra come litigate e come vivete la passione.</li>
+      </ul>
+
+      <h2 id="challenging-matches">La verità sui match "difficili"</h2>
+      <p>E se ti innamorassi di un segno "incompatibile"? Queste relazioni sono spesso le più <strong>trasformative</strong>. In astrologia, creano attrito, ma l\'attrito genera calore! Le sfide ti costringono a crescere e a uscire dalla tua zona di comfort.</p>
+
+      <h2 id="synastry">Compatibilità avanzata: La sinastria</h2>
+      <p>La vera risposta sulla tua relazione si trova nella <strong>sinastria</strong>. Consiste nel sovrapporre il tuo tema su quello del tuo partner per trovare connessioni profonde.</p>
+      
+      <p>In Astralo, i nostri algoritmi non danno solo percentuali. Creiamo una mappa dell\'anima della tua relazione. Smetti di indovinare e inizia a capire lo scopo cosmico della tua unione.</p>
     `
 };

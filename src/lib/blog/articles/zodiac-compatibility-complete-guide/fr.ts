@@ -1,73 +1,64 @@
 /**
  * Zodiac Compatibility - French (Français)
- * SEO Keywords: compatibilité astrologique, horoscope amour, signes compatibles
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: '❤️ Compatibilité des Signes: Guide Ultime de l\'Amour 2026',
-    excerpt: 'Découvrez quels signes du zodiaque sont les plus compatibles avec le vôtre.',
+    title: '❤️ Compatibilité des signes du zodiaque : Le guide définitif de l\'amour cosmique',
+    excerpt: 'Le guide ultime de la compatibilité zodiacale pour 2026. Allez au-delà des signes solaires et découvrez comment les éléments, Vénus et Mars influencent votre romance.',
     category: 'Amour & Relations',
-    metaDescription: 'Découvrez votre compatibilité astrologique. Les meilleurs partenaires pour Bélier, Taureau, Gémeaux, Cancer, Lion, Vierge, Balance, Scorpion, Sagittaire, Capricorne, Verseau et Poissons.',
-    keywords: 'compatibilité astrologique, horoscope amour, signes compatibles, compatibilité zodiaque, horoscope couple',
+    metaDescription: 'Le guide ultime de la compatibilité zodiacale pour 2026. Découvrez comment les éléments, Vénus et Mars influencent votre chimie romantique et votre potentiel à long terme.',
+    keywords: 'compatibilité zodiacale, horoscope amoureux, synastrie, compatibilité des signes, vénus en amour, mars et passion, astrologie relationnelle',
     quickSummary: [
-        'La compatibilité zodiacale est basée sur l\'interaction des éléments astrologiques',
-        'Les signes de Feu (Bélier, Lion, Sagittaire) s\'accordent bien avec les signes d\'Air',
-        'Les signes de Terre (Taureau, Vierge, Capricorne) harmonisent avec les signes d\'Eau',
-        'L\'horoscope de couple analyse les thèmes nataux des deux partenaires'
+        'La vraie compatibilité implique de comparer les thèmes nataux complets (synastrie), pas seulement les signes solaires',
+        'L\'équilibre élémentaire (Feu, Terre, Air, Eau) est le fondement de l\'harmonie relationnelle',
+        'Les signes "incompatibles" offrent souvent les meilleures opportunités de croissance de l\'âme',
+        'Vénus détermine le style d\'affection, tandis que Mars anime la passion et le style de conflit'
     ],
     keyTakeaways: [
-        'La compatibilité élémentaire est un bon point de départ',
-        'Les signes opposés ont souvent une attraction intense',
-        'Un thème de synastrie complet offre l\'analyse la plus précise',
-        'Tous les signes peuvent fonctionner ensemble avec compréhension'
+        'Recherchez les trigones (même élément) pour la facilité, et les oppositions pour une attirance intense',
+        'La compatibilité des signes lunaires est cruciale pour la cohabitation et la sécurité émotionnelle',
+        'La compatibilité de Mercure dicte la manière dont vous résolvez les problèmes ensemble',
+        'Il n\'y a pas de partenaire "parfait" ; chaque duo a ses forces et ses défis'
     ],
     tableOfContents: [
-        { id: 'understanding-compatibility', title: 'Comprendre la compatibilité' },
-        { id: 'elements', title: 'Les éléments de compatibilité' },
-        { id: 'best-matches', title: 'Meilleures compatibilités' },
-        { id: 'partner-reading', title: 'Lecture de compatibilité' }
+        { id: 'beyond-sun-signs', title: 'Pourquoi les signes solaires ne font pas tout' },
+        { id: 'elemental-love', title: 'Les 4 éléments en amour' },
+        { id: 'love-planets', title: 'Vénus, Mars & La Lune' },
+        { id: 'challenging-matches', title: 'La vérité sur les "mauvais" duos' },
+        { id: 'best-matches-deep-dive', title: 'Zoom sur les meilleures compatibilités' },
+        { id: 'synastry', title: 'Conseil d\'expert : La synastrie' }
     ],
     content: `
-        <h2 id="understanding-compatibility">Comprendre la compatibilité astrologique</h2>
-        <p>La <strong>compatibilité astrologique</strong> étudie comment les différents signes interagissent dans les relations amoureuses.</p>
-        
-        <h2 id="elements">Les éléments de compatibilité</h2>
-        <ul>
-            <li><strong>🔥 Signes de Feu (♈ Bélier, ♌ Lion, ♐ Sagittaire)</strong>: Passionnés et aventuriers</li>
-            <li><strong>🌍 Signes de Terre (♉ Taureau, ♍ Vierge, ♑ Capricorne)</strong>: Pratiques et fiables</li>
-            <li><strong>💨 Signes d'Air (♊ Gémeaux, ♎ Balance, ♒ Verseau)</strong>: Intellectuels et communicatifs</li>
-            <li><strong>💧 Signes d'Eau (♋ Cancer, ♏ Scorpion, ♓ Poissons)</strong>: Émotionnels et intuitifs</li>
-        </ul>
-        
-        <h2 id="best-matches">Meilleures compatibilités zodiacales</h2>
-        <h3>♈ Compatibilité Bélier</h3>
-        <p><strong>Le Bélier</strong> s'accorde avec Lion, Sagittaire, Gémeaux et Verseau.</p>
-        <h3>♉ Compatibilité Taureau</h3>
-        <p><strong>Le Taureau</strong> harmonise avec Vierge, Capricorne, Cancer et Poissons.</p>
-        <h3>♊ Compatibilité Gémeaux</h3>
-        <p><strong>Les Gémeaux</strong> excellent avec Balance, Verseau, Bélier et Lion.</p>
-        <h3>♋ Compatibilité Cancer</h3>
-        <p><strong>Le Cancer</strong> se connecte avec Scorpion, Poissons, Taureau et Vierge.</p>
-        <h3>♌ Compatibilité Lion</h3>
-        <p><strong>Le Lion</strong> brille avec Bélier, Sagittaire, Gémeaux et Balance.</p>
-        <h3>♍ Compatibilité Vierge</h3>
-        <p><strong>La Vierge</strong> prospère avec Taureau, Capricorne, Cancer et Scorpion.</p>
-        <h3>♎ Compatibilité Balance</h3>
-        <p><strong>La Balance</strong> harmonise avec Gémeaux, Verseau, Lion et Sagittaire.</p>
-        <h3>♏ Compatibilité Scorpion</h3>
-        <p><strong>Le Scorpion</strong> s'intensifie avec Cancer, Poissons, Vierge et Capricorne.</p>
-        <h3>♐ Compatibilité Sagittaire</h3>
-        <p><strong>Le Sagittaire</strong> s'envole avec Bélier, Lion, Balance et Verseau.</p>
-        <h3>♑ Compatibilité Capricorne</h3>
-        <p><strong>Le Capricorne</strong> construit avec Taureau, Vierge, Scorpion et Poissons.</p>
-        <h3>♒ Compatibilité Verseau</h3>
-        <p><strong>Le Verseau</strong> étincelle avec Gémeaux, Balance, Bélier et Sagittaire.</p>
-        <h3>♓ Compatibilité Poissons</h3>
-        <p><strong>Les Poissons</strong> fluent avec Cancer, Scorpion, Taureau et Capricorne.</p>
-        
-        <h2 id="partner-reading">Lecture de compatibilité couple</h2>
-        <p>Pour une compréhension complète de votre <strong>compatibilité amoureuse</strong>, obtenez un horoscope de couple personnalisé chez Astralo.</p>
+      <h2 id="beyond-sun-signs">Pourquoi les signes solaires ne font pas tout</h2>
+      <p>Nous sommes tous passés par là : vérifier une application pour voir si notre coup de cœur est compatible avec nous. "Oh non, je suis Lion et il est Scorpion — nous sommes condamnés !" Mais attendez. La <strong>compatibilité zodiacale</strong> est infiniment plus complexe et pleine d\'espoir qu'un simple tableau de correspondance.</p>
+      
+      <p>Alors que votre signe solaire représente votre ego et votre but de vie, les relations se construisent sur les émotions, la communication et les valeurs. Pour comprendre vraiment les <strong>compatibilités amoureuses</strong>, nous devons regarder l'ensemble du ciel.</p>
+
+      <h2 id="elemental-love">Les 4 éléments en amour</h2>
+      <p>Le moyen le plus rapide d'évaluer l'alchimie initiale est via les éléments. Les signes du même élément parlent généralement "la même langue".</p>
+      
+      <ul>
+        <li><strong>Signes de Feu (Bélier, Lion, Sagittaire) :</strong> Ont besoin de passion, d'aventure et de quelqu'un qui tienne leur rythme.</li>
+        <li><strong>Signes de Terre (Taureau, Vierge, Capricorne) :</strong> Cherchent la stabilité, la construction et des preuves concrètes d'amour.</li>
+        <li><strong>Signes d'Air (Gémeaux, Balance, Verseau) :</strong> Ont besoin de stimulation intellectuelle, de conversation et de liberté.</li>
+        <li><strong>Signes d'Eau (Cancer, Scorpion, Poissons) :</strong> Cherchent une connexion émotionnelle profonde, de l'intimité et de la compréhension sans mots.</li>
+      </ul>
+
+      <h2 id="love-planets">Les vraies planètes de l'amour : Vénus, Mars & La Lune</h2>
+      <p>Pour le quotidien, ces points sont essentiels :</p>
+      <ul>
+        <li><strong>La Lune 🌙 (Sécurité émotionnelle) :</strong> Dans une relation à long terme, la compatibilité lunaire est reine. Elle détermine ce dont vous avez besoin pour vous sentir en sécurité.</li>
+        <li><strong>Vénus ♀ (Romantisme & Valeurs) :</strong> Détermine votre style de séduction et ce que vous appréciez chez un partenaire.</li>
+        <li><strong>Mars ♂ (Passion & Conflits) :</strong> C'est la planète de la libido et des conflits. Elle montre comment vous gérez les disputes et vivez votre passion.</li>
+      </ul>
+
+      <h2 id="challenging-matches">La vérité sur les "mauvais" duos</h2>
+      <p>Et si vous tombiez amoureux d'un signe "incompatible" ? Ces relations sont souvent les plus <strong>transformatrices</strong>. En astrologie, elles créent une friction, mais la friction génère de la chaleur ! Les défis vous forcent à grandir et à sortir de votre zone de confort.</p>
+
+      <h2 id="synastry">Compatibilité avancée : La synastrie</h2>
+      <p>La vraie réponse sur votre relation se trouve dans la <strong>synastrie</strong>. Cela consiste à superposer votre thème sur celui de votre partenaire pour trouver des connexions profondes.</p>
+      
+      <p>Chez Astralo, nos algorithmes ne donnent pas seulement des pourcentages. Nous créons une carte de l'âme de votre relation. Arrêtez de deviner et commencez à comprendre le but cosmique de votre union.</p>
     `
 };

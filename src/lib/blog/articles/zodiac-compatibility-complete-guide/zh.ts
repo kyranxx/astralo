@@ -1,16 +1,64 @@
 /**
- * Zodiac Compatibility - Chinese (中文)
+ * Zodiac Compatibility - Chinese (简体中文)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: '❤️ 星座配对: 2026年终极爱情匹配指南',
-    excerpt: '了解哪些星座与您最配。',
+    title: '❤️ 星座配对：宇宙之爱的终极指南',
+    excerpt: '2026 年星座配对终极指南。超越太阳星座，探索元素、金星和火星如何影响你的浪漫化学反应。',
     category: '爱情与关系',
-    metaDescription: '了解您的星座配对。白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、摩羯座、水瓶座和双鱼座的最佳匹配。',
-    keywords: '星座配对, 爱情运势, 星座匹配, 星座相配, 恋爱运势',
-    quickSummary: ['星座配对基于星座元素的相互作用', '火象星座与风象星座配合良好', '土象星座与水象星座和谐', '伴侣星盘分析双方的出生图'],
-    keyTakeaways: ['元素配对是一个很好的起点', '对立星座往往有强烈的吸引力', '完整的合盘分析最为准确', '任何星座组合都可以成功'],
-    tableOfContents: [{ id: 'understanding-compatibility', title: '理解星座配对' }, { id: 'elements', title: '配对元素' }, { id: 'best-matches', title: '最佳匹配' }, { id: 'partner-reading', title: '配对分析' }],
-    content: '<h2 id="understanding-compatibility">理解星座配对</h2><p><strong>星座配对</strong>研究不同星座在关系中如何相互作用。</p><h2 id="elements">配对元素</h2><ul><li>🔥 <strong>火象星座</strong>: 白羊座、狮子座、射手座</li><li>🌍 <strong>土象星座</strong>: 金牛座、处女座、摩羯座</li><li>💨 <strong>风象星座</strong>: 双子座、天秤座、水瓶座</li><li>💧 <strong>水象星座</strong>: 巨蟹座、天蝎座、双鱼座</li></ul><h2 id="best-matches">最佳星座匹配</h2><p>每个星座都有基于元素和谐的理想伴侣。</p><h2 id="partner-reading">伴侣配对分析</h2><p>在Astralo获取个性化的伴侣星盘分析。</p>'
+    metaDescription: '2026 年星座配对终极指南。通过探索元素、金星和火星如何影响你的浪漫化学反应和长期潜力。',
+    keywords: '星座配对, 爱情运势, 合盘, 星座契合度, 金星爱情, 火星激情, 关系占星学, 最佳匹配',
+    quickSummary: [
+        '真正的配对涉及对整个出生图的对比（合盘），而不仅仅是太阳星座',
+        '元素平衡（火、土、风、水）是关系和谐的基础',
+        '“不合”的星座往往为灵魂的成长提供了最大的机会',
+        '金星决定了示爱风格，而火星则驱动着激情和冲突处理方式'
+    ],
+    keyTakeaways: [
+        '寻求三分相（相同元素）以获得顺遂感，寻求对分相以获得强烈的吸引力',
+        '月亮星座的契合度对于同居生活和情绪安全感至关重要',
+        '水星的契合度决定了你们共同解决问题的能力',
+        '没有“完美”的匹配；每一对组合都有其优势和挑战'
+    ],
+    tableOfContents: [
+        { id: 'beyond-sun-signs', title: '为什么太阳星座不是全部' },
+        { id: 'elemental-love', title: '爱情中的四元素' },
+        { id: 'love-planets', title: '金星、火星与月亮' },
+        { id: 'challenging-matches', title: '关于“糟糕”配对的真相' },
+        { id: 'best-matches-deep-dive', title: '深度解析：最佳匹配' },
+        { id: 'synastry', title: '高级提示：合盘 (Synastry)' }
+    ],
+    content: `
+      <h2 id="beyond-sun-signs">为什么太阳星座不是全部</h2>
+      <p>我们都经历过这种情况：在应用上查看心仪对象与我们的配对情况。“噢不，我是狮子座，他是天蝎座——我们注定没戏了！”但请等一下。<strong>星座配对</strong>要比简单的表格对应复杂得多，也更具希望。</p>
+      
+      <p>虽然你的太阳星座代表了你的自我中心和生活目的，但关系是建立在情绪、沟通和价值观之上的。要真正理解<strong>爱情匹配</strong>，我们必须查看星盘的全貌。</p>
+
+      <h2 id="elemental-love">爱情中的四元素</h2>
+      <p>衡量初步化学反应最快的方法是通过元素。相同元素的星座通常“说着同样的语言”。</p>
+      
+      <ul>
+        <li><strong>火象星座（白羊、狮子、射手）：</strong> 需要激情、冒险以及能跟上他们节奏的人。</li>
+        <li><strong>土象星座（金牛、处女、摩羯）：</strong> 寻求稳定、建设以及爱情的实际证明。</li>
+        <li><strong>风象星座（双子、天秤、水瓶）：</strong> 需要智力刺激、交流和自由。</li>
+        <li><strong>水象星座（巨蟹、天蝎、双鱼）：</strong> 寻求深层的情感连接、亲密感以及无言的默契。</li>
+      </ul>
+
+      <h2 id="love-planets">真正的爱情行星：金星、火星与月亮</h2>
+      <p>对于日常生活来说，以下几点至关重要：</p>
+      <ul>
+        <li><strong>月亮 🌙（情绪安全感）：</strong> 在长期关系中，月亮星座的契合度是王者。它决定了你需要什么才能感到安全。</li>
+        <li><strong>金星 ♀（浪漫与价值观）：</strong> 决定了你的调情风格以及你在伴侣身上看重什么。</li>
+        <li><strong>火星 ♂（激情与冲突）：</strong> 是欲望和冲突的行星。它展示了你们如何争吵以及如何体验激情。</li>
+      </ul>
+
+      <h2 id="challenging-matches">关于“糟糕”配对的真相</h2>
+      <p>如果你爱上了一个“不合”的星座怎么办？这些关系往往是<strong>最具转化性</strong>的。在占星学中，它们会产生磨合，但磨合会产生热量（激情）！挑战强迫你成长并走出舒适区。</p>
+
+      <h2 id="synastry">高级配对：合盘</h2>
+      <p>关于你关系的真实答案在于<strong>合盘 (Synastry)</strong>。它涉及到将你的星盘与伴侣的星盘重叠，以寻找深层联系。</p>
+      
+      <p>在 Astralo，我们的先进算法不仅提供百分比。我们为你关系描绘灵魂地图。停止猜测，开始理解你们结合的宇宙目的。</p>
+    `
 };

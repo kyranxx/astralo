@@ -1,73 +1,64 @@
 /**
  * Zodiac Compatibility - German (Deutsch)
- * SEO Keywords: sternzeichen kompatibilität, liebeshoroskop, partnerhoroskop
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const de: BlogPostTranslation = {
-    title: '❤️ Sternzeichen Kompatibilität: Der ultimative Liebes-Guide 2026',
-    excerpt: 'Finden Sie heraus, welche Sternzeichen am besten zu Ihnen passen.',
+    title: '❤️ Sternzeichen-Kompatibilität: Der definitive Leitfaden für kosmische Liebe',
+    excerpt: 'Der ultimative Leitfaden zur Sternzeichen-Kompatibilität für 2026. Gehe über Sonnenzeichen hinaus und entdecke, wie Elemente, Venus und Mars deine Romantik beeinflussen.',
     category: 'Liebe & Beziehungen',
-    metaDescription: 'Entdecken Sie Ihre Sternzeichen-Kompatibilität mit unserem Guide. Die besten Liebespartner für Widder, Stier, Zwillinge, Krebs, Löwe, Jungfrau, Waage, Skorpion, Schütze, Steinbock, Wassermann & Fische.',
-    keywords: 'sternzeichen kompatibilität, liebeshoroskop, partnerhoroskop, sternzeichen partner, astrologische kompatibilität',
+    metaDescription: 'Der ultimative Leitfaden zur Sternzeichen-Kompatibilität für 2026. Entdecke, wie Elemente, Venus und Mars deine romantische Chemie und dein langfristiges Potenzial beeinflussen.',
+    keywords: 'Sternzeichen Kompatibilität, Liebeshoroskop, Synastrie, Partnerhoroskop, Venus Liebe, Mars Leidenschaft, Beziehungsastrologie',
     quickSummary: [
-        'Sternzeichen-Kompatibilität basiert auf der Interaktion astrologischer Elemente',
-        'Feuerzeichen (Widder, Löwe, Schütze) passen gut zu Luftzeichen',
-        'Erdzeichen (Stier, Jungfrau, Steinbock) harmonieren mit Wasserzeichen',
-        'Partnerhoroskope analysieren beide Geburtshoroskope für tiefe Einblicke'
+        'Wahre Kompatibilität beinhaltet den Vergleich ganzer Geburtshoroskope (Synastrie), nicht nur der Sonnenzeichen',
+        'Die Balance der Elemente (Feuer, Erde, Luft, Wasser) ist das Fundament für Harmonie in der Beziehung',
+        ' "Unverträgliche" Zeichen bieten oft die größten Chancen für das Wachstum der Seele',
+        'Venus bestimmt den Stil der Zuneigung, während Mars Leidenschaft und Konfliktstil antreibt'
     ],
     keyTakeaways: [
-        'Element-Kompatibilität ist ein guter Ausgangspunkt für Beziehungsverständnis',
-        'Gegensätzliche Zeichen haben oft intensive Anziehung',
-        'Ein vollständiges Synastrie-Chart bietet die genaueste Kompatibilitätsanalyse',
-        'Alle Zeichen können mit Verständnis und Mühe zusammenarbeiten'
+        'Suche nach Trigonen (gleiches Element) für Leichtigkeit und Oppositionen für intensive Anziehung',
+        'Die Kompatibilität der Mondzeichen ist entscheidend für das Zusammenleben und emotionale Sicherheit',
+        'Merkur-Kompatibilität bestimmt, wie gut ihr gemeinsam Probleme lösen könnt',
+        'Es gibt kein "perfektes" Match; jedes Paar hat Stärken und Herausforderungen'
     ],
     tableOfContents: [
-        { id: 'understanding-compatibility', title: 'Sternzeichen-Kompatibilität verstehen' },
-        { id: 'elements', title: 'Die Elemente der Kompatibilität' },
-        { id: 'best-matches', title: 'Beste Liebespartner' },
-        { id: 'partner-reading', title: 'Partner-Kompatibilitätsanalyse' }
+        { id: 'beyond-sun-signs', title: 'Warum Sonnenzeichen nicht alles sind' },
+        { id: 'elemental-love', title: 'Die 4 Elemente in der Liebe' },
+        { id: 'love-planets', title: 'Venus, Mars & Der Mond' },
+        { id: 'challenging-matches', title: 'Die Wahrheit über "schlechte" Matches' },
+        { id: 'best-matches-deep-dive', title: 'Deep Dive: Beste Verbindungen' },
+        { id: 'synastry', title: 'Profi-Tipp: Synastrie' }
     ],
     content: `
-        <h2 id="understanding-compatibility">Sternzeichen-Kompatibilität verstehen</h2>
-        <p><strong>Sternzeichen-Kompatibilität</strong> untersucht, wie verschiedene astrologische Zeichen in Beziehungen interagieren. Die <strong>Partnerschaftsastrologie</strong> bietet wertvolle Einblicke für die Liebe.</p>
-        
-        <h2 id="elements">Die Elemente der Kompatibilität</h2>
-        <ul>
-            <li><strong>🔥 Feuerzeichen (♈ Widder, ♌ Löwe, ♐ Schütze)</strong>: Leidenschaftlich und abenteuerlustig</li>
-            <li><strong>🌍 Erdzeichen (♉ Stier, ♍ Jungfrau, ♑ Steinbock)</strong>: Praktisch und zuverlässig</li>
-            <li><strong>💨 Luftzeichen (♊ Zwillinge, ♎ Waage, ♒ Wassermann)</strong>: Intellektuell und kommunikativ</li>
-            <li><strong>💧 Wasserzeichen (♋ Krebs, ♏ Skorpion, ♓ Fische)</strong>: Emotional und intuitiv</li>
-        </ul>
-        
-        <h2 id="best-matches">Beste Sternzeichen-Partner</h2>
-        <h3>♈ Widder Kompatibilität</h3>
-        <p><strong>Widder passt</strong> am besten zu Löwe, Schütze, Zwillinge und Wassermann.</p>
-        <h3>♉ Stier Kompatibilität</h3>
-        <p><strong>Stier harmoniert</strong> mit Jungfrau, Steinbock, Krebs und Fische.</p>
-        <h3>♊ Zwillinge Kompatibilität</h3>
-        <p><strong>Zwillinge passen</strong> zu Waage, Wassermann, Widder und Löwe.</p>
-        <h3>♋ Krebs Kompatibilität</h3>
-        <p><strong>Krebs verbindet</strong> sich mit Skorpion, Fische, Stier und Jungfrau.</p>
-        <h3>♌ Löwe Kompatibilität</h3>
-        <p><strong>Löwe strahlt</strong> mit Widder, Schütze, Zwillinge und Waage.</p>
-        <h3>♍ Jungfrau Kompatibilität</h3>
-        <p><strong>Jungfrau gedeiht</strong> mit Stier, Steinbock, Krebs und Skorpion.</p>
-        <h3>♎ Waage Kompatibilität</h3>
-        <p><strong>Waage harmoniert</strong> mit Zwillinge, Wassermann, Löwe und Schütze.</p>
-        <h3>♏ Skorpion Kompatibilität</h3>
-        <p><strong>Skorpion intensiviert</strong> mit Krebs, Fische, Jungfrau und Steinbock.</p>
-        <h3>♐ Schütze Kompatibilität</h3>
-        <p><strong>Schütze fliegt</strong> mit Widder, Löwe, Waage und Wassermann.</p>
-        <h3>♑ Steinbock Kompatibilität</h3>
-        <p><strong>Steinbock baut</strong> mit Stier, Jungfrau, Skorpion und Fische.</p>
-        <h3>♒ Wassermann Kompatibilität</h3>
-        <p><strong>Wassermann funken</strong> mit Zwillinge, Waage, Widder und Schütze.</p>
-        <h3>♓ Fische Kompatibilität</h3>
-        <p><strong>Fische fließen</strong> mit Krebs, Skorpion, Stier und Steinbock.</p>
-        
-        <h2 id="partner-reading">Partner-Kompatibilitätsanalyse</h2>
-        <p>Für ein vollständiges Verständnis Ihrer <strong>Beziehungskompatibilität</strong> erhalten Sie ein personalisiertes Partnerhoroskop bei Astralo.</p>
+      <h2 id="beyond-sun-signs">Warum Sonnenzeichen nicht alles sind</h2>
+      <p>Wir alle kennen das: Wir checken eine App, um zu sehen, ob unser Schwarm zu uns passt. "Oh nein, ich bin Löwe und er ist Skorpion – wir sind verdammt!" Aber warte kurz. <strong>Sternzeichen-Kompatibilität</strong> ist unendlich komplexer – und hoffnungsvoller – als einfaches Tabellen-Matching.</p>
+      
+      <p>Während dein Sonnenzeichen dein Kern-Ego und dein Lebensziel darstellt, basieren Beziehungen auf Emotionen, Kommunikation und Werten. Um <strong>Liebesverbindungen</strong> wirklich zu verstehen, müssen wir das Gesamtbild des Himmels betrachten.</p>
+
+      <h2 id="elemental-love">Die 4 Elemente in der Liebe</h2>
+      <p>Der schnellste Weg, die anfängliche Chemie einzuschätzen, ist über die Elemente. Zeichen desselben Elements sprechen im Allgemeinen "dieselbe Sprache".</p>
+      
+      <ul>
+        <li><strong>Feuerzeichen (Widder, Löwe, Schütze):</strong> Brauchen Leidenschaft, Abenteuer und jemanden, der ihr Tempo hält.</li>
+        <li><strong>Erdzeichen (Stier, Jungfrau, Steinbock):</strong> Suchen Stabilität, Aufbau und praktische Beweise der Liebe.</li>
+        <li><strong>Luftzeichen (Zwillinge, Waage, Wassermann):</strong> Brauchen intellektuelle Stimulation, Konversation und Freiheit.</li>
+        <li><strong>Wasserzeichen (Krebs, Skorpion, Fische):</strong> Suchen tiefe emotionale Verbindung, Intimität und Verständnis ohne Worte.</li>
+      </ul>
+
+      <h2 id="love-planets">Die wahren Liebesplaneten: Venus, Mars & Mond</h2>
+      <p>Für das tägliche Miteinander sind diese Punkte entscheidend:</p>
+      <ul>
+        <li><strong>Der Mond 🌙 (Emotionale Sicherheit):</strong> In einer langfristigen Beziehung ist die Mondzeichen-Kompatibilität entscheidend. Sie bestimmt, was du brauchst, um dich sicher zu fühlen.</li>
+        <li><strong>Venus ♀ (Romantik & Werte):</strong> Bestimmt deinen Flirtstil und was du an einem Partner schätzt.</li>
+        <li><strong>Mars ♂ (Leidenschaft & Streit):</strong> Ist der Planet der Libido und der Konflikte. Er zeigt, wie ihr streitet und Leidenschaft lebt.</li>
+      </ul>
+
+      <h2 id="challenging-matches">Die Wahrheit über "schlechte" Matches</h2>
+      <p>Was, wenn du dich in ein "unverträgliches" Zeichen verliebst? Diese Beziehungen sind oft die am stärksten <strong>transformierenden</strong>. In der Astrologie erzeugen sie Reibung, aber Reibung erzeugt Hitze! Herausforderungen zwingen dich zu wachsen und aus deiner Komfortzone herauszutreten.</p>
+
+      <h2 id="synastry">Fortgeschrittene Kompatibilität: Synastrie</h2>
+      <p>Die wirkliche Antwort über deine Beziehung gibt dir die <strong>Synastrie</strong>. Dabei wird dein Horoskop über das deines Partners gelegt, um tiefe Verbindungen zu finden.</p>
+      
+      <p>Bei Astralo bieten wir nicht nur Prozentsätze. Wir erstellen eine Karte der Seele deiner Beziehung. Hör auf zu raten und beginne, den kosmischen Zweck eurer Verbindung zu verstehen.</p>
     `
 };

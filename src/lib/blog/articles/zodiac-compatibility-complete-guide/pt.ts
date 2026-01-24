@@ -1,73 +1,64 @@
 /**
  * Zodiac Compatibility - Portuguese (Português)
- * SEO Keywords: compatibilidade signos, horóscopo do amor, signos compatíveis
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-    title: '❤️ Compatibilidade dos Signos: O Guia Definitivo do Amor 2026',
-    excerpt: 'Descubra quais signos do zodíaco são mais compatíveis com o seu.',
+    title: '❤️ Compatibilidade dos Signos: O Guia Definitivo para o Amor Cósmico',
+    excerpt: 'O guia definitivo de 2026 para a compatibilidade do zodíaco. Vá além dos signos solares e descubra como os Elementos, Vénus e Marte influenciam a sua química romântica.',
     category: 'Amor e Relacionamentos',
-    metaDescription: 'Descubra sua compatibilidade astrológica. Os melhores pares para Áries, Touro, Gêmeos, Câncer, Leão, Virgem, Libra, Escorpião, Sagitário, Capricórnio, Aquário e Peixes.',
-    keywords: 'compatibilidade signos, horóscopo do amor, signos compatíveis, compatibilidade astrológica, horóscopo casal',
+    metaDescription: 'O guia definitivo de 2026 para a compatibilidade do zodíaco. Descubra como os Elementos, Vénus e Marte influenciam a sua química romântica e o seu potencial a longo prazo.',
+    keywords: 'compatibilidade do zodíaco, horóscopo do amor, sinastria, compatibilidade de signos, vénus no amor, marte e paixão, astrologia de relacionamento',
     quickSummary: [
-        'A compatibilidade zodiacal é baseada em como os elementos astrológicos interagem',
-        'Signos de Fogo (Áries, Leão, Sagitário) combinam bem com signos de Ar',
-        'Signos de Terra (Touro, Virgem, Capricórnio) harmonizam com signos de Água',
-        'O horóscopo de casal analisa ambos os mapas astrais para insights profundos'
+        'A verdadeira compatibilidade evolve a comparação de mapas natais completos (sinastria), não apenas signos solares',
+        'O equilíbrio dos elementos (Fogo, Terra, Ar, Água) é a base da harmonia no relacionamento',
+        'Os signos "incompatíveis" oferecem muitas vezes as melhores oportunidades para o crescimento da alma',
+        'Vénus determina o estilo de afeto, enquanto Marte impulsiona a paixão e o estilo de conflito'
     ],
     keyTakeaways: [
-        'A compatibilidade elementar é um bom ponto de partida',
-        'Signos opostos frequentemente têm atração intensa',
-        'Um mapa de sinastria completo oferece a análise mais precisa',
-        'Qualquer par de signos pode funcionar com compreensão e esforço'
+        'Procure trígonos (mesmo elemento) para facilidade e oposições para atração intensa',
+        'A compatibilidade dos signos lunares é fundamental para a convivência e segurança emocional',
+        'A compatibilidade de Mercúrio dita quão bem resolvem problemas juntos',
+        'Não existe um parceiro "perfeito"; cada dupla tem pontos fortes e desafios'
     ],
     tableOfContents: [
-        { id: 'understanding-compatibility', title: 'Entendendo a compatibilidade' },
-        { id: 'elements', title: 'Os elementos da compatibilidade' },
-        { id: 'best-matches', title: 'Melhores combinações' },
-        { id: 'partner-reading', title: 'Leitura de compatibilidade' }
+        { id: 'beyond-sun-signs', title: 'Porque o Signo Solar não é tudo' },
+        { id: 'elemental-love', title: 'Os 4 Elementos no Amor' },
+        { id: 'love-planets', title: 'Vénus, Marte e a Lua' },
+        { id: 'challenging-matches', title: 'A Verdade sobre as Combinações "Mas"' },
+        { id: 'best-matches-deep-dive', title: 'Análise Profunda: As Melhores Combinações' },
+        { id: 'synastry', title: 'Conselho Especialista: A Sinastria' }
     ],
     content: `
-        <h2 id="understanding-compatibility">Entendendo a compatibilidade zodiacal</h2>
-        <p>A <strong>compatibilidade zodiacal</strong> estuda como os diferentes signos astrológicos interagem nos relacionamentos.</p>
-        
-        <h2 id="elements">Os elementos da compatibilidade</h2>
-        <ul>
-            <li><strong>🔥 Signos de Fogo (♈ Áries, ♌ Leão, ♐ Sagitário)</strong>: Apaixonados e aventureiros</li>
-            <li><strong>🌍 Signos de Terra (♉ Touro, ♍ Virgem, ♑ Capricórnio)</strong>: Práticos e confiáveis</li>
-            <li><strong>💨 Signos de Ar (♊ Gêmeos, ♎ Libra, ♒ Aquário)</strong>: Intelectuais e comunicativos</li>
-            <li><strong>💧 Signos de Água (♋ Câncer, ♏ Escorpião, ♓ Peixes)</strong>: Emocionais e intuitivos</li>
-        </ul>
-        
-        <h2 id="best-matches">Melhores compatibilidades zodiacais</h2>
-        <h3>♈ Compatibilidade Áries</h3>
-        <p><strong>Áries</strong> é compatível com Leão, Sagitário, Gêmeos e Aquário.</p>
-        <h3>♉ Compatibilidade Touro</h3>
-        <p><strong>Touro</strong> harmoniza com Virgem, Capricórnio, Câncer e Peixes.</p>
-        <h3>♊ Compatibilidade Gêmeos</h3>
-        <p><strong>Gêmeos</strong> se destaca com Libra, Aquário, Áries e Leão.</p>
-        <h3>♋ Compatibilidade Câncer</h3>
-        <p><strong>Câncer</strong> conecta com Escorpião, Peixes, Touro e Virgem.</p>
-        <h3>♌ Compatibilidade Leão</h3>
-        <p><strong>Leão</strong> brilha com Áries, Sagitário, Gêmeos e Libra.</p>
-        <h3>♍ Compatibilidade Virgem</h3>
-        <p><strong>Virgem</strong> prospera com Touro, Capricórnio, Câncer e Escorpião.</p>
-        <h3>♎ Compatibilidade Libra</h3>
-        <p><strong>Libra</strong> harmoniza com Gêmeos, Aquário, Leão e Sagitário.</p>
-        <h3>♏ Compatibilidade Escorpião</h3>
-        <p><strong>Escorpião</strong> intensifica com Câncer, Peixes, Virgem e Capricórnio.</p>
-        <h3>♐ Compatibilidade Sagitário</h3>
-        <p><strong>Sagitário</strong> voa com Áries, Leão, Libra e Aquário.</p>
-        <h3>♑ Compatibilidade Capricórnio</h3>
-        <p><strong>Capricórnio</strong> constrói com Touro, Virgem, Escorpião e Peixes.</p>
-        <h3>♒ Compatibilidade Aquário</h3>
-        <p><strong>Aquário</strong> brilha com Gêmeos, Libra, Áries e Sagitário.</p>
-        <h3>♓ Compatibilidade Peixes</h3>
-        <p><strong>Peixes</strong> flui com Câncer, Escorpião, Touro e Capricórnio.</p>
-        
-        <h2 id="partner-reading">Leitura de compatibilidade de casal</h2>
-        <p>Para uma compreensão completa da sua <strong>compatibilidade amorosa</strong>, obtenha um horóscopo de casal personalizado no Astralo.</p>
+      <h2 id="beyond-sun-signs">Porque o Signo Solar não é tudo</h2>
+      <p>Já todos passámos por isso: verificar uma aplicação para ver se o nosso interesse amoroso é compatível connosco. "Oh não, eu sou Leão e ele é Escorpião – estamos condenados!" Mas espere um pouco. A <strong>compatibilidade do zodíaco</strong> é infinitamente mais complexa e esperançosa do que uma simples tabela de correspondência.</p>
+      
+      <p>Enquanto o seu signo solar representa o seu ego e propósito de vida, os relacionamentos constroem-se sobre emoções, comunicação e valores. Para entender realmente as <strong>combinações amorosas</strong>, temos de olhar para todo o mapa do céu.</p>
+
+      <h2 id="elemental-love">Os 4 Elementos no Amor</h2>
+      <p>A forma mais rápida de avaliar a química inicial é através dos elementos. Signos do mesmo elemento geralmente "falam a mesma língua".</p>
+      
+      <ul>
+        <li><strong>Signos de Fogo (Carneiro, Leão, Sagitário):</strong> Precisam de paixão, aventura e de alguém que acompanhe o seu ritmo.</li>
+        <li><strong>Signos de Terra (Touro, Virgem, Capricórnio):</strong> Procuram estabilidade, construção e provas práticas de amor.</li>
+        <li><strong>Signos de Ar (Gémeos, Balança, Aquário):</strong> Precisam de estimulação intelectual, conversa e liberdade.</li>
+        <li><strong>Signos de Água (Caranguejo, Escorpião, Peixes):</strong> Procuram uma ligação emocional profunda, intimidade e compreensão sem palavras.</li>
+      </ul>
+
+      <h2 id="love-planets">Os verdadeiros planetas do amor: Vénus, Marte e a Lua</h2>
+      <p>Para o dia a dia, estes pontos são essenciais:</p>
+      <ul>
+        <li><strong>A Lua 🌙 (Segurança emocional):</strong> Num relacionamento de longo prazo, a compatibilidade lunar é rainha. Determina o que precisa para se sentir seguro.</li>
+        <li><strong>Vénus ♀ (Romantismo e valores):</strong> Determina o seu estilo de sedução e o que valoriza num parceiro.</li>
+        <li><strong>Marte ♂ (Paixão e conflitos):</strong> É o planeta da líbido e dos conflitos. Mostra como discutem e vivem a sua paixão.</li>
+      </ul>
+
+      <h2 id="challenging-matches">A Verdade sobre as Combinações "Mas"</h2>
+      <p>E se se apaixonar por um signo "incompatível"? Estes relacionamentos são muitas vezes os mais <strong>transformadores</strong>. Em astrologia, criam fricção, mas a fricção gera calor! Os desafios obrigam-no a crescer e a sair da sua zona de conforto.</p>
+
+      <h2 id="synastry">Compatibilidade avançada: A Sinastria</h2>
+      <p>A resposta real sobre o seu relacionamento encontra-se na <strong>sinastria</strong>. Consiste em sobrepor o seu mapa sobre o do seu parceiro para encontrar ligações profundas.</p>
+      
+      <p>No Astralo, os nossos algoritmos não dão apenas percentagens. Criamos um mapa da alma do seu relacionamento. Deixe de adivinhar e comece a compreender o propósito cósmico da sua união.</p>
     `
 };

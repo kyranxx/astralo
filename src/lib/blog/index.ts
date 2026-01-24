@@ -9,6 +9,8 @@ import { birthChartReading } from './articles/birth-chart-reading-explained/inde
 import { weeklyHoroscope } from './articles/weekly-horoscope-predictions/index';
 import { monthlyHoroscope } from './articles/monthly-horoscope-january-2025/index';
 import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
+import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
+import { historyOfAstrology } from './articles/history-of-astrology/index';
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
@@ -21,6 +23,8 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'weekly-horoscope-predictions': weeklyHoroscope,
     'monthly-horoscope-january-2025': monthlyHoroscope,
     'love-horoscope-relationship-advice': loveHoroscope,
+    'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
+    'history-of-astrology': historyOfAstrology,
 };
 
 // Article metadata (language-independent)
@@ -65,6 +69,20 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         emoji: '💕',
         date: '2025-12-10',
         readTime: '9',
+        author: 'Astralo Team',
+    },
+    'mercury-retrograde-survival-guide': {
+        slug: 'mercury-retrograde-survival-guide',
+        emoji: '☄️',
+        date: '2026-01-15',
+        readTime: '18',
+        author: 'Astralo Team',
+    },
+    'history-of-astrology': {
+        slug: 'history-of-astrology',
+        emoji: '🏛️',
+        date: '2026-01-10',
+        readTime: '22',
         author: 'Astralo Team',
     },
 };

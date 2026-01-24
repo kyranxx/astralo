@@ -58,6 +58,16 @@ const blogContent: Record<string, BlogTranslations> = {
                 title: '💕 Love Horoscope 2026: Relationship Predictions for Every Sign',
                 excerpt: 'Is love written in your stars?',
                 category: 'Love & Relationships'
+            },
+            'mercury-retrograde-survival-guide': {
+                title: '☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
+                excerpt: 'Don\'t fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset.',
+                category: 'Astrology 101'
+            },
+            'history-of-astrology': {
+                title: '🏛️ The History of Astrology: From Ancient Babylon to Modern AI',
+                excerpt: 'Explore the fascinating 5,000-year journey of astrology.',
+                category: 'Astrology Basics'
             }
         },
         ui: {
