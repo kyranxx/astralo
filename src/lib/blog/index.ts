@@ -4,17 +4,17 @@
  */
 
 import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
-import { zodiacCompatibility } from './articles/zodiac-compatibility-complete-guide/index';
-import { birthChartReading } from './articles/birth-chart-reading-explained/index';
-// import { weeklyHoroscope } from './articles/weekly-horoscope-predictions/index';
-import { monthlyHoroscope as monthlyHoroscopeJan } from './articles/monthly-horoscope-january-2026/index';
+import { zodiacCompatibilityCompleteGuide } from './articles/zodiac-compatibility-complete-guide/index';
+import { birthChartReadingExplained } from './articles/birth-chart-reading-explained/index';
+import { monthlyHoroscopeJanuary2026 } from './articles/monthly-horoscope-january-2026/index';
 import { monthlyHoroscope as monthlyHoroscopeFeb } from './articles/monthly-horoscope-february-2026/index';
-import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
+import { loveHoroscopeRelationshipAdvice } from './articles/love-horoscope-relationship-advice/index';
 import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
 import { historyOfAstrology } from './articles/history-of-astrology/index';
 import { the12HousesOfAstrology } from './articles/the-12-houses-of-astrology/index';
 import { saturnReturnGuide } from './articles/saturn-return-guide/index';
 import { twinFlamesAndSoulmatesAstrology } from './articles/twin-flames-and-soulmates-astrology/index';
+
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
@@ -22,12 +22,11 @@ import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
 // All article translations indexed by slug
 const articleTranslations: Record<string, Record<string, BlogPostTranslation>> = {
     'daily-horoscope-guide': dailyHoroscopeGuide,
-    'zodiac-compatibility-complete-guide': zodiacCompatibility,
-    'birth-chart-reading-explained': birthChartReading,
-    // 'weekly-horoscope-predictions': weeklyHoroscope,
-    'monthly-horoscope-january-2026': monthlyHoroscopeJan,
+    'zodiac-compatibility-complete-guide': zodiacCompatibilityCompleteGuide,
+    'birth-chart-reading-explained': birthChartReadingExplained,
+    'monthly-horoscope-january-2026': monthlyHoroscopeJanuary2026,
     'monthly-horoscope-february-2026': monthlyHoroscopeFeb,
-    'love-horoscope-relationship-advice': loveHoroscope,
+    'love-horoscope-relationship-advice': loveHoroscopeRelationshipAdvice,
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
     'history-of-astrology': historyOfAstrology,
     'the-12-houses-of-astrology': the12HousesOfAstrology,
@@ -58,13 +57,6 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         readTime: '10',
         author: 'Astralo Team',
     },
-    // 'weekly-horoscope-predictions': {
-    //     slug: 'weekly-horoscope-predictions',
-    //     emoji: '📅',
-    //     date: '2026-12-22',
-    //     readTime: '6',
-    //     author: 'Astralo Team',
-    // },
     'monthly-horoscope-january-2026': {
         slug: 'monthly-horoscope-january-2026',
         emoji: '🌙',
