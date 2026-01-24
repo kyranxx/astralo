@@ -1,44 +1,38 @@
-import type { BlogPostTranslation } from '../../types';
-import { en } from './en';
-import { el } from './el';
-import { ru } from './ru';
-import { uk } from './uk';
 import { ar } from './ar';
-import { tr } from './tr';
-import { sk } from './sk';
-import { cs } from './cs';
-import { de } from './de';
-import { fr } from './fr';
-import { es } from './es';
-import { it } from './it';
-import { pt } from './pt';
-import { nl } from './nl';
-import { pl } from './pl';
-import { ro } from './ro';
-import { hu } from './hu';
 import { bg } from './bg';
-import { hr } from './hr';
-import { sl } from './sl';
-import { sr } from './sr';
-import { hi } from './hi';
 import { bn } from './bn';
-import { th } from './th';
-import { vi } from './vi';
+import { cs } from './cs';
+import { da } from './da';
+import { de } from './de';
+import { el } from './el';
+import { en } from './en';
+import { es } from './es';
+import { fi } from './fi';
+import { fr } from './fr';
+import { he } from './he';
+import { hi } from './hi';
+import { hr } from './hr';
+import { hu } from './hu';
 import { id } from './id';
+import { it } from './it';
 import { ja } from './ja';
 import { ko } from './ko';
-import { zh } from './zh';
-import { sv } from './sv';
-import { da } from './da';
+import { nl } from './nl';
 import { no } from './no';
-import { fi } from './fi';
-import { he } from './he';
+import { pl } from './pl';
+import { pt } from './pt';
+import { ro } from './ro';
+import { ru } from './ru';
+import { sk } from './sk';
+import { sl } from './sl';
+import { sr } from './sr';
+import { sv } from './sv';
+import { th } from './th';
+import { tr } from './tr';
+import { uk } from './uk';
+import { vi } from './vi';
+import { zh } from './zh';
 
-export const zodiacCompatibility: Record<string, BlogPostTranslation> = {
-    en, el, ru, uk, ar, tr, sk, cs, de, fr, es, it, pt, nl, pl, ro, hu, bg, hr, sl, sr, hi, bn, th, vi, id, ja, ko, zh, sv, da, no, fi, he,
-    // Add other languages here as needed
+export const zodiacCompatibilityCompleteGuide = {
+    en, es, fr, de, it, pt, ar, bg, bn, cs, da, el, fi, he, hi, hr, hu, id, ja, ko, nl, no, pl, ro, ru, sk, sl, sr, sv, th, tr, uk, vi, zh
 };
-
-export function getTranslation(lang: string): BlogPostTranslation {
-    return zodiacCompatibility[lang] || zodiacCompatibility.en;
-}

@@ -1,88 +1,99 @@
 /**
- * zodiac-compatibility-complete-guide - FR
+ * Zodiac Compatibility - French (Français)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: "❤️ Zodiaque Signe Compatibility: The Definitive Guide to Cosmic Amour",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.", // Excerpt remains EN mostly
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}], // TO-DO: Translate TOC
-    content: `
-      <h2 id="beyond-sun-signs">Why Soleil Signes Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: '❤️ Compatibilité des Signes du Zodiaque : Le Guide Définitif de l\'Amour Cosmique',
+  excerpt: 'Le guide ultime 2026 de la compatibilité zodiacale. Allez au-delà des signes solaires et découvrez comment les Éléments, Vénus et Mars influencent votre chimie romantique et votre potentiel à long terme.',
+  category: 'Amour et Relations',
+  metaDescription: 'Le guide ultime 2026 de la compatibilité zodiacale. Allez au-delà des signes solaires et découvrez comment les Éléments, Vénus et Mars influencent votre chimie romantique.',
+  keywords: 'compatibilité zodiaque, horoscope amour, synastrie, compatibilité signes astro, vénus amour, mars passion, astrologie relationnelle',
+  quickSummary: [
+    'La vraie compatibilité implique de comparer des thèmes nataux complets (Synastrie), pas seulement les signes solaires',
+    'L\'Équilibre Élémentaire (Feu, Terre, Air, Eau) est la base de l\'harmonie relationnelle',
+    'Les signes "Incompatibles" offrent souvent les plus grandes opportunités de croissance de l\'âme',
+    'Vénus détermine le style d\'affection, tandis que Mars dirige la passion et le style de conflit'
+  ],
+  keyTakeaways: [
+    'Recherchez les trigones (même élément) pour la facilité, et les oppositions pour une attraction intense',
+    'La compatibilité du signe lunaire est cruciale pour la vie commune et la sécurité émotionnelle',
+    'La compatibilité de Mercure dicte la façon dont vous résolvez les problèmes ensemble',
+    'Il n\'y a pas de match "parfait" ; chaque couple a ses forces et ses défis'
+  ],
+  tableOfContents: [
+    { id: 'beyond-sun-signs', title: 'Pourquoi les Signes Solaires ne font pas tout' },
+    { id: 'elemental-love', title: 'Les 4 Éléments en Amour' },
+    { id: 'love-planets', title: 'Vénus, Mars et la Lune' },
+    { id: 'challenging-matches', title: 'La Vérité sur les "Mauvais" Matchs' },
+    { id: 'best-matches-deep-dive', title: 'Plongée Profonde : Meilleurs Matchs' },
+    { id: 'synastry', title: 'Conseil Avancé : Synastrie' }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Pourquoi les Signes Solaires ne font pas tout</h2>
+      <p>Nous sommes tous passés par là : vérifier un magazine ou une application pour voir si le signe de notre coup de cœur est compatible avec le nôtre. "Oh non, je suis Lion et il est Scorpion - nous sommes condamnés !" Mais attendez. La <strong>compatibilité zodiacale</strong> est infiniment plus complexe—et pleine d'espoir—qu'une simple comparaison de tableaux.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Alors que votre signe solaire représente votre ego central et votre but de vie, les relations sont construites sur les émotions, la communication et les valeurs. C'est pourquoi vous pourriez vous retrouver heureusement marié à un signe soi-disant "incompatible", ou en difficulté avec votre soi-disant "match parfait". Pour vraiment comprendre les <strong>matchs amoureux</strong>, nous devons regarder l'image complète du ciel.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Amour</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">Les 4 Éléments en Amour</h2>
+      <p>Le moyen le plus rapide de jauger la chimie initiale est à travers les Éléments. Les signes du même élément "parlent généralement la même langue".</p>
       
-      <h3>🔥 Feu Signes (Bélier, Lion, Sagittaire)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Signes de Feu (Bélier, Lion, Sagittaire)</h3>
+      <p><strong>Langage de l'Amour :</strong> Passion, Aventure, Spontanéité.</p>
+      <p>Les signes de feu ont besoin d'un partenaire qui peut attiser leurs flammes sans les éteindre. Ils ont soif d'excitation et détestent s'ennuyer.
+      <br><em>Meilleur avec :</em> Autres signes de Feu (chaleur instantanée) ou signes d'Air (l'Air nourrit le Feu).</p>
 
-      <h3>🌍 Terre Signes (Taureau, Vierge, Capricorne)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Signes de Terre (Taureau, Vierge, Capricorne)</h3>
+      <p><strong>Langage de l'Amour :</strong> Service, Stabilité, Toucher.</p>
+      <p>Les signes de terre traitent l'amour comme un verbe. Ils montrent leur affection par des actes pratiques de service et la construction d'une vie ensemble. Ils ont besoin de fiabilité.
+      <br><em>Meilleur avec :</em> Autres signes de Terre (fondation solide) ou signes d'Eau (l'Eau nourrit la Terre).</p>
 
-      <h3>💨 Air Signes (Gémeaux, Balance, Verseau)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Signes d'Air (Gémeaux, Balance, Verseau)</h3>
+      <p><strong>Langage de l'Amour :</strong> Conversation, Esprit, Liberté.</p>
+      <p>Pour les signes d'air, l'esprit est la zone la plus érogène. Ils ont besoin de stimulation mentale et d'un partenaire qui est aussi leur meilleur ami.
+      <br><em>Meilleur avec :</em> Autres signes d'Air (discussion sans fin) ou signes de Feu (inspiration).</p>
 
-      <h3>💧 Eau Signes (Cancer, Scorpion, Poissons)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Signes d'Eau (Cancer, Scorpion, Poissons)</h3>
+      <p><strong>Langage de l'Amour :</strong> Vulnérabilité, Intuition, Fusion.</p>
+      <p>Les signes d'eau recherchent une connexion émotionnelle profonde. Ils veulent être compris sans mots et ont besoin d'un port sûr.
+      <br><em>Meilleur avec :</em> Autres signes d'Eau (lien psychique) ou signes de Terre (le contenant pour leur eau).</p>
 
-      <h2 id="love-planets">The Real Amour Planètes: Venus, Mars & The Lune</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Les Vraies Planètes de l'Amour : Vénus, Mars et la Lune</h2>
+      <p>Si vous voulez savoir si vous vous entendrez vraiment au jour le jour, vérifier la compatibilité des signes solaires ne suffit pas. Vous devez regarder de plus près trois planètes spécifiques dans le thème de votre partenaire :</p>
 
-      <h3>1. The Lune 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. La Lune 🌙 (Sécurité Émotionnelle)</h3>
+      <p>Dans un mariage ou une cohabitation à long terme, <strong>la compatibilité du signe lunaire est reine</strong>. Votre signe lunaire dicte ce dont vous avez besoin pour vous sentir en sécurité, comment vous réagissez quand vous êtes fatigué ou affamé, et comment vous maternez.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Vénus ♀ (Romance & Valeurs)</h3>
+      <p>Vénus détermine ce que vous trouvez beau et ce que vous valorisez. Elle montre votre "style de flirt".
+      <br><em>Conseil :</em> Si vos signes de Vénus sont dans le même élément, vos goûts et vos habitudes de dépenses s'aligneront probablement facilement.</p>
 
       <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <p>Mars est la planète de la libido et du conflit. Elle montre comment vous vous battez et comment vous faites l'amour.
+      <br><em>Conseil :</em> Des signes de Mars compatibles garantissent que les disputes sont résolues rapidement et que la chimie physique reste vivante.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">La Vérité sur les "Mauvais" Matchs</h2>
+      <p>Et si vous tombez amoureux d'un signe qui est "incompatible" ? Par exemple, un Lion (Feu) et un Scorpion (Eau) ?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Ces relations sont souvent les plus <strong>transformatrices</strong>. L'astrologie appelle ces aspects "Carré" ou "Quinconce". Ils créent de la friction. Mais la friction génère de la chaleur ! Les matchs "difficiles" vous obligent à grandir.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiaque PAirings</h2>
+      <h2 id="best-matches-deep-dive">Plongée Profonde : Couples Célèbres du Zodiaque</h2>
       
-      <h3>The "Power Couple": Bélier & Balance</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>Le "Couple de Pouvoir" : Bélier & Balance</h3>
+      <p>Les opposés s'attirent ! Le Bélier est "Moi d'abord", la Balance est "Nous d'abord". Le Bélier enseigne l'affirmation de soi à la Balance ; la Balance enseigne la diplomatie au Bélier.</p>
 
-      <h3>The "Empire Builders": Taureau & Capricorne</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>Les "Bâtisseurs d'Empire" : Taureau & Capricorne</h3>
+      <p>Deux signes de terre qui valorisent la qualité, l'argent et la sécurité. Ils construisent ensemble un succès massif.</p>
       
-      <h3>The "Peter Pan" Duo: Gémeaux & Sagittaire</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>Le Duo "Peter Pan" : Gémeaux & Sagittaire</h3>
+      <p>Air et Feu. Tous deux aiment la liberté, les voyages et la philosophie. Ils ne s'installeront peut-être jamais au sens traditionnel, mais ils seront complices pour toujours.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpion</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>Le "Lien Psychique" : Cancer & Scorpion</h3>
+      <p>Quand ces deux signes d'eau se rencontrent, le monde disparaît. Ils ont une connexion télépathique et une possessivité qui les rend farouchement loyaux l'un envers l'autre.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Compatibilité Avancée : Synastrie</h2>
+      <p>Pour obtenir la vraie réponse sur votre relation, vous avez besoin d'une <strong>Lecture de Synastrie</strong>. Cela implique de superposer votre thème sur celui de votre partenaire.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
-      
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Chez Astralo, nos algorithmes avancés et nos astrologues experts ne vous donnent pas seulement un pourcentage. Nous créons une carte de l'âme de votre relation. Arrêtez de deviner et commencez à comprendre le but cosmique de votre union.</p>
     `
 };
