@@ -11,6 +11,9 @@ import { monthlyHoroscope } from './articles/monthly-horoscope-january-2025/inde
 import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
 import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
 import { historyOfAstrology } from './articles/history-of-astrology/index';
+import { the12HousesOfAstrology } from './articles/the-12-houses-of-astrology/index';
+import { saturnReturnGuide } from './articles/saturn-return-guide/index';
+import { twinFlamesAndSoulmatesAstrology } from './articles/twin-flames-and-soulmates-astrology/index';
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
@@ -25,6 +28,9 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'love-horoscope-relationship-advice': loveHoroscope,
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
     'history-of-astrology': historyOfAstrology,
+    'the-12-houses-of-astrology': the12HousesOfAstrology,
+    'saturn-return-guide': saturnReturnGuide,
+    'twin-flames-and-soulmates-astrology': twinFlamesAndSoulmatesAstrology,
 };
 
 // Article metadata (language-independent)
@@ -83,6 +89,27 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         emoji: '🏛️',
         date: '2026-01-10',
         readTime: '22',
+        author: 'Astralo Team',
+    },
+    'the-12-houses-of-astrology': {
+        slug: 'the-12-houses-of-astrology',
+        emoji: '🏠',
+        date: '2026-01-24',
+        readTime: '35',
+        author: 'Astralo Team',
+    },
+    'saturn-return-guide': {
+        slug: 'saturn-return-guide',
+        emoji: '🪐',
+        date: '2026-01-24',
+        readTime: '40',
+        author: 'Astralo Team',
+    },
+    'twin-flames-and-soulmates-astrology': {
+        slug: 'twin-flames-and-soulmates-astrology',
+        emoji: '🔥',
+        date: '2026-01-24',
+        readTime: '45',
         author: 'Astralo Team',
     },
 };
