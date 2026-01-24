@@ -1,24 +1,77 @@
+/**
+ * Weekly Horoscope - Korean (한국어)
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    "title": "Astrology Article",
-    "excerpt": "Read your full horoscope...",
-    "category": "Horoscope",
-    "metaDescription": "Astrology guide",
-    "keywords": "astrology, horoscope, guide",
-    "quickSummary": [
-        "Full guide inside",
-        "Read more below"
+    title: '📅 주간 운세: 다가오는 우주의 한 주를 항해하는 법',
+    excerpt: '우리의 주간 운세 가이드로 당신의 한 주를 극대화하세요. 행성 요일을 이해하고, 보이드 타임(Void-of-Course Moon)을 파악하며, 점성술적 타이밍에 맞춰 일정을 계획하세요.',
+    category: '운세',
+    metaDescription: '우리의 주간 운세 가이드로 당신의 한 주를 극대화하세요. 행성 요일을 이해하고, 보이드 타임(Void-of-Course Moon)을 파악하며, 점성술적 타이밍에 맞춰 일정을 계획하세요.',
+    keywords: '주간 운세, 주간 점성술, 행성 요일, 보이드 타임, 주간 별자리 예측, 점성술 계획, 이번 주 최고의 날',
+    quickSummary: [
+        '일주일의 각 요일은 서로 다른 행성(월요일/달, 화요일/화성 등)에 의해 지배됩니다.',
+        '주간 운세는 황도대를 통과하는 빠른 행성들의 움직임을 추적합니다.',
+        '보이드 타임(Void-of-Course Moon)은 중요한 행동을 피해야 하는 결정적인 "일시 중지 시간"입니다.',
+        '월요일은 감정, 화요일은 행동, 금요일은 로맨스를 위한 날입니다.'
     ],
-    "keyTakeaways": [
-        "Plan ahead",
-        "Check your chart"
+    keyTakeaways: [
+        '일요일 저녁에 주간 예보를 확인하여 달력을 계획하세요.',
+        '목표에 따라 어려운 회의는 목요일(목성)이나 토요일(토성)로 잡으세요.',
+        '달이 보이드 상태일 때는 계약서 서명을 피하세요.',
+        '에너지 흐름에 맞서 싸우기보다 주간 에너지 흐름을 활용하세요.'
     ],
-    "tableOfContents": [
-        {
-            "id": "intro",
-            "title": "Introduction"
-        }
+    tableOfContents: [
+        { id: 'weekly-flow', title: '한 주의 점성술적 리듬' },
+        { id: 'planetary-days', title: '요일의 지배자들' },
+        { id: 'void-moon', title: '보이드 타임 (공망)' },
+        { id: 'transits', title: '주간 이동 추적' },
+        { id: 'by-sign', title: '별자리별 주간 조언' }
     ],
-    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+    content: `
+      <h2 id="weekly-flow">한 주의 점성술적 리듬</h2>
+      <p>어떤 주는 물 흐르듯 지나가는데, 어떤 주는 진흙탕을 헤매는 것처럼 느껴진 적이 있나요? 혹은 왜 화요일에 일을 처리하는 것이 금요일과는 다른 느낌일까요? 이것은 무작위가 아닙니다. 7일 주일의 구조는 사실 전적으로 <strong>점성술</strong>에 기초하고 있습니다.</p>
+      
+      <p><strong>주간 운세</strong>를 이해하는 것은 답장을 받을 수 있을지 아는 것 이상입니다. 그것은 고대 행성 시간 지배자들과 당신의 일정을 맞추는 것입니다. 그날의 에너지와 <em>함께</em> 일할 때 생산성은 증가하고 저항은 사라집니다.</p>
+
+      <h2 id="planetary-days">요일의 지배자들</h2>
+      <p>각 요일은 행성의 이름을 따서 명명되었습니다(프랑스어나 스페인어 같은 언어에서는 문자 그대로입니다). 다음은 점성술적으로 일주일을 계획하는 가이드입니다:</p>
+      
+      <h3>월요일 (달의 날) 🌙</h3>
+      <p><strong>에너지:</strong> 감정적, 직관적, 변동적.<br><strong>추천:</strong> 장보기, 집 청소, 늦잠, 가족 저녁 식사, 성찰.<br><strong>피할 것:</strong> 스트레스 많은 프레젠테이션이나 엄격한 논리.</p>
+
+      <h3>화요일 (화성의 날) ♂</h3>
+      <p><strong>에너지:</strong> 공격적, 활기참, 날카로움.<br><strong>추천:</strong> 운동, 새 프로젝트 시작, 문제 직면, 수술, 경쟁.<br><strong>피할 것:</strong> 명상, 휴식 취하기.</p>
+      
+      <h3>수요일 (수성의 날) ☿️</h3>
+      <p><strong>에너지:</strong> 소통하는, 바쁜, 빠른.<br><strong>추천:</strong> 이메일, 회의, 글쓰기, 영업, 짧은 여행, 네트워킹.<br><strong>피할 것:</strong> 침묵 (어차피 일어나지 않을 것입니다).</p>
+      
+      <h3>목요일 (목성의 날) ♃</h3>
+      <p><strong>에너지:</strong> 확장적, 운이 좋은, 낙관적.<br><strong>추천:</strong> 큰 비전 시작, 임금 인상 요청, 여행 계획, 고등 학습.<br><strong>피할 것:</strong> 돈 아끼기.</p>
+      
+      <h3>금요일 (금성의 날) ♀</h3>
+      <p><strong>에너지:</strong> 사교적, 로맨틱, 미적.<br><strong>추천:</strong> 데이트, 파티, 옷 쇼핑, 예술, 휴식, 해피 아워.<br><strong>피할 것:</strong> 더러운 일이나 고독.</p>
+      
+      <h3>토요일 (토성의 날) ♄</h3>
+      <p><strong>에너지:</strong> 진지함, 무거움, 규율.<br><strong>추천:</strong> 정원 가꾸기, 장기 계획, 공부, 밀린 집안일, 의무.<br><strong>피할 것:</strong> 광란의 파티 (공식 행사가 아니라면).</p>
+      
+      <h3>일요일 (태양의 날) ☀️</h3>
+      <p><strong>에너지:</strong> 빛나는, 자기중심적, 영적.<br><strong>추천:</strong> 취미, 예배/영성, 아이들과 놀기, 눈에 띄기, 휴식.<br><strong>피할 것:</strong> 투명 인간 되기.</p>
+
+      <h2 id="void-moon">보이드 타임 (Void-of-Course Moon)</h2>
+      <p>이 가이드에서 한 가지만 가져간다면, 그것은 <strong>보이드 타임</strong>이어야 합니다. 이것은 달이 현재 별자리에서 행성과의 마지막 각도를 마치고 다음 별자리로 들어가기 전에 "떠 있는" 때 발생합니다.</p>
+      <p><strong>규칙:</strong> "그 문제에 대해서는 아무 일도 일어나지 않을 것이다."</p>
+      <p>보이드 타임 동안에는 계약서에 서명하거나, 사업을 시작하거나, 첫 데이트 신청을 보내지 마세요. 에너지는 필연적으로 흐지부지됩니다. 이 시간은 파일정리, 수면 또는 이미 시작한 작업을 편집하는 데 사용하세요. 그것은 우주적 "휴식 시간"입니다.</p>
+
+      <h2 id="transits">주간 이동 추적</h2>
+      <p>좋은 <strong>주간 점성술 예보</strong>는 또한 행성들이 이번 주에 만드는 구체적인 각도를 봅니다.</p>
+
+      <h2 id="by-sign">별자리별 주간 조언 템플릿</h2>
+      <p>모든 사람의 일주일은 독특하지만, 각 별자리가 주간 변화를 처리하는 일반적인 방식은 다음과 같습니다.</p>
+      <ul>
+        <li><strong>활동궁 (양, 게, 천칭, 염소):</strong> 당신들은 시작하는 사람들입니다. 주초 에너지(월/화)를 사용하여 일을 시작하세요.</li>
+        <li><strong>고정궁 (황소, 사자, 전갈, 물병):</strong> 당신들은 유지하는 사람들입니다. 주중 에너지를 사용하여 진행 상황을 고정하세요.</li>
+        <li><strong>변통궁 (쌍둥이, 처녀, 사수, 물고기):</strong> 당신들은 편집자입니다. 주말이나 수성 요일을 사용하여 적응하고 경로를 변경하세요.</li>
+      </ul>
+    `
 };

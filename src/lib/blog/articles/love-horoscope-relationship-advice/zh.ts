@@ -1,24 +1,73 @@
+/**
+ * Love Horoscope - Chinese (简体中文)
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    "title": "Astrology Article",
-    "excerpt": "Read your full horoscope...",
-    "category": "Horoscope",
-    "metaDescription": "Astrology guide",
-    "keywords": "astrology, horoscope, guide",
-    "quickSummary": [
-        "Full guide inside",
-        "Read more below"
+    title: '💕 2026年爱情运势：十二星座浪漫大师指南',
+    excerpt: '用占星术改变你的爱情生活。深入了解金星星座、婚姻第七宫、火星激情风格，以及如何在关系中应对水星逆行。',
+    category: '爱情与关系',
+    metaDescription: '用占星术改变你的爱情生活。深入了解金星星座、婚姻第七宫、火星激情风格，以及如何在关系中应对水星逆行。',
+    keywords: '爱情运势, 关系占星术, 金星星座含义, 火星星座约会, 第七宫婚姻, 合盘指南, 星座约会建议, 爱情兼容性',
+    quickSummary: [
+        '你的爱情语言由你的金星星座决定，而不仅仅是你的太阳星座',
+        '你星盘中的第七宫描述了你理想的长期伴侣',
+        '火星决定了你如何追求浪漫兴趣和性化学反应',
+        '关系的时机就是一切——永远不要在金星逆行期间结婚'
     ],
-    "keyTakeaways": [
-        "Plan ahead",
-        "Check your chart"
+    keyTakeaways: [
+        '如果你想知道某人如何调情，看看他们的金星星座',
+        '如果你想知道某人如何吵架或做爱，看看他们的火星星座',
+        '“下降点”（你上升星座的对面）通常是你最被吸引的星座',
+        '合盘是将两张星盘进行比较的艺术，看一段关系是否能够持久'
     ],
-    "tableOfContents": [
-        {
-            "id": "intro",
-            "title": "Introduction"
-        }
+    tableOfContents: [
+        { id: 'love-guide', title: '爱情是一项技能' },
+        { id: 'venus-signs', title: '金星：你爱什么' },
+        { id: 'mars-signs', title: '火星：你如何渴望' },
+        { id: '7th-house', title: '第七宫：婚姻之宫' },
+        { id: 'retrograde-love', title: '在逆行浪漫中生存' },
+        { id: 'partner-analysis', title: '兼容性分析' }
     ],
-    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+    content: `
+      <h2 id="love-guide">爱情是一项技能（而占星术是手册）</h2>
+      <p>我们经常将爱情视为一种只是“发生”在我们身上的神秘力量。但在占星术中，爱情是一种带有齿轮和杠杆的机制。你的<strong>爱情运势</strong>不仅仅是关于偶然的相遇；它是你在伙伴关系中心理需求的蓝图。</p>
+      
+      <p>为什么你总是被同样的“坏”类型所吸引？为什么沟通总是在三个月后破裂？答案在你的星盘里。通过了解你自己的宇宙爱情设计，你可以停止重复模式，并开始建立你真正想要的关系。</p>
+      
+      <h2 id="venus-signs">金星：情感的艺术</h2>
+      <p><strong>金星</strong>是掌管吸引力、价值观和和谐的行星。你出生时金星所在的星座描述了你觉得什么是美的以及你如何表达爱意。</p>
+      <ul>
+        <li><strong>火象金星（白羊、狮子、射手）：</strong> 喜欢追逐。需要戏剧性、宏大的姿态和自发性。容易厌倦。<em>建议：</em>保持刺激。</li>
+        <li><strong>土象金星（金牛、处女、摩羯）：</strong> 喜欢稳定。需要承诺、可靠性和身体接触。不喜欢游戏。<em>建议：</em>始终如一。</li>
+        <li><strong>风象金星（双子、天秤、水瓶）：</strong> 喜欢思想。需要对话、机智和首先建立友谊。避免沉重的情绪。<em>建议：</em>做一个有趣的人。</li>
+        <li><strong>水象金星（巨蟹、天蝎、双鱼）：</strong> 喜欢灵魂。需要深层的情感融合、脆弱性和安全感。<em>建议：</em>保持真实。</li>
+      </ul>
+
+      <h2 id="mars-signs">火星：欲望的引擎</h2>
+      <p>虽然金星是你喜欢的，但<strong>火星</strong>是你如何去得到它。火星掌管性欲、追求和冲突。</p>
+      <p>如果你有<strong>天蝎座火星</strong>，你是激烈的、占有欲强的和孤注一掷的。你可能会吓跑一个只想调情和玩乐的轻浮的<strong>双子座火星</strong>。了解你伴侣的火星星座是获得性满足和解决争端而不分手的秘诀。</p>
+
+      <h2 id="7th-house">第七宫：你的“另一半”</h2>
+      <p>看看你的上升星座。现在看看直接与它相对的星座。这是你的<strong>下降点（Descendant）</strong>，你第七宫伙伴关系的守护者。</p>
+      <p>我们通常会被那些体现我们第七宫特质的人磁性地吸引，因为他们拥有我们所缺乏的。
+      <br><em>例如：</em>一个纪律严明的<strong>处女座上升</strong>通常会嫁给一个梦幻、混乱的<strong>双鱼座（第七宫）</strong>。处女座组织双鱼座的生活；双鱼座教会处女座放松。这是平衡的轴线。</p>
+
+      <h2 id="retrograde-love">在逆行浪漫中生存</h2>
+      <p>你听说过水星逆行（沟通），但<strong>金星逆行</strong>才是真正的关系测试者。每 18 个月发生一次，这时候：
+      <br>1. 前任回来（“诈尸”）。
+      <br>2. 脆弱的关系破裂。
+      <br>3. 隐藏的婚外情被揭露。</p>
+      
+      <p><strong>黄金法则：</strong>永远不要在金星逆行期间结婚、求婚或做出重大承诺。等到阴影期过去（通常为 40 天），看看你是否仍然有同样的感受。</p>
+
+      <h2 id="partner-analysis">伴侣兼容性分析</h2>
+      <p>你是复杂的，你的伴侣也是。一个通用的“狮子座 + 水瓶座”运势无法捕捉你们独特联系的细微差别。我们的<strong>高级关系报告</strong>分析：</p>
+      <ul>
+        <li><strong>合盘（Synastry）：</strong> 你的行星如何触碰他们的行星（化学反应）。</li>
+        <li><strong>组合盘（Composite Chart）：</strong> 关系本身的能量（命运）。</li>
+        <li><strong>戴维森盘（Davison Chart）：</strong> 你们相遇的目的（业力）。</li>
+      </ul>
+      <p>不要把你的心交给运气。用 Astralo 解码你的爱情生活。</p>
+    `
 };

@@ -1,24 +1,77 @@
+/**
+ * Weekly Horoscope - Japanese (日本語)
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    "title": "Astrology Article",
-    "excerpt": "Read your full horoscope...",
-    "category": "Horoscope",
-    "metaDescription": "Astrology guide",
-    "keywords": "astrology, horoscope, guide",
-    "quickSummary": [
-        "Full guide inside",
-        "Read more below"
+    title: '📅 週間占い：これからの宇宙の一週間をナビゲートする方法',
+    excerpt: '私たちの週間占いガイドで、あなたの一週間を最大限に活用しましょう。惑星の曜日を理解し、ボイドタイムをナビゲートし、占星術のタイミングに合わせてスケジュールを計画しましょう。',
+    category: '占い',
+    metaDescription: '私たちの週間占いガイドで、あなたの一週間を最大限に活用しましょう。惑星の曜日を理解し、ボイドタイムをナビゲートし、占星術のタイミングに合わせてスケジュールを計画しましょう。',
+    keywords: '週間占い, 週間占星術, 惑星の曜日, ボイドタイム, 週間星座予報, 占星術プランニング, 今週の最高の日',
+    quickSummary: [
+        '一週間の各曜日は、異なる惑星によって支配されています（月曜日/月、火曜日/火星など）',
+        '週間占いは、黄道帯を通る速い惑星の動きを追跡します',
+        'ボイドタイムは、主要な行動を避けるべき重要な「一時停止時間」です',
+        '月曜日は感情、火曜日は行動、金曜日はロマンスのための日です'
     ],
-    "keyTakeaways": [
-        "Plan ahead",
-        "Check your chart"
+    keyTakeaways: [
+        '日曜日の夜に週間予報をチェックして、カレンダーを計画しましょう',
+        '目標に応じて、困難な会議は木曜日（木星）または土曜日（土星）にスケジュールしましょう',
+        '月がボイドの時は、契約書への署名は避けましょう',
+        'エネルギーの流れに逆らうのではなく、週間エネルギーの流れを利用しましょう'
     ],
-    "tableOfContents": [
-        {
-            "id": "intro",
-            "title": "Introduction"
-        }
+    tableOfContents: [
+        { id: 'weekly-flow', title: '一週間の占星術的リズム' },
+        { id: 'planetary-days', title: '曜日の支配者たち' },
+        { id: 'void-moon', title: 'ボイドタイム' },
+        { id: 'transits', title: '週間トランジットの追跡' },
+        { id: 'by-sign', title: '星座別週間アドバイス' }
     ],
-    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+    content: `
+      <h2 id="weekly-flow">一週間の占星術的リズム</h2>
+      <p>ある週は水のように流れるのに、別の週は泥の中を歩いているように感じることがありませんか？あるいは、なぜ火曜日に物事を成し遂げるのが金曜日とは違って感じるのでしょうか？これはランダムではありません。私たちの7日間の週の構造は、実際には完全に<strong>占星術</strong>に基づいています。</p>
+      
+      <p><strong>週間占い</strong>を理解することは、単に返信が来るかどうかを知ること以上のものです。それは、古代の惑星の支配者たちとあなたのスケジュールを合わせることについてです。その日のエネルギーと<em>共に</em>働くとき、生産性は向上し、抵抗は消えます。</p>
+
+      <h2 id="planetary-days">曜日の支配者たち</h2>
+      <p>各曜日は惑星にちなんで名付けられています（フランス語やスペイン語のような言語では文字通りそうです）。以下は、占星術的に一週間をスケジュールするためのガイドです：</p>
+      
+      <h3>月曜日（月の日）🌙</h3>
+      <p><strong>エネルギー：</strong> 感情的、直感的、変動的。<br><strong>最適：</strong> 食料品の買い物、家の掃除、寝坊、家族の夕食、内省。<br><strong>避けるべき：</strong> ストレスの多いプレゼンテーションや厳格な論理。</p>
+
+      <h3>火曜日（火星の日）♂</h3>
+      <p><strong>エネルギー：</strong> 攻撃的、エネルギッシュ、鋭い。<br><strong>最適：</strong> 運動、新しいプロジェクトの開始、問題への直面、手術、競争。<br><strong>避けるべき：</strong> 瞑想、リラックスしようとすること。</p>
+      
+      <h3>水曜日（水星の日）☿️</h3>
+      <p><strong>エネルギー：</strong> コミュニケーション、忙しい、速い。<br><strong>最適：</strong> メール、会議、執筆、販売、短期旅行、ネットワーキング。<br><strong>避けるべき：</strong> 沈黙（どうせ起こりません）。</p>
+      
+      <h3>木曜日（木星の日）♃</h3>
+      <p><strong>エネルギー：</strong> 拡大、幸運、楽観的。<br><strong>最適：</strong> 大きなビジョンの立ち上げ、昇給の要求、旅行計画、高等学習。<br><strong>避けるべき：</strong> 節約。</p>
+      
+      <h3>金曜日（金星の日）♀</h3>
+      <p><strong>エネルギー：</strong> 社交的、ロマンチック、美的。<br><strong>最適：</strong> デート、パーティー、服の購入、アート、リラックス、ハッピーアワー。<br><strong>避けるべき：</strong> 汚い仕事や孤独。</p>
+      
+      <h3>土曜日（土星の日）♄</h3>
+      <p><strong>エネルギー：</strong> 真面目、重い、規律。<br><strong>最適：</strong> 庭仕事、長期計画、勉強、雑用の遅れを取り戻す、義務。<br><strong>避けるべき：</strong> 乱痴気騒ぎ（公式なイベントでない限り）。</p>
+      
+      <h3>日曜日（太陽の日）☀️</h3>
+      <p><strong>エネルギー：</strong> 光り輝く、自己中心的、精神的。<br><strong>最適：</strong> 趣味、崇拝/スピリチュアリティ、子供と遊ぶ、見られること、休息。<br><strong>避けるべき：</strong> 透明人間になること。</p>
+
+      <h2 id="void-moon">ボイドタイム (Void-of-Course Moon)</h2>
+      <p>このガイドから一つだけ持ち帰るとすれば、それを<strong>ボイドタイム</strong>にしてください。これは、月が現在の星座で惑星との最後のアスペクトを終え、次の星座に入る前に「浮遊」しているときに発生します。</p>
+      <p><strong>ルール：</strong> 「その件からは何も生まれない。」</p>
+      <p>ボイドタイム中は、契約書に署名したり、ビジネスを立ち上げたり、最初のデートの申し込みを送ったりしないでください。エネルギーは必然的に立ち消えになります。この時間は、ファイリング、睡眠、またはすでに開始した作業の編集に使用してください。それは宇宙の「タイムアウト」です。</p>
+
+      <h2 id="transits">週間トランジットの追跡</h2>
+      <p>良い<strong>週間占星術予報</strong>は、惑星が今週形成している具体的な角度も見ています。</p>
+
+      <h2 id="by-sign">星座別週間アドバイス</h2>
+      <p>みんなの一週間はユニークですが、各星座が週の変化にどう対処するかは以下の通りです：</p>
+      <ul>
+        <li><strong>活動宮（牡羊、蟹、天秤、山羊）：</strong> あなたたちは創始者です。週の初めのエネルギー（月/火）を使って物事を始めましょう。</li>
+        <li><strong>不動宮（牡牛、獅子、蠍、水瓶）：</strong> あなたたちは維持者です。週半ばのエネルギーを使って進捗を固定しましょう。</li>
+        <li><strong>柔軟宮（双子、乙女、射手、魚）：</strong> あなたたちは編集者です。週末や水星の日を使って適応し、進路を変更しましょう。</li>
+      </ul>
+    `
 };

@@ -1,24 +1,73 @@
+/**
+ * Love Horoscope - Korean (한국어)
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    "title": "Astrology Article",
-    "excerpt": "Read your full horoscope...",
-    "category": "Horoscope",
-    "metaDescription": "Astrology guide",
-    "keywords": "astrology, horoscope, guide",
-    "quickSummary": [
-        "Full guide inside",
-        "Read more below"
+    title: '💕 2026년 사랑의 운세: 12별자리 로맨스 마스터 가이드',
+    excerpt: '점성술로 당신의 연애 생활을 변화시키세요. 금성 별자리, 결혼의 7하우스, 화성의 열정 스타일, 그리고 관계에서 수성 역행을 헤쳐나가는 방법에 대해 깊이 알아봅니다.',
+    category: '사랑 & 관계',
+    metaDescription: '점성술로 당신의 연애 생활을 변화시키세요. 금성 별자리, 결혼의 7하우스, 화성의 열정 스타일, 그리고 관계에서 수성 역행을 헤쳐나가는 방법에 대해 깊이 알아봅니다.',
+    keywords: '사랑 운세, 관계 점성술, 금성 별자리 의미, 화성 별자리 데이트, 7하우스 결혼, 시나스트리 가이드, 별자리 데이트 조언, 사랑 궁합',
+    quickSummary: [
+        '당신의 사랑의 언어는 태양 별자리가 아니라 금성 별자리에 의해 결정됩니다',
+        '차트의 7하우스는 당신의 이상적인 장기 파트너를 묘사합니다',
+        '화성은 당신이 로맨틱한 관심을 어떻게 추구하고 성적 케미를 어떻게 가지는지를 결정합니다',
+        '관계의 타이밍이 전부입니다 — 금성 역행 중에는 절대 결혼하지 마세요'
     ],
-    "keyTakeaways": [
-        "Plan ahead",
-        "Check your chart"
+    keyTakeaways: [
+        '누군가가 어떻게 유혹하는지 알고 싶다면 그들의 금성 별자리를 보세요',
+        '누군가가 어떻게 싸우거나 섹스하는지 알고 싶다면 그들의 화성 별자리를 보세요',
+        '"디센던트"(상승궁 반대편)는 일반적으로 당신이 가장 끌리는 별자리입니다',
+        '시나스트리는 두 차트를 비교하여 관계가 오래 지속될 수 있는지 확인하는 예술입니다'
     ],
-    "tableOfContents": [
-        {
-            "id": "intro",
-            "title": "Introduction"
-        }
+    tableOfContents: [
+        { id: 'love-guide', title: '사랑은 기술이다' },
+        { id: 'venus-signs', title: '금성: 당신이 사랑하는 것' },
+        { id: 'mars-signs', title: '화성: 당신이 탐하는 방식' },
+        { id: '7th-house', title: '7하우스: 결혼의 방' },
+        { id: 'retrograde-love', title: '역행 로맨스에서 살아남기' },
+        { id: 'partner-analysis', title: '궁합 분석' }
     ],
-    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+    content: `
+      <h2 id="love-guide">사랑은 기술이다 (그리고 점성술은 매뉴얼이다)</h2>
+      <p>우리는 종종 사랑을 우리에게 그저 "일어나는" 신비한 힘으로 취급합니다. 하지만 점성술에서 사랑은 기어와 레버가 있는 메커니즘입니다. 당신의 <strong>사랑 운세</strong>는 단순한 우연한 만남에 관한 것이 아닙니다. 그것은 파트너십에서 당신의 심리적 필요에 대한 청사진입니다.</p>
+      
+      <p>왜 당신은 계속해서 같은 "나쁜" 유형에게 끌릴까요? 왜 의사소통은 항상 3개월 후에 무너질까요? 답은 당신의 차트에 있습니다. 자신의 우주적 사랑 설계를 이해함으로써, 당신은 패턴 반복을 멈추고 실제로 원하는 관계를 구축하기 시작할 수 있습니다.</p>
+      
+      <h2 id="venus-signs">금성: 애정의 예술</h2>
+      <p><strong>금성</strong>은 매력, 가치관, 조화의 행성입니다. 당신이 태어났을 때 금성이 있던 별자리는 당신이 아름답다고 생각하는 것과 애정을 표현하는 방식을 설명합니다.</p>
+      <ul>
+        <li><strong>불의 금성 (양자리, 사자자리, 사수자리):</strong> 추격을 좋아합니다. 드라마, 거창한 제스처, 자발성이 필요합니다. 쉽게 지루해합니다. <em>조언:</em> 흥미진진하게 유지하세요.</li>
+        <li><strong>흙의 금성 (황소자리, 처녀자리, 염소자리):</strong> 안정을 좋아합니다. 헌신, 신뢰성, 신체적 접촉이 필요합니다. 밀당을 싫어합니다. <em>조언:</em> 일관성을 유지하세요.</li>
+        <li><strong>공기의 금성 (쌍둥이자리, 천칭자리, 물병자리):</strong> 지성을 좋아합니다. 대화, 재치, 그리고 우정이 먼저 필요합니다. 무거운 감정을 피합니다. <em>조언:</em> 흥미로운 사람이 되세요.</li>
+        <li><strong>물의 금성 (게자리, 전갈자리, 물고기자리):</strong> 영혼을 좋아합니다. 깊은 정서적 융합, 취약성, 안전을 필요로 합니다. <em>조언:</em> 진실하세요.</li>
+      </ul>
+
+      <h2 id="mars-signs">화성: 욕망의 엔진</h2>
+      <p>금성이 당신이 좋아하는 것이라면, <strong>화성</strong>은 당신이 그것을 얻는 방법입니다. 화성은 성욕, 추구, 갈등을 지배합니다.</p>
+      <p>당신이 <strong>전갈자리 화성</strong>을 가지고 있다면, 당신은 강렬하고 소유욕이 강하며 모 아니면 도입니다. 그저 썸을 타고 즐기기를 원하는 변덕스러운 <strong>쌍둥이자리 화성</strong>을 겁주어 쫓아낼지도 모릅니다. 파트너의 화성 별자리를 아는 것은 헤어지지 않고 성적 만족을 얻고 논쟁을 해결하는 치트 코드입니다.</p>
+
+      <h2 id="7th-house">7하우스: 당신의 "반쪽"</h2>
+      <p>당신의 상승궁을 보세요. 이제 그 바로 반대편에 있는 별자리를 보세요. 이것이 당신의 <strong>디센던트(Descendant)</strong>이며, 파트너십의 7하우스의 지배자입니다.</p>
+      <p>우리는 종종 우리에게 부족한 것을 가지고 있기 때문에 7하우스의 자질을 구현하는 사람들에게 자석처럼 끌립니다.
+      <br><em>예:</em> 규율 있는 <strong>처녀자리 상승궁</strong>은 종종 꿈꾸는 듯하고 혼란스러운 <strong>물고기자리(7하우스)</strong>와 결혼합니다. 처녀자리는 물고기자리의 삶을 정리하고, 물고기자리는 처녀자리에게 긴장을 푸는 법을 가르칩니다. 그것은 균형의 축입니다.</p>
+
+      <h2 id="retrograde-love">역행 로맨스에서 살아남기</h2>
+      <p>수성 역행(의사소통 오류)에 대해 들어보셨겠지만, <strong>금성 역행</strong>이야말로 진정한 관계 시험대입니다. 18개월마다 발생하며, 이때는 다음과 같은 일이 일어납니다:
+      <br>1. 전 애인이 돌아옵니다("좀비").
+      <br>2. 약한 관계가 깨집니다.
+      <br>3. 숨겨진 불륜이 드러납니다.</p>
+      
+      <p><strong>황금률:</strong> 금성 역행 중에는 절대 결혼하거나 프러포즈하거나 중대한 약속을 하지 마세요. 그림자 기간(보통 40일)이 지날 때까지 기다려 여전히 같은 감정인지 확인하세요.</p>
+
+      <h2 id="partner-analysis">파트너 궁합 분석</h2>
+      <p>당신은 복잡하고, 파트너도 그렇습니다. 일반적인 "사자자리 + 물병자리" 운세는 당신의 독특한 연결의 뉘앙스를 포착할 수 없습니다. 우리의 <strong>프리미엄 관계 보고서</strong>는 다음을 분석합니다:</p>
+      <ul>
+        <li><strong>시나스트리:</strong> 당신의 행성이 그들의 행성에 어떻게 닿는지(화학 작용).</li>
+        <li><strong>컴포지트 차트:</strong> 관계 자체의 에너지(운명).</li>
+        <li><strong>데이비슨 차트:</strong> 만남의 목적(카르마).</li>
+      </ul>
+      <p>당신의 마음을 운에 맡기지 마세요. Astralo로 당신의 연애 생활을 해독하세요.</p>
+    `
 };

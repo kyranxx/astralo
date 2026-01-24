@@ -7,7 +7,7 @@ import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
 import { zodiacCompatibility } from './articles/zodiac-compatibility-complete-guide/index';
 import { birthChartReading } from './articles/birth-chart-reading-explained/index';
 import { weeklyHoroscope } from './articles/weekly-horoscope-predictions/index';
-import { monthlyHoroscope } from './articles/monthly-horoscope-january-2025/index';
+import { monthlyHoroscope } from './articles/monthly-horoscope-january-2026/index';
 import { loveHoroscope } from './articles/love-horoscope-relationship-advice/index';
 import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
 import { historyOfAstrology } from './articles/history-of-astrology/index';
@@ -24,7 +24,7 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'zodiac-compatibility-complete-guide': zodiacCompatibility,
     'birth-chart-reading-explained': birthChartReading,
     'weekly-horoscope-predictions': weeklyHoroscope,
-    'monthly-horoscope-january-2025': monthlyHoroscope,
+    'monthly-horoscope-january-2026': monthlyHoroscope,
     'love-horoscope-relationship-advice': loveHoroscope,
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
     'history-of-astrology': historyOfAstrology,
@@ -38,42 +38,42 @@ export const articleMeta: Record<string, BlogPostMeta> = {
     'daily-horoscope-guide': {
         slug: 'daily-horoscope-guide',
         emoji: '⭐',
-        date: '2025-12-20',
+        date: '2026-12-20',
         readTime: '8',
         author: 'Astralo Team',
     },
     'zodiac-compatibility-complete-guide': {
         slug: 'zodiac-compatibility-complete-guide',
         emoji: '❤️',
-        date: '2025-12-18',
+        date: '2026-12-18',
         readTime: '12',
         author: 'Astralo Team',
     },
     'birth-chart-reading-explained': {
         slug: 'birth-chart-reading-explained',
         emoji: '🔮',
-        date: '2025-12-15',
+        date: '2026-12-15',
         readTime: '10',
         author: 'Astralo Team',
     },
     'weekly-horoscope-predictions': {
         slug: 'weekly-horoscope-predictions',
         emoji: '📅',
-        date: '2025-12-22',
+        date: '2026-12-22',
         readTime: '6',
         author: 'Astralo Team',
     },
-    'monthly-horoscope-january-2025': {
-        slug: 'monthly-horoscope-january-2025',
+    'monthly-horoscope-january-2026': {
+        slug: 'monthly-horoscope-january-2026',
         emoji: '🌙',
-        date: '2025-12-24',
+        date: '2026-01-01',
         readTime: '15',
         author: 'Astralo Team',
     },
     'love-horoscope-relationship-advice': {
         slug: 'love-horoscope-relationship-advice',
         emoji: '💕',
-        date: '2025-12-10',
+        date: '2026-12-10',
         readTime: '9',
         author: 'Astralo Team',
     },

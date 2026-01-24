@@ -1,24 +1,81 @@
+/**
+ * Weekly Horoscope - Chinese (简体中文)
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    "title": "Astrology Article",
-    "excerpt": "Read your full horoscope...",
-    "category": "Horoscope",
-    "metaDescription": "Astrology guide",
-    "keywords": "astrology, horoscope, guide",
-    "quickSummary": [
-        "Full guide inside",
-        "Read more below"
+    title: '📅 每周运势：如何驾驭未来一周的宇宙能量',
+    excerpt: '利用我们的每周运势指南最大化你的一周。了解行星日，驾驭月亮空亡，并根据占星时机规划你的日程。',
+    category: '运势',
+    metaDescription: '利用我们的每周运势指南最大化你的一周。了解行星日，驾驭月亮空亡，并根据占星时机规划你的日程。',
+    keywords: '每周运势, 每周占星, 行星日, 月亮空亡, 每周星座预测, 占星规划, 本周最佳日子',
+    quickSummary: [
+        '一周的每一天都由不同的行星守护（周一/月亮，周二/火星等）',
+        '每周运势追踪移动较快的行星穿过黄道带的情况',
+        '月亮空亡是一个关键的“暂停时间”，应避免采取重大行动',
+        '周一适合情感，周二适合行动，周五适合浪漫'
     ],
-    "keyTakeaways": [
-        "Plan ahead",
-        "Check your chart"
+    keyTakeaways: [
+        '在周日晚上查看每周预测以规划你的日历',
+        '根据目标，将困难的会议安排在周四（木星）或周六（土星）',
+        '避免在月亮空亡时签署合同',
+        '利用每周的能量流，而不是与之抗争'
     ],
-    "tableOfContents": [
-        {
-            "id": "intro",
-            "title": "Introduction"
-        }
+    tableOfContents: [
+        { id: 'weekly-flow', title: '每周的占星节奏' },
+        { id: 'planetary-days', title: '日子的守护星' },
+        { id: 'void-moon', title: '月亮空亡' },
+        { id: 'transits', title: '追踪每周行运' },
+        { id: 'by-sign', title: '十二星座每周建议' }
     ],
-    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+    content: `
+      <h2 id="weekly-flow">一周的占星节奏</h2>
+      <p>你是否曾经觉得有些星期像水一样流畅，而有些星期则像在泥泞中跋涉？或者为什么周二要把事情做完感觉和周五不一样？这不是随机的。我们要知道，7 天一周的结构实际上完全基于<strong>占星术</strong>。</p>
+      
+      <p>理解<strong>每周运势</strong>不仅仅是知道你是否会收到回信。它是关于将你的日程安排与古老的行星时间守护者对齐。当你顺应通过当天的能量工作时，效率会提高，阻力会消失。</p>
+
+      <h2 id="planetary-days">日子的守护星</h2>
+      <p>每一天都以一颗行星命名（在法语或西班牙语等语言中这就是字面意思）。这是你按占星术安排一周的指南：</p>
+      
+      <h3>周一（月亮日）🌙</h3>
+      <p><strong>能量：</strong> 情绪化、直觉、波动。<br><strong>最适合：</strong> 杂货购物、打扫房子、睡懒觉、家庭晚餐、反思。<br><strong>避免：</strong> 高压演讲或严格的逻辑。</p>
+
+      <h3>周二（火星日）♂</h3>
+      <p><strong>能量：</strong> 侵略性、精力充沛、锐利。<br><strong>最适合：</strong> 锻炼、开始新项目、面对问题、手术、比赛。<br><strong>避免：</strong> 冥想，试图放松。</p>
+      
+      <h3>周三（水星日）☿️</h3>
+      <p><strong>能量：</strong> 善于交流、忙碌、快速。<br><strong>最适合：</strong> 电子邮件、会议、写作、销售、短途旅行、社交。<br><strong>避免：</strong> 沉默（反正也不会发生）。</p>
+      
+      <h3>周四（木星日）♃</h3>
+      <p><strong>能量：</strong> 扩张、幸运、乐观。<br><strong>最适合：</strong> 启动宏大愿景、要求加薪、旅行计划、高等学习。<br><strong>避免：</strong> 省吃俭用。</p>
+      
+      <h3>周五（金星日）♀</h3>
+      <p><strong>能量：</strong> 社交、浪漫、审美。<br><strong>最适合：</strong> 约会、聚会、买衣服、艺术、放松、欢乐时光。<br><strong>避免：</strong> 肮脏的工作或独处。</p>
+      
+      <h3>周六（土星日）♄</h3>
+      <p><strong>能量：</strong> 严肃、沉重、自律。<br><strong>最适合：</strong> 庭院工作、长期规划、学习、做家务、责任。<br><strong>避免：</strong> 疯狂派对（除非是正式活动）。</p>
+      
+      <h3>周日（太阳日）☀️</h3>
+      <p><strong>能量：</strong> 辐射、以自我为中心、精神性。<br><strong>最适合：</strong> 爱好、崇拜/灵性、和孩子玩、被关注、休息。<br><strong>避免：</strong> 隐身。</p>
+
+      <h2 id="void-moon">月亮空亡</h2>
+      <p>如果你从本指南中学到一件事，那就让它是<strong>月亮空亡</strong>。这发生在月亮结束了与当前星座行星的最后一个相位，并且在进入下一个星座之前“漂浮”的时候。</p>
+      <p><strong>规则：</strong> “事情不会有结果。”</p>
+      <p>在月亮空亡期间，不要签署合同、创业或发送初次约会请求。能量不可避免地会消散。利用这段时间归档、睡觉或编辑你已经开始的工作。这是宇宙的“暂停时间”。</p>
+
+      <h2 id="transits">追踪每周行运</h2>
+      <p>良好的<strong>每周占星预测</strong>也会关注行星本周形成的具体角度。例如：</p>
+      <ul>
+        <li><strong>水星六分金星：</strong> 社交优雅和请求帮助的完美一周。</li>
+        <li><strong>太阳刑冥王星：</strong> 权力斗争和激烈的一周。</li>
+      </ul>
+
+      <h2 id="by-sign">十二星座每周建议模板</h2>
+      <p>虽然每个人的周都是独特的，但以下是各星座通常如何应对每周变化：</p>
+      <ul>
+        <li><strong>基本星座（白羊、巨蟹、天秤、摩羯）：</strong> 你们是发起者。利用周初的能量（周一/周二）开始事情。</li>
+        <li><strong>固定星座（金牛、狮子、天蝎、水瓶）：</strong> 你们是维持者。利用周中的能量锁定进展。</li>
+        <li><strong>变动星座（双子、处女、射手、双鱼）：</strong> 你们是编辑者。利用周末或水星日来适应和改变路线。</li>
+      </ul>
+    `
 };
