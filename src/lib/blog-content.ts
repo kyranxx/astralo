@@ -49,9 +49,9 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Get your weekly horoscope forecast for all zodiac signs.',
                 category: 'Horoscopes'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Monthly Horoscope January 2025: All Zodiac Sign Predictions',
-                excerpt: 'Your complete monthly horoscope for January 2025.',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Monthly Horoscope January 2026: All Zodiac Sign Predictions',
+                excerpt: 'Your complete monthly horoscope for January 2026.',
                 category: 'Horoscopes'
             },
             'love-horoscope-relationship-advice': {
@@ -100,7 +100,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'সমস্ত রাশির জন্য আপনার সাপ্তাহিক রাশিফল পান।',
                 category: 'রাশিফল'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 মাসিক রাশিফল জানুয়ারি ২০২৫: সমস্ত রাশির ভবিষ্যদ্বাণী',
                 excerpt: 'জানুয়ারি ২০২৫-এর জন্য আপনার সম্পূর্ণ মাসিক রাশিফল।',
                 category: 'রাশিফল'
@@ -141,7 +141,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'सभी राशियों के लिए अपना साप्ताहिक राशिफल प्राप्त करें।',
                 category: 'राशिफल'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 मासिक राशिफल जनवरी 2025: सभी राशियों की भविष्यवाणी',
                 excerpt: 'जनवरी 2025 के लिए आपका पूर्ण मासिक राशिफल।',
                 category: 'राशिफल'
@@ -182,9 +182,9 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Holen Sie sich Ihr Wochenhoroskop für alle Sternzeichen.',
                 category: 'Horoskope'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Monatshoroskop Januar 2025: Alle Sternzeichen-Vorhersagen',
-                excerpt: 'Ihr vollständiges Monatshoroskop für Januar 2025.',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Monatshoroskop Januar 2026: Alle Sternzeichen-Vorhersagen',
+                excerpt: 'Ihr vollständiges Monatshoroskop für Januar 2026.',
                 category: 'Horoskope'
             },
             'love-horoscope-relationship-advice': {
@@ -223,7 +223,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Obtenez votre horoscope hebdomadaire pour tous les signes.',
                 category: 'Horoscopes'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Horoscope mensuel janvier 2025: Prédictions pour tous les signes',
                 excerpt: 'Votre horoscope mensuel complet pour janvier 2025.',
                 category: 'Horoscopes'
@@ -264,7 +264,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Obtén tu horóscopo semanal para todos los signos.',
                 category: 'Horóscopos'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Horóscopo mensual enero 2025: Predicciones para todos los signos',
                 excerpt: 'Tu horóscopo mensual completo para enero 2025.',
                 category: 'Horóscopos'
@@ -305,7 +305,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Ottieni il tuo oroscopo settimanale per tutti i segni.',
                 category: 'Oroscopi'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Oroscopo mensile gennaio 2025: Previsioni per tutti i segni',
                 excerpt: 'Il tuo oroscopo mensile completo per gennaio 2025.',
                 category: 'Oroscopi'
@@ -346,7 +346,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Obtenha seu horóscopo semanal para todos os signos.',
                 category: 'Horóscopos'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Horóscopo mensal janeiro 2025: Previsões para todos os signos',
                 excerpt: 'Seu horóscopo mensal completo para janeiro 2025.',
                 category: 'Horóscopos'
@@ -387,7 +387,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Získajte svoj týždenný horoskop pre všetky znamenia.',
                 category: 'Horoskopy'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Mesačný horoskop január 2025: Predpovede pre všetky znamenia',
                 excerpt: 'Váš kompletný mesačný horoskop na január 2025.',
                 category: 'Horoskopy'
@@ -428,7 +428,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Získejte svůj týdenní horoskop pro všechna znamení.',
                 category: 'Horoskopy'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Měsíční horoskop leden 2025: Předpovědi pro všechna znamení',
                 excerpt: 'Váš kompletní měsíční horoskop na leden 2025.',
                 category: 'Horoskopy'
@@ -469,9 +469,9 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'すべての星座の週間星占いを取得しましょう。',
                 category: '星占い'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 月間星占い2025年1月：全星座の予測',
-                excerpt: '2025年1月の完全な月間星占い。',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 月間星占い2026年1月：全星座の予測',
+                excerpt: '2026年1月の完全な月間星占い。',
                 category: '星占い'
             },
             'love-horoscope-relationship-advice': {
@@ -510,9 +510,9 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: '모든 별자리의 주간 운세를 확인하세요.',
                 category: '운세'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 월간 운세 2025년 1월: 모든 별자리 예측',
-                excerpt: '2025년 1월의 완전한 월간 운세.',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 월간 운세 2026년 1월: 모든 별자리 예측',
+                excerpt: '2026년 1월의 완전한 월간 운세.',
                 category: '운세'
             },
             'love-horoscope-relationship-advice': {
@@ -551,9 +551,9 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: '获取所有星座的每周运势。',
                 category: '星座运势'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 2025年1月星座运势：所有星座预测',
-                excerpt: '2025年1月的完整月度运势。',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 2026年1月星座运势：所有星座预测',
+                excerpt: '2026年1月的完整月度运势。',
                 category: '星座运势'
             },
             'love-horoscope-relationship-advice': {
@@ -592,7 +592,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Получите еженедельный гороскоп для всех знаков.',
                 category: 'Гороскопы'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Месячный гороскоп январь 2025: Прогнозы для всех знаков',
                 excerpt: 'Ваш полный месячный гороскоп на январь 2025.',
                 category: 'Гороскопы'
@@ -633,7 +633,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Ontvang uw weekhoroscoop voor alle sterrenbeelden.',
                 category: 'Horoscopen'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Maandhoroscoop Januari 2025: Voorspellingen voor Alle Tekens',
                 excerpt: 'Uw complete maandhoroscoop voor januari 2025.',
                 category: 'Horoscopen'
@@ -674,8 +674,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Otrzymaj swój tygodniowy horoskop dla wszystkich znaków.',
                 category: 'Horoskopy'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Horoskop Miesięczny Styczeń 2025: Przepowiednie dla Wszystkich',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Horoskop Miesięczny Styczeń 2026: Przepowiednie dla Wszystkich',
                 excerpt: 'Twój kompletny horoskop miesięczny na styczeń 2025.',
                 category: 'Horoskopy'
             },
@@ -715,7 +715,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Kapja meg heti horoszkópját minden csillagjegyhez.',
                 category: 'Horoszkópok'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Havi Horoszkóp 2025 Január: Minden Csillagjegy Jóslata',
                 excerpt: 'Teljes havi horoszkópja 2025 januárra.',
                 category: 'Horoszkópok'
@@ -756,8 +756,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Primește horoscopul săptămânal pentru toate zodiile.',
                 category: 'Horoscoape'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Horoscop Lunar Ianuarie 2025: Predicții pentru Toate Zodiile',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Horoscop Lunar Ianuarie 2026: Predicții pentru Toate Zodiile',
                 excerpt: 'Horoscopul tău lunar complet pentru ianuarie 2025.',
                 category: 'Horoscoape'
             },
@@ -797,7 +797,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Вземете седмичния си хороскоп за всички зодии.',
                 category: 'Хороскопи'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Месечен Хороскоп Януари 2025: Прогнози за Всички Зодии',
                 excerpt: 'Вашият пълен месечен хороскоп за януари 2025.',
                 category: 'Хороскопи'
@@ -838,7 +838,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Dobijte svoj tjedni horoskop za sve znakove.',
                 category: 'Horoskopi'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Mjesečni Horoskop Siječanj 2025: Predviđanja za Sve Znakove',
                 excerpt: 'Vaš potpuni mjesečni horoskop za siječanj 2025.',
                 category: 'Horoskopi'
@@ -879,8 +879,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Pridobite svoj tedenski horoskop za vsa znamenja.',
                 category: 'Horoskopi'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Mesečni Horoskop Januar 2025: Napovedi za Vsa Znamenja',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Mesečni Horoskop Januar 2026: Napovedi za Vsa Znamenja',
                 excerpt: 'Vaš popoln mesečni horoskop za januar 2025.',
                 category: 'Horoskopi'
             },
@@ -920,8 +920,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Dobijte svoj nedeljni horoskop za sve znakove.',
                 category: 'Horoskopi'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Mesečni Horoskop Januar 2025: Predviđanja za Sve Znakove',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Mesečni Horoskop Januar 2026: Predviđanja za Sve Znakove',
                 excerpt: 'Vaš potpuni mesečni horoskop za januar 2025.',
                 category: 'Horoskopi'
             },
@@ -961,7 +961,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Отримайте свій тижневий гороскоп для всіх знаків.',
                 category: 'Гороскопи'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Місячний Гороскоп Січень 2025: Передбачення для Всіх Знаків',
                 excerpt: 'Ваш повний місячний гороскоп на січень 2025.',
                 category: 'Гороскопи'
@@ -1002,7 +1002,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Λάβετε το εβδομαδιαίο ωροσκόπιό σας για όλα τα ζώδια.',
                 category: 'Ωροσκόπια'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Μηνιαίο Ωροσκόπιο Ιανουάριος 2025: Προβλέψεις για Όλα τα Ζώδια',
                 excerpt: 'Το πλήρες μηνιαίο ωροσκόπιό σας για τον Ιανουάριο 2025.',
                 category: 'Ωροσκόπια'
@@ -1043,7 +1043,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Tüm burçlar için haftalık yorumunuzu alın.',
                 category: 'Burç Yorumları'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Aylık Burç Yorumu Ocak 2025: Tüm Burçlar için Tahminler',
                 excerpt: 'Ocak 2025 için tam aylık burç yorumunuz.',
                 category: 'Burç Yorumları'
@@ -1084,7 +1084,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'احصل على توقعاتك الأسبوعية لجميع الأبراج.',
                 category: 'الأبراج'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 الأبراج الشهرية يناير 2025: تنبؤات لجميع الأبراج',
                 excerpt: 'توقعاتك الشهرية الكاملة لشهر يناير 2025.',
                 category: 'الأبراج'
@@ -1125,7 +1125,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'รับดวงรายสัปดาห์สำหรับทุกราศี',
                 category: 'ดูดวง'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 ดวงรายเดือน มกราคม 2025: คำทำนายสำหรับทุกราศี',
                 excerpt: 'ดวงรายเดือนฉบับสมบูรณ์สำหรับมกราคม 2025',
                 category: 'ดูดวง'
@@ -1166,7 +1166,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Nhận tử vi tuần của bạn cho tất cả các cung.',
                 category: 'Tử Vi'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Tử Vi Tháng 1/2025: Dự Đoán Cho Tất Cả Các Cung',
                 excerpt: 'Tử vi tháng đầy đủ của bạn cho tháng 1/2025.',
                 category: 'Tử Vi'
@@ -1207,7 +1207,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Dapatkan ramalan mingguan Anda untuk semua zodiak.',
                 category: 'Ramalan'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Ramalan Bulanan Januari 2025: Prediksi untuk Semua Zodiak',
                 excerpt: 'Ramalan bulanan lengkap Anda untuk Januari 2025.',
                 category: 'Ramalan'
@@ -1248,7 +1248,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Få ditt veckohoroskop för alla stjärntecken.',
                 category: 'Horoskop'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Månadshoroskop Januari 2025: Förutsägelser för Alla Tecken',
                 excerpt: 'Ditt kompletta månadshoroskop för januari 2025.',
                 category: 'Horoskop'
@@ -1289,8 +1289,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Få dit ugehoroskop for alle stjernetegn.',
                 category: 'Horoskoper'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Månedshoroskop Januar 2025: Forudsigelser for Alle Tegn',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Månedshoroskop Januar 2026: Forudsigelser for Alle Tegn',
                 excerpt: 'Dit komplette månedshoroskop for januar 2025.',
                 category: 'Horoskoper'
             },
@@ -1330,8 +1330,8 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Få ditt ukehoroskop for alle stjernetegn.',
                 category: 'Horoskoper'
             },
-            'monthly-horoscope-january-2025': {
-                title: '🌙 Månedshoroskop Januar 2025: Spådommer for Alle Tegn',
+            'monthly-horoscope-january-2026': {
+                title: '🌙 Månedshoroskop Januar 2026: Spådommer for Alle Tegn',
                 excerpt: 'Ditt komplette månedshoroskop for januar 2025.',
                 category: 'Horoskoper'
             },
@@ -1371,7 +1371,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'Saa viikkohoroskooppisi kaikille horoskooppimerkeille.',
                 category: 'Horoskooppi'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 Kuukausihoroskooppi Tammikuu 2025: Ennusteet Kaikille Merkeille',
                 excerpt: 'Täydellinen kuukausihoroskooppisi tammikuulle 2025.',
                 category: 'Horoskooppi'
@@ -1412,7 +1412,7 @@ const blogContent: Record<string, BlogTranslations> = {
                 excerpt: 'קבל את ההורוסקופ השבועי שלך לכל המזלות.',
                 category: 'הורוסקופים'
             },
-            'monthly-horoscope-january-2025': {
+            'monthly-horoscope-january-2026': {
                 title: '🌙 הורוסקופ חודשי ינואר 2025: תחזיות לכל המזלות',
                 excerpt: 'ההורוסקופ החודשי המלא שלך לינואר 2025.',
                 category: 'הורוסקופים'
