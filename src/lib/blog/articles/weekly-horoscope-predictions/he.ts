@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const he: BlogPostTranslation = { title: '📅 הורוסקופ שבועי: התחזיות שלך 2026', excerpt: 'הורוסקופ שבועי לכל 12 המזלות.', category: 'תחזיות שבועיות', metaDescription: 'הורוסקופ שבועי לכל המזלות.', keywords: 'הורוסקופ שבועי, הורוסקופ השבוע', quickSummary: ['הורוסקופים שבועיים מכסים 7 ימי השפעות', 'כל שבוע מביא מעברים ייחודיים', 'תכנן את השבוע עם הכוכבים', 'תחזיות שבועיות מציעות יותר פרטים'], keyTakeaways: ['בדוק הורוסקופ ביום ראשון או שני', 'התחזיות מתחשבות בהיבטים חשובים', 'מזל שמש ועולה הם בעלי ערך', 'השתמש בתחזיות להחלטות חשובות'], tableOfContents: [{ id: 'overview', title: 'סקירה שבועית' }, { id: 'by-sign', title: 'לפי מזל' }], content: '<h2 id="overview">סקירה שבועית</h2><p>מה הכינו הכוכבים לשבוע זה.</p><h2 id="by-sign">לפי מזל</h2><p>כל מזל מקבל השפעות ייחודיות.</p>' };
+
+export const he: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const vi: BlogPostTranslation = { title: '💕 Tử Vi Tình Yêu: Lời Khuyên Tình Cảm 2026', excerpt: 'Tử vi tình yêu và lời khuyên cho cung của bạn.', category: 'Tình Yêu và Mối Quan Hệ', metaDescription: 'Tử vi tình yêu cho tất cả các cung.', keywords: 'tử vi tình yêu, tử vi tình cảm', quickSummary: ['Tử vi tình yêu tiết lộ các mẫu lãng mạn', 'Cung sao Kim cho thấy cách bạn thể hiện tình yêu'], keyTakeaways: ['Kiểm tra cung mặt trời và sao Kim', 'Thời điểm tình cảm có thể thấy qua các chuyển tiếp'], tableOfContents: [{ id: 'overview', title: 'Tổng quan' }], content: '<h2 id="overview">Tử Vi Tình Yêu</h2><p>Tử vi tình yêu của bạn tiết lộ những hiểu biết về cuộc sống lãng mạn.</p>' };
+
+export const vi: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

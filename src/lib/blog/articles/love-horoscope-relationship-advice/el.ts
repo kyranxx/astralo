@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const el: BlogPostTranslation = { title: '💕 Ωροσκόπιο Αγάπης: Συμβουλές Σχέσεων 2026', excerpt: 'Ωροσκόπιο αγάπης και συμβουλές σχέσεων για το ζώδιό σου.', category: 'Αγάπη & Σχέσεις', metaDescription: 'Ωροσκόπιο αγάπης για όλα τα ζώδια.', keywords: 'ωροσκόπιο αγάπης, ωροσκόπιο σχέσεων', quickSummary: ['Τα ωροσκόπια αγάπης αποκαλύπτουν ρομαντικά μοτίβα', 'Το ζώδιο Αφροδίτης δείχνει πώς εκφράζεις την αγάπη'], keyTakeaways: ['Έλεγξε τα ζώδια Ηλίου και Αφροδίτης', 'Ο χρονισμός σχέσεων φαίνεται μέσω διελεύσεων'], tableOfContents: [{ id: 'overview', title: 'Επισκόπηση' }], content: '<h2 id="overview">Ωροσκόπιο Αγάπης</h2><p>Το ωροσκόπιο αγάπης σου αποκαλύπτει insights για τη ρομαντική σου ζωή.</p>' };
+
+export const el: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

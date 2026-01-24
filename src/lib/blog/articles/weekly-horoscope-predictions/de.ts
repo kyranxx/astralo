@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const de: BlogPostTranslation = { title: '📅 Wochenhoroskop: Ihre Sternzeichen-Vorhersagen 2026', excerpt: 'Holen Sie sich Ihre wöchentlichen Horoskop-Vorhersagen für alle 12 Sternzeichen.', category: 'Wöchentliche Vorhersagen', metaDescription: 'Wochenhoroskop für alle Sternzeichen. Genaue wöchentliche Vorhersagen für alle Zeichen.', keywords: 'Wochenhoroskop, Horoskop diese Woche, wöchentliche Vorhersagen', quickSummary: ['Wochenhoroskope decken 7 Tage planetarer Einflüsse ab', 'Jede Woche bringt einzigartige astrologische Transite', 'Planen Sie Ihre Woche mit Sternenweisheit', 'Wöchentliche Vorhersagen bieten mehr Details als tägliche'], keyTakeaways: ['Prüfen Sie Ihr Wochenhoroskop Sonntag oder Montag', 'Wöchentliche Prognosen berücksichtigen wichtige Aspekte', 'Sowohl Sonnen- als auch Aszendent-Prognosen sind wertvoll', 'Nutzen Sie wöchentliche Vorhersagen für wichtige Entscheidungen'], tableOfContents: [{ id: 'overview', title: 'Wochenübersicht' }, { id: 'by-sign', title: 'Nach Sternzeichen' }, { id: 'key-dates', title: 'Wichtige Termine' }, { id: 'personalized', title: 'Persönliche Lesung' }], content: '<h2 id="overview">Astrologische Wochenübersicht</h2><p>Entdecken Sie, was die Sterne diese Woche für Sie bereithalten.</p><h2 id="by-sign">Wochenhoroskop nach Sternzeichen</h2><p>Jedes Zeichen erhält einzigartige wöchentliche Einflüsse.</p><h2 id="key-dates">Wichtige Termine diese Woche</h2><p>Bemerkenswerte planetare Aspekte diese Woche.</p><h2 id="personalized">Persönliche Wochenlesung</h2><p>Für detaillierte Vorhersagen holen Sie sich eine Lesung bei Astralo.</p>' };
+
+export const de: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

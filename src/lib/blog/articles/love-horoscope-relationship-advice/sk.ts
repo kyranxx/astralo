@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const sk: BlogPostTranslation = { title: '💕 Milostný Horoskop: Rady pre Vzťahy 2026', excerpt: 'Milostný horoskop a rady pre vaše znamenie.', category: 'Láska a Vzťahy', metaDescription: 'Milostný horoskop pre všetky znamenia.', keywords: 'milostný horoskop, horoskop vzťahov', quickSummary: ['Milostné horoskopy odhaľujú romantické vzorce', 'Znamenie Venuše ukazuje ako vyjadrujete lásku'], keyTakeaways: ['Skontrolujte svoje znamenia Slnka a Venuše', 'Timing vzťahov viditeľný cez tranzity'], tableOfContents: [{ id: 'overview', title: 'Prehľad' }], content: '<h2 id="overview">Milostný Horoskop</h2><p>Váš milostný horoskop odhaľuje náhľady do romantického života.</p>' };
+
+export const sk: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

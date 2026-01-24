@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const ja: BlogPostTranslation = { title: '💕 恋愛占い: 星座別恋愛アドバイス 2026', excerpt: '星座別の恋愛占いとアドバイス。', category: '恋愛・人間関係', metaDescription: '全星座の恋愛占い。', keywords: '恋愛占い, 恋愛運, 相性占い', quickSummary: ['恋愛占いはロマンチックなパターンを明らかに', '金星星座は愛の表現方法を示す', '火星星座は情熱を明らかに', '7ハウスはパートナーシップスタイルを示す'], keyTakeaways: ['太陽と金星の星座をチェック', '恋愛のタイミングはトランジットで見える', 'パートナーのチャートを理解すると communication改善', '相性は太陽星座だけではない'], tableOfContents: [{ id: 'overview', title: '概要' }, { id: 'venus', title: '金星星座' }], content: '<h2 id="overview">恋愛占い 概要</h2><p>恋愛占いはロマンチックな生活への洞察を明らかにします。</p><h2 id="venus">恋愛における金星星座</h2><p>金星星座はあなたがどのように愛するかを理解する鍵です。</p>' };
+
+export const ja: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

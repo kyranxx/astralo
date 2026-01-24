@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const ru: BlogPostTranslation = { title: '📅 Недельный Гороскоп: Ваши Прогнозы на Неделю 2026', excerpt: 'Получите недельные прогнозы для всех 12 знаков зодиака.', category: 'Недельные Прогнозы', metaDescription: 'Недельный гороскоп для всех знаков зодиака.', keywords: 'недельный гороскоп, гороскоп на неделю, еженедельные прогнозы', quickSummary: ['Недельные гороскопы охватывают 7 дней влияний', 'Каждая неделя приносит уникальные транзиты', 'Планируйте неделю со звёздами', 'Недельные прогнозы дают больше деталей'], keyTakeaways: ['Проверяйте гороскоп в воскресенье или понедельник', 'Прогнозы учитывают важные аспекты', 'Солнечный знак и асцендент важны', 'Используйте прогнозы для важных решений'], tableOfContents: [{ id: 'overview', title: 'Обзор Недели' }, { id: 'by-sign', title: 'По Знакам' }, { id: 'key-dates', title: 'Ключевые Даты' }, { id: 'personalized', title: 'Персональное Чтение' }], content: '<h2 id="overview">Астрологический Обзор Недели</h2><p>Узнайте, что звёзды приготовили на эту неделю.</p><h2 id="by-sign">Недельный Гороскоп по Знакам</h2><p>Каждый знак получает уникальные влияния.</p><h2 id="key-dates">Ключевые Даты этой Недели</h2><p>Заметные планетарные аспекты.</p><h2 id="personalized">Персональное Недельное Чтение</h2><p>Получите персональное чтение в Astralo.</p>' };
+
+export const ru: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

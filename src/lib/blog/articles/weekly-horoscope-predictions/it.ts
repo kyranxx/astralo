@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const it: BlogPostTranslation = { title: '📅 Oroscopo Settimanale: Le Tue Previsioni 2026', excerpt: 'Ottieni le previsioni settimanali per tutti i 12 segni.', category: 'Previsioni Settimanali', metaDescription: 'Oroscopo settimanale per tutti i segni zodiacali.', keywords: 'oroscopo settimanale, oroscopo questa settimana, previsioni settimanali', quickSummary: ['Gli oroscopi settimanali coprono 7 giorni di influenze', 'Ogni settimana porta transiti unici', 'Pianifica la settimana con le stelle', 'Le previsioni settimanali offrono più dettagli'], keyTakeaways: ['Controlla l\'oroscopo domenica o lunedì', 'Le previsioni considerano aspetti maggiori', 'Segno solare e ascendente sono preziosi', 'Usa le previsioni per decisioni importanti'], tableOfContents: [{ id: 'overview', title: 'Panoramica Settimana' }, { id: 'by-sign', title: 'Per Segno' }, { id: 'key-dates', title: 'Date Chiave' }, { id: 'personalized', title: 'Lettura Personalizzata' }], content: '<h2 id="overview">Panoramica Astrologica della Settimana</h2><p>Scopri cosa ti riservano le stelle questa settimana.</p><h2 id="by-sign">Oroscopo Settimanale per Segno</h2><p>Ogni segno riceve influenze uniche.</p><h2 id="key-dates">Date Chiave questa Settimana</h2><p>Aspetti planetari notevoli.</p><h2 id="personalized">Lettura Settimanale Personalizzata</h2><p>Ottieni una lettura personalizzata su Astralo.</p>' };
+
+export const it: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

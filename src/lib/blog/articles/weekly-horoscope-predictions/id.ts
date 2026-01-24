@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const id: BlogPostTranslation = { title: '📅 Ramalan Mingguan: Prediksi Anda 2026', excerpt: 'Ramalan mingguan untuk semua 12 zodiak.', category: 'Prediksi Mingguan', metaDescription: 'Ramalan mingguan untuk semua zodiak.', keywords: 'ramalan mingguan, ramalan minggu ini', quickSummary: ['Ramalan mingguan mencakup 7 hari pengaruh', 'Setiap minggu membawa transit unik', 'Rencanakan minggu Anda dengan bintang', 'Prediksi mingguan menawarkan lebih banyak detail'], keyTakeaways: ['Periksa ramalan hari Minggu atau Senin', 'Prediksi mempertimbangkan aspek penting', 'Zodiak matahari dan naik bernilai', 'Gunakan prediksi untuk keputusan penting'], tableOfContents: [{ id: 'overview', title: 'Tinjauan Mingguan' }, { id: 'by-sign', title: 'Per Zodiak' }], content: '<h2 id="overview">Tinjauan Mingguan</h2><p>Apa yang disiapkan bintang untuk minggu ini.</p><h2 id="by-sign">Per Zodiak</h2><p>Setiap zodiak menerima pengaruh unik.</p>' };
+
+export const id: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

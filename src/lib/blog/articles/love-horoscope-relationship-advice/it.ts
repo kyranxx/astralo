@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const it: BlogPostTranslation = { title: '💕 Oroscopo Amore: Consigli per la Coppia 2026', excerpt: 'Oroscopo amoroso e consigli relazionali per il tuo segno.', category: 'Amore & Relazioni', metaDescription: 'Oroscopo amore per tutti i segni. Consigli relazionali e previsioni romantiche.', keywords: 'oroscopo amore, oroscopo coppia, compatibilità amorosa', quickSummary: ['Gli oroscopi amorosi rivelano pattern romantici', 'Il segno Venere mostra come esprimi l\'amore', 'Il segno Marte rivela la passione', 'La 7ª casa indica il tuo stile di coppia'], keyTakeaways: ['Controlla i tuoi segni Sole e Venere', 'Il timing relazionale visibile tramite transiti', 'Capire la carta del partner migliora la comunicazione', 'La compatibilità va oltre il segno solare'], tableOfContents: [{ id: 'overview', title: 'Panoramica' }, { id: 'venus', title: 'Segni Venere' }, { id: 'compatibility', title: 'Compatibilità' }, { id: 'reading', title: 'Lettura Coppia' }], content: '<h2 id="overview">Panoramica Oroscopo Amore</h2><p>Il tuo oroscopo amoroso rivela insights sulla tua vita romantica.</p><h2 id="venus">Segni Venere in Amore</h2><p>Il tuo segno Venere è la chiave per capire come ami.</p><h2 id="compatibility">Compatibilità Amorosa</h2><p>La vera compatibilità considera Venere, Marte, Luna e la 7ª casa.</p><h2 id="reading">Lettura Coppia</h2><p>Ottieni una lettura personalizzata di compatibilità su Astralo.</p>' };
+
+export const it: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

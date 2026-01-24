@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const ru: BlogPostTranslation = { title: '💕 Любовный Гороскоп: Советы для Отношений 2026', excerpt: 'Любовный гороскоп и советы для вашего знака.', category: 'Любовь и Отношения', metaDescription: 'Любовный гороскоп для всех знаков.', keywords: 'любовный гороскоп, гороскоп отношений, совместимость', quickSummary: ['Любовные гороскопы раскрывают романтические паттерны', 'Знак Венеры показывает как вы выражаете любовь', 'Знак Марса раскрывает страсть', '7 дом указывает стиль партнёрства'], keyTakeaways: ['Проверьте знаки Солнца и Венеры', 'Тайминг отношений виден через транзиты', 'Понимание карты партнёра улучшает коммуникацию', 'Совместимость выходит за рамки солнечного знака'], tableOfContents: [{ id: 'overview', title: 'Обзор' }, { id: 'venus', title: 'Знаки Венеры' }], content: '<h2 id="overview">Обзор Любовного Гороскопа</h2><p>Ваш любовный гороскоп раскрывает инсайты о романтической жизни.</p><h2 id="venus">Знаки Венеры в Любви</h2><p>Ваш знак Венеры — ключ к пониманию того, как вы любите.</p>' };
+
+export const ru: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

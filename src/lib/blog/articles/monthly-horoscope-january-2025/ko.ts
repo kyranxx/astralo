@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const ko: BlogPostTranslation = { title: '🌙 월간 운세 2025년 1월: 완벽 예보', excerpt: '2025년 1월 완전한 월간 운세.', category: '월간 예측', metaDescription: '2025년 1월 월간 운세.', keywords: '월간 운세 2025년 1월', quickSummary: ['월간 운세는 넓은 시야 제공', '2025년 1월은 새로운 시작', '월간 인사이트로 중요한 결정 계획', '각 별자리는 독특한 월간 테마 경험'], keyTakeaways: ['월간 운세는 장기 계획에 도움', '새해 에너지가 1월 현현 강화', '주요 트랜짓이 월간 테마 형성', '월초에 월간 예보 확인'], tableOfContents: [{ id: 'overview', title: '개요' }, { id: 'by-sign', title: '별자리별' }], content: '<h2 id="overview">2025년 1월 개요</h2><p>2025년 1월 월간 운세에 오신 것을 환영합니다!</p><h2 id="by-sign">별자리별</h2><p>각 별자리가 독특한 영향을 받습니다.</p>' };
+
+export const ko: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};

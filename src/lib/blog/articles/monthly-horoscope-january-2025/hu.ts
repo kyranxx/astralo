@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const hu: BlogPostTranslation = { title: '🌙 Havi Horoszkóp Január 2025', excerpt: 'Havi jóslataid 2025 januárra.', category: 'Havi Jóslatok', metaDescription: 'Havi horoszkóp január 2025.', keywords: 'havi horoszkóp január 2025', quickSummary: ['A havi horoszkóp szélesebb képet ad', 'Január 2025 új kezdeteket hoz'], keyTakeaways: ['A havi horoszkóp segít a tervezésben', 'Az újévi energia erősíti a manifestációt'], tableOfContents: [{ id: 'overview', title: 'Áttekintés' }], content: '<h2 id="overview">Január 2025</h2><p>Havi horoszkóp 2025 januárra.</p>' };
+
+export const hu: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};

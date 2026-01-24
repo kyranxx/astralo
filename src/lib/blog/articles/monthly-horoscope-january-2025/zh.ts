@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const zh: BlogPostTranslation = { title: '🌙 月度星座运势 2025年1月: 完整预测', excerpt: '2025年1月完整月度运势预测。', category: '月度预测', metaDescription: '2025年1月月度星座运势。', keywords: '月度星座运势 2025年1月', quickSummary: ['月度运势提供更广阔的视野', '2025年1月带来新的开始', '用月度洞察规划重要决定', '每个星座都有独特的月度主题'], keyTakeaways: ['月度运势有助于长期规划', '新年能量增强1月的显化', '主要相位形塑月度主题', '月初查看月度预测'], tableOfContents: [{ id: 'overview', title: '概览' }, { id: 'by-sign', title: '按星座' }], content: '<h2 id="overview">2025年1月 概览</h2><p>欢迎来到2025年1月月度星座运势！</p><h2 id="by-sign">按星座</h2><p>每个星座都会受到独特的影响。</p>' };
+
+export const zh: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};

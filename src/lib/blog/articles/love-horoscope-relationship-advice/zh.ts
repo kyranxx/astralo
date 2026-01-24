@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const zh: BlogPostTranslation = { title: '💕 爱情星座运势: 感情建议 2026', excerpt: '星座爱情运势和感情建议。', category: '爱情与关系', metaDescription: '所有星座的爱情运势。', keywords: '爱情运势, 感情运势, 星座配对', quickSummary: ['爱情运势揭示浪漫模式', '金星星座显示你如何表达爱', '火星星座揭示激情', '第七宫表示伴侣关系风格'], keyTakeaways: ['检查太阳和金星星座', '感情时机通过相位可见', '理解伴侣星盘改善沟通', '配对超越太阳星座'], tableOfContents: [{ id: 'overview', title: '概览' }, { id: 'venus', title: '金星星座' }], content: '<h2 id="overview">爱情运势概览</h2><p>您的爱情运势揭示浪漫生活的洞察。</p><h2 id="venus">爱情中的金星星座</h2><p>金星星座是理解您如何去爱的关键。</p>' };
+
+export const zh: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

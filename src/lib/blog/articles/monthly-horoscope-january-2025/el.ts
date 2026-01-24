@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const el: BlogPostTranslation = { title: '🌙 Μηνιαίο Ωροσκόπιο Ιανουάριος 2025', excerpt: 'Οι μηνιαίες προβλέψεις σου για τον Ιανουάριο 2025.', category: 'Μηνιαίες Προβλέψεις', metaDescription: 'Μηνιαίο ωροσκόπιο Ιανουάριος 2025.', keywords: 'μηνιαίο ωροσκόπιο ιανουάριος 2025', quickSummary: ['Τα μηνιαία ωροσκόπια δίνουν ευρύτερη εικόνα', 'Ιανουάριος 2025 φέρνει νέες αρχές'], keyTakeaways: ['Τα μηνιαία ωροσκόπια βοηθούν στον προγραμματισμό', 'Η ενέργεια της Πρωτοχρονιάς ενισχύει την εκδήλωση'], tableOfContents: [{ id: 'overview', title: 'Επισκόπηση' }], content: '<h2 id="overview">Ιανουάριος 2025</h2><p>Μηνιαίο ωροσκόπιο για τον Ιανουάριο 2025.</p>' };
+
+export const el: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};

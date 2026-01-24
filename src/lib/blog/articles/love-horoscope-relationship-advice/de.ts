@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const de: BlogPostTranslation = { title: '💕 Liebeshoroskop: Beziehungsratgeber 2026', excerpt: 'Liebeshoroskop und Beziehungsführung für Ihr Sternzeichen.', category: 'Liebe & Beziehungen', metaDescription: 'Liebeshoroskop für alle Sternzeichen. Beziehungsrat und romantische Vorhersagen.', keywords: 'Liebeshoroskop, Beziehungshoroskop, Partnerhoroskop', quickSummary: ['Liebeshoroskope zeigen romantische Muster', 'Venus-Zeichen zeigt wie Sie Liebe ausdrücken', 'Mars-Zeichen zeigt Leidenschaft', '7. Haus zeigt Partnerschaftsstil'], keyTakeaways: ['Prüfen Sie Sonnen- und Venus-Zeichen', 'Beziehungs-Timing durch Transite sichtbar', 'Partnerverständnis verbessert Kommunikation', 'Kompatibilität geht über Sonnenzeichen hinaus'], tableOfContents: [{ id: 'overview', title: 'Übersicht' }, { id: 'venus', title: 'Venus-Zeichen' }, { id: 'compatibility', title: 'Kompatibilität' }, { id: 'reading', title: 'Partnerlesung' }], content: '<h2 id="overview">Liebeshoroskop Übersicht</h2><p>Ihr Liebeshoroskop zeigt Einblicke in Ihr Liebesleben.</p><h2 id="venus">Venus-Zeichen in der Liebe</h2><p>Ihr Venus-Zeichen ist der Schlüssel zum Verstehen Ihrer Liebe.</p><h2 id="compatibility">Sternzeichen Kompatibilität</h2><p>Wahre Kompatibilität berücksichtigt Venus, Mars, Mond und das 7. Haus.</p><h2 id="reading">Partnerhoroskop</h2><p>Holen Sie sich ein personalisiertes Partnerhoroskop bei Astralo.</p>' };
+
+export const de: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>Love is a Skill</h2>\n            <p>Love isn't random. Astrology provides the manual.</p>\n            <h2>Venus: What You Love</h2>\n            <p>Venus determines your style of affection.</p>\n            <h2>Mars: How You Lust</h2>\n            <p>Mars rules your libido and drive.</p>\n            <h2>The 7th House</h2>\n            <p>Your Descendant shows your ideal partner.</p>\n            <h2>Retrograde Romance</h2>\n            <p>Avoid marriage during Venus Retrograde.</p>\n        "
+};

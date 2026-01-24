@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const ru: BlogPostTranslation = { title: '🌙 Месячный Гороскоп Январь 2025: Полный Прогноз', excerpt: 'Ваши полные месячные прогнозы на январь 2025.', category: 'Месячные Прогнозы', metaDescription: 'Месячный гороскоп январь 2025 для всех знаков.', keywords: 'месячный гороскоп январь 2025', quickSummary: ['Месячные гороскопы дают широкий взгляд', 'Январь 2025 приносит новые начала', 'Планируйте важные решения с месячными инсайтами', 'Каждый знак переживает уникальные месячные темы'], keyTakeaways: ['Месячные гороскопы помогают в долгосрочном планировании', 'Энергия Нового года усиливает манифестацию', 'Главные транзиты формируют темы месяца', 'Проверяйте прогнозы в начале месяца'], tableOfContents: [{ id: 'overview', title: 'Обзор' }, { id: 'by-sign', title: 'По Знакам' }], content: '<h2 id="overview">Обзор Январь 2025</h2><p>Добро пожаловать в гороскоп на январь 2025!</p><h2 id="by-sign">По Знакам</h2><p>Каждый знак получает уникальные влияния.</p>' };
+
+export const ru: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};

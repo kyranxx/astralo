@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const zh: BlogPostTranslation = { title: '📅 本周星座运势: 2026年每周预测', excerpt: '获取12星座的每周运势预测。', category: '每周预测', metaDescription: '所有星座的每周运势。', keywords: '每周星座运势, 本周运势, 周运', quickSummary: ['每周运势涵盖7天的行星影响', '每周带来独特的天象', '根据星象规划您的一周', '每周预测提供更多细节'], keyTakeaways: ['周日或周一查看运势', '预测考虑主要相位', '太阳星座和上升星座都有价值', '用预测做重要决定'], tableOfContents: [{ id: 'overview', title: '本周概览' }, { id: 'by-sign', title: '按星座' }, { id: 'key-dates', title: '关键日期' }, { id: 'personalized', title: '个性化解读' }], content: '<h2 id="overview">本周星象概览</h2><p>发现星星为您本周准备了什么。</p><h2 id="by-sign">按星座的每周运势</h2><p>每个星座都会受到独特的影响。</p><h2 id="key-dates">本周关键日期</h2><p>值得注意的行星相位。</p><h2 id="personalized">个性化每周解读</h2><p>在Astralo获取个性化解读。</p>' };
+
+export const zh: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>The Astrological Rhythm</h2>\n            <p>Understanding the weekly horoscope is about aligning your schedule with planetary rulers.</p>\n            <h3>Monday (Moon Day)</h3><p>Best for: Emotion and home.</p>\n            <h3>Tuesday (Mars Day)</h3><p>Best for: Action and energy.</p>\n            <h3>Wednesday (Mercury Day)</h3><p>Best for: Communication.</p>\n            <h3>Thursday (Jupiter Day)</h3><p>Best for: Growth and luck.</p>\n            <h3>Friday (Venus Day)</h3><p>Best for: Socializing and romance.</p>\n            <h3>Saturday (Saturn Day)</h3><p>Best for: Discipline and work.</p>\n            <h3>Sunday (Sun Day)</h3><p>Best for: Rest and spirit.</p>\n            <h2>The Void-of-Course Moon</h2>\n            <p>Do not sign contracts when the Moon is Void. It is a cosmic \"pause\".</p>\n            <h2>Weekly Advice</h2>\n            <p>Check the forecast every Sunday.</p>\n        "
+};

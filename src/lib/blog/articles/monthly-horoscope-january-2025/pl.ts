@@ -1,2 +1,24 @@
 import type { BlogPostTranslation } from '../../types';
-export const pl: BlogPostTranslation = { title: '🌙 Horoskop Miesięczny Styczeń 2025: Pełna Prognoza', excerpt: 'Twoje pełne miesięczne przepowiednie na styczeń 2025.', category: 'Miesięczne Przepowiednie', metaDescription: 'Horoskop miesięczny styczeń 2025 dla wszystkich znaków.', keywords: 'horoskop miesięczny styczeń 2025, horoskop ten miesiąc', quickSummary: ['Horoskopy miesięczne dają szerszy obraz wpływów', 'Styczeń 2025 przynosi nowe początki', 'Planuj ważne decyzje z miesięcznymi wskazówkami', 'Każdy znak doświadcza unikalnych miesięcznych tematów'], keyTakeaways: ['Horoskopy miesięczne pomagają w planowaniu długoterminowym', 'Energia Nowego Roku wzmacnia manifestację w styczniu', 'Główne tranzyty kształtują tematy miesiąca', 'Sprawdzaj miesięczne prognozy na początku miesiąca'], tableOfContents: [{ id: 'overview', title: 'Przegląd Styczeń 2025' }, { id: 'by-sign', title: 'Według Znaku' }, { id: 'key-transits', title: 'Kluczowe Tranzyty' }, { id: 'personalized', title: 'Spersonalizowany Odczyt' }], content: '<h2 id="overview">Astrologiczny Przegląd Styczeń 2025</h2><p>Witaj w <strong>horoskopie miesięcznym styczeń 2025</strong>!</p><h2 id="by-sign">Horoskop Miesięczny według Znaku</h2><p>Każdy znak otrzymuje unikalne wpływy w styczniu 2025.</p><h2 id="key-transits">Kluczowe Tranzyty Planetarne</h2><p>Znaczące ruchy planet w tym miesiącu.</p><h2 id="personalized">Spersonalizowany Odczyt Miesięczny</h2><p>Uzyskaj spersonalizowany odczyt w Astralo.</p>' };
+
+export const pl: BlogPostTranslation = {
+    "title": "Astrology Article",
+    "excerpt": "Read your full horoscope...",
+    "category": "Horoscope",
+    "metaDescription": "Astrology guide",
+    "keywords": "astrology, horoscope, guide",
+    "quickSummary": [
+        "Full guide inside",
+        "Read more below"
+    ],
+    "keyTakeaways": [
+        "Plan ahead",
+        "Check your chart"
+    ],
+    "tableOfContents": [
+        {
+            "id": "intro",
+            "title": "Introduction"
+        }
+    ],
+    "content": "\n            <h2>January 2025 Overview</h2>\n            <p>Pluto enters Aquarius, marking a new era.</p>\n            <h2>Fire Signs</h2>\n            <p>Aries, Leo, Sagittarius: Reclaim your spark.</p>\n            <h2>Earth Signs</h2>\n            <p>Taurus, Virgo, Capricorn: Build your foundation.</p>\n            <h2>Air Signs</h2>\n            <p>Gemini, Libra, Aquarius: Intellectual expansion.</p>\n            <h2>Water Signs</h2>\n            <p>Cancer, Scorpio, Pisces: Emotional wisdom.</p>\n        "
+};
