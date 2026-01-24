@@ -2,551 +2,21 @@
 /**
  * Localized Individual Blog Post Page - SEO Optimized
  * Dynamic route for all blog articles in all languages
- * Enhanced with emojis, quick summary, key takeaways, progress bar, social share, and TOC
+ * Uses modular content from src/lib/blog
  */
 
 import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
-import { ArrowLeft, Calendar, Clock, Share2, Star, ArrowRight, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
+import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getArticleTranslation, articleMeta, getBlogUiTranslations, type BlogPostTranslation, type BlogPostMeta } from '../../../lib/blog';
+import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogUiTranslations, type BlogPostTranslation, type BlogPostMeta } from '../../../lib/blog';
 
 export const prerender = true;
 
-// Blog posts with full keyword-rich content
-const blogPosts: Record<string, any> = {
-  'daily-horoscope-guide': {
-    title: '⭐ Daily Horoscope 2026: Complete Guide to Your Zodiac Predictions',
-    displayTitle: 'Daily Horoscope 2026: Complete Guide to Your Zodiac Predictions',
-    emoji: '⭐',
-    metaDescription: 'Get your daily horoscope predictions for all 12 zodiac signs. Accurate horoscope today for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius & Pisces.',
-    keywords: 'daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope 2026, free daily horoscope',
-    date: '2025-12-20',
-    readTime: '8 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Daily horoscopes are based on planetary positions relative to your zodiac sign',
-      "The Moon's daily movement strongly influences your emotions and experiences",
-      'Personalized readings based on your birth data are more accurate than general forecasts',
-      'Each zodiac sign receives unique guidance for love, career, and life decisions'
-    ],
-    keyTakeaways: [
-      'Check your daily horoscope each morning for guidance on love, career, and finances',
-      'Your rising sign and Moon sign also affect your daily experiences',
-      'Personalized horoscopes consider your complete birth chart for maximum accuracy',
-      'Use daily predictions as a tool for self-reflection and planning'
-    ],
-    tableOfContents: [
-      { id: 'what-is-daily-horoscope', title: 'What is a Daily Horoscope?' },
-      { id: 'how-they-work', title: 'How Daily Horoscopes Work' },
-      { id: 'all-zodiac-signs', title: 'All 12 Zodiac Signs' },
-      { id: 'personalized-horoscope', title: 'Get Your Personalized Horoscope' },
-      { id: 'why-personalized', title: 'Why Choose Personalized?' }
-    ],
-    content: `
-      <h2 id="what-is-daily-horoscope">What is a Daily Horoscope?</h2>
-      <p>A <strong>daily horoscope</strong> is a personalized astrological forecast that provides guidance for your day based on the position of celestial bodies relative to your zodiac sign. At Astralo, we calculate your <strong>horoscope today</strong> using precise planetary positions to give you the most accurate predictions possible.</p>
-      
-      <h2 id="how-they-work">How Daily Horoscopes Work</h2>
-      <p>Your <strong>daily zodiac predictions</strong> are determined by the current transits of planets like Mercury, Venus, Mars, and the Moon as they interact with your natal chart. The Moon's daily movement through the zodiac is particularly important for <strong>today's horoscope readings</strong>, as it affects our emotions and daily experiences.</p>
-      
-      <h2 id="all-zodiac-signs">Daily Horoscope for All 12 Zodiac Signs</h2>
-      
-      <h3>♈ Aries Daily Horoscope (March 21 - April 19)</h3>
-      <p>As a fire sign, <strong>Aries horoscope today</strong> often focuses on initiative, leadership, and new beginnings. Check your personalized Aries daily horoscope for insights on career opportunities and romantic prospects.</p>
-      
-      <h3>♉ Taurus Daily Horoscope (April 20 - May 20)</h3>
-      <p>The <strong>Taurus daily horoscope</strong> typically emphasizes stability, finances, and sensual pleasures. Your earth sign energy grounds you in practical matters today.</p>
-      
-      <h3>♊ Gemini Daily Horoscope (May 21 - June 20)</h3>
-      <p>Communication is key in today's <strong>Gemini horoscope</strong>. As an air sign, you thrive on mental stimulation and social connections.</p>
-      
-      <h3>♋ Cancer Daily Horoscope (June 21 - July 22)</h3>
-      <p>Your <strong>Cancer daily horoscope</strong> focuses on home, family, and emotional security. The Moon rules your sign, making daily lunar movements especially significant.</p>
-      
-      <h3>♌ Leo Daily Horoscope (July 23 - August 22)</h3>
-      <p>The <strong>Leo horoscope today</strong> shines light on creativity, self-expression, and recognition. Your solar energy attracts attention and opportunities.</p>
-      
-      <h3>♍ Virgo Daily Horoscope (August 23 - September 22)</h3>
-      <p>Health, work, and daily routines dominate the <strong>Virgo daily horoscope</strong>. Your analytical nature helps you optimize every aspect of your day.</p>
-      
-      <h3>♎ Libra Daily Horoscope (September 23 - October 22)</h3>
-      <p>Relationships and balance are central to the <strong>Libra horoscope today</strong>. Your diplomatic skills help navigate any challenges.</p>
-      
-      <h3>♏ Scorpio Daily Horoscope (October 23 - November 21)</h3>
-      <p>Transformation and intensity define the <strong>Scorpio daily horoscope</strong>. Deep insights and powerful emotions guide your path.</p>
-      
-      <h3>♐ Sagittarius Daily Horoscope (November 22 - December 21)</h3>
-      <p>Adventure and expansion fill your <strong>Sagittarius horoscope today</strong>. Your optimistic outlook opens doors to new experiences.</p>
-      
-      <h3>♑ Capricorn Daily Horoscope (December 22 - January 19)</h3>
-      <p>Career and ambition drive the <strong>Capricorn daily horoscope</strong>. Your disciplined approach leads to lasting achievements.</p>
-      
-      <h3>♒ Aquarius Daily Horoscope (January 20 - February 18)</h3>
-      <p>Innovation and humanitarian ideals shape your <strong>Aquarius horoscope today</strong>. Embrace your unique perspective.</p>
-      
-      <h3>♓ Pisces Daily Horoscope (February 19 - March 20)</h3>
-      <p>Intuition and creativity flow through the <strong>Pisces daily horoscope</strong>. Trust your inner guidance for today's decisions.</p>
-      
-      <h2 id="personalized-horoscope">Get Your Personalized Daily Horoscope</h2>
-      <p>While general <strong>daily horoscope predictions</strong> offer valuable insights, a personalized reading based on your exact birth data provides much more accurate guidance. At Astralo, we create custom horoscope readings that consider your complete natal chart, including your rising sign and Moon placement.</p>
-      
-      <h2 id="why-personalized">Why Choose Personalized Over Generic Horoscopes?</h2>
-      <ul>
-        <li><strong>Accuracy</strong>: Based on your exact birth time and location</li>
-        <li><strong>Depth</strong>: Considers all planetary aspects, not just your Sun sign</li>
-        <li><strong>Relevance</strong>: Tailored advice for your specific life circumstances</li>
-        <li><strong>Timing</strong>: Precise predictions for optimal decision-making</li>
-      </ul>
-    `
-  },
-  'zodiac-compatibility-complete-guide': {
-    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
-    displayTitle: 'Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
-    emoji: '❤️',
-    metaDescription: 'Discover your zodiac compatibility with our complete guide. Find the best love matches for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius & Pisces.',
-    keywords: 'zodiac compatibility, love horoscope, star sign compatibility, zodiac love match, astrological compatibility, relationship horoscope',
-    date: '2025-12-18',
-    readTime: '12 min',
-    category: 'Love & Relationships',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Zodiac compatibility is based on how astrological elements interact',
-      'Fire signs (Aries, Leo, Sagittarius) match well with Air signs',
-      'Earth signs (Taurus, Virgo, Capricorn) harmonize with Water signs',
-      'Partner horoscopes analyze both birth charts for deep compatibility insights'
-    ],
-    keyTakeaways: [
-      'Element compatibility is a great starting point for understanding relationships',
-      'Opposite signs often have intense attraction but may face challenges',
-      'A full synastry chart provides the most accurate compatibility reading',
-      'Any two signs can work together with understanding and effort'
-    ],
-    tableOfContents: [
-      { id: 'understanding-compatibility', title: 'Understanding Zodiac Compatibility' },
-      { id: 'elements', title: 'The Elements of Compatibility' },
-      { id: 'best-matches', title: 'Best Zodiac Love Matches' },
-      { id: 'partner-reading', title: 'Partner Compatibility Reading' }
-    ],
-    content: `
-      <h2 id="understanding-compatibility">Understanding Zodiac Compatibility</h2>
-      <p><strong>Zodiac compatibility</strong> is the study of how different astrological signs interact in relationships. Whether you're looking for your perfect <strong>love match</strong> or trying to understand your current relationship better, understanding <strong>star sign compatibility</strong> can provide valuable insights.</p>
-      
-      <h2 id="elements">The Elements of Compatibility</h2>
-      <p>In astrology, zodiac signs are grouped by elements, which play a crucial role in <strong>astrological compatibility</strong>:</p>
-      <ul>
-        <li><strong>🔥 Fire Signs (♈ Aries, ♌ Leo, ♐ Sagittarius)</strong>: Passionate, energetic, and adventurous</li>
-        <li><strong>🌍 Earth Signs (♉ Taurus, ♍ Virgo, ♑ Capricorn)</strong>: Practical, grounded, and reliable</li>
-        <li><strong>💨 Air Signs (♊ Gemini, ♎ Libra, ♒ Aquarius)</strong>: Intellectual, communicative, and social</li>
-        <li><strong>💧 Water Signs (♋ Cancer, ♏ Scorpio, ♓ Pisces)</strong>: Emotional, intuitive, and nurturing</li>
-      </ul>
-      
-      <h2 id="best-matches">Best Zodiac Love Matches</h2>
-      
-      <h3>♈ Aries Compatibility</h3>
-      <p><strong>Aries compatibility</strong> is highest with Leo and Sagittarius (fellow fire signs) and Gemini and Aquarius (complementary air signs).</p>
-      
-      <h3>♉ Taurus Compatibility</h3>
-      <p><strong>Taurus love compatibility</strong> peaks with Virgo and Capricorn (earth signs) and Cancer and Pisces (water signs).</p>
-      
-      <h3>♊ Gemini Compatibility</h3>
-      <p><strong>Gemini zodiac compatibility</strong> excels with Libra and Aquarius (air signs) and Aries and Leo (fire signs).</p>
-      
-      <h2 id="partner-reading">Partner Compatibility Reading</h2>
-      <p>For a complete understanding of your <strong>relationship compatibility</strong>, consider a personalized partner horoscope. At Astralo, we analyze both partners' birth charts to reveal:</p>
-      <ul>
-        <li>💕 Emotional compatibility and communication styles</li>
-        <li>🔮 Long-term relationship potential</li>
-        <li>⚡ Areas of harmony and potential challenges</li>
-        <li>📅 Timing for major relationship milestones</li>
-      </ul>
-    `
-  },
-  'birth-chart-reading-explained': {
-    title: '🔮 Birth Chart Reading: How to Understand Your Natal Chart',
-    displayTitle: 'Birth Chart Reading: How to Understand Your Natal Chart',
-    emoji: '🔮',
-    metaDescription: 'Learn how to read your birth chart. Complete natal chart guide explaining planets, houses, aspects, and how to interpret your astrological chart for personality insights.',
-    keywords: 'birth chart, natal chart, astrology chart, horoscope chart, birth chart reading, natal chart interpretation',
-    date: '2025-12-15',
-    readTime: '10 min',
-    category: 'Astrology Basics',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Your birth chart is a map of planetary positions at your exact birth moment',
-      'The Sun, Moon, and Rising signs form your "Big Three" in astrology',
-      '12 houses represent different life areas from identity to spirituality',
-      'Aspects show how planets interact and influence your personality'
-    ],
-    keyTakeaways: [
-      'Your birth chart is unique - like a cosmic fingerprint',
-      'The Rising sign affects how others perceive you',
-      'Venus placement reveals your love language and values',
-      'Professional chart readings provide personalized interpretations'
-    ],
-    tableOfContents: [
-      { id: 'what-is-birth-chart', title: 'What is a Birth Chart?' },
-      { id: 'key-components', title: 'Key Components' },
-      { id: 'the-planets', title: 'The Planets' },
-      { id: 'the-houses', title: 'The 12 Houses' },
-      { id: 'aspects', title: 'Aspects' },
-      { id: 'personal-reading', title: 'Get Your Personal Reading' }
-    ],
-    content: `
-      <h2 id="what-is-birth-chart">What is a Birth Chart?</h2>
-      <p>A <strong>birth chart</strong> (also called a <strong>natal chart</strong>) is a map of where all the planets were at the exact moment you were born. This <strong>astrological chart</strong> serves as your cosmic fingerprint, revealing your personality, strengths, challenges, and life path.</p>
-      
-      <h2 id="key-components">Key Components of Your Natal Chart</h2>
-      
-      <h3 id="the-planets">The Planets</h3>
-      <p>Each planet in your <strong>birth chart reading</strong> represents a different aspect of your personality:</p>
-      <ul>
-        <li><strong>☀️ Sun</strong>: Your core identity and ego</li>
-        <li><strong>🌙 Moon</strong>: Your emotions and inner self</li>
-        <li><strong>☿️ Mercury</strong>: Communication and thinking</li>
-        <li><strong>💕 Venus</strong>: Love, beauty, and values</li>
-        <li><strong>⚔️ Mars</strong>: Action, energy, and desire</li>
-        <li><strong>🍀 Jupiter</strong>: Expansion, luck, and wisdom</li>
-        <li><strong>🪐 Saturn</strong>: Discipline, responsibility, and karma</li>
-      </ul>
-      
-      <h3 id="the-houses">The 12 Houses</h3>
-      <p>The houses in your <strong>natal chart interpretation</strong> represent different life areas, from self-image (1st house) to spirituality (12th house).</p>
-      
-      <h3 id="aspects">Aspects</h3>
-      <p>Aspects are the angles between planets, showing how different parts of your personality interact.</p>
-      
-      <h2 id="personal-reading">Get Your Personal Birth Chart Reading</h2>
-      <p>Understanding your <strong>horoscope chart</strong> requires expertise. Our personalized birth chart readings at Astralo provide detailed interpretations tailored specifically to you.</p>
-    `
-  },
-  'monthly-horoscope-february-2026': {
-    title: '❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation',
-    displayTitle: 'Monthly Horoscope February 2026: Season of Aquarian Innovation',
-    emoji: '❤️',
-    metaDescription: 'Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.',
-    keywords: 'monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces',
-    date: '2026-02-01',
-    readTime: '15 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-        'The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self',
-        'Mercury finally goes Direct, clearing up the miscommunications from late January',
-        'Venus moves into dreamy Pisces, creating the most romantic energy of the entire year',
-        'Aquarius Season pushes us to innovate and break free from outdated traditions'
-    ],
-    keyTakeaways: [
-        'Use the first week of February to launch creative projects or re-brand yourself',
-        "Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep",
-        'Expect sudden insights regarding technology or community groups mid-month',
-        'General horoscopes are great, but for specific timing, you need your personal transits'
-    ],
-    tableOfContents: [
-        { id: 'monthly-overview', title: 'February 2026 Overview' },
-        { id: 'key-transits', title: 'Key Dates & Transits' },
-        { id: 'fire-signs', title: 'Fire Signs (Aries, Leo, Sag)' },
-        { id: 'earth-signs', title: 'Earth Signs (Taurus, Virgo, Cap)' },
-        { id: 'air-signs', title: 'Air Signs (Gemini, Libra, Aqua)' },
-        { id: 'water-signs', title: 'Water Signs (Cancer, Scorpio, Pisces)' },
-        { id: 'get-personal', title: "Why General isn't Enough" }
-    ],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
-      
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
-
-      <h2 id="key-transits">Key Dates & Transits</h2>
-      <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
-      </ul>
-
-      <h2 id="fire-signs">🔥 Fire Signs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
-      
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
-
-      <h2 id="earth-signs">🌍 Earth Signs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
-      
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
-
-      <h2 id="air-signs">💨 Air Signs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
-      
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
-
-      <h2 id="water-signs">💧 Water Signs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
-      
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
-
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
-      
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
-      
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
-      
-      <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
-      </div>
-    `
-  },
-  'monthly-horoscope-january-2026': {
-    title: '🌙 Monthly Horoscope January 2026: All Zodiac Sign Predictions',
-    displayTitle: 'Monthly Horoscope January 2026: All Zodiac Sign Predictions',
-    emoji: '🌙',
-    metaDescription: 'January 2026 monthly horoscope for all zodiac signs. Complete astrological forecast for love, career, health, and finances in the new year.',
-    keywords: 'monthly horoscope, horoscope january 2026, monthly zodiac, horoscope 2026, monthly astrology forecast',
-    date: '2025-12-24',
-    readTime: '15 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-      'January 2026 begins with powerful New Moon energy in Capricorn',
-      'Mercury enters Aquarius bringing innovative thinking',
-      'The Full Moon in Cancer highlights emotional and family matters',
-      'Major planetary shifts make this an excellent month for goal-setting'
-    ],
-    keyTakeaways: [
-      'Set your 2026 intentions during the New Moon in Capricorn',
-      'Career moves are especially favored mid-month',
-      'Balance work ambitions with family needs around the Full Moon',
-      'Financial planning receives cosmic support this January'
-    ],
-    tableOfContents: [
-      { id: 'monthly-overview', title: 'January 2026 Overview' },
-      { id: 'key-events', title: 'Key Astrological Events' },
-      { id: 'complete-horoscope', title: 'Get Your Complete Horoscope' }
-    ],
-    content: `
-      <h2 id="monthly-overview">January 2026 Monthly Horoscope</h2>
-      <p>Welcome to your <strong>monthly horoscope for January 2026</strong>! The new year begins with powerful cosmic energy.</p>
-      
-      <h2 id="key-events">Key Astrological Events in January 2026</h2>
-      <ul>
-        <li>🌑 <strong>New Moon in Capricorn</strong>: New beginnings in career and goals</li>
-        <li>🌕 <strong>Full Moon in Cancer</strong>: Emotional revelations and family focus</li>
-        <li>☿️ <strong>Mercury enters Aquarius</strong>: Innovative thinking and communication</li>
-        <li>💕 <strong>Venus aspects</strong>: Love and financial opportunities</li>
-      </ul>
-      
-      <h3>🔮 Monthly Themes by Element</h3>
-      <ul>
-        <li>🔥 <strong>Fire Signs (♈♌♐)</strong>: Action and initiative</li>
-        <li>🌍 <strong>Earth Signs (♉♍♑)</strong>: Building and stability</li>
-        <li>💨 <strong>Air Signs (♊♎♒)</strong>: Ideas and connections</li>
-        <li>💧 <strong>Water Signs (♋♏♓)</strong>: Emotions and intuition</li>
-      </ul>
-      
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>For a detailed <strong>horoscope 2026</strong> forecast personalized to your birth chart, order your monthly horoscope from Astralo today.</p>
-    `
-  },
-  'love-horoscope-relationship-advice': {
-    title: '💕 Love Horoscope 2026: Relationship Predictions for Every Sign',
-    displayTitle: 'Love Horoscope 2026: Relationship Predictions for Every Sign',
-    emoji: '💕',
-    metaDescription: 'Get your love horoscope predictions. Discover romantic compatibility, relationship timing, and love advice for all zodiac signs in 2026.',
-    keywords: 'love horoscope, relationship horoscope, love astrology, romantic horoscope, love predictions, zodiac love',
-    date: '2025-12-10',
-    readTime: '9 min',
-    category: 'Love & Relationships',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Venus placement in your chart determines your love language',
-      'Mars aspects influence passion and attraction',
-      'The 7th house reveals your ideal partner qualities',
-      'Timing transits show the best periods for romance'
-    ],
-    keyTakeaways: [
-      'Know your Venus sign to understand what you need in love',
-      'Check compatibility with your partner\'s Venus and Mars',
-      'Use favorable Venus transits for important relationship moments',
-      'Partner horoscopes reveal hidden relationship dynamics'
-    ],
-    tableOfContents: [
-      { id: 'love-guide', title: 'Your Love Horoscope Guide' },
-      { id: 'venus', title: 'Venus and Your Love Life' },
-      { id: 'partner-analysis', title: 'Partner Compatibility Analysis' }
-    ],
-    content: `
-      <h2 id="love-guide">Your Love Horoscope Guide</h2>
-      <p>Looking for love in the stars? Your <strong>love horoscope</strong> can reveal important insights about your romantic life.</p>
-      
-      <h3>❤️ Love by Zodiac Sign</h3>
-      <ul>
-        <li>♈ <strong>Aries in Love</strong>: Passionate and spontaneous</li>
-        <li>♉ <strong>Taurus in Love</strong>: Loyal and sensual</li>
-        <li>♊ <strong>Gemini in Love</strong>: Playful and communicative</li>
-        <li>♋ <strong>Cancer in Love</strong>: Nurturing and emotional</li>
-        <li>♌ <strong>Leo in Love</strong>: Generous and dramatic</li>
-        <li>♍ <strong>Virgo in Love</strong>: Devoted and attentive</li>
-        <li>♎ <strong>Libra in Love</strong>: Romantic and harmonious</li>
-        <li>♏ <strong>Scorpio in Love</strong>: Intense and transformative</li>
-        <li>♐ <strong>Sagittarius in Love</strong>: Adventurous and free</li>
-        <li>♑ <strong>Capricorn in Love</strong>: Committed and steady</li>
-        <li>♒ <strong>Aquarius in Love</strong>: Unique and independent</li>
-        <li>♓ <strong>Pisces in Love</strong>: Dreamy and compassionate</li>
-      </ul>
-      
-      <h2 id="venus">Venus and Your Love Life</h2>
-      <p>In <strong>love astrology</strong>, Venus is the planet of love, beauty, and attraction.</p>
-      
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>For a complete understanding of your relationship dynamics, consider our partner horoscope service.</p>
-      <ul>
-        <li>💕 Emotional compatibility scores</li>
-        <li>🔥 Passion and chemistry analysis</li>
-        <li>💬 Communication style matching</li>
-        <li>🎯 Long-term potential assessment</li>
-      </ul>
-    `
-  },
-  'mercury-retrograde-survival-guide': {
-    title: '☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
-    displayTitle: 'Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
-    emoji: '☄️',
-    metaDescription: 'Don\'t fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it\'s the best time for "Re" activities.',
-    keywords: 'mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches',
-    date: '2026-01-15',
-    readTime: '18 min',
-    category: 'Astrology 101',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Mercury Retrograde is an optical illusion where Mercury appears to move backward',
-      'It happens 3-4 times a year and lasts for about three weeks each time',
-      'This period is notorious for travel delays, tech failures, and miscommunications',
-      'It is NOT a time to start new projects, but an ELITE time for finishing old ones'
-    ],
-    keyTakeaways: [
-      'Double-check every email, text, and contract before hitting send or signing',
-      'Back up your data and expect minor technological glitches with devices',
-      'Old friends and exes often reappear during these cosmic cycles',
-      'The "Shadow Period" before and after the retrograde is just as important'
-    ],
-    tableOfContents: [
-      { id: 'what-is-mercury-retrograde', title: 'The Science of the Illusion' },
-      { id: 'retrograde-shadow', title: 'The Shadow Period' },
-      { id: 'survival-dos', title: 'The "RE" Rule: What to Do' },
-      { id: 'survival-donts', title: 'The Red Flags: What to Avoid' },
-      { id: 'mercury-retrograde-dates', title: '2026 Retrograde Dates' },
-      { id: 'final-thoughts', title: 'Silver Linings' }
-    ],
-    content: `<p>Mercury Retrograde is an optical illusion where Mercury appears to move backward...</p>`
-  },
-  'history-of-astrology': {
-    title: '🏛️ The History of Astrology: From Ancient Babylon to Modern AI',
-    displayTitle: 'The History of Astrology: From Ancient Babylon to Modern AI',
-    emoji: '🏛️',
-    metaDescription: 'Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.',
-    keywords: 'history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology',
-    date: '2026-01-10',
-    readTime: '22 min',
-    category: 'Astrology Basics',
-    category: 'Astrology 101',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago',
-      'The Zodiac we use today was standardized by the Greeks around 2,000 years ago',
-      'Astrology and Astronomy were considered the same science until the 17th century',
-      "Today, astrology is used more for psychological insight than for predicting kings' deaths"
-    ],
-    keyTakeaways: [
-      'Ancient cultures used astrology for agriculture and political survival',
-      'The "Age of Reason" temporarily pushed astrology into the shadows of superstition',
-      'Carl Jung brought astrology back into mainstream thought through psychology',
-      'AI technology is now allowing for more precise calculations than ever before'
-    ],
-    tableOfContents: [
-      { id: 'ancient-origins', title: 'The Cradle of the Stars: Babylon' },
-      { id: 'greek-influence', title: 'The Greek Revolution' },
-      { id: 'scientific-divorce', title: 'The Scientific Divorce' },
-      { id: 'jungian-rebirth', title: 'Psychology and the 20th Century' },
-      { id: 'future-astrology', title: 'The Future: AI & Big Data' }
-    ],
-    content: `<p>The story of astrology begins in the fertile crescent of Mesopotamia...</p>`
-  },
-  'saturn-return-guide': {
-    title: '🪐 Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage',
-    displayTitle: 'Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage',
-    emoji: '🪐',
-    metaDescription: 'The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position.',
-    keywords: 'saturn return, saturn return meaning, astrology transits, saturn houses',
-    date: '2026-01-24',
-    readTime: '40 min',
-    category: 'Transits',
-    author: 'Astralo Team',
-    quickSummary: ['A Saturn Return occurs every 29.5 years', 'It marks the entry into true adulthood', 'Expect challenges and restructuring'],
-    keyTakeaways: ['Take responsibility for your life', 'Build a solid foundation', 'Do not resist change'],
-    tableOfContents: [],
-    content: ''
-  },
-  'the-12-houses-of-astrology': {
-    title: '🏠 The 12 Houses of Astrology: Your Life\'s Stage',
-    displayTitle: 'The 12 Houses of Astrology: Your Life\'s Stage',
-    emoji: '🏠',
-    metaDescription: 'A comprehensive guide to the 12 houses of astrology. Understand what each house represents in your birth chart.',
-    keywords: '12 houses astrology, astrological houses, first house, seventh house, tenth house',
-    date: '2026-01-24',
-    readTime: '35 min',
-    category: 'Astrology Basics',
-    author: 'Astralo Team',
-    quickSummary: ['The chart is divided into 12 sectors called houses', 'Houses represent specific areas of life', 'Planets express their energy through the houses'],
-    keyTakeaways: ['The Ascendant marks the 1st House', 'Angular houses (1, 4, 7, 10) are the most powerful', 'Empty houses do not mean an empty life'],
-    tableOfContents: [],
-    content: ''
-  },
-  'twin-flames-and-soulmates-astrology': {
-    title: '🔥 Twin Flames & Soulmates: The A-Z of Spiritual Partnership',
-    displayTitle: 'Twin Flames & Soulmates: The A-Z of Spiritual Partnership',
-    emoji: '🔥',
-    metaDescription: 'Understand the difference between soulmates, twin flames, and karmic partners through astrology.',
-    keywords: 'twin flame astrology, soulmates chart, karmic relationships, synastry',
-    date: '2026-01-24',
-    readTime: '45 min',
-    category: 'Love & Relationships',
-    author: 'Astralo Team',
-    quickSummary: ['Twin flames are mirrored souls', 'Soulmates are compatible companions', 'Karmic partners are here to teach lessons'],
-    keyTakeaways: ['Synastry reveals the connection type', 'North Node connections are fateful', 'Saturn binds people together'],
-    tableOfContents: [],
-    content: ''
-  }
-};
-
 // Generate all paths: lang × slug combinations
 export function getStaticPaths() {
-  // Hardcode locales and slugs to avoid import/order issues during static generation
-  const locales = ['sk', 'cs', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'hu', 'ro', 'bg', 'hr', 'sl', 'sr', 'uk', 'ru', 'el', 'tr', 'ar', 'hi', 'bn', 'th', 'vi', 'id', 'ja', 'ko', 'zh', 'sv', 'da', 'no', 'fi', 'he', 'en'];
-  const slugs = [
-    'daily-horoscope-guide',
-    'zodiac-compatibility-complete-guide',
-    'birth-chart-reading-explained',
-    'monthly-horoscope-february-2026',
-    'love-horoscope-relationship-advice',
-    'mercury-retrograde-survival-guide',
-    'history-of-astrology',
-    'saturn-return-guide',
-    'the-12-houses-of-astrology',
-    'twin-flames-and-soulmates-astrology'
-  ];
+  const locales = getSupportedLocales();
+  const slugs = getAllArticleSlugs();
   
   const paths = [];
   for (const lang of locales) {
@@ -561,43 +31,46 @@ const { lang, slug } = Astro.params;
 const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
 const t = getTranslations(currentLang);
 const ui = getBlogUiTranslations(currentLang);
-const post = blogPosts[slug as string];
-const meta = articleMeta[slug as string];
 
-// This should never happen since getStaticPaths only generates valid paths
-// But just in case, provide a fallback
-if (!post || !meta) {
-  throw new Error(`Blog post not found: ${slug}`);
+const meta = getArticleMeta(slug as string);
+const localizedPost = getArticleTranslation(slug as string, currentLang);
+
+if (!meta || !localizedPost) {
+  return Astro.redirect(`/${currentLang}/blog`);
 }
 
-// Get localized content from the new modular translations, falling back to English
-const localizedPost = getArticleTranslation(slug as string, currentLang);
-// Strip ALL emojis from titles to prevent encoding issues (shows as � in some crawlers)
-// This regex matches common emojis, skin tone modifiers, and variation selectors
+// Strip ALL emojis from titles to prevent encoding issues
 const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
-const displayTitle = stripEmojis(localizedPost?.title || post.title || '') || post.displayTitle;
-const fullTitle = localizedPost?.title || post.title;
-const metaDescription = localizedPost?.metaDescription || post.metaDescription;
-const quickSummary = localizedPost?.quickSummary || post.quickSummary;
-const keyTakeaways = localizedPost?.keyTakeaways || post.keyTakeaways;
-const tableOfContents = localizedPost?.tableOfContents || post.tableOfContents;
-const articleContent = localizedPost?.content || post.content;
-const category = localizedPost?.category || post.category;
-const keywords = localizedPost?.keywords || post.keywords;
+
+const displayTitle = stripEmojis(localizedPost.title) || localizedPost.title;
+const fullTitle = localizedPost.title;
+
+const post = {
+  ...localizedPost,
+  ...meta,
+  displayTitle
+};
 
 // Related posts (exclude current)
-const relatedPosts = Object.entries(blogPosts)
-  .filter(([s, p]) => s !== slug && p.category === post.category)
+const allSlugs = getAllArticleSlugs();
+// Simple related posts logic: same category or just next ones
+const relatedPosts = allSlugs
+  .filter(s => s !== slug)
+  .map(s => {
+    const m = getArticleMeta(s);
+    const p = getArticleTranslation(s, currentLang);
+    if (!m || !p) return null;
+    return { slug: s, ...m, ...p, displayTitle: stripEmojis(p.title) || p.title };
+  })
+  .filter(p => p && p.category === post.category)
   .slice(0, 2);
 
 // Generate share URLs
 const currentUrl = `https://astralo.online/${currentLang}/blog/${slug}`;
-// Safe encoding that handles any potential UTF-16 issues
 const safeEncode = (str: string) => {
   try {
     return encodeURIComponent(str);
   } catch {
-    // If encoding fails, try to sanitize the string first
     return encodeURIComponent(String(str).replace(/[\uD800-\uDFFF]/g, ''));
   }
 };
@@ -611,8 +84,8 @@ const shareUrls = {
 
 <Layout 
   title={`${displayTitle} | Astralo`}
-  description={metaDescription}
-  keywords={keywords}
+  description={post.metaDescription}
+  keywords={post.keywords}
   lang={currentLang}
 >
   <!-- Reading Progress Bar -->
@@ -639,7 +112,7 @@ const shareUrls = {
       <article class="max-w-4xl mx-auto glass-strong p-6 md:p-12 rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl">
         <!-- Meta -->
         <div class="flex flex-wrap items-center gap-4 mb-8 text-sm">
-          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full font-medium tracking-wide">{category}</span>
+          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full font-medium tracking-wide">{post.category}</span>
           <span class="text-white/50 flex items-center gap-2">
             <Calendar class="w-4 h-4" />
             {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -694,13 +167,14 @@ const shareUrls = {
         </div>
 
         <!-- Quick Summary Box -->
+        {post.quickSummary && (
         <div class="glass-strong rounded-2xl p-8 mb-12 border border-amber-500/20 bg-amber-500/5">
           <div class="flex items-center gap-3 mb-6">
             <BookOpen class="w-6 h-6 text-amber-400" />
             <h3 class="text-xl font-bold text-white">{ui.quickSummary}</h3>
           </div>
           <ul class="space-y-4">
-            {quickSummary.map((point: string) => (
+            {post.quickSummary.map((point: string) => (
               <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
                 <span class="text-amber-400 mt-1.5 font-bold">✓</span>
                 <span>{point}</span>
@@ -708,16 +182,17 @@ const shareUrls = {
             ))}
           </ul>
         </div>
+        )}
 
         <!-- Table of Contents -->
-        {tableOfContents && tableOfContents.length > 0 && (
+        {post.tableOfContents && post.tableOfContents.length > 0 && (
           <div class="glass rounded-2xl p-8 mb-12 border border-white/5">
             <div class="flex items-center gap-3 mb-6">
               <List class="w-6 h-6 text-amber-400" />
               <h3 class="text-xl font-bold text-white">{ui.tableOfContents}</h3>
             </div>
             <nav class="space-y-3">
-              {tableOfContents.map((item: { id: string; title: string }, index: number) => (
+              {post.tableOfContents.map((item: { id: string; title: string }, index: number) => (
                 <a href={`#${item.id}`} 
                    class="flex items-center gap-4 text-white/70 hover:text-amber-400 transition-colors py-1 group">
                   <span class="text-white/20 text-sm font-mono group-hover:text-amber-500/50 transition-colors">{String(index + 1).padStart(2, '0')}</span>
@@ -740,17 +215,18 @@ const shareUrls = {
             prose-ol:text-gray-100 prose-ol:my-8 prose-ol:list-decimal prose-ol:pl-6
             prose-a:text-amber-400 prose-a:no-underline hover:prose-a:text-amber-300 transition-colors
             prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:bg-white/5 prose-blockquote:p-6 prose-blockquote:rounded-r-lg prose-blockquote:italic"
-          set:html={articleContent}
+          set:html={post.content}
         />
 
         <!-- Key Takeaways Box -->
+        {post.keyTakeaways && (
         <div class="glass-strong rounded-2xl p-8 mt-16 border border-green-500/30 bg-green-500/5">
           <div class="flex items-center gap-3 mb-6">
             <Star class="w-6 h-6 text-green-400" />
             <h3 class="text-xl font-bold text-white">{ui.keyTakeaways}</h3>
           </div>
           <ul class="space-y-4">
-            {keyTakeaways.map((point: string) => (
+            {post.keyTakeaways.map((point: string) => (
               <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
                 <span class="text-green-400 mt-1.5 font-bold">★</span>
                 <span>{point}</span>
@@ -758,6 +234,7 @@ const shareUrls = {
             ))}
           </ul>
         </div>
+        )}
 
         <!-- CTA -->
         <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
@@ -774,8 +251,8 @@ const shareUrls = {
           <div class="mt-20 border-t border-white/10 pt-16">
             <h3 class="text-2xl font-bold text-white mb-8">{ui.relatedArticles}</h3>
             <div class="grid md:grid-cols-2 gap-8">
-              {relatedPosts.map(([s, p]) => (
-                <a href={`/${currentLang}/blog/${s}`} class="glass rounded-2xl p-8 block hover:border-amber-500/30 border border-white/10 transition-all group hover:-translate-y-1">
+              {relatedPosts.map((p: any) => (
+                <a href={`/${currentLang}/blog/${p.slug}`} class="glass rounded-2xl p-8 block hover:border-amber-500/30 border border-white/10 transition-all group hover:-translate-y-1">
                   <span class="text-3xl mb-4 inline-block">{p.emoji}</span>
                   <span class="text-amber-400 text-sm font-medium block mb-2 tracking-wide uppercase">{p.category}</span>
                   <h4 class="text-xl text-white font-bold group-hover:text-amber-200 transition-colors">{p.displayTitle}</h4>
@@ -786,7 +263,6 @@ const shareUrls = {
         )}
       </article>
     </main>
-
     <Footer lang={currentLang} />
   </div>
 </Layout>

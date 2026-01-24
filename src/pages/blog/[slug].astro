@@ -2,691 +2,47 @@
 /**
  * Individual Blog Post Page - SEO Optimized
  * Dynamic route for all blog articles
- * Enhanced with emojis, quick summary, key takeaways, progress bar, social share, and TOC
+ * Uses modular content from src/lib/blog
  */
 
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
-import { ArrowLeft, Calendar, Clock, Share2, Star, ArrowRight, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
+import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
+import { getArticleTranslation, getArticleMeta, getAllArticleSlugs } from '../../lib/blog';
 
 export const prerender = true;
 
-// Zodiac sign emojis for use in content
-const zodiacEmojis = {
-  aries: '♈',
-  taurus: '♉',
-  gemini: '♊',
-  cancer: '♋',
-  leo: '♌',
-  virgo: '♍',
-  libra: '♎',
-  scorpio: '♏',
-  sagittarius: '♐',
-  capricorn: '♑',
-  aquarius: '♒',
-  pisces: '♓'
-};
-
-// Blog posts with full keyword-rich content - now with emojis and enhanced structure
-const blogPosts: Record<string, any> = {
-    'daily-horoscope-guide': {
-    title: '⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions',
-    displayTitle: 'Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions',
-    emoji: '⭐',
-    metaDescription: 'Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.',
-    keywords: 'daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits',
-    date: '2025-12-20',
-    readTime: '15 min',
-    category: 'Astrology 101',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart',
-      'Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy',
-      'Planetary transits trigger specific events, emotions, and opportunities each day',
-      'Learn to use the Void-of-Course Moon periods to avoid wasted effort'
-    ],
-    keyTakeaways: [
-      'Your Sun sign shows your core vitality, but your Rising sign sets the "stage" for your daily life',
-      'The Moon changes signs every 2.5 days, dictating the collective mood',
-      'Mercury Retrograde and other "bad" aspects are actually periods for review and recalibration',
-      'Integrating astrology into your morning routine can optimize your productivity and relationships'
-    ],
-    tableOfContents: [
-      { id: 'introduction', title: 'Why Read a Daily Horoscope?' },
-      { id: 'science-behind-it', title: 'The Mechanics: How It Works' },
-      { id: 'rising-vs-sun', title: 'The Golden Rule: Sun vs. Rising' },
-      { id: 'planetary-players', title: 'Key Planetary Players' },
-      { id: 'zodiac-daily-styles', title: 'Daily Styles of the 12 Signs' },
-      { id: 'practical-rituals', title: 'Daily Astrological Rituals' },
-      { id: 'myth-busting', title: 'Busting Common Myths' }
-    ],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
-      
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
-
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
-      
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
-
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
-
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Sign</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
-      
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
-      <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
-      </ul>
-
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
-      <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
-      </ul>
-
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
-      <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
-      </ol>
-
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
-      
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
-    `
-  },
-
-    'monthly-horoscope-february-2026': {
-    title: '❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation',
-    displayTitle: 'Monthly Horoscope February 2026: Season of Aquarian Innovation',
-    emoji: '❤️',
-    metaDescription: 'Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.',
-    keywords: 'monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces',
-    date: '2026-02-01',
-    readTime: '15 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-        'The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self',
-        'Mercury finally goes Direct, clearing up the miscommunications from late January',
-        'Venus moves into dreamy Pisces, creating the most romantic energy of the entire year',
-        'Aquarius Season pushes us to innovate and break free from outdated traditions'
-    ],
-    keyTakeaways: [
-        'Use the first week of February to launch creative projects or re-brand yourself',
-        "Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep",
-        'Expect sudden insights regarding technology or community groups mid-month',
-        'General horoscopes are great, but for specific timing, you need your personal transits'
-    ],
-    tableOfContents: [
-        { id: 'monthly-overview', title: 'February 2026 Overview' },
-        { id: 'key-transits', title: 'Key Dates & Transits' },
-        { id: 'fire-signs', title: 'Fire Signs (Aries, Leo, Sag)' },
-        { id: 'earth-signs', title: 'Earth Signs (Taurus, Virgo, Cap)' },
-        { id: 'air-signs', title: 'Air Signs (Gemini, Libra, Aqua)' },
-        { id: 'water-signs', title: 'Water Signs (Cancer, Scorpio, Pisces)' },
-        { id: 'get-personal', title: "Why General isn't Enough" }
-    ],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
-      
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
-
-      <h2 id="key-transits">Key Dates & Transits</h2>
-      <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
-      </ul>
-
-      <h2 id="fire-signs">🔥 Fire Signs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
-      
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
-
-      <h2 id="earth-signs">🌍 Earth Signs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
-      
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
-
-      <h2 id="air-signs">💨 Air Signs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
-      
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
-
-      <h2 id="water-signs">💧 Water Signs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
-      
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
-
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
-      
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
-      
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
-      
-      <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
-      </div>
-    `
-  },
-    'birth-chart-reading-explained': {
-    title: '🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map',
-    displayTitle: 'Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map',
-    emoji: '🔮',
-    metaDescription: 'Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.',
-    keywords: 'birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart',
-    date: '2025-12-15',
-    readTime: '18 min',
-    category: 'Astrology Basics',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth',
-      'The "Big Three" (Sun, Moon, Rising) form the core tripod of your personality',
-      'The 12 Houses describe "where" events happen, while Planets describe "what" happens',
-      'Aspects (lines connecting planets) reveal your internal conflicts and special talents'
-    ],
-    keyTakeaways: [
-      'The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign',
-      'Hard aspects (Squares, Oppositions) create the most successful people through resilience',
-      'The North Node reveals your soul\'s karmic direction in this lifetime',
-      'Computer-generated reports are great, but human nuance is irreplaceable'
-    ],
-    tableOfContents: [
-      { id: 'what-is-birth-chart', title: 'The Blueprint of Your Soul' },
-      { id: 'the-big-three', title: 'The Big Three: Sun, Moon, Rising' },
-      { id: 'the-planets', title: 'The Planets: Inner vs. Outer' },
-      { id: 'the-houses', title: 'The Status of the 12 Houses' },
-      { id: 'aspects', title: 'Aspects: The Cosmic Conversation' },
-      { id: 'nodes', title: 'The Nodes of Fate' }
-    ],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
-      
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
-
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
-      
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
-
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
-
-      <h3>3. The Ascendant / Rising Sign 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
-
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
-      
-      <h3>The Personal Planets (Fast Moving)</h3>
-      <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
-      </ul>
-
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
-      <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
-      </ul>
-
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
-      <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
-      </ul>
-
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
-      
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
-      
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
-
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
-      
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.</p>
-    `
-  },
-    'weekly-horoscope-predictions': {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    displayTitle: 'Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    emoji: '📅',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    date: '2025-12-22',
-    readTime: '12 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-      'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-      'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-      'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-      'Check the weekly forecast on Sunday evening to plan your calendar',
-      'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-      'Avoid signing contracts when the Moon is Void',
-      'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-      { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-      { id: 'planetary-days', title: 'Rulers of the Days' },
-      { id: 'void-moon', title: 'The Void-of-Course Moon' },
-      { id: 'transits', title: 'Tracking Weekly Transits' },
-      { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
-      
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
-
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
-      
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
-
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
-      
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
-      
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
-      
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
-      
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
-      
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
-
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
-
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
-      <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
-      </ul>
-
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
-      <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
-      </ul>
-      
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em></p>
-    `
-  },
-    'monthly-horoscope-january-2026': {
-    title: '🌙 Monthly Horoscope January 2025: The Dawn of a New Era',
-    displayTitle: 'Monthly Horoscope January 2025: The Dawn of a New Era',
-    emoji: '🌙',
-    metaDescription: 'Complete January 2025 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.',
-    keywords: 'monthly horoscope, january 2025 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer',
-    date: '2025-12-24',
-    readTime: '25 min',
-    category: 'Horoscopes',
-    author: 'Astralo Team',
-    quickSummary: [
-      'January 2025 is dominated by Pluto settling into Aquarius, signaling massive social shifts',
-      'The New Moon in Capricorn (Jan 1) is the perfect "New Year\'s Resolution" energy',
-      'Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication',
-      'Mars Retrograde in Cancer brings unresolved family conflicts to the surface'
-    ],
-    keyTakeaways: [
-      'Use the first week of January for strategic planning only; delay action until mid-month',
-      'Expect sudden technological breakthroughs or disruptions as Uranus activates',
-      'Relationships face a reality check near the Full Moon in Cancer on Jan 14',
-      'Financial markets may be volatile; stick to long-term safe investments'
-    ],
-    tableOfContents: [
-      { id: 'monthly-overview', title: 'The Astrology of January' },
-      { id: 'key-transits', title: 'Key Dates & Transits' },
-      { id: 'fire-signs', title: 'Fire Signs (Aries, Leo, Sag)' },
-      { id: 'earth-signs', title: 'Earth Signs (Taurus, Virgo, Cap)' },
-      { id: 'air-signs', title: 'Air Signs (Gemini, Libra, Aqua)' },
-      { id: 'water-signs', title: 'Water Signs (Cancer, Scorpio, Pisces)' }
-    ],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2025</h2>
-      <p>Happy New Year! <strong>January 2025</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
-      
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
-
-      <h2 id="key-transits">Key Dates & Transits</h2>
-      <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
-      </ul>
-
-      <h2 id="fire-signs">🔥 Fire Signs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
-      
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
-      
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
-      
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
-
-      <h2 id="earth-signs">🌍 Earth Signs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
-      
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
-      
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
-      
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
-
-      <h2 id="air-signs">💨 Air Signs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
-      
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
-      
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
-      
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
-
-      <h2 id="water-signs">💧 Water Signs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
-      
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
-      
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
-      
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
-
-      <h2 id="complete-horoscope">Get Your Complete 2025 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2025 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.</p>
-    `
-  },
-    'love-horoscope-relationship-advice': {
-    title: '💕 Love Horoscope 2026: The Master Guide to Zodiac Romance',
-    displayTitle: 'Love Horoscope 2026: The Master Guide to Zodiac Romance',
-    emoji: '💕',
-    metaDescription: 'Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.',
-    keywords: 'love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility',
-    date: '2025-12-10',
-    readTime: '22 min',
-    category: 'Love & Relationships',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Your Love Language is dictated by your Venus Sign, not just your Sun Sign',
-      'The 7th House in your chart describes your ideal long-term partner',
-      'Mars determines how you pursue romantic interests and sexual chemistry',
-      'Relationship timing is everything—never marry during Venus Retrograde'
-    ],
-    keyTakeaways: [
-      'If you want to know how someone flirts, look at their Venus sign',
-      'If you want to know how someone fights or has sex, look at their Mars sign',
-      'The "Descendant" (opposite your Rising Sign) is usually the sign you are most attracted to',
-      'Synastry is the art of comparing two charts to see if a relationship is built to last'
-    ],
-    tableOfContents: [
-      { id: 'love-guide', title: 'Love is a Skill' },
-      { id: 'venus-signs', title: 'Venus: What You Love' },
-      { id: 'mars-signs', title: 'Mars: How You Lust' },
-      { id: '7th-house', title: 'The 7th House of Marriage' },
-      { id: 'retrograde-love', title: 'Surviving Retrograde Romance' },
-      { id: 'partner-analysis', title: 'Compatibility Analysis' }
-    ],
-    content: `
-      <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
-      
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
-      
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
-      <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
-      </ul>
-
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
-
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
-
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
-      
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
-
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
-      <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
-      </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
-    `
-  },
-  'mercury-retrograde-survival-guide': {
-    title: '☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
-    displayTitle: 'Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
-    emoji: '☄️',
-    metaDescription: 'Don\'t fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it\'s the best time for "Re" activities.',
-    keywords: 'mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches',
-    date: '2026-01-15',
-    readTime: '18 min',
-    category: 'Astrology 101',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Mercury Retrograde is an optical illusion where Mercury appears to move backward',
-      'It happens 3-4 times a year and lasts for about three weeks each time',
-      'This period is notorious for travel delays, tech failures, and miscommunications',
-      'It is NOT a time to start new projects, but an ELITE time for finishing old ones'
-    ],
-    keyTakeaways: [
-      'Double-check every email, text, and contract before hitting send or signing',
-      'Back up your data and expect minor technological glitches with devices',
-      'Old friends and exes often reappear during these cosmic cycles',
-      'The "Shadow Period" before and after the retrograde is just as important'
-    ],
-    tableOfContents: [
-      { id: 'what-is-mercury-retrograde', title: 'The Science of the Illusion' },
-      { id: 'retrograde-shadow', title: 'The Shadow Period' },
-      { id: 'survival-dos', title: 'The "RE" Rule: What to Do' },
-      { id: 'survival-donts', title: 'The Red Flags: What to Avoid' },
-      { id: 'mercury-retrograde-dates', title: '2026 Retrograde Dates' },
-      { id: 'final-thoughts', title: 'Silver Linings' }
-    ],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
-      
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
-
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
-
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
-      <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
-      </ul>
-
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
-      <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
-      </ul>
-
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
-      <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
-      </ol>
-
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
-    `
-  },
-  'history-of-astrology': {
-    title: '🏛️ The History of Astrology: From Ancient Babylon to Modern AI',
-    displayTitle: 'The History of Astrology: From Ancient Babylon to Modern AI',
-    emoji: '🏛️',
-    metaDescription: 'Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.',
-    keywords: 'history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology',
-    date: '2026-01-10',
-    readTime: '22 min',
-    category: 'Astrology Basics',
-    author: 'Astralo Team',
-    quickSummary: [
-      'Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago',
-      'The Zodiac we use today was standardized by the Greeks around 2,000 years ago',
-      'Astrology and Astronomy were considered the same science until the 17th century',
-      'Today, astrology is used more for psychological insight than for predicting kings\\\' deaths'
-    ],
-    keyTakeaways: [
-      'Ancient cultures used astrology for agriculture and political survival',
-      'The "Age of Reason" temporarily pushed astrology into the shadows of superstition',
-      'Carl Jung brought astrology back into mainstream thought through psychology',
-      'AI technology is now allowing for more precise calculations than ever before'
-    ],
-    tableOfContents: [
-      { id: 'ancient-origins', title: 'The Cradle of the Stars: Babylon' },
-      { id: 'greek-influence', title: 'The Greek Revolution' },
-      { id: 'scientific-divorce', title: 'The Scientific Divorce' },
-      { id: 'jungian-rebirth', title: 'Psychology and the 20th Century' },
-      { id: 'future-astrology', title: 'The Future: AI & Big Data' }
-    ],
-    content: `
-      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
-      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
-      
-      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
-
-      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
-      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
-      
-      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
-
-      <h2 id="scientific-divorce">The Scientific Divorce</h2>
-      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
-      
-      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
-
-      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
-      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
-      
-      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
-
-      <h2 id="future-astrology">The Future: AI & Big Data</h2>
-      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
-      
-      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
-    `
-  },
-};
-
 export function getStaticPaths() {
-  return [
-    { params: { slug: 'daily-horoscope-guide' } },
-    { params: { slug: 'zodiac-compatibility-complete-guide' } },
-    { params: { slug: 'birth-chart-reading-explained' } },
-    { params: { slug: 'monthly-horoscope-february-2026' } },
-    { params: { slug: 'love-horoscope-relationship-advice' } },
-    { params: { slug: 'mercury-retrograde-survival-guide' } },
-    { params: { slug: 'history-of-astrology' } },
-    { params: { slug: 'saturn-return-guide' } },
-    { params: { slug: 'the-12-houses-of-astrology' } },
-    { params: { slug: 'twin-flames-and-soulmates-astrology' } }
-  ];
+  const slugs = getAllArticleSlugs();
+  return slugs.map(slug => ({
+    params: { slug }
+  }));
 }
 
 const { slug } = Astro.params;
-const post = blogPosts[slug];
+const translation = getArticleTranslation(slug as string, 'en');
+const meta = getArticleMeta(slug as string);
 
-if (!post) {
+if (!translation || !meta) {
   return Astro.redirect('/blog');
 }
 
-// Related posts (exclude current)
-const relatedPosts = Object.entries(blogPosts)
-  .filter(([s, p]) => s !== slug && p.category === post.category)
+const post = {
+  ...translation,
+  ...meta,
+  displayTitle: translation.title
+};
+
+// Related posts (exclude current) - simplistic logic for now
+const allSlugs = getAllArticleSlugs();
+const relatedPosts = allSlugs
+  .filter(s => s !== slug)
+  .map(s => {
+    const m = getArticleMeta(s);
+    const t = getArticleTranslation(s, 'en');
+    return { slug: s, ...m, ...t };
+  })
+  .filter(p => p.category === post.category)
   .slice(0, 2);
 
 // Generate share URLs
@@ -736,7 +92,7 @@ const shareUrls = {
           </span>
           <span class="text-white/50 flex items-center gap-2">
             <Clock class="w-4 h-4" />
-            {post.readTime} read
+            {post.readTime} min read
           </span>
         </div>
 
@@ -784,6 +140,7 @@ const shareUrls = {
         </div>
 
         <!-- Quick Summary Box -->
+        {post.quickSummary && (
         <div class="glass-strong rounded-2xl p-8 mb-12 border border-amber-500/20 bg-amber-500/5">
           <div class="flex items-center gap-3 mb-6">
             <BookOpen class="w-6 h-6 text-amber-400" />
@@ -798,6 +155,7 @@ const shareUrls = {
             ))}
           </ul>
         </div>
+        )}
 
         <!-- Table of Contents -->
         {post.tableOfContents && post.tableOfContents.length > 0 && (
@@ -820,7 +178,6 @@ const shareUrls = {
 
         <!-- Content -->
         <!-- Added prose-p:mb-10 relative to leading-loose for massive Medium-style gaps -->
-        <!-- Content -->
         <div 
           class="article-content prose prose-xl prose-invert max-w-none
             prose-headings:text-white prose-headings:font-bold prose-headings:scroll-mt-32
@@ -836,6 +193,7 @@ const shareUrls = {
         />
 
         <!-- Key Takeaways Box -->
+        {post.keyTakeaways && (
         <div class="glass-strong rounded-2xl p-8 mt-16 border border-green-500/30 bg-green-500/5">
           <div class="flex items-center gap-3 mb-6">
             <Star class="w-6 h-6 text-green-400" />
@@ -850,6 +208,7 @@ const shareUrls = {
             ))}
           </ul>
         </div>
+        )}
 
         <!-- CTA -->
         <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
@@ -866,11 +225,11 @@ const shareUrls = {
           <div class="mt-20 border-t border-white/10 pt-16">
             <h3 class="text-2xl font-bold text-white mb-8">📚 Related Articles</h3>
             <div class="grid md:grid-cols-2 gap-8">
-              {relatedPosts.map(([s, p]) => (
-                <a href={`/blog/${s}`} class="glass rounded-2xl p-8 block hover:border-amber-500/30 border border-white/10 transition-all group hover:-translate-y-1">
+              {relatedPosts.map((p) => (
+                <a href={`/blog/${p.slug}`} class="glass rounded-2xl p-8 block hover:border-amber-500/30 border border-white/10 transition-all group hover:-translate-y-1">
                   <span class="text-3xl mb-4 inline-block">{p.emoji}</span>
                   <span class="text-amber-400 text-sm font-medium block mb-2 tracking-wide uppercase">{p.category}</span>
-                  <h4 class="text-xl text-white font-bold group-hover:text-amber-200 transition-colors">{p.displayTitle}</h4>
+                  <h4 class="text-xl text-white font-bold group-hover:text-amber-200 transition-colors">{p.title}</h4>
                 </a>
               ))}
             </div>
