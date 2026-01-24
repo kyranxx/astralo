@@ -1,67 +1,69 @@
 /**
- * Monthly Horoscope January 2026 - Japanese (日本語)
+ * monthly-horoscope-january-2026 - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: '🌙 2026年1月の月間占い：新時代の夜明け',
-    excerpt: '2026年1月の完全な占星術予報。水瓶座の冥王星、愛、キャリア、および金銭の傾向をカバーする牡羊座から魚座までの詳細な月間占い。',
-    category: '運勢',
-    metaDescription: '2026年1月の完全な占星術予報。水瓶座の冥王星、愛、キャリア、および金銭の傾向をカバーする牡羊座から魚座までの詳細な月間占い。',
-    keywords: '月間占い, 2026年1月占星術, 月間予測, 1月の星座予報, 水瓶座の冥王星, 山羊座の新月, 蟹座の満月',
-    quickSummary: [
-        '2026年1月は、水瓶座に定着する冥王星によって支配され、大規模な社会の変化を示唆しています',
-        '山羊座の新月（1月1日）は、完璧な「新年の抱負」エネルギーです',
-        '水星逆行のシャドウフェーズは1月15日までに解消され、コミュニケーションがスムーズになります',
-        '蟹座の火星逆行は、未解決の家族の対立を表面化させます'
-    ],
-    keyTakeaways: [
-        '1月の第1週は戦略的計画にのみ使用し、行動は月中旬まで遅らせてください',
-        '天王星が活性化するにつれて、突然の技術的な進歩や混乱を予期してください',
-        '人間関係は、1月14日の蟹座の満月付近で現実のチェックに直面します',
-        '金融市場は不安定になる可能性があります。長期的な安全な投資に固執してください'
-    ],
-    tableOfContents: [
-        { id: 'monthly-overview', title: '1月の占星術' },
-        { id: 'key-transits', title: '重要な日付とトランジット' },
-        { id: 'fire-signs', title: '火の星座（牡羊、獅子、射手）' },
-        { id: 'earth-signs', title: '地の星座（牡牛、乙女、山羊）' },
-        { id: 'air-signs', title: '風の星座（双子、天秤、水瓶）' },
-        { id: 'water-signs', title: '水の星座（蟹、蠍、魚）' }
-    ],
+    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
+    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
+    category: "Horoscopes",
+    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
+    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
+    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
+    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
+    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
     content: `
-      <h2 id="monthly-overview">2026年1月の占星術</h2>
-      <p>明けましておめでとうございます！<strong>2026年1月</strong>は、単なる新しい暦年の始まりではありません。それは占星術的な新時代の夜明けです。<strong>冥王星がしっかりと水瓶座にある</strong>ため、私たちは集合的に過去15年間のトップダウン構造（山羊座の冥王星）から離れ、急速な革新、コミュニティ重視、反乱の段階に入っています。</p>
+      <h2 id="monthly-overview">The Astrology of January 2026</h2>
+      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
       
-      <p>月は1月1日の<strong>山羊座の新月</strong>で始まります。これはまれで縁起の良い配置です。これは「新しい年、新しい私」のエネルギーを倍増させ、規律ある長期的な目標を設定するのに信じられないほどの時間になります。しかし、蟹座での火星逆行により、私たちのエネルギーは少し内向きに感じるかもしれません。</p>
+      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
 
-      <h2 id="key-transits">重要な日付とトランジット</h2>
+      <h2 id="key-transits">Key Dates & Transits</h2>
       <ul>
-        <li><strong>1月1日：</strong> 山羊座の新月（意図を設定）。</li>
-        <li><strong>1月4日：</strong> 火星が獅子座に入る（プライドとドラマが増加）。</li>
-        <li><strong>1月14日：</strong> 蟹座の満月（感情の解放）。</li>
-        <li><strong>1月20日：</strong> 太陽が水瓶座に入る（未来の季節）。</li>
-        <li><strong>1月29日：</strong> 天王星が順行（突然の変化）。</li>
+        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
+        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
+        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
+        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
+        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 火の星座（牡羊、獅子、射手）</h2>
-      <p><strong>牡羊座：</strong> 支配星である火星が逆行しているように見えるため、遅延に不満を感じるかもしれません。これは赤信号ではありません。黄色信号です。</p>
-      <p><strong>獅子座：</strong> 人間関係が焦点です。元パートナーや古い友人が再び現れることを期待してください。</p>
-      <p><strong>射手座：</strong> 金融が強調されています。新しい収入源が見つかるかもしれません。</p>
+      <h2 id="fire-signs">🔥 Fire Signs (Aries, Leo, Sagittarius)</h2>
+      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      
+      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      
+      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      
+      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
 
-      <h2 id="earth-signs">🌍 地の星座（牡牛、乙女、山羊）</h2>
-      <p><strong>牡牛座：</strong> あなたの星座にある天王星が、あなたを自由にしようと後押ししています。1月は突然の旅行の機会をもたらします。</p>
-      <p><strong>乙女座：</strong> 支配星である水星は、月中旬にシャドウフェーズを解消します。それまでは、すべての契約を再確認してください。</p>
-      <p><strong>山羊座：</strong> 誕生日シーズンおめでとうございます！あなたの星座の新月は、あなたの個人的な新年です。</p>
+      <h2 id="earth-signs">🌍 Earth Signs (Taurus, Virgo, Capricorn)</h2>
+      <p><strong>Theme: Building the Foundation.</strong></p>
+      
+      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      
+      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      
+      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
 
-      <h2 id="air-signs">💨 風の星座（双子、天秤、水瓶）</h2>
-      <p><strong>双子座：</strong> 共有リソースと深い親密さが重要です。</p>
-      <p><strong>天秤座：</strong> 家庭と家族が中心になります。模様替えをしたり、家族の対立を調停したりするかもしれません。</p>
-      <p><strong>水瓶座：</strong> これはあなたの瞬間です。冥王星があなたの星座にあるため、あなたは変態を遂げています。</p>
+      <h2 id="air-signs">💨 Air Signs (Gemini, Libra, Aquarius)</h2>
+      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      
+      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      
+      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      
+      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
 
-      <h2 id="water-signs">💧 水の星座（蟹、蠍、魚）</h2>
-      <p><strong>蟹座：</strong> 14日のあなたの星座での満月は、あなたの1年の感情的なクライマックスです。</p>
-      <p><strong>蠍座：</strong> コミュニケーションは強力です。今月、あなたの言葉には特別な重みがあります。</p>
-      <p><strong>魚座：</strong> あなたの社会的な輪が広がっています。</p>
+      <h2 id="water-signs">💧 Water Signs (Cancer, Scorpio, Pisces)</h2>
+      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      
+      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      
+      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      
+      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+
+      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
+      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
     `
 };

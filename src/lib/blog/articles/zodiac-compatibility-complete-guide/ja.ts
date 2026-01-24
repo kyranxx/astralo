@@ -1,105 +1,88 @@
 /**
- * Zodiac Compatibility - Japanese (日本語)
+ * zodiac-compatibility-complete-guide - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-  title: '❤️ 星座の相性：宇宙的な愛への決定版ガイド',
-  excerpt: '2026年版、星座の相性に関する究極のガイド。太陽星座を超えて、エレメント、金星、火星があなたの恋愛の相性にどう影響するかを探ります。',
-  category: '愛と人間関係',
-  metaDescription: '2026年版、星座の相性に関する究極のガイド。エレメント、金星、火星があなたの恋愛の相性や長期的なポテンシャルにどう影響するかを探ります。',
-  keywords: '星座 相性, 恋愛ホロスコープ, シナストリー, 星座占い 相性, 金星 恋愛, 火星 情熱, 関係占星術, ベストマッチ',
-  quickSummary: [
-    '真の相性は太陽星座だけでなく、出生図全体の比較（シナストリー）によって決まります',
-    'エレメント（火、地、風、水）のバランスが、関係の調和の基礎となります',
-    '「不一致」とされる星座との関係こそ、魂の成長に最大の機会を与えることがよくあります',
-    '金星は愛情のスタイルを決定し、火星は情熱と葛藤のスタイルを支配します'
-  ],
-  keyTakeaways: [
-    'スムーズな関係にはトライン（同じエレメント）、刺激的な惹きつけ合いにはオポジションを探しましょう',
-    '月星座の相性は、同居や情緒的な安心感において極めて重要です',
-    '水星の相性は、二人がどれだけうまく問題を解決できるかを決定します',
-    '「完璧な相手」というものは存在しません。すべてのペアに強みと課題があります'
-  ],
-  tableOfContents: [
-    { id: 'beyond-sun-signs', title: 'なぜ太陽星座だけではないのか' },
-    { id: 'elemental-love', title: '愛における4つのエレメント' },
-    { id: 'love-planets', title: '金星、火星、そして月' },
-    { id: 'challenging-matches', title: '「悪い相性」の真実' },
-    { id: 'best-matches-deep-dive', title: '深掘り：ベストマッチな組み合わせ' },
-    { id: 'synastry', title: '上級テクニック：シナストリー' }
-  ],
-  content: `
-      <h2 id="beyond-sun-signs">なぜ太陽星座だけではないのか</h2>
-      <p>自分の好きな人の星座との相性をアプリでチェックしたことはありませんか？「ああ、私は獅子座で彼は蠍座……私たちはダメなんだ！」でも、ちょっと待ってください。<strong>星座の相性</strong>は、単純な表の照らし合わせよりも、はるかに複雑で、希望に満ちたものです。</p>
+    title: "❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love",
+    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    category: "Love & Relationships",
+    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
+    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
+    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
+    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
+    content: `
+      <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
+      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
       
-      <p>太陽星座はあなたの自我や人生の目的を表しますが、人間関係は感情、コミュニケーション、そして価値観の上に築かれます。だからこそ、いわゆる「相性が悪い」星座と幸せな結婚生活を送っていたり、いわゆる「完璧な相手」とうまくいかなかったりするのです。<strong>恋愛の相性</strong>を真に理解するには、天空全体の図を見る必要があります。</p>
+      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 
-      <h2 id="elemental-love">愛における4つのエレメント</h2>
-      <p>初期の相性を測る最も早い方法は、エレメントを見ることです。同じエレメントの星座は、一般的に「同じ言語」で話します。</p>
+      <h2 id="elemental-love">The 4 Elements in Love</h2>
+      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
       
-      <h3>🔥 火の星座（牡羊座、獅子座、射手座）</h3>
-      <p><strong>愛の言語：</strong> 情熱、冒険、自発性。</p>
-      <p>火の星座は、自分の炎を消さずに煽ってくれるパートナーを必要とします。彼らは刺激を渇望し、退屈を嫌います。
-      <br><em>ベストマッチ：</em> 他の火の星座（瞬時の熱）または風の星座（風は火を助けます）。</p>
+      <h3>🔥 Fire Signs (Aries, Leo, Sagittarius)</h3>
+      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
+      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
+      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
 
-      <h3>🌍 地の星座（牡牛座、乙女座、山羊座）</h3>
-      <p><strong>愛の言語：</strong> 奉仕、安定、触れ合い。</p>
-      <p>地の星座は愛を行動として捉えます。具体的な奉仕の行動や、共に生活を築くことで愛情を示します。彼らは信頼性を必要とします。
-      <br><em>ベストマッチ：</em> 他の地の星座（強固な基盤）または水の星座（水は大地を豊かにします）。</p>
+      <h3>🌍 Earth Signs (Taurus, Virgo, Capricorn)</h3>
+      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
+      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
+      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
 
-      <h3>💨 風の星座（双子座、天秤座、水瓶座）</h3>
-      <p><strong>愛の言語：</strong> 会話、機知、自由。</p>
-      <p>風の星座にとって、脳は最も性感帯です。彼らは知的な刺激と、同時に親友でもあるパートナーを必要とします。
-      <br><em>ベストマッチ：</em> 他の風の星座（終わらない会話）または火の星座（インスピレーション）。</p>
+      <h3>💨 Air Signs (Gemini, Libra, Aquarius)</h3>
+      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
+      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
+      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
 
-      <h3>💧 水の星座（蟹座、蠍座、魚座）</h3>
-      <p><strong>愛の言語：</strong> 脆弱性、直感、融合。</p>
-      <p>水の星座は深い感情的な繋がりを求めます。言葉なしで理解されることを望み、安全な避難場所を必要とします。
-      <br><em>ベストマッチ：</em> 他の水の星座（精神的な絆）または地の星座（水を受け止める器）。</p>
+      <h3>💧 Water Signs (Cancer, Scorpio, Pisces)</h3>
+      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
+      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
+      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
 
-      <h2 id="love-planets">真の愛の惑星：金星、火星、そして月</h2>
-      <p>日常生活でうまくやっていけるかを知りたいなら、太陽星座の相性をチェックするだけでは不十分です。パートナーのチャートにある3つの特定の惑星を詳しく見る必要があります：</p>
+      <h2 id="love-planets">The Real Love Planets: Venus, Mars & The Moon</h2>
+      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
 
-      <h3>1. 月 🌙（情緒的な安心感）</h3>
-      <p>長期的な結婚や同居において、<strong>月星座の相性は王様です</strong>。月星座は、安心するために何が必要か、疲れたりお腹が空いたりしたときにどう反応するか、そして他人をどう世話するかを決定します。 
-      <br><em>例：</em> 牡羊座の太陽はタフに見えるかもしれませんが、蟹座の月を持っていれば、実際には家で抱擁と安心を必要とする非常に柔らかい心を持っています。</p>
+      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
+      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
+      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
 
-      <h3>2. 金星 ♀（ロマンスと価値観）</h3>
-      <p>金星は、あなたが何を美しいと感じ、何を価値あるものとするかを決定します。それはあなたの「浮気のスタイル」を示します。
-      <br><em>ヒント：</em> 金星のサインが同じエレメントであれば、好みや支出の習慣が簡単に一致する可能性が高いです。</p>
+      <h3>2. Venus ♀ (Romance & Values)</h3>
+      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
+      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
 
-      <h3>3. 火星 ♂（情熱と葛藤）</h3>
-      <p>火星は性欲と葛藤の惑星です。どのように喧嘩し、どのようにセックスするかを示します。
-      <br><em>ヒント：</em> 相性の良い火星のサインは、議論が迅速に解決され、身体的な相性が生き生きとし続けることを保証します。</p>
+      <h3>3. Mars ♂ (Passion & Argument)</h3>
+      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
+      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
 
-      <h2 id="challenging-matches">「悪い相性」の真実</h2>
-      <p>もし「相性が悪い」星座と恋に落ちたらどうしますか？例えば、獅子座（火）と蠍座（水）？</p>
+      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
+      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
       
-      <p>これらの関係は、しばしば最も<strong>変容をもたらすもの</strong>です。占星術ではこれらのアスペクトを「スクエア（Square）」または「クインカンクス（Quincunx）」と呼びます。摩擦を生みます。しかし、摩擦は熱（情熱）を生みます！「挑戦的な」マッチは、あなたを成長させ、新しい言語を学び、コンフォートゾーンから抜け出すことを強います。それらはしばしば、より多くの努力を必要とするとしても、あなたの魂を進化させるために設計された、情熱的でドラマチックなソウルメイトの繋がりです。</p>
+      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
 
-      <h2 id="best-matches-deep-dive">深掘り：有名な星座のペア</h2>
+      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac Pairings</h2>
       
-      <h3>「パワーカップル」：牡羊座と天秤座</h3>
-      <p>反対のものは引き合います！牡羊座は「私が先」、天秤座は「私たちが先」。牡羊座は天秤座に自己主張を教え、天秤座は牡羊座に外交を教えます。壊すのが難しい磁石のような引き合いです。</p>
+      <h3>The "Power Couple": Aries & Libra</h3>
+      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
 
-      <h3>「帝国建設者」：牡牛座と山羊座</h3>
-      <p>品質、お金、安全を重んじる2つの地の星座。彼らは一緒に巨大な成功を築きますが、仕事だけでなく楽しむことも忘れてはいけません。</p>
+      <h3>The "Empire Builders": Taurus & Capricorn</h3>
+      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
       
-      <h3>「ピーターパン」デュオ：双子座と射手座</h3>
-      <p>風と火。どちらも自由、旅行、哲学を愛しています。伝統的な意味で落ち着くことはないかもしれませんが、永遠のアリバイ工作員となるでしょう。</p>
+      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
+      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
 
-      <h3>「精神的な絆」：蟹座と蠍座</h3>
-      <p>これら2つの水の星座が出会うと、世界は消え去ります。彼らはテレパシーのような繋がりと独占欲を持っており、お互いに猛烈に忠実です。</p>
+      <h3>The "Psychic Link": Cancer & Scorpio</h3>
+      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
       
-      <h2 id="synastry">高度な相性：シナストリー</h2>
-      <p>あなたの関係についての真の答えを得るには、<strong>シナストリー（相性図）リーディング</strong>が必要です。これは、あなたのチャートをパートナーのチャートの上に重ねることを含みます。</p>
+      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
+      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
       
-      <p>私たちは次のような繋がりを探します：
-      <br><strong>太陽と月のコンジャンクション：</strong> 古典的な「夫/妻」のアスペクト。
-      <br><strong>金星と火星の交換：</strong> 信じられないほどの性的魅力。
-      <br><strong>土星の接触：</strong> 人々を生涯（困難な時でさえ）結びつける接着剤。</p>
+      <p>We look for connections like:
+      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
+      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
+      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
       
-      <p>Astraloでは、高度なアルゴリズムと専門の占星術師が単なるパーセンテージを与えるだけではありません。私たちはあなたの関係の魂の地図を作成します。推測をやめて、あなたの結合の宇宙的な目的を理解し始めましょう。</p>
+      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
     `
 };

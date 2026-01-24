@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Hungarian (Magyar)
+ * history-of-astrology - HU
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: '🏛️ Az asztrológia története: Az ókori Babiloniától a modern AI-ig',
-    excerpt: 'Fedezze fel az asztrológia lenyűgöző 5000 éves útját. Ismerje meg, hogyan használták az ókori civilizációk a csillagokat, és hogyan vált modern pszichológiai eszközzé.',
-    category: 'Asztrológiai alapok',
-    metaDescription: 'Fedezze fel az asztrológia lenyűgöző 5000 éves útját. Ismerje meg, hogyan használták az ókori civilizációk a csillagokat birodalmak építésére, és hogyan vált az asztrológia modern pszichológiai eszközzé.',
-    keywords: 'asztrológia története, ókori asztrológia, babiloni asztrológia, görög asztrológia, zodiákus története, asztrológia eredete, modern asztrológia',
-    quickSummary: [
-        'Az asztrológia több mint 4000 évvel ezelőtt született Mezopotámiában (az ókori Babilonban)',
-        'A ma használt zodiákust a görögök szabványosították körülbelül 2000 évvel ezelőtt',
-        'Az asztrológiát és a csillagászatot a 17. századig ugyanannak a tudománynak tekintették',
-        'Ma az asztrológiát inkább pszichológiai betekintésre használják, mintsem királyok halálának megjósolására'
-    ],
-    keyTakeaways: [
-        'Az ókori kultúrák a mezőgazdaságban és a politikai túlélésben is használták az asztrológiát',
-        'A felvilágosodás kora ideiglenesen a babonák árnyékába szorította az asztrológiát',
-        'Carl Jung a pszichológián keresztül hozta vissza az asztrológiát a köztudatba',
-        'Az AI technológia ma minden eddiginél pontosabb számításokat tesz lehetővé'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'A csillagok bölcsője: Babilon' },
-        { id: 'greek-influence', title: 'A görög forradalom' },
-        { id: 'scientific-divorce', title: 'A tudományos válás' },
-        { id: 'jungian-rebirth', title: 'Pszichológia és a 20. század' },
-        { id: 'future-astrology', title: 'A jövő: AI és Big Data' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">A csillagok bölcsője: Babilon</h2>
-      <p>Az asztrológia története Mezopotámia termékeny félholdján kezdődik. Közel 5000 évvel ezelőtt a babiloni papok összefüggést vettek észre a csillagok mozgása és a folyók áradása vagy az évszakok változása között. Ők voltak az elsők, akik részekre osztották az eget, bár rendszerüket kezdetben a <em>nemzet</em> vagy a <em>király</em> sorsának megjósolására használták, nem az egyénére.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>Az i.e. 5. századra a babiloniak kidolgozták a <strong>zodiákus</strong> első koncepcióját, a nap útját tizenkét egyenlő jegyre osztva a csillagképek alapján.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">A görög forradalom: Horoszkópikus asztrológia</h2>
-      <p>Amikor az asztrológia elérte a hellenisztikus világot (az ókori Görögországot és Egyiptomot), hatalmas átalakuláson ment keresztül. A görögök hozzáadták az <strong>aszcendens (felkelő jegy)</strong> és a <strong>házrendszer</strong> fogalmát. Ez tette lehetővé az első "születési képlet" (radix) elkészítését — egy térképet az égboltról egy adott személy születésének pillanatában.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>Klaudiosz Ptolemaiosz <em>Tetrabiblos</em> című műve, amely az i.sz. 2. században íródott, az asztrológia bibliájává vált. A ma is használt logika nagy részét a jegyekre, elemekre és aspektusokra vonatkozóan ebben az ókori szövegben fektették le.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">A tudományos válás</h2>
-      <p>Az emberi történelem nagy részében az <strong>asztrológia</strong> és a <strong>csillagászat</strong> ugyanaz volt. Olyan nagy tudósok, mint Johannes Kepler és Galileo Galilei, egyben hivatásos asztrológusok is voltak. A 17. századi felvilágosodás alatt azonban a két terület különvált. A csillagászat az űr fizikai összetételére összpontosított, míg az asztrológiát az új tudományos elit "babonának" bélyegezte és elvetette.</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>Ennek ellenére az asztrológia túlélte az almanachokban és titkos társaságokban, továbbra is milliókat irányítva a magánszférában.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">Pszichológia és a 20. század</h2>
-      <p>Az asztrológia 20. századi visszatérését egy meglepő forrás hajtotta: a pszichológia. <strong>Carl Jung</strong>, az analitikus pszichológia atyja, születési képleteket tanulmányozott, és kidolgozta a <em>szinkronicitás</em> elméletét, hogy megmagyarázza, miért működik az asztrológia. A zodiákust egyetemes archetípusok gyűjteményének tekintette — olyan emberi viselkedési mintáknak, amelyek minden nép kollektív tudatalattijában léteznek.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>Ez átterelte az asztrológia fókuszát a "Mi fog történni velem?" kérdésről a "Ki vagyok én, és miért reagálok így?" felé.</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">A jövő: AI és Big Data</h2>
-      <p>Jelenleg az asztrológia új aranykorában élünk. A technológia szükségtelenné tette a bonyolult kézi számításokat, lehetővé téve bárki számára, akinek van okostelefonja, hogy lássa a képletét. Ami még fontosabb, a <strong>mesterséges intelligenciát</strong> ma már hatalmas mennyiségű adat elemzésére használják, mélyebb összefüggéseket találva a tranzitokban és a személyiségjegyekben, amelyeket korábban lehetetlen volt észrevenni.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>Az Astralo-nál ötvözzük ezt az 5000 éves örökséget a legmodernebb gépi tanulással, hogy az emberi történelem legpontosabb és legmélyebb útmutatását nyújtsuk Önnek.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

@@ -1,121 +1,101 @@
 /**
- * Daily Horoscope Guide - Czech (Čeština)
- * SEO Keywords: denní horoskop, horoskop dnes, znamení zvěrokruhu, ascendent
+ * daily-horoscope-guide - CS
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const cs: BlogPostTranslation = {
-    title: '⭐ Denní horoskop 2026: Ultimátní průvodce porozuměním vašim předpovědím',
-    excerpt: 'Zjistěte, jak hvězdy dnes ovlivňují váš život a proč je váš ascendent klíčem k přesnosti.',
-    category: 'Astrologie 101',
-    metaDescription: 'Ovládněte své denní horoskopické předpovědi. Komplexní průvodce porozuměním toho, jak funguje denní astrologie, proč na vašem ascendentu záleží a jak využít planetární energii.',
-    keywords: 'denní horoskop, horoskop dnes, horoskop na dnes, denní zvěrokruh, průvodce horoskopem, porozumění astrologii, denní ascendent, planetární tranzity',
-    quickSummary: [
-        'Denní horoskopy jsou poháněny rychle se pohybujícím Měsícem a planetárními aspekty k vašemu horoskopu',
-        'Čtení pro váš ascendent (Rising Sign) často poskytuje přesnější denní předpovědi',
-        'Planetární tranzity spouštějí každý den konkrétní události, emoce a příležitosti',
-        'Naučte se využívat období "Void-of-Course" Měsíce, abyste se vyhnuli zbytečnému úsilí'
-    ],
-    keyTakeaways: [
-        'Vaše sluneční znamení ukazuje vaši životní sílu, ale váš ascendent nastavuje "scénu" pro váš každodenní život',
-        'Měsíc mění znamení každých 2,5 dne, což diktuje kolektivní náladu',
-        'Retrográdní Merkur a jiné "špatné" aspekty jsou ve skutečnosti obdobími pro kontrolu a rekalibraci',
-        'Integrace astrologie do vaší ranní rutiny může optimalizovat vaši produktivitu a vztahy'
-    ],
-    tableOfContents: [
-        { id: 'introduction', title: 'Proč číst denní horoskop?' },
-        { id: 'science-behind-it', title: 'Mechanika: Jak to funguje' },
-        { id: 'rising-vs-sun', title: 'Zlaté pravidlo: Slunce vs. Ascendent' },
-        { id: 'planetary-players', title: 'Klíčoví planetární hráči' },
-        { id: 'zodiac-daily-styles', title: 'Denní styly 12 znamení' },
-        { id: 'practical-rituals', title: 'Denní astrologické rituály' },
-        { id: 'myth-busting', title: 'Bourání běžných mýtů' }
-    ],
+    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
+    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    category: "Astrology 101",
+    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
+    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
+    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
+    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
     content: `
-      <h2 id="introduction">Proč číst denní horoskop?</h2>
-      <p>Pro miliony lidí na celém světě je kontrola jejich <strong>denního horoskopu</strong> stejně důležitá jako ranní šálek kávy. Je to chvíle pauzy, rituál sebereflexe a způsob, jak se připravit na energii dne. Ale přemýšleli jste někdy nad tím, co skutečně pohání tyto předpovědi? Jsou to jen náhodné rady, nebo je za tím složité vesmírné soukolí?</p>
+      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
+      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
       
-      <p>V Astralo věříme, že astrologie je nástrojem k posílení postavení. Dobře napsaný horoskop nepředpovídá jen budoucnost; pomáhá vám ji <em>vytvářet</em>. Pochopením kosmického počasí — polohy planet dnes v porovnání s tím, kde byly při vašem narození — můžete procházet výzvami s grácií a chopit se příležitostí, které by vás jinak mohly obejít.</p>
+      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
 
-      <h2 id="science-behind-it">Mechanika: Jak to funguje</h2>
-      <p>Astrologie se často nazývá studiem cyklů. Vaše <strong>denní horoskopické předpovědi</strong> se vypočítávají pomocí techniky zvané "tranzity". Představte si, že váš natální horoskop je trvalý snímek oblohy v momentě vašeho narození. Planety se však stále pohybují. "Tranzity" nastávají, když pohybující se planeta na obloze svírá s planetou ve vašem natálním horoskopu matematický úhel (aspekt).</p>
+      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
+      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
       
-      <h3>Měsíc: Minutová ručička osudu</h3>
-      <p>Zatímco planetám jako Jupiter trvá změna znamení rok, <strong>Měsíc</strong> se pohybuje neuvěřitelně rychle a projde zvěrokruhem za přibližně 2,5 dne. Díky tomu je Měsíc primárním hybatelem vaší <em>denní</em> nálady a emocionální krajiny. Když je Měsíc v ohnivém Beranu, cítíme se impulzivní a energičtí. Když se přesune do uzemněného Býka, kolektivně zpomalíme a toužíme po pohodlí.</p>
+      <h3>The Moon: The Minute Hand of Fate</h3>
+      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
 
-      <h3>Aspekty: Rozhovory mezi planetami</h3>
-      <p>Planety se spolu "baví" prostřednictvím úhlů. <strong>Trigon (120°)</strong> je harmonický rozhovor, který přináší lehkost a štěstí. <strong>Kvadratura (90°)</strong> je bod napětí, který nutí k akci nebo rozhodnutí. Váš denní horoskop interpretuje tyto rozhovory. Pokud Mars (akce) vytváří kvadraturu se Saturnem (omezení) na oblohe, dnes se můžete cítit frustrovaní nebo blokovaní. Vědět to vám pomůže být trpěliví, namísto toho, abyste násilím otevírali dveře, které se neotevřou.</p>
+      <h3>The Aspects: Conversations Between Planets</h3>
+      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
 
-      <h2 id="rising-vs-sun">Zlaté pravidlo: Čtěte pro svůj ascendent</h2>
-      <p>Zde je tajemství, které znají profesionální astrologové: <strong>Pro nejpřesnější denní předpověď byste si měli číst horoskop pro váš ascendent (Rising Sign), nikoli jen pro vaše sluneční znamení.</strong></p>
+      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Sign</h2>
+      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
       
-      <p>Proč? Protože horoskopy se píší pomocí "systému domů". Váš ascendent určuje rozložení 12 domů ve vašem horoskopu. 1. dům jste vy, 2. jsou peníze, 7. jsou vztahy atd. Když astrolog napíše "Beran bude mít dnes finanční příležitost", sleduje pohyby planet přes 2. dům horoskopu pro ascendent v Beranu.</p>
+      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
       <ul>
-        <li><strong>Čtěte své sluneční znamení</strong> pro obecná témata o vašem egu, vitalitě a hlavním účelu.</li>
-        <li><strong>Čtěte svůj ascendent</strong> pro konkrétní události, načasování a okolnosti, které se vám dnes stanou.</li>
-        <li><strong>Čtěte své měsíční znamení</strong>, pokud chcete pochopit svůj vnitřní emocionální stav.</li>
+        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
+        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
+        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
       </ul>
 
-      <h2 id="planetary-players">Klíčoví planetární hráči ve vašem dni</h2>
-      <p>Kromě Měsíce formují vaši každodenní zkušenost i další rychle se pohybující "osobní planety":</p>
+      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
+      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
       <ul>
-        <li><strong>Merkur:</strong> Vládce komunikace, technologií a cestování. Jeho stav určuje, zda vaše e-maily dobře dopadnou nebo se ztratí ve spamu, a zda je vaše dojíždění plynulé nebo chaotické.</li>
-        <li><strong>Venuše:</strong> Vládkyně lásky, peněz a hodnot. Dobrý den Venuše je ideální pro rande, nakupování nebo žádost o zvýšení platu.</li>
-        <li><strong>Mars:</strong> Motor zvěrokruhu. Diktuje vaši úroveň energie, pohon a libido. Náročný den Marsu může vést k vyhoření nebo hádkám, pokud není nasměrován do cvičení nebo tvrdé práce.</li>
+        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
+        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
+        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Denní styly 12 znamení</h2>
+      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Signs</h2>
       
-      <h3>♈ Beran (21. březen - 19. duben)</h3>
-      <p><strong>Poháněn Marsem.</strong> Ke zpracování denní energie potřebujete fyzický pohyb. Horoskop pro Berana se často zaměřuje na iniciativy, řešení konfliktů a momenty vedení. <em>Nejlepší denní zvyk:</em> Ranní kardio.</p>
+      <h3>♈ Aries (March 21 - April 19)</h3>
+      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
 
-      <h3>♉ Býk (20. duben - 20. květen)</h3>
-      <p><strong>Ovládán Venuší.</strong> Den zpracováváte prostřednictvím smyslů. Váš horoskop často zdůrazňuje finanční kroky a fyzické pohodlí. <em>Nejlepší denní zvyk:</em> Pomalá a chutná snídaně.</p>
+      <h3>♉ Taurus (April 20 - May 20)</h3>
+      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
 
-      <h3>♊ Blíženci (21. květen - 20. červen)</h3>
-      <p><strong>Ovládáni Merkurem.</strong> Informace jsou vaším palivem. Vaše denní předpověď se točí kolem rozhovorů, učení a krátkých výletů. <em>Nejlepší denní zvyk:</em> Psaní deníku nebo ranní podcast.</p>
+      <h3>♊ Gemini (May 21 - June 20)</h3>
+      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
 
-      <h3>♋ Rak (21. červen - 22. červenec)</h3>
-      <p><strong>Ovládán Měsícem.</strong> Jste nejcykličtější znamení. Vaše čtení se často soustředí na domov, rodinu a emocionální bezpečnost. <em>Nejlepší denní zvyk:</em> Kontakt s blízkou osobou.</p>
+      <h3>♋ Cancer (June 21 - July 22)</h3>
+      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
 
-      <h3>♌ Lev (23. červenec - 22. srpen)</h3>
-      <p><strong>Ovládán Sluncem.</strong> Potřebujete se projevit. Lvi ve svém dni často nacházejí témata kreativity, romantiky a uznání. <em>Nejlepší denní zvyk:</em> Výběr oblečení, ve kterém se cítíte sebevědomě.</p>
+      <h3>♌ Leo (July 23 - August 22)</h3>
+      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
 
-      <h3>♍ Panna (23. srpen - 22. září)</h3>
-      <p><strong>Ovládána Merkurem.</strong> Pořádek vám přináší klid. Váš horoskop bude často poukazovat na pracovní úkoly, zdravotní rutiny a službu. <em>Nejlepší denní zvyk:</em> Vytvoření seznamu úkolů.</p>
+      <h3>♍ Virgo (August 23 - September 22)</h3>
+      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
 
-      <h3>♎ Váhy (23. září - 22. říjen)</h3>
-      <p><strong>Ovládány Venuší.</strong> Rovnováha je klíčová. Hledáte harmonii ve vztazích. Vaše denní postřehy se často zaměřují na partnerství a estetiku. <em>Nejlepší denní zvyk:</em> Meditace nebo vyvážení vašeho prostředí.</p>
+      <h3>♎ Libra (September 23 - October 22)</h3>
+      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
 
-      <h3>♏ Štír (23. říjen - 21. listopad)</h3>
-      <p><strong>Ovládán Plutem a Marsem.</strong> Hledáte hloubku. Povrchní dny vás nudí; váš horoskop zdůrazňuje transformaci, tajemství a sdílené zdroje. <em>Nejlepší denní zvyk:</em> Hluboký výzkum nebo soukromá reflexe.</p>
+      <h3>♏ Scorpio (October 23 - November 21)</h3>
+      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
 
-      <h3>♐ Střelec (22. listopad - 21. prosinec)</h3>
-      <p><strong>Ovládán Jupiterem.</strong> Toužíte po expanzi. Váš den je často o celkovém obrazu, filozofii nebo zahraničních vlivech. <em>Nejlepší denní zvyk:</em> Učení se něčemu úplně novému.</p>
+      <h3>♐ Sagittarius (November 22 - December 21)</h3>
+      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
 
-      <h3>♑ Kozoroh (22. prosinec - 19. leden)</h3>
-      <p><strong>Ovládán Saturnem.</strong> Budujete odkaz. Denní témata pro vás jsou často o kariéře, reputaci a dlouhodobých cílech. <em>Nejlepší denní zvyk:</em> Řešení nejtěžšího úkolu jako prvního.</p>
+      <h3>♑ Capricorn (December 22 - January 19)</h3>
+      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
 
-      <h3>♒ Vodnář (20. leden - 18. únor)</h3>
-      <p><strong>Ovládán Uranem a Saturnem.</strong> Hledíte do budoucnosti. Váš horoskop zdůrazňuje sociální sítě, technologie a inovace. <em>Nejlepší denní zvyk:</em> Spojení se s vaší komunitou.</p>
+      <h3>♒ Aquarius (January 20 - February 18)</h3>
+      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
 
-      <h3>♓ Ryby (19. únor - 20. březen)</h3>
-      <p><strong>Ovládány Neptunem a Jupiterem.</strong> Plujete mezi světy. Vaše denní vedení je často duchovní, umělecké nebo intuitivní. <em>Nejlepší denní zvyk:</em> Zapisování snů nebo kreativní vizualizace.</p>
+      <h3>♓ Pisces (February 19 - March 20)</h3>
+      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
 
-      <h2 id="practical-rituals">Denní astrologické rituály</h2>
-      <p>Jak můžete využít tyto informace? Nečtěte je jen — žijte je.</p>
+      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
+      <p>How can you use this information? Don't just read it—live it.</p>
       <ol>
-        <li><strong>Ranní kontrola:</strong> Přečtěte si předpověď <em>předtím</em>, než si zkontrolujete e-maily. Tím nastavíte vesmírný záměr.</li>
-        <li><strong>Všímejte si znamení Měsíce:</strong> Pokud je Měsíc v Panně, ukliďte si stůl. Pokud je ve Váhách, zavolejte obchodnímu partnerovi. Plavat s proudem je vždy snazší.</li>
-        <li><strong>Respektujte "Void":</strong> Měsíc "Void-of-Course" je období, kdy Měsíc nedělá žádné další aspekty předtím, než změní znamení. Je to čas nejasnosti. Nikdy nepodepisujte smlouvy ani nespouštějte podnikání během Voidu. Využijte jej k odpočinku.</li>
+        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
+        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
+        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
       </ol>
 
-      <h2 id="myth-busting">Bourání běžných mýtů</h2>
-      <p><strong>"Horoskopy jsou příliš vágní."</strong> <br>Obecné novinové horoskopy jsou vágní, protože se dívají jen na sluneční znamení. Personalizované čtení, jako ta vygenerovaná naší sofistikovanou AI v Astralo, zohledňuje nuance celého vašeho horoskopu.</p>
-      <p><strong>"Astrologie předpovídá pevný osud."</strong> <br>Nepravda. Astrologie předpovídá <em>energii</em> a <em>počasí</em>. Může pršet (náročný tranzit), ale vy se rozhodnete, zda si vezmete deštník nebo v něm budete tancovat. Vždy máte svobodnou vůli.</p>
+      <h2 id="myth-busting">Busting Common Myths</h2>
+      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
+      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
       
-      <h3>Jste připraveni ponořit se hlouběji?</h3>
-      <p>Ačkoli obecné předpovědi jsou užitečné, nic nepřekoná čtení odvozené z vašeho přesného času a místa narození. Váš jedinečný natální horoskop je složitá mapa, kterou nesdílejí žádní dva lidé. Odemkněte plný potenciál svého vesmírného designu s prémiovými personalizovanými čteními od Astralo.</p>
+      <h3>Ready to Dive Deeper?</h3>
+      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
     `
 };

@@ -1,69 +1,54 @@
 /**
- * Mercury Retrograde Survival Guide - Bengali (বাংলা)
+ * mercury-retrograde-survival-guide - BN
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-  title: '☄️ মারকারি রেট্রোগ্রেড (বুধের বক্রগতি) সারভাইভাল গাইড ২০২৬: বিশৃঙ্খলা থেকে প্রশান্তি',
-  excerpt: 'রেট্রোগ্রেড বা বক্রগতিকে ভয় পাবেন না! জানুন কেন মারকারি রেট্রোগ্রেড আসলে একটি গুরুত্বপূর্ণ মহাজাগতিক রিসেট এবং কীভাবে প্রযুক্তিগত ও যোগাযোগ বিভ্রাট সহজে সামলাবেন।',
-  category: 'জ্যোতিষশাস্ত্র ১০১',
-  metaDescription: 'রেট্রোগ্রেডকে ভয় পাবেন না! জানুন কেন মারকারি রেট্রোগ্রেড আসলে একটি গুরুত্বপূর্ণ মহাজাগতিক রিসেট এবং কেন এটি "Re" দিয়ে শুরু হওয়া কাজের জন্য সেরা সময়।',
-  keywords: 'মারকারি রেট্রোগ্রেড, বুধের বক্রগতি ২০২৬, সারভাইভাল গাইড, জ্যোতিষ টিপস, যোগাযোগ বিভ্রাট, প্রযুক্তিগত সমস্যা',
-  quickSummary: [
-    'মারকারি রেট্রোগ্রেড হলো একটি দৃষ্টিবিভ্রম যেখানে মনে হয় বুধ গ্রহ আকাশে উল্টো দিকে চলছে',
-    'এটি বছরে ৩-৪ বার ঘটে এবং প্রতিবার প্রায় তিন সপ্তাহ স্থায়ী হয়',
-    'ভ্রমণে বিলম্ব, প্রযুক্তিগত সমস্যা এবং ভুল বোঝাবুঝির জন্য এই সময়টি পরিচিত',
-    'নতুন কোনো প্রকল্প শুরু করার জন্য এটি সঠিক সময় নয়, তবে পুরনো কাজ শেষ করার জন্য এটি সেরা সময়'
-  ],
-  keyTakeaways: [
-    'যেকোনো ইমেল বা চুক্তিতে সই করার আগে অন্তত দুবার যাচাই করে নিন',
-    'আপনার ডিভাইসের ডেটা ব্যাকআপ রাখুন এবং ছোটখাটো প্রযুক্তিগত সমস্যা মোকাবিলা করার প্রস্তুতি নিন',
-    'পুরনো বন্ধু বা পরিচিত মানুষের সঙ্গে এই সময়ে হঠাৎ দেখা বা কথা হতে পারে',
-    'বক্রগতি শুরুর আগের ও পরের "শ্যাডো পিরিয়ড" (Shadow Period) সমানভাবে গুরুত্বপূর্ণ'
-  ],
-  tableOfContents: [
-    { id: 'what-is-mercury-retrograde', title: 'দৃষ্টিবিভ্রমের বিজ্ঞান' },
-    { id: 'retrograde-shadow', title: 'শ্যাডো পিরিয়ড' },
-    { id: 'survival-dos', title: '"RE" নিয়ম: কী করবেন' },
-    { id: 'survival-donts', title: 'সতর্ক সংকেত: কী এড়িয়ে চলবেন' },
-    { id: 'mercury-retrograde-dates', title: '২০২৬ সালের তারিখসমূহ' },
-    { id: 'final-thoughts', title: 'ইতিবাচক দিক' }
-  ],
-  content: `
-      <h2 id="what-is-mercury-retrograde">দৃষ্টিবিভ্রমের বিজ্ঞান</h2>
-      <p>বছরে তিন বা চারবার বুধ গ্রহ — যা যোগাযোগ, ভ্রমণ এবং প্রযুক্তির কারক — আকাশ থেকে দেখলে মনে হয় উল্টো দিকে ঘুরছে। বাস্তবে এটি কেবল একটি দৃষ্টিবিভ্রম, যেমন একটি দ্রুত গাড়ি চালানোর সময় পাশের ধীর গতির গাড়িটিকে মনে হয় সেটি পেছনে যাচ্ছে।</p>
+    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
+    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
+    category: "Astrology 101",
+    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
+    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
+    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
+    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
+    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
+    content: `
+      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
+      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
       
-      <p>তবে এই উল্টো গতি আপাত দৃষ্টিবিভ্রম হলেও এর প্রভাব বেশ বাস্তব। জ্যোতিষশাস্ত্রে যখন কোনো গ্রহ বক্রী হয়, তখন তার শক্তি অন্তর্মুখী হয়ে যায়। যেহেতু বুধ আমাদের প্রাত্যহিক জীবনের পরিচালনা বা লজিস্টিকস নিয়ন্ত্রণ করে, তাই সবকিছুতে কিছুটা বিঘ্ন ঘটতে পারে। <strong>মারকারি রেট্রোগ্রেড</strong> হলো বিশ্বকে কিছুক্ষণ "পজ" (Pause) বা বিরতি নেওয়ার মহাজাগতিক সংকেত।</p>
+      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
 
-      <h2 id="retrograde-shadow">শ্যাডো পিরিয়ড (Shadow Period)</h2>
-      <p>অনেকেই অবাক হন যখন বক্রগতি আনুষ্ঠানিকভাবে শুরুর এক সপ্তাহ <em>আগে</em> থেকেই কাজকর্মে বিঘ্ন ঘটতে থাকে। একে বলা হয় রেট্রোগ্রেড-পূর্ব শ্যাডো। একইভাবে বক্রগতি শেষ হওয়ার পরও প্রায় দুই সপ্তাহ শ্যাডো পিরিয়ড থাকে। কোনো বড় কেনাকাটা করতে চাইলে এই সময়টি শেষ হওয়া পর্যন্ত অপেক্ষা করুন।</p>
+      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
+      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
 
-      <h2 id="survival-dos">"RE" নিয়ম: কী করবেন</h2>
-      <p>অনেকে একে ভয় পেলেও, আপনি যদি সঠিকভাবে ব্যবহার করেন তবে এটি বছরের অন্যতম ফলদায়ক সময় হতে পারে। এর রহস্য হলো <strong>"RE"</strong> দিয়ে শুরু হওয়া শব্দগুলোর ওপর গুরুত্ব দেওয়া:</p>
+      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
+      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
       <ul>
-        <li><strong>Reflect (চিন্তাভাবনা):</strong> আপনার লক্ষ্যগুলো নিয়ে নতুন করে ভাবুন।</li>
-        <li><strong>Review (পর্যালোচনা):</strong> আপনার চুক্তিপত্র, বাজেট এবং পরিকল্পনাগুলো পুনরায় পরীক্ষা করুন। সম্ভবত এমন কোনো ভুল খুঁজে পাবেন যা আগে চোখে পড়েনি।</li>
-        <li><strong>Reconnect (পুনঃস্থাপন):</strong> পুরনো বন্ধুদের সঙ্গে যোগাযোগের বা পারিবারিক পুরনো সমস্যা মেটানোর দারুণ সময়।</li>
-        <li><strong>Repair (মেরামত):</strong> ঘরের কোনো নষ্ট জিনিস বা গাড়ির সমস্যা যা আপনি এড়িয়ে চলছিলেন, তা ঠিক করে নিন।</li>
-        <li><strong>Reorganize (পুনর্গঠন):</strong> আপনার ঘরের আলমারি, ইনবক্স এবং নিজের মনকে গুছিয়ে নিন।</li>
+        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
+        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
+        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
+        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
+        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
       </ul>
 
-      <h2 id="survival-donts">কী এড়িয়ে চলবেন</h2>
-      <p>জীবন থেমে থাকে না, তবে এই তিন সপ্তাহের বক্রগতির সময় বড় ঝুঁকিপূর্ণ কাজ এড়িয়ে চলাই ভালো:</p>
+      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
+      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
       <ul>
-        <li><strong>বড় কোনো চুক্তিতে সই করা:</strong> যদি করতেই হয়, তবে খুটিনাটি বিষয়গুলো তিনবার পড়ুন।</li>
-        <li><strong>নতুন প্রযুক্তি কেনা:</strong> নতুন ফোন বা গাড়ি কেনার জন্য কিছুক্ষণ অপেক্ষা করুন।</li>
-        <li><strong>নতুন প্রজেক্ট শুরু:</strong> এই সময়ে শুরু করা কাজ বক্রগতি শেষে অনেক সময় আমূল পরিবর্তন করতে হতে পারে।</li>
+        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
+        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
+        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
+        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">২০২৬ সালের মারকারি রেট্রোগ্রেড তারিখসমূহ</h2>
+      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
+      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
       <ol>
-          <li><strong>২৫ ফেব্রুয়ারি – ২০ মার্চ</strong></li>
-          <li><strong>২৯ জুন – ২৩ জুলাই</strong></li>
-          <li><strong>২৪ অক্টোবর – ১৩ নভেম্বর</strong></li>
+          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
+          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
+          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
       </ol>
 
-      <h2 id="final-thoughts">ইতিবাচক দিক</h2>
-      <p>মারকারি রেট্রোগ্রেড কোনো অভিশাপ নয়; এটি আসলে জীবনের প্রয়োজনীয় রক্ষণাবেক্ষণের সময়। এটি ছাড়া আমরা কেবল সামনের দিকে ছুটতাম, জীবনের ভিত্তিগুলো মেরামতের সুযোগ পেতাম না। কাজে গতি কমিয়ে একটু শান্ত হওয়ার জন্য এই সময়টি ব্যবহার করুন।</p>
+      <h2 id="final-thoughts">Silver Linings</h2>
+      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
     `
 };

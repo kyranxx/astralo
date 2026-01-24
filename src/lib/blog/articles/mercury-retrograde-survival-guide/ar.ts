@@ -1,69 +1,54 @@
 /**
- * Mercury Retrograde Survival Guide - Arabic (العربية)
+ * mercury-retrograde-survival-guide - AR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ar: BlogPostTranslation = {
-  title: '☄️ دليل النجاة من تراجع عطارد 2026: من الفوضى إلى الهدوء',
-  excerpt: 'لا تخف من التراجع! تعلم لماذا يعد تراجع عطارد في الواقع إعادة ضبط كونية حيوية وكيفية التعامل مع أعطال التكنولوجيا والاتصالات بسهولة.',
-  category: 'أساسيات التنجيم',
-  metaDescription: 'لا تخف من التراجع! تعلم لماذا يعد تراجع عطارد في الواقع إعادة ضبط كونية حيوية ولماذا هو أفضل وقت للأنشطة التي تبدأ بـ "إعادة".',
-  keywords: 'تراجع عطارد, مواعيد تراجع عطارد 2026, دليل النجاة, نصائح التنجيم, أعطال الاتصالات, مشاكل تقنية',
-  quickSummary: [
-    'تراجع عطارد هو وهم بصري حيث يبدو أن كوكب عطارد يتحرك للخلف في السماء',
-    'يحدث 3-4 مرات في السنة ويستمر لمدة ثلاثة أسابيع تقريباً في كل مرة',
-    'تشتهر هذه الفترة بتأخير السفر والأعطال التقنية وسوء الفهم',
-    'ليس هذا هو الوقت المناسب لبدء مشاريع جديدة، بل هو وقت "نخبوي" لإنهاء المشاريع القديمة'
-  ],
-  keyTakeaways: [
-    'تحقق مرتين من كل بريد إلكتروني ورسالة وعقد قبل الإرسال أو التوقيع',
-    'قم بنسخ بياناتك احتياطياً وتوقع حدوث أعطال تقنية بسيطة في الأجهزة',
-    'غالباً ما يظهر الأصدقاء القدامى والشركاء السابقون مرة أخرى خلال هذه الدورات الكونية',
-    'تعد "فترة الظل" قبل التراجع وبعده على نفس القدر من الأهمية'
-  ],
-  tableOfContents: [
-    { id: 'what-is-mercury-retrograde', title: 'العلم وراء الوهم' },
-    { id: 'retrograde-shadow', title: 'فترة الظل' },
-    { id: 'survival-dos', title: 'قاعدة الـ "إعادة": ماذا تفعل' },
-    { id: 'survival-donts', title: 'علامات التحذير: ماذا تتجنب' },
-    { id: 'mercury-retrograde-dates', title: 'مواعيد التراجع في 2026' },
-    { id: 'final-thoughts', title: 'الجانب المشرق' }
-  ],
-  content: `
-      <h2 id="what-is-mercury-retrograde">العلم وراء الوهم</h2>
-      <p>ثلاث أو أربع مرات في السنة، يبدو كوكب عطارد — المسؤول عن الاتصالات والسفر والتكنولوجيا — وكأنه يتحرك للخلف في السماء من وجهة نظرنا على الأرض. في الواقع، هو مجرد وهم بصري.</p>
+    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
+    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
+    category: "Astrology 101",
+    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
+    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
+    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
+    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
+    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
+    content: `
+      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
+      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
       
-      <p>ولكن بينما تكون الحركة التراجعية وهماً، فإن التأثيرات حقيقية جداً. في التنجيم، عندما يتراجع كوكب ما، تتحول طاقته نحو الداخل. وبما أن عطارد يحكم "اللوجستيات اليومية" لحياتنا — أفكارنا وأدواتنا وتنقلاتنا — يبدأ كل شيء في الشعور بالاضطراب قليلاً. <strong>تراجع عطارد</strong> هو الطريقة الكونية لإخبار العالم بالضغط على زر "الإيقاف المؤقت".</p>
+      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
 
-      <h2 id="retrograde-shadow">فترة الظل</h2>
-      <p>يتفاجأ الكثير من الناس عندما تبدأ الأمور في السير بشكل خاطئ قبل أسبوع <em>من</em> بدء التراجع رسمياً. يسمى هذا "ظل ما قبل التراجع". وبالمثل، يستمر "ظل ما بعد التراجع" لمدة أسبوعين تقريباً بعد عودة الكوكب لمساره المباشر. إذا كنت تخطط لعملية شراء كبيرة، فانتظر حتى يتلاشى الظل.</p>
+      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
+      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
 
-      <h2 id="survival-dos">قاعدة الـ "إعادة": ماذا تفعل</h2>
-      <p>يتمتع تراجع عطارد بسمعة سيئة، لكنه في الواقع من أكثر الأوقات إنتاجية في السنة إذا ركزت على الأنشطة التي تبدأ بكلمة <strong>"Re"</strong> أو <strong>"إعادة"</strong> باللغة العربية:</p>
+      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
+      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
       <ul>
-        <li><strong>إعادة التفكير (Reflect):</strong> راجع أهدافك التي وضعتها في بداية العام.</li>
-        <li><strong>إعادة المراجعة (Review):</strong> دقق في عقودك وميزانيتك وخططك. من المحتمل أن تجد خطأً فاتك من قبل.</li>
-        <li><strong>إعادة الاتصال (Reconnect):</strong> وقت مثالي للتواصل مع الأصدقاء القدامى أو حل نزاعات ماضية.</li>
-        <li><strong>إعادة الإصلاح (Repair):</strong> أصلح ما كنت تؤجله في المنزل أو في أجهزتك.</li>
-        <li><strong>إعادة التنظيم (Reorganize):</strong> رتب خزائنك وصندوق الوارد وعقلك.</li>
+        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
+        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
+        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
+        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
+        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
       </ul>
 
-      <h2 id="survival-donts">ماذا تتجنب</h2>
-      <p>رغم أن الحياة لا تتوقف، حاول تجنب هذه الأنشطة عالية المخاطر خلال فترة التراجع التي تستمر ثلاثة أسابيع:</p>
+      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
+      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
       <ul>
-        <li><strong>توقيع العقود الكبرى:</strong> إذا كان عليك ذلك، فاقرأ الشروط الدقيقة ثلاث مرات.</li>
-        <li><strong>شراء تكنولوجيا جديدة:</strong> انتظر قبل شراء هاتف آيفون جديد أو سيارة.</li>
-        <li><strong>بدء مشاريع جديدة:</strong> الأفكار التي تولد الآن غالباً ما تتغير بشكل جذري بعد عودة عطارد لمساره الطبيعي.</li>
+        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
+        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
+        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
+        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">مواعيد تراجع عطارد في 2026</h2>
+      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
+      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
       <ol>
-          <li><strong>25 فبراير – 20 مارس</strong></li>
-          <li><strong>29 يونيو – 23 يوليو</strong></li>
-          <li><strong>24 أكتوبر – 13 نوفمبر</strong></li>
+          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
+          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
+          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
       </ol>
 
-      <h2 id="final-thoughts">الجانب المشرق</h2>
-      <p>تراجع عطارد ليس لعنة؛ إنه فترة صيانة ضرورية. بدونه، سنستمر في الاندفاع للأمام دون إصلاح أسس حياتنا. استغل هذا الوقت للإبطاء والتقاط أنفاسك.</p>
+      <h2 id="final-thoughts">Silver Linings</h2>
+      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
     `
 };

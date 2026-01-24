@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Russian (Русский)
+ * history-of-astrology - RU
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ru: BlogPostTranslation = {
-    title: '🏛️ История астрологии: От древнего Вавилона до современного ИИ',
-    excerpt: 'Исследуйте увлекательное 5000-летнее путешествие астрологии. Узнайте, как древние цивилизации использовали звезды и как она превратилась в современный психологический инструмент.',
-    category: 'Основы астрологии',
-    metaDescription: 'Исследуйте увлекательное 5000-летнее путешествие астрологии. Узнайте, как древние цивилизации использовали звезды для построения империй и как астрология превратилась в современный психологический инструмент.',
-    keywords: 'история астрологии, древняя астрология, вавилонская астрология, греческая астрология, история зодиака, происхождение астрологии, современная астрология',
-    quickSummary: [
-        'Астрология зародилась в Месопотамии (Древний Вавилон) более 4000 лет назад',
-        'Зодиак, который мы используем сегодня, был стандартизирован греками около 2000 лет назад',
-        'Астрология и астрономия считались одной наукой до XVII века',
-        'Сегодня астрология используется больше для психологического понимания, чем для предсказания смерти королей'
-    ],
-    keyTakeaways: [
-        'Древние культуры использовали астрологию для сельского хозяйства и политического выживания',
-        'Эпоха Просвещения временно превратила астрологию в тень суеверий',
-        'Карл Юнг вернул астрологию в мейнстрим через психологию',
-        'Технологии ИИ теперь позволяют проводить более точные расчеты, чем когда-либо прежде'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'Колыбель звезд: Вавилон' },
-        { id: 'greek-influence', title: 'Греческая революция' },
-        { id: 'scientific-divorce', title: 'Научный развод' },
-        { id: 'jungian-rebirth', title: 'Психология и XX век' },
-        { id: 'future-astrology', title: 'Будущее: ИИ и большие данные' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">Колыбель звезд: Вавилон</h2>
-      <p>История астрологии начинается в плодородном полумесяце Месопотамии. Почти 5000 лет назад вавилонские жрецы заметили корреляцию между движением звезд и разливом рек или сменой времен года. Они были первыми, кто разделил небо на сегменты, хотя их система изначально использовалась для предсказания судьбы <em>нации</em> или <em>царя</em>, а не отдельного человека.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>К V веку до н.э. вавилоняне разработали первую концепцию <strong>Зодиака</strong>, разделив путь солнца на двенадцать равных знаков на основе созвездий.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">Греческая революция: Гороскопическая астрология</h2>
-      <p>Когда астрология достигла эллинистического мира (Древней Греции и Египта), она претерпела масштабную трансформацию. Греки добавили <strong>Асцендент (восходящий знак)</strong> и <strong>систему домов</strong>. Это позволило создать первую "натальную карту" — карту неба на момент рождения конкретного человека.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>"Тетрабиблос" Клавдия Птолемея, написанный во II веке н.э., стал "Библией астрологии". Большая часть логики, которую мы используем сегодня для знаков, стихий и аспектов, была кодифицирована в этом древнем тексте.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">Научный развод</h2>
-      <p>Большую часть человеческой истории <strong>Астрология</strong> и <strong>Астрономия</strong> были одним и тем же. Великие ученые, такие как Иоганн Кеплер и Галилео Галилей, также были профессиональными астрологами. Однако во время Просвещения XVII века эти две области разделились. Астрономия сосредоточилась на физическом составе космоса, в то время как астрология была отвергнута новым научным истеблишментом как "суеверие".</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>Несмотря на это, астрология выжила в альманахах и тайных обществах, продолжая направлять миллионы людей в частном порядке.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">Психология и XX век</h2>
-      <p>Возвращение астрологии в XX веке было вызвано неожиданным источником: психологией. <strong>Карл Юнг</strong>, отец аналитической психологии, изучал натальные карты и разработал теорию <em>синхронистичности</em>, чтобы объяснить, почему астрология работает. Он видел в зодиаке коллекцию универсальных архетипов — паттернов человеческого поведения, которые существуют в коллективном подсознании всех людей.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>Это сместило акцент астрологии с вопроса "Что со мной произойдет?" на "Кто я и почему я так реагирую?"</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">Будущее: ИИ и большие данные</h2>
-      <p>Сейчас мы находимся в новом Золотом веке астрологии. Технологии избавили от необходимости сложных ручных расчетов, позволяя любому, у кого есть смартфон, увидеть свою карту. Более того, <strong>Искусственный интеллект</strong> теперь используется для анализа огромных объемов данных, находя более глубокие закономерности в транзитах и чертах характера, которые раньше было невозможно увидеть.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>В Astralo мы объединяем это 5000-летнее наследие с передовым машинным обучением, чтобы предоставить вам самое точное и глубокое руководство в истории человечества.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

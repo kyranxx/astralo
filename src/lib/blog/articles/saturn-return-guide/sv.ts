@@ -1,55 +1,18 @@
 /**
- * saturn-return-guide - SV (Fallback to English content)
+ * saturn-return-guide - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-  title: '🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage',
-  excerpt: 'Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.',
-  category: 'Transits',
-  metaDescription: 'The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.',
-  keywords: 'saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs',
-  quickSummary: [
-    'A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).',
-    'It is a "cosmic audit" where everything that isn\'t built on a solid foundation is swept away.',
-    'While often stressful, it is the catalyst for true maturation and finding your life\'s purpose.',
-    'A second Saturn Return happens around age 58-60, focusing on legacy and wisdom.'
-  ],
-  keyTakeaways: [
-    'Do not resist the changes; Saturn rewards discipline and responsibility.',
-    'The house where your Saturn is located determines where you will face your biggest "final exam."',
-    'Relationship breakups and career shifts during this time are often necessary for your growth.',
-    'Once the transit finishes, you will feel a new sense of authority and clarity.'
-  ],
-  tableOfContents: [
-    { id: 'what-is-saturn-return', title: 'What is a Saturn Return?' },
-    { id: 'the-myth-of-saturn', title: 'The Myth & The Taskmaster: Lord of Time' },
-    { id: 'timeline', title: 'The Timeline: Phases of the Return' },
-    { id: 'themes', title: 'Universal Themes of the Return' },
-    { id: 'saturn-in-signs', title: 'Saturn Return Through the Zodiac Signs (Aries to Pisces)' },
-    { id: 'saturn-in-houses', title: 'Saturn Return Through the Houses (A Deep Dive)' },
-    { id: 'house-1', title: '1st House: The Reinvention of Self' },
-    { id: 'house-2', title: '2nd House: The Financial Foundation' },
-    { id: 'house-3', title: '3rd House: The Mastery of Mind' },
-    { id: 'house-4', title: '4th House: Ancestral Healing & Roots' },
-    { id: 'house-5', title: '5th House: The Discipline of Joy' },
-    { id: 'house-6', title: '6th House: The Sacred Routine' },
-    { id: 'house-7', title: '7th House: The Crucible of Partnership' },
-    { id: 'house-8', title: '8th House: Death, Rebirth & Shared Power' },
-    { id: 'house-9', title: '9th House: The Search for Truth' },
-    { id: 'house-10', title: '10th House: The Mountaintop of Career' },
-    { id: 'house-11', title: '11th House: The Collective Purpose' },
-    { id: 'house-12', title: '12th House: The Final Dissolution' },
-    { id: 'retrograde', title: 'The Saturn Retrograde Factor' },
-    { id: 'psychology', title: 'The Psychology of the Saturn Return' },
-    { id: 'how-to-survive', title: 'Survival Tips: How to Handle the Pressure' },
-    { id: 'famous-examples', title: 'Famous Saturn Return Stories' },
-    { id: 'post-return', title: 'Life After the Fire: The 30s' },
-    { id: 'second-return', title: 'Preparing for the Second Return (Age 58-60)' },
-    { id: 'faq', title: 'Frequently Asked Questions' },
-    { id: 'conclusion', title: 'Embracing Your Adulthood' }
-  ],
-  content: `
+    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
+    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
+    category: "Transits",
+    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
+    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
+    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
+    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
+    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
+    content: `
       <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
       <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
       

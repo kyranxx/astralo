@@ -1,69 +1,54 @@
 /**
- * Mercury Retrograde Survival Guide - Italian (Italiano)
+ * mercury-retrograde-survival-guide - IT
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-  title: '☄️ Guida alla sopravvivenza di Mercurio Retrogardo 2026: Dal caos alla calma',
-  excerpt: 'Non temere il retrogardo! Scopri perché Mercurio Retrogardo è in realtà un reset cosmico vitale e come gestire con facilità intoppi tecnologici e problemi di comunicazione.',
-  category: 'Astrologia 101',
-  metaDescription: 'Non temere il retrogardo! Scopri perché Mercurio Retrogardo è in realtà un reset cosmico vitale e perché è il momento migliore per le attività che iniziano con "Ri".',
-  keywords: 'mercurio retrogardo, date mercurio retrogardo 2026, guida di sopravvivenza, consigli astrologia, problemi tecnologici, errori di comunicazione',
-  quickSummary: [
-    'Mercurio Retrogardo è un\'illusione ottica in cui Mercurio sembra muoversi all\'indietro nel cielo',
-    'Accade 3-4 volte l\'anno e dura circa tre settimane ogni volta',
-    'Questo periodo è famoso per ritardi nei viaggi, guasti tecnologici e malintesi',
-    'NON è il momento di iniziare nuovi progetti, ma un momento ELITE per finire quelli vecchi'
-  ],
-  keyTakeaways: [
-    'Controlla due volte ogni email e contratto prima di inviare o firmare',
-    'Fai il backup dei tuoi dati e aspettati piccoli problemi tecnici sui tuoi dispositivi',
-    'Vecchi amici ed ex spesso ricompaiono durante questi cicli cosmici',
-    'Il "periodo d\'ombra" prima e dopo il retrogardo è altrettanto importante'
-  ],
-  tableOfContents: [
-    { id: 'what-is-mercury-retrograde', title: 'La scienza dietro l\'illusione' },
-    { id: 'retrograde-shadow', title: 'Il periodo d\'ombra' },
-    { id: 'survival-dos', title: 'La regola del "RI": Cosa fare' },
-    { id: 'survival-donts', title: 'Segnali d\'allarme: Cosa evitare' },
-    { id: 'mercury-retrograde-dates', title: 'Date del retrogardo 2026' },
-    { id: 'final-thoughts', title: 'Risvolti positivi' }
-  ],
-  content: `
-      <h2 id="what-is-mercury-retrograde">La scienza dietro l\'illusione</h2>
-      <p>Tre o quattro volte l\'anno, il pianeta Mercurio — il signore della comunicazione, dei viaggi e della tecnologia — sembra muoversi all\'indietro nel cielo. In realtà, è solo un\'illusione ottica.</p>
+    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
+    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
+    category: "Astrology 101",
+    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
+    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
+    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
+    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
+    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
+    content: `
+      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
+      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
       
-      <p>Anche se il movimento all\'indietro è un\'illusione, gli effetti sono reali. In astrologia, quando un pianeta diventa retrogardo, la sua energia si volge verso l\'interno. Poiché Mercurio governa la "logistica quotidiana", tutto inizia a sembrare un po\'... difettoso. <strong>Mercurio Retrogardo</strong> è il modo cosmico per dire al mondo di premere il pulsante "Pausa".</p>
+      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
 
-      <h2 id="retrograde-shadow">Il periodo d\'ombra</h2>
-      <p>Molte persone sono sorprese quando le cose iniziano ad andare male già una settimana <em>prima</em> che il retrogardo inizi ufficialmente. È l\'ombra pre-retrogarda. Allo stesso modo, l\'ombra post-retrogarda dura circa due settimane. Se stai pianificando un acquisto importante, aspetta che l\'ombra sia passata.</p>
+      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
+      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
 
-      <h2 id="survival-dos">La regola del "RI": Cosa fare</h2>
-      <p>Mercurio Retrogardo ha una cattiva reputazione, ma è un momento produttivo se ti concentri su verbi che iniziano con <strong>"RI"</strong>:</p>
+      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
+      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
       <ul>
-        <li><strong>Riflettere:</strong> Fai il punto sui tuoi obiettivi.</li>
-        <li><strong>Revisionare:</strong> Rileggi i tuoi contratti e i tuoi piani. Probabilmente troverai un errore che ti era sfuggito.</li>
-        <li><strong>Riconnettersi:</strong> Momento ideale per risentire vecchi amici o risolvere passati conflitti.</li>
-        <li><strong>Riparare:</strong> Ripara ciò che hai in sospeso in casa o sui tuoi dispositivi.</li>
-        <li><strong>Riorganizzare:</strong> Sistema i tuoi armadi, la tua casella di posta e la tua mente.</li>
+        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
+        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
+        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
+        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
+        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
       </ul>
 
-      <h2 id="survival-donts">Cosa evitare</h2>
-      <p>Anche se la vita non si ferma, cerca di evitare queste attività a rischio:</p>
+      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
+      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
       <ul>
-        <li><strong>Firmare contratti importanti:</strong> Se devi, leggi le clausole scritte in piccolo tre volte.</li>
-        <li><strong>Acquistare nuova tecnologia:</strong> Aspetta a comprare quel nuovo iPhone o l\'auto.</li>
-        <li><strong>Iniziare nuovi progetti:</strong> Le idee che nascono ora spesso cambiano radicalmente dopo il retrogardo.</li>
+        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
+        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
+        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
+        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">Date di Mercurio Retrogardo 2026</h2>
+      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
+      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
       <ol>
-          <li><strong>25 febbraio – 20 marzo</strong></li>
-          <li><strong>29 giugno – 23 luglio</strong></li>
-          <li><strong>24 ottobre – 13 novembre</strong></li>
+          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
+          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
+          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
       </ol>
 
-      <h2 id="final-thoughts">Risvolti positivi</h2>
-      <p>Mercurio Retrogardo non è una maledizione, è un periodo di manutenzione necessario. Senza di esso, continueremmo a correre in avanti senza riparare le fondamenta della nostra vita. Approfitta per rallentare e respirare.</p>
+      <h2 id="final-thoughts">Silver Linings</h2>
+      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
     `
 };

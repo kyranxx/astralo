@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Korean (한국어)
+ * history-of-astrology - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: '🏛️ 점성술의 역사: 고대 바빌론에서 현대 AI까지',
-    excerpt: '점성술의 5,000년 매혹적인 여정을 탐험하세요. 고대 문명이 별을 어떻게 이용했는지, 그리고 현대 심리학 도구로 어떻게 진화했는지 알아보세요.',
-    category: '점성술 기초',
-    metaDescription: '점성술의 5,000년 매혹적인 여정을 탐험하세요. 고대 문명이 제국을 건설하기 위해 별을 어떻게 이용했는지, 그리고 점성술이 어떻게 현대 심리학 도구로 진화했는지 알아보세요.',
-    keywords: '점성술 역사, 고대 점성술, 바빌로니아 점성술, 그리스 점성술, 황도대 역사, 점성술 기원, 현대 점성학',
-    quickSummary: [
-        '점성술은 4,000년 전 메소포타미아(고대 바빌론)에서 기원했습니다',
-        '우리가 오늘날 사용하는 황도대는 약 2,000년 전 그리스인들에 의해 표준화되었습니다',
-        '점성술과 천문학은 17세기까지 같은 과학으로 간주되었습니다',
-        '오늘날 점성술은 왕의 죽음을 예측하기보다는 심리적 통찰을 위해 더 많이 사용됩니다'
-    ],
-    keyTakeaways: [
-        '고대 문화는 농업과 정치적 생존을 위해 점성술을 사용했습니다',
-        '「이성의 시대」는 일시적으로 점성술을 미신의 그늘로 밀어넣었습니다',
-        '칼 융은 심리학을 통해 점성술을 다시 주류 사고로 가져왔습니다',
-        'AI 기술은 이제 그 어느 때보다 더 정밀한 계산을 가능하게 합니다'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: '별들의 요람: 바빌론' },
-        { id: 'greek-influence', title: '그리스의 혁명' },
-        { id: 'scientific-divorce', title: '과학적 결별' },
-        { id: 'jungian-rebirth', title: '심리학과 20세기' },
-        { id: 'future-astrology', title: '미래: AI와 빅데이터' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">별들의 요람: 바빌론</h2>
-      <p>점성술의 이야기는 메소포타미아의 비옥한 초승달 지대에서 시작됩니다. 거의 5,000년 전, 바빌로니아 사제들은 별의 움직임과 강의 범람 또는 계절의 변화 사이에 상관관계가 있음을 알아차렸습니다. 그들은 하늘을 구획으로 나눈 최초의 사람들이었지만, 그들의 시스템은 처음에는 개인이 아닌 <em>국가</em>나 <em>왕</em>의 운명을 예측하는 데 사용되었습니다.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>기원전 5세기경, 바빌로니아인들은 별자리를 기반으로 태양의 경로를 12개의 동일한 구역으로 나누는 <strong>황도대(Zodiac)</strong>의 첫 번째 개념을 개발했습니다.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">그리스의 혁명: 호로스코픽 점성술</h2>
-      <p>점성술이 헬레니즘 세계(고대 그리스와 이집트)에 도달했을 때, 거대한 변화를 겪었습니다. 그리스인들은 <strong>상승궁(Ascendant)</strong>과 <strong>하우스 시스템</strong>을 추가했습니다. 이를 통해 특정 개인의 출생을 위한 하늘의 지도인 최초의 "출생 차트(Natal Chart)" 작성이 가능해졌습니다.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>서기 2세기에 클라우디우스 프톨레마이오스가 쓴 <em>테트라비블로스(Tetrabiblos)</em>는 "점성술의 성경"이 되었습니다. 우리가 오늘날 별자리, 원소, 각도(Aspect)에 대해 사용하는 논리의 대부분이 이 고대 텍스트에서 체계화되었습니다.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">과학적 결별</h2>
-      <p>인류 역사의 대부분 동안 <strong>점성술</strong>과 <strong>천문학</strong>은 같은 것이었습니다. 요하네스 케플러와 갈릴레오 갈릴레이 같은 위대한 과학자들도 직업적인 점성가였습니다. 그러나 17세기 계몽주의 시대에 두 분야는 갈라졌습니다. 천문학은 우주의 물리적 구성에 초점을 맞춘 반면, 점성술은 새로운 과학계로부터 "미신"으로 일축되었습니다.</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>그럼에도 불구하고 점성술은 연감과 비밀 결사 속에서 살아남아 사적으로 수백만 명을 계속 인도했습니다.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">심리학과 20세기</h2>
-      <p>20세기 점성술의 부활은 놀라운 원천인 심리학에 의해 주도되었습니다. 분석 심리학의 아버지인 <strong>칼 융</strong>은 출생 차트를 연구하고 점성술이 왜 작동하는지 설명하기 위해 <em>동시성(synchronicity)</em> 이론을 개발했습니다. 그는 황도대를 보편적인 원형(archetypes)의 집합체, 즉 모든 사람들의 집단 무의식 속에 존재하는 인간 행동의 패턴으로 보았습니다.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>이것은 점성술의 초점을 "나에게 무슨 일이 일어날까?"에서 "나는 누구이며, 왜 이렇게 반응하는가?"로 옮겼습니다.</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">미래: AI와 빅데이터</h2>
-      <p>우리는 현재 점성술의 새로운 황금기에 있습니다. 기술은 복잡한 수동 계산의 필요성을 제거하여 스마트폰을 가진 누구나 자신의 차트를 볼 수 있게 했습니다. 더 중요한 것은, <strong>인공지능(AI)</strong>이 이제 방대한 양의 데이터를 분석하여 이전에는 볼 수 없었던 이동(transits)과 성격 특성 간의 더 깊은 패턴을 찾는 데 사용되고 있다는 것입니다.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>Astralo에서는 이 5,000년의 유산을 최첨단 머신 러닝과 결합하여 인류 역사상 그 어느 때보다 정확하고 통찰력 있는 가이드를 제공합니다.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Bengali (বাংলা)
+ * history-of-astrology - BN
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: '🏛️ জ্যোতিষশাস্ত্রের ইতিহাস: প্রাচীন ব্যাবিলন থেকে আধুনিক AI পর্যন্ত',
-    excerpt: 'জ্যোতিষশাস্ত্রের ৫,০০০ বছরের আকর্ষণীয় যাত্রা অন্বেষণ করুন। প্রাচীন সভ্যতাগুলি কীভাবে নক্ষত্র ব্যবহার করত এবং কীভাবে এটি একটি আধুনিক মনস্তাত্ত্বিক সরঞ্জামে পরিণত হয়েছে তা জানুন।',
-    category: 'জ্যোতিষশাস্ত্রের মৌলিক বিষয়',
-    metaDescription: 'জ্যোতিষশাস্ত্রের ৫,০০০ বছরের আকর্ষণীয় যাত্রা অন্বেষণ করুন। প্রাচীন সভ্যতাগুলি কীভাবে সাম্রাজ্য গঠনের জন্য নক্ষত্র ব্যবহার করত এবং কীভাবে জ্যোতিষশাস্ত্র একটি আধুনিক মনস্তাত্ত্বিক সরঞ্জামে পরিণত হয়েছে তা জানুন।',
-    keywords: 'জ্যোতিষশাস্ত্রের ইতিহাস, প্রাচীন জ্যোতিষশাস্ত্র, ব্যাবিলনীয় জ্যোতিষশাস্ত্র, গ্রিক জ্যোতিষশাস্ত্র, রাশিচক্রের ইতিহাস, জ্যোতিষশাস্ত্রের উৎপত্তি, আধুনিক জ্যোতিষশাস্ত্র',
-    quickSummary: [
-        'জ্যোতিষশাস্ত্রের উদ্ভব ঘটে ৪,০০০ বছর আগে মেসোপটেমিয়ায় (প্রাচীন ব্যাবিলন)',
-        'আজ আমরা যে রাশিচক্র ব্যবহার করি, তা প্রায় ২,০০০ বছর আগে গ্রিকদের দ্বারা মানসম্মত করা হয়েছিল',
-        'জ্যোতিষশাস্ত্র এবং জ্যোতির্বিদ্যাকে ১৭শ শতাব্দী পর্যন্ত একই বিজ্ঞান হিসেবে বিবেচনা করা হতো',
-        'আজ রাজাদের মৃত্যুর ভবিষ্যদ্বাণী করার চেয়ে মনস্তাত্ত্বিক অন্তর্দৃষ্টির জন্য জ্যোতিষশাস্ত্র বেশি ব্যবহৃত হয়'
-    ],
-    keyTakeaways: [
-        'প্রাচীন সংস্কৃতিগুলি কৃষি এবং রাজনৈতিক অস্তিত্বের জন্য জ্যোতিষশাস্ত্র ব্যবহার করত',
-        'যুক্তিবাদের যুগ (Age of Reason) সাময়িকভাবে জ্যোতিষশাস্ত্রকে কুসংস্কারের ছায়ায় ঠেলে দিয়েছিল',
-        'কার্ল ইয়ুং মনস্তত্ত্বের মাধ্যমে জ্যোতিষশাস্ত্রকে মূলধারায় ফিরিয়ে এনেছেন',
-        'AI প্রযুক্তি এখন আগের চেয়ে অনেক বেশি সঠিক গণনার সুযোগ করে দিয়েছে'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'নক্ষত্রের দোলা: ব্যাবিলন' },
-        { id: 'greek-influence', title: 'গ্রিক বিপ্লব' },
-        { id: 'scientific-divorce', title: 'বৈজ্ঞানিক বিচ্ছেদ' },
-        { id: 'jungian-rebirth', title: 'মনস্তত্ত্ব এবং ২০তম শতাব্দী' },
-        { id: 'future-astrology', title: 'ভবিষ্যৎ: AI এবং বিগ ডাটা' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">নক্ষত্রের দোলা: ব্যাবিলন</h2>
-      <p>জ্যোতিষশাস্ত্রের কাহিনী শুরু হয় মেসোপটেমিয়ার উর্বর ক্রিসেন্ট অঞ্চলে। প্রায় ৫,০০০ বছর আগে, ব্যাবিলনীয় পুরোহিতরা নক্ষত্রের গতিবিধি এবং নদীর বন্যা বা ঋতু পরিবর্তনের মধ্যে একটি সম্পর্ক লক্ষ করেছিলেন। তারাই প্রথম আকাশকে বিভিন্ন ভাগে বিভক্ত করেছিলেন, যদিও তাদের পদ্ধতিটি শুরুতে <em>জাতি</em> বা <em>রাজার</em> ভাগ্য গণনা করার জন্য ব্যবহৃত হতো, কোনো ব্যক্তির জন্য নয়।</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>খ্রিস্টপূর্ব ৫ম শতাব্দীর মধ্যে ব্যাবিলনীয়রা <strong>রাশিচক্রের (Zodiac)</strong> প্রথম ধারণা তৈরি করেছিল, তারা নক্ষত্রপুঞ্জের উপর ভিত্তি করে সূর্যের পথকে বারোটি সমান রাশিতে বিভক্ত করেছিল।</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">গ্রিক বিপ্লব: হোরোস্কোপিক জ্যোতিষশাস্ত্র</h2>
-      <p>যখন জ্যোতিষশাস্ত্র হেলেনিস্টিক বিশ্বে (প্রাচীন গ্রিস এবং মিশর) পৌঁছায়, তখন এতে একটি বড় পরিবর্তন আসে। গ্রিকরা <strong>লগ্ন (Rising Sign)</strong> এবং <strong>ঘর পদ্ধতি (House System)</strong> যুক্ত করেছিল। এটিই প্রথম "জন্ম কুণ্ডলী" (Natal Chart) তৈরির সুযোগ করে দিয়েছিল — জন্মের সময় কোনো নির্দিষ্ট ব্যক্তির জন্য আকাশের একটি মানচিত্র।</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>খ্রিস্টীয় দ্বিতীয় শতাব্দীতে লেখা ক্লডিয়াস টলেমির <em>টেট্রাবিবলোস</em> (Tetrabiblos) জ্যোতিষশাস্ত্রের "বাইবেল" হয়ে ওঠে। রাশি, উপাদান এবং দৃষ্টির জন্য আজ আমরা যে যুক্তি ব্যবহার করি, তার অধিকাংশ এই প্রাচীন পাঠে সংকলিত হয়েছে।</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">বৈজ্ঞানিক বিচ্ছেদ</h2>
-      <p>মানব ইতিহাসের অধিকাংশ সময় <strong>জ্যোতিষশাস্ত্র</strong> এবং <strong>জ্যোতির্বিদ্যা</strong> একই ছিল। জোহানেস কেপলার এবং গ্যালিলিও গ্যালিলি-র মতো মহান বিজ্ঞানীরাও পেশাদার জ্যোতিষী ছিলেন। তবে ১৭শ শতাব্দীর এনলাইটেনমেন্টের সময়, উভয় ক্ষেত্র আলাদা হয়ে যায়। জ্যোতির্বিদ্যা মহাকাশের ভৌত কাঠামোর উপর মনোযোগ দেয়, আর নতুন বৈজ্ঞানিক মহলে জ্যোতিষশাস্ত্র "কুসংস্কার" হিসেবে বাতিল হয়ে যায়।</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>তা সত্ত্বেও, এটি পঞ্জিকা এবং গোপন সংস্থাগুলিতে টিকে ছিল এবং ব্যক্তিগতভাবে লক্ষ লক্ষ মানুষকে পথ দেখাতে থাকে।</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">মনস্তত্ত্ব এবং ২০তম শতাব্দী</h2>
-      <p>২০শ শতাব্দীতে জ্যোতিষশাস্ত্রের প্রত্যাবর্তন ঘটে একটি বিস্ময়কর উৎস থেকে: মনস্তত্ত্ব। বিশ্লেষণী মনস্তত্ত্বের জনক <strong>কার্ল ইয়ুং</strong> জন্ম কুণ্ডলী নিয়ে পড়াশোনা করেছিলেন এবং জ্যোতিষশাস্ত্রের কার্যকারিতা ব্যাখ্যার জন্য <em>সিংক্রনিসিটি</em> (synchronicity) তত্ত্ব দিয়েছিলেন। তিনি রাশিচক্রকে মহাজাগতিক আর্কিটাইপসের সংগ্রহ হিসেবে দেখেছিলেন — যা মানুষের আচরণ ও অচেতনের একটি ধরণ।</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>এর ফলে জ্যোতিষশাস্ত্রের মনোযোগ "আমার জীবনে কী ঘটবে?" থেকে সরে গিয়ে "আমি কে এবং কেন এমন প্রতিক্রিয়া করি?" এর দিকে চলে যায়।</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">ভবিষ্যৎ: AI এবং বিগ ডাটা</h2>
-      <p>বর্তমানে আমরা জ্যোতিষশাস্ত্রের একটি নতুন স্বর্ণযুগে আছি। প্রযুক্তি জটিল ম্যানুয়াল গণনার প্রয়োজনীয়তা দূর করেছে, ফলে স্মার্টফোন থাকা যে কেউ নিজের কুণ্ডলী দেখতে পারে। আরও বড় বিষয় হলো, <strong>আর্টফিশিয়াল ইন্টেলিজেন্স</strong> এখন বিশাল তথ্য বিশ্লেষণে ব্যবহৃত হচ্ছে, যা ট্রানজিট ও ব্যক্তিত্বের বৈশিষ্ট্যের এমন গভীর প্যাটার্ন খুঁজে দিচ্ছে যা আগে দেখা অসম্ভব ছিল।</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>অ্যাস্ট্রালো (Astralo)-তে আমরা এই ৫,০০০ বছরের ঐতিহ্যকে অত্যাধুনিক মেশিন লার্নিংয়ের সাথে যুক্ত করি যাতে আপনাকে মানব ইতিহাসের সবচেয়ে সঠিক ও কার্যকর দিকনির্দেশনা দেওয়া যায়।</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

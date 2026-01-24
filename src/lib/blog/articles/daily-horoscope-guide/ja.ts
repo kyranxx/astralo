@@ -1,119 +1,101 @@
 /**
- * Daily Horoscope Guide - Japanese (日本語)
+ * daily-horoscope-guide - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: '⭐ 毎日の星占い2026：星座予測の完全ガイド',
-    excerpt: '毎日の星占いの予測をマスターしましょう。日々の占星術がどのように機能するか、なぜアセンダントが重要なのか、そして惑星のエネルギーを成功のためにどう活用するかを網羅したガイドです。',
-    category: '占星術の基礎',
-    metaDescription: '毎日の星占いの予測をマスターしましょう。日々の占星術がどのように機能するか、なぜアセンダントが重要なのか、そして惑星のエネルギーを成功のためにどう活用するかを網羅したガイドです。',
-    keywords: '毎日の星占い, 今日の運勢, 今日の星占い, 星座運勢, 星占いガイド, 占星術を理解する, アセンダント 運勢, 惑星トランジット',
-    quickSummary: [
-        '毎日の星占いは、動きの速い月とあなたのチャートに対する惑星のアスペクトによってもたらされます',
-        'アセンダント（上昇宮）に基づいて読むことで、毎日の予測精度が大幅に向上します',
-        '惑星のトランジットは、毎日特定の出来事、感情、機会を引き起こします',
-        '「ボイドタイム」の期間を知ることで、無駄な努力を避けることができます'
-    ],
-    keyTakeaways: [
-        '太陽星座はあなたの生命力を示しますが、アセンダントはあなたの日常生活の「舞台」を設定します',
-        '月は2.5日ごとに星座を変え、集団的なムード（気分）を決定します',
-        '水星逆行やその他の「悪い」アスペクトは、実際には見直しと再調整のための期間です',
-        '朝のルーチンに占星術を取り入れることで、生産性と人間関係を最適化できます'
-    ],
-    tableOfContents: [
-        { id: 'introduction', title: 'なぜ毎日の星占いを読むのか？' },
-        { id: 'science-behind-it', title: 'メカニズム：どのように機能するか' },
-        { id: 'rising-vs-sun', title: '黄金律：アセンダント vs 太陽' },
-        { id: 'planetary-players', title: '主要な惑星のプレイヤー' },
-        { id: 'zodiac-daily-styles', title: '12星座の毎日のスタイル' },
-        { id: 'practical-rituals', title: '毎日の占星術の儀式' },
-        { id: 'myth-busting', title: '一般的な神話を打破する' }
-    ],
+    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
+    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    category: "Astrology 101",
+    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
+    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
+    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
+    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
     content: `
-      <h2 id="introduction">なぜ毎日の星占いを読むのか？</h2>
-      <p>世界中の何百万人もの人々にとって、<strong>毎日の星占い</strong>をチェックすることは、朝のコーヒーと同じくらい欠かせないものです。それは一時停止の瞬間であり、自己反省の儀式であり、その日のエネルギーに備える方法です。しかし、これらの予測の背後にあるものを不思議に思ったことはありませんか？それは単なるランダムなアドバイスなのでしょうか、それとも舞台裏には複雑な宇宙の時計仕掛けがあるのでしょうか？</p>
+      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
+      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
       
-      <p>Astraloでは、占星術はエンパワーメント（力づけ）のためのツールであると信じています。よく書かれた星占いは、単に未来を予測するだけでなく、あなたがそれを<em>創造</em>するのを助けます。宇宙の天気、つまりあなたが生まれたときの惑星の位置に対する、今日の惑星の位置を理解することで、優雅に課題を乗り越え、見過ごしてしまうかもしれない機会をつかむことができます。</p>
+      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
 
-      <h2 id="science-behind-it">メカニズム：どのように機能するか</h2>
-      <p>占星術は、しばしばサイクルの研究と呼ばれます。あなたの<strong>毎日の星座予測</strong>は、「トランジット（経過）」と呼ばれる手法を使用して計算されます。あなたの出生図（ネイタルチャート）が出生時の空の永久的なスナップショットであると想像してください。しかし、惑星は動き続けます。「トランジット」は、空を移動する惑星が、あなたの出生図の惑星に対して数学的な角度（アスペクト）を作るときに発生します。</p>
+      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
+      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
       
-      <h3>月：運命の分針</h3>
-      <p>木星のような惑星は星座を変えるのに1年かかりますが、<strong>月</strong>は信じられないほど速く動き、約2.5日で1つの星座を通過します。これにより、月はあなたの<em>日々の</em>気分や感情的な風景の主要な推進力となります。月が情熱的な牡羊座にあるとき、私たちは衝動的でエネルギッシュに感じます。それが地に足のついた牡牛座に移ると、私たちは集団的にペースを落とし、快適さを切望します。</p>
+      <h3>The Moon: The Minute Hand of Fate</h3>
+      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
 
-      <h3>アスペクト：惑星間の会話</h3>
-      <p>惑星は角度を通じてお互いに「話」をします。<strong>トライン（120°）</strong>は調和のとれた会話であり、安らぎと幸運をもたらします。<strong>スクエア（90°）</strong>は緊張点であり、行動や決断を強います。あなたの毎日の星占いは、これらの会話を解釈します。もし火星（行動）が空で土星（制限）とスクエアになっているなら、今日は欲求不満を感じたり、ブロックされたりするかもしれません。これを知ることは、開かないドアを無理にこじ開けるよりも、忍耐強くなるのに役立ちます。</p>
+      <h3>The Aspects: Conversations Between Planets</h3>
+      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
 
-      <h2 id="rising-vs-sun">黄金律：アセンダントのために読む</h2>
-      <p>ここにプロの占星術師が知っている秘密があります：<strong>最も正確な毎日の予測を得るためには、太陽星座だけでなく、アセンダント（上昇宮）の星占いを読むべきです。</strong></p>
+      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Sign</h2>
+      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
       
-      <p>なぜでしょうか？星占いは「ハウスシステム」を使って書かれているからです。あなたのアセンダントは、チャート内の12のハウスの配置を決定します。1ハウスはあなた、2ハウスはお金、7ハウスは人間関係、などです。占星術師が「牡羊座は今日、金銭的な機会があるでしょう」と書くとき、彼らは牡羊座アセンダントのチャートの2ハウスを通る惑星の動きを見ています。</p>
+      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
       <ul>
-        <li><strong>太陽星座を読む：</strong> 自我、生命力、核心的な目的についての一般的なテーマのために。</li>
-        <li><strong>アセンダントを読む：</strong> 今日あなたに起こる具体的な出来事、タイミング、状況のために。</li>
-        <li><strong>月星座を読む：</strong> 自分の内面的な感情状態を理解したい場合に。</li>
+        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
+        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
+        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
       </ul>
 
-      <h2 id="planetary-players">その日の主要な惑星のプレイヤー</h2>
-      <p>月以外にも、他の動きの速い「個人天体」があなたの日々の経験を形作ります：</p>
+      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
+      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
       <ul>
-        <li><strong>水星：</strong> コミュニケーション、技術、旅行の支配星。その状態は、メールがうまく届くかスパムに紛れるか、通勤がスムーズかカオスか決定します。</li>
-        <li><strong>金星：</strong> 愛、お金、価値観の支配星。金星の状態が良い日は、デート、買い物、または昇給を頼むのに最適です。</li>
-        <li><strong>火星：</strong> 12星座のエンジン。エネルギーレベル、意欲、性欲を支配します。火星が困難な日は、運動や激務に向けられない場合、燃え尽き症候群や議論につながる可能性があります。</li>
+        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
+        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
+        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">12星座の毎日のスタイル</h2>
+      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Signs</h2>
       
-      <h3>♈ 牡羊座 (3月21日 - 4月19日)</h3>
-      <p><strong>火星に支配されています。</strong> 毎日のエネルギーを処理するために身体的な動きが必要です。牡羊座のホロスコープは、多くの場合、イニシアチブ、解決すべき対立、リーダーシップの瞬間に焦点を当てています。</p>
+      <h3>♈ Aries (March 21 - April 19)</h3>
+      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
 
-      <h3>♉ 牡牛座 (4月20日 - 5月20日)</h3>
-      <p><strong>金星に支配されています。</strong> 五感を通して一日を処理します。ホロスコープは、多くの場合、お金の動きや身体的な快適さを強調しています。</p>
+      <h3>♉ Taurus (April 20 - May 20)</h3>
+      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
 
-      <h3>♊ 双子座 (5月21日 - 6月20日)</h3>
-      <p><strong>水星に支配されています。</strong> 情報があなたの燃料です。毎日の予測は、会話、学習、短い旅行を中心に展開します。</p>
+      <h3>♊ Gemini (May 21 - June 20)</h3>
+      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
 
-      <h3>♋ 蟹座 (6月21日 - 7月22日)</h3>
-      <p><strong>月に支配されています。</strong> あなたは最も周期的な星座です。リーディングは、多くの場合、家庭、家族、感情的な安全を中心にしています。</p>
+      <h3>♋ Cancer (June 21 - July 22)</h3>
+      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
 
-      <h3>♌ 獅子座 (7月23日 - 8月22日)</h3>
-      <p><strong>太陽に支配されています。</strong> 自己表現が必要です。獅子座は、創造性、ロマンス、そして認識のテーマを一日に見つけることがよくあります。</p>
+      <h3>♌ Leo (July 23 - August 22)</h3>
+      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
 
-      <h3>♍ 乙女座 (8月23日 - 9月22日)</h3>
-      <p><strong>水星に支配されています。</strong> 秩序があなたに平和をもたらします。ホロスコープは頻繁に仕事のタスク、健康のルーチン、奉仕を指し示します。</p>
+      <h3>♍ Virgo (August 23 - September 22)</h3>
+      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
 
-      <h3>♎ 天秤座 (9月23日 - 10月22日)</h3>
-      <p><strong>金星に支配されています。</strong> バランスが鍵です。あなたは人間関係の調和を求めます。毎日のインサイトは、多くの場合、パートナーシップと美学に焦点を当てています。</p>
+      <h3>♎ Libra (September 23 - October 22)</h3>
+      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
 
-      <h3>♏ 蠍座 (10月23日 - 11月21日)</h3>
-      <p><strong>冥王星と火星に支配されています。</strong> 深さを求めます。表面的な日はあなたを退屈させます。ホロスコープは変容、秘密、共有リソースを強調します。</p>
+      <h3>♏ Scorpio (October 23 - November 21)</h3>
+      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
 
-      <h3>♐ 射手座 (11月22日 - 12月21日)</h3>
-      <p><strong>木星に支配されています。</strong> 拡大を切望します。あなたの一日は、多くの場合、全体像、哲学、または外国の影響についてです。</p>
+      <h3>♐ Sagittarius (November 22 - December 21)</h3>
+      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
 
-      <h3>♑ 山羊座 (12月22日 - 1月19日)</h3>
-      <p><strong>土星に支配されています。</strong> 遺産を築いています。あなたにとっての毎日のテーマは、多くの場合、キャリア、評判、長期的な目標についてです。</p>
+      <h3>♑ Capricorn (December 22 - January 19)</h3>
+      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
 
-      <h3>♒ 水瓶座 (1月20日 - 2月18日)</h3>
-      <p><strong>天王星と土星に支配されています。</strong> 未来に目を向けています。ホロスコープはソーシャルネットワーク、テクノロジー、革新を強調します。</p>
+      <h3>♒ Aquarius (January 20 - February 18)</h3>
+      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
 
-      <h3>♓ 魚座 (2月19日 - 3月20日)</h3>
-      <p><strong>海王星と木星に支配されています。</strong> 世界の間を漂います。毎日のガイダンスは、多くの場合、精神的、芸術的、または直感的です。</p>
+      <h3>♓ Pisces (February 19 - March 20)</h3>
+      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
 
-      <h2 id="practical-rituals">毎日の占星術の儀式</h2>
-      <p>この情報をどう活用すればよいでしょうか？ただ読むだけでなく、生かしてください。</p>
+      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
+      <p>How can you use this information? Don't just read it—live it.</p>
       <ol>
-        <li><strong>朝のチェックイン：</strong> メールをチェックする<em>前に</em>予測を読んでください。これは宇宙的な意図を設定します。</li>
-        <li><strong>月星座に注目する：</strong> 月が乙女座にある場合は、デスクを掃除してください。天秤座にある場合は、ビジネスパートナーに電話してください。流れに乗る方が常に簡単です。</li>
-        <li><strong>ボイドを尊重する：</strong> 「ボイドタイム（Void-of-Course）」は、月が次の星座に移る前に他の惑星とアスペクトを作らない期間です。曖昧な時期です。ボイドの間に契約書に署名したり、ビジネスを立ち上げたりしないでください。休息に使いましょう。</li>
+        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
+        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
+        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
       </ol>
 
-      <h2 id="myth-busting">一般的な神話を打破する</h2>
-      <p><strong>「星占いは曖昧すぎる。」</strong> <br>一般的な新聞の星占いが曖昧なのは、太陽星座しか見ていないからです。Astraloの洗練されたAIによって生成されたようなパーソナライズされたリーディングは、あなたのチャート全体のニュアンスを考慮しています。</p>
-      <p><strong>「占星術は固定された運命を予測する。」</strong> <br>間違いです。占星術は<em>エネルギー</em>と<em>天気</em>を予測します。雨が降るかもしれません（困難なトランジット）が、傘を持っていくか、雨の中で踊るかはあなたが決めます。あなたには常に自由意志があります。</p>
+      <h2 id="myth-busting">Busting Common Myths</h2>
+      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
+      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
       
-      <h3>もっと深く知りたいですか？</h3>
-      <p>一般的な予測も役立ちますが、正確な出生時間と場所から導き出されたリーディングに勝るものはありません。あなたのユニークな出生図は、他の誰とも共有しない複雑な地図です。Astraloのプレミアムなパーソナライズされたリーディングで、あなたの宇宙的なデザインの可能性を最大限に引き出してください。</p>
+      <h3>Ready to Dive Deeper?</h3>
+      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
     `
 };

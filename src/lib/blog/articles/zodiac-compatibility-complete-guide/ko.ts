@@ -1,105 +1,88 @@
 /**
- * Zodiac Compatibility - Korean (한국어)
+ * zodiac-compatibility-complete-guide - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-  title: '❤️ 별자리 궁합: 우주적 사랑을 향한 결정판 가이드',
-  excerpt: '2026년 별자리 궁합을 위한 궁극의 가이드. 태양 별자리를 넘어 원소, 금성, 화성이 당신의 로맨틱한 케미에 어떤 영향을 미치는지 알아보세요.',
-  category: '사랑과 관계',
-  metaDescription: '2026년 별자리 궁합을 위한 궁극의 가이드. 원소, 금성, 화성이 당신의 로맨틱한 케미와 장기적 잠재력에 어떤 영향을 미치는지 탐구합니다.',
-  keywords: '별자리 궁합, 연애 호로스코프, 시나스트리, 별자리 매칭, 금성 연애, 화성 열정, 관계 점성술, 베스트 매치',
-  quickSummary: [
-    '진정한 궁합은 태양 별자리뿐만 아니라 전체 탄생 차트의 비교(시나스트리)를 통해 결정됩니다',
-    '원소(불, 흙, 공기, 물)의 균형은 관계 조화의 기초가 됩니다',
-    '「어울리지 않는」 별자리와의 관계가 종종 영혼의 성장에 가장 큰 기회를 제공합니다',
-    '금성은 애정 표현 방식을 결정하고, 화성은 열정과 갈등 해결 방식을 지배합니다'
-  ],
-  keyTakeaways: [
-    '편안한 관계를 위해서는 트라인(동일 원소), 강렬한 끌림을 위해서는 오포지션을 확인하세요',
-    '달 별자리 궁합은 동거와 정서적 안정감에 있어 매우 중요합니다',
-    '수성 궁합은 두 사람이 얼마나 잘 소통하며 문제를 해결하는지를 결정합니다',
-    '「완벽한 짝」이란 없습니다. 모든 커플에게는 강점과 과제가 존재합니다'
-  ],
-  tableOfContents: [
-    { id: 'beyond-sun-signs', title: '태양 별자리만이 전부가 아닌 이유' },
-    { id: 'elemental-love', title: '사랑의 4원소' },
-    { id: 'love-planets', title: '금성, 화성 그리고 달' },
-    { id: 'challenging-matches', title: '「나쁜 궁합」에 대한 진실' },
-    { id: 'best-matches-deep-dive', title: '심층 분석: 베스트 매치' },
-    { id: 'synastry', title: '고급 팁: 시나스트리' }
-  ],
-  content: `
-      <h2 id="beyond-sun-signs">태양 별자리만이 전부가 아닌 이유</h2>
-      <p>좋아하는 사람과의 별자리 궁합을 앱으로 확인해 본 적이 있나요? "아, 난 사자자리인데 그는 전갈자리야 — 우린 안 될 거야!" 하지만 잠깐만요. <strong>별자리 궁합</strong>은 단순한 표 대조보다 훨씬 더 복잡하고 희망적입니다.</p>
+    title: "❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love",
+    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    category: "Love & Relationships",
+    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
+    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
+    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
+    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
+    content: `
+      <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
+      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
       
-      <p>태양 별자리는 당신의 자아와 인생 목적을 나타내지만, 인간관계는 감정, 소통, 가치관 위에 세워집니다. 그래서 당신은 "궁합이 안 좋은" 별자리와 행복한 결혼 생활을 하거나, 소위 "완벽한 짝"과 어려움을 겪을 수도 있습니다. <strong>사랑의 조화</strong>를 진정으로 이해하려면 하늘의 전체 그림을 봐야 합니다.</p>
+      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 
-      <h2 id="elemental-love">사랑의 4원소</h2>
-      <p>초기 케미를 측정하는 가장 빠른 방법은 원소를 확인하는 것입니다. 같은 원소의 별자리들은 일반적으로 "같은 언어"로 대화합니다.</p>
+      <h2 id="elemental-love">The 4 Elements in Love</h2>
+      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
       
-      <h3>🔥 불의 별자리 (양자리, 사자자리, 사수자리)</h3>
-      <p><strong>사랑의 언어:</strong> 열정, 모험, 자발성.</p>
-      <p>불의 별자리는 자신의 불꽃을 꺼뜨리지 않고 부채질해 줄 파트너가 필요합니다. 그들은 흥분을 갈망하고 지루함을 싫어합니다.
-      <br><em>베스트 매치:</em> 다른 불의 별자리 (즉각적인 열기) 또는 공기의 별자리 (공기는 불을 키웁니다).</p>
+      <h3>🔥 Fire Signs (Aries, Leo, Sagittarius)</h3>
+      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
+      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
+      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
 
-      <h3>🌍 흙의 별자리 (황소자리, 처녀자리, 염소자리)</h3>
-      <p><strong>사랑의 언어:</strong> 봉사, 안정, 스킨십.</p>
-      <p>흙의 별자리는 사랑을 동사로 취급합니다. 그들은 실질적인 봉사와 함께 삶을 구축함으로써 애정을 표현합니다. 그들은 신뢰성을 필요로 합니다.
-      <br><em>베스트 매치:</em> 다른 흙의 별자리 (탄탄한 기초) 또는 물의 별자리 (물은 흙을 비옥하게 합니다).</p>
+      <h3>🌍 Earth Signs (Taurus, Virgo, Capricorn)</h3>
+      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
+      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
+      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
 
-      <h3>💨 공기의 별자리 (쌍둥이자리, 천칭자리, 물병자리)</h3>
-      <p><strong>사랑의 언어:</strong> 대화, 재치, 자유.</p>
-      <p>공기의 별자리에게는 두뇌가 가장 섹시한 부위입니다. 그들은 지적 자극과, 동시에 가장 친한 친구가 되어줄 파트너를 필요로 합니다.
-      <br><em>베스트 매치:</em> 다른 공기의 별자리 (끝없는 대화) 또는 불의 별자리 (영감).</p>
+      <h3>💨 Air Signs (Gemini, Libra, Aquarius)</h3>
+      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
+      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
+      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
 
-      <h3>💧 물의 별자리 (게자리, 전갈자리, 물고기자리)</h3>
-      <p><strong>사랑의 언어:</strong> 취약성, 직관, 융합.</p>
-      <p>물의 별자리는 깊은 감정적 연결을 추구합니다. 그들은 말 없이 이해받기를 원하며 안전한 피난처를 필요로 합니다.
-      <br><em>베스트 매치:</em> 다른 물의 별자리 (심령적 유대) 또는 흙의 별자리 (물을 담는 그릇).</p>
+      <h3>💧 Water Signs (Cancer, Scorpio, Pisces)</h3>
+      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
+      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
+      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
 
-      <h2 id="love-planets">진정한 사랑의 행성: 금성, 화성 그리고 달</h2>
-      <p>일상적인 생활에서 잘 지낼 수 있을지 알고 싶다면, 태양 별자리 궁합만 확인하는 것으로는 충분하지 않습니다. 파트너 차트의 세 가지 특정 행성을 자세히 살펴봐야 합니다:</p>
+      <h2 id="love-planets">The Real Love Planets: Venus, Mars & The Moon</h2>
+      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
 
-      <h3>1. 달 🌙 (정서적 안전)</h3>
-      <p>장기적인 결혼이나 동거에서 <strong>달 별자리 궁합은 왕입니다</strong>. 달 별자리는 당신이 안전하다고 느끼기 위해 무엇이 필요한지, 피곤하거나 배고플 때 어떻게 반응하는지, 타인을 어떻게 돌보는지를 결정합니다. 
-      <br><em>예:</em> 양자리 태양은 거칠어 보일 수 있지만, 게자리 달이 있다면 실제로는 집에서 포옹과 확신이 필요한 매우 부드러운 사람입니다.</p>
+      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
+      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
+      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
 
-      <h3>2. 금성 ♀ (로맨스와 가치관)</h3>
-      <p>금성은 당신이 무엇을 아름답다고 생각하고 무엇을 가치 있게 여기는지 결정합니다. 당신의 "플러팅 스타일"을 보여줍니다.
-      <br><em>팁:</em> 금성 별자리가 같은 원소라면, 취향과 소비 습관이 쉽게 일치할 가능성이 높습니다.</p>
+      <h3>2. Venus ♀ (Romance & Values)</h3>
+      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
+      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
 
-      <h3>3. 화성 ♂ (열정과 갈등)</h3>
-      <p>화성은 성욕과 갈등의 행성입니다. 당신이 어떻게 싸우고 어떻게 성생활을 하는지 보여줍니다.
-      <br><em>팁:</em> 화성 별자리가 잘 맞으면 논쟁이 빨리 해결되고 신체적 케미가 살아 있게 됩니다.</p>
+      <h3>3. Mars ♂ (Passion & Argument)</h3>
+      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
+      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
 
-      <h2 id="challenging-matches">「나쁜 궁합」에 대한 진실</h2>
-      <p>만약 "궁합이 안 좋은" 별자리와 사랑에 빠졌다면 어떨까요? 예를 들어, 사자자리(불)와 전갈자리(물)?</p>
+      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
+      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
       
-      <p>이러한 관계는 종종 가장 <strong>변형적인</strong> 성장을 가져옵니다. 점성술에서는 이러한 각도를 "스크퀘어(Square)" 또는 "퀸컹스(Quincunx)"라고 부릅니다. 마찰을 일으키죠. 하지만 마찰은 열(열정)을 만듭니다! "도전적인" 매치는 당신을 성장시키고, 새로운 언어를 배우게 하며, 편안한 영역 밖으로 나오게 합니다. 그들은 종종 더 많은 노력이 필요할지라도, 당신의 영혼을 진화시키기 위해 설계된 고도로 열정적이고 드라마틱한 소울메이트 연결입니다.</p>
+      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
 
-      <h2 id="best-matches-deep-dive">심층 분석: 유명한 별자리 듀오</h2>
+      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac Pairings</h2>
       
-      <h3>「파워 커플」: 양자리와 천칭자리</h3>
-      <p>반대 극은 서로를 끌어당깁니다! 양자리는 "내가 먼저", 천칭자리는 "우리가 먼저"입니다. 양자리는 천칭자리에게 자기 주장을 가르치고, 천칭자리는 양자리에게 외교를 가르칩니다. 깨기 힘든 자석 같은 끌림입니다.</p>
+      <h3>The "Power Couple": Aries & Libra</h3>
+      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
 
-      <h3>「제국 건설자」: 황소자리와 염소자리</h3>
-      <p>품질, 돈, 안전을 중시하는 두 흙의 별자리입니다. 일만 하는 것이 아니라 즐기는 것도 기억해야 하지만, 함께 엄청난 성공을 이룹니다.</p>
+      <h3>The "Empire Builders": Taurus & Capricorn</h3>
+      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
       
-      <h3>「피터팬」 듀오: 쌍둥이자리와 사수자리</h3>
-      <p>공기와 불. 둘 다 자유, 여행, 철학을 사랑합니다. 전통적인 의미로 정착하지 않을 수도 있지만, 영원한 공범자가 될 것입니다.</p>
+      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
+      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
 
-      <h3>「심령적 연결」: 게자리와 전갈자리</h3>
-      <p>이 두 물의 별자리가 만나면 세상은 사라집니다. 그들은 텔레파시 같은 연결과 소유욕을 가지고 있어 서로에게 맹렬히 헌신합니다.</p>
+      <h3>The "Psychic Link": Cancer & Scorpio</h3>
+      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
       
-      <h2 id="synastry">고급 궁합: 시나스트리</h2>
-      <p>당신의 관계에 대한 진정한 답을 얻으려면 <strong>시나스트리(궁합도) 리딩</strong>이 필요합니다. 이는 당신의 차트를 파트너의 차트 위에 겹쳐 보는 것입니다.</p>
+      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
+      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
       
-      <p>우리는 다음과 같은 연결을 찾습니다:
-      <br><strong>태양-달 합:</strong> 고전적인 "남편/아내" 각도.
-      <br><strong>금성-화성 교환:</strong> 믿을 수 없는 성적 매력.
-      <br><strong>토성 접촉:</strong> 사람들을 평생(힘든 시기에도) 함께 묶어주는 접착제.</p>
+      <p>We look for connections like:
+      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
+      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
+      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
       
-      <p>Astralo에서는 우리의 고급 알고리즘과 전문 점성가들이 단순한 퍼센트만 주지 않습니다. 우리는 당신 관계의 영혼 지도를 만듭니다. 추측을 멈추고 당신 결합의 우주적 목적을 이해하기 시작하세요.</p>
+      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
     `
 };

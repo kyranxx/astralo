@@ -1,102 +1,88 @@
+/**
+ * zodiac-compatibility-complete-guide - EL
+ */
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: '❤️ Συμβατότητα Ζωδίων: Ο Απόλυτος Οδηγός Κοσμικής Αγάπης',
-    excerpt: 'Ο απόλυτος οδηγός συμβατότητας ζωδίων για το 2026. Πέρα από τα ζώδια του Ήλιου, ανακαλύψτε πώς τα Στοιχεία, η Αφροδίτη και ο Άρης επηρεάζουν τη ρομαντική σας χημεία.',
-    category: 'Αγάπη & Σχέσεις',
-    metaDescription: 'Ο απόλυτος οδηγός συμβατότητας ζωδίων για το 2026. Ανακαλύψτε πώς τα Στοιχεία, η Αφροδίτη, ο Άρης και η Σελήνη επηρεάζουν τη ρομαντική σας χημεία και τις μακροχρόνιες δυνατότητες.',
-    keywords: 'συμβατότητα ζωδίων, ωροσκόπιο αγάπης, συναστρία, ταιριάσματα ζωδίων, αφροδίτη στον έρωτα, άρης και πάθος, αστρολογία σχέσεων',
-    quickSummary: [
-        'Η πραγματική συμβατότητα περιλαμβάνει τη σύγκριση ολόκληρων γενέθλιων χαρτών (Συναστρία), όχι μόνο των ζωδίων του Ήλιου',
-        'Η Ισορροπία των Στοιχείων (Φωτιά, Γη, Αέρας, Νερό) είναι το θεμέλιο της αρμονίας στη σχέση',
-        'Τα "Ασυμβίβαστα" ζώδια συχνά προσφέρουν τις μεγαλύτερες ευκαιρίες για ψυχική εξέλιξη',
-        'Η Αφροδίτη καθορίζει το στυλ στοργής, ενώ ο Άρης οδηγεί το πάθος και το στυλ σύγκρουσης'
-    ],
-    keyTakeaways: [
-        'Αναζητήστε τρίγωνα (ίδιο στοιχείο) για ευκολία, και αντιθέσεις για έντονη έλξη',
-        'Η συμβατότητα της Σελήνης είναι ζωτικής σημασίας για τη συγκατοίκηση και τη συναισθηματική ασφάλεια',
-        'Η συμβατότητα του Ερμή καθορίζει πόσο καλά επιλύετε τα προβλήματα μαζί',
-        'Δεν υπάρχει "τέλειο" ταίρι. Κάθε ζευγάρι έχει δυνατά σημεία και προκλήσεις'
-    ],
-    tableOfContents: [
-        { id: 'beyond-sun-signs', title: 'Γιατί τα Ζώδια του Ήλιου δεν είναι τα Πάντα' },
-        { id: 'elemental-love', title: 'Τα 4 Στοιχεία στον Έρωτα' },
-        { id: 'love-planets', title: 'Αφροδίτη, Άρης & Σελήνη' },
-        { id: 'challenging-matches', title: 'Η Αλήθεια για τα "Κακά" Ταιριάσματα' },
-        { id: 'best-matches-deep-dive', title: 'Βαθιά Ανάλυση: Τα Καλύτερα Ταιριάσματα' },
-        { id: 'synastry', title: 'Προχωρημένη Συμβουλή: Συναστρία' }
-    ],
+    title: "❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love",
+    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    category: "Love & Relationships",
+    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
+    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
+    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
+    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
     content: `
-      <h2 id="beyond-sun-signs">Γιατί τα Ζώδια του Ήλιου δεν είναι τα Πάντα</h2>
-      <p>Όλοι το έχουμε κάνει: να ελέγξουμε ένα περιοδικό ή μια εφαρμογή για να δούμε αν το ζώδιο του ατόμου που μας ενδιαφέρει είναι συμβατό με το δικό μας. "Ω όχι, είμαι Λέων και είναι Σκορπιός - είμαστε καταδικασμένοι!" Αλλά περιμένετε. Η <strong>συμβατότητα ζωδίων</strong> είναι απείρως πιο περίπλοκη—και ελπιδοφόρα—από ένα απλό ταίριασμα σε πίνακα.</p>
+      <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
+      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
       
-      <p>Ενώ το ζώδιο του Ήλιου σας αντιπροσωπεύει τον βασικό εγωισμό και τον σκοπό της ζωής σας, οι σχέσεις χτίζονται στα συναισθήματα, την επικοινωνία και τις αξίες. Γι' αυτό μπορεί να βρεθείτε ευτυχισμένοι σε γάμο με ένα ζώδιο που θεωρητικά είναι "ασύμβατο", ή να δυσκολεύεστε με το λεγόμενο "τέλειο ταίρι". Για να κατανοήσουμε πραγματικά τα <strong>ερωτικά ταιριάσματα</strong>, πρέπει να δούμε την πλήρη εικόνα του ουρανού.</p>
+      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 
-      <h2 id="elemental-love">Τα 4 Στοιχεία στον Έρωτα</h2>
-      <p>Ο πιο γρήγορος τρόπος για να μετρήσετε την αρχική χημεία είναι μέσω των Στοιχείων. Τα ζώδια του ίδιου στοιχείου γενικά "μιλούν την ίδια γλώσσα".</p>
+      <h2 id="elemental-love">The 4 Elements in Love</h2>
+      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
       
-      <h3>🔥 Ζώδια της Φωτιάς (Κριός, Λέων, Τοξότης)</h3>
-      <p><strong>Γλώσσα Αγάπης:</strong> Πάθος, Περιπέτεια, Αυθορμητισμός.</p>
-      <p>Τα ζώδια της Φωτιάς χρειάζονται έναν σύντροφο που μπορεί να τροφοδοτήσει τη φλόγα τους χωρίς να την σβήσει. Επιζητούν ενθουσιασμό και μισούν να βαριούνται.
-      <br><em>Καλύτερα με:</em> Άλλα ζώδια της Φωτιάς (άμεση θερμότητα) ή ζώδια του Αέρα (ο Αέρας τροφοδοτεί τη Φωτιά).</p>
+      <h3>🔥 Fire Signs (Aries, Leo, Sagittarius)</h3>
+      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
+      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
+      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
 
-      <h3>🌍 Ζώδια της Γης (Ταύρος, Παρθένος, Αιγόκερως)</h3>
-      <p><strong>Γλώσσα Αγάπης:</strong> Εξυπηρέτηση, Σταθερότητα, Αφή.</p>
-      <p>Τα ζώδια της Γης αντιμετωπίζουν την αγάπη ως ρήμα. Δείχνουν στοργή μέσω πρακτικών πράξεων εξυπηρέτησης και χτίζοντας μια ζωή μαζί. Χρειάζονται αξιοπιστία.
-      <br><em>Καλύτερα με:</em> Άλλα ζώδια της Γης (σταθερό θεμέλιο) ή ζώδια του Νερού (το Νερό θρέφει τη Γη).</p>
+      <h3>🌍 Earth Signs (Taurus, Virgo, Capricorn)</h3>
+      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
+      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
+      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
 
-      <h3>💨 Ζώδια του Αέρα (Δίδυμοι, Ζυγός, Υδροχόος)</h3>
-      <p><strong>Γλώσσα Αγάπης:</strong> Συζήτηση, Ευφυΐα, Ελευθερία.</p>
-      <p>Για τα ζώδια του Αέρα, το μυαλό είναι η πιο ερωτογενής ζώνη. Χρειάζονται πνευματική διέγερση και έναν σύντροφο που να είναι και ο καλύτερός τους φίλος.
-      <br><em>Καλύτερα με:</em> Άλλα ζώδια του Αέρα (ατελείωτη συζήτηση) ή ζώδια της Φωτιάς (έμπνευση).</p>
+      <h3>💨 Air Signs (Gemini, Libra, Aquarius)</h3>
+      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
+      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
+      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
 
-      <h3>💧 Ζώδια του Νερού (Καρκίνος, Σκορπιός, Ιχθύες)</h3>
-      <p><strong>Γλώσσα Αγάπης:</strong> Ευαλωτότητα, Διαίσθηση, Ένωση.</p>
-      <p>Τα ζώδια του Νερού αναζητούν βαθιά συναισθηματική σύνδεση. Θέλουν να γίνονται κατανοητοί χωρίς λόγια και χρειάζονται ένα ασφαλές λιμάνι.
-      <br><em>Καλύτερα με:</em> Άλλα ζώδια του Νερού (ψυχικός δεσμός) ή ζώδια της Γης (το δοχείο για το νερό τους).</p>
+      <h3>💧 Water Signs (Cancer, Scorpio, Pisces)</h3>
+      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
+      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
+      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
 
-      <h2 id="love-planets">Οι Πραγματικοί Πλανήτες της Αγάπης: Αφροδίτη, Άρης & Σελήνη</h2>
-      <p>Αν θέλετε να μάθετε αν θα τα πηγαίνετε καλά στην καθημερινότητα, ο έλεγχος της συμβατότητας των ζωδίων του Ήλιου δεν αρκεί. Πρέπει να κοιτάξετε πιο προσεκτικά τρεις συγκεκριμένους πλανήτες στον χάρτη του συντρόφου σας:</p>
+      <h2 id="love-planets">The Real Love Planets: Venus, Mars & The Moon</h2>
+      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
 
-      <h3>1. Η Σελήνη 🌙 (Συναισθηματική Ασφάλεια)</h3>
-      <p>Σε έναν μακροχρόνιο γάμο ή συγκατοίκηση, <strong>η συμβατότητα της Σελήνης είναι βασιλιάς</strong>. Το ζώδιο της Σελήνης σας υπαγορεύει τι χρειάζεστε για να νιώθετε ασφαλείς, πώς αντιδράτε όταν είστε κουρασμένοι ή πεινασμένοι, και πώς φροντίζετε τους άλλους. 
-      <br><em>Παράδειγμα:</em> Ένας Κριός Ήλιος μπορεί να φαίνεται σκληρός, αλλά αν έχει Σελήνη στον Καρκίνο, είναι στην πραγματικότητα πολύ ευαίσθητος και χρειάζεται αγκαλιές και επιβεβαίωση στο σπίτι.</p>
+      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
+      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
+      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
 
-      <h3>2. Αφροδίτη ♀ (Ρομαντισμός & Αξίες)</h3>
-      <p>Η Αφροδίτη καθορίζει τι βρίσκετε όμορφο και τι εκτιμάτε. Δείχνει το "στυλ φλερτ" σας.
-      <br><em>Συμβουλή:</em> Αν τα ζώδια της Αφροδίτης σας είναι στο ίδιο στοιχείο, τα γούστα και οι συνήθειες εξόδων σας πιθανότατα θα ταιριάζουν εύκολα.</p>
+      <h3>2. Venus ♀ (Romance & Values)</h3>
+      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
+      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
 
-      <h3>3. Άρης ♂ (Πάθος & Σύγκρουση)</h3>
-      <p>Ο Άρης είναι ο πλανήτης της λίμπιντο και της σύγκρουσης. Δείχνει πώς τσακώνεστε και πώς κάνετε σεξ.
-      <br><em>Συμβουλή:</em> Τα συμβατά ζώδια στον Άρη εξασφαλίζουν ότι οι διαφωνίες επιλύονται γρήγορα και ότι η φυσική χημεία παραμένει ζωντανή.</p>
+      <h3>3. Mars ♂ (Passion & Argument)</h3>
+      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
+      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
 
-      <h2 id="challenging-matches">Η Αλήθεια για τα "Κακά" Ταιριάσματα</h2>
-      <p>Τι γίνεται αν ερωτευτείτε ένα ζώδιο που είναι "ασύμβατο"; Για παράδειγμα, ένας Λέων (Φωτιά) και ένας Σκορπιός (Νερό);</p>
+      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
+      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
       
-      <p>Αυτές οι σχέσεις είναι συχνά οι πιο <strong>μεταμορφωτικές</strong>. Η αστρολογία ονομάζει αυτές τις όψεις "Τετράγωνο" ή "Χιαστί". Δημιουργούν τριβή. Αλλά η τριβή παράγει θερμότητα! Τα "προκλητικά" ταιριάσματα σας αναγκάζουν να εξελιχθείτε, να μάθετε μια νέα γλώσσα και να βγείτε από τη ζώνη άνεσής σας. Συχνά είναι συνδέσεις αδελφών ψυχών με υψηλό πάθος και δράμα, σχεδιασμένες για να εξελίξουν την ψυχή σας, ακόμα κι αν απαιτούν περισσότερη δουλειά.</p>
+      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
 
-      <h2 id="best-matches-deep-dive">Βαθιά Ανάλυση: Διάσημα Ζευγάρια Ζωδίων</h2>
+      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac Pairings</h2>
       
-      <h3>Το "Ζευγάρι Δύναμης": Κριός & Ζυγός</h3>
-      <p>Τα αντίθετα έλκονται! Ο Κριός είναι "Εγώ πρώτα", ο Ζυγός είναι "Εμείς πρώτα". Ο Κριός διδάσκει στον Ζυγό διεκδικητικότητα. Ο Ζυγός διδάσκει στον Κριό διπλωματία. Είναι μια μαγνητική έλξη που δύσκολα σπάει.</p>
+      <h3>The "Power Couple": Aries & Libra</h3>
+      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
 
-      <h3>Οι "Χτίστες Αυτοκρατορίας": Ταύρος & Αιγόκερως</h3>
-      <p>Δύο ζώδια της γης που εκτιμούν την ποιότητα, το χρήμα και την ασφάλεια. Χτίζουν τεράστια επιτυχία μαζί, αν και πρέπει να θυμούνται να διασκεδάζουν και όχι μόνο να δουλεύουν.</p>
+      <h3>The "Empire Builders": Taurus & Capricorn</h3>
+      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
       
-      <h3>Το Δίδυμο "Πίτερ Παν": Δίδυμοι & Τοξότης</h3>
-      <p>Αέρας και Φωτιά. Και οι δύο αγαπούν την ελευθερία, τα ταξίδια και τη φιλοσοφία. Μπορεί να μην νοικοκυρευτούν ποτέ με την παραδοσιακή έννοια, αλλά θα είναι συνεργάτες στο έγκλημα για πάντα.</p>
+      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
+      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
 
-      <h3>Ο "Ψυχικός Δεσμός": Καρκίνος & Σκορπιός</h3>
-      <p>Όταν συναντιούνται αυτά τα δύο ζώδια του νερού, ο κόσμος εξαφανίζεται. Έχουν μια τηλεπαθητική σύνδεση και κτητικότητα που τους κάνει τρομερά πιστούς ο ένας στον άλλον.</p>
+      <h3>The "Psychic Link": Cancer & Scorpio</h3>
+      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
       
-      <h2 id="synastry">Προχωρημένη Συμβατότητα: Συναστρία</h2>
-      <p>Για να πάρετε την πραγματική απάντηση για τη σχέση σας, χρειάζεστε μια <strong>Ανάλυση Συναστρίας</strong>. Αυτό περιλαμβάνει την τοποθέτηση του χάρτη σας πάνω στον χάρτη του συντρόφου σας.</p>
+      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
+      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
       
-      <p>Αναζητούμε συνδέσεις όπως:
-      <br><strong>Σύνοδοι Ήλιου-Σελήνης:</strong> Η κλασική όψη "συζύγων".
-      <br><strong>Ανταλλαγές Αφροδίτης-Άρη:</strong> Απίστευτη σεξουαλική έλξη.
-      <br><strong>Επαφές Κρόνου:</strong> Η κόλλα που κρατά τους ανθρώπους μαζί για μια ζωή (ακόμα και σε δύσκολες στιγμές).</p>
+      <p>We look for connections like:
+      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
+      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
+      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
       
-      <p>Στο Astralo, οι προηγμένοι αλγόριθμοί μας και οι ειδικοί αστρολόγοι μας δεν σας δίνουν απλώς ένα ποσοστό. Δημιουργούμε έναν χάρτη της ψυχής της σχέσης σας. Σταματήστε να μαντεύετε και αρχίστε να κατανοείτε τον κοσμικό σκοπό της ένωσής σας.</p>
+      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
     `
 };

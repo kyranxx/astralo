@@ -1,64 +1,88 @@
 /**
- * Zodiac Compatibility - Swedish (Svenska)
+ * zodiac-compatibility-complete-guide - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: '❤️ Stjärnteckens kompatibilitet: Den definitiva guiden till kosmisk kärlek',
-    excerpt: 'Den ultimata guiden till stjärnteckens kompatibilitet för 2026. Gå bortom soltecken och upptäck hur element, Venus och Mars påverkar din romantiska kemi.',
-    category: 'Kärlek & relationer',
-    metaDescription: 'Den ultimata guiden till stjärnteckens kompatibilitet för 2026. Upptäck hur element, Venus och Mars påverkar din romantiska kemi och långsiktiga potential.',
-    keywords: 'stjärntecken kompatibilitet, kärlekshoroskop, synastri, teckenmatchning, venus i kärlek, mars och passion, relationsastrologi',
-    quickSummary: [
-        'Sann kompatibilitet innebär att man jämför hela födelsehoroskop (synastri), inte bara soltecken',
-        'Elementär balans (Eld, Jord, Luft, Vatten) är grunden för harmoni i förhållandet',
-        ' "Inkompatibla" tecken erbjuder ofta de största möjligheterna för själens utveckling',
-        'Venus bestämmer stilen på tillgivenhet, medan Mars driver passion och konfliktstil'
-    ],
-    keyTakeaways: [
-        'Leta efter trigoner (samma element) för enkelhet, och oppositioner för intensiv attraktion',
-        'Månteckens kompatibilitet är avgörande för att leva ihop och emotionell trygghet',
-        'Merkurius kompatibilitet dikterar hur väl ni löser problem tillsammans',
-        'Det finns ingen "perfekt" matchning; varje par har styrkor och utmaningar'
-    ],
-    tableOfContents: [
-        { id: 'beyond-sun-signs', title: 'Varför soltecken inte är allt' },
-        { id: 'elemental-love', title: 'De 4 elementen i kärlek' },
-        { id: 'love-planets', title: 'Venus, Mars & Månen' },
-        { id: 'challenging-matches', title: 'Sanningen om "dåliga" matchningar' },
-        { id: 'best-matches-deep-dive', title: 'Djupdykning: Bästa matchningarna' },
-        { id: 'synastry', title: 'Avancerat tips: Synastri' }
-    ],
+    title: "❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love",
+    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    category: "Love & Relationships",
+    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
+    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
+    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
+    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
+    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
     content: `
-      <h2 id="beyond-sun-signs">Varför soltecken inte är allt</h2>
-      <p>Vi har alla varit där: kollat en app för att se om vår crush passar med oss. "Åh nej, jag är Lejon och han är Skorpion – vi är dömda!" Men vänta lite. <strong>Stjärnteckens kompatibilitet</strong> är oändligt mycket mer komplext och hoppfullt än en enkel tabellmatchning.</p>
+      <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
+      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
       
-      <p>Medan ditt soltecken representerar ditt ego och livssyfte, byggs relationer på känslor, kommunikation och värderingar. För att verkligen förstå <strong>kärleksmatchningar</strong> måste vi titta på hela bilden av himlen.</p>
+      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 
-      <h2 id="elemental-love">De 4 elementen i kärlek</h2>
-      <p>Det snabbaste sättet att mäta den första kemin är genom elementen. Tecken i samma element talar generellt "samma språk".</p>
+      <h2 id="elemental-love">The 4 Elements in Love</h2>
+      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
       
-      <ul>
-        <li><strong>Eldtecken (Väduren, Lejonet, Skytten):</strong> Behöver passion, äventyr och någon som håller deras tempo.</li>
-        <li><strong>Jordtecken (Oxen, Jungfrun, Stenbocken):</strong> Söker stabilitet, uppbyggnad och praktiska bevis på kärlek.</li>
-        <li><strong>Lufttecken (Tvillingarna, Vågen, Vattumannen):</strong> Behöver intellektuell stimulans, konversation och frihet.</li>
-        <li><strong>Vattentecken (Kräftan, Skorpionen, Fiskarna):</strong> Söker djup emotionell kontakt, intimitet och förståelse utan ord.</li>
-      </ul>
+      <h3>🔥 Fire Signs (Aries, Leo, Sagittarius)</h3>
+      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
+      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
+      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
 
-      <h2 id="love-planets">De verkliga kärleksplaneterna: Venus, Mars & Månen</h2>
-      <p>För vardagen är dessa punkter avgörande:</p>
-      <ul>
-        <li><strong>Månen 🌙 (Emotionell trygghet):</strong> I ett långsiktigt förhållande är månteckens kompatibilitet kung. Det avgör vad du behöver för att känna dig trygg.</li>
-        <li><strong>Venus ♀ (Romantik & värderingar):</strong> Bestämmer din flörtstil och vad du värdesätter hos en partner.</li>
-        <li><strong>Mars ♂ (Passion & konflikter):</strong> Är planeten för libido och konflikter. Den visar hur ni bråkar och lever ut passion.</li>
-      </ul>
+      <h3>🌍 Earth Signs (Taurus, Virgo, Capricorn)</h3>
+      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
+      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
+      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
 
-      <h2 id="challenging-matches">Sanningen om "dåliga" matchningar</h2>
-      <p>Vad händer om du blir kär i ett "inkompatibelt" tecken? Dessa förhållanden är ofta de mest <strong>transformerande</strong>. Inom astrologin skapar de friktion, men friktion genererar värme! Utmaningarna tvingar dig att växa och kliva utanför din komfortzon.</p>
+      <h3>💨 Air Signs (Gemini, Libra, Aquarius)</h3>
+      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
+      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
+      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
 
-      <h2 id="synastry">Avancerad kompatibilitet: Synastri</h2>
-      <p>Det verkliga svaret om din relation finns i <strong>synastri</strong>. Det innebär att man lägger ditt horoskop över din partners för att hitta djupa kopplingar.</p>
+      <h3>💧 Water Signs (Cancer, Scorpio, Pisces)</h3>
+      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
+      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
+      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+
+      <h2 id="love-planets">The Real Love Planets: Venus, Mars & The Moon</h2>
+      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+
+      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
+      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
+      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+
+      <h3>2. Venus ♀ (Romance & Values)</h3>
+      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
+      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+
+      <h3>3. Mars ♂ (Passion & Argument)</h3>
+      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
+      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+
+      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
+      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
       
-      <p>På Astralo ger våra avancerade algoritmer inte bara procentsatser. Vi skapar en karta över din relations själ. Sluta gissa och börja förstå det kosmiska syftet med din förening.</p>
+      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+
+      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac Pairings</h2>
+      
+      <h3>The "Power Couple": Aries & Libra</h3>
+      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+
+      <h3>The "Empire Builders": Taurus & Capricorn</h3>
+      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      
+      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
+      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+
+      <h3>The "Psychic Link": Cancer & Scorpio</h3>
+      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      
+      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
+      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      
+      <p>We look for connections like:
+      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
+      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
+      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      
+      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
     `
 };

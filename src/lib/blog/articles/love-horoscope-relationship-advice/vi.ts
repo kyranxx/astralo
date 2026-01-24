@@ -1,34 +1,17 @@
 /**
- * love-horoscope-relationship-advice - VI (Fallback to English content)
+ * love-horoscope-relationship-advice - VI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: '💕 Love Horoscope 2026: The Master Guide to Zodiac Romance',
-    excerpt: 'Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.',
-    category: 'Love & Relationships',
-    metaDescription: 'Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.',
-    keywords: 'love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility',
-    quickSummary: [
-        'Your Love Language is dictated by your Venus Sign, not just your Sun Sign',
-        'The 7th House in your chart describes your ideal long-term partner',
-        'Mars determines how you pursue romantic interests and sexual chemistry',
-        'Relationship timing is everything—never marry during Venus Retrograde'
-    ],
-    keyTakeaways: [
-        'If you want to know how someone flirts, look at their Venus sign',
-        'If you want to know how someone fights or has sex, look at their Mars sign',
-        'The "Descendant" (opposite your Rising Sign) is usually the sign you are most attracted to',
-        'Synastry is the art of comparing two charts to see if a relationship is built to last'
-    ],
-    tableOfContents: [
-        { id: 'love-guide', title: 'Love is a Skill' },
-        { id: 'venus-signs', title: 'Venus: What You Love' },
-        { id: 'mars-signs', title: 'Mars: How You Lust' },
-        { id: '7th-house', title: 'The 7th House of Marriage' },
-        { id: 'retrograde-love', title: 'Surviving Retrograde Romance' },
-        { id: 'partner-analysis', title: 'Compatibility Analysis' }
-    ],
+    title: "💕 Love Horoscope 2026: The Master Guide to Zodiac Romance",
+    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    category: "Love & Relationships",
+    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
+    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
+    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
+    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
     content: `
       <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
       <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>

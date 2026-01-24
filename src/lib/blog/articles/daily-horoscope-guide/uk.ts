@@ -1,121 +1,101 @@
 /**
- * Daily Horoscope Guide - Ukrainian (Українська)
- * SEO Keywords: щоденний гороскоп, гороскоп на сьогодні, знаки зодіаку, асцендент
+ * daily-horoscope-guide - UK
  */
-
 import type { BlogPostTranslation } from '../../types';
 
 export const uk: BlogPostTranslation = {
-    title: '⭐ Щоденний гороскоп 2026: Повний посібник з розуміння ваших прогнозів',
-    excerpt: 'Дізнайтеся, як зірки впливають на ваше життя сьогодні і чому ваш асцендент є ключем до точності.',
-    category: 'Астрологія 101',
-    metaDescription: 'Опануйте свої щоденні гороскопічні прогнози. Всебічний посібник з розуміння того, як працює щоденна астрологія, чому важливий ваш асцендент і як використовувати планетарну енергію.',
-    keywords: 'щоденний гороскоп, гороскоп на сьогодні, щоденний зодіак, посібник з гороскопу, розуміння астрології, щоденний асцендент, планетарні транзити',
-    quickSummary: [
-        'Щоденні гороскопи базуються на швидкому русі Місяця та планетарних аспектах до вашої карти',
-        'Читання за вашим асцендентом (висхідним знаком) часто забезпечує вищу точність щоденних прогнозів',
-        'Планетарні транзити щодня запускають конкретні події, емоції та можливості',
-        'Навчіться використовувати періоди Місяця "без курсу" (Void-of-Course), щоб уникнути марних зусиль'
-    ],
-    keyTakeaways: [
-        'Ваш сонячний знак показує вашу життєву силу, але ваш асцендент визначає "сцену" для повсякденного життя',
-        'Місяць змінює знак кожні 2,5 дні, диктуючи колективний настрій',
-        'Ретроградний Меркурій та інші "погані" аспекти насправді є періодами для перегляду та перекалібрування',
-        'Інтеграція астрології у вашу ранкову рутину може оптимізувати вашу продуктивність та стосунки'
-    ],
-    tableOfContents: [
-        { id: 'introduction', title: 'Навіщо читати щоденний гороскоп?' },
-        { id: 'science-behind-it', title: 'Механіка: Як це працює' },
-        { id: 'rising-vs-sun', title: 'Золоте правило: Сонце проти Асцендента' },
-        { id: 'planetary-players', title: 'Ключові планетарні гравці' },
-        { id: 'zodiac-daily-styles', title: 'Щоденні стилі 12 знаків' },
-        { id: 'practical-rituals', title: 'Щоденні астрологічні ритуали' },
-        { id: 'myth-busting', title: 'Розвінчання поширених міфів' }
-    ],
+    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
+    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    category: "Astrology 101",
+    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
+    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
+    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
+    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
+    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
     content: `
-      <h2 id="introduction">Навіщо читати щоденний гороскоп?</h2>
-      <p>Для мільйонів людей у всьому світі перевірка <strong>щоденного гороскопу</strong> так само важлива, як ранкова чашка кави. Це момент паузи, ритуал саморефлексії та спосіб підготуватися до енергії дня. Але чи замислювалися ви коли-небудь, що насправді стоїть за цими прогнозами? Це просто випадкові поради чи за кулісами працює складний космічний механізм?</p>
+      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
+      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
       
-      <p>В Astralo ми віримо, що астрологія — це інструмент розширення можливостей. Добре написаний гороскоп не просто передбачає майбутнє; він допомагає вам його <em>створити</em>. Розуміючи космічну погоду — положення планет сьогодні відносно того, де вони були під час вашого народження — ви можете проходити крізь виклики з грацією та хапатися за можливості, які інакше могли б пройти повз вас.</p>
+      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
 
-      <h2 id="science-behind-it">Механіка: Як це працює</h2>
-      <p>Астрологію часто називають дослідженням циклів. Ваші <strong>щоденні гороскопічні прогнози</strong> розраховуються за допомогою техніки, яка називається "транзити". Уявіть, що ваша натальна карта — це постійний знімок неба в момент вашого народження. Однак планети продовжують рухатися. "Транзити" виникають, коли планета, що рухається по небу, утворює математичний кут (аспект) до планети у вашій натальній карті.</p>
+      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
+      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
       
-      <h3>Місяць: Хвилинна стрілка долі</h3>
-      <p>Хоча планетам, як-от Юпітер, потрібен рік, щоб змінити знак, <strong>Місяць</strong> рухається надзвичайно швидко, проходячи крізь знак зодіаку всього за 2,5 дні. Це робить Місяць головним рушієм вашого <em>щоденного</em> настрою та емоційного ландшафту. Коли Місяць у вогняному Овні, ми відчуваємо себе імпульсивними та енергійними. Коли він переходить у земного Тельця, ми колективно сповільнюємось і прагнемо комфорту.</p>
+      <h3>The Moon: The Minute Hand of Fate</h3>
+      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
 
-      <h3>Аспекти: Розмови між планетами</h3>
-      <p>Планети "розмовляють" одна з одною через кути. <strong>Тригон (120°)</strong> — це гармонійна розмова, що приносить легкість і удачу. <strong>Квадратура (90°)</strong> — це точка напруги, що змушує до дії або рішення. Ваш щоденний гороскоп інтерпретує ці розмови. Якщо Марс (дія) утворює квадратуру з Сатурном (обмеження) на небі, сьогодні ви можете відчувати розчарування або бути заблокованими. Знання про це допомагає бути терплячими, замість того щоб силою відчиняти двері, які не відчиняться.</p>
+      <h3>The Aspects: Conversations Between Planets</h3>
+      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
 
-      <h2 id="rising-vs-sun">Золоте правило: Читайте за своїм асцендентом</h2>
-      <p>Ось секрет, який знають професійні астрологи: <strong>Для найбільш точного щоденного прогнозу варто читати гороскоп за вашим асцендентом (висхідним знаком), а не лише за сонячним знаком.</strong></p>
+      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Sign</h2>
+      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
       
-      <p>Чому? Тому що гороскопи пишуться за допомогою "системи домів". Ваш асцендент визначає розташування 12 домів у вашій карті. 1-й дім — це ви, 2-й — гроші, 7-й — стосунки і так далі. Коли астролог пише "Овен матиме сьогодні фінансову можливість", він дивиться на планетарні рухи крізь 2-й дім карти з асцендентом в Овні.</p>
+      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
       <ul>
-        <li><strong>Читайте свій сонячний знак</strong> для загальних тем про ваше его, життєву силу та основну мету.</li>
-        <li><strong>Читайте свій асцендент</strong> для конкретних подій, часу та обставин, які трапляться з вами сьогодні.</li>
-        <li><strong>Читайте свій місячний знак</strong>, якщо хочете зрозуміти свій внутрішній емоційний стан.</li>
+        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
+        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
+        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
       </ul>
 
-      <h2 id="planetary-players">Ключові планетарні гравці у вашому дні</h2>
-      <p>Крім Місяця, інші швидкі "особисті планети" формують ваш повсякденний досвід:</p>
+      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
+      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
       <ul>
-        <li><strong>Меркурій:</strong> Управитель комунікації, технологій та подорожей. Його стан визначає, чи ваші електронні листи дійдуть до адресата, чи загубляться у спамі, а також чи буде ваша поїздка на роботу плавною чи хаотичною.</li>
-        <li><strong>Венера:</strong> Управителька любові, грошей та цінностей. Хороший день Венери ідеально підходить для побачень, покупок або прохання про підвищення зарплати.</li>
-        <li><strong>Mars:</strong> Двигун зодіаку. Він диктує ваш рівень енергії, драйв і лібідо. Складний день Марса може призвести до вигорання або суперечок, якщо не спрямувати енергію у фізичні вправи або важку працю.</li>
+        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
+        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
+        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Щоденні стилі 12 знаків</h2>
+      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Signs</h2>
       
-      <h3>Овен (21 березня - 19 квітня)</h3>
-      <p><strong>Driven by Mars.</strong> Вам потрібен фізичний рух, щоб переробити денну енергію. Гороскоп Овна часто фокусується на ініціативах, конфліктах, які потрібно вирішити, та моментах лідерства. <em>Найкраща щоденна звичка:</em> Ранкове кардіо.</p>
+      <h3>♈ Aries (March 21 - April 19)</h3>
+      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
 
-      <h3>Телець (20 квітня - 20 травня)</h3>
-      <p><strong>Guverned by Venus.</strong> Ви сприймаєте день через свої відчуття. Ваш гороскоп часто виділяє фінансові кроки та фізичний комфорт. <em>Найкраща щоденна звичка:</em> Свідомий, смачний сніданок.</p>
+      <h3>♉ Taurus (April 20 - May 20)</h3>
+      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
 
-      <h3>Близнюки (21 травня - 20 червня)</h3>
-      <p><strong>Guverned by Mercury.</strong> Інформація — це ваше паливо. Ваш щоденний прогноз обертається навколо розмов, навчання та коротких поїздок. <em>Найкраща щоденна звичка:</em> Ведення щоденника або ранковий подкаст.</p>
+      <h3>♊ Gemini (May 21 - June 20)</h3>
+      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
 
-      <h3>Рак (21 червня - 22 липня)</h3>
-      <p><strong>Guverned by the Moon.</strong> Ви найбільш циклічний знак. Ваше читання часто зосереджено на домі, сім'ї та емоційній безпеці. <em>Найкраща щоденна звичка:</em> Контакт з близькою людиною.</p>
+      <h3>♋ Cancer (June 21 - July 22)</h3>
+      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
 
-      <h3>Лев (23 липня - 22 серпня)</h3>
-      <p><strong>Guverned by the Sun.</strong> Вам потрібно виражати себе. Леви часто знаходять теми творчості, романтики та визнання у своєму дні. <em>Найкраща щоденна звичка:</em> Вибір одягу, в якому ви почуваєтеся впевнено.</p>
+      <h3>♌ Leo (July 23 - August 22)</h3>
+      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
 
-      <h3>Діва (23 серпня - 22 вересня)</h3>
-      <p><strong>Guverned by Mercury.</strong> Порядок приносить вам спокій. Ваш гороскоп часто вказуватиме на робочі завдання, рутини здоров'я та служіння. <em>Найкраща щоденна звичка:</em> Складання списку справ.</p>
+      <h3>♍ Virgo (August 23 - September 22)</h3>
+      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
 
-      <h3>Терези (23 вересня - 22 жовтня)</h3>
-      <p><strong>Guverned by Venus.</strong> Баланс — це ключ. Ви шукаєте гармонію у стосунках. Ваші щоденні інсайти часто фокусуються на партнерстві та естетиці. <em>Найкраща щоденна звичка:</em> Медитація або збалансування вашого оточення.</p>
+      <h3>♎ Libra (September 23 - October 22)</h3>
+      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
 
-      <h3>Скорпіон (23 жовтня - 21 листопада)</h3>
-      <p><strong>Guverned by Pluto & Mars.</strong> Ви шукаєте глибину. Поверхневі дні вам набридають; ваш гороскоп підкреслює трансформацію, таємниці та спільні ресурси. <em>Найкраща щоденна звичка:</em> Глибоке дослідження або особиста рефлексія.</p>
+      <h3>♏ Scorpio (October 23 - November 21)</h3>
+      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
 
-      <h3>Стрілець (22 листопада - 21 грудня)</h3>
-      <p><strong>Guverned by Jupiter.</strong> Ви прагнете розширення. Ваш день часто про загальну картину, філософію або іноземні впливи. <em>Найкраща щоденна звичка:</em> Вивчення чогось зовсім нового.</p>
+      <h3>♐ Sagittarius (November 22 - December 21)</h3>
+      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
 
-      <h3>Козоріг (22 грудня - 19 січня)</h3>
-      <p><strong>Guverned by Saturn.</strong> Ви будуєте спадщину. Щоденні теми для вас часто стосуються кар'єри, репутації та довгострокових цілей. <em>Найкраща щоденна звичка:</em> Виконання найскладнішого завдання першим.</p>
+      <h3>♑ Capricorn (December 22 - January 19)</h3>
+      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
 
-      <h3>Водолій (20 січня - 18 лютого)</h3>
-      <p><strong>Guverned by Uranus & Saturn.</strong> Ви дивитесь у майбутнє. Ваш гороскоп підкреслює соціальні мережі, технології та інновації. <em>Найкраща щоденна звичка:</em> Зв'язок зі своєю спільнотою.</p>
+      <h3>♒ Aquarius (January 20 - February 18)</h3>
+      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
 
-      <h3>Риби (19 лютого - 20 березня)</h3>
-      <p><strong>Guverned by Neptune & Jupiter.</strong> Ви дрейфуєте між світами. Ваше щоденне керівництво часто є духовним, мистецьким або інтуїтивним. <em>Найкраща щоденна звичка:</em> Записування снів або творча візуалізація.</p>
+      <h3>♓ Pisces (February 19 - March 20)</h3>
+      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
 
-      <h2 id="practical-rituals">Щоденні астрологічні ритуали</h2>
-      <p>Як ви можете використовувати цю інформацію? Не просто читайте її — живіть нею.</p>
+      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
+      <p>How can you use this information? Don't just read it—live it.</p>
       <ol>
-        <li><strong>Ранкова перевірка:</strong> Прочитайте прогноз <em>перед</em> тим, як перевіряти пошту. Це задає космічний намір.</li>
-        <li><strong>Зверніть увагу на знак Місяця:</strong> Якщо Місяць у Діві, приберіть на столі. Якщо у Терезах, зателефонуйте бізнес-партнеру. Плисти за течією завжди легше.</li>
-        <li><strong>Поважайте "Порожнечу":</strong> Місяць "без курсу" — це період, коли Місяць більше не утворює аспектів перед зміною знака. Це час неясності. Ніколи не підписуйте контракти і не запускайте бізнес під час Порожнечі. Використовуйте цей час для відпочинку.</li>
+        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
+        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
+        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
       </ol>
 
-      <h2 id="myth-busting">Розвінчання поширених міфів</h2>
-      <p><strong>"Гороскопи надто розмиті."</strong> <br>Загальні газетні гороскопи розмиті, тому що вони дивляться лише на сонячні знаки. Персоналізоване читання, подібне до тих, що генеруються нашим складним ШІ в Astralo, враховує нюанси всієї вашої карти.</p>
-      <p><strong>"Астрологія передбачає незмінну долю."</strong> <br>Невірно. Астрологія передбачає <em>енергію</em> та <em>погоду</em>. Може йти дощ (важкий транзит), але ви вирішуєте, чи брати парасольку, чи танцювати під ним. У вас завжди є вільна воля.</p>
+      <h2 id="myth-busting">Busting Common Myths</h2>
+      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
+      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
       
-      <h3>Готові зануритися глибше?</h3>
-      <p>Хоча загальні прогнози корисні, ніщо не замінить читання, отримане на основі вашого точного часу та місця народження. Ваша унікальна натальна карта — це складна карта, якою не володіє жодна інша людина. Розкрийте повний потенціал свого космічного дизайну з преміальними персоналізованими читаннями від Astralo.</p>
+      <h3>Ready to Dive Deeper?</h3>
+      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
     `
 };

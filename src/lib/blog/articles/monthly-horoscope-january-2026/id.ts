@@ -1,34 +1,17 @@
 /**
- * monthly-horoscope-january-2026 - ID (Fallback to English content)
+ * monthly-horoscope-january-2026 - ID
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: '🌙 Monthly Horoscope January 2026: The Dawn of a New Era',
-    excerpt: 'Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.',
-    category: 'Horoscopes',
-    metaDescription: 'Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.',
-    keywords: 'monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer',
-    quickSummary: [
-        'January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts',
-        'The New Moon in Capricorn (Jan 1) is the perfect "New Year\'s Resolution" energy',
-        'Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication',
-        'Mars Retrograde in Cancer brings unresolved family conflicts to the surface'
-    ],
-    keyTakeaways: [
-        'Use the first week of January for strategic planning only; delay action until mid-month',
-        'Expect sudden technological breakthroughs or disruptions as Uranus activates',
-        'Relationships face a reality check near the Full Moon in Cancer on Jan 14',
-        'Financial markets may be volatile; stick to long-term safe investments'
-    ],
-    tableOfContents: [
-        { id: 'monthly-overview', title: 'The Astrology of January' },
-        { id: 'key-transits', title: 'Key Dates & Transits' },
-        { id: 'fire-signs', title: 'Fire Signs (Aries, Leo, Sag)' },
-        { id: 'earth-signs', title: 'Earth Signs (Taurus, Virgo, Cap)' },
-        { id: 'air-signs', title: 'Air Signs (Gemini, Libra, Aqua)' },
-        { id: 'water-signs', title: 'Water Signs (Cancer, Scorpio, Pisces)' }
-    ],
+    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
+    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
+    category: "Horoscopes",
+    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
+    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
+    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
+    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
+    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
     content: `
       <h2 id="monthly-overview">The Astrology of January 2026</h2>
       <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>

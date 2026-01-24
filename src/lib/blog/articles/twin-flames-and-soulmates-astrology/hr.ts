@@ -1,48 +1,18 @@
 /**
- * twin-flames-and-soulmates-astrology - HR (Fallback to English content)
+ * twin-flames-and-soulmates-astrology - HR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-  title: '🔥 Twin Flames, Soulmates, and Karma: The Astrology of Deep Connections',
-  excerpt: 'Is it love, or is it fate? Explore the mystical world of relationship astrology. Learn how to identify Twin Flames, Soulmates, and Karmic lessons in your birth chart.',
-  category: 'Love & Relationships',
-  metaDescription: 'Complete guide to the astrology of deep connections. Discover the difference between twin flames and soulmates, learn synastry aspects for lifelong love, and understand karmic roles.',
-  keywords: 'twin flames, soulmates, karmic relationships, synastry, composite charts, north node love, soulmate aspects, venus conjunct mars, saturn synastry, asteroid love astrology, vertex astrology, pallas athene, juno, eros',
-  quickSummary: [
-    'A Soulmate is someone from your soul family who supports your growth and makes life feel "home."',
-    'A Twin Flame is your "mirror soul," designed to trigger intense transformation and ego death.',
-    'Karmic Partners arrive to help you settle "spiritual debts" and learn difficult life lessons.',
-    'Astrology uses Synastry (comparing two charts) and Composite Charts (the energy of the relationship itself).'
-  ],
-  keyTakeaways: [
-    'Saturn aspects in synastry are the "glue" that keeps a couple together through hard times.',
-    'The South Node indicates past-life connections, while the North Node shows your future destiny together.',
-    'Venus and Mars aspects determine the sexual and romantic "spark," but they don\'t guarantee longevity.',
-    'Most "Twin Flame" stories in pop culture are actually high-intensity karmic relationships.'
-  ],
-  tableOfContents: [
-    { id: 'introduction', title: 'Beyond the Spark: The Mystery of Connection' },
-    { id: 'definitions', title: 'Soulmates vs. Twin Flames vs. Karmic Partners' },
-    { id: 'synastry', title: 'Synastry: How We Impact Each Other' },
-    { id: 'personal-planets', title: 'The Big Three of Love: Sun, Moon, and Ascendant' },
-    { id: 'love-planets', title: 'The Spark: Venus & Mars Dynamic' },
-    { id: 'the-glue', title: 'The Long Haul: Saturn, Jupiter & The Outer Planets' },
-    { id: 'the-nodes', title: 'The Nodes: Past Lives & Soul Destiny' },
-    { id: 'the-vertex', title: 'The Vertex: Fated Encounters' },
-    { id: 'asteroids', title: 'Asteroids of Love: Juno, Eros, and Psyche' },
-    { id: 'composite-charts', title: 'The Composite Chart: The Entity of "Us"' },
-    { id: 'house-overlays', title: 'House Overlays: Where We Live in Each Other\'s Lives' },
-    { id: 'twin-flames-signs', title: 'Twin Flame Dynamics Through the 12 Signs' },
-    { id: 'karmic-elements', title: 'Karmic Relationships by Element' },
-    { id: 'famous-cases', title: 'Fated Unions: Famous Astrology Case Studies' },
-    { id: 'red-flags', title: 'Astrological Red Flags: When Love Becomes Toxic' },
-    { id: 'timing', title: 'Timing the One: Transits & Progressions' },
-    { id: 'healing', title: 'Healing from a Twin Flame Split' },
-    { id: 'faq', title: 'Relationship Astrology FAQs' },
-    { id: 'conclusion', title: 'The True Meaning of Love' }
-  ],
-  content: `
+    title: "🔥 Twin Flames, Soulmates, and Karma: The Astrology of Deep Connections",
+    excerpt: "Is it love, or is it fate? Explore the mystical world of relationship astrology. Learn how to identify Twin Flames, Soulmates, and Karmic lessons in your birth chart.",
+    category: "Love & Relationships",
+    metaDescription: "Complete guide to the astrology of deep connections. Discover the difference between twin flames and soulmates, learn synastry aspects for lifelong love, and understand karmic roles.",
+    keywords: "twin flames, soulmates, karmic relationships, synastry, composite charts, north node love, soulmate aspects, venus conjunct mars, saturn synastry, asteroid love astrology, vertex astrology, pallas athene, juno, eros",
+    quickSummary: ["A Soulmate is someone from your soul family who supports your growth and makes life feel \"home.\"","A Twin Flame is your \"mirror soul,\" designed to trigger intense transformation and ego death.","Karmic Partners arrive to help you settle \"spiritual debts\" and learn difficult life lessons.","Astrology uses Synastry (comparing two charts) and Composite Charts (the energy of the relationship itself)."],
+    keyTakeaways: ["Saturn aspects in synastry are the \"glue\" that keeps a couple together through hard times.","The South Node indicates past-life connections, while the North Node shows your future destiny together.","Venus and Mars aspects determine the sexual and romantic \"spark,\" but they don't guarantee longevity.","Most \"Twin Flame\" stories in pop culture are actually high-intensity karmic relationships."],
+    tableOfContents: [{"id":"introduction","title":"Beyond the Spark: The Mystery of Connection"},{"id":"definitions","title":"Soulmates vs. Twin Flames vs. Karmic Partners"},{"id":"synastry","title":"Synastry: How We Impact Each Other"},{"id":"personal-planets","title":"The Big Three of Love: Sun, Moon, and Ascendant"},{"id":"love-planets","title":"The Spark: Venus & Mars Dynamic"},{"id":"the-glue","title":"The Long Haul: Saturn, Jupiter & The Outer Planets"},{"id":"the-nodes","title":"The Nodes: Past Lives & Soul Destiny"},{"id":"the-vertex","title":"The Vertex: Fated Encounters"},{"id":"asteroids","title":"Asteroids of Love: Juno, Eros, and Psyche"},{"id":"composite-charts","title":"The Composite Chart: The Entity of \"Us\""},{"id":"house-overlays","title":"House Overlays: Where We Live in Each Other's Lives"},{"id":"twin-flames-signs","title":"Twin Flame Dynamics Through the 12 Signs"},{"id":"karmic-elements","title":"Karmic Relationships by Element"},{"id":"famous-cases","title":"Fated Unions: Famous Astrology Case Studies"},{"id":"red-flags","title":"Astrological Red Flags: When Love Becomes Toxic"},{"id":"timing","title":"Timing the One: Transits & Progressions"},{"id":"healing","title":"Healing from a Twin Flame Split"},{"id":"faq","title":"Relationship Astrology FAQs"},{"id":"conclusion","title":"The True Meaning of Love"}],
+    content: `
       <h2 id="introduction">Beyond the Spark: The Mystery of Connection</h2>
       <p>Have you ever met someone and felt an instant, unshakeable "pull" toward them? A feeling that you have known them for lifetimes, even though you just met? Or perhaps you are in a relationship that is so intense it feels like it's burning you from the inside out. In the modern world, we use words like **Soulmate** and **Twin Flame** to describe these experiences, but astrology gives us the technical map of *why* they happen.</p>
       

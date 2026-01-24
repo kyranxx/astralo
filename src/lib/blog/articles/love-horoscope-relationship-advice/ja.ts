@@ -1,73 +1,56 @@
 /**
- * Love Horoscope - Japanese (日本語)
+ * love-horoscope-relationship-advice - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: '💕 恋愛運勢2026：星座のロマンス完全ガイド',
-    excerpt: '占星術であなたの恋愛生活を変えましょう。金星星座、結婚の第7ハウス、火星の情熱スタイル、そして恋愛関係における水星逆行の乗り越え方を深く掘り下げます。',
-    category: '恋愛と人間関係',
-    metaDescription: '占星術であなたの恋愛生活を変えましょう。金星星座、結婚の第7ハウス、火星の情熱スタイル、そして恋愛関係における水星逆行の乗り越え方を深く掘り下げます。',
-    keywords: '恋愛運勢, 関係占星術, 金星星座の意味, 火星星座 デート, 7ハウス 結婚, シナストリーガイド, 星座デートのアドバイス, 恋愛相性',
-    quickSummary: [
-        'あなたの愛の言語は、太陽星座だけでなく、金星星座によって決まります',
-        'あなたのチャートの第7ハウスは、理想的な長期的なパートナーを表しています',
-        '火星は、あなたがどのようにロマンチックな興味を追求し、性的な相性を持つかを決定します',
-        '関係のタイミングがすべてです。金星逆行中は絶対に結婚しないでください'
-    ],
-    keyTakeaways: [
-        '誰かがどのように誘惑するかを知りたい場合は、その人の金星星座を見てください',
-        '誰かがどのように戦うか、またはセックスするかを知りたい場合は、その人の火星星座を見てください',
-        '「ディセンダント」（アセンダントの反対側）は通常、あなたが最も惹かれる星座です',
-        'シナストリーは、2つのチャートを比較して、関係が長続きするように構築されているかどうかを確認する芸術です'
-    ],
-    tableOfContents: [
-        { id: 'love-guide', title: '愛はスキルである' },
-        { id: 'venus-signs', title: '金星：あなたが愛するもの' },
-        { id: 'mars-signs', title: '火星：あなたがどう欲するか' },
-        { id: '7th-house', title: '第7ハウス：結婚のハウス' },
-        { id: 'retrograde-love', title: '逆行中のロマンスを生き抜く' },
-        { id: 'partner-analysis', title: '相性分析' }
-    ],
+    title: "💕 Love Horoscope 2026: The Master Guide to Zodiac Romance",
+    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    category: "Love & Relationships",
+    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
+    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
+    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
+    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
     content: `
-      <h2 id="love-guide">愛はスキルである（そして占星術はマニュアルである）</h2>
-      <p>私たちはしばしば、愛を単に私たちに「起こる」神秘的な力として扱います。しかし、占星術では、愛は歯車とレバーを備えたメカニズムです。あなたの<strong>恋愛運勢</strong>は、単なる偶然の出会いについてではありません。それはパートナーシップにおけるあなたの心理的ニーズの青写真です。</p>
+      <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
+      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
       
-      <p>なぜいつも同じ「悪い」タイプに惹かれるのでしょうか？なぜ3か月後にいつもコミュニケーションが途絶えるのでしょうか？答えはあなたのチャートにあります。あなた自身の宇宙的な愛のデザインを理解することで、あなたはパターンを繰り返すのをやめ、実際に望む関係を築き始めることができます。</p>
+      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
       
-      <h2 id="venus-signs">金星：愛情の芸術</h2>
-      <p><strong>金星</strong>は魅力、価値観、調和の惑星です。あなたが生まれたときに金星があった星座は、あなたが何美しいと感じ、どのように愛情を示すかを表しています。</p>
+      <h2 id="venus-signs">Venus: The Art of Affection</h2>
+      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
       <ul>
-        <li><strong>火の金星（牡羊座、獅子座、射手座）：</strong> 追跡を愛します。ドラマ、壮大なジェスチャー、自発性が必要です。飽きっぽいです。<em>アドバイス：</em>刺激的であり続けてください。</li>
-        <li><strong>地の金星（牡牛座、乙女座、山羊座）：</strong> 安定を愛します。コミットメント、信頼性、身体的接触が必要です。ゲームを嫌います。<em>アドバイス：</em>一貫性を保ってください。</li>
-        <li><strong>風の金星（双子座、天秤座、水瓶座）：</strong> 知性を愛します。会話、機知、そしてまずは友情が必要です。重い感情を避けます。<em>アドバイス：</em>興味深い人であってください。</li>
-        <li><strong>水の金星（蟹座、蠍座、魚座）：</strong> 魂を愛します。深い感情的な融合、脆弱性、安全性を必要とします。<em>アドバイス：</em>リアルであってください。</li>
+        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
+        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
+        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
+        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
       </ul>
 
-      <h2 id="mars-signs">火星：欲望のエンジン</h2>
-      <p>金星があなたの好きなものであるなら、<strong>火星</strong>はあなたがそれをどう手に入れるかです。火星はリビドー、追求、対立を支配します。</p>
-      <p>もしあなたが<strong>蠍座の火星</strong>を持っているなら、あなたは強烈で独占欲が強く、オール・オア・ナッシングです。単にいちゃついたり楽しんだりしたいだけの気まぐれな<strong>双子座の火星</strong>を怖がらせてしまうかもしれません。パートナーの火星星座を知ることは、別れることなく性的満足を得て議論を解決するためのチートコードです。</p>
+      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
+      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
+      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
 
-      <h2 id="7th-house">第7ハウス：あなたの「片割れ」</h2>
-      <p>あなたのアセンダント（上昇宮）を見てください。次に、その真っ直ぐ反対にある星座を見てください。これがあなたの<strong>ディセンダント（下降点）</strong>であり、パートナーシップの第7ハウスの支配星です。</p>
-      <p>私たちは、自分に欠けているものを持っているので、第7ハウスの資質を体現する人々に磁気的に惹かれることがよくあります。
-      <br><em>例：</em>規律正しい<strong>乙女座アセンダント</strong>は、しばしば夢見がちで混沌とした<strong>魚座（第7ハウス）</strong>と結婚します。乙女座は魚座の生活を整理し、魚座は乙女座にリラックスすることを教えます。それはバランスの軸です。</p>
+      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
+      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
+      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
+      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
 
-      <h2 id="retrograde-love">逆行中のロマンスを生き抜く</h2>
-      <p>水星逆行（コミュニケーションミス）については聞いたことがあるでしょうが、<strong>金星逆行</strong>こそが本当の関係のテスターです。18か月ごとに起こり、この時期には：
-      <br>1. 元恋人が戻ってくる（「ゾンビ化」）。
-      <br>2. 弱い関係が壊れる。
-      <br>3. 隠された浮気が明らかになる。</p>
+      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
+      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
+      <br>1. Exes come back ("Zombieing").
+      <br>2. Weak relationships break up.
+      <br>3. Hidden affairs are revealed.</p>
       
-      <p><strong>黄金律：</strong>金星逆行中に結婚したり、プロポーズしたり、大きな約束をしたりしないでください。シャドウ期間（通常40日）が過ぎるまで待って、それでも同じように感じているかどうかを確認してください。</p>
+      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
 
-      <h2 id="partner-analysis">パートナー相性分析</h2>
-      <p>あなたは複雑であり、パートナーもそうです。一般的な「獅子座＋水瓶座」の占いは、あなたのユニークなつながりのニュアンスを捉えることはできません。私たちの<strong>プレミアム関係レポート</strong>は以下を分析します：</p>
+      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
+      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
       <ul>
-        <li><strong>シナストリー：</strong> あなたの惑星が彼らの惑星にどのように触れるか（化学反応）。</li>
-        <li><strong>コンポジットチャート：</strong> 関係自体のエネルギー（運命）。</li>
-        <li><strong>デビソンチャート：</strong> あなたの出会いの目的（カルマ）。</li>
+        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
+        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
+        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
       </ul>
-      <p>あなたの心を偶然に任せないでください。Astraloであなたの愛の生活を解読しましょう。</p>
+      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
     `
 };

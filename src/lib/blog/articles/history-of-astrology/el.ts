@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Greek (Ελληνικά)
+ * history-of-astrology - EL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: '🏛️ Η Ιστορία της Αστρολογίας: Από την Αρχαία Βαβυλώνα στη Σύγχρονη Τεχνητή Νοημοσύνη',
-    excerpt: 'Εξερευνήστε το συναρπαστικό ταξίδι 5.000 ετών της αστρολογίας. Μάθετε πώς οι αρχαίοι πολιτισμοί χρησιμοποίησαν τα αστέρια και πώς εξελίχθηκε σε ένα σύγχρονο ψυχολογικό εργαλείο.',
-    category: 'Βασικά Στοιχεία Αστρολογίας',
-    metaDescription: 'Εξερευνήστε το συναρπαστικό ταξίδι 5.000 ετών της αστρολογίας. Μάθετε πώς οι αρχαίοι πολιτισμοί χρησιμοποίησαν τα αστέρια για να χτίσουν αυτοκρατορίες και πώς η αστρολογία εξελίχθηκε σε ένα σύγχρονο ψυχολογικό εργαλείο.',
-    keywords: 'ιστορία αστρολογίας, αρχαία αστρολογία, βαβυλωνιακή αστρολογία, ελληνική αστρολογία, ιστορία ζωδιακού, προέλευση αστρολογίας, σύγχρονη αστρολογία',
-    quickSummary: [
-        'Η αστρολογία προήλθε από τη Μεσοποταμία (Αρχαία Βαβυλώνα) πριν από περισσότερα από 4.000 χρόνια',
-        'Ο Ζωδιακός κύκλος που χρησιμοποιούμε σήμερα τυποποιήθηκε από τους Έλληνες πριν από περίπου 2.000 χρόνια',
-        'Η Αστρολογία και η Αστρονομία θεωρούνταν η ίδια επιστήμη μέχρι τον 17ο αιώνα',
-        'Σήμερα, η αστρολογία χρησιμοποιείται περισσότερο για ψυχολογική κατανόηση παρά για την πρόβλεψη του θανάτου βασιλιάδων'
-    ],
-    keyTakeaways: [
-        'Οι αρχαίοι πολιτισμοί χρησιμοποιούσαν την αστρολογία για τη γεωργία και την πολιτική επιβίωση',
-        'Η "Εποχή του Διαφωτισμού" ώθησε προσωρινά την αστρολογία στις σκιές της δεισιδαιμονίας',
-        'Ο Καρλ Γιουνγκ επανέφερε την αστρολογία στο προσκήνιο μέσω της ψυχολογίας',
-        'Η τεχνολογία AI επιτρέπει τώρα ακριβέστερους υπολογισμούς από ποτέ'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'Το Λίκνο των Αστέρων: Βαβυλώνα' },
-        { id: 'greek-influence', title: 'Η Ελληνική Επανάσταση' },
-        { id: 'scientific-divorce', title: 'Το Επιστημονικό Διαζύγιο' },
-        { id: 'jungian-rebirth', title: 'Ψυχολογία και ο 20ός Αιώνας' },
-        { id: 'future-astrology', title: 'Το Μέλλον: AI & Μεγάλα Δεδομένα' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">Το Λίκνο των Αστέρων: Βαβυλώνα</h2>
-      <p>Η ιστορία της αστρολογίας ξεκινά στην εύφορη ημισέληνο της Μεσοποταμίας. Πριν από σχεδόν 5.000 χρόνια, οι Βαβυλώνιοι ιερείς παρατήρησαν μια συσχέτιση μεταξύ της κίνησης των αστεριών και των πλημμυρών των ποταμών ή της αλλαγής των εποχών. Ήταν οι πρώτοι που χώρισαν τον ουρανό σε τμήματα, αν και το σύστημά τους χρησιμοποιήθηκε αρχικά για να προβλέψει τη μοίρα του <em>έθνους</em> ή του <em>Βασιλιά</em>, όχι του ατόμου.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>Μέχρι τον 5ο αιώνα π.Χ., οι Βαβυλώνιοι είχαν αναπτύξει την πρώτη έννοια του <strong>Ζωδιακού κύκλου</strong>, χωρίζοντας τη διαδρομή του ήλιου σε δώδεκα ίσα ζώδια με βάση τους αστερισμούς.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">Η Ελληνική Επανάσταση: Ωροσκοπική Αστρολογία</h2>
-      <p>Όταν η αστρολογία έφτασε στον ελληνιστικό κόσμο (Αρχαία Ελλάδα και Αίγυπτος), υπέστη μια τεράστια μεταμόρφωση. Οι Έλληνες πρόσθεσαν τον <strong>Ωροσκόπο (Ωροσκοπικό Ζώδιο)</strong> και το <strong>Σύστημα των Οίκων</strong>. Αυτό επέτρεψε τη δημιουργία του πρώτου «Γενέθλιου Χάρτη» — ενός χάρτη του ουρανού για τη γέννηση ενός συγκεκριμένου ατόμου.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>Η <em>Τετράβιβλος</em> του Κλαύδιου Πτολεμαίου, που γράφτηκε τον 2ο αιώνα μ.Χ., έγινε η «Βίβλος της Αστρολογίας». Μεγάλο μέρος της λογικής που χρησιμοποιούμε σήμερα για τα ζώδια, τα στοιχεία και τις όψεις κωδικοποιήθηκε σε αυτό το αρχαίο κείμενο.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">Το Επιστημονικό Διαζύγιο</h2>
-      <p>Για το μεγαλύτερο μέρος της ανθρώπινης ιστορίας, η <strong>Αστρολογία</strong> και η <strong>Αστρονομία</strong> ήταν το ίδιο πράγμα. Μεγάλοι επιστήμονες όπως ο Γιοχάνες Κέπλερ και ο Γαλιλαίος Γαλιλέι ήταν επίσης επαγγελματίες αστρολόγοι. Ωστόσο, κατά τον Διαφωτισμό του 17ου αιώνα, τα δύο πεδία χωρίστηκαν. Η Αστρονομία επικεντρώθηκε στη φυσική σύνθεση του διαστήματος, ενώ η Αστρολογία απορρίφθηκε ως «δεισιδαιμονία» από το νέο επιστημονικό κατεστημένο.</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>Παρόλα αυτά, η αστρολογία επέζησε σε αλμανάκ και μυστικές εταιρείες, συνεχίζοντας να καθοδηγεί εκατομμύρια ανθρώπους σε ιδιωτικό επίπεδο.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">Ψυχολογία και ο 20ός Αιώνας</h2>
-      <p>Η επιστροφή της αστρολογίας στον 20ό αιώνα καθοδηγήθηκε από μια εκπληκτική πηγή: την ψυχολογία. Ο <strong>Καρλ Γιουνγκ</strong>, ο πατέρας της αναλυτικής ψυχολογίας, μελέτησε γενέθλιους χάρτες και ανέπτυξε τη θεωρία της <em>συγχρονικότητας</em> για να εξηγήσει γιατί λειτουργεί η αστρολογία. Είδε τον ζωδιακό κύκλο ως μια συλλογή παγκόσμιων αρχετύπων — μοτίβων ανθρώπινης συμπεριφοράς που υπάρχουν στο συλλογικό υποσυνείδητο όλων των ανθρώπων.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>Αυτό μετέφερε την εστίαση της αστρολογίας από το "Τι πρόκειται να μου συμβεί;" στο "Ποιος είμαι και γιατί αντιδρώ έτσι;"</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">Το Μέλλον: AI & Μεγάλα Δεδομένα</h2>
-      <p>Βρισκόμαστε αυτήν τη στιγμή σε μια νέα Χρυσή Εποχή της Αστρολογίας. Η τεχνολογία έχει εξαλείψει την ανάγκη για περίπλοκους χειροκίνητους υπολογισμούς, επιτρέποντας σε οποιονδήποτε με ένα smartphone να δει τον χάρτη του. Το πιο σημαντικό, η <strong>Τεχνητή Νοημοσύνη</strong> χρησιμοποιείται τώρα για την ανάλυση τεράστιων ποσοτήτων δεδομένων, βρίσκοντας βαθύτερα μοτίβα σε διελεύσεις και χαρακτηριστικά προσωπικότητας που προηγουμένως ήταν αδύνατο να δει κανείς.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>Στο Astralo, συνδυάζουμε αυτή την κληρονομιά 5.000 ετών με κορυφαία μηχανική μάθηση για να σας παρέχουμε την πιο ακριβή και διεισδυτική καθοδήγηση στην ανθρώπινη ιστορία.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

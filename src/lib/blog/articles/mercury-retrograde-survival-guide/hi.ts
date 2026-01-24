@@ -1,69 +1,54 @@
 /**
- * Mercury Retrograde Survival Guide - Hindi (हिन्दी)
+ * mercury-retrograde-survival-guide - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-  title: '☄️ बुध वक्री (Mercury Retrograde) सर्वाइवल गाइड 2026: अराजकता से शांति तक',
-  excerpt: 'वक्री बुध से डरें नहीं! जानें कि बुध वक्री वास्तव में एक महत्वपूर्ण ब्रह्मांडीय रीसेट क्यों है और तकनीकी और संचार संबंधी गड़बड़ियों से आसानी से कैसे निपटें।',
-  category: 'ज्योतिष 101',
-  metaDescription: 'वक्री बुध से डरें नहीं! जानें कि बुध वक्री वास्तव में एक महत्वपूर्ण ब्रह्मांडीय रीसेट क्यों है और "Re" से शुरू होने वाली गतिविधियों के लिए सबसे अच्छा समय क्यों है।',
-  keywords: 'बुध वक्री, बुध वक्री तिथियां 2026, सर्वाइवल गाइड, ज्योतिष टिप्स, संचार विफल, तकनीकी गड़बड़ी',
-  quickSummary: [
-    'बुध वक्री एक दृष्टिभ्रम (Optical Illusion) है जिसमें बुध आकाश में पीछे की ओर चलता हुआ दिखाई देता है',
-    'यह वर्ष में 3-4 बार होता है और हर बार लगभग तीन सप्ताह तक रहता है',
-    'यह अवधि यात्रा में देरी, तकनीकी विफलताओं और गलतफहमी के लिए कुख्यात है',
-    'यह नई परियोजनाओं को शुरू करने का समय नहीं है, बल्कि पुरानी परियोजनाओं को पूरा करने का बेहतरीन समय है'
-  ],
-  keyTakeaways: [
-    'भेजने या हस्ताक्षर करने से पहले हर ईमेल, टेक्स्ट और अनुबंध की दो बार जांच करें',
-    'अपने डेटा का बैकअप लें और उपकरणों के साथ मामूली तकनीकी गड़बड़ियों की अपेक्षा करें',
-    'पुराने दोस्त और एक्स (Exes) अक्सर इन ब्रह्मांडीय चक्रों के दौरान फिर से दिखाई देते हैं',
-    'वक्री होने से पहले और बाद की "छाया अवधि" (Shadow Period) भी उतनी ही महत्वपूर्ण है'
-  ],
-  tableOfContents: [
-    { id: 'what-is-mercury-retrograde', title: 'भ्रम का विज्ञान' },
-    { id: 'retrograde-shadow', title: 'छाया अवधि (Shadow Period)' },
-    { id: 'survival-dos', title: '"RE" नियम: क्या करें' },
-    { id: 'survival-donts', title: 'सावधानी के संकेत: किससे बचें' },
-    { id: 'mercury-retrograde-dates', title: '2026 वक्री तिथियां' },
-    { id: 'final-thoughts', title: 'सकारात्मक पक्ष' }
-  ],
-  content: `
-      <h2 id="what-is-mercury-retrograde">भ्रम का विज्ञान</h2>
-      <p>साल में तीन या चार बार, बुध ग्रह—जो संचार, यात्रा और तकनीक का स्वामी है—पृथ्वी से देखने पर पीछे की ओर चलता हुआ प्रतीत होता है। वास्तव में, यह केवल एक दृष्टिभ्रम है, जैसे कि जब आप किसी धीमी गाड़ी को तेज गाड़ी से ओवरटेक करते हैं, तो वह पीछे जाती हुई दिखाई देती है।</p>
+    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
+    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
+    category: "Astrology 101",
+    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
+    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
+    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
+    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
+    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
+    content: `
+      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
+      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
       
-      <p>लेकिन भले ही यह पीछे की गति एक भ्रम हो, इसके प्रभाव बहुत वास्तविक होते हैं। ज्योतिष शास्त्र में, जब कोई ग्रह वक्री होता है, तो उसकी ऊर्जा अंतर्मुखी हो जाती है। चूंकि बुध हमारे जीवन की "दैनिक रसद" (Logistics)—हमारे विचारों, गैजेट्स और आवागमन—का संचालन करता है, इसलिए सब कुछ थोड़ा... गड़बड़ महसूस होने लगता है। <strong>बुध वक्री</strong> दुनिया को "पॉज़" बटन दबाने का ब्रह्मांडीय तरीका है।</p>
+      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
 
-      <h2 id="retrograde-shadow">छाया अवधि (Shadow Period)</h2>
-      <p>बहुत से लोग तब हैरान हो जाते हैं जब वक्री शुरू होने से एक सप्ताह <em>पहले</em> चीजें गलत होने लगती हैं। इसे वक्री-पूर्व छाया (Pre-Retrograde Shadow) कहा जाता है। इसी तरह, वक्री समाप्त होने के लगभग दो सप्ताह बाद तक वक्री-पश्चात छाया रहती है। यदि आप कोई बड़ी खरीदारी की योजना बना रहे हैं, तो इसके समाप्त होने तक प्रतीक्षा करें।</p>
+      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
+      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
 
-      <h2 id="survival-dos">"RE" नियम: क्या करें</h2>
-      <p>बुध वक्री की बदनामी बहुत है, लेकिन यदि आप इसे सही तरीके से उपयोग करते हैं, तो यह वास्तव में वर्ष के सबसे उत्पादक समयों में से एक है। रहस्य उन शब्दों पर ध्यान केंद्रित करना है जो <strong>"RE"</strong> से शुरू होते हैं:</p>
+      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
+      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
       <ul>
-        <li><strong>Reflect (चिंतन):</strong> अपने लक्ष्यों पर विचार करें।</li>
-        <li><strong>Review (समीक्षा):</strong> अपने अनुबंधों, बजट और योजनाओं की समीक्षा करें। आपको संभवतः ऐसी गलती मिल जाएगी जिसे आपने पहले नहीं देखा था।</li>
-        <li><strong>Reconnect (पुनः जुड़ें):</strong> पुराने दोस्तों से मिलने या पुराने विवादों को सुलझाने का बेहतरीन समय।</li>
-        <li><strong>Repair (मरम्मत):</strong> उस नल या कार की समस्या को ठीक करें जिसे आप नज़रअंदाज़ कर रहे थे।</li>
-        <li><strong>Reorganize (पुनर्गठित):</strong> अपनी अलमारी, इनबॉक्स और अपने मन को साफ़ करें।</li>
+        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
+        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
+        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
+        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
+        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
       </ul>
 
-      <h2 id="survival-donts">किससे बचें</h2>
-      <p>भले ही जीवन रुकता नहीं है, फिर भी वक्री के दौरान इन जोखिम भरी गतिविधियों से बचने का प्रयास करें:</p>
+      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
+      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
       <ul>
-        <li><strong>प्रमुख अनुबंधों पर हस्ताक्षर करना:</strong> यदि हस्ताक्षर करना आवश्यक है, तो बारीक अक्षरों को तीन बार पढ़ें।</li>
-        <li><strong>नई तकनीक खरीदना:</strong> नया फोन या कार खरीदने के लिए प्रतीक्षा करें।</li>
-        <li><strong>नई परियोजनाएं शुरू करना:</strong> वक्री के दौरान पैदा हुए विचार अक्सर वक्री समाप्त होने के बाद बदल जाते हैं।</li>
+        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
+        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
+        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
+        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 बुध वक्री की तिथियां</h2>
+      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
+      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
       <ol>
-          <li><strong>25 फरवरी – 20 मार्च</strong></li>
-          <li><strong>29 जून – 23 जुलाई</strong></li>
-          <li><strong>24 अक्टूबर – 13 नवंबर</strong></li>
+          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
+          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
+          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
       </ol>
 
-      <h2 id="final-thoughts">सकारात्मक पक्ष</h2>
-      <p>बुध वक्री कोई अभिशाप नहीं है; यह एक आवश्यक मरम्मत की अवधि है। इसके बिना, हम जीवन की नींव को कभी ठीक किए बिना आगे बढ़ते रहेंगे। धीमे होने और सांस लेने के लिए इस समय का उपयोग करें।</p>
+      <h2 id="final-thoughts">Silver Linings</h2>
+      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
     `
 };

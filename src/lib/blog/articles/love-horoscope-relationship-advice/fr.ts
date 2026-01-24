@@ -1,73 +1,56 @@
 /**
- * Love Horoscope - French (Français)
+ * love-horoscope-relationship-advice - FR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: '💕 Horoscope Amour 2026 : Le guide ultime de la romance zodiacale',
-    excerpt: 'Transformez votre vie amoureuse avec l\'astrologie. Une plongée profonde dans les signes de Vénus, la 7ème Maison du Mariage, les styles de passion de Mars et comment naviguer Mercure Rétrograde dans les relations.',
-    category: 'Amour & Relations',
-    metaDescription: 'Transformez votre vie amoureuse avec l\'astrologie. Une plongée profonde dans les signes de Vénus, la 7ème Maison du Mariage, les styles de passion de Mars et comment naviguer Mercure Rétrograde dans les relations.',
-    keywords: 'horoscope amour, astrologie relationnelle, signification signe vénus, rencontres signe mars, maison 7 mariage, guide synastrie, conseils rencontres zodiaque, compatibilité amoureuse',
-    quickSummary: [
-        'Votre langage de l\'amour est dicté par votre signe de Vénus, pas seulement votre signe solaire',
-        'La 7ème Maison de votre thème décrit votre partenaire idéal à long terme',
-        'Mars détermine comment vous poursuivez vos intérêts romantiques et votre chimie sexuelle',
-        'Le timing relationnel est tout : ne vous mariez jamais pendant Vénus Rétrograde'
-    ],
-    keyTakeaways: [
-        'Si vous voulez savoir comment quelqu\'un flirte, regardez son signe de Vénus',
-        'Si vous voulez savoir comment quelqu\'un se dispute ou fait l\'amour, regardez son signe de Mars',
-        'Le "Descendant" (opposé à votre Ascendant) est généralement le signe qui vous attire le plus',
-        'La synastrie est l\'art de comparer deux thèmes pour voir si une relation est faite pour durer'
-    ],
-    tableOfContents: [
-        { id: 'love-guide', title: 'L\'amour est une compétence' },
-        { id: 'venus-signs', title: 'Vénus : Ce que vous aimez' },
-        { id: 'mars-signs', title: 'Mars : Comment vous désirez' },
-        { id: '7th-house', title: 'La 7ème Maison : La Maison du Mariage' },
-        { id: 'retrograde-love', title: 'Survivre à la romance rétrograde' },
-        { id: 'partner-analysis', title: 'Analyse de compatibilité' }
-    ],
+    title: "💕 Amour Horoscope 2026: The Master Guide to Zodiac Romance",
+    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    category: "Love & Relationships",
+    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
+    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
+    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
+    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
     content: `
-      <h2 id="love-guide">L'amour est une compétence (et l'astrologie est le manuel)</h2>
-      <p>Nous traitons souvent l'amour comme une force mystérieuse qui nous "arrive" simplement. Mais en astrologie, l'amour est un mécanisme avec des engrenages et des leviers. Votre <strong>horoscope amoureux</strong> n'est pas seulement une question de rencontres fortuites ; c'est un plan de vos besoins psychologiques dans un partenariat.</p>
+      <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
+      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
       
-      <p>Pourquoi continuez-vous à attirer le même "mauvais" type ? Pourquoi la communication s'interrompt-elle toujours après trois mois ? Les réponses sont dans votre thème. En comprenant votre propre conception cosmique de l'amour, vous pouvez arrêter de répéter les modèles et commencer à construire la relation que vous voulez vraiment.</p>
+      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
       
-      <h2 id="venus-signs">Vénus : L'art de l'affection</h2>
-      <p><strong>Vénus</strong> est la planète de l'attraction, des valeurs et de l'harmonie. Le signe dans lequel Vénus se trouvait à votre naissance décrit ce que vous trouvez beau et comment vous montrez votre affection.</p>
+      <h2 id="venus-signs">Venus: The Art of Affection</h2>
+      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
       <ul>
-        <li><strong>Vénus en Feu (Bélier, Lion, Sagittaire) :</strong> Aime la chasse. A besoin de drame, de grands gestes et de spontanéité. S'ennuie facilement. <em>Conseil :</em> Gardez les choses excitantes.</li>
-        <li><strong>Vénus en Terre (Taureau, Vierge, Capricorne) :</strong> Aime la stabilité. A besoin d'engagement, de fiabilité et de contact physique. Déteste les jeux. <em>Conseil :</em> Soyez constant.</li>
-        <li><strong>Vénus en Air (Gémeaux, Balance, Verseau) :</strong> Aime l'esprit. A besoin de conversation, d'esprit et d'amitié d'abord. Évite les émotions lourdes. <em>Conseil :</em> Soyez intéressant.</li>
-        <li><strong>Vénus en Eau (Cancer, Scorpion, Poissons) :</strong> Aime l'âme. A besoin d'une fusion émotionnelle profonde, de vulnérabilité et de sécurité. <em>Conseil :</em> Soyez vrai.</li>
+        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
+        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
+        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
+        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars : Le moteur du désir</h2>
-      <p>Alors que Vénus est ce que vous aimez, <strong>Mars</strong> est la façon dont vous allez l'obtenir. Mars régit la libido, la poursuite et le conflit.</p>
-      <p>Si vous avez <strong>Mars en Scorpion</strong>, vous êtes intense, possessif et tout ou rien. Vous pourriez effrayer un <strong>Mars en Gémeaux</strong> volage, qui veut juste flirter et s'amuser. Connaître le signe de Mars de votre partenaire est le code de triche pour la satisfaction sexuelle et la résolution des disputes sans rupture.</p>
+      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
+      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
+      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
 
-      <h2 id="7th-house">La 7ème Maison : Votre "Autre Moitié"</h2>
-      <p>Regardez votre signe Ascendant. Regardez maintenant le signe directement opposé. C'est votre <strong>Descendant</strong>, le maître de votre 7ème Maison du Partenariat.</p>
-      <p>Nous sommes souvent magnétiquement attirés par les personnes qui incarnent les qualités de notre 7ème Maison car elles possèdent ce qui nous manque.
-      <br><em>Exemple :</em> Un <strong>Ascendant Vierge</strong> discipliné épousera souvent un <strong>Poissons (7ème Maison)</strong> rêveur et chaotique. La Vierge organise la vie du Poissons ; le Poissons apprend à la Vierge à se détendre. C'est l'axe de l'équilibre.</p>
+      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
+      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
+      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
+      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
 
-      <h2 id="retrograde-love">Survivre à la romance rétrograde</h2>
-      <p>Vous avez entendu parler de Mercure Rétrograde (mauvaise communication), mais <strong>Vénus Rétrograde</strong> est le véritable testeur de relations. Se produisant tous les 18 mois, c'est le moment où :
-      <br>1. Les ex reviennent ("Zombieing").
-      <br>2. Les relations faibles se brisent.
-      <br>3. Les liaisons cachées sont révélées.</p>
+      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
+      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
+      <br>1. Exes come back ("Zombieing").
+      <br>2. Weak relationships break up.
+      <br>3. Hidden affairs are revealed.</p>
       
-      <p><strong>Règle d'or :</strong> Ne vous mariez jamais, ne faites pas de demande en mariage et ne prenez pas d'engagement massif pendant Vénus Rétrograde. Attendez que la période d'ombre passe (généralement 40 jours) pour voir si vous ressentez toujours la même chose.</p>
+      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
 
-      <h2 id="partner-analysis">Analyse de compatibilité des partenaires</h2>
-      <p>Vous êtes complexe, et votre partenaire aussi. Un horoscope générique "Lion + Verseau" ne peut pas capturer la nuance de votre connexion unique. Notre <strong>Rapport Relationnel Premium</strong> analyse :</p>
+      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
+      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
       <ul>
-        <li><strong>Synastrie :</strong> Comment vos planètes touchent les leurs (Chimie).</li>
-        <li><strong>Thème Composite :</strong> L'énergie de la relation elle-même (Destinée).</li>
-        <li><strong>Thème Davison :</strong> Le but de votre rencontre (Karma).</li>
+        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
+        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
+        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
       </ul>
-      <p>Ne laissez pas votre cœur au hasard. Décodez votre vie amoureuse avec Astralo.</p>
+      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
     `
 };

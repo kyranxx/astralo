@@ -1,97 +1,80 @@
 /**
- * Birth Chart Reading - Korean (한국어)
+ * birth-chart-reading-explained - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-  title: '🔮 출생 차트 리딩: 당신의 코스믹 지도에 대한 포괄적 가이드',
-  excerpt: '우리의 궁극적인 출생 차트 리딩 가이드로 당신의 성격의 비밀을 잠금 해제하세요. 행성, 하우스, 각도(Aspects), 운명의 노드를 전문가처럼 해석하는 법을 배우세요.',
-  category: '점성술 기초',
-  metaDescription: '우리의 궁극적인 출생 차트 리딩 가이드로 당신의 성격의 비밀을 잠금 해제하세요. 행성, 하우스, 각도(Aspects), 운명의 노드를 전문가처럼 해석하는 법을 배우세요.',
-  keywords: '출생 차트, 네이탈 차트, 점성술 차트, 점성술 빅 쓰리, 상승궁, 달 별자리, 점성술 하우스, 행성 각도, 내 차트 읽기',
-  quickSummary: [
-    '당신의 출생 차트는 당신이 태어난 정확한 순간의 하늘을 360도로 찍은 스크린샷입니다',
-    '「빅 쓰리」(태양, 달, 상승궁)는 당신 성격의 핵심 삼각대를 형성합니다',
-    '12 하우스는 사건이 "어디서" 일어나는지를 설명하고, 행성은 "무엇이" 일어나는지를 설명합니다',
-    '각도(행성을 연결하는 선)는 당신의 내적 갈등과 특별한 재능을 드러냅니다'
-  ],
-  keyTakeaways: [
-    '상승궁(Ascendant)은 종종 태양 별자리보다 예측에 더 정확합니다',
-    '하드 아스펙트(스퀘어, 오포지션)는 회복력을 통해 가장 성공적인 사람들을 만듭니다',
-    '북쪽 노드(North Node)는 이번 생에서 당신 영혼의 카르마적 방향을 드러냅니다',
-    '컴퓨터로 생성된 보고서도 훌륭하지만, 인간적인 뉘앙스는 대체할 수 없습니다'
-  ],
-  tableOfContents: [
-    { id: 'what-is-birth-chart', title: '당신 영혼의 청사진' },
-    { id: 'the-big-three', title: '빅 쓰리: 태양, 달, 상승궁' },
-    { id: 'the-planets', title: '행성: 내행성 vs. 외행성' },
-    { id: 'the-houses', title: '12 하우스의 무대' },
-    { id: 'aspects', title: '각도: 우주의 대화' },
-    { id: 'nodes', title: '운명의 노드' }
-  ],
-  content: `
-      <h2 id="what-is-birth-chart">당신 영혼의 청사진</h2>
-      <p>당신의 별자리 설명이 자신과 딱 맞지 않다고 느낀 적이 있나요? "나는 사자자리인데 관심의 중심이 되는 건 싫어!" 그 이유는 아마도 당신의 <strong>출생 차트</strong>(또는 네이탈 차트)에 숨겨져 있을 것입니다. 태양 별자리가 중요하긴 하지만, 그것은 거대하고 복잡한 방정식의 하나의 변수일 뿐입니다.</p>
+    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
+    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
+    category: "Astrology Basics",
+    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
+    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
+    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
+    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
+    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
+    content: `
+      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
+      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
       
-      <p>출생 차트는 당신이 태어난 정확한 시간, 날짜, 장소에 맞춰 계산된 하늘의 지도입니다. 이것은 당신을 우주의 중심에 두고, 행성들이 당신 주위에 배열되게 합니다. 이것을 당신의 "우주적 DNA"라고 생각하세요. 당신에게만 속한 고유한 지침, 재능, 도전, 잠재력의 세트입니다.</p>
+      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
 
-      <h2 id="the-big-three">빅 쓰리: 태양, 달, 상승궁</h2>
-      <p>복잡한 기하학에 뛰어들기 전에, 모든 점성술 학생은 자신의 "빅 쓰리"를 마스터해야 합니다. 이 세 지점이 당신 성격의 대부분을 결정합니다.</p>
+      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
+      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
       
-      <h3>1. 태양 ☀️ (정체성)</h3>
-      <p>태양은 당신의 의식적인 자아, "나는 존재한다"를 나타냅니다. 그것은 당신의 연료, 추진력, 그리고 당신이 방출하는 에너지 주파수입니다. 이것은 <em>"본질적으로 나는 누구인가?"</em>라는 질문에 답합니다.</p>
+      <h3>1. The Sun ☀️ (Identity)</h3>
+      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
 
-      <h3>2. 달 🌙 (감정)</h3>
-      <p>달은 당신의 내면 세계, 본능, 무의식을 나타냅니다. 상처받거나 배고프거나 피곤할 때 어떻게 반응하는지를 지시합니다. 이것은 <em>"안전하다고 느끼기 위해 무엇이 필요한가?"</em>라는 질문에 답합니다.</p>
+      <h3>2. The Moon 🌙 (Emotion)</h3>
+      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
 
-      <h3>3. 상승궁 / 어센던트 🏹 (가면)</h3>
-      <p>상승궁은 당신이 태어났을 때 동쪽 지평선에서 떠오르던 별자리입니다. 이것은 세상과의 "인터페이스"입니다. 당신의 외모, 스타일, 첫인상을 결정합니다. 이것은 <em>"남들이 나를 어떻게 보는가?"</em>라는 질문에 답합니다.</p>
+      <h3>3. The Ascendant / Rising Sign 🏹 (Mask)</h3>
+      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
 
-      <h2 id="the-planets">행성: 내행성 vs. 외행성</h2>
-      <p><strong>출생 차트 리딩</strong>에서 행성은 당신 인생 이야기에서 역할을 수행하는 배우들입니다.</p>
+      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
+      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
       
-      <h3>개인 행성 (빠르게 움직임)</h3>
+      <h3>The Personal Planets (Fast Moving)</h3>
       <ul>
-        <li><strong>수성 ☿️:</strong> 메신저. 지성, 언어, 논리를 지배합니다. 쌍둥이자리 수성은 물고기자리 수성과 다르게 협상합니다.</li>
-        <li><strong>금성 ♀:</strong> 연인. 매력, 예술, 돈을 지배합니다. 당신이 무엇을 가치 있게 여기고 어떻게 유혹하는지를 보여줍니다.</li>
-        <li><strong>화성 ♂:</strong> 전사. 행동, 분노, 성욕을 지배합니다. 원하는 것을 위해 어떻게 싸우는지를 보여줍니다.</li>
+        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
+        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
+        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
       </ul>
 
-      <h3>사회적 & 외행성 (느리게 움직임)</h3>
+      <h3>The Social & Outer Planets (Slow Moving)</h3>
       <ul>
-        <li><strong>목성 ♃:</strong> 스승(Guru). 행운, 확장, 의미를 찾는 곳입니다.</li>
-        <li><strong>토성 ♄:</strong> 감독관. 제한과 두려움에 직면하지만, 결국 노력 끝에 숙달하는 곳입니다.</li>
-        <li><strong>천왕성 ♅, 해왕성 ♆, 명왕성 ♇:</strong> 세대 행성. 이들은 너무 느리게 움직여서 전체 세대를 형성하며, 진화와 카르마를 포함한 깊은 무의식 수준에서 당신에게 영향을 미칩니다.</li>
+        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
+        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
+        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
       </ul>
 
-      <h2 id="the-houses">무대: 12 하우스</h2>
-      <p>차트는 피자 조각처럼 12개의 "하우스"로 나뉩니다. 각 하우스는 삶의 특정 영역을 관장합니다. 행성이 어디에 위치하느냐는 그 에너지가 <em>어디서</em> 나타날지를 말해줍니다.</p>
+      <h2 id="the-houses">The Stage: The 12 Houses</h2>
+      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
       <ul>
-        <li><strong>1하우스:</strong> 자아, 신체, 외모.</li>
-        <li><strong>2하우스:</strong> 돈, 소유물, 가치관.</li>
-        <li><strong>3하우스:</strong> 의사소통, 형제자매, 짧은 여행.</li>
-        <li><strong>4하우스:</strong> 가정, 가족, 뿌리.</li>
-        <li><strong>5하우스:</strong> 창의성, 로맨스, 자녀.</li>
-        <li><strong>6하우스:</strong> 일상 루틴, 건강, 봉사.</li>
-        <li><strong>7하우스:</strong> 결혼, 파트너십, 공공의 적.</li>
-        <li><strong>8하우스:</strong> 죽음, 섹스, 타인의 돈.</li>
-        <li><strong>9하우스:</strong> 철학, 여행, 고등 교육.</li>
-        <li><strong>10하우스:</strong> 커리어, 대외적 이미지, 유산.</li>
-        <li><strong>11하우스:</strong> 친구, 네트워크, 희망/소원.</li>
-        <li><strong>12하우스:</strong> 무의식, 비밀, 영성.</li>
+        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
+        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
+        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
+        <li><strong>4th House:</strong> Home, Family, Roots.</li>
+        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
+        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
+        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
+        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
+        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
+        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
+        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
+        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
       </ul>
 
-      <h2 id="aspects">각도(Aspects): 우주의 대화</h2>
-      <p>행성들은 고립되어 작동하지 않습니다. 그들은 "각도(Aspects)"라고 불리는 기하학적 각도를 형성합니다. 이 선들은 차트의 배우들을 연결합니다.</p>
+      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
+      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
       
-      <p><strong>소프트 아스펙트 (트라인, 섹스타일):</strong> 이것들은 선물입니다. 행성들이 서로 돕습니다. 여기서는 일이 쉽게 풀립니다 — 때로는 너무 쉬워서 게으름으로 이어지기도 합니다.</p>
+      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
       
-      <p><strong>하드 아스펙트 (스퀘어, 오포지션):</strong> 이것들은 도전입니다. 행성들이 싸우거나 서로를 막습니다. 하지만 이러한 마찰 지점은 높은 성취에 필요한 에너지를 생성합니다. 대부분의 성공한 사람들은 차트에 스퀘어가 가득합니다!</p>
+      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
 
-      <h2 id="nodes">운명의 노드</h2>
-      <p>마지막으로 말굽 기호를 찾으세요. <strong>북쪽 노드(North Node)</strong>는 당신의 운명 — 당신의 영혼이 이번 생에서 가고자 하는 방향 — 을 나타냅니다. 이것은 불편하고 낯설게 느껴집니다. <strong>남쪽 노드(South Node)</strong>는 당신의 전생(또는 어린 시절)입니다 — 이것은 익숙하고 쉽게 느껴지지만, 거기에 머무르는 것은 정체로 이어집니다.</p>
+      <h2 id="nodes">The Nodes of Fate</h2>
+      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
       
-      <h3>해석은 예술입니다</h3>
-      <p>출생 차트를 읽는 것은 교향곡을 읽는 것과 같습니다. 바이올린(금성)을 따로 떼어낼 수는 있지만, 마법은 전체 오케스트라가 함께 연주할 때 일어납니다. Astralo에서는 수세기의 점성술 지혜로 훈련된 고급 AI를 사용하여 이 수백만 개의 변수를 <strong>당신</strong>에 대한 명확하고 읽기 쉬운 이야기로 종합합니다.</p>
+      <h3>Interpretation is art</h3>
+      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
     `
 };

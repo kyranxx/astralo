@@ -1,73 +1,56 @@
 /**
- * Love Horoscope - Chinese (简体中文)
+ * love-horoscope-relationship-advice - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: '💕 2026年爱情运势：十二星座浪漫大师指南',
-    excerpt: '用占星术改变你的爱情生活。深入了解金星星座、婚姻第七宫、火星激情风格，以及如何在关系中应对水星逆行。',
-    category: '爱情与关系',
-    metaDescription: '用占星术改变你的爱情生活。深入了解金星星座、婚姻第七宫、火星激情风格，以及如何在关系中应对水星逆行。',
-    keywords: '爱情运势, 关系占星术, 金星星座含义, 火星星座约会, 第七宫婚姻, 合盘指南, 星座约会建议, 爱情兼容性',
-    quickSummary: [
-        '你的爱情语言由你的金星星座决定，而不仅仅是你的太阳星座',
-        '你星盘中的第七宫描述了你理想的长期伴侣',
-        '火星决定了你如何追求浪漫兴趣和性化学反应',
-        '关系的时机就是一切——永远不要在金星逆行期间结婚'
-    ],
-    keyTakeaways: [
-        '如果你想知道某人如何调情，看看他们的金星星座',
-        '如果你想知道某人如何吵架或做爱，看看他们的火星星座',
-        '“下降点”（你上升星座的对面）通常是你最被吸引的星座',
-        '合盘是将两张星盘进行比较的艺术，看一段关系是否能够持久'
-    ],
-    tableOfContents: [
-        { id: 'love-guide', title: '爱情是一项技能' },
-        { id: 'venus-signs', title: '金星：你爱什么' },
-        { id: 'mars-signs', title: '火星：你如何渴望' },
-        { id: '7th-house', title: '第七宫：婚姻之宫' },
-        { id: 'retrograde-love', title: '在逆行浪漫中生存' },
-        { id: 'partner-analysis', title: '兼容性分析' }
-    ],
+    title: "💕 Love Horoscope 2026: The Master Guide to Zodiac Romance",
+    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    category: "Love & Relationships",
+    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
+    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
+    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
+    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
+    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
     content: `
-      <h2 id="love-guide">爱情是一项技能（而占星术是手册）</h2>
-      <p>我们经常将爱情视为一种只是“发生”在我们身上的神秘力量。但在占星术中，爱情是一种带有齿轮和杠杆的机制。你的<strong>爱情运势</strong>不仅仅是关于偶然的相遇；它是你在伙伴关系中心理需求的蓝图。</p>
+      <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
+      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
       
-      <p>为什么你总是被同样的“坏”类型所吸引？为什么沟通总是在三个月后破裂？答案在你的星盘里。通过了解你自己的宇宙爱情设计，你可以停止重复模式，并开始建立你真正想要的关系。</p>
+      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
       
-      <h2 id="venus-signs">金星：情感的艺术</h2>
-      <p><strong>金星</strong>是掌管吸引力、价值观和和谐的行星。你出生时金星所在的星座描述了你觉得什么是美的以及你如何表达爱意。</p>
+      <h2 id="venus-signs">Venus: The Art of Affection</h2>
+      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
       <ul>
-        <li><strong>火象金星（白羊、狮子、射手）：</strong> 喜欢追逐。需要戏剧性、宏大的姿态和自发性。容易厌倦。<em>建议：</em>保持刺激。</li>
-        <li><strong>土象金星（金牛、处女、摩羯）：</strong> 喜欢稳定。需要承诺、可靠性和身体接触。不喜欢游戏。<em>建议：</em>始终如一。</li>
-        <li><strong>风象金星（双子、天秤、水瓶）：</strong> 喜欢思想。需要对话、机智和首先建立友谊。避免沉重的情绪。<em>建议：</em>做一个有趣的人。</li>
-        <li><strong>水象金星（巨蟹、天蝎、双鱼）：</strong> 喜欢灵魂。需要深层的情感融合、脆弱性和安全感。<em>建议：</em>保持真实。</li>
+        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
+        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
+        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
+        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
       </ul>
 
-      <h2 id="mars-signs">火星：欲望的引擎</h2>
-      <p>虽然金星是你喜欢的，但<strong>火星</strong>是你如何去得到它。火星掌管性欲、追求和冲突。</p>
-      <p>如果你有<strong>天蝎座火星</strong>，你是激烈的、占有欲强的和孤注一掷的。你可能会吓跑一个只想调情和玩乐的轻浮的<strong>双子座火星</strong>。了解你伴侣的火星星座是获得性满足和解决争端而不分手的秘诀。</p>
+      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
+      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
+      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
 
-      <h2 id="7th-house">第七宫：你的“另一半”</h2>
-      <p>看看你的上升星座。现在看看直接与它相对的星座。这是你的<strong>下降点（Descendant）</strong>，你第七宫伙伴关系的守护者。</p>
-      <p>我们通常会被那些体现我们第七宫特质的人磁性地吸引，因为他们拥有我们所缺乏的。
-      <br><em>例如：</em>一个纪律严明的<strong>处女座上升</strong>通常会嫁给一个梦幻、混乱的<strong>双鱼座（第七宫）</strong>。处女座组织双鱼座的生活；双鱼座教会处女座放松。这是平衡的轴线。</p>
+      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
+      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
+      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
+      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
 
-      <h2 id="retrograde-love">在逆行浪漫中生存</h2>
-      <p>你听说过水星逆行（沟通），但<strong>金星逆行</strong>才是真正的关系测试者。每 18 个月发生一次，这时候：
-      <br>1. 前任回来（“诈尸”）。
-      <br>2. 脆弱的关系破裂。
-      <br>3. 隐藏的婚外情被揭露。</p>
+      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
+      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
+      <br>1. Exes come back ("Zombieing").
+      <br>2. Weak relationships break up.
+      <br>3. Hidden affairs are revealed.</p>
       
-      <p><strong>黄金法则：</strong>永远不要在金星逆行期间结婚、求婚或做出重大承诺。等到阴影期过去（通常为 40 天），看看你是否仍然有同样的感受。</p>
+      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
 
-      <h2 id="partner-analysis">伴侣兼容性分析</h2>
-      <p>你是复杂的，你的伴侣也是。一个通用的“狮子座 + 水瓶座”运势无法捕捉你们独特联系的细微差别。我们的<strong>高级关系报告</strong>分析：</p>
+      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
+      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
       <ul>
-        <li><strong>合盘（Synastry）：</strong> 你的行星如何触碰他们的行星（化学反应）。</li>
-        <li><strong>组合盘（Composite Chart）：</strong> 关系本身的能量（命运）。</li>
-        <li><strong>戴维森盘（Davison Chart）：</strong> 你们相遇的目的（业力）。</li>
+        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
+        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
+        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
       </ul>
-      <p>不要把你的心交给运气。用 Astralo 解码你的爱情生活。</p>
+      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
     `
 };

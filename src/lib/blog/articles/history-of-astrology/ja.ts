@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Japanese (日本語)
+ * history-of-astrology - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: '🏛️ 占星術の歴史：古代バビロンから現代のAIまで',
-    excerpt: '5000年にわたる占星術の魅力的な旅を探求しましょう。古代文明がどのように星を利用したか、そしてそれがどのように現代の心理学的ツールへと進化したかを学びます。',
-    category: '占星術の基礎',
-    metaDescription: '5000年にわたる占星術の魅力的な旅を探求しましょう。古代文明がどのように星を利用して帝国を築いたか、そして占星術がどのように現代の心理学的ツールへと進化したかを学びます。',
-    keywords: '占星術の歴史, 古代占星術, バビロニア占星術, ギリシャ占星術, 黄道十二宮の歴史, 占星術の起源, 現代占星術',
-    quickSummary: [
-        '占星術は4000年以上前のメソポタミア（古代バビロン）で発祥しました',
-        '私たちが今日使用している黄道十二宮は、約2000年前にギリシャ人によって標準化されました',
-        '占星術と天文学は17世紀まで同じ科学と見なされていました',
-        '今日、占星術は王の死を予測するためよりも、心理的な洞察のために使用されています'
-    ],
-    keyTakeaways: [
-        '古代の文化は農業や政治的な生存のために占星術を利用していました',
-        '「理性の時代」は一時的に占星術を迷信の影に追いやりました',
-        'カール・ユングは心理学を通じて占星術を主流の思想に呼び戻しました',
-        'AI技術により、これまで以上に正確な計算が可能になっています'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: '星々のゆりかご：バビロン' },
-        { id: 'greek-influence', title: 'ギリシャ革命' },
-        { id: 'scientific-divorce', title: '科学的な離婚' },
-        { id: 'jungian-rebirth', title: '心理学と20世紀' },
-        { id: 'future-astrology', title: '未来：AIとビッグデータ' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">星々のゆりかご：バビロン</h2>
-      <p>占星術の物語は、メソポタミアの肥沃な三日月地帯で始まります。約5000年前、バビロニアの神官たちは、星の動きと川の氾濫や季節の変わり目との間に相関関係があることに気づきました。彼らは空を区分けした最初の人々でしたが、そのシステムは当初、個人ではなく、<em>国家</em>や<em>王</em>の運命を予測するために使用されていました。</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>紀元前5世紀までに、バビロニア人は星座に基づいて太陽の通り道を12の等しい区画に分ける<strong>黄道十二宮（Zodiac）</strong>の最初の概念を開発しました。</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">ギリシャ革命：ホロスコープ占星術</h2>
-      <p>占星術がヘレニズム世界（古代ギリシャとエジプト）に伝わると、大きな変革を遂げました。ギリシャ人は<strong>アセンダント（上昇宮）</strong>と<strong>ハウスシステム</strong>を追加しました。これにより、特定の個人の誕生のための空の地図である最初の「出生図（ネイタルチャート）」の作成が可能になりました。</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>紀元2世紀にクラウディオス・プトレマイオスが書いた『テトラビブロス』は、「占星術の聖書」となりました。私たちが今日、星座、エレメント、アスペクトに使用している論理の多くは、この古代のテキストで体系化されました。</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">科学的な離婚</h2>
-      <p>人類の歴史の大部分において、<strong>占星術</strong>と<strong>天文学</strong>は同じものでした。ヨハネス・ケプラーやガリレオ・ガリレイのような偉大な科学者も、職業的な占星術師でした。しかし、17世紀の啓蒙時代に、2つの分野は分裂しました。天文学は宇宙の物理的な構成に焦点を当てましたが、占星術は新しい科学的体制によって「迷信」として退けられました。</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>それにもかかわらず、占星術は暦や秘密結社の中で生き残り、個人的に何百万人もの人々を導き続けました。</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">心理学と20世紀</h2>
-      <p>20世紀の占星術の復活は、意外な情報源である心理学によって推進されました。分析心理学の父である<strong>カール・ユング</strong>は、出生図を研究し、占星術がなぜ機能するかを説明するために<em>シンクロニシティ（共時性）</em>の理論を展開しました。彼は黄道十二宮を、すべての人々の集合的無意識の中に存在する人間行動のパターンである普遍的な元型（アーキタイプ）の集合と見なしました。</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>これにより、占星術の焦点は「私に何が起こるのか？」から「私は誰で、なぜこのように反応するのか？」へと移行しました。</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">未来：AIとビッグデータ</h2>
-      <p>私たちは現在、占星術の新しい黄金時代にいます。技術により複雑な手計算の必要がなくなり、スマートフォンを持っている人なら誰でも自分のチャートを見ることができるようになりました。さらに重要なことに、<strong>人工知能（AI）</strong>は現在、膨大な量のデータを分析し、以前は見ることができなかったトランジットや性格特性のより深いパターンを見つけるために使用されています。</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>Astraloでは、この5000年の遺産と最先端の機械学習を組み合わせ、人類史上最も正確で洞察に満ちたガイダンスを提供します。</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

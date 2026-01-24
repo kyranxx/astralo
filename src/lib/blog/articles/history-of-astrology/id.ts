@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Indonesian (Bahasa Indonesia)
+ * history-of-astrology - ID
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: '🏛️ Sejarah Astrologi: Dari Babilonia Kuno hingga AI Modern',
-    excerpt: 'Jelajahi perjalanan 5.000 tahun astrologi yang memukau. Pelajari bagaimana peradaban kuno menggunakan bintang dan bagaimana ia berevolusi menjadi alat psikologis modern.',
-    category: 'Dasar-Dasar Astrologi',
-    metaDescription: 'Jelajahi perjalanan 5.000 tahun astrologi yang memukau. Pelajari bagaimana peradaban kuno menggunakan bintang untuk membangun kekaisaran dan bagaimana astrologi berevolusi menjadi alat psikologis modern.',
-    keywords: 'sejarah astrologi, astrologi kuno, astrologi babilonia, astrologi yunani, sejarah zodiak, asal-usul astrologi, astrologi modern',
-    quickSummary: [
-        'Astrologi berasal dari Mesopotamia (Babilonia kuno) lebih dari 4.000 tahun yang lalu',
-        'Zodiak yang kita gunakan sekarang distandarisasi oleh bangsa Yunani sekitar 2.000 tahun yang lalu',
-        'Astrologi dan astronomi dianggap sebagai ilmu yang sama hingga abad ke-17',
-        'Saat ini, astrologi lebih banyak digunakan untuk wawasan psikologis daripada memprediksi nasib raja'
-    ],
-    keyTakeaways: [
-        'Budaya kuno menggunakan astrologi untuk pertanian dan kelangsungan hidup politik',
-        'Zaman Pencerahan sempat mendorong astrologi ke balik bayang-bayang takhayul',
-        'Carl Jung membawa astrologi kembali ke arus utama melalui psikologi',
-        'Teknologi AI sekarang memungkinkan perhitungan yang lebih akurat dari sebelumnya'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'Tempat Kelahiran Bintang: Babilonia' },
-        { id: 'greek-influence', title: 'Revolusi Yunani' },
-        { id: 'scientific-divorce', title: 'Perpisahan Ilmiah' },
-        { id: 'jungian-rebirth', title: 'Psikologi dan Abad ke-20' },
-        { id: 'future-astrology', title: 'Masa Depan: AI & Big Data' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">Tempat Kelahiran Bintang: Babilonia</h2>
-      <p>Kisah astrologi dimulai di Hilal Subur Mesopotamia. Hampir 5.000 tahun yang lalu, para pendeta Babilonia melihat korelasi antara pergerakan bintang dan banjir sungai atau pergantian musim. Mereka adalah yang pertama membagi langit menjadi segmen-segmen, meskipun sistem mereka awalnya digunakan untuk memprediksi nasib <em>bangsa</em> atau <em>raja</em>, bukan individu.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>Pada abad ke-5 SM, bangsa Babilonia telah mengembangkan konsep <strong>zodiak</strong> yang pertama, membagi jalur matahari menjadi dua belas tanda yang sama berdasarkan rasi bintang.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">Revolusi Yunani: Astrologi Horoskopis</h2>
-      <p>Ketika astrologi mencapai dunia Helenistik (Yunani Kuno dan Mesir), ia mengalami transformasi besar. Bangsa Yunani menambahkan <strong>ascendant (zodiak yang terbit)</strong> dan <strong>sistem rumah</strong>. Hal ini memungkinkan terciptanya "peta kelahiran" (natal chart) pertama — peta langit untuk orang tertentu pada saat kelahirannya.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>Karya Claudius Ptolemy, <em>Tetrabiblos</em>, yang ditulis pada abad ke-2 M, menjadi "alkitab astrologi". Banyak logika yang kita gunakan sekarang untuk tanda, elemen, dan aspek dikodifikasi dalam teks kuno ini.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">Perpisahan Ilmiah</h2>
-      <p>Selama sebagian besar sejarah manusia, <strong>astrologi</strong> dan <strong>astronomi</strong> adalah hal yang sama. Ilmuwan besar seperti Johannes Kepler dan Galileo Galilei juga merupakan astrolog profesional. Namun, selama Zaman Pencerahan pada abad ke-17, kedua bidang ini berpisah. Astronomi berfokus pada komposisi fisik ruang angkasa, sementara astrologi ditolak sebagai "takhayul" oleh kalangan ilmiah baru.</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>Meskipun demikian, astrologi bertahan dalam almanak dan perkumpulan rahasia, terus membimbing jutaan orang secara pribadi.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">Psikologi dan Abad ke-20</h2>
-      <p>Kembalinya astrologi di abad ke-20 didorong oleh sumber yang mengejutkan: psikologi. <strong>Carl Jung</strong>, bapak psikologi analitis, mempelajari peta kelahiran dan mengembangkan teori <em>sinkronisitas</em> untuk menjelaskan mengapa astrologi bekerja. Ia melihat zodiak sebagai kumpulan arketipe universal — pola perilaku manusia yang ada dalam ketidaksadaran kolektif semua orang.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>Ini mengalihkan fokus astrologi dari "Apa yang akan terjadi pada saya?" menjadi "Siapa saya dan mengapa saya bereaksi seperti ini?"</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">Masa Depan: AI & Big Data</h2>
-      <p>Saat ini kita berada di Zaman Keemasan baru astrologi. Teknologi telah menghilangkan kebutuhan akan perhitungan manual yang rumit, memungkinkan siapa pun yang memiliki smartphone untuk melihat peta mereka. Yang lebih penting, <strong>kecerdasan buatan (AI)</strong> sekarang digunakan untuk menganalisis data dalam jumlah besar, menemukan pola yang lebih dalam dalam transit dan ciri kepribadian yang sebelumnya mustahil untuk dilihat.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>Di Astralo, kami menggabungkan warisan 5.000 tahun ini dengan pembelajaran mesin (machine learning) mutakhir untuk memberikan panduan yang paling akurat dan mendalam dalam sejarah manusia.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };

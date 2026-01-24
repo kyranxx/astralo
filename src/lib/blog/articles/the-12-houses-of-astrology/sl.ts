@@ -1,50 +1,17 @@
 /**
- * the-12-houses-of-astrology - SL (Fallback to English content)
+ * the-12-houses-of-astrology - SL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sl: BlogPostTranslation = {
-    title: '🏠 The 12 Houses of Astrology: The Ultimate Guide to Your Life\'s Journey',
-    excerpt: 'Discover the hidden map of your life. A deep dive into the 12 Houses of Astrology, explaining where your planetary energy manifests and how to master your destiny.',
-    category: 'Astrology Basics',
-    metaDescription: 'Complete guide to the 12 houses of astrology. Learn what each house means, how they influence your life spheres, and how to interpret your birth chart houses like an expert.',
-    keywords: 'astrology houses, 12 houses, zodiac houses, birth chart interpretation, first house, seventh house, midheaven, angular houses, succedent houses, cadent houses, house rulers, stellium, intercepted houses',
-    quickSummary: [
-        'The 12 Houses represent the "where" of your life—the specific spheres like career, home, and love.',
-        'Houses are divided into Angular, Succedent, and Cadent, each with a different level of power.',
-        'The Ascendant marks the beginning of the 1st House and sets the entire chart\'s structure.',
-        'Empty houses doesn\'t mean that area of life is "missing"—they are ruled by a specific planet.'
-    ],
-    keyTakeaways: [
-        'Angular houses (1, 4, 7, 10) are the most active and visible in your life.',
-        'The ruler of a house (the planet that owns the sign on the cusp) provides the secret key to that life area.',
-        'The "Big Four" points (AC, IC, DC, MC) define the cross of your life purpose.',
-        'Understanding houses is essential for accurate timing and prediction in astrology.'
-    ],
-    tableOfContents: [
-        { id: 'introduction', title: 'The Stage: Why Houses Matter' },
-        { id: 'house-systems', title: 'Understanding House Systems: Placidus vs. Whole Sign' },
-        { id: 'angular-succedent-cadent', title: 'The Three Modalities: Power & Timing' },
-        { id: 'the-first-house', title: '1st House: The House of Self (Identity)' },
-        { id: 'the-second-house', title: '2nd House: The House of Value (Wealth)' },
-        { id: 'the-third-house', title: '3rd House: The House of Communication' },
-        { id: 'the-fourth-house', title: '4th House: The House of Home (Roots)' },
-        { id: 'the-fifth-house', title: '5th House: The House of Joy' },
-        { id: 'the-sixth-house', title: '6th House: The House of Service' },
-        { id: 'the-seventh-house', title: '7th House: The House of Partnership' },
-        { id: 'the-eighth-house', title: '8th House: The House of Transformation' },
-        { id: 'the-ninth-house', title: '9th House: The House of Wisdom' },
-        { id: 'the-tenth-house', title: '10th House: The House of Purpose' },
-        { id: 'the-eleventh-house', title: '11th House: The House of Community' },
-        { id: 'the-twelfth-house', title: '12th House: The House of Unconscious' },
-        { id: 'planetary-placements', title: 'Major Planets in the Houses' },
-        { id: 'stelliums', title: 'What is a Stellium in a House?' },
-        { id: 'empty-houses', title: 'What if a House is Empty? The Power of Rulers' },
-        { id: 'retrograde', title: 'Retrograde Planets in the Houses' },
-        { id: 'derived-houses', title: 'Advanced Technique: Derived Houses' },
-        { id: 'progressions', title: 'Progressed Houses: How Your Life Cycles Eveolve' },
-        { id: 'conclusion', title: 'Integrating Your Map' }
-    ],
+    title: "🏠 The 12 Houses of Astrology: The Ultimate Guide to Your Life's Journey",
+    excerpt: "Discover the hidden map of your life. A deep dive into the 12 Houses of Astrology, explaining where your planetary energy manifests and how to master your destiny.",
+    category: "Astrology Basics",
+    metaDescription: "Complete guide to the 12 houses of astrology. Learn what each house means, how they influence your life spheres, and how to interpret your birth chart houses like an expert.",
+    keywords: "astrology houses, 12 houses, zodiac houses, birth chart interpretation, first house, seventh house, midheaven, angular houses, succedent houses, cadent houses, house rulers, stellium, intercepted houses",
+    quickSummary: ["The 12 Houses represent the \"where\" of your life—the specific spheres like career, home, and love.","Houses are divided into Angular, Succedent, and Cadent, each with a different level of power.","The Ascendant marks the beginning of the 1st House and sets the entire chart's structure.","Empty houses doesn't mean that area of life is \"missing\"—they are ruled by a specific planet."],
+    keyTakeaways: ["Angular houses (1, 4, 7, 10) are the most active and visible in your life.","The ruler of a house (the planet that owns the sign on the cusp) provides the secret key to that life area.","The \"Big Four\" points (AC, IC, DC, MC) define the cross of your life purpose.","Understanding houses is essential for accurate timing and prediction in astrology."],
+    tableOfContents: [{"id":"introduction","title":"The Stage: Why Houses Matter"},{"id":"house-systems","title":"Understanding House Systems: Placidus vs. Whole Sign"},{"id":"angular-succedent-cadent","title":"The Three Modalities: Power & Timing"},{"id":"the-first-house","title":"1st House: The House of Self (Identity)"},{"id":"the-second-house","title":"2nd House: The House of Value (Wealth)"},{"id":"the-third-house","title":"3rd House: The House of Communication"},{"id":"the-fourth-house","title":"4th House: The House of Home (Roots)"},{"id":"the-fifth-house","title":"5th House: The House of Joy"},{"id":"the-sixth-house","title":"6th House: The House of Service"},{"id":"the-seventh-house","title":"7th House: The House of Partnership"},{"id":"the-eighth-house","title":"8th House: The House of Transformation"},{"id":"the-ninth-house","title":"9th House: The House of Wisdom"},{"id":"the-tenth-house","title":"10th House: The House of Purpose"},{"id":"the-eleventh-house","title":"11th House: The House of Community"},{"id":"the-twelfth-house","title":"12th House: The House of Unconscious"},{"id":"planetary-placements","title":"Major Planets in the Houses"},{"id":"stelliums","title":"What is a Stellium in a House?"},{"id":"empty-houses","title":"What if a House is Empty? The Power of Rulers"},{"id":"retrograde","title":"Retrograde Planets in the Houses"},{"id":"derived-houses","title":"Advanced Technique: Derived Houses"},{"id":"progressions","title":"Progressed Houses: How Your Life Cycles Eveolve"},{"id":"conclusion","title":"Integrating Your Map"}],
     content: `
       <h2 id="introduction">The Stage: Why Houses Matter</h2>
       <p>If you have ever looked at your birth chart and felt overwhelmed by the lines, symbols, and geometric shapes, you are not alone. Astrology is a language of three main components: signs, planets, and houses. While <strong>planets</strong> represent the "actors" (what is happening) and <strong>signs</strong> represent the "costumes" (how it is happening), the <strong>12 Houses of Astrology</strong> represent the "stage" (where it is happening).</p>

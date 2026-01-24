@@ -1,57 +1,41 @@
 /**
- * History of Astrology - Hebrew (עברית)
+ * history-of-astrology - HE
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: '🏛️ ההיסטוריה של האסטרולוגיה: מבבל העתיקה ועד בינה מלאכותית מודרנית',
-    excerpt: 'חוקרו את המסע המרתק בן 5,000 השנים של האסטרולוגיה. למדו כיצד תרבויות עתיקות השתמשו בכוכבים וכיצד היא התפתחה לכלי פסיכולוגי מודרני.',
-    category: 'יסודות האסטרולוגיה',
-    metaDescription: 'חוקרו את המסע המרתק בן 5,000 השנים של האסטרולוגיה. למדו כיצד תרבויות עתיקות השתמשו בכוכבים כדי לבנות אימפריות וכיצד האסטרולוגיה התפתחה לכלי פסיכולוגי מודרני.',
-    keywords: 'היסטוריה של אסטרולוגיה, אסטרולוגיה עתיקה, אסטרולוגיה בבלית, אסטרולוגיה יוונית, היסטוריה של גלגל המזלות, מקורות האסטרולוגיה, אסטרולוגיה מודרנית',
-    quickSummary: [
-        'האסטרולוגיה מקורה במסופוטמיה (בבל העתיקה) לפני למעלה מ-4,000 שנה',
-        'גלגל המזלות שאנו משתמשים בו היום עבר סטנדרטיזציה על ידי היוונים לפני כ-2,000 שנה',
-        'אסטרולוגיה ואסטרונומיה נחשבו לאותו מדע עד המאה ה-17',
-        'כיום, אסטרולוגיה משמשת יותר לתובנה פסיכולוגית מאשר לחיזוי מותם של מלכים'
-    ],
-    keyTakeaways: [
-        'תרבויות עתיקות השתמשו באסטרולוגיה לחקלאות ולהישרדות פוליטית',
-        'עידן הנאורות דחק זמנית את האסטרולוגיה לצל כ"אמונה תפלה"',
-        'קארל יונג החזיר את האסטרולוגיה למיינסטרים באמצעות הפסיכולוגיה',
-        'טכנולוגיית AI מאפשרת כיום חישובים מדויקים יותר מאי פעם'
-    ],
-    tableOfContents: [
-        { id: 'ancient-origins', title: 'ערש הכוכבים: בבל' },
-        { id: 'greek-influence', title: 'המהפכה היוונית' },
-        { id: 'scientific-divorce', title: 'הגירושין המדעיים' },
-        { id: 'jungian-rebirth', title: 'פסיכולוגיה והמאה ה-20' },
-        { id: 'future-astrology', title: 'העתיד: AI וביג דאטה' }
-    ],
+    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    category: "Astrology Basics",
+    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
+    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
+    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
+    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
     content: `
-      <h2 id="ancient-origins">ערש הכוכבים: בבל</h2>
-      <p>סיפורה של האסטרולוגיה מתחיל בסהר הפורה של מסופוטמיה. לפני כמעט 5,000 שנה, כהנים בבליים הבחינו בקשר בין תנועת הכוכבים לבין הצפות הנהרות או חילופי העונות. הם היו הראשונים שחילקו את השמיים למקטעים, אם כי המערכת שלהם שימשה בתחילה לניבוי גורלה של ה<em>אומה</em> או של ה<em>מלך</em>, ולא של הפרט.</p>
+      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
+      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>עד המאה ה-5 לפנה"ס, הבבלים פיתחו את הקונספט הראשון של <strong>גלגל המזלות (Zodiac)</strong>, תוך חלוקת נתיב השמש לשנים-עשר מזלות שווים על בסיס קבוצות הכוכבים.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
-      <h2 id="greek-influence">המהפכה היוונית: אסטרולוגיה הורוסקופית</h2>
-      <p>כאשר האסטרולוגיה הגיעה לעולם ההלניסטי (יוון ומצרים העתיקה), היא עברה טרנספורמציה אדירה. היוונים הוסיפו את ה-<strong>אופק (מזל עולה)</strong> ואת <strong>מערכת הבתים</strong>. זה אפשר את יצירת "מפת הלידה" הראשונה — מפה של השמיים עבור אדם ספציפי ברגע לידתו.</p>
+      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
+      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
       
-      <p>עבודתו של קלאודיוס תלמי, ה-<em>Tetrabiblos</em>, שנכתבה במאה ה-2 לספירה, הפכה ל"תנ"ך של האסטרולוגיה". חלק גדול מהלוגיקה שאנו משתמשים בה היום עבור מזלות, אלמנטים והיבטים (Aspects) קודד בטקסט עתיק זה.</p>
+      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
 
-      <h2 id="scientific-divorce">הגירושין המדעיים</h2>
-      <p>במשך רוב ההיסטוריה האנושית, <strong>אסטרולוגיה</strong> ו-<strong>אסטרונומיה</strong> היו אותו דבר. מדענים גדולים כמו יוהנס קפלר וגלילאו גליליי היו גם אסטרולוגים מקצועיים. עם זאת, במהלך תקופת הנאורות במאה ה-17, שני התחומים נפרדו. האסטרונומיה התמקדה בהרכב הפיזי של החלל, בעוד האסטרולוגיה נדחתה כ"אמונה תפלה" על ידי הממסד המדעי החדש.</p>
+      <h2 id="scientific-divorce">The Scientific Divorce</h2>
+      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
       
-      <p>למרות זאת, האסטרולוגיה שרדה בלוחות שנה ובאגודות סתרים, והמשיכה להדריך מיליוני אנשים באופן פרטי.</p>
+      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
 
-      <h2 id="jungian-rebirth">פסיכולוגיה והמאה ה-20</h2>
-      <p>הקאמבק של האסטרולוגיה במאה ה-20 הונע על ידי מקור מפתיע: הפסיכולוגיה. <strong>קארל יונג</strong>, אבי הפסיכולוגיה האנליטית, למד מפות לידה ופיתח את תיאוריית ה-<em>סינכרוניות (Synchronicity)</em> כדי להסביר מדוע אסטרולוגיה עובדת. הוא ראה בגלגל המזלות אוסף של ארכיטיפים אוניברסליים — דפוסי התנהגות אנושיים הקיימים בתת-מודע הקולקטיבי של כל העמים.</p>
+      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
+      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
       
-      <p>זה העביר את המיקוד של האסטרולוגיה מ"מה יקרה לי?" ל"מי אני ומדוע אני מגיב כך?"</p>
+      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">העתיד: AI וביג דאטה</h2>
-      <p>אנו נמצאים כיום בעידן זהב חדש של האסטרולוגיה. הטכנולוגיה ביטלה את הצורך בחישובים ידניים מורכבים, ומאפשרת לכל מי שיש לו סמארטפון לראות את המפה שלו. חשוב מכך, <strong>בינה מלאכותית</strong> משמשת כיום לניתוח כמויות עצומות של נתונים, ומציאת דפוסים עמוקים יותר במעברי כוכבים ותכונות אישיות שהיה בלתי אפשרי לראות קודם לכן.</p>
+      <h2 id="future-astrology">The Future: AI & Big Data</h2>
+      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
       
-      <p>ב-Astralo אנו משלבים את המורשת בת 5,000 השנים הזו עם למידת מכונה חדישה כדי לספק לכם את ההדרכה המדויקת והמעמיקה ביותר בתולדות האנושות.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
     `
 };
