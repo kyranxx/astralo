@@ -16,7 +16,7 @@ export const no: BlogPostTranslation = {
       <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
       <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Dyrekretsen</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
       <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
       <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>

@@ -27,7 +27,7 @@ export const ja: BlogPostTranslation = {
       <h3>2. The Moon 🌙 (Emotion)</h3>
       <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
 
-      <h3>3. The Ascendant / Rising Sign 🏹 (Mask)</h3>
+      <h3>3. The Ascendant / Rising 星座 🏹 (Mask)</h3>
       <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
 
       <h2 id="the-planets">The Planets: Inner vs. Outer</h2>

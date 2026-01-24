@@ -27,7 +27,7 @@ export const sk: BlogPostTranslation = {
         <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Fire Signs (Aries, Leo, Sagittarius)</h2>
+      <h2 id="fire-signs">🔥 Oheň Znamenies (Aries, Leo, Sagittarius)</h2>
       <p><strong>Theme: Reclaiming Your Spark.</strong></p>
       
       <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
@@ -36,7 +36,7 @@ export const sk: BlogPostTranslation = {
       
       <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
 
-      <h2 id="earth-signs">🌍 Earth Signs (Taurus, Virgo, Capricorn)</h2>
+      <h2 id="earth-signs">🌍 Zem Znamenies (Taurus, Virgo, Capricorn)</h2>
       <p><strong>Theme: Building the Foundation.</strong></p>
       
       <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
@@ -45,7 +45,7 @@ export const sk: BlogPostTranslation = {
       
       <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
 
-      <h2 id="air-signs">💨 Air Signs (Gemini, Libra, Aquarius)</h2>
+      <h2 id="air-signs">💨 Vzduch Znamenies (Gemini, Libra, Aquarius)</h2>
       <p><strong>Theme: Intellectual Expansion.</strong></p>
       
       <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
@@ -54,7 +54,7 @@ export const sk: BlogPostTranslation = {
       
       <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
 
-      <h2 id="water-signs">💧 Water Signs (Cancer, Scorpio, Pisces)</h2>
+      <h2 id="water-signs">💧 Voda Znamenies (Cancer, Scorpio, Pisces)</h2>
       <p><strong>Theme: Emotional Wisdom.</strong></p>
       
       <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>

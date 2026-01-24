@@ -27,7 +27,7 @@ export const hu: BlogPostTranslation = {
       <h3>The Aspects: Conversations Between Planets</h3>
       <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Sign</h2>
+      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Jegy</h2>
       <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
       
       <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
@@ -45,7 +45,7 @@ export const hu: BlogPostTranslation = {
         <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Signs</h2>
+      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Jegys</h2>
       
       <h3>♈ Aries (March 21 - April 19)</h3>
       <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>

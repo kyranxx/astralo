@@ -47,7 +47,7 @@ export const el: BlogPostTranslation = {
         <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Zodiac Signs</h2>
+      <h2 id="saturn-in-signs">Saturn Return Through the Ζώδιο Σήμαs</h2>
       <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
       
       <h3>Saturn in Aries</h3>
@@ -137,7 +137,7 @@ export const el: BlogPostTranslation = {
       <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
       <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Career</h2>
+      <h2 id="house-10">10th House: The Mountaintop of Καριέρα</h2>
       <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
       <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
 
@@ -175,7 +175,7 @@ export const el: BlogPostTranslation = {
         <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Fire: The 30s</h2>
+      <h2 id="post-return">Life After the Φωτιά: The 30s</h2>
       <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
 
       <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>

@@ -20,13 +20,13 @@ export const ro: BlogPostTranslation = {
 
       <p>In this comprehensive guide, we will explore every nook and cranny of these twelve life spheres, helping you understand how to read your own chart like a professional astrologer. Whether you are curious about your financial future, your romantic potential, or your soul's hidden purpose, the houses hold the key.</p>
 
-      <h2 id="house-systems">Understanding House Systems: Placidus vs. Whole Sign</h2>
+      <h2 id="house-systems">Understanding House Systems: Placidus vs. Whole Semn</h2>
       <p>Before we dive into the specific meanings, we must address the "elephant in the room": House Systems. There are dozens of ways to divide the sky, and which one you choose can change your chart significantly.</p>
       
       <h3>Placidus System</h3>
       <p>This is the most popular system in modern Western astrology. It calculates houses based on how long it takes for a planet to travel from the horizon to the meridian. Because the Earth is tilted, this often leads to "intercepted houses" (houses that span more than one sign) and houses of varying sizes. Fans of Placidus argue it is more psychologically nuanced and reflects the "stretching" of time and experience.</p>
 
-      <h3>Whole Sign System</h3>
+      <h3>Whole Semn System</h3>
       <p>The oldest system, recently making a huge comeback in traditional and Hellenistic astrology. In this system, the entire sign of your Ascendant becomes your 1st House. If you are 29 degrees Aries Rising, the *entire* sign of Aries is your 1st House. This system is cleaner, creates "Equal" houses of 30 degrees, and many find it more accurate for predicting concrete life events.</p>
 
       <h3>Equal House System</h3>

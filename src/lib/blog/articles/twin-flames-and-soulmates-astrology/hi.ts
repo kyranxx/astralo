@@ -35,7 +35,7 @@ export const hi: BlogPostTranslation = {
       <h2 id="synastry">Synastry: How We Impact Each Other</h2>
       <p>To understand a relationship, we use <strong>Synastry</strong>. This involves placing one person's chart (Person A) on top of another's (Person B). Think of it as a chemical reaction. When my Mars sits on your Moon, I "activate" your emotions through my actions. This could be exciting (high sexual attraction), or it could be irritating (feeling emotionally attacked). Synastry shows the friction and the flow between two individuals. It is the "energetic blueprint" of how you interact on a daily basis.</p>
 
-      <h2 id="personal-planets">The Big Three of Love: Sun, Moon, and Ascendant</h2>
+      <h2 id="personal-planets">The Big Three of प्रेम: Sun, Moon, and Ascendant</h2>
       <p>Before looking at the "love planets" (Venus and Mars), we must look at the foundation of the personality. If the Big Three are not in harmony, the rest of the relationship will struggle to find a stable footing.</p>
       <ul>
         <li><strong>Sun Synastry (Identity):</strong> Do our core identities align? If our Suns are in harmony (like a Trine or Sextile), we feel seen and respected by each other. We understand each other's basic life path and core ego needs.</li>
@@ -61,7 +61,7 @@ export const hi: BlogPostTranslation = {
       <h2 id="the-vertex">The Vertex: Fated Encounters</h2>
       <p>Often overlooked by beginners, the **Vertex** is called the "Third Angle" or the "Destiny Point" of the chart. It represents fated encounters that are outside of our conscious control. When a person's personal planets (like Sun or Moon) conjunct your Vertex, it often feels like a "meeting of destiny" that changes the course of your life forever. You literally "couldn't avoid" this person if you tried. These meetings often happen during major life transits or solar returns.</p>
 
-      <h2 id="asteroids">Asteroids of Love: Juno, Eros, and Psyche</h2>
+      <h2 id="asteroids">Asteroids of प्रेम: Juno, Eros, and Psyche</h2>
       <p>For those who want to go deeper than the nine planets, we look at the asteroids, which add nuanced flavors to the connection.
       <br><strong>Juno:</strong> The "Marriage" asteroid. It shows what you *actually* need in a long-term committed partner (as opposed to what you find attractive). If your Juno is in Scorpio, you need intensity and total loyalty in marriage.
       <br><strong>Eros & Psyche:</strong> These represent the higher level of erotic and spiritual merging. When these are in harmony between two charts, the connection feels "otherworldly," poetic, and destined.
@@ -82,7 +82,7 @@ export const hi: BlogPostTranslation = {
         <li><strong>Your planets in my 12th House:</strong> This is a "soulmate" indicator but can be confusing. We share a psychic connection, but there might be things we keep hidden or a sense of "sacrifice" in the union.</li>
       </ul>
 
-      <h2 id="twin-flames-signs">Twin Flame Dynamics Through the 12 Signs</h2>
+      <h2 id="twin-flames-signs">Twin Flame Dynamics Through the 12 राशिs</h2>
       <p>How your Twin Flame connection manifests depends on the sign of your union (often seen in the Composite Sun):</p>
       <ul>
         <li><strong>Aries Union:</strong> Intense, fast-paced, and full of action. You trigger each other to be more courageous and independent.</li>
@@ -114,7 +114,7 @@ export const hi: BlogPostTranslation = {
         <li><strong>John Lennon & Yoko Ono:</strong> A deep spiritual and intellectual bond seen through strong Uranus and Neptune synastry—they changed the world's consciousness together.</li>
       </ul>
 
-      <h2 id="red-flags">Astrological Red Flags: When Love Becomes Toxic</h2>
+      <h2 id="red-flags">Astrological Red Flags: When प्रेम Becomes Toxic</h2>
       <p>Astrology should never be used to judge someone's character, but it can provide vital warnings about potential low-vibration dynamics.</p>
       <br><strong>Pluto-Venus Squares/Oppositions:</strong> Can indicate a "power struggle" or obsession where love is used as a weapon of control or jealousy.
       <br><strong>Mars-Mars Squares:</strong> High volatility and conflict. You might "clash" physically or lose your patience with each other constantly over minor things.
@@ -140,7 +140,7 @@ export const hi: BlogPostTranslation = {
       <p><strong>Q: How do I find our Composite Chart?</strong>
       <br>A: In the Astralo app, use the "Relationship" tool. Enter both birth times and locations, and we will generate your shared map instantly. We even provide a compatibility score based on over 100 different factors.</p>
 
-      <h2 id="conclusion">The True Meaning of Love</h2>
+      <h2 id="conclusion">The True Meaning of प्रेम</h2>
       <p>Ultimately, a birth chart is a map of potentials, not a prison of fate. Life is built on choices. Astrology shows us the "weather" of the relationship—it shows us where there will be storms and where there will be sunshine—but you are the one who decides to build the house. Even the most "incompatible" signs can build a beautiful life together through consciousness, effort, and unconditional love. The stars impel, they do not compel.</p>
       
       <p>At Astralo, our <strong>Synastry and Relationship Reports</strong> go beyond simple "percentage" matching. We dive deep into the karmic signatures, the emotional needs, and the sexual chemistry of your unique union. Whether you are dealing with a Twin Flame "runner" or searching for your forever soulmate, we help you understand the cosmic logic of your heart. Learn to love with your eyes wide open. Your soulmate is waiting—not in your dreams, but in the stars. </p>

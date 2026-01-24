@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love",
+    title: "❤️ Eläinradan Merkki Compatibility: The Definitive Guide to Cosmic Rakkaus",
     excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
     category: "Love & Relationships",
     metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
@@ -13,35 +13,35 @@ export const fi: BlogPostTranslation = {
     keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
     tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
     content: `
-      <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
+      <h2 id="beyond-sun-signs">Why Sun Merkkis Aren't Everything</h2>
       <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
       
       <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Love</h2>
+      <h2 id="elemental-love">The 4 Elements in Rakkaus</h2>
       <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
       
-      <h3>🔥 Fire Signs (Aries, Leo, Sagittarius)</h3>
+      <h3>🔥 Tuli Merkkis (Aries, Leo, Sagittarius)</h3>
       <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
       <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
       <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
 
-      <h3>🌍 Earth Signs (Taurus, Virgo, Capricorn)</h3>
+      <h3>🌍 Maa Merkkis (Taurus, Virgo, Capricorn)</h3>
       <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
       <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
       <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
 
-      <h3>💨 Air Signs (Gemini, Libra, Aquarius)</h3>
+      <h3>💨 Ilma Merkkis (Gemini, Libra, Aquarius)</h3>
       <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
       <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
       <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
 
-      <h3>💧 Water Signs (Cancer, Scorpio, Pisces)</h3>
+      <h3>💧 Vesi Merkkis (Cancer, Scorpio, Pisces)</h3>
       <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
       <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
       <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
 
-      <h2 id="love-planets">The Real Love Planets: Venus, Mars & The Moon</h2>
+      <h2 id="love-planets">The Real Rakkaus Planets: Venus, Mars & The Moon</h2>
       <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
 
       <h3>1. The Moon 🌙 (Emotional Safety)</h3>
@@ -61,7 +61,7 @@ export const fi: BlogPostTranslation = {
       
       <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac Pairings</h2>
+      <h2 id="best-matches-deep-dive">Deep Dive: Famous Eläinradan PIlmaings</h2>
       
       <h3>The "Power Couple": Aries & Libra</h3>
       <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>

@@ -4,7 +4,7 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: "💕 Love Horoscope 2026: The Master Guide to Zodiac Romance",
+    title: "💕 愛 Horoscope 2026: The Master Guide to 干支 Romance",
     excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
     category: "Love & Relationships",
     metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
@@ -13,7 +13,7 @@ export const ja: BlogPostTranslation = {
     keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
     tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
     content: `
-      <h2 id="love-guide">Love is a Skill (and Astrology is the Manual)</h2>
+      <h2 id="love-guide">愛 is a Skill (and Astrology is the Manual)</h2>
       <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
       
       <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
