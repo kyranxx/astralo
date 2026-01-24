@@ -1,101 +1,119 @@
 /**
- * daily-horoscope-guide - PT
+ * Daily Horoscope Guide - Portuguese (Português)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.", // Excerpt remains EN mostly
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}], // TO-DO: Translate TOC
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: '⭐ Horóscopo Diário 2026: O Guia Definitivo para Entender Suas Previsões',
+  excerpt: 'Domine suas previsões de horóscopo diário. Um guia completo para entender como funciona a astrologia diária, por que seu signo Ascendente importa e como usar a energia planetária para o sucesso.',
+  category: 'Astrologia 101',
+  metaDescription: 'Domine suas previsões de horóscopo diário. Um guia completo para entender como funciona a astrologia diária, por que seu signo Ascendente importa e como usar a energia planetária para o sucesso.',
+  keywords: 'horóscopo diário, horóscopo hoje, zodíaco diário, guia horóscopo, entender astrologia, ascendente diário, trânsitos planetários',
+  quickSummary: [
+    'Horóscopos diários são impulsionados pela Lua de movimento rápido e aspectos planetários para o seu mapa',
+    'Ler para o seu Signo Ascendente muitas vezes fornece maior precisão na previsão diária',
+    'Trânsitos planetários desencadeiam eventos específicos, emoções e oportunidades a cada dia',
+    'Aprenda a usar os períodos da Lua "Void-of-Course" para evitar esforços desperdiçados'
+  ],
+  keyTakeaways: [
+    'Seu signo Solar mostra sua vitalidade central, mas seu signo Ascendente define o "palco" para sua vida diária',
+    'A Lua muda de signo a cada 2,5 dias, ditando o humor coletivo',
+    'Mercúrio Retrógrado e outros "maus" aspectos são na verdade períodos para revisão e recalibração',
+    'Integrar a astrologia em sua rotina matinal pode otimizar sua produtividade e relacionamentos'
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: 'Por que ler um Horóscopo Diário?' },
+    { id: 'science-behind-it', title: 'A Mecânica: Como Funciona' },
+    { id: 'rising-vs-sun', title: 'A Regra de Ouro: Sol vs. Ascendente' },
+    { id: 'planetary-players', title: 'Jogadores Planetários Chave' },
+    { id: 'zodiac-daily-styles', title: 'Estilos Diários dos 12 Signos' },
+    { id: 'practical-rituals', title: 'Rituais Astrológicos Diários' },
+    { id: 'myth-busting', title: 'Derrubando Mitos Comuns' }
+  ],
+  content: `
+      <h2 id="introduction">Por que ler um Horóscopo Diário?</h2>
+      <p>Para milhões de pessoas em todo o mundo, verificar seu <strong>horóscopo diário</strong> é tão essencial quanto uma xícara de café pela manhã. É um momento de pausa, um ritual de autorreflexão e uma maneira de se preparar para a energia do dia. Mas você já se perguntou o que realmente impulsiona essas previsões? É apenas um conselho aleatório, ou há um mecanismo cósmico complexo nos bastidores?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Na Astralo, acreditamos que a astrologia é uma ferramenta para o empoderamento. Um horóscopo bem escrito não apenas prevê o futuro; ele ajuda você a <em>criá-lo</em>. Ao entender o clima cósmico—a posição dos planetas hoje em relação a onde estavam quando você nasceu—você pode navegar pelos desafios com graça e aproveitar oportunidades que de outra forma passariam despercebidas.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">A Mecânica: Como Funciona</h2>
+      <p>A astrologia é frequentemente chamada de estudo dos ciclos. Suas <strong>previsões de horóscopo diário</strong> são calculadas usando uma técnica chamada "trânsitos". Imagine que seu mapa natal seja um instantâneo permanente do céu no momento do seu nascimento. Os planetas, no entanto, continuam se movendo. "Trânsitos" ocorrem quando um planeta em movimento no céu forma um ângulo matemático (um aspecto) com um planeta em seu mapa natal.</p>
       
-      <h3>The Lua: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Lua</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>A Lua: O Ponteiro dos Minutos do Destino</h3>
+      <p>Enquanto planetas como Júpiter levam um ano para mudar de signo, a <strong>Lua</strong> se move incrivelmente rápido, atravessando um signo do zodíaco em apenas cerca de 2,5 dias. Isso torna a Lua o principal impulsionador do seu humor <em>diário</em> e paisagem emocional. Quando a Lua está no ardente Áries, nos sentimos impulsivos e energéticos. Quando muda para o aterrado Touro, coletivamente desaceleramos e ansiamos por conforto.</p>
 
-      <h3>The Aspects: Conversations Between Planetas</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>Os Aspectos: Conversas Entre Planetas</h3>
+      <p>Os planetas "falam" entre si através de ângulos. Um <strong>Trígono (120°)</strong> é uma conversa harmoniosa, trazendo facilidade e sorte. Uma <strong>Quadratura (90°)</strong> é um ponto de tensão, forçando uma ação ou decisão. Seu horóscopo diário interpreta essas conversas. Se Marte (ação) faz uma quadratura com Saturno (restrição) no céu, você pode se sentir frustrado ou bloqueado hoje. Saber disso ajuda você a ser paciente em vez de forçar uma porta que não se abrirá.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Ascendente Signo</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">A Regra de Ouro: Leia para seu Signo Ascendente</h2>
+      <p>Aqui está o segredo que os astrólogos profissionais conhecem: <strong>Para a previsão diária mais precisa, você deve ler o horóscopo para o seu Signo Ascendente, não apenas para o seu Signo Solar.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>Por quê? Porque os horóscopos são escritos usando um "Sistema de Casas". Seu Signo Ascendente determina o layout das 12 casas em seu mapa. A 1ª Casa é você, a 2ª é dinheiro, a 7ª são relacionamentos, e assim por diante. Quando um astrólogo escreve "Áries terá uma oportunidade financeira hoje", eles estão olhando para os movimentos planetários através da 2ª Casa de um mapa Ascendente Áries.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>Leia seu Signo Solar</strong> para temas gerais sobre seu ego, vitalidade e propósito central.</li>
+        <li><strong>Leia seu Signo Ascendente</strong> para eventos específicos, tempo e circunstâncias que acontecerão com você hoje.</li>
+        <li><strong>Leia seu Signo Lunar</strong> se quiser entender seu estado emocional interno.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetaary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">Jogadores Planetários Chave no Seu Dia</h2>
+      <p>Além da Lua, outros "planetas pessoais" de movimento rápido moldam sua experiência diária:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>Mercúrio:</strong> Regente da comunicação, tecnologia e viagens. Sua condição determina se seus e-mails chegam bem ou se perdem no spam, e se seu trajeto é tranquilo ou caótico.</li>
+        <li><strong>Vênus:</strong> Regente do amor, dinheiro e valores. Um bom dia de Vênus é perfeito para encontros, compras ou pedir um aumento.</li>
+        <li><strong>Marte:</strong> O motor do zodíaco. Ele dita seus níveis de energia, impulso e libido. Um dia difícil de Marte pode levar ao esgotamento ou discussões se não for canalizado em exercícios ou trabalho duro.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Signos</h2>
+      <h2 id="zodiac-daily-styles">Estilos Diários dos 12 Signos</h2>
       
-      <h3>♈ Áries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ Áries (21 de Março - 19 de Abril)</h3>
+      <p><strong>Impulsionado por Marte.</strong> Você precisa de movimento físico para processar a energia diária. Um horóscopo de Áries muitas vezes foca em iniciativas, conflitos a resolver e momentos de liderança. <em>Melhor hábito diário:</em> Cardio matinal.</p>
 
-      <h3>♉ Touro (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ Touro (20 de Abril - 20 de Maio)</h3>
+      <p><strong>Regido por Vênus.</strong> Você processa o dia através dos seus sentidos. Seu horóscopo muitas vezes destaca movimentos financeiros e conforto físico. <em>Melhor hábito diário:</em> Um café da manhã deliberado e delicioso.</p>
 
-      <h3>♊ Gêmeos (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ Gêmeos (21 de Maio - 20 de Junho)</h3>
+      <p><strong>Regido por Mercúrio.</strong> Informação é seu combustível. Sua previsão diária gira em torno de conversas, aprendizado e viagens curtas. <em>Melhor hábito diário:</em> Escrever um diário ou ouvir um podcast matinal.</p>
 
-      <h3>♋ Câncer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ Câncer (21 de Junho - 22 de Julho)</h3>
+      <p><strong>Regido pela Lua.</strong> Você é o signo mais cíclico. Sua leitura muitas vezes se concentra em casa, família e segurança emocional. <em>Melhor hábito diário:</em> Entrar em contato com um ente querido.</p>
 
-      <h3>♌ Leão (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ Leão (23 de Julho - 22 de Agosto)</h3>
+      <p><strong>Regido pelo Sol.</strong> Você precisa se expressar. Leoninos muitas vezes encontram temas de criatividade, romance e reconhecimento em seu dia. <em>Melhor hábito diário:</em> Escolher uma roupa que faça você se sentir confiante.</p>
 
-      <h3>♍ Virgem (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ Virgem (23 de Agosto - 22 de Setembro)</h3>
+      <p><strong>Regido por Mercúrio.</strong> Ordem traz paz. Seu horóscopo frequentemente apontará para tarefas de trabalho, rotinas de saúde e serviço. <em>Melhor hábito diário:</em> Fazer uma lista de tarefas.</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ Libra (23 de Setembro - 22 de Outubro)</h3>
+      <p><strong>Regido por Vênus.</strong> Equilíbrio é a chave. Você busca harmonia nos relacionamentos. Seus insights diários muitas vezes focam em parcerias e estética. <em>Melhor hábito diário:</em> Meditação ou equilibrar seu ambiente.</p>
 
-      <h3>♏ Escorpião (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ Escorpião (23 de Outubro - 21 de Novembro)</h3>
+      <p><strong>Regido por Plutão & Marte.</strong> Você busca profundidade. Dias superficiais entediam você; seu horóscopo destaca transformação, segredos e recursos compartilhados. <em>Melhor hábito diário:</em> Pesquisa profunda ou reflexão privada.</p>
 
-      <h3>♐ Sagitário (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ Sagitário (22 de Novembro - 21 de Dezembro)</h3>
+      <p><strong>Regido por Júpiter.</strong> Você anseia por expansão. Seu dia muitas vezes é sobre o quadro geral, filosofia ou influências estrangeiras. <em>Melhor hábito diário:</em> Aprender algo inteiramente novo.</p>
 
-      <h3>♑ Capricórnio (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ Capricórnio (22 de Dezembro - 19 de Janeiro)</h3>
+      <p><strong>Regido por Saturno.</strong> Você está construindo um legado. Temas diários para você muitas vezes são sobre carreira, reputação e objetivos de longo prazo. <em>Melhor hábito diário:</em> Enfrentar a tarefa mais difícil primeiro.</p>
 
-      <h3>♒ Aquário (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ Aquário (20 de Janeiro - 18 de Fevereiro)</h3>
+      <p><strong>Regido por Urano & Saturno.</strong> Você olha para o futuro. Seu horóscopo destaca redes sociais, tecnologia e inovação. <em>Melhor hábito diário:</em> Conectar-se com sua comunidade.</p>
 
-      <h3>♓ Peixes (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ Peixes (19 de Fevereiro - 20 de Março)</h3>
+      <p><strong>Regido por Netuno & Júpiter.</strong> Você vaga entre mundos. Sua orientação diária é muitas vezes espiritual, artística ou intuitiva. <em>Melhor hábito diário:</em> Registrar sonhos ou visualização criativa.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">Rituais Astrológicos Diários</h2>
+      <p>Como você pode usar essa informação? Não apenas leia—viva.</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>A Verificação Matinal:</strong> Leia sua previsão <em>antes</em> de verificar seu e-mail. Isso define uma intenção cósmica.</li>
+        <li><strong>Observe o Signo Lunar:</strong> Se a Lua está em Virgem, limpe sua mesa. Se está em Libra, ligue para seu parceiro de negócios. Nadar a favor da corrente é sempre mais fácil.</li>
+        <li><strong>Respeite o Vazio:</strong> A Lua "Void-of-Course" é um período em que a Lua não faz mais aspectos antes de mudar de signo. É um tempo de indefinição. Nunca assine contratos ou lance negócios durante o Vazio. Use-o para descanso.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">Derrubando Mitos Comuns</h2>
+      <p><strong>"Horóscopos são vagos demais."</strong> <br>Horóscopos genéricos de jornal são vagos porque olham apenas para os Signos Solares. Uma leitura personalizada, como as geradas por nossa IA sofisticada na Astralo, considera a nuance de todo o seu mapa.</p>
+      <p><strong>"A astrologia prevê um destino fixo."</strong> <br>Falso. A astrologia prevê <em>energia</em> e <em>clima</em>. Pode chover (um trânsito difícil), mas você decide se leva um guarda-chuva ou dança na chuva. Você sempre tem livre arbítrio.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>Pronto para Mergulhar Mais Fundo?</h3>
+      <p>Embora as previsões gerais sejam úteis, nada supera uma leitura derivada do seu tempo e local de nascimento exatos. Seu mapa natal único é um mapa complexo que duas pessoas não compartilham. Desbloqueie todo o potencial do seu design cósmico com as leituras personalizadas premium da Astralo.</p>
     `
 };
