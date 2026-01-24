@@ -1,89 +1,71 @@
 /**
- * Monthly Horoscope February 2026 - Spanish (Español)
+ * monthly-horoscope-february-2026 - ES
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const es: BlogPostTranslation = {
-    title: '❤️ Horóscopo Mensual Febrero 2026: Temporada de Innovación Acuariana',
-    excerpt: 'Febrero de 2026 trae una ola de claridad con Mercurio Directo. Descubre cómo la Luna Llena en Leo el 3 de febrero y Venus en Piscis impactarán tu vida amorosa y profesional.',
-    category: 'Horóscopos',
-    metaDescription: 'Pronóstico astrológico completo de febrero 2026. Predicciones mensuales detalladas para todos los signos, enfocadas en la Luna Llena en Leo y Venus entrando en Piscis.',
-    keywords: 'horóscopo mensual, astrología febrero 2026, predicciones mensuales, pronóstico zodiacal febrero, temporada acuario, luna llena leo, venus piscis',
-    quickSummary: [
-        'La Luna Llena en Leo el 3 de febrero exige que tomes el protagonismo y expreses tu verdadero yo',
-        'Mercurio finalmente se pone Directo, aclarando los malentendidos de finales de enero',
-        'Venus se mueve al soñador Piscis, creando la energía más romántica de todo el año',
-        'La Temporada de Acuario nos empuja a innovar y liberarnos de tradiciones obsoletas'
-    ],
-    keyTakeaways: [
-        'Usa la primera semana de febrero para lanzar proyectos creativos o renovar tu marca personal',
-        'El Día de San Valentín es extra mágico este año con Venus exaltada—planea algo espiritual y profundo',
-        'Espera ideas repentinas sobre tecnología o grupos comunitarios a mediados de mes',
-        'Los horóscopos generales son geniales, pero para tiempos específicos, necesitas tus tránsitos personales'
-    ],
-    tableOfContents: [
-        { id: 'monthly-overview', title: 'Resumen de Febrero 2026' },
-        { id: 'key-transits', title: 'Fechas Clave y Tránsitos' },
-        { id: 'fire-signs', title: 'Signos de Fuego (Aries, Leo, Sag)' },
-        { id: 'earth-signs', title: 'Signos de Tierra (Tauro, Virgo, Cap)' },
-        { id: 'air-signs', title: 'Signos de Aire (Géminis, Libra, Acua)' },
-        { id: 'water-signs', title: 'Signos de Agua (Cáncer, Escorpio, Piscis)' },
-        { id: 'get-personal', title: 'Por qué lo General no es Suficiente' }
-    ],
+    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
+    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.", // Excerpt remains EN mostly
+    category: "Horoscopes",
+    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
+    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
+    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
+    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
+    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}], // TO-DO: Translate TOC
     content: `
-      <h2 id="monthly-overview">La Astrología de Febrero 2026</h2>
-      <p>Si enero fue para sacudirse el año viejo, <strong>Febrero 2026</strong> es para dar un paso audaz hacia el futuro. Estamos en plena <strong>Temporada de Acuario</strong>, un tiempo que favorece a los valientes, los extraños y los innovadores. El estado de ánimo colectivo cambia de "¿Cómo sobrevivo?" a "¿Cómo me reinvento?".</p>
+      <h2 id="monthly-overview">The Astrology of February 2026</h2>
+      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
       
-      <p>La noticia principal es la <strong>Luna Llena en Leo el 3 de febrero</strong>. Leo nos pide brillar. Pregunta: "¿Dónde estás jugando a ser pequeño?". Bajo esta luz, esconderse no es una opción. Combinado con el fin de la fase de sombra de Mercurio, la claridad regresa a nuestras comunicaciones. La niebla se disipa.</p>
+      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
 
-      <h2 id="key-transits">Fechas Clave y Tránsitos</h2>
+      <h2 id="key-transits">Key Dates & Transits</h2>
       <ul>
-        <li><strong>3 Feb:</strong> Luna Llena en Leo (Drama, Pasión, Culminación).</li>
-        <li><strong>10 Feb:</strong> Venus entra en Piscis (Amor Incondicional, Arte, Fantasía).</li>
-        <li><strong>18 Feb:</strong> El Sol entra en Piscis (Comienza la Temporada de Sueños).</li>
-        <li><strong>25 Feb:</strong> Mercurio entra en Piscis (La lógica se disuelve en Intuición).</li>
+        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
+        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
+        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
+        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Signos de Fuego (Aries, Leo, Sagitario)</h2>
-      <p><strong>Tema: Explosión Creativa.</strong></p>
+      <h2 id="fire-signs">🔥 Fuego Signos (Aries, Leo, Sagitario)</h2>
+      <p><strong>Theme: Creative Explosion.</strong></p>
       
-      <p><strong>Leo:</strong> Este es tu momento. La Luna Llena en tu signo te pone en el centro de atención. Ya sea una promoción, una ruptura o un gran avance, sucede <em>ahora</em>. No tengas miedo de ser visto.</p>
-      <p><strong>Aries:</strong> Tu círculo social es tu riqueza este mes. El networking trae oro inesperado. Un amigo podría convertirse en amante o socio comercial.</p>
-      <p><strong>Sagitario:</strong> Deseas sabiduría. Los planes de viaje que se retrasaron en enero finalmente reciben luz verde. Compra el boleto.</p>
+      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
+      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
+      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
 
-      <h2 id="earth-signs">🌍 Signos de Tierra (Tauro, Virgo, Capricornio)</h2>
-      <p><strong>Tema: Anclaje Espiritual.</strong></p>
+      <h2 id="earth-signs">🌍 Tierra Signos (Tauro, Virgo, Capricornio)</h2>
+      <p><strong>Theme: Spiritual Grounding.</strong></p>
       
-      <p><strong>Tauro:</strong> Cuando Venus entra en Piscis, te sientes más suave. Es un momento hermoso para el romance, pero también para perdonarte por errores pasados. Suelta el rencor.</p>
-      <p><strong>Virgo:</strong> Enfócate en la asociación. Usualmente eres el ayudante, pero en febrero, deja que alguien te ayude a <em>ti</em>. La vulnerabilidad es tu lección este mes.</p>
-      <p><strong>Capricornio:</strong> Los asuntos de dinero mejoran, pero no solo por trabajo duro. La intuición guía tus inversiones. Confía en tu instinto sobre la hoja de cálculo.</p>
+      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
+      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
+      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
 
-      <h2 id="air-signs">💨 Signos de Aire (Géminis, Libra, Acuario)</h2>
-      <p><strong>Tema: Renovación Intelectual.</strong></p>
+      <h2 id="air-signs">💨 Aire Signos (Géminis, Libra, Acuario)</h2>
+      <p><strong>Theme: Intellectual Renewal.</strong></p>
       
-      <p><strong>Acuario:</strong> ¡Feliz Cumpleaños! El Sol en tu signo amplifica tu vitalidad. Eres magnético. Es el mejor momento del año para lanzar una marca personal o actualizar tu look.</p>
-      <p><strong>Géminis:</strong> La carrera da un giro. Podrías aburrirte de la rutina. Busca soluciones inusuales o "trabajos secundarios" que despierten tu curiosidad.</p>
-      <p><strong>Libra:</strong> El romance está alto, pero también la creatividad. Estás dando a luz a algo—un niño, una obra de arte o un nuevo romance. Disfruta la fertilidad del momento.</p>
+      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
+      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
+      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
 
-      <h2 id="water-signs">💧 Signos de Agua (Cáncer, Escorpio, Piscis)</h2>
-      <p><strong>Tema: Inmersión Emocional Profunda.</strong></p>
+      <h2 id="water-signs">💧 Agua Signos (Cáncer, Escorpio, Piscis)</h2>
+      <p><strong>Theme: Emotional Deep Dive.</strong></p>
       
-      <p><strong>Piscis:</strong> A medida que termina el mes, el Sol entra en tu signo. Estás despertando de un largo sueño. Tu intuición es prácticamente psíquica ahora. Úsala.</p>
-      <p><strong>Cáncer:</strong> El dinero y los recursos compartidos están resaltados. Una deuda podría pagarse o un préstamo aprobarse. Es momento de poner en orden tu casa financiera.</p>
-      <p><strong>Escorpio:</strong> El hogar es donde está el corazón. Podrías estar renovando o simplemente escondiéndote del mundo. El descanso es productivo para ti ahora mismo.</p>
+      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
+      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
+      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
 
-      <h2 id="get-personal">Por qué los Horóscopos Generales no son Suficientes</h2>
-      <p>Aunque este pronóstico te da el "clima cósmico" para tu Signo Solar, se pierde la parte más crítica: <strong>Tu Carta Única.</strong></p>
+      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
+      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
       
-      <p>Eres más que solo tu signo solar. Tienes una Luna, un Ascendente y otros 8 planetas que forman un mapa único como una huella digital. 
-      <br><em>Ejemplo:</em> Un Ascendente Tauro experimentará este mes de manera completamente diferente a un Sol en Tauro.</p>
+      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
+      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
       
-      <p><strong>No adivines tu futuro.</strong> Para obtener las fechas y detalles específicos que se aplican a TI personalmente, necesitas una lectura calculada.</p>
+      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">¿Listo para tu Verdad Personal?</h3>
-          <p>Obtén tu Informe de Tránsitos Personales 2026 completo. Mira exactamente cómo interactúan los planetas con tu mapa natal.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Obtener Mi Lectura Personal</a>
+          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
+          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
       </div>
     `
 };

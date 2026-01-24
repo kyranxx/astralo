@@ -5,13 +5,13 @@ import type { BlogPostTranslation } from '../../types';
 
 export const de: BlogPostTranslation = {
     title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
+    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.", // Excerpt remains EN mostly
     category: "Astrology 101",
     metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
     keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
     quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
     keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
+    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}], // TO-DO: Translate TOC
     content: `
       <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
       <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>

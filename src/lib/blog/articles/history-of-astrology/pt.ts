@@ -5,18 +5,18 @@ import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
     title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
-    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
+    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.", // Excerpt remains EN mostly
     category: "Astrology Basics",
     metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
     keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
     quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
     keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
-    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
+    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}], // TO-DO: Translate TOC
     content: `
       <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
       <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
       
-      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodiac</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
+      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Zodíaco</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
 
       <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
       <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
