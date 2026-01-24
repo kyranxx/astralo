@@ -2,14 +2,14 @@
 /**
  * Localized Blog Index Page - Multi-language SEO
  * Lists all blog posts in the user's language
+ * Uses modular content from src/lib/blog
  */
 
 import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getBlogContent } from '../../../lib/blog-content';
-import { getBlogUiTranslations } from '../../../lib/blog';
+import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../../lib/blog';
 
 export const prerender = true;
 
@@ -53,7 +53,7 @@ const localizedKeywords: Record<string, { primary: string; secondary: string[] }
   vi: { primary: 'Tử vi hôm nay', secondary: ['Tử vi hàng ngày', 'Cung hoàng đạo hợp nhau'] },
   id: { primary: 'Ramalan zodiak hari ini', secondary: ['Horoskop harian', 'Kecocokan zodiak'] },
   bg: { primary: 'Дневен хороскоп', secondary: ['Хороскоп днес', 'Съвместимост на зодии'] },
-  hr: { primary: 'Dnevni horoskop', secondary: ['Horoskop danas', 'Kompatibilnost znakova'] },
+  hr: { primary: 'Дnevni horoskop', secondary: ['Horoskop danas', 'Kompatibilnost znakova'] },
   sl: { primary: 'Dnevni horoskop', secondary: ['Horoskop danes', 'Združljivost znakov'] },
   sr: { primary: 'Дневни хороскоп', secondary: ['Хороскоп данас', 'Компатибилност знакова'] },
   uk: { primary: 'Гороскоп на сьогодні', secondary: ['Щоденний гороскоп', 'Сумісність знаків'] },
@@ -68,42 +68,34 @@ const keywords = localizedKeywords[currentLang] || localizedKeywords.en;
 const seoTitle = `${blogUi.blogTitle} | Astralo`;
 const seoDesc = blogUi.blogSubtitle;
 
-// Get localized blog content
-const localizedBlogContent = getBlogContent(currentLang);
-
-// Blog posts data with localized titles and excerpts
-const blogPostSlugs = [
-  'daily-horoscope-guide',
-  'zodiac-compatibility-complete-guide', 
-  'birth-chart-reading-explained',
-  'weekly-horoscope-predictions',
-  'monthly-horoscope-january-2026',
-  'love-horoscope-relationship-advice',
-  'mercury-retrograde-survival-guide',
-  'history-of-astrology'
-];
-
 const blogPostsBase = [
-  { slug: 'daily-horoscope-guide', date: '2025-12-20', readTime: '8 min', featured: true, emoji: '⭐' },
-  { slug: 'zodiac-compatibility-complete-guide', date: '2025-12-18', readTime: '12 min', featured: false, emoji: '❤️' },
-  { slug: 'birth-chart-reading-explained', date: '2025-12-15', readTime: '10 min', featured: false, emoji: '🔮' },
-  { slug: 'weekly-horoscope-predictions', date: '2025-12-22', readTime: '6 min', featured: false, emoji: '📅' },
-  { slug: 'monthly-horoscope-january-2026', date: '2026-01-01', readTime: '15 min', featured: false, emoji: '🌙' },
-  { slug: 'love-horoscope-relationship-advice', date: '2025-12-10', readTime: '9 min', featured: false, emoji: '💕' },
-  { slug: 'mercury-retrograde-survival-guide', date: '2026-01-15', readTime: '18 min', featured: false, emoji: '☄️' },
-  { slug: 'history-of-astrology', date: '2026-01-10', readTime: '22 min', featured: false, emoji: '🏛️' }
+  { slug: 'daily-horoscope-guide', featured: true },
+  { slug: 'monthly-horoscope-february-2026', featured: false },
+  { slug: 'birth-chart-reading-explained', featured: false },
+  { slug: 'monthly-horoscope-january-2026', featured: false },
+  { slug: 'love-horoscope-relationship-advice', featured: false },
+  { slug: 'mercury-retrograde-survival-guide', featured: false },
+  { slug: 'history-of-astrology', featured: false },
+  { slug: 'zodiac-compatibility-complete-guide', featured: false },
+  { slug: 'saturn-return-guide', featured: false },
+  { slug: 'the-12-houses-of-astrology', featured: false },
+  { slug: 'twin-flames-and-soulmates-astrology', featured: false },
 ];
 
-// Merge base data with localized content
-const blogPosts = blogPostsBase.map(post => {
-  const localizedPost = localizedBlogContent.posts[post.slug];
+// Merge base data with localized content from lib/blog
+const blogPosts = blogPostsBase.map(base => {
+  const meta = getArticleMeta(base.slug);
+  const translation = getArticleTranslation(base.slug, currentLang);
+  
+  if (!meta || !translation) return null;
+
   return {
-    ...post,
-    title: localizedPost?.title || getBlogContent('en').posts[post.slug].title,
-    excerpt: localizedPost?.excerpt || getBlogContent('en').posts[post.slug].excerpt,
-    category: localizedPost?.category || getBlogContent('en').posts[post.slug].category
+    ...base,
+    ...meta,
+    ...translation,
+    readTimeDisplay: `${meta.readTime} ${blogUi.minRead || 'min read'}`
   };
-});
+}).filter(p => p !== null);
 
 const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
 ---
@@ -156,7 +148,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
                   <Calendar class="w-4 h-4" />
                   {new Date(post.date).toLocaleDateString(currentLang, { month: 'long', day: 'numeric', year: 'numeric' })}
                 </span>
-                <span class="text-white/50 text-sm">{post.readTime}</span>
+                <span class="text-white/50 text-sm">{post.readTimeDisplay}</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors">
                 {post.title}
@@ -177,7 +169,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               <article class="glass-strong rounded-2xl p-6 h-full border border-white/10 hover:border-amber-500/30 transition-all duration-300 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <span class="px-2 py-1 bg-white/10 text-white/70 text-xs rounded-full">{post.category}</span>
-                  <span class="text-white/50 text-xs">{post.readTime}</span>
+                  <span class="text-white/50 text-xs">{post.readTimeDisplay}</span>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-200 transition-colors line-clamp-2">
                   {post.title}

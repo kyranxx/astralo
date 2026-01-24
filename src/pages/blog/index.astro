@@ -2,98 +2,47 @@
 /**
  * Blog Index Page - SEO Optimized
  * Lists all blog posts for organic traffic
+ * Uses modular content from src/lib/blog
  */
 
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
+import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
 
 export const prerender = true;
 
-// Blog posts data - keyword optimized for horoscope searches
-const blogPosts = [
-  {
-    slug: 'daily-horoscope-guide',
-    title: '⭐ Daily Horoscope 2026: Complete Guide to Your Zodiac Predictions',
-    excerpt: 'Discover what the stars have in store for you today. Our comprehensive daily horoscope guide covers all 12 zodiac signs with accurate predictions for love, career, and finances.',
-    date: '2025-12-20',
-    readTime: '8 min',
-    category: 'Horoscopes',
-    keywords: ['daily horoscope', 'horoscope today', 'zodiac predictions', 'astrology today'],
-    featured: true,
-    emoji: '⭐'
-  },
-  {
-    slug: 'zodiac-compatibility-complete-guide',
-    title: '❤️ Zodiac Sign Compatibility: The Ultimate Love Match Guide 2026',
-    excerpt: 'Find out which zodiac signs are most compatible with yours. Our in-depth compatibility guide reveals the best and worst love matches for every sign.',
-    date: '2025-12-18',
-    readTime: '12 min',
-    category: 'Love & Relationships',
-    keywords: ['zodiac compatibility', 'love horoscope', 'star sign compatibility', 'astrological compatibility'],
-    emoji: '❤️'
-  },
-  {
-    slug: 'birth-chart-reading-explained',
-    title: '🔮 Birth Chart Reading: How to Understand Your Natal Chart',
-    excerpt: 'Learn how to read and interpret your birth chart. Discover the meaning of planets, houses, and aspects in your unique astrological blueprint.',
-    date: '2025-12-15',
-    readTime: '10 min',
-    category: 'Astrology Basics',
-    keywords: ['birth chart', 'natal chart', 'astrology chart', 'horoscope chart reading'],
-    emoji: '🔮'
-  },
-  {
-    slug: 'weekly-horoscope-predictions',
-    title: '📅 Weekly Horoscope: What the Stars Predict for This Week',
-    excerpt: 'Get your weekly horoscope forecast for all zodiac signs. Discover upcoming opportunities, challenges, and cosmic guidance for the week ahead.',
-    date: '2025-12-22',
-    readTime: '6 min',
-    category: 'Horoscopes',
-    keywords: ['weekly horoscope', 'horoscope this week', 'weekly zodiac', 'astrology weekly'],
-    emoji: '📅'
-  },
-  {
-    slug: 'monthly-horoscope-january-2026',
-    title: '🌙 Monthly Horoscope January 2026: All Zodiac Sign Predictions',
-    excerpt: 'Your complete monthly horoscope for January 2026. Detailed predictions for each zodiac sign covering love, career, health, and finances.',
-    date: '2026-01-01',
-    readTime: '15 min',
-    category: 'Horoscopes',
-    keywords: ['monthly horoscope', 'horoscope january 2026', 'zodiac monthly predictions', 'astrology forecast'],
-    emoji: '🌙'
-  },
-  {
-    slug: 'love-horoscope-relationship-advice',
-    title: '💕 Love Horoscope 2026: Relationship Predictions for Every Sign',
-    excerpt: 'Is love written in your stars? Get personalized love horoscope predictions and relationship advice based on your zodiac sign.',
-    date: '2025-12-10',
-    readTime: '9 min',
-    category: 'Love & Relationships',
-    keywords: ['love horoscope', 'relationship horoscope', 'romantic compatibility', 'love astrology'],
-    emoji: '💕'
-  },
-  {
-    slug: 'mercury-retrograde-survival-guide',
-    title: '☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm',
-    excerpt: 'Don\'t fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.',
-    date: '2026-01-15',
-    readTime: '18 min',
-    category: 'Astrology 101',
-    keywords: ['mercury retrograde', 'astrology survival guide', 'communication glitches', 'planet retrograde'],
-    emoji: '☄️'
-  },
-  {
-    slug: 'history-of-astrology',
-    title: '🏛️ The History of Astrology: From Ancient Babylon to Modern AI',
-    excerpt: 'Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.',
-    date: '2026-01-10',
-    readTime: '22 min',
-    category: 'Astrology Basics',
-    keywords: ['history of astrology', 'ancient astrology', 'origins of zodiac', 'astrological history'],
-    emoji: '🏛️'
-  }
+const currentLang = 'en';
+const blogUi = getBlogUiTranslations(currentLang);
+
+const blogPostsBase = [
+  { slug: 'daily-horoscope-guide', featured: true },
+  { slug: 'monthly-horoscope-february-2026', featured: false },
+  { slug: 'birth-chart-reading-explained', featured: false },
+  { slug: 'monthly-horoscope-january-2026', featured: false },
+  { slug: 'love-horoscope-relationship-advice', featured: false },
+  { slug: 'mercury-retrograde-survival-guide', featured: false },
+  { slug: 'history-of-astrology', featured: false },
+  { slug: 'zodiac-compatibility-complete-guide', featured: false },
+  { slug: 'saturn-return-guide', featured: false },
+  { slug: 'the-12-houses-of-astrology', featured: false },
+  { slug: 'twin-flames-and-soulmates-astrology', featured: false },
 ];
+
+// Merge base data with localized content from lib/blog
+const blogPosts = blogPostsBase.map(base => {
+  const meta = getArticleMeta(base.slug);
+  const translation = getArticleTranslation(base.slug, currentLang);
+  
+  if (!meta || !translation) return null;
+
+  return {
+    ...base,
+    ...meta,
+    ...translation,
+    readTimeDisplay: `${meta.readTime} min read`
+  };
+}).filter(p => p !== null);
 
 const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
 ---
@@ -132,7 +81,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
             Daily Horoscope & Astrology Insights
           </h1>
           <p class="text-white/70 text-lg max-w-2xl mx-auto">
-            Your trusted source for accurate horoscopes, zodiac compatibility guides, birth chart readings, and expert astrological predictions. Updated weekly.
+            Your trusted source for accurate horoscopes, zodiac compatibility guides, birth chart readings, and expert astrological predictions.
           </p>
         </div>
 
@@ -146,7 +95,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
                   <Calendar class="w-4 h-4" />
                   {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                 </span>
-                <span class="text-white/50 text-sm">{post.readTime} read</span>
+                <span class="text-white/50 text-sm">{post.readTimeDisplay}</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors">
                 {post.title}
@@ -160,15 +109,6 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
           </a>
         ))}
 
-        <!-- Categories -->
-        <div class="flex flex-wrap gap-3 mb-8 justify-center">
-          {categories.map((cat, i) => (
-            <button class={`px-4 py-2 rounded-full text-sm font-medium transition-all ${i === 0 ? 'bg-amber-500 text-black' : 'glass text-white/80 hover:text-white hover:border-amber-500/30'}`}>
-              {cat}
-            </button>
-          ))}
-        </div>
-
         <!-- Blog Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.filter(p => !p.featured).map(post => (
@@ -176,7 +116,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               <article class="glass-strong rounded-2xl p-6 h-full border border-white/10 hover:border-amber-500/30 transition-all duration-300 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <span class="px-2 py-1 bg-white/10 text-white/70 text-xs rounded-full">{post.category}</span>
-                  <span class="text-white/50 text-xs">{post.readTime}</span>
+                  <span class="text-white/50 text-xs">{post.readTimeDisplay}</span>
                 </div>
                 <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-200 transition-colors line-clamp-2">
                   {post.title}
@@ -202,12 +142,6 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               <strong>zodiac sign compatibility</strong> guides, and expert astrological insights. Whether you're looking for your 
               <strong>horoscope today</strong>, seeking <strong>love compatibility</strong> advice, or wanting to understand your 
               <strong>birth chart</strong>, we have comprehensive resources for every astrology enthusiast.
-            </p>
-            <p class="mt-4">
-              Our team of experienced astrologers provides accurate <strong>weekly horoscopes</strong> and <strong>monthly horoscope 
-              forecasts</strong> for all 12 zodiac signs: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, 
-              Capricorn, Aquarius, and Pisces. Get personalized <strong>horoscope readings</strong> based on your exact birth data 
-              for the most accurate cosmic guidance.
             </p>
             <div class="mt-6 flex flex-wrap gap-3">
               <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
