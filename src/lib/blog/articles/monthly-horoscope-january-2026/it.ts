@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - IT
+ * Monthly Horoscope January 2026 - Italian (Italiano)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", // Excerpt remains EN mostly
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], // TO-DO: Translate TOC
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Oroscopo Mensile Gennaio 2026: L\'Alba di una Nuova Era',
+  excerpt: 'Previsioni astrologiche complete per gennaio 2026. Oroscopo mensile dettagliato dall\'Ariete ai Pesci, coprendo Plutone in Acquario, tendenze di amore, carriera e denaro.',
+  category: 'Oroscopi',
+  metaDescription: 'Previsioni astrologiche complete per gennaio 2026. Oroscopo mensile dettagliato dall\'Ariete ai Pesci, coprendo Plutone in Acquario.',
+  keywords: 'oroscopo mensile, astrologia gennaio 2026, previsioni mensili, previsioni zodiaco gennaio, plutone in acquario, luna nuova capricorno, luna piena cancro',
+  quickSummary: [
+    'Gennaio 2026 è dominato da Plutone che si stabilisce in Acquario, segnalando massicci cambiamenti sociali',
+    'La Luna Nuova in Capricorno (1 gennaio) è l\'energia perfetta per i "Propositi per il Nuovo Anno"',
+    'L\'ombra post-Mercurio Retrogrado si chiarisce entro il 15 gennaio, appianando la comunicazione',
+    'Marte Retrogrado in Cancro porta a galla conflitti familiari irrisolti'
+  ],
+  keyTakeaways: [
+    'Usa la prima settimana di gennaio solo per la pianificazione strategica; ritarda l\'azione fino a metà mese',
+    'Aspettati improvvise scoperte tecnologiche o interruzioni mentre Urano si attiva',
+    'Le relazioni affrontano un controllo della realtà vicino alla Luna Piena in Cancro il 14 gennaio',
+    'I mercati finanziari possono essere volatili; attieniti a investimenti sicuri a lungo termine'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'L\'Astrologia di Gennaio' },
+    { id: 'key-transits', title: 'Date Chiave e Transiti' },
+    { id: 'fire-signs', title: 'Segni di Fuoco (Ariete, Leone, Sag)' },
+    { id: 'earth-signs', title: 'Segni di Terra (Toro, Vergine, Cap)' },
+    { id: 'air-signs', title: 'Segni d\'Aria (Gemelli, Bilancia, Acqu)' },
+    { id: 'water-signs', title: 'Segni d\'Acqua (Cancro, Scorpione, Pesci)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">L'Astrologia di Gennaio 2026</h2>
+      <p>Buon Anno! <strong>Gennaio 2026</strong> non è solo l'inizio di un nuovo anno civile; è l'alba astrologica di una nuova era. Con <strong>Plutone saldamente in Acquario</strong>, ci stiamo collettivamente allontanando dalle strutture gerarchiche degli ultimi 15 anni ed entrando in una fase di rapida innovazione.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Il mese si apre con una <strong>Luna Nuova in Capricorno</strong> il 1° gennaio—un allineamento raro e propizio. Questo raddoppia l'energia "Anno Nuovo, Nuovo Me". Tuttavia, con Marte Retrogrado in Cancro, la nostra energia potrebbe sembrare un po' interna.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Date Chiave e Transiti</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 Gen:</strong> Luna Nuova in Capricorno (Stabilire intenzioni).</li>
+        <li><strong>4 Gen:</strong> Marte entra in Leone (Orgoglio e dramma aumentano).</li>
+        <li><strong>14 Gen:</strong> Luna Piena in Cancro (Rilascio emotivo).</li>
+        <li><strong>20 Gen:</strong> Sole entra in Acquario (La Stagione del Futuro).</li>
+        <li><strong>29 Gen:</strong> Urano Diretto (Cambiamenti improvvisi).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Fuoco Segnos (Ariete, Leone, Sagittario)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Segni di Fuoco (Ariete, Leone, Sagittario)</h2>
+      <p><strong>Tema: Reclamare la tua Scintilla.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Ariete:</strong> Con il tuo governatore Marte che sembra muoversi all'indietro (retrogrado), potresti sentirti frustrato dai ritardi. Questo non è un semaforo rosso; è un semaforo giallo. Usa gennaio per rivedere il tuo percorso professionale.</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Leone:</strong> Le relazioni sono il punto focale. Aspettati che ex partner o vecchi amici riemergano. La Luna Piena suggerisce un bisogno di solitudine a metà mese.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Sagittario:</strong> Le finanze sono evidenziate. Potresti trovare una nuova fonte di reddito. È un mese per un budget pratico, non per spese folli.</p>
 
-      <h2 id="earth-signs">🌍 Terra Segnos (Toro, Vergine, Capricorno)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Segni di Terra (Toro, Vergine, Capricorno)</h2>
+      <p><strong>Tema: Costruire le Fondamenta.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Toro:</strong> Urano nel tuo segno ti spinge a liberarti. Gennaio porta un'opportunità di viaggio improvvisa o un cambiamento nella tua filosofia. Di' di sì all'ignoto.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Vergine:</strong> Il tuo pianeta governatore Mercurio chiarisce la sua fase d'ombra a metà mese. Fino ad allora, controlla due volte tutti i contratti.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Capricorno:</strong> Buon compleanno! La Luna Nuova nel tuo segno è il tuo Capodanno personale. Hai il permesso cosmico di essere egoista.</p>
 
-      <h2 id="air-signs">💨 Aria Segnos (Gemelli, Bilancia, Acquario)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Segni d'Aria (Gemelli, Bilancia, Acquario)</h2>
+      <p><strong>Tema: Espansione Intellettuale.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Gemelli:</strong> Risorse condivise e profonda intimità sono fondamentali. Potresti ricevere un'eredità o avere una profonda svolta psicologica.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Bilancia:</strong> Casa e famiglia sono al centro della scena. Potresti ridecorare o mediare un conflitto familiare.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Acquario:</strong> Questo è il tuo momento. Con Plutone nel tuo segno, stai subendo una metamorfosi. Il mondo sta raggiungendo la tua visione.</p>
 
-      <h2 id="water-signs">💧 Acqua Segnos (Cancro, Scorpione, Pesci)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Segni d'Acqua (Cancro, Scorpione, Pesci)</h2>
+      <p><strong>Tema: Saggezza Emotiva.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Cancro:</strong> La Luna Piena nel tuo segno il 14 è il culmine emotivo del tuo anno. Lascia uscire tutto. Piangi, ridi, urla. Stai cambiando pelle.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Scorpione:</strong> La comunicazione è potente. Le tue parole hanno un peso extra questo mese. Usale per negoziare, insegnare o scrivere.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Pesci:</strong> La tua cerchia sociale si sta espandendo. Sei il collante che tiene insieme la tua comunità. Cerca opportunità per fare volontariato.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Ottieni il tuo Oroscopo Completo 2026</h2>
+      <p>Questa panoramica mensile è solo la punta dell'iceberg. Per navigare il 2026 con sicurezza, ordina il tuo <strong>Report Annuale Personalizzato</strong> da Astralo.</p>
     `
 };
