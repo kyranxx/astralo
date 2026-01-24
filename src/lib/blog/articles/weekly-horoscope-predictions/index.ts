@@ -37,11 +37,11 @@ import { vi } from './vi';
 import { id } from './id';
 import { bn } from './bn';
 
-export const weeklyHoroscope: Record<string, BlogPostTranslation> = {
+export const weeklyHoroscopePredictions: Record<string, BlogPostTranslation> = {
     en, de, fr, es, it, pt, nl, pl, cs, sk, ru, ja, ko, zh,
     sv, da, no, fi, tr, hi, ar, hu, ro, el, uk, he, bg, hr, sl, sr, th, vi, id, bn,
 };
 
 export function getTranslation(lang: string): BlogPostTranslation {
-    return weeklyHoroscope[lang] || weeklyHoroscope.en;
+    return weeklyHoroscopePredictions[lang] || weeklyHoroscopePredictions.en;
 }

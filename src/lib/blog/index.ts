@@ -14,6 +14,7 @@ import { historyOfAstrology } from './articles/history-of-astrology/index';
 import { the12HousesOfAstrology } from './articles/the-12-houses-of-astrology/index';
 import { saturnReturnGuide } from './articles/saturn-return-guide/index';
 import { twinFlamesAndSoulmatesAstrology } from './articles/twin-flames-and-soulmates-astrology/index';
+import { weeklyHoroscopePredictions } from './articles/weekly-horoscope-predictions/index';
 
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
@@ -32,6 +33,7 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'the-12-houses-of-astrology': the12HousesOfAstrology,
     'saturn-return-guide': saturnReturnGuide,
     'twin-flames-and-soulmates-astrology': twinFlamesAndSoulmatesAstrology,
+    'weekly-horoscope-predictions': weeklyHoroscopePredictions,
 };
 
 // Article metadata (language-independent)
@@ -76,6 +78,13 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         emoji: '💕',
         date: '2026-12-10',
         readTime: '9',
+        author: 'Astralo Team',
+    },
+    'weekly-horoscope-predictions': {
+        slug: 'weekly-horoscope-predictions',
+        emoji: '📅',
+        date: '2026-01-20',
+        readTime: '10',
         author: 'Astralo Team',
     },
     'mercury-retrograde-survival-guide': {

@@ -13,6 +13,7 @@ import { monthlyHoroscopeJanuary2026 } from './blog/articles/monthly-horoscope-j
 import { saturnReturnGuide } from './blog/articles/saturn-return-guide';
 import { the12HousesOfAstrology } from './blog/articles/the-12-houses-of-astrology';
 import { twinFlamesAndSoulmatesAstrology } from './blog/articles/twin-flames-and-soulmates-astrology';
+import { weeklyHoroscopePredictions } from './blog/articles/weekly-horoscope-predictions';
 import { zodiacCompatibilityCompleteGuide } from './blog/articles/zodiac-compatibility-complete-guide';
 
 export interface BlogTranslations {
@@ -37,6 +38,7 @@ const postsMap: Record<string, Record<string, BlogPostTranslation>> = {
     'saturn-return-guide': saturnReturnGuide,
     'the-12-houses-of-astrology': the12HousesOfAstrology,
     'twin-flames-and-soulmates-astrology': twinFlamesAndSoulmatesAstrology,
+    'weekly-horoscope-predictions': weeklyHoroscopePredictions,
     'zodiac-compatibility-complete-guide': zodiacCompatibilityCompleteGuide,
 };
 
