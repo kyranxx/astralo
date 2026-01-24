@@ -1,47 +1,38 @@
-/**
- * Love Horoscope - All 33 Languages Index
- */
-import type { BlogPostTranslation } from '../../types';
-import { en } from './en';
-import { de } from './de';
-import { fr } from './fr';
-import { es } from './es';
-import { it } from './it';
-import { pt } from './pt';
-import { nl } from './nl';
-import { pl } from './pl';
+import { ar } from './ar';
+import { bg } from './bg';
+import { bn } from './bn';
 import { cs } from './cs';
-import { sk } from './sk';
-import { ru } from './ru';
+import { da } from './da';
+import { de } from './de';
+import { el } from './el';
+import { en } from './en';
+import { es } from './es';
+import { fi } from './fi';
+import { fr } from './fr';
+import { he } from './he';
+import { hi } from './hi';
+import { hr } from './hr';
+import { hu } from './hu';
+import { id } from './id';
+import { it } from './it';
 import { ja } from './ja';
 import { ko } from './ko';
-import { zh } from './zh';
-import { sv } from './sv';
-import { da } from './da';
+import { nl } from './nl';
 import { no } from './no';
-import { fi } from './fi';
-import { tr } from './tr';
-import { hi } from './hi';
-import { ar } from './ar';
-import { hu } from './hu';
+import { pl } from './pl';
+import { pt } from './pt';
 import { ro } from './ro';
-import { el } from './el';
-import { uk } from './uk';
-import { he } from './he';
-import { bg } from './bg';
-import { hr } from './hr';
+import { ru } from './ru';
+import { sk } from './sk';
 import { sl } from './sl';
 import { sr } from './sr';
+import { sv } from './sv';
 import { th } from './th';
+import { tr } from './tr';
+import { uk } from './uk';
 import { vi } from './vi';
-import { id } from './id';
-import { bn } from './bn';
+import { zh } from './zh';
 
-export const loveHoroscope: Record<string, BlogPostTranslation> = {
-    en, de, fr, es, it, pt, nl, pl, cs, sk, ru, ja, ko, zh,
-    sv, da, no, fi, tr, hi, ar, hu, ro, el, uk, he, bg, hr, sl, sr, th, vi, id, bn,
+export const loveHoroscopeRelationshipAdvice = {
+    en, es, fr, de, it, pt, ar, bg, bn, cs, da, el, fi, he, hi, hr, hu, id, ja, ko, nl, no, pl, ro, ru, sk, sl, sr, sv, th, tr, uk, vi, zh
 };
-
-export function getTranslation(lang: string): BlogPostTranslation {
-    return loveHoroscope[lang] || loveHoroscope.en;
-}
