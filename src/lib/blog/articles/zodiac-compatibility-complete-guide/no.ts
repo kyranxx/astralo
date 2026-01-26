@@ -1,88 +1,105 @@
 /**
- * zodiac-compatibility-complete-guide - NO
+ * Dyrekretsen kompatibilitet - NO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const no: BlogPostTranslation = {
-    title: "❤️ Dyrekretsen Tegn Compatibility: The Definitive Guide to Cosmic Kjærlighet",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Tegns Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Dyrekretsen kompatibilitet: Den ultimate guiden til kosmisk kjærlighet",
+  excerpt: "Komplett guide til stjernetegns kompatibilitet for 2026. Se forbi soltegnene og oppdag hvordan elementer, Venus og Mars påvirker din romantiske kjemi og langsiktige potensial.",
+  category: "Kjærlighet & Relasjoner",
+  metaDescription: "Komplett guide til stjernetegns kompatibilitet for 2026. Se forbi soltegnene og oppdag hvordan elementer, Venus og Mars påvirker din romantiske kjemi og langsiktige potensial.",
+  keywords: "dyrekretsen kompatibilitet, kjærlighetshoroskop, synastri, tegnkompatibilitet, venus kjærlighetstegn, mars passionstegn, relasjonsastrologi, beste matcher",
+  quickSummary: [
+    "Sann kompatibilitet innebærer sammenligning av hele fødselshoroskopet (synastri), ikke bare soltegn.",
+    "Balansen mellom elementene (Ild, Jord, Luft, Vann) er grunnlaget for harmoni i paret.",
+    "Tilsynelatende 'inkompatible' tegn tilbyr ofte de største mulighetene for sjelens utvikling.",
+    "Venus styrer stilen for hengivenhet, mens Mars driver lidenskap og konfliktløsning."
+  ],
+  keyTakeaways: [
+    "Se etter trigoner (samme element) for letthet og opposisjoner for intensiv tiltrekning.",
+    "Månetegnets kompatibilitet er avgjørende for samboerskap og emosjonell trygghet.",
+    "Merkur-kompatibilitet avgjør hvor godt dere vil løse problemer sammen.",
+    "Det finnes ikke én 'perfekt' partner; hver forbindelse har sine styrker og utfordringer."
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "Hvorfor soltegn ikke er alt" },
+    { id: "elemental-love", title: "De 4 elementene i kjærlighet" },
+    { id: "love-planets", title: "Venus, Mars og Månen" },
+    { id: "challenging-matches", title: "Sannheten om 'vanskelige' kombinasjoner" },
+    { id: "best-matches-deep-dive", title: "Deep Dive: De beste kombinasjonene" },
+    { id: "synastry", title: "Proff-tips: Synastri" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Hvorfor soltegn ikke er alt</h2>
+      <p>Vi har alle gjort det: sjekket i et magasin eller en app om partnerens tegn passer med vårt. "Å nei, jeg er Løve og han er Skorpion – vi er dømt til å mislykkes!". Men vent litt. <strong>Dyrekretsens kompatibilitet</strong> er uendelig mye mer kompleks – og håpefull – enn en enkel sammenligningstabell.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Mens soltegnet ditt representerer din kjerne og ditt livsformål, bygger relasjoner på følelser, kommunikasjon og verdier. Det er derfor du kan være lykkelig gift med et såkalt "inkompatibelt" tegn, eller slite med din såkalte "perfekte match". For å <strong>virkelig forstå kjærlighetspartnerskap</strong>, må vi se på hele det himmelske bildet.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Kjærlighet</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">De 4 elementene i kjærlighet</h2>
+      <p>Den raskeste måten å vurdere den første kjemien på, er å se på elementene. Tegn i samme element snakker generelt "samme språk".</p>
       
-      <h3>🔥 Ild Tegns (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Ildtegn (Væren, Løven, Skytten)</h3>
+      <p><strong>Kjærlighetsspråk:</strong> Lidenskap, eventyr, spontanitet.</p>
+      <p>Ild trenger en partner som kan gi næring til flammen uten å slukke den. De lengter etter spenning og hater kjedsomhet.
+      <br><em>Best med:</em> Andre ildtegn (umiddelbar varme) eller lufttegn (luft gir næring til ilden).</p>
 
-      <h3>🌍 Jord Tegns (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Jordtegn (Tyren, Jomfruen, Stenbukken)</h3>
+      <p><strong>Kjærlighetsspråk:</strong> Tjenester, stabilitet, fysisk berøring.</p>
+      <p>Jord forstår kjærlighet som et verb. De viser hengivenhet gjennom praktiske handlinger og ved å bygge et liv sammen. De trenger pålitelighet.
+      <br><em>Best med:</em> Andre jordtegn (solid fundament) eller vanntegn (vann gjør jorden fruktbar).</p>
 
-      <h3>💨 Luft Tegns (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Lufttegn (Tvillingene, Vekten, Vannmannen)</h3>
+      <p><strong>Kjærlighetsspråk:</strong> Samtale, humor, frihet.</p>
+      <p>For luft er intellektet den viktigste erogene sonen. De trenger mental stimulering og en partner som også er deres beste venn.
+      <br><em>Best med:</em> Andre lufttegn (endeløse samtaler) eller ildtegn (inspirasjon).</p>
 
-      <h3>💧 Vann Tegns (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Vanntegn (Krepsen, Skorpionen, Fiskene)</h3>
+      <p><strong>Kjærlighetsspråk:</strong> Sårbarhet, intuisjon, sammensmeltning.</p>
+      <p>Vann søker en dyp emosjonell kontakt. De ønsker å bli forstått uten ord og trenger en trygg havn.
+      <br><em>Best med:</em> Andre vanntegn (psykisk forbindelse) eller jordtegn (en beholder for deres vann).</p>
 
-      <h2 id="love-planets">The Real Kjærlighet Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">De sanne kjærlighetsplanetene: Venus, Mars og Månen</h2>
+      <p>Hvis du vil vite om dere virkelig harmonerer i hverdagen, er det ikke nok å sjekke soltegnene. Du må analysere tre spesifikke planeter i din partners horoskop:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Månen 🌙 (Emosjonell trygghet)</h3>
+      <p>I et langvarig forhold eller ved samboerskap, er <strong>månetegnets kompatibilitet avgjørende</strong>. Månetegnet ditt styrer hva du trenger for å føle deg trygg, hvordan du reagerer når du er trøtt eller sulten, og hvordan du pleier andre. 
+      <br><em>Eksempel:</em> En Sol i Væren kan virke tøff utad, men hvis månen hans er i Krepsen, er han en følsom person på innsiden som trenger klemmer og bekreftelse hjemme.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Venus ♀ (Romantikk og verdier)</h3>
+      <p>Venus styrer hva du synes er vakkert og hva du verdsetter. Den viser din "flirtstil".
+      <br><em>Tips:</em> Hvis deres Venus-tegn er i samme element, vil deres smak og pengevaner sannsynligvis være synkronisert.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Mars ♂ (Lidenskap og konflikt)</h3>
+      <p>Mars er planeten for libido og konflikt. Den viser hvordan du kjemper og hvordan du opplever sex.
+      <br><em>Tips:</em> Kompatible Mars-tegn sørger for at krangler blir løst raskt og at den fysiske kjemien vedvarer.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Sannheten om 'vanskelige' kombinasjoner</h2>
+      <p>Hva skjer hvis du forelsker deg i et tegn som er "inkompatibelt"? Som en Løve (Ild) og en Skorpion (Vann)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Disse forholdene er ofte de <strong>mest transformative</strong>. I astrologien kaller vi disse aspektene for "kvadratur" eller "quincunx". De skaper friksjon. Men friksjon skaper varme! De "vanskelige" kombinasjonene tvinger deg til å vokse, lære et nytt språk og gå utenfor komfortsonen din. Ofte er de lidenskapelige 'soulmate-forbindelser' som er ment å utvikle din sjel, selv om de krever mer arbeid.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Dyrekretsen PLuftings</h2>
+      <h2 id="best-matches-deep-dive">Deep Dive: Dyrekretsens berømte par</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>'Power-paret': Væren og Vekten</h3>
+      <p>Motsetninger tiltrekker hverandre! Væren er "jeg først", Vekten er "vi først". Væren lærer Vekten selvhevdelse; Vekten lærer Væren diplomati. Det er en magnetisk tiltrekning som er vanskelig å bryte.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>'Keiserne': Tyren og Stenbukken</h3>
+      <p>To jordtegn som verdsetter kvalitet, penger og trygghet. Sammen bygger de stor suksess, selv om de trenger å bli minnet på å ha det gøy og ikke bare jobbe.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>'Peter Pan-duoen': Tvillingene og Skytten</h3>
+      <p>Luft og ild. Begge elsker frihet, reiser og filosofi. De vil kanskje aldri slå seg til ro på en tradisjonell måte, men de vil forbli eventyrpartnere for alltid.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>'Den psykiske forbindelsen': Krepsen og Skorpionen</h3>
+      <p>Når disse to vanntegnene møtes, forsvinner resten av verden. De har en telepatisk forbindelse og en besatthet som gjør dem ekstremt lojale mot hverandre.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Avansert kompatibilitet: Synastri</h2>
+      <p>For et virkelig svar på ditt forhold, trenger du en <strong>synastri-analyse</strong>. Dette innebærer at ditt fødselshoroskop legges over partnerens.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Vi leter etter forbindelser som:
+      <br><strong>Sol-Måne konjunksjon:</strong> Den klassiske "mann/kone"-aspektet.
+      <br><strong>Venus-Mars bytte:</strong> Utrolig seksuell tiltrekning.
+      <br><strong>Saturnus-kontakter:</strong> "Limet" som holder folk sammen gjennom et liv (selv i vanskelige tider).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Hos Astralo leverer våre avanserte algoritmer og ekspert-astrologer ikke bare prosenter. Vi kartlegger din relasjons sjel. Slutta å gjette, og begynn å forstå den kosmiske meningen med din forbindelse.
     `
 };

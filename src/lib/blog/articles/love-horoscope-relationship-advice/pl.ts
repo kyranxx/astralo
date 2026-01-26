@@ -1,56 +1,73 @@
 /**
- * love-horoscope-relationship-advice - PL
+ * Horoskop miłosny i porady dla związków - PL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: "💕 Miłość Horoscope 2026: The Master Guide to Zodiak Romans",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.", 
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}], 
-    content: `
-      <h2 id="love-guide">Miłość is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Horoskop miłosny 2026: Mistrzowski przewodnik po zodiakalnych romansach",
+  excerpt: "Odmień swoje życie miłosne dzięki astrologii. Zgłębimy tajniki znaków Wenus, 7. domu małżeństwa, stylów namiętności Marsa i dowiemy się, jak radzić sobie z retrogradacją Merkurego w relacjach.",
+  category: "Miłość i relacje",
+  metaDescription: "Odmień swoje życie miłosne dzięki astrologii. Zgłębimy tajniki znaków Wenus, 7. domu małżeństwa, stylów namiętności Marsa i dowiemy się, jak radzić sobie z retrogradacją Merkurego w relacjach.",
+  keywords: "horoskop miłosny, astrologia relacji, znaczenie znaku wenus, znak marsa w randkowaniu, 7. dom małżeństwo, przewodnik po synastrii, porady randkowe zodiak, kompatybilność miłosna",
+  quickSummary: [
+    "Twój język miłości jest dyktowany przez znak Wenus, a nie tylko znak słoneczny.",
+    "7. dom w Twoim horoskopie opisuje Twojego idealnego długoterminowego partnera.",
+    "Mars określa, jak dążysz do zdobycia względów innych i Twoją chemię seksualną.",
+    "Wyczucie czasu w relacjach jest kluczowe — nigdy nie bierz ślubu podczas retrogradacji Wenus."
+  ],
+  keyTakeaways: [
+    "Jeśli chcesz wiedzieć, jak ktoś flirtuje, sprawdź jego znak Wenus.",
+    "Jeśli chcesz wiedzieć, jak ktoś się kłóci lub kocha, sprawdź jego znak Marsa.",
+    "„Descendent” (znak leżący naprzeciwko Twojego Ascendentu) to zazwyczaj znak, który najbardziej Cię przyciąga.",
+    "Synastria to sztuka porównywania dwóch horoskopów, aby sprawdzić, czy związek jest zbudowany na trwałych fundamentach."
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "Miłość to umiejętność" },
+    { id: "venus-signs", title: "Wenus: Co kochasz" },
+    { id: "mars-signs", title: "Mars: Jak pożądasz" },
+    { id: "7th-house", title: "7. dom małżeństwa" },
+    { id: "retrograde-love", title: "Przetrwanie retrogradacji w romansach" },
+    { id: "partner-analysis", title: "Analiza kompatybilności" }
+  ],
+  content: `
+      <h2 id="love-guide">Miłość to umiejętność (a astrologia to instrukcja obsługi)</h2>
+      <p>Często traktujemy miłość jako tajemniczą siłę, która po prostu nam się „przydarza”. Ale w astrologii miłość to mechanizm z trybami i dźwigniami. Twój <strong>horoskop miłosny</strong> to nie tylko kwestia przypadkowych spotkań; to plan Twoich psychologicznych potrzeb w partnerstwie.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Dlaczego wciąż przyciągasz ten sam „niewłaściwy” typ ludzi? Dlaczego komunikacja zawsze załamuje się po trzech miesiącach? Odpowiedzi są w Twoim horoskopie. Rozumiejąc swój kosmiczny projekt miłości, możesz przestać powtarzać stare schematy i zacząć budować związek, którego naprawdę pragniesz.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Wenus: Sztuka okazywania uczuć</h2>
+      <p><strong>Wenus</strong> to planeta przyciągania, wartości i harmonii. Znak, w którym znajdowała się Wenus w momencie Twojego urodzenia, opisuje to, co uważasz za piękne i jak okazujesz uczucia.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>Wenus w żywiole Ognia (Baran, Lew, Strzelec):</strong> Kocha „pogoń za króliczkiem”. Potrzebuje dramaturgii, wielkich gestów i spontaniczności. Szybko się nudzi. <em>Rada:</em> Dbaj o to, by w związku ciągle coś się działo.</li>
+        <li><strong>Wenus w żywiole Ziemi (Byk, Panna, Koziorożec):</strong> Kocha stabilność. Potrzebuje zaangażowania, niezawodności i fizycznego dotyku. Nienawidzi gierek. <em>Rada:</em> Bądź konsekwentny i wiarygodny.</li>
+        <li><strong>Wenus w żywiole Powietrza (Bliźnięta, Waga, Wodnik):</strong> Kocha umysł. Potrzebuje rozmowy, błyskotliwości i najpierw przyjaźni. Unika ciężkich emocji. <em>Rada:</em> Bądź interesującym rozmówcą.</li>
+        <li><strong>Wenus w żywiole Wody (Rak, Skorpion, Ryby):</strong> Kocha duszę. Potrzebuje głębokiego emocjonalnego zjednoczenia, podatności na zranienie i bezpieczeństwa. <em>Rada:</em> Bądź autentyczny i emocjonalnie dostępny.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: Silnik pożądania</h2>
+      <p>Podczas gdy Wenus mówi o tym, co lubisz, <strong>Mars</strong> mówi o tym, jak po to sięgasz. Mars rządzi libido, dążeniem do celu i konfliktami.</p>
+      <p>Jeśli masz <strong>Marsa w Skorpionie</strong>, Twoje zaangażowanie jest intensywne, zaborcze i typu „wszystko albo nic”. Możesz wystraszyć lotnego <strong>Marsa w Bliźniętach</strong>, który chce tylko flirtować i dobrze się bawić. Znajomość znaku Marsa partnera to kod do satysfakcji seksualnej i rozwiązywania kłótni bez ryzyka rozstania.</p>
 
-      <h2 id="7th-house">The 7th Dom: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">7. dom: Twoja „druga połowa”</h2>
+      <p>Spójrz na swój Ascendent. Teraz spójrz na znak leżący dokładnie naprzeciwko niego. To Twój <strong>Descendent</strong>, władca Twojego 7. domu partnerstwa.</p>
+      <p>Często magnetycznie przyciągają nas ludzie, którzy ucieleśniają cechy naszego 7. domu, ponieważ posiadają to, czego nam brakuje.
+      <br><em>Przykład:</em> Zdyscyplinowany <strong>Ascendent w Pannie</strong> często wiąże się z marzycielskimi, nieco chaotycznymi <strong>Rybami (7. dom)</strong>. Panna organizuje życie Ryb, a Ryby uczą Pannę, jak się wyluzować. To oś równowagi.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romans</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Przetrwanie retrogradacji w romansach</h2>
+      <p>Słyszałeś o retrogradacji Merkurego (nieprozumienia), ale <strong>retrogradacja Wenus</strong> to prawdziwy sprawdzian dla związku. Dzieje się to co 18 miesięcy i wtedy:
+      <br>1. Powracają byli partnerzy („zombieing”).
+      <br>2. Słabe związki się rozpadają.
+      <br>3. Ukryte romanse wychodzą na jaw.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Złota zasada:</strong> Nigdy nie bierz ślubu, nie oświadczaj się ani nie podejmuj ogromnych zobowiązań podczas retrogradacji Wenus. Poczekaj, aż okres cienia minie (zazwyczaj 40 dni), aby sprawdzić, czy nadal czujesz to samo.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Analiza kompatybilności partnerów</h2>
+      <p>Jesteś złożoną istotą i Twój partner też. Ogólny horoskop typu „Lew + Wodnik” nie uchwyci niuansów Waszej unikalnej więzi. Nasz <strong>Raport Relacji Premium</strong> analizuje:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+        <li><strong>Synastrię:</strong> Jak Twoje planety dotykają jego planet (Chemia).</li>
+        <li><strong>Horoskop kontaktowy:</strong> Energię samego związku (Przeznaczenie).</li>
+        <li><strong>Horoskop Davisona:</strong> Cel Waszego spotkania (Karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Nie zostawiaj swojego serca przypadkowi. Odczytaj swój kod miłości z Astralo.</p>
     `
 };

@@ -1,54 +1,69 @@
 /**
- * mercury-retrograde-survival-guide - ZH
+ * 水星逆行生存指南 2026：从混乱走向冷静 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: '☄️ 水星逆行生存指南 2026：从混乱走向冷静',
+  excerpt: '不要害怕逆行！了解为什么水星逆行实际上是一次重要的宇宙重置，以及如何轻松应对技术和沟通故障。',
+  category: '占星 101',
+  metaDescription: '不要害怕逆行！了解为什么水星逆行实际上是一次重要的宇宙重置，如何避免常见陷阱，以及为什么它是进行带有“再”字活动（Re-activities）的最佳时机。',
+  keywords: '水星逆行, 水星逆行日期, 生存指南, 占星建议, 行星逆行, 沟通故障, 技术故障',
+  quickSummary: [
+    '水星逆行是一种光学幻觉，水星在地球视角下看起来像是在后退。',
+    '它一年发生 3-4 次，每次持续约三周。',
+    '这段时间以旅行延误、技术故障和沟通误解而闻名。',
+    '这不是开始新项目的时机，但是完成旧项目的高级时机。'
+  ],
+  keyTakeaways: [
+    '在发送邮件或签署合同前，请务必仔细复核三次。',
+    '备份你的数据，预料到电子设备可能会出现轻微的技术故障。',
+    '老朋友和前任经常在这些宇宙周期中重新出现。',
+    '逆行前后的“阴影期”同样重要，不要掉以轻心。'
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: '幻觉背后的科学' },
+    { id: 'retrograde-shadow', title: '阴影期' },
+    { id: 'survival-dos', title: '“再”字准则：该做什么' },
+    { id: 'survival-donts', title: '红线提示：避免做什么' },
+    { id: 'mercury-retrograde-dates', title: '2026 年逆行日期' },
+    { id: 'final-thoughts', title: '守得云开见月明' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">幻觉背后的科学</h2>
+      <p>一年中会有三到四次，掌管沟通、旅行和技术的水星从地球的角度看像是在天空中后退。实际上，这只是一种光学幻觉，就像你开着快车超越一辆慢车时，那辆慢车看起来像是在倒退一样。</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>虽然倒退运动是虚幻的，但影响却是真实的。在占星术中，当一颗行星逆行时，它的能量会转向内在。由于水星平衡着我们生活中的“日常运行”——思想、工具和后勤——一切都会开始感觉有点……故障。<strong>水星逆行</strong>是宇宙在告诉世界按下“暂停”键。</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">阴影期：前后的震荡</h2>
+      <p>许多人在逆行正式开始的前一周就会发现事情开始出错。这被称为<strong>前阴影期</strong>。这是水星减速并准备转向的时候。同样，<strong>后阴影期</strong>在行星回复顺行后还会持续约两周。如果你正在计划一个重大的发布或大宗购买，请等到后阴影期结束，以获得最顺畅的结果。</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">“再”字准则：该做什么</h2>
+      <p>水星逆行的名声不太好，但如果你使用得当，它实际上是一年中最有效率的时期之一。秘诀是关注那些以<strong>“再” (Re-) </strong>开头的动词：</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>反思 (Reflect)：</strong> 回顾你年初的目标。你还在轨道上吗？</li>
+        <li><strong>复审 (Review)：</strong> 检查你的合同、预算和计划。你可能会发现之前遗漏的错误。</li>
+        <li><strong>重新联络 (Reconnect)：</strong> 这是收到老朋友消息或解决与家人过去冲突的高峰期。</li>
+        <li><strong>修理 (Repair)：</strong> 修理那个漏水的水龙头或你一直忽视的汽车问题。</li>
+        <li><strong>重新组织 (Reorganize)：</strong> 清理你的衣橱、收件箱和思绪。</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">红线提示：避免做什么</h2>
+      <p>虽然生活不能停止，但尽量在三周的逆行窗口期内避免这些高风险活动：</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>签署重大合同：</strong> 如果必须签署，请阅读细则三次。最好请律师查看。</li>
+        <li><strong>购买新科技产品：</strong> 等等再买新手机或新车。逆行期间购买的设备往往带有隐藏的缺陷。</li>
+        <li><strong>启动新项目：</strong> 现在诞生的想法在行星顺行后往往会发生巨大变化。</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">2026 年水星逆行日期</h2>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>2 月 25 日 – 3 月 20 日</strong>（始于双鱼座，终于水瓶座）</li>
+          <li><strong>6 月 29 日 – 7 月 23 日</strong>（巨蟹座内）</li>
+          <li><strong>10 月 24 日 – 11 月 13 日</strong>（始于天蝎座，终于天秤座）</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">守得云开见月明</h2>
+      <p>水星逆行不是诅咒，它是必要的维护期。如果没有它，我们就会像没头苍蝇一样盲目冲刺，而永远无法修补生活的根基。利用这段时间慢下来，深呼吸，找回自我。当水星最终恢复前进时，你会比以往任何时候都更快、更专注。</p>
     `
 };

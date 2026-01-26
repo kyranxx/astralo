@@ -1,101 +1,70 @@
 /**
- * daily-horoscope-guide - KO
+ * 일간 운세 2026: 예측을 이해하기 위한 궁극적인 가이드 - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: '⭐ 일간 운세 2026: 예측을 100% 활용하기 위한 가이드',
+  excerpt: '일간 운세 예측을 마스터하세요. 일일 점성술의 작동 원리, 상승궁이 중요한 이유, 성공을 위해 행성 에너지를 사용하는 방법에 대한 종합 가이드입니다.',
+  category: '점성술 101',
+  metaDescription: '일간 운세 예측을 마스터하세요. 일일 점성술의 작동 원리, 상승궁이 중요한 이유, 성공을 위해 행성 에너지를 사용하는 방법에 대한 종합 가이드입니다.',
+  keywords: '일간 운세, 오늘의 운세, 별자리 운세, 일일 별자리, 운세 가이드, 점성술 이해하기, 오늘 상승궁, 행성 트랜짓',
+  quickSummary: [
+    '일간 운세는 빠르게 움직이는 달과 당신의 차트에 작용하는 행성 에스펙트에 의해 결정됩니다.',
+    '상승궁(어센던트)을 기준으로 운세를 읽는 것이 일일 예측의 정확도를 훨씬 높여줍니다.',
+    '행성의 트랜짓은 매일 특정한 사건, 감정, 기회를 유발합니다.',
+    '에너지를 낭비하지 않기 위해 "보이드 오브 코스(공망)" 달 주기를 사용하는 법을 배우세요.'
+  ],
+  keyTakeaways: [
+    '태양 별자리는 핵심 생명력을 보여주지만, 상승궁은 일상 생활의 "무대"를 설정합니다.',
+    '달은 약 2.5일마다 별자리를 바꾸며 대중의 집단적인 기분을 지배합니다.',
+    '수성 역행이나 다른 "부정적인" 측면은 사실 검토와 재조정을 위한 시기입니다.',
+    '점성술을 아침 루틴에 통합하면 생산성과 관계를 최적화할 수 있습니다.'
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: '왜 일간 운세를 읽어야 할까요?' },
+    { id: 'science-behind-it', title: '원리: 어떻게 작동하는가' },
+    { id: 'rising-vs-sun', title: '황금률: 상승궁 vs 태양 별자리' },
+    { id: 'planetary-players', title: '주요 행성들' },
+    { id: 'practical-rituals', title: '일일 점성술 리추얼' },
+    { id: 'myth-busting', title: '일반적인 오해 해결' }
+  ],
+  content: `
+      <h2 id="introduction">왜 일간 운세를 읽어야 할까요?</h2>
+      <p>전 세계 수백만 명에게 <strong>일간 운세</strong>를 확인하는 것은 아침 커피 한 잔만큼이나 필수적인 일입니다. 이는 잠시 멈춤의 시간이며, 자아 성찰의 리추얼이자, 그날의 에너지에 대비하는 방법입니다. 하지만 이 예측들이 실제로 어떤 원리로 만들어지는지 궁금해 본 적이 있나요?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Astralo에서 우리는 점성술이 자기 권능 부여를 위한 도구라고 믿습니다. 잘 쓰여진 운세는 단순히 미래를 예측하는 것이 아니라, 당신이 미래를 <em>창조</em>하도록 돕습니다. 오늘 행성들의 위치를 이해함으로써 도전을 우아하게 헤쳐나가고 기회를 잡을 수 있습니다.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">원리: 어떻게 작동하는가</h2>
+      <p>점성술은 종종 주기의 학문이라고 불립니다. 당신의 <strong>일간 운세 예측</strong>은 "트랜짓(Transits)"이라는 기술을 사용하여 계산됩니다. 출생 차트가 태어난 순간의 고정된 스냅샷이라면, 행성들은 계속해서 움직입니다. 하늘에서 움직이는 행성이 당신의 출생 차트 속 행성과 수학적 각도(에스펙트)를 이룰 때 사건이 발생합니다.</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>달: 운명의 분침</h3>
+      <p>목성 같은 행성이 별자리를 바꾸는 데 1년이 걸리는 반면, <strong>달</strong>은 매우 빠르게 움직여 약 2.5일이면 하나의 별자리를 통과합니다. 따라서 달은 당신의 <em>일일</em> 기분과 감정 상태를 결정하는 주요 동력이 됩니다.</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
-
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising 별자리</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">황금률: 상승궁(Rising Sign)을 참고하세요</h2>
+      <p>전문 점성가들이 알고 있는 비밀이 있습니다. <strong>가장 정확한 일일 예측을 위해서는 태양 별자리가 아닌 상승궁(어센던트) 운세를 읽어야 합니다.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>왜일까요? 운세는 "하우스 시스템"을 사용하여 작성되기 때문입니다. 상승궁은 당신의 차트에서 12개 하우스의 배치를 결정합니다. 1하우스는 나 자신, 2하우스는 돈, 7하우스는 관계 등입니다. 점성가가 "오늘 양자리에게 금전적 기회가 있다"고 쓴다면, 이는 양자리 상승궁 차트의 2하우스를 통과하는 행성의 움직임을 보고 있는 것입니다.</p>
+
+      <h2 id="planetary-players">하루를 지배하는 주요 행성들</h2>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>수성:</strong> 소통, 기술, 이동의 지배자. 이메일이 잘 도착하는지, 출퇴근길이 평온할지를 결정합니다.</li>
+        <li><strong>금성:</strong> 사랑, 돈, 가치관의 지배자. 데이트나 쇼핑, 연봉 인상을 요청하기 좋은 날을 알려줍니다.</li>
+        <li><strong>화성:</strong> 에너지를 내는 엔진. 당신의 활력과 추진력을 결정합니다.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
-      <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
-      </ul>
-
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 별자리s</h2>
-      
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
-
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
-
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
-
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
-
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
-
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
-
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
-
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
-
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
-
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
-
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
-
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
-
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">일일 점성술 리추얼</h2>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>아침 체크인:</strong> 이메일을 확인하기 <em>전에</em> 운세를 읽으세요. 이는 우주적인 의도를 설정해 줍니다.</li>
+        <li><strong>달의 별자리 확인:</strong> 달이 처녀자리에 있다면 책상을 정리하세요. 천칭자리에 있다면 파트너에게 연락하세요. 흐름을 따르는 것이 항상 더 쉽습니다.</li>
+        <li><strong>보이드(공망) 시간 존중:</strong> 달이 다음 별자리로 넘어가기 전까지 어떤 에스펙트도 이루지 않는 시간을 "보이드 오브 코스"라고 합니다. 이때는 중요한 계약이나 사업 시작을 피하고 휴식을 취하는 것이 좋습니다.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">일반적인 오해 해결</h2>
+      <p><strong>"운세는 너무 모호해요."</strong> <br>일반 신문의 운세가 모호한 이유는 태양 별자리만 보기 때문입니다. Astralo의 고도화된 AI가 생성하는 개인화된 리포트는 당신의 전체 차트의 섬세한 뉘앙스를 고려합니다.</p>
+      <p><strong>"점성술은 정해진 운명을 예언한다?"</strong> <br>틀렸습니다. 점성술은 <em>에너지</em>와 <em>날씨</em>를 예측합니다. 비가 올 수는 있지만(어려운 트랜짓), 우산을 챙길지 아니면 빗속에서 춤을 출지는 당신이 결정합니다. 당신에겐 항상 자유의지가 있습니다.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>더 깊이 알아볼 준비가 되셨나요?</h3>
+      <p>일반적인 예측도 도움이 되지만, 정확한 출생 시간과 장소를 바탕으로 한 해석을 따라갈 수는 없습니다. Astralo의 프리미엄 개인화 해석으로 당신의 우주적 설계가 가진 잠재력을 최대한 활용해 보세요.</p>
     `
 };

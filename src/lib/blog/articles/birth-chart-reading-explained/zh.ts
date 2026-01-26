@@ -1,80 +1,73 @@
 /**
- * birth-chart-reading-explained - ZH
+ * 星盘解读：你的灵魂藍图 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: '🔮 星盘解读：开启你灵魂蓝图的全面指南',
+  excerpt: '通过我们的终极星盘解读指南，揭开你性格的秘密。学习像专家一样解读行星、宫位、相位和命运交点。',
+  category: '占星基础',
+  metaDescription: '通过我们的终极星盘解读指南，揭开你性格的秘密。学习像专家一样解读行星、宫位、相位和命运交点。',
+  keywords: '星盘, 本命盘, 占星图, 占星三巨头, 上升星座, 月亮星座, 占星宫位, 行星相位, 免费星盘查询',
+  quickSummary: [
+    '星盘是你出生那一刻天空的360度全景切片。',
+    '“三巨头”（太阳、月亮、上升）构成了你性格的核心支柱。',
+    '12个宫位描述了事件发生的“场所”，而行星描述了“发生了什么”。',
+    '相位（连接行星的线）揭示了你的内在冲突和天赋。'
+  ],
+  keyTakeaways: [
+    '上升星座（ASC）通常比太阳星座对预测更为准确。',
+    '紧张相位（刑相、冲相）往往能通过磨练造就最为成功的人才。',
+    '北交点揭示了你灵魂在这一世的业力发展方向。',
+    '计算机生成的报告虽然很棒，但人类的直觉和综合判断是不可替代的。'
+  ],
+  tableOfContents: [
+    { id: 'what-is-birth-chart', title: '什么是星盘：灵魂的蓝图' },
+    { id: 'the-big-three', title: '三巨头：太阳、月亮、上升' },
+    { id: 'the-planets', title: '行星：内在与外在的驱动力' },
+    { id: 'the-houses', title: '12宫位：人生的舞台' },
+    { id: 'aspects', title: '相位：宇宙的对话' },
+    { id: 'nodes', title: '命运交点' }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">什么是星盘：灵魂的蓝图</h2>
+      <p>你是否曾经觉得自己的性格并不完全符合你的星座描述？“我是狮子座，但我讨厌成为关注的焦点！”原因可能隐藏在你的<strong>本命星盘</strong>中。虽然太阳星座很重要，它只是一个庞大、复杂方程中的一个变量。</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>星盘是根据你出生的精确时间、日期和地理位置计算出来的天宫图。它将你置于宇宙中心。你可以把它看作你的“宇宙DNA”——一套专属于你自己的指令、天赋、挑战和潜能。</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">三巨头：太阳、月亮、上升</h2>
+      <p>在深入研究复杂的几何相位之前，每个占星学习者都必须掌握自己的“三巨头”。这三点决定了你性格的大部分基调。</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. 太阳 ☀️（身份认同）</h3>
+      <p>太阳代表你的意识自我。它是你的燃料和驱动力。它回答了这样一个问题：<em>“我内核是谁？”</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. 月亮 🌙（情感需求）</h3>
+      <p>月亮代表你的内心世界、本能和潜意识。它决定了你在受伤、饥饿或劳累时的反应。它回答了：<em>“我需要什么才能感到安全？”</em></p>
 
-      <h3>3. The Ascendant / Rising 标志 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. 上升星座 🏹（人格面具）</h3>
+      <p>上升星座是你出生时东方地平线上正在升起的星座。它是你与世界接触的“界面”，决定了你的外在形象和给人的第一印象。它回答了：<em>“他人如何看待我？”</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
-      
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h2 id="the-planets">行星：人生的演员</h2>
+      <p>在星盘解读中，行星是在你生命故事中扮演角色的演员。</p>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>个人行星（水星、金星、火星）：</strong> 掌管智力、爱情和行动。它们移动迅速，影响着你的日常生活。</li>
+        <li><strong>社会与外行星（木星、土星、天王星、海王星、冥王星）：</strong> 掌管运气、教训、变革和业力。它们移动缓慢，往往塑造一整代人的特征。</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h2 id="the-houses">舞台：12宫位</h2>
+      <p>星盘被分成12个宫位。每个宫位掌管一个特定的生活领域。行星所在的宫位告诉你它的能量将在<em>哪里</em>表现出来。</p>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>1宫：自我；2宫：财富；3宫：交流；4宫：原生家庭；5宫：创造力与恋爱；6宫：工作与健康；7宫：伴侣关系；8宫：转化与他人财富；9宫：哲学与远行；10宫：事业名望；11宫：社群；12宫：潜意识与灵性。</strong></li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
-      <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
-      </ul>
+      <h2 id="aspects">相位：宇宙的对话</h2>
+      <p>行星不是孤立存在的，它们通过特定的几何角度进行对话，称为“相位”。</p>
+      <p><strong>和谐相位（三分相、六分相）：</strong> 这是天赋，事情往往进展顺利。</p>
+      <p><strong>紧张相位（四分相、对分相）：</strong> 这是挑战。虽然会有摩擦，但这种摩擦往往能产生通往巨大成功所需的动力。大多数成功人士的星盘中都充满了四分相（刑相位）！</p>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="nodes">命运交点</h2>
+      <p><strong>北交点</strong>代表你的使命——你灵魂在这一世想要发展的方向。<strong>南交点</strong>代表你的过去世或者舒适区，虽然熟悉，但一直停留会导致停滞。</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
-      
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
-
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
-      
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <p>解读星盘是一门艺术。在 Astralo，我们利用经过数百年占星智慧训练的先进AI，将这数百万个变量合成一段关于你的、清晰且具有启发性的解析。</p>
     `
 };

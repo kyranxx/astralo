@@ -1,54 +1,71 @@
 /**
- * mercury-retrograde-survival-guide - SV
+ * Överlevnadsguide Merkurius Retrograd - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.", 
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}], 
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: "☄️ Överlevnadsguide Merkurius Retrograd 2026: Från kaos till lugn",
+  excerpt: "Frukta inte retrograden! Upptäck varför Merkurius retrograd faktiskt är en livsviktig kosmisk återställning och hur du navigerar mellan teknikfel och kommunikationsproblem med lätthet.",
+  category: "Astrologi 101",
+  metaDescription: "Frukta inte retrograden! Upptäck varför Merkurius retrograd faktiskt är en livsviktig kosmisk återställning, hur du undviker de vanligaste fällorna och varför det är den bästa tiden för uppgifter som börjar på 're-'.",
+  keywords: "Merkurius retrograd, datum Merkurius retrograd, överlevnadsguide, astrologitips, planetär retrograd, kommunikationsfel, teknikbugg",
+  quickSummary: [
+    "Merkurius retrograd är en optisk illusion där Merkurius ser ut att röra sig baklänges på himlen.",
+    "Det händer 3 eller 4 gånger om året och varar i cirka tre veckor varje gång.",
+    "Denna period är känd för reseförseningar, teknikfel och missförstånd.",
+    "Det är INTE tid för att starta nya projekt, men EXCELLENT för att avsluta gamla."
+  ],
+  keyTakeaways: [
+    "Dubbelkolla varje mejl, meddelande och kontrakt innan du skickar eller skriver under.",
+    "Säkerhetskopiera dina data och räkna med små tekniska problem med dina enheter.",
+    "Gamla vänner och ex-partners dyker ofta upp igen under dessa kosmiska cykler.",
+    "Skuggperioden före och efter retrograden är lika viktig."
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: "Vetenskapen bakom illusionen" },
+    { id: 'retrograde-shadow', title: "Skuggperioden" },
+    { id: 'survival-dos', title: "Regeln om 'RE-': Vad man ska göra" },
+    { id: 'survival-donts', title: "Varningssignaler: Vad man ska undvika" },
+    { id: 'mercury-retrograde-dates', title: "Datum Merkurius Retrograd 2026" },
+    { id: 'final-thoughts', title: "Avslutande tankar" }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">Vetenskapen bakom illusionen</h2>
+      <p>Tre eller fyra gånger om året ser planeten Merkurius — herren över kommunikation, resor och teknik — ut att vandra baklänges på himlen från vår utkikspunkt på jorden. I verkligheten är detta bara en optisk illusion, likt en långsammare bil som ser ut att backa när du kör om den i ett snabbare fordon.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Men även om bakåtrörelsen är en illusion, är effekterna verkliga. Inom astrologin vänder sig en planets energi inåt när den går retrograd. Eftersom Merkurius styr det dagliga "kommandet och gåendet" i våra liv — våra tankar, våra enheter och vår logistik — börjar allt kännas lite... glitchigt. <strong>Merkurius retrograd</strong> är universums sätt att be världen trycka på "paus".</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Skuggperioden: Tvekan före och efter stormen</h2>
+      <p>Många människor blir förvånade när saker går fel redan en vecka <em>innan</em> retrograden officiellt börjar. Detta kallas för <strong>för-skuggan</strong>. Det är tiden då Merkurius börjar sakta ner innan han byter riktning. Likaså fortsätter <strong>efter-skuggan</strong> i cirka två veckor efter att planeten blivit direkt igen. Om du planerar en viktig lansering eller ett stort köp är det bäst att vänta tills efter-skuggan är över för smidigare resultat.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">Regeln om "RE-": Vad man ska göra</h2>
+      <p>Merkurius retrograd har ett dåligt rykte, men det är faktiskt en av de mest produktiva tiderna på året om man använder den rätt. Hemligheten är att fokusera på aktiviteter som börjar på <strong>"RE-"</strong>:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>REvidera och REflektera (Review & Reflect):</strong> Titta på dina mål sedan årsskiftet. Är du fortfarande på rätt väg?</li>
+        <li><strong>REproläs och REvidera (Reread & Revise):</strong> Kontrollera dina kontrakt, din budget och dina planer en gång till. Du kommer troligen hitta ett fel du missat.</li>
+        <li><strong>Wieder verbinden (Reconnect):</strong> Det är den bästa tiden att kontakta gamla vänner eller lösa gamla konflikter med familjen.</li>
+        <li><strong>REparera (Repair):</strong> Fixa den droppande kranen eller felet på bilen som du ignorerat.</li>
+        <li><strong>REorganisera:</strong> Rensa i dina skåp, din inbox och dina tankar.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Varningssignaler: Vad man ska undvika</h2>
+      <p>Även om livet inte stannar av, försök undvika dessa riskfyllda aktiviteter under det tre veckor långa retrograd-fönstret:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Skriva under viktiga kontrakt:</strong> Om du måste skriva under, läs det finstilta tre gånger. Ännu hellre, låt en jurist läsa det.</li>
+        <li><strong>Köpa ny teknik:</strong> Vänta med att köpa den nya iPhonen eller bilen. "Retrograd" teknik uppvisar ofta brister senare.</li>
+        <li><strong>Starta nya projekt:</strong> Idéer som föds nu ändras ofta drastiskt så fort planeten blir direkt igen. Vänta med den faktiska lanseringen.</li>
+        <li><strong>Skönhetsoperationer eller radikala förändringar av din look:</strong> Merkurius påverkar också hur vi ser på estetik under sina cykler. Du kan ångra det dristiga beslutet senare.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">Datum Merkurius Retrograd 2026</h2>
+      <p>Markera dessa perioder i din kalender för 2026 för att ligga steget före det kosmiska kaoset:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25 februari – 20 mars</strong> (Börjar i Fiskarna, slutar i Vattumannen)</li>
+          <li><strong>29 juni – 23 juli</strong> (I Kräftan)</li>
+          <li><strong>24 oktober – 13 november</strong> (Börjar i Skorpionen, slutar i Vågen)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Avslutande tankar</h2>
+      <p>Merkurius retrograd är ingen förbannelse; det är en nödvändig underhållsfas. Utan den skulle vi fortsätta springa utan att någonsin befästa fundamenten i våra liv. Använd den här tiden till att sakta ner, andas och hitta tillbaka till dig själv. När Merkurius äntligen går direkt igen kommer du att vara snabbare och mer fokuserad än någonsin tidigare.</p>
     `
 };

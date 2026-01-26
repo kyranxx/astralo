@@ -1,71 +1,88 @@
 /**
- * monthly-horoscope-february-2026 - CS
+ * Měsíční horoskop Únor 2026 - CS
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const cs: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: "❤️ Měsíční horoskop Únor 2026: Období vodnářských inovací",
+  excerpt: "Únor 2026 přináší vlnu jasnosti s tím, jak se Merkur vrací do přímého směru. Zjistěte, jak úplněk ve Lvu 3. února a Venuše v Rybách ovlivní vaši lásu a kariéru.",
+  category: "Horoskopy",
+  metaDescription: "Kompletní astrologická předpověď pro únor 2026. Detailní předpovědi pro všechna znamení, zaměřené na úplněk ve Lvu a Venuši v Rybách.",
+  keywords: "měsíční horoskop, únor 2026 astrologie, měsíční předpovědi, předpověď únor, období Vodnáře, úplněk ve Lvu, Venuše v Rybách",
+  quickSummary: [
+    "Úplněk ve Lvu 3. února vyžaduje, abyste vystoupili do popředí a vyjádřili své pravé já",
+    "Merkur se konečně pohybuje v přímém směru, což vyjasňuje nedorozumění z konce ledna",
+    "Venuše se přesouvá do snových Ryb a vytváří nejromantičtější energii celého roku",
+    "Období Vodnáře nás vybízí k inovacím a osvobození se od zastaralých tradic"
+  ],
+  keyTakeaways: [
+    "První únorový týden využijte k zahájení kreativních projektů nebo změně osobního stylu",
+    "Valentýn bude letos díky Venuši v Rybách extra magický – naplánujte něco hlubokého",
+    "V polovině měsíce očekávejte náhlé vhledy týkající se technologií nebo komunitních skupin",
+    "Obecné horoskopy jsou skvělé, ale pro přesné načasování potřebujete své osobní tranzity"
+  ],
+  tableOfContents: [
+    { id: "monthly-overview", title: "Přehled února 2026" },
+    { id: "key-transits", title: "Klíčová data a tranzity" },
+    { id: "fire-signs", title: "Ohnivá znamení (Beran, Lev, Střelec)" },
+    { id: "earth-signs", title: "Zemská znamení (Býk, Panna, Kozoroh)" },
+    { id: "air-signs", title: "Vzdušná znamení (Blíženci, Váhy, Vodnář)" },
+    { id: "water-signs", title: "Vodní znamení (Rak, Štír, Ryby)" },
+    { id: "get-personal", title: "Proč obecný výhled nestačí" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologie února 2026</h2>
+      <p>Pokud byl leden o setřásání starého roku, <strong>únor 2026</strong> je o odvážném vykročení do budoucnosti. Jsme hluboko v <strong>období Vodnáře</strong>, čase, který přeje odvážným, originálním a inovativním. Kolektivní nálada se mění z „Jak přežít?“ na „Jak se znovu vynalézt?“</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Hlavní zprávou je <strong>úplněk ve Lvu 3. února</strong>. Lev nás žádá, abychom zářili. Ptá se: „Kde se držíte zbytečně zpátky?“ V tomto světle není schovávání se možností. Spolu s koncem stínové fáze Merkuru se do naší komunikace vrací jasnost. Mlha se zvedá.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Klíčová data a tranzity</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3. února:</strong> Úplněk ve Lvu (Drama, vášeň, vyvrcholení).</li>
+        <li><strong>10. února:</strong> Venuše vstupuje do Ryb (Bezpodmínečná láska, umění, fantazie).</li>
+        <li><strong>18. února:</strong> Slunce vstupuje do Ryb (Začíná období snů).</li>
+        <li><strong>25. února:</strong> Merkur vstupuje do Ryb (Logika se rozpouští v intuici).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Oheň Znamenís (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Ohnivá znamení (Beran, Lev, Střelec)</h2>
+      <p><strong>Téma: Kreativní exploze.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Lev:</strong> Tohle je váš okamžik. Úplněk ve vašem znamení vás staví do záře reflektorů. Ať už jde o povýšení, rozchod nebo průlom, děje se to <em>teď</em>. Nebojte se být vidět.</p>
+      <p><strong>Beran:</strong> Váš sociální okruh je tento měsíc vaším bohatstvím. Networking přináší nečekané plody. Přítel se může stát milencem nebo obchodním partnerem.</p>
+      <p><strong>Střelec:</strong> Toužíte po moudrosti. Plány na cesty, které byly v lednu odloženy, konečně dostávají zelenou. Kupte si tu letenku.</p>
 
-      <h2 id="earth-signs">🌍 Země Znamenís (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Zemská znamení (Býk, Panna, Kozoroh)</h2>
+      <p><strong>Téma: Duchovní uzemnění.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Býk:</strong> Když Venuše vstoupí do Ryb, cítíte se jemněji. Je to krásný čas pro romanci, ale i pro odpuštění si starých chyb. Pusťte staré křivdy.</p>
+      <p><strong>Panna:</strong> Zaměřte se na partnerství. Obvykle jste těmi, kdo pomáhají, ale v únoru nechte někoho pomoci <em>vám</em>. Zranitelnost je vaší lekcí tohoto měsíce.</p>
+      <p><strong>Kozoroh:</strong> Finanční záležitosti vypadají nadějně, ale ne jen díky tvrdé práci. Intuice vede vaše investice. Věřte svému instinktu víc než tabulkám.</p>
 
-      <h2 id="air-signs">💨 Vzduch Znamenís (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Vzdušná znamení (Blíženci, Váhy, Vodnář)</h2>
+      <p><strong>Téma: Intelektuální obnova.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Vodnář:</strong> Všechno nejlepší k narozeninám! Slunce ve vašem znamení zesiluje vaši vitalitu. Jste magnetičtí. Je to nejlepší čas v roce pro budování osobní značky.</p>
+      <p><strong>Blíženci:</strong> Kariéra nabírá obrátky. Možná se nudíte v rutině. Hledejte neobvyklá řešení nebo vedlejší projekty, které podnítí vaši zvědavost.</p>
+      <p><strong>Váhy:</strong> Romance je na vrcholu, stejně jako kreativita. Právě teď něco tvoříte – ať už umělecké dílo, nebo nový vztah. Užijte si plodnost okamžiku.</p>
 
-      <h2 id="water-signs">💧 Voda Znamenís (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Vodní znamení (Rak, Štír, Ryby)</h2>
+      <p><strong>Téma: Emocionální ponor.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Ryby:</strong> S koncem měsíce vstupuje Slunce do vašeho znamení. Budíte se z dlouhého spánku. Vaše intuice je nyní prakticky jasnovidná. Využijte toho.</p>
+      <p><strong>Rak:</strong> Finance a sdílené zdroje jsou v centru pozornosti. Dluh může být splacen nebo půjčka schválena. Je čas dát si do pořádku své finanční záležitosti.</p>
+      <p><strong>Štír:</strong> Domov je tam, kde je srdce. Možná rekonstruujete nebo se prostě schováváte před světem. Odpočinek je pro vás nyní produktivní.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Proč obecné horoskopy nestačí</h2>
+      <p>I když vám tato předpověď dává „vesmírné počasí“ pro vaše sluneční znamení, chybí v ní to nejdůležitější: <strong>Váš jedinečný horoskop.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Jste víc než jen vaše sluneční znamení. Máte Měsíc, ascendent a 8 dalších planet, které tvoří komplexní mapu jedinečnou jako otisk prstu. 
+      <br><em>Příklad:</em> Člověk s ascendentem v Býku prožije tento měsíc úplně jinak než ten, kdo má v Býku Slunce.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
-      
+      <p><strong>Neriskujte svou budoucnost.</strong> Chcete-li získat konkrétní data a detaily, které se vztahují přímo na VÁS, potřebujete výpočet na míru.</p>
+
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Připraveni na svou osobní pravdu?</h3>
+          <p>Získejte svůj kompletní osobní report tranzitů pro rok 2026. Podívejte se, jak přesně planety interagují s vaším rodným potenciálem.</p>
       </div>
     `
 };

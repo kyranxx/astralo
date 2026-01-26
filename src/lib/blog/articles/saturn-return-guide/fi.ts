@@ -1,204 +1,239 @@
 /**
- * saturn-return-guide - FI
+ * Saturnuksen paluun selviytymisopas - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: "🪐 Saturnuksen paluun selviytymisopas: näin läpäiset kosmiset kokeesi",
+  excerpt: "Lähestytkö 29 vuoden ikää? Tervetuloa Saturnuksen paluuseen. Selvitä, miksi tämä on aikuisesi elämän tärkein astrologinen tapahtuma ja miten selviät siitä sielu ehjänä.",
+  category: "Transiitit",
+  metaDescription: "Äärimmäinen opas Saturnuksen paluusta selviytymiseen. Opi mitä tapahtuu, kun Saturnus palaa syntymäasemiinsa, miten se vaikuttaa uraan ja ihmissuhteisiin sekä tulkinnat huoneittain.",
+  keywords: "saturnuksen paluu, saturn return merkitys, ensimmäinen saturnuksen paluu, astrologiset transiitit, saturnus huoneissa, 30 vuoden kriisi, astrologinen kypsyys, saturnus perääntyy, saturnuksen paluusta selviytyminen, saturnus merkeissä",
+  quickSummary: [
+    "Saturnuksen paluu tapahtuu, kun Saturnus palaa täsmälleen samaan asteeseen ja merkkiin, jossa se oli syntymähetkelläsi (noin 28–30 vuoden iässä).",
+    "Se on 'kosminen tarkastus', jossa kaikki kestävyyttä vailla oleva poistetaan elämästäsi.",
+    "Vaikka se on usein stressaavaa, se on todellisen kypsymisen ja elämäntehtäväsi löytämisen moottori.",
+    "Toinen Saturnuksen paluu tapahtuu noin 58–60 vuoden iässä ja keskittyy perintöön ja viisauteen."
+  ],
+  keyTakeaways: [
+    "Älä vastusta muutosta; Saturnus palkitsee kurinalaisuuden ja vastuunottamisen.",
+    "Se huone, jossa syntymäkarttasi Saturnus sijaitsee, määrittää sen, missä 'loppukokeesi' tapahtuu.",
+    "Erot ja uranvaihdot tänä aikana ovat usein välttämättömiä kasvusi kannalta.",
+    "Kun transiitti on ohi, koet uudenlaista auktoriteettia ja selkeyttä."
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: "Mikä on Saturnuksen paluu?" },
+    { id: 'the-myth-of-saturn', title: "Myytti ja mestari: ajan herra" },
+    { id: 'timeline', title: "Aikajana: paluun vaiheet" },
+    { id: 'themes', title: "Paluun universaalit teemat" },
+    { id: 'saturn-in-signs', title: "Saturnuksen paluu per merkki (Oinaasta Kaloihin)" },
+    { id: 'saturn-in-houses', title: "Saturnuksen paluu huoneissa (Deep Dive)" },
+    { id: 'house-1', title: "Huone 1: itsensä uudelleenluominen" },
+    { id: 'house-2', title: "Huone 2: taloudelliset perustat" },
+    { id: 'house-3', title: "Huone 3: mielen hallinta" },
+    { id: 'house-4', title: "Huone 4: esi-isien parantaminen ja juuret" },
+    { id: 'house-5', title: "Huone 5: nautinnon kurinalaisuus" },
+    { id: 'house-6', title: "Huone 6: pyhä rutiini" },
+    { id: 'house-7', title: "Huone 7: kumppanuuden sulatusuuni" },
+    { id: 'house-8', title: "Huone 8: kuolema, uudestisyntyminen ja jaettu valta" },
+    { id: 'house-9', title: "Huone 9: totuuden etsintä" },
+    { id: 'house-10', title: "Huone 10: uran huippu" },
+    { id: 'house-11', title: "Huone 11: kollektiivinen tarkoitus" },
+    { id: 'house-12', title: "Huone 12: lopullinen liukeneminen" },
+    { id: 'retrograde', title: "Saturnuksen perääntymisen vaikutus" },
+    { id: 'psychology', title: "Psykologia Saturnuksen paluun takana" },
+    { id: 'how-to-survive', title: "Selviytymisvinkit: paineen hallinta" },
+    { id: 'famous-examples', title: "Kuuluisia Saturnuksen paluu -tarinoita" },
+    { id: 'post-return', title: "Elämä tulen jälkeen: 30-vuotiaana" },
+    { id: 'second-return', title: "Valmistautuminen toiseen paluuseen (ikä 58–60)" },
+    { id: 'faq', title: "Usein kysytyt kysymykset" },
+    { id: 'conclusion', title: "Aikuistumisen juhlinta" }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Mikä on Saturnuksen paluu?</h2>
+      <p>Jos olet koskaan huomannut, että vuodet 27 ja 30 välillä vaikuttavat erityisen kaoottisilta useimmille ihmisille, olet todistanut <strong>Saturnuksen paluun</strong> voimaa. Astrologiassa Saturnus on rakenteen, kurinalaisuuden, vastuun ja ajan planeetta. Tämä valtava planeetta tarvitsee noin 29,5 vuotta täydentääkseen yhden kierroksen Auringon ympäri.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>"Saturnuksen paluu" tapahtuu, kun Saturnus-planeetta palaa täsmälleen samaan asteeseen ja eläinradan merkkiin, jossa se oli syntymäsi hetkellä. Se on taivaallinen vastine aikuistumisen "loppukokeelle". Se on hetki, jolloin maailmankaikkeus kysyy sinulta: <em>"Elätkö elämää, joka on todella sinun, vai esitätkö roolia, jonka vanhempasi ja yhteiskunta halusivat sinun esittävän?"</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Tälle ajanjaksolle on usein tyypillistä valtava paine, merkittävät elämänmuutokset ja äkillinen oivallus siitä, ettei aikuisuus ole enää kaukainen käsite, vaan läsnä oleva ja painava todellisuus. Vaikka "pop-astrologia" kuvailee Saturnuksen paluuta usein pelottavana menetyksen ja kriisin vaiheena, se on todellisuudessa syvä mahdollisuus karistaa "vääriä" versioita itsestäsi ja rakentaa perustat, jotka kantavat sinua seuraavat kolme vuosikymmentä. Se on silta 20-vuotiaan potentiaalin ja 30-vuotiaan oman voiman välillä.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Myytti ja mestari: ajan herra</h2>
+      <p>Ymmärtääksemme, miksi tämä transiitti tuntuu niin raskaalta, meidän on tarkasteltava Saturnuksen arkkityyppiä. Roomalaisessa mytologiassa (ja Chronoksena kreikkalaisessa mytologiassa) Saturnus oli ajan ja sadonkorjuun jumala. Hänet kuvataan usein sirpin kanssa. Tämä ei viittaa vain kuolemaan; se viittaa sellaisten asioiden karsimiseen, jotka eivät enää palvele meitä. Aivan kuten puutarhurin on leikattava ruusupuskaa, jotta se kasvaisi vahvemmaksi seuraavalla kaudella, Saturnus karsii ne osat elämästäsi, jotka ovat turhia, epäterveellisiä tai vain jäljitelmiä.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Saturnus on "suuri opettaja" tai "karman herra". Hän ei halua nähdä sinun kärsivän, mutta hän haluaa nähdä sinun kypsyvän. Monet ihmiset kulkevat 20-vuotiaana läpi elämän onnen, potentiaalin ja vanhempien odotusten sekoituksella. Saturnus sanoo: juhlat ovat ohi. On aika rakentaa jotain, joka kestää 30 vuotta. Hän palkitsee kovan työn, rehellisyyden ja kärsivällisyyden. Hän rankaisee oikopoluista, epärehellisyydestä ja viivyttelystä. Jos olet vain "teeskennellyt", totuus tulee ilmi Saturnuksen paluun aikana.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Aikajana: paluun vaiheet</h2>
+      <p>Ensimmäinen Saturnuksen paluu alkaa yleensä noin 27,5 vuoden iässä ja päättyy lähellä 30 ikävuotta. Kokemus voidaan kuitenkin jakaa kolmeen erilliseen vaiheeseen:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>Vaihe 1: Kaukainen jyrinä (ikä 27–28)</h3>
+      <p>Alat tuntea epämääräistä levottomuutta. Asiat, jotka ennen tekivät sinut onnelliseksi – satunnaiset deitit, myöhäiset illat, joku hanttihomma – alkavat tuntua tyhjiltä. Saatat tuntea äkillisen halun "saada elämäsi järjestykseen" tietämättä tarkalleen, mitä se tarkoittaa. Saatat huomata ystävien menevän naimisiin tai tulevan ylennetyiksi, ja sen sijaan, että olisit iloinen heidän puolestaan, tunnet paniikkia omasta kehityksestäsi.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>Vaihe 2: Loppukoe (ikä 28–29)</h3>
+      <p>Tässä kohtaa todellinen vaikutus alkaa. Tapahtumat pakottavat sinut toimiin. Erot, uranmuutokset tai terveysvaroitukset tapahtuvat tänä aikana. Sinun on pakko tehdä päätöksiä. Asioiden lykkäämiselle ei ole enää tilaa. Saturnus pitää painetta yllä, kunnes otat vastuun tuloksistasi. Tämä on transiitin emotionaalisen intensiteetin huipentuma.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>Vaihe 3: Integrointi (ikä 29–30)</h3>
+      <p>Kun Saturnus siirtyy pois syntymäasteestasi, paine helpottaa. Alat nähdä viisauden tekemissäsi valinnoissa (myös niissä vaikeissa). Tunnet olevasi vanhempi, mutta vakaampi. Olet "valmistunut" astrologisesta kypsymisestä. Sinun ei tarvitse enää pyytää keneltäkään lupaa ollaksesi oma itsesi. Olet sitä yksinkertaisesti.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Paluun universaalit teemat</h2>
+      <p>Vaikka kaikilla on ainutlaatuinen kokemus, useita teemoja esiintyy lähes kaikilla tänä aikana:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Reality Check:</strong> Jos olet elänyt fantasiassa tai välttänyt tärkeää totuutta, Saturnus pakottaa sinut kohtaamaan sen.</li>
+        <li><strong>Ihmissuhteiden päättyminen:</strong> Pitkäaikaiset suhteet, joita ei ole tarkoitettu "todella pitkäaikaisiksi", päättyvät usein nyt. Jos ne jäävät jäljelle, se johtuu siitä, että ne ovat sitoutuneet uudelle kypsyyden tasolle.</li>
+        <li><strong>Uranvaihdot:</strong> Monet jättävät vakaat, tylsät työt seuratakseen todellista kutsumustaan tai tajuavat, että heidän "unelmatyönsä" on todellisuudessa painajainen ja kääntyvät jonkin käytännöllisen puoleen.</li>
+        <li><strong>Fyysinen ikääntyminen:</strong> Alat tuntea kehosi eri tavalla. Se on hetki, jolloin ihmiset alkavat ottaa terveytensä vakavasti – oivaltaen, etteivät he ole haavoittumattomia. Saatat huomata ensimmäiset harmaat hiuksesi tai muutoksen aineenvaihdunnassasi.</li>
+        <li><strong>Rajojen asettaminen:</strong> "Ei" sanomisen oppiminen – vanhemmille, myrkyllisille ystäville ja epärealistisille odotuksille – on Saturnuksen keskeinen opetus. Opit, että "Ei" on kokonainen lause.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Eläinradan Merkkis</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Saturnuksen paluu merkki kohtaan</h2>
+      <p>Merkki, jossa Saturnuksesi sijaitsee, kertoo meille, *miten* koet tämän transiitin. Etsi Saturnus-merkkisi syntymäkartaltasi Astralosta nähdäksesi kasvuasi koskevan erityisen sävyn:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Saturnus Oinaassa</h3>
+      <p>Paluusi keskittyy **kärsivällisyyteen ja impulssikontrolliin**. Haluat todennäköisesti kiirehtiä siirtymävaiheen läpi, mutta Saturnus hidastaa sinua. Opit johtamaan viisaudella, et vain raa'alla voimalla.
+      <br><strong>Tehtävä:</strong> Kesyttää vihasi ja draivisi.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Saturnus Härässä</h3>
+      <p>Paluusi keskittyy **taloudelliseen turvallisuuteen ja arvoihin**. Saatat kohdata merkittäviä taloudellisia esteitä, jotka pakottavat sinut määrittelemään, mikä on sinulle todella "arvokasta".
+      <br><strong>Tehtävä:</strong> Rakentaa vankka taloudellinen perusta ja itsetunto, joka ei riipu omistuksistasi.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Saturnus Kaksosissa</h3>
+      <p>Paluusi keskittyy **viestintään ja keskittymiseen**. Sinulla saattaa olla "liikaa ideoita", ja Saturnus pakottaa sinut valitsemaan yhden ja hallitsemaan sen.
+      <br><strong>Tehtävä:</strong> Keskittää mielesi ja puhua auktoriteetilla.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Saturnus Ravussa</h3>
+      <p>Paluusi käsittelee **emotionaalisia rajoja ja perhettä**. Saatat joutua käsittelemään lapsuuden haavoja tai ottamaan raskaan perhevastuun.
+      <br><strong>Tehtävä:</strong> Hoivata itseäsi ja rakentaa sisäinen koti, joka ei riipu muista.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Saturnus Leijonassa</h3>
+      <p>Paluusi keskittyy **luovaan rehellisyyteen ja tunnustukseen**. Saatat kamppailla suosion tarpeen kanssa ja joutua opettelemaan luomaan ensisijaisesti itsesi vuoksi.
+      <br><strong>Tehtävä:</strong> Löytää itseluottamus, joka tulee sisältäpäin, ei ulkoisista kehuista.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Saturnus Neitsyessä</h3>
+      <p>Paluusi käsittelee **terveyttä ja palvelua**. Olet todennäköisesti jo nyt erittäin ankara itsellesi, ja Saturnus opettaa sinulle, että "täydellinen" on tehdyn vihollinen.
+      <br><strong>Tehtävä:</strong> Rakentaa kestävä rutiini ja opetella olemaan ystävällinen kehollesi.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Saturnus Vaaa'assa</h3>
+      <p>Paluusi keskittyy **oikeudenmukaisuuteen ja kumppanuuteen**. Saatat kokea merkittäviä koettelemuksia ihmissuhteissa, jotka pakottavat sinut löytämään identiteettisi osana paria.
+      <br><strong>Tehtävä:</strong> Löytää tasapainosi ja oppia, että "sinä riität".</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Saturnus Skorpionissa</h3>
+      <p>Paluusi käsittelee **valtaa ja läheisyyttä**. Se on erittäin intensiivinen paluu, joka keskittyy oman varjosi kohtaamiseen ja luottamuksen oppimiseen.
+      <br><strong>Tehtävä:</strong> Muuttaa syvimmät pelkosi henkilökohtaiseksi voimaksi.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Saturnus Jousimiehessä</h3>
+      <p>Paluusi käsittelee **uskoa ja vapautta**. Saatat tajuta, että maailma on paljon suurempi (tai pienempi) kuin luulit, ja sinun on määriteltävä filosofiasi uudelleen.
+      <br><strong>Tehtävä:</strong> Löytää "totuus", jonka kanssa voit todella elää joka päivä.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Saturnus Kauriissa</h3>
+      <p>Paluusi keskittyy **kunnianhimoon ja auktoriteettiin**. Saturnus on täällä "kotonaan", joten paine on äärimmäinen, mutta niin ovat palkinnotkin. Sinusta tulee pomo.
+      <br><strong>Tehtävä:</strong> Ottaa vastuu perinnöstäsi ja kiivetä vuorellesi rehellisesti.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Saturnus Vesimiehessä</h3>
+      <p>Paluusi käsittelee **yhteisöä ja yksilöllisyyttä**. Opit, miten sovit joukkoon menettämättä ainutlaatuista kipinääsi.
+      <br><strong>Tehtävä:</strong> Myötävaikuttaa kollektiiviin samalla kun vaalit omia rajojasi.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Saturnus Kaloissa</h3>
+      <p>Paluusi käsittelee **henkisyyttä ja rajoja**. Sinun voi olla vaikea pitää jalat maassa ja joudut ehkä opettelemaan, että "Ei" voi olla henkinen teko.
+      <br><strong>Tehtävä:</strong> Tuoda unelmasi todellisuuteen kurinalaisuuden kautta.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Saturnuksen paluu huoneissa: Deep Dive</h2>
+      <p>Se, *missä* Saturnuksen paluusi tapahtuu, määräytyy sen mukaan, missä huoneessa se on syntymäkartallasi. Tämä on näyttämö, jolla draama näytellään.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">Huone 1: itsensä uudelleenluominen</h2>
+      <p>Kun Saturnus palaa 1. huoneeseen, kriisi on sekä ammatillinen että fyysinen. Saatat käydä läpi todellisen "muodonmuutoksen", enkä tarkoita vain vaatteita, vaan persoonallisuuttasi. Tunnet painolastin harteillasi, tarpeen "tulla joksikin". Voit olla poikkeuksellisen ankara itsellesi tämän siirtymän aikana. Painonpudotus, painonnousu tai terveyden muutos, joka vaatii kurinalaisuutta, on mahdollista.
+      <br><strong>Opetus:</strong> Rakentaa vankka itsetunto, joka ei riipu ulkoisesta vahvistuksesta. Oppia olemaan oma auktoriteettisi. Ole kehosi toimitusjohtaja.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">Huone 2: taloudelliset perustat</h2>
+      <p>Talous ja itsearvostus ovat tämän paluun keskiössä. Saatat kokea taloudellisia vaikeuksia, jotka opettavat sinua budjetoimaan, säästämään ja arvostamaan aikaasi. Vaihtoehtoisesti saatat vihdoin alkaa ansaita "oikeaa" rahaa, mutta tuntea siitä raskaan vastuun. Määrittelet uudelleen, mitä "turvallisuus" sinulle merkitsee. Opit, ettei arvosi ole numero pankkitilillä.
+      <br><strong>Opetus:</strong> Löytää turvallisuus itsestäsi ja rakentaa kestävä suhde aineelliseen maailmaan. Opit euron arvon ja sielusi arvon.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">Huone 3: mielen hallinta</h2>
+      <p>Paine keskittyy mieleesi ja lähiympäristöösi. Saatat päättää palata koulun penkille, viimeistellä pitkään kesken olleen kirjoitusprojektin tai kokea merkittäviä muutoksia suhteissa sisaruksiin. Saatat tuntea, että sinulla on "liikaa opittavaa" ja liian vähän aikaa. Päivittäisestä työmatkasta voi tulla stressin lähde, joka pakottaa sinut muuttamaan ympäristöäsi.
+      <br><strong>Opetus:</strong> Hallita taitosi ja viestiä rehellisesti. Opit keskittyneen ajattelun ja rehellisen puheen arvon. Sinusta tulee ihminen, joka pitää sanansa.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">Huone 4: esi-isien parantaminen ja juuret</h2>
+      <p>Tämä on yksi emotionaalisesti ladatuimmista paluista. Se koskettaa usein vanhempia, asumistilanteita tai lapsuuden traumoja. Saatat ostaa ensimmäisen talosi tai joutua huolehtimaan ikääntyvästä vanhemmasta. Rakennat omat perustasi, usein purkamalla ne, jotka vanhempasi rakensivat. Olet suvun uusi pää.
+      <br><strong>Opetus:</strong> Luoda koti ja yksityiselämä, joka todella ravitsee sieluasi, riippumatta perheesi odotuksista. Parantaa sukupuun olemalla se, joka katkaisee kierteen.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">Huone 5: nautinnon kurinalaisuus</h2>
+      <p>Saturnus 5. huoneessa voi tuntua siltä, kuin "musiikki olisi lakannut soimasta". Tavalliset harrastuksesi tai juhlat alkavat äkkiä tuntua tyhjiltä. Tämä on usein aikaa, jolloin ihmiset päättävät hankkia lapsia (äärimmäinen "luova" vastuu) tai muuttaa luovan harrastuksen vakavaksi yritykseksi. Kyse on "hauskanpidon" käsitteen kypsymisestä.
+      <br><strong>Opetus:</strong> Löytää iloa kurinalaisuuden ja sitoutuneen luovuuden kautta. Opit, että todellinen leikki vaatii keskittymistä. Se on ero "flirtin" ja "romanssin" välillä.</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">Huone 6: pyhä rutiini</h2>
+      <p>Tässä on kyse terveydestäsi ja päivittäisistä tavoistasi. Saatat joutua käsittelemään terveysongelmia, jotka pakottavat sinut muuttamaan ruokavaliota ja liikuntaa. Työelämäsi tulee erittäin vaativaksi ja edellyttää, että opit delegoimaan ja asettamaan rajoja. Tajuat, että kehosi on temppeli, joka vaatii ylläpitoa. Työsi voi tuntua taakalta, kunnes opit hallitsemaan aikaasi paremmin.
+      <br><strong>Opetus:</strong> Hallita omat päivittäiset rytmisi ja palvella muita ilman loppuunpalamista. Tehokkuus on uusi paras ystäväsi. Rakenna keho, joka on tehty kestämään.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">Huone 7: kumppanuuden sulatusuuni</h2>
+      <p>"Naimisiin tai eroon" -huone. Saturnus testaa läheisimmät siteesi täällä. Jos suhde oli epävakaa, se todennäköisesti päättyy. Jos se on vahva, saatat mennä naimisiin tai allekirjoittaa vakavan liikesopimuksen. Opit, mitä "sitoutuminen" todella tarkoittaa – se ei ole vain tunne, se on sopimus. Saatat tuntea vetoa vanhempiin, vakavampiin kumppaneihin tänä aikana.
+      <br><strong>Opetus:</strong> Rakentaa kumppanuuksia, jotka perustuvat todellisuuteen ja yhteiseen vastuuseen, eivät projektioon tai fantasiaan. Opit olemaan "kumppani", et vain "rakastaja".</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">Huone 8: kuolema, uudestisyntyminen ja jaettu valta</h2>
+      <p>Tämä on syvä ja psykologinen paluu. Se käsittelee jaettua taloutta, veroja ja läheisyyttä. Saatat kohdata kuolemaan tai menetykseen liittyviä pelkoja. Se on "egon kuoleman" aikaa, jolloin tajuat, ettet voi kontrolloida kaikkea. Saatat joutua käsittelemään velkaa tai perintöä. Luot nahkasi paljastaaksesi alla olevan sielun.
+      <br><strong>Opetus:</strong> Hallita oma henkilökohtainen valtasi ja opetella luottamuksen ja antautumisen taito syvässä läheisyydessä. Löydä rikkaus, jota ei näe.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">Huone 9: totuuden etsintä</h2>
+      <p>Saturnus haastaa uskomuksesi täällä. Saatat kääntyä pois lapsuutesi uskonnosta tai päinvastoin löytää reaalisen rakenteen henkiseltä polulta. Sinulla voi olla vaikeuksia korkeakoulutuksessa tai kokea merkittäviä haasteita ulkomaanmatkoilla. Etsit "totuutta", jonka kanssa voit todella elää joka päivä. Ehkä päätät vihdoin tehdä sen tohtorintutkinnon tai kirjoittaa sen kirjan.
+      <br><strong>Opetus:</strong> Kehittää elämänfilosofia, joka kestää kovia aikoja ja antaa todellisen merkityksen. Sinusta tulee viisas ihminen, ei vain tiedon haltija.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Ura</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">Huone 10: uran huippu</h2>
+      <p>Tämä on klassinen "30 vuoden kriisi". Julkinen maineesi ja urasi ovat mikroskoopin alla. Voit saavuttaa alasi huipun ja tajuta inhoavasi sitä, tai vihdoin saada tunnustusta, jonka eteen olet tehnyt töitä. Sinua kutsutaan hyväksymään auktoriteettisi ja johtamaan. Maailma katsoo.
+      <br><strong>Opetus:</strong> Yhdistää julkinen elämäsi sisäiseen totuuteesi ja ottaa vastuu perinnöstäsi. Sinusta tulee se auktoriteettihahmo, jota kerran pelkäsit.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">Huone 11: kollektiivinen tarkoitus</h2>
+      <p>Saturnus testaa sosiaalista piiriäsi täällä. Saatat huomata, ettei juhla-"ystävilläsi" ole enää mitään yhteistä kanssasi. Saatat hakeutua vanhempien mentoreiden pariin tai ottaa johtotehtävän yhteisöorganisaatiossa. Etsit todellista "heimoasi". Määrittelet "toiveesi ja unelmasi" realistisin askelin.
+      <br><strong>Opetus:</strong> Löytää oma paikkasi kollektiivissa ja käyttää lahjojasi itseäsi suurempaan tarkoitukseen. Rakenna verkosto tulevaisuutta varten.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">Huone 12: lopullinen liukeneminen</h2>
+      <p>Tämä on erittäin hiljainen, sisäänpäin kääntynyt paluu. Saatat tuntea olosi yksinäiseksi tai eristetyksi. Salaisuudet menneisyydestä voivat nousta pintaan. Se on syvän parantamisen, terapian tai henkisen vetäytymisen aikaa. Siivoat tilaa aivan uudelle 30 vuoden syklille. Se on aikakauden loppu. Työskentelet esi-uriesi ja alitajuntasi kanssa.
+      <br><strong>Opetus:</strong> Löytää rauha yksinäisyydessä, antaa anteeksi menneisyys ja antautua jumalalliselle tai yhteiselle alitajunnalle. Valmistaudut uudestisyntymään.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Saturnuksen perääntymisen vaikutus</h2>
+      <p>Jos synnyit **Saturnuksen perääntymisen** aikana (kun Saturnus näytti liikkuvan takaperin taivaalla), paluusi voi näyttää hieman erilaiselta. Olet saattanut viettää 20-vuotisikääsi "en ole tarpeeksi hyvä" -sisäisen taakan kanssa. Paluun aikana paine voi itse asiassa tuntua *helpotukselta*, koska ulkomaailma vihdoin heijastaa sisäistä vakavuuttasi. Saat vihdoin luvan ottaa sen roolin, johon olet valmistautunut syntymästäsi asti. Olet vihdoin "tarpeeksi".</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Psykologia Saturnuksen paluun takana</h2>
+      <p>Psykologisesta näkökulmasta Saturnuksen paluu merkitsee siirtymistä "Puer/Puella"-vaiheesta (ikuinen nuori) "Aikuiseksi". Lakkaamme etsimästä "vastausta" vanhemmiltamme tai yhteiskunnalta ja alamme olla vastauksen antaja itse. Se on egon lapsuuden kuolema ja sielun kypsyyden syntymä. Siksi siihen liittyy usein masennusta tai ahdistusta – se on eräänlaista surua siitä huolettomasta itsestäsi, jonka jätät taaksesi. Ihminen tajuaa, että aika maan päällä on rajallinen.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Selviytymisvinkit: paineen hallinta</h2>
+      <p>Suurin virhe, jonka ihmiset tekevät Saturnuksen paluun aikana, on **vastustaminen**. Saturnus on kuin seinä – jos juokset sitä päin, se sattuu. Jos etsit oven (panostuksen ja vastuun kautta), astut uuteen maailmaan.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Ota vastuu:</strong> Älä syytä pomoasi, kumppaniasi tai vanhempiasi. Kysy itseltäsi: "Mikä on minun osuuteni tässä? Mitä olen valmis muuttamaan?"</li>
+        <li><strong>Luo rakennetta:</strong> Saturnus rakastaa Excel-tiedostoja. Tarkastele talouttasi, terveyttäsi ja aikatauluasi. Rakenna järjestelmiä, jotka tukevat sinua, kun tunnet olosi heikoksi.</li>
+        <li><strong>Ole kärsivällinen:</strong> Saturnus on ajan herra. Tämä transiitti kestää 2,5 vuotta. Sitä ei ratkaista viikonlopussa. Kunnioita prosessia. Kiiruhda hitaasti.</li>
+        <li><strong>Etsi mentoreita:</strong> Saturnus edustaa "vanhempaa". Etsi joku, joka on jo käynyt tämän läpi, ja pyydä viisautta. Liity 30-vuotiaiden ryhmään, jotka ovat jo selvinneet toiselle puolelle.</li>
+        <li><strong>Kuuntele terveyttäsi:</strong> Kehosi antaa sinulle signaaleja. Jos olet stressaantunut, missä tunnet sen? Ota fyysinen ylläpito vakavasti. Säännölliset lääkärintarkastukset ovat nyt välttämättömiä.</li>
+        <li><strong>Karsi kuolleet oksat:</strong> Jos harrastus, ystävä tai työ kuluttaa sinua täyttämättä sinua, päästä irti. Saturnus poistaisi sen joka tapauksessa; on helpompaa, jos luovut siitä vapaaehtoisesti.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Kuuluisia Saturnuksen paluu -tarinoita</h2>
+      <p>Monet julkisuuden henkilöt ja historialliset hahmot kokivat merkittävimmät muodonmuutoksensa Saturnuksen paluun aikana:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> Hän sai potkut Applelta juuri ennen paluutaan, mikä johti hänet perustamaan NeXT:n ja Pixarin ja lopulta palaamaan Applelle vahvempana ja kypsempänä kuin koskaan.</li>
+        <li><strong>Lady Gaga:</strong> Hän muutti imagoaan ja uraansa merkittävästi noin 30-vuotiaana, siirtyen pois pop-spektaakkelista kohti "vakavampaa" taidetta ja jazzia.</li>
+        <li><strong>Vincent van Gogh:</strong> Hän alkoi maalata tosissaan vasta Saturnuksen paluu -vuosinaan ja löysi elämäntehtävänsä intensiivisen kamppailun jälkeen.</li>
+        <li><strong>J.K. Rowling:</strong> Hän kirjoitti ensimmäisen Harry Potter -romaanin kamppaillessaan yksinhuoltajaäitinä Saturnuksen paluunsa aikana – klassinen vastoinkäymisten päälle rakennettu "Saturnus-menestystarina".</li>
       </ul>
 
-      <h2 id="post-return">Life After the Tuli: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Elämä tulen jälkeen: 30-vuotiaana</h2>
+      <p>Kun Saturnus siirtyy eteenpäin, paino kevenee. Ihmiset raportoivat usein tuntevansa olonsa "kevyemmäksi" 30 ikävuoden jälkeen, mutta myös "vakaammaksi". Toisten mielipiteistä välittää vähemmän. Sinulla on polku. Olet selvinnyt tulesta ja puhdistunut kuin kulta. Sinulla on tarkoituksen tuntu, jota "nuorempi itsesi" ei voisi koskaan ymmärtää. 30-vuotiaana elämä on usein tuottavinta ja palkitsevinta aikaa, koska tiedät vihdoin kuka olet.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Valmistautuminen toiseen paluuseen (ikä 58–60)</h2>
+      <p>On tärkeää tietää, että Saturnus "vierailee" luonasi uudelleen noin 58-vuotiaana. Kun ensimmäisellä kerralla kyse oli aikuistumisesta, toisella kerralla se on **viisaaksi vanhemmaksi** tulemista. Kyse on perinnöstä, eläkkeelle siirtymisestä ja visaudesta, jota välität eteenpäin. Jos teet työsi ensimmäisessä paluussa, toinen kerta on paljon helpompi – sadonkorjuun ja kunnioituksen aikaa kriisin sijaan.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Usein kysytyt kysymykset</h2>
+      <p><strong>K: Onko kaikilla Saturnuksen paluu?</strong>
+      <br>V: Kyllä, jokainen ihminen kokee Saturnuksen paluun noin 29, 58 ja (jos elää tarpeeksi pitkään) 87 vuoden iässä. Se on universaali inhimillinen kokemus.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>K: Onko se aina negatiivista?</strong>
+      <br>V: Ei! Jos olet tehnyt kovasti töitä ja elänyt rehellisesti, Saturnuksen paluu voi olla valtavien ylennysten, avioliiton ja menestyksen aikaa. Se on "sadonkorjuu" – saat tarkalleen sen, mitä olet kylvänyt 20-vuotisikänäsi.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>K: Miten löydän oman Saturnus-merkkini?</strong>
+      <br>V: Astralo-sovelluksella voit luoda ilmaisen syntymäkarttasi, joka näyttää täsmälleen, missä merkissä ja huoneessa Saturnuksesi sijaitsee.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>K: Mitä tapahtuu, jos minulla on Saturnus samassa merkissä kuin kumppanillani?</strong>
+      <br>V: Silloin koette paluunne yhdessä! Tämä voi olla suhteelle ratkaiseva hetki. Jos tuette toisianne kasvussa, tulette ulos todellisena "power couplena".</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Aikuistumisen juhlinta</h2>
+      <p>Saturnuksen paluu ei ole kirous; se on lahja maailmankaikkeudelta. Se on taivaallinen mekanismi, joka varmistaa, ettet tuhlaa elämääsi jonkun muun unelmien elämiseen. Me Astralolla uskomme, että Saturnus-asemasi ymmärtäminen on ensimmäinen askel kohti todellista vapautumista menneisyydestäsi.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
-      
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><strong>Transiittioppaamme</strong> tarjoavat kuukausittaisia ennusteita erityisesti Saturnuksen paluuta varten ja auttavat sinua ymmärtämään, milloin painaa päälle ja milloin odottaa. Älä pelkää mestaria – syleile kasvua. Uusi elämäsi – todellinen elämäsi – odottaa 30 ikävuoden toisella puolella. Astu voimaasi luottavaisesti.</p>
     `
 };

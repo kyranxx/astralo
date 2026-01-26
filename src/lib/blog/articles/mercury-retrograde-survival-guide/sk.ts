@@ -1,54 +1,71 @@
 /**
- * mercury-retrograde-survival-guide - SK
+ * Sprievodca prežitím retrográdneho Merkúra - SK
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sk: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: '☄️ Sprievodca prežitím retrográdneho Merkúra 2026: Od chaosu k pokoju',
+  excerpt: 'Nebojte sa retrográdu! Zistite, prečo je retrográdny Merkúr v skutočnosti dôležitým vesmírnym resetom a ako s ľahkosťou zvládať technologické a komunikačné chyby.',
+  category: 'Astrológia 101',
+  metaDescription: 'Nebojte sa retrográdu! Zistite, prečo je retrográdny Merkúr v skutočnosti dôležitým vesmírnym resetom, ako sa vyhnúť bežným nástrahám a prečo je to najlepší čas na „Re“ aktivity.',
+  keywords: 'retrográdny merkúr, dátumy retrográdneho merkúra, sprievodca prežitím, astrologické tipy, planetárny retrográd, zlyhanie komunikácie, technologické chyby',
+  quickSummary: [
+    'Retrográdny Merkúr je optická ilúzia, pri ktorej sa Merkúr z nášho pohľadu pohybuje dozadu',
+    'Stáva sa to 3-4 krát do roka a trvá to zhruba tri týždne',
+    'Toto obdobie je známe meškaním v cestovaní, zlyhaním technológií a nedorozumeniami',
+    'NIE JE to čas na začínanie nových projektov, ale ELITNÝ čas na dokončenie starých'
+  ],
+  keyTakeaways: [
+    'Dvakrát skontrolujte každý e-mail, správu a zmluvu pred odoslaním alebo podpisom',
+    'Zálohujte si dáta a očakávajte menšie technologické chyby v zariadeniach',
+    'Počas týchto vesmírnych cyklov sa často znovu objavujú starí priatelia a bývalí partneri',
+    '„Tieňové obdobie“ pred a po retrográde je rovnako dôležité'
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: 'Veda za ilúziou' },
+    { id: 'retrograde-shadow', title: 'Tieňové obdobie' },
+    { id: 'survival-dos', title: 'Pravidlo „RE“: Čo robiť' },
+    { id: 'survival-donts', title: 'Varovné signály: Čomu sa vyhnúť' },
+    { id: 'mercury-retrograde-dates', title: 'Dátumy retrográdu 2026' },
+    { id: 'final-thoughts', title: 'Pozitíva na záver' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">Veda za ilúziou</h2>
+      <p>Tri alebo štyrikrát do roka sa planéta Merkúr – vládca komunikácie, cestovania a technológií – javí z nášho pohľadu na Zemi, akoby sa na oblohe pohybovala dozadu. V skutočnosti ide len o optickú ilúziu, podobne ako sa zdá, že pomalšie auto cúva, keď ho predbiehate v rýchlejšom vozidle.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Ale hoci je spätný pohyb ilúziou, účinky sú veľmi reálne. V astrológii, keď je planéta retrográdna, jej energia sa obracia dovnútra. Keďže Merkúr ovláda „každodenné dochádzanie“ nášho života – naše myšlienky, naše zariadenia a logistiku – všetko začína pôsobiť trochu... chybovo. <strong>Retrográdny Merkúr</strong> je vesmírny spôsob, ako povedať svetu, aby stlačil tlačidlo „Pauza“.</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Tieňové obdobie: Pred a po zaváhaní</h2>
+      <p>Mnoho ľudí je prekvapených, keď sa veci začnú kaziť už týždeň <em>predtým</em>, než retrográd oficiálne začne. Tomuto sa hovorí <strong>pred-retrográdny tieň</strong>. Je to vtedy, keď Merkúr spomaľuje a pripravuje sa na obrat. Podobne <strong>po-retrográdny tieň</strong> trvá asi dva týždne po tom, čo sa planéta otočí do priameho smeru. Ak plánujete veľký štart niečoho nového alebo dôležitý nákup, počkajte, kým sa vyčistí po-tieňové obdobie pre najhladší priebeh.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">Pravidlo „RE“: Čo robiť</h2>
+      <p>Retrográdny Merkúr má zlú povesť, ale v skutočnosti je to jedno z najproduktívnejších období roka, ak ho využijete správne. Tajomstvom je sústrediť sa na činnosti začínajúce na <strong>„RE“</strong>:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Reflektujte (Reflect):</strong> Obzrite sa za svojimi cieľmi od začiatku roka. Ste stále na správnej ceste?</li>
+        <li><strong>Revidujte (Review):</strong> Prejdite si svoje zmluvy, rozpočet a plány. Pravdepodobne nájdete chybu, ktorú ste predtým prehliadli.</li>
+        <li><strong>Rekonektujte (Reconnect):</strong> Toto je hlavný čas na to, aby ste sa ozvali starým priateľom alebo vyriešili minulé konflikty v rodine.</li>
+        <li><strong>Repasujte (Repair):</strong> Opravte ten kvapkajúci kohútik alebo problém s autom, ktorý ste ignorovali.</li>
+        <li><strong>Reorganizujte (Reorganize):</strong> Upracte si v skriniach, v doručenej pošte aj vo svojej mysli.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Varovné signály: Čomu sa vyhnúť</h2>
+      <p>Hoci sa život nezastaví, pokúste sa počas trojtýždňového okna retrográdu vyhnúť týmto rizikovým aktivitám:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Podpisovanie dôležitých zmlúv:</strong> Ak musíte podpísať, prečítajte si drobné písmo trikrát. Ešte lepšie, dajte to prečítať právnikovi.</li>
+        <li><strong>Nákup nových technológií:</strong> S kúpou nového iPhonu alebo auta počkajte. Retrográdna technika má často skryté chyby.</li>
+        <li><strong>Začínanie nových projektov:</strong> Nápady zrodené v tomto čase sa často výrazne zmenia, keď sa planéta otočí do priameho smeru. Počkajte so „spustením“.</li>
+        <li><strong>Plastické operácie alebo veľké zmeny účesu:</strong> Merkúr počas svojich cyklov ovplyvňuje aj to, ako vnímame estetiku. Neskôr by ste mohli toto odvážne rozhodnutie ľutovať.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">Dátumy retrográdneho Merkúra 2026</h2>
+      <p>Tieto dátumy si poznačte do svojho kalendára na rok 2026, aby ste boli predkozmicky pripravení:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25. február – 20. marec</strong> (Začína v Rybách, končí vo Vodnárovi)</li>
+          <li><strong>29. jún – 23. júl</strong> (V Rakovi)</li>
+          <li><strong>24. október – 13. november</strong> (Začína v Škorpiónovi, končí vo Váhach)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Pozitíva na záver</h2>
+      <p>Retrográdny Merkúr nie je prekliatie; je to nevyhnutné obdobie údržby. Bez neho by sme sa stále ponáhľali vpred bez toho, aby sme kedy opravili základy našich životov. Využite tento čas na spomalenie, dýchanie a dobehnutie samého seba. Keď sa Merkúr konečne pohne vpred, budete rýchlejší a sústredenejší než kedykoľvek predtým.</p>
     `
 };

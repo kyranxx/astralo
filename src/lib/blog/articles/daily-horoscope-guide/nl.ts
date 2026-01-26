@@ -1,101 +1,119 @@
 /**
- * daily-horoscope-guide - NL
+ * Gids voor de daghoroscoop - NL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.", 
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}], 
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ Daghoroscoop 2026: De ultieme gids voor het begrijpen van je voorspellingen",
+  excerpt: "Beheers je dagelijkse astrologische voorspellingen. Een uitgebreide gids voor het begrijpen van de astrologie van de dag, waarom je ascendant belangrijk is en hoe je planetaire energieën gebruikt voor succes.",
+  category: "Astrologie 101",
+  metaDescription: "Beheers je dagelijkse astrologische voorspellingen. Een uitgebreide gids voor het begrijpen van de astrologie van de dag, waarom je ascendant belangrijk is en hoe je planetaire energieën gebruikt voor succes.",
+  keywords: "daghoroscoop, horoscoop vandaag, horoscoop van de dag, dierenriem vandaag, horoscoop gids, astrologie begrijpen, ascendant van de dag, planetaire transits",
+  quickSummary: [
+    "Daghoroscopen worden bepaald door de snelle beweging van de maan en planetaire aspecten in relatie tot je geboortehoroscoop.",
+    "Lezen voor je Ascendant-teken biedt een hogere precisie voor dagelijkse voorspellingen.",
+    "Planetaire transits activeren elke dag specifieke gebeurtenissen, emoties en kansen.",
+    "Leer hoe je fasen van de 'leegloopmaan' gebruikt om onnodige inspanningen te vermijden."
+  ],
+  keyTakeaways: [
+    "Je zonneteken laat je basisvitaliteit zien, maar je ascendant definieert het 'podium' van je dagelijks leven.",
+    "De maan wisselt elke 2,5 dag van teken en bepaalt de collectieve stemming.",
+    "Mercurius retrograde en andere 'zware' aspecten zijn eigenlijk fasen van herziening en herkalibratie.",
+    "Het integreren van astrologie in je ochtendroutine kan productiviteit en relaties optimaliseren."
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "Waarom de daghoroscoop lezen?" },
+    { id: "science-behind-it", title: "De mechanica: Hoe het werkt" },
+    { id: "rising-vs-sun", title: "De gouden regel: Zon vs. Ascendant" },
+    { id: "planetary-players", title: "De belangrijkste planetaire spelers" },
+    { id: "zodiac-daily-styles", title: "Dagelijkse stijlen van de 12 tekens" },
+    { id: "practical-rituals", title: "Praktische astrologische rituelen" },
+    { id: "myth-busting", title: "Veelvoorkomende mythes ontkracht" }
+  ],
+  content: `
+      <h2 id="introduction">Waarom de daghoroscoop lezen?</h2>
+      <p>Voor miljoenen mensen wereldwijd is het checken van de <strong>daghoroscoop</strong> net zo essentieel als de eerste kop koffie in de ochtend. Het is een moment van bezinning, een ritueel van zelfreflectie en een manier om af te stemmen op de energie van de dag. Maar heb je je ooit afgevraagd wat deze voorspellingen echt aandrijft? Is het gewoon een willekeurig advies of zit er een complexe kosmische klok achter?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Bij Astralo geloven we dat astrologie een tool voor empowerment is. Een goed geschreven horoskop voorspelt niet alleen de toekomst; het helpt je deze te <em>creëren</em>. Door het kosmische weer te begrijpen – waar de planeten zich vandaag bevinden ten opzichte van je geboorte – kun je uitdagingen met gratie tegemoet treden en kansen grijpen die je anders misschien zou missen.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">De mechanica: Hoe het werkt</h2>
+      <p>Astrologie wordt vaak de studie van cycli genoemd. De voorspellingen van je <strong>daghoroscoop</strong> worden berekend met een techniek die 'transits' wordt genoemd. Stel je je geboortehoroscoop voor als een permanente foto van de hemel op het moment van je geboorte. De planeten stoppen echter nooit met bewegen. 'Transits' vinden plaats wanneer een bewegende planeet aan de huidige hemel een wiskundige hoek (aspect) vormt met een planeet in je geboortehoroscoop.</p>
       
-      <h3>The Maan: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Maan</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>De Maan: De minutenwijzer van het Lot</h3>
+      <p>Terwijl planeten als Jupiter een jaar nodig hebben om van teken te wisselen, beweegt de <strong>Maan</strong> ongelooflijk snel en doorkruist een dierenriemteken in ongeveer 2,5 dag. Dit maakt de maan de hoofdaandrijver voor je <em>dagelijkse</em> stemming en je emotionele panorama. Wanneer de maan in de vurige Ram staat, voelen we ons impulsief en energiek. Wisselt ze naar de aardse Stier, dan vertragen we collectief en zoeken we comfort.</p>
 
-      <h3>The Aspects: Conversations Between Planeets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>Aspecten: Gesprekken tussen planeten</h3>
+      <p>Planeten 'spreken' met elkaar via hoeken. Een <strong>driehoek (120°)</strong> is een harmonieus gesprek dat gemak en geluk brengt. Een <strong>vierkant (90°)</strong> is een spanningspunt dat dwingt tot actie of een beslissing. Je daghoroscoop interpreteert deze gesprekken. Als vandaag Mars (actie) en Saturnus (beperking) in een vierkant aan de hemel staan, kun je je gefrustreerd of geblokkeerd voelen. Dit weten helpt je geduldig te zijn in plaats van deuren in te trappen die nu niet geopend moeten worden.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Ascendant Sterrenbeeld</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">De gouden regel: Lees voor je Ascendant-teken</h2>
+      <p>Hier is een geheim dat professionele astrologen kennen: <strong>om de meest nauwkeurige dagelijkse voorspelling te krijgen, moet je lezen voor je Ascendant-teken, niet alleen voor je zonneteken.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>Waarom? Omdat horoscopen geschreven worden op basis van het 'huizensysteem'. Je ascendant bepaalt hoe de 12 huizen van je horoscoop verdeeld zijn. Huis 1 ben jij; huis 2 is geld; huis 7 zijn relaties, enzovoort. Wanneer een astroloog schrijft: 'Ram heeft vandaag een financiële kans', kijkt hij naar de beweging van de planeten door het 2e huis van een horoscoop met Ram-ascendant.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>Lees je Zonneteken</strong> voor algemene thema's over je identiteit, vitaliteit en je centrale levensdoel.</li>
+        <li><strong>Lees je Ascendant-teken</strong> voor specifieke gebeurtenissen, timing en de externe omstandigheden die je vandaag zult tegenkomen.</li>
+        <li><strong>Lees je Maanteken</strong> als je je innerlijke emotionele toestand wilt begrijpen.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planeetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">De belangrijkste planetaire spelers van je dag</h2>
+      <p>Naast de maan vormen andere snel bewegende 'persoonlijke planeten' je dagelijks leven:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>Mercurius:</strong> De heer van communicatie, technologie en reizen. Zijn toestand bepaalt of je e-mails aankomen of in de spam belanden en of je ochtendrit soepel of chaotisch verloopt.</li>
+        <li><strong>Venus:</strong> De meesteres van liefde, geld en waarden. Een goede Venus-dag is ideaal voor afspraakjes, winkelen of salarisonderhandelingen.</li>
+        <li><strong>Mars:</strong> De motor van de dierenriem. Bepaalt je energieniveau, je drive en je libido. Een moeilijke Mars-dag kan leiden tot burn-out of ruzie als de energie niet in sport of hard werken wordt gekanaliseerd.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Sterrenbeelds</h2>
+      <h2 id="zodiac-daily-styles">Dagelijkse stijlen van de 12 tekens</h2>
       
-      <h3>♈ Ram (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>Ram ♈ (21 maart - 19 april)</h3>
+      <p><strong>Geleid door Mars.</strong> Je hebt fysieke beweging nodig om de dagenergie te verwerken. De horoscoop van Ram richt zich vaak op initiatieven, op te lossen conflicten en momenten van leiderschap. <em>Beste dagelijkse gewoonte:</em> Ochtendcardio.</p>
 
-      <h3>♉ Stier (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>Stier ♉ (20 april - 20 mei)</h3>
+      <p><strong>Geregeerd door Venus.</strong> Je verwerkt de dag via je zintuigen. Je horoscoop benadrukt vaak financiële bewegingen en fysiek comfort. <em>Beste dagelijkse gewoonte:</em> Een langzaam en heerlijk ontbijt.</p>
 
-      <h3>♊ Tweelingen (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>Tweelingen ♊ (21 mei - 20 juni)</h3>
+      <p><strong>Geregeerd door Mercurius.</strong> Informatie is je brandstof. Je dagelijkse voorspelling draait om gesprekken, leren en korte reizen. <em>Beste dagelijkse gewoonte:</em> Journaling of een podcast in de ochtend.</p>
 
-      <h3>♋ Kreeft (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>Kreeft ♋ (21 juni - 22 juli)</h3>
+      <p><strong>Geregeerd door de Maan.</strong> Je bent het meest cyclische teken. Je horoscoop richt zich vaak op huis, familie en emotionele veiligheid. <em>Beste dagelijkse gewoonte:</em> Een dierbare bellen.</p>
 
-      <h3>♌ Leeuw (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>Leeuw ♌ (23 juli - 22 augustus)</h3>
+      <p><strong>Geregeerd door de Zon.</strong> Je moet jezelf uiten. Leeuwen zien vaak thema's als creativiteit, romantiek en erkenning. <em>Beste dagelijkse gewoonte:</em> Een outfit kiezen die je zelfvertrouwen geeft.</p>
 
-      <h3>♍ Maagd (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>Maagd ♍ (23 augustus - 22 september)</h3>
+      <p><strong>Geregeerd door Mercurius.</strong> Orde brengt je rust. Je horoscoop wijst vaak op werktaken, gezondheidsroutines en service. <em>Beste dagelijkse gewoonte:</em> Een to-do lijst maken.</p>
 
-      <h3>♎ Weegschaal (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>Weegschaal ♎ (23 september - 22 oktober)</h3>
+      <p><strong>Geregeerd door Venus.</strong> Balans is de sleutel. Je zoekt harmonie in relaties. Je dagelijkse focus ligt vaak op partnerschappen en esthetiek. <em>Beste dagelijkse gewoonte:</em> Meditatie of opruimen van de ruimte.</p>
 
-      <h3>♏ Schorpioen (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>Schorpioen ♏ (23 oktober - 21 november)</h3>
+      <p><strong>Geregeerd door Pluto en Mars.</strong> Je zoekt diepgang. Oppervlakkige dagen vervelen je; je horoscoop onderstreept transformatie, geheimen en gedeelde middelen. <em>Beste dagelijkse gewoonte:</em> Diep onderzoek of privé-reflectie.</p>
 
-      <h3>♐ Boogschutter (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>Boogschutter ♐ (22 november - 21 december)</h3>
+      <p><strong>Geregeerd door Jupiter.</strong> Je hunkert naar expansie. Je dag draait vaak om het grotere geheel, filosofie of buitenlandse invloeden. <em>Beste dagelijkse gewoonte:</em> Iets volledig nieuws leren.</p>
 
-      <h3>♑ Steenbok (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>Steenbok ♑ (22 december - 19 januari)</h3>
+      <p><strong>Geregeerd door Saturnus.</strong> Je bouwt een nalatenschap op. Dagelijkse thema's zijn vaak carrière, reputatie en langetermijndoelen. <em>Beste dagelijkse gewoonte:</em> De moeilijkste taak eerst doen.</p>
 
-      <h3>♒ Waterman (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>Waterman ♒ (20 januari - 18 februari)</h3>
+      <p><strong>Geregeerd door Uranus en Saturnus.</strong> Je kijkt in de toekomst. Je horoscoop benadrukt sociale netwerken, technologie en innovatie. <em>Beste dagelijkse gewoonte:</em> Connecten met je community.</p>
 
-      <h3>♓ Vissen (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>Vissen ♓ (19 februari - 20 maart)</h3>
+      <p><strong>Geregeerd door Neptunus en Jupiter.</strong> Je zwemt tussen werelden. Je dagelijkse begeleiding is vaak spiritueel, artistiek of intuïtief. <em>Beste dagelijkse gewoonte:</em> Dromen opschrijven of creatieve visualisatie.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">Praktische astrologische riten</h2>
+      <p>Hoe gebruik je deze informatie? Lees het niet alleen, leef het.</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>Ochtendafstemming:</strong> Lees je voorspelling <em>voordat</em> je je e-mails checkt. Dit zet de kosmische intentie.</li>
+        <li><strong>Let op het Maanteken:</strong> Staat de maan in Maagd? Organiseer je bureau. In Weegschaal? Bel een zakenpartner. Meegaan met de stroom is altijd makkelijker.</li>
+        <li><strong>Respecteer de Leegte:</strong> De 'leegloopmaan' (of maan buiten koers) is de tijd waarin de maan van teken wisselt na zijn laatste aspect. Het is een tijd van mist. Teken geen contracten en start in deze tijd geen nieuwe projecten. Gebruik het om uit te rusten.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">Veelvoorkomende mythes ontkracht</h2>
+      <p><strong>"Horoscopen zijn te vaag."</strong> <br>Generieke krantenhoroscopen zijn dat, omdat ze alleen naar zonnetekens kijken. Een gepersonaliseerde lezing, gegenereerd door onze geavanceerde Astralo AI, houdt rekening met de nuances van je hele horoscoop.</p>
+      <p><strong>"Astrologie voorspelt een vaststaand lot."</strong> <br>Fout. Astrologie voorspelt het <em>weer</em> en de <em>energie</em>. Het kan regenen (een moeilijke transit), maar jij bepaalt of je een paraplu meeneemt of in de regen danst. Je hebt altijd een vrije wil.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>Klaar om dieper te graven?</h3>
+      <p>Hoewel algemene voorspellingen nuttig zijn, gaat er niets boven een lezing gebaseerd op de exacte tijd en plaats van je geboorte. Je unieke geboortehoroscoop is een complexe kaart die geen ander mens deelt. Ontgrendel het volledige potentieel van je kosmisch design met de gepersonaliseerde Premium lezingen van Astralo.</p>
     `
 };

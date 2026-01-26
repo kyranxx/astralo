@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - SV
+ * Månadshoroskop januari 2026 - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", 
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: "🌙 Månadshoroskop januari 2026: En ny eras gryning",
+  excerpt: "Kompletta astrologiska prognoser för januari 2026. Detaljerat månadshoroskop för alla tecken från Vädur till Fiskar, inklusive Pluto i Vattumannen, kärlek, karriär och pengar.",
+  category: "Horoskop",
+  metaDescription: "Kompletta astrologiska prognoser för januari 2026. Detaljerat månadshoroskop för alla tecken från Vädur till Fiskar, inklusive Pluto i Vattumannen, kärlek, karriär och pengar.",
+  keywords: "månadshoroskop, astrologi januari 2026, månatliga prognoser, zodiakprognos januari, pluto i vattumannen, nymåne i stenbocken, fullmåne i kräftan",
+  quickSummary: [
+    "Januari 2026 präglas av Plutos stabilisering i Vattumannen, vilket signalerar massiva samhällsförändringar.",
+    "Nymånen i Stenbocken (1 jan) erbjuder den ideala energin för nyårslöften.",
+    "Skuggfasen av Merkurius retrograd slutar runt den 15 jan, vilket gör kommunikationen smidigare.",
+    "Mars retrograd i Kräftan för upp olösta familjekonflikter till ytan."
+  ],
+  keyTakeaways: [
+    "Använd den första veckan i januari endast för strategisk planering; vänta med att handla till mitten av månaden.",
+    "Förvänta dig plötsliga tekniska genombrott eller störningar när Uranus aktiveras.",
+    "Relationer kommer att genomgå en reality check kring fullmånen i Kräftan den 14 jan.",
+    "Finansiella marknader kan visa volatilitet; håll fast vid säkra, långsiktiga investeringar."
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: "Januaris astrologi" },
+    { id: 'key-transits', title: "Viktiga datum och transiter" },
+    { id: 'fire-signs', title: "Eldtecken (Väduren, Lejonet, Skytten)" },
+    { id: 'earth-signs', title: "Jordtecken (Oxen, Jungfrun, Stenbocken)" },
+    { id: 'air-signs', title: "Lufttecken (Tvillingarna, Vågen, Vattumannen)" },
+    { id: 'water-signs', title: "Vattentecken (Kräftan, Skorpionen, Fiskarna)" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Januaris astrologi 2026</h2>
+      <p>Gott nytt år! <strong>Januari 2026</strong> är inte bara början på ett nytt kalenderår; det är den astrologiska gryningen för en ny era. Med <strong>Pluto nu stadigt etablerad i Vattumannen</strong> rör vi oss kollektivt bort från de hierarkiska strukturerna från de senaste 15 åren (Pluto i Stenbocken) och kliver in i en fas av snabb innovation, fokus på gemenskap och uppror.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Månaden öppnar med en <strong>nymåne i Stenbocken</strong> den 1 januari, en sällsynt och tursam inriktning. Detta förstärker "nytt år, nytt liv"-energin, vilket gör det till en otrolig tid att sätta disciplinerade långsiktiga mål. Men med Mars retrograd i Kräftan kan vår energi kännas något hämmad. Vi omprövar <em>varför</em> vi handlar, inte bara <em>hur</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Viktiga datum och transiter</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 jan:</strong> Nymåne i Stenbocken (Sätt dina intentioner).</li>
+        <li><strong>4 jan:</strong> Mars går in i Lejonet (Ökning av stolthet och drama).</li>
+        <li><strong>14 jan:</strong> Fullmåne i Kräftan (Emotionell frigörelse).</li>
+        <li><strong>20 jan:</strong> Solen går in i Vattumannen (Framtidens säsong).</li>
+        <li><strong>29 jan:</strong> Uranus blir direkt (Plötsliga förändringar).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Eld Teckens (Väduren, Lejonet, Skytten)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Eldtecken (Väduren, Lejonet, Skytten)</h2>
+      <p><strong>Tema: Hitta gnistan igen.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Väduren:</strong> Medan din härskare Mars ser ut att röra sig bakåt (retrograd) kan du känna dig frustrerad över förseningar. Detta är inte en stoppskylt; det är ett gult ljus. Använd januari för att se över din karriärväg. Klättrar du på rätt berg?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Lejonet:</strong> Relationer står i centrum. Räkna med att ex-partner eller gamla vänner dyker upp igen. Fullmånen i ditt 12:e hus antyder ett behov av ensamhet kring mitten av månaden. Ladda dina sociala batterier.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Skytten:</strong> Ekonomi står i strålkastarljuset. Du kan hitta en ny inkomstkälla eller bestämma dig för att avsluta onödiga prenumerationer. Det är en månad för praktisk budgetering, inte för extravagans.</p>
 
-      <h2 id="earth-signs">🌍 Jord Teckens (Oxen, Jungfrun, Stenbocken)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Jordtecken (Oxen, Jungfrun, Stenbocken)</h2>
+      <p><strong>Tema: Bygga fundament.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Oxen:</strong> Normalt sett motsätter du dig förändring, men Uranus i ditt tecken driver dig mot frigörelse. Januari ger en plötslig resemöjlighet eller en förändring i din filosofi. Säg ja till det okända.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Jungfrun:</strong> Din härskarplanet Merkurius avslutar sin skuggfas mitt i månaden. Fram till dess, dubbelkolla alla kontrakt. Kreativiteten toppar efter den 20:e; börja med hobbyn du har skjutit upp.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Stenbocken:</strong> Grattis! Nymånen i ditt tecken är ditt personliga nyår. Du har kosmiskt tillstånd att vara egoistisk. Vad vill DU de närmaste 12 månaderna? Säg det högt.</p>
 
-      <h2 id="air-signs">💨 Luft Teckens (Tvillingarna, Vågen, Vattumannen)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Lufttecken (Tvillingarna, Vågen, Vattumannen)</h2>
+      <p><strong>Tema: Intellektuell expansion.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Tvillingarna:</strong> Gemensamma resurser och djup intimitet är nyckeln. Du kan få ett arv eller bonus, eller uppleva ett djupt psykologiskt genombrott. Det är en intensiv men renande månad.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Vågen:</strong> Hem och familj är i fokus. Du kan inreda om eller medla i en familjekonflikt. Balans är din superkraft; använd den för att skapa frid i din helgedom.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vattumannen:</strong> Det här är din tid. Med Pluto i ditt tecken genomgår du en metamorfos. Du kan ändra ditt utseende, ditt namn eller hela din karriärväg. Världen håller äntligen på att hinna ikapp din vision.</p>
 
-      <h2 id="water-signs">💧 Vatten Teckens (Kräftan, Skorpionen, Fiskarna)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Vattentecken (Kräftan, Skorpionen, Fiskarna)</h2>
+      <p><strong>Tema: Emotionell visdom.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Kräftan:</strong> Fullmånen i ditt tecken den 14 januari är årets emotionella höjdpunkt. Släpp ut allt. Gråt, skratta, skrik. Du ömsar skinn just nu. Relationer som börjar nu är karmiska.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Skorpionen:</strong> Kommunikation är makt. Dina ord har extra tyngd den här månaden. Använd dem för att förhandla, undervisa eller skriva. Undvik manipulativa spel; transparens vinner.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Fiskarna:</strong> Din sociala cirkel växer. Du är limmet som håller din community samman. Leta efter möjligheter för volontärarbete eller led ett gruppprojekt. Din intuition är rakknivsvass.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Få ditt kompletta horoskop för 2026</h2>
+      <p>Denna månatliga översikt är bara toppen av isberget. Varje individ har ett unikt födelsehoroskop som reagerar olika på dessa transiter. För att navigera 2026 med självförtroende, beställ din <strong>personliga årliga transitrapport</strong> från Astralo. Vi analyserar dina specifika transiter månad för månad.</p>
     `
 };

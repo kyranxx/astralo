@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - PL
+ * Horoskop miesięczny Styczeń 2026 - PL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", 
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Horoskop miesięczny Styczeń 2026: Świt nowej ery',
+  excerpt: 'Pełna prognoza astrologiczna na styczeń 2026. Szczegółowy horoskop miesięczny dla wszystkich znaków od Barana do Ryb, obejmujący Plutona w Wodniku, trendy w miłości, karierze i finansach.',
+  category: 'Horoskopy',
+  metaDescription: 'Pełna prognoza astrologiczna na styczeń 2026. Szczegółowy horoskop miesięczny dla wszystkich znaków od Barana do Ryb, obejmujący Plutona w Wodniku, miłość, karierę i pieniądze.',
+  keywords: 'horoskop miesięczny, astrologia styczeń 2026, prognozy miesięczne, prognoza zodiaku styczeń, pluton w wodniku, nów w koziorożcu, pełnia w raku',
+  quickSummary: [
+    'Styczeń 2026 jest zdominowany przez Plutona zadomawiającego się w Wodniku, co sygnalizuje ogromne zmiany społeczne.',
+    'Nów Księżyca w Koziorożcu (1 stycznia) to idealna energia na „postanowienia noworoczne”.',
+    'Cień po retrogradacji Merkurego ustępuje do 15 stycznia, co wygładza komunikację.',
+    'Retrogradacja Marsa w Raku wyciąga na powierzchnię nierozwiązane konflikty rodzinne.'
+  ],
+  keyTakeaways: [
+    'Pierwszy tydzień stycznia wykorzystaj wyłącznie na planowanie strategiczne; wstrzymaj się z działaniem do połowy miesiąca.',
+    'Spodziewaj się nagłych przełomów lub zakłóceń technologicznych w miarę aktywacji Urana.',
+    'Relacje czeka sprawdzian rzeczywistości w okolicach Pełni Księżyca w Raku 14 stycznia.',
+    'Rynki finansowe mogą być zmienne; trzymaj się długoterminowych, bezpiecznych inwestycji.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Astrologia stycznia' },
+    { id: 'key-transits', title: 'Kluczowe daty i tranzyty' },
+    { id: 'fire-signs', title: 'Znaki Ognia (Baran, Lew, Strzelec)' },
+    { id: 'earth-signs', title: 'Znaki Ziemi (Byk, Panna, Koziorożec)' },
+    { id: 'air-signs', title: 'Znaki Powietrza (Bliźnięta, Waga, Wodnik)' },
+    { id: 'water-signs', title: 'Znaki Wody (Rak, Skorpion, Ryby)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologia stycznia 2026 roku</h2>
+      <p>Szczęśliwego Nowego Roku! <strong>Styczeń 2026</strong> to nie tylko początek nowego roku kalendarzowego; to astrologiczny świt nowej ery. Z <strong>Plutonem na stałe w Wodniku</strong>, zbiorowo odchodzimy od odgórnych struktur ostatnich 15 lat (Pluton w Koziorożcu) i wchodzimy w fazę szybkich innowacji, koncentracji na społeczności i buntu.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Miesiąc otwiera <strong>Nów Księżyca w Koziorożcu</strong> 1 stycznia — rzadkie i pomyślne ustawienie. Wzmacnia ono energię „Nowy Rok, Nowy Ja”, czyniąc ten czas niesamowitym momentem na wyznaczanie zdyscyplinowanych, długoterminowych celów. Jednak przy retrogradacji Marsa w Raku nasza energia może być nieco skierowana do wewnątrz. Przemyślimy raczej <em>dlaczego</em> działamy, a nie tylko <em>jak</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Kluczowe daty i tranzyty</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 stycznia:</strong> Nów Księżyca w Koziorożcu (Wyznaczanie intencji).</li>
+        <li><strong>4 stycznia:</strong> Mars wchodzi w znak Lwa (Wzrost dumy i dramaturgii).</li>
+        <li><strong>14 stycznia:</strong> Pełnia Księżyca w Raku (Emocjonalne uwolnienie).</li>
+        <li><strong>20 stycznia:</strong> Słońce wchodzi w znak Wodnika (Sezon Przyszłości).</li>
+        <li><strong>29 stycznia:</strong> Uran w ruchu prostym (Nagłe zmiany).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Ogień Znaks (Baran, Lew, Strzelec)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Znaki Ognia (Baran, Lew, Strzelec)</h2>
+      <p><strong>Temat: Odzyskiwanie iskry.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Baran:</strong> Twój władca Mars wydaje się poruszać do tyłu (retrogradacja), co może wywołać frustrację z powodu opóźnień. To nie jest czerwone światło, lecz żółte. Wykorzystaj styczeń na przegląd swojej ścieżki zawodowej. Czy wspinasz się na właściwą górę?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Lew:</strong> Relacje są w centrum uwagi. Spodziewaj się powrotu byłych partnerów lub starych znajomych. Pełnia Księżyca w Twoim 12. domu sugeruje potrzebę samotności w połowie miesiąca. Naładuj swoje społeczne baterie.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Strzelec:</strong> Finanse wychodzą na pierwszy plan. Możesz znaleźć nowe źródło dochodu lub zdecydować się na rezygnację z niepotrzebnych subskrypcji. To miesiąc praktycznego planowania budżetu, a nie szalonego wydawania pieniędzy.</p>
 
-      <h2 id="earth-signs">🌍 Ziemia Znaks (Byk, Panna, Koziorożec)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Znaki Ziemi (Byk, Panna, Koziorożec)</h2>
+      <p><strong>Temat: Budowanie fundamentów.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Byk:</strong> Zazwyczaj powoli podchodzisz do zmian, ale Uran w Twoim znaku pcha Cię do wyzwolenia się. Styczeń przynosi nagłą okazję do podróży lub zmianę w Twojej filozofii. Powiedz „tak” nieznanemu.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Panna:</strong> Twoja rządząca planeta Merkury kończy fazę cienia w połowie miesiąca. Do tego czasu sprawdzaj dwukrotnie wszystkie umowy. Kreatywność skoczy po 20. dniu — zacznij to hobby, które odsuwałeś na później.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Koziorożec:</strong> To Twój sezon urodzinowy! Nów Księżyca w Twoim znaku to Twój osobisty Nowy Rok. Masz kosmiczne przyzwolenie na to, by być egoistą. Czego TY chcesz przez najbliższe 12 miesięcy? Wypowiedz to w rzeczywistość.</p>
 
-      <h2 id="air-signs">💨 Powietrze Znaks (Bliźnięta, Waga, Wodnik)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Znaki Powietrza (Bliźnięta, Waga, Wodnik)</h2>
+      <p><strong>Temat: Ekspansja intelektualna.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Bliźnięta:</strong> Kluczowe są wspólne zasoby i głęboka intymność. Możesz otrzymać spadek, premię lub przeżyć głęboki przełom psychologiczny. To intensywny miesiąc, ale oczyszczający.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Waga:</strong> Dom i rodzina zajmują centralne miejsce. Możesz dekorować wnętrza lub mediować w konflikcie rodzinnym. Równowaga to Twoja supermoc; użyj jej, aby stworzyć pokój w swoim sanktuarium.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Wodnik:</strong> To Twój moment. Z Plutonem w Twoim znaku przechodzisz metamorfozę. Możesz zmienić wygląd, nazwisko lub całą sferę zawodową. Świat nadrabia zaległości w stosunku do Twojej wizji.</p>
 
-      <h2 id="water-signs">💧 Woda Znaks (Rak, Skorpion, Ryby)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Znaki Wody (Rak, Skorpion, Ryby)</h2>
+      <p><strong>Temat: Emocjonalna mądrość.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rak:</strong> Pełnia Księżyca w Twoim znaku 14 stycznia to emocjonalny punkt kulminacyjny Twojego roku. Pozwól sobie na wszystko. Płacz, śmiej się, krzycz. Zrzucasz starą skórę. Relacje nawiązane teraz mają charakter karmiczny.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Skorpion:</strong> Komunikacja ma wielką moc. Twoje słowa mają w tym miesiącu dodatkową wagę. Używaj ich do negocjacji, nauczania lub pisania. Unikaj manipulacyjnych gier umysłowych; przejrzystość wygrywa.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Ryby:</strong> Twój krąg towarzyski się powiększa. Jesteś klejem spajającym Twoją społeczność. Szukaj okazji do wolontariatu lub poprowadzenia grupowego projektu. Twoja intuicja jest ostra jak brzytwa.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Odbierz swój pełny horoskop na rok 2026</h2>
+      <p>Ten miesięczny przegląd to tylko wierzchołek góry lodowej. Każda osoba posiada unikalny wykres, który w różny sposób wchodzi w interakcje z tymi tranzytami. Aby pewnie poruszać się w roku 2026, zamów swój <strong>Spersonalizowany Raport na Rok Przyszły</strong> od Astralo. Rozbija on Twoje konkretne tranzyty miesiąc po miesiącu.</p>
     `
 };

@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - SK
+ * Mesačný horoskop január 2026 - SK
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sk: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Mesačný horoskop január 2026: Úsvit novej éry',
+  excerpt: 'Kompletná astrologická predpoveď na január 2026. Podrobný mesačný horoskop pre všetky znamenia od Barana po Ryby, pokrývajúci Pluto vo Vodnárovi, trendy v láske, kariére a peniazoch.',
+  category: 'Horoskopy',
+  metaDescription: 'Kompletná astrologická predpoveď na január 2026. Podrobný mesačný horoskop pre všetky znamenia od Barana po Ryby, pokrývajúci Pluto vo Vodnárovi, trendy v láske, kariére a peniazoch.',
+  keywords: 'mesačný horoskop, astrológia január 2026, mesačné predpovede, predpoveď zverokruhu január, pluto vo vodnárovi, nov v kozorožcovi, spln v rakovi',
+  quickSummary: [
+    'Január 2026 je v znamení usadzovania Pluta vo Vodnárovi, čo signalizuje masívne spoločenské zmeny',
+    'Nov Mesiaca v Kozorožcovi (1. januára) je ideálnou energiou pre novoročné predsavzatia',
+    'Tieňová fáza retrográdneho Merkúra končí do 15. januára, čím sa vyhladí komunikácia',
+    'Retrográdny Mars v Rakovi vyťahuje na povrch nevyriešené rodinné konflikty'
+  ],
+  keyTakeaways: [
+    'Prvý januárový týždeň využite len na strategické plánovanie; s akciou počkajte do polovice mesiaca',
+    'Očakávajte náhle technologické prielomy alebo prerušenia vplyvom aktivácie Uránu',
+    'Vzťahy čaká kontrola reality okolo splnu v Rakovi 14. januára',
+    'Finančné trhy môžu byť nestabilné; držte sa dlhodobých bezpečných investícií'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Astrológia januára' },
+    { id: 'key-transits', title: 'Kľúčové dátumy a tranzity' },
+    { id: 'fire-signs', title: 'Ohnivé znamenia (Baran, Lev, Strelec)' },
+    { id: 'earth-signs', title: 'Zemské znamenia (Býk, Panna, Kozorožec)' },
+    { id: 'air-signs', title: 'Vzdušné znamenia (Blíženci, Váhy, Vodnár)' },
+    { id: 'water-signs', title: 'Vodné znamenia (Rak, Škorpión, Ryby)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrológia januára 2026</h2>
+      <p>Šťastný nový rok! <strong>Január 2026</strong> nie je len začiatkom nového kalendárneho roka; je to astrologický úsvit novej éry. S <strong>Plutom pevne usadeným vo Vodnárovi</strong> sa kolektívne vzďaľujeme od hierarchických štruktúr posledných 15 rokov (Pluto v Kozorožcovi) a vstupujeme do fázy rýchlych inovácií, zamerania na komunitu a revolty.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Mesiac otvára <strong>Nov Mesiaca v Kozorožcovi</strong> 1. januára – čo je vzácne a priaznivé zarovnanie. Toto umocňuje energiu „Nový rok, nové ja“, čo z neho robí neuveriteľný čas na stanovenie disciplinovaných, dlhodobých cieľov. Avšak s retrográdnym Marsom v Rakovi môže byť naša energia trochu utlmená. Premýšľame skôr o tom, <em>prečo</em> konáme, nie len <em>ako</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Kľúčové dátumy a tranzity</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1. jan:</strong> Nov v Kozorožcovi (Stanovte si zámery).</li>
+        <li><strong>4. jan:</strong> Mars vstupuje do Leva (Nárast hrdosti a drámy).</li>
+        <li><strong>14. jan:</strong> Spln v Rakovi (Emocionálne uvoľnenie).</li>
+        <li><strong>20. jan:</strong> Slnko vstupuje do Vodnára (Sezóna budúcnosti).</li>
+        <li><strong>29. jan:</strong> Urán v priamom smere (Náhle zmeny).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Oheň Znamenies (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Ohnivé znamenia (Baran, Lev, Strelec)</h2>
+      <p><strong>Téma: Znovuzískanie iskry.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Baran:</strong> Keďže sa váš vládca Mars javí, akoby sa pohyboval dozadu (retrográdne), môžete sa cítiť frustrovaní meškaním. Toto nie je červená na semafore; je to oranžová. Využite január na prehodnotenie svojej kariéry. Stúpate na správnu horu?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Lev:</strong> Stredobodom záujmu sú vzťahy. Očakávajte, že sa znovu objavia bývalí partneri alebo starí priatelia. Spln vo vašom 12. dome naznačuje v polovici mesiaca potrebu samoty. Dobite si svoje sociálne batérie.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Strelec:</strong> Zvýraznené sú financie. Môžete nájsť nový zdroj príjmu alebo sa rozhodnúť zrušiť nepotrebné predplatné. Je to mesiac pre praktické rozpočtovanie, nie pre divoké míňanie.</p>
 
-      <h2 id="earth-signs">🌍 Zem Znamenies (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Zemské znamenia (Býk, Panna, Kozorožec)</h2>
+      <p><strong>Téma: Budovanie základov.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Býk:</strong> Zvyčajne sa zmenám bránite, ale Urán vo vašom znamení vás tlačí k oslobodeniu sa. Január prináša náhlu príležitosť na cestovanie alebo posun vo vašej filozofii. Povedzte „áno“ neznámemu.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Panna:</strong> Vaša vládnuca planéta Merkúr v polovici mesiaca ukončuje svoju tieňovú fázu. Dovtedy si dvakrát skontrolujte všetky zmluvy. Kreativita vrcholí po 20. januári – začnite s tým koníčkom, ktorý ste odkladali.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Kozorožec:</strong> Šťastné narodeniny! Nov vo vašom znamení je vaším osobným novým rokom. Máte vesmírne povolenie byť sebeckí. Čo CHCETE vy počas nasledujúcich 12 mesiacov? Vyslovte to nahlas.</p>
 
-      <h2 id="air-signs">💨 Vzduch Znamenies (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Vzdušné znamenia (Blíženci, Váhy, Vodnár)</h2>
+      <p><strong>Téma: Intelektuálna expanzia.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Blíženci:</strong> Kľúčové sú spoločné zdroje a hlboká intimita. Môžete získať dedičstvo, bonus alebo zažiť hlboký psychologický prielom. Je to intenzívny mesiac, ale očistný.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Váhy:</strong> Domov a rodina sú stredobodom pozornosti. Možno budete nanovo zariaďovať byt alebo urovnávať rodinný konflikt. Rovnováha je vaša superschopnosť; využite ju na vytvorenie pokoja vo svojom útočisku.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vodnár:</strong> Toto je váš moment. S Plutom vo vašom znamení prechádzate metamorfózou. Môžete zmeniť svoj vzhľad, meno alebo celú pracovnú náplň. Svet dobieha vašu víziu.</p>
 
-      <h2 id="water-signs">💧 Voda Znamenies (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Vodné znamenia (Rak, Škorpión, Ryby)</h2>
+      <p><strong>Téma: Emocionálna múdrosť.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rak:</strong> Spln vo vašom znamení 14. januára je emocionálnym vyvrcholením vášho roka. Nechajte to všetko von. Plačte, smejte sa, kričte. Sťahujete starú kožu. Vzťahy nadviazané v tomto čase sú karmické.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Škorpión:</strong> Komunikácia má silu. Vaše slová majú tento mesiac extra váhu. Použite ich na vyjednávanie, učenie alebo písanie. Vyhnite sa manipulatívnym hrám; úprimnosť víťazí.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Ryby:</strong> Váš sociálny okruh sa rozširuje. Ste lepidlom, ktoré drží vašu komunitu pokope. Hľadajte príležitosti na dobrovoľníctvo alebo vedenie skupinového projektu. Vaša intuícia je ostrá ako břitva.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Získajte svoj kompletný horoskop na rok 2026</h2>
+      <p>Tento mesačný prehľad je len špičkou ľadovca. Každý človek má jedinečný horoskop, ktorý na tieto tranzity reaguje inak. Aby ste rok 2026 zvládli so sebavedomím, objednajte si svoj <strong>Personalizovaný ročný report</strong> od Astralo. Rozoberá vaše konkrétne tranzity mesiac po mesiaci.
     `
 };

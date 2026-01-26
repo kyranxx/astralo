@@ -1,84 +1,64 @@
 /**
- * weekly-horoscope-predictions - HI (Fallback to English content)
+ * साप्ताहिक राशिफल भविष्यवाणियां: ब्रह्मांडीय सप्ताह को कैसे संभालें? - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 साप्ताहिक राशिफल: आने वाले सप्ताह को फलीभूत कैसे करें?',
+  excerpt: 'साप्ताहिक राशिफल गाइड के साथ अपने सप्ताह का अधिकतम लाभ उठाएं। ग्रहों के दिनों को समझें और अपना शेड्यूल ज्योतिषीय समय के अनुसार बनाएं।',
+  category: 'राशिफल',
+  metaDescription: 'साप्ताहिक राशिफल गाइड। जानें ग्रहों के दिन, खलो मसार चंद्रमा और अपने सप्ताह की योजना कैसे बनाएं।',
+  keywords: 'साप्ताहिक राशिफल, साप्ताहिक ज्योतिष, ग्रहों के दिन, ज्योतिषीय योजना, सप्ताह के श्रेष्ठ दिन',
+  quickSummary: [
+    'सप्ताह का प्रत्येक दिन एक अलग ग्रह (सोमवार/चंद्रमा, मंगलवार/मंगल, आदि) द्वारा शासित होता है।',
+    'साप्ताहिक राशिफल राशियों के माध्यम से ग्रहों की गति को ट्रैक करते हैं।',
+    'शून्य चंद्रमा (Void-of-Course Moon) एक महत्वपूर्ण "विराम समय" है जहाँ बड़े कार्यों से बचना चाहिए।',
+    'सोमवार भावनाओं के लिए, मंगलवार कार्रवाई के लिए और शुक्रवार रोमांस के लिए है।'
+  ],
+  keyTakeaways: [
+    'अपने कैलेंडर की योजना बनाने के लिए रविवार की शाम को साप्ताहिक पूर्वानुमान देखें।',
+    'लक्ष्य के आधार पर गुरुवार (बृहस्पति) या शनिवार (शनि) को महत्वपूर्ण बैठकें तय करें।',
+    'जब चंद्रमा "शून्य" हो, तो अनुबंधों पर हस्ताक्षर करने से बचें।',
+    'ब्रह्मांडीय ऊर्जा के प्रवाह का उपयोग करें, न कि उसके विरुद्ध लड़ें।'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'सप्ताह की ज्योतिषीय लय' },
+    { id: 'planetary-days', title: 'दिनों के अधिपति' },
+    { id: 'void-moon', title: 'शून्य चंद्रमा (Void-of-Course Moon)' },
+    { id: 'by-sign', title: 'राशि के अनुसार साप्ताहिक सलाह' }
+  ],
+  content: `
+      <h2 id="weekly-flow">सप्ताह की ज्योतिषीय लय</h2>
+      <p>क्या आपने कभी महसूस किया है कि कुछ सप्ताह पानी की तरह बहते हैं, जबकि अन्य में कीचड़ में चलने जैसा महसूस होता है? हमारे 7-दिवसीय सप्ताह की संरचना वास्तव में पूरी तरह से <strong>ज्योतिष</strong> पर आधारित है।</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>जब आप दिन की ऊर्जा के <em>साथ</em> काम करते हैं, तो उत्पादकता बढ़ती है और प्रतिरोध समाप्त हो जाता है।</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">दिनों के अधिपति</h2>
+      <p>प्रत्येक दिन का नाम एक ग्रह के नाम पर रखा गया है। यहाँ आपके सप्ताह को ज्योतिषीय रूप से निर्धारित करने के लिए गाइड है:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>सोमवार (चंद्रमा का दिन) 🌙</h3>
+      <p><strong>ऊर्जा:</strong> भावनात्मक, सहज। <strong>सर्वश्रेष्ठ:</strong> घर की सफाई, पारिवारिक रात्रिभोज, आत्म-चिंतन।</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>मंगलवार (मंगल का दिन) ♂</h3>
+      <p><strong>ऊर्जा:</strong> आक्रामक, ऊर्जावान। <strong>सर्वश्रेष्ठ:</strong> व्यायाम, नई परियोजनाएं शुरू करना, मुद्दों का सामना करना, प्रतिस्पर्धा।</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>बुधवार (बुध का दिन) ☿️</h3>
+      <p><strong>ऊर्जा:</strong> संवादात्मक, व्यस्त। <strong>सर्वश्रेष्ठ:</strong> ईमेल, बैठकें, लेखन, बिक्री, छोटी यात्राएं।</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>गुरुवार (बृहस्पति का दिन) ♃</h3>
+      <p><strong>ऊर्जा:</strong> विस्तारवादी, भाग्यशाली। <strong>सर्वश्रेष्ठ:</strong> बड़े विज़न लॉन्च करना, वेतन वृद्धि मांगना, यात्रा योजना।</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>शुक्रवार (शुक्र का दिन) ♀</h3>
+      <p><strong>ऊर्जा:</strong> सामाजिक, रोमांटिक। <strong>सर्वश्रेष्ठ:</strong> डेट्स, पार्टियां, कला, विश्राम।</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>शनिवार (शनि का दिन) ♄</h3>
+      <p><strong>ऊर्जा:</strong> गंभीर, अनुशासित। <strong>सर्वश्रेष्ठ:</strong> लंबे समय की योजना, अध्ययन, घर के काम निपटाना।</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>रविवार (सूर्य का दिन) ☀️</h3>
+      <p><strong>ऊर्जा:</strong> दीप्तिमान, आध्यात्मिक। <strong>सर्वश्रेष्ठ:</strong> शौक, पूजा/आध्यात्मिकता, बच्चों के साथ खेलना, आराम।</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
-
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
-      <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
-      </ul>
-
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
-      <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
-      </ul>
-      
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <h2 id="void-moon">शून्य चंद्रमा (Void-of-Course Moon)</h2>
+      <p><strong>नियम:</strong> "इस मामले से कुछ नहीं निकलेगा।"</p>
+      <p>शून्य चंद्रमा के दौरान, अनुबंधों पर हस्ताक्षर न करें या व्यवसाय शुरू न करें। ऊर्जा अनिवार्य रूप से समाप्त हो जाती है। इस समय का उपयोग संपादन या आराम के लिए करें।</p>
     `
 };

@@ -1,69 +1,58 @@
 /**
- * monthly-horoscope-january-2026 - HI
+ * मासिक राशिफल जनवरी 2026: एक नए युग की शुरुआत - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 मासिक राशिफल जनवरी 2026: एक नए युग की शुरुआत',
+  excerpt: 'जनवरी 2026 की पूरी ज्योतिषीय भविष्यवाणी। मेष से मीन तक विस्तृत मासिक राशिफल, जिसमें प्लूटो का कुंभ राशि में प्रवेश, प्रेम, करियर और धन के रुझान शामिल हैं।',
+  category: 'राशिफल',
+  metaDescription: 'जनवरी 2026 मासिक राशिफल। प्लूटो का कुंभ राशि में प्रवेश और सभी राशियों के लिए भविष्यवाणियां।',
+  keywords: 'मासिक राशिफल, जनवरी 2026 ज्योतिष, प्लूटो कुंभ, मकर पूर्णिमा, कर्क पूर्णिमा',
+  quickSummary: [
+    'जनवरी 2026 पर प्लूटो के कुंभ राशि में स्थिर होने का दबदबा है, जो बड़े सामाजिक बदलावों का संकेत देता है।',
+    '1 जनवरी को मकर राशि में अमावस्या "नए साल के संकल्प" के लिए एकदम सही ऊर्जा है।',
+    '15 जनवरी तक बुध वक्री की छाया समाप्त हो जाएगी, जिससे संवाद सुचारू हो जाएगा।',
+    'कर्क राशि में मंगल वक्री होने से अनसुलझे पारिवारिक विवाद सतह पर आ सकते हैं।'
+  ],
+  keyTakeaways: [
+    'जनवरी के पहले सप्ताह का उपयोग केवल रणनीतिक योजना के लिए करें; कार्रवाई को महीने के मध्य तक टाल दें।',
+    'यूरेनस के सक्रिय होने से अचानक तकनीकी सफलताओं या व्यवधानों की अपेक्षा करें।',
+    '14 जनवरी को कर्क राशि में पूर्णिमा के आसपास रिश्तों की वास्तविकता की जांच होगी।',
+    'शेयर बाजार अस्थिर हो सकता है; दीर्घकालिक सुरक्षित निवेश पर टिके रहें।'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'जनवरी का ज्योतिष' },
+    { id: 'key-transits', title: 'प्रमुख तिथियां और गोचर' },
+    { id: 'fire-signs', title: 'अग्नि राशियाँ (मेष, सिंह, धनु)' },
+    { id: 'earth-signs', title: 'पृथ्वी राशियाँ (वृषभ, कन्या, मकर)' },
+    { id: 'air-signs', title: 'वायु राशियाँ (मिथुन, तुला, कुंभ)' },
+    { id: 'water-signs', title: 'जल राशियाँ (कर्क, वृश्चिक, मीन)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">जनवरी 2026 का ज्योतिष</h2>
+      <p>नया साल मुबारक हो! <strong>जनवरी 2026</strong> केवल एक नए कैलेंडर वर्ष की शुरुआत नहीं है; यह एक नए युग की ज्योतिषीय शुरुआत है। <strong>कुंभ राशि में प्लूटो</strong> के साथ, हम सामूहिक रूप से पिछले 15 वर्षों (मकर में प्लूटो) की पुरानी संरचनाओं से दूर जा रहे हैं।</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>महीने की शुरुआत 1 जनवरी को <strong>मकर राशि में अमावस्या</strong> के साथ होती है—एक दुर्लभ और शुभ संयोग। यह "नया साल, नया मैं" ऊर्जा को दोगुना कर देता है, जिससे यह अनुशासित और दीर्घकालिक लक्ष्य निर्धारित करने का शानदार समय बन जाता है।</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">प्रमुख तिथियां</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 जनवरी:</strong> मकर राशि में अमावस्या (संकल्प लें)।</li>
+        <li><strong>4 जनवरी:</strong> मंगल का सिंह राशि में प्रवेश (अहंकार और ड्रामा बढ़ेगा)।</li>
+        <li><strong>14 जनवरी:</strong> कर्क राशि में पूर्णिमा (भावनात्मक मुक्ति)।</li>
+        <li><strong>20 जनवरी:</strong> सूर्य का कुंभ राशि में प्रवेश (भविष्य का मौसम)।</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 अग्नि राशिs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
-      
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
-      
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
-      
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <h2 id="fire-signs">🔥 अग्नि राशियाँ</h2>
+      <p><strong>मेष:</strong> आपके स्वामी मंगल के वक्री होने के कारण, आप देरी से निराश महसूस कर सकते हैं। जनवरी का उपयोग अपने करियर पथ की समीक्षा करने के लिए करें।</p>
 
-      <h2 id="earth-signs">🌍 पृथ्वी राशिs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
-      
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
-      
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
-      
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <h2 id="earth-signs">🌍 पृथ्वी राशियाँ</h2>
+      <p><strong>मकर:</strong> जन्मदिन का मौसम मुबारक! आपकी राशि में अमावस्या आपका व्यक्तिगत नया साल है। आपको स्वार्थी होने की ब्रह्मांडीय अनुमति है। आने वाले 12 महीनों में आप क्या चाहते हैं?</p>
 
-      <h2 id="air-signs">💨 वायु राशिs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
-      
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
-      
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
-      
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <h2 id="air-signs">💨 वायु राशियाँ</h2>
+      <p><strong>कुंभ:</strong> यह आपका समय है। आपकी राशि में प्लूटो के साथ, आप एक पूर्ण परिवर्तन (Metamorphosis) से गुजर रहे हैं। दुनिया आपकी दृष्टि (Vision) को समझ रही है।</p>
 
-      <h2 id="water-signs">💧 जल राशिs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
-      
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
-      
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
-      
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
-
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="water-signs">💧 जल राशियाँ</h2>
+      <p><strong>कर्क:</strong> 14 तारीख को आपकी राशि में पूर्णिमा आपके वर्ष का भावनात्मक चरमोत्कर्ष है। सब कुछ बाहर आने दें। आप पुरानी त्वचा को छोड़ रहे हैं।</p>
     `
 };

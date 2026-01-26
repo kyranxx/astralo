@@ -1,56 +1,57 @@
 /**
- * love-horoscope-relationship-advice - HI
+ * प्रेम राशिफल और संबंध सलाह 2026: राशि चक्र रोमांस का मास्टर गाइड - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-    title: "💕 प्रेम Horoscope 2026: The Master Guide to राशि चक्र Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">प्रेम is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: '💕 प्रेम राशिफल 2026: राशि चक्र रोमांस का मास्टर गाइड',
+  excerpt: 'ज्योतिष के साथ अपने प्रेम जीवन को बदलें। शुक्र राशि, विवाह के 7वें भाव, मंगल की जुनून शैलियों और रिश्तों में बुध वक्री से निपटने के तरीके के बारे में गहराई से जानें।',
+  category: 'प्रेम और रिश्ते',
+  metaDescription: 'ज्योतिष के माध्यम से अपने प्रेम जीवन को सुधारें। शुक्र, मंगल और 7वें भाव का प्रेम संबंधों पर प्रभाव जानें।',
+  keywords: 'प्रेम राशिफल, संबंध ज्योतिष, शुक्र राशि का अर्थ, मंगल राशि डेटिंग, 7वां भाव विवाह, ज्योतिष प्रेम सलाह',
+  quickSummary: [
+    'आपकी प्रेम भाषा केवल आपकी सूर्य राशि से नहीं, बल्कि आपकी शुक्र राशि से निर्धारित होती है।',
+    'आपकी कुंडली का 7वां भाव आपके आदर्श दीर्घकालिक साथी का वर्णन करता है।',
+    'मंगल यह निर्धारित करता है कि आप रोमांटिक रुचियों और यौन केमिस्ट्री को कैसे आगे बढ़ाते हैं।',
+    'रिश्तों का समय ही सब कुछ है—शुक्र वक्री के दौरान कभी शादी न करें।'
+  ],
+  keyTakeaways: [
+    'यदि आप जानना चाहते हैं कि कोई कैसे फ्लर्ट करता है, तो उनकी शुक्र राशि देखें।',
+    'यदि आप जानना चाहते हैं कि कोई कैसे लड़ता है या जुनून व्यक्त करता है, तो उनकी मंगल राशि देखें।',
+    'सप्तम भाव का स्वामी अक्सर वह राशि होती है जिसकी ओर आप सबसे अधिक आकर्षित होते हैं।',
+    'सिनास्ट्री (Synastry) दो कुंडलियों की तुलना करने की कला है जिससे पता चलता है कि रिश्ता टिकेगा या नहीं।'
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: 'प्रेम एक कौशल है' },
+    { id: 'venus-signs', title: 'शुक्र: आप किससे प्यार करते हैं' },
+    { id: 'mars-signs', title: 'मंगल: आपकी इच्छा' },
+    { id: '7th-house', title: 'विवाह का 7वां भाव' },
+    { id: 'retrograde-love', title: 'वक्री रोमांस से बचना' },
+    { id: 'partner-analysis', title: 'अनुकूलता विश्लेषण' }
+  ],
+  content: `
+      <h2 id="love-guide">प्रेम एक कौशल है (और ज्योतिष इसकी नियमावली है)</h2>
+      <p>हम अक्सर प्यार को एक रहस्यमय शक्ति मानते हैं जो बस हमारे साथ "होती" है। लेकिन ज्योतिष में, प्रेम गियर और लीवर वाला एक तंत्र है। आपकी <strong>प्रेम राशिफल</strong> केवल आकस्मिक मुलाकातों के बारे में नहीं है; यह एक साझेदारी में आपकी मनोवैज्ञानिक जरूरतों का ब्लूप्रिंट है।</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>आप बार-बार एक ही "गलत" प्रकार के प्रति क्यों आकर्षित होते हैं? उत्तर आपकी कुंडली में हैं। अपने स्वयं के ब्रह्मांडीय प्रेम डिजाइन को समझकर, आप पैटर्न को दोहराना बंद कर सकते हैं और उस रिश्ते का निर्माण शुरू कर सकते हैं जो आप वास्तव में चाहते हैं।</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">शुक्र: स्नेह की कला</h2>
+      <p><strong>शुक्र</strong> आकर्षण, मूल्यों और सद्भाव का ग्रह है। जन्म के समय शुक्र जिस राशि में था, वह बताता है कि आपको क्या सुंदर लगता है और आप स्नेह कैसे दिखाते हैं।</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>अग्नि तत्व में शुक्र (मेष, सिंह, धनु):</strong> पीछा करना पसंद करते हैं। उन्हें उत्साह और भव्य व्यवहार की आवश्यकता होती है।</li>
+        <li><strong>पृथ्वी तत्व में शुक्र (वृषभ, कन्या, मकर):</strong> स्थिरता पसंद करते हैं। उन्हें प्रतिबद्धता और शारीरिक स्पर्श की आवश्यकता होती है।</li>
+        <li><strong>वायु तत्व में शुक्र (मिथुन, तुला, कुंभ):</strong> दिमाग से प्यार करते हैं। उन्हें बातचीत और दोस्ती की पहले जरूरत होती है।</li>
+        <li><strong>जल तत्व में शुक्र (कर्क, वृश्चिक, मीन):</strong> आत्मा से प्यार करते हैं। उन्हें गहरी भावनात्मक सुरक्षा और संवेदनशीलता की आवश्यकता होती है।</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">मंगल: इच्छा का इंजन</h2>
+      <p>जहाँ शुक्र वह है जो आपको पसंद है, वहीं <strong>मंगल</strong> वह है कि आप उसे कैसे प्राप्त करते हैं। मंगल कामेच्छा, पीछा करने और संघर्ष को नियंत्रित करता है। अपने साथी की मंगल राशि जानना यौन संतुष्टि और बिना ब्रेकअप के बहस सुलझाने का "चीट कोड" है।</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">7वां भाव: आपका "दूसरा आधा"</h2>
+      <p>सप्तम भाव साझेदारी का स्वामी है। हम अक्सर उन लोगों के प्रति चुंबकीय रूप से आकर्षित होते हैं जो हमारे 7वें भाव के गुणों को धारण करते हैं क्योंकि उनके पास वह होता है जिसकी हमारे पास कमी होती है।</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
-      
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
-
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
-      <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
-      </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <h2 id="retrograde-love">वक्री रोमांस से बचना</h2>
+      <p>आपने बुध वक्री के बारे में सुना होगा, लेकिन <strong>शुक्र वक्री</strong> वास्तविक रिश्ते की परीक्षा है। यह हर 18 महीने में होता है, और यह वह समय होता है जब पुराने प्रेमी वापस आते हैं या कमजोर रिश्ते टूट जाते हैं।</p>
+      <p><strong>स्वर्ण नियम:</strong> शुक्र वक्री के दौरान कभी भी शादी न करें या कोई बड़ा वादा न करें।</p>
     `
 };

@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - DA
+ * Månedshoroskop februar 2026 - DA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const da: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: "❤️ Månedshoroskop februar 2026: Innovationssæsonen i Vandmanden",
+  excerpt: "Februar 2026 bringer en bølge af klarhed, nu hvor Merkur er direkte. Opdag hvordan fuldmånen i Løven den 3. feb og Venus i Fiskene påvirker dit kærlighedsliv og din karriere.",
+  category: "Horoskoper",
+  metaDescription: "Komplette astrologiske forudsigelser for februar 2026. Detaljerede månedlige prognoser for alle stjernetegn, med fokus på fuldmånen i Løven og Venus' indtræden i sin eksaltation i Fiskene.",
+  keywords: "månedshoroskop, astrologi februar 2026, månedlige forudsigelser, dyrekredsen februar, vandmandssæson, fuldmåne i løven, venus i fiskene",
+  quickSummary: [
+    "Fuldmånen i Løven den 3. feb beder dig om at træde op på scenen og udtrykke dit sande selv.",
+    "Merkur går endelig direkte, hvilket løser op for misforståelserne fra slutningen af januar.",
+    "Venus flytter ind i det drømmende tegn Fiskene, hvilket skaber årets mest romantiske energi.",
+    "Vandmandssæsonen driver os til at være innovative og bryde forældede traditioner."
+  ],
+  keyTakeaways: [
+    "Brug den første uge af februar til at lancere kreative projekter eller genopfinde dit image.",
+    "Valentinsdag er ekstra magisk i år med en eksalteret Venus; planlæg noget spirituelt og dybsindigt.",
+    "Forvent pludselig indsigt om teknologi eller samfundsgrupper omkring midten af måneden.",
+    "Generelle horoskoper er nyttige, men for nøjagtig timing har du brug for dine personlige transitter."
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: "Oversigt februar 2026" },
+    { id: 'key-transits', title: "Vigtige datoer og transitter" },
+    { id: 'fire-signs', title: "Ildtegn (Vædderen, Løven, Skytten)" },
+    { id: 'earth-signs', title: "Jordtegn (Tyren, Jomfruen, Stenbukken)" },
+    { id: 'air-signs', title: "Lufttegn (Tvillingerne, Vægten, Vandmanden)" },
+    { id: 'water-signs', title: "Vandtegn (Kræften, Skorpionen, Fiskene)" },
+    { id: 'get-personal', title: "Hvorfor et generelt horoskop ikke er nok" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Februars astrologi 2026</h2>
+      <p>Hvis januar handlede om at ryste det gamle år af sig, inviterer <strong>februar 2026</strong> dig til at tage dristige skridt mod fremtiden. Vi befinder os i hjertet af <strong>Vandmandssæsonen</strong>, en periode der favoriserer mod, det usædvanlige og innovation. Den kollektive stemning skifter fra "hvordan overlever jeg?" til "hvordan genopfinder jeg mig selv?".</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Den store nyhed er <strong>fuldmånen i Løven den 3. februar</strong>. Løven beder os om at skinne. Den stiller spørgsmålet: "Hvor skjuler du dig unødvendigt?". Under dette lys er det ikke en mulighed at skjule sig. Sammen med afslutningen på Merkurs skyggefase vender klarheden tilbage i vores kommunikation. Tågen letter.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Vigtige datoer og transitter</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3. feb:</strong> Fuldmåne i Løven (Drama, lidenskab, kulmination).</li>
+        <li><strong>10. feb:</strong> Venus går ind i Fiskene (Betingelsesløs kærlighed, kunst, fantasi).</li>
+        <li><strong>18. feb:</strong> Solen går ind i Fiskene (Drømmesæsonen begynder).</li>
+        <li><strong>25. feb:</strong> Merkur går ind i Fiskene (Logik opløses i intuition).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Ild Tegns (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Ildtegn (Vædderen, Løven, Skytten)</h2>
+      <p><strong>Tema: Kreativ eksplosion.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Løven:</strong> Dette er dit øjeblik. Fuldmånen i dit eget tegn placerer dig i rampelyset. Uanset om det handler om en forfremmelse, et brud eller en stor indsigt – det sker <em>nu</em>. Vær ikke bange for at blive set.</p>
+      <p><strong>Vædderen:</strong> Din sociale cirkel er din rigdom i denne måned. Netværk bringer uventet guld. En ven kan blive en elsker eller forretningspartner.</p>
+      <p><strong>Skytten:</strong> Du tørster efter visdom. Rejseplaner, der blev forsinket i januar, får endelig grønt lys. Bestil billetten.</p>
 
-      <h2 id="earth-signs">🌍 Jord Tegns (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Jordtegn (Tyren, Jomfruen, Stenbukken)</h2>
+      <p><strong>Tema: Spirituel jordforbindelse.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Tyren:</strong> Mens Venus flytter til Fiskene, føler du dig mere harmonisk. Dette er en fantastisk tid for romantik, men også for at tilgive dig selv for tidligere fejl. Giv slip på gammelt nag.</p>
+      <p><strong>Jomfruen:</strong> Fokus på partnerskab. Normalt er du den, der hjælper, men lad en anden hjælpe <em>dig</em> i februar. Sårbarhed er din lektion for måneden.</p>
+      <p><strong>Stenbukken:</strong> Økonomiske anliggender forbedres, men ikke kun gennem hårdt arbejde. Intuition leder dine investeringer. Stol på mavefornemmelsen mere end på dit Excel-ark.</p>
 
-      <h2 id="air-signs">💨 Luft Tegns (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Lufttegn (Tvillingerne, Vægten, Vandmanden)</h2>
+      <p><strong>Tema: Intellektuel fornyelse.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Vandmanden:</strong> Tillykke med fødselsdagen! Solen i dit eget tegn forstærker din vitalitet. Du er magnetisk. Dette er årets bedste tid til at lancere et personligt brand eller friske dit udseende op.</p>
+      <p><strong>Tvillingerne:</strong> Karrieren tager en uventet drejning. Måske er du træt af rutinen. Se efter usædvanlige løsninger eller sideprojekter, der vækker din nysgerrighed.</p>
+      <p><strong>Vægten:</strong> Romantikken er i top, og det samme er kreativiteten. Du føder noget – et barn, et kunstværk eller en ny kærlighedshistorie. Nyd øjeblikkets frugtbarhed.</p>
 
-      <h2 id="water-signs">💧 Vand Tegns (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Vandtegn (Kræften, Skorpionen, Fiskene)</h2>
+      <p><strong>Tema: Dybt emotionelt dyk.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Fiskene:</strong> Mod slutningen af måneden går solen ind i dit tegn. Du vågner fra en lang dvale. Din intuition er nu nærmest synsk. Brug den.</p>
+      <p><strong>Kræften:</strong> Penge og fælles ressourcer står i fokus. En gæld kan blive betalt, eller et lån godkendt. Tid til at få styr på økonomien.</p>
+      <p><strong>Skorpionen:</strong> Ude godt, men hjemme bedst. Du er måske i gang med renovering eller gemmer dig bare for resten af verden. Hvile er produktivt for dig lige nu.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Hvorfor et generelt horoskop ikke er nok</h2>
+      <p>Selvom disse forudsigelser giver dig det "kosmiske vejr" for dit soltegn, mangler det vigtigste element: <strong>Din unikke arbejdstegning.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Du er mere end bare dit soltegn. Du har en måne, en ascendant og 8 andre planeter, der danner et komplekst kort, der er unikt som et fingeraftryk.
+      <br><em>Eksempel:</em> En person med Tyren som ascendant vil opleve denne måned helt anderledes end en person med Tyren som soltegn.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Gæt ikke om din fremtid.</strong> For at få de specifikke datoer og detaljer, der gælder personligt for DIG, har du brug for en beregnet læsning.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Klar til din personlige sandhed?</h3>
+          <p>Få din fuldstændige personlige årlige transitrapport for 2026. Se præcis, hvordan planeterne interagerer med dit fødselshoroskop.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Få min personlige læsning</a>
       </div>
     `
 };

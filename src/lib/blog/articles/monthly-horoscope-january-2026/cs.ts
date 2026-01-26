@@ -1,69 +1,85 @@
 /**
- * monthly-horoscope-january-2026 - CS
+ * Měsíční horoskop Leden 2026 - CS
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const cs: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: "🌙 Měsíční horoskop Leden 2026: Úsvit nové éry",
+  excerpt: "Kompletní astrologická předpověď pro leden 2026. Detailní horoskop pro všechna znamení od Berana po Ryby, zahrnující Pluto ve Vodnáři, lásku, kariéru a peníze.",
+  category: "Horoskopy",
+  metaDescription: "Kompletní astrologická předpověď pro leden 2026. Detailní horoskop pro všechna znamení, Pluto ve Vodnáři, trendy v lásce a penězích.",
+  keywords: "měsíční horoskop, astrologie leden 2026, měsíční předpovědi, předpověď zvěrokruhu leden, Pluto ve Vodnáři, novoluní v Kozorohu, úplněk v Raku",
+  quickSummary: [
+    "Lednu 2026 dominuje usazení Pluta ve Vodnáři, což signalizuje masivní společenské změny",
+    "Novoluní v Kozorohu (1. léta) přináší ideální energii pro novoroční předsevzetí",
+    "Po 15. lednu končí stínová fáze retrográdního Merkuru, což usnadní komunikaci",
+    "Retrográdní Mars v Raku vynáší na povrch nevyřešené rodinné konflikty"
+  ],
+  keyTakeaways: [
+    "První lednový týden využijte pouze pro strategické plánování; akci odložte na polovinu měsíce",
+    "Očekávejte náhlé technologické průlomy nebo výpadky s tím, jak se aktivuje Uran",
+    "Vztahy projdou zkouškou reality kolem úplňku v Raku 14. ledna",
+    "Finanční trhy mohou být nestálé; držte se dlouhodobých a bezpečných investic"
+  ],
+  tableOfContents: [
+    { id: "monthly-overview", title: "Astrologie ledna" },
+    { id: "key-transits", title: "Klíčová data a tranzity" },
+    { id: "fire-signs", title: "Ohnivá znamení (Beran, Lev, Střelec)" },
+    { id: "earth-signs", title: "Zemská znamení (Býk, Panna, Kozoroh)" },
+    { id: "air-signs", title: "Vzdušná znamení (Blíženci, Váhy, Vodnář)" },
+    { id: "water-signs", title: "Vodní znamení (Rak, Štír, Ryby)" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologie ledna 2026</h2>
+      <p>Šťastný nový rok! <strong>Leden 2026</strong> není jen začátkem nového kalendářního roku; je to astrologický úsvit nové éry. S <strong>Plutem pevně ve Vodnáři</strong> se kolektivně vzdalujeme od hierarchických struktur posledních 15 let (Pluto v Kozorohu) a vstupujeme do fáze rychlých inovací, zaměření na komunitu a revolučních změn.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Měsíc začíná <strong>novoluním v Kozorohu</strong> 1. ledna – což je vzácné a příznivé spojení. To posiluje energii „Nový rok, nové já“ a dělá z tohoto dne neuvěřitelný čas pro stanovení disciplinovaných, dlouhodobých cílů. Nicméně s retrográdním Marsem v Raku se naše energie může zdát trochu vnitřní. Přehodnocujeme spíše <em>proč</em> jednáme, než jen <em>jak</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Klíčová data a tranzity</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1. ledna:</strong> Novoluní v Kozorohu (Stanovte si záměry).</li>
+        <li><strong>4. ledna:</strong> Mars vstupuje do Lva (Nárůst hrdosti a dramatu).</li>
+        <li><strong>14. ledna:</strong> Úplněk v Raku (Emocionální uvolnění).</li>
+        <li><strong>20. ledna:</strong> Slunce vstupuje do Vodnáře (Období budoucnosti).</li>
+        <li><strong>29. ledna:</strong> Uran se otáčí do přímého směru (Náhlé změny).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Oheň Znamenís (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Ohnivá znamení (Beran, Lev, Střelec)</h2>
+      <p><strong>Téma: Znovuzískání jiskry.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Beran:</strong> S Marsem v retrográdním pohybu můžete pociťovat frustraci z prodlev. Není to stopka, ale spíše varování ke zpomalení. Využijte leden k přehodnocení své kariéry. Lezete na tu správnou horu?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Lev:</strong> Vztahy jsou v centru pozornosti. Očekávejte, že se znovu objeví bývalí partneři nebo staří přátelé. Úplněk ve vašem 12. domě naznačuje potřebu samoty v polovině měsíce. Dobijte si baterky.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Střelec:</strong> Finance jsou zvýrazněny. Můžete najít nový zdroj příjmů nebo se rozhodnout zrušit nepotřebná předplatná. Je to měsíc pro praktický rozpočet, ne pro divoké utrácení.</p>
 
-      <h2 id="earth-signs">🌍 Země Znamenís (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Zemská znamení (Býk, Panna, Kozoroh)</h2>
+      <p><strong>Téma: Budování základů.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Býk:</strong> Obvykle se změnám bráníte, ale Uran ve vašem znamení vás nutí k osvobození. Leden přináší náhlou příležitost k cestování nebo posun ve vaší filozofii. Řekněte ano neznámému.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Virgo:</strong> Vaše vládnoucí planeta Merkur končí stínovou fázi v polovině měsíce. Do té doby si dvakrát kontrolujte všechny smlouvy. Kreativita vrcholí po 20. lednu.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Kozoroh:</strong> Všechno nejlepší k narozeninám! Novoluní ve vašem znamení je vaším osobním novým rokem. Máte vesmírné svolení být sobečtí. Co chcete VY pro příštích 12 měsíců?</p>
 
-      <h2 id="air-signs">💨 Vzduch Znamenís (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Vzdušná znamení (Blíženci, Váhy, Vodnář)</h2>
+      <p><strong>Téma: Intelektuální expanze.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Blíženci:</strong> Klíčové jsou společné zdroje a hluboká intimita. Můžete obdržet dědictví, bonus nebo zažít hluboký psychologický průlom. Je to intenzivní, ale očistný měsíc.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Váhy:</strong> Domov a rodina jsou v centru dění. Možná budete předělávat byt nebo řešit rodinný konflikt. Rovnováha je vaše superschopnost; využijte ji k nastolení míru ve svém soukromí.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vodnář:</strong> Toto je váš okamžik. S Plutem ve vašem znamení procházíte proměnou. Můžete změnit svůj vzhled, jméno nebo celou pracovní náplň. Svět konečně dohání vaši vizi.</p>
 
-      <h2 id="water-signs">💧 Voda Znamenís (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Vodní znamení (Rak, Štír, Ryby)</h2>
+      <p><strong>Téma: Emocionální moudrost.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rak:</strong> Úplněk ve vašem znamení 14. ledna je emocionálním vrcholem vašeho roku. Nechte to všechno jít. Plačte, smějte se. Svlékněte starou kůži. Vztahy vzniklé nyní jsou karmické.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Štír:</strong> Komunikace má obrovskou sílu. Vaše slova mají tento měsíc extra váhu. Využijte je k vyjednávání nebo psaní. Vyhněte se manipulativním hrám; upřímnost vítězí.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Ryby:</strong> Váš sociální okruh se rozšiřuje. Jste lepidlem, které drží vaši komunitu pohromadě. Hledejte příležitosti k dobrovolnictví nebo vedení skupinového projektu. Vaše intuice je ostrá jako břitva.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <p><em>Tento měsíční přehled je jen špičkou ledovce. Chcete-li procházet rokem 2026 s jistotou, objednejte si svůj <strong>Personalizovaný roční report</strong> v aplikaci Astralo.</em>
     `
 };

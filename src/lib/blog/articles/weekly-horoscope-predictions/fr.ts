@@ -1,77 +1,71 @@
 /**
- * Weekly Horoscope - French (Français)
+ * Prédictions d'horoscope hebdomadaire - FR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-    title: '📅 Horoscope Hebdomadaire : Comment naviguer dans la semaine cosmique',
-    excerpt: 'Maximisez votre semaine avec notre guide de l\'horoscope hebdomadaire. Comprenez les jours planétaires, naviguez la Lune Vide de Course et planifiez votre emploi du temps selon le timing astrologique.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximisez votre semaine avec notre guide de l\'horoscope hebdomadaire. Comprenez les jours planétaires, naviguez la Lune Vide de Course et planifiez votre emploi du temps selon le timing astrologique.',
-    keywords: 'horoscope hebdomadaire, astrologie hebdomadaire, jours planétaires, lune vide de course, prévisions zodiaque semaine, planification astrologie, meilleurs jours cette semaine',
-    quickSummary: [
-        'Chaque jour de la semaine est régi par une planète différente (Lundi/Lune, Mardi/Mars, etc.)',
-        'Les horoscopes hebdomadaires suivent le mouvement des planètes rapides à travers le zodiaque',
-        'La Lune Vide de Course est un "temps de pause" critique où les actions majeures doivent être évitées',
-        'Les lundis sont pour l\'émotion, les mardis pour l\'action, les vendredis pour la romance'
-    ],
-    keyTakeaways: [
-        'Consultez les prévisions hebdomadaires le dimanche soir pour planifier votre calendrier',
-        'Planifiez les réunions difficiles le jeudi (Jupiter) ou le samedi (Saturne) selon l\'objectif',
-        'Évitez de signer des contrats lorsque la Lune est Vide de Course',
-        'Utilisez le flux d\'énergie hebdomadaire plutôt que de lutter contre lui'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'Le rythme astrologique' },
-        { id: 'planetary-days', title: 'Les maîtres des jours' },
-        { id: 'void-moon', title: 'La Lune Vide de Course' },
-        { id: 'transits', title: 'Suivi des transits hebdomadaires' },
-        { id: 'by-sign', title: 'Conseils hebdomadaires par signe' }
-    ],
-    content: `
-      <h2 id="weekly-flow">Le rythme astrologique de la semaine</h2>
-      <p>Avez-vous déjà eu l'impression que certaines semaines coulent comme de l'eau, tandis que d'autres ressemblent à une marche dans la boue ? Ou pourquoi faire les choses un mardi semble différent d'un vendredi ? Ce n'est pas un hasard. La structure de notre semaine de 7 jours est en fait entièrement basée sur <strong>l'astrologie</strong>.</p>
+  title: '📅 Horoscope hebdomadaire : Votre stratégie cosmique pour les jours à venir',
+  excerpt: 'Votre guide complet pour utiliser l\'horoscope hebdomadaire. Apprenez à planifier votre semaine, à comprendre les transits clés et à utiliser votre signe ascendant pour une précision maximale.',
+  category: 'Horoscopes',
+  metaDescription: 'Votre guide complet pour utiliser l\'horoscope hebdomadaire. Apprenez à planifier votre semaine, à comprendre les transits clés et à utiliser votre signe ascendant pour une précision maximale.',
+  keywords: 'horoscope hebdomadaire, prédiction astrologique, planification hebdomadaire astrologie, transits zodiacaux, mouvements planétaires, précision horoscope, prédiction ascendant',
+  quickSummary: [
+    'Un horoscope hebdomadaire examine les tendances planétaires à moyen terme (transits) qui façonneront les 7 prochains jours.',
+    'Les prédictions hebdomadaires sont idéales pour planifier des réunions de travail, des rendez-vous amoureux et des voyages.',
+    'Les facteurs clés incluent la phase lunaire (Nouvelle Lune vs Pleine Lune) et les aspects des planètes personnelles (Mercure, Vénus, Mars).',
+    'Lire les prédictions pour votre signe Ascendant donne des résultats beaucoup plus précis que le seul signe solaire.'
+  ],
+  keyTakeaways: [
+    'Utilisez le lundi pour vous accorder à l\'énergie de la semaine.',
+    'Surveillez les changements de signe de la Lune tous les 2,5 jours : ils dictent l\'humeur collective.',
+    'Les décisions importantes doivent être programmées idéalement lors d\'aspects harmonieux (trigones/sextiles) entre le Soleil et Jupiter.',
+    'Évitez les lancements majeurs pendant les "stations" des planètes (quand elles changent de direction).'
+  ],
+  tableOfContents: [
+    { id: 'why-weekly', title: 'Le but de l\'horoscope hebdomadaire' },
+    { id: 'how-it-works', title: 'Comment fonctionne l\'astrologie hebdomadaire' },
+    { id: 'rising-sign-importance', title: 'Pourquoi votre Ascendant est votre arme secrète' },
+    { id: 'planetary-transits', title: 'Comprendre les transits' },
+    { id: 'planning-guide', title: 'Planifier sa semaine avec les étoiles' },
+    { id: 'astralo-advantage', title: 'L\'avantage Astralo' }
+  ],
+  content: `
+      <h2 id="why-weekly">Le but de l'horoscope hebdomadaire</h2>
+      <p>Alors qu'un horoscope quotidien vous aide à gérer votre humeur immédiate, l'<strong>horoscope hebdomadaire</strong> sert de carte stratégique. C'est la différence entre consulter le radar de pluie pour les 10 prochaines minutes et regarder les prévisions météo de la semaine pour organiser une fête dans le jardin.</p>
       
-      <p>Comprendre l'<strong>horoscope hebdomadaire</strong> ne se limite pas à savoir si vous recevrez une réponse à votre message. Il s'agit d'aligner votre emploi du temps avec les anciens maîtres planétaires du temps. Lorsque vous travaillez <em>avec</em> l'énergie de la journée, la productivité augmente et la résistance disparaît.</p>
+      <p>Un horoscope hebdomadaire vous aide à identifier quand vous devez appuyer sur l'accélérateur et quand il vaut mieux patienter. Sommes-nous face à une Pleine Lune tendue qui fera grimper les émotions ? Ou avons-nous une connexion harmonieuse entre Mercure et Uranus, parfaite pour le brainstorming et les idées neuves ? En connaissant ces tendances à l'avance, vous agissez de manière proactive plutôt que réactive.</p>
 
-      <h2 id="planetary-days">Les maîtres des jours</h2>
-      <p>Chaque jour porte le nom d'une planète (littéralement dans des langues comme le français ou l'espagnol). Voici votre guide pour planifier votre semaine astrologiquement :</p>
-      
-      <h3>Lundi (Jour de la Lune) 🌙</h3>
-      <p><strong>Énergie :</strong> Émotionnelle, intuitive, fluctuante.<br><strong>Idéal pour :</strong> Faire les courses, nettoyer la maison, faire la grasse matinée, dîners en famille, réfléchir.<br><strong>Éviter :</strong> Présentations stressantes ou logique rigide.</p>
-
-      <h3>Mardi (Jour de Mars) ♂</h3>
-      <p><strong>Énergie :</strong> Agressive, énergique, tranchante.<br><strong>Idéal pour :</strong> Exercice, démarrer de nouveaux projets, affronter des problèmes, chirurgie, compétition.<br><strong>Éviter :</strong> Méditation, essayer de se détendre.</p>
-      
-      <h3>Mercredi (Jour de Mercure) ☿️</h3>
-      <p><strong>Énergie :</strong> Communicative, occupée, rapide.<br><strong>Idéal pour :</strong> E-mails, réunions, écriture, ventes, courts voyages, réseautage.<br><strong>Éviter :</strong> Le silence (ça n'arrivera pas de toute façon).</p>
-      
-      <h3>Jeudi (Jour de Jupiter) ♃</h3>
-      <p><strong>Énergie :</strong> Expansive, chanceuse, optimiste.<br><strong>Idéal pour :</strong> Lancer de grandes visions, demander une augmentation, planifier des voyages, enseignement supérieur.<br><strong>Éviter :</strong> Radiner.</p>
-      
-      <h3>Vendredi (Jour de Vénus) ♀</h3>
-      <p><strong>Énergie :</strong> Sociale, romantique, esthétique.<br><strong>Idéal pour :</strong> Rendez-vous, fêtes, acheter des vêtements, art, détente, happy hour.<br><strong>Éviter :</strong> Travail sale ou solitude.</p>
-      
-      <h3>Samedi (Jour de Saturne) ♄</h3>
-      <p><strong>Énergie :</strong> Sérieuse, lourde, disciplinée.<br><strong>Idéal pour :</strong> Jardinage, planification à long terme, étudier, rattraper les corvées, devoir.<br><strong>Éviter :</strong> Fêtes sauvages (sauf s'il s'agit événements formels).</p>
-      
-      <h3>Dimanche (Jour du Soleil) ☀️</h3>
-      <p><strong>Énergie :</strong> Rayonnante, égocentrique, spirituelle.<br><strong>Idéal pour :</strong> Loisirs, culte/spiritualité, jouer avec les enfants, être vu, repos.<br><strong>Éviter :</strong> Être invisible.</p>
-
-      <h2 id="void-moon">La Lune Vide de Course (Void-of-Course)</h2>
-      <p>Si vous ne retenez qu'une chose de ce guide, que ce soit la <strong>Lune Vide de Course</strong>. Cela se produit lorsque la Lune a terminé son dernier aspect avec une planète dans son signe actuel et "flotte" avant d'entrer dans le signe suivant.</p>
-      <p><strong>La règle :</strong> "Rien ne sortira de l'affaire."</p>
-      <p>Pendant une Lune Vide de Course, ne signez pas de contrats, ne lancez pas d'entreprises et n'envoyez pas de demandes de premier rendez-vous. L'énergie s'essouffle inévitablement. Utilisez ce temps pour classer, dormir ou éditer le travail que vous avez déjà commencé. C'est un "temps mort" cosmique.</p>
-
-      <h2 id="transits">Suivi des transits hebdomadaires</h2>
-      <p>Une bonne <strong>prévision astrologique hebdomadaire</strong> examine également les angles spécifiques que les planètes forment cette semaine.</p>
-
-      <h2 id="by-sign">Conseils hebdomadaires par signe</h2>
-      <p>Bien que la semaine de chacun soit unique, voici comment les signes gèrent généralement les changements hebdomadaires :</p>
+      <h2 id="how-it-works">Comment fonctionne l'astrologie hebdomadaire</h2>
+      <p>L'"astrologie hebdomadaire" se concentre sur les mouvements des planètes à travers les signes du zodiaque par rapport à votre thème. Nous portons une attention particulière à :</p>
       <ul>
-        <li><strong>Signes Cardinaux (Bélier, Cancer, Balance, Capricorne) :</strong> Vous êtes les initiateurs. Utilisez l'énergie de début de semaine (lun/mar) pour commencer les choses.</li>
-        <li><strong>Signes Fixes (Taureau, Lion, Scorpion, Verseau) :</strong> Vous êtes les mainteneurs. Utilisez l'énergie de milieu de semaine pour verrouiller les progrès.</li>
-        <li><strong>Signes Mutables (Gémeaux, Vierge, Sagittaire, Poissons) :</strong> Vous êtes les éditeurs. Utilisez le week-end ou les jours de Mercure pour vous adapter et changer de cap.</li>
+        <li><strong>L'ingrès solaire :</strong> Quand le Soleil change de signe (ex. du Vierge vers la Balance), l'accent collectif change pour tout le monde.</li>
+        <li><strong>Les phases lunaires :</strong> La semaine commence-t-elle par une Nouvelle Lune (temps des nouveaux départs) ou une Pleine Lune (temps des résultats et du lâcher-prise) ?</li>
+        <li><strong>Les aspects planétaires :</strong> Des planètes comme Mars et Saturne sont-elles en angle critique aujourd'hui ? Cela pourrait indiquer l'"obstacle de la semaine".</li>
       </ul>
+
+      <h2 id="rising-sign-importance">Pourquoi votre Ascendant est votre arme secrète</h2>
+      <p>La plupart des gens lisent leur horoscope uniquement pour leur signe solaire. Chez Astralo, nous recommandons vivement : <strong>Lisez aussi (ou surtout) pour votre signe Ascendant.</strong></p>
+      <p>Votre signe solaire représente votre essence, mais votre Ascendant détermine la structure des maisons de votre thème. Si un horoscope hebdomadaire dit : "Les relations seront au centre des priorités cette semaine", c'est parce que des planètes transitent votre 7ème maison. Cela est souvent totalement différent pour un Ascendant Bélier et un signe solaire Bélier. Pour les résultats les plus précis, utilisez votre Ascendant.</p>
+
+      <h2 id="planetary-transits">Comprendre les transits : La météo cosmique</h2>
+      <p>Dans vos prédictions hebdomadaires, vous lirez souvent des termes comme 'transit' ou 'conjonction'. Voici une traduction rapide :</p>
+      <ul>
+        <li><strong>Transit :</strong> Une planète dans le ciel actuel forme un aspect avec un point de votre thème natal.</li>
+        <li><strong>Carré (Tension) :</strong> Un point de bascule ou un défi qui exige une action.</li>
+        <li><strong>Trigone (Flux) :</strong> Opportunités et talents qui se déploient naturellement.</li>
+        <li><strong>Rétrograde :</strong> Une planète semble reculer : temps de révision, pas d'avancement.</li>
+      </ul>
+
+      <h2 id="planning-guide">Planifier sa semaine avec les étoiles</h2>
+      <p>Imaginez que vous ayez un entretien important pour une augmentation. Un coup d'œil à votre horoscope hebdomadaire vous montre :</p>
+      <ul>
+        <li><strong>Mardi :</strong> Mercure est en opposition à Neptune (Risque de flou et de malentendus).</li>
+        <li><strong>Jeudi :</strong> Le Soleil forme un trigone avec Jupiter (Grande chance, expansion, les figures d'autorité sont bienveillantes).</li>
+      </ul>
+      <p><em>La décision est claire :</em> Déplacez l'entretien à jeudi ! C'est exactement l'utilité pratique de l'astrologie dans la vie moderne.</p>
+
+      <h2 id="astralo-advantage">L'avantage Astralo</h2>
+      <p>Chez Astralo, nous allons bien au-delà de l'horoscope standard des journaux. Notre IA analyse non seulement votre signe solaire, mais compare les configurations planétaires actuelles avec l'ensemble de votre génétique natale. Nous vous offrons une prédiction personnalisée aussi unique que votre empreinte digitale.</p>
+      <p>Ne commencez pas votre semaine à l'aveuglette. Utilisez le savoir des étoiles pour atteindre vos buts, soigner vos relations et réaliser votre plein potentiel. Votre horoscope hebdomadaire est votre feuille de route vers le succès.</p>
     `
 };

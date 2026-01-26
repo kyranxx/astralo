@@ -1,56 +1,73 @@
 /**
- * love-horoscope-relationship-advice - NL
+ * Liefdeshoroscoop - NL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-    title: "💕 Liefde Horoscope 2026: The Master Guide to Dierenriem Romantiek",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.", 
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}], 
-    content: `
-      <h2 id="love-guide">Liefde is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Liefdeshoroscoop 2026: De meestergids voor dierenriemromantiek",
+  excerpt: "Transformeer je liefdesleven via astrologie. Een diepe duik in Venus-tekens, het 7e huis van het huwelijk, passiestijlen van Mars en hoe je Mercurius retrograde in relaties navigeert.",
+  category: "Liefde & Relaties",
+  metaDescription: "Transformeer je liefdesleven via astrologie. Een diepe duik in Venus-tekens, het 7e huis van het huwelijk, passiestijlen van Mars en hoe je Mercurius retrograde in relaties navigeert.",
+  keywords: "liefdeshoroscoop, relatieastrologie, betekenis venus teken, dating per mars teken, 7e huis huwelijk, synastrie gids, dating tips dierenriem, liefdescompatibiliteit",
+  quickSummary: [
+    "Je liefdestaal wordt gedicteerd door je Venus-teken, niet alleen door je zonneteken.",
+    "Het 7e huis in je horoscoop beschrijft je ideale langetermijnpartner.",
+    "Mars bepaalt hoe je een romantische interesse najaagt en hoe je seksuele chemie ervaart.",
+    "Timing in een relatie is alles: trouw nooit tijdens een Venus retrograde."
+  ],
+  keyTakeaways: [
+    "Als je wilt weten hoe iemand flirt, kijk dan naar zijn Venus-teken.",
+    "Als je wilt weten hoe iemand vecht of seks ervaart, kijk dan naar zijn Mars-teken.",
+    "De 'Descendant' (het tegenovergestelde van je ascendant) is vaak het teken waartoe je je het meest aangetrokken voelt.",
+    "Synastrie is de kunst van het vergelijken van twee horoscopen om te zien of een relatie bedoeld is om te duren."
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: "Liefde is een vaardigheid" },
+    { id: 'venus-signs', title: "Venus: Waar je van houdt" },
+    { id: 'mars-signs', title: "Mars: Hoe je begeert" },
+    { id: '7th-house', title: "Het 7e Huis van het huwelijk" },
+    { id: 'retrograde-love', title: "Retrogrades in de liefde overleven" },
+    { id: 'partner-analysis', title: "Partneranalyse" }
+  ],
+  content: `
+      <h2 id="love-guide">Liefde is een vaardigheid (en astrologie de handleiding)</h2>
+      <p>Vaak behandelen we liefde als een mysterieuze kracht die ons gewoon "overkomt". Maar in de astrologie is liefde een mechanisme met tandwielen en hendels. Je <strong>liefdeshoroscoop</strong> gaat niet alleen over toevallige ontmoetingen; het is de kaart van je psychologische behoeften in een partner.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Waarom trek je steeds hetzelfde "verkeerde" type persoon aan? Waarom loopt de communicatie steeds vast na drie maanden? De antwoorden liggen in je geboortehoroscoop. Door je kosmische liefdesplan te begrijpen, kun je stoppen met het herhalen van patronen en beginnen met het opbouwen van de relatie die je echt wilt.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Venus: De kunst van genegenheid</h2>
+      <p><strong>Venus</strong> is de planeet van aantrekkingskracht, waarden en harmonie. Het teken waarin Venus stond op het moment van je geboorte beschrijft wat je mooi vindt en hoe je genegenheid toont.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>Venus in Vuurtekens (Ram, Leeuw, Boogschutter):</strong> Houdt van de jacht. Heeft drama, grote gebaren en spontaniteit nodig. Verveelt zich snel. <em>Tip:</em> Houd de opwinding levend.</li>
+        <li><strong>Venus in Aardetekens (Stier, Maagd, Steenbok):</strong> Houdt van stabiliteit. Heeft toewijding, betrouwbaarheid en lichamelijk contact nodig. Haat spelletjes. <em>Tip:</em> Wees constant.</li>
+        <li><strong>Venus in Luchttekens (Tweelingen, Weegschaal, Waterman):</strong> Houdt van intellect. Heeft gesprek, humor en vriendschap boven alles nodig. Vermijdt zware emoties. <em>Tip:</em> Wees interessant.</li>
+        <li><strong>Venus in Watertekens (Kreeft, Schorpioen, Vissen):</strong> Houdt van de ziel. Heeft een diepe emotionele versmelting, kwetsbaarheid en veiligheid nodig. <em>Tip:</em> Wees authentiek.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: De motor van het verlangen</h2>
+      <p>Terwijl Venus is wat je bevalt, is <strong>Mars</strong> de manier waarop je het krijgt. Mars regeert de libido, het najagen van doelen en het conflict.</p>
+      <p>Als je <strong>Mars in Schorpioen</strong> hebt, ben je intens, bezitterig en ga je voor "alles of niets". Je zou een lichte <strong>Mars in Tweelingen</strong> kunnen afschrikken die alleen maar wil flirten en plezier maken. Het Mars-teken van je partner kennen is de "geheimcode" voor seksuele vervulling en voor het oplossen van ruzies zonder uit elkaar te gaan.</p>
 
-      <h2 id="7th-house">The 7th Huis: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">Het 7e Huis: Je "andere helft"</h2>
+      <p>Kijk naar je Ascendant-teken. Kijk nu naar het teken er direct tegenover. Dat is je <strong>Descendant</strong>, de heerser van je 7e huis van partnerschappen.</p>
+      <p>We voelen ons vaak magnetisch aangetrokken tot mensen die de kwaliteiten van ons 7e huis belichamen, omdat zij bezitten wat ons zelf lijkt te ontbreken.
+      <br><em>Voorbeeld:</em> Een gedisciplineerde <strong>Maagd-ascendant</strong> zal vaak trouwen met een dromerig en ongeorganiseerd <strong>Vissen-type (Huis 7)</strong>. Maagd structureert het leven van Vissen; Vissen leert Maagd te ontspannen. Het is de as van balans.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romantiek</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Retrogrades in de liefde overleven</h2>
+      <p>Je hebt gehoord van Mercurius retrograde (de misverstanden), maar <strong>Venus retrograde</strong> is de echte test voor koppels. Het vindt elke 18 maanden plaats en tijdens deze periode:
+      <br>1. Ex-partners duiken weer op ("zombieing").
+      <br>2. Zwakke relaties vertonen barsten.
+      <br>3. Geheime relaties komen aan het licht.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Gouden regel:</strong> Trouw nooit, doe geen aanzoek en ga geen enorme verplichtingen aan terwijl Venus retrograde is. Wacht tot de schaduwperiode voorbij is (ongeveer 40 dagen) om te zien of je nog steeds hetzelfde voelt.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Partneranalyse in de relatie</h2>
+      <p>Jij bent complex en je partner is dat ook. Een generieke horoscoop "Leeuw + Waterman" kan de nuances van jullie unieke verbinding niet vatten. Ons <strong>Premium Relatierapport</strong> analyseert:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+        <li><strong>Synastrie:</strong> Hoe jouw planeten de zijne/hare raken (chemie).</li>
+        <li><strong>Compositiehoroscoop:</strong> De energie van de relatie zelf (lot).</li>
+        <li><strong>Davison-horoscoop:</strong> Het doel van jullie ontmoeting (karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Laat je hart niet aan het toeval over. Decodeer je liefdesleven met Astralo.</p>
     `
 };

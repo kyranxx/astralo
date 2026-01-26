@@ -1,101 +1,101 @@
 /**
- * The 12 Houses of Astrology - French (Français)
+ * Les 12 maisons de l'astrologie - FR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fr: BlogPostTranslation = {
-  title: '🏠 Les 12 Maisons de l\'Astrologie : La Scène de Votre Vie',
-  excerpt: 'Confus par cette roue avec des chiffres dans votre thème natal ? Découvrez ce que signifient réellement les 12 Maisons de l\'Astrologie et comment elles façonnent tout, de votre carrière à vos secrets les plus profonds.',
-  category: 'Bases de l\'Astrologie',
-  metaDescription: 'Guide complet des 12 maisons astrologiques. Comprenez ce que chaque maison représente dans votre thème natal, de l\'identité (Maison 1) au subconscient (Maison 12).',
-  keywords: '12 maisons astrologie, maisons astrologiques, première maison, maison du couple, milieu du ciel, ascendant, thème astral expliqué',
+  title: "🏠 Les 12 maisons de l'astrologie : Le décor de votre vie",
+  excerpt: "Perdu face à cette roue numérotée dans votre thème natal ? Découvrez ce que signifient réellement les 12 maisons de l'astrologie et comment elles façonnent tout, de votre carrière à vos secrets les plus profonds.",
+  category: "Les bases",
+  metaDescription: "Guide complet des 12 maisons astrologiques. Comprenez ce que chaque maison représente dans votre thème natal, de l'identité (1ère maison) au subconscient (12ème maison).",
+  keywords: "12 maisons astrologie, maisons astrologiques, première maison, septième maison, milieu du ciel, ascendant, thème natal expliqué",
   quickSummary: [
-    'Le thème natal est divisé en 12 secteurs appelés "Maisons", comme des parts de pizza.',
-    'Les Maisons représentent le "OÙ" se produisent les événements de votre vie (le décor).',
-    'Les Maisons Angulaires (1, 4, 7, 10) sont les plus puissantes et définissent votre structure de vie.',
-    'Avoir des maisons vides (sans planètes) est normal et ne signifie pas que ce domaine de votre vie est vide.'
+    "Le thème natal est divisé en 12 secteurs appelés 'maisons', semblables à des parts de pizza.",
+    "Les maisons représentent le 'OÙ' des événements de votre vie (le décor).",
+    "Les maisons angulaires (1, 4, 7, 10) sont les plus puissantes et définissent votre structure de vie.",
+    "Avoir des maisons vides (sans planètes) est normal et ne signifie pas que ce domaine de la vie est vide."
   ],
   keyTakeaways: [
-    'La Maison 1 (Ascendant) est votre masque et votre corps physique.',
-    'La Maison 7 est le miroir de vos relations et ennemis déclarés.',
-    'La Maison 10 (Milieu du Ciel) est votre réputation publique et votre carrière.',
-    'La mystérieuse Maison 12 garde vos secrets, votre karma et votre potentiel spirituel.'
+    "La 1ère Maison (Ascendant) est votre masque et votre physique.",
+    "La 7ème Maison est le miroir de vos relations et de vos ennemis déclarés.",
+    "La 10ème Maison (Milieu du Ciel) représente votre réputation et votre carrière publique.",
+    "La mystérieuse 12ème Maison garde vos secrets, votre karma et votre potentiel spirituel."
   ],
   tableOfContents: [
-    { id: 'introduction', title: 'Le Décor : Pourquoi les Maisons comptent' },
-    { id: 'house-systems', title: 'Systèmes de Maisons : Placidus vs Signes Entiers' },
-    { id: 'houses-1-6', title: 'Maisons Personnelles (1-6)' },
-    { id: 'houses-7-12', title: 'Maisons Transpersonnelles (7-12)' }
+    { id: 'introduction', title: "Le décor : Pourquoi les maisons sont importantes" },
+    { id: 'house-systems', title: "Systèmes de maisons : Placidus vs Signes Entiers" },
+    { id: 'houses-1-6', title: "Maisons personnelles (1-6)" },
+    { id: 'houses-7-12', title: "Maisons transpersonnelles (7-12)" }
   ],
   content: `
-      <h2 id="introduction">Le Décor : Pourquoi les Maisons comptent</h2>
-      <p>Si vous avez déjà regardé votre thème natal et vous êtes senti dépassé par les lignes et les symboles, vous n'êtes pas seul. L'astrologie est un langage composé de trois éléments principaux : les signes, les planètes et les maisons. Alors que les <strong>planètes</strong> représentent les "acteurs" (ce qui se passe) et les <strong>signes</strong> représentent les "costumes" (comment cela se passe), les <strong>12 Maisons de l'Astrologie</strong> représentent la "scène" (où cela se passe).</p>
+      <h2 id="introduction">Le décor : Pourquoi les maisons sont importantes</h2>
+      <p>Si vous avez déjà regardé votre thème natal et que vous vous êtes senti dépassé par les lignes, les symboles et les formes géométriques, vous n'êtes pas seul. L'astrologie est un langage composé de trois éléments principaux : les signes, les planètes et les maisons. Tandis que les <strong>planètes</strong> représentent les 'acteurs' (ce qui se passe) et les <strong>signes</strong> représentent les 'costumes' (comment cela se passe), les <strong>12 maisons de l'astrologie</strong> représentent le 'décor' (où cela se passe).</p>
       
-      <p>Imaginez que votre vie est une pièce de théâtre. Mars pourrait être l'acteur—plein d'énergie et d'agression. S'il porte le "costume" du Bélier, il est rapide, impulsif et audacieux. Mais où joue-t-il ? S'il est dans la Maison 10 de la Carrière, c'est un entrepreneur motivé. S'il est dans la Maison 4 du Foyer, il pourrait être quelqu'un qui dépense son énergie à rénover sa maison ou peut-être vit des conflits familiaux. Sans les maisons, l'astrologie est purement psychologique ; avec les maisons, elle devient pratique et prédictive.</p>
+      <p>Imaginez votre vie comme une pièce de théâtre. Mars peut être l'acteur — plein de dynamisme et d'agressivité. S'il porte le 'costume' du Bélier, il sera rapide, impulsif et audacieux. Mais où joue-t-il ? S'il se trouve dans la 10ème maison de la carrière, c'est un entrepreneur dynamique. S'il se trouve dans la 4ème maison du foyer, il s'agira sans doute de quelqu'un qui investit son énergie dans la rénovation de sa maison ou qui vit des conflits au sein de la famille. Sans les maisons, l'astrologie est de la pure psychologie ; avec les maisons, elle devient pratique et prévisible.</p>
 
-      <h2 id="house-systems">Systèmes de Maisons : Placidus vs Signes Entiers</h2>
-      <p>Avant de plonger dans les significations, nous devons aborder l'"éléphant dans la pièce" : les Systèmes de Maisons. Il existe des douzaines de façons de diviser le ciel. Les deux plus courantes sont :</p>
+      <h2 id="house-systems">Systèmes de maisons : Placidus vs Signes Entiers</h2>
+      <p>Avant de plonger dans les significations spécifiques, nous devons aborder le sujet des systèmes de maisons. Il existe des dizaines de façons de diviser le ciel. Les deux plus courantes sont :</p>
       <ul>
-        <li><strong>Placidus :</strong> Le système par défaut moderne. Basé sur le temps. Les maisons peuvent être de tailles différentes. Excellent pour la psychologie profonde.</li>
-        <li><strong>Signes Entiers (Whole Sign) :</strong> Le système ancien. Chaque signe du zodiaque est une maison complète. Excellent pour des prédictions claires et concrètes. Astralo utilise ce système par défaut pour plus de clarté.</li>
+        <li><strong>Placidus :</strong> Le système standard moderne. Basé sur le temps. Les maisons peuvent être de tailles différentes. Excellent pour la psychologie profonde.</li>
+        <li><strong>Signes Entiers (Whole Sign) :</strong> Le système antique. Chaque signe du zodiaque équivaut à une maison entière. Excellent pour des prédictions claires et concrètes. Astralo utilise ce système par défaut pour une plus grande clarté.</li>
       </ul>
 
-      <h2 id="houses-1-6">Les Maisons Personnelles : Le Développement du "Moi"</h2>
+      <h2 id="houses-1-6">Les maisons personnelles : Le développement du 'Soi'</h2>
       
-      <h3>Maison 1 : La Maison de Soi (L'Ascendant)</h3>
+      <h3>1ère Maison : La maison de Soi (L'Ascendant)</h3>
       <p><strong>Mots-clés :</strong> Identité, corps, apparence, première impression.<br>
-      C'est la maison la plus importante. Elle marque le début de votre vie. Les planètes ici ont un impact massif sur votre personnalité et votre vitalité.</p>
+      C'est la maison la plus importante. Elle marque le début de votre vie. Les planètes qui s'y trouvent ont un impact massif sur votre personnalité et votre vitalité.</p>
 
-      <h3>Maison 2 : La Maison de la Valeur</h3>
+      <h3>2ème Maison : La maison des valeurs</h3>
       <p><strong>Mots-clés :</strong> Argent, possessions, estime de soi, talents.<br>
-      Ce n'est pas seulement combien d'argent vous gagnez, mais comment vous le gagnez et ce que vous valorisez vraiment. Elle montre votre relation avec le monde matériel.</p>
+      Pas seulement combien vous gagnez, mais comment vous le gagnez et ce que vous appréciez vraiment. Elle montre votre relation avec le monde matériel.</p>
 
-      <h3>Maison 3 : La Maison de la Communication</h3>
-      <p><strong>Mots-clés :</strong> Esprit, frères et sœurs, courts voyages, voisins.<br>
-      C'est là que nous apprenons à parler et à penser. Elle régit l'éducation précoce, les potins, les réseaux sociaux et votre environnement immédiat.</p>
+      <h3>3ème Maison : La maison de la communication</h3>
+      <p><strong>Mots-clés :</strong> Esprit, fratrie, courts trajets, voisins.<br>
+      C'est là que nous apprenons à parler et à réfléchir. Elle régit l'éducation précoce, les potins, les réseaux sociaux et votre environnement immédiat.</p>
 
-      <h3>Maison 4 : La Maison du Foyer (Le Fond du Ciel)</h3>
+      <h3>4ème Maison : La maison du foyer (Imum Coeli)</h3>
       <p><strong>Mots-clés :</strong> Famille, racines, père/mère, vie privée, immobilier.<br>
-      La base de votre thème. Elle montre d'où vous venez et à quoi ressemble votre vie quand personne ne regarde.</p>
+      Les fondations de votre thème. Elle montre d'où vous venez et à quoi ressemble votre vie quand personne ne vous regarde.</p>
 
-      <h3>Maison 5 : La Maison du Plaisir</h3>
-      <p><strong>Mots-clés :</strong> Créativité, romance, enfants, jeux, paris.<br>
-      La maison du fun ! C'est là que nous exprimons notre joie. Elle régit les loisirs, le sexe occasionnel, les projets artistiques et votre "enfant intérieur".</p>
+      <h3>5ème Maison : La maison du plaisir</h3>
+      <p><strong>Mots-clés :</strong> Créativité, romance, enfants, jeu, risque.<br>
+      La maison du fun ! C'est là que nous exprimons notre joie. Elle régit les loisirs, le sexe occasionnel, les projets artistiques et votre 'enfant intérieur'.</p>
 
-      <h3>Maison 6 : La Maison de la Routine</h3>
-      <p><strong>Mots-clés :</strong> Santé, travail quotidien, animaux de compagnie, service.<br>
-      Ce n'est pas votre carrière (ça c'est la 10), c'est votre job alimentaire. Comment vous organisez votre journée, ce que vous mangez et comment vous servez les autres.</p>
+      <h3>6ème Maison : La maison de la routine</h3>
+      <p><strong>Mots-clés :</strong> Santé, travail quotidien, animaux domestiques, service.<br>
+      Il ne s'agit pas de votre carrière (c'est la 10ème maison), mais de votre travail au jour le jour. Comment vous organisez votre journée, ce que vous mangez et comment vous servez les autres.</p>
 
-      <h2 id="houses-7-12">Les Maisons Transpersonnelles : L'Interaction avec le Monde</h2>
+      <h2 id="houses-7-12">Les maisons transpersonnelles : L'interaction avec le monde</h2>
 
-      <h3>Maison 7 : La Maison de la Relation (Le Descendant)</h3>
-      <p><strong>Mots-clés :</strong> Mariage, partenaires d'affaires, ennemis déclarés.<br>
-      Opposée à la Maison 1. Ici, nous cessons d'être "Je" pour être "Nous". Elle régit tous les contrats juridiques et les engagements à long terme.</p>
+      <h3>7ème Maison : La maison du partenariat (Le Descendant)</h3>
+      <p><strong>Mots-clés :</strong> Mariage, partenaires commerciaux, ennemis déclarés.<br>
+      À l'opposé de la 1ère Maison. C'est là que nous cessons d'être 'je' pour devenir 'nous'. Elle régit tous les contrats légaux et les engagements à long terme.</p>
 
-      <h3>Maison 8 : La Maison de la Transformation</h3>
-      <p><strong>Mots-clés :</strong> Sexe, mort, impôts, argent des autres, occultisme.<br>
+      <h3>8ème Maison : La maison de la transformation</h3>
+      <p><strong>Mots-clés :</strong> Sexe, mort, impôts, argent d'autrui, occultisme.<br>
       La maison la plus mystérieuse. Elle traite de ce que nous partageons profondément avec les autres (intimité et ressources) et des crises qui nous transforment.</p>
 
-      <h3>Maison 9 : La Maison de la Philosophie</h3>
-      <p><strong>Mots-clés :</strong> Longs voyages, enseignement supérieur, religion, publication.<br>
-      La quête de sens. Ici, nous élargissons notre esprit par l'étude ou le voyage vers des terres étrangères.</p>
+      <h3>9ème Maison : La maison de la philosophie</h3>
+      <p><strong>Mots-clés :</strong> Longs trajets, éducation supérieure, religion, publication.<br>
+      La quête de sens. C'est là que nous élargissons nos horizons par l'étude ou le voyage dans des contrées lointaines.</p>
 
-      <h3>Maison 10 : La Maison du Statut (Le Milieu du Ciel)</h3>
+      <h3>10ème Maison : La maison du statut (Milieu du Ciel)</h3>
       <p><strong>Mots-clés :</strong> Carrière, réputation publique, héritage, autorité.<br>
-      Le point culminant du thème. Elle montre comment le monde nous voit et notre plus grande ambition. C'est votre "renommée".</p>
+      Le point culminant de la carte. Elle montre comment le monde nous voit et notre plus grande ambition. C'est votre 'gloire'.</p>
 
-      <h3>Maison 11 : La Maison de la Communauté</h3>
+      <h3>11ème Maison : La maison de la communauté</h3>
       <p><strong>Mots-clés :</strong> Amis, groupes, espoirs, rêves, technologie.<br>
-      Où nous trouvons notre tribu. Elle régit les réseaux sociaux de masse, les organisations humanitaires et les gains de carrière.</p>
+      Où nous trouvons notre 'tribu'. Elle régit les médias de masse, les organisations humanitaires et les gains professionnels.</p>
 
-      <h3>Maison 12 : La Maison de l'Inconscient</h3>
-      <p><strong>Mots-clés :</strong> Secrets, karma, solitude, spiritualité, auto-sabotage.<br>
+      <h3>12ème Maison : La maison du subconscient</h3>
+      <p><strong>Mots-clés :</strong> Secrets, karma, solitude, spiritualité, autosabotage.<br>
       La fin du cycle. C'est là que nous nous dissolvons. Elle régit les rêves, l'intuition psychique, mais aussi les hôpitaux et les prisons (lieux d'isolement).</p>
 
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Quelles Maisons sont actives dans VOTRE vie ?</h3>
-          <p>Savoir quelles planètes habitent vos maisons est la clé pour déverrouiller votre destin. Obtenez votre lecture complète aujourd'hui.</p>
-          <a href="/fr/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Voir mon Thème Astral</a>
+          <h3 style="margin-top:0;">Quelles maisons sont actives dans VOTRE vie ?</h3>
+          <p>Savoir quelles planètes habitent vos maisons est la clé pour déverrouiller votre destin. Obtenez votre analyse complète dès aujourd'hui.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Voir mon thème natal</a>
       </div>
     `
 };

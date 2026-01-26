@@ -1,88 +1,66 @@
 /**
- * zodiac-compatibility-complete-guide - ZH
+ * 星座配对：宇宙爱情终极指南 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "❤️ 十二生肖 标志 Compatibility: The Definitive Guide to Cosmic 爱情",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun 标志s Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: '❤️ 星座配对：关于宇宙爱情的定论指南',
+  excerpt: '2026 年星座配对终极指南。超越太阳星座，探索四大元素、金星和火星如何影响你的浪漫化学反应和长期潜力。',
+  category: '爱与人际关系',
+  metaDescription: '2026 年星座配对终极指南。超越太阳星座，探索四大元素、金星和火星如何影响你的浪漫化学反应和长期潜力。',
+  keywords: '星座配对, 爱情运势, 合盘, 星座匹配度, 金星星座爱情, 火星星座激情, 关系占星, 最佳匹配',
+  quickSummary: [
+    '真正的配对涉及比较完整的出生图（双人合盘），而不仅仅是太阳星座。',
+    '元素平衡（火、土、风、水）是关系和谐的基础。',
+    '所谓的“不匹配”星座往往能提供灵魂成长的最大机遇。',
+    '金星决定了示爱风格，而火星则驱动着激情方式和冲突处理。'
+  ],
+  keyTakeaways: [
+    '寻找同元素的“三分相”以获得轻松感，寻找“对分相”以获得强烈吸引力。',
+    '月亮星座的契合度对于共同生活和情感安全感至关重要。',
+    '水星的契合度决定了你们共同解决问题的效率。',
+    '没有“完美”的匹配；每一对组合都有其优势和挑战。'
+  ],
+  tableOfContents: [
+    { id: 'beyond-sun-signs', title: '为什么太阳星座不是全部' },
+    { id: 'elemental-love', title: '恋爱中的四大元素' },
+    { id: 'love-planets', title: '爱情行星：金星、火星与月亮' },
+    { id: 'challenging-matches', title: '关于“糟糕”配对的真相' },
+    { id: 'best-matches-deep-dive', title: '深度解析：最佳匹配' }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">为什么太阳星座不是全部</h2>
+      <p>我们都经历过这种情况：翻看杂志或应用，看看心仪对象的星座是否与我们相配。“喔不，我是狮子座，他是天蝎座——我们注定没戏！”但请稍等。<strong>星座配对</strong>比简单的图表对照要复杂得多——也更有希望。 </p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>虽然你的太阳星座代表了你的核心自我和生命目标，但关系是建立在情感、沟通和价值观之上的。这就是为什么你可能会发现自己与一个所谓的“不切合”星座幸福地生活在一起，或者在与所谓的“完美匹配”苦苦挣扎。要真正理解<strong>爱情配合度</strong>，我们必须观察天空的完整全景。</p>
 
-      <h2 id="elemental-love">The 4 Elements in 爱情</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">恋爱中的四大元素</h2>
+      <p>衡量最初化学反应最快的方法是通过元素。相同元素的星座通常“说着同样的语言”。</p>
+      <ul>
+        <li><strong>🔥 火象星座（白羊、狮子、射手）：</strong> 激情、冒险、自发性。</li>
+        <li><strong>🌍 土象星座（金牛、处女、摩羯）：</strong> 服务、稳定、触碰。</li>
+        <li><strong>💨 风象星座（双子、天秤、水瓶）：</strong> 交流、风趣、自由。</li>
+        <li><strong>💧 水象星座（巨蟹、天蝎、双鱼）：</strong> 脆弱、直觉、融合。</li>
+      </ul>
+
+      <h2 id="love-planets">真正的爱情行星：金星、火星与月亮</h2>
+      <p>如果你想知道你们在日常生活中是否真的合得来，仅仅查看太阳星座是不够。你需要通过 Astralo 查看这三颗特定行星：</p>
+      <ul>
+        <li><strong>月亮 🌙（情感安全感）：</strong> 在长期婚姻或同居中，<strong>月亮星座的契合度是王道</strong>。它决定了你如何照顾他人以及如何被照顾。</li>
+        <li><strong>金星 ♀（浪漫与价值观）：</strong> 金星决定了你认为什么是美的，以及你的“调情风格”。同样的元素通常意味着品味一致。</li>
+        <li><strong>火星 ♂（激情与冲突）：</strong> 火星是欲望和冲突之星。它显示了你们如何争吵以及在亲密关系中的表现。</li>
+      </ul>
+
+      <h2 id="challenging-matches">关于“糟糕”配对的真相</h2>
+      <p>如果你爱上了一个“不匹配”的星座怎么办？例如，狮子座（火）和天蝎座（水）？</p>
+      <p>这些关系往往是最具有<strong>转化性</strong>的。占星学称这些为“刑”相或“梅花”相。它们产生摩擦，但摩擦产生热量！“挑战性”的匹配迫使你成长，学习一种新的语言，并走出你的舒适区。它们通常是高激情、高戏剧性的灵魂伴侣连接。</p>
+
+      <h2 id="best-matches-deep-dive">深度解析：著名的星座组合</h2>
+      <h3>“权利夫妇”：白羊座 & 天秤座</h3>
+      <p>异性相吸！白羊教天秤果断，天秤教白羊外交手腕。这是一种难以打破的磁力吸引。</p>
+      <h3>“帝国缔造者”：金牛座 & 摩羯座</h3>
+      <p>两个重视质量、金钱和安全的土象星座。他们共同创造巨大的成功。</p>
       
-      <h3>🔥 火 标志s (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
-
-      <h3>🌍 土 标志s (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
-
-      <h3>💨 空气 标志s (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
-
-      <h3>💧 水 标志s (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
-
-      <h2 id="love-planets">The Real 爱情 Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
-
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
-
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
-
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
-
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
-      
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
-
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous 十二生肖 P空气ings</h2>
-      
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
-
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
-      
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
-
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
-      
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
-      
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
-      
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>在 Astralo，我们的高级算法和专家占星师不只是给你一个百分比。我们为你绘制关系的灵魂图谱。停止猜测，开始了解你们结合的宇宙目的。</p>
     `
 };

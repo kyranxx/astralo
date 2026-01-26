@@ -1,84 +1,71 @@
 /**
- * weekly-horoscope-predictions - SV (Fallback to English content)
+ * Veckans horoskopförutsägelser - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Veckans horoskop: Din kosmiska strategi för kommande dagar',
+  excerpt: 'Din kompletta guide till att använda veckohoroskopet. Lär dig planera din vecka, förstå de viktigaste transiterna och använda din ascendent för maximal precision.',
+  category: 'Horoskop',
+  metaDescription: 'Din kompletta guide till att använda veckohoroskopet. Lär dig planera din vecka, förstå de viktigaste transiterna och använda din ascendent för maximal precision.',
+  keywords: 'veckohoroskop, astrologisk prognos, veckoplanering astrologi, zodiak transiter, planetrörelser, horoskopprecision, ascendent prognos',
+  quickSummary: [
+    'Ett veckohoroskop undersöker de medellånga planetära trenderna (transiter) som formar de kommande 7 dagarna.',
+    'Veckoprognoser är idealiska för att planera affärsmöten, romantiska dejter och resor.',
+    'Nyckelfaktorer inkluderar månfasen (nymåne vs. fullmåne) och aspekter hos de personliga planeterna (Merkurius, Venus, Mars).',
+    'Att läsa för ditt eget ascendentstecken ger mycket mer exakta resultat än att bara läsa soltecknet.'
+  ],
+  keyTakeaways: [
+    'Använd måndagen för att stämma av mot veckans energi.',
+    'Håll koll på månens teckenbyten var 2,5:e dag: de dikterar den kollektiva stämningen.',
+    'Viktiga beslut bör helst planeras under harmoniska aspekter (trigoner/sextiler) mellan solen och Jupiter.',
+    'Undvik viktiga lanseringar under planeternas "stationer" (när de byter riktning).'
+  ],
+  tableOfContents: [
+    { id: 'why-weekly', title: 'Syftet med veckohoroskopet' },
+    { id: 'how-it-works', title: 'Hur veckans astrologi fungerar' },
+    { id: 'rising-sign-importance', title: 'Varför din ascendent är ditt hemliga vapen' },
+    { id: 'planetary-transits', title: 'Att förstå transiter' },
+    { id: 'planning-guide', title: 'Planera din vecka med stjärnorna' },
+    { id: 'astralo-advantage', title: 'Astralo-fördelen' }
+  ],
+  content: `
+      <h2 id="why-weekly">Syftet med veckohoroskopet</h2>
+      <p>Medan ett dagshoroskop hjälper dig att hantera ditt omedelbara humör, fungerar <strong>veckohoroskopet</strong> som en strategisk karta. Det är skillnaden mellan att kolla regnradarn för de närmaste 10 minuterna eller att titta på väderprognosen för hela veckan för att planera en trädgårdsfest.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Ett veckohoroskop hjälper dig att identifiera när du ska trycka på gaspedalen och när det är bättre att vänta. Rör vi oss mot en spänd fullmåne som kan få känslorna att koka över? Eller har vi en harmonisk koppling mellan Merkurius och Uranus, perfekt för brainstorming och nya förslag? Genom att känna till dessa trender i förväg agerar du proaktivt istället för reaktivt.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
-      
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
-
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
-      
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
-      
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
-      
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
-      
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
-      
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
-
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
-
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="how-it-works">Hur veckans astrologi fungerar</h2>
+      <p>"Veckans astrologi" fokuserar på planeternas rörelser genom zodiakens tecken i förhållande till ditt födelsehoroskop. Vi kollar speciellt på:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Solens ingress:</strong> När solen byter tecken (t.ex. från Jungfrun till Vågen) ändras det kollektiva fokuset för alla.</li>
+        <li><strong>Månfaser:</strong> Börjar veckan med en nymåne (tid för nya starter) eller en fullmåne (tid för resultat och att släppa taget)?</li>
+        <li><strong>Planetära aspekter:</strong> Befinner sig planeter som Mars och Saturnus i en kritisk vinkel idag? Detta kan indikera "veckans hinder".</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="rising-sign-importance">Varför din ascendent är ditt hemliga vapen</h2>
+      <p>De flesta läser sitt horoskop bara för sitt soltecken. På Astralo rekommenderar vi starkt: <strong>Läs horoskopet även (eller primärt) för ditt ascendentstecken.</strong></p>
+      <p>Ditt soltecken representerar din kärna, men din ascendent bestämmer husstrukturen i ditt horoskop. Om ett veckohoroskop säger: "Relationer är i fokus den här veckan", beror det på att planeterna transiterar genom ditt 7:e hus. Detta är ofta helt annorlunda för en Vädur-ascendent än för en Vädur-sol. För mest exakta resultat, använd din ascendent.</p>
+
+      <h2 id="planetary-transits">Att förstå transiter: Det kosmiska vädret</h2>
+      <p>I dina veckoprognoser kommer du ofta läsa termer som 'transit' eller 'konjunktion'. Här är en snabb översättning:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Transit:</strong> En planet på dagens himmel bildar en aspekt till en punkt i ditt födelsehoroskop.</li>
+        <li><strong>Kvadratur (Spänning):</strong> En vändpunkt eller en utmaning som kräver handling.</li>
+        <li><strong>Trigon (Flöde):</strong> Möjligheter och talalanger som manifesteras naturligt.</li>
+        <li><strong>Retrograd:</strong> En planet ser ut att röra sig baklänges: tid för översyn, inte framsteg.</li>
       </ul>
-      
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+
+      <h2 id="planning-guide">Planera din vecka med stjärnorna</h2>
+      <p>Tänk dig att du har ett viktigt möte för löneförhandling. En koll i ditt veckohoroskop visar:</p>
+      <ul>
+        <li><strong>Tisdag:</strong> Merkurius står i opposition till Neptunus (Risk för otydlighet och missförstånd).</li>
+        <li><strong>Torsdag:</strong> Solen bildar en trigon till Jupiter (Stor tur, expansion, auktoritetspersoner är välvilliga).</li>
+      </ul>
+      <p><em>Beslutet är enkelt:</em> Flytta mötet till torsdag! Detta är precis den praktiska nyttan med astrologi i det moderna livet.</p>
+
+      <h2 id="astralo-advantage">Astralo-fördelen</h2>
+      <p>På Astralo går vi mycket längre än det vanliga tidningshoroskopet. Vår AI analyserar inte bara ditt soltecken, utan jämför dagens planetära tillstånd med din kompletta födelsegenetik. Vi ger dig en personlig prognos, lika unik som ditt fingeravtryck.</p>
+      <p>Börja inte din vecka i mörkret. Använd stjärnornas kunskap för att nå dina mål, vårda dina relationer och låsa upp din fulla potential. Ditt veckohoroskop är din vägkarta till framgång.</p>
     `
 };

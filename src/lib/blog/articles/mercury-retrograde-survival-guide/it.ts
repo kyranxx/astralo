@@ -1,71 +1,71 @@
 /**
- * Mercury Retrograde Survival Guide - Italian (Italiano)
+ * Guida di sopravvivenza a Mercurio Retrogrado - IT
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const it: BlogPostTranslation = {
-  title: '☄️ Guida di Sopravvivenza a Mercurio Retrogrado 2026: Dal Caos alla Calma',
-  excerpt: 'Non temere il retrogrado! Scopri perché Mercurio Retrogrado è in realtà un reset cosmico vitale e come navigare tra intoppi tecnologici e di comunicazione con facilità.',
-  category: 'Basi dell\'Astrologia',
-  metaDescription: 'Non temere il retrogrado! Scopri perché Mercurio Retrogrado è un reset cosmico vitale, come evitare le trappole comuni e perché è il momento migliore per le attività "Ri".',
-  keywords: 'mercurio retrogrado, date mercurio retrogrado, guida sopravvivenza, consigli astrologia, pianeta retrogrado, blocco comunicazione, problemi tecnici',
+  title: "☄️ Guida di Sopravvivenza a Mercurio Retrogrado 2026: Dal Caos alla Calma",
+  excerpt: "Non temere il retrogrado! Scopri perché Mercurius retrogrado è in realtà un vitale reset cosmico e come navigare con facilità tra guasti tecnologici e problemi di comunicazione.",
+  category: "Astrologia 101",
+  metaDescription: "Non temere il retrogrado! Scopri perché Mercurius retrogrado è in realtà un vitale reset cosmico, come evitare le trappole comuni e perché è il momento migliore per i compiti che iniziano con 'ri-'.",
+  keywords: "Mercurio retrogrado, date Mercurio retrogrado, guida di sopravvivenza, consigli astrologia, retrogradazione planetaria, guasto comunicazione, bug tecnologico",
   quickSummary: [
-    'Mercurio Retrogrado è un\'illusione ottica in cui Mercurio sembra muoversi all\'indietro',
-    'Accade 3-4 volte l\'anno e dura circa tre settimane ogni volta',
-    'Questo periodo è noto per ritardi nei viaggi, guasti tecnici e incomprensioni',
-    'NON è il momento di iniziare nuovi progetti, ma un momento D\'ÉLITE per finire quelli vecchi'
+    "Mercurio retrogrado è un'illusione ottica per cui Mercurio sembra muoversi all'indietro nel cielo.",
+    "Accade 3 o 4 volte l'anno e dura circa tre settimane ogni volta.",
+    "Questo periodo è famoso per ritardi nei viaggi, guasti tecnologici e malintesi.",
+    "NON è il momento di lanciare nuovi progetti, ma è ECCELLENTE per completare quelli vecchi."
   ],
   keyTakeaways: [
-    'Controlla due volte ogni email, messaggio e contratto prima di inviare o firmare',
-    'Fai il backup dei tuoi dati e aspettati piccoli problemi tecnologici con i dispositivi',
-    'Vecchi amici ed ex riappaiono spesso durante questi cicli cosmici',
-    'Il "Periodo Ombra" prima e dopo il retrogrado è altrettanto importante'
+    "Controlla due volte ogni e-mail, messaggio e contratto prima di inviare o firmare.",
+    "Fai il backup dei tuoi dati e aspettati piccoli problemi tecnici con i tuoi dispositivi.",
+    "Vecchi amici ed ex partner riappaiono spesso durante questi cicli cosmici.",
+    "Il 'periodo d'ombra' prima e dopo la retrogradazione è altrettanto importante."
   ],
   tableOfContents: [
-    { id: 'what-is-mercury-retrograde', title: 'La Scienza dell\'Illusione' },
-    { id: 'retrograde-shadow', title: 'Il Periodo Ombra' },
-    { id: 'survival-dos', title: 'La Regola del "RI": Cosa fare' },
-    { id: 'survival-donts', title: 'Le Bandiere Rosse: Cosa evitare' },
-    { id: 'mercury-retrograde-dates', title: 'Date del Retrogrado 2026' },
-    { id: 'final-thoughts', title: 'Il Lato Positivo' }
+    { id: 'what-is-mercury-retrograde', title: "La scienza dietro l'illusione" },
+    { id: 'retrograde-shadow', title: "Il periodo d'ombra" },
+    { id: 'survival-dos', title: "La regola dei 'RI-': Cosa fare" },
+    { id: 'survival-donts', title: "Segnali di avvertimento: Cosa evitare" },
+    { id: 'mercury-retrograde-dates', title: "Date Mercurio Retrogrado 2026" },
+    { id: 'final-thoughts', title: "Considerazioni finali" }
   ],
   content: `
-      <h2 id="what-is-mercury-retrograde">La Scienza dell'Illusione</h2>
-      <p>Tre o quattro volte l'anno, il pianeta Mercurio—il governatore della comunicazione, dei viaggi e della tecnologia—sembra muoversi all'indietro nel cielo dal nostro punto di osservazione sulla Terra. In realtà, è solo un'illusione ottica, molto simile a un'auto più lenta che sembra muoversi all'indietro mentre la sorpassi con un veicolo più veloce.</p>
+      <h2 id="what-is-mercury-retrograde">La scienza dietro l'illusione</h2>
+      <p>Tre o quattro volte l'anno, il pianeta Mercurio — il signore della comunicazione, dei viaggi e della tecnologia — sembra muoversi all'indietro nel cielo dal nostro punto di vista sulla Terra. In realtà, si tratta solo di un'illusione ottica, simile a un'auto più lenta che sembra andare all'indietro quando la sorpassi con un veicolo più veloce.</p>
       
-      <p>Ma mentre il movimento all'indietro è un'illusione, gli effetti sono molto reali. In astrologia, quando un pianeta diventa retrogrado, la sua energia si rivolge verso l'interno. Dato che Mercurio governa il "tragitto giornaliero" delle nostre vite—i nostri pensieri, i nostri gadget e la nostra logistica—tutto inizia a sembrare un po'... difettoso. <strong>Mercurio Retrogrado</strong> è il modo cosmico di dire al mondo di premere il pulsante "Pausa".</p>
+      <p>Ma anche se il movimento all'indietro è un'illusione, gli effetti sono reali. In astrologia, l'energia di un pianeta si volge verso l'interno quando diventa retrogrado. Poiché Mercurio governa il "viavai" quotidiano delle nostre vite — i nostri pensieri, i nostri dispositivi e la nostra logistica — tutto inizia a sembrare un po'... difettoso. <strong>Mercurio retrogrado</strong> è il modo in cui l'universo dice al mondo di premere il tasto "pausa".</p>
 
-      <h2 id="retrograde-shadow">Il Periodo Ombra: L'Oscillazione Pre e Post</h2>
-      <p>Molte persone sono sorprese quando le cose iniziano ad andare storte una settimana <em>prima</em> che il retrogrado inizi ufficialmente. Questo è chiamato <strong>Ombra Pre-Retrograda</strong>. È quando Mercurio rallenta e si prepara a invertire la rotta. Allo stesso modo, l'<strong>Ombra Post-Retrograda</strong> dura circa due settimane dopo che il pianeta è tornato diretto. Se stai pianificando un grande lancio o un grande acquisto, aspetta che il periodo d'ombra post sia passato per ottenere i risultati più fluidi.</p>
+      <h2 id="retrograde-shadow">Il periodo d'ombra: L'esitazione prima e dopo la tempesta</h2>
+      <p>Molte persone sono sorprese quando le cose iniziano ad andare male già una settimana <em>prima</em> dell'inizio ufficiale della retrogradazione. Questo è noto come <strong>pre-ombra</strong>. È il momento in cui Mercurio inizia a rallentare prima di invertire la rotta. Allo stesso modo, la <strong>post-ombra</strong> dura circa due settimane dopo che il pianeta è tornato diretto. Se stai pianificando un lancio importante o un acquisto massiccio, è meglio aspettare che la post-ombra sia passata per ottenere risultati più fluidi.</p>
 
-      <h2 id="survival-dos">La Regola del "RI": Cosa fare</h2>
-      <p>Mercurio Retrogrado ha una cattiva reputazione, ma è in realtà uno dei periodi più produttivi dell'anno se lo usi correttamente. Il segreto è concentrarsi sulle parole che iniziano con <strong>"RI"</strong>:</p>
+      <h2 id="survival-dos">La regola dei "RI-": Cosa fare</h2>
+      <p>Mercurio retrogrado ha una cattiva fama, ma è in realtà uno dei periodi più produttivi dell'anno se usato correttamente. Il segreto è concentrarsi su attività che iniziano con <strong>"RI-"</strong>:</p>
       <ul>
-        <li><strong>Riflettere:</strong> Guarda indietro ai tuoi obiettivi dall'inizio dell'anno. Sei ancora sulla buona strada?</li>
-        <li><strong>Revisionare:</strong> Rivedi i tuoi contratti, il tuo budget e i tuoi piani. Probabilmente troverai un errore che ti eri perso prima.</li>
-        <li><strong>Riconnettere:</strong> Questo è un momento ideale per sentire vecchi amici o risolvere conflitti passati con la famiglia.</li>
-        <li><strong>Riparare:</strong> Aggiusta quel rubinetto che perde o il problema dell'auto che hai ignorato.</li>
-        <li><strong>Riorganizzare:</strong> Pulisci i tuoi armadi, la tua casella di posta e la tua mente.</li>
+        <li><strong>RIvisionare e RIflettere:</strong> Guarda i tuoi obiettivi dall'inizio dell'anno. Sei ancora sulla strada giusta?</li>
+        <li><strong>RIleggere e RIvedere:</strong> Controlla ancora una volta i tuoi contratti, il tuo budget e i tuoi piani. Probabilmente troverai un errore che ti era sfuggito.</li>
+        <li><strong>RIncontrare:</strong> È il momento migliore per contattare vecchi amici o risolvere conflitti passati con la famiglia.</li>
+        <li><strong>RIparare:</strong> Sistema quel rubinetto che perde o il problema all'auto che hai ignorato.</li>
+        <li><strong>RIorganizzare:</strong> Fai pulizia nei tuoi armadi, nella tua casella di posta e nei tuoi pensieri.</li>
       </ul>
 
-      <h2 id="survival-donts">Le Bandiere Rosse: Cosa evitare</h2>
-      <p>Sebbene la vita non si fermi, cerca di evitare queste attività ad alto rischio durante la finestra retrograda di tre settimane:</p>
+      <h2 id="survival-donts">Segnali di avvertimento: Cosa evitare</h2>
+      <p>Anche se la vita non si ferma, cerca di evitare queste attività rischiose durante la finestra di tre settimane di retrogradazione:</p>
       <ul>
-        <li><strong>Firmare Contratti Importanti:</strong> Se devi firmare, leggi le clausole tre volte. Meglio ancora, falle leggere a un avvocato.</li>
-        <li><strong>Comprare Nuova Tecnologia:</strong> Aspetta a comprare quel nuovo iPhone o auto. La tecnologia retrograda spesso arriva con "limoni" (difetti) nascosti.</li>
-        <li><strong>Iniziare Nuovi Progetti:</strong> Le idee nate ora spesso cambiano significativamente una volta che il pianeta diventa diretto. Aspetta a "lanciare".</li>
-        <li><strong>Chirurgia Plastica o Grandi Cambiamenti di Capelli:</strong> Mercurio influenza anche il modo in cui percepiamo l'estetica durante i suoi cicli. Potresti pentirti di quella scelta audace più tardi.</li>
+        <li><strong>Firmare contratti importanti:</strong> Se devi firmare, leggi le clausole in piccolo tre volte. Meglio ancora, falle leggere a un avvocato.</li>
+        <li><strong>Comprare nuova tecnologia:</strong> Aspetta a comprare quel nuovo iPhone o l'auto. La tecnologia "retrograda" spesso rivela difetti.</li>
+        <li><strong>Lanciare nuovi progetti:</strong> Le idee nate ora spesso cambiano drasticamente una volta che il pianeta torna diretto. Aspetta il lancio effettivo.</li>
+        <li><strong>Chirurgia estetica o cambiamenti radicali di look:</strong> Mercurio influisce anche su come percepiamo l'estetica durante i suoi cicli. Potresti pentirti più tardi di quella decisione audace.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">Date di Mercurio Retrogrado 2026</h2>
-      <p>Tieni queste date nel tuo calendario 2026 per stare avanti alla curva cosmica:</p>
+      <h2 id="mercury-retrograde-dates">Date Mercurio Retrogrado 2026</h2>
+      <p>Segna questi periodi sul tuo calendario per il 2026 per essere un passo avanti al caos cosmico:</p>
       <ol>
-          <li><strong>25 Febbraio – 20 Marzo</strong> (Iniziando in Pesci, finendo in Acquario)</li>
-          <li><strong>29 Giugno – 23 Luglio</strong> (In Cancro)</li>
-          <li><strong>24 Ottobre – 13 Novembre</strong> (Iniziando in Scorpione, finendo in Bilancia)</li>
+          <li><strong>25 febbraio – 20 marzo</strong> (Inizia in Pesci, finisce in Acquario)</li>
+          <li><strong>29 giugno – 23 luglio</strong> (In Cancro)</li>
+          <li><strong>24 ottobre – 13 novembre</strong> (Inizia in Scorpione, finisce in Bilancia)</li>
       </ol>
 
-      <h2 id="final-thoughts">Il Lato Positivo</h2>
-      <p>Mercurio Retrogrado non è una maledizione; è un periodo di manutenzione necessario. Senza di esso, continueremmo a correre avanti senza mai riparare le fondamenta delle nostre vite. Usa questo tempo per rallentare, respirare e recuperare te stesso. Quando Mercurio finalmente avanzerà, sarai più veloce e concentrato che mai.</p>
+      <h2 id="final-thoughts">Considerazioni finali</h2>
+      <p>Mercurio retrogrado non è una maledizione; è una fase di manutenzione necessaria. Senza di essa, continueremmo a correre senza mai consolidare le fondamenta delle nostre vite. Usa questo tempo per rallentare, respirare e ritrovare te stesso. Quando Mercurio tornerà finalmente diretto, sarai più veloce e più concentrato che mai.</p>
     `
 };

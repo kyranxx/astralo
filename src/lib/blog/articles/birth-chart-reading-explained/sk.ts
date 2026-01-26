@@ -1,80 +1,97 @@
 /**
- * birth-chart-reading-explained - SK
+ * Čítanie pôrodnej mapy - SK
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sk: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Čítanie pôrodnej mapy: Komplexný sprievodca vašou vesmírnou mapou",
+  excerpt: "Odomknite tajomstvá svojej osobnosti s naším dokonalým sprievodcom čítaním pôrodnej mapy. Naučte sa interpretovať planéty, domy, aspekty a uzly osudu ako profesionál.",
+  category: "Základy astrológie",
+  metaDescription: "Odomknite tajomstvá svojej osobnosti s naším dokonalým sprievodcom čítaním pôrodnej mapy. Naučte sa interpretovať planéty, domy, aspekty a uzly osudu ako profesionál.",
+  keywords: "pôrodná mapa, natálny horoskop, astrologická mapa, veľká trojka astrológia, ascendent, mesačné znamenie, astrologické domy, planetárne aspekty, prečítať pôrodnú mapu",
+  quickSummary: [
+    "Vaša pôrodná mapa je 360-stupňová snímka oblohy v presnom momente vášho narodenia",
+    "„Veľká trojka“ (Slnko, Mesiac, Ascendent) tvorí základný trojnožec vašej osobnosti",
+    "12 domov popisuje „kde“ sa udalosti dejú, zatiaľ čo planéty popisujú „čo“ sa deje",
+    "Aspekty (čiary spájajúce planéty) odhaľujú vaše vnútorné konflikty a špeciálne talenty"
+  ],
+  keyTakeaways: [
+    "Ascendent (vychádzajúce znamenie) je pre predpovede často presnejší než slnečné znamenie",
+    "Ťažké aspekty (kvadráty, opozície) vytvárajú najúspešnejších ľudí vďaka ich odolnosti",
+    "Severný uzol odhaľuje karmický smer vašej duše v tomto živote",
+    "Počítačom generované správy sú skvelé, ale ľudský cit je nenahraditeľný"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Modrotlač vašej duše" },
+    { id: "the-big-three", title: "Veľká trojka: Slnko, Mesiac, Ascendent" },
+    { id: "the-planets", title: "Planéty: Vnútorné vs. Vonkajšie" },
+    { id: "the-houses", title: "Status 12 domov" },
+    { id: "aspects", title: "Aspekty: Vesmírna konverzácia" },
+    { id: "nodes", title: "Uzly osudu" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Modrotlač vašej duše</h2>
+      <p>Mali ste niekedy pocit, že úplne nezapadáte do popisu svojho znamenia zverokruhu? „Som Lev, ale neznášam byť stredobodom pozornosti!“ Dôvod je pravdepodobne skrytý vo vašej <strong>pôrodnej mape</strong> (alebo natálnom horoskope). Hoci je vaše slnečné znamenie dôležité, je to len jedna premenná v masívnej a komplexnej rovnici.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Pôrodná mapa je mapa nebies vypočítaná pre presný čas, dátum a miesto vášho narodenia. Umiestňuje vás do stredu vesmíru s planétami usporiadanými okolo vás. Predstavte si to ako svoju „vesmírnu DNA“ – jedinečný súbor inštrukcií, talentov, výziev a potenciálov, ktorý patrí len a len vám.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Veľká trojka: Slnko, Mesiac, Ascendent</h2>
+      <p>Predtým, než sa ponoríte do zložitej geometrie, každý študent astrológie musí ovládnuť svoju „Veľkú trojku“. Tieto tri body určujú väčšinu vašej osobnosti.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Slnko ☀️ (Identita)</h3>
+      <p>Slnko predstavuje vaše vedomé ego, vaše „ja som“. Je to vaše palivo, váš pohon a energetická frekvencia, ktorú vyžarujete. Odpovedá na otázku: <em>„Kto som vo svojom jadre?“</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Mesiac 🌙 (Emócie)</h3>
+      <p>Mesiac predstavuje váš vnútorný svet, vaše inštinkty a vaše podvedomie. Určuje, ako reagujete, keď ste zranení, hladní alebo unavení. Odpovedá na otázku: <em>„Čo potrebujem, aby som sa cítil bezpečne?“</em></p>
 
-      <h3>3. The Ascendant / Rising Znamenie 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Ascendent / Vychádzajúce znamenie 🏹 (Maska)</h3>
+      <p>Ascendent je znamenie zverokruhu, ktoré vychádzalo na východnom horizonte, keď ste sa narodili. Je to vaše „rozhranie“ so svetom. Určuje váš fyzický vzhľad, váš štýl a prvý dojem. Odpovedá na otázku: <em>„Ako ma vidia ostatní?“</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Planéty: Vnútorné vs. Vonkajšie</h2>
+      <p>Pri <strong>čítaní pôrodnej mapy</strong> sú planéty hercami, ktorí hrajú roly v príbehu vášho života.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Osobné planéty (rýchlo sa pohybujúce)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkúr ☿️:</strong> Posol. Ovláda váš intelekt, reč a logiku. Merkúr v Blížencoch vyjednáva inak ako Merkúr v Rybách.</li>
+        <li><strong>Venuša ♀:</strong> Milenka. Ovláda príťažlivosť, umenie a peniaze. Ukazuje, čo si ceníte a ako zvádzate.</li>
+        <li><strong>Mars ♂:</strong> Bojovník. Ovláda akciu, hnev a libido. Ukazuje, ako bojujete za to, čo chcete.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Spoločenské a vonkajšie planéty (pomaly sa pohybujúce)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> Guru. Kde nachádzate šťastie, expanziu a zmysel.</li>
+        <li><strong>Saturn ♄:</strong> Dozorca. Kde čelíte obmedzeniam, strachu, ale nakoniec aj majstrovstvu prostredníctvom tvrdej práce.</li>
+        <li><strong>Urán ♅, Neptún ♆, Pluto ♇:</strong> Generačné planéty. Pohybujú sa tak pomaly, že formujú celé generácie a ovplyvňujú vás na hlbokej, podvedomej úrovni spojenej s evolúciou a karmou.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Javisko: 12 domov</h2>
+      <p>Mapa je rozdelená na 12 „domov“, podobne ako kúsky pizze. Každý dom spravuje špecifickú oblasť života. To, kde planéta sedí, vám povie, <em>kde</em> sa jej energia prejaví.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>1. dom:</strong> Ja, telo, vzhľad.</li>
+        <li><strong>2. dom:</strong> Peniaze, majetok, hodnoty.</li>
+        <li><strong>3. dom:</strong> Komunikácia, súrodenci, krátke cesty.</li>
+        <li><strong>4. dom:</strong> Domov, rodina, korene.</li>
+        <li><strong>5. dom:</strong> Kreativita, romantika, deti.</li>
+        <li><strong>6. dom:</strong> Denná rutina, zdravie, služba.</li>
+        <li><strong>7. dom:</strong> Manželstvo, partnerstvá, otvorení nepriatelia.</li>
+        <li><strong>8. dom:</strong> Smrť, sex, peniaze iných ľudí.</li>
+        <li><strong>9. dom:</strong> Filozofia, cestovanie, vysokoškolské vzdelanie.</li>
+        <li><strong>10. dom:</strong> Kariéra, imidž na verejnosti, odkaz.</li>
+        <li><strong>11. dom:</strong> Priatelia, siete, nádeje/priania.</li>
+        <li><strong>12. dom:</strong> Podvedomie, tajomstvá, duchovnosť.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspekty: Vesmírna konverzácia</h2>
+      <p>Planéty nefungujú izolovane. Vytvárajú geometrické uhly nazývané „aspekty“. Tieto čiary spájajú hercov vo vašej mape.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Mäkké aspekty (Trín, Sextil):</strong> Sú to dary. Planéty si navzájom pomáhajú. Veci tu idú ľahko – niekedy až príliš ľahko, čo vedie k lenivosti.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Tvrdé aspekty (Kvadrát, Opozícia):</strong> Sú to výzvy. Planéty bojujú alebo sa navzájom blokujú. Avšak tieto trecie body vytvárajú energiu potrebnú pre veľké úspechy. Väčšina úspešných ľudí má mapy plné kvadrátov!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Uzly osudu</h2>
+      <p>Nakoniec hľadajte symboly konskej podkovy. <strong>Severný uzol</strong> predstavuje váš osud – smer, ktorým sa vaša duša chce v tomto živote vydať. Pôsobí to neisto a novo. <strong>Južný uzol</strong> je váš minulý život (alebo rané detstvo) – pôsobí povedome a ľahko, ale zotrvávanie v ňom vedie k stagnácii.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Interpretácia je umenie</h3>
+      <p>Čítanie pôrodnej mapy je ako počúvanie symfónie. Môžete izolovať husle (Venuša), ale kúzlo je v celom orchestri hrajúcom spolu. V Astralo používame pokročilú AI trénovanú na storočiach astrologických múdrostí, aby sme syntetizovali tieto milióny premenných do jasného a čitateľného príbehu o VÁS.
     `
 };

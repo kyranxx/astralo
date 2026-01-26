@@ -1,41 +1,51 @@
 /**
- * history-of-astrology - HI
+ * ज्योतिष का इतिहास: प्राचीन बेबीलोन से आधुनिक AI तक - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
-    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
-    category: "Astrology Basics",
-    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
-    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
-    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
-    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
-    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
-    content: `
-      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
-      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
+  title: '🏛️ ज्योतिष का इतिहास: प्राचीन बेबीलोन से आधुनिक AI तक',
+  excerpt: 'ज्योतिष की 5,000 साल की रोमांचक यात्रा का अन्वेषण करें। जानें कि कैसे प्राचीन सभ्यताओं ने सितारों का उपयोग किया और यह एक आधुनिक मनोवैज्ञानिक उपकरण में कैसे विकसित हुआ।',
+  category: 'ज्योतिष की बुनियादी बातें',
+  metaDescription: 'ज्योतिष की 5,000 साल की रोमांचक यात्रा। जानें कैसे बेबीलोन से शुरू होकर ज्योतिष आज AI और मनोविज्ञान का हिस्सा बन गया है।',
+  keywords: 'ज्योतिष का इतिहास, प्राचीन ज्योतिष, बेबीलोन ज्योतिष, यूनानी ज्योतिष, राशि चक्र का इतिहास, ज्योतिष की उत्पत्ति',
+  quickSummary: [
+    'ज्योतिष की शुरुआत 4,000 साल से भी पहले मेसोपोटामिया (प्राचीन बेबीलोन) में हुई थी।',
+    'आज हम जिस राशि चक्र का उपयोग करते हैं, उसे लगभग 2,000 साल पहले यूनानियों द्वारा मानकीकृत किया गया था।',
+    '17वीं शताब्दी तक ज्योतिष और खगोल विज्ञान को एक ही विज्ञान माना जाता था।',
+    'आज, ज्योतिष का उपयोग राजाओं की मृत्यु की भविष्यवाणी करने के बजाय मनोवैज्ञानिक अंतर्दृष्टि के लिए अधिक किया जाता है।'
+  ],
+  keyTakeaways: [
+    'प्राचीन संस्कृतियों ने कृषि और राजनीतिक उत्तरजीविता के लिए ज्योतिष का उपयोग किया।',
+    'तर्क के युग (Age of Reason) ने अस्थायी रूप से ज्योतिष को अंधविश्वास की छाया में धकेल दिया।',
+    'कार्ल जुंग ने मनोविज्ञान के माध्यम से ज्योतिष को मुख्यधारा की विचारधारा में वापस लाया।',
+    'AI तकनीक अब पहले से कहीं अधिक सटीक गणना की अनुमति दे रही है।'
+  ],
+  tableOfContents: [
+    { id: 'ancient-origins', title: 'सितारों का पालना: बेबीलोन' },
+    { id: 'greek-influence', title: 'यूनानी क्रांति' },
+    { id: 'scientific-divorce', title: 'वैज्ञानिक अलगाव' },
+    { id: 'jungian-rebirth', title: 'मनोविज्ञान और 20वीं सदी' },
+    { id: 'future-astrology', title: 'भविष्य: AI और बिग डेटा' }
+  ],
+  content: `
+      <h2 id="ancient-origins">सितारों का पालना: बेबीलोन</h2>
+      <p>ज्योतिष की कहानी मेसोपोटामिया के उपजाऊ अर्धचंद्र से शुरू होती है। लगभग 5,000 साल पहले, बेबीलोन के पुजारियों ने सितारों की गति और नदियों की बाढ़ या मौसम के बदलाव के बीच एक संबंध देखा। वे आकाश को खंडों में विभाजित करने वाले पहले व्यक्ति थे।</p>
       
-      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>राशि चक्र</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
+      <p>5वीं शताब्दी ईसा पूर्व तक, बेबीलोनियों ने <strong>राशि चक्र</strong> की पहली अवधारणा विकसित कर ली थी, जिसमें सूर्य के पथ को नक्षत्रों के आधार पर बारह समान राशियों में विभाजित किया गया था।</p>
 
-      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
-      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
+      <h2 id="greek-influence">यूनानी क्रांति: प्रतिपादित ज्योतिष</h2>
+      <p>जब ज्योतिष हेलेनिस्टिक दुनिया (प्राचीन यूनान और मिस्र) में पहुँचा, तो इसमें एक बड़ा बदलाव आया। यूनानियों ने <strong>लग्न (Rising Sign)</strong> और <strong>भाव प्रणाली</strong> को जोड़ा। इससे पहली "जन्म कुंडली"—एक विशिष्ट व्यक्ति के जन्म के लिए आकाश का नक्शा—बनाना संभव हुआ।</p>
       
-      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
+      <p>पुरातन ग्रंथों में आज हम जिन राशियों, तत्वों और दृष्टियों का उपयोग करते हैं, उनके अधिकांश तर्क संहिताबद्ध किए गए थे।</p>
 
-      <h2 id="scientific-divorce">The Scientific Divorce</h2>
-      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
-      
-      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
+      <h2 id="scientific-divorce">वैज्ञानिक अलगाव</h2>
+      <p>मानव इतिहास के अधिकांश समय तक, <strong>ज्योतिष</strong> और <strong>खगोल विज्ञान</strong> एक ही चीज थे। जोहान्स केप्लर और गैलीलियो गैलीली जैसे महान वैज्ञानिक भी पेशेवर ज्योतिषी थे। हालाँकि, 17वीं सदी के ज्ञानोदय के दौरान, दोनों क्षेत्र अलग हो गए।</p>
 
-      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
-      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
-      
-      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
+      <h2 id="jungian-rebirth">मनोविज्ञान और 20वीं सदी</h2>
+      <p>ज्योतिष की 20वीं सदी की वापसी एक आश्चर्यजनक स्रोत से हुई: मनोविज्ञान। विश्लेषणात्मक मनोविज्ञान के जनक <strong>कार्ल जुंग</strong> ने जन्म कुंडलियों का अध्ययन किया और <em>सिक्रोनिसिटी</em> का सिद्धांत विकसित किया। उन्होंने राशि चक्र को सार्वभौमिक आर्केटाइप्स के संग्रह के रूप में देखा।</p>
 
-      <h2 id="future-astrology">The Future: AI & Big Data</h2>
-      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
-      
-      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
+      <h2 id="future-astrology">भविष्य: AI और बिग डेटा</h2>
+      <p>Astralo में, हम इस 5,000 साल पुरानी विरासत को अत्याधुनिक मशीन लर्निंग के साथ जोड़ते हैं ताकि आपको मानव इतिहास में सबसे सटीक और व्यावहारिक मार्गदर्शन प्रदान किया जा सके।</p>
     `
 };

@@ -1,101 +1,115 @@
 /**
- * daily-horoscope-guide - TR
+ * Günlük Burç Yorumları Rehberi - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.", 
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}], 
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ Günlük Burç Yorumları 2026: Tahminlerinizi Anlamak İçin Nihai Rehber",
+  excerpt: "Günlük burç tahminlerinizde uzmanlaşın. Günlük astrolojinin nasıl çalıştığı, Yükselen burcunuzun neden önemli olduğu ve başarı için gezegensel enerjiyi nasıl kullanacağınız hakkında kapsamlı bir rehber.",
+  category: "Astroloji 101",
+  metaDescription: "Günlük burç tahminlerinizde uzmanlaşın. Günlük astrolojinin nasıl çalıştığı, Yükselen burcunuzun neden önemli olduğu ve başarı için gezegensel enerjiyi nasıl kullanacağınız hakkında kapsamlı bir rehber.",
+  keywords: "günlük burç yorumları, bugün burcum ne diyor, günlük zodyak, burç rehberi, astrolojiyi anlamak, günlük yükselen burç, gezegensel transitler",
+  quickSummary: [
+    "Günlük burç yorumları, hızlı hareket eden Ay ve gezegenlerin haritanıza yaptığı açılarla belirlenir.",
+    "Sadece Güneş burcunuzu değil, Yükselen burcunuzu (Ascendant) okumak genellikle daha doğru günlük öngörüler sağlar.",
+    "Gezegensel transitler her gün belirli olayları, duyguları ve fırsatları tetikler.",
+    "Boşluktaki Ay (Void-of-Course) dönemlerini öğrenerek enerjinizi boşa harcamaktan kurtulun."
+  ],
+  keyTakeaways: [
+    "Güneş burcunuz öz enerjinizi gösterir, ancak Yükselen burcunuz günlük hayatınızın „sahnesini“ kurar.",
+    "Ay yaklaşık 2,5 günde bir burç değiştirerek kolektif ruh halini belirler.",
+    "Merkür Retrosu ve diğer „zorlu“ açılar aslında gözden geçirme ve yeniden yapılanma dönemleridir.",
+    "Astrolojiyi sabah rutininize dahil etmek, üretkenliğinizi ve ilişkilerinizi optimize edebilir."
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "Neden Günlük Burç Okumalıyız?" },
+    { id: "science-behind-it", title: "Mekanizma: Nasıl Çalışır?" },
+    { id: "rising-vs-sun", title: "Altın Kural: Güneş vs Yükselen" },
+    { id: "planetary-players", title: "Kilit Gezegensel Oyuncular" },
+    { id: "zodiac-daily-styles", title: "12 Burcun Günlük Stilleri" },
+    { id: "practical-rituals", title: "Günlük Astrolojik Ritüeller" },
+    { id: "myth-busting", title: "Yaygın Mitlerin Çürütülmesi" }
+  ],
+  content: `
+      <h2 id="introduction">Neden Günlük Burç Okumalıyız?</h2>
+      <p>Dünya çapında milyonlarca insan için <strong>günlük burç yorumlarını</strong> kontrol etmek, sabah kahvesi kadar vazgeçilmezdir. Bu bir duraklama anı, bir öz-düşünüm ritüeli ve günün enerjisine hazırlanma yoludur. Peki bu tahminlerin arkasında ne olduğunu hiç merak ettiniz mi? Sadece rastgele tavsiyeler mi, yoksa perde arkasında işleyen karmaşık bir kozmik saat mi var?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Astralo'da astrolojinin bir güçlendirme aracı olduğuna inanıyoruz. İyi yazılmış bir burç yorumu sadece geleceği tahmin etmez; onu <em>yaratmanıza</em> yardımcı olur. Kozmik hava durumunu — gezegenlerin bugün, doğduğunuz zamana göre nerede olduğunu — anlayarak, zorlukları zarafetle aşabilir ve aksi takdirde kaçırabileceğiniz fırsatları yakalayabilirsiniz.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">Mekanizma: Nasıl Çalışır?</h2>
+      <p>Astroloji genellikle döngülerin incelenmesi olarak adlandırılır. <strong>Günlük burç tahminleriniz</strong> „transitler“ adı verilen bir teknikle hesaplanır. Doğum haritanızın, doğum anınızdaki gökyüzünün kalıcı bir fotoğrafı olduğunu hayal edin. Gezegenler ise hareket etmeye devam eder. „Transitler“, gökyüzündeki hareketli bir gezegenin doğum haritanızdaki bir gezegene matematiksel bir açı yapmasıyla oluşur.</p>
       
-      <h3>The Ay: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Ay</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>Ay: Kaderin Dakika İbresi</h3>
+      <p>Jüpiter gibi gezegenlerin burç değiştirmesi bir yıl sürerken, <strong>Ay</strong> inanılmaz derecede hızlı hareket eder ve bir burcu yaklaşık 2,5 günde geçer. Bu, Ay'ı <em>günlük</em> ruh halinizin ve duygusal manzaranızın birincil itici gücü yapar. Ay ateşli Koç burcundayken kendimizi fevri ve enerjik hissederiz. Toprak burcu Boğa'ya geçtiğinde ise hepimiz yavaşlar ve konfor ararız.</p>
 
-      <h3>The Aspects: Conversations Between Gezegens</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>Açılar: Gezegenler Arası Sohbetler</h3>
+      <p>Gezegenler birbirleriyle açılar aracılığıyla „konuşurlar“. <strong>Trine (Üçgen - 120°)</strong> uyumlu bir sohbettir, kolaylık ve şans getirir. <strong>Square (Kare - 90°)</strong> bir gerilim noktasıdır, eylem veya karar almaya zorlar. Günlük burcunuz bu konuşmaları yorumlar. Eğer gökyüzünde Mars (eylem) ile Satürn (kısıtlama) kare yapıyorsa, bugün kendinizi engellenmiş hissedebilirsiniz. Bunu bilmek, açılmayan bir kapıyı zorlamak yerine sabırlı olmanıza yardımcı olur.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Yükselen Burç</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">Altın Kural: Yükselen Burcunuza Göre Okuyun</h2>
+      <p>İşte profesyonel astrologların bildiği sır: <strong>En doğru günlük tahmin için sadece Güneş burcunuzu değil, Yükselen burcunuzu (Ascendant) okumalısınız.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>Neden? Çünkü burç yorumları bir „Ev Sistemi“ kullanılarak yazılır. Yükselen burcunuz, haritanızdaki 12 evin düzenini belirler. 1. ev „Siz“siniz, 2. ev paradır, 7. ev ilişkilerdir ve bu böyle devam eder. Bir astrolog „Koçlar bugün nakit fırsatı yakalayacak“ yazdığında, aslında bir Koç Yükselen haritasının 2. evindeki hareketlere bakıyordur.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>Güneş Burcunuzu</strong> ego, yaşamsal enerji ve öz amacınızla ilgili genel temalar için okuyun.</li>
+        <li><strong>Yükselen Burcunuzu</strong> bugün başınıza gelecek spesifik olaylar, zamanlamalar ve koşullar için okuyun.</li>
+        <li><strong>Ay Burcunuzu</strong> ise içsel duygusal durumunuzu anlamak istiyorsanız okuyun.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Gezegenary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">Gününüzdeki Kilit Gezegensel Oyuncular</h2>
+      <p>Ay'ın ötesinde, diğer hızlı hareket eden „kişisel gezegenler“ günlük deneyiminizi şekillendirir:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>Merkür:</strong> İletişim, teknoloji ve seyahat yöneticisi. E-postalarınızın doğru yere gidip gitmediğini veya işe gidiş yolunuzun akıcı mı yoksa kaotik mi olacağını o belirler.</li>
+        <li><strong>Venüs:</strong> Aşk, para ve değerlerin yöneticisi. İyi bir Venüs günü randevular, alışveriş veya zam istemek için mükemmeldir.</li>
+        <li><strong>Mars:</strong> Zodyak'ın motoru. Enerji seviyenizi ve dürtülerinizi belirler. Zorlu bir Mars günü, eğer egzersiz veya sıkı çalışmaya yönlendirilmezse tartışmalara yol açabilir.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Burçs</h2>
+      <h2 id="zodiac-daily-styles">12 Burcun Günlük Stilleri</h2>
       
-      <h3>♈ Koç (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ Koç (21 Mart - 19 Nisan)</h3>
+      <p><strong>Mars tarafından yönetilir.</strong> Günlük enerjiyi işlemek için fiziksel harekete ihtiyacınız vardır. Bir Koç burcu yorumu genellikle girişimlere ve çözülmesi gereken çatışmalara odaklanır. <em>Günlük alışkanlık:</em> Sabah kardiyosu.</p>
 
-      <h3>♉ Boğa (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ Boğa (20 Nisan - 20 Mayıs)</h3>
+      <p><strong>Venüs tarafından yönetilir.</strong> Günü duyularınız aracılığıyla işlersiniz. Tahminleriniz genellikle finansal adımları ve fiziksel konforu vurgular. <em>Günlük alışkanlık:</em> Özenli bir kahvaltı.</p>
 
-      <h3>♊ İkizler (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ İkizler (21 Mayıs - 20 Haziran)</h3>
+      <p><strong>Merkür tarafından yönetilir.</strong> Bilgi sizin yakıtınızdır. Günlük tahmininiz sohbetler, öğrenme ve kısa geziler etrafında döner. <em>Günlük alışkanlık:</em> Günlük tutmak veya sabah podcast dinlemek.</p>
 
-      <h3>♋ Yengeç (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ Yengeç (21 Haziran - 22 Temmuz)</h3>
+      <p><strong>Ay tarafından yönetilir.</strong> En döngüsel burç sizsiniz. Okumanız genellikle ev, aile ve duygusal güvenliğe odaklanır. <em>Günlük alışkanlık:</em> Sevdiklerinizle kısa bir hal hatır sorma.</p>
 
-      <h3>♌ Aslan (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ Aslan (23 Temmuz - 22 Ağustos)</h3>
+      <p><strong>Güneş tarafından yönetilir.</strong> Kendinizi ifade etmeye ihtiyacınız var. Aslanlar günlerinde yaratıcılık, romantizm ve tanınma temalarını bulurlar. <em>Günlük alışkanlık:</em> Özgüvenli hissettirecek bir kıyafet seçimi.</p>
 
-      <h3>♍ Başak (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ Başak (23 Ağustos - 22 Eylül)</h3>
+      <p><strong>Merkür tarafından yönetilir.</strong> Düzen size huzur getirir. Tahminleriniz iş görevlerine ve sağlık rutinlerine işaret eder. <em>Günlük alışkanlık:</em> Yapılacaklar listesi hazırlamak.</p>
 
-      <h3>♎ Terazi (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ Terazi (23 Eylül - 22 Ekim)</h3>
+      <p><strong>Venüs tarafından yönetilir.</strong> Denge anahtardır. Ilişkilerde uyum ararsınız. Günlük içgörülerin genellikle ortaklıklara ve estetiğe odaklanır. <em>Günlük alışkanlık:</em> Meditasyon.</p>
 
-      <h3>♏ Akrep (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ Akrep (23 Ekim - 21 Kasım)</h3>
+      <p><strong>Plüton ve Mars tarafından yönetilir.</strong> Derinlik ararsınız. Tahminiz dönüşüm, sırlar ve paylaşılan kaynakları vurgular. <em>Günlük alışkanlık:</em> Derin araştırma veya özel tefekkür.</p>
 
-      <h3>♐ Yay (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ Yay (22 Kasım - 21 Aralık)</h3>
+      <p><strong>Jüpiter tarafından yönetilir.</strong> Genişlemeye açsınız. Gününüz felsefe veya yabancı etkilerle ilgili olabilir. <em>Günlük alışkanlık:</em> Tamamen yeni bir şey öğrenmek.</p>
 
-      <h3>♑ Oğlak (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ Oğlak (22 Aralık - 19 Ocak)</h3>
+      <p><strong>Satürn tarafından yönetilir.</strong> Bir miras inşa ediyorsunuz. Sizin için günlük temalar kariyer ve itibar üzerinedir. <em>Günlük alışkanlık:</em> En zor görevi ilk önce yapmak.</p>
 
-      <h3>♒ Kova (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ Kova (20 Ocak - 18 Şubat)</h3>
+      <p><strong>Uranüs ve Satürn tarafından yönetilir.</strong> Geleceğe bakarsınız. Tahmininiz sosyal ağları ve yeniliği vurgular. <em>Günlük alışkanlık:</em> Topluluğunuzla bağlantı kurmak.</p>
 
-      <h3>♓ Balık (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ Balık (19 Şubat - 20 Mart)</h3>
+      <p><strong>Neptün ve Jüpiter tarafından yönetilir.</strong> Dünyalar arasında sürüklenirsiniz. Rehberliğiniz manevi, sanatsal veya sezgiseldir. <em>Günlük alışkanlık:</em> Rüyaları kaydetmek.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">Günlük Astrolojik Ritüeller</h2>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>Sabah Kontrolü:</strong> E-postalarınıza bakmadan <em>önce</em> burcunuzu okuyun. Bu kozmik bir niyet belirler.</li>
+        <li><strong>Ay Burcuna Dikkat:</strong> Ay Başak'taysa masanızı temizleyin. Terazi'deyse iş ortağınızı arayın.</li>
+        <li><strong>Boşluktaki Ay'a Saygı:</strong> Ay boşluktayken bulanıklık hakimdir. Önemli sözleşme imzalamayın, sadece dinlenin.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
-      
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h2 id="myth-busting">Yaygın Mitlerin Çürütülmesi</h2>
+      <p><strong>„Burç yorumları çok belirsizdir.“</strong> <br>Sadece Güneş burcuna bakan yorumlar belirsizdir. Astralo'daki gibi kişiselleştirilmiş bir okuma, tüm haritanızın nüanslarını hesaba katar.</p>
+      <p><strong>„Astroloji değişmez bir kaderi tahmin eder.“</strong> <br>Yanlış. Astroloji <em>enerjiyi</em> ve <em>hava durumunu</em> tahmin eder. Yağmur yağabilir (zor bir transit), ancak şemsiye taşıyıp taşımamaya siz karar verirsiniz.</p>
     `
 };

@@ -1,80 +1,97 @@
 /**
- * birth-chart-reading-explained - TR
+ * Doğum Haritası Yorumlama - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.", 
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}], 
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Doğum Haritası Yorumlama: Kozmik Haritanız İçin Kapsamlı Rehber",
+  excerpt: "Nihai doğum haritası yorumlama rehberimizle kişiliğinizin sırlarını çözün. Gezegenleri, evleri, açıları ve Kader Düğümlerini bir uzman gibi yorumlamayı öğrenin.",
+  category: "Astroloji Temelleri",
+  metaDescription: "Nihai doğum haritası yorumlama rehberimizle kişiliğinizin sırlarını çözün. Gezegenleri, evleri, açıları ve Kader Düğümlerini bir uzman gibi yorumlamayı öğrenin.",
+  keywords: "doğum haritası, natal harita, astroloji haritası, büyük üçlü astroloji, yükselen burç, ay burcu, astroloji evleri, gezegensel açılar, doğum haritamı oku",
+  quickSummary: [
+    "Doğum haritanız, doğduğunuz tam andaki gökyüzünün 360 derecelik bir ekran görüntüsüdür.",
+    "„Büyük Üçlü“ (Güneş, Ay, Yükselen) kişiliğinizin temel sacayağını oluşturur.",
+    "12 Ev olayların „nerede“ gerçekleştiğini, Gezegenler ise „ne“ olduğunu açıklar.",
+    "Açılar (gezegenleri birbirine bağlayan çizgiler) içsel çatışmalarınızı ve özel yeteneklerinizi ortaya çıkarır."
+  ],
+  keyTakeaways: [
+    "Yükselen Burç (Ascendant), öngörü için genellikle Güneş burcundan daha doğrudur.",
+    "Sert açılar (Kare, Karşıt), dayanıklılık yoluyla en başarılı insanları yaratır.",
+    "Kuzey Düğümü, ruhunuzun bu yaşamdaki karmik yönünü ortaya koyar.",
+    "Bilgisayar tarafından oluşturulan raporlar harikadır, ancak insan nüansı yeri doldurulamazdır."
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Ruhunuzun Taslağı" },
+    { id: "the-big-three", title: "Büyük Üçlü: Güneş, Ay, Yükselen" },
+    { id: "the-planets", title: "Gezegenler: İçsel ve Dışsal" },
+    { id: "the-houses", title: "12 Evin Durumu" },
+    { id: "aspects", title: "Açılar: Kozmik Sohbet" },
+    { id: "nodes", title: "Kader Düğümleri" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Ruhunuzun Taslağı</h2>
+      <p>Hiç burcunuzun tanımına tam olarak uymadığınızı hissettiniz mi? „Aslan'ım ama ilgi odağı olmaktan nefret ediyorum!“ gibi. Bunun nedeni muhtemelen <strong>doğum haritanızda</strong> (ya da natal haritanızda) gizlidir. Güneş burcunuz önemli olsa da, devasa ve karmaşık bir denklemdeki tek bir değişkendir.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Doğum haritası, doğduğunuz tam saat, tarih ve konuma göre hesaplanan bir gökyüzü haritasıdır. Sizi evrenin merkezine yerleştirir ve gezegenleri etrafınıza dizer. Bunu „Kozmik DNA'nız“ olarak düşünün — sadece size ait olan benzersiz bir talimatlar, yetenekler, zorluklar ve potansiyeller bütünüdür.</p>
 
-      <h2 id="the-big-three">The Big Three: Güneş, Ay, Yükselen</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Büyük Üçlü: Güneş, Ay, Yükselen</h2>
+      <p>Karmaşık geometriye dalmadan önce, her astroloji öğrencisi „Büyük Üçlü“sünü öğrenmelidir. Bu üç nokta kişiliğinizin büyük bir kısmını belirler.</p>
       
-      <h3>1. The Güneş ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Güneş ☀️ (Kimlik)</h3>
+      <p>Güneş bilinçli egonuzu, „ben“liğinizi temsil eder. Yakıtınız, itici gücünüz ve yaydığınız enerjik frekanstır. Şu soruya cevap verir: <em>„Özümde ben kimim?“</em></p>
 
-      <h3>2. The Ay 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Ay 🌙 (Duygular)</h3>
+      <p>Ay iç dünyanızı, içgüdülerinizi ve bilinçaltınızı temsil eder. Kırıldığınızda, acıktığınızda veya yorulduğunuzda nasıl tepki vereceğinizi belirler. Şu soruya cevap verir: <em>„Güvende hissetmek için neye ihtiyacım var?“</em></p>
 
-      <h3>3. The Ascendant / Yükselen Burç 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Yükselen Burç 🏹 (Maske)</h3>
+      <p>Yükselen burç (Ascendant), doğduğunuz anda Doğu ufkunda yükselen zodyak burcudur. Dünyayla olan „arayüzünüz“ dür. Fiziksel görünüşünüzü, stilinizi ve ilk izleniminizi belirler. Şu soruya cevap verir: <em>„Başkaları beni nasıl görüyor?“</em></p>
 
-      <h2 id="the-planets">The Gezegens: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Gezegenler: İçsel ve Dışsal</h2>
+      <p><strong>Doğum haritası yorumlamasında</strong> gezegenler, hayatınızın öyküsünde roller üstlenen aktörlerdir.</p>
       
-      <h3>The Personal Gezegens (Fast Moving)</h3>
+      <h3>Kişisel Gezegenler (Hızlı Hareket Edenler)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkür ☿️:</strong> Haberci. Zekanızı, konuşmanızı ve mantığınızı yönetir.</li>
+        <li><strong>Venüs ♀:</strong> Âşık. Çekimi, sanatı ve parayı yönetir. Neye değer verdiğinizi gösterir.</li>
+        <li><strong>Mars ♂:</strong> Savaşçı. Eylemi, öfkeyi ve libidoyu yönetir. İstediğiniz şey için nasıl savaştığınızı gösterir.</li>
       </ul>
 
-      <h3>The Social & Outer Gezegens (Slow Moving)</h3>
+      <h3>Sosyal ve Dış Gezegenler (Yavaş Hareket Edenler)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jüpiter ♃:</strong> Guru. Şansı, genişlemeyi ve anlamı bulduğunuz yerdir.</li>
+        <li><strong>Satürn ♄:</strong> Disiplin Ustası. Kısıtlamalarla karşılaştığınız ancak sıkı çalışmayla ustalık kazandığınız yerdir.</li>
+        <li><strong>Uranüs, Neptün, Plüton:</strong> Nesiller boyu süren gezegenler. Bunlar o kadar yavaş hareket ederler ki tüm nesilleri şekillendirirler; evrim ve karma ile ilgili derin bilinçaltı seviyenizi etkilerler.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Evs</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Sahne: 12 Ev</h2>
+      <p>Harita, pizza dilimleri gibi 12 „Eve“ bölünmüştür. Her bir ev hayatın belirli bir alanını yönetir. Bir gezegenin nerede oturduğu, enerjisinin <em>nerede</em> tezahür edeceğini söyler.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>1. Ev:</strong> Benlik, Beden, Görünüm.</li>
+        <li><strong>2. Ev:</strong> Para, Varlıklar, Değerler.</li>
+        <li><strong>3. Ev:</strong> İletişim, Kardeşler, Kısa Geziler.</li>
+        <li><strong>4. Ev:</strong> Ev, Aile, Kökler.</li>
+        <li><strong>5. Ev:</strong> Yaratıcılık, Romantizm, Çocuklar.</li>
+        <li><strong>6. Ev:</strong> Günlük Rutin, Sağlık, Hizmet.</li>
+        <li><strong>7. Ev:</strong> Evlilik, Ortaklıklar, Açık Düşmanlar.</li>
+        <li><strong>8. Ev:</strong> Ölüm, Seks, Başkalarının Parası.</li>
+        <li><strong>9. Ev:</strong> Felsefe, Seyahat, Yüksek Öğrenim.</li>
+        <li><strong>10. Ev:</strong> Kariyer, Toplumsal İmaj, Miras.</li>
+        <li><strong>11. Ev:</strong> Arkadaşlar, Sosyal Ağlar, Umutlar.</li>
+        <li><strong>12. Ev:</strong> Bilinçaltı, Sırlar, Maneviyat.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Açılar: Kozmik Sohbet</h2>
+      <p>Gezegenler tek başlarına çalışmazlar. „Açılar“ adı verilen geometrik açılar oluştururlar. Bu çizgiler haritanızdaki aktörleri birbirine bağlar.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Yumuşak Açılar (Trine, Sextile):</strong> Bunlar yeteneklerdir. Gezegenler birbirine yardım eder. Bir şeyler kolayca gerçekleşir.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Sert Açılar (Square, Opposition):</strong> Bunlar zorluklardır. Gezegenler birbirleriyle savaşır veya birbirlerini engellerler. Ancak bu sürtünme noktaları, yüksek başarı için gereken enerjiyi yaratır. Çoğu başarılı insanın haritası Kare açılarla doludur!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Kader Düğümleri</h2>
+      <p>Son olarak, at nalı sembollerine bakın. <strong>Kuzey Düğümü</strong> kaderinizi temsil eder — ruhunuzun bu yaşamda gitmek istediği yön. Rahatsız edici ve yeni hissettirir. <strong>Güney Düğümü</strong> ise geçmiş yaşamınızdır (veya erken çocukluk) — tanıdık ve kolay hissettirir ancak orada kalmak durgunluğa yol açar.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Yorum bir sanattır</h3>
+      <p>Bir doğum haritasını okumak, bir senfoniyi okumak gibidir. Kemanları (Venüs) izole edebilirsiniz ama asıl sihir tüm orkestranın birlikte çalmasındadır. Astralo'da, yüzyılların astrolojik bilgeliğiyle eğitilmiş yapay zekamızı kullanarak bu milyonlarca değişkeni sizin için net ve okunabilir bir hikayeye dönüştürüyoruz.</p>
     `
 };

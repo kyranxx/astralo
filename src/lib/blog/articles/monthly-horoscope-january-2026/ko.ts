@@ -1,69 +1,62 @@
 /**
- * monthly-horoscope-january-2026 - KO
+ * 2026년 1월 월간 운세: 새로운 시대의 서막 - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 2026년 1월 월간 운세: 새로운 시대의 서막',
+  excerpt: '2026년 1월 전체 점성술 예보. 양자리부터 물고기자리까지, 물병자리 명왕성 입궁, 사랑, 직업, 금전운을 포함한 상세한 월간 운세입니다.',
+  category: '월간 운세',
+  metaDescription: '2026년 1월 전체 점성술 예보. 양자리부터 물고기자리까지, 물병자리 명왕성 입궁, 사랑, 직업, 금전운을 포함한 상세한 월간 운세입니다.',
+  keywords: '월간 운세, 2026년 1월 점성술, 월간 예측, 1월 별자리 운세, 물병자리 명왕성, 염소자리 신월, 게자리 만월',
+  quickSummary: [
+    '2026년 1월은 명왕성이 물병자리에 자리를 잡으며 거대한 사회적 변화의 신호를 보냅니다.',
+    '1월 1일 염소자리 신월은 "새해 결심"을 세우기에 완벽한 우주적 에너지입니다.',
+    '수성 역행의 여파는 1월 15일에 완전히 해소되어 소통이 원활해집니다.',
+    '게자리에서 역행하는 화성은 해결되지 않은 가족 간의 갈등을 표면으로 끌어올릴 수 있습니다.'
+  ],
+  keyTakeaways: [
+    '1월 첫째 주에는 전략적인 계획만 세우고, 실제 행동은 월 중순까지 미루세요.',
+    '천왕성이 활성화됨에 따라 갑작스러운 기술적 돌파구나 혼란이 예상됩니다.',
+    '1월 14일 게자리 보름달을 전후로 관계에 대한 현실 점검이 이루어질 것입니다.',
+    '금융 시장이 변동적일 수 있으니 장기적이고 안전한 투자 원칙을 지키세요.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: '1월의 점성술 개요' },
+    { id: 'key-transits', title: '주요 날짜 및 트랜짓' },
+    { id: 'fire-signs', title: '불의 별자리 (양, 사자, 사수)' },
+    { id: 'earth-signs', title: '흙의 별자리 (황소, 처녀, 염소)' },
+    { id: 'air-signs', title: '공기의 별자리 (쌍둥이, 천칭, 물병)' },
+    { id: 'water-signs', title: '물의 별자리 (게, 전갈, 물고기)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026년 1월의 점성술</h2>
+      <p>새해 복 많이 받으세요! <strong>2026년 1월</strong>은 단순히 새로운 달력의 시작이 아닙니다. 점성술적으로는 새로운 시대의 서막이라 할 수 있습니다. <strong>명왕성이 완전히 물병자리</strong>에 정착함에 따라, 우리는 지난 15년(명왕성 염소자리 시기)의 하향식 구조에서 벗어나 혁신, 공동체 중심, 그리고 변화의 단계로 접어들고 있습니다.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>한 달의 시작은 1월 1일 <strong>염소자리 신월</strong>과 함께합니다. 이는 매우 드물고 상서로운 정렬입니다. 절제되고 장기적인 목표를 세우기에 환상적인 시기입니다. 다만 화성이 게자리에서 역행 중이므로 우리의 에너지는 다소 내면으로 향할 수 있습니다.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">주요 날짜 및 트랜짓</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1월 1일:</strong> 염소자리 신월 (의도 설정).</li>
+        <li><strong>1월 4일:</strong> 화성 사자자리 입궁 (자존심과 드라마 가중).</li>
+        <li><strong>1월 14일:</strong> 게자리 보름달 (감정적 해소).</li>
+        <li><strong>1월 20일:</strong> 태양 물병자리 입궁 (미래의 시즌).</li>
+        <li><strong>1월 29일:</strong> 천왕성 순행 시작 (갑작스러운 변화).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 불 별자리s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
-      
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
-      
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
-      
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <h2 id="fire-signs">🔥 불의 별자리 (양, 사자, 사수)</h2>
+      <p><strong>사자자리:</strong> 인간관계가 초점입니다. 옛 파트너나 친구가 다시 나타날 수 있습니다. 월 중순에는 혼자만의 시간이 필요할 수 있으니 에너지를 충전하세요.</p>
 
-      <h2 id="earth-signs">🌍 지구 별자리s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
-      
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
-      
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
-      
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <h2 id="earth-signs">🌍 흙의 별자리 (황소, 처녀, 염소)</h2>
+      <p><strong>염소자리:</strong> 생일 시즌을 축하합니다! 당신의 별자리에서 일어나는 신월은 당신만의 새해와 같습니다. 무엇을 원하는지 우주에 소리 내어 말해보세요.</p>
 
-      <h2 id="air-signs">💨 공기 별자리s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
-      
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
-      
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
-      
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <h2 id="air-signs">💨 공기의 별자리 (쌍둥이, 천칭, 물병)</h2>
+      <p><strong>물병자리:</strong> 당신의 순간입니다. 명왕성이 당신의 별자리에 머물며 당신은 메타모포시스(탈바꿈)를 겪고 있습니다. 외모, 이름, 혹은 직업 자체가 바뀔 수도 있습니다.</p>
 
-      <h2 id="water-signs">💧 물 별자리s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
-      
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
-      
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
-      
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <h2 id="water-signs">💧 물의 별자리 (게, 전갈, 물고기)</h2>
+      <p><strong>게자리:</strong> 14일 당신의 별자리에서 뜨는 보름달은 일년 중 감정적 정점을 찍는 날입니다. 낡은 껍질을 벗어던지세요.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">2026년 전체 운세 확인하기</h2>
+      <p>이 월간 개요는 빙산의 일각에 불과합니다. 각자 고유한 차트가 이러한 트랜짓과 다르게 상호작용하기 때문입니다. 2026년을 자신 있게 항해하려면 Astralo의 <strong>개인화 연간 리포트</strong>를 신청해 보세요.</p>
     `
 };

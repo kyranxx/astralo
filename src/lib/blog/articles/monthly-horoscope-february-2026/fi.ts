@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - FI
+ * Helmikuun 2026 kuukausihoroskooppi - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: "❤️ Helmikuun 2026 kuukausihoroskooppi: Vesimiehen innovaatiokausi",
+  excerpt: "Helmikuu 2026 tuo mukanaan selkeyden aallon, kun Merkurius on nyt suorassa. Selvitä, miten Leijonan täysikuu 3. helmikuuta ja Venus Kaloissa vaikuttavat rakkauselämääsi ja uraasi.",
+  category: "Horoskoper",
+  metaDescription: "Täydelliset astrologiset ennusteet helmikuulle 2026. Yksityiskohtaiset kuukausittaiset ennusteet kaikille tähtimerkeille, keskittyen Leijonan täysikuuhun ja Venuksen siirtymiseen Kaloihin.",
+  keywords: "kuukausihoroskooppi, helmikuun 2026 astrologia, kuukausittaiset ennusteet, helmikuun eläinrata, Vesimiehen kausi, täysikuu Leijonassa, Venus Kaloissa",
+  quickSummary: [
+    "Leijonan täysikuu 3. helmikuuta pyytää sinua astumaan näyttämölle ja ilmaisemaan todellista itseäsi.",
+    "Merkurius kääntyy vihdoin suoraksi, mikä selvittää tammikuun lopun väärinkäsitykset.",
+    "Venus siirtyy unelmoivaan Kalojen merkkiin, luoden vuoden romanttisimman energian.",
+    "Vesimiehen kausi ajaa meitä olemaan innovatiivisia ja murtamaan vanhentuneita perinteitä."
+  ],
+  keyTakeaways: [
+    "Käytä helmikuun ensimmäistä viikkoa luovien projektien käynnistämiseen tai imagosi uudistamiseen.",
+    "Ystävänpäivä on tänä vuonna erityisen maaginen Venuksen vahvan aseman ansiosta; suunnittele jotain henkistä ja syvällistä.",
+    "Odota äkillisiä oivalluksia teknologiasta tai yhteisöryhmistä kuun puolivälin tienoilla.",
+    "Yleiset horoskoopit ovat hyödyllisiä, mutta tarkkaan ajoitukseen tarvitset henkilökohtaiset transiittisi."
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: "Helmikuun 2026 yleiskatsaus" },
+    { id: 'key-transits', title: "Tärkeät päivämäärät ja transiitit" },
+    { id: 'fire-signs', title: "Tulimerkit (Oinas, Leijona, Jousimies)" },
+    { id: 'earth-signs', title: "Maamerkit (Härkä, Neitsyt, Kauris)" },
+    { id: 'air-signs', title: "Ilmamerkit (Kaksoset, Vaaka, Vesimies)" },
+    { id: 'water-signs', title: "Vesimerkit (Rapu, Skorpioni, Kalat)" },
+    { id: 'get-personal', title: "Miksi yleinen horoskooppi ei riitä" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Helmikuun 2026 astrologia</h2>
+      <p>Jos tammikuu oli vanhan vuoden karistelemista, <strong>helmikuu 2026</strong> kutsuu sinua ottamaan rohkeita askelia kohti tulevaa. Olemme <strong>Vesimiehen kauden</strong> sydämessä, mikä on rohkeutta, epätavallisuutta ja innovointia suosiva aika. Kollektiivinen tunnelma muuttuu kysymyksestä "miten selviän?" kysymykseen "miten luon itseni uudelleen?".</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Suuri uutinen on <strong>täysikuu Leijonassa 3. helmikuuta</strong>. Leijona pyytää meitä loistamaan. Se kysyy: "Missä piileksit turhaan?". Tämän valon alla piiloutuminen ei ole vaihtoehto. Merkuriuksen varjoajan päättyessä selkeys palaa viestintäämme. Sumu hälvenee.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Tärkeät päivämäärät ja transiitit</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3. helmikuuta:</strong> Täysikuu Leijonassa (Draama, intohimo, huipentuma).</li>
+        <li><strong>10. helmikuuta:</strong> Venus siirtyy Kaloihin (Ehdoton rakkaus, taide, fantasia).</li>
+        <li><strong>18. helmikuuta:</strong> Aurinko siirtyy Kaloihin (Unelmakausi alkaa).</li>
+        <li><strong>25. helmikuuta:</strong> Merkurius siirtyy Kaloihin (Logiikka liukenee intuitioon).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Tuli Merkkis (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Tulimerkit (Oinas, Leijona, Jousimies)</h2>
+      <p><strong>Teema: luova räjähdys.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Leijona:</strong> Tämä on sinun hetkesi. Täysikuu omassa merkissäsi asettaa sinut parrasvaloihin. Olipa kyseessä ylennys, ero tai suuri oivallus – se tapahtuu <em>nyt</em>. Älä pelkää tulla nähdyksi.</p>
+      <p><strong>Oinas:</strong> Sosiaalinen piirisi on rikkautesi tässä kuussa. Verkostoituminen tuo odottamatonta kultaa. Ystävästä voi tulla rakastaja tai liikekumppani.</p>
+      <p><strong>Jousimies:</strong> Janoat viisautta. Tammikuussa viivästyneet matkasuunnitelmat saavat vihdoin vihreää valoa. Varaa lippusi.</p>
 
-      <h2 id="earth-signs">🌍 Maa Merkkis (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Maamerkit (Härkä, Neitsyt, Kauris)</h2>
+      <p><strong>Teema: henkinen maadoittuminen.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Härkä:</strong> Kun Venus siirtyy Kaloihin, tunnet olosi harmonisemmaksi. Tämä on loistavaa aikaa romantiikalle, mutta myös anteeksiannolle itseäsi kohtaan menneistä virheistä. Päästä irti vanhoista kaunoista.</p>
+      <p><strong>Neitsyt:</strong> Keskity kumppanuuteen. Normaalisti olet se, joka auttaa, mutta anna jonkun muun auttaa <em>sinua</em> helmikuussa. Haavoittuvuus on kuukauden läksysi.</p>
+      <p><strong>Kauris:</strong> Talousasiat kohenevat, mutta ei vain kovan työn kautta. Intuitio ohjaa sijoituksiasi. Luota nälkäiseen tunteeseen enemmän kuin Excel-taulukkoosi.</p>
 
-      <h2 id="air-signs">💨 Ilma Merkkis (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Ilmamerkit (Kaksoset, Vaaka, Vesimies)</h2>
+      <p><strong>Teema: älyllinen uudistuminen.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Vesimies:</strong> Hyvää syntymäpäivää! Aurinko omassa merkissäsi vahvistaa elinvoimaasi. Olet magneettinen. Tämä on vuoden parasta aikaa lanseerata henkilökohtainen brändi tai uudistaa tyyliäsi.</p>
+      <p><strong>Kaksoset:</strong> Ura ottaa yllättävän käänteen. Ehkä olet kyllästynyt rutiineihin. Etsi epätavallisia ratkaisuja tai sivuprojekteja, jotka herättävät uteliaisuutesi.</p>
+      <p><strong>Vaaka:</strong> Romantiikka on huipussaan, samoin luovuus. Synnytät jotain – lapsen, taideteoksen tai uuden rakkaustarinan. Nauti hetken hedelmällisyydestä.</p>
 
-      <h2 id="water-signs">💧 Vesi Merkkis (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Vesimerkit (Rapu, Skorpioni, Kalat)</h2>
+      <p><strong>Teema: syvä emotionaalinen sukellus.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Kalat:</strong> Kuun lopulla Aurinko siirtyy merkkiisi. Heräät pitkästä horroksesta. Intuitiosi on nyt lähes selvänäköinen. Käytä sitä.</p>
+      <p><strong>Rapu:</strong> Raha ja yhteiset resurssit ovat keskiössä. Velka saatetaan maksaa tai laina hyväksyä. Aika saada taloutesi järjestykseen.</p>
+      <p><strong>Skorpioni:</strong> Oma koti kullan kallis. Saatat sisustaa uudelleen tai vain vetäytyä muun maailman katseilta. Lepo on sinulle juuri nyt tuottavaa.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Miksi yleinen horoskooppi ei riitä</h2>
+      <p>Vaikka nämä ennusteet antavat sinulle aurinkomerkkisi "kosmisen sään", niistä puuttuu tärkein tekijä: <strong>ainutlaatuinen elämänsuunnitelmasi.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Olet enemmän kuin vain aurinkomerkkisi. Sinulla on Kuu, askendentti ja 8 muuta planeettaa, jotka muodostavat monimutkaisen kartan, joka on yhtä uniikki kuin sormenjälki. 
+      <br><em>Esimerkki:</em> Henkilö, jolla on Härkä nousevana merkkinä, kokee tämän kuun täysin eri tavalla kuin henkilö, jolla on Härkä aurinkomerkkinä.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Älä arvaile tulevaisuuttasi.</strong> Saadaksesi tiettyjä päivämääriä ja yksityiskohtia, jotka koskevat henkilökohtaisesti SINUA, tarvitset lasketun luennan.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Oletko valmis henkilökohtaiseen totuuteesi?</h3>
+          <p>Hanki täydellinen henkilökohtainen vuosi-transiittiraporttisi vuodelle 2026. Näe tarkalleen, miten planeetat ovat vuorovaikutuksessa syntymäkarttasi kanssa.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Hanki henkilökohtainen luentani</a>
       </div>
     `
 };

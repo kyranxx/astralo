@@ -1,41 +1,57 @@
 /**
- * history-of-astrology - FI
+ * Astrologian historia - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "🏛️ The History of Astrology: From Ancient Babylon to Modern AI",
-    excerpt: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars and how it evolved into a modern psychological tool.",
-    category: "Astrology Basics",
-    metaDescription: "Explore the fascinating 5,000-year journey of astrology. Learn how ancient civilizations used the stars to build empires and how astrology has evolved into a modern psychological tool.",
-    keywords: "history of astrology, ancient astrology, babylonian astrology, greek astrology, history of zodiac, origins of astrology, modern astrology",
-    quickSummary: ["Astrology originated in Mesopotamia (Ancient Babylon) over 4,000 years ago","The Zodiac we use today was standardized by the Greeks around 2,000 years ago","Astrology and Astronomy were considered the same science until the 17th century","Today, astrology is used more for psychological insight than for predicting kings' deaths"],
-    keyTakeaways: ["Ancient cultures used astrology for agriculture and political survival","The \"Age of Reason\" temporarily pushed astrology into the shadows of superstition","Carl Jung brought astrology back into mainstream thought through psychology","AI technology is now allowing for more precise calculations than ever before"],
-    tableOfContents: [{"id":"ancient-origins","title":"The Cradle of the Stars: Babylon"},{"id":"greek-influence","title":"The Greek Revolution"},{"id":"scientific-divorce","title":"The Scientific Divorce"},{"id":"jungian-rebirth","title":"Psychology and the 20th Century"},{"id":"future-astrology","title":"The Future: AI & Big Data"}],
-    content: `
-      <h2 id="ancient-origins">The Cradle of the Stars: Babylon</h2>
-      <p>The story of astrology begins in the fertile crescent of Mesopotamia. Nearly 5,000 years ago, Babylonian priests noticed a correlation between the movement of the stars and the flooding of rivers or the changing of seasons. They were the first to divide the sky into segments, though their system was initially used to predict the fate of the <em>nation</em> or the <em>King</em>, not the individual.</p>
+  title: "🏛️ Astrologian historia: Babylonista tekoälyyn",
+  excerpt: "Tutustu astrologian kiehtovaan 5 000-vuotiseen matkaan. Selvitä, miten muinaiset sivilisaatiot hyödynsivät tähtiä ja miten se kehittyi nykyaikaiseksi psykologiseksi työkaluksi.",
+  category: "Perusteet",
+  metaDescription: "Tutustu astrologian kiehtovaan 5 000-vuotiseen matkaan. Selvitä, miten muinaiset kulttuurit käyttivät tähtiä imperiumien rakentamiseen ja miten astrologiasta tuli moderni psykologinen työkalu.",
+  keywords: "astrologian historia, muinainen astrologia, babylonialainen astrologia, kreikkalainen astrologia, eläinradan historia, astrologian alkuperä, moderni astrologia",
+  quickSummary: [
+    "Astrologia syntyi Mesopotamiassa (muinaisessa Babylonissa) yli 4 000 vuotta sitten.",
+    "Nykyään käyttämämme eläinrata standardisoitiin kreikkalaisten toimesta noin 2 000 vuotta sitten.",
+    "Astrologiaa ja tähtitiedettä pidettiin samana tieteenä 1600-luvulle saakka.",
+    "Nykyään astrologiaa käytetään enemmän psykologiseen itsetuntemukseen kuin kuninkaiden kuoleman ennustamiseen."
+  ],
+  keyTakeaways: [
+    "Muinaiset kulttuurit käyttivät astrologiaa maatalouteen ja poliittiseen selviytymiseen.",
+    "Valistusaika syrjäytti astrologian tilapäisesti taikauskona.",
+    "Carl Jung toi astrologian takaisin valtavirtaan psykologian kautta.",
+    "Tekoälyteknologia mahdollistaa nyt tarkemmat laskelmat kuin koskaan aiemmin."
+  ],
+  tableOfContents: [
+    { id: 'ancient-origins', title: "Tähtien kehto: Babylon" },
+    { id: 'greek-influence', title: "Kreikkalainen vallankumous" },
+    { id: 'scientific-divorce', title: "Tieteellinen avioero" },
+    { id: 'jungian-rebirth', title: "Psykologia ja 1900-luku" },
+    { id: 'future-astrology', title: "Tulevaisuus: tekoäly ja big data" }
+  ],
+  content: `
+      <h2 id="ancient-origins">Tähtien kehto: Babylon</h2>
+      <p>Astrologian historia alkaa Mesopotamian hedelmällisestä puolikuusta. Lähes 5 000 vuotta sitten babylonialaiset papit huomasivat yhteyden tähtien liikkeiden ja jokien tulvien tai vuodenaikojen vaihtelun välillä. He olivat ensimmäisiä, jotka jakoivat taivaan segmentteihin, vaikka heidän järjestelmäänsä käytettiin alun perin <em>kansakunnan</em> tai <em>kuninkaan</em> kohtalon ennustamiseen, ei yksilön.</p>
       
-      <p>By the 5th Century BC, the Babylonians had developed the first concept of the <strong>Eläinradan</strong>, dividing the sun's path into twelve equal signs based on the constellations.</p>
+      <p>400-luvulle eaa. tultaessa babylonialaiset olivat kehittäneet ensimmäisen <strong>eläinradan</strong> (zodiac) käsitteen ja jakaneet auringon radan kahteentoista yhtä suureen osaan tähdistöjen perusteella.</p>
 
-      <h2 id="greek-influence">The Greek Revolution: Horoscopic Astrology</h2>
-      <p>When astrology reached the Hellenistic world (Ancient Greece and Egypt), it underwent a massive transformation. The Greeks added the <strong>Ascendant (Rising Sign)</strong> and the <strong>House System</strong>. This allowed for the creation of the first "Natal Chart"—a map of the sky for a specific person's birth.</p>
+      <h2 id="greek-influence">Kreikkalainen vallankumous: Horoskooppinen astrologia</h2>
+      <p>Kun astrologia saavutti hellenistisen maailman (muinaisen Kreikan ja Egyptin), se koki massiivisen muodonmuutoksen. Kreikkalaiset lisäsivät <strong>askendentin</strong> (nouseva merkki) ja <strong>huonejärjestelmän</strong>. Tämä mahdollisti ensimmäisen "syntymäkartan" luomisen – taivaan kartan tietyn henkilön syntymän tarkalla hetkellä.</p>
       
-      <p>Claudius Ptolemy's <em>Tetrabiblos</em>, written in the 2nd Century AD, became the "Bible of Astrology." Much of the logic we use today for signs, elements, and aspects was codified in this ancient text.</p>
+      <p>Klaudios Ptolemaioksen <em>Tetrabiblos</em>, joka kirjoitettiin 100-luvulla jaa., tuli "astrologian raamatuksi". Suuri osa nykyään käyttämästämme merkkien, elementtien ja aspektien logiikasta koodattiin tässä muinaisessa tekstissä.</p>
 
-      <h2 id="scientific-divorce">The Scientific Divorce</h2>
-      <p>For most of human history, <strong>Astrology</strong> and <strong>Astronomy</strong> were the same thing. Great scientists like Johannes Kepler and Galileo Galilei were also professional astrologers. However, during the 17th-century Enlightenment, the two fields split. Astronomy focused on the physical makeup of space, while Astrology was dismissed as "superstition" by the new scientific establishment.</p>
+      <h2 id="scientific-divorce">Tieteellinen avioero</h2>
+      <p>Suurimman osan ihmiskunnan historiasta <strong>astrologia</strong> ja <strong>tähtitiede</strong> olivat yksi ja sama asia. Suuret tiedemiehet, kuten Johannes Kepler ja Galileo Galilei, olivat myös ammattimaisia astrologeja. Kuitenkin 1600-luvun valistusaikana nämä kaksi alaa erotettiin toisistaan. Tähtitiede keskittyi avaruuden fyysiseen luonteeseen, kun taas uusi tieteellinen eliitti hylkäsi astrologian "taikauskona".</p>
       
-      <p>Despite this, astrology survived in almanacs and secret societies, continuing to guide millions in private.</p>
+      <p>Tästä huolimatta astrologia selvisi almanakoissa ja salaseuroissa ja ohjasi edelleen miljoonia ihmisiä yksityisesti.</p>
 
-      <h2 id="jungian-rebirth">Psychology and the 20th Century</h2>
-      <p>Astrology's 20th-century comeback was driven by a surprising source: psychology. <strong>Carl Jung</strong>, the father of analytical psychology, studied natal charts and developed the theory of <em>synchronicity</em> to explain why astrology works. He saw the zodiac as a collection of universal archetypes—patterns of human behavior that exist in the collective subconscious of all people.</p>
+      <h2 id="jungian-rebirth">Psykologia ja 1900-luku</h2>
+      <p>Astrologian paluun 1900-luvulla laukaisi yllättävä lähde: psykologia. <strong>Carl Jung</strong>, analyyttisen psykologian isä, tutki syntymäkarttoja ja kehitti <em>synkronisiteetin</em> teorian selittääkseen, miksi astrologia toimii. Hän näki eläinradan kokoelmana universaaleja arkityyppejä – inhimillisen käyttäytymisen malleja, jotka löytyvät kaikkien kollektiivisesta alitajunnasta.</p>
       
-      <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
+      <p>Tämä siirsi astrologian painopisteen kysymyksestä "Mitä minulle tapahtuu?" kysymykseen "Kuka minä olen ja miksi reagoin näin?".</p>
 
-      <h2 id="future-astrology">The Future: AI & Big Data</h2>
-      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
+      <h2 id="future-astrology">Tulevaisuus: tekoäly ja big data</h2>
+      <p>Elämme epäilemättä astrologian uutta kultakautta. Teknologia on poistanut monimutkaisten manuaalisten laskelmien tarpeen ja tehnyt horoskoopin tarkastamisesta mahdollista kenelle tahansa älypuhelimen omistajalle. Vielä tärkeämpää on, että <strong>tekoälyä</strong> käytetään nyt valtavien tietomäärien analysointiin ja sellaisten syvempien mallien löytämiseen transiiteista ja persoonallisuuspiirteistä, joita oli aiemmin mahdotonta erottaa.</p>
       
-      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
+      <p>Astralolla yhdistämme tämän 5 000-vuotisen perinnön huippuluokan koneoppimiseen tarjotaksemme sinulle ihmiskunnan historian tarkinta ja syvällisintä opastusta.</p>
     `
 };

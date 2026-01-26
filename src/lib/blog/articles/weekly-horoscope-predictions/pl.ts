@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - PL (Fallback to English content)
+ * Horoskop tygodniowy - PL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Horoskop tygodniowy: Jak poruszać się w nadchodzącym tygodniu kosmicznym',
+  excerpt: 'Wykorzystaj swój tydzień maksymalnie dzięki naszemu przewodnikowi po horoskopie tygodniowym. Zrozum dni planetarne, unikaj jałowego kursu Księżyca i zaplanuj swój grafik.',
+  category: 'Horoskopy',
+  metaDescription: 'Wykorzystaj swój tydzień maksymalnie dzięki naszemu przewodnikowi po horoskopie tygodniowym. Zrozum dni planetarne, unikaj jałowego kursu Księżyca i zaplanuj swój grafik zgodnie z czasem astrologicznym.',
+  keywords: 'horoskop tygodniowy, astrologia tygodniowa, dni planetarne, jałowy bieg księżyca, prognoza zodiaku na tydzień, planowanie astrologiczne, najlepsze dni w tym tygodniu',
+  quickSummary: [
+    'Każdy dzień tygodnia jest rządzony przez inną planetę (poniedziałek/Księżyc, wtorek/Mars itd.).',
+    'Horoskopy tygodniowe śledzą ruch szybkich planet przez znaki zodiaku.',
+    'Księżyc w biegu jałowym (Void-of-Course) to krytyczny „czas pauzy”, w którym należy unikać ważnych działań.',
+    'Poniedziałki są dla emocji, wtorki dla działania, piątki dla romansu.'
+  ],
+  keyTakeaways: [
+    'Sprawdzaj prognozę tygodniową w niedzielę wieczorem, aby zaplanować kalendarz.',
+    'Trudne spotkania planuj na czwartek (Jowisz) lub sobotę (Saturn), zależnie od celu.',
+    'Unikaj podpisywania umów, gdy Księżyc jest w biegu jałowym.',
+    'Wykorzystuj tygodniowy przepływ energii, zamiast z nim walczyć.'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Rytm astrologiczny' },
+    { id: 'planetary-days', title: 'Władcy dni' },
+    { id: 'void-moon', title: 'Księżyc w biegu jałowym' },
+    { id: 'transits', title: 'Śledzenie tygodniowych tranzytów' },
+    { id: 'by-sign', title: 'Porady tygodniowe według znaków' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Astrologiczny rytm tygodnia</h2>
+      <p>Czy zdarzyło Ci się poczuć, że niektóre tygodnie płyną jak woda, podczas gdy inne przypominają brnięcie przez błoto? Albo dlaczego załatwianie spraw we wtorek wydaje się inne niż w piątek? To nie jest przypadek. Struktura naszego 7-dniowego tygodnia opiera się całkowicie na <strong>astrologii</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Zrozumienie <strong>horoskopu tygodniowego</strong> to coś więcej niż tylko wiedza o tym, czy otrzymasz SMS-a zwrotnego. Chodzi o dostosowanie grafiku do starożytnych planetarnych władców czasu. Kiedy pracujesz <em>z</em> energią dnia, Twoja produktywność rośnie, a opór znika.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Władcy dni</h2>
+      <p>Nazwa każdego dnia pochodzi od planety (dosłownie w językach takich jak francuski, hiszpański czy łacina). Oto Twój przewodnik po astrologicznym planowaniu tygodnia:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Poniedziałek (Dzień Księżyca) 🌙</h3>
+      <p><strong>Energia:</strong> Emocjonalna, intuicyjna, zmienna.<br><strong>Najlepszy na:</strong> Zakupy spożywcze, sprzątanie domu, dłuższy sen, rodzinne kolacje, refleksję.<br><strong>Unikaj:</strong> Stresujących prezentacji lub sztywnej logiki.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Wtorek (Dzień Marsa) ♂</h3>
+      <p><strong>Energia:</strong> Agresywna, energiczna, ostra.<br><strong>Najlepszy na:</strong> Ćwiczenia fizyczne, rozpoczynanie nowych projektów, konfrontowanie się z problemami, operacje, rywalizację.<br><strong>Unikaj:</strong> Medytacji, próby całkowitego wyluzowania.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Środa (Dzień Merkurego) ☿️</h3>
+      <p><strong>Energia:</strong> Komunikatywna, zajęta, szybka.<br><strong>Najlepszy na:</strong> E-maile, spotkania, pisanie, sprzedaż, krótkie wycieczki, networking.<br><strong>Unikaj:</strong> Ciszy (i tak prawdopodobnie jej nie uświadczysz).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Czwartek (Dzień Jowisza) ♃</h3>
+      <p><strong>Energia:</strong> Ekspansywna, szczęśliwa, optymistyczna.<br><strong>Najlepszy na:</strong> Uruchamianie wielkich wizji, prośby o podwyżkę, planowanie podróży, naukę.<br><strong>Unikaj:</strong> Skąpstwa.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Piątek (Dzień Wenus) ♀</h3>
+      <p><strong>Energia:</strong> Towarzyska, romantyczna, estetyczna.<br><strong>Najlepszy na:</strong> Randki, imprezy, kupowanie ubrań, sztukę, relaks, wspólne wyjścia.<br><strong>Unikaj:</strong> Brudnej roboty lub samotności.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Sobota (Dzień Saturna) ♄</h3>
+      <p><strong>Energia:</strong> Poważna, ciężka, zdyscyplinowana.<br><strong>Najlepsza na:</strong> Prace w ogrodzie, planowanie długoterminowe, naukę, nadrabianie zaległości w obowiązkach.<br><strong>Unikaj:</strong> Szalonych imprez (chyba że są to oficjalne wydarzenia).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Niedziela (Dzień Słońca) ☀️</h3>
+      <p><strong>Energia:</strong> Promienna, skoncentrowana na „ja”, duchowa.<br><strong>Najlepsza na:</strong> Hobby, duchowość, zabawę z dziećmi, bycie widocznym, odpoczynek.<br><strong>Unikaj:</strong> Bycia niewidocznym.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Księżyc w biegu jałowym (Void-of-Course)</h2>
+      <p>Jeśli masz zapamiętać jedną rzecz z tego przewodnika, niech to będzie <strong>jałowy bieg Księżyca</strong>. Następuje on wtedy, gdy Księżyc zakończy swój ostatni aspekt do planety w obecnym znaku i „dryfuje” przed wejściem w kolejny znak.</p>
+      <p><strong>Zasada:</strong> „Z tej sprawy nic nie wyniknie”.</p>
+      <p>Podczas jałowego biegu Księżyca nie podpisuj umów, nie zakładaj firm ani nie umawiaj się na pierwsze randki. Energia nieuchronnie wygaśnie. Wykorzystaj ten czas na archiwizację dokumentów, sen lub edycję pracy, którą już zacząłeś. To kosmiczny „czas wolny”.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Śledzenie tygodniowych tranzytów</h2>
+      <p>Dobra <strong>tygodniowa prognoza astrologiczna</strong> bierze również pod uwagę specyficzne kąty, jakie tworzą planety w tym tygodniu. Na przykład:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Sekstyl Merkurego do Wenus:</strong> Idealny tydzień na uprzejmość towarzyską i proszenie o przysługi.</li>
+        <li><strong>Kwadratura Słońca do Plutona:</strong> Tydzień walki o władzę i intensywności.</li>
+        <li><strong>Mars wchodzący w znak Wagi:</strong> Energia przesuwa się z pracy na relacje.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Porady tygodniowe według jakości znaków</h2>
+      <p>Choć tydzień każdego z nas jest unikalny, oto jak znaki zazwyczaj radzą sobie z tygodniowymi zmianami:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Znaki Kardynalne (Baran, Rak, Waga, Koziorożec):</strong> Jesteście inicjatorami. Wykorzystajcie energię początku tygodnia (pon./wt.), aby zacząć nowe rzeczy.</li>
+        <li><strong>Znaki Stałe (Byk, Lew, Skorpion, Wodnik):</strong> Jesteście tymi, którzy utrzymują tempo. Wykorzystajcie energię środka tygodnia, aby utrwalić postępy.</li>
+        <li><strong>Znaki Zmienne (Bliźnięta, Panna, Strzelec, Ryby):</strong> Jesteście redaktorami. Wykorzystajcie weekend lub dni Merkurego, aby się dostosować i zmienić kurs.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Zaglądaj tu w każdą niedzielę po nową prognozę tygodniową przygotowaną przez zespół Astralo!</em>
     `
 };

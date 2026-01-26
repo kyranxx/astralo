@@ -1,54 +1,71 @@
 /**
- * mercury-retrograde-survival-guide - FI
+ * Merkuriuksen perääntymisen selviytymisopas - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: "☄️ Merkuriuksen perääntymisen selviytymisopas 2026: kaaoksesta rauhaan",
+  excerpt: "Älä pelkää perääntymistä! Selvitä, miksi Merkuriuksen perääntyminen on tosiasiassa elintärkeä kosminen nollaus ja miten navigoit teknisten vikojen ja viestintäongelmien välillä vaivatta.",
+  category: "Astrologia 101",
+  metaDescription: "Älä pelkää perääntymistä! Selvitä, miksi Merkuriuksen perääntyminen on tosiasiassa elintärkeä kosminen nollaus, miten vältät yleisimmät sudenkuopat ja miksi se on parasta aikaa tehtäville, jotka alkavat 'uudelleen-'.",
+  keywords: "Merkuriuksen perääntyminen, Merkuriuksen perääntymispäivämäärät, selviytymisopas, astrologiavinkit, planetaarinen perääntyminen, viestintävirheet, tekninen vika",
+  quickSummary: [
+    "Merkuriuksen perääntyminen on optinen harha, jossa Merkurius näyttää liikkuvan taivaalla takaperin.",
+    "Se tapahtuu 3 tai 4 kertaa vuodessa ja kestää noin kolme viikkoa kerrallaan.",
+    "Tämä jakso on tunnettu matkustamisen viivästyksistä, teknisistä vioista ja väärinkäsityksistä.",
+    "Se EI ole aika alkaa uusia projekteja, mutta se on ERINOMAISTA vanhojen loppuunsaattamiseen."
+  ],
+  keyTakeaways: [
+    "Tarkista jokainen sähköposti, viesti ja sopimus kahdesti ennen lähettämistä tai allekirjoittamista.",
+    "Varmuuskopioi tietosi ja varaudu pieniin teknisiin ongelmiin laitteidesi kanssa.",
+    "Vanhat ystävät ja entiset kumppanit ilmestyvät usein uudelleen näiden kosmisten syklien aikana.",
+    "Varjoaika ennen ja jälkeen perääntymisen on yhtä tärkeä."
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: "Tiede harhan takana" },
+    { id: 'retrograde-shadow', title: "Varjoaika" },
+    { id: 'survival-dos', title: "'RE-'-sääntö: mitä kannattaa tehdä" },
+    { id: 'survival-donts', title: "Varoitusmerkit: mitä kannattaa välttää" },
+    { id: 'mercury-retrograde-dates', title: "Merkuriuksen perääntymispäivämäärät 2026" },
+    { id: 'final-thoughts', title: "Lopuksi" }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">Tiede harhan takana</h2>
+      <p>Kolme tai neljä kertaa vuodessa Merkurius — viestinnän, matkustamisen ja teknologian herra — näyttää vaeltavan taivaalla takaperin täältä Maasta katsottuna. Todellisuudessa tämä on vain optinen harha, vähän kuin hitaampi auto näyttäisi peruuttavan, kun ohitat sen nopeammalla ajoneuvolla.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Vaikka takaperin kääntyminen on harha, sen vaikutukset ovat todellisia. Astrologiassa planeetan energia kääntyy sisäänpäin, kun se perääntyy. Koska Merkurius hallitsee elämämme päivittäistä "tulemista ja menemistä" — ajatuksiamme, laitteitamme ja logistiikkaamme — kaikki alkaa tuntua hieman... epäkunnossa olevalta. <strong>Merkuriuksen perääntyminen</strong> on maailmankaikkeuden tapa pyytää maailmaa painamaan "tauko"-nappia.</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Varjoaika: epäröinti ennen ja jälkeen myrskyn</h2>
+      <p>Monet yllättyvät, kun asiat menevät pieleen jo viikkoa <em>ennen</em> kuin perääntyminen virallisesti alkaa. Tätä kutsutaan <strong>esi-varjoksi</strong>. Se on aikaa, jolloin Merkurius alkaa hidastaa vauhtia ennen suunnanmuutostaan. Samoin <strong>jälki-varjo</strong> jatkuu noin kaksi viikkoa sen jälkeen, kun planeetta on kääntynyt suoraan. Jos suunnittelet tärkeää julkaisua tai suurta hankintaa, on parasta odottaa, kunnes jälki-varjo on ohi sujuvamman lopputuloksen saavuttamiseksi.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">'RE-'-sääntö: mitä kannattaa tehdä</h2>
+      <p>Merkuriuksen perääntymisellä on huono maine, mutta se on itse asiassa yksi vuoden tuottavimmista ajoista, jos sitä käyttää oikein. Salaisuus on keskittyä toimintoihin, jotka alkavat <strong>"RE-"</strong> (tai suomeksi <strong>uudelleen-</strong>):</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Review & Reflect (Tarkastele ja pohdi):</strong> Katso tavoitteitasi vuoden alusta lähtien. Oletko yhä oikealla tiellä?</li>
+        <li><strong>Reread & Revise (Lue uudelleen ja muokkaa):</strong> Tarkista sopimuksesi, budjettisi ja suunnitelmasi vielä kerran. Löydät todennäköisesti virheen, jonka olit ohittanut.</li>
+        <li><strong>Reconnect (Luo yhteys uudelleen):</strong> Se on parasta aikaa ottaa yhteyttä vanhoihin ystäviin tai selvittää vanhoja konflikteja perheen kanssa.</li>
+        <li><strong>Repair (Korjaa):</strong> Korjaa se tippuva hana tai auton vika, jonka olet jättänyt huomiotta.</li>
+        <li><strong>Reorganize (Järjestä uudelleen):</strong> Siivoa kaappisi, sähköpostisi ja ajatuksesi.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Varoitusmerkit: mitä kannattaa välttää</h2>
+      <p>Vaikka elämä ei pysähdy, yritä välttää näitä riskialttiita toimintoja kolmen viikon perääntymisjakson aikana:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Tärkeiden sopimusten allekirjoittaminen:</strong> Jos sinun on pakko allekirjoittaa, lue pieni präntti kolmesti. Vielä parempi, anna lakimiehen lukea se.</li>
+        <li><strong>Uuden teknologian ostaminen:</strong> Odota uuden iPhonen tai auton ostamista. "Perääntyvä" teknologia osoittaa usein vikoja myöhemmin.</li>
+        <li><strong>Uusien projektien aloittaminen:</strong> Nyt syntyvät ideat muuttuvat usein dramaattisesti heti, kun planeetta kääntyy suoraksi. Odota varsinaisen julkaisun kanssa.</li>
+        <li><strong>Kauneusleikkaukset tai radikaalit muutokset tyylissäsi:</strong> Merkurius vaikuttaa myös siihen, miten näemme estetiikan näiden syklien aikana. Saatat katua rohkeaa päätöstä myöhemmin.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">Merkuriuksen perääntymispäivämäärät 2026</h2>
+      <p>Merkitse nämä ajanjaksot vuoden 2026 kalenteriisi ollaksesi askeleen edellä kosmista kaaosta:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25. helmikuuta – 20. maaliskuuta</strong> (Alkaa Kaloissa, päättyy Vesimiehessä)</li>
+          <li><strong>29. kesäkuuta – 23. heinäkuuta</strong> (Ravussa)</li>
+          <li><strong>24. lokakuuta – 13. marraskuuta</strong> (Alkaa Skorpionissa, päättyy Vaa'assa)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Lopuksi</h2>
+      <p>Merkuriuksen perääntyminen ei ole kirous; se on välttämätön huoltovaihe. Ilman sitä jatkaisimme juoksemista koskaan vahvistamatta elämämme perusteita. Käytä tämä aika hidastamiseen, hengittämiseen ja itsesi löytämiseen uudelleen. Kun Merkurius lopulta kääntyy suoraksi, olet nopeampi ja keskittyneempi kuin koskaan aiemmin.</p>
     `
 };

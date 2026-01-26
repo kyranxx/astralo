@@ -1,63 +1,73 @@
 /**
- * Love Horoscope - Portuguese (Português)
+ * Horóscopo do amor - PT
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-  title: '💕 Horóscopo do Amor 2026: O Guia Mestre para o Romance Zodiacal',
-  excerpt: 'Transforme sua vida amorosa com a astrologia. Um mergulho profundo nos signos de Vênus, a 7ª Casa do Casamento, estilos de paixão de Marte e como navegar em relacionamentos.',
-  category: 'Amor e Relacionamentos',
-  metaDescription: 'Transforme sua vida amorosa com a astrologia. Um mergulho profundo nos signos de Vênus, a 7ª Casa do Casamento, estilos de paixão de Marte.',
-  keywords: 'horóscopo amor, astrologia relacionamentos, signo vênus, signo marte namoro, casa 7 casamento, guia sinastria, conselhos namoro zodíaco',
+  title: "💕 Horóscopo do Amor 2026: O guia mestre para o romance zodiacal",
+  excerpt: "Transforme a sua vida amorosa através da astrologia. Um mergulho profundo nos signos de Vénus, a 7ª casa do casamento, estilos de paixão de Marte e como navegar Mercúrio retrógrado nos relacionamentos.",
+  category: "Amore e Relazioni",
+  metaDescription: "Transforme a sua vida amorosa através da astrologia. Um mergulho profundo nos signos de Vénus, a 7ª casa do casamento, estilos de paixão de Marte e como navegar Mercúrio retrógrado nos relacionamentos.",
+  keywords: "horóscopo do amor, astrologia de relacionamento, significado signo Vénus, dating pelo signo Marte, 7ª casa casamento, guia de sinastria, dicas de dating zodíaco, compatibilidade amorosa",
   quickSummary: [
-    'Sua Linguagem do Amor é ditada pelo seu Signo de Vênus, não apenas pelo seu Signo Solar',
-    'A 7ª Casa no seu mapa descreve seu parceiro ideal de longo prazo',
-    'Marte determina como você persegue interesses românticos e química sexual',
-    'O timing do relacionamento é tudo—nunca se case durante Vênus Retrógrado'
+    "A sua linguagem do amor é ditada pelo seu signo de Vénus, não apenas pelo seu signo solar.",
+    "A 7ª casa no seu mapa descreve o seu parceiro ideal a longo prazo.",
+    "Marte determina como persegue um interesse romântico e como vive a química sexual.",
+    "O timing num relacionamento é tudo: nunca se case durante uma Vénus retrógrada."
   ],
   keyTakeaways: [
-    'Se você quer saber como alguém flerta, olhe para o signo de Vênus',
-    'Se você quer saber como alguém briga ou faz sexo, olhe para o signo de Marte',
-    'O "Descendente" (oposto ao seu Signo Ascendente) é geralmente o signo pelo qual você é mais atraído',
-    'Sinastria é a arte de comparar dois mapas para ver se um relacionamento foi feito para durar'
+    "Se quer saber como alguém flirta, olhe para o seu signo de Vénus.",
+    "Se quer saber como alguém luta ou vive o sexo, olhe para o seu signo de Marte.",
+    "O 'Descendente' (o oposto do seu ascendente) é frequentemente o signo pelo qual se sente mais atraído.",
+    "A sinastria é a arte de comparar dois mapas para ver se um relacionamento está destinado a durar."
   ],
   tableOfContents: [
-    { id: 'love-guide', title: 'O Amor é uma Habilidade' },
-    { id: 'venus-signs', title: 'Vênus: O que Você Ama' },
-    { id: 'mars-signs', title: 'Marte: Como Você Deseja' },
-    { id: '7th-house', title: 'A 7ª Casa do Casamento' },
-    { id: 'retrograde-love', title: 'Sobrevivendo ao Romance Retrógrado' },
-    { id: 'partner-analysis', title: 'Análise de Compatibilidade' }
+    { id: 'love-guide', title: "O amor é uma habilidade" },
+    { id: 'venus-signs', title: "Vénus: O que ama" },
+    { id: 'mars-signs', title: "Marte: Como deseja" },
+    { id: '7th-house', title: "A 7ª Casa do casamento" },
+    { id: 'retrograde-love', title: "Sobreviver às retrogradações no amor" },
+    { id: 'partner-analysis', title: "Análise da parceria" }
   ],
   content: `
-      <h2 id="love-guide">O Amor é uma Habilidade (e a Astrologia é o Manual)</h2>
-      <p>Frequentemente tratamos o amor como uma força misteriosa que simplesmente "acontece" conosco. Mas na astrologia, o amor é um mecanismo com engrenagens e alavancas. Seu <strong>horóscopo do amor</strong> não é apenas sobre encontros casuais; é um plano das suas necessidades psicológicas em uma parceria.</p>
+      <h2 id="love-guide">O amor é uma habilidade (e a astrologia é o manual)</h2>
+      <p>Muitas vezes tratamos o amor como uma força misteriosa que simplesmente nos "acontece". Mas na astrologia, o amor é um mecanismo com engrenagens e alavancas. O seu <strong>horóscopo do amor</strong> não é apenas sobre encontros casuais; é o mapa das suas necessidades psicológicas num parceiro.</p>
       
-      <p>Por que você continua atraindo o mesmo tipo "ruim"? Por que a comunicação sempre falha depois de três meses? As respostas estão no seu mapa. Ao entender seu próprio design de amor cósmico, você pode parar de repetir padrões.</p>
+      <p>Por que continua a atrair o mesmo tipo de pessoa "errada"? Por que a comunicação falha sempre após três meses? As respostas estão no seu mapa astral. Ao compreender o seu projeto cósmico amoroso, pode parar de repetir padrões e começar a construir o relacionamento que realmente deseja.</p>
       
-      <h2 id="venus-signs">Vênus: A Arte do Afeto</h2>
-      <p><strong>Vênus</strong> é o planeta da atração, valores e harmonia. O signo em que Vênus estava quando você nasceu descreve o que você acha bonito e como você demonstra afeto.</p>
+      <h2 id="venus-signs">Vénus: A arte do afeto</h2>
+      <p><strong>Vénus</strong> é o planeta da atração, valores e harmonia. O signo onde Vénus se encontrava no momento do seu nascimento descreve o que considera belo e como demonstra afeto.</p>
       <ul>
-        <li><strong>Vênus em Fogo (Áries, Leão, Sagitário):</strong> Ama a caça. Precisa de drama, grandes gestos e espontaneidade. Entedia-se facilmente. <em>Conselho:</em> Mantenha emocionante.</li>
-        <li><strong>Vênus em Terra (Touro, Virgem, Capricórnio):</strong> Ama a estabilidade. Precisa de compromisso, confiabilidade e toque físico. Odeia joguinhos. <em>Conselho:</em> Seja consistente.</li>
-        <li><strong>Vênus em Ar (Gêmeos, Libra, Aquário):</strong> Ama a mente. Precisa de conversa, inteligência e amizade primeiro. Evita emoções pesadas. <em>Conselho:</em> Seja interessante.</li>
-        <li><strong>Vênus em Água (Câncer, Escorpião, Peixes):</strong> Ama a alma. Precisa de fusão emocional profunda, vulnerabilidade e segurança. <em>Conselho:</em> Seja real.</li>
+        <li><strong>Vénus nos signos de Fogo (Carneiro, Leão, Sagitário):</strong> Ama a conquista. Precisa de drama, grandes gestos e espontaneidade. Entedia-se facilmente. <em>Dica:</em> Mantenha o entusiasmo vivo.</li>
+        <li><strong>Vénus nos signos de Terra (Touro, Virgem, Capricórnio):</strong> Ama a estabilidade. Precisa de compromisso, fiabilidade e contacto físico. Odeia jogos. <em>Dica:</em> Seja constante.</li>
+        <li><strong>Vénus nos signos de Ar (Gémeos, Balança, Aquário):</strong> Ama o intelecto. Precisa de conversa, humor e amizade acima de tudo. Evita emoções pesadas. <em>Dica:</em> Seja interessante.</li>
+        <li><strong>Vénus nos signos de Água (Caranguejo, Escorpião, Peixes):</strong> Ama a alma. Precisa de uma profunda fusão emocional, vulnerabilidade e segurança. <em>Dica:</em> Seja autêntico.</li>
       </ul>
 
-      <h2 id="mars-signs">Marte: O Motor do Desejo</h2>
-      <p>Enquanto Vênus é o que você gosta, <strong>Marte</strong> é como você vai buscar. Marte rege a libido, a perseguição e o conflito.</p>
-      <p>Se você tem <strong>Marte em Escorpião</strong>, você é intenso, possessivo e tudo ou nada. Você pode assustar um <strong>Marte em Gêmeos</strong> volúvel.</p>
+      <h2 id="mars-signs">Marte: O motor do desejo</h2>
+      <p>Enquanto Vénus é o que lhe agrada, <strong>Marte</strong> é a forma como o obtém. Marte governa a libido, a busca por objetivos e o conflito.</p>
+      <p>Se tem <strong>Marte em Escorpião</strong>, é intenso, possessivo e aposta no "tudo ou nada". Poderia assustar um leve <strong>Marte em Gémeos</strong> que apenas quer flertar e divertir-se. Conhecer o signo de Marte do seu parceiro é o "código secreto" para a satisfação sexual e para resolver discussões sem se separarem.</p>
 
-      <h2 id="7th-house">A 7ª Casa: Sua "Outra Metade"</h2>
-      <p>Olhe para o seu Signo Ascendente. Agora olhe para o signo diretamente oposto a ele. Este é o seu <strong>Descendente</strong>, o regente da sua 7ª Casa de Parceria.</p>
-      <p>Muitas vezes somos magneticamente atraídos por pessoas que encarnam as qualidades da nossa 7ª Casa porque possuem o que nos falta.</p>
+      <h2 id="7th-house">A 7ª Casa: A sua "outra metade"</h2>
+      <p>Olhe para o seu signo Ascendente. Agora olhe para o signo diretamente oposto. Esse é o seu <strong>Descendente</strong>, o governante da sua 7ª casa de parcerias.</p>
+      <p>Sentimo-nos frequentemente atraídos magneticamente por pessoas que encarnam as qualidades da nossa 7ª casa porque possuem o que nos parece faltar a nós mesmos.
+      <br><em>Exemplo:</em> Um disciplinado <strong>Ascendente Virgem</strong> casar-se-á frequentemente com um tipo <strong>Peixes (Casa 7)</strong> sonhador e desorganizado. Virgem organiza a vida de Peixes; Peixes ensina Virgem a relaxar. É o eixo do equilíbrio.</p>
 
-      <h2 id="retrograde-love">Sobrevivendo ao Romance Retrógrado</h2>
-      <p>Você já ouviu falar de Mercúrio Retrógrado, mas <strong>Vênus Retrógrado</strong> é o verdadeiro testador de relacionamentos. Acontece a cada 18 meses.</p>
+      <h2 id="retrograde-love">Sobreviver às retrogradações no amor</h2>
+      <p>Já ouviu falar de Mercúrio retrógrado (os mal-entendidos), mas <strong>Vénus retrógrada</strong> é o verdadeiro teste para os casais. Ocorre a cada 18 meses e durante este período:
+      <br>1. Ex-parceiros reaparecem ("zombieing").
+      <br>2. Relacionamentos fracos mostram fissuras.
+      <br>3. Relacionamentos secretos vêm à luz.</p>
       
-      <p><strong>Regra de Ouro:</strong> Nunca se case, peça em casamento ou assuma um compromisso massivo durante Vênus Retrógrado. Espere até que o período de sombra passe.</p>
+      <p><strong>Regra de ouro:</strong> Nunca se case, não peça em casamento e não tome compromissos massivos enquanto Vénus está retrógrada. Espere que o período de sombra termine (cerca de 40 dias) para ver se ainda sente o mesmo.</p>
 
-      <h2 id="partner-analysis">Análise de Compatibilidade de Parceiro</h2>
-      <p>Você é complexo, e seu parceiro também. Um horóscopo genérico "Leão + Aquário" não pode capturar a nuance da sua conexão única.</p>
+      <h2 id="partner-analysis">Análise da parceria no relacionamento</h2>
+      <p>Você é complexo e o seu parceiro também. Um horóscopo genérico "Leão + Aquário" não consegue captar as nuances da vossa ligação única. O nosso <strong>Relatório Premium de Relacionamentos</strong> analisa:</p>
+      <ul>
+        <li><strong>Sinastria:</strong> Como os seus planetas tocam os dele/dela (química).</li>
+        <li><strong>Mapa Composto:</strong> A energia do relacionamento em si (destino).</li>
+        <li><strong>Mapa de Davison:</strong> O propósito do vosso encontro (karma).</li>
+      </ul>
+      <p>Não deixe o seu coração ao acaso. Descodifique a sua vida amorosa com a Astralo.</p>
     `
 };

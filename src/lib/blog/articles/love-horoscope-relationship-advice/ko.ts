@@ -1,56 +1,63 @@
 /**
- * love-horoscope-relationship-advice - KO
+ * 연애 운세 2026: 로맨스를 위한 마스터 가이드 - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: "💕 사랑 Horoscope 2026: The Master Guide to 황도대 Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">사랑 is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: '💕 연애 운세 2026: 별자리 로맨스 마스터 가이드',
+  excerpt: '점성술로 연애 생활을 변화시키세요. 금성 별자리, 결혼의 7하우스, 화성의 열정 스타일, 그리고 관계 속 수성 역행 대처법을 심도 있게 다룹니다.',
+  category: '사랑과 관계',
+  metaDescription: '점성술로 연애 생활을 변화시키세요. 금성 별자리, 결혼의 7하우스, 화성의 열정 스타일, 그리고 관계 속 수성 역행 대처법을 심도 있게 다룹니다.',
+  keywords: '연애 운세, 관계 점성술, 금성 별자리 의미, 화성 별자리 데이트, 7하우스 결혼, 시나스트리 가이드, 별자리 데이트 조언, 사랑 궁합',
+  quickSummary: [
+    '당신의 "사랑의 언어"는 태양 별자리가 아닌 금성 별자리에 의해 결정됩니다.',
+    '당신의 차트에서 제 7하우스는 이상적인 장기 파트너를 설명합니다.',
+    '화성은 당신이 로맨틱한 대상을 추구하는 방식과 성적 케미스트리를 결정합니다.',
+    '관계의 타이밍이 전부입니다. 금성 역행 기간에는 절대로 결혼하지 마세요.'
+  ],
+  keyTakeaways: [
+    '누군가 어떻게 플러팅하는지 알고 싶다면 금성 별자리를 보세요.',
+    '누군가 어떻게 갈등을 해결하거나 열정을 표현하는지 알고 싶다면 화성 별자리를 보세요.',
+    '데센던트(상승궁의 반대편)는 당신이 가장 강하게 끌리는 별자리인 경우가 많습니다.',
+    '시나스트리(Synastry)는 두 차트를 비교하여 관계가 지속될 수 있는지 확인하는 기술입니다.'
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: '사랑은 기술이다' },
+    { id: 'venus-signs', title: '금성: 당신이 사랑하는 것' },
+    { id: 'mars-signs', title: '화성: 당신이 욕망하는 방식' },
+    { id: '7th-house', title: '7하우스: 결혼의 하우스' },
+    { id: 'retrograde-love', title: '역행 기간의 로맨스 생존법' },
+    { id: 'partner-analysis', title: '파트너 궁합 분석' }
+  ],
+  content: `
+      <h2 id="love-guide">사랑은 기술입니다 (점성술은 매뉴얼입니다)</h2>
+      <p>우리는 흔히 사랑을 그저 우리에게 "일어나는" 신비로운 힘으로 취급합니다. 하지만 점성술에서 사랑은 기어와 레버가 있는 메커니즘입니다. 당신의 <strong>연애 운세</strong>는 단순한 우연한 만남이 아니라, 파트너십에서 당신의 심리적 필요를 보여주는 청사진입니다.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>왜 자꾸 똑같은 "나쁜" 유형에게 끌릴까요? 왜 소통은 항상 3개월 후에 단절될까요? 답은 당신의 차트 안에 있습니다. 우주적인 사랑 설계를 이해함으로써 같은 패턴을 반복하지 않고 당신이 진정으로 원하는 관계를 구축할 수 있습니다.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">금성: 애정의 기술</h2>
+      <p><strong>금성</strong>은 끌림, 가치관, 조화의 행성입니다. 당신이 태어날 때 금성이 어느 별자리에 있었는지는 당신이 무엇을 아름답게 여기고 어떻게 애정을 표현하는지를 설명합니다.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>불의 금성 (양, 사자, 사수):</strong> 추격전을 즐깁니다. 드라마틱한 제스처를 좋아합니다. 금방 지루해할 수 있으니 자극이 필요합니다.</li>
+        <li><strong>흙의 금성 (황소, 처녀, 염소):</strong> 안정을 추구합니다. 헌신, 신뢰, 신체적 접촉이 중요합니다.</li>
+        <li><strong>공기의 금성 (쌍둥이, 천칭, 물병):</strong> 정신적인 교감을 중시합니다. 대화, 위트, 그리고 친구 같은 관계가 우선입니다.</li>
+        <li><strong>물의 금성 (게, 전갈, 물고기):</strong> 영혼의 결합을 원합니다. 깊은 감정적 교류와 취약함의 공유가 필요합니다.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">화성: 욕망의 엔진</h2>
+      <p>금성이 당신이 무엇을 좋아하는지를 나타낸다면, <strong>화성</strong>은 그것을 어떻게 쟁취하는지를 나타냅니다. 화성은 리비도, 추구, 갈등을 지배합니다. 파트너의 화성 별자리를 아는 것은 성적 만족을 얻고 이별 없이 논쟁을 해결하는 "치트 코드"입니다.</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">7하우스: 당신의 "반쪽"</h2>
+      <p>상승궁(어센던트)의 정확히 반대편에 있는 별자리를 보세요. 이것이 당신의 <strong>데센던트(Descendant)</strong>이며, 동반자 관계를 주관하는 제 7하우스의 지배자입니다. 우리는 종종 우리에게 부족한 자질을 가진 7하우스 사람들에게 자석처럼 끌리곤 합니다.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">역행 기간의 로맨스 생존법</h2>
+      <p>수성 역행(소통 오류)에 대해서는 들어보셨겠지만, <strong>금성 역행</strong>이야말로 진정한 관계의 시험대입니다. 18개월마다 일어나는 이 시기에는:
+      <br>1. 헤어진 연인이 돌아옵니다.
+      <br>2. 취약한 관계가 끝납니다.
+      <br>3. 숨겨진 사실들이 드러납니다.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
-
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
-      <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
-      </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p><strong>황금률:</strong> 금성 역행 기간에는 절대로 결혼, 프러포즈, 또는 중대한 약속을 하지 마세요. 그림자 기간이 지날 때까지(약 40일) 기다리며 당신의 감정이 여전한지 확인하세요.</p>
+      
+      <p>당신의 마음을 우연에 맡기지 마세요. Astralo와 함께 연애 생활을 해독해 보세요.</p>
     `
 };

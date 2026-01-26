@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - FI
+ * Tammikuun 2026 kuukausihoroskooppi - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: "🌙 Tammikuun 2026 kuukausihoroskooppi: uuden aikakauden sarastus",
+  excerpt: "Täydelliset astrologiset ennusteet tammikuulle 2026. Yksityiskohtainen kuukausihoroskooppi kaikille merkeille Oinaasta Kaloihin, sisältäen Pluton Vesimiehessä, rakkauden, uran ja rahan.",
+  category: "Horoskoopit",
+  metaDescription: "Täydelliset astrologiset ennusteet tammikuulle 2026. Yksityiskohtainen kuukausihoroskooppi kaikille merkeille Oinaasta Kaloihin, sisältäen Pluton Vesimiehessä, rakkauden, uran ja rahan.",
+  keywords: "kuukausihoroskooppi, tammikuun 2026 astrologia, kuukausittaiset ennusteet, tammikuun eläinrata, Pluto Vesimiehessä, uusikuu Kauriissa, täysikuu Ravussa",
+  quickSummary: [
+    "Tammikuuta 2026 leimaa Pluton vakiintuminen Vesimieheen, mikä viestii massiivisista yhteiskunnallisista muutoksista.",
+    "Uusikuu Kauriissa (1. tammikuuta) tarjoaa ihanteellisen energian uudenvuodenlupauksille.",
+    "Merkuriuksen perääntymisen varjoaika päättyy noin 15. tammikuuta, mikä tekee viestinnästä sujuvampaa.",
+    "Marsin perääntyminen Ravussa tuo selvittämättömät perheristiriidat pintaan."
+  ],
+  keyTakeaways: [
+    "Käytä tammikuun ensimmäistä viikkoa vain strategiseen suunnitteluun; odota toiminnan kanssa kuun puoliväliin.",
+    "Odota äkillisiä teknologisia läpimurtoja tai häiriöitä, kun Uranus aktivoituu.",
+    "Ihmissuhteet käyvät läpi todellisuustarkistuksen Ravun täysikuun aikaan 14. tammikuuta.",
+    "Rahoitusmarkkinat voivat olla epävakaat; pitäydy turvallisissa, pitkäaikaisissa sijoituksissa."
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: "Tammikuun astrologia" },
+    { id: 'key-transits', title: "Tärkeät päivämäärät ja transiitit" },
+    { id: 'fire-signs', title: "Tulimerkit (Oinas, Leijona, Jousimies)" },
+    { id: 'earth-signs', title: "Maamerkit (Härkä, Neitsyt, Kauris)" },
+    { id: 'air-signs', title: "Ilmamerkit (Kaksoset, Vaaka, Vesimies)" },
+    { id: 'water-signs', title: "Vesimerkit (Rapu, Skorpioni, Kalat)" }
+  ],
+  content: `
+      <h2 id="monthly-overview">Tammikuun 2026 astrologia</h2>
+      <p>Hyvää uutta vuotta! <strong>Tammikuu 2026</strong> ei ole vain uuden kalenterivuoden alku; se on astrologinen uuden aikakauden sarastus. Kun <strong>Pluto on nyt tukevasti asettunut Vesimieheen</strong>, siirrymme kollektiivisesti pois viimeisen 15 vuoden hierarkkisista rakenteista (Pluto Kauriissa) ja astumme nopean innovaation, yhteisöllisyyden ja kapinan vaiheeseen.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Kuukausi alkaa <strong>uusikuulla Kauriissa</strong> 1. tammikuuta, mikä on harvinainen ja onnekas ajoitus. Tämä vahvistaa "uusi vuosi, uusi elämä" -energiaa, tehden tästä uskomattoman ajan asettaa kurinalaisia, pitkän aikavälin tavoitteita. Kuitenkin Marsin perääntyessä Ravussa energiamme voi tuntua hieman estyneeltä. Arvioimme uudelleen <em>miksi</em> toimimme, emme vain <em>miten</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Tärkeät päivämäärät ja transiitit</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1. tammikuuta:</strong> Uusikuu Kauriissa (Aseta tavoitteesi).</li>
+        <li><strong>4. tammikuuta:</strong> Mars siirtyy Leijonaan (Ylpeyden ja draaman nousu).</li>
+        <li><strong>14. tammikuuta:</strong> Täysikuu Ravussa (Emotionaalinen vapautuminen).</li>
+        <li><strong>20. tammikuuta:</strong> Aurinko siirtyy Vesimieheen (Tulevaisuuden kausi).</li>
+        <li><strong>29. tammikuuta:</strong> Uranus kääntyy suoraksi (Äkilliset muutokset).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Tuli Merkkis (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Tulimerkit (Oinas, Leijona, Jousimies)</h2>
+      <p><strong>Teema: löydä kipinäsi uudelleen.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Oinas:</strong> Kun hallitsijasi Mars näyttää liikkuvan takaperin (perääntyvän), saatat tuntea turhautumista viivästyksistä. Tämä ei ole stop-merkki, vaan keltainen valo. Käytä tammikuu urapolkusi tarkasteluun. Kiipeätkö oikealle vuorelle?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Leijona:</strong> Ihmissuhteet ovat keskiössä. Varaudu siihen, että entiset kumppanit tai vanhat ystävät ilmestyvät uudelleen. Täysikuu 12. huoneessasi viittaa yksinäisyyden tarpeeseen kuun puolivälissä. Lataa sosiaaliset akkusi.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Jousimies:</strong> Talousasiat ovat valokeilassa. Saatat löytää uuden tulonlähteen tai päättää lopettaa turhat tilaukset. On käytännön budjetoinnin aika, ei tuhlaamisen.</p>
 
-      <h2 id="earth-signs">🌍 Maa Merkkis (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Maamerkit (Härkä, Neitsyt, Kauris)</h2>
+      <p><strong>Teema: perustusten rakentaminen.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Härkä:</strong> Normaalisti vastustat muutosta, mutta Uranus merkissäsi työntää sinua kohti vapautta. Tammikuu tuo äkillisen matkustusmahdollisuuden tai muutoksen filosofiassasi. Sano kyllä tuntemattomalle.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Neitsyt:</strong> Hallitsijaplaneettasi Merkurius päättää varjoaikansa kuun puolivälissä. Siihen asti tarkista kaikki sopimukset kahdesti. Luovuesi on huipussaan 20. päivän jälkeen; aloita harrastus, jota olet lykännyt.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Kauris:</strong> Onnittelut! Merkissäsi oleva uusikuu on henkilökohtainen uusi vuotesi. Sinulla on kosminen lupa olla itsekäs. Mitä sinä haluat seuraavalta 12 kuukaudelta? Sano se ääneen.</p>
 
-      <h2 id="air-signs">💨 Ilma Merkkis (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Ilmamerkit (Kaksoset, Vaaka, Vesimies)</h2>
+      <p><strong>Teema: älyllinen laajentuminen.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Kaksoset:</strong> Yhteiset resurssit ja syvä läheisyys ovat avainasemassa. Saatat saada perinnön tai bonuksen tai kokea syvän psykologisen läpimurron. Intensiivinen mutta puhdistava kuukausi.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Vaaka:</strong> Koti ja perhe ovat painopisteenä. Saatat sisustaa uudelleen tai sovitella perheristiriitaa. Tasapaino on supervoimasi; käytä sitä luomaan rauhaa pyhättöösi.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vesimies:</strong> Tämä on sinun aikasi. Kun Pluto on merkissäsi, käyt läpi muodonmuutosta. Saatat muuttaa ulkonäköäsi, nimeäsi tai koko urapolkuasi. Maailma on vihdoin saavuttamassa visiosi.</p>
 
-      <h2 id="water-signs">💧 Vesi Merkkis (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Vesimerkit (Rapu, Skorpioni, Kalat)</h2>
+      <p><strong>Teema: emotionaalinen viisaus.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rapu:</strong> Täysikuu merkissäsi 14. tammikuuta on vuoden emotionaalinen kohokohta. Päästä kaikki ulos. Itke, naura, huuda. Luot nahkaasi juuri nyt. Nyt alkavat ihmissuhteet ovat karmallisia.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Skorpioni:</strong> Viestintä on valtaa. Sanasi painavat tällä kuulla tavallista enemmän. Käytä niitä neuvottelemiseen, opettamiseen tai kirjoittamiseen. Vältä manipuloivia pelejä; avoimuus voittaa.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Kalat:</strong> Sosiaalinen piirisi laajenee. Olet liima, joka pitää yhteisösi koossa. Etsi vapaaehtoistyömahdollisuuksia tai johda ryhmäprojektia. Intuitiosi on veitsenterävä.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Hanki täydellinen vuoden 2026 horoskooppisi</h2>
+      <p>Tämä kuukausittainen katsaus on vain jäävuoren huippu. Jokaisella yksilöllä on ainutlaatuinen syntymäkartta, joka reagoi näihin transiitteihin eri tavalla. Navigoidaksesi vuotta 2026 itsevarmasti, tilaa oma <strong>henkilökohtainen vuosi-transiittiraporttisi</strong> Astralolta. Analysoimme erityiset transiittisi kuukausi kuukaudelta.</p>
     `
 };

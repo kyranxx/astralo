@@ -1,56 +1,73 @@
 /**
- * love-horoscope-relationship-advice - FI
+ * Rakkaushoroskooppi - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "💕 Rakkaus Horoscope 2026: The Master Guide to Eläinradan Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">Rakkaus is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Rakkaushoroskooppi 2026: mestarillinen opas romantiikkaan eläinradalla",
+  excerpt: "Muuta rakkauselämäsi astrologian avulla. Syväsukellus Venus-merkkeihin, avioliiton 7. huoneeseen, Marsin intohimotyyleihin ja siihen, miten selviät Merkuriuksen perääntymisestä ihmissuhteissa.",
+  category: "Rakkaus & Ihmissuhteet",
+  metaDescription: "Muuta rakkauselämäsi astrologian avulla. Syväsukellus Venus-merkkeihin, avioliiton 7. huoneeseen, Marsin intohimotyyleihin ja siihen, miten selviät Merkuriuksen perääntymisestä ihmissuhteissa.",
+  keywords: "rakkaushoroskooppi, suhdeastrologia, Venus-merkin merkitys, deittailu Mars-merkin mukaan, 7. huone avioliitto, synastriaopas, deittailuvinkit eläinrata, rakkauden yhteensopivuus",
+  quickSummary: [
+    "Rakkauden kielesi määräytyy Venus-merkkisi, ei vain aurinkomerkkisi mukaan.",
+    "Syntymäkarttasi 7. huone kuvaa ihanteellista pitkäaikaista kumppaniasi.",
+    "Mars määrittää, miten tavoittelet romanttista kiinnostuksen kohdetta ja miten koet seksuaalisen kemian.",
+    "Ajoitus on parisuhteessa kaikki kaikessa: älä koskaan mene naimisiin Venuksen perääntyessä."
+  ],
+  keyTakeaways: [
+    "Jos haluat tietää, miten joku flirttailee, katso hänen Venus-merkiään.",
+    "Jos haluat tietää, miten joku riitelee tai kokee seksin, katso hänen Mars-merkiään.",
+    "Deseendenttisi (askendenttisi vastakohta) on usein se merkki, jota kohden tunnet suurinta vetoa.",
+    "Synastria on taidetta vertailla kahta horoskooppia nähdäkseen, onko suhde tarkoitettu kestämään."
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: "Rakkaus on taito" },
+    { id: 'venus-signs', title: "Venus: mitä rakastat" },
+    { id: 'mars-signs', title: "Mars: miten haluat" },
+    { id: '7th-house', title: "Avioliiton 7. huone" },
+    { id: 'retrograde-love', title: "Selviydy perääntymisistä rakkaudessa" },
+    { id: 'partner-analysis', title: "Kumppanianalyysi" }
+  ],
+  content: `
+      <h2 id="love-guide">Rakkaus on taito (ja astrologia on käsikirja)</h2>
+      <p>Usein käsittelemme rakkautta mystisenä voimana, joka vain "tapahtuu" meille. Mutta astrologiassa rakkaus on mekanismi, jossa on hammasrattaita ja vipuja. <strong>Rakkaushoroskooppisi</strong> ei kerro vain satunnaisista kohtaamisista; se on kartta psykologisista tarpeistasi kumppanin suhteen.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Miksi vedät puoleesi samoja "vääriä" ihmistyyppejä kerta toisensa jälkeen? Miksi viestintä katkeaa aina kolmen kuukauden jälkeen? Vastaukset löytyvät syntymäkartastasi. Ymmärtämällä kosmisen rakkaussuunnitelmasi voit lopettaa kaavojen toistamisen ja alkaa rakentaa suhdetta, jota todella haluat.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Venus: kiintymyksen osoittamisen taito</h2>
+      <p><strong>Venus</strong> on vetovoiman, arvojen ja harmonian planeetta. Merkki, jossa Venus sijaitsi syntymähetkelläsi, kuvaa sitä, mitä pidät kauniina ja miten osoitat kiintymystä.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>Venus tulimerkeissä (Oinas, Leijona, Jousimies):</strong> Rakastaa metsästystä. Tarvitsee draamaa, suuria eleitä ja spontaaniutta. Kyllästyy helposti. <em>Vinkki:</em> Pidä jännitystä yllä.</li>
+        <li><strong>Venus maamerkeissä (Härkä, Neitsyt, Kauris):</strong> Rakastaa vakautta. Tarvitsee sitoutumista, luotettavuutta ja fyysistä kosketusta. Inhoaa pelejä. <em>Vinkki:</em> Ole johdonmukainen.</li>
+        <li><strong>Venus ilmamerkeissä (Kaksoset, Vaaka, Vesimies):</strong> Rakastaa älyä. Tarvitsee keskustelua, huumoria ja ystävyyttä ennen kaikkea muuta. Välttelee raskaita tunteita. <em>Vinkki:</em> Ole mielenkiintoinen.</li>
+        <li><strong>Venus vesimerkeissä (Rapu, Skorpioni, Kalat):</strong> Rakastaa sielua. Tarvitsee syvää emotionaalista sulautumista, haavoittuvuutta ja turvallisuutta. <em>Vinkki:</em> Ole aito.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: halun moottori</h2>
+      <p>Kun Venus on se, mistä pidät, <strong>Mars</strong> on tapa, jolla saat sen. Mars ohjaa libidoa, tavoitteellisuutta ja konflikteja.</p>
+      <p>Jos sinulla on <strong>Mars Skorpionissa</strong>, olet intensiivinen, omistushaluinen ja suosit "kaikki tai ei mitään" -asennetta. Saatat säikyttää kevyen <strong>Marsin Kaksosissa</strong>, joka haluaa vain flirttailla ja pitää hauskaa. Kumppanisi Mars-merkin tunteminen on seksuaalisen tyydytyksen ja riitojen ratkaisemisen "salaisuus".</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">7. huone: "toinen puoliskosi"</h2>
+      <p>Katso nousevaa merkkiäsi. Katso nyt merkkiä, joka on suoraan sitä vastapäätä. Se on <strong>deseendenttisi</strong>, parisuhteen 7. huoneen hallitsija.</p>
+      <p>Tunnemme usein magneettista vetoa ihmisiin, jotka ilmentävät 7. huoneemme ominaisuuksia, koska heillä on se, mitä meiltä itseltämme tuntuu puuttuvan.
+      <br><em>Esimerkki:</em> Kurinalainen <strong>Neitsyt-askendentti</strong> päätyy usein naimisiin unelmoivan ja epäjärjestelmällisen <strong>Kala-tyypin (7. huone)</strong> kanssa. Neitsyt tuo rakennetta Kalan elämään; Kalat opettaa Neitsyttä rentoutumaan. Se on tasapainon akseli.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Selviydy perääntymisistä rakkaudessa</h2>
+      <p>Olet kuullut Merkuriuksen perääntymisestä (väärinkäsitykset), mutta <strong>Venuksen perääntyminen</strong> on se todellinen testi pareille. Se tapahtuu 18 kuukauden välein, ja tänä aikana:
+      <br>1. Entiset kumppanit ilmestyvät uudelleen ("zombieing").
+      <br>2. Heikot suhteet rakoilevat.
+      <br>3. Salaiset suhteet tulevat ilmi.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Kultainen sääntö:</strong> Älä koskaan mene naimisiin, älä kosi äläkä tee suuria sitoumuksia Venuksen perääntyessä. Odota, kunnes varjoaika on ohi (n. 40 päivää) nähdäksesi, tunnetko yhä samoin.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Kumppanianalyysi ihmissuhteissa</h2>
+      <p>Sinä olet monimutkainen ja niin on kumppanisikin. Yleinen horoskooppi "Leijona + Vesimies" ei pysty tavoittamaan ainutlaatuisen yhteytenne vivahteita. <strong>Premium-parisuhderaporttimme</strong> analysoi:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+        <li><strong>Synastria:</strong> Miten planeettasi koskettavat hänen planeettojaan (kemia).</li>
+        <li><strong>Komposiittikartta:</strong> Itse suhteen energia (kohtalo).</li>
+        <li><strong>Davison-kartta:</strong> Kohtaamisenne tarkoitus (karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Älä jätä sydäntäsi sattuman varaan. Selvitä rakkauselämäsi salat Astralo-sovelluksen avulla.</p>
     `
 };

@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - SK (Fallback to English content)
+ * Týždenný horoskop - SK
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sk: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Týždenný horoskop: Ako sa orientovať v nadchádzajúcom vesmírnom týždni',
+  excerpt: 'Maximalizujte svoj týždeň s naším sprievodcom týždenným horoskopom. Pochopte planetárne dni, orientujte sa v čase "Void-of-Course" mesiaca a naplánujte si rozvrh podľa astrologického načasovania.',
+  category: 'Horoskopy',
+  metaDescription: 'Maximalizujte svoj týždeň s naším sprievodcom týždenným horoskopom. Pochopte planetárne dni, orientujte sa v čase "Void-of-Course" mesiaca a naplánujte si rozvrh podľa astrologického načasovania.',
+  keywords: 'týždenný horoskop, týždenná astrológia, planetárne dni, prázdny mesiac, týždenná predpoveď zverokruhu, plánovanie astrológie, najlepšie dni tento týždeň',
+  quickSummary: [
+    'Každý deň v týždni ovláda iná planéta (Pondelok/Mesiac, Utorok/Mars, atď.)',
+    'Týždenné horoskopy sledujú pohyb rýchlejších planét cez znamenia zverokruhu',
+    'Mesiac bez kurzu (Void-of-Course) je kritický "čas na pauzu", kedy by sa nemali vykonávať dôležité kroky',
+    'Pondelky sú pre emócie, utorky pre akciu, piatky pre romantiku'
+  ],
+  keyTakeaways: [
+    'V nedeľu večer si pozrite týždennú predpoveď, aby ste si naplánovali kalendár',
+    'Naplánujte si náročné stretnutia na štvrtok (Jupiter) alebo sobotu (Saturn) v závislosti od cieľa',
+    'Vyhnite sa podpisovaniu zmlúv, keď je Mesiac "Void"',
+    'Využívajte týždenný tok energie, namiesto toho, aby ste proti nemu bojovali'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Astrologický rytmus' },
+    { id: 'planetary-days', title: 'Vládcovia dní' },
+    { id: 'void-moon', title: 'Mesiac bez kurzu (Void-of-Course)' },
+    { id: 'transits', title: 'Sledovanie týždenných tranzitov' },
+    { id: 'by-sign', title: 'Týždenné rady podľa znamení' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Astrologický rytmus týždňa</h2>
+      <p>Máte niekedy pocit, že niektoré týždne plynú ako voda, zatiaľ čo iné sú ako brodenie sa blatom? Alebo prečo je pocit z práce v utorok iný ako v piatok? Toto nie je náhoda. Štruktúra nášho 7-dňového týždňa je v skutočnosti založená výlučne na <strong>astrológii</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Pochopenie <strong>týždenného horoskopu</strong> je o niečom viac, než len vedieť, či vám niekto odpíše na správu. Ide o zosúladenie vášho rozvrhu s antickými planetárnymi vládcami času. Keď pracujete <em>s</em> energiou dňa, produktivita sa zvyšuje a odpor mizne.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Vládcovia dní</h2>
+      <p>Každý deň je pomenovaný po planéte (doslova v jazykoch ako francúzština alebo španielčina). Tu je váš sprievodca astrologickým plánovaním týždňa:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Pondelok (Deň Mesiaca) 🌙</h3>
+      <p><strong>Energia:</strong> Emocionálna, intuitívna, kolísavá.<br><strong>Najlepšie pre:</strong> Nákup potravín, upratovanie domu, dlhší spánok, rodinné večere, reflexiu.<br><strong>Vyhnite sa:</strong> Vysoko stresovým prezentáciám alebo rigidnej logike.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Utorok (Deň Marsu) ♂</h3>
+      <p><strong>Energia:</strong> Agresívna, energická, ostrá.<br><strong>Najlepšie pre:</strong> Cvičenie, začínanie nových projektov, riešenie problémov, zákroky, súťaženie.<br><strong>Vyhnite sa:</strong> Meditácii, snahe o úplný kľud.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Streda (Deň Merkúra) ☿️</h3>
+      <p><strong>Energia:</strong> Komunikatívna, zaneprázdnená, rýchla.<br><strong>Najlepšie pre:</strong> E-maily, stretnutia, písanie, predaj, krátke výlety, networking.<br><strong>Vyhnite sa:</strong> Tichu (aj tak k nemu pravdepodobne nedôjde).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Štvrtok (Deň Jupitera) ♃</h3>
+      <p><strong>Energia:</strong> Expanzívna, šťastná, optimistická.<br><strong>Najlepšie pre:</strong> Spúšťanie veľkých vízií, žiadanie o zvýšenie platu, plánovanie ciest, vyššie vzdelávanie.<br><strong>Vyhnite sa:</strong> Šetreniu každého centu.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Piatok (Deň Venuše) ♀</h3>
+      <p><strong>Energia:</strong> Sociálna, romantická, estetická.<br><strong>Najlepšie pre:</strong> Rande, oslavy, nákup oblečenia, umenie, relax, happy hour.<br><strong>Vyhnite sa:</strong> Špinavej práci alebo samote.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Sobota (Deň Saturna) ♄</h3>
+      <p><strong>Energia:</strong> Vážna, ťažká, disciplinovaná.<br><strong>Najlepšie pre:</strong> Prácu v záhrade, dlhodobé plánovanie, štúdium, doháňanie restov, povinnosti.<br><strong>Vyhnite sa:</strong> Divokým párty (pokiaľ nie sú formálne).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Nedeľa (Deň Slnka) ☀️</h3>
+      <p><strong>Energia:</strong> Žiarivá, zameraná na ego, duchovná.<br><strong>Najlepšie pre:</strong> Hobby, duchovné aktivity, hru s deťmi, prezentáciu seba, odpočinok.<br><strong>Vyhnite sa:</strong> Tomu, aby ste boli neviditeľní.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Mesiac bez kurzu (Void-of-Course)</h2>
+      <p>Ak si z tohto sprievodcu vezmete len jednu vec, nech je to <strong>Mesiac bez kurzu (Void-of-Course)</strong>. Nastáva vtedy, keď Mesiac dokončí svoj posledný aspekt k planéte vo svojom aktuálnom znamení a "vznáša sa" pred vstupom do ďalšieho znamenia.</p>
+      <p><strong>Pravidlo:</strong> "Z danej záležitosti nič nevzíde."</p>
+      <p>Počas "prázdneho" Mesiaca nepodpisujte zmluvy, nespúšťajte podnikanie ani neposielajte žiadosti o prvé rande. Energia nevyhnutne vyprchá. Tento čas využite na archiváciu, spánok alebo úpravu práce, ktorú ste už začali. Je to vesmírny "oddychový čas".</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Sledovanie týždenných tranzitov</h2>
+      <p>Dobrý <strong>týždenný astrologický výhľad</strong> sleduje aj špecifické uhly, ktoré planéty tento týždeň zvierajú. Napríklad:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Merkúr v sextile s Venušou:</strong> Ideálny týždeň pre sociálnu gráciu a žiadanie o láskavosti.</li>
+        <li><strong>Slnko v kvadráte s Plutom:</strong> Týždeň mocenských bojov a intenzity.</li>
+        <li><strong>Mars vstupuje do Váh:</strong> Energia sa mení z orientácie na prácu na orientáciu na vzťahy.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Týždenné rady podľa šablón</h2>
+      <p>Hoci je týždeň každého z nás jedinečný, tu je spôsob, akým znamenia zvyčajne zvládajú týždenné posuny:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Kardinálne znamenia (Baran, Rak, Váhy, Kozorožec):</strong> Vy ste iniciátori. Využite energiu začiatku týždňa (Po/Ut) na rozbehnutie vecí.</li>
+        <li><strong>Fixné znamenia (Býk, Lev, Škorpión, Vodnár):</strong> Vy ste tí, ktorí veci udržiavajú. Použite energiu stredu týždňa na upevnenie pokroku.</li>
+        <li><strong>Pohyblivé znamenia (Blíženci, Panna, Strelec, Ryby):</strong> Vy ste editori. Využite víkend alebo dni Merkúra na prispôsobenie sa a zmenu kurzu.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Vráťte sa každú nedeľu pre vašu konkrétnu týždennú predpoveď aktualizovanú tímom Astralo!</em>
     `
 };

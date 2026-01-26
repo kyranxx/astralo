@@ -4,33 +4,33 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-  title: "❤️ Maandhoroscoop Februari 2026: Het Seizoen van Innovatie in Waterman",
-  excerpt: "Februari 2026 brengt een golf van helderheid nu Mercurius weer direct loopt. Ontdek hoe de Volle Maan in Leeuw van 3 feb en Venus in Vissen je liefdesleven en carrière zullen beïnvloeden.",
-  category: "Horoscopi",
-  metaDescription: "Volledige astrologische voorspellingen voor februari 2026. Gedetailleerde maandelijke voorspellingen voor alle sterrenbeelden, met focus op de Volle Maan in Leeuw en de intrede van Venus in haar exaltatie in Vissen.",
-  keywords: "maandhoroscoop, astrologie februari 2026, maandelijke voorspellingen, dierenriemvoorspelling februari, waterman seizoen, volle maan in leeuw, venus in vissen",
-  quickSummary: [
-    "De Volle Maan in Leeuw van 3 feb vraagt je om het podium op te gaan en je ware zelf te uiten.",
-    "Mercurius gaat eindelijk weer direct lopen, wat de misverstanden van eind januari oplost.",
-    "Venus verhuist naar het dromerige teken Vissen, wat de meest romantische energie van het jaar creëert.",
-    "Het Waterman-seizoen zet ons aan om te innoveren en verouderde tradities te doorbreken."
-  ],
-  keyTakeaways: [
-    "Gebruik de eerste week van februari om creatieve projecten te lanceren of je imago te heruitvinden.",
-    "Valentijnsdag is dit jaar extra magisch met een geëxalteerde Venus; plan iets spiritueels en diepgaands.",
-    "Verwacht plotselinge inzichten over technologie of gemeenschapsgroepen rond het midden van de maand.",
-    "Algemene horoscopen zijn nuttig, maar voor precieze timing heb je je persoonlijke transits nodig."
-  ],
-  tableOfContents: [
-    { id: 'monthly-overview', title: "Overzicht Februari 2026" },
-    { id: 'key-transits', title: "Belangrijke Data en Transits" },
-    { id: 'fire-signs', title: "Vuurtekens (Ram, Leeuw, Boogschutter)" },
-    { id: 'earth-signs', title: "Aardetekens (Stier, Maagd, Steenbok)" },
-    { id: 'air-signs', title: "Luchttekens (Tweelingen, Weegschaal, Waterman)" },
-    { id: 'water-signs', title: "Watertekens (Kreeft, Schorpioen, Vissen)" },
-    { id: 'get-personal', title: "Waarom een algemene horoscoop niet genoeg is" }
-  ],
-  content: `
+    title: "❤️ Maandhoroscoop Februari 2026: Het Seizoen van Innovatie in Waterman",
+    excerpt: "Februari 2026 brengt een golf van helderheid nu Mercurius weer direct loopt. Ontdek hoe de Volle Maan in Leeuw van 3 feb en Venus in Vissen je liefdesleven en carrière zullen beïnvloeden.",
+    category: "Horoscopi",
+    metaDescription: "Volledige astrologische voorspellingen voor februari 2026. Gedetailleerde maandelijkse voorspellingen voor alle sterrenbeelden, met focus op de Volle Maan in Leeuw en de intrede van Venus in haar exaltatie in Vissen.",
+    keywords: "maandhoroscoop, astrologie februari 2026, maandelijkse voorspellingen, dierenriemvoorspelling februari, waterman seizoen, volle maan in leeuw, venus in vissen",
+    quickSummary: [
+        "De Volle Maan in Leeuw van 3 feb vraagt je om het podium op te gaan en je ware zelf te uiten.",
+        "Mercurius gaat eindelijk weer direct lopen, wat de misverstanden van eind januari oplost.",
+        "Venus verhuist naar het dromerige teken Vissen, wat de meest romantische energie van het jaar creëert.",
+        "Het Waterman-seizoen zet ons aan om te innoveren en verouderde tradities te doorbreken."
+    ],
+    keyTakeaways: [
+        "Gebruik de eerste week van februari om creatieve projecten te lanceren of je imago te heruitvinden.",
+        "Valentijnsdag is dit jaar extra magisch met een geëxalteerde Venus; plan iets spiritueels en diepgaands.",
+        "Verwacht plotselinge inzichten over technologie of gemeenschapsgroepen rond het midden van de maand.",
+        "Algemene horoscopen zijn nuttig, maar voor precieze timing heb je je persoonlijke transits nodig."
+    ],
+    tableOfContents: [
+        { id: 'monthly-overview', title: "Overzicht Februari 2026" },
+        { id: 'key-transits', title: "Belangrijke Data en Transits" },
+        { id: 'fire-signs', title: "Vuurtekens (Ram, Leeuw, Boogschutter)" },
+        { id: 'earth-signs', title: "Aardetekens (Stier, Maagd, Steenbok)" },
+        { id: 'air-signs', title: "Luchttekens (Tweelingen, Weegschaal, Waterman)" },
+        { id: 'water-signs', title: "Watertekens (Kreeft, Schorpioen, Vissen)" },
+        { id: 'get-personal', title: "Waarom een algemene horoscoop niet genoeg is" }
+    ],
+    content: `
       <h2 id="monthly-overview">De Astrologie van Februari 2026</h2>
       <p>Als januari was om het oude jaar van je af te schudden, dan nodigt <strong>februari 2026</strong> je uit om gedurfde stappen richting de toekomst te zetten. We bevinden ons in het hart van het <strong>Waterman-seizoen</strong>, een periode die moed, het ongewone en innovatie begunstigt. De collectieve stemming verschuift van "hoe overleef ik?" naar "hoe heruitvind ik mezelf?".</p>
       

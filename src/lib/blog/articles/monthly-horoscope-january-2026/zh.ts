@@ -1,69 +1,68 @@
 /**
- * monthly-horoscope-january-2026 - ZH
+ * 2026 年 1 月月度运势：新时代的黎明 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 2026 年 1 月月度运势：新时代的黎明',
+  excerpt: '完整的 2026 年 1 月占星预测。针对 12 星座的详细月度运势，涵盖冥王星进入水瓶座、爱情、职业和金钱趋势。',
+  category: '月度运势',
+  metaDescription: '完整的 2026 年 1 月占星预测。针对 12 星座的详细月度运势，涵盖冥王星进入水瓶座、爱情、职业和金钱趋势。',
+  keywords: '月度运势, 2026 年 1 月占星, 月度预测, 1 月星座运势, 冥王星水瓶座, 山羊座新月, 巨蟹座满月',
+  quickSummary: [
+    '2026 年 1 月的主旋律是冥王星定居水瓶座，预示着巨大的社会变革。',
+    '1 月 1 日的山羊座新月是设定“新年愿景”的完美能量。',
+    '水星逆行的后阴影期在 1 月 15 日结束，沟通将变得顺畅。',
+    '火星在巨蟹座逆行可能将未解决的家庭冲突带到表面。'
+  ],
+  keyTakeaways: [
+    '1 月第一周仅用于战略规划；推迟行动至月中。',
+    '随着天王星激活，预计会有突然的技术突破或干扰。',
+    '1 月 14 日巨蟹座满月前后，人际关系将面临现实考验。',
+    '金融市场波动剧烈，建议转向长期稳健的投资。'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: '1 月占星预测' },
+    { id: 'key-transits', title: '关键日期与相位' },
+    { id: 'fire-signs', title: '火象星座（白羊、狮子、射手）' },
+    { id: 'earth-signs', title: '土象星座（金牛、处女、摩羯）' },
+    { id: 'air-signs', title: '风象星座（双子、天秤、水瓶）' },
+    { id: 'water-signs', title: '水象星座（巨蟹、天蝎、双鱼）' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026 年 1 月占星预测</h2>
+      <p>新年快乐！<strong>2026 年 1 月</strong> 离我们不远了。随着<strong>冥王星正式定居水瓶座</strong>，我们正集体告别过去 15 年的顶层结构，进入一个充满创新、社区关注和变革的阶段。</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>1 月 1 日，本月以<strong>山羊座新月</strong>开启——这是一种罕见且吉祥的对齐。但这并不是“新年新气象”那么简单。由于火星正在巨蟹座逆行，能量可能感觉向内走。我们正在重新思考<em>为什么</em>要采取行动，而不仅仅是<em>如何</em>去行动。</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">关键日期与相位</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 月 1 日：</strong> 山羊座新月（设定意图）。</li>
+        <li><strong>1 月 4 日：</strong> 火星进入狮子座（骄傲感和戏剧化增加）。</li>
+        <li><strong>1 月 14 日：</strong> 巨蟹座满月（情感释放）。</li>
+        <li><strong>1 月 20 日：</strong> 太阳进入水瓶座（未来的季节）。</li>
+        <li><strong>1 月 29 日：</strong> 天王星转为顺行（突发的变化）。</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 火 标志s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
-      
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
-      
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
-      
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <h2 id="fire-signs">🔥 火象星座（白羊、狮子、射手）</h2>
+      <p><strong>主题：重燃火花</strong></p>
+      <p><strong>白羊座：</strong> 你的守护星火星正在逆行，你可能对延误感到沮丧。这不是红灯，而是黄灯。利用 1 月审视你的职业道路。你攀登的山峰对吗？</p>
+      <p><strong>狮子座：</strong> 关系是焦点。预期前任或老友会浮出水面。月中的满月暗示你需要独处充电。</p>
 
-      <h2 id="earth-signs">🌍 土 标志s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
-      
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
-      
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
-      
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <h2 id="earth-signs">🌍 土象星座（金牛、处女、摩羯）</h2>
+      <p><strong>主题：夯实基础</strong></p>
+      <p><strong>金牛座：</strong> 你通常习惯缓慢改变，但天王星正在推动你打破束缚。1 月会带来突然的旅行机会或哲学转变。</p>
+      <p><strong>摩羯座：</strong> 生日快乐！你星座里的新月是你个人的新年。在这个时候，你有“宇宙许可”去关注自我。未来 12 个月你想要什么？去实现它吧。</p>
 
-      <h2 id="air-signs">💨 空气 标志s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
-      
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
-      
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
-      
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <h2 id="air-signs">💨 风象星座（双子、天秤、水瓶）</h2>
+      <p><strong>主题：智力扩张</strong></p>
+      <p><strong>水瓶座：</strong> 这是你的时刻。冥王星在你的星座，你正在经历蜕变。你可能会改变你的形象、名字甚至整个职业描述。世界正在追赶你的视野。</p>
 
-      <h2 id="water-signs">💧 水 标志s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
-      
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
-      
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
-      
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <h2 id="water-signs">💧 水象星座（巨蟹、天蝎、双鱼）</h2>
+      <p><strong>主题：情感智慧</strong></p>
+      <p><strong>巨蟹座：</strong> 14 日你星座里的满月是全年的情感高峰。尽情释放吧。你正在脱下旧壳。</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">获取完整的 2026 年运势</h2>
+      <p>这只是冰山一角。每个人都有唯一的星盘。为了自信地度过 2026 年，请从 Astralo 订购你的<strong>个性化年度报告</strong>。它会按月分解你特定的过境情况。</p>
     `
 };

@@ -1,80 +1,97 @@
 /**
- * birth-chart-reading-explained - DA
+ * Forklaring af fødselshoroskop - DA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const da: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Fødselshoroskop: En guide til dit kosmiske kort",
+  excerpt: "Lås op for hemmelighederne i din personlighed med vores ultimative guide til fødselshoroskop. Lær at tolke planeter, huse, aspekter og noder som en professionel.",
+  category: "Grundlæggende",
+  metaDescription: "Lås op for hemmelighederne i din personlighed med vores ultimative guide til fødselshoroskop. Lær at tolke planeter, huse, aspekter og noder som en professionel.",
+  keywords: "fødselshoroskop, natal chart, horoskopsanalyse, astrologiens store tre, ascendant, månetegn, astrologiske huse, planetariske aspekter, læse fødselshoroskop",
+  quickSummary: [
+    "Dit fødselshoroskop er et 360-graders øjebliksbillede af himlen på det nøjagtige tidspunkt, du blev født.",
+    "De 'store tre' (solen, månen og ascendanten) udgør grundstammen i din personlighed.",
+    "De 12 huse beskriver 'hvor' begivenheder finder sted, mens planeterne beskriver 'hvad' der sker.",
+    "Aspekter (linjer, der forbinder planeter) afslører dine indre konflikter og specielle talenter."
+  ],
+  keyTakeaways: [
+    "Ascendantens tegn er ofte mere præcist end soltegnet til forudsigelser.",
+    "Udfordrende aspekter (kvadraturer, oppositioner) skaber ofte de mest succesfulde mennesker gennem modstandskraft.",
+    "Nordlig måneknude afslører din sjæls karmiske retning i dette liv.",
+    "Computergenererede rapporter er en god start, men menneskelig indsigt er uerstattelig."
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Din sjæls kort" },
+    { id: "the-big-three", title: "De store tre: Sol, måne, ascendant" },
+    { id: "the-planets", title: "Planeterne: Indre vs. ydre" },
+    { id: "the-houses", title: "De 12 huse" },
+    { id: "aspects", title: "Aspekter: Den kosmiske samtale" },
+    { id: "nodes", title: "Skæbnens noder" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Din sjæls kort</h2>
+      <p>Har du nogensine følt, at du ikke helt passer ind i beskrivelsen af dit stjernetegn? "Jeg er Løve, men jeg hader at være i centrum!". Grunden ligger sandsynligvis i dit <strong>fødselshoroskop</strong> (også kaldet natal chart eller radix). Selvom dit soltegn er vigtigt, er det kun én variabel i en enorm og kompleks ligning.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Et fødselshoroskop er et kort over himlen beregnet for det nøjagtige tidspunkt, dato og sted for din fødsel. Det placerer dig i universets centrum med planeterne arrangeret omkring dig. Se det som dit "kosmiske DNA" – et unikt sæt instruktioner, talenter, udfordringer og potentialer, der kun tilhører dig.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">De store tre: Sol, måne, ascendant</h2>
+      <p>Før man dykker ned i den komplekse geometri, skal enhver astrologistudent mestre sine "store tre". Disse tre punkter definerer størstedelen af din personlighed.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Solen ☀️ (Identitet)</h3>
+      <p>Solen repræsenterer dit bevidste ego, dit "jeg er". Det er dit brændstof, din drivkraft og den energetiske frekvens, du udstråler. Den besvarer spørgsmålet: <em>"Hvem er jeg i min kerne?"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Månen 🌙 (Følelser)</h3>
+      <p>Månen repræsenterer din indre verden, dine instinkter og din underbevidsthed. Den styrer, hvordan du reagerer, når du er såret, sulten eller træt. Den besvarer spørgsmålet: <em>"Hvad har jeg brug for for at føle mig tryg?"</em></p>
 
-      <h3>3. The Ascendant / Rising Tegn 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Ascendanten 🏹 (Masken)</h3>
+      <p>Ascendanten er det tegn, der steg op i den østlige horisont i fødselsøjeblikket. Det er din "grænseflade" mod verden. Den styrer dit ydre udseende, din stil og det første indtryk, du gør. Den besvarer spørgsmålet: <em>"Hvordan ser andre mig?"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Planeterne: Indre vs. ydre</h2>
+      <p>I en <strong>fødselshoroskopsanalyse</strong> er planeterne skuespillerne, der spiller roller i dit livs teaterstykke.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Personlige planeter (hurtige)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkur ☿️:</strong> Budbringeren. Styrer dit intellekt, din tale og din logik. Merkur i Tvillingerne forhandler anderledes end Merkur i Fiskene.</li>
+        <li><strong>Venus ♀:</strong> Elskeren. Styrer tiltrækning, kunst og penge. Viser, hvad du værdsætter, og hvordan du forfører.</li>
+        <li><strong>Mars ♂:</strong> Krigeren. Styrer handling, vrede og libido. Viser, hvordan du kæmper for det, du vil have.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Sociale og ydre planeter (langsomme)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> Guruen. Hvor du finder held, ekspansion og mening.</li>
+        <li><strong>Saturn ♄:</strong> Læreren. Hvor du finder udfordringer, disciplin og ansvar. Viser dine langsigtede strukturer.</li>
+        <li><strong>Uranus ♅, Neptun ♆, Pluto ♇:</strong> Generationsplaneter. De bevæger sig så langsomt, at de former hele generationer og påvirker dig på et dybt underbevidst niveau.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Scenen: 12 huse</h2>
+      <p>Horoskopet er delt op i 12 "huse", ligesom pizzastykker. Hvert hus styrer et specifikt livsområde. Hvor en planet befinder sig, fortæller dig <em>hvor</em> dens energi vil manifestere sig.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>Hus 1:</strong> Selvet, kroppen, udseendet.</li>
+        <li><strong>Hus 2:</strong> Penge, ejendele, værdier.</li>
+        <li><strong>Hus 3:</strong> Kommunikation, søskende, korte rejser.</li>
+        <li><strong>Hus 4:</strong> Hjemmet, familien, rødderne.</li>
+        <li><strong>Hus 5:</strong> Kreativitet, romantik, børn.</li>
+        <li><strong>Hus 6:</strong> Dagligdagen, helbred, tjeneste.</li>
+        <li><strong>Hus 7:</strong> Partnerskab, ægteskab, åbne fjender.</li>
+        <li><strong>Hus 8:</strong> Død, transformation, fælles penge.</li>
+        <li><strong>Hus 9:</strong> Filosofi, rejser, højere uddannelse.</li>
+        <li><strong>Hus 10:</strong> Karriere, ry, arv.</li>
+        <li><strong>Hus 11:</strong> Venner, netværk, drømme/ønsker.</li>
+        <li><strong>Hus 12:</strong> Underbevidsthed, hemmeligheder, spiritualitet.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspekter: Den kosmiske samtale</h2>
+      <p>Planeter arbejder ikke isoleret. De danner geometriske vinkler kaldet "aspekter". Disse linjer forbinder skuespillerne i dit horoskop.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Harmoniske aspekter (Trigon, Sekstil):</strong> Dette er gaver. Planeterne hjælper hinanden. Her flyder tingene let – nogle gange næsten for let, hvilket kan føre til dovenskab.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Udfordrende aspekter (Kvadratur, Opposition):</strong> Dette er udfordringer. Planeterne kæmper mod eller blokerer hinanden. Men disse friktionspunkter genererer den energi, der skal til for store præstationer. Mange succesfulde mennesker har horoskoper fulde af kvadraturer!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Skæbnens noder</h2>
+      <p>Til sidst skal du se efter de hesteskoformede symboler. <strong>Nordlig node</strong> repræsenterer din mission: den retning din sjæl ønsker at vokse i i dette liv. Den føles ofte fremmed og ny. <strong>Sydlig node</strong> repræsenterer dit tidligere liv (eller tidlige barndom): den føles bekendt og let, men at blive der fører til stagnation.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Tolkning er en kunst</h3>
+      <p>At læse et fødselshoroskop er som at lytte til en symfoni. Man kan isolere violinen (Venus), men magien ligger i hele orkestret, der spiller sammen. Hos Astralo bruger vi avanceret AI trænet på århundreders astrologisk viden til at opsummere disse millioner af variabler til en klar og læsbar historie om DIG.
     `
 };

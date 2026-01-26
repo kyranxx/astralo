@@ -1,54 +1,71 @@
 /**
- * mercury-retrograde-survival-guide - TR
+ * Merkür Retrosu Hayatta Kalma Rehberi - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.", 
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}], 
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: '☄️ Merkür Retrosu Hayatta Kalma Rehberi 2026: Kaostan Sakinliğe',
+  excerpt: 'Retrodan korkmayın! Merkür Retrosunun aslında neden hayati bir kozmik sıfırlama olduğunu ve teknoloji ile iletişim aksaklıklarını nasıl kolayca atlatacağınızı öğrenin.',
+  category: 'Astroloji 101',
+  metaDescription: 'Retrodan korkmayın! Merkür Retrosunun neden hayati bir kozmik sıfırlama olduğunu, yaygın hatalardan nasıl kaçınılacağını ve neden "Re" (yeniden) aktiviteleri için en iyi zaman olduğunu öğrenin.',
+  keywords: 'merkür retrosu, merkür retro tarihleri, hayatta kalma rehberi, astroloji ipuçları, gezegen retrosu, iletişim bozukluğu, teknolojik aksaklıklar',
+  quickSummary: [
+    'Merkür Retrosu, Merkür\'ün gökyüzünde geri gidiyor gibi göründüğü bir illüzyondur.',
+    'Yılda 3-4 kez gerçekleşir ve her biri yaklaşık üç hafta sürer.',
+    'Bu dönem, seyahat gecikmeleri, teknolojik arızalar ve yanlış iletişimle ünlüdür.',
+    'Yeni projelere başlamak için uygun bir zaman DEĞİL, ancak eski projeleri bitirmek için EŞSİZ bir zamandır.'
+  ],
+  keyTakeaways: [
+    'Her e-postayı, mesajı ve sözleşmeyi göndermeden veya imzalamadan önce iki kez kontrol edin.',
+    'Verilerinizi yedekleyin ve cihazlarda küçük teknolojik aksaklıklar bekleyin.',
+    'Eski arkadaşlar ve eski sevgililer genellikle bu kozmik döngüler sırasında yeniden ortaya çıkar.',
+    'Retrodan önceki ve sonraki "Gölge Dönem" de en az retro kadar önemlidir.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-merkür-retrograde', title: 'İllüzyonun Bilimi' },
+    { id: 'retrograde-shadow', title: 'Gölge Dönemi' },
+    { id: 'survival-dos', title: '"RE" Kuralı: Ne Yapmalı?' },
+    { id: 'survival-donts', title: 'Kırmızı Bayraklar: Nelerden Kaçınmalı?' },
+    { id: 'mercury-retrograde-dates', title: '2026 Retro Tarihleri' },
+    { id: 'final-thoughts', title: 'Gümüş Astar' }
+  ],
+  content: `
+      <h2 id="what-is-merkür-retrograde">İllüzyonun Bilimi</h2>
+      <p>Yılda üç veya dört kez, iletişim, seyahat ve teknoloji yöneticisi olan Merkür gezegeni, Dünya'daki bakış açımıza göre gökyüzünde geri gidiyor gibi görünür. Gerçekte bu sadece bir illüzyondur; tıpkı daha hızlı bir araçla geçerken yavaş bir aracın geri gidiyor gibi görünmesi gibi.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Ancak geri hareket bir illüzyon olsa da, etkileri çok gerçektir. Astrolojide bir gezegen retroya girdiğinde, enerjisi içe döner. Merkür hayatımızın "günlük rutini"ni —düşüncelerimizi, cihazlarımızı ve lojistiğimizi— yönettiği için her şey biraz... aksamaya başlar. <strong>Merkür Retrosu</strong>, dünyaya "Duraklat" düğmesine basmasını söyleyen kozmik bir yoldur.</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Gölge Dönemi: Ön ve Sonraki Sarsıntılar</h2>
+      <p>Pek çok insan, retro resmen başlamadan bir hafta <em>önce</em> işlerin ters gitmeye başlamasına şaşırır. Buna <strong>Retro Öncesi Gölgesi</strong> denir. Bu, Merkür'ün yavaşladığı ve yön değiştirmeye hazırlandığı zamandır. Benzer şekilde, <strong>Retro Sonrası Gölgesi</strong>, gezegen düz harekete geçtikten sonra yaklaşık iki hafta sürer. Büyük bir lansman veya önemli bir satın alma planlıyorsanız, en sorunsuz sonuçlar için gölge döneminin bitmesini bekleyin.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">"RE" Kuralı: Ne Yapmalı?</h2>
+      <p>Merkür Retrosu kötü bir şöhrete sahiptir, ancak doğru kullanırsanız aslında yılın en verimli zamanlarından biridir. Sır, <strong>"RE"</strong> (veya Türkçede <strong>"YENİDEN"</strong>) ile başlayan kelimelere odaklanmaktır:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Reflect (Yansıt/Düşün):</strong> Yıl başındaki hedeflerinize tekrar bakın. Hala yolunda mısınız?</li>
+        <li><strong>Review (Gözden Geçir/İncele):</strong> Sözleşmelerinizi, bütçenizi ve planlarınızı inceleyin. Muhtemelen daha önce kaçırdığınız bir hatayı bulacaksınız.</li>
+        <li><strong>Reconnect (Yeniden Bağ Kur):</strong> Eski arkadaşlardan haber almak veya aileyle geçmiş çatışmaları çözmek için zirve zamanıdır.</li>
+        <li><strong>Repair (Onar/Tamir Et):</strong> Sızdıran o musluğu veya görmezden geldiğiniz araç sorununu düzeltin.</li>
+        <li><strong>Reorganize (Yeniden Organize Et/Düzenle):</strong> Dolaplarınızı, gelen kutunuzu ve zihninizi temizleyin.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Kırmızı Bayraklar: Nelerden Kaçınmalı?</h2>
+      <p>Hayat durmasa da, üç haftalık retro penceresi boyunca bu yüksek riskli faaliyetlerden kaçınmaya çalışın:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Önemli Sözleşmeler İmzalamak:</strong> İmzalamanız gerekiyorsa, küçük yazıları üç kez okuyun. Daha iyisi, bir avukata okutun.</li>
+        <li><strong>Yeni Teknoloji Satın Almak:</strong> O yeni telefonu veya arabayı almak için bekleyin. Retroda alınan teknolojiler genellikle gizli kusurlarla gelir.</li>
+        <li><strong>Yeni Projelere Başlamak:</strong> Şimdi doğan fikirler, gezegen düz harekete geçtiğinde genellikle önemli ölçüde değişir. "Lansman" için bekleyin.</li>
+        <li><strong>Estetik Ameliyat veya Büyük Saç Değişiklikleri:</strong> Merkür döngüleri sırasında estetiği algılama biçimimizi de etkiler. Bu cesur seçimden daha sonra pişman olabilirsiniz.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">2026 Merkür Retrosu Tarihleri</h2>
+      <p>Kozmik dalgalanmaların önünde kalmak için bu tarihleri 2026 takviminize kaydedin:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25 Şubat – 20 Mart</strong> (Balık'ta başlar, Kova'da biter)</li>
+          <li><strong>29 Haziran – 23 Temmuz</strong> (Yengeç'te)</li>
+          <li><strong>24 Ekim – 13 Kasım</strong> (Akrep'te başlar, Terazi'de biter)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Gümüş Astar</h2>
+      <p>Merkür Retrosu bir lanet değil, gerekli bir bakım dönemidir. Onsuz, hayatımızın temellerini asla düzeltmeden aceleyle ilerlemeye devam ederdik. Bu zamanı yavaşlamak, nefes almak ve kendinize yetişmek için kullanın. Merkür nihayet düz hareketine geçtiğinde, her zamankinden daha hızlı ve odaklanmış olacaksınız.</p>
     `
 };

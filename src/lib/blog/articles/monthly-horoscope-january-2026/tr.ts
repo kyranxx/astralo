@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - TR
+ * Aylık Burç Yorumları Ocak 2026 - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", 
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Ocak 2026 Burç Yorumları: Yeni Bir Çağın Şafağı',
+  excerpt: 'Ocak 2026 astroloji tahmini. Koç\'tan Balık\'a kadar tüm burçlar için detaylı yorumlar, Wova\'daki Plüton, aşk, kariyer ve para trendleri.',
+  category: 'Burç Yorumları',
+  metaDescription: 'Ocak 2026 astroloji tahmini. Koç\'tan Balık\'a tüm burçlar için Plüton Kova transiti, aşk, kariyer ve para odaklı detaylı aylık burç yorumları.',
+  keywords: 'aylık burç yorumları, ocak 2026 astroloji, aylık tahminler, zodyak tahmini ocak, plüton kova, oğlak yeni ayı, yengeç dolunayı',
+  quickSummary: [
+    'Ocak 2026, Plüton\'un Kova burcuna yerleşmesiyle domine ediliyor ve büyük toplumsal değişimlerin sinyalini veriyor.',
+    'Oğlak burcundaki Yeni Ay (1 Ocak), "Yeni Yıl Kararları" enerjisi için mükemmel bir zaman.',
+    'Merkür Retrosu gölge dönemi 15 Ocak\'ta sona eriyor ve iletişimdeki pürüzleri gideriyor.',
+    'Yengeç burcundaki Mars Retrosu, çözülmemiş aile çatışmalarını yüzeye çıkarıyor.'
+  ],
+  keyTakeaways: [
+    'Ocak ayının ilk haftasını sadece stratejik planlama için kullanın; harekete geçmeyi ayın ortasına kadar erteleyin.',
+    'Uranüs aktifleşirken ani teknolojik atılımlar veya aksaklıklar bekleyin.',
+    'İlişkiler, 14 Ocak\'taki Yengeç Dolunayı civarında bir gerçeklik testiyle karşılaşacak.',
+    'Finansal piyasalar dalgalı olabilir; uzun vadeli ve güvenli yatırımlara sadık kalın.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Ocak Ayı Astrolojisi' },
+    { id: 'key-transits', title: 'Önemli Tarihler ve Transitler' },
+    { id: 'fire-signs', title: 'Ateş Burçları (Koç, Aslan, Yay)' },
+    { id: 'earth-signs', title: 'Toprak Burçları (Boğa, Başak, Oğlak)' },
+    { id: 'air-signs', title: 'Hava Burçları (İkizler, Terazi, Kova)' },
+    { id: 'water-signs', title: 'Su Burçları (Yengeç, Akrep, Balık)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Ocak 2026 Astrolojisi</h2>
+      <p>Yeni yılınız kutlu olsun! <strong>Ocak 2026</strong> sadece yeni bir takvim yılının başlangıcı değil; astrolojik olarak yeni bir çağın şafağıdır. <strong>Plüton\'un tamamen Kova burcuna geçmesiyle</strong>, son 15 yılın yukarıdan aşağıya hiyerarşik yapılarından (Plüton Oğlak) kolektif olarak uzaklaşıyor ve hızlı inovasyon, topluluk odaklılık ve değişim evresine giriyoruz.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Ay, 1 Ocak\'ta <strong>Oğlak burcundaki Yeni Ay</strong> ile başlıyor; bu nadir ve uğurlu bir dizilimdir. Bu durum "Yeni Yıl, Yeni Ben" enerjisini ikiye katlayarak disiplinli ve uzun vadeli hedefler belirlemek için inanılmaz bir zaman yaratıyor. Ancak Yengeç burcundaki Mars Retrosu ile enerjimiz biraz içselleşebilir. Sadece <em>nasıl</em> eylemde bulunduğumuzu değil, <em>neden</em> yaptığımızı sorguluyoruz.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Önemli Tarihler ve Transitler</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 Ocak:</strong> Oğlak\'ta Yeni Ay (Niyetleri belirleyin).</li>
+        <li><strong>4 Ocak:</strong> Mars Aslan burcuna giriyor (Gurur ve dram artıyor).</li>
+        <li><strong>14 Ocak:</strong> Yengeç\'te Dolunay (Duygusal boşalma).</li>
+        <li><strong>20 Ocak:</strong> Güneş Kova burcuna giriyor (Geleceğin Mevsimi).</li>
+        <li><strong>29 Ocak:</strong> Uranüs İleri Harekette (Aniden değişen durumlar).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Ateş Burçs (Koç, Aslan, Yay)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Ateş Burçları (Koç, Aslan, Yay)</h2>
+      <p><strong>Tema: Kıvılcımınızı Yeniden Kazanmak.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Koç:</strong> Yöneticiniz Mars\'ın geri gitmesiyle (retro), gecikmeler nedeniyle hayal kırıklığına uğrayabilirsiniz. Bu bir dur sinyali değil, sarı ışıktır. Ocak ayını kariyer yolunuzu gözden geçirmek için kullanın. Doğru dağa mı tırmanıyorsunuz?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Aslan:</strong> İlişkiler odak noktanızda. Eski partnerlerin veya eski arkadaşların yeniden ortaya çıkmasını bekleyin. 12. evinizdeki Dolunay, ay ortasında yalnızlık ihtiyacına işaret ediyor. Sosyal pillerinizi şarj edin.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Yay:</strong> Finansal konular ön planda. Yeni bir gelir akışı bulabilir veya gereksiz abonelikleri iptal etmeye karar verebilirsiniz. Çılgınca harcama yapmak yerine pratik bütçe planlaması yapma ayı.</p>
 
-      <h2 id="earth-signs">🌍 Toprak Burçs (Boğa, Başak, Oğlak)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Toprak Burçları (Boğa, Başak, Oğlak)</h2>
+      <p><strong>Tema: Temeli İnşa Etmek.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Boğa:</strong> Genellikle değişime yavaş uyum sağlarsınız, ancak burcunuzdaki Uranüs sizi özgürleşmeye zorluyor. Ocak ayı ani bir seyahat fırsatı veya felsefenizde bir değişim getiriyor. Bilinmeyene "evet" deyin.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Başak:</strong> Yönetici gezegeniniz Merkür ay ortasında gölge fazını tamamlıyor. O zamana kadar tüm sözleşmeleri iki kez kontrol edin. 20\'sinden sonra yaratıcılığınız tavan yapacak; ertelediğiniz o hobiye başlayın.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Oğlak:</strong> Doğum günü mevsiminiz kutlu olsun! Burcunuzdaki Yeni Ay sizin kişisel yeni yılınızdır. Kozmik olarak bencil olma izniniz var. Önümüzdeki 12 ay için SİZ ne istiyorsunuz? Bunu dile getirin.</p>
 
-      <h2 id="air-signs">💨 Hava Burçs (İkizler, Terazi, Kova)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Hava Burçları (İkizler, Terazi, Kova)</h2>
+      <p><strong>Tema: Entelektüel Genişleme.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>İkizler:</strong> Ortak kaynaklar ve derin yakınlık anahtar kelimeleriniz. Bir miras, ikramiye alabilir veya derin bir psikolojik atılım gerçekleştirebilirsiniz. Yoğun ama arındırıcı bir ay.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Terazi:</strong> Ev ve aile ön plana çıkıyor. Dekorasyon yapıyor olabilir veya bir aile çatışmasında ara buluculuk yapabilirsiniz. Denge sizin süper gücünüz; bunu kendi alanınızda barış yaratmak için kullanın.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Kova:</strong> Bu sizin anınız. Burcunuzdaki Plüton ile bir metamorfoz geçiriyorsunuz. Görünüşünüzü, adınızı veya tüm iş tanımınızı değiştirebilirsiniz. Dünya sizin vizyonunuzu yakalamaya başlıyor.</p>
 
-      <h2 id="water-signs">💧 Su Burçs (Yengeç, Akrep, Balık)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Su Burçları (Yengeç, Akrep, Balık)</h2>
+      <p><strong>Tema: Duygusal Bilgelik.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Yengeç:</strong> 14 Ocak\'ta burcunuzda gerçekleşecek Dolunay, yılınızın duygusal doruk noktasıdır. Hepsini dışarı bırakın. Ağlayın, gülün, çığlık atın. Eski bir deriyi döküyorsunuz. Şimdi kurulan ilişkiler karmiktir.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Akrep:</strong> İletişim çok güçlü. Sözleriniz bu ay ekstra ağırlık taşıyor. Bunları pazarlık yapmak, öğretmek veya yazmak için kullanın. Manipülatif akıl oyunlarından kaçının; dürüstlük kazanır.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Balık:</strong> Sosyal çevreniz genişliyor. Topluluğunuzu bir arada tutan yapıştırıcı sizsiniz. Gönüllü olmak veya bir grup projesine liderlik etmek için fırsatlar arayın. Sezgileriniz jilet gibi keskin.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">2026 Burç Yorumlarınızın Tamamını Alın</h2>
+      <p>Bu aylık genel bakış sadece buzdağının görünen kısmıdır. Her bireyin bu transitlerle farklı şekilde etkileşime giren benzersiz bir haritası vardır. 2026'da güvenle ilerlemek için Astralo'dan <strong>Kişiselleştirilmiş Yıllık Raporunuzu</strong> sipariş edin. Bu rapor, size özel transitleri ay ay detaylandırır.</p>
     `
 };

@@ -1,71 +1,68 @@
 /**
- * monthly-horoscope-february-2026 - KO
+ * 2026년 2월 월간 운세: 물병자리의 혁신 시즌 - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ 2026년 2월 월간 운세: 물병자리의 혁신 시즌',
+  excerpt: '2026년 2월은 수성이 순행으로 돌아오면서 명확한 변화의 물결을 가져옵니다. 2월 3일 사자자리 보름달과 물고기자리 금성이 당신의 사랑과 경력에 미칠 영향을 확인하세요.',
+  category: '월간 운세',
+  metaDescription: '2026년 2월 전체 점성술 예보. 모든 별자리에 대한 상세한 월간 예측. 사자자리 보름달과 금성의 물고기자리 입궁에 집중합니다.',
+  keywords: '월간 운세, 2026년 2월 점성술, 월간 예측, 2월 별자리 운세, 물병자리 시즌, 사자자리 보름달, 물고기자리 금성',
+  quickSummary: [
+    '2월 3일 사자자리 보름달은 당신이 무대 중심에 서서 진정한 자아를 표현할 것을 요구합니다.',
+    '수성이 마침내 순행으로 돌아와 1월 말부터 지속된 소통의 오해를 풀어줍니다.',
+    '금성이 몽환적인 물고기자리로 이동하여 일년 중 가장 로맨틱한 에너지를 만들어냅니다.',
+    '물병자리 시즌은 우리로 하여금 혁신하고 낡은 전통에서 벗어나도록 촉구합니다.'
+  ],
+  keyTakeaways: [
+    '2월 첫째 주를 이용해 창의적인 프로젝트를 시작하거나 자신을 리브랜딩하세요.',
+    '올해 밸런타인데이는 금성의 영향으로 매우 마법 같습니다. 영적이고 깊은 계획을 세워보세요.',
+    '월 중순에는 기술이나 커뮤니티 그룹에 관한 갑작스러운 통찰력을 기대해 보세요.',
+    '일반 운세도 좋지만, 정확한 타이밍을 위해서는 개인 트랜짓 리포트가 필요합니다.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: '2월 점성술 개요' },
+    { id: 'key-transits', title: '주요 날짜 및 트랜짓' },
+    { id: 'fire-signs', title: '불의 별자리 (양, 사자, 사수)' },
+    { id: 'earth-signs', title: '흙의 별자리 (황소, 처녀, 염소)' },
+    { id: 'air-signs', title: '공기의 별자리 (쌍둥이, 천칭, 물병)' },
+    { id: 'water-signs', title: '물의 별자리 (게, 전갈, 물고기)' },
+    { id: 'get-personal', title: '개인 차트가 중요한 이유' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026년 2월의 점성술</h2>
+      <p>1월이 낡은 해를 털어내는 기간이었다면, <strong>2026년 2월</strong>은 대담하게 미래로 나아가는 시기입니다. 우리는 대담함, 기발함, 혁신을 선호하는 <strong>물병자리 시즌</strong>의 한복판에 있습니다. 대중의 분위기는 '어떻게 살아남을까'에서 '어떻게 재창조할까'로 바뀝니다.</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>주요 소식은 <strong>2월 3일 사자자리 보름달</strong>입니다. 사자자리는 우리가 빛날 것을 요구합니다. "어디서 몸을 사리고 있나요?"라고 묻습니다. 이 빛 아래서는 숨는 것이 불가능합니다. 수성의 섀도우 기간이 끝나면서 명확한 소통이 가능해집니다. 안개가 걷힙니다.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">주요 날짜 및 트랜짓</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>2월 3일:</strong> 사자자리 보름달 (드라마, 열정, 절정).</li>
+        <li><strong>2월 10일:</strong> 금성 물고기자리 입궁 (무조건적인 사랑, 예술, 환상).</li>
+        <li><strong>2월 18일:</strong> 태양 물고기자리 입궁 (꿈의 시즌 시작).</li>
+        <li><strong>2월 25일:</strong> 수성 물고기자리 입궁 (논리가 직관으로 녹아듦).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 불 별자리s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
-      
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <h2 id="fire-signs">🔥 불의 별자리 (양, 사자, 사수)</h2>
+      <p><strong>사자자리:</strong> 당신의 차례입니다. 당신의 별자리에서 뜨는 보름달이 당신을 주인공으로 만듭니다. 승진이든, 이별이든, 돌파구든 <em>지금</em> 일어납니다.</p>
 
-      <h2 id="earth-signs">🌍 지구 별자리s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
-      
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <h2 id="earth-signs">🌍 흙의 별자리 (황소, 처녀, 염소)</h2>
+      <p><strong>황소자리:</strong> 금성이 물고기자리로 들어오면 당신은 더욱 부드러워집니다. 로맨스를 즐기기에 아름다운 시기이며, 과거의 실수를 스스로 용서하기에도 좋은 때입니다.</p>
 
-      <h2 id="air-signs">💨 공기 별자리s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
-      
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <h2 id="air-signs">💨 공기의 별자리 (쌍둥이, 천칭, 물병)</h2>
+      <p><strong>물병자리:</strong> 생일 축하합니다! 당신의 별자리에 있는 태양이 생명력을 증폭시킵니다. 당신은 매력적입니다. 개인 브랜드를 런칭하거나 외형을 바꾸기에 최고의 시기입니다.</p>
 
-      <h2 id="water-signs">💧 물 별자리s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
-      
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <h2 id="water-signs">💧 물의 별자리 (게, 전갈, 물고기)</h2>
+      <p><strong>물고기자리:</strong> 이달 말 태양이 당신의 별자리로 들어옵니다. 긴 잠에서 깨어나는 시기입니다. 당신의 직관은 이제 거의 초능력에 가깝습니다.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
-      
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
-      
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <h2 id="get-personal">일반 운세가 충분하지 않은 이유</h2>
+      <p>이 예보는 당신의 태양 별자리에 대한 "우주 일기예보"를 제공하지만, 가장 중요한 부분을 놓치고 있습니다. 바로 <strong>당신의 고유한 차트</strong>입니다. 당신은 태양 별자리 그 이상입니다. 당신만이 가진 복잡한 우주 지도는 누구와도 겹치지 않습니다.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">당신만의 진실을 마주할 준비가 되셨나요?</h3>
+          <p>2026년 전체 개인 트랜짓 리포트를 받아보세요. 행성들이 당신의 네이탈 청사진과 어떻게 상호작용하는지 정확히 확인하세요.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">나의 개인 해석 받기</a>
       </div>
     `
 };

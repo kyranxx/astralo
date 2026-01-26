@@ -1,69 +1,78 @@
 /**
- * monthly-horoscope-january-2026 - RU
+ * Ежемесячный гороскоп на январь 2026 года - RU
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ru: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", 
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Ежемесячный гороскоп на январь 2026 года: Рассвет новой эры',
+  excerpt: 'Полный астрологический прогноз на январь 2026 года. Подробный гороскоп для всех знаков от Овна до Рыб: Плутон в Водолее, любовь, карьера и финансовые тренды.',
+  category: 'Гороскопы',
+  metaDescription: 'Полный астрологический прогноз на январь 2026 года. Подробный гороскоп для всех знаков от Овна до Рыб: Плутон в Водолее, любовь, карьера и финансовые тренды.',
+  keywords: 'ежемесячный гороскоп, астрология январь 2026, ежемесячные прогнозы, прогноз зодиака на январь, плутон в водолее, новолуние в козероге, полнолуние в раке',
+  quickSummary: [
+    'Январь 2026 года пройдет под знаком окончательного перехода Плутона в Водолея, что знаменует масштабные социальные сдвиги.',
+    'Новолуние в Козероге (1 января) — идеальная энергия для новогодних обещаний.',
+    'Пост-ретроградная тень Меркурия рассеется к 15 января, что упростит общение.',
+    'Ретроградный Марс в Раке выносит на поверхность нерешенные семейные конфликты.'
+  ],
+  keyTakeaways: [
+    'Используйте первую неделю января только для стратегического планирования; отложите активные действия до середины месяца.',
+    'Ожидайте внезапных технологических прорывов или сбоев в работе техники по мере активизации Урана.',
+    'Отношения пройдут проверку на прочность в районе полнолуния в Раке 14 января.',
+    'Финансовые рынки могут быть нестабильными; придерживайтесь долгосрочных безопасных инвестиций.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Астрология января' },
+    { id: 'key-transits', title: 'Ключевые даты и транзиты' },
+    { id: 'fire-signs', title: 'Огненные знаки (Овен, Лев, Стрелец)' },
+    { id: 'earth-signs', title: 'Земные знаки (Телец, Дева, Козерог)' },
+    { id: 'air-signs', title: 'Воздушные знаки (Близнецы, Весы, Водолей)' },
+    { id: 'water-signs', title: 'Водные знаки (Рак, Скорпион, Рыбы)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Астрология января 2026 года</h2>
+      <p>С Новым годом! <strong>Январь 2026 года</strong> — это не просто начало нового календарного года; это астрологический рассвет новой эры. С <strong>Плутоном, прочно обосновавшимся в Водолее</strong>, мы коллективно уходим от иерархических структур последних 15 лет (Плутон в Козероге) и вступаем в фазу быстрых инноваций, упора на сообщества и реформ.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Месяц открывается <strong>новолунием в Козероге</strong> 1 января — редкое и благоприятное совпадение. Это усиливает энергию обновлений, делая это время невероятно подходящим для постановки дисциплинированных долгосрочных целей. Однако из-за ретроградного Марса в Раке наша энергия может быть направлена вовнутрь. Мы переосмысливаем <em>почему</em> мы действуем, а не только <em>как</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Ключевые даты и транзиты</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 января:</strong> Новолуние в Козероге (время ставить цели).</li>
+        <li><strong>4 января:</strong> Марс входит в знак Льва (рост гордости и драматизма).</li>
+        <li><strong>14 января:</strong> Полнолуние в Раке (эмоциональное высвобождение).</li>
+        <li><strong>20 января:</strong> Солнце входит в Водолея (сезон будущего).</li>
+        <li><strong>29 января:</strong> Уран переходит в прямое движение (внезапные перемены).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Огонь Знакs (Овен, Лев, Стрелец)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Огненные знаки (Овен, Лев, Стрелец)</h2>
+      <p><strong>Тема: Возвращение своей искры.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
-      
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
-      
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Овен:</strong> Поскольку ваш управитель Марс движется ретроградно, вы можете чувствовать разочарование из-за задержек. Это не красный свет, это желтый. Используйте январь, чтобы пересмотреть свой карьерный путь. На ту ли гору вы взбираетесь?</p>
+      <p><strong>Лев:</strong> Отношения в центре внимания. Ожидайте появления бывших партнеров или старых друзей. Полнолуние в вашем 12-м доме предполагает потребность в уединении в середине месяца. Перезарядите свои социальные батарейки.</p>
+      <p><strong>Стрелец:</strong> На первый план выходят финансы. Вы можете найти новый источник дохода или решить сократить ненужные подписки. Это месяц для практичного планирования бюджета, а не для безумных трат.</p>
 
-      <h2 id="earth-signs">🌍 Земля Знакs (Телец, Девы, Козерог)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Земные знаки (Телец, Дева, Козерог)</h2>
+      <p><strong>Тема: Закладка фундамента.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
-      
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
-      
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Телец:</strong> Обычно вы тяжело идете на перемены, но Уран в вашем знаке подталкивает вас к свободе. Январь приносит внезапную возможность для путешествия или сдвиг в вашей философии. Скажите «да» неизведанному.</p>
+      <p><strong>Дева:</strong> Ваша правящая планета Меркурий выходит из теневой фазы в середине месяца. До этого времени трижды проверяйте все контракты. Творческий подъем ожидается после 20-го числа — начните то хобби, которое вы откладывали.</p>
+      <p><strong>Козерог:</strong> С днем рождения! Новолуние в вашем знаке — это ваш персональный Новый год. Космос дает вам разрешение быть эгоистичными. Чего ВЫ хотите в ближайшие 12 месяцев? Озвучьте это миру.</p>
 
-      <h2 id="air-signs">💨 Воздух Знакs (Близнецы, Весы, Водолей)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Воздушные знаки (Близнецы, Весы, Водолей)</h2>
+      <p><strong>Тема: Интеллектуальное расширение.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
-      
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
-      
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Близнецы:</strong> Ключевыми являются общие ресурсы и глубокая близость. Вы можете получить наследство, бонус или совершить глубокий психологический прорыв. Это интенсивный, но очищающий месяц.</p>
+      <p><strong>Весы:</strong> Дом и семья выходят на центральный план. Возможно, вы займетесь переустройством дома или будете посредником в семейном конфликте. Баланс — ваша суперсила; используйте ее для создания мира в вашем убежище.</p>
+      <p><strong>Водолей:</strong> Это ваш момент. С Плутоном в вашем знаке вы проходите через метаморфозу. Вы можете изменить внешность, имя или сферу деятельности. Мир подстраивается под ваше видение.</p>
 
-      <h2 id="water-signs">💧 Вода Знакs (Рак, Скорпион, Рыбы)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Водные знаки (Рак, Скорпион, Рыбы)</h2>
+      <p><strong>Тема: Эмоциональная мудрость.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
-      
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
-      
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Рак:</strong> Полнолуние в вашем знаке 14-го числа — эмоциональная кульминация вашего года. Выпустите все наружу. Плачьте, смейтесь, кричите. Вы сбрасываете старую кожу. Отношения, завязавшиеся сейчас, имеют кармический характер.</p>
+      <p><strong>Скорпион:</strong> Общение обладает большой силой. Ваши слова имеют в этом месяце особый вес. Используйте их для переговоров, обучения или писательства. Избегайте манипулятивных игр; искренность побеждает.</p>
+      <p><strong>Рыбы:</strong> Ваш круг общения расширяется. Вы — то связующее звено, которое объединяет ваше сообщество. Ищите возможности для волонтерства или руководства групповым проектом. Ваша интуиция остра как бритва.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Получите свой полный гороскоп на 2026 год</h2>
+      <p>Этот ежемесячный обзор — лишь верхушка айсберга. У каждого человека есть уникальная карта, которая по-разному взаимодействует с этими транзитами. Чтобы уверенно пройти через 2026 год, закажите свой <strong>Персональный годовой прогноз</strong> от Astralo. В нем пошагово расписаны ваши конкретные транзиты месяц за месяцем.</p>
     `
 };

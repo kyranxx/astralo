@@ -1,101 +1,75 @@
 /**
- * daily-horoscope-guide - ZH
+ * 每日运势：开启你 2026 预测的终极指南 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: '⭐ 每日运势 2026：开启你预测的终极指南',
+  excerpt: '掌握每日运势预测。一份关于每日占星如何运作、为什么上升星座很重要以及如何利用行星能量获得成功的综合指南。',
+  category: '占星 101',
+  metaDescription: '掌握每日运势预测。一份关于每日占星如何运作、为什么上升星座很重要以及如何利用行星能量获得成功的综合指南。',
+  keywords: '每日运势, 今日运势, 星座运势, 每日生肖, 运势指南, 了解占星, 每日上升, 行星过境',
+  quickSummary: [
+    '每日运势由快速移动的月亮和行星与你星盘产生的相位决定。',
+    '根据上升星座阅读通常能提供更准确的每日预测。',
+    '行星过境每天都会触发特定的事件、情绪和机遇。',
+    '学习利用“月亮空亡”时期来避免徒劳的努力。'
+  ],
+  keyTakeaways: [
+    '你的太阳星座展示了你的核心生命力，但你的上升星座设定了你日常生活中的“舞台”。',
+    '月亮每 2.5 天更换一次星座，决定了集体的情绪基调。',
+    '水星逆行和其他“负面”相位实际上是回顾和重新调整的时期。',
+    '将占星术融入晨间日常可以优化你的生产力和人际关系。'
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: '为什么要读每日运势？' },
+    { id: 'science-behind-it', title: '原理：它如何运作' },
+    { id: 'rising-vs-sun', title: '黄金法则：太阳 vs 上升' },
+    { id: 'planetary-players', title: '关键的行星角色' },
+    { id: 'practical-rituals', title: '每日占星仪式' },
+    { id: 'myth-busting', title: '破除常见迷思' }
+  ],
+  content: `
+      <h2 id="introduction">为什么要读每日运势？</h2>
+      <p>对于全球数百万人来说，查看<strong>每日运势</strong>就像喝早起的第一杯咖啡一样必不可少。这是一个停顿的时刻，一个自我反思的仪式，也是一种为当天的能量做准备的方式。但你是否曾好奇这些预测背后的动力是什么？它是随机的建议，还是幕后有复杂的宇宙发条在运作？</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>在 Astralo，我们相信占星术是一种赋能的工具。一份写得好的运势不仅仅是预测未来，它还帮助你<em>创造</em>未来。通过了解“宇宙天气”——行星今天相对于你出生时的位置——你可以优雅地应对挑战，抓住那些可能与你擦肩而过的机遇。</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">原理：它如何运作</h2>
+      <p>占星术通常被称为周期的研究。你的<strong>每日运势预测</strong>是使用一种叫做“过境”（Transits）的技术计算出来的。想象你的本命盘是你出生时天空的永久快照。然而，行星在不断移动。“过境”就发生在天空中移动的行星与你本命盘中的行星形成数学角度（相位）时。</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>月亮：命运的分钟拨针</h3>
+      <p>像木星这样的行星要一年才更换一次星座，而<strong>月亮</strong>移动极快，大约 2.5 天就闪过一个星座。这使得月亮成为你<em>每日</em>心情和情感景观的主要驱动力。当月亮在火象白羊座时，我们会感到冲动和精力充沛；当它转入土象金牛座时，我们集体慢下来并渴望舒适。</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
-
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising 标志</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">黄金法则：请参考你的上升星座</h2>
+      <p>这是专业占星师都知道的秘密：<strong>为了获得最准确的每日预测，你应该阅读上升星座的运势，而不仅仅是太阳星座。</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>为什么？因为运势是使用“宫位系统”编写的。你的上升星座决定了你星盘中 12 个宫位的布局。第 1 宫是你自己，第 2 宫是金钱，第 7 宫是人际关系，依此类推。当占星师写下“白羊座今天会有金钱机遇”时，他们观察的是行星通过白羊座上升盘中第 2 宫的情况。</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>读太阳星座：</strong> 了解有关你自我、活力和核心目标的总体主题。</li>
+        <li><strong>读上升星座：</strong> 了解今天将发生在你身上的具体事件、时机和情况。</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">一天中的关键行星角色</h2>
+      <p>除了月亮，其他快速移动的“个人行星”也塑造了你的每日体验：</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>水星：</strong> 掌管沟通、技术和旅行。它决定了你的电子邮件是顺利送达还是掉入垃圾邮件，以及你的通勤是顺利还是混乱。</li>
+        <li><strong>金星：</strong> 掌管爱情、金钱和价值观。一个好的金星日非常适合约会、购物或要求加薪。</li>
+        <li><strong>火星：</strong> 黄道带的引擎。它决定了你的能量水平、驱动力和欲望。</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 标志s</h2>
-      
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
-
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
-
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
-
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
-
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
-
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
-
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
-
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
-
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
-
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
-
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
-
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
-
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">每日占星仪式</h2>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>晨间查看：</strong> 在查看电子邮件<em>之前</em>阅读你的预测。这设定了一个宇宙意向。</li>
+        <li><strong>注意月亮星座：</strong> 如果月亮在处女座，清理你的办公桌；如果在天秤座，联系你的商业伙伴。顺流而动总是更容易。</li>
+        <li><strong>尊重空亡期：</strong> “月亮空亡”是指月亮在更换星座之前不再产生相位的时间段。这是一个模糊期。永远不要在空亡期间签署合同或开展业务。利用这段时间休息。</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">破除常见迷思</h2>
+      <p><strong>“运势太笼统了。”</strong> <br>普通报纸上的运势之所以笼统，是因为它们只看太阳星座。而在 Astralo，通过我们复杂的 AI 生成的个性化报告会考虑你整个星盘的细微差别。</p>
+      <p><strong>“占星术预测的是固有的命运。”</strong> <br>错误。占星术预测的是<em>能量</em>和<em>天气</em>。可能会下雨（一个困难的过境），但你可以决定是带伞还是在雨中跳舞。你永远拥有自由意志。</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>准备好深入探索了吗？</h3>
+      <p>虽然一般预测很有帮助，但没有什么比根据你确切的出生时间和地点得出的报告更胜一筹了。解锁你宇宙设计的全部潜力，尽在 Astralo 精英个性化解读。</p>
     `
 };

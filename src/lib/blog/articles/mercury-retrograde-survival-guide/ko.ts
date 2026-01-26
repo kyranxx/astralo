@@ -1,54 +1,68 @@
 /**
- * mercury-retrograde-survival-guide - KO
+ * 수성 역행 생존 가이드 2026: 혼돈에서 평온으로 - KO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ko: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: '☄️ 수성 역행 생존 가이드 2026: 혼돈 속에서 평온 유지하기',
+  excerpt: '역행을 두려워하지 마세요! 수성 역행이 왜 사실은 필수적인 우주적 재설정 기간인지, 그리고 기술 및 소통 오류를 어떻게 헤쳐나갈지 알아봅니다.',
+  category: '점성술 101',
+  metaDescription: '수성 역행 생존 가이드. 수성 역행이 왜 필수적인 재설정 기간인지, 일반적인 함정을 피하는 법, 그리고 "재(Re-)" 활동에 가장 좋은 시기인 이유를 배웁니다.',
+  keywords: '수성 역행, 수성 역행 날짜, 생존 가이드, 점성술 팁, 행성 역행, 소통 단절, 기술 오류',
+  quickSummary: [
+    '수성 역행은 수성이 하늘에서 뒤로 움직이는 것처럼 보이는 시각적 착시 현상입니다.',
+    '일년에 3~4회 발생하며 매회 약 3주간 지속됩니다.',
+    '이 기간은 여행 지연, 기술적 결함, 의사소통 오해로 악명이 높습니다.',
+    '새로운 프로젝트를 시작할 때는 아니지만, 오래된 일을 마무리하기엔 최적의 시기입니다.'
+  ],
+  keyTakeaways: [
+    '이메일, 메시지, 계약서를 보내거나 서명하기 전에 반드시 세 번 확인하세요.',
+    '데이터를 백업하고 전자기기의 일시적인 오류에 대비하세요.',
+    '이 시기에는 옛 친구나 헤어진 연인이 다시 나타나는 경우가 많습니다.',
+    '역행 전후의 "섀도우 기간(Shadow Period)"도 실제 역행만큼 중요합니다.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: '착시의 과학' },
+    { id: 'retrograde-shadow', title: '섀도우 기간' },
+    { id: 'survival-dos', title: '지켜야 할 "RE" 규칙' },
+    { id: 'survival-donts', title: '주의해야 할 레드 플래그' },
+    { id: 'mercury-retrograde-dates', title: '2026년 역행 날짜' },
+    { id: 'final-thoughts', title: '전화위복의 기회' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">착시의 과학</h2>
+      <p>일년에 서너 번, 소통, 여행, 기술을 담당하는 행성인 수성이 지구에서 보기에 뒤로 움직이는 것처럼 보입니다. 실제로는 더 빠른 차가 느린 차를 추월할 때 느린 차가 뒤로 가는 것처럼 보이는 것과 같은 시각적 착시 현상입니다.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>하지만 뒤로 가는 움직임은 환상일지라도 그 영향은 매우 실질적입니다. 점성술에서 행성이 역행할 때 그 에너지는 내면으로 향합니다. 수성은 우리의 일상적인 생각, 도구, 물류를 지배하므로 모든 것이 조금씩... 삐걱거리기 시작합니다. <strong>수성 역행</strong>은 우주가 세상에 "일시 정지" 버튼을 누르라고 말하는 방식입니다.</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">섀도우 기간: 전후의 흔들림</h2>
+      <p>많은 사람이 역행이 공식적으로 시작되기 일주일 <em>전</em>부터 일이 꼬이기 시작하면 놀라곤 합니다. 이를 <strong>전기 섀도우</strong>라고 합니다. 마찬가지로 <strong>후기 섀도우</strong>는 행성이 다시 순행을 시작한 후 약 2주간 지속됩니다. 중요한 발표나 큰 구매를 계획하고 있다면 가장 매끄러운 결과를 위해 후기 섀도우 기간이 지난 후에 진행하세요.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">"RE" 규칙: 해야 할 일</h2>
+      <p>수성 역행은 나쁜 평판을 가지고 있지만, 올바르게 사용한다면 일년 중 가장 생산적인 시기가 될 수 있습니다. 비밀은 <strong>"RE"</strong>(다시/다시 한 번)로 시작하는 활동에 집중하는 것입니다.</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>반성(Reflect):</strong> 연초의 목표를 되돌아보세요. 여전히 궤도에 있나요?</li>
+        <li><strong>검토(Review):</strong> 계약서, 예산, 계획을 다시 훑어보세요. 이전에 놓쳤던 실수를 발견할 것입니다.</li>
+        <li><strong>재연결(Reconnect):</strong> 옛 친구로부터 연락이 오거나 가족과의 해묵은 갈등을 해결하기에 최고의 시기입니다.</li>
+        <li><strong>수리(Repair):</strong> 누수되는 수도꼭지나 미뤄왔던 자동차 수리를 해결하세요.</li>
+        <li><strong>재정리(Reorganize):</strong> 옷장, 수신함, 그리고 마음을 정리하세요.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">레드 플래그: 피해야 할 일</h2>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>중요한 계약 서명:</strong> 반드시 해야 한다면 세부 사항을 세 번 읽으세요.</li>
+        <li><strong>새 기기 구매:</strong> 새 아이폰이나 자동차 구매는 조금만 참으세요. 이 시기에 산 기기는 숨겨진 결함이 있을 수 있습니다.</li>
+        <li><strong>새 프로젝트 시작:</strong> 지금 떠오른 아이디어는 행성이 순행으로 돌아가면 크게 변할 수 있습니다.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">2026년 수성 역행 날짜</h2>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>2월 25일 – 3월 20일</strong> (물고기자리에서 시작, 물병자리에서 종료)</li>
+          <li><strong>6월 29일 – 7월 23일</strong> (게자리에서)</li>
+          <li><strong>10월 24일 – 11월 13일</strong> (전갈자리에서 시작, 천칭자리에서 종료)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">전화위복의 기회</h2>
+      <p>수성 역행은 저주가 아니라 필수적인 유지보수 기간입니다. 이것이 없다면 우리는 삶의 기반을 수리하지 않은 채 계속 달려가기만 할 것입니다. 이 시간을 이용해 속도를 줄이고, 숨을 고르고, 자신을 돌아보세요. 수성이 마침내 전진을 시작할 때, 당신은 그 어느 때보다 빠르고 집중력 있게 나아갈 수 있을 것입니다.</p>
     `
 };

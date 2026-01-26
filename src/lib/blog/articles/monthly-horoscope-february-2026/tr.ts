@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - TR
+ * Aylık Burç Yorumları Şubat 2026 - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.", 
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Şubat 2026 Burç Yorumları: Kova Burcu İnovasyon Mevsimi',
+  excerpt: 'Şubat 2026, Merkür\'ün ileri harekete geçmesiyle bir netlik dalgası getiriyor. 3 Şubat\'ta Aslan burcundaki Dolunay ve Balık burcuna geçen Venüs\'ün aşk hayatınızı ve kariyerinizi nasıl etkileyeceğini keşfedin.',
+  category: 'Burç Yorumları',
+  metaDescription: 'Şubat 2026 genel astroloji tahmini. Tüm burçlar için Aslan Dolunayı ve Balık burcuna geçen yücelmiş Venüs enerjisi odaklı detaylı aylık yorumlar.',
+  keywords: 'aylık burç yorumları, şubat 2026 astroloji, aylık tahminler, zodyak tahmini şubat, kova mevsimi, aslan dolunayı, venüs balık',
+  quickSummary: [
+    '3 Şubat\'taki Aslan Dolunayı, sahnenin merkezine geçmenizi ve gerçek benliğinizi ifade etmenizi talep ediyor.',
+    'Merkür nihayet ileri harekete geçiyor ve Ocak sonundaki iletişim aksaklıklarını temizliyor.',
+    'Venüs rüya gibi Balık burcuna geçerek tüm yılın en romantik enerjisini yaratıyor.',
+    'Kova Mevsimi bizi inovasyon yapmaya ve miadı dolmuş geleneklerden kurtulmaya teşvik ediyor.'
+  ],
+  keyTakeaways: [
+    'Şubat ayının ilk haftasını yaratıcı projeler başlatmak veya kendinizi yeniden markalamak için kullanın.',
+    'Sevgililer Günü, yücelmiş Venüs ile bu yıl ekstra büyülü; ruhsal ve derin bir şeyler planlayın.',
+    'Ay ortasında teknoloji veya topluluk gruplarıyla ilgili ani içgörüler bekleyin.',
+    'Genel burç yorumları harikadır, ancak spesifik zamanlama için kişisel transitlerinize ihtiyacınız vardır.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Şubat 2026 Genel Bakış' },
+    { id: 'key-transits', title: 'Önemli Tarihler ve Transitler' },
+    { id: 'fire-signs', title: 'Ateş Burçları (Koç, Aslan, Yay)' },
+    { id: 'earth-signs', title: 'Toprak Burçları (Boğa, Başak, Oğlak)' },
+    { id: 'air-signs', title: 'Hava Burçları (İkizler, Terazi, Kova)' },
+    { id: 'water-signs', title: 'Su Burçları (Yengeç, Akrep, Balık)' },
+    { id: 'get-personal', title: 'Genel Yorumlar Neden Yetmez?' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Şubat 2026 Astrolojisi</h2>
+      <p>Ocak ayı eski yılı silkelemekle ilgiliydiyse, <strong>Şubat 2026</strong> geleceğe cesurca adım atmakla ilgilidir. Cesur, tuhaf ve yenilikçi olanı destekleyen <strong>Kova Mevsimi</strong>'nin derinliklerindeyiz. Kolektif ruh hali "Nasıl hayatta kalırım?"dan "Kendimi nasıl yeniden icat ederim?"e dönüşüyor.</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Manşet haberimiz <strong>3 Şubat Aslan Dolunayı</strong>. Aslan bizden parlamamızı bekler. Sorar: "Nerede potansiyelini gizliyorsun?" Bu ışık altında saklanmak bir seçenek değildir. Merkür'ün gölge evresinin sona ermesiyle birlikte iletişimimize netlik geri dönüyor. Sis dağılıyor.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Önemli Tarihler ve Transitler</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 Şubat:</strong> Aslan\'da Dolunay (Dram, Tutku, Doruk Noktası).</li>
+        <li><strong>10 Şubat:</strong> Venüs Balık burcuna giriyor (Koşulsuz Aşk, Sanat, Fantezi).</li>
+        <li><strong>18 Şubat:</strong> Güneş Balık burcuna giriyor (Hayaller Mevsimi başlıyor).</li>
+        <li><strong>25 Şubat:</strong> Merkür Balık burcuna giriyor (Mantık yerini Sezgiye bırakıyor).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Ateş Burçs (Koç, Aslan, Yay)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Ateş Burçları (Koç, Aslan, Yay)</h2>
+      <p><strong>Tema: Yaratıcı Patlama.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Aslan:</strong> Bu sizin anınız. Burcunuzdaki Dolunay sizi spot ışıklarının altına koyuyor. İster bir terfi, ister bir ayrılık veya bir atılım olsun; o <em>şimdi</em> oluyor. Görünmekten korkmayın.</p>
+      <p><strong>Koç:</strong> Bu ay sosyal çevreniz sizin servetinizdir. Network kurmak beklenmedik altın fırsatlar getirir. Bir arkadaşınız sevgiliye veya iş ortağına dönüşebilir.</p>
+      <p><strong>Yay:</strong> Bilgeliğe açsınız. Ocak ayında ertelenen seyahat planları nihayet yeşil ışık alıyor. O bileti ayırtın.</p>
 
-      <h2 id="earth-signs">🌍 Toprak Burçs (Boğa, Başak, Oğlak)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Toprak Burçları (Boğa, Başak, Oğlak)</h2>
+      <p><strong>Tema: Ruhsal Temellenme.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Boğa:</strong> Venüs Balık burcuna girdiğinde kendinizi daha yumuşak hissedersiniz. Romantizm için olduğu kadar geçmişteki hatalar için kendinizi affetmek için de güzel bir zaman. Kin beslemeyi bırakın.</p>
+      <p><strong>Başak:</strong> Ortaklıklara odaklanın. Genellikle yardım eden siz olursunuz ancak Şubat ayında birinin <em>size</em> yardım etmesine izin verin. Bu ay dersiniz savunmasızlık.</p>
+      <p><strong>Oğlak:</strong> Para konuları düzeliyor ancak sadece sıkı çalışma ile değil. Sezgileriniz yatırımlarınıza rehberlik ediyor. Tablolara değil, içgüdülerinize güvenin.</p>
 
-      <h2 id="air-signs">💨 Hava Burçs (İkizler, Terazi, Kova)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Hava Burçları (İkizler, Terazi, Kova)</h2>
+      <p><strong>Tema: Entelektüel Yenilenme.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Kova:</strong> Mutlu yıllar! Burcunuzdaki Güneş yaşamsal enerjinizi artırıyor. Manyetik bir gücünüz var. Kişisel bir marka başlatmak veya görünüşünüzü güncellemek için yılın en iyi zamanı.</p>
+      <p><strong>İkizler:</strong> Kariyeriniz yön değiştiriyor. Rutinden sıkılmış olabilirsiniz. Merakınızı uyandıran alışılmadık çözümler veya "ek işler" arayın.</p>
+      <p><strong>Terazi:</strong> Romantizm dorukta ancak yaratıcılık da öyle. Bir şey doğuruyorsunuz — bir çocuk, bir sanat eseri veya yeni bir aşk. Anın verimliliğinin tadını çıkarın.</p>
 
-      <h2 id="water-signs">💧 Su Burçs (Yengeç, Akrep, Balık)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Su Burçları (Yengeç, Akrep, Balık)</h2>
+      <p><strong>Tema: Duygusal Derin Dalış.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Balık:</strong> Ay sonuna doğru Güneş burcunuza giriyor. Uzun bir uykudan uyanıyorsunuz. Sezgileriniz şu anda adeta medyum seviyesinde. Onu kullanın.</p>
+      <p><strong>Yengeç:</strong> Para ve ortak kaynaklar ön planda. Bir borç ödenebilir veya bir kredi onaylanabilir. Finansal evinizi düzene sokma zamanı.</p>
+      <p><strong>Akrep:</strong> Ev huzurun olduğu yerdir. Tadilat yapıyor olabilir veya sadece dünyadan saklanıyor olabilirsiniz. Dinlenmek şu anda sizin için üretkenlik demektir.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Genel Burç Yorumları Neden Yeterli Değildir?</h2>
+      <p>Bu tahmin Güneş Burcunuz için "kozmik hava durumunu" verse de, en kritik kısmı kaçırıyor: <strong>Size Özel Doğum Haritası.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Siz sadece Güneş burcunuzdan ibaret değilsiniz. Ayınız, Yükseleniniz ve parmak izi kadar benzersiz bir harita oluşturan diğer 8 gezegeniniz var.
+      <br><em>Örneğin:</em> Bir Boğa Yükselen bu ayı, bir Boğa Güneş'ten tamamen farklı yaşayacaktır.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Geleceğiniz konusunda tahmin yürütmeyin.</strong> Kişisel olarak SİZE özel tarihleri ve detayları öğrenmek için hesaplanmış bir okumaya ihtiyacınız var.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Kişisel Gerçeğinize Hazır mısınız?</h3>
+          <p>2026 Kişisel Transit Raporunuzun tamamını alın. Gezegenlerin doğum haritanızla tam olarak nasıl etkileşime girdiğini görün.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Kişisel Okumamı Al</a>
       </div>
     `
 };

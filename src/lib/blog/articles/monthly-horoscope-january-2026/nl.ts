@@ -1,69 +1,86 @@
 /**
- * monthly-horoscope-january-2026 - NL
+ * Maandhoroscoop Januari 2026 - NL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const nl: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.", 
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: "🌙 Maandhoroscoop Januari 2026: Het Ontwaken van een Nieuw Tijdperk",
+  excerpt: "Volledige astrologische voorspellingen voor januari 2026. Gedetailleerde maandhoroscoop voor alle tekens, van Ram tot Vissen, inclusief Pluto in Waterman, liefde, carrière en geld.",
+  category: "Horoscopi",
+  metaDescription: "Volledige astrologische voorspellingen voor januari 2026. Gedetailleerde maandhoroscoop voor alle tekens, van Ram tot Vissen, inclusief Pluto in Waterman, liefde, carrière en geld.",
+  keywords: "maandhoroscoop, astrologie januari 2026, maandelijkse voorspellingen, dierenriemvoorspelling januari, pluto in waterman, nieuwe maan in steenbok, volle maan in kreeft",
+  quickSummary: [
+    "Januari 2026 wordt gekenmerkt door de stabilisatie van Pluto in Waterman, wat wijst op massale maatschappelijke veranderingen.",
+    "De Nieuwe Maan in Steenbok (1 jan) biedt de ideale energie voor goede voornemens.",
+    "De schaduwfase van Mercurius retrograde eindigt rond 15 jan, waardoor communicatie vloeiender wordt.",
+    "Mars retrograde in Kreeft brengt onopgeloste familieconflicten naar de oppervlakte."
+  ],
+  keyTakeaways: [
+    "Gebruik de eerste week van januari alleen voor strategische planning; wacht tot halverwege de maand met actie ondernemen.",
+    "Verwacht plotselinge technologische doorbraken of verstoringen terwijl Uranus wordt geactiveerd.",
+    "Relaties zullen rond de Volle Maan in Kreeft van 14 jan een reality check ondergaan.",
+    "Financiële markten kunnen volatiliteit vertonen; houd vast aan veilige langetermijninvesteringen."
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: "De Astrologie van Januari" },
+    { id: 'key-transits', title: "Belangrijke Data en Transits" },
+    { id: 'fire-signs', title: "Vuurtekens (Ram, Leeuw, Boogschutter)" },
+    { id: 'earth-signs', title: "Aardetekens (Stier, Maagd, Steenbok)" },
+    { id: 'air-signs', title: "Luchttekens (Tweelingen, Weegschaal, Waterman)" },
+    { id: 'water-signs', title: "Watertekens (Kreeft, Schorpioen, Vissen)" }
+  ],
+  content: `
+      <h2 id="monthly-overview">De Astrologie van Januari 2026</h2>
+      <p>Gelukkig nieuwjaar! <strong>Januari 2026</strong> is niet alleen het begin van een nieuw kalenderjaar; het is het astrologische ontwaken van een nieuw tijdperk. Met <strong>Pluto nu stevig gevestigd in Waterman</strong>, bewegen we ons collectief weg van de hiërarchische structuren van de afgelopen 15 jaar (Pluto in Steenbok) en stappen we in een fase van snelle innovatie, focus op de gemeenschap en rebellie.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>De maand opent met een <strong>Nieuwe Maan in Steenbok</strong> op 1 januari, een zeldzame en gunstige uitlijning. Dit versterkt de "nieuw jaar, nieuw leven" energie, waardoor dit een ongelooflijke tijd is om gedisciplineerde langetermijndoelen te stellen. Echter, met Mars retrograde in Kreeft, kan onze energie wat geremd aanvoelen. We heroverwegen het <em>waarom</em> van onze acties, niet alleen het <em>hoe</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Belangrijke Data en Transits</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 jan:</strong> Nieuwe Maan in Steenbok (Zet je intenties).</li>
+        <li><strong>4 jan:</strong> Mars gaat Leeuw binnen (Toename van trots en drama).</li>
+        <li><strong>14 jan:</strong> Volle Maan in Kreeft (Emotionele bevrijding).</li>
+        <li><strong>20 jan:</strong> De Zon gaat Waterman binnen (Seizoen van de toekomst).</li>
+        <li><strong>29 jan:</strong> Uranus gaat weer direct lopen (Plotselinge veranderingen).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Vuur Sterrenbeelds (Ram, Leeuw, Boogschutter)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Vuurtekens (Ram, Leeuw, Boogschutter)</h2>
+      <p><strong>Thema: De vonk terugvinden.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Ram:</strong> Terwijl je heerser Mars schijnbaar achteruit beweegt (retrograde), kun je je gefrustreerd voelen door vertragingen. Dit is geen stopteken; het is een oranje licht. Gebruik januari om je carrièrepad te herzien. Beklim je de juiste berg?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Leeuw:</strong> Relaties staan centraal. Verwacht dat ex-partners of oude vrienden weer opduiken. De Volle Maan in je 12e huis suggereert een behoefte aan eenzaamheid rond het midden van de maand. Laad je sociale batterijen op.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Boogschutter:</strong> Financiën staan in de schijnwerpers. Je zou een nieuwe inkomstenbron kunnen vinden of besluiten om onnodige abonnementen op te zeggen. Het is een maand voor praktische budgettering, niet voor extravagantie.</p>
 
-      <h2 id="earth-signs">🌍 Aarde Sterrenbeelds (Stier, Maagd, Steenbok)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Aardetekens (Stier, Maagd, Steenbok)</h2>
+      <p><strong>Thema: Fundamenten bouwen.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Stier:</strong> Normaal gesproken verzet je je tegen verandering, maar Uranus in je teken duwt je naar bevrijding. Januari brengt een plotselinge reiskans of een verandering in je filosofie. Zeg ja tegen het onbekende.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Maagd:</strong> Je heersende planeet Mercurius beëindigt zijn schaduwfase halverwege de maand. Controleer tot die tijd alle contracten dubbel. Creativiteit piekt na de 20e; begin met de hobby die je hebt uitgesteld.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Steenbok:</strong> Gefeliciteerd! De Nieuwe Maan in je teken is je persoonlijke nieuwjaar. Je hebt kosmische toestemming om egoïstisch te zijn. Wat wil JIJ voor de komende 12 maanden? Zeg het hardop.</p>
 
-      <h2 id="air-signs">💨 Lucht Sterrenbeelds (Tweelingen, Weegschaal, Waterman)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Luchttekens (Tweelingen, Weegschaal, Waterman)</h2>
+      <p><strong>Thema: Intellectuele expansie.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Tweelingen:</strong> Gedeelde middelen en diepe intimiteit zijn de sleutel. Je zou een erfenis of bonus kunnen ontvangen, of een diepe psychologische doorbraak ervaren. Het is een intensieve maar louterende maand.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Weegschaal:</strong> Huis en familie zijn de focus. Je zou kunnen herinrichten of bemiddelen in een familieconflict. Balans is je superkracht; gebruik het om vrede te creëren in je heiligdom.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Waterman:</strong> Dit is jouw moment. Met Pluto in je teken onderga je een metamorfose. Je zou je uiterlijk, je naam of je hele carrièrepad kunnen veranderen. De wereld haalt eindelijk jouw visie in.</p>
 
-      <h2 id="water-signs">💧 Water Sterrenbeelds (Kreeft, Schorpioen, Vissen)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Watertekens (Kreeft, Schorpioen, Vissen)</h2>
+      <p><strong>Thema: Emotionele wijsheid.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Kreeft:</strong> De Volle Maan in je teken op 14 januari is het emotionele hoogtepunt van je jaar. Laat alles eruit. Huil, lach, schreeuw. Je bent aan het vervellen. Relaties die nu beginnen zijn karmisch.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Schorpioen:</strong> Communicatie is macht. Je woorden hebben deze maand extra gewicht. Gebruik ze om te onderhandelen, te onderwijzen of te schrijven. Vermijd manipulatieve spelletjes; transparantie wint.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Vissen:</strong> Je sociale kring breidt zich uit. Jij bent de lijm die je gemeenschap bij elkaar houdt. Zoek naar mogelijkheden voor vrijwilligerswerk of leid een groepsproject. Je intuïtie is vlijmscherp.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Ontvang je Volledige Horoscoop voor 2026</h2>
+      <p>Dit maandoverzicht is slechts het topje van de ijsberg. Elk individu heeft een unieke geboortehoroscoop die anders reageert op deze transits. Om met vertrouwen door 2026 te navigeren, bestel je je <strong>Persoonlijke Jaarlijkse Transitrapport</strong> bij Astralo. We analyseren je specifieke transits maand na maand.</p>
     `
 };

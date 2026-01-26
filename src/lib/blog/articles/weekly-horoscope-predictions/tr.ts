@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - TR (Fallback to English content)
+ * Haftalık Burç Yorumları - TR
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const tr: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: 'Burç Tahmini',
+  excerpt: 'Haftalık burç yorumları rehberimizle haftanızı en üst düzeye çıkarın. Gezegensel günleri anlayın, Boşluktaki Ay (Void-of-Course) dönemlerini yönetin ve programınızı astrolojik zamanlamaya göre planlayın.',
+  category: 'Burç Yorumları',
+  metaDescription: 'Haftalık burç yorumları rehberimizle haftanızı en üst duyaya çıkarın. Gezegensel günleri anlayın, Boşluktaki Ay dönemlerini yönetin ve programınızı astrolojik zamanlamaya göre planlayın.',
+  keywords: 'haftalık burç yorumları, haftalık astroloji, gezegensel günler, boşluktaki ay, haftalık zodyak tahmini, astroloji planlama, bu haftanın en iyi günleri',
+  quickSummary: [
+    'Haftanın her günü farklı bir gezegen tarafından yönetilir (Pazartesi/Ay, Salı/Mars, vb.).',
+    'Haftalık burç yorumları, hızlı hareket eden gezegenlerin burçlar arasındaki hareketini takip eder.',
+    'Boşluktaki Ay (Void-of-Course), büyük eylemlerden kaçınılması gereken kritik bir "duraklama zamanı"dır.',
+    'Pazartesiler duygular, Salılar eylem, Cumalar ise romantizm içindir.'
+  ],
+  keyTakeaways: [
+    'Takviminizi planlamak için Pazar akşamı haftalık tahmini kontrol edin.',
+    'Hedefe bağlı olarak zor toplantıları Perşembe (Jüpiter) veya Cumartesi (Satürn) gününe planlayın.',
+    'Ay boşluktayken sözleşme imzalamaktan kaçının.',
+    'Haftalık enerji akışına karşı savaşmak yerine onu kullanın.'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Astroloji Ritmi' },
+    { id: 'planetary-days', title: 'Günlerin Yöneticileri' },
+    { id: 'void-moon', title: 'Boşluktaki Ay' },
+    { id: 'transits', title: 'Haftalık Transit Takibi' },
+    { id: 'by-sign', title: 'Burca Göre Haftalık Tavsiyeler' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Haftanın Astrolojik Ritmi</h2>
+      <p>Hiç bazı haftaların su gibi aktığını, bazılarının ise çamurda yürümek gibi hissettirdiğini fark ettiniz mi? Ya da Salı günü iş bitirmenin Cuma gününden neden farklı hissettirdiğini? Bu tesadüf değildir. 7 günlük haftamızın yapısı aslında tamamen <strong>astrolojiye</strong> dayanmaktadır.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p><strong>Haftalık burç yorumlarını</strong> anlamak, sadece bir mesaj alıp almayacağınızı bilmekten daha fazlasıdır. Programınızı zamanın kadim gezegensel yöneticileriyle uyumlu hale getirmekle ilgilidir. Günün enerjisiyle <em>birlikte</em> çalıştığınızda, üretkenlik artar ve direnç ortadan kalkar.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Günlerin Yöneticileri</h2>
+      <p>Her gün bir gezegenin adını almıştır (Fransızca veya İspanyolca gibi dillerde bu çok daha belirgindir). İşte haftanızı astrolojik olarak planlama rehberiniz:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Pazartesi (Ay Günü) 🌙</h3>
+      <p><strong>Enerji:</strong> Duygusal, sezgisel, değişken.<br><strong>En iyi yapılanlar:</strong> Market alışverişi, ev temizliği, uyumak, aile yemekleri, tefekkür.<br><strong>Kaçınılması gerekenler:</strong> Yüksek stresli sunumlar veya katı mantık gerektiren işler.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Salı (Mars Günü) ♂</h3>
+      <p><strong>Enerji:</strong> Agresif, enerjik, keskin.<br><strong>En iyi yapılanlar:</strong> Egzersiz, yeni projelere başlamak, sorunlarla yüzleşmek, rekabet.<br><strong>Kaçınılması gerekenler:</strong> Meditasyon, sakinleşmeye çalışmak.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Çarşamba (Merkür Günü) ☿️</h3>
+      <p><strong>Enerji:</strong> İletişimsel, meşgul, hızlı.<br><strong>En iyi yapılanlar:</strong> E-postalar, toplantılar, yazma, satış, kısa geziler, network kurma.<br><strong>Kaçınılması gerekenler:</strong> Sessizlik (zaten pek mümkün olmayacaktır).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Perşembe (Jüpiter Günü) ♃</h3>
+      <p><strong>Enerji:</strong> Genişlemeci, şanslı, iyimser.<br><strong>En iyi yapılanlar:</strong> Büyük vizyonları başlatmak, zam istemek, seyahat planlamak, eğitim.<br><strong>Kaçınılması gerekenler:</strong> Aşırı tutumluluk veya cimrilik.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Cuma (Venüs Günü) ♀</h3>
+      <p><strong>Enerji:</strong> Sosyal, romantik, estetik.<br><strong>En iyi yapılanlar:</strong> Randevular, partiler, kıyafet alışverişi, sanat, rahatlama.<br><strong>Kaçınılması gerekenler:</strong> Pis ve ağır işler veya yalnızlık.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Cumartesi (Satürn Günü) ♄</h3>
+      <p><strong>Enerji:</strong> Ciddi, ağır, disiplinli.<br><strong>En iyi yapılanlar:</strong> Bahçe işleri, uzun vadeli planlama, çalışma, ev işlerini yetiştirme, görev bilinci.<br><strong>Kaçınılması gerekenler:</strong> Çılgın partiler (resmi bir etkinlik değilse).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Pazar (Güneş Günü) ☀️</h3>
+      <p><strong>Enerji:</strong> Parlak, ego-merkezli, manevi.<br><strong>En iyi yapılanlar:</strong> Hobiler, ibadet/maneviyat, çocuklarla oynamak, görünür olmak, dinlenme.<br><strong>Kaçınılması gerekenler:</strong> Görünmez olmak.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Boşluktaki Ay (Void-of-Course Moon)</h2>
+      <p>Bu rehberden tek bir şey alacak olursanız, o da <strong>Boşluktaki Ay</strong> olsun. Bu, Ay bulunduğu burçtaki bir gezegene yaptığı son açıyı bitirdiğinde ve bir sonraki burca girmeden önce "süzüldüğü" zaman gerçekleşir.</p>
+      <p><strong>Kural:</strong> "Bu konundan hiçbir sonuç çıkmayacaktır."</p>
+      <p>Ay boşluktayken sözleşme imzalamayın, iş başlatmayın veya ilk randevu talebi göndermeyin. Enerji kaçınılmaz olarak söner. Bu zamanı dosyalama, uyuma veya halihazırda başladığınız işleri düzenleme için kullanın. Bu kozmik bir "mola" zamanıdır.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Haftalık Transit Takibi</h2>
+      <p>İyi bir <strong>haftalık astroloji tahmini</strong>, gezegenlerin bu hafta yaptığı spesifik açılara da bakar. Örneğin:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Merkür Sekstil Venüs:</strong> Sosyal zarafet ve ricada bulunmak için mükemmel bir hafta.</li>
+        <li><strong>Güneş Kare Plüton:</strong> Güç mücadeleleri ve yoğunluk dolu bir hafta.</li>
+        <li><strong>Mars Terazi'ye giriyor:</strong> Enerji iş odaklı olmaktan ilişki odaklı olmaya kayıyor.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Burca Göre Haftalık Tavsiyeler</h2>
+      <p>Herkesin haftası benzersiz olsa da, burçlar haftalık değişimleri genellikle şu şekilde yönetir:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Öncü Burçlar (Koç, Yengeç, Terazi, Oğlak):</strong> Siz başlatıcılarsınız. Haftanın başındaki enerjiyi (Pzt/Sal) bir şeylere başlamak için kullanın.</li>
+        <li><strong>Sabit Burçlar (Boğa, Aslan, Akrep, Kova):</strong> Siz sürdürücülersiniz. İlerlemeyi sabitlemek için hafta ortası enerjisini kullanın.</li>
+        <li><strong>Değişken Burçlar (İkizler, Başak, Yay, Balık):</strong> Siz düzenleyicilersiniz. Uyum sağlamak ve rotayı değiştirmek için hafta sonunu veya Merkür günlerini kullanın.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Astralo ekibi tarafından her Pazar güncellenen haftalık özel tahmininiz için tekrar kontrol edin!</em>
     `
 };

@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - RU
+ * Ежемесячный гороскоп на февраль 2026 года - RU
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ru: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.", 
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}], 
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Ежемесячный гороскоп на февраль 2026 года: Сезон инноваций Водолея',
+  excerpt: 'Февраль 2026 года приносит волну ясности: Меркурий переходит в прямое движение. Узнайте, как полнолуние во Льве 3 февраля и Венеров в Рыбах повлияют на вашу личную жизнь и карьеру.',
+  category: 'Гороскопы',
+  metaDescription: 'Полный астрологический прогноз на февраль 2026 года. Подробные ежемесячные предсказания для всех знаков зодиака, фокус на полнолунии во Льве и вхождении Венеры в знак своей экзальтации — Рыбы.',
+  keywords: 'ежемесячный гороскоп, астрология февраль 2026, ежемесячные прогнозы, прогноз зодиака на февраль, сезон водолея, полнолуние во льве, венера в рыбах',
+  quickSummary: [
+    'Полнолуние во Льве 3 февраля требует, чтобы вы вышли на центральную сцену и выразили свое истинное «я».',
+    'Меркурий наконец переходит в прямое движение, устраняя недопонимания конца января.',
+    'Венера переходит в мечтательные Рыбы, создавая самую романтическую энергию всего года.',
+    'Сезон Водолея подталкивает нас к инновациям и освобождению от устаревших традиций.'
+  ],
+  keyTakeaways: [
+    'Используйте первую неделю февраля для запуска творческих проектов или ребрендинга.',
+    'День святого Валентина в этом году будет по-особенному волшебным благодаря Венере в экзальтации — планируйте что-то глубокое и духовное.',
+    'В середине месяца ожидайте внезапных озарений, касающихся технологий или общественных групп.',
+    'Общие гороскопы хороши, но для точного выбора времени вам нужны ваши личные транзиты.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Обзор февраля 2026 года' },
+    { id: 'key-transits', title: 'Ключевые даты и транзиты' },
+    { id: 'fire-signs', title: 'Огненные знаки (Овен, Лев, Стрелец)' },
+    { id: 'earth-signs', title: 'Земные знаки (Телец, Дева, Козерог)' },
+    { id: 'air-signs', title: 'Воздушные знаки (Близнецы, Весы, Водолей)' },
+    { id: 'water-signs', title: 'Водные знаки (Рак, Скорпион, Рыбы)' },
+    { id: 'get-personal', title: 'Почему общего прогноза недостаточно' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Астрология февраля 2026 года</h2>
+      <p>Если январь был посвящен избавлению от старого года, то <strong>февраль 2026 года</strong> — это время смелого шага в будущее. Мы находимся в самом разгаре <strong>сезона Водолея</strong> — времени, которое благоволит смелым, необычным и инновационным решениям. Коллективное настроение меняется с «Как мне выжить?» на «Как мне изобрести себя заново?».</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Главная новость — <strong>полнолуние во Льве 3 февраля</strong>. Лев просит нас сиять. Он спрашивает: «Где вы ведете себя слишком скромно?» В этом свете прятаться не получится. В сочетании с окончанием теневой фазы Меркурия к нашему общению возвращается ясность. Туман рассеивается.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Ключевые даты и транзиты</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 февраля:</strong> Полнолуние во Льве (драма, страсть, кульминация).</li>
+        <li><strong>10 февраля:</strong> Венера входит в знак Рыб (безусловная любовь, искусство, фантазия).</li>
+        <li><strong>18 февраля:</strong> Солнце входит в знак Рыб (начало сезона грез).</li>
+        <li><strong>25 февраля:</strong> Меркурий входит в знак Рыб (логика растворяется в интуиции).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Огонь Знакs (Овен, Лев, Стрелец)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Огненные знаки (Овен, Лев, Стрелец)</h2>
+      <p><strong>Тема: Творческий взрыв.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Лев:</strong> Это ваш момент. Полнолуние в вашем знаке ставит вас в центр внимания. Будет ли это повышение, расставание или прорыв — это произойдет <em>сейчас</em>. Не бойтесь быть замеченными.</p>
+      <p><strong>Овен:</strong> Ваш круг общения — ваше богатство в этом месяце. Нетворкинг приносит неожиданные плоды. Друг может стать любовником или деловым партнером.</p>
+      <p><strong>Стрелец:</strong> Вы жаждете мудрости. Планы поездок, отложенные в январе, наконец получают зеленый свет. Бронируйте билет.</p>
 
-      <h2 id="earth-signs">🌍 Земля Знакs (Телец, Девы, Козерог)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Земные знаки (Телец, Дева, Козерог)</h2>
+      <p><strong>Тема: Духовное заземление.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Телец:</strong> Когда Венера войдет в знак Рыб, вы станете мягче. Это прекрасное время для романтики, а также для прощения себя за прошлые ошибки. Отпустите обиду.</p>
+      <p><strong>Дева:</strong> Сосредоточьтесь на партнерстве. Обычно вы — тот, кто помогает, но в феврале позвольте кому-то помочь <em>вам</em>. Уязвимость — ваш урок в этом месяце.</p>
+      <p><strong>Козерог:</strong> Денежные вопросы налаживаются, но не только благодаря упорному труду. Интуиция направляет ваши инвестиции. Доверяйте чутью больше, чем таблицам.</p>
 
-      <h2 id="air-signs">💨 Воздух Знакs (Близнецы, Весы, Водолей)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Воздушные знаки (Близнецы, Весы, Водолей)</h2>
+      <p><strong>Тема: Интеллектуальное обновление.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Водолей:</strong> С днем рождения! Солнце в вашем знаке усиливает вашу жизненную энергию. Вы магнетичны. Это лучшее время в году для запуска личного бренда или обновления внешности.</p>
+      <p><strong>Близнецы:</strong> Карьера делает поворот. Вам может наскучить рутина. Ищите необычные решения или подработки, которые пробуждают ваше любопытство.</p>
+      <p><strong>Весы:</strong> Романтика бьет ключом, как и творчество. Вы даете жизнь чему-то новому — ребенку, произведению искусства или новому роману. Наслаждайтесь плодотворностью момента.</p>
 
-      <h2 id="water-signs">💧 Вода Знакs (Рак, Скорпион, Рыбы)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Водные знаки (Рак, Скорпион, Рыбы)</h2>
+      <p><strong>Тема: Эмоциональное глубокое погружение.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Рыбы:</strong> В конце месяца Солнце входит в ваш знак. Вы просыпаетесь от долгого сна. Ваша интуиция сейчас практически граничит с ясновидением. Используйте ее.</p>
+      <p><strong>Рак:</strong> На первый план выходят деньги и общие ресурсы. Долг может быть выплачен или кредит одобрен. Пришло время привести свои финансовые дела в порядок.</p>
+      <p><strong>Скорпион:</strong> Дом там, где сердце. Возможно, вы будете делать ремонт или просто спрячетесь от мира. Отдых сейчас для вас очень продуктивен.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Почему общих гороскопов недостаточно</h2>
+      <p>Хотя этот прогноз дает вам «космическую погоду» для вашего знака Солнца, он упускает самую важную часть: <strong>Вашу уникальную карту.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Вы — больше, чем просто ваш знак Солнца. У вас есть Луна, восходящий знак и еще 8 планет, которые образуют сложную, уникальную как отпечаток пальца карту. 
+      <br><em>Пример:</em> Восходящий Телец проживет этот месяц совершенно иначе, чем Телец по Солнцу.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Не гадайте о своем будущем.</strong> Чтобы узнать конкретные даты и детали, применимые именно к ВАМ, нужен расчетный прогноз.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Готовы узнать свою личную правду?</h3>
+          <p>Получите свой полный отчет о персональных транзитах на 2026 год. Посмотрите, как именно планеты взаимодействуют с вашим натальным чертежом.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Получить личный прогноз</a>
       </div>
     `
 };

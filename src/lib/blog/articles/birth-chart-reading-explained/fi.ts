@@ -1,80 +1,97 @@
 /**
- * birth-chart-reading-explained - FI
+ * Syntymäkartan tulkinta selitettynä - FI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const fi: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Syntymäkartta: Opas kosmiseesi karttaasi",
+  excerpt: "Avaa persoonallisuutesi salaisuudet syntymäkartan parhaalla oppaalla. Opi tulkitsemaan planeettoja, huoneita, aspekteja ja solmuja kuin ammattilainen.",
+  category: "Perusteet",
+  metaDescription: "Avaa persoonallisuutesi salaisuudet syntymäkartan parhaalla oppaalla. Opi tulkitsemaan planeettoja, huoneita, aspekteja ja solmuja kuin ammattilainen.",
+  keywords: "syntymäkartta, natal chart, horoskooppianalyysi, astrologian suuri kolmikko, askendentti, kuumerkki, astrologiset huoneet, planeetta-aspektit, syntymäkartan lukeminen",
+  quickSummary: [
+    "Syntymäkarttasi on 360 asteen tilannekuva taivaasta tarkalla syntymähetkelläsi.",
+    "Persoonallisuutesi perusta rakentuu 'suuren kolmikon' (aurinko, kuu ja askendentti) ympärille.",
+    "12 huonetta kuvaavat 'missä' tapahtumat elämässäsi tapahtuvat, kun taas planeetat kuvaavat 'mitä' tapahtuu.",
+    "Aspektit (planeettoja yhdistävät viivat) paljastavat sisäiset ristiriitasi ja erityislahjasi."
+  ],
+  keyTakeaways: [
+    "Askendenttimerkki on usein aurinkomerkkiä tarkempi ennusteiden tekemisessä.",
+    "Haastavat aspektit (neliöt, oppositit) luovat usein menestyneimmät ihmiset sinnikkyyden kautta.",
+    "Pohjoissolmu paljastaa sielusi karmallisen suunnan tässä elämässä.",
+    "Tietokoneella luodut raportit ovat hyvä alku, mutta inhimillinen intuitio on korvaamaton."
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Sielusi kartta" },
+    { id: "the-big-three", title: "Suuri kolmikko: aurinko, kuu, askendentti" },
+    { id: "the-planets", title: "Planeetat: sisäiset vs. ulkoiset" },
+    { id: "the-houses", title: "12 huonetta" },
+    { id: "aspects", title: "Aspektit: kosmine keskustelu" },
+    { id: "nodes", title: "Kohtalon solmut" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Sielusi kartta</h2>
+      <p>Oletko koskaan tuntenut, ettet oikein sovi horoskooppimerkkisi kuvaukseen? "Olen Leijona, mutta inhoan huomion keskipisteenä olemista!". Syy löytyy todennäköisesti <strong>syntymäkartastasi</strong> (käytetään myös nimityksiä natal chart tai radix). Vaikka aurinkomerkkisi on tärkeä, se on vain yksi muuttuja valtavassa ja monimutkaisessa yhtälössä.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Syntymäkartta on taivaan kartta, joka on laskettu syntymäsi tarkan ajan, päivämäärän ja paikan perusteella. Se asettaa sinut maailmankaikkeuden keskipisteeseen ja planeetat on järjestetty ympärillesi. Pidä sitä "kosmisena DNA:nasi" – ainutlaatuisena joukkona ohjeita, lahjoja, haasteita ja potentiaaleja, jotka kuuluvat vain sinulle.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Suuri kolmikko: aurinko, kuu, askendentti</h2>
+      <p>Ennen monimutkaiseen geometriaan sukeltamista jokaisen astrologian opiskelijan on hallittava "suuri kolmikkonsa". Nämä kolme pistettä määrittelevät suurimman osan persoonallisuudestasi.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Aurinko ☀️ (Identiteetti)</h3>
+      <p>Aurinko edustaa tietoista egoasi, "minä olen" -tunnetta. Se on polttoaineesi, motivaatiosi ja se energiataajuus, jota säteilet. Se vastaa kysymykseen: <em>"Kuka minä olen ytimessäni?"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Kuu 🌙 (Tunteet)</h3>
+      <p>Kuu edustaa sisäistä maailmaasi, vaistojasi ja alitajuntaasi. Se ohjaa sitä, miten reagoit, kun olet loukkaantunut, nälkäinen tai väsynyt. Se vastaa kysymykseen: <em>"Mitä tarvitsen tunteakseni oloni turvalliseksi?"</em></p>
 
-      <h3>3. The Ascendant / Rising Merkki 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Askendentti 🏹 (Naamio)</h3>
+      <p>Askendentti eli nouseva merkki on merkki, joka nousi itäisessä horisontissa syntymähetkelläsi. Se on "käyttöliittymäsi" maailmaan. Se ohjaa ulkonäköäsi, tyyliäsi ja ensivaikutelmaa, jonka annat. Se vastaa kysymykseen: <em>"Miten muut näkevät minut?"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Planeetat: sisäiset vs. ulkoiset</h2>
+      <p><strong>Syntymäkartan analyysisa</strong> planeetat ovat näyttelijöitä, jotka esittävät rooleja elämäsi teatterissa.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Henkilökohtaiset planeetat (nopeat)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkurius ☿️:</strong> Viestinviejä. Ohjaa älyäsi, puhettasi ja logiikkaasi. Merkurius Kaksosissa neuvottelee eri tavalla kuin Merkurius Kaloissa.</li>
+        <li><strong>Venus ♀:</strong> Rakastaja. Ohjaa vetovoimaa, taidetta ja rahaa. Kertoo, mitä arvostat ja miten viettelet.</li>
+        <li><strong>Mars ♂:</strong> Soturi. Ohjaa toimintaa, vihaa ja libidoa. Kertoo, miten taistelet sen puolesta, mitä haluat.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Sosiaaliset ja ulommat planeetat (hitaat)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> Guru. Missä löydät onnea, laajentumista ja merkitystä.</li>
+        <li><strong>Saturnus ♄:</strong> Opettaja. Missä kohtaat haasteita, kurinalaisuutta ja vastuuta. Osoittaa pitkäaikaiset rakenteesi.</li>
+        <li><strong>Uranus ♅, Neptunus ♆, Pluto ♇:</strong> Sukupolviplaneetat. Ne liikkuvat niin hitaasti, että ne muokkaavat kokonaisia sukupolvia ja vaikuttavat sinuun syvällä alitajuisella tasolla.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Näyttämö: 12 huonetta</h2>
+      <p>Kartta on jaettu 12 "huoneeseen" kuin pitsanpalat. Jokainen huone hallitsee tiettyä elämänaluetta. Planeetan sijainti kertoo, <em>missä</em> sen energia ilmenee.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>Huone 1:</strong> Itse, keho, ulkonäkö.</li>
+        <li><strong>Huone 2:</strong> Raha, omaisuus, arvot.</li>
+        <li><strong>Huone 3:</strong> Viestintä, sisarukset, lyhyet matkat.</li>
+        <li><strong>Huone 4:</strong> Koti, perhe, juuret.</li>
+        <li><strong>Huone 5:</strong> Luovuus, romantiikka, lapset.</li>
+        <li><strong>Huone 6:</strong> Arki, terveys, palvelu.</li>
+        <li><strong>Huone 7:</strong> Kumppanuus, avioliitto, avoimet viholliset.</li>
+        <li><strong>Huone 8:</strong> Kuolema, muodonmuutos, yhteiset varat.</li>
+        <li><strong>Huone 9:</strong> Filosofia, matkailu, korkeakoulutus.</li>
+        <li><strong>Huone 10:</strong> Ura, maine, perintö.</li>
+        <li><strong>Huone 11:</strong> Ystävät, verkostot, unelmat/toiveet.</li>
+        <li><strong>Huone 12:</strong> Alitajunta, salaisuudet, henkisyys.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspektit: kosminen keskustelu</h2>
+      <p>Planeetat eivät toimi eristyksissä. Ne muodostavat geometrisia kulmia, joita kutsutaan "aspekteiksi". Nämä viivat yhdistävät karttasi näyttelijät toisiinsa.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Harmoniset aspektit (trigoni, sekstiili):</strong> Nämä ovat lahjoja. Planeetat auttavat toisiaan. Täällä asiat sujuvat helposti – joskus jopa liian helposti, mikä voi johtaa laiskuuteen.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Haastavat aspektit (neliö, oppositio):</strong> Nämä ovat haasteita. Planeetat kamppailevat tai estävät toisiaan. Mutta nämä kitkapisteet luovat energiaa, jota tarvitaan suuriin saavutuksiin. Monilla menestyneillä ihmisillä on karttoja täynnä neliöitä!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Kohtalon solmut</h2>
+      <p>Lopuksi, etsi hevosenkengän muotoisia symboleja. <strong>Pohjoissolmu</strong> edustaa missiotasi: suuntaa, johon sielusi haluaa kasvaa tässä elämässä. Se tuntuu usein vieraalta ja uudelta. <strong>Eteläsolmu</strong> edustaa menneitä elämiäsi (tai varhaislapsuuttasi): se tuntuu tutulta ja helpolta, mutta siihen jääminen johtaa pysähtyneisyyteen.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Tulkinta on taidetta</h3>
+      <p>Syntymäkartan lukeminen on kuin sinfonian kuuntelemista. Viulun (Venus) voi eristää, mutta taika piilee koko orkesterin yhteissoitossa. Astralolla käytämme vuosisatojen astrologiseen tietoon koulutettua edistynyttä tekoälyä tiivistääksemme nämä miljoonat muuttujat selkeäksi ja luettavaksi tarinaksi SINUSTA.
     `
 };

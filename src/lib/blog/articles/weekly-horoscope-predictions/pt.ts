@@ -1,84 +1,71 @@
 /**
- * weekly-horoscope-predictions - PT (Fallback to English content)
+ * Previsões do Horóscopo Semanal - PT
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const pt: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Horóscopo Semanal: A sua estratégia cósmica para os próximos dias',
+  excerpt: 'O seu guia completo para o uso do horóscopo semanal. Aprenda como planear a sua semana, compreender os trânsitos principais e usar o seu ascendente para a máxima precisão.',
+  category: 'Oroscopi',
+  metaDescription: 'O seu guia completo para o uso do horóscopo semanal. Aprenda como planear a sua semana, compreender os trânsitos principais e usar o seu ascendente para a máxima precisão.',
+  keywords: 'horóscopo semanal, previsão astrológica, planeamento semanal astrologia, trânsitos zodiacais, movimentos planetários, precisão horóscopo, previsão ascendente',
+  quickSummary: [
+    'Um horóscopo semanal examina as tendências planetárias a médio prazo (trânsitos) que darão forma aos próximos 7 dias.',
+    'As previsões semanais são ideais para planear reuniões de trabalho, encontros românticos e viagens.',
+    'Os factores chave incluem a fase lunar (Lua Nova vs Lua Cheia) e os aspectos dos planetas pessoais (Mercúrio, Vénus, Marte).',
+    'Ler para o seu próprio signo Ascendente fornece resultados muito mais precisos do que apenas ler para o seu signo solar.'
+  ],
+  keyTakeaways: [
+    'Use a segunda-feira para se sintonizar com a energia da semana.',
+    'Preste atenção às mudanças de signo da Lua a cada 2,5 dias: elas ditam o humor coletivo.',
+    'As decisões importantes devem idealmente ser planeadas durante os aspectos harmónicos (trígonos/sextis) entre o Sol e Júpiter.',
+    'Evite lançamentos importantes durante as "estações" dos planetas (quando mudam de direção).'
+  ],
+  tableOfContents: [
+    { id: 'why-weekly', title: 'O Propósito do Horóscopo Semanal' },
+    { id: 'how-it-works', title: 'Como Funciona a Astrologia Semanal' },
+    { id: 'rising-sign-importance', title: 'Por que o seu Ascendente é a sua Arma Secreta' },
+    { id: 'planetary-transits', title: 'Compreender os Trânsitos' },
+    { id: 'planning-guide', title: 'Planear a sua Semana com as Estrelas' },
+    { id: 'astralo-advantage', title: 'A Vantagem Astralo' }
+  ],
+  content: `
+      <h2 id="why-weekly">O Propósito do Horóscopo Semanal</h2>
+      <p>Enquanto um horóscopo diário o ajuda a gerir o seu humor imediato, o <strong>horóscopo semanal</strong> serve como um mapa estratégico. É a diferença entre verificar o radar da chuva para os próximos 10 minutos ou olhar para a previsão meteorológica para toda a semana para planear uma festa no jardim.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Um horóscopo semanal ajuda-o a identificar quando deve carregar no acelerador e quando é melhor esperar. Estamos a caminhar para uma Lua Cheia tensa que fará transbordar as emoções? Ou temos uma conexão harmoniosa entre Mercúrio e Urano, perfeita para o brainstorming e novas propostas? Ao conhecer estas tendências antecipadamente, age de forma proativa em vez de reativa.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
-      
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
-
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
-      
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
-      
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
-      
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
-      
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
-      
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
-
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
-
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="how-it-works">Como Funciona a Astrologia Semanal</h2>
+      <p>"Astrologia semanal" foca-se nos movimentos dos planetas através dos signos zodiacais em relação ao seu mapa astral. Prestamos especial atenção a:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Ingresso Solar:</strong> Quando o Sol muda de signo (ex. de Virgem para Balança), o foco coletivo muda para todos.</li>
+        <li><strong>Fases Lunares:</strong> A semana começa com uma Lua Nova (tempo para novos inícios) ou uma Lua Cheia (tempo para resultados e deixar ir)?</li>
+        <li><strong>Aspectos Planetários:</strong> Planetas como Marte e Saturno estão num ângulo crítico hoje? Isto poderia indicar o "obstáculo da semana".</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="rising-sign-importance">Por que o seu Ascendente é a sua Arma Secreta</h2>
+      <p>A maioria das pessoas lê o seu horóscopo apenas para o signo solar. Na Astralo recomendamos vivamente: <strong>Leia o horóscopo também (ou principalmente) para o seu signo Ascendente.</strong></p>
+      <p>O seu signo solar representa o seu âmago, mas o seu ascendente determina a estrutura das casas do seu mapa astral. Se um horóscopo semanal diz: "Os relacionamentos estão no centro das atenções esta semana", é porque os planetas estão a transitar na sua 7ª casa. Isto é muitas vezes completamente diferente para um Ascendente Carneiro em comparação com um Sol Carneiro. Para obter os resultados mais precisos, use o seu ascendente.</p>
+
+      <h2 id="planetary-transits">Compreender os Trânsitos: O Tempo Cósmico</h2>
+      <p>Nas suas previsões semanais lerá frequentemente termos como 'trânsito' ou 'conjunção'. Aqui está uma breve tradução:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Trânsito:</strong> Um planeta no céu atual forma um aspecto com um ponto no seu mapa astral.</li>
+        <li><strong>Quadrado (Tensão):</strong> Um ponto de viragem ou um desafio que exige ação.</li>
+        <li><strong>Trígono (Fluxo):</strong> Oportunidades e talentos que se manifestam naturalmente.</li>
+        <li><strong>Retrogradação:</strong> Um planeta parece mover-se para trás: tempo para revisão, não para progresso.</li>
       </ul>
-      
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+
+      <h2 id="planning-guide">Planear a sua Semana com as Estrelas</h2>
+      <p>Imagine que tem uma entrevista importante para um aumento de salário. Um olhar para o seu horóscopo semanal mostra:</p>
+      <ul>
+        <li><strong>Terça-feira:</strong> Mercúrio está em oposição a Neptuno (Perigo de pouca clareza e mal-entendidos).</li>
+        <li><strong>Quinta-feira:</strong> O Sol forma um trígono com Júpiter (Grande sorte, expansão, as figuras de autoridade são benevolentes).</li>
+      </ul>
+      <p><em>A decisão é clara:</em> Mova a entrevista para quinta-feira! Este é exatamente o uso prático da astrologia na vida moderna.</p>
+
+      <h2 id="astralo-advantage">A Vantagem Astralo</h2>
+      <p>Na Astralo vamos muito além do horóscopo padrão dos jornais. A nossa IA não analisa apenas o seu signo solar, mas compara os estados planetários atuais com toda a genética do seu nascimento. Oferecemos-lhe uma previsão personalizada, tão única quanto a sua impressão digital.</p>
+      <p>Não comece a sua semana às escuras. Use o conhecimento das estrelas para atingir os seus objetivos, cultivar os seus relacionamentos e desbloquear o seu pleno potencial. O seu horóscopo semanal é o seu roteiro para o sucesso.</p>
     `
 };

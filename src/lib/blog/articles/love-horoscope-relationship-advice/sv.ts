@@ -1,56 +1,73 @@
 /**
- * love-horoscope-relationship-advice - SV
+ * Kärlekshoroskop - SV
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sv: BlogPostTranslation = {
-    title: "💕 Kärlek Horoscope 2026: The Master Guide to Zodiaken Romantik",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.", 
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}], 
-    content: `
-      <h2 id="love-guide">Kärlek is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Kärlekshoroskop 2026: Mästarguiden för romantik i zodiaken",
+  excerpt: "Transformera ditt kärleksliv genom astrologi. En djupdykning i Venus-tecken, äktenskapets 7:e hus, Mars passionstilar och hur du navigerar Merkurius retrograd i relationer.",
+  category: "Kärlek & Relationer",
+  metaDescription: "Transformera ditt kärleksliv genom astrologi. En djupdykning i Venus-tecken, äktenskapets 7:e hus, Mars passionstilar och hur du navigerar Merkurius retrograd i relationer.",
+  keywords: "kärlekshoroskop, relationsastrologi, betydelse venus tecken, dejting per mars tecken, 7:e huset äktenskap, synastri guide, dejtingtips zodiaken, kärlekskompatibilitet",
+  quickSummary: [
+    "Ditt kärleksspråk dikteras av ditt Venus-tecken, inte bara ditt soltecken.",
+    "Det 7:e huset i ditt horoskop beskriver din ideala långsiktiga partner.",
+    "Mars bestämmer hur du jagar ett romantiskt intresse och hur du upplever sexuell kemi.",
+    "Timing i en relation är allt: gift dig aldrig under en Venus retrograd."
+  ],
+  keyTakeaways: [
+    "Om du vill veta hur någon flirtar, titta på deras Venus-tecken.",
+    "Om du vill veta hur någon bråkar eller upplever sex, titta på deras Mars-tecken.",
+    "Din 'Descendent' (motsatsen till din ascendent) är ofta det tecken du känner dig mest dragen till.",
+    "Synastri är konsten att jämföra två horoskop för att se om en relation är menad att vara."
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: "Kärlek är en färdighet" },
+    { id: 'venus-signs', title: "Venus: Vad du älskar" },
+    { id: 'mars-signs', title: "Mars: Hur du begär" },
+    { id: '7th-house', title: "Äktenskapets 7:e hus" },
+    { id: 'retrograde-love', title: "Överlev retrograder i kärlek" },
+    { id: 'partner-analysis', title: "Partneranalys" }
+  ],
+  content: `
+      <h2 id="love-guide">Kärlek är en färdighet (och astrologi är handboken)</h2>
+      <p>Ofta behandlar vi kärlek som en mystisk kraft som bara "händer" oss. Men inom astrologin är kärleken en mekanism med kugghjul och spakar. Ditt <strong>kärlekshoroskop</strong> handlar inte bara om slumpmässiga möten; det är kartan över dina psykologiska behov hos en partner.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Varför drar du till dig samma "fel" typ av person om och om igen? Varför bryts kommunikationen alltid efter tre månader? Svaren finns i ditt födelsehoroskop. Genom att förstå din kosmiska kärleksplan kan du sluta upprepa mönster och börja bygga den relation du verkligen vill ha.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Venus: Konsten att visa tillgivenhet</h2>
+      <p><strong>Venus</strong> är planeten för attraktion, värderingar och harmoni. Tecknet som Venus befann sig i vid din födelse beskriver vad du tycker är vackert och hur du visar tillgivenhet.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>Venus i eldtecken (Väduren, Lejonet, Skytten):</strong> Älskar jakten. Behöver drama, stora gester och spontanitet. Blir lätt uttråkad. <em>Tips:</em> Håll spänningen vid liv.</li>
+        <li><strong>Venus i jordtecken (Oxen, Jungfrun, Stenbocken):</strong> Älskar stabilitet. Behöver engagemang, pålitlighet och fysisk beröring. Hatar spel. <em>Tips:</em> Var konsekvent.</li>
+        <li><strong>Venus i lufttecken (Tvillingarna, Vågen, Vattumannen):</strong> Älskar intellekt. Behöver konversation, humor och vänskap framför allt annat. Undviker tunga emotioner. <em>Tips:</em> Var intressant.</li>
+        <li><strong>Venus i vattentecken (Kräftan, Skorpionen, Fiskarna):</strong> Älskar själen. Behöver en djup emotionell sammansmältning, sårbarhet och trygghet. <em>Tips:</em> Var autentisk.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: Begärets motor</h2>
+      <p>Medan Venus är vad du gillar, är <strong>Mars</strong> sättet du får det på. Mars styr libido, målsökande och konflikt.</p>
+      <p>Om du har <strong>Mars i Skorpionen</strong> är du intensiv, besittande och går för "allt eller inget". Du kan skrämma bort en lättsam <strong>Mars i Tvillingarna</strong> som bara vill flirta och ha kul. Att känna till din partners Mars-tecken är "hemligheten" för sexuell tillfredsställelse och för att lösa bråk utan att göra slut.</p>
 
-      <h2 id="7th-house">The 7th Hus: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">Det 7:e huset: Din "andra hälft"</h2>
+      <p>Titta på ditt ascendent-tecken. Titta nu på tecknet direkt motsatt det. Det är din <strong>Descendent</strong>, härskaren över ditt 7:e hus för partnerskap.</p>
+      <p>Vi känner oss ofta magnetiskt dragna till människor som förkroppslar egenskaperna i vårt 7:e hus, eftersom de besitter det som vi själva verkar sakna.
+      <br><em>Exempel:</em> En disciplinerad <strong>Jungfru-ascendent</strong> kommer ofta att gifta sig med en drömmande och oorganiserad <strong>Fisk-typ (Huset 7)</strong>. Jungfrun strukturerar Fiskarnas liv; Fiskarna lär Jungfrun att slappna av. Det är balansens axel.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romantik</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Överlev retrograder i kärlek</h2>
+      <p>Du har hört talas om Merkurius retrograd (missförstånden), men <strong>Venus retrograd</strong> är det verkliga testet för par. Den inträffar var 18:e månad och under denna period:
+      <br>1. Ex-partners dyker upp igen ("zombieing").
+      <br>2. Svaga relationer visar sprickor.
+      <br>3. Hemliga relationer kommer upp i ljuset.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Gyllene regel:</strong> Gift dig aldrig, fria inte och gör inga massiva åtaganden medan Venus är retrograd. Vänta tills skuggperioden är över (ca 40 dagar) för att se om du fortfarande känner likadant.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Partneranalys i relationer</h2>
+      <p>Du är komplex och din partner är det också. Ett generiskt horoskop "Lejonet + Vattumannen" kan inte fånga nyanserna i er unika koppling. Vår <strong>Premium Relationsrapport</strong> analyserar:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+        <li><strong>Synastri:</strong> Hur dina planeter rör hens (kemi).</li>
+        <li><strong>Komposit-horoskop:</strong> Energien i själva relationen (ödet).</li>
+        <li><strong>Davison-horoskop:</strong> Syftet med ert möte (karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Lämna inte ditt hjärta åt slumpen. Avkoda ditt kärleksliv med Astralo.</p>
     `
 };

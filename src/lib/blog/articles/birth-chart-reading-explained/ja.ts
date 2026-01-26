@@ -1,80 +1,96 @@
 /**
- * birth-chart-reading-explained - JA
+ * バースチャート（出生図）の読み方 - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: '🔮 バースチャートの読み方：あなたの魂の設計図を紐解く完全ガイド',
+  excerpt: 'バースチャート（出生図）の読み方をマスターして、あなたの性格の秘密を解き明かしましょう。惑星、ハウス、アスペクト、そして運命のノードをプロのように解釈する方法を学びます。',
+  category: '占星術の基礎',
+  metaDescription: 'バースチャート（出生図）の読み方をマスターして、あなたの性格の秘密を解き明かしましょう。惑星、ハウス、アスペクト、そして運命のノードをプロのように解釈する方法を学びます。',
+  keywords: 'バースチャート, 出生図, 占星術チャート, 占星術ビッグ3, アセンダント, 月星座, 占星術のハウス, 惑星のアスペクト, バースチャート無料診断',
+  quickSummary: [
+    'バースチャートは、あなたが生まれたその瞬間の空を360度で切り取ったスクリーンショットです。',
+    '「ビッグ3」（太陽、月、アセンダント）があなたの性格の核となる3本柱を形成します。',
+    '12のハウスは出来事が起こる「場所」を表し、惑星は「何が」起こるかを表します。',
+    'アスペクト（惑星間を繋ぐ線）は、あなたの内面的な葛藤や特別な才能を明らかにします。'
+  ],
+  keyTakeaways: [
+    'アセンダント（上昇宮）は、多くの場合、太陽星座よりも正確な予測を可能にします。',
+    'ハードアスペクト（スクエア、オポジション）は、レジリエンスを通じて最も成功する人々を生み出します。',
+    'ノースノード（ドラゴンヘッド）は、今世におけるあなたの魂のカメルマ（業）的な方向性を示します。',
+    'コンピュータ生成のレポートも素晴らしいですが、人間的なニュアンスはかけがえのないものです。'
+  ],
+  tableOfContents: [
+    { id: 'what-is-birth-chart', title: '魂の設計図とは' },
+    { id: 'the-big-three', title: 'ビッグ3：太陽・月・アセンダント' },
+    { id: 'the-planets', title: '惑星：個人天体と社会天体' },
+    { id: 'the-houses', title: '12のハウスの意味' },
+    { id: 'aspects', title: 'アスペクト：宇宙の対話' },
+    { id: 'nodes', title: '運命のノード' }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">魂の設計図とは</h2>
+      <p>自分の太陽星座の説明を読んで、「何か違う」と感じたことはありませんか？「獅子座だけど、目立つのは苦手」といった違和感。その理由は、おそらくあなたの<strong>バースチャート（出生図）</strong>の中に隠されています。太陽星座は重要ですが、それは広大で複雑な方程式の1つの変数に過ぎません。</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>バースチャートは、あなたが生まれた正確な時間、日付、場所に基づいて計算された天体の地図です。それはあなたを宇宙の中心に置き、その周囲に惑星を配置したものです。それはあなたの「宇宙的なDNA」であり、あなただけに属する一連の指示、才能、課題、可能性の独自のセットだと考えてください。</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">ビッグ3：太陽・月・アセンダント</h2>
+      <p>占星術を学ぶ上で、まずマスターしなければならないのが「ビッグ3」です。これら3つのポイントがあなたの性格の大部分を決定します。</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. 太陽 ☀️（アイデンティティ）</h3>
+      <p>太陽はあなたの意識的なエゴ、つまり「私は〜である」を表します。それはあなたの燃料であり、原動力であり、あなたが放つエネルギーの周波数です。<em>「私の本質は何か？」</em>という問いに答えます。</p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. 月 🌙（感情）</h3>
+      <p>月はあなたの内面の世界、本能、そして無意識を表します。傷ついたり、お腹が空いたり、疲れたりした時にどう反応するかを支配します。<em>「安心するためには何が必要か？」</em>という問いに答えます。</p>
 
-      <h3>3. The Ascendant / Rising 星座 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. アセンダント（上昇宮） 🏹（ペルソナ）</h3>
+      <p>アセンダントは、あなたが生まれた時に東の地平線に昇っていた星座です。それは世界に対するあなたの「インターフェース」です。外見、スタイル、そして第一印象を決定します。<em>「他人は私をどう見ているか？」</em>という問いに答えます。</p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">惑星：人生のドラマの俳優たち</h2>
+      <p>バースチャートにおいて、惑星はあなたの人生という物語の中で役割を演じる俳優です。</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>個人天体</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>水星 ☿️：</strong> メッセンジャー。知性、言葉、論理を司ります。</li>
+        <li><strong>金星 ♀：</strong> 愛の神。魅力、芸術、価値観を司ります。あなたが何を大切にし、どう人を惹きつけるかを示します。</li>
+        <li><strong>火星 ♂：</strong> 戦士。行動、怒り、エネルギーを司ります。</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>社会天体・トランスサタニアン</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>木星 ♃：</strong> グル。幸運、拡大、意味を見出す場所です。</li>
+        <li><strong>土星 ♄：</strong> 教育係。制限や試練を通じて、最終的に熟練（マスタリー）を達成する場所です。</li>
+        <li><strong>天王星、海王星、冥王星：</strong> 世代天体。これらは動きが非常に遅いため、世代全体の特徴、進化、そしてカルマに影響を与えます。</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">ステージ：12のハウス</h2>
+      <p>チャートはピザのように12の「ハウス」に分かれています。各ハウスは人生の特定の領域を支配します。惑星がどのハウスにあるかは、そのエネルギーが<em>どこで</em>発揮されるかを示します。</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>第1ハウス：</strong> 自己、肉体、外見。</li>
+        <li><strong>第2ハウス：</strong> お金、所有物、価値観。</li>
+        <li><strong>第3ハウス：</strong> コミュニケーション、兄弟、短期旅行。</li>
+        <li><strong>第4ハウス：</strong> 家庭、家族、ルーツ。</li>
+        <li><strong>第5ハウス：</strong> 創造性、ロマンス、子供。</li>
+        <li><strong>第6ハウス：</strong> ルーチンワーク、健康、奉仕。</li>
+        <li><strong>第7ハウス：</strong> 結婚、パートナーシップ、公の敵。</li>
+        <li><strong>第8ハウス：</strong> 変容、共有財産、深い親密さ。</li>
+        <li><strong>第9ハウス：</strong> 哲学、高等教育、海外。</li>
+        <li><strong>第10ハウス：</strong> キャリア、社会的名声、天職。</li>
+        <li><strong>第11ハウス：</strong> 友人、コミュニティ、希望と願い。</li>
+        <li><strong>第12ハウス：</strong> 潜在意識、秘密、スピリチュアリティ。</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">アスペクト：天体同士の会話</h2>
+      <p>惑星は単独で機能するのではなく、幾何学的な角度である「アスペクト」を形成します。これらの線はチャート内の「俳優」同士を繋ぎます。</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>ソフトアスペクト（トライン、セスタイル）：</strong> これらは才能です。惑星同士が助け合い、物事がスムーズに進みます。ただし、容易すぎて怠惰に繋がることもあります。</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>ハードアスペクト（スクエア、オポジション）：</strong> これらは挑戦です。惑星同士がぶつかり合っていますが、この摩擦が大きな成果を生むためのエネルギーを作り出します。成功者のチャートはスクエアで溢れています！</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">運命のノード</h2>
+      <p>最後に、馬蹄のような記号を探してください。<strong>ノースノード（ドラゴンヘッド）</strong>はあなたの目的地、つまり今世で魂が進もうとしている方向を表します。<strong>サウスノード（ドラゴンテイル）</strong>は過去世または幼少期を表し、慣れ親しんだ場所ですが、そこに留まると停滞を招きます。</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <p>バースチャートを読むことは、交響曲を読み解くようなものです。バイオリン（金星）だけを取り出すこともできますが、本当の魔法はオーケストラ全体が奏でるハーモニーの中にあります。Astraloでは、最新のAIを駆使して、あなたのチャートの何百万もの変数を、明確で読みやすい物語へと統合します。</p>
     `
 };

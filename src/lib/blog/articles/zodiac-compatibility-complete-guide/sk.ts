@@ -1,88 +1,105 @@
 /**
- * zodiac-compatibility-complete-guide - SK
+ * Kompatibilita znamení zverokruhu - SK
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const sk: BlogPostTranslation = {
-    title: "❤️ Zverokruh Znamenie Compatibility: The Definitive Guide to Cosmic Láska",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Znamenies Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Kompatibilita znamení zverokruhu: Definitívny sprievodca kozmickou láskou",
+  excerpt: "Dokonalý sprievodca kompatibilitou zverokruhu pre rok 2026. Choďte za hranice slnečných znamení a zistite, ako živly, Venuša a Mars ovplyvňujú vašu romantickú chémiu a dlhodobý potenciál.",
+  category: "Láska a vzťahy",
+  metaDescription: "Dokonalý sprievodca kompatibilitou zverokruhu pre rok 2026. Choďte za hranice slnečných znamení a zistite, ako živly, Venuša a Mars ovplyvňujú vašu romantickú chémiu a dlhodobý potenciál.",
+  keywords: "kompatibilita zverokruhu, horoskop lásky, synastria, kompatibilita znamení, znamenie venuše láska, znamenie marsu vášeň, astrológia vzťahov, najlepšie zhody",
+  quickSummary: [
+    "Skutočná kompatibilita zahŕňa porovnanie celých pôrodných máp (synastria), nielen slnečných znamení",
+    "Živlová rovnováha (Oheň, Zem, Vzduch, Voda) je základom harmónie vo vzťahu",
+    "„Nekompatibilné“ znamenia často poskytujú najväčšie príležitosti pre rast duše",
+    "Venuša určuje štýl náklonnosti, zatiaľ čo Mars poháňa vášeň a štýl riešenia konfliktov"
+  ],
+  keyTakeaways: [
+    "Hľadajte tríny (rovnaký živel) pre ľahkosť a opozície pre intenzívnu príťažlivosť",
+    "Kompatibilita mesačných znamení je kľúčová pre spoločné bývanie a emocionálne bezpečie",
+    "Kompatibilita Merkúra určuje, ako dobre spolu riešite problémy",
+    "Neexistuje „dokonalá“ zhoda; každé spojenie má svoje silné stránky a výzvy"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "Prečo slnečné znamenia nie sú všetko" },
+    { id: "elemental-love", title: "4 živly v láske" },
+    { id: "love-planets", title: "Venuša, Mars a Mesiac" },
+    { id: "challenging-matches", title: "Pravda o „zlých“ zhodách" },
+    { id: "best-matches-deep-dive", title: "Hĺbkový ponor: Najlepšie zhody" },
+    { id: "synastry", title: "Pokročilý tip: Synastria" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Prečo slnečné znamenia nie sú všetko</h2>
+      <p>Všetci sme to zažili: listovali sme časopisom alebo aplikáciou, aby sme zistili, či je znamenie našej polovičky kompatibilné s naším. „O nie, ja som Lev a on je Škorpión – sme odsúdení na zánik!“ Ale zadržte. <strong>Kompatibilita zverokruhu</strong> je nekonečne zložitejšia – a nádejnejšia – než jednoduché tabuľkové porovnávanie.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Hoci vaše slnečné znamenie predstavuje vaše jadro a životný účel, vzťahy sú vybudované na emóciách, komunikácii a hodnotách. To je dôvod, prečo môžete byť šťastne v manželstve so znamením, ktoré je údajne „nekompatibilné“, alebo sa trápiť so svojou takzvanou „dokonalou zhodou“. Aby sme skutočne pochopili <strong>zhody v láske</strong>, musíme sa pozrieť na celý obraz oblohy.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Láska</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 živly v láske</h2>
+      <p>Najrýchlejší spôsob, ako posúdiť počiatočnú chémiu, je cez živly. Znamenia rovnakého živlu vo všeobecnosti „hovoria rovnakým jazykom“.</p>
       
-      <h3>🔥 Oheň Znamenies (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Ohnivé znamenia (Baran, Lev, Strelec)</h3>
+      <p><strong>Jazyk lásky:</strong> Vášeň, dobrodružstvo, spontánnosť.</p>
+      <p>Ohnivé znamenia potrebujú partnera, ktorý dokáže rozdúchať ich plameň bez toho, aby ho uhasil. Túžia po vzrušení a neznášajú nudu.
+      <br><em>Najlepšie s:</em> Inými ohnivými znameniami (okamžité teplo) alebo vzdušnými znameniami (vzduch vyživuje oheň).</p>
 
-      <h3>🌍 Zem Znamenies (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Zemské znamenia (Býk, Panna, Kozorožec)</h3>
+      <p><strong>Jazyk lásky:</strong> Služba, stabilita, dotyk.</p>
+      <p>Zemské znamenia vnímajú lásku ako sloveso. Prejavujú náklonnosť praktickými skutkami a budovaním spoločného života. Potrebujú spoľahlivosť.
+      <br><em>Najlepšie s:</em> Inými zemskými znameniami (pevný základ) alebo vodnými znameniami (voda zúrodňuje zem).</p>
 
-      <h3>💨 Vzduch Znamenies (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Vzdušné znamenia (Blíženci, Váhy, Vodnár)</h3>
+      <p><strong>Jazyk lásky:</strong> Konverzácia, vtip, sloboda.</p>
+      <p>Pre vzdušné znamenia je myseľ najdôležitejšou erotogénnou zónou. Potrebujú mentálnu stimuláciu a partnera, ktorý je zároveň ich najlepším priateľom.
+      <br><em>Najlepšie s:</em> Inými vzdušnými znameniami (nekonečné rozhovory) alebo ohnivými znameniami (inšpirácia).</p>
 
-      <h3>💧 Voda Znamenies (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Vodné znamenia (Rak, Škorpión, Ryby)</h3>
+      <p><strong>Jazyk lásky:</strong> Zraniteľnosť, intuícia, splynutie.</p>
+      <p>Vodné znamenia hľadajú hlboké emocionálne spojenie. Chcú byť pochopené bez slov a potrebujú bezpečný prístav.
+      <br><em>Najlepšie s:</em> Inými vodnými znameniami (psychické puto) alebo zemskými znameniami (nádoba pre ich vodu).</p>
 
-      <h2 id="love-planets">The Real Láska Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Skutočné planéty lásky: Venuša, Mars a Mesiac</h2>
+      <p>Ak chcete vedieť, či si budete skutočne rozumieť v bežnom živote, kontrola kompatibility slnečných znamení nestačí. Musíte sa bližšie pozrieť na tri špecifické planéty v horoskope partnera:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Mesiac 🌙 (Emocionálne bezpečie)</h3>
+      <p>V dlhodobom vzťahu alebo spoločnom bývaní je <strong>kompatibilita mesačných znamení kráľom</strong>. Vaše mesačné znamenie diktuje, čo potrebujete, aby ste sa cítili bezpečne, ako reagujete, keď ste unavení alebo hladní, a ako sa staráte o druhých. 
+      <br><em>Príklad:</em> Baran Slnko sa môže zdať tvrdý, ale ak má Mesiac v Rakovi, v skutočnosti je to veľký „citlivka“, ktorý doma potrebuje objatia a uistenie.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Venuša ♀ (Romantika a hodnoty)</h3>
+      <p>Venuša určuje, čo považujete za krásne a čo si ceníte. Ukazuje váš „štýl flirtovania“.
+      <br><em>Tip:</em> Ak sú vaše znamenia Venuše v rovnakom živle, váš vkus a nákupné návyky budú pravdepodobne v súlade.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Mars ♂ (Vášeň a hádky)</h3>
+      <p>Mars je planéta libida a konfliktov. Ukazuje, ako bojujete a ako prežívate sex.
+      <br><em>Tip:</em> Kompatibilné znamenia Marsu zabezpečia, že hádky sa vyriešia rýchlo a fyzická chémia zostane živá.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Pravda o „zlých“ zhodách</h2>
+      <p>Čo ak sa zamilujete do znamenia, ktoré je „nekompatibilné“? Napríklad Lev (Oheň) a Škorpión (Voda)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Tieto vzťahy sú často tie najviac <strong>transformačné</strong>. Astrológia tieto aspekty nazýva „kvadrát“ alebo „quincunx“. Vytvárajú trenie. Ale trenie vytvára teplo! „Náročné“ zhody vás nútia rásť, učiť sa nový jazyk a vystúpiť zo svojej komfortnej zóny. Často ide o vysoko vášnivé spojenia spriaznených duší určené na evolúciu vašej duše, aj keď si vyžadujú viac práce.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zverokruh PVzduchings</h2>
+      <h2 id="best-matches-deep-dive">Hĺbkový ponor: Slávne dvojice zverokruhu</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>„Mocný pár“: Baran a Váhy</h3>
+      <p>Protiklady sa priťahujú! Baran je „najprv ja“, Váhy sú „najprv my“. Baran učí Váhy asertivite; Váhy učia Barana diplomacii. Je to magnetická príťažlivosť, ktorú je ťažké prerušiť.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>„Budovatelia impéria“: Býk a Kozorožec</h3>
+      <p>Dve zemské znamenia, ktoré si cenia kvalitu, peniaze a bezpečnosť. Spoločne budujú obrovský úspech, hoci musia pamätať na to, že sa treba aj baviť, nielen pracovať.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>„Peter Pan“ duo: Blíženci a Strelec</h3>
+      <p>Vzduch a oheň. Obaja milujú slobodu, cestovanie a filozofiu. Možno sa nikdy neusadia tradičným spôsobom, ale budú navždy partnermi v „zločine“.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>„Psychické puto“: Rak a Škorpión</h3>
+      <p>Keď sa tieto dve vodné znamenia stretnú, svet zmizne. Majú telepatické spojenie a majetníckosť, vďaka ktorej sú si navzájom divoko verní.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Pokročilá kompatibilita: Synastria</h2>
+      <p>Aby ste získali skutočnú odpoveď o vašom vzťahu, potrebujete <strong>výklad synastrie</strong>. To zahŕňa prekrytie vášho horoskopu na horoskop vášho partnera.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Hľadáme spojenia ako:
+      <br><strong>Konjunkcia Slnko-Mesiac:</strong> Klasický aspekt „manžel/manželka“.
+      <br><strong>Výmeny Venuša-Mars:</strong> Neuveriteľná sexuálna príťažlivosť.
+      <br><strong>Kontakty Saturna:</strong> Lepidlo, ktoré drží ľudí pohromade celý život (aj v ťažkých časoch).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>V Astralo naše pokročilé algoritmy a odborní astrológovia nedávajú len percentá. Vytvárame mapu duše vášho vzťahu. Prestaňte hádať a začnite chápať vesmírny účel vášho spojenia.
     `
 };

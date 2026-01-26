@@ -1,56 +1,63 @@
 /**
- * love-horoscope-relationship-advice - ZH
+ * 爱情运势 2026：情感关系大师指南 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "💕 爱情 Horoscope 2026: The Master Guide to 十二生肖 Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">爱情 is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: '💕 爱情运势 2026：星座罗曼史大师指南',
+  excerpt: '用占星术改变你的爱情生活。深入探讨金星星座、掌管婚姻的第 7 宫、火星的激情风格，以及如何在关系中应对水星逆行。',
+  category: '爱与人际关系',
+  metaDescription: '用占星术改变你的爱情生活。深入探讨金星星座、掌管婚姻的第 7 宫、火星的激情风格，以及如何在关系中应对水星逆行。',
+  keywords: '爱情运势, 关系占星, 金星星座含义, 火星星座约会, 第 7 宫婚姻, 合盘指南, 星座约会建议, 爱情匹配度',
+  quickSummary: [
+    '你的“爱之语”是由你的金星星座决定的，而不仅仅是太阳星座。',
+    '星盘中的第 7 宫描述了你理想的长期伙伴。',
+    '火星决定了你如何追求浪漫目标以及性吸引力。',
+    '关系的成败在于时机——绝不要在金星逆行期间结婚。'
+  ],
+  keyTakeaways: [
+    '如果你想知道一个人如何调情，看他的金星星座。',
+    '如果你想知道一个人如何争吵或表达激情，看他的火星星座。',
+    '“下降星座”（与上升星座相对）通常是你最容易被吸引的类型。',
+    '合盘是将两张星盘进行比较的艺术，用以判断一段关系是否经得起考验。'
+  ],
+  tableOfContents: [
+    { id: 'love-guide', title: '爱是一种技能' },
+    { id: 'venus-signs', title: '金星：你的所爱' },
+    { id: 'mars-signs', title: '火星：你的欲望' },
+    { id: '7th-house', title: '第 7 宫：婚姻宫' },
+    { id: 'retrograde-love', title: '在逆行中生存' },
+    { id: 'partner-analysis', title: '匹配度分析' }
+  ],
+  content: `
+      <h2 id="love-guide">爱是一种技能（占星术是指南）</h2>
+      <p>我们经常把爱看作是一种“发生”在我们身上的神秘力量。但在占星术中，爱是一种带有齿轮和杠杆的机制。你的<strong>爱情运势</strong>不仅仅是关于偶然的相遇；它是你在伙伴关系中心理需求的蓝图。</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>为什么你总是吸引同样“糟糕”的类型？为什么沟通总是在三个月后出现崩溃？答案就在你的星盘中。通过了解你自己的宇宙爱情设计，你可以停止重复错误的模式，开始建立你真正想要的关系。</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">金星：示爱的艺术</h2>
+      <p><strong>金星</strong>是吸引、价值观和和谐之星。你出生时金星所在的星座描述了你认为什么是美的，以及你如何表达爱意。</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>火象金星（白羊、狮子、射手）：</strong> 喜欢追逐感。需要戏剧性、宏大的姿态。容易厌倦。</li>
+        <li><strong>土象金星（金牛、处女、摩羯）：</strong> 喜欢稳定。需要承诺、可靠性和肢体接触。</li>
+        <li><strong>风象金星（双子、天秤、水瓶）：</strong> 喜欢精神交流。需要对话、风趣，先成为朋友。</li>
+        <li><strong>水象金星（巨蟹、天蝎、双鱼）：</strong> 喜欢灵魂交融。需要深层的情感连接、脆弱感和安全感。</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">火星：欲望的引擎</h2>
+      <p>如果说金星是你喜欢什么，那么<strong>火星</strong>就是你如何去得到它。火星掌管欲望、追求和冲突。了解伴侣的火星星座是通往性和谐以及在不分手的情况下解决争论的“秘密代码”。</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">第 7 宫：你的“另一半”</h2>
+      <p>观察你的上升星座。现在看它正对面的星座。这就是你的<strong>下降星座</strong>，即第 7 宫伴侣宫的统治者。我们经常磁吸般地被那些体现了我们第 7 宫特质的人所吸引，因为他们拥有我们所缺乏的特质。</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">在逆行中生存</h2>
+      <p>你听说过水星逆行（沟通误解），但<strong>金星逆行</strong>才是真正的关系测试。每 18 个月发生一次，此时：
+      <br>1. 分手的前任可能回归。
+      <br>2. 脆弱的关系会走向终结。
+      <br>3. 隐藏的地下情可能会曝光。</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
-
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
-      <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
-      </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p><strong>黄金法则：</strong> 在金星逆行期间，不要结婚、求婚或做出重大承诺。等到阴影期结束（通常 40 天），看看你的感觉是否依然如故。</p>
+      
+      <p>不要让你的心随缘发展。与 Astralo 一起解码你的爱情生活。</p>
     `
 };

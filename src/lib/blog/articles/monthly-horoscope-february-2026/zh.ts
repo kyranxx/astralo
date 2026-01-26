@@ -1,71 +1,74 @@
 /**
- * monthly-horoscope-february-2026 - ZH
+ * 2026 年 2 月月度运势：水瓶座创新季 - ZH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const zh: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ 2026 年 2 月月度运势：水瓶座创新季',
+  excerpt: '随着水星回复顺行，2026 年 2 月将带来一股清晰的浪潮。探索 2 月 3 日的狮子座满月和双鱼座金星如何影响你的爱情生活和职业生涯。',
+  category: '月度运势',
+  metaDescription: '完整的 2026 年 2 月占星预测。针对所有星座的详细月度预测，重点关注狮子座满月以及金星进入双鱼座的能量。',
+  keywords: '月度运势, 2026 年 2 月占星, 月度预测, 星座运势 2 月, 水瓶座季, 狮子座满月, 双鱼座金星',
+  quickSummary: [
+    '2 月 3 日的狮子座满月要求你走上舞台中心，表达真实的自我。',
+    '水星终于回复顺行，清理了 1 月底以来的沟通误解。',
+    '金星进入梦幻的双鱼座，创造了全年最浪漫的能量。',
+    '水瓶座季促使我们创新，打破过时的传统约束。'
+  ],
+  keyTakeaways: [
+    '利用 2 月的第一周启动创意项目或重新打造个人品牌。',
+    '今年的情人节因金星旺相而格外神奇——计划一些富有灵性和深度的活动。',
+    '月中预计会有关于技术或社区团体的突然洞察。',
+    '一般运势虽然不错，但要获得具体的时机，你需要查看个人过境报告。'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: '2026 年 2 月概览' },
+    { id: 'key-transits', title: '关键日期与相位' },
+    { id: 'fire-signs', title: '火象星座（白羊、狮子、射手）' },
+    { id: 'earth-signs', title: '土象星座（金牛、处女、摩羯）' },
+    { id: 'air-signs', title: '风象星座（双子、天秤、水瓶）' },
+    { id: 'water-signs', title: '水象星座（巨蟹、天蝎、双鱼）' },
+    { id: 'get-personal', title: '为什么只有一般运势还不够' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026 年 2 月占星预测</h2>
+      <p>如果说 1 月是为了抖掉去年的尘埃，那么 <strong>2026 年 2 月</strong> 就是为了大胆迈向未来。我们正深处<strong>水瓶座季</strong>，这是一个青睐大胆、新奇和创新的时期。集体情绪从“我如何生存？”转向“我如何重塑？”</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>头条新闻是 <strong>2 月 3 日的狮子座满月</strong>。狮子座要求我们闪耀。它在质问：“你在哪些方面表现得过于卑微？”在这道光芒下，躲藏不是一种选择。随着水星结束阴影期，沟通将重获清晰。迷雾正在散去。</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">关键日期与相位</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>2 月 3 日：</strong> 狮子座满月（戏剧性、激情、圆满）。</li>
+        <li><strong>2 月 10 日：</strong> 金星进入双鱼座（无条件的爱、艺术、幻想）。</li>
+        <li><strong>2 月 18 日：</strong> 太阳进入双鱼座（梦想季开始）。</li>
+        <li><strong>2 月 25 日：</strong> 水星进入双鱼座（逻辑消融于直觉）。</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 火 标志s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
-      
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <h2 id="fire-signs">🔥 火象星座（白羊、狮子、射手）</h2>
+      <p><strong>主题：创意爆发</strong></p>
+      <p><strong>狮子座：</strong> 这是你的时刻。满月将你置于聚光灯下。无论是晋升、突破还是彻底的转变，它都发生在<em>现在</em>。不要害怕被看见。</p>
+      <p><strong>白羊座：</strong> 本月你的社交圈是你的财富。人脉会带来意想不到的收获。</p>
 
-      <h2 id="earth-signs">🌍 土 标志s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
-      
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <h2 id="earth-signs">🌍 土象星座（金牛、处女、摩羯）</h2>
+      <p><strong>主题：灵性扎根</strong></p>
+      <p><strong>金牛座：</strong> 当金星进入双鱼座，你会感到更加柔软。这是罗曼史的一段美好时光。放下过往的怨恨。</p>
+      <p><strong>处女座：</strong> 关注伙伴关系。在 2 月，学会让别人来帮助<em>你</em>。脆弱是本月你的课题。</p>
 
-      <h2 id="air-signs">💨 空气 标志s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
-      
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <h2 id="air-signs">💨 风象星座（双子、天秤、水瓶）</h2>
+      <p><strong>主题：智力更新</strong></p>
+      <p><strong>水瓶座：</strong> 生日快乐！太阳在你的星座放大了你的生命力。现在是推出个人品牌或更新形象的最佳时机。</p>
 
-      <h2 id="water-signs">💧 水 标志s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
-      
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <h2 id="water-signs">💧 水象星座（巨蟹、天蝎、双鱼）</h2>
+      <p><strong>主题：情感深潜</strong></p>
+      <p><strong>双鱼座：</strong> 月末太阳进入你的星座，你正从长眠中醒来。你的直觉现在非常敏锐。</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
-      
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
-      
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <h2 id="get-personal">为什么一般运势还不够</h2>
+      <p>虽然这份预测给了你太阳星座的“宇宙天气”，但它遗漏了最关键的部分：<strong>你独特的星盘</strong>。你不仅仅是你的太阳星座。你还有月亮、上升和其他 8 颗行星，它们构成了如指纹般独特的复杂地图。</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">准备好了解属于你的真相了吗？</h3>
+          <p>获取 2026 年完整个人过境报告。精准查看行星如何与你的本命蓝图互动。</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">获取我的个性化解读</a>
       </div>
     `
 };

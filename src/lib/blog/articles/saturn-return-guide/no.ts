@@ -1,204 +1,239 @@
 /**
- * saturn-return-guide - NO
+ * Overlevelsesguide Saturn Return - NO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const no: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: "🪐 Overlevelsesguide Saturn Return: Hvordan du består din kosmiske eksamen",
+  excerpt: "Nærmer du deg 29? Velkommen til din Saturn Return. Finn ut hvorfor dette er den viktigste astrologiske hendelsen i ditt voksne liv, og hvordan du kommer ut av det med sjelen i behold.",
+  category: "Transitter",
+  metaDescription: "Den ultimate guiden for å overleve din Saturn Return. Lær hva som skjer når Saturn vender tilbake til sin fødselsposisjon, hvordan det påvirker karriere og relasjoner, samt tolkninger per hus.",
+  keywords: "saturn return, betyr saturn return, første saturn return, astrologiske transitter, saturnus i husene, 30-årskrise, astrologisk modenhet, saturnus retrograd, overleve saturn return, saturnus i tegnene",
+  quickSummary: [
+    "En Saturn Return skjer når Saturn vender tilbake til den nøyaktige graden og tegnet den sto i ved din fødsel (rundt 28-30 års alder).",
+    "Det er en 'kosmisk revisjon' hvor alt som ikke er bygget på et solid fundament blir fjernet.",
+    "Selv om det ofte er stressende, er det katalysatoren for sann modenhet og det å finne livsformålet ditt.",
+    "En andre Saturn Return skjer rundt 58-60 års alder og fokuserer på arv og visdom."
+  ],
+  keyTakeaways: [
+    "Ikke motstå forandring; Saturn belønner disiplin og ansvar.",
+    "Huset der fødsels-Saturnen din står, avgjør hvor du vil ha ditt 'svennestykke'.",
+    "Relasjonsbrudd og karrierebytter i denne perioden er ofte nødvendige for din vekst.",
+    "Når transitten er fullført, vil du oppleve en ny følelse av autoritet og klarhet."
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: "Hva er en Saturn Return?" },
+    { id: 'the-myth-of-saturn', title: "Myten og mesteren: Herre over tiden" },
+    { id: 'timeline', title: "Tidslinjen: Fasene av ferden" },
+    { id: 'themes', title: "Universelle temaer for ferden" },
+    { id: 'saturn-in-signs', title: "Saturn Return per tegn (fra Væren til Fiskene)" },
+    { id: 'saturn-in-houses', title: "Saturn Return i husene (Deep Dive)" },
+    { id: 'house-1', title: "Hus 1: Gjenoppfinnelse av selvet" },
+    { id: 'house-2', title: "Hus 2: De økonomiske fundamentene" },
+    { id: 'house-3', title: "Hus 3: Mestring av sinnet" },
+    { id: 'house-4', title: "Hus 4: Forfedrenes healing og røtter" },
+    { id: 'house-5', title: "Hus 5: Nytelsens disiplin" },
+    { id: 'house-6', title: "Hus 6: Den hellige rutinen" },
+    { id: 'house-7', title: "Hus 7: Partnerskapets smeltepunkt" },
+    { id: 'house-8', title: "Hus 8: Død, gjenfødelse og delt makt" },
+    { id: 'house-9', title: "Hus 9: Jakten på sannheten" },
+    { id: 'house-10', title: "Hus 10: Karrierens høydepunkt" },
+    { id: 'house-11', title: "Hus 11: Det kollektive formålet" },
+    { id: 'house-12', title: "Hus 12: Den endelige oppløsningen" },
+    { id: 'retrograde', title: "Faktoren Saturn retrograd" },
+    { id: 'psychology', title: "Psykologien bak Saturn Return" },
+    { id: 'how-to-survive', title: "Overlevelsestips: Hvordan takle presset" },
+    { id: 'famous-examples', title: "Berømte Saturn Return-historier" },
+    { id: 'post-return', title: "Livet etter ilden: Dine 30-år" },
+    { id: 'second-return', title: "Forberedelse til den andre ferden (Alder 58-60)" },
+    { id: 'faq', title: "Ofte stilte spørsmål" },
+    { id: 'conclusion', title: "Omfavne voksenlivet" }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Hva er en Saturn Return?</h2>
+      <p>Hvis du noen gang har lagt merke til at årene mellom 27 og 30 virker spesielt kaotiske for de fleste, har du vært vitne til styrken i <strong>Saturn Return</strong>. I astrologien er Saturn planeten for struktur, disiplin, ansvar og tid. Denne enorme planeten bruker omtrent 29,5 år på å fullføre ett kretsløp rundt solen.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>Din "Saturn Return" skjer når planeten Saturn vender tilbake til den nøyaktige graden og dyrekretstegnet den hadde i fødselsøyeblikket ditt. Det er den himmelske ekvivalenten til en "eksamen" i voksenlivet. Det er øyeblikket hvor universet spør deg: <em>"Lever du et liv som virkelig er ditt, eller spiller du en rolle basert på hva foreldrene dine og samfunnet ville at du skulle være?"</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Denne perioden kjennetegnes ofte av intenst press, betydelige livsendringer og den plutselige erkjennelsen av at det å være voksen ikke lenger er et fjernt konsept, men en fysisk og tung realitet. Mens "pop-astrologi" ofte beskriver Saturn Return som en skremmende fase med tap og kriser, er det i virkeligheten en dyp mulighet til å riste av seg "falske" versjoner av deg selv og bygge fundamenter som kan bære deg de neste tre tiårene. Det er broen mellom potensialet i 20-årene og din personlige kraft i 30-årene.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Myten og mesteren: Herre over tiden</h2>
+      <p>For å forstå hvorfor denne transitten føles så tung, må vi se på arketypen Saturn. I romersk mytologi (og som Chronos i gresk mytologi) var Saturn gud for tid og avling. Han avbildes ofte med en ljå. Dette refererer ikke bare til døden; det refererer til å beskjære det som ikke lenger tjener oss. Akkurat som en gartner må beskjære en rosenbusk for at den skal vokse seg sterkere neste sesong, beskjærer Saturn de delene av livet ditt som er overflødige, usunne eller bare etterligninger.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Saturn er den "store læreren" eller "herre over karma". Han ønsker ikke å se deg lide, men han vil se deg modnes. Mange går gjennom 20-årene med en blanding av flaks, potensial og foreldrenes forventninger. Saturn sier: festen er over. Det er på tide å bygge noe som holder i 30 år. Han belønner hardt arbeid, integritet og tålmodighet. Han straffer snarveier, uærlighet og utsettelser. Hvis du bare "lot som", vil sannheten komme frem i løpet av din Saturn Return.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Tidslinjen: Fasene av ferden</h2>
+      <p>Den første Saturn Return begynner vanligvis rundt 27,5 års alder og avsluttes nærmere 30. Opplevelsen kan deles inn i tre distinkte faser:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>Fase 1: Det fjerne tordenværet (Alder 27-28)</h3>
+      <p>Du begynner å føle en vag rastløshet. Ting som pleide å gjøre deg lykkelig – tilfeldige dater, sene kvelder, en strøjobb – begynner å føles tomme. Du føler kanskje et plutselig behov for å "få orden på livet", uten å vite nøyaktig hva det innebærer. Du ser kanskje venner som gifter seg eller blir forfremmet, og i stedet for å være glad på deres vegne, føler du panikk over din egen fremgang.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>Fase 2: Svennestykket (Alder 28-29)</h3>
+      <p>Her kommer den virkelige kraften. Hendelser inntreffer for å tvinge deg til handling. Brudd, karriereendringer eller helsevarsler skjer i denne perioden. Du blir tvunget til å ta valg. Det er ikke lenger rom for å utsette ting. Saturn vil holde presset oppe til du tar ansvar for dine egne resultater. Dette er kulminasjonen av transittens emosjonelle intensitet.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>Fase 3: Integreringen (Alder 29-30)</h3>
+      <p>Etter hvert som Saturn beveger seg forbi din fødselsgrad, letter presset. Du begynner å se visdommen i valgene du har tatt (også de vanskelige). Du føler deg eldre, men mer stabil. Du har "tatt eksamen" i astrologisk modenhet. Du trenger ikke be noen om lovenger for å være deg selv. Du er det bare.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Universelle temaer for ferden</h2>
+      <p>Selv om alle har en unik opplevelse, er det flere temaer som går igjen hos nesten alle under denne tiden:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Reality Check:</strong> Hvis du har levd i en fantasi eller unngått en viktig sannhet, vil Saturn tvinge deg til å se den i hvitøyet.</li>
+        <li><strong>Slutten på relasjoner:</strong> Langvarige forhold som ikke er ment for det "virkelig langsiktige", bryter ofte sammen nå. De som holder sammen, gjør det fordi de har forpliktet seg til et nytt nivå av modenhet.</li>
+        <li><strong>Karriereendringer:</strong> Mange forlater stabile, kjedelige jobber for å følge sitt sanne kall, eller innser at "drømmejobben" egentlig er et mareritt og velger noe mer praktisk.</li>
+        <li><strong>Fysisk aldring:</strong> Du begynner å føle kroppen din på en annen måte. Det er øyeblikket hvor folk begynner å ta helsen på alvor – med erkjennelsen om at de ikke er udødelige. Du merker kanskje de første grå hårene eller en endring i stoffskiftet.</li>
+        <li><strong>Sette grenser:</strong> Å lære seg å si "Nei" – til foreldre, giftige venner og urealistiske forventninger – er en sentral lærdom fra Saturn. Du lærer at "Nei" er en fullstendig setning.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Dyrekretsen Tegns</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Saturn Return per tegn</h2>
+      <p>Tegnet din Saturn står i, forteller oss *hvordan* du vil oppleve denne transitten. Finn ditt Saturn-tegn i fødselshoroskopet ditt hos Astralo for å se din spesifikke nyanse av vekst:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Saturn i Væren</h3>
+      <p>Din ferd fokuserer på **tålmodighet og impulskontroll**. Du vil sannsynligvis skynde deg gjennom overgangen, men Saturn vil bremse deg ned. Du lærer å lede med visdom, ikke bare rå makt.
+      <br><strong>Oppgaven:</strong> Å tøyle sinnet ditt og din personlige drivkraft.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Saturn i Tyren</h3>
+      <p>Din ferd fokuserer på **økonomisk sikkerhet og verdier**. Du kan møte betydelige økonomiske utfordringer som tvinger deg til å definere hva som virkelig er "verdifullt" for deg.
+      <br><strong>Oppgaven:</strong> Å bygge et solid økonomisk fundament og en selvfølelse som ikke avhenger av eiendeler.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Saturn i Tvillingene</h3>
+      <p>Din ferd fokuserer på **kommunikasjon og fokus**. Du kan ha "for mange ideer", og Saturn vil tvinge deg til å velge én og mestre den.
+      <br><strong>Oppgaven:</strong> Å fokusere sinnet ditt og tale med autoritet.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Saturn i Krepsen</h3>
+      <p>Din ferd dreier seg om **emosjonelle grenser og familie**. Du kan måtte håndtere barndomstraumer eller ta på deg et tungt familieansvar.
+      <br><strong>Oppgaven:</strong> Å pleie deg selv og bygge et indre hjem som ikke avhenger av andre.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Saturn i Løven</h3>
+      <p>Din ferd fokuserer på **kreativ integritet og anerkjennelse**. Du kan slite med behovet for applaus og må lære deg å skape for din egen skyld først.
+      <br><strong>Oppgaven:</strong> Å finne en selvtillit som kommer innenfra, ikke fra ytre beundring.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Saturn i Jomfruen</h3>
+      <p>Din ferd dreier seg om **helse og tjeneste**. Du er sannsynligvis allerede veldig hard mot deg selv, og Saturn vil lære deg at "perfekt" er det gjordas fiende.
+      <br><strong>Oppgaven:</strong> Å bygge en bærekraftig rutine og lære å være snill mot kroppen din.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Saturn i Vekten</h3>
+      <p>Din ferd fokuserer på **rettferdighet og partnerskap**. Du kan oppleve betydelige prøvelser i forhold som tvinger deg til å finne din identitet innad i et par.
+      <br><strong>Oppgaven:</strong> Å finne balansen og lære at "du er nok".</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Saturn i Skorpionen</h3>
+      <p>Din ferd dreier seg om **makt og intimitet**. Det er en svært intens ferd, fokusert på å møte din egen skygge og lære å stole på.
+      <br><strong>Oppgaven:</strong> Å transformere dine dypeste frykter til personlig kraft.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Saturn i Skytten</h3>
+      <p>Din ferd dreier seg om **tro og frihet**. Du innser kanskje at verden er mye større (eller mindre) enn du trodde, og du må redefinere din filosofi.
+      <br><strong>Oppgaven:</strong> Å finne en "sannhet" du faktisk kan leve med hver dag.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Saturn i Stenbukken</h3>
+      <p>Din ferd fokuserer på **ambisjon og autoritet**. Saturn er "hjemme" her, så presset er ekstremt, men det er også belønningene. Du blir sjefen.
+      <br><strong>Oppgaven:</strong> Å ta ansvar for din arv og bestige fjellet ditt med integritet.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Saturn i Vannmannen</h3>
+      <p>Din ferd dreier seg om **community og individualitet**. Du lærer hvordan du passer inn i en gruppe uten å miste din unike gnist.
+      <br><strong>Oppgaven:</strong> Å bidra til fellesskapet mens du vokter dine egne grenser.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Saturn i Fiskene</h3>
+      <p>Din ferd dreier seg om **spiritualitet og grenser**. Du kan ha problemer med å holde føttene på bakken og må lære at "Nei" kan være en spirituell handling.
+      <br><strong>Oppgaven:</strong> Å bringe drømmene dine ned til virkeligheten gjennom disiplin.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Saturn Return i husene: Deep Dive</h2>
+      <p>Huset Saturn står i i fødselshoroskopet ditt, avgjør *hvor* din Saturn Return utspiller seg. Dette er scenen hvor dramaet vil finne sted.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">Hus 1: Gjenoppfinnelse av selvet</h2>
+      <p>Når Saturn vender tilbake til 1. hus, er krisen både profesjonell og fysisk. Du kan gjennomgå en reell "makeover", ikke bare i klær, men i din personlighet. Du føler en bør på skuldrene, følelsen av å måtte "bli noen". Du kan være ekstremt hard mot deg selv under denne overgangen. Det kan være vekttap, vektøkning eller en endring i helsen som krever disiplin.
+      <br><strong>Leksjonen:</strong> Å bygge en solid selvfølelse som ikke avhenger av ytre bekreftelse. Lære å være din egen autoritet. Vær din egen kropps daglige leder.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">Hus 2: De økonomiske fundamentene</h2>
+      <p>Finansene dine og din selvfølelse står i sentrum i denne ferden. Du kan oppleve økonomiske vanskeligheter som lærer deg å budsjettere, spare og verdsette tiden din. Eventuelt kan du endelig begynne å tjene "skikkelige" penger, men føle et tungt ansvar for det. Du vil redefinere hva "sikkerhet" betyr for deg. Du lærer at din verdi ikke er et tall på en bankkonto.
+      <br><strong>Leksjonen:</strong> Å finne sikkerhet i deg selv og bygge et bærekraftig forhold til den materielle verden. Du lærer verdien av en krone og verdien av sjelen din.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">Hus 3: Mestring av sinnet</h2>
+      <p>Presset fokuseres på sinnet ditt og dine nærmeste omgivelser. Du kan bestemme deg for å gå tilbake til skolebenken, fullføre et lenge utsatt skriveprosjekt eller oppleve betydelige endringer i forholdet til søsken. Du kan føle at du har "for mye å lære" og for lite tid. Din daglige pendling kan bli en kilde til stress og tvinge deg til å endre omgivelser.
+      <br><strong>Leksjonen:</strong> Å mestre håndverket ditt og kommunisere med integritet. Du lærer verdien av fokusert tenkning og ærlig tale. Du blir en person som holder ord.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">Hus 4: Forfedrenes healing og røtter</h2>
+      <p>Dette er en av de mest følelsesmessig ladede ferdene. Den involverer ofte foreldre, bosituasjoner eller barndomstraumer. Du kan kjøpe ditt første hjem eller måtte pleie en aldrende forelder. Du bygger dine egne fundamenter, ofte ved å rive ned de som ble bygget av foreldrene dine. Du er familiens nye hode.
+      <br><strong>Leksjonen:</strong> Å skape et hjem og et privatliv som virkelig nærer sjelen din, uavhengig av familiens forventninger. Heal slektstreet ved å være den som bryter sirkelen.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">Hus 5: Nytelsens disiplin</h2>
+      <p>Saturn i 5. hus kan føles som om "musikken har sluttet å spille". Dine vanlige hobbyer eller fester begynner plutselig å føles tomme. Dette er ofte tiden hvor folk bestemmer seg for å få barn (det ultimate "kreative" ansvaret) eller gjøre en kreativ hobby om til en seriøs bedrift. Det handler om å la konseptet ditt for "moro" modnes.
+      <br><strong>Leksjonen:</strong> Å finne glede gjennom disiplin og engasjert kreativitet. Du lærer at sann lek krever fokus. Det er forskjellen mellom en "flørt" og en "romanse".</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">Hus 6: Den heliga rutinen</h2>
+      <p>Her handler det om helsen din og dine daglige vaner. Du kan måtte håndtere helseproblemer som tvinger deg til å legge om kosthold og trening. Arbeidslivet ditt blir svært krevende og krever at du lærer å delegere og sette grenser. Du innser at kroppen din er et tempel som krever vedlikehold. Arbeidet ditt kan føles som en bør helt til du lærer å styre tiden din bedre.
+      <br><strong>Leksjonen:</strong> Å mestre dine egne daglige rytmer og tjele andre uten å bli utbrent. Effektivitet er din nye bestevenn. Bygg en kropp som er laget for å vare.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">Hus 7: Partnerskapets smeltepunkt</h2>
+      <p>Huset for "å binde seg eller bryte". Saturn tester her dine nærmeste bånd. Hvis et forhold var ustabilt, vil det sannsynligvis ta slutt. Hvis det er sterkt, kan du gifte deg eller signere en seriøs forretningskontrakt. Du lærer hva "forpliktelse" virkelig betyr – det er ikke bare en følelse, det er en kontrakt. Du kan bli tiltrukket av eldre, mer seriøse partnere i denne perioden.
+      <br><strong>Leksjonen:</strong> Å bygge partnerskap basert på virkelighet og gjensidig ansvar, ikke på projeksjon eller fantasi. Du lærer å være en "partner", ikke bare en "elsker".</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">Hus 8: Død, gjenfødelse og delt makt</h2>
+      <p>Dette er en dyp og psykologisk ferd. Den handler om felles økonomi, skatt og intimitet. Du kan bli konfrontert med frykt knyttet til død eller tap. Det er en tid for "ego-død" hvor du innser at du ikke kan kontrollere alt. Du kan måtte håndtere felles gjeld eller en arv. Du skifter bokstavelig talt ham for å avsløre den underliggende sjelen.
+      <br><strong>Leksjonen:</strong> Å mestre din egen personlige kraft og lære kunsten å stole på og overgi seg i dyp intimitet. Oppdag rikdommen man ikke ser.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">Hus 9: Jakten på sannheten</h2>
+      <p>Saturn utfordrer dine overbevisninger her. Du kan vende deg bort fra barndommens religion, eller tvert imot finne en reell struktur i en spirituell vei. Du kan møte mødre i høyere utdanning eller oppleve betydelige utfordringer ved reiser til utlandet. Du søker en "sannhet" du faktisk kan leve med hver dag. Kanskje du endelig bestemmer deg for å ta den doktorgraden eller skrive den boken.
+      <br><strong>Leksjonen:</strong> Å utvikle en livsfilosofi som tåler harde tider og gir en reell mening. Du blir et menneske med visdom, ikke bare kunnskap.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Karriere</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">Hus 10: Karrierens høydepunkt</h2>
+      <p>Dette er den klassiske "30-årskrisen". Ditt offentlige rykte og din karriere står under lupen. Du kan nå toppen av ditt felt og innse at du hater det, eller endelig få anerkjennelsen du har jobbet for. Du blir kalt til å akseptere din autoritet og lede. Verden følger med.
+      <br><strong>Leksjonen:</strong> Å forene ditt offentlige liv med din indre sannhet og ta ansvar for din arv. Du blir autoritetsfiguren du en gang fryktet.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">Hus 11: Det kollektive formålet</h2>
+      <p>Saturn tester her din sosiale sirkel. Du innser kanskje at dine fest-"venner" ikke har noe til felles med deg lenger. Du kan bli tiltrukket av eldre mentorer eller ta en lederrolle i en community-organisasjon. Du søker din sanne "stamme". Du definerer dine "håp og ønsker" med realistiske skritt.
+      <br><strong>Leksjonen:</strong> Å finne din egen plass i kollektivet og bruke talentene dine til et formål større enn deg selv. Bygg et nettverk for fremtiden.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">Hus 12: Den endelige oppløsningen</h2>
+      <p>Dette er en veldig stille, innovervendt ferd. Du kan føle deg ensom eller isolert. Hemmeligheter fra fortiden kan komme til overflaten. Det er en tid for dyp healing, terapi eller spirituell retrett. Du rydder for en helt ny syklus på 30 år. Det er slutten på en æra. Du jobber med forfedrene dine og underbevisstheten din.
+      <br><strong>Leksjonen:</strong> Å finne fred i ensomhet, tilgi fortiden og overgi seg til det guddomlige eller det kollektive ubevisste. Du forbereder deg til gjenfødelsen.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Faktoren Saturn retrograd</h2>
+      <p>Hvis du ble født under en **Saturn retrograd** (når Saturn så ut til å gå bakover på himmelen), kan ferden din se litt annerledes ut. Du kan ha tilbrakt 20-årene med en indre byrde av å "ikke være god nok". Under ferden din kan presset faktisk føles som en *befrielse*, fordi den ytre verden endelig speiler din indre tilstand av alvor. Du får endelig tillatelse til å ta på deg rollen du har forberedt deg på siden fødselen. Du er endelig "nok".</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Psykologien bak Saturn Return</h2>
+      <p>Fra et psykologisk perspektiv markerer Saturn Return overgangen fra "Puer/Puella" (den evige ungdom) til "Voksen". Vi slutter å lete etter "svaret" hos foreldrene våre eller i samfunnet, og begynner å være svaret selv. Det er egots barndoms død og sjelens voksenlivs fødsel. Derfor ledsages det ofte av depresjon eller angst – det er en form for sorg over det bekymringsløse selvet du lar være igjen. Man innser at tiden på jorden er begrenset.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Overlevelsestips: Hvordan takle presset</h2>
+      <p>Den største feilen folk gjør under Saturn Return er **motstanden**. Saturn er som en vegg – hvis du turer mot den, gjør det vondt. Hvis du leter etter døren (gjennom innsats og ansvar), trer du inn i en ny verden.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Ta ansvar:</strong> Ikke skyld på sjefen din, partneren din eller foreldrene dine. Spør deg selv: "Hva er min del i dette? Hva er jeg villig til å endre?"</li>
+        <li><strong>Skap struktur:</strong> Saturn elsker Excel-ark. Se på økonomien din, helsen din og timeplanen din. Bygg systemer som støtter deg når du føler deg svak.</li>
+        <li><strong>Vær tålmodig:</strong> Saturn er Herre over tiden. Denne transitten varer i 2,5 år. Du løser den ikke på en helg. Respekter prosessen. Skynd deg sakte.</li>
+        <li><strong>Søk mentorer:</strong> Saturn representerer "den eldre". Finn noen som allerede har gått gjennom dette og be om visdom. Bli med i en gruppe av 30-åringer som allerede er kommet ut på den andre siden.</li>
+        <li><strong>Lytt til helsen din:</strong> Kroppen din vil gi deg signaler. Hvis du er stresset, hvor føler du det? Ta fysisk vedlikehold på alvor. Regelmessige check-ups er nå essensielt.</li>
+        <li><strong>Beskjær døde grener:</strong> Hvis en hobby, en venn eller en jobb tapper deg uten å gi deg noe, la det gå. Saturn ville tatt det fra deg uansett; det er lettere hvis du gir slipp frivillig.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Berømte Saturn Return-historier</h2>
+      <p>Mange kjendiser og historiske skikkelser hadde sine mest transformerende øyeblikk under sin Saturn Return:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> Han fikk sparken fra Apple kort før sin ferd, noe som førte ham til å grunnlegge NeXT og Pixar, for så å vende tilbake til Apple sterkere og mer moden enn noen gang.</li>
+        <li><strong>Lady Gaga:</strong> Hun transformerte sitt image og sin karriere betydelig rundt 30, ved å bevege seg bort fra pop-spektaklet mot "mer seriøs" kunst og jazz.</li>
+        <li><strong>Vincent van Gogh:</strong> Han begynte først å male seriøst i løpet av sine Saturn Return-år og fant sitt livsformål etter en periode med intens kamp.</li>
+        <li><strong>J.K. Rowling:</strong> Hun skrev den første Harry Potter-romanen mens hun kjempet som alenemamma under sin Saturn Return – en klassisk "Saturn-suksesshistorie" bygget på motgang.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Ild: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Livet etter ilden: Dine 30-år</h2>
+      <p>Så snart Saturn beveger seg videre, letter vekten. Folk rapporterer ofte at de føler seg "lettere" etter 30, men også "mer stabile". Man bryr seg mindre om hva andre tenker. Man har en vei. Man har overlevd ilden og blitt foredlet som gull. Man har en følelse av formål som det "yngre selvet" aldri kunne forstått. 30-årene er ofte det mest produktive og givende tiåret i livet fordi man endelig vet hvem man er.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Forberedelse til den andre ferden (Alder 58-60)</h2>
+      <p>Det er viktig å vite at Saturn vil "besøke" deg igjen rundt 58. Mens det første gang handlet om å bli voksen, handler det andre gang om å bli en **vis eldre**. Det handler om arv, pensjonisttilværelse og visdommen du gir videre. Hvis du gjør jobben din under din første ferd, er den andre gangen mye lettere – en tid for høst og respekt i stedet for en tid for krise.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Ofte stilte spørsmål</h2>
+      <p><strong>Spm: Har alle en Saturn Return?</strong>
+      <br>A: Ja, hvert menneske opplever en Saturn Return rundt 29, 58 og (hvis du lever lenge nok) 87 års alder. Det er en universell menneskelig erfaring.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>Spm: Er det alltid noe negativt?</strong>
+      <br>A: Nei! Hvis du har jobbet hardt og levd med integritet, kan din Saturn Return være en tid med enorme forfremmelser, ekteskap og suksess. Det er en "høst" – du mottar nøyaktig det du sådde i 20-årene.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>Spm: Hvordan finner jeg mitt Saturn-tegn?</strong>
+      <br>A: Med Astralo-appen kan du opprette ditt gratis fødselshoroskop, som viser deg nøyaktig hvilket tegn og hus Saturnus står i.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>Spm: Hva skjer hvis jeg har Saturn i samme tegn som partneren min?</strong>
+      <br>A: Da opplever dere ferdene deres sammen! Dette kan være et avgjørende øyeblikk for forholdet. Hvis dere støtter hverandre i veksten, kommer dere ut som et ekte "power couple".</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Omvavne voksenlivet</h2>
+      <p>Saturn Return er ingen forbannelse; det er en gave fra universet. Det er den himmelske mekanismen som sørger for at du ikke kaster bort livet ditt på å leve andres drømmer. Vi i Astralo tror at forståelsen av din Saturn-posisjon er det første skrittet mot sann frigjøring fra fortiden.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
-      
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p>Våre <strong>transit-guider</strong> gir månedsforutsigelser for din spesifikke Saturn Return og hjelper deg å forstå når du skal pusse på og når du skal vente. Ikke frykt mesteren – omfavn veksten. Ditt nye liv – ditt sanne liv – venter på den andre siden av 30. Trå inn i din kraft med selvtillit.</p>
     `
 };

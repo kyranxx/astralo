@@ -1,204 +1,242 @@
 /**
- * saturn-return-guide - PL
+ * Przewodnik przetrwania powrotu Saturna - PL
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const pl: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.", 
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}], 
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 Przewodnik przetrwania powrotu Saturna: Jak przejść przez kosmiczny rytuał przejścia',
+  excerpt: 'Kończysz 29 lat? Witaj w swoim powrocie Saturna. Dowiedz się, dlaczego jest to najważniejsze wydarzenie astrologiczne w Twoim dorosłym życiu i jak przez nie przejść z nienaruszoną duszą.',
+  category: 'Tranzyty',
+  metaDescription: 'Kompletny przewodnik przetrwania powrotu Saturna. Dowiedz się, co się dzieje, gdy Saturn wraca na swoją pozycję urodzeniową, jak wpływa na karierę i relacje oraz poznaj interpretacje dla każdego domu.',
+  keywords: 'powrót saturna, znaczenie powrotu saturna, pierwszy powrót saturna, tranzyty astrologiczne, saturn w domach, kryzys 30-latka, astrologiczna dorosłość, retrogradacja saturna, jak przetrwać powrót saturna, saturn w znakach',
+  quickSummary: [
+    'Powrót Saturna następuje, gdy Saturn powraca do dokładnie tego samego miejsca, w którym znajdował się w chwili Twojego urodzenia (około 28-30 roku życia).',
+    'Jest to „kosmiczny audyt”, podczas którego wszystko, co nie jest zbudowane na solidnych fundamentach, zostaje uprzątnięte.',
+    'Choć często stresujący, jest on katalizatorem prawdziwej dojrzałości i odnalezienia celu życiowego.',
+    'Drugi powrót Saturna następuje około 58-60 roku życia i skupia się na dziedzictwie oraz mądrości.'
+  ],
+  keyTakeaways: [
+    'Nie opieraj się zmianom; Saturn nagradza dyscyplinę i odpowiedzialność.',
+    'Dom, w którym znajduje się Twój Saturn, określa obszar, w którym zmierzysz się ze swoim największym „egzaminem końcowym”.',
+    'Rozstania i zmiany kariery w tym czasie są często konieczne dla Twojego rozwoju.',
+    'Po zakończeniu tranzytu poczujesz nowe poczucie autorytetu i klarowności.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'Czym jest powrót Saturna?' },
+    { id: 'the-myth-of-saturn', title: 'Mit i Surowy Nauczyciel: Pan Czasu' },
+    { id: 'timeline', title: 'Oś czasu: Fazy powrotu' },
+    { id: 'themes', title: 'Uniwersalne tematy powrotu' },
+    { id: 'saturn-in-signs', title: 'Powrót Saturna przez znaki zodiaku (od Barana do Ryb)' },
+    { id: 'saturn-in-houses', title: 'Powrót Saturna przez domy (Głęboka analiza)' },
+    { id: 'house-1', title: 'Dom 1: Wymyślenie siebie na nowo' },
+    { id: 'house-2', title: 'Dom 2: Fundament finansowy' },
+    { id: 'house-3', title: 'Dom 3: Mistrzostwo umysłu' },
+    { id: 'house-4', title: 'Dom 4: Uzdrawianie przodków i korzenie' },
+    { id: 'house-5', title: 'Dom 5: Dyscyplina radości' },
+    { id: 'house-6', title: 'Dom 6: Święta rutyna' },
+    { id: 'house-7', title: 'Dom 7: Tygiel partnerstwa' },
+    { id: 'house-8', title: 'Dom 8: Śmierć, odrodzenie i wspólna moc' },
+    { id: 'house-9', title: 'Dom 9: Poszukiwanie prawdy' },
+    { id: 'house-10', title: 'Dom 10: Szczyt kariery' },
+    { id: 'house-11', title: 'Dom 11: Zbiorowy cel' },
+    { id: 'house-12', title: 'Dom 12: Ostateczne rozpuszczenie' },
+    { id: 'retrograde', title: 'Czynnik retrogradacji Saturna' },
+    { id: 'psychology', title: 'Psychologia powrotu Saturna' },
+    { id: 'how-to-survive', title: 'Wskazówki przetrwania: Jak radzić sobie z presją' },
+    { id: 'famous-examples', title: 'Sławne historie powrotu Saturna' },
+    { id: 'post-return', title: 'Życie po pożarze: Lata 30.' },
+    { id: 'second-return', title: 'Przygotowanie do drugiego powrotu (wiek 58-60 lat)' },
+    { id: 'faq', title: 'Często zadawane pytania' },
+    { id: 'conclusion', title: 'Przyjęcie dorosłości' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Czym jest powrót Saturna?</h2>
+      <p>Jeśli kiedykolwiek zauważyłeś, że lata między 27 a 30 rokiem życia wydają się dla większości ludzi szczególnie chaotyczne, byłeś świadkiem mocy <strong>powrotu Saturna</strong>. W astrologii Saturn jest planetą struktury, dyscypliny, odpowiedzialności i czasu. Okrążenie Słońca zajmuje tej gigantycznej planecie około 29,5 roku.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>Twój „powrót Saturna” następuje, gdy planeta ta powraca do dokładnie tego samego stopnia i znaku zodiaku, który zajmowała w momencie Twojego urodzenia. Jest to niebiański odpowiednik „egzaminu końcowego” z młodości. To moment, w którym wszechświat pyta: <em>„Czy żyjesz życiem, które jest naprawdę Twoje, czy tylko odgrywasz rolę opartą na tym, co powiedzieli Ci rodzice i społeczeństwo?”</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Okres ten charakteryzuje się często intensywną presją, znaczącymi zmianami życiowymi i nagłym zdaniem sobie sprawy, że dorosłość nie jest już odległym pojęciem, ale obecną, ciężką rzeczywistością. Podczas gdy „pop-astrologia” często przedstawia powrót Saturna jako przerażający czas strat i kryzysów, jest on w rzeczywistości głęboką okazją do odrzucenia „fałszywych” wersji siebie i zbudowania fundamentów, które będą Cię wspierać przez następne trzy dekady. To pomost między potencjałem Twoich lat 20. a mocą lat 30.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Mit i Surowy Nauczyciel: Pan Czasu</h2>
+      <p>Aby zrozumieć, dlaczego ten tranzyt wydaje się tak ciężki, musimy przyjrzeć się archetypowi Saturna. W mitologii rzymskiej (i greckiej jako Kronos), Saturn był bogiem czasu i żniw. Często przedstawia się go z kosą. Nie chodzi tu tylko o śmierć; chodzi o odcinanie tego, co już nie służy. Tak jak ogrodnik musi przyciąć krzew róży, aby zakwitł piękniej w następnym sezonie, tak Saturn odcina te części naszego życia, które są przerośnięte, niezdrowe lub udawane.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Saturn to „Surowy Nauczyciel” lub „Pan Karmy”. Nie chce, abyś cierpiał, ale chce, abyś dorósł. Wiele osób przechodzi przez lata 20. dzięki mieszance szczęścia, potencjału i oczekiwań rodziców. Saturn mówi, że impreza się skończyła. Czas zbudować coś, co przetrwa następne 30 lat. Nagradza ciężką pracę, uczciwość i cierpliwość. Karze za chodzenie na skróty, nieuczciwość i prokrastynację. Jeśli „udawałeś”, Twój powrót Saturna to moment, w którym prawda wychodzi na jaw.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Oś czasu: Fazy powrotu</h2>
+      <p>Pierwszy powrót Saturna zazwyczaj zaczyna się około 27,5 roku życia i kończy przed 30. rokiem życia. Doświadczenie to można jednak podzielić na trzy odrębne fazy:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>Faza 1: Zbierające się chmury (wiek 27-28 lat)</h3>
+      <p>Zaczynasz odczuwać niejasne poczucie niepokoju. Rzeczy, które kiedyś sprawiały Ci radość — przelotne randki, późne noce, praca „na chwilę” — zaczynają wydawać się puste. Możesz poczuć nagłą potrzebę „ogarnięcia swojego życia”, nawet jeśli nie wiesz jeszcze, jak to ma wyglądać. Możesz zacząć zauważać, że Twoi znajomi biorą śluby lub awansują, a zamiast cieszyć się ich szczęściem, czujesz panikę dotyczącą własnych postępów.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>Faza 2: Egzamin końcowy (wiek 28-29 lat)</h3>
+      <p>To jest ten moment uderzenia. Wydarzenia spiskują, by zmusić Cię do działania. To wtedy dochodzi do rozstań, zmian kariery lub pojawiają się problemy zdrowotne. Jesteś zmuszony do dokonywania wyborów. Nie ma już siedzenia na płocie. Saturn będzie naciskał, dopóki nie weźmiesz odpowiedzialności za swoje wyniki. To szczyt intensywności emocjonalnej tranzytu.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>Faza 3: Integracja (wiek 29-30 lat)</h3>
+      <p>Gdy Saturn mija swój stopień urodzeniowy, presja zaczyna opadać. Zaczynasz dostrzegać mądrość w dokonanych wyborach (nawet tych trudnych). Czujesz się starszy, ale stabilniejszy. „Ukończyłeś” prawdziwą astrologiczną dorosłość. Nie musisz już pytać nikogo innego, czy „wolno Ci” być sobą. Po prostu nim jesteś.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Uniwersalne tematy powrotu</h2>
+      <p>Choć doświadczenie każdego człowieka jest unikalne, w tym czasie pojawia się kilka powtarzających się tematów:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Konfrontacja z rzeczywistością:</strong> Jeśli żyłeś w fantazji lub unikałeś ważnej prawdy, Saturn zmusi Cię do zmierzenia się z nią.</li>
+        <li><strong>Kończenie relacji:</strong> Związki długoterminowe, które nie są przeznaczone na „bardzo długi termin”, często teraz się rozpadają. Jeśli zostaniecie razem, to dlatego, że zobowiązaliście się do nowego poziomu dojrzałości.</li>
+        <li><strong>Zmiany zawodowe:</strong> Wiele osób rzuca stabilną, nudną pracę, by podążać za prawdziwym powołaniem, lub zdaje sobie sprawę, że ich „wymarzona praca” to w rzeczywistości koszmar i idzie w stronę czegoś praktycznego.</li>
+        <li><strong>Starzenie się fizyczne:</strong> Możesz nagle inaczej odczuwać swoje ciało. To czas, kiedy ludzie zaczynają poważnie traktować swoje zdrowie — zdając sobie sprawę, że nie są już nieśmiertelni. Możesz zauważyć swój pierwszy siwy włos lub zmianę metabolizmu.</li>
+        <li><strong>Wyznaczanie granic:</strong> Nauka mówienia „nie” rodzicom, toksycznym przyjaciołom i nierealnym oczekiwaniom to główna lekcja Saturna. Uczysz się, że „Nie” to pełne zdanie.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Zodiak Znaks</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Powrót Saturna przez znaki zodiaku</h2>
+      <p>Znak, w którym znajduje się Twój Saturn, mówi nam *jak* doświadczysz tego przejścia. Znajdź swój znak Saturna w swoim horoskopie Astralo, aby poznać swój specyficzny smak wzrostu:</p>
       
-      <h3>Saturn in Baran</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Saturn w Baranie</h3>
+      <p>Twój powrót dotyczy **cierpliwości i kontroli impulsów**. Prawdopodobnie chcesz popędzić przez to przejście, ale Saturn Cię spowolni. Uczysz się przewodzić z mądrością, a nie tylko surową energią.
+      <br><strong>Zadanie:</strong> Opanowanie gniewu i popędu.</p>
 
-      <h3>Saturn in Byk</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Saturn w Byku</h3>
+      <p>Twój powrót dotyczy **bezpieczeństwa finansowego i wartości**. Możesz napotkać duże przeszkody finansowe, które zmuszą Cię do zdefiniowania, co jest dla Ciebie naprawdę „wartościowe”.
+      <br><strong>Zadanie:</strong> Zbudowanie solidnych fundamentów finansowych i poczucia własnej wartości niezależnego od posiadanych rzeczy.</p>
 
-      <h3>Saturn in Bliźnięta</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Saturn w Bliźniętach</h3>
+      <p>Twój powrót dotyczy **komunikacji i koncentracji**. Możesz mieć „zbyt wiele pomysłów”, a Saturn zmusi Cię do wybrania jednego i opanowania go do perfekcji.
+      <br><strong>Zadanie:</strong> Skoncentrowanie umysłu i przemawianie z autorytetem.</p>
 
-      <h3>Saturn in Rak</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Saturn w Raku</h3>
+      <p>Twój powrót dotyczy **granic emocjonalnych i rodziny**. Możesz mieć do czynienia z ranami z dzieciństwa lub przejąć ciężką odpowiedzialność rodzinną.
+      <br><strong>Zadanie:</strong> Zadbanie o siebie i zbudowanie wewnętrznego domu, który nie zależy od innych.</p>
 
-      <h3>Saturn in Lew</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Saturn w Lwie</h3>
+      <p>Twój powrót dotyczy **integralności twórczej i uznania**. Możesz zmagać się z potrzebą braw i musisz nauczyć się tworzyć najpierw dla siebie.
+      <br><strong>Zadanie:</strong> Odnalezienie pewności siebie płynącej z wewnętrznej siły, a nie z zewnętrznych pochwał.</p>
 
-      <h3>Saturn in Panna</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Saturn w Pannie</h3>
+      <p>Twój powrót dotyczy **zdrowia i służby**. Prawdopodobnie już teraz jesteś dla siebie bardzo surowy, a Saturn nauczy Cię, że „idealne” jest wrogiem „zrobionego”.
+      <br><strong>Zadanie:</strong> Zbudowanie zrównoważonej rutyny i nauka bycia życzliwym dla swojego ciała fizycznego.</p>
 
-      <h3>Saturn in Waga</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Saturn w Wadze</h3>
+      <p>Twój powrót dotyczy **sprawiedliwości i partnerstwa**. Możesz przejść przez poważne testy w relacjach, które zmuszą Cię do odnalezienia własnej tożsamości w parze.
+      <br><strong>Zadanie:</strong> Odnalezienie równowagi i nauka tego, że sam w sobie jesteś „wystarczający”.</p>
 
-      <h3>Saturn in Skorpion</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Saturn w Skorpionie</h3>
+      <p>Twój powrót dotyczy **mocy i intymności**. To bardzo intensywny powrót, który wiąże się z konfrontacją z własnym cieniem i nauką zaufania.
+      <br><strong>Zadanie:</strong> Przekształcenie najgłębszych lęków w osobistą moc.</p>
 
-      <h3>Saturn in Strzelec</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Saturn w Strzelcu</h3>
+      <p>Twój powrót dotyczy **wiary i wolności**. Możesz zdać sobie sprawę, że świat jest znacznie większy (lub mniejszy) niż myślałeś i musisz przedefiniować swoją filozofię.
+      <br><strong>Zadanie:</strong> Odnalezienie „Prawdy”, według której naprawdę możesz żyć każdego dnia.</p>
 
-      <h3>Saturn in Koziorożec</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Saturn w Koziorożcu</h3>
+      <p>Twój powrót dotyczy **ambicji i autorytetu**. Saturn czuje się tutaj „jak w domu”, więc presja jest ekstremalna, ale takie same są nagrody. Stajesz się Szefem.
+      <br><strong>Zadanie:</strong> Wzięcie odpowiedzialności za swoje dziedzictwo i wspinanie się na własną górę z uczciwością.</p>
 
-      <h3>Saturn in Wodnik</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Saturn w Wodniku</h3>
+      <p>Twój powrót dotyczy **społeczności i indywidualizmu**. Uczysz się, jak dopasować się do grupy, nie tracąc swojej unikalnej iskry.
+      <br><strong>Zadanie:</strong> Wnoszenie wkładu do kolektywu przy jednoczesnym zachowaniu własnych granic.</p>
 
-      <h3>Saturn in Ryby</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Saturn w Rybach</h3>
+      <p>Twój powrót dotyczy **duchowości i granic**. Możesz mieć trudności z utrzymaniem uziemienia i musisz nauczyć się, że „nie” jest aktem duchowym.
+      <br><strong>Zadanie:</strong> Przekucie marzeń w rzeczywistość poprzez dyscyplinę.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Doms: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Powrót Saturna przez domy: Głęboka analiza</h2>
+      <p>Miejsce Twojego powrotu Saturna jest określane przez Dom, w którym Saturn znajduje się w Twoim horoskopie urodzeniowym. To scena, na której rozegra się dramat.</p>
 
-      <h2 id="house-1">1st Dom: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">Dom 1: Wymyślenie siebie na nowo</h2>
+      <p>Kiedy Saturn powraca do 1. Domu, kryzys ma charakter profesjonalny i fizyczny. Możesz przejść całkowitą metamorfozę — nie tylko ubrań, ale i osobowości. Czujesz ciężar na ramionach, poczucie, że musisz „kimś zostać”. Możesz być dla siebie niezwykle surowy podczas tego przejścia. Możesz doświadczyć utraty wagi, jej przyrostu lub zmiany w zdrowiu wymagającej dyscypliny.
+      <br><strong>Lekcja:</strong> Zbudowanie solidnego poczucia siebie, które nie zależy od aprobaty innych. Uczysz się być własnym autorytetem. Jesteś dyrektorem generalnym własnego ciała.</p>
 
-      <h2 id="house-2">2nd Dom: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">Dom 2: Fundament finansowy</h2>
+      <p>Ten powrót skupia się na Twoich finansach i poczuciu własnej wartości. Możesz doświadczyć trudności finansowych, co zmusi Cię do nauki budżetowania, oszczędzania i cenienia swojego czasu. Alternatywnie, możesz w końcu zacząć zarabiać „prawdziwe” pieniądze, ale czuć z tego powodu dużą odpowiedzialność. Przedefiniowujesz, co oznacza dla Ciebie „bezpieczeństwo”. Uczysz się, że Twoja wartość nie jest liczbą na koncie bankowym.
+      <br><strong>Lekcja:</strong> Odnalezienie bezpieczeństwa w sobie i zbudowanie zrównoważonej relacji ze światem materialnym. Uczysz się wartości pieniądza i wartości własnej duszy.</p>
 
-      <h2 id="house-3">3rd Dom: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">Dom 3: Mistrzostwo umysłu</h2>
+      <p>Presja spoczywa na Twoim umyśle i najbliższym otoczeniu. Możesz zdecydować się na powrót do szkoły, dokończenie dawno odkładanego projektu pisarskiego lub przeżyć duże zmiany w relacjach z rodzeństwem. Możesz czuć, że masz „zbyt wiele do nauki” i za mało czasu. Codzienne dojazdy mogą stać się źródłem stresu, zmuszając Cię do zmiany otoczenia.
+      <br><strong>Lekcja:</strong> Opanowanie swojego rzemiosła i komunikowanie się z uczciwością. Uczysz się wartości skoncentrowanego myślenia i szczerej mowy. Stajesz się osobą trzymającą się za słowo.</p>
 
-      <h2 id="house-4">4th Dom: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">Dom 4: Uzdrawianie przodków i korzenie</h2>
+      <p>To jeden z najbardziej emocjonalnych powrotów. Często dotyczy rodziców, sytuacji mieszkaniowej lub traumy z dzieciństwa. Możesz kupić swój pierwszy dom lub musieć zaopiekować się starzejącym się rodzicem. Budujesz własny fundament, często demontując ten, który zbudowali dla Ciebie rodzice. Jesteś nową „Głową Rodziny”.
+      <br><strong>Lekcja:</strong> Stworzenie domu i życia prywatnego, które naprawdę karmi Twoją duszę, niezależnie od oczekiwań rodziny. Uzdrawiasz „drzewo genealogiczne”, będąc tym, który przerywa cykl.</p>
 
-      <h2 id="house-5">5th Dom: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">Dom 5: Dyscyplina radości</h2>
+      <p>Saturn w 5. Domu może być odczuwany jako „dzień, w którym umarła muzyka”. Twoje zwykłe hobby lub imprezowanie mogą wydawać się puste. Często w tym czasie ludzie decydują się na dzieci (przyjmując ostateczną odpowiedzialność za „tworzenie”) lub zdają sobie sprawę, że chcą zmienić kreatywne hobby w poważny biznes. Chodzi o dojrzewanie Twojej „zabawy”.
+      <br><strong>Lekcja:</strong> Odnalezienie radości poprzez dyscyplinę i zaangażowaną kreatywność. Uczysz się, że prawdziwa zabawa wymaga skupienia. To różnica między „flirtem” a „romansem”.</p>
 
-      <h2 id="house-6">6th Dom: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">Dom 6: Święta rutyna</h2>
+      <p>Ten powrót dotyczy Twojego zdrowia i codziennych nawyków. Możesz napotkać problemy zdrowotne, które zmuszą Cię do zmiany diety i ćwiczeń. Twoje życie zawodowe staje się bardzo wymagające, co wymaga nauki delegowania zadań i wyznaczania granic. Zdajesz sobie sprawę, że Twoje ciało to świątynia wymagająca konserwacji. Twoja praca może wydawać się ciężkim brzemieniem, dopóki nie nauczysz się lepiej zarządzać czasem.
+      <br><strong>Lekcja:</strong> Opanowanie codziennego rytmu i służenie innym bez wypalania się. Efektywność to Twój nowy najlepszy przyjaciel. Budujesz ciało, które może przetrwać lata.</p>
 
-      <h2 id="house-7">7th Dom: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">Dom 7: Tygiel partnerstwa</h2>
+      <p>Dom „małżeństwa lub rozstania”. Saturn tutaj testuje Twoje najbardziej intymne więzi. Jeśli związek był chwiejny, prawdopodobnie się skończy. Jeśli jest silny, możesz wziąć ślub lub zawrzeć poważną umowę biznesową. Uczysz się, co naprawdę oznacza „zobowiązanie” — to nie tylko uczucie, to kontrakt. Możesz teraz przyciągać starszych, poważniejszych partnerów.
+      <br><strong>Lekcja:</strong> Budowanie partnerstw opartych na rzeczywistości i wzajemnej odpowiedzialności, a nie na projekcji czy fantazji. Uczysz się być „partnerem”, a nie tylko „kochankiem”.</p>
 
-      <h2 id="house-8">8th Dom: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">Dom 8: Śmierć, odrodzenie i wspólna moc</h2>
+      <p>To głęboki, psychologiczny powrót. Dotyczy wspólnych finansów, podatków i intymności. Możesz zmierzyć się z lękiem przed śmiercią lub stratą. To czas „śmierci ego”, kiedy zdajesz sobie sprawę, że nie możesz kontrolować wszystkiego. Możesz mieć do czynienia z długami lub spadkiem. Dosłownie zrzucasz skórę, by ujawnić duszę pod spodem.
+      <br><strong>Lekcja:</strong> Opanowanie osobistej mocy i nauka sztuki zaufania oraz poddania się w głębokiej intymności. Odkrywasz „bogactwo”, którego nie widać.</p>
 
-      <h2 id="house-9">9th Dom: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">Dom 9: Poszukiwanie prawdy</h2>
+      <p>Saturn tutaj rzuca wyzwanie Twoim przekonaniom. Możesz porzucić religię swojego dzieciństwa lub przeciwnie, odnaleźć głęboką strukturę w ścieżce duchowej. Możesz zmagać się z wyższym wykształceniem lub doświadczyć znacznych wyzwań podczas podróży zagranicznych. Szukasz „Prawdy”, według której naprawdę możesz żyć. Możesz zdecydować się na doktorat lub napisanie książki.
+      <br><strong>Lekcja:</strong> Zbudowanie filozofii życia, która wytrzyma trudne czasy i zapewni autentyczny sens. Stajesz się osobą mądrą, a nie tylko posiadającą wiedzę.</p>
 
-      <h2 id="house-10">10th Dom: The Mountaintop of Kariera</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">Dom 10: Szczyt kariery</h2>
+      <p>To klasyczny „kryzys wieku średniego w wieku 30 lat”. Twoja publiczna reputacja i kariera są pod lupą. Możesz osiągnąć szczyt w swojej dziedzinie i zdać sobie sprawę, że tego nienawidzisz, albo w końcu otrzymać uznanie, na które pracowałeś. Jesteś proszony o objęcie autorytetu i przewodzenie. Świat patrzy.
+      <br><strong>Lekcja:</strong> Dostosowanie życia publicznego do wewnętrznej prawdy i wzięcie odpowiedzialności za swoje dziedzictwo. Stajesz się autorytetem, którego kiedyś się bałeś.</p>
 
-      <h2 id="house-11">11th Dom: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">Dom 11: Zbiorowy cel</h2>
+      <p>Saturn tutaj „przycina” Twoją grupę przyjaciół. Możesz zdać sobie sprawę, że Twoi „przyjaciele” byli tylko znajomymi na pewnym etapie życia i nie masz już z nimi nic wspólnego. Możesz poczuć pociąg do starszych mentorów lub przyjąć rolę lidera w organizacji społecznej. Szukasz swojego prawdziwego plemienia. Definiujesz swoje „nadzieje i życzenia” za pomocą realistycznych kroków.
+      <br><strong>Lekcja:</strong> Odnalezienie swojego miejsca w kolektywie i wniesienie swoich umiejętności do sprawy większej niż Ty sam. Budujesz sieć, która pracuje dla przyszłości.</p>
 
-      <h2 id="house-12">12th Dom: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">Dom 12: Ostateczne rozpuszczenie</h2>
+      <p>To bardzo cichy, wewnętrzny powrót. Możesz czuć się samotny lub odizolowany. Sekrety z przeszłości mogą wyjść na jaw. To czas na głębokie uzdrawianie, terapię lub odosobnienie duchowe. Czyścisz pole pod zupełnie nowy 30-letni cykl. To koniec pewnej ery. Pracujesz ze swoimi przodkami i podświadomością.
+      <br><strong>Lekcja:</strong> Odnalezienie spokoju w samotności, wybaczenie przeszłości i poddanie się boskości lub zbiorowej nieświadomości. Przygotowujesz się do odrodzenia.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Czynnik retrogradacji Saturna</h2>
+      <p>Jeśli urodziłeś się podczas **retrogradacji Saturna** (gdy Saturn wydaje się poruszać wstecz na niebie), Twój powrót może być odczuwany nieco inaczej. Mogłeś spędzić lata 20. czując wewnętrzny ciężar lub poczucie „niebycia wystarczająco dobrym”. Podczas powrotu presja może być w rzeczywistości *uwalniająca*, ponieważ świat zewnętrzny w końcu dopasowuje się do Twojego wewnętrznego stanu powagi. W końcu możesz wejść w rolę, do której przygotowywałeś się od urodzenia. W końcu jesteś „wystarczająco dobry”.</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Psychologia powrotu Saturna</h2>
+      <p>Z perspektywy psychologicznej powrót Saturna oznacza przejście od „puera/puelli” (wiecznego dziecka) do „dorosłego”. Przestajemy szukać odpowiedzi u rodziców czy społeczeństwa i zaczynamy sami jej udzielać. To śmierć dzieciństwa ego i narodziny dojrzałości duszy. Dlatego często towarzyszy mu depresja lub lęk — to forma żałoby po beztroskim „ja”, które zostawiasz za sobą. Zdajesz sobie sprawę, że Twój czas na Ziemi jest ograniczony.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Wskazówki przetrwania: Jak radzić sobie z presją</h2>
+      <p>Największym błędem, jaki ludzie popełniają podczas powrotu Saturna, jest **oporowanie**. Saturn jest jak ściana — jeśli w nią wbiegniesz, odniesiesz obrażenia. Jeśli poszukasz drzwi (poprzez wysiłek i odpowiedzialność), przejdziesz do nowego świata.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Weź odpowiedzialność:</strong> Nie obwiniaj szefa, partnera czy rodziców. Zapytaj: „Jaka jest moja rola w tym? Co jestem gotów zmienić?”</li>
+        <li><strong>Zorganizuj się:</strong> Saturn kocha arkusze kalkulacyjne. Przyjrzyj się swoim finansom, zdrowiu i grafikowi. Buduj systemy, które utrzymają Cię, gdy poczujesz słabość.</li>
+        <li><strong>Bądź cierpliwy:</strong> Saturn to bóg czasu. Ten tranzyt trwa 2,5 roku. Nie rozwiążesz go w weekend. Szanuj ten proces. Powoli, ale systematycznie dojdziesz do celu.</li>
+        <li><strong>Szukaj mentorstwa:</strong> Saturn reprezentuje „Starszyznę”. Znajdź kogoś, kto przez to przeszedł i poproś o mądrość. Dołącz do grupy osób w wieku 30+, które dotarły na drugą stronę.</li>
+        <li><strong>Zajmij się zdrowiem:</strong> Twoje ciało da Ci wskazówki. Jeśli jesteś zestresowany, gdzie to czujesz? Potraktuj fizyczną konserwację poważnie. Regularne badania są teraz niezbędne.</li>
+        <li><strong>Odetnij suche gałęzie:</strong> Jeśli nawyk, przyjaciel lub praca wysysają Cię, nie dając nic w zamian, odpuść. Saturn i tak to zabierze; łatwiej będzie, jeśli oddasz to dobrowolnie.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Sławne historie powrotu Saturna</h2>
+      <p>Wiele znanych osobistości i postaci historycznych przeżyło swoje najbardziej transformacyjne momenty podczas powrotu Saturna:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> Został usunięty z Apple w okresie poprzedzającym jego powrót Saturna, co doprowadziło go do założenia NeXT i Pixar, a ostatecznie do powrotu do Apple jeszcze silniejszym i dojrzalszym.</li>
+        <li><strong>Lady Gaga:</strong> Znacząco zmieniła swój wizerunek i karierę pod koniec lat 20., przechodząc od spektaklu popowego do bardziej „poważnego” artyzmu i jazzu.</li>
+        <li><strong>Vincent van Gogh:</strong> Zaczął malować na poważnie dopiero w latach swojego powrotu Saturna, odnajdując powołanie życiowe po okresie intensywnych zmagań.</li>
+        <li><strong>J.K. Rowling:</strong> Napisała pierwszą książkę o Harrym Potterze, zmagając się jako samotna matka podczas powrotu Saturna — klasyczna „saturniczna” historia sukcesu zbudowana na przeciwnościach losu.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Ogień: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Życie po pożarze: Lata 30.</h2>
+      <p>Gdy Saturn ruszy dalej, ciężar zostaje zdjęty. Ludzie często zgłaszają, że po 30. roku życia czują się „lżejsi”, ale także „solidniejsi”. Przestajesz tak bardzo dbać o to, co myślą inni. Masz swoją ścieżkę. Przetrwałeś ogień i jak złoto zostałeś oczyszczony. Masz poczucie celu, którego „młodszy Ty” nigdy by nie zrozumiał. Twoje lata 30. są często najbardziej produktywną i satysfakcjonującą dekadą życia, ponieważ w końcu wiesz, kim jesteś.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Przygotowanie do drugiego powrotu (wiek 58-60 lat)</h2>
+      <p>Ważne jest, aby wiedzieć, że Saturn „odwiedzi” Cię ponownie około 58. roku życia. Podczas gdy pierwszy powrót polega na stawaniu się dorosłym, drugi dotyczy stawania się **Mędrcem/Starszym**. Chodzi o dziedzictwo, emeryturę i mądrość, którą przekażesz dalej. Jeśli wykonasz pracę podczas pierwszego powrotu, drugi będzie znacznie łatwiejszy — czas żniw i szacunku zamiast kryzysu.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Często zadawane pytania</h2>
+      <p><strong>P: Czy każdy ma powrót Saturna?</strong>
+      <br>O: Tak, każda istota ludzka doświadcza powrotu Saturna około 29, 58 i (jeśli żyje wystarczająco długo) 87 roku życia. Jest to uniwersalne ludzkie doświadczenie.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>P: Czy to zawsze jest złe?</strong>
+      <br>O: Nie! Jeśli ciężko pracowałeś i żyłeś uczciwie, Twój powrót Saturna może być czasem ogromnego awansu, małżeństwa i sukcesu. To „żniwa” — otrzymujesz dokładnie to, co zasiałeś w wieku 20 lat.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>P: Jak znaleźć mój znak Saturna?</strong>
+      <br>O: Możesz skorzystać z aplikacji Astralo, aby wygenerować darmowy horoskop urodzeniowy, który pokaże Ci dokładnie, w którym znaku i domu znajduje się Twój Saturn.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>P: Co jeśli mam Saturna w tym samym znaku co mój partner?</strong>
+      <br>O: Przejdziecie przez swoje powroty Saturna razem! Może to być czas „być albo nie być” dla związku. Jeśli będziecie wspierać swój rozwój, wyjdziecie z tego jako silna para.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Przyjęcie dorosłości</h2>
+      <p>Powrót Saturna nie jest klątwą; jest darem od wszechświata. Jest to niebiański mechanizm sprawiający, że nie marnujesz życia, realizując marzenia kogoś innego. W Astralo wierzymy, że zrozumienie położenia Saturna jest pierwszym krokiem do prawdziwego wyzwolenia z przeszłości.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>Nasze <strong>Przewodniki Tranzytowe</strong> zapewniają prognozy miesiąc po miesiącu dla Twojego konkretnego powrotu Saturna, pomagając Ci zrozumieć, kiedy naciskać, a kiedy czekać. Nie bój się Surowego Nauczyciela — przyjmij ten wzrost. Twoje nowe życie — Twoje prawdziwe życie — czeka po drugiej stronie trzydziestki. Wejdź w swoją moc z pewnością siebie.</p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>Szukasz dodatkowej pomocy? Skontaktuj się z naszymi ekspertami astrologami w celu uzyskania spersonalizowanej konsultacji dotyczącej powrotu Saturna lub pobierz nasz specjalistyczny Przewodnik Przetrwania Saturna w sklepie z aplikacjami.</em></p>
     `
 };

@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - JA
+ * 2026年2月のマンスリーホロスコープ：水瓶座の革新のシーズン - JA
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ja: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ 2026年2月のマンスリーホロスコープ：水瓶座の革新のシーズン',
+  excerpt: '2026年2月は、水星が順行に戻ることで明快な波が訪れます。2月3日の獅子座満月と魚座の金星が、あなたの恋愛やキャリアにどのような影響を与えるかを探りましょう。',
+  category: 'ホロスコープ',
+  metaDescription: '2026年2月の完全な占星術予測。獅子座満月と魚座で高揚する金星に焦点を当てた、全星座の詳細な月間予測。',
+  keywords: '月間ホロスコープ, 2026年2月 占星術, 月間予測, 2月の運勢, 水瓶座シーズン, 獅子座満月, 魚座金星',
+  quickSummary: [
+    '2月3日の獅子座満月は、あなたが表舞台に立ち、本当の自分を表現することを求めています。',
+    '水星がついに順行に戻り、1月下旬からのコミュニケーションの乱れが解消されます。',
+    '金星が夢見心地な魚座に移動し、1年で最もロマンチックなエネルギーを作り出します。',
+    '水瓶座シーズンは、私たちに革新を促し、時代遅れの伝統から自由になるよう後押しします。'
+  ],
+  keyTakeaways: [
+    '2月の第1週を利用して、クリエイティブなプロジェクトを立ち上げたり、自分自身をリブランディングしたりしましょう。',
+    '今年のバレンタインデーは、金星のパワーが高まり、非常に魔法のような時間になります。精神的で深い計画を立てましょう。',
+    '月半ばには、テクノロジーやコミュニティグループに関する突然のひらめきが期待できます。',
+    '一般的なホロスコープも有用ですが、正確なタイミングを知るには個人のトランジット情報の確認が必要です。'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: '2026年2月の概要' },
+    { id: 'key-transits', title: '重要な日付とトランジット' },
+    { id: 'fire-signs', title: '火の星座（牡羊座、獅子座、射手座）' },
+    { id: 'earth-signs', title: '地の星座（牡牛座、乙女座、山羊座）' },
+    { id: 'air-signs', title: '風の星座（双子座、天秤座、水瓶座）' },
+    { id: 'water-signs', title: '水の星座（蟹座、蠍座、魚座）' },
+    { id: 'get-personal', title: 'なぜ全般的な予測だけでは不十分なのか' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026年2月の占星術</h2>
+      <p>1月が旧年を振り払う月だったとしたら、<strong>2026年2月</strong>は未来へ向かって大胆に踏み出す月です。私たちは今、大胆さ、風変わりさ、そして革新を好む<strong>水瓶座シーズン</strong>の真っ只中にいます。集団のムードは「どう生き残るか」から「どう自分を再発明するか」へとシフトしていきます。</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>トップニュースは<strong>2月3日の獅子座満月</strong>です。獅子座は私たちに輝くことを求めます。「どこで自分を小さく見せていませんか？」と問いかけてきます。この光の下では、隠れることは選択肢にありません。水星がシャドウピリオドを終えることと相まって、コミュニケーションに明快さが戻ってきます。霧が晴れるのです。</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">重要な日付とトランジット</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>2月3日：</strong> 獅子座満月（ドラマ、情熱、絶頂）。</li>
+        <li><strong>2月10日：</strong> 金星が魚座へ（無条件の愛、芸術、ファンタジー）。</li>
+        <li><strong>2月18日：</strong> 太陽が魚座へ（夢のシーズンの始まり）。</li>
+        <li><strong>2月25日：</strong> 水星が魚座へ（論理が直感へと溶け込む）。</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 火 星座s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 火の星座（牡羊座、獅子座、射手座）</h2>
+      <p><strong>テーマ：創造性の爆発</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>獅子座：</strong> あなたの出番です。あなたのサインで起こる満月が、あなたをスポットライトの中心に置きます。昇進であれ、別れであれ、あるいは大きな突破口であれ、それは<em>今</em>起こります。人に見られることを恐れないでください。</p>
+      <p><strong>牡羊座：</strong> 今月は社交の輪があなたの富となります。ネットワーキングが予想外の成果をもたらします。友人が恋人やビジネスパートナーになるかもしれません。</p>
+      <p><strong>射手座：</strong> あなたは知恵を渇望しています。1月に遅れていた旅行計画がついに実行へと移されます。チケットを予約しましょう。</p>
 
-      <h2 id="earth-signs">🌍 土 星座s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 地の星座（牡牛座、乙女座、山羊座）</h2>
+      <p><strong>テーマ：精神的な基盤固め</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>牡牛座：</strong> 金星が魚座に入ると、あなたはより穏やかな気持ちになります。ロマンスにとって素晴らしい時期ですが、過去の過ちを自分自身で許すのにも良い時期です。恨みを手放しましょう。</p>
+      <p><strong>乙女座：</strong> パートナーシップに焦点を当ててください。あなたは普段助ける側ですが、2月は誰かに<em>あなた</em>を助けてもらいましょう。「脆弱であること」が今月のあなたのレッスンです。</p>
+      <p><strong>山羊座：</strong> 金運が上向きますが、それは努力だけによるものではありません。直感が投資のガイドとなります。スプレッドシートよりも直感を信じてみてください。</p>
 
-      <h2 id="air-signs">💨 風 星座s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 風の星座（双子座、天秤座、水瓶座）</h2>
+      <p><strong>テーマ：知的な再生</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>水瓶座：</strong> お誕生日おめでとうございます！あなたのサインにある太陽が生命力を増幅させます。あなたの魅力が高まっています。個人ブランドを立ち上げたり、見た目をアップデートしたりするのに最適な時期です。</p>
+      <p><strong>双子座：</strong> キャリアに変化が訪れます。ルーチンワークに退屈しているかもしれません。好奇心を刺激するような珍しい解決策や「副業」を探してみてください。</p>
+      <p><strong>天秤座：</strong> ロマンスが高まっていますが、創造性も同様です。あなたは何かを産み出そうとしています。それは子供、芸術作品、あるいは新しい恋かもしれません。この豊穣な瞬間を楽しみましょう。</p>
 
-      <h2 id="water-signs">💧 水 星座s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 水の星座（蟹座、蠍座、魚座）</h2>
+      <p><strong>テーマ：感情の深掘り</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>魚座：</strong> 月末、太陽があなたのサインに入ります。あなたは長い眠りから目覚めようとしています。直感は今、ほとんど予知に近い状態です。それを活用してください。</p>
+      <p><strong>蟹座：</strong> お金と共有資源が強調されます。借金の完済やローンの承認があるかもしれません。家計を整理する時期です。</p>
+      <p><strong>蠍座：</strong> 家庭こそが心の拠り所です。リフォームをしたり、単に世間から離れて過ごしたりすることになるでしょう。今のあなたにとって休息は生産的です。</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">なぜ全般的な予測だけでは不十分なのか</h2>
+      <p>この予測はあなたの「太陽星座」に対する宇宙の天候を示していますが、最も重要な部分が欠けています。それは<strong>あなた独自のチャート</strong>です。</p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>人間は太陽星座だけでできているわけではありません。月星座、アセンダント、そして他の8つの惑星が、指紋のように唯一無二の複雑な地図を形成しています。
+      <br><em>例えば：</em> 牡牛座アセンダントの人は、牡牛座太陽の人とは全く異なる経験を今月することになります。</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>未来を推測で終わらせないでください。</strong> あなた個人に当てはまる具体的な日付や詳細を知るには、計算された鑑定が必要です。</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">あなただけの真実を知る準備はできていますか？</h3>
+          <p>2026年のパーソナル・トランジット・レポートを手に入れましょう。惑星があなたの出生時の設計図とどう関わっているかを正確に把握できます。</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">無料診断を受ける</a>
       </div>
     `
 };

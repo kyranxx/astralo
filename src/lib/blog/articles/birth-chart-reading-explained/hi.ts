@@ -1,80 +1,64 @@
 /**
- * birth-chart-reading-explained - HI
+ * जन्म कुंडली पढ़ना: आपके ब्रह्मांडीय मानचित्र का व्यापक गाइड - HI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hi: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: '🔮 जन्म कुंडली पढ़ना: आपके ब्रह्मांडीय मानचित्र का व्यापक गाइड',
+  excerpt: 'हमारी जन्म कुंडली पढ़ने की गाइड के साथ अपने व्यक्तित्व के रहस्यों को अनलॉक करें। ग्रहों, भावों और भाग्य के नोड्स की व्याख्या करना सीखें।',
+  category: 'ज्योतिष की बुनियादी बातें',
+  metaDescription: 'अपनी जन्म कुंडली के रहस्यों को जानें। ग्रहों, भावों और भाग्य के नोड्स की व्याख्या करने के लिए हमारा व्यापक गाइड पढ़ें।',
+  keywords: 'जन्म कुंडली, कुंडली पढ़ना, चंद्र राशि, लग्न राशि, ज्योतिष के भाव, ग्रहों की दृष्टि, कुंडली कैसे देखें',
+  quickSummary: [
+    'आपकी जन्म कुंडली आपके जन्म के सटीक समय पर आकाश का एक 360-डिग्री स्क्रीनशॉट है।',
+    'सूर्य, चंद्रमा और लग्न आपकी कुंडली के "तीन स्तंभ" हैं जो आपके व्यक्तित्व का निर्माण करते हैं।',
+    '12 भाव यह बताते हैं कि घटनाएँ "कहाँ" होंगी, जबकि ग्रह "क्या" होगा, यह बताते हैं।',
+    'ग्रहों के बीच के कोण (दृष्टि) आपके आंतरिक संघर्षों और विशेष प्रतिभाओं को प्रकट करते।'
+  ],
+  keyTakeaways: [
+    'लग्न राशि (Rising Sign) भविष्यवाणियों के लिए अक्सर सूर्य राशि से अधिक सटीक होती है।',
+    'कठिन दृष्टियाँ (वर्ग, विरोध) लचीलेपन के माध्यम से सबसे सफल लोग बनाती हैं।',
+    'राहु (North Node) इस जीवन में आपकी आत्मा की कर्म दिशा को प्रकट करता है।',
+    'कंप्यूटर द्वारा बनाई गई रिपोर्ट अच्छी होती हैं, लेकिन मानवीय बारीकियों की जगह कोई नहीं ले सकता।'
+  ],
+  tableOfContents: [
+    { id: 'what-is-birth-chart', title: 'आपकी आत्मा का ब्लूप्रिंट' },
+    { id: 'the-big-three', title: 'तीन स्तंभ: सूर्य, चंद्रमा, और लग्न' },
+    { id: 'the-planets', title: 'ग्रह: आंतरिक बनाम बाहरी' },
+    { id: 'the-houses', title: '12 भाव: जीवन का मंच' },
+    { id: 'aspects', title: 'दृष्टि: ब्रह्मांडीय संवाद' },
+    { id: 'nodes', title: 'भाग्य के नोड्स (राहु-केतु)' }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">आपकी आत्मा का ब्लूप्रिंट</h2>
+      <p>क्या आपने कभी महसूस किया है कि आप अपनी राशि के विवरण में पूरी तरह फिट नहीं बैठते? "मैं सिंह राशि का हूँ, लेकिन मुझे चर्चा का केंद्र बनना पसंद नहीं है!" इसका कारण आपकी <strong>जन्म कुंडली</strong> में छिपा हो सकता है।</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>जन्म कुंडली आपके जन्म के सटीक समय, तारीख और स्थान के आधार पर आकाश का एक नक्शा है। इसे अपना "ब्रह्मांडीय डीएनए" समझें—निर्देशों, प्रतिभाओं और चुनौतियों का एक अनूठा सेट जो केवल आपका है।</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
-      
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
-
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
-
-      <h3>3. The Ascendant / Rising राशि 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
-
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
-      
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h2 id="the-big-three">तीन स्तंभ: सूर्य, चंद्रमा, और लग्न</h2>
+      <p>ज्योतिष के हर छात्र को इन "तीन स्तंभों" में महारत हासिल करनी चाहिए।</p>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+          <li><strong>सूर्य ☀️ (पहचान):</strong> यह आपके अहंकार और आपकी मूल पहचान का प्रतिनिधित्व करता है। यह सवाल का जवाब देता है: <em>"मैं वास्तव में कौन हूँ?"</em></li>
+          <li><strong>चंद्रमा 🌙 (भावना):</strong> यह आपके आंतरिक संसार और आपकी प्रवृत्तियों का प्रतिनिधित्व करता है। यह जवाब देता है: <em>"मुझे सुरक्षित महसूस करने के लिए क्या चाहिए?"</em></li>
+          <li><strong>लग्न राशि 🏹 (मुखौटा):</strong> यह वह राशि है जो आपके जन्म के समय पूर्वी क्षितिज पर उदय हो रही थी। यह बताता है: <em>"दुनिया मुझे कैसे देखती है?"</em></li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h2 id="the-planets">ग्रह: जीवन की कहानी के पात्र</h2>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>बुध ☿️:</strong> आपकी बुद्धि और संचार का स्वामी।</li>
+        <li><strong>शुक्र ♀:</strong> प्रेम, आकर्षण और धन का स्वामी।</li>
+        <li><strong>मंगल ♂:</strong> क्रिया, क्रोध और ऊर्जा का स्वामी।</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
-      <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
-      </ul>
+      <h2 id="the-houses">12 भाव: कहाँ और क्या</h2>
+      <p>कुंडली 12 भावों में विभाजित है, जैसे पिज्जा के टुकड़े। प्रत्येक भाव जीवन के एक विशिष्ट क्षेत्र को नियंत्रित करता है। एक ग्रह जहाँ बैठता है, वह बताता है कि उसकी ऊर्जा <em>कहाँ</em> प्रकट होगी।</p>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
-      
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
-      
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <h2 id="aspects">दृष्टि: ग्रहों के बीच की बातचीत</h2>
+      <p>ग्रह अकेले काम नहीं करते। वे भौगोलिक कोण बनाते हैं जिन्हें "दृष्टि" कहा जाता है। शुभ दृष्टियाँ उपहार की तरह होती हैं जहाँ चीजें आसानी से मिल जाती हैं, जबकि कठिन दृष्टियाँ चुनौतियाँ पेश करती हैं जो हमें सफल होने के लिए ऊर्जा देती हैं।</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">भाग्य के नोड्स</h2>
+      <p><strong>राहु (North Node)</strong> आपकी नियति का प्रतिनिधित्व करता है—वह दिशा जिसमें आपकी आत्मा इस जीवनकाल में जाना चाहती है। <strong>केतु (South Node)</strong> आपका पिछला जीवन है—यह परिचित और आसान लगता है, लेकिन वहाँ रुकने से ठहराव आता है।</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <p>जन्म कुंडली पढ़ना एक संगीत रचना को पढ़ने जैसा है। Astralo में, हम सदियों पुराने ज्योतिषीय ज्ञान और आधुनिक AI का उपयोग करके आपके जीवन की एक स्पष्ट कहानी बुनते हैं।</p>
     `
 };
