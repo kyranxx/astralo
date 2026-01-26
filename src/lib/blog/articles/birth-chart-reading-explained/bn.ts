@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 জন্মকুণ্ডলী পাঠ: আপনার মহাজাগতিক মানচিত্রের একটি সম্পূর্ণ নির্দেশিকা",
+  excerpt: "আমাদের জন্মকুণ্ডলী পাঠের সেরা নির্দেশিকা দিয়ে আপনার ব্যক্তিত্বের গোপন রহস্যগুলো উন্মোচন করুন। পেশাদারের মতো গ্রহ, ঘর, দৃষ্টি এবং ভাগ্যের সংযোগ বিন্দুগুলো ব্যাখ্যা করতে শিখুন।",
+  category: "জ্যোতিষশাস্ত্রের মৌলিক বিষয়",
+  metaDescription: "আমাদের জন্মকুণ্ডলী পাঠের সেরা নির্দেশিকা দিয়ে আপনার ব্যক্তিত্বের গোপন রহস্যগুলো উন্মোচন করুন। বিশেষজ্ঞের মতো গ্রহ, ঘর এবং দৃষ্টি ব্যাখ্যা করতে শিখুন।",
+  keywords: "জন্মকুণ্ডলী, জন্মকুণ্ডলী পাঠ, নাতাল চার্ট, জ্যোতিষশাস্ত্রের বিগ থ্রি, লগ্ন, রাশি, জ্যোতিষশাস্ত্রীয় ঘর, গ্রহের দৃষ্টি, কীভাবে জন্মকুণ্ডলী পড়তে হয়",
+  quickSummary: [
+    "আপনার জন্মকুণ্ডলী হলো আপনার জন্মের সঠিক মুহূর্তে আকাশের একটি ৩৬০-ডিগ্রি স্ন্যাপশট",
+    "\"বিগ থ্রি\" (রবি, চন্দ্র, লগ্ন) আপনার ব্যক্তিত্বের মূল ভিত্তি গঠন করে",
+    "১২টি ঘর বর্ণনা করে ঘটনাগুলো \"কোথায়\" ঘটছে, আর গ্রহগুলো বর্ণনা করে \"কী\" ঘটছে",
+    "দৃষ্টি (গ্রহদের সংযোগকারী রেখা) আপনার অভ্যন্তরীণ দ্বন্দ্ব এবং বিশেষ প্রতিভা প্রকাশ করে"
+  ],
+  keyTakeaways: [
+    "ভবিষ্যদ্বাণীর জন্য লগ্নের রাশি প্রায়শই রবির রাশির চেয়ে বেশি সঠিক হয়",
+    "কঠিন দৃষ্টি বা যোগ (যেমন বর্গ বা প্রতিতুলনা) সহনশীলতার মাধ্যমে সবচেয়ে সফল মানুষ তৈরি করে",
+    "রাহু (North Node) এই জীবনে আপনার আত্মার কার্মিক দিক প্রকাশ করে",
+    "কম্পিউটার-জেনারেটেড রিপোর্ট চমৎকার, কিন্তু মানুষের সূক্ষ্ম বিচারবোধ অপূরণীয়"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "আপনার আত্মার নীলনকশা" },
+    { id: "the-big-three", title: "বিগ থ্রি: রবি, চন্দ্র, লগ্ন" },
+    { id: "the-planets", title: "গ্রহসমূহ: ব্যক্তিগত বনাম মহাজাগতিক" },
+    { id: "the-houses", title: "১২টি ঘরের অবস্থান" },
+    { id: "aspects", title: "দৃষ্টি: মহাজাগতিক কথোপকথন" },
+    { id: "nodes", title: "ভাগ্যের সংযোগ বিন্দু" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">আপনার আত্মার নীলনকশা</h2>
+      <p>আপনি কি কখনো অনুভব করেছেন যে আপনি আপনার রাশিফলের বর্ণনার সাথে পুরোপুরি মিলছেন না? \"আমি সিংহের রাশির জাতক, কিন্তু আমি পাদপ্রদীপের আলোয় থাকতে ঘৃণা করি!\" এর কারণ সম্ভবত আপনার <strong>জন্মকুণ্ডলী</strong> (বা নাতাল চার্ট)-এর মধ্যে লুকিয়ে আছে। যদিও আপনার রবির রাশি গুরুত্বপূর্ণ, এটি একটি বিশাল ও জটিল সমীকরণের মাত্র একটি চলক মাত্র।</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>জন্মকুণ্ডলী হলো আপনার জন্মের সঠিক সময়, তারিখ এবং স্থানের ভিত্তিতে তৈরি আকাশের একটি মানচিত্র। এটি আপনাকে মহাবিশ্বের কেন্দ্রে স্থাপন করে এবং গ্রহগুলোকে আপনার চারপাশে সাজিয়ে দেয়। এটাকে আপনার \"মহাজাগতিক ডিএনএ\" হিসেবে ভাবুন—নির্দেশনা, প্রতিভা, চ্যালেঞ্জ এবং সম্ভাবনার একটি অনন্য সেট যা শুধুমাত্র আপনারই।</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">বিগ থ্রি: রবি, চন্দ্র, লগ্ন</h2>
+      <p>জটিল জ্যামিতিতে ডুব দেওয়ার আগে, জ্যোতিষশাস্ত্রের প্রত্যেক ছাত্রকে তাদের \"বিগ থ্রি\" আয়ত্ত করতে হবে। এই তিনটি বিন্দু আপনার ব্যক্তিত্বের সিংহভাগ নির্ধারণ করে।</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>১. রবি ☀️ (পরিচয়)</h3>
+      <p>রবি আপনার সচেতন অহং বা \"আমি কে\" তা প্রকাশ করে। এটি আপনার জ্বালানি, আপনার ড্রাইভ এবং আপনার শক্তির ফ্রিকোয়েন্সি। এটি এই প্রশ্নের উত্তর দেয়: <em>\"আমার অন্তরে আমি আসলে কে?\"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>২. চন্দ্র 🌙 (আবেগ)</h3>
+      <p>চন্দ্র আপনার অভ্যন্তরীণ জগত, আপনার প্রবৃত্তি এবং আপনার অবচেতন মনের প্রতিনিধিত্ব করে। আপনি যখন আঘাত পান, ক্ষুধার্ত হন বা ক্লান্ত হন তখন আপনি কীভাবে প্রতিক্রিয়া দেখান তা এটি নির্ধারণ করে। এটি এই প্রশ্নের উত্তর দেয়: <em>\"নিরাপদ বোধ করার জন্য আমার কী প্রয়োজন?\"</em></p>
 
-      <h3>3. The Ascendant / Rising চিহ্ন 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>৩. লগ্ন 🏹 (মুখোশ)</h3>
+      <p>লগ্ন হলো সেই রাশি যা আপনার জন্মের সময় পূর্ব দিগন্তে উদীয়মান ছিল। এটি বিশ্বের সাথে আপনার \"ইন্টারফেস\"। এটি আপনার শারীরিক গঠন, আপনার শৈলী এবং প্রথম ছাপ নির্ধারণ করে। এটি এই প্রশ্নের উত্তর দেয়: <em>\"অন্যরা আমাকে কীভাবে দেখে?\"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">গ্রহসমূহ: ব্যক্তিগত বনাম মহাজাগতিক</h2>
+      <p>আপনার <strong>জন্মকুণ্ডলী পাঠে</strong>, গ্রহগুলো হলো অভিনেতা যারা আপনার জীবনের গল্পের বিভিন্ন চরিত্রে অভিনয় করে।</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>ব্যক্তিগত গ্রহ (দ্রুত গতিশীল)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>বুধ ☿️:</strong> দূত। আপনার বুদ্ধি, কথা বলা এবং যুক্তি নিয়ন্ত্রণ করে। মিথুন রাশির বুধ মীন রাশির বুধের চেয়ে ভিন্নভাবে আলোচনা করে।</li>
+        <li><strong>শুক্র ♀:</strong> প্রেমী। আকর্ষণ, শিল্প এবং অর্থ নিয়ন্ত্রণ করে। এটি দেখায় আপনি কী পছন্দ করেন এবং কীভাবে কাউকে আকৃষ্ট করেন।</li>
+        <li><strong>মঙ্গল ♂:</strong> যোদ্ধা। কর্ম, রাগ এবং লিবিডো নিয়ন্ত্রণ করে। এটি দেখায় আপনি যা চান তার জন্য কীভাবে লড়াই করেন।</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>সামাজিক ও বাহ্যিক গ্রহ (ধীর গতিশীল)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>বৃহস্পতি ♃:</strong> গুরু। যেখানে আপনি ভাগ্য, প্রসার এবং জীবনের অর্থ খুঁজে পান।</li>
+        <li><strong>শনি ♄:</strong> শিক্ষক বা কর্মফল দাতা। যেখানে আপনি সীমাবদ্ধতা এবং ভয়ের সম্মুখীন হন, কিন্তু কঠোর পরিশ্রমের মাধ্যমে শেষ পর্যন্ত দক্ষতা অর্জন করেন।</li>
+        <li><strong>ইউরেনাস ♅, নেপচুন ♆, প্লুটো ♇:</strong> প্রজন্মগত গ্রহ। এগুলো এত ধীরগতিতে চলে যে তারা পুরো প্রজন্মকে প্রভাবিত করে, যা বিবর্তন এবং কর্মফলের সাথে জড়িত।</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">মঞ্চ: ১২টি ঘর</h2>
+      <p>কুণ্ডলীটি পিৎজার স্লাইসের মতো ১২টি \"ঘরে\" বিভক্ত। প্রতিটি ঘর জীবনের একটি নির্দিষ্ট ক্ষেত্র পরিচালনা করে। একটি গ্রহ কোথায় বসে আছে তা আপনাকে বলে যে তার শক্তি <em>কোথায়</em> প্রকাশিত হবে।</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>১ম ঘর:</strong> স্বয়ং, শরীর, চেহারা।</li>
+        <li><strong>২য় ঘর:</strong> অর্থ, সম্পদ, মূল্যবোধ।</li>
+        <li><strong>৩য় ঘর:</strong> যোগাযোগ, ভাইবোন, ছোট ভ্রমণ।</li>
+        <li><strong>৪র্থ ঘর:</strong> বাড়ি, পরিবার, শিকড়।</li>
+        <li><strong>৫ম ঘর:</strong> সৃজনশীলতা, রোমান্স, সন্তান।</li>
+        <li><strong>৬ষ্ঠ ঘর:</strong> দৈনন্দিন কাজ, স্বাস্থ্য, সেবা।</li>
+        <li><strong>৭ম ঘর:</strong> বিবাহ, অংশীদারিত্ব, প্রকাশ্য শত্রু।</li>
+        <li><strong>৮ম ঘর:</strong> মৃত্যু, যৌনতা, অন্যের অর্থ।</li>
+        <li><strong>৯ম ঘর:</strong> দর্শন, ভ্রমণ, উচ্চশিক্ষা।</li>
+        <li><strong>১০ম ঘর:</strong> ক্যারিয়ার, জনভাবমূর্তি, উত্তরাধিকার।</li>
+        <li><strong>১১তম ঘর:</strong> বন্ধু, নেটওয়ার্ক, আশা/আকাঙ্ক্ষা।</li>
+        <li><strong>১২তম ঘর:</strong> অবচেতন, গোপনীয়তা, আধ্যাত্মিকতা।</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">দৃষ্টি: মহাজাগতিক কথোপকথন</h2>
+      <p>গ্রহগুলো বিচ্ছিন্নভাবে কাজ করে না। তারা জ্যামিতিক কোণ তৈরি করে যাকে \"দৃষ্টি\" বা যোগ বলা হয়। এই রেখাগুলো আপনার কুণ্ডলীর অভিনেতাদের মধ্যে সংযোগ স্থাপন করে।</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>সহজ দৃষ্টি (কোণ, সেক্সটাইল):</strong> এগুলো উপহারের মতো। গ্রহগুলো একে অপরকে সাহায্য করে। এখানে জিনিসগুলো সহজেই ঘটে—কখনও কখনও খুব সহজে, যা অলসতার দিকে নিয়ে যেতে পারে।</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>কঠিন দৃষ্টি (বর্গ, প্রতিতুলনা):</strong> এগুলো চ্যালেঞ্জ। গ্রহগুলো একে অপরের সাথে দ্বন্দ্বে লিপ্ত হয়। তবে এই ঘর্ষণই বড় অর্জনের জন্য প্রয়োজনীয় শক্তি তৈরি করে। বেশিরভাগ সফল মানুষের কুণ্ডলী বর্গ দৃষ্টিতে পূর্ণ থাকে!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">ভাগ্যের সংযোগ বিন্দু</h2>
+      <p>সবশেষে, ঘোড়ার নালের মতো প্রতীকগুলো দেখুন। <strong>রাহু (North Node)</strong> আপনার ভাগ্যকে উপস্থাপন করে—এই জীবনে আপনার আত্মা যেদিকে যেতে চায়। এটি অপরিচিত এবং নতুন মনে হয়। <strong>কেতু (South Node)</strong> আপনার অতীত জীবন (বা শৈশব)—এটি পরিচিত এবং সহজ মনে হয়, কিন্তু সেখানে আটকে থাকা স্থবিরতার দিকে নিয়ে যায়।</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>ব্যাখ্যা করা একটি শিল্প</h3>
+      <p>জন্মকুণ্ডলী পড়া একটি সিম্ফনি শোনার মতো। আপনি ভায়োলিন (শুক্র)-কে আলাদা করতে পারেন, তবে যাদুটি লুকিয়ে আছে যখন পুরো অর্কেস্ট্রা একসাথে পারফর্ম করে। Astralo-তে, আমরা শত শত বছরের জ্যোতিষশাস্ত্রীয় জ্ঞানের ওপর প্রশিক্ষিত উন্নত এআই ব্যবহার করি যাতে এই লক্ষ লক্ষ চলককে আপনার সম্পর্কে একটি পরিষ্কার ও সহজবোধ্য গল্পে রূপান্তর করা যায়।</p>
     `
 };
+

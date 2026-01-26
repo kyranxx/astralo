@@ -1,0 +1,48 @@
+Vercel CLI 50.4.5
+Retrieving project…
+Fetching deployments in daniels-projects-98c0558b
+> Deployments for daniels-projects-98c0558b/astralo [255ms]
+
+  Age     Deployment                                                         Status         Environment     Duration     Username     
+  45s     https://astralo-tlo6kqi0p-daniels-projects-98c0558b.vercel.app     ● Building     Production      --           kyranxx      
+  7m      https://astralo-jd4t86xtx-daniels-projects-98c0558b.vercel.app     ● Error        Production      23s          kyranxx      
+  2d      https://astralo-m0w9v1xy1-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-3a6oc9ow6-daniels-projects-98c0558b.vercel.app     ● Error        Production      21s          kyranxx      
+  2d      https://astralo-owgo2ig47-daniels-projects-98c0558b.vercel.app     ● Error        Production      19s          kyranxx      
+  2d      https://astralo-oxlat4v74-daniels-projects-98c0558b.vercel.app     ● Error        Production      21s          kyranxx      
+  2d      https://astralo-ha9r4f4fc-daniels-projects-98c0558b.vercel.app     ● Error        Production      22s          kyranxx      
+  2d      https://astralo-ih481r9v8-daniels-projects-98c0558b.vercel.app     ● Error        Production      20s          kyranxx      
+  2d      https://astralo-5lm9in8k0-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-q5x147i2u-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-phsoy2scb-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-f4c7y51d3-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-opfhg4fjv-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-2nzn5o3qy-daniels-projects-98c0558b.vercel.app     ● Ready        Production      1m           kyranxx      
+  2d      https://astralo-ifbi85ux7-daniels-projects-98c0558b.vercel.app     ● Error        Production      14s          kyranxx      
+  2d      https://astralo-669umaq0y-daniels-projects-98c0558b.vercel.app     ● Error        Production      12s          kyranxx      
+  2d      https://astralo-mcytuwdm0-daniels-projects-98c0558b.vercel.app     ● Error        Production      12s          kyranxx      
+  2d      https://astralo-fni0xd12t-daniels-projects-98c0558b.vercel.app     ● Error        Production      12s          kyranxx      
+  2d      https://astralo-b42r901a1-daniels-projects-98c0558b.vercel.app     ● Error        Production      17s          kyranxx      
+  2d      https://astralo-maanhn2nq-daniels-projects-98c0558b.vercel.app     ● Error        Production      15s          kyranxx      
+
+https://astralo-tlo6kqi0p-daniels-projects-98c0558b.vercel.app
+https://astralo-jd4t86xtx-daniels-projects-98c0558b.vercel.app
+https://astralo-m0w9v1xy1-daniels-projects-98c0558b.vercel.app
+https://astralo-3a6oc9ow6-daniels-projects-98c0558b.vercel.app
+https://astralo-owgo2ig47-daniels-projects-98c0558b.vercel.app
+https://astralo-oxlat4v74-daniels-projects-98c0558b.vercel.app
+https://astralo-ha9r4f4fc-daniels-projects-98c0558b.vercel.app
+https://astralo-ih481r9v8-daniels-projects-98c0558b.vercel.app
+https://astralo-5lm9in8k0-daniels-projects-98c0558b.vercel.app
+https://astralo-q5x147i2u-daniels-projects-98c0558b.vercel.app
+https://astralo-phsoy2scb-daniels-projects-98c0558b.vercel.app
+https://astralo-f4c7y51d3-daniels-projects-98c0558b.vercel.app
+https://astralo-opfhg4fjv-daniels-projects-98c0558b.vercel.app
+https://astralo-2nzn5o3qy-daniels-projects-98c0558b.vercel.app
+https://astralo-ifbi85ux7-daniels-projects-98c0558b.vercel.app
+https://astralo-669umaq0y-daniels-projects-98c0558b.vercel.app
+https://astralo-mcytuwdm0-daniels-projects-98c0558b.vercel.app
+https://astralo-fni0xd12t-daniels-projects-98c0558b.vercel.app
+https://astralo-b42r901a1-daniels-projects-98c0558b.vercel.app
+https://astralo-maanhn2nq-daniels-projects-98c0558b.vercel.app
+> To display the next page, run `vercel ls --next 1769284322418`

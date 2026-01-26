@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Citirea hărții natale: Ghidul complet al hărții tale cosmice",
+  excerpt: "Deblochează secretele personalității tale cu ghidul nostru suprem de citire a hărții natale. Învață să interpretezi planetele, casele, aspectele și nodurile destinului ca un profesionist.",
+  category: "Noțiuni de bază în astrologie",
+  metaDescription: "Deblochează secretele personalității tale cu ghidul nostru suprem de citire a hărții natale. Învață să interpretezi planetele, casele, aspectele și nodurile destinului ca un expert.",
+  keywords: "harta natală, citirea hărții natale, astrogramă, marea triadă astrologică, ascendent, semnul lunii, case astrologice, aspecte planetare, cum să-mi citesc harta natală",
+  quickSummary: [
+    "Harta ta natală este o captură de ecran la 360 de grade a cerului în momentul exact al nașterii tale",
+    "„Marea Triadă” (Soarele, Luna și Ascendentul) formează nucleul personalității tale",
+    "Cele 12 Case descriu „unde” se întâmplă evenimentele, în timp ce Planetele descriu „ce” se întâmplă",
+    "Aspectele (liniile care conectează planetele) dezvăluie conflictele interne și talentele tale speciale"
+  ],
+  keyTakeaways: [
+    "Ascendentul este adesea mai precis pentru predicții decât zodia solară",
+    "Aspectele dure (cuadraturile și opozițiile) creează cei mai de succes oameni prin reziliență",
+    "Nodul Nord dezvăluie direcția karmică a sufletului tău în această viață",
+    "Rapoartele generate de computer sunt excelente, dar nuanța umană este de neînlocuit"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Planul sufletului tău" },
+    { id: "the-big-three", title: "Marea Triadă: Soare, Lună, Ascendent" },
+    { id: "the-planets", title: "Planetele: Interioare vs. Exterioare" },
+    { id: "the-houses", title: "Stadiul celor 12 Case" },
+    { id: "aspects", title: "Aspectele: Conversația cosmică" },
+    { id: "nodes", title: "Nodurile Destinului" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Planul sufletului tău</h2>
+      <p>Te-ai simțit vreodată de parcă nu te potrivești descrierii zodiei tale? „Sunt Leu, dar urăsc să fiu în centrul atenției!” Motivul este probabil ascuns în <strong>harta ta natală</strong> (sau astrogramă). Deși semnul tău solar este important, acesta este doar o variabilă într-o ecuație masivă și complexă.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>O hartă natală este o hartă a cerului calculată pentru ora, data și locația exactă a nașterii tale. Te plasează în centrul universului, cu planetele aranjate în jurul tău. Gândește-te la ea ca la „ADN-ul tău cosmic” – un set unic de instrucțiuni, talente, provocări și potențiale care îți aparține doar ție.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Marea Triadă: Soare, Lună, Ascendent</h2>
+      <p>Înainte de a te scufunda în geometria complexă, orice student al astrologiei trebuie să stăpânească „Marea Triadă”. Aceste trei puncte determină cea mai mare parte a personalității tale.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Soarele ☀️ (Identitate)</h3>
+      <p>Soarele reprezintă egoul tău conștient, „Eu sunt”. Este combustibilul tău, forța ta motrice și frecvența energetică pe care o emiți. Răspunde la întrebarea: <em>„Cine sunt eu în esență?”</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Luna 🌙 (Emoție)</h3>
+      <p>Luna reprezintă lumea ta interioară, instinctele și subconștientul. Dictatează modul în care reacționezi când ești rănit, flămând sau obosit. Răspunde la întrebarea: <em>„De ce am nevoie pentru a mă simți în siguranță?”</em></p>
 
-      <h3>3. The Ascendant / Rising Semn 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Ascendentul 🏹 (Masca)</h3>
+      <p>Ascendentul este semnul zodiacal care răsărea la orizontul estic când te-ai născut. Este „interfața” ta cu lumea. Îți determină aspectul fizic, stilul și prima impresie. Răspunde la întrebarea: <em>„Cum mă văd ceilalți?”</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Planetele: Interioare vs. Exterioare</h2>
+      <p>În <strong>citirea hărții natale</strong>, planetele sunt actorii care joacă roluri în povestea vieții tale.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Planetele Personale (mişcare rapidă)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Mercur ☿️:</strong> Mesagerul. Guvernează intelectul, vorbirea și logica. Un Mercur în Gemeni negociază diferit față de un Mercur în Pești.</li>
+        <li><strong>Venus ♀:</strong> Amantul. Guvernează atracția, arta și banii. Arată ce prețuiești și cum seduci.</li>
+        <li><strong>Marte ♂:</strong> Războinicul. Guvernează acțiunea, mânia și libidoul. Arată cum lupți pentru ceea ce îți dorești.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Planetele Sociale și Exterioare (mişcare lentă)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> Guru-ul. Unde găsești norocul, expansiunea și sensul.</li>
+        <li><strong>Saturn ♄:</strong> Supraveghetorul. Unde te confrunți cu restricții, frică, dar în cele din urmă cu măiestrie prin muncă grea.</li>
+        <li><strong>Uranus ♅, Neptun ♆, Pluto ♇:</strong> Planetele Generaționale. Acestea se mișcă atât de încet încât modelează generații întregi, afectându-te la un nivel profund, subconștient, implicând evoluția și karma.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Scena: Cele 12 Case</h2>
+      <p>Harta este împărțită în 12 „Case”, ca feliile unei pizza. Fiecare casă guvernează o zonă specifică a vieții. Locul în care se află o planetă îți spune <em>unde</em> se va manifesta energia sa.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>Casa 1:</strong> Sinele, Corpul, Aspectul.</li>
+        <li><strong>Casa a 2-a:</strong> Bani, Posesiuni, Valori.</li>
+        <li><strong>Casa a 3-a:</strong> Comunicare, Frați, Călătorii scurte.</li>
+        <li><strong>Casa a 4-a:</strong> Acasă, Familie, Rădăcini.</li>
+        <li><strong>Casa a 5-a:</strong> Creativitate, Romantism, Copii.</li>
+        <li><strong>Casa a 6-a:</strong> Rutină zilnică, Sănătate, Serviciu.</li>
+        <li><strong>Casa a 7-a:</strong> Căsătorie, Parteneriate, Dușmani deschiși.</li>
+        <li><strong>Casa a 8-a:</strong> Moarte, Sex, Banii altora.</li>
+        <li><strong>Casa a 9-a:</strong> Filosofie, Călătorii, Învățământ superior.</li>
+        <li><strong>Casa a 10-a:</strong> Carieră, Imagine publică, Moștenire.</li>
+        <li><strong>Casa a 11-a:</strong> Prieteni, Rețele, Speranțe/Dorințe.</li>
+        <li><strong>Casa a 12-a:</strong> Subconștient, Secrete, Spiritualitate.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspectele: Conversația cosmică</h2>
+      <p>Planetele nu funcționează în izolare. Ele formează unghiuri geometrice numite „Aspecte”. Aceste linii conectează actorii din harta ta.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Aspecte armonice (Trigon, Sextil):</strong> Acestea sunt daruri. Planetele se ajută reciproc. Lucrurile vin ușor aici – uneori prea ușor, ducând la lene.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Aspecte dure (Cuadratura, Opoziția):</strong> Acestea sunt provocări. Planetele se luptă sau se blochează reciproc. Totuși, aceste puncte de frecare creează energia necesară pentru realizări înalte. Cei mai mulți oameni de succes au hărți pline de cuadraturi!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Nodurile Destinului</h2>
+      <p>În cele din urmă, caută simbolurile sub formă de potcoavă. <strong>Nodul Nord</strong> reprezintă destinul tău – direcția în care sufletul tău dorește să meargă în această viață. Se simte inconfortabil și nou. <strong>Nodul Sud</strong> este viața ta trecută (sau copilăria timpurie) – se simte familiar și ușor, dar rămânerea acolo duce la stagnare.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Interpretarea este o artă</h3>
+      <p>Citirea unei hărți natale este ca și cum ai asculta o simfonie. Poți izola viorile (Venus), dar magia stă în întreaga orchestră care cântă împreună. La Astralo, folosim IA avansată instruită pe secole de înțelepciune astrologică pentru a sintetiza aceste milioane de variabile într-o poveste clară și lizibilă despre TINE.</p>
     `
 };
+

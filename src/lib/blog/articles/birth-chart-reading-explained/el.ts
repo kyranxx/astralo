@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Ανάλυση Γενέθλιου Χάρτη: Ο Ολοκληρωμένος Οδηγός για τον Κοσμικό σας Χάρτη",
+  excerpt: "Ξεκλειδώστε τα μυστικά της προσωπικότητάς σας με τον απόλυτο οδηγό ανάλυσης γενέθλιου χάρτη. Μάθετε να ερμηνεύετε Πλανήτες, Οίκους, Όψεις και τους Δεσμούς της Μοίρας σαν επαγγελματίας.",
+  category: "Βασικά Στοιχεία Αστρολογίας",
+  metaDescription: "Ξεκλειδώστε τα μυστικά της προσωπικότητάς σας με τον απόλυτο οδηγό ανάλυσης γενέθλιου χάρτη. Μάθετε να ερμηνεύετε Πλανήτες, Οίκους και Όψεις σαν ειδικός.",
+  keywords: "γενέθλιος χάρτης, ανάλυση γενέθλιου χάρτη, αστρολογικός χάρτης, η μεγάλη τριάδα στην αστρολογία, ωροσκόπος, ζώδιο σελήνης, αστρολογικοί οίκοι, πλανητικές όψεις",
+  quickSummary: [
+    "Ο γενέθλιος χάρτης σας είναι ένα στιγμιότυπο του ουρανού 360 μοιρών την ακριβή στιγμή της γέννησής σας",
+    "Η «Μεγάλη Τριάδα» (Ήλιος, Σελήνη, Ωροσκόπος) αποτελεί τον πυρήνα της προσωπικότητάς σας",
+    "Οι 12 Οίκοι περιγράφουν το «πού» συμβαίνουν τα γεγονότα, ενώ οι Πλανήτες περιγράφουν το «τι» συμβαίνει",
+    "Οι Όψεις (γραμμές που συνδέουν τους πλανήτες) αποκαλύπτουν τις εσωτερικές σας συγκρούσεις και τα ιδιαίτερα ταλέντα σας"
+  ],
+  keyTakeaways: [
+    "Ο Ωροσκόπος είναι συχνά πιο ακριβής για προβλέψεις από το Ζώδιο του Ήλιου",
+    "Οι δύσκολες όψεις (Τετράγωνα, Αντιθέσεις) δημιουργούν τους πιο επιτυχημένους ανθρώπους μέσω της ανθεκτικότητας",
+    "Ο Βόρειος Δεσμός αποκαλύπτει την καρμική κατεύθυνση της ψυχής σας σε αυτή τη ζωή",
+    "Οι αναφορές που παράγονται από υπολογιστή είναι εξαιρετικές, αλλά η ανθρώπινη προσέγγιση είναι αναντικατάστατη"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Το Προσχέδιο της Ψυχής σας" },
+    { id: "the-big-three", title: "Η Μεγάλη Τριάδα: Ήλιος, Σελήνη, Ωροσκόπος" },
+    { id: "the-planets", title: "Οι Πλανήτες: Εσωτερικοί vs Εξωτερικοί" },
+    { id: "the-houses", title: "Η Κατάσταση των 12 Οίκων" },
+    { id: "aspects", title: "Όψεις: Η Κοσμική Συνομιλία" },
+    { id: "nodes", title: "Οι Δεσμοί της Μοίρας" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Το Προσχέδιο της Ψυχής σας</h2>
+      <p>Έχετε νιώσει ποτέ ότι δεν ταιριάζετε απόλυτα στην περιγραφή του ζωδίου σας; «Είμαι Λέων, αλλά μισώ να είμαι το κέντρο της προσοχής!» Ο λόγος κρύβεται πιθανώς στον <strong>γενέθλιο χάρτη</strong> σας. Ενώ το ζώδιο του Ήλιου σας είναι σημαντικό, είναι μόνο μία μεταβλητή σε μια τεράστια, περίπλοκη εξίσωση.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Ένας γενέθλιος χάρτης είναι ένας χάρτης των ουρανών που υπολογίζεται για την ακριβή ώρα, ημερομηνία και τοποθεσία της γέννησής σας. Σας τοποθετεί στο κέντρο του σύμπαντος, με τους πλανήτες διατεταγμένους γύρω σας. Σκεφτείτε τον ως το «Κοσμικό DNA» σας — ένα μοναδικό σύνολο οδηγιών, ταλέντων, προκλήσεων και δυνατοτήτων που ανήκει μόνο σε εσάς.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Η Μεγάλη Τριάδα: Ήλιος, Σελήνη, Ωροσκόπος</h2>
+      <p>Πριν βουτήξετε στην περίπλοκη γεωμετρία, κάθε σπουδαστής της αστρολογίας πρέπει να κατακτήσει τη «Μεγάλη Τριάδα». Αυτά τα τρία σημεία καθορίζουν το μεγαλύτερο μέρος της προσωπικότητάς σας.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Ο Ήλιος ☀️ (Ταυτότητα)</h3>
+      <p>Ο Ήλιος αντιπροσωπεύει το συνειδητό εγώ σας, το «Είμαι». Είναι το καύσιμό σας, η ορμή σας και η ενεργειακή συχνότητα που εκπέμπετε. Απαντά στην ερώτηση: <em>«Ποιος είμαι στον πυρήνα μου;»</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Η Σελήνη 🌙 (Συναίσθημα)</h3>
+      <p>Η Σελήνη αντιπροσωπεύει τον εσωτερικό σας κόσμο, τα ένστικτά σας και το υποσυνείδητό σας. Υπαγορεύει πώς αντιδράτε όταν είστε πληγωμένοι, πεινασμένοι ή κουρασμένοι. Απαντά στην ερώτηση: <em>«Τι χρειάζομαι για να νιώθω ασφαλής;»</em></p>
 
-      <h3>3. The Ascendant / Rising Σήμα 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Ο Ωροσκόπος 🏹 (Μάσκα)</h3>
+      <p>Ο Ωροσκόπος είναι το ζώδιο που ανέβαινε στον ανατολικό ορίζοντα τη στιγμή που γεννηθήκατε. Είναι η «διεπαφή» σας με τον κόσμο. Καθορίζει τη φυσική σας εμφάνιση, το στυλ σας και την πρώτη εντύπωση. Απαντά στην ερώτηση: <em>«Πώς με βλέπουν οι άλλοι;»</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Οι Πλανήτες: Εσωτερικοί vs Εξωτερικοί</h2>
+      <p>Στην <strong>ανάλυση του γενέθλιου χάρτη</strong> σας, οι πλανήτες είναι οι ηθοποιοί που παίζουν ρόλους στην ιστορία της ζωής σας.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Οι Προσωπικοί Πλανήτες (Γρήγορης Κίνησης)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Ερμής ☿️:</strong> Ο Αγγελιοφόρος. Κυβερνά τη νόηση, τον λόγο και τη λογική. Ένας Ερμής στους Διδύμους διαπραγματεύεται διαφορετικά από έναν Ερμή στους Ιχθύες.</li>
+        <li><strong>Αφροδίτη ♀:</strong> Ο Εραστής. Κυβερνά την έλξη, την τέχνη και το χρήμα. Δείχνει τι εκτιμάτε και πώς σαγηνεύετε.</li>
+        <li><strong>Άρης ♂:</strong> Ο Πολεμιστής. Κυβερνά τη δράση, τον θυμό και τη λίμπιντο. Δείχνει πώς μάχεστε για αυτό που θέλετε.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Οι Κοινωνικοί & Εξωτερικοί Πλανήτες (Αργής Κίνησης)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Δίας ♃:</strong> Ο Γκουρού. Εκεί που βρίσκετε την τύχη, την επέκταση και το νόημα.</li>
+        <li><strong>Κρόνος ♄:</strong> Ο Παιδαγωγός. Εκεί που αντιμετωπίζετε περιορισμούς, φόβο, αλλά τελικά την αυτοκυριαρχία μέσω της σκληρής δουλειάς.</li>
+        <li><strong>Ουρανός ♅, Ποσειδώνας ♆, Πλούτωνας ♇:</strong> Οι Γενεαλογικοί Πλανήτες. Αυτοί κινούνται τόσο αργά που διαμορφώνουν ολόκληρες γενιές, επηρεάζοντάς σας σε ένα βαθύ, υποσυνείδητο επίπεδο που περιλαμβάνει την εξέλιξη και το κάρμα.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Η Σκηνή: Οι 12 Οίκοι</h2>
+      <p>Ο χάρτης χωρίζεται σε 12 «Οίκους», σαν κομμάτια πίτσας. Κάθε οίκος κυβερνά έναν συγκεκριμένο τομέα της ζωής. Το πού βρίσκεται ένας πλανήτης σας λέει <em>πού</em> θα εκδηλωθεί η ενέργειά του.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>1ος Οίκος:</strong> Εαυτός, Σώμα, Εμφάνιση.</li>
+        <li><strong>2ος Οίκος:</strong> Χρήμα, Κατοχές, Αξίες.</li>
+        <li><strong>3ος Οίκος:</strong> Επικοινωνία, Αδέλφια, Σύντομα Ταξίδια.</li>
+        <li><strong>4ος Οίκος:</strong> Σπίτι, Οικογένεια, Ρίζες.</li>
+        <li><strong>5ος Οίκος:</strong> Δημιουργικότητα, Ρομάντζο, Παιδιά.</li>
+        <li><strong>6ος Οίκος:</strong> Καθημερινότητα, Υγεία, Υπηρεσία.</li>
+        <li><strong>7ος Οίκος:</strong> Γάμος, Συνεργασίες, Φανεροί Εχθροί.</li>
+        <li><strong>8ος Οίκος:</strong> Θάνατος, Σεξ, Χρήματα Άλλων.</li>
+        <li><strong>9ος Οίκος:</strong> Φιλοσοφία, Ταξίδια, Ανώτερη Εκπαίδευση.</li>
+        <li><strong>10ος Οίκος:</strong> Καριέρα, Δημόσια Εικόνα, Κληρονομιά.</li>
+        <li><strong>11ος Οίκος:</strong> Φίλοι, Δίκτυα, Ελπίδες/Επιθυμίες.</li>
+        <li><strong>12ος Οίκος:</strong> Υποσυνείδητο, Μυστικά, Πνευματικότητα.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Όψεις: Η Κοσμική Συνομιλία</h2>
+      <p>Οι πλανήτες δεν λειτουργούν μεμονωμένα. Σχηματίζουν γεωμετρικές γωνίες που ονομάζονται «Όψεις». Αυτές οι γραμμές συνδέουν τους ηθοποιούς στον χάρτη σας.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Ήπιες Όψεις (Τρίγωνο, Εξάγωνο):</strong> Αυτά είναι δώρα. Οι πλανήτες βοηθούν ο ένας τον άλλον. Τα πράγματα έρχονται εύκολα εδώ — μερικές φορές πολύ εύκολα, οδηγώντας σε τεμπελιά.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Δύσκολες Όψεις (Τετράγωνο, Αντίθεση):</strong> Αυτές είναι προκλήσεις. Οι πλανήτες μάχονται ή εμποδίζουν ο ένας τον άλλον. Ωστόσο, αυτά τα σημεία τριβής δημιουργούν την ενέργεια που απαιτείται για υψηλά επιτεύγματα. Οι περισσότεροι επιτυχημένοι άνθρωποι έχουν χάρτες γεμάτους Τετράγωνα!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Οι Δεσμοί της Μοίρας</h2>
+      <p>Τέλος, αναζητήστε τα σύμβολα σε σχήμα πέταλου. Ο <strong>Βόρειος Δεσμός</strong> αντιπροσωπεύει το πεπρωμένο σας — την κατεύθυνση που θέλει να ακολουθήσει η ψυχή σας σε αυτή τη ζωή. Μοιάζει άβολο και νέο. Ο <strong>Νότιος Δεσμός</strong> είναι η προηγούμενη ζωή σας (ή η πρώιμη παιδική ηλικία) — μοιάζει οικείο και εύκολο, αλλά η παραμονή εκεί οδηγεί σε στασιμότητα.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Η ερμηνεία είναι τέχνη</h3>
+      <p>Η ανάγνωση ενός γενέθλιου χάρτη είναι σαν να ακούτε μια συμφωνία. Μπορείτε να απομονώσετε τα βιολιά (Αφροδίτη), αλλά η μαγεία βρίσκεται σε ολόκληρη την ορχήστρα που παίζει μαζί. Στην Astralo, χρησιμοποιούμε προηγμένη Τεχνητή Νοημοσύνη εκπαιδευμένη σε αιώνες αστρολογικής σοφίας για να συνθέσουμε αυτά τα εκατομμύρια μεταβλητών σε μια σαφή, ευανάγνωστη ιστορία για ΕΣΑΣ.</p>
     `
 };
+

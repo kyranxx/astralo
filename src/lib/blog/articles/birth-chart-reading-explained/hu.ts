@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Születési képlet olvasása: Átfogó útmutató kozmikus térképedhez",
+  excerpt: "Fedezd fel személyiséged titkait végső születési képlet olvasási útmutatónkkal. Tanuld meg értelmezni a bolygókat, házakat, fényszögeket és a sorscsomópontokat, mint egy profi.",
+  category: "Asztrológiai alapok",
+  metaDescription: "Fedezd fel személyiséged titkait végső születési képlet olvasási útmutatónkkal. Tanuld meg értelmezni a bolygókat, házakat, fényszögeket és a sorscsomópontokat profi módon.",
+  keywords: "születési képlet, natal chart, asztrológiai képlet, asztrológia nagy hármas, aszcendens, holdszám, asztrológiai házak, planetáris fényszögek, születési képlet olvasása",
+  quickSummary: [
+    "A születési képleted egy 360 fokos pillanatkép az égboltról pontos születésed pillanatában",
+    "A \"Nagy Hármas\" (Nap, Hold, Aszcendens) alkotja személyiséged alapvető pilléreit",
+    "A 12 ház azt írja le, hogy \"hol\" történnek az események, míg a bolygók azt, hogy \"mi\" történik",
+    "A fényszögek (a bolygókat összekötő vonalak) feltárják belső konfliktusaidat és különleges tehetségeidet"
+  ],
+  keyTakeaways: [
+    "Az Aszcendens (felkelő jegy) gyakran pontosabb a jóslás szempontjából, mint a Napjegy",
+    "A szembenállások és kvadrátok hozzák létre a legsikeresebb embereket a rugalmasság révén",
+    "Az Északi Csomópont feltárja lelked karmikus irányát ebben az életben",
+    "A számítógéppel generált jelentések nagyszerűek, de az emberi árnyalat pótolhatatlan"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Lelked tervrajza" },
+    { id: "the-big-three", title: "A Nagy Hármas: Nap, Hold, Aszcendens" },
+    { id: "the-planets", title: "A bolygók: Belső vs. Külső" },
+    { id: "the-houses", title: "A 12 ház állása" },
+    { id: "aspects", title: "Fényszögek: A kozmikus párbeszéd" },
+    { id: "nodes", title: "A sorscsomópontok" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Lelked tervrajza</h2>
+      <p>Érezted már úgy, hogy nem teljesen illesz a csillagjegyed leírásához? "Oroszlán vagyok, de utálok a figyelem középpontjában lenni!" Ennek oka valószínűleg a <strong>születési képletedben</strong> (vagy natális képletedben) rejlik. Bár a Napjegyed fontos, ez csak egy változó egy hatalmas, összetett egyenletben.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>A születési képlet az égbolt egy térképe, amelyet a születésed pontos idejére, dátumára és helyére számítottak ki. Téged helyez az univerzum középpontjába, a bolygók pedig körülötted helyezkednek el. Gondolj rá úgy, mint a „kozmikus DNS-edre” – az instrukciók, tehetségek, kihívások és lehetőségek egyedi tárházára, amely csak hozzád tartozik.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">A Nagy Hármas: Nap, Hold, Aszcendens</h2>
+      <p>Mielőtt elmerülnénk az összetett geometriában, minden asztrológia-hallgatónak el kell sajátítania a „Nagy Hármast”. Ez a három pont határozza meg személyiséged nagy részét.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. A Nap ☀️ (Identitás)</h3>
+      <p>A Nap a tudatos egódat, az „Én vagyok”-ot képviseli. Ez az üzemanyagod, a hajtóerőd és az az energetikai frekvencia, amelyet kibocsátasz. Megválaszolja a kérdést: <em>„Ki vagyok én a magamban?”</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. A Hold 🌙 (Érzelem)</h3>
+      <p>A Hold a belső világodat, az ösztöneidet és a tudatalattidat képviseli. Meghatározza, hogyan reagálsz, ha megbántanak, éhes vagy fáradt vagy. Megválaszolja a kérdést: <em>„Mire van szükségem ahhoz, hogy biztonságban érezzem magam?”</em></p>
 
-      <h3>3. The Ascendant / Rising Jegy 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Az Aszcendens / Felkelő jegy 🏹 (Maszk)</h3>
+      <p>Az Aszcendens az a jegy, amely a keleti horizonton emelkedett fel születésed pillanatában. Ez az „interfészed” a világgal. Meghatározza fizikai megjelenésedet, stílusodat és az első benyomást. Megválaszolja a kérdést: <em>„Hogyan látnak mások?”</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">A bolygók: Belső vs. Külső</h2>
+      <p>A <strong>születési képlet olvasása</strong> során a bolygók a színészek, akik szerepet játszanak életed történetében.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>A Személyes Bolygók (Gyors mozgásúak)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkúr ☿️:</strong> A Hírvivő. Az intellektust, a beszédet és a logikát uralja. Egy Ikrek Merkúr másképp tárgyal, mint egy Halak Merkúr.</li>
+        <li><strong>Vénusz ♀:</strong> A Szerető. A vonzerőt, a művészetet és a pénzt uralja. Megmutatja, mit értékelsz, és hogyan csábítasz.</li>
+        <li><strong>Mars ♂:</strong> A Harcos. Az akciót, a haragot és a libidót uralja. Megmutatja, hogyan küzdesz azért, amit akarsz.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>A Társadalmi és Külső Bolygók (Lassú mozgásúak)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> A Guru. Ahol szerencsét, tágulást és értelmet találsz.</li>
+        <li><strong>Szaturnusz ♄:</strong> A Feladatmester. Ahol korlátozásokkal, félelemmel nézel szembe, de végül a kemény munka árán mesterré válsz.</li>
+        <li><strong>Uránusz ♅, Neptunusz ♆, Plútó ♇:</strong> A Generációs Bolygók. Ezek olyan lassan mozognak, hogy egész generációkat formálnak, és mély, tudatalatti szinten hatnak rád, fejlődést és karmát érintve.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">A Színpad: A 12 Ház</h2>
+      <p>A képlet 12 „Házra” van felosztva, mint egy pizza szeletei. Minden ház az élet egy-egy meghatározott területét irányítja. Ahol egy bolygó áll, az megmutatja, <em>hol</em> fog megnyilvánulni az energiája.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>1. Ház:</strong> Önmagunk, Test, Megjelenés.</li>
+        <li><strong>2. Ház:</strong> Pénz, Birtoklás, Értékek.</li>
+        <li><strong>3. Ház:</strong> Kommunikáció, Testvérek, Rövid utazások.</li>
+        <li><strong>4. Ház:</strong> Otthon, Család, Gyökerek.</li>
+        <li><strong>5. Ház:</strong> Kreativitás, Románc, Gyermekek.</li>
+        <li><strong>6. Ház:</strong> Napi rutin, Egészség, Szolgálat.</li>
+        <li><strong>7. Ház:</strong> Házasság, Partnerségek, Nyílt ellenségek.</li>
+        <li><strong>8. Ház:</strong> Halál, Szex, Mások pénze.</li>
+        <li><strong>9. Ház:</strong> Filozófia, Utazás, Felsőoktatás.</li>
+        <li><strong>10. Ház:</strong> Karrier, Közmegítélés, Örökség.</li>
+        <li><strong>11. Ház:</strong> Barátok, Hálózatok, Remények/Vágyak.</li>
+        <li><strong>12. Ház:</strong> Tudatalatti, Titkok, Spiritualitás.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Fényszögek: A kozmikus párbeszéd</h2>
+      <p>A bolygók nem elszigetelten működnek. Geometriai szögeket alkotnak, amelyeket „fényszögeknek” nevezünk. Ezek a vonalak kötik össze a szereplőket a képletedben.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Lágy fényszögek (Trigon, Szextil):</strong> Ezek ajándékok. A bolygók segítik egymást. Itt a dolgok könnyen jönnek – néha túl könnyen is, ami ellustuláshoz vezethet.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Kemény fényszögek (Kvadrát, Szembenállás):</strong> Ezek kihívások. A bolygók harcolnak egymással vagy blokkolják egymást. Azonban ezek a súrlódási pontok hozzák létre a nagy teljesítményhez szükséges energiát. A legsikeresebb emberek képlete tele van Kvadrátokkal!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">A sorscsomópontok</h2>
+      <p>Végül keresd a patkó szimbólumokat. Az <strong>Északi Csomópont</strong> a végzetedet képviseli – azt az irányt, amerre a lelked ebben az életben haladni akar. Gyakran kényelmetlen és újszerű. A <strong>Déli Csomópont</strong> az előző életed (vagy kora gyermekkorod) – ismerősnek és könnyűnek tűnik, de az ottmaradás stagnáláshoz vezet.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Az értelmezés művészet</h3>
+      <p>A születési képlet olvasása olyan, mint egy szimfónia hallgatása. Elkülönítheted a hegedűket (Vénusz), de a varázslat az egész zenekar együttes játékában rejlik. Az Astralo-nál fejlett mesterséges intelligenciát használunk, amelyet évszázadok asztrológiai bölcsességére képeztünk ki, hogy szinkronizáljuk ezt a milliónyi változót egy világos, olvasható történetté RÓLAD.</p>
     `
 };
+

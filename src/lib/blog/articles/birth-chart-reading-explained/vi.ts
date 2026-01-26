@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Cách Đọc Bản Đồ Sao: Hướng Dẫn Toàn Diện Về Bản Đồ Của Riêng Bạn",
+  excerpt: "Khám phá những bí mật về tính cách của bạn với hướng dẫn đọc bản đồ sao chi tiết nhất. Học cách giải mã các Hành Tinh, Nhà, Góc Chiếu và các Nút Giao Định Mệnh như một chuyên gia.",
+  category: "Cơ Bản Về Chiêm Tinh",
+  metaDescription: "Khám phá những bí mật về tính cách của bạn với hướng dẫn đọc bản đồ sao chi tiết nhất. Học cách giải mã các Hành Tinh, Nhà và Góc Chiếu như một chuyên gia.",
+  keywords: "bản đồ sao, đọc bản đồ sao, lá số tử vi phương tây, bộ ba quyền lực chiêm tinh, cung mọc, cung mặt trăng, các nhà trong chiêm tinh, góc chiếu hành tinh",
+  quickSummary: [
+    "Bản đồ sao của bạn là một bức ảnh chụp bầu trời 360 độ tại thời điểm chính xác bạn chào đời",
+    "\"Bộ ba quyền lực\" (Mặt Trời, Mặt Trăng, Cung Mọc) tạo nên cốt lõi tính cách của bạn",
+    "12 Nhà mô tả \"nơi\" các sự kiện diễn ra, trong khi các Hành Tinh mô tả \"cái gì\" đang diễn ra",
+    "Các Góc Chiếu (đường nối các hành tinh) tiết lộ những mâu thuẫn nội tại và tài năng đặc biệt của bạn"
+  ],
+  keyTakeaways: [
+    "Cung Mọc thường chính xác hơn Cung Mặt Trời trong việc dự đoán tương lai",
+    "Các góc chiếu khó (Góc Vuông, Góc Đối) tạo nên những người thành công nhất nhờ khả năng kiên cường",
+    "Nút Bắc tiết lộ hướng đi nghiệp quả của linh hồn bạn trong kiếp sống này",
+    "Các báo cáo do máy tính tạo ra rất tuyệt vời, nhưng sự tinh tế của con người là không thể thay thế"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Bản Thiết Kế Linh Hồn Bạn" },
+    { id: "the-big-three", title: "Bộ Ba Quyền Lực: Mặt Trời, Mặt Trăng, Cung Mọc" },
+    { id: "the-planets", title: "Các Hành Tinh: Cá Nhân vs. Thế Hệ" },
+    { id: "the-houses", title: "Ý Nghĩa Của 12 Nhà" },
+    { id: "aspects", title: "Góc Chiếu: Những Cuộc Trò Chuyện Vũ Trụ" },
+    { id: "nodes", title: "Các Nút Giao Định Mệnh" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Bản Thiết Kế Linh Hồn Bạn</h2>
+      <p>Bạn đã bao giờ cảm thấy mình không hoàn toàn giống với mô tả về cung hoàng đạo của mình chưa? "Tôi là Sư Tử, nhưng tôi cực kỳ ghét việc trở thành trung tâm của sự chú ý!" Lý do có lẽ nằm ẩn trong <strong>bản đồ sao</strong> (hay lá số cá nhân) của bạn. Mặc dù cung Mặt Trời rất quan trọng, nhưng nó chỉ là một biến số trong một phương trình khổng lồ và phức tạp.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Bản đồ sao là một bản đồ bầu trời được tính toán dựa trên thời gian, ngày tháng và địa điểm sinh chính xác của bạn. Nó đặt bạn vào trung tâm của vũ trụ, với các hành tinh được sắp xếp xung quanh bạn. Hãy coi nó như "DNA Vũ Trụ" của bạn — một tập hợp các hướng dẫn, tài năng, thách thức và tiềm năng độc nhất vô nhị chỉ thuộc về riêng bạn.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Bộ Ba Quyền Lực: Mặt Trời, Mặt Trăng, Cung Mọc</h2>
+      <p>Trước khi đi sâu vào hình học phức tạp, mọi học viên chiêm tinh đều phải nắm vững "Bộ Ba Quyền Lực" của mình. Ba điểm này quyết định phần lớn tính cách của bạn.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Mặt Trời ☀️ (Cái Tôi)</h3>
+      <p>Mặt Trời đại diện cho cái tôi ý thức, cái "Tôi là". Đó là nhiên liệu, động lực và tần số năng lượng mà bạn phát ra. Nó trả lời cho câu hỏi: <em>"Cốt lõi của tôi là ai?"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Mặt Trăng 🌙 (Cảm Xúc)</h3>
+      <p>Mặt Trăng đại diện cho thế giới nội tâm, bản năng và tiềm thức của bạn. Nó chi phối cách bạn phản ứng khi bị tổn thương, đói hoặc mệt mỏi. Nó trả lời cho câu hỏi: <em>"Tôi cần gì để cảm thấy an toàn?"</em></p>
 
-      <h3>3. The Ascendant / Rising Cung 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Cung Mọc 🏹 (Chiếc Mặt Nạ)</h3>
+      <p>Cung Mọc là cung hoàng đạo đang mọc ở đường chân trời phía Đông tại thời điểm bạn sinh ra. Đó là "giao diện" của bạn với thế giới. Nó quyết định ngoại hình, phong cách và ấn tượng đầu tiên của bạn. Nó trả lời cho câu hỏi: <em>"Người khác nhìn nhận tôi như thế nào?"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Các Hành Tinh: Cá Nhân vs. Thế Hệ</h2>
+      <p>Trong việc <strong>đọc bản đồ sao</strong>, các hành tinh là các diễn viên đóng những vai khác nhau trong câu chuyện cuộc đời bạn.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Các Hành Tinh Cá Nhân (Di Chuyển Nhanh)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Thủy Tinh ☿️:</strong> Sứ giả. Cai quản trí tuệ, lời nói và logic. Một Thủy Tinh ở Song Tử sẽ thương lượng khác với một Thủy Tinh ở Song Ngư.</li>
+        <li><strong>Kim Tinh ♀:</strong> Người tình. Cai quản sự thu hút, nghệ thuật và tiền bạc. Nó cho thấy những gì bạn coi trọng và cách bạn quyến rũ.</li>
+        <li><strong>Hỏa Tinh ♂:</strong> Chiến binh. Cai quản hành động, sự giận dữ và ham muốn. Nó cho thấy cách bạn chiến đấu cho những gì mình muốn.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Các Hành Tinh Xã Hội & Thế Hệ (Di Chuyển Chậm)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Mộc Tinh ♃:</strong> Người thầy. Nơi bạn tìm thấy sự may mắn, mở rộng và ý nghĩa cuộc sống.</li>
+        <li><strong>Thổ Tinh ♄:</strong> Người quản thúc. Nơi bạn đối mặt với những hạn chế, nỗi sợ hãi, nhưng cuối cùng là sự làm chủ thông qua nỗ lực làm việc.</li>
+        <li><strong>Thiên Vương Tinh ♅, Hải Vương Tinh ♆, Diêm Vương Tinh ♇:</strong> Các hành tinh thế hệ. Những hành tinh này di chuyển rất chậm nên chúng định hình cả một thế hệ, ảnh hưởng đến bạn ở mức độ tiềm thức sâu sắc liên quan đến sự tiến hóa và nghiệp quả.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Sân Khấu: 12 Nhà</h2>
+      <p>Bản đồ được chia thành 12 "Nhà", giống như các miếng bánh pizza. Mỗi nhà cai quản một lĩnh vực cụ thể trong cuộc sống. Vị trí của một hành tinh sẽ cho bạn biết năng lượng của nó sẽ thể hiện <em>ở đâu</em>.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>Nhà 1:</strong> Bản thân, cơ thể, ngoại hình.</li>
+        <li><strong>Nhà 2:</strong> Tiền bạc, tài sản, giá trị.</li>
+        <li><strong>Nhà 3:</strong> Giao tiếp, anh chị em, những chuyến đi ngắn.</li>
+        <li><strong>Nhà 4:</strong> Gia đình, mái ấm, cội nguồn.</li>
+        <li><strong>Nhà 5:</strong> Sáng tạo, lãng mạn, con cái.</li>
+        <li><strong>Nhà 6:</strong> Công việc hằng ngày, sức khỏe, sự phục vụ.</li>
+        <li><strong>Nhà 7:</strong> Hôn nhân, đối tác, kẻ thù công khai.</li>
+        <li><strong>Nhà 8:</strong> Cái chết, tình dục, tiền bạc của người khác.</li>
+        <li><strong>Nhà 9:</strong> Triết học, du lịch, giáo dục cao học.</li>
+        <li><strong>Nhà 10:</strong> Sự nghiệp, hình ảnh công chúng, di sản.</li>
+        <li><strong>Nhà 11:</strong> Bạn bè, mạng lưới xã hội, hy vọng/mong ước.</li>
+        <li><strong>Nhà 12:</strong> Tiềm thức, bí mật, tâm linh.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Góc Chiếu: Những Cuộc Trò Chuyện Vũ Trụ</h2>
+      <p>Các hành tinh không hoạt động riêng lẻ. Chúng tạo thành các góc hình học gọi là "Góc Chiếu". Những đường này kết nối các diễn viên trong bản đồ của bạn.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Góc Chiếu Thuận Lợi (Tam Hợp, Lục Hợp):</strong> Đây là những món quà. Các hành tinh hỗ trợ lẫn nhau. Mọi thứ đến dễ dàng hơn ở đây — đôi khi quá dễ dàng, dẫn đến sự lười biếng.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Góc Chiếu Khó Khăn (Góc Vuông, Góc Đối):</strong> Đây là những thách thức. Các hành tinh đang chiến đấu hoặc cản trở lẫn nhau. Tuy nhiên, những điểm ma sát này tạo ra năng lượng cần thiết cho những thành tựu cao. Hầu hết những người thành công đều có bản đồ sao đầy những Góc Vuông!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Các Nút Giao Định Mệnh</h2>
+      <p>Cuối cùng, hãy tìm biểu tượng hình móng ngựa. <strong>Nút Bắc</strong> đại diện cho định mệnh của bạn — hướng mà linh hồn bạn muốn hướng tới trong kiếp sống này. Nó có cảm giác không thoải mái và mới mẻ. <strong>Nút Nam</strong> là kiếp trước (hoặc thời thơ ấu) — nó mang lại cảm giác quen thuộc và dễ dàng, nhưng việc cứ mãi ở đó sẽ dẫn đến sự trì trệ.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Giải mã là một môn nghệ thuật</h3>
+      <p>Đọc bản đồ sao giống như việc thưởng thức một bản giao hưởng. Bạn có thể tách riêng tiếng đàn violin (Kim Tinh), nhưng điều kỳ diệu nằm ở cả dàn nhạc cùng hòa tấu. Tại Astralo, chúng tôi sử dụng trí tuệ nhân tạo tiên tiến được đào tạo dựa trên kiến thức chiêm tinh qua nhiều thế kỷ để tổng hợp hàng triệu biến số này thành một câu chuyện rõ ràng, dễ hiểu về CHÍNH BẠN.</p>
     `
 };
+

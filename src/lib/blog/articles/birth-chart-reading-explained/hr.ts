@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 Tumačenje natalne karte: Sveobuhvatan vodič kroz vašu kozmičku kartu",
+  excerpt: "Otkrijte tajne svoje osobnosti uz naš vrhunski vodič za tumačenje natalne karte. Naučite interpretirati planete, kuće, aspekte i čvorove sudbine poput profesionalca.",
+  category: "Osnove astrologije",
+  metaDescription: "Otkrijte tajne svoje osobnosti uz naš vrhunski vodič za tumačenje natalne karte. Naučite interpretirati planete, kuće i aspekte kao stručnjak.",
+  keywords: "natalna karta, tumačenje natalne karte, horoskopska karta, velika trojka u astrologiji, podznak, znak mjeseca, astrološke kuće, planetarni aspekti, kako čitati natalnu kartu",
+  quickSummary: [
+    "Vaša natalna karta je snimka neba od 360 stupnjeva u točnom trenutku vašeg rođenja",
+    "„Velika trojka“ (Sunce, Mjesec, Podznak) čini jezgru vaše osobnosti",
+    "12 kuća opisuje „gdje“ se događaji odvijaju, dok planeti opisuju „što“ se događa",
+    "Aspekti (linije koje povezuju planete) otkrivaju vaše unutarnje konflikte i posebne talente"
+  ],
+  keyTakeaways: [
+    "Podznak (Ascendant) je često točniji za predviđanja od sunčevog znaka",
+    "Teški aspekti (kvadrati, opozicije) stvaraju najuspješnije ljude kroz otpornost",
+    "Sjeverni čvor otkriva karmički smjer vaše duše u ovom životu",
+    "Računalno generirani izvještaji su izvrsni, ali ljudska nijansa je nezamjenjiva"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "Nacrt vaše duše" },
+    { id: "the-big-three", title: "Velika trojka: Sunce, Mjesec, Podznak" },
+    { id: "the-planets", title: "Planeti: Unutarnji naspram vanjskih" },
+    { id: "the-houses", title: "Status 12 kuća" },
+    { id: "aspects", title: "Aspekti: Kozmički razgovor" },
+    { id: "nodes", title: "Čvorovi sudbine" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">Nacrt vaše duše</h2>
+      <p>Jeste li se ikada osjećali kao da se ne uklapate sasvim u opis svog horoskopskog znaka? „Ja sam Lav, ali mrzim biti u centru pažnje!“ Razlog se vjerojatno krije u vašoj <strong>natalnoj karti</strong> (ili rođendanskoj karti). Iako je vaš sunčev znak važan, on je samo jedna varijabla u masovnoj, složenoj jednadžbi.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>Natalna karta je karta neba izračunata za točno vrijeme, datum i lokaciju vašeg rođenja. Ona vas postavlja u središte svemira, s planetima raspoređenim oko vas. Razmišljajte o njoj kao o svom „kozmičkom DNK“ – jedinstvenom skupu uputa, talenata, izazova i potencijala koji pripada samo vama.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">Velika trojka: Sunce, Mjesec, Podznak</h2>
+      <p>Prije nego što uronite u složenu geometriju, svaki student astrologije mora savladati svoju „Veliku trojku“. Ove tri točke određuju većinu vaše osobnosti.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. Sunce ☀️ (Identitet)</h3>
+      <p>Sunce predstavlja vaš svjesni ego, vaše „Ja jesam“. To je vaše gorivo, vaš pogon i energetska frekvencija koju emitirate. Ono odgovara na pitanje: <em>„Tko sam ja u svojoj srži?“</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. Mjesec 🌙 (Emocija)</h3>
+      <p>Mjesec predstavlja vaš unutarnji svijet, vaše instinkte i vaše podsvjesno. On diktira kako reagirate kada ste povrijeđeni, gladni ili umorni. Odgovara na pitanje: <em>„Što mi je potrebno da bih se osjećao sigurno?“</em></p>
 
-      <h3>3. The Ascendant / Rising Znak 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. Podznak / Ascendent 🏹 (Maska)</h3>
+      <p>Podznak je horoskopski znak koji je izlazio na istočnom horizontu u trenutku vašeg rođenja. To je vaše „sučelje“ sa svijetom. Određuje vaš fizički izgled, vaš stil i prvi dojam koji ostavljate. Odgovara na pitanje: <em>„Kako me drugi vide?“</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">Planeti: Unutarnji naspram vanjskih</h2>
+      <p>U <strong>tumačenju natalne karte</strong>, planeti su glumci koji igraju uloge u priči vašeg života.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>Osobni planeti (brzo se kreću)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>Merkur ☿️:</strong> Glasnik. Upravlja vašim intelektom, govorom i logikom. Merkur u Blizancima pregovara drugačije od Merkura u Ribama.</li>
+        <li><strong>Venera ♀:</strong> Ljubavnica. Upravlja privlačnošću, umjetnošću i novcem. Pokazuje što cijenite i kako zavodite.</li>
+        <li><strong>Mars ♂:</strong> Ratnik. Upravlja akcijom, bijesom i libidom. Pokazuje kako se borite za ono što želite.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>Društveni i vanjski planeti (sporo se kreću)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>Jupiter ♃:</strong> Guru. Gdje nalazite sreću, ekspanziju i smisao.</li>
+        <li><strong>Saturn ♄:</strong> Nadzornik. Gdje se suočavate s ograničenjima i strahom, ali na kraju i majstorstvom kroz naporan rad.</li>
+        <li><strong>Uran ♅, Neptun ♆, Pluton ♇:</strong> Generacijski planeti. Ovi se planeti kreću toliko sporo da oblikuju čitave generacije, utječući na vas na dubokoj, podsvjesnoj razini koja uključuje evoluciju i karmu.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">Pozornica: 12 kuća</h2>
+      <p>Karta je podijeljena na 12 „kuća“, poput kriški pizze. Svaka kuća upravlja određenim područjem života. Gdje planet sjedi govori vam <em>gdje</em> će se njegova energija manifestirati.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>1. kuća:</strong> Ja, tijelo, izgled.</li>
+        <li><strong>2. kuća:</strong> Novac, posjedi, vrijednosti.</li>
+        <li><strong>3. kuća:</strong> Komunikacija, braća i sestre, kratka putovanja.</li>
+        <li><strong>4. kuća:</strong> Dom, obitelj, korijeni.</li>
+        <li><strong>5. kuća:</strong> Kreativnost, romantika, djeca.</li>
+        <li><strong>6. kuća:</strong> Svakodnevna rutina, zdravlje, služenje.</li>
+        <li><strong>7. kuća:</strong> Brak, partnerstva, otvoreni neprijatelji.</li>
+        <li><strong>8. kuća:</strong> Smrt, seks, novac drugih ljudi.</li>
+        <li><strong>9. kuća:</strong> Filozofija, putovanja, visoko obrazovanje.</li>
+        <li><strong>10. kuća:</strong> Karijera, javni imidž, nasljeđe.</li>
+        <li><strong>11. kuća:</strong> Prijatelji, mreže, nade/želje.</li>
+        <li><strong>12. kuća:</strong> Podsvijest, tajne, spiritualnost.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">Aspekti: Kozmički razgovor</h2>
+      <p>Planeti ne rade izolirano. Oni tvore geometrijske kutove zvane „aspekti“. Ove linije povezuju glumce u vašoj karti.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>Laki aspekti (trigon, sekstil):</strong> To su darovi. Planeti pomažu jedni drugima. Ovdje stvari dolaze lako – ponekad i prelagano, što vodi do lijenosti.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>Teški aspekti (kvadrat, opozicija):</strong> To su izazovi. Planeti se bore ili blokiraju jedni druge. Međutim, te točke trenja stvaraju energiju potrebnu za visoka postignuća. Većina uspješnih ljudi ima karte pune kvadrata!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">Čvorovi sudbine</h2>
+      <p>Na kraju potražite simbole potkove. <strong>Sjeverni čvor</strong> predstavlja vašu sudbinu – smjer u kojem vaša duša želi ići u ovom životu. Čini se neugodnim i novim. <strong>Južni čvor</strong> je vaš prošli život (ili rano djetinjstvo) – čini se poznatim i lakim, ali ostajanje tamo vodi do stagnacije.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>Interpretacija je umjetnost</h3>
+      <p>Čitanje natalne karte je poput slušanja simfonije. Možete izolirati violine (Venera), ali magija je u cijelom orkestru koji svira zajedno. U Astralu koristimo naprednu umjetnu inteligenciju obučenu na stoljećima astrološke mudrosti kako bismo sintetizirali ove milijune varijabli u jasnu, čitljivu priču o VAMA.</p>
     `
 };
+

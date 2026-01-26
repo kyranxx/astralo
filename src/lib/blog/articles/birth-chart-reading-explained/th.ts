@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 การอ่านพื้นดวงชะตา (Birth Chart): คู่มือฉβับสมบูรณ์สู่แผนที่ชีวิตของคุณ",
+  excerpt: "ไขความลับของบุคลิกภาพของคุณด้วยคู่มือการอ่านพื้นดวงชะตาฉβับสมบูรณ์ เรียนรู้การตีความดาวเคราะห์, เรือนชะตา, มุมสัมพันธ์ และจุดตัดราหู-เกตุเหมือนมือโปร",
+  category: "พื้นฐานโหราศาสตร์",
+  metaDescription: "ไขความลับของบุคลิกภาพของคุณด้วยคู่มือการอ่านพื้นดวงชะตาฉβับสมบูรณ์ เรียนรู้การตีความดาวเคราะห์, เรือนชะตา และมุมสัมพันธ์เหมือนผู้เชี่ยวชาญ",
+  keywords: "พื้นดวงชะตา, การอ่านดวง, แผนที่ดวงชะตา, สามจุดสำคัญในโหราศาสตร์, ลัคนา, จันทร์เสวย, เรือนชะตา, มุมสัมพันธ์ของดวงดาว, อ่านพื้นดวงเอง",
+  quickSummary: [
+    "พื้นดวงชะตาของคุณคือภาพถ่ายท้องฟ้าแบบ 360 องศา ณ วินาทีที่คุณเกิด",
+    "\"จุดสำคัญทั้งสาม\" (อาทิตย์, จันทร์, ลัคนา) คือแกนหลักของบุคลิกภาพของคุณ",
+    "เรือนชะตาทั้ง 12 บอกว่าเหตุการณ์เกิดขึ้น \"ที่ไหน\" ในขณะที่ดาวเคราะห์บอกว่าเกิด \"อะไร\" ขึ้น",
+    "มุมสัมพันธ์ (เส้นเชื่อมระหว่างดาวเคราะห์) เผยให้เห็นความขัดแย้งภายในและพรสวรรค์พิเศษของคุณ"
+  ],
+  keyTakeaways: [
+    "ลัคนา (Rising Sign) มักจะแม่นยำกว่าราศีเกิด (Sun Sign) ในการทำนายดวงชะตา",
+    "มุมสัมพันธ์ที่ยาก (ฉาก, เล็ง) มักสร้างคนที่ประสบความสำเร็จสูงสุดผ่านความพยายามและความอดทน",
+    "ราหู (North Node) บ่งบอกถึงจุดหมายทางกรรมที่จิตวิญญาณของคุณต้องการมุ่งไปในชาตินี้",
+    "รายงานดวงชะตาจากคอมพิวเตอร์นั้นยอดเยี่ยม แต่การตีความแบบมีศิลปะของมนุษย์มีความละเอียดอ่อนที่หาอะไรมาทดแทนไม่ได้"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "พิมพ์เขียวแห่งจิตวิญญาณ" },
+    { id: "the-big-three", title: "สามจุดสำคัญ: อาทิตย์, จันทร์, ลัคนา" },
+    { id: "the-planets", title: "ดาวเคราะห์: ดาวส่วนตัว vs ดาวรุ่น" },
+    { id: "the-houses", title: "เรือนชะตาทั้ง 12" },
+    { id: "aspects", title: "มุมสัมพันธ์: บทสนทนาแห่งจักรวาล" },
+    { id: "nodes", title: "จุดตัดแห่งโชคชะตา" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">พิมพ์เขียวแห่งจิตวิญญาณ</h2>
+      <p>คุณเคยรู้สึกไหมว่าตัวเองไม่เข้ากับคำบรรยายของราศีเกิดเลย? "ฉันเป็นคนราศีสิงห์นะ แต่ฉันเกลียดการเป็นจุดสนใจมาก!" เหตุผลอาจอยู่ในการ <strong>อ่านดวงชะตา</strong> (หรือพื้นดวง) ของคุณ ในขณะที่ราศีเกิด (Sun Sign) ของคุณมีความสำคัญ แต่มันเป็นเพียงตัวแปรเดียวในสมการอันซับซ้อนมหาศาล</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>พื้นดวงชะตาคือแผนผังท้องฟ้าที่คำนวณจากเวลาเกิด วันที่เกิด และสถานที่เกิดที่แน่นอนของคุณ มันวางคุณไว้ที่ศูนย์กลางของจักรวาล โดยมีดาวเคราะห์เรียงตัวอยู่รอบๆ ตัวคุณ ให้คิดซะว่ามันคือ "DNA แห่งจักรวาล" ของคุณ — ชุดคำสั่ง พรสวรรค์ ความท้าทาย และศักยภาพที่เป็นของคุณเพียงผู้เดียว</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">สามจุดสำคัญ: อาทิตย์, จันทร์, ลัคนา</h2>
+      <p>ก่อนจะเจาะลึกไปที่เรขาคณิตอันซับซ้อน นักเรียนโหราศาสตร์ทุกคนต้องเชี่ยวชาญ "จุดสำคัญทั้งสาม" ของตนเอง จุดทั้งสามนี้เป็นตัวกำหนดบุคลิกภาพส่วนใหญ่ของคุณ</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. อาทิตย์ ☀️ (ตัวตน)</h3>
+      <p>ดาวอาทิตย์เป็นตัวแทนของอัตตาที่รู้ตัว คือ "ความเป็นตัวฉัน" มันคือพลังงาน แรงขับเคลื่อน และความถี่ที่คุณแผ่ออกมา มันตอบคำถามที่ว่า: <em>"ตัวตนที่แท้จริงของฉันคือใคร?"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. จันทร์ 🌙 (อารมณ์)</h3>
+      <p>ดาวจันทร์เป็นตัวแทนของโลกภายใน สัญชาตญาณ และจิตใต้สำนึกของคุณ มันกำหนดว่าคุณจะตอบสนองอย่างไรเมื่อคุณเจ็บปวด หิว หรือเหนื่อย มันตอบคำถามที่ว่า: <em>"ฉันต้องการอะไรเพื่อให้รู้สึกปลอดภัย?"</em></p>
 
-      <h3>3. The Ascendant / Rising สัญลักษณ์ 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. ลัคนา 🏹 (หน้ากากกั้นโลก)</h3>
+      <p>ลัคนาคือราศีที่กำลังขึ้นที่ขอบฟ้าทิศตะวันออกในขณะที่คุณเกิด มันคือ "หน้าด่าน" ของคุณสู่โลกภายนอก มันกำหนดรูปลักษณ์ภายนอก สไตล์ และความประทับใจแรกเห็น มันตอบคำถามที่ว่า: <em>"คนอื่นมองฉันอย่างไร?"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">ดาวเคราะห์: ดาวส่วนตัว vs ดาวรุ่น</h2>
+      <p>ใน <strong>การอ่านพื้นดวงชะตา</strong> ดาวเคราะห์คือนักแสดงที่สวมบทบาทต่างๆ ในเรื่องราวชีวิตของคุณ</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>ดาวเคราะห์ส่วนตัว (เคลื่อนที่เร็ว)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>ดาวพุธ ☿️:</strong> ผู้ส่งสาร คุมสติปัญญา การพูด และตรรกะ ดาวพุธในราศีเมถุนจะมีวิธีการเจรจาที่ต่างจากดาวพุธในราศีมีน</li>
+        <li><strong>ดาวศุกร์ ♀:</strong> ผู้ให้ความรัก คุมแรงดึงดูด ศิลปะ และเงินทอง มันบ่งบอกถึงสิ่งที่คุณให้คุณค่าและวิธีที่คุณใช้ดึงดูดใจ</li>
+        <li><strong>ดาวอังคาร ♂:</strong> นักรบ คุมการกระทำ ความโกรธ และแรงขับทางเพศ มันแสดงให้เห็นว่าคุณต่อสู้เพื่อสิ่งที่คุณต้องการอย่างไร</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>ดาวสังคมและดาวรุ่น (เคลื่อนที่ช้า)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>ดาวพฤหัสบดี ♃:</strong> คุรุ จุดที่คุณจะพบโชค การขยายตัว และความหมายกว้างไกล</li>
+        <li><strong>ดาวเสาร์ ♄:</strong> ผู้คุมกฎ จุดที่คุณต้องเผชิญกับข้อจำกัด ความกลัว แต่ในที่สุดจะกลายเป็นผู้เชี่ยวชาญผ่านการทำงานหนัก</li>
+        <li><strong>ดาวยูเรนัส ♅, ดาวเนปจูน ♆, ดาวพลูโต ♇:</strong> ดาวเคราะห์รุ่นดาวพวกนี้เคลื่อนที่ช้ามากจนหล่อหลอมคนทั้งรุ่น และส่งผลกระทบต่อคุณในระดับจิตใต้สำนึกอันลึกซึ้งที่เกี่ยวข้องกับวิวัฒนาการและกรรม</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">เวที: เรือนชะตาทั้ง 12</h2>
+      <p>ดวงชะตาแบ่งออกเป็น 12 "เรือน" เหมือนชิ้นพิซซ่า แต่ละเรือนควบคุมส่วนที่เฉพาะเจาะจาะของชีวิต ตำแหน่งที่ดาวเคราะห์สถิตอยู่จะบอกคุณว่าพลังงานของดาวดวงนั้นจะสำแดงผลที่ <em>ไหน</em></p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>เรือนที่ 1:</strong> ตัวตน, ร่างกาย, รูปลักษณ์</li>
+        <li><strong>เรือนที่ 2:</strong> การเงิน, ทรัพย์สิน, คุณค่า</li>
+        <li><strong>เรือนที่ 3:</strong> การสื่อสาร, พี่น้อง, การเดินทางระยะสั้น</li>
+        <li><strong>เรือนที่ 4:</strong> บ้าน, ครอบครัว, รากเหง้า</li>
+        <li><strong>เรือนที่ 5:</strong> ความคิดสร้างสรรค์, ความรัก, บุตร</li>
+        <li><strong>เรือนที่ 6:</strong> กิจวัตรประจำวัน, สุขภาพ, การบริการ</li>
+        <li><strong>เรือนที่ 7:</strong> การแต่งงาน, หุ้นส่วน, ศัตรูที่เปิดเผย</li>
+        <li><strong>เรือนที่ 8:</strong> ความตาย, เพศ, ทรัพย์สินของผู้อื่น</li>
+        <li><strong>เรือนที่ 9:</strong> ปรัชญา, การเดินทางไกล, การศึกษาระดับสูง</li>
+        <li><strong>เรือนที่ 10:</strong> อาชีพ, ภาพลักษณ์ต่อสาธารณะ, มรดก</li>
+        <li><strong>เรือนที่ 11:</strong> มิตรสหาย, เครือข่าย, ความหวัง/ความปรารถนา</li>
+        <li><strong>เรือนที่ 12:</strong> จิตใต้สำนึก, ความลับ, จิตวิญญาณ</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">มุมสัมพันธ์: บทสนทนาแห่งจักรวาล</h2>
+      <p>ดาวเคราะห์ไม่ได้ทำงานแยกส่วนกัน พวกมันทำมุมทางเรขาคณิตที่เรียกว่า "มุมสัมพันธ์" (Aspects) เส้นเหล่านี้เชื่อมโยงนักแสดงในดวงของคุณเข้าด้วยกัน</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>มุมสัมพันธ์ที่ดี (ตรีโกณ, โยค):</strong> เปรียบเสมือนพรสวรรค์ ดาวเคราะห์จะช่วยเหลือกัน สิ่งต่างๆ จะราบรื่น — บางครั้งก็ราบรื่นเกินไปจนอาจทำให้เกิดความขี้เกียจได้</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>มุมสัมพันธ์ที่ยาก (ฉาก, เล็ง):</strong> เปรียบเสมือนความท้าทาย ดาวเคราะห์กำลังต่อสู้หรือขัดขวางกันเอง อย่างไรก็ตาม จุดเสียดทานเหล่านี้จะสร้างพลังงานที่จำเป็นต่อความสำเร็จอันยิ่งใหญ่ คนที่ประสบความสำเร็จส่วนใหญ่มีดวงที่เต็มไปด้วยมุมฉาก!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">จุดตัดแห่งโชคชะตา</h2>
+      <p>สุดท้าย ให้มองหาสัญลักษณ์รูปเกือกม้า <strong>ราหู (North Node)</strong> เป็นตัวแทนของจุดหมายปลายทางของคุณ — ทิศทางที่วิญญานของคุณต้องการไปในชาตินี้ มันมักจะรู้สึกไม่คุ้นเคยและท้าทาย ส่วน <strong>เกตุ (South Node)</strong> คืออดีตชาติของคุณ (หรือวัยเด็ก) — มันรู้สึกคุ้นเคยและง่าย แต่การยึดอยู่ตรงนั้นจะนำไปสู่ความหยุดนิ่ง</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>การตีความคือศิลปะ</h3>
+      <p>การอ่านพื้นดวงชะตาก็เหมือนกับการฟังเพลงออร์เคสตรา คุณสามารถแยกแยะเสียงไวโอลิน (ดาวศุกร์) ออกมาได้ แต่ความมหัศจรรย์อยู่ที่วงออร์เคสตราทั้งวงที่กำลังบรรเลงร่วมกัน ที่ Astralo เราใช้ AI ขั้นสูงที่ได้รับการฝึกฝนจากภูมิปัญญาโหราศาสตร์มาหลายศตวรรษ เพื่อสังเคราะห์ตัวแปรนับล้านเหล่านี้ให้เป็นเรื่องราวที่ชัดเจนและอ่านง่ายเกี่ยวกับตัวคุณ</p>
     `
 };
+

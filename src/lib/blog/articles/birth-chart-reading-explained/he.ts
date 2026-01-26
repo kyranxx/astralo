@@ -4,77 +4,95 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: "🔮 Birth Chart Reading: The Comprehensive Guide to Your Cosmic Map",
-    excerpt: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    category: "Astrology Basics",
-    metaDescription: "Unlock the secrets of your personality with our ultimate birth chart reading guide. Learn to interpret Planets, Houses, Aspects, and the Nodes of Fate like a pro.",
-    keywords: "birth chart, natal chart, astrology chart, big three astrology, rising sign, moon sign, astrology houses, planetary aspects, read my birth chart",
-    quickSummary: ["Your birth chart is a 360-degree screenshot of the sky at your exact moment of birth","The \"Big Three\" (Sun, Moon, Rising) form the core tripod of your personality","The 12 Houses describe \"where\" events happen, while Planets describe \"what\" happens","Aspects (lines connecting planets) reveal your internal conflicts and special talents"],
-    keyTakeaways: ["The Ascendant (Rising Sign) is often more accurate for prediction than the Sun Sign","Hard aspects (Squares, Oppositions) create the most successful people through resilience","The North Node reveals your soul's karmic direction in this lifetime","Computer-generated reports are great, but human nuance is irreplaceable"],
-    tableOfContents: [{"id":"what-is-birth-chart","title":"The Blueprint of Your Soul"},{"id":"the-big-three","title":"The Big Three: Sun, Moon, Rising"},{"id":"the-planets","title":"The Planets: Inner vs. Outer"},{"id":"the-houses","title":"The Status of the 12 Houses"},{"id":"aspects","title":"Aspects: The Cosmic Conversation"},{"id":"nodes","title":"The Nodes of Fate"}],
-    content: `
-      <h2 id="what-is-birth-chart">The Blueprint of Your Soul</h2>
-      <p>Have you ever felt like you don't quite fit the description of your Zodiac sign? "I'm a Leo, but I hate being the center of attention!" The reason is likely hidden in your <strong>birth chart</strong> (or natal chart). While your Sun sign is important, it is only one variable in a massive, complex equation.</p>
+  title: "🔮 קריאת מפת לידה: המדריך המקיף למפה הקוסמית שלך",
+  excerpt: "חשפו את סודות האישיות שלכם בעזרת המדריך האולטימטיבי שלנו לקריאת מפת לידה. למדו לפרש כוכבי לכת, בתים, היבטים וצמתי גורל כמו מקצוענים.",
+  category: "יסודות האסטרולוגיה",
+  metaDescription: "חשפו את סודות האישיות שלכם בעזרת המדריך האולטימטיבי שלנו לקריאת מפת לידה. למדו לפרש כוכבי לכת, בתים והיבטים כמו מומחים.",
+  keywords: "מפת לידה, קריאת מפת לידה, מפה אסטרולוגית, השלישייה הגדולה באסטרולוגיה, אופק, מזל ירח, בתים אסטרולוגיים, היבטים פלנטריים, איך לקרוא מפת לידה",
+  quickSummary: [
+    "מפת הלידה שלך היא תמונת מצב של 360 מעלות של השמיים ברגע המדויק של לידתך",
+    "\"השלישייה הגדולה\" (שמש, ירח, אופק) מהווה את עמוד השדרה של האישיות שלך",
+    "12 הבתים מתארים \"איפה\" אירועים קורים, בעוד כוכבי הלכת מתארים \"מה\" קורה",
+    "היבטים (קווים המחברים בין כוכבי לכת) חושפים את הקונפליקטים הפנימיים והכישרונות המיוחדים שלך"
+  ],
+  keyTakeaways: [
+    "האופק (מזל עולה) לעיתים קרובות מדויק יותר לחיזוי מאשר מזל השמש",
+    "היבטים מאתגרים (ריבועים, מולויות) יוצרים את האנשים המצליחים ביותר בזכות חוסן",
+    "צומת הצפוני חושפת את הכיוון הקרמתי של הנשמה שלך בחיים אלה",
+    "דוחות ממוחשבים הם נהדרים, אך הניואנס האנושי הוא בלתי ניתן להחלפה"
+  ],
+  tableOfContents: [
+    { id: "what-is-birth-chart", title: "התוכנית של הנשמה שלך" },
+    { id: "the-big-three", title: "השלישייה הגדולה: שמש, ירח, אופק" },
+    { id: "the-planets", title: "כוכבי הלכת: אישיים לעומת חיצוניים" },
+    { id: "the-houses", title: "הסטטוס של 12 הבתים" },
+    { id: "aspects", title: "היבטים: השיחה הקוסמית" },
+    { id: "nodes", title: "צמתי הגורל" }
+  ],
+  content: `
+      <h2 id="what-is-birth-chart">התוכנית של הנשמה שלך</h2>
+      <p>האם אי פעם הרגשתם שאתם לא ממש מתאימים לתיאור של מזל הזודיאק שלכם? \"אני אריה, אבל אני שונא להיות מרכז התשומת לב!\" הסיבה כנראה חבויה בתוך <strong>מפת הלידה</strong> שלכם (הידועה גם כמפה נטלית). בעוד שמזל השמש שלכם חשוב, הוא רק משתנה אחד במשוואה מסיבית ומורכבת.</p>
       
-      <p>A birth chart is a map of the heavens calculated for the exact time, date, and location of your birth. It places you at the center of the universe, with the planets arranged around you. Think of it as your "Cosmic DNA"—a unique set of instructions, talents, challenges, and potentials that belongs to you and you alone.</p>
+      <p>מפת לידה היא מפה של השמיים שחושבה עבור השעה, התאריך והמיקום המדויקים של לידתכם. היא מציבה אתכם במרכז היקום, כשהפלנטות מסודרות סביבכם. חשבו על זה כעל ה-\"DNA הקוסמי\" שלכם—סט ייחודי של הוראות, כישרונות, אתגרים ופוטנציאלים השייך לכם ולכם בלבד.</p>
 
-      <h2 id="the-big-three">The Big Three: Sun, Moon, Rising</h2>
-      <p>Before diving into the complex geometry, every student of astrology must master their "Big Three." These three points determine the bulk of your personality.</p>
+      <h2 id="the-big-three">השלישייה הגדולה: שמש, ירח, אופק</h2>
+      <p>לפני שצוללים לגיאומטריה המורכבת, כל סטודנט לאסטרולוגיה חייב לשלוט ב-\"שלישייה הגדולה\" שלו. שלוש נקודות אלו קובעות את חלק הארי של האישיות שלכם.</p>
       
-      <h3>1. The Sun ☀️ (Identity)</h3>
-      <p>The Sun represents your conscious ego, your "I am." It is your fuel, your drive, and the energetic frequency you emit. It answers the question: <em>"Who am I at my core?"</em></p>
+      <h3>1. השמש ☀️ (זהות)</h3>
+      <p>השמש מייצגת את האגו המודע שלכם, את ה-\"אני\". היא הדלק שלכם, הדחף שלכם והתדר האנרגטי שאתם מקרינים. היא עונה על השאלה: <em>\"מי אני בליבה שלי?\"</em></p>
 
-      <h3>2. The Moon 🌙 (Emotion)</h3>
-      <p>The Moon represents your inner world, your instincts, and your subconscious. It dictates how you react when you are hurt, hungry, or tired. It answers the question: <em>"What do I need to feel safe?"</em></p>
+      <h3>2. הירח 🌙 (רגש)</h3>
+      <p>הירח מייצג את עולמכם הפנימי, את האינסטינקטים ואת תת-המודע שלכם. הוא מכתיב איך אתם מגיבים כשאתם פגועים, רעבים או עייפים. הוא עונה על השאלה: <em>\"מה אני צריך כדי להרגיש בטוח?\"</em></p>
 
-      <h3>3. The Ascendant / Rising מזל 🏹 (Mask)</h3>
-      <p>The Rising Sign is the zodiac sign that was rising on the Eastern horizon when you were born. It is your "interface" with the world. It determines your physical appearance, your style, and your first impression. It answers the question: <em>"How do others see me?"</em></p>
+      <h3>3. האופק / מזל עולה 🏹 (מסכה)</h3>
+      <p>האופק הוא מזל הזודיאק שעלה באופק המזרחי בזמן שנולדתם. הוא ה-\"ממשק\" שלכם עם העולם. הוא קובע את המראה הפיזי שלכם, את הסגנון שלכם ואת הרושם הראשוני. הוא עונה על השאלה: <em>\"איך אחרים רואים אותי?\"</em></p>
 
-      <h2 id="the-planets">The Planets: Inner vs. Outer</h2>
-      <p>In your <strong>birth chart reading</strong>, planets are the actors playing roles in the story of your life.</p>
+      <h2 id="the-planets">כוכבי הלכת: אישיים לעומת חיצוניים</h2>
+      <p>ב-\"קריאת מפת לידה\", הפלנטות הן השחקנים המגלמים תפקידים בסיפור חייכם.</p>
       
-      <h3>The Personal Planets (Fast Moving)</h3>
+      <h3>כוכבי הלכת האישיים (נעים מהר)</h3>
       <ul>
-        <li><strong>Mercury ☿️:</strong> The Messenger. Rules your intellect, speech, and logic. A Gemini Mercury negotiates differently than a Pisces Mercury.</li>
-        <li><strong>Venus ♀:</strong> The Lover. Rules attraction, art, and money. It shows what you value and how you seduce.</li>
-        <li><strong>Mars ♂:</strong> The Warrior. Rules action, anger, and libido. It shows how you fight for what you want.</li>
+        <li><strong>מרקורי ☿️:</strong> השליח. שולט באינטלקט, בדיבור ובלוגיקה שלכם. מרקורי בתאומים מנהל משא ומתן אחרת ממרקורי בדגים.</li>
+        <li><strong>ונוס ♀:</strong> המאהבת. שולטת במשיכה, באמנות ובכסף. היא מראה מה אתם מעריכים ואיך אתם מפתים.</li>
+        <li><strong>מארס ♂:</strong> הלוחם. שולט בפעולה, בכעס ובליבידו. הוא מראה איך אתם נלחמים עבור מה שאתם רוצים.</li>
       </ul>
 
-      <h3>The Social & Outer Planets (Slow Moving)</h3>
+      <h3>כוכבי הלכת החברתיים והחיצוניים (נעים לאט)</h3>
       <ul>
-        <li><strong>Jupiter ♃:</strong> The Guru. Where you find luck, expansion, and meaning.</li>
-        <li><strong>Saturn ♄:</strong> The Taskmaster. Where you face restrictions, fear, but ultimately mastery through hard work.</li>
-        <li><strong>Uranus ♅, Neptune ♆, Pluto ♇:</strong> The Generational Planets. These move so slowly they shape entire generations, affecting you on a deep, subconscious level involving evolution and karma.</li>
+        <li><strong>יופיטר ♃:</strong> הגורו. המקום בו אתם מוצאים מזל, התרחבות ומשמעות.</li>
+        <li><strong>סטורן ♄:</strong> המורה הקשוח. המקום בו אתם מתמודדים עם מגבלות ופחד, אך בסופו של דבר מגיעים למיומנות דרך עבודה קשה.</li>
+        <li><strong>אורנוס ♅, נפטון ♆, פלוטו ♇:</strong> כוכבי הלכת הדוריים. אלו נעים כל כך לאט שהם מעצבים דורות שלמים, ומשפיעים עליכם ברמה תת-מודעת עמוקה הקשורה לאבולוציה וקרמה.</li>
       </ul>
 
-      <h2 id="the-houses">The Stage: The 12 Houses</h2>
-      <p>The chart is divided into 12 "Houses," like slices of a pizza. Each house governs a specific area of life. Where a planet sits tells you <em>where</em> its energy will manifest.</p>
+      <h2 id="the-houses">הבמה: 12 הבתים</h2>
+      <p>המפה מחולקת ל-12 \"בתים\", כמו משולשי פיצה. כל בית שולט בתחום חיים ספציפי. המקום בו כוכב לכת יושב אומר לכם <em>איפה</em> האנרגיה שלו תתבטא.</p>
       <ul>
-        <li><strong>1st House:</strong> Self, Body, Appearance.</li>
-        <li><strong>2nd House:</strong> Money, Possessions, Values.</li>
-        <li><strong>3rd House:</strong> Communication, Siblings, Short Trips.</li>
-        <li><strong>4th House:</strong> Home, Family, Roots.</li>
-        <li><strong>5th House:</strong> Creativity, Romance, Children.</li>
-        <li><strong>6th House:</strong> Daily Routine, Health, Service.</li>
-        <li><strong>7th House:</strong> Marriage, Partnerships, Open Enemies.</li>
-        <li><strong>8th House:</strong> Death, Sex, Other People's Money.</li>
-        <li><strong>9th House:</strong> Philosophy, Travel, Higher Education.</li>
-        <li><strong>10th House:</strong> Career, Public Image, Legacy.</li>
-        <li><strong>11th House:</strong> Friends, Networks, Hopes/Wishes.</li>
-        <li><strong>12th House:</strong> Subconscious, Secrets, Spirituality.</li>
+        <li><strong>בית 1:</strong> העצמי, הגוף, המראה.</li>
+        <li><strong>בית 2:</strong> כסף, רכוש, ערכים.</li>
+        <li><strong>בית 3:</strong> תקשורת, אחים, נסיעות קצרות.</li>
+        <li><strong>בית 4:</strong> בית, משפחה, שורשים.</li>
+        <li><strong>בית 5:</strong> יצירתיות, רומנטיקה, ילדים.</li>
+        <li><strong>בית 6:</strong> שגרה יומיומית, בריאות, שירות.</li>
+        <li><strong>בית 7:</strong> נישואין, שותפויות, אויבים גלויים.</li>
+        <li><strong>בית 8:</strong> מוות, סקס, כספים של אחרים.</li>
+        <li><strong>בית 9:</strong> פילוסופיה, טיולים, השכלה גבוהה.</li>
+        <li><strong>בית 10:</strong> קריירה, תדמית ציבורית, מורשת.</li>
+        <li><strong>בית 11:</strong> חברים, רשתות חברתיות, תקוות/משאלות.</li>
+        <li><strong>בית 12:</strong> תת-מודע, סודות, רוחניות.</li>
       </ul>
 
-      <h2 id="aspects">Aspects: The Cosmic Conversation</h2>
-      <p>Planets don't work in isolation. They form geometric angles called "Aspects." These lines connect the actors in your chart.</p>
+      <h2 id="aspects">היבטים: השיחה הקוסמית</h2>
+      <p>כוכבי לכת לא עובדים בבידוד. הם יוצרים זוויות גיאומטריות הנקראות \"היבטים\". קווים אלו מחברים את השחקנים במפה שלכם.</p>
       
-      <p><strong>Soft Aspects (Trine, Sextile):</strong> These are gifts. The planets help each other. Things come easily here—sometimes too easily, leading to laziness.</p>
+      <p><strong>היבטים רכים (טריגון, סקסטיציה):</strong> אלו הן מתנות. כוכבי הלכת עוזרים זה לזה. דברים קורים כאן בקלות—לפעמים בקלות רבה מדי, מה שמוביל לעצלנות.</p>
       
-      <p><strong>Hard Aspects (Square, Opposition):</strong> These are challenges. The planets are fighting or blocking each other. However, these points of friction create the energy needed for high achievement. Most successful people have charts full of Squares!</p>
+      <p><strong>היבטים קשים (ריבוע, מולות):</strong> אלו הם אתגרים. כוכבי הלכת נלחמים או חוסמים זה את זה. עם זאת, נקודות חיכוך אלו יוצרות את האנרגיה הדרושה להישגים גבוהים. לרוב האנשים המצליחים יש מפות מלאות בריבועים!</p>
 
-      <h2 id="nodes">The Nodes of Fate</h2>
-      <p>Finally, look for the horseshoe symbols. The <strong>North Node</strong> represents your destiny—the direction your soul wants to go in this lifetime. It feels uncomfortable and new. The <strong>South Node</strong> is your past life (or early childhood)—it feels familiar and easy, but staying there leads to stagnation.</p>
+      <h2 id="nodes">צמתי הגורל</h2>
+      <p>לבסוף, חפשו את סמלי הפרסה. <strong>הצומת הצפוני</strong> מייצג את הגורל שלכם—הכיוון אליו הנשמה שלכם רוצה ללכת בחיים אלה. זה מרגיש לא בנוח וחדש. <strong>הצומת הדרומי</strong> הוא הגלגול הקודם שלכם (או הילדות המוקדמת)—זה מרגיש מוכר וקל, אך הישארות שם מובילה לקיפאון.</p>
       
-      <h3>Interpretation is art</h3>
-      <p>Reading a birth chart is like reading a symphony. You can isolate the violins (Venus), but the magic is in the whole orchestra playing together. At Astralo, we use advanced AI trained on centuries of astrological wisdom to synthesize these millions of variables into a clear, readable story of YOU.
+      <h3>פרשנות היא אמנות</h3>
+      <p>קריאת מפת לידה היא כמו האזנה לסימפוניה. אפשר לבודד את הכינורות (ונוס), אבל הקסם נמצא בכל התזמורת המנגנת יחד. ב-Astralo, אנו משתמשים בבינה מלאכותית מתקדמת המאומנת על מאות שנים של חוכמה אסטרולוגית כדי לסנתז את מיליוני המשתנים הללו לסיפור ברור וקריא שלכם.</p>
     `
 };
+
