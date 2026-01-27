@@ -1,204 +1,242 @@
 /**
- * saturn-return-guide - BN
+ * শনি রিটার্ন সারভাইভাল গাইড - বাংলা
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 শনি রিটার্ন (Saturn Return) সারভাইভাল গাইড: আপনার মহাজাগতিক রূপান্তরের পথপ্রদর্শক',
+  excerpt: 'আপনার কি ২৯ বছর বয়স হতে চলেছে? আপনার শনি রিটার্ন পর্বে স্বাগতম। জানুন কেন এটি আপনার প্রাপ্তবয়স্ক জীবনের সবচেয়ে গুরুত্বপূর্ণ জ্যোতিষশাস্ত্রীয় ঘটনা এবং কীভাবে আপনার আত্মাকে অক্ষুণ্ণ রেখে এটি পার করবেন।',
+  category: 'ট্রানজিট',
+  metaDescription: 'শনি রিটার্ন (Saturn Return) থেকে বেঁচে থাকার চূড়ান্ত গাইড। জানুন কী ঘটে যখন শনি তার জন্মগত অবস্থানে ফিরে আসে, এটি কীভাবে ক্যারিয়ার এবং সম্পর্কের ওপর প্রভাব ফেলে এবং দাদাশ ভাব অনুযায়ী এর ব্যাখ্যা।',
+  keywords: 'শনি রিটার্ন, শনি রিটার্নের অর্থ, প্রথম শনি রিটার্ন, জ্যোতিষশাস্ত্রীয় ট্রানজিট, ভাবে শনি, ৩০ বছর বয়সের রূপান্তর, জ্যোতিষীয় প্রৌঢ়ত্ব, শনির বক্রী গতি, শনি রিটার্ন থেকে বাঁচার উপায়, রাশিতে শনি',
+  quickSummary: [
+    'শনি রিটার্ন ঘটে যখন শনি আপনার জন্মের সময় যে রাশিতে এবং ডিগ্রিতে ছিল, ঠিক সেই জায়গায় ফিরে আসে (প্রায় ২৮-৩০ বছর বয়সে)।',
+    'এটি একটি "মহাজাগতিক অডিট" যেখানে যা কিছু শক্ত ভিত্তির ওপর নির্মিত নয়, তা ধুয়ে মুছে সাফ হয়ে যায়।',
+    'যদিও এটি প্রায়শই মানসিক চাপের কারণ হয়, তবুও এটি প্রকৃত পরিপক্কতা এবং জীবনের উদ্দেশ্য খুঁজে পাওয়ার অনুঘটক।',
+    'দ্বিতীয় শনি রিটার্ন ঘটে প্রায় ৫৮-৬০ বছর বয়সে, যা উত্তরাধিকার এবং প্রজ্ঞার ওপর নজর দেয়।'
+  ],
+  keyTakeaways: [
+    'পরিবর্তনকে বাধা দেবেন না; শনি শৃঙ্খলা এবং দায়িত্ববোধকে পুরস্কৃত করে।',
+    'আপনার শনি কোন ভাবে (House) অবস্থিত তা নির্ধারণ করে যে আপনি কোথায় আপনার সবচেয়ে বড় "ফাইনাল পরীক্ষার" সম্মুখীন হবেন।',
+    'এই সময়ে সম্পর্কের বিচ্ছেদ এবং ক্যারিয়ারের পরিবর্তন প্রায়শই আপনার উন্নতির জন্য প্রয়োজন হয়।',
+    'ট্রানজিট শেষ হওয়ার সাথে সাথে আপনি নিজের ওপর এক নতুন কর্তৃত্ব ও স্বচ্ছতা বোধ করবেন।'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'শনি রিটার্ন কী?' },
+    { id: 'the-myth-of-saturn', title: 'মিথ এবং কঠোর শিক্ষক: সময়ের অধিপতি' },
+    { id: 'timeline', title: 'টাইমলাইন: রিটার্নের পর্যায়গুলো' },
+    { id: 'themes', title: 'রিটার্নের সাধারণ বিষয়বস্তু' },
+    { id: 'saturn-in-signs', title: 'রাশি অনুযায়ী শনি রিটার্ন' },
+    { id: 'saturn-in-houses', title: 'ভাব অনুযায়ী শনি রিটার্ন (গভীর বিশ্লেষণ)' },
+    { id: 'house-1', title: '১ম ভাব: নিজের নতুন পরিচয়' },
+    { id: 'house-2', title: '২য় ভাব: আর্থিক ভিত্তি' },
+    { id: 'house-3', title: '৩য় ভাব: মনের ওপর নিয়ন্ত্রণ' },
+    { id: 'house-4', title: '৪র্থ ভাব: পূর্বপুরুষের নিরাময় এবং শিকড়' },
+    { id: 'house-5', title: '৫ম ভাব: আনন্দের শৃঙ্খলা' },
+    { id: 'house-6', title: '৬ষ্ঠ ভাব: পবিত্র রুটিন' },
+    { id: 'house-7', title: '৭ম ভাব: পার্টনারশিপের পরীক্ষা' },
+    { id: 'house-8', title: '৮ম ভাব: মৃত্যু, পুনর্জন্ম এবং যৌথ শক্তি' },
+    { id: 'house-9', title: '৯ম ভাব: সত্যের সন্ধান' },
+    { id: 'house-10', title: '১০ম ভাব: ক্যারিয়ারের শিখর' },
+    { id: 'house-11', title: '১১ম ভাব: সমষ্টিগত উদ্দেশ্য' },
+    { id: 'house-12', title: '১২ম ভাব: চূড়ান্ত বিলয়' },
+    { id: 'retrograde', title: 'বক্রী শনির প্রভাব' },
+    { id: 'psychology', title: 'শনি রিটার্নের মনোবিজ্ঞান' },
+    { id: 'how-to-survive', title: 'বাঁচার টিপস: কীভাবে চাপ সামলাবেন' },
+    { id: 'famous-examples', title: 'বিখ্যাত ব্যক্তিদের শনি রিটার্নের গল্প' },
+    { id: 'post-return', title: 'অগ্নিকুণ্ডের পরের জীবন: তিরিশের দশক' },
+    { id: 'second-return', title: 'দ্বিতীয় রিটার্নের প্রস্তুতি (বয়স ৫৮-৬০)' },
+    { id: 'faq', title: 'সাধারণ জিজ্ঞাসা' },
+    { id: 'conclusion', title: 'আপনার প্রাপ্তবয়স্কতাকে গ্রহণ করুন' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">শনি রিটার্ন কী?</h2>
+      <p>আপনি যদি লক্ষ্য করে থাকেন যে ২৭ থেকে ৩০ বছর বয়সের মধ্যে বেশির ভাগ মানুষের জীবন প্রবল ওলোটপালোট হয়ে যায়, তবে আপনি <strong>শনি রিটার্ন</strong>-এর ক্ষমতার সাক্ষী হয়েছেন। জ্যোতিষশাস্ত্রে শনি হলো শৃঙ্খলা, দায়িত্ব, সময় এবং কাঠামোর গ্রহ। এই বিশাল গ্রহটি সূর্যকে একবার পুরো প্রদক্ষিণ করতে প্রায় ২৯.৫ বছর সময় নেয়।</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>আপনার "শনি রিটার্ন" ঘটে যখন শনি গ্রহটি আপনার জন্মের মুহূর্তে যে রাশিতে এবং নির্দিষ্ট অবস্থানে ছিল, ঠিক সেখানে ফিরে আসে। এটি আপনার যৌবনের জন্য এক ধরণের মহাজাগতিক "ফাইনাল পরীক্ষা"। এটি এমন এক মুহূর্ত যখন মহাবিশ্ব আপনাকে প্রশ্ন করে: <em>"আপনি কি এমন এক জীবন যাপন করছেন যা সত্যিই আপনার, নাকি আপনি কেবল আপনার বাবা-মা বা সমাজের শেখানো কোনো ভূমিকা পালন করছেন?"</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>এই সময়টি প্রায়শই তীব্র মানসিক চাপ, জীবনের বড় পরিবর্তন এবং হঠাৎ এই উপলব্ধির মাধ্যমে চিহ্নিত হয় যে প্রাপ্তবয়স্ক হওয়া আর কোনো দূরের ধারণা নয়, বরং বর্তমানের এক কঠিন বাস্তবতা। পপ জ্যোতিষশাস্ত্রে শনি রিটার্নকে প্রায়ই ক্ষতি বা সংকটের এক ভয়াবহ সময় হিসেবে দেখানো হলেও, এটি আসলে আপনার নিজের "নকল" সংস্করণগুলোকে ঝেড়ে ফেলার এবং আগামী তিন দশকের জন্য একটি মজবুত ভিত্তি গড়ার এক গভীর সুযোগ। এটি আপনার কুড়ি-র দশকের সম্ভাবনা এবং ত্রিশ-র দশকের শক্তির মধ্যে এক সেতুবন্ধন।</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">মিথ এবং কঠোর শিক্ষক: সময়ের অধিপতি</h2>
+      <p>এই ট্রানজিটটি কেন এত ভারী অনুভূত হয় তা বোঝার জন্য আমাদের শনি গ্রহের আর্কিটাইপের দিকে তাকাতে হবে। রোমান পুরাণে (এবং গ্রীক পুরাণে ক্রোনোস হিসেবে) শনি ছিলেন সময় এবং ফসলের দেবতা। তাকে প্রায়ই কাস্তে হাতে দেখা যায়। এটি কেবল মৃত্যুর প্রতীক নয়; বরং যা আর প্রয়োজনে আসে না তা ছাঁটাই করার প্রতীক। যেমন একজন মালিকে গোলাপ গাছ ছাঁটাই করতে হয় যাতে পরের মরসুমে তা আরও সুন্দরভাবে ফুটে ওঠে, শনিও আমাদের জীবনের সেই অংশগুলোকে ছাঁটাই করেন যা প্রয়োজনের চেয়ে বড় হয়ে গেছে, অস্বাস্থ্যকর বা কেবল লোক দেখানো।</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>শনি হলেন "কঠোর শিক্ষক" বা "কর্মফলের অধিপতি"। তিনি আপনাকে কষ্ট দিতে চান না, কিন্তু তিনি চান আপনি পরিপক্ক বা বড় হয়ে উঠুন। অনেক মানুষ তাদের কুড়ি-র দশক পার করে দেয় ভাগ্য, সম্ভাবনা এবং বাবা-মায়ের প্রত্যাশার ওপর ভর করে। শনি এসে বলেন যে উৎসব শেষ। এবার সময় এসেছে এমন কিছু গড়ে তোলার যা আগামী ৩০ বছর টিকবে। তিনি কঠোর পরিশ্রম, সততা এবং ধৈর্যকে পুরস্কৃত করেন। অন্যদিকে ফাঁকিবাজি, অসততা এবং গড়িমসি করার জন্য শাস্তি দেন। আপনি যদি এতদিন "ভণিতা" করে থাকেন, তবে শনি রিটার্ন হলো সেই মুহূর্ত যখন সত্য প্রকাশ পাবে।</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">টাইমলাইন: রিটার্নের পর্যায়গুলো</h2>
+      <p>প্রথম শনি রিটার্ন সাধারণত ২৭.৫ বছর বয়সে শুরু হয় এবং ৩০ বছর বয়স হতে হতে শেষ হয়। তবে এই অভিজ্ঞতাকে তিনটি স্তরে ভাগ করা যায়:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>১ম পর্যায়: ঝড় ঘনীভূত হওয়া (বয়স ২৭-২৮)</h3>
+      <p>আপনি এক ধরণের অস্পষ্ট অস্থিরতা বোধ করতে শুরু করবেন। যেসব জিনিস আপনাকে আনন্দ দিত—যেমন লক্ষ্যহীন মেলামেশা, রাত জাগা বা "আপাতত করছি" এমন কোনো চাকরি—সেগুলো খালি মনে হতে শুরু করবে। আপনার হঠাৎ মনে হতে পারে যে "জীবনটাকে গুছিয়ে নেওয়া দরকার", যদিও আপনি জানেন না সেটা ঠিক কেমন হবে। আপনি হয়তো দেখবেন আপনার বন্ধুরা বিয়ে করছে বা প্রোমোশন পাচ্ছে, আর তাদের জন্য খুশি হওয়ার পরিবর্তে আপনি নিজের উন্নতি নিয়ে আতঙ্কিত বোধ করবেন।</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>২য় পর্যায়: ফাইনাল পরীক্ষা (বয়স ২৮-২৯)</h3>
+      <p>এটিই সেই সময়ের আসল "ধাক্কা"। ঘটনাগুলো এমনভাবে ঘটবে যা আপনাকে পদক্ষেপ নিতে বাধ্য করবে। এই সময়েই ব্রেকআপ হয়, ক্যারিয়ার পরিবর্তন হয় বা স্বাস্থ্যের সমস্যা দেখা দেয়। আপনি সিদ্ধান্ত নিতে বাধ্য হবেন। আর দুই নৌকায় পা দিয়ে চলা যাবে না। যতক্ষণ না আপনি নিজের কর্মের দায়িত্ব নিচ্ছেন, শনি চাপ দিতেই থাকবেন। এটিই ট্রানজিটের আবেগের তীব্রতার শিখর।</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>৩য় পর্যায়: সমন্বয় (বয়স ২৯-৩০)</h3>
+      <p>শনি যখন তার জন্মগত অবস্থান অতিক্রম করে যায়, তখন চাপ কমতে শুরু করে। আপনি আপনার নেওয়া কঠিন সিদ্ধান্তগুলোর মধ্যে প্রজ্ঞা দেখতে শুরু করেন। আপনি নিজেকে বয়স্ক কিন্তু স্থিতিশীল বোধ করবেন। আপনি প্রকৃত জ্যোতিষীয় প্রাপ্তবয়স্কতায় "গ্র্যাজুয়েট" করেছেন। নিজের মতো করে চলতে আর অন্য কারো "অনুমতি"র প্রয়োজন হবে না। আপনি যেমন, তেমনই থাকতে পারবেন।</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">রিটার্নের সাধারণ বিষয়বস্তু</h2>
+      <p>যদিও প্রত্যেকের অভিজ্ঞতা অনন্য, তবুও এই সময়ে প্রায় সবার জীবনেই কিছু সাধারণ বিষয় দেখা যায়:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>বাস্তবের মুখোমুখি হওয়া:</strong> আপনি যদি কোনো কল্পনায় বাস করে থাকেন বা কোনো বড় সত্য এড়িয়ে চলেন, শনি আপনাকে সেটির মুখোমুখি হতে বাধ্য করবেন।</li>
+        <li><strong>সম্পর্কের অবসান:</strong> দীর্ঘস্থায়ী সম্পর্ক যেগুলো আসলে "চিরস্থায়ী" হওয়ার মতো নয়, সেগুলো প্রায়শই এই সময়ে ভেঙে যায়। যদি আপনারা একসাথে থাকেন, তবে তা হবে কারণ আপনারা দুজনেই পরিপক্কতার এক নতুন স্তরে প্রতিশ্রুতিবদ্ধ হয়েছেন।</li>
+        <li><strong>ক্যারিয়ার পরিবর্তন:</strong> অনেকে তাদের স্থিতিশীল কিন্তু বিরক্তিকর চাকরি ছেড়ে দিয়ে হৃদয়ের ডাক শুনতে শুরু করেন, অথবা উপলব্ধি করেন যে তাদের "স্বপ্নপূরণের চাকরি" আসলে এক দুঃস্বপ্ন এবং তখন তারা বাস্তবসম্মত কোনো পদক্ষেপ নেন।</li>
+        <li><strong>শারীরিক পরিবর্তন:</strong> হঠাৎ করে আপনি আপনার শরীরকে অন্যভাবে অনুভব করতে পারেন। এই সময়েই মানুষ তাদের স্বাস্থ্য সম্পর্কে সচেতন হয়—উপলব্ধি করে যে তারা অমর নয়। আপনি হয়তো আপনার প্রথম পাকা চুল বা মেটাবলিজমের পরিবর্তন লক্ষ্য করবেন।</li>
+        <li><strong>সীমানা রক্ষা:</strong> বাবা-মা, টক্সিক বন্ধু এবং অবাস্তব প্রত্যাশাকে "না" বলতে শেখাই হলো শনির প্রধান শিক্ষা। আপনি শিখবেন যে "না" নিজেই একটি পূর্ণাঙ্গ বাক্য।</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the রাশিচক্র চিহ্নs</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">রাশি অনুযায়ী শনি রিটার্ন</h2>
+      <p>আপনার শনি কোন রাশিতে অবস্থিত তা আমাদের বলে যে আপনি *কীভাবে* এই রূপান্তরটি অনুভব করবেন। আপনার সঠিক শনির রাশিতে কী বলা আছে তা জানতে আপনার Astralo চার্টটি দেখুন:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>মেষ রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **ধৈর্য এবং আবেগ নিয়ন্ত্রণের** পরীক্ষা। আপনি হয়তো এই রূপান্তরটি খুব দ্রুত পার করতে চাইবেন, কিন্তু শনি আপনাকে ধীর করে দেবেন। আপনি কেবল গায়ের জোরে নয়, বরং প্রজ্ঞার সাথে নেতৃত্ব দিতে শিখছেন।
+      <br><strong>আপনার কাজ:</strong> নিজের রাগ এবং গতিশীলতাকে বশে আনা।</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>বৃষ রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **আর্থিক নিরাপত্তা এবং মূল্যবোধ** নিয়ে। আপনি বড় ধরণের আর্থিক বাধার সম্মুখীন হতে পারেন যা আপনাকে আপনার কাছে আসলে "মূল্যবান" কী তা সংজ্ঞায়িত করতে বাধ্য করবে।
+      <br><strong>আপনার কাজ:</strong> একটি শক্ত আর্থিক ভিত্তি গড়া এবং সম্পদের ওপর নির্ভর না করে আত্মমর্যাদা বাড়ানো।</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>মিথুন রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **যোগাযোগ এবং মনোযোগ** নিয়ে। আপনার হয়তো "প্রচুর আইডিয়া" আছে এবং শনি আপনাকে একটি বিষয় বেছে নিয়ে তাতে দক্ষ হতে বাধ্য করবেন।
+      <br><strong>আপনার কাজ:</strong> মনকে একাগ্র করা এবং আত্মবিশ্বাসের সাথে কথা বলা।</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>কর্কট রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **আবেগীয় সীমানা এবং পরিবার** নিয়ে। আপনাকে হয়তো ছোটবেলার আঘাত কাটিয়ে উঠতে হবে বা পরিবারের বড় কোনো দায়িত্ব নিতে হবে।
+      <br><strong>আপনার কাজ:</strong> নিজেকে যত্ন করা এবং নিজের মনের ভেতরে এক আশ্রয়স্থল গড়া যা অন্যের ওপর নির্ভরশীল নয়।</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>সিংহ রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **সৃজনশীল সততা এবং স্বীকৃতি** নিয়ে। আপনি হয়তো করতালির প্রত্যাশায় লড়াই করবেন এবং আপনাকে শিখতে হবে প্রথমে নিজের জন্য কিছু সৃষ্টি করা।
+      <br><strong>আপনার কাজ:</strong> বাইরের প্রশংসা নয়, বরং ভেতর থেকে আসা আত্মবিশ্বাস খুঁজে বের করা।</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>কন্যা রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **স্বাস্থ্য এবং সেবা** নিয়ে। আপনি হয়তো ইতিমধ্যেই নিজের প্রতি খুব কঠোর এবং শনি আপনাকে শেখাবেন যে "নিখুঁত" হওয়া সবসময় প্রয়োজন নয়।
+      <br><strong>আপনার কাজ:</strong> একটি স্বাস্থ্যকর রুটিন গড়া এবং নিজের শরীরের প্রতি সদয় হতে শেখা।</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>তুলা রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **ন্যায়বিচার এবং পার্টনারশিপ** নিয়ে। আপনি সম্পর্কের ক্ষেত্রে বড় পরীক্ষার মুখোমুখি হতে পারেন যা আপনাকে সম্পর্কের ভেতরে নিজের পরিচয় খুঁজে পেতে বাধ্য করবে।
+      <br><strong>আপনার কাজ:</strong> ভারসাম্য খুঁজে পাওয়া এবং শেখা যে আপনি একাই "যথেষ্ট"।</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>বৃশ্চিক রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **ক্ষমতা এবং অন্তরঙ্গতা** নিয়ে। এটি একটি অত্যন্ত তীব্র রিটার্ন যা আপনার নিজের অন্ধকার দিকগুলোর মুখোমুখি হওয়া এবং বিশ্বাস করতে শেখার সাথে জড়িত।
+      <br><strong>আপনার কাজ:</strong> আপনার গভীরতম ভয়গুলোকে ব্যক্তিগত শক্তিতে রূপান্তর করা।</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>ধনু রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **বিশ্বাস এবং স্বাধীনতা** নিয়ে। আপনি হয়তো উপলব্ধি করবেন যে পৃথিবীটা আপনার ভাবনার চেয়ে অনেক বড় (বা ছোট) এবং আপনাকে আপনার জীবনের দর্শনকে পুনরায় সংজ্ঞায়িত করতে হবে।
+      <br><strong>আপনার কাজ:</strong> এমন এক "সত্য" খুঁজে পাওয়া যা নিয়ে আপনি প্রতিদিন বাঁচতে পারবেন।</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>মকর রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **উচ্চাকাঙ্ক্ষা এবং কর্তৃত্ব** নিয়ে। শনি এখানে তার রাজকীয় ঘরে আছেন, তাই চাপ যেমন চরম, পুরস্কারও তেমনি। আপনি সত্যিকারের "বস" হয়ে উঠছেন।
+      <br><strong>আপনার কাজ:</strong> নিজের কাজের দায়িত্ব নেওয়া এবং সততার সাথে নিজের শিখরে পৌঁছানো।</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>কুম্ভ রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **সমাজ এবং ব্যক্তিস্বাতন্ত্র্য** নিয়ে। আপনি শিখছেন কীভাবে নিজের অনন্যতা না হারিয়ে কোনো দলের সাথে মিশে যেতে হবে।
+      <br><strong>আপনার কাজ:</strong> নিজের সীমানা বজায় রেখে সমষ্টি বা দলের জন্য অবদান রাখা।</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>মীন রাশিতে শনি</h3>
+      <p>আপনার রিটার্ন হবে **আধ্যাত্মিকতা এবং সীমানা** নিয়ে। বাস্তবের সাথে যোগাযোগ রাখতে আপনার সমস্যা হতে পারে এবং আপনাকে শিখতে হবে যে "না" বলাও একটি আধ্যাত্মিক কাজ।
+      <br><strong>আপনার কাজ:</strong> শৃঙ্খলার মাধ্যমে নিজের স্বপ্নকে বাস্তবে রূপ দেওয়া।</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">ভাব অনুযায়ী শনি রিটার্ন: গভীর বিশ্লেষণ</h2>
+      <p>আপনার শনি রিটার্ন ট্রানজিট "কোথায়" ঘটবে তা নির্ধারিত হয় আপনার জন্মছকে শনি কোন ভাবে (House) অবস্থিত তার ওপর। এটিই সেই স্টেজ যেখানে আপনার জীবনের নাটকটি মঞ্চস্থ হবে।</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">১ম ভাব: নিজের নতুন পরিচয়</h2>
+      <p>শনি যখন ১ম ভাবে ফিরে আসে, সংকটটি ব্যক্তিগত এবং শারীরিক হয়। আপনি নিজের পোশাক-আশাক থেকে শুরু করে ব্যক্তিত্ব পর্যন্ত পুরোপুরি বদলে যেতে পারেন। আপনার কাঁধে এক বিশাল বোঝার মতো মনে হবে যে আপনাকে "কিছু একটা হয়ে দেখাতে হবে"। এই রূপান্তরের সময় আপনি নিজের প্রতি অত্যন্ত কঠোর হতে পারেন। আপনার ওজন কমে বা বেড়ে যেতে পারে অথবা স্বাস্থ্যের এমন পরিবর্তন হতে পারে যাতে শৃঙ্খলার প্রয়োজন হয়।
+      <br><strong>শিক্ষা:</strong> অন্যের অনুমোদনের ওপর নির্ভর না করে নিজের ভেতরের সত্তাকে শক্তিশালী করা। আপনি নিজের কর্তৃত্ব নিজেই হতে শিখছেন। আপনি আপনার নিজের শরীরের সিইও (CEO)।</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">২য় ভাব: আর্থিক ভিত্তি</h2>
+      <p>এই রিটার্নটি আপনার অর্থ এবং আত্মমর্যাদার ওপর আলোকপাত করে। আপনার আর্থিক টানাপোড়েন হতে পারে যা আপনাকে বাজেট করা, সঞ্চয় করা এবং সময়ের মূল্য বুঝতে বাধ্য করবে। বিপরীতভাবে, আপনি হয়তো অবশেষে "আসল" টাকা আয় করা শুরু করবেন কিন্তু সেই সাথে এক বিশাল দায়িত্ববোধ অনুভব করবেন। আপনি "নিরাপত্তা"র সংজ্ঞাটি নতুন করে খুঁজবেন। আপনি শিখবেন যে ব্যাঙ্কে জমানো টাকা দিয়ে আপনার মূল্য বিচার করা যায় না।
+      <br><strong>শিক্ষা:</strong> নিজের ভেতরে নিরাপত্তা খুঁজে পাওয়া এবং বস্তুগত জগতের সাথে এক স্থিতিশীল সম্পর্ক গড়ে তোলা। আপনি টাকার মূল্য এবং আপনার আত্মার মূল্য বুঝতে শিখছেন।</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">৩য় ভাব: মনের ওপর নিয়ন্ত্রণ</h2>
+      <p>চাপটি থাকবে আপনার মন এবং আপনার আশেপাশের পরিবেশের ওপর। আপনি হয়তো আবার পড়াশোনা শুরু করতে পারেন, দীর্ঘকাল ধরে আটকে থাকা কোনো লেখার কাজ শেষ করতে পারেন অথবা ভাই-বোনেদের সাথে সম্পর্কের বড় পরিবর্তন অনুভব করতে পারেন। আপনার মনে হতে পারে যে "অনেক কিছু শেখার বাকি" কিন্তু সময় খুব কম। প্রতিদিনের যাতায়াত আপনার জন্য স্ট্রেসের কারণ হতে পারে, যা আপনাকে পরিবেশ পরিবর্তনের দিকে ঠেলে দেবে।
+      <br><strong>শিক্ষা:</strong> নিজের কাজে দক্ষ হওয়া এবং সততার সাথে যোগাযোগ করা। আপনি একাগ্র চিন্তা এবং সৎ কথার মূল্য বুঝতে শিখবেন। আপনি আপনার কথার মর্যাদা রাখতে শিখবেন।</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">৪র্থ ভাব: পূর্বপুরুষের নিরাময় এবং শিকড়</h2>
+      <p>এটি অন্যতম আবেগপ্রবণ রিটার্ন। এটি প্রায়শই আপনার বাবা-মা, আপনার থাকার জায়গা বা ছোটবেলার আঘাতের সাথে যুক্ত। আপনি হয়তো নিজের প্রথম বাড়ি কিনতে পারেন অথবা আপনার বৃদ্ধ বাবা-মায়ের দায়িত্ব নিতে হতে পারে। আপনি নিজের ভিত্তি গড়ছেন, প্রায়শই আপনার বাবা-মায়ের গড়া ভিত্তি ভেঙে। আপনি পরিবারের নতুন "কর্তা" হয়ে উঠছেন।
+      <br><strong>শিক্ষা:</strong> পরিবারের প্রত্যাশা ছাড়াও এমন একটি ঘর এবং ব্যক্তিগত জীবন তৈরি করা যা আপনার আত্মাকে পুষ্ট করে। আপনি নিজের বংশপরম্পরাকে নিরাময় করছেন কারণ আপনিই সেই ব্যক্তি যে পুরোনো ভুল ধারাটিকে ভেঙে ফেলছেন।</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">৫ম ভাব: আনন্দের শৃঙ্খলা</h2>
+      <p>৫ম ভাবে শনি মনে হতে পারে "গান থেমে গিয়েছে" এমন অনুভূতি। আপনার সাধারণ শখ বা বিনোদনগুলো হয়তো খালি মনে হবে। এই সময়েই মানুষ সন্তান নেওয়ার সিদ্ধান্ত নেয় (সৃষ্টির এক চূড়ান্ত দায়িত্ব নেয়) অথবা উপলব্ধি করে যে তারা কোনো সৃজনশীল শখকে সিরিয়াস ব্যবসায় রূপান্তর করতে চায়। এটি আপনার "আনন্দ" করার ক্ষমতার পরিপক্কতা।
+      <br><strong>শিক্ষা:</strong> শৃঙ্খলা এবং সৃজনশীলতার মাধ্যমে আনন্দ খুঁজে পাওয়া। আপনি শিখছেন যে প্রকৃত খেলার জন্য একাগ্র মনোযোগ প্রয়োজন। কেবল "ফ্লার্ট" করা আর "প্রকৃত রোমান্স"-এর মধ্যে পার্থক্যটি আপনি বুঝবেন।</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">৬ষ্ঠ ভাব: পবিত্র রুটিন</h2>
+      <p>এই রিটার্নটি আপনার স্বাস্থ্য এবং দৈনন্দিন অভ্যাসের সাথে যুক্ত। আপনি স্বাস্থ্যের কোনো সমস্যার সম্মুখীন হতে পারেন যা আপনাকে আপনার ডায়েট এবং ব্যায়াম পরিবর্তন করতে বাধ্য করবে। কর্মজীবন খুব কঠিন হয়ে যেতে পারে, যার ফলে আপনাকে অন্যদের কাজ বুঝিয়ে দিতে এবং নিজের সীমানা বজায় রাখতে হবে। আপনি উপলব্ধি করবেন যে আপনার শরীর হলো একটি মন্দির যার রক্ষণাবেক্ষণ প্রয়োজন। আপনি আপনার সময় ভালো করে সামলাতে না পারা পর্যন্ত আপনার কাজকে এক বিশাল বোঝার মতো মনে হতে পারে।
+      <br><strong>শিক্ষা:</strong> প্রতিদিনের জীবনকে নিয়ন্ত্রণ করা এবং ক্লান্ত না হয়ে অন্যের সেবা করা। কর্মদক্ষতাই হবে আপনার নতুন সেরা বন্ধু। আপনি এমন এক শরীর তৈরি করছেন যা দীর্ঘকাল টিকে থাকবে।</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">৭ম ভাব: পার্টনারশিপের পরীক্ষা</h2>
+      <p>"বিয়ে বা বিচ্ছেদ"-এর ভাব। শনি এখানে আপনার সবচেয়ে অন্তরঙ্গ সম্পর্কগুলো পরীক্ষা করেন। যদি কোনো সম্পর্ক দুর্বল হয়, তবে তা ভেঙে যাওয়ার সম্ভাবনা বেশি। আর যদি তা শক্তিশালী হয়, তবে আপনারা এই সময়ে বিয়ে করতে পারেন বা সিরিয়াস কোনো ব্যবসায়িক চুক্তি করতে পারেন। আপনি শিখছেন যে "প্রতিশ্রুতি" মানে আসলে কী—এটি কেবল একটি অনুভূতি নয়, এটি একটি চুক্তি। আপনি এখন হয়তো বয়স্ক ও সিরিয়াস পার্টনারদের প্রতি আকৃষ্ট হতে পারেন।
+      <br><strong>শিক্ষা:</strong> কল্পনা বা মোহের ওপর নয়, বরং বাস্তব এবং যৌথ দায়িত্ববোধের ওপর ভিত্তি করে সম্পর্ক গড়ে তোলা। আপনি কেবল "প্রেমিক" হতে নয়, বরং "সঙ্গী" হতে শিখছেন।</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">৮ম ভাব: মৃত্যু, পুনর্জন্ম এবং যৌথ শক্তি</h2>
+      <p>এটি এক গভীর মনস্তাত্ত্বিক রিটার্ন। এটি যৌথ সম্পদ, ট্যাক্স এবং অন্তরঙ্গতার সাথে যুক্ত। আপনি মৃত্যু বা ক্ষতির ভয় পেতে পারেন। এটি হলো "অহং-এর মৃত্যু"-র সময় যেখানে আপনি উপলব্ধি করেন যে আপনি সবকিছু নিয়ন্ত্রণ করতে পারেন না। আপনাকে হয়তো ঋণ বা উত্তরাধিকার সূত্রে পাওয়া সম্পদ নিয়ে ডিল করতে হতে পারে। আপনি নিজের ভেতর থেকে আসল আত্মাকে খুঁজে বের করতে খোলস ত্যাগ করছেন।
+      <br><strong>শিক্ষা:</strong> ব্যক্তিগত ক্ষমতার ওপর নিয়ন্ত্রণ এবং গভীর অন্তরঙ্গতায় বিশ্বাস ও আত্মসমর্পণের কলা শেখা। আপনি এমন এক "সম্পদ" আবিষ্কার করছেন যা চোখে দেখা যায় না।</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">৯ম ভাব: সত্যের সন্ধান</h2>
+      <p>শনি এখানে আপনার বিশ্বাসকে চ্যালেঞ্জ করবে। আপনি ছোটবেলা থেকে যে ধর্ম পালন করেছেন তা ছেড়ে দিতে পারেন অথবা কোনো আধ্যাত্মিক পথে নিজেকে সমর্পণ করতে পারেন। উচ্চশিক্ষায় বা বিদেশ ভ্রমণের সময় বাধার সম্মুখীন হতে পারেন। আপনি এমন এক "সত্য" খুঁজছেন যা দিয়ে আপনি প্রতিদিন বাঁচতে পারেন। আপনি হয়তো পিএইচডি ডিগ্রি নেওয়া বা অনেকদিনের না লেখা বইটি লেখার সিদ্ধান্ত নিতে পারেন।
+      <br><strong>শিক্ষা:</strong> এমন এক জীবনদর্শন গড়ে তোলা যা কঠিন সময় পার করতে সাহায্য করবে এবং জীবনের প্রকৃত অর্থ খুঁজে দিবে। আপনি কেবল জ্ঞানের অধিকারী নয়, বরং এক প্রজ্ঞাবান মানুষ হয়ে উঠবেন।</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of পেশা</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">১০ম ভাব: ক্যারিয়ারের শিখর</h2>
+      <p>এটি ট্র্যাডিশনাল "তিরিশ বছর বয়সের মিড-লাইফ ক্রাইসিস"। আপনার সামাজিক মর্যাদা এবং ক্যারিয়ার এখন কাঁচের নিচে থাকবে। আপনি হয়তো আপনার ফিল্ডের একদম শীর্ষে পৌঁছাবেন এবং উপলব্ধি করবেন যে আপনি এটিকে ঘৃণা করেন, অথবা অবশেষে আপনার করা কাজের স্বীকৃতি পাবেন। আপনাকে দায়িত্ব নিতে ও নেতৃত্ব দিতে বলা হবে। বিশ্ব আপনাকে দেখছে।
+      <br><strong>শিক্ষা:</strong> নিজের সামাজিক জীবনের সাথে ভেতরের সত্যের সামঞ্জস্য করা এবং নিজের উত্তরাধিকারের দায়িত্ব নেওয়া। আপনি এমন এক কর্তৃত্বশালী ব্যক্তিত্ব হয়ে উঠবেন যাকে আপনি একসময় ভয় পেতেন।</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">১১ম ভাব: সমষ্টিগত উদ্দেশ্য</h2>
+      <p>শনি এখানে আপনার বন্ধুদের গ্রুপকে ছাঁটাই করবেন। আপনি হয়তো উপলব্ধি করবেন যে আপনার "বন্ধুরা" কেবল সময়ের সাথে আপনার পরিচিত ছিল এবং আপনাদের মধ্যে এখন আর কোনো মিল নেই। আপনি হয়তো বয়স্ক মেন্টরদের প্রতি আকৃষ্ট হবেন অথবা কোনো বড় সামাজিক সংগঠনে নেতৃত্বের ভূমিকা নেবেন। আপনি আপনার আসল আপনজনদের খুঁজছেন। আপনি বাস্তব পদক্ষেপের মাধ্যমে আপনার "আশা ও আকাঙ্ক্ষা" পূরণের পরিকল্পনা করছেন।
+      <br><strong>শিক্ষা:</strong> বড় কোনো লক্ষ্য বা দলে নিজের স্থান খুঁজে পাওয়া এবং নিজের দক্ষতাকে কাজে লাগানো। আপনি ভবিষ্যতের জন্য এক মজবুত নেটওয়ার্ক তৈরি করছেন।</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">১২ম ভাব: চূড়ান্ত বিলয়</h2>
+      <p>এটি এক অত্যন্ত শান্ত ও নিভৃত রিটার্ন। আপনি একাকী বা বিচ্ছিন্ন অনুভব করতে পারেন। অতীতের গোপন কথাগুলো সামনে চলে আসতে পারে। এটি গভীর নিরাময়, থেরাপি বা আধ্যাত্মিক ধ্যানের সময়। আপনি আগামী ৩০ বছরের এক নতুন চক্রের জন্য মাটি প্রস্তুত করছেন। এটি এক যুগের অবসান। আপনি আপনার পূর্বপুরুষ এবং অবচেতন মনের ওপর কাজ করছেন।
+      <br><strong>শিক্ষা:</strong> নির্জনতায় শান্তি খুঁজে পাওয়া, অতীতকে ক্ষমা করা এবং ঈশ্বর বা বিশ্বব্রহ্মাণ্ডের শক্তির কাছে নিজেকে সঁপে দেওয়া। আপনি এক নতুন পুনর্জন্মের জন্য প্রস্তুতি নিচ্ছেন।</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">বক্রী শনির প্রভাব</h2>
+      <p>আপনি যদি **বক্রী শনি** (যখন শনি আকাশপথে উল্টো দিকে চলছে বলে মনে হয়) চলাকালীন জন্মগ্রহণ করেন, তবে আপনার রিটার্নটি কিছুটা ভিন্ন অনুভূত হতে পারে। কুড়ি-র দশকে আপনি হয়তো মনে মনে বিষণ্ণ ছিলেন বা ভাবতেন যে আপনি "যথেষ্ট যোগ্য নন"। রিটার্নের সময় এই চাপটি আপনার কাছে *স্বস্তিদায়ক* মনে হতে পারে, কারণ বাইরের জগত এখন আপনার ভেতরের গাম্ভীর্যের সাথে মিলে যাচ্ছে। জন্ম থেকে যে ভূমিকার জন্য আপনি প্রস্তুতি নিচ্ছিলেন, অবশেষে সেই দায়িত্ব নেওয়ার আপনি অনুমতি পাবেন। অবশেষে আপনি "যথেষ্ট যোগ্য" হবেন।</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">শনি রিটার্নের মনোবিজ্ঞান</h2>
+      <p>মনস্তাত্ত্বিক দিক থেকে, শনি রিটার্ন হলো "চিরকাল শিশু" থাকা থেকে "প্রাপ্তবয়স্ক" হওয়ার এক রূপান্তর। আমরা বাবা-মা বা সমাজের কাছ থেকে "উত্তর" খোঁজা বন্ধ করে দিই এবং নিজেরাই উত্তর দিতে শুরু করি। এটি শিশুসুলভ অহংকারের মৃত্যু এবং আত্মার পরিপক্কতার জন্ম। এই কারণেই এটি প্রায়শই বিষণ্ণতা বা উদ্বেগের সাথে আসে—এটি আপনার পেছনে ফেলে আসা সেই উদাসীন সত্তার জন্য এক ধরণের শোক। আপনি উপলব্ধি করেন যে পৃথিবীতে আপনার সময় সীমিত।</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">বাঁচার টিপস: কীভাবে চাপ সামলাবেন</h2>
+      <p>শনি রিটার্নের সময় মানুষ যে সবচেয়ে বড় ভুলটি করে তা হলো **বাধা দেওয়া**। শনি হলো একটি দেয়ালের মতো—আপনি যদি এর দিকে দৌড়ে যান, তবে আপনি আঘাত পাবেন। আপনি যদি চেষ্টার মাধ্যমে এবং দায়িত্ববোধ দিয়ে দরজা খোঁজেন, তবে আপনি এক নতুন পৃথিবীতে প্রবেশ করবেন।</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>দায়িত্ব নিন:</strong> নিজের বস, জীবনসঙ্গী বা বাবা-মাকে দোষ দেবেন না। নিজেকে জিজ্ঞাসা করুন: "এতে আমার ভূমিকা কী? আমি কী পরিবর্তন করতে চাই?"</li>
+        <li><strong>নিজেকে গোছান:</strong> শনি শৃঙ্খলা পছন্দ করেন। আপনার আর্থিক অবস্থা, স্বাস্থ্য এবং রুটিনের দিকে তাকান। এমন সিস্টেম তৈরি করুন যা আপনাকে দুর্বল মুহূর্তে ধরে রাখবে।</li>
+        <li><strong>ধৈর্য ধরুন:</strong> শনি সময়ের অধিপতি। এই ট্রানজিট ২.৫ বছর ধরে চলে। আপনি এক উইকএন্ডে এটি সব সমাধান করতে পারবেন না। এই প্রক্রিয়াকে সম্মান করুন। ধীর ও স্থির পদক্ষেপে এগিয়ে যান।</li>
+        <li><strong>মেন্টর খুঁজুন:</strong> শনি "জ্ঞানী ব্যক্তি"র প্রতিনিধিত্ব করেন। এমন কাউকে খুঁজুন যিনি এই পথ আগে পার করেছেন এবং তার প্রজ্ঞা নিন। এমন কোনো গ্রুপে যোগ দিন যেখানে ৩০-ঊর্ধ্ব মানুষ আছে।</li>
+        <li><strong>স্বাস্থ্যের যত্ন নিন:</strong> আপনার শরীর আপনাকে সংকেত দিবে। আপনি যদি চাপে থাকেন তবে শরীরের কোথায় তা লাগছে? রুটিন চেকআপ এখন আপনার জন্য বাধ্যতামূলক।</li>
+        <li><strong>অপ্রয়োজনীয় জিনিস বাদ দিন:</strong> যদি কোনো অভ্যাস, বন্ধু বা চাকরি আপনাকে ক্লান্ত করে দিচ্ছে অথচ কিছুই দিচ্ছে না, তবে তা ছেড়ে দিন। শনি এমনিতেও তা কেড়ে নেবেন; আপনি নিজে স্বেচ্ছায় তা দিয়ে দিলে পথ সহজ হবে।</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">বিখ্যাত ব্যক্তিদের শনি রিটার্নের গল্প</h2>
+      <p>অনেক বিখ্যাত ব্যক্তি এবং ঐতিহাসিক ব্যক্তিত্ব তাদের জীবনের সবচেয়ে রূপান্তরমূলক মুহূর্তগুলো তাদের শনি রিটার্নের সময় অনুভব করেছেন:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>স্টিভ জবস:</strong> তার শনি রিটার্নের শুরুর দিকে তাকে অ্যাপল থেকে বের করে দেওয়া হয়েছিল, যা তাকে NeXT এবং Pixar প্রতিষ্ঠার দিকে নিয়ে যায় এবং অবশেষে তিনি আরও শক্তিশালী ও পরিপক্ক হয়ে অ্যাপল-এ ফিরে আসেন।</li>
+        <li><strong>লেডি গাগা:</strong> তিরিশের কাছাকাছি সময়ে তার ইমেজ এবং ক্যারিয়ারের আমূল পরিবর্তন করেন, পপ ঘরানা থেকে আরও "সিরিয়াস" আর্ট এবং জ্যাজ-এ চলে যান।</li>
+        <li><strong>ভিনসেন্ট ভ্যান গগ:</strong> কেবল তার শনি রিটার্নের বছরগুলোতেই সিরিয়াসলি ছবি আঁকা শুরু করেছিলেন এবং তীব্র লড়াইয়ের মাধ্যমে নিজের জীবনের আসল লক্ষ্য খুঁজে পান।</li>
+        <li><strong>জে. কে. রাওলিং:</strong> শনি রিটার্নের সময় সিঙ্গেল মাদার হিসেবে চরম দারিদ্র্যে থাকাকালীন প্রথম হ্যারি পটার বইটি লিখেছিলেন—এটি হলো বাধার ওপর ভিত্তি করে তৈরি এক ক্লাসিক "শনির" সাফল্যের গল্প।</li>
       </ul>
 
-      <h2 id="post-return">Life After the আগুন: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">অগ্নিকুণ্ডের পরের জীবন: তিরিশের দশক</h2>
+      <p>শনি যখন চলে যায়, তখন সেই বিশাল বোঝাটি নেমে যায়। মানুষ প্রায়শই তিরিশের পর "হালকা" কিন্তু "মজবুত" বোধ করে। অন্যরা কী ভাববে তা নিয়ে আর আপনার মাথা ব্যথা থাকে না। আপনার হাতে এক নতুন পথ থাকে। আপনি আগুনের মধ্য দিয়ে পার হয়ে এসেছেন এবং সোনার মতো খাঁটি হয়েছেন। আপনার জীবনের এক নতুন উদ্দেশ্য থাকে যা আপনার "ছোটবেলা"-র সংস্করণ কখনও বুঝত না। তিরিশের দশক প্রায়ই আপনার জীবনের সবচেয়ে প্রোডাক্টিভ সময় হয় কারণ অবশেষে আপনি জানেন যে আপনি কে।</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">দ্বিতীয় রিটার্নের প্রস্তুতি (বয়স ৫৮-৬০)</h2>
+      <p>এটা জানা জরুরি যে আপনি ৫৮ বছর বয়সে শনির কাছ থেকে আরও একবার "ডাক" পাবেন। প্রথম রিটার্ন যখন প্রাপ্তবয়স্ক হওয়ার বিষয় ছিল, দ্বিতীয় রিটার্ন হলো **জ্ঞানী ব্যক্তি** (Elder) হওয়ার বিষয়। এটি উত্তরাধিকার, অবসর এবং পরবর্তী প্রজন্মের কাছে প্রজ্ঞা পৌঁছে দেওয়ার বিষয়। আপনি যদি প্রথম রিটার্নের সময় নিজের কাজ ঠিকমতো করেন, তবে দ্বিতীয়টি অনেক সহজ হবে—এটি সংকটের বদলে সম্মান ও পাওয়ার সময়।</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">সাধারণ জিজ্ঞাসা</h2>
+      <p><strong>প্রশ্ন: সবার কি শনি রিটার্ন হয়?</strong>
+      <br>উত্তর: হ্যাঁ, প্রত্যেক মানুষ ২৯, ৫৮ এবং (যদি যথেষ্ট দিন বাঁচেন) ৮৭ বছর বয়সে শনি রিটার্ন অনুভব করেন। এটি একটি সার্বজনীন মানবিক অভিজ্ঞতা।</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>প্রশ্ন: এটি কি সবসময় খারাপ হয়?</strong>
+      <br>উত্তর: না! আপনি যদি কঠোর পরিশ্রম করেন এবং সততার সাথে থাকেন, তবে আপনার শনি রিটার্ন বড় প্রোমোশন, বিয়ে এবং সফলতার সময় হতে পারে। এটি "ফসল কাটানোর সময়"—আপনার কুড়ি-র দশকে যা বপন করেছিলেন, এখন ঠিক তাই পাবেন।</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>প্রশ্ন: আমি কীভাবে আমার শনির রাশি খুঁজে পাব?</strong>
+      <br>উত্তর: আপনি Astralo অ্যাপ ব্যবহার করে আপনার ফ্রি নেট্যাল চার্ট তৈরি করতে পারেন, যা আপনাকে আপনার শনি কোন রাশিতে এবং ভাবে আছে তা দেখাবে।</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>প্রশ্ন: পার্টনারের সাথে আমার শনির রাশি একই হলে কী হবে?</strong>
+      <br>উত্তর: আপনারা দুজনে একসাথে শনি রিটার্ন পার করবেন! এটি সম্পর্কের জন্য এক গুরুত্বপূর্ণ সময় হতে পারে। যদি আপনারা একে অপরের উন্নতিতে সাহায্য করেন, তবে আপনারা এক শক্তিশালী কাপল হিসেবে আবির্ভূত হবেন।</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">আপনার প্রাপ্তবয়স্কতাকে গ্রহণ করুন</h2>
+      <p>শনি রিটার্ন কোনো অভিশাপ নয়; এটি মহাবিশ্বের দেওয়া এক উপহার। এটি এক স্বর্গীয় মেকানিজম যা নিশ্চিত করে যে আপনি অন্যের স্বপ্ন পূরণ করার জন্য আপনার জীবন নষ্ট করবেন না। Astralo-তে আমরা বিশ্বাস করি যে শনির অবস্থান বোঝা হলো আপনার অতীত থেকে নিজেকে মুক্ত করার প্রথম পদক্ষেপ। </p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>আমাদের <strong>ট্রানজিট গাইড</strong> আপনার নির্দিষ্ট শনি রিটার্নের জন্য মাসিক পূর্বাভাস দেয়, যা আপনাকে বুঝতে সাহায্য করে যে কখন সামনে আগাতে হবে এবং কখন অপেক্ষা করতে হবে। কঠোর শিক্ষককে ভয় পাবেন না—উন্নতিকে গ্রহণ করুন। আপনার নতুন জীবন—আপনার আসল জীবন—ত্রিশ বছরের ওপারে অপেক্ষা করছে। আত্মবিশ্বাসের সাথে নিজের শক্তিতে পা রাখুন। </p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>আরও সাহায্য লাগবে? আমাদের বিশেষজ্ঞ জ্যোতিষীদের সাথে যোগাযোগ করুন শনি রিটার্নের পার্সোনালাইজড পরামর্শ নিতে অথবা অ্যাপ স্টোর থেকে আমাদের বিশেষ শনি সারভাইভাল গাইডটি ডাউনলোড করুন।</em></p>
     `
 };

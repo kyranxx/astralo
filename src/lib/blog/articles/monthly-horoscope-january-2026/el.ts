@@ -1,69 +1,87 @@
 /**
- * monthly-horoscope-january-2026 - EL
+ * Μηνιαίο Ωροσκόπιο Ιανουάριος 2026 - Ελληνικά
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Μηνιαίο Ωροσκόπιο Ιανουάριος 2026: Η Αυγή μιας Νέας Εποχής',
+  excerpt: 'Πλήρης αστρολογική πρόβλεψη για τον Ιανουάριο του 2026. Αναλυτικό μηνιαίο ωροσκόπιο για όλα τα ζώδια, καλύπτοντας τον Πλούτωνα στον Υδροχόο, τον έρωτα, την καριέρα και τα οικονομικά.',
+  category: 'Ωροσκόπια',
+  metaDescription: 'Πλήρης αστρολογική πρόβλεψη για τον Ιανουάριο του 2026. Αναλυτικό μηνιαίο ωροσκόπιο για όλα τα ζώδια, καλύπτοντας τον Πλούτωνα στον Υδροχόο, τον έρωτα, την καριέρα και τα οικονομικά.',
+  keywords: 'μηνιαίο ωροσκόπιο, αστρολογία Ιανουάριος 2026, μηνιαίες προβλέψεις, προβλέψεις ζωδίων Ιανουάριος, Πλούτωνας στον Υδροχόο, νέα σελήνη στον Αιγόκερω, πανσέληνος στον Καρκίνο',
+  quickSummary: [
+    'Ο Ιανουάριος του 2026 κυριαρχείται από την οριστική εγκατάσταση του Πλούτωνα στον Υδροχόο, σηματοδοτώντας τεράστιες κοινωνικές αλλαγές.',
+    'Η Νέα Σελήνη στον Αιγόκερω (1 Ιανουαρίου) φέρνει την τέλεια ενέργεια για τις αποφάσεις του νέου έτους.',
+    'Η σκιά του Ανάδρομου Ερμή καθαρίζει έως τις 15 Ιανουαρίου, εξομαλύνοντας την επικοινωνία.',
+    'Ο Ανάδρομος Άρης στον Καρκίνο φέρνει στην επιφάνεια ανεπίλυτες οικογενειακές συγκρούσεις.'
+  ],
+  keyTakeaways: [
+    'Χρησιμοποιήστε την πρώτη εβδομάδα του Ιανουαρίου μόνο για στρατηγικό σχεδιασμό- καθυστερήστε τη δράση μέχρι τα μέσα του μήνα.',
+    'Περιμένετε ξαφνικά τεχνολογικά επιτεύγματα ή ανατροπές καθώς ενεργοποιείται ο Ουρανός.',
+    'Οι σχέσεις περνούν από έλεγχο πραγματικότητας κοντά στην Πανσέληνο στον Καρκίνο στις 14 Ιανουαρίου.',
+    'Οι οικονομικές αγορές ενδέχεται να είναι ασταθείς- επιμείνετε σε μακροπρόθεσμες ασφαλείς επενδύσεις.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Η Αστρολογία του Ιανουαρίου' },
+    { id: 'key-transits', title: 'Σημαντικές Ημερομηνίες & Διελεύσεις' },
+    { id: 'fire-signs', title: 'Ζώδια της Φωτιάς (Κριός, Λέων, Τοξότης)' },
+    { id: 'earth-signs', title: 'Ζώδια της Γης (Ταύρος, Παρθένος, Αιγόκερως)' },
+    { id: 'air-signs', title: 'Ζώδια του Αέρα (Δίδυμοι, Ζυγός, Υδροχόος)' },
+    { id: 'water-signs', title: 'Ζώδια του Νερού (Καρκίνος, Σκορπιός, Ιχθύες)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Η Αστρολογία του Ιανουαρίου 2026</h2>
+      <p>Καλή Χρονιά! Ο <strong>Ιανουάριος του 2026</strong> δεν είναι απλώς η αρχή ενός νέου ημερολογιακού έτους- είναι η αστρολογική αυγή μιας νέας εποχής. Με τον <strong>Πλούτωνα σταθερά στον Υδροχόο</strong>, απομακρυνόμαστε συλλογικά από τις ιεραρχικές δομές των τελευταίων 15 ετών (Πλούτωνας στον Αιγόκερω) και εισερχόμαστε σε μια φάση ταχείας καινοτομίας, εστίασης στην κοινότητα και επανάστασης.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Ο μήνας ξεκινά με μια <strong>Νέα Σελήνη στον Αιγόκερω</strong> την 1η Ιανουαρίου—μια σπάνια και ευνοϊκή ευθυγράμμιση. Αυτό διπλασιάζει την ενέργεια του "νέου έτους, νέου εαυτού", καθιστώντας την μια απίστευτη στιγμή για τον καθορισμό πειθαρχημένων, μακροπρόθεσμων στόχων. Ωστόσο, με τον Άρη Ανάδρομο στον Καρκίνο, η ενέργειά μας μπορεί να μοιάζει κάπως εσωτερική. Επανεξετάζουμε το <em>γιατί</em> δρούμε, όχι μόνο το <em>πώς</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Σημαντικές Ημερομηνίες & Διελεύσεις</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 Ιαν:</strong> Νέα Σελήνη στον Αιγόκερω (Θέστε προθέσεις).</li>
+        <li><strong>4 Ιαν:</strong> Ο Άρης εισέρχεται στον Λέοντα (Η περηφάνια και το δράμα αυξάνονται).</li>
+        <li><strong>14 Ιαν:</strong> Πανσέληνος στον Καρκίνο (Συναισθηματική απελευθέρωση).</li>
+        <li><strong>20 Ιαν:</strong> Ο Ήλιος εισέρχεται στον Υδροχόο (Η Εποχή του Μέλλοντος).</li>
+        <li><strong>29 Ιαν:</strong> Ο Ουρανός σε ορθόδρομη πορεία (Ξαφνικές αλλαγές).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Φωτιά Σήμαs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Ζώδια της Φωτιάς (Κριός, Λέων, Τοξότης)</h2>
+      <p><strong>Θέμα: Διεκδικώντας ξανά τη Σπίθα σας.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Κριός:</strong> Με τον κυβερνήτη σας Άρη να φαίνεται να κινείται προς τα πίσω (ανάδρομος), μπορεί να νιώσετε απογοήτευση από καθυστερήσεις. Αυτό δεν είναι κόκκινο φανάρι- είναι πορτοκαλί. Χρησιμοποιήστε τον Ιανουάριο για να αναθεωρήσετε την επαγγελματική σας πορεία. Ανεβαίνετε στο σωστό βουνό;</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Λέων:</strong> Οι σχέσεις βρίσκονται στο επίκεντρο. Περιμένετε πρώην συντρόφους ή παλιούς φίλους να επανεμφανιστούν. Η Πανσέληνος στον 12ο οίκο σας υποδηλώνει ανάγκη για μοναχικότητα στα μέσα του μήνα. Φορτίστε τις κοινωνικές σας μπαταρίες.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Τοξότης:</strong> Τα οικονομικά βρίσκονται στο προσκήνιο. Μπορεί να βρείτε μια νέα πηγή εισοδήματος ή να αποφασίσετε να διακόψετε περιττές συνδρομές. Είναι ένας μήνας για πρακτικό προγραμματισμό, όχι για αλόγιστες σπατάλες.</p>
 
-      <h2 id="earth-signs">🌍 Γη Σήμαs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Ζώδια της Γης (Ταύρος, Παρθένος, Αιγόκερως)</h2>
+      <p><strong>Θέμα: Χτίζοντας τα Θεμέλια.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Ταύρος:</strong> Συνήθως αργείτε να αλλάξετε, αλλά ο Ουρανός στο ζώδιό σας σάς ωθεί να ελευθερωθείτε. Ο Ιανουάριος φέρνει μια ξαφνική ευκαιρία για ταξίδι ή μια αλλαγή στη φιλοσοφία σας. Πείτε "ναι" στο άγνωστο.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Παρθένος:</strong> Ο κυβερνήτης πλανήτης σας, ο Ερμής, καθαρίζει τη σκιώδη φάση του στα μέσα του μήνα. Μέχρι τότε, ελέγξτε ξανά όλα τα συμβόλαια. Η δημιουργικότητα κορυφώνεται μετά τις 20—ξεκινήστε αυτό το χόμπι που αναβάλλατε.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Αιγόκερως:</strong> Χρόνια Πολλά! Η Νέα Σελήνη στο ζώδιό σας είναι η προσωπική σας Πρωτοχρονιά. Έχετε την κοσμική άδεια να είστε εγωιστές. Τι θέλετε ΕΣΕΙΣ για τους επόμενους 12 μήνες; Εκφράστε το με σιγουριά.</p>
 
-      <h2 id="air-signs">💨 Αέρας Σήμαs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Ζώδια του Αέρα (Δίδυμοι, Ζυγός, Υδροχόος)</h2>
+      <p><strong>Θέμα: Πνευματική Επέκταση.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Δίδυμοι:</strong> Οι κοινοί πόροι και η βαθιά οικειότητα είναι το κλειδί. Μπορεί να λάβετε μια κληρονομιά, ένα μπόνους ή να έχετε μια βαθιά ψυχολογική ανάταση. Είναι ένας έντονος μήνας, αλλά με κάθαρση.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Ζυγός:</strong> Το σπίτι και η οικογένεια βρίσκονται στο επίκεντρο. Μπορεί να ανακαινίζετε ή να μεσολαβείτε σε μια οικογενειακή σύγκρουση. Η ισορροπία είναι η υπερδύναμή σας- χρησιμοποιήστε την για να φέρετε ειρήνη στο καταφύγιό σας.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Υδροχόος:</strong> Αυτή είναι η στιγμή σας. Με τον Πλούτωνα στο ζώδιό σας, υποβάλλεστε σε μεταμόρφωση. Μπορεί να αλλάξετε την εμφάνισή σας, το όνομά σας ή ολόκληρο το αντικείμενο της εργασίας σας. Ο κόσμος αρχίζει να συμβαδίζει με το όραμά σας.</p>
 
-      <h2 id="water-signs">💧 Νερό Σήμαs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Ζώδια του Νερού (Καρκίνος, Σκορπιός, Ιχθύες)</h2>
+      <p><strong>Θέμα: Συναισθηματική Σοφία.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Καρκίνος:</strong> Η Πανσέληνος στο ζώδιό σας στις 14 είναι η συναισθηματική κορύφωση της χρονιάς σας. Αφήστε τα όλα να βγουν. Κλάψτε, γελάστε, φωνάξτε. Αποβάλλετε ένα παλιό δέρμα. Οι σχέσεις που σχηματίζονται τώρα είναι καρμικές.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Σκορπιός:</strong> Η επικοινωνία είναι ισχυρή. Τα λόγια σας έχουν επιπλέον βάρος αυτόν τον μήνα. Χρησιμοποιήστε τα για να διαπραγματευτείτε, να διδάξετε ή να γράψετε. Αποφύγετε τα χειραγωγικά παιχνίδια- η διαφάνεια κερδίζει.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Ιχθύες:</strong> Ο κοινωνικός σας κύκλος διευρύνεται. Είστε ο συνδετικός κρίκος που κρατά την κοινότητά σας ενωμένη. Αναζητήστε ευκαιρίες για εθελοντισμό ή ηγηθείτε ενός ομαδικού έργου. Η διαίσθησή σας είναι πιο κοφτερή από ποτέ.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Αποκτήστε το Πλήρες Ωροσκόπιό σας για το 2026</h2>
+      <p>Αυτή η μηνιαία επισκόπηση είναι μόνο η κορυφή του παγόβουνου. Κάθε άτομο έχει έναν μοναδικό χάρτη που αλληλεπιδρά διαφορετικά με αυτές τις διελεύσεις. Για να πλοηγηθείτε στο 2026 με αυτοπεποίθηση, παραγγείλετε την <strong>Εξατομικευμένη Αναφορά για το Έτος</strong> από το Astralo. Αναλύει τις συγκεκριμένες διελεύσεις σας μήνα με το μήνα.
     `
 };

@@ -4,179 +4,179 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "🏠 The 12 Houses of Astrology: The Ultimate Guide to Your Life's Journey",
-    excerpt: "Discover the hidden map of your life. A deep dive into the 12 Houses of Astrology, explaining where your planetary energy manifests and how to master your destiny.",
-    category: "Astrology Basics",
-    metaDescription: "Complete guide to the 12 houses of astrology. Learn what each house means, how they influence your life spheres, and how to interpret your birth chart houses like an expert.",
-    keywords: "astrology houses, 12 houses, zodiac houses, birth chart interpretation, first house, seventh house, midheaven, angular houses, succedent houses, cadent houses, house rulers, stellium, intercepted houses",
-    quickSummary: ["The 12 Houses represent the \"where\" of your life—the specific spheres like career, home, and love.","Houses are divided into Angular, Succedent, and Cadent, each with a different level of power.","The Ascendant marks the beginning of the 1st House and sets the entire chart's structure.","Empty houses doesn't mean that area of life is \"missing\"—they are ruled by a specific planet."],
-    keyTakeaways: ["Angular houses (1, 4, 7, 10) are the most active and visible in your life.","The ruler of a house (the planet that owns the sign on the cusp) provides the secret key to that life area.","The \"Big Four\" points (AC, IC, DC, MC) define the cross of your life purpose.","Understanding houses is essential for accurate timing and prediction in astrology."],
-    tableOfContents: [{"id":"introduction","title":"The Stage: Why Houses Matter"},{"id":"house-systems","title":"Understanding House Systems: Placidus vs. Whole Sign"},{"id":"angular-succedent-cadent","title":"The Three Modalities: Power & Timing"},{"id":"the-first-house","title":"1st House: The House of Self (Identity)"},{"id":"the-second-house","title":"2nd House: The House of Value (Wealth)"},{"id":"the-third-house","title":"3rd House: The House of Communication"},{"id":"the-fourth-house","title":"4th House: The House of Home (Roots)"},{"id":"the-fifth-house","title":"5th House: The House of Joy"},{"id":"the-sixth-house","title":"6th House: The House of Service"},{"id":"the-seventh-house","title":"7th House: The House of Partnership"},{"id":"the-eighth-house","title":"8th House: The House of Transformation"},{"id":"the-ninth-house","title":"9th House: The House of Wisdom"},{"id":"the-tenth-house","title":"10th House: The House of Purpose"},{"id":"the-eleventh-house","title":"11th House: The House of Community"},{"id":"the-twelfth-house","title":"12th House: The House of Unconscious"},{"id":"planetary-placements","title":"Major Planets in the Houses"},{"id":"stelliums","title":"What is a Stellium in a House?"},{"id":"empty-houses","title":"What if a House is Empty? The Power of Rulers"},{"id":"retrograde","title":"Retrograde Planets in the Houses"},{"id":"derived-houses","title":"Advanced Technique: Derived Houses"},{"id":"progressions","title":"Progressed Houses: How Your Life Cycles Eveolve"},{"id":"conclusion","title":"Integrating Your Map"}],
-    content: `
-      <h2 id="introduction">The Stage: Why Houses Matter</h2>
-      <p>If you have ever looked at your birth chart and felt overwhelmed by the lines, symbols, and geometric shapes, you are not alone. Astrology is a language of three main components: signs, planets, and houses. While <strong>planets</strong> represent the "actors" (what is happening) and <strong>signs</strong> represent the "costumes" (how it is happening), the <strong>12 Houses of Astrology</strong> represent the "stage" (where it is happening).</p>
+  title: "🏠 Cele 12 Case ale Astrologiei: Ghidul Suprem pentru Călătoria Vieții Tale",
+  excerpt: "Descoperă harta ascunsă a vieții tale. O scufundare profundă în cele 12 Case ale Astrologiei, explicând unde se manifestă energia ta planetară și cum să îți stăpânești destinul.",
+  category: "Bazele Astrologiei",
+  metaDescription: "Ghid complet al celor 12 case ale astrologiei. Învață ce înseamnă fiecare casă, cum îți influențează sferele vieții și cum să interpretezi casele hărții tale natale ca un expert.",
+  keywords: "case astrologice, 12 case, casele zodiacului, interpretarea hărții natale, prima casă, a șaptea casă, midheaven, case angulare, case succedente, case cadente, guvernatori de case, stellium, case interceptate",
+  quickSummary: ["Cele 12 Case reprezintă \"UNDE\"-ul vieții tale – sferele specifice precum cariera, casa și iubirea.", "Casele sunt împărțite în Angulare, Succedente și Cadente, fiecare cu un nivel diferit de putere.", "Ascendentul marchează începutul primei Case și stabilește întreaga structură a hărții.", "Casele goale nu înseamnă că acea zonă a vieții \"lipsește\" – ele sunt guvernate de o planetă specifică."],
+  keyTakeaways: ["Casele angulare (1, 4, 7, 10) sunt cele mai active și vizibile în viața ta.", "Guvernatorul unei case (planeta care stăpânește semnul de pe vârful casei) oferă cheia secretă a acelei zone a vieții.", "Cele „Patru Puncte Mari” (AC, IC, DC, MC) definesc crucea scopului vieții tale.", "Înțelegerea caselor este esențială pentru sincronizarea și predicția exactă în astrologie."],
+  tableOfContents: [{ "id": "introduction", "title": "Scena: De ce contează Casele" }, { "id": "house-systems", "title": "Înțelegerea sistemelor de case: Placidus vs. Whole Sign" }, { "id": "angular-succedent-cadent", "title": "Cele trei modalități: Putere și Sincronizare" }, { "id": "the-first-house", "title": "Casa 1: Casa Sinelui (Identitate)" }, { "id": "the-second-house", "title": "Casa a 2-a: Casa Valorii (Avere)" }, { "id": "the-third-house", "title": "Casa a 3-a: Casa Comunicării" }, { "id": "the-fourth-house", "title": "Casa a 4-a: Casa Căminului (Rădăcini)" }, { "id": "the-fifth-house", "title": "Casa a 5-a: Casa Bucuriei" }, { "id": "the-sixth-house", "title": "Casa a 6-a: Casa Serviciului" }, { "id": "the-seventh-house", "title": "Casa a 7-a: Casa Parteneriatului" }, { "id": "the-eighth-house", "title": "Casa a 8-a: Casa Transformării" }, { "id": "the-ninth-house", "title": "Casa a 9-a: Casa Înțelepciunii" }, { "id": "the-tenth-house", "title": "Casa a 10-a: Casa Scopului" }, { "id": "the-eleventh-house", "title": "Casa a 11-a: Casa Comunității" }, { "id": "the-twelfth-house", "title": "Casa a 12-a: Casa Inconștientului" }, { "id": "planetary-placements", "title": "Planetele majore în case" }, { "id": "stelliums", "title": "Ce este un Stellium într-o casă?" }, { "id": "empty-houses", "title": "Ce se întâmplă dacă o casă este goală? Puterea Guvernatorilor" }, { "id": "retrograde", "title": "Planete retrograde în case" }, { "id": "derived-houses", "title": "Tehnică avansată: Case derivate" }, { "id": "progressions", "title": "Case progresate: Cum evoluează ciclurile vieții tale" }, { "id": "conclusion", "title": "Integrarea hărții tale" }],
+  content: `
+      <h2 id="introduction">Scena: De ce contează Casele</h2>
+      <p>Dacă te-ai uitat vreodată la harta ta natală și te-ai simțit copleșit de linii, simboluri și forme geometrice, nu ești singur. Astrologia este un limbaj format din trei componente principale: semne, planete și case. În timp ce <strong>planetele</strong> reprezintă „actorii” (ce se întâmplă) și <strong>semnele</strong> reprezintă „costumele” (cum se întâmplă), cele <strong>12 Case ale Astrologiei</strong> reprezintă „scena” (unde se întâmplă).</p>
       
-      <p>Imagine your life is a play. Mars might be the actor—full of drive and aggression. If he is wearing the "costume" of Aries, he is fast, impulsive, and bold. But where does he perform? If he is in the 10th House of Career, he is a driven entrepreneur. If he is in the 4th House of Home, he might be someone who spends their energy fixing up their house or perhaps experiences conflict within the family unit. Without the houses, astrology is purely psychological; with the houses, it becomes practical and predictive.</p>
+      <p>Imaginează-ți că viața ta este o piesă de teatru. Marte ar putea fi actorul — plin de energie și agresivitate. Dacă poartă „costumul” Berbecului, este rapid, impulsiv și îndrăzneț. Dar unde joacă el? Dacă se află în Casa a 10-a a Carierei, este un antreprenor determinat. Dacă se află în Casa a 4-a a Căminului, ar putea fi cineva care își consumă energia reparând casa sau care experimentează conflicte în interiorul familiei. Fără case, astrologia este pur psihologică; cu ajutorul caselor, ea devine practică și predictivă.</p>
 
-      <p>In this comprehensive guide, we will explore every nook and cranny of these twelve life spheres, helping you understand how to read your own chart like a professional astrologer. Whether you are curious about your financial future, your romantic potential, or your soul's hidden purpose, the houses hold the key.</p>
+      <p>În acest ghid cuprinzător, vom explora fiecare colțișor al acestor douăsprezece sfere ale vieții, ajutându-te să înțelegi cum să-ți citești propria hartă ca un astrolog profesionist. Indiferent dacă ești curios despre viitorul tău financiar, potențialul tău romantic sau scopul ascuns al sufletului tău, casele dețin cheia.</p>
 
-      <h2 id="house-systems">Understanding House Systems: Placidus vs. Whole Semn</h2>
-      <p>Before we dive into the specific meanings, we must address the "elephant in the room": House Systems. There are dozens of ways to divide the sky, and which one you choose can change your chart significantly.</p>
+      <h2 id="house-systems">Înțelegerea sistemelor de case: Placidus vs. Whole Sign</h2>
+      <p>Înainte de a ne scufunda în semnificațiile specifice, trebuie să abordăm „elefantul din cameră”: Sistemele de Case. Există zeci de moduri de a diviza cerul, iar alegerea pe care o faci poate schimba semnificativ harta ta.</p>
       
-      <h3>Placidus System</h3>
-      <p>This is the most popular system in modern Western astrology. It calculates houses based on how long it takes for a planet to travel from the horizon to the meridian. Because the Earth is tilted, this often leads to "intercepted houses" (houses that span more than one sign) and houses of varying sizes. Fans of Placidus argue it is more psychologically nuanced and reflects the "stretching" of time and experience.</p>
+      <h3>Sistemul Placidus</h3>
+      <p>Acesta este cel mai popular sistem în astrologia modernă occidentală. Acesta calculează casele pe baza timpului necesar unei planete pentru a călători de la orizont la meridian. Deoarece Pământul este înclinat, acest lucru duce adesea la „case interceptate” (case care se întind pe mai mult de un semn) și la case de dimensiuni variate. Susținătorii sistemului Placidus susțin că acesta este mai nuanțat din punct de vedere psihologic și reflectă „întinderea” timpului și a experienței.</p>
 
-      <h3>Whole Semn System</h3>
-      <p>The oldest system, recently making a huge comeback in traditional and Hellenistic astrology. In this system, the entire sign of your Ascendant becomes your 1st House. If you are 29 degrees Aries Rising, the *entire* sign of Aries is your 1st House. This system is cleaner, creates "Equal" houses of 30 degrees, and many find it more accurate for predicting concrete life events.</p>
+      <h3>Sistemul Whole Sign (Semn Întreg)</h3>
+      <p>Cel mai vechi sistem, care a revenit puternic în astrologia tradițională și elenistică. În acest sistem, întregul semn al Ascendentului tău devine Casa 1. Dacă ai Ascendentul la 29 de grade în Berbec, *întregul* semn al Berbecului este Casa 1. Acest sistem este mai clar, creează case „Egale” de 30 de grade, iar mulți îl consideră mai precis pentru prezicerea evenimentelor concrete de viață.</p>
 
-      <h3>Equal House System</h3>
-      <p>Here, the Ascendant degree marks the start of the 1st House, and every house is exactly 30 degrees. This system is popular in the UK and provides a middle ground between the "naturalness" of Whole Sign and the degree-specific accuracy of the Ascendant. It avoids the "warping" that occurs in Placidus for people born far from the equator.</p>
+      <h3>Sistemul Casei Egale (Equal House)</h3>
+      <p>Aici, gradul Ascendentului marchează începutul Casei 1, iar fiecare casă are exact 30 de grade. Acest sistem este popular în Marea Britanie și oferă o cale de mijloc între „naturalitatea” sistemului Whole Sign și precizia specifică gradelor a Ascendentului. Evită „deformarea” care apare în Placidus pentru persoanele născute departe de ecuator.</p>
 
-      <h3>Which should you use?</h3>
-      <p>At Astralo, we recommend starting with **Whole Sign** for clarity, but exploring **Placidus** for psychological depth. If you have "intercepted" signs in Placidus, it often indicates a part of your personality that was "suppressed" or difficult to access in early life.</p>
+      <h3>Pe care ar trebui să-l folosești?</h3>
+      <p>La Astralo, recomandăm să începi cu **Whole Sign** pentru claritate, dar să explorezi **Placidus** pentru profunzime psihologică. Dacă ai semne „interceptate” în Placidus, acest lucru indică adesea o parte a personalității tale care a fost „suprimată” sau dificil de accesat în prima parte a vieții.</p>
 
-      <h2 id="angular-succedent-cadent">The Three Modalities: Power & Timing</h2>
-      <p>Houses are divided into three groups of four, which dictate their "dynamic" energy and how they manifest in time.</p>
+      <h2 id="angular-succedent-cadent">Cele trei modalități: Putere și Sincronizare</h2>
+      <p>Casele sunt împărțite în trei grupuri de câte patru, care dictează energia lor „dinamică” și modul în care se manifestă în timp.</p>
       
-      <h3>1. Angular Houses (1, 4, 7, 10)</h3>
-      <p>These are the "Power Houses." They correspond to the Cardinal signs (Aries, Cancer, Libra, Capricorn). Planets found here are very active and visible in the world. They define the "Big Four" points of your chart: the Ascendant, IC, Descendant, and Midheaven. Events in these houses tend to be public, life-changing, and initiated by you. If you have many planets in angular houses, you are a "doer" who makes things happen.</p>
+      <h3>1. Casele Angulare (1, 4, 7, 10)</h3>
+      <p>Acestea sunt „Casele de Putere”. Ele corespund semnelor Cardinale (Berbec, Rac, Balanță, Capricorn). Planetele găsite aici sunt foarte active și vizibile în lume. Ele definesc cele „Patru Puncte Mari” ale hărții tale: Ascendentul, IC, Descendentul și Mijlocul Cerului. Evenimentele din aceste case tind să fie publice, să schimbe viața și să fie inițiate de tine. Dacă ai multe planete în case angulare, ești un „om al acțiunii” care face lucrurile să se întâmple.</p>
 
-      <h3>2. Succedent Houses (2, 5, 8, 11)</h3>
-      <p>These correspond to the Fixed signs (Taurus, Leo, Scorpio, Aquarius). These houses "follow" (succeed) the angular ones. They provide stability and resources. Here we find things like personal values, children, shared wealth, and long-term goals. They represent the "middle" phase of a process where we consolidate our gains and build substance. Planets here are steady but less "loud" than angular planets.</p>
+      <h3>2. Casele Succedente (2, 5, 8, 11)</h3>
+      <p>Acestea corespund semnelor Fixe (Taur, Leu, Scorpion, Vărsător). Aceste case „urmează” (succed) celor angulare. Ele oferă stabilitate și resurse. Aici găsim lucruri precum valorile personale, copiii, averea partajată și obiectivele pe termen lung. Ele reprezintă etapa de „mijloc” a unui proces, în care ne consolidăm câștigurile și construim substanță. Planetele de aici sunt constante, dar mai puțin „zgomotoase” decât planetele angulare.</p>
 
-      <h3>3. Cadent Houses (3, 6, 9, 12)</h3>
-      <p>These correspond to the Mutable signs (Gemini, Virgo, Sagittarius, Pisces). These houses represent transition, preparation, and the mental processing of experience. They are the "falling away" houses. Planets here are often more "internal," intellectual, or involve service and learning. They are the final phase before a new cycle begins. In traditional astrology, cadent houses were considered "weak," but in modern psychology, they are viewed as the most spiritual and complex.</p>
+      <h3>3. Casele Cadente (3, 6, 9, 12)</h3>
+      <p>Acestea corespund semnelor Mutabile (Gemeni, Fecioară, Săgetător, Pești). Aceste case reprezintă tranziția, pregătirea și procesarea mentală a experienței. Ele sunt casele de „stingere”. Planetele de aici sunt adesea mai „interne”, intelectuale sau implică serviciul și învățarea. Ele reprezintă etapa finală înainte de începerea unui nou ciclu. În astrologia tradițională, casele cadente erau considerate „slabe”, dar în psihologia modernă, ele sunt privite ca fiind cele mai spirituale și complexe.</p>
 
-      <h2 id="the-first-house">1st House: The House of Self (Identity)</h2>
-      <p>The 1st House begins at the <strong>Ascendant (Rising Sign)</strong>. It is the filter through which you view the world and how the world views you. It governs your physical appearance, your temperament, and your vitality.
-      <br><strong>Keywords:</strong> Identity, appearance, health, first impressions, vitality, survival instinct, self-start.</p>
-      <p>If you have the **Sun in the 1st House**, you have a strong presence and high energy. You may be very self-reliant. 
-      <br>If you have **Mars in the 1st House**, you are likely athletic, impulsive, or have a "warrior" spirit. You move fast and ask questions later.
-      <br>If you have **Saturn in the 1st House**, you might have been a serious child, or you feel a heavy responsibility for your own life. You likely age "backwards," appearing older when young and younger when old. This placement gives incredible stamina.</p>
+      <h2 id="the-first-house">Casa 1: Casa Sinelui (Identitate)</h2>
+      <p>Casa 1 începe la <strong>Ascendent (Semnul în curs de răsărire)</strong>. Este filtrul prin care vezi lumea și modul în care lumea te vede pe tine. Aceasta guvernează aspectul tău fizic, temperamentul și vitalitatea ta.
+      <br><strong>Cuvinte cheie:</strong> Identitate, aspect, sănătate, primele impresii, vitalitate, instinct de supraviețuire, auto-pornire.</p>
+      <p>Dacă ai <strong>Soarele în Casa 1</strong>, ai o prezență puternică și multă energie. S-ar putea să fii foarte independent. 
+      <br>Dacă ai <strong>Marte în Casa 1</strong>, probabil ești atletic, impulsiv sau ai un spirit de „războinic”. Te miști repede și pui întrebări mai târziu.
+      <br>Dacă ai <strong>Saturn în Casa 1</strong>, s-ar putea să fi fost un copil serios sau simți o mare responsabilitate pentru propria viață. Probabil îmbătrânești „invers”, părând mai bătrân când ești tânăr și mai tânăr când ești bătrân. Această plasare oferă o rezistență incredibilă.</p>
 
-      <h2 id="the-second-house">2nd House: The House of Value (Wealth)</h2>
-      <p>This is where we find your bank account, but also your self-esteem. It rules your personal possessions, your earning capacity, and your values.
-      <br><strong>Keywords:</strong> Money, values, self-worth, possessions, financial security, sensory pleasures, income.</p>
-      <p>If you have **Jupiter in the 2nd House**, you are often lucky with money or have a "big" appetite for life. You might earn well but also spend generously. You believe the universe is abundant.
-      <br>If you have **Venus in the 2nd House**, you attract money through art, beauty, or luxury. You value comfort and high-quality items. You might be "in love" with your things.
-      <br>If you have **Pluto in the 2nd House**, your finances may undergo major "death and rebirth" cycles. You might have a powerful, almost obsessive drive to achieve extreme wealth or power over your resources.</p>
+      <h2 id="the-second-house">Casa a 2-a: Casa Valorii (Avere)</h2>
+      <p>Aici găsim contul tău bancar, dar și stima de sine. Aceasta guvernează posesiunile personale, capacitatea ta de câștig și valorile tale.
+      <br><strong>Cuvinte cheie:</strong> Bani, valori, respect de sine, posesiuni, securitate financiară, plăceri senzoriale, venit.</p>
+      <p>Dacă ai <strong>Jupiter în Casa a 2-a</strong>, ești adesea norocos cu banii sau ai un apetit „mare” pentru viață. S-ar putea să câștigi bine, dar să și cheltuiești cu generozitate. Crezi că universul este abundent.
+      <br>Dacă ai <strong>Venus în Casa a 2-a</strong>, atragi bani prin artă, frumusețe sau lux. Apreciezi confortul și obiectele de înaltă calitate. S-ar putea să fii „îndrăgostit” de lucrurile tale.
+      <br>Dacă ai <strong>Pluto în Casa a 2-a</strong>, finanțele tale pot trece prin cicluri majore de „moarte și renaștere”. S-ar putea să ai un impuls puternic, aproape obsesiv, de a obține bogății extreme sau putere asupra resurselor tale.</p>
 
-      <h2 id="the-third-house">3rd House: The House of Communication</h2>
-      <p>Your local environment. It governs how you think, how you speak, and your relationships with siblings and neighbors. It also rules short-distance travel.
-      <br><strong>Keywords:</strong> Logic, writing, speaking, siblings, neighbors, schooling, daily commute, social media, curiosity.</p>
-      <p>If you have **Mercury in the 3rd House**, you are a "lifelong learner" with a quick, restless mind. Communication is your survival skill.
-      <br>If you have **Uranus in the 3rd House**, your ideas are eccentric or ahead of their time. You might have a very unusual relationship with your siblings or your local community. You think "outside the box."
-      <br>If you have the **Moon in the 3rd House**, your emotions are deeply tied to your communication. You need to speak or write how you feel to process it. You are a natural storyteller.</p>
+      <h2 id="the-third-house">Casa a 3-a: Casa Comunicării</h2>
+      <p>Mediul tău local. Aceasta guvernează modul în care gândești, cum vorbești și relațiile tale cu frații și vecinii. De asemenea, guvernează călătoriile pe distanțe scurte.
+      <br><strong>Cuvinte cheie:</strong> Logică, scris, vorbit, frați, vecini, școlarizare, navetă zilnică, social media, curiozitate.</p>
+      <p>Dacă ai <strong>Mercur în Casa a 3-a</strong>, ești un „elev pe viață” cu o minte rapidă și neliniștită. Comunicarea este abilitatea ta de supraviețuire.
+      <br>Dacă ai <strong>Uranus în Casa a 3-a</strong>, ideile tale sunt excentrice sau înaintea timpului lor. S-ar putea să ai o relație foarte neobișnuită cu frații tăi sau cu comunitatea locală. Gândești „în afara cutiei”.
+      <br>Dacă ai <strong>Luna în Casa a 3-a</strong>, emoțiile tale sunt profund legate de comunicarea ta. Trebuie să spui sau să scrii ceea ce simți pentru a procesa. Ești un povestitor înnăscut.</p>
 
-      <h2 id="the-fourth-house">4th House: The House of Home (Roots)</h2>
-      <p>The base of the chart (the IC). It represents your family of origin, your ancestors, your literal home, and your private life. It is the most "internal" house.
-      <br><strong>Keywords:</strong> Privacy, roots, the mother/father, ancestors, real estate, the end of life, inner sanctuary.</p>
-      <p>If you have the **Moon in the 4th House**, you are deeply private and emotional about your home. You need a "nest" to feel safe. Your family is your world.
-      <br>If you have **Saturn in the 4th House**, you may have had a strict or cold childhood, or you take the responsibility of "home" very seriously. You are building a legacy for your future family.
-      <br>If you have **Jupiter in the 4th House**, you might have a large family or find great benefit and expansion through your domestic life. Your home is a place of healing and philosophy.</p>
+      <h2 id="the-fourth-house">Casa a 4-a: Casa Căminului (Rădăcini)</h2>
+      <p>Baza hărții (IC). Aceasta reprezintă familia de origine, strămoșii, casa ta propriu-zisă și viața ta privată. Este cea mai „internă” casă.
+      <br><strong>Cuvinte cheie:</strong> Intimitate, rădăcini, mama/tatăl, strămoși, imobiliare, sfârșitul vieții, sanctuar interior.</p>
+      <p>Dacă ai <strong>Luna în Casa a 4-a</strong>, ești profund discret și emoțional în ceea ce privește casa ta. Ai nevoie de un „cuib” pentru a te simți în siguranță. Familia ta este lumea ta.
+      <br>Dacă ai <strong>Saturn în Casa a 4-a</strong>, s-ar putea să fi avut o copilărie strictă sau rece, sau iei responsabilitatea „căminului” foarte în serios. Construiești o moștenire pentru viitoarea ta familie.
+      <br>Dacă ai <strong>Jupiter în Casa a 4-a</strong>, s-ar putea să ai o familie numeroasă sau să găsești mari beneficii și expansiune prin viața ta domestică. Casa ta este un loc de vindecare și filozofie.</p>
 
-      <h2 id="the-fifth-house">5th House: The House of Joy</h2>
-      <p>Self-expression and fun. This is the house of creativity, romance, dating, children, and speculative risks.
-      <br><strong>Keywords:</strong> Creativity, play, romance, children, hobbies, fame, gambling, theater, personal spark.</p>
-      <p>If you have **Venus in the 5th House**, you are "in love with love." You are likely artistic and have a charm that attracts many romantic interests. You express your soul through beauty.
-      <br>If you have **Mars in the 5th House**, you are competitive in sports or creative pursuits. You have a "fiery" approach to dating and need excitement in your romantic life.
-      <br>If you have **Neptune in the 5th House**, you may be a visionary artist but might also experience "delusions" in romance or struggle with boundaries with children. You seek a soul-merging love.</p>
+      <h2 id="the-fifth-house">Casa a 5-a: Casa Bucuriei</h2>
+      <p>Exprimarea de sine și distracția. Aceasta este casa creativității, a romantismului, a întâlnirilor, a copiilor și a riscurilor speculative.
+      <br><strong>Cuvinte cheie:</strong> Creativitate, joc, romantism, copii, hobby-uri, faimă, jocuri de noroc, teatru, scânteie personală.</p>
+      <p>Dacă ai <strong>Venus în Casa a 5-a</strong>, ești „îndrăgostit de iubire”. Probabil ești artistic și ai un farmec care atrage mulți pretendenți. Îți exprimi sufletul prin frumusețe.
+      <br>Dacă ai <strong>Marte în Casa a 5-a</strong>, ești competitiv în sport sau în activități creative. Ai o abordare „focoasă” în privința întâlnirilor și ai nevoie de entuziasm în viața ta romantică.
+      <br>Dacă ai <strong>Neptune în Casa a 5-a</strong>, s-ar putea să fii un artist vizionar, dar ai putea experimenta și „deluzii” în romantism sau să ai dificultăți cu limitele față de copii. Cauți o iubire de fuziune a sufletelor.</p>
 
-      <h2 id="the-sixth-house">6th House: The House of Service</h2>
-      <p>Daily routines and physical health. It rules your job, your colleagues, your pets, and how you manage the tasks of everyday life.
-      <br><strong>Keywords:</strong> Routine, health, work, service, pets, hygiene, analytical skills, maintenance.</p>
-      <p>If you have **Virgo in the 6th House**, you are likely a perfectionist about your work. You notice the details others miss.
-      <br>If you have **Pluto in the 6th House**, you might be obsessed with your health or experience total transformations in your career path. You work with intensity or not at all.
-      <br>If you have **Mercury in the 6th House**, you are highly efficient and good with detail. You solve problems locally and practically. Your mind is always "on the job."</p>
+      <h2 id="the-sixth-house">Casa a 6-a: Casa Serviciului</h2>
+      <p>Rutinele zilnice și sănătatea fizică. Aceasta guvernează munca ta, colegii, animalele de companie și modul în care gestionezi sarcinile vieții de zi cu zi.
+      <br><strong>Cuvinte cheie:</strong> Rutină, sănătate, muncă, serviciu, animale de companie, igienă, abilități analitice, întreținere.</p>
+      <p>Dacă ai <strong>Fecioara în Casa a 6-a</strong>, probabil ești un perfecționist în ceea ce privește munca ta. Observi detaliile pe care alții le omit.
+      <br>Dacă ai <strong>Pluto în Casa a 6-a</strong>, s-ar putea să fii obsedat de sănătatea ta sau să experimentezi transformări totale în cariera ta. Lucrezi cu intensitate sau deloc.
+      <br>Dacă ai <strong>Mercur în Casa a 6-a</strong>, ești extrem de eficient și bun la detalii. Rezolvi problemele local și practic. Mintea ta este mereu „la treabă”.</p>
 
-      <h2 id="the-seventh-house">7th House: The House of Partnership</h2>
-      <p>The Descendant. It governs committed relationships—marriage, serious business partners, and even "open enemies."
-      <br><strong>Keywords:</strong> Marriage, partnership, contracts, harmony, the "Other," public relations, law.</p>
-      <p>If you have **Jupiter in the 7th House**, you find luck through your partners. Your spouse might be foreign, wealthy, or a teacher. You attract "big" characters into your life.
-      <br>If you have **Saturn in the 7th House**, you seek stability and might marry someone older or more established. You take commitment very seriously and may experience delays in finding "The One," but what you build is meant to last.
-      <br>If you have **Uranus in the 7th House**, you need a lot of freedom in your relationships. Your partners might be unconventional or the relationship may start/end suddenly. You hate being bored in love.</p>
+      <h2 id="the-seventh-house">Casa a 7-a: Casa Parteneriatului</h2>
+      <p>Descendentul. Aceasta guvernează relațiile asumate — căsătoria, partenerii de afaceri serioși și chiar „dușmanii declarați”.
+      <br><strong>Cuvinte cheie:</strong> Căsătorie, parteneriat, contracte, armonie, „Celălalt”, relații publice, lege.</p>
+      <p>Dacă ai <strong>Jupiter în Casa a 7-a</strong>, găsești noroc prin partenerii tăi. Soțul/soția poate fi străin, bogat sau un profesor. Atragi personaje „mari” în viața ta.
+      <br>Dacă ai <strong>Saturn în Casa a 7-a</strong>, cauți stabilitate și te-ai putea căsători cu cineva mai în vârstă sau mai așezat. Iei angajamentul foarte în serios și poți experimenta întârzieri în găsirea „celui ales”, dar ceea ce construiești este menit să dureze.
+      <br>Dacă ai <strong>Uranus în Casa a 7-a</strong>, ai nevoie de multă libertate în relațiile tale. Partenerii tăi ar putea fi neconvenționali sau relația se poate termina brusc. Urăști să te plictisești în iubire.</p>
 
-      <h2 id="the-eighth-house">8th House: The House of Transformation</h2>
-      <p>Deep water. It rules birth, death, sex, transformation, secrets, and "other people's money."
-      <br><strong>Keywords:</strong> Intimacy, inheritance, taxes, psychology, the occult, shared resources, crisis management, power.</p>
-      <p>If you have **Pluto in the 8th House**, you are incredibly powerful and resilient. You are drawn to the hidden depths of the human psyche and might work in finance or therapy.
-      <br>If you have the **Sun in the 8th House**, your life is a series of "death and rebirth" cycles. You find your identity through intense transformative experiences. You are a phoenix.
-      <br>If you have **Venus in the 8th House**, you seek deep, soul-level intimacy. You might also find wealth through marriage or inheritance, but the connection must be intense to satisfy you.</p>
+      <h2 id="the-eighth-house">Casa a 8-a: Casa Transformării</h2>
+      <p>Ape adânci. Aceasta guvernează nașterea, moartea, sexul, transformarea, secretele și „banii altora”.
+      <br><strong>Cuvinte cheie:</strong> Intimitate, moștenire, taxe, psihologie, ocultism, resurse partajate, management de criză, putere.</p>
+      <p>Dacă ai <strong>Pluto în Casa a 8-a</strong>, ești incredibil de puternic și rezistent. Ești atras de adâncimile ascunse ale psihicului uman și s-ar putea să lucrezi în finanțe sau terapie.
+      <br>Dacă ai <strong>Soarele în Casa a 8-a</strong>, viața ta este o serie de cicluri de „moarte și renaștere”. Îți găsești identitatea prin experiențe transformatoare intense. Ești o pasăre Phoenix.
+      <br>Dacă ai <strong>Venus în Casa a 8-a</strong>, cauți o intimitate profundă, la nivel de suflet. S-ar putea să găsești bogăție prin căsătorie sau moștenire, dar conexiunea trebuie să fie intensă pentru a te mulțumi.</p>
 
-      <h2 id="the-ninth-house">9th House: The House of Wisdom</h2>
-      <p>Expansion of the mind and horizon. It rules long travel, higher education, philosophy, and religion.
-      <br><strong>Keywords:</strong> Travel, philosophy, higher learning, law, religion, publishing, adventure, the quest.</p>
-      <p>If you have **Sagittarius in the 9th House**, you are a natural explorer. You feel at home when you are in a foreign land.
-      <br>If you have **Mars in the 9th House**, you fight for your beliefs. You might be a "crusader" for a cause or spend your energy on higher academic achievement.
-      <br>If you have **Jupiter in the 9th House**, you are extremely lucky in travel and academics. You have a vast, optimistic worldview and might be a natural teacher or publisher.</p>
+      <h2 id="the-ninth-house">Casa a 9-a: Casa Înțelepciunii</h2>
+      <p>Expansiunea minții și a orizontului. Aceasta guvernează călătoriile lungi, învățământul superior, filozofia și religia.
+      <br><strong>Cuvinte cheie:</strong> Călătorie, filozofie, învățământ superior, lege, religie, editare, aventură, căutare.</p>
+      <p>Dacă ai <strong>Săgetătorul în Casa a 9-a</strong>, ești un explorator înnăscut. Te simți ca acasă când ești pe un tărâm străin.
+      <br>Dacă ai <strong>Marte în Casa a 9-a</strong>, te lupți pentru convingerile tale. S-ar putea să fii un „cruciat” pentru o cauză sau să-ți consumi energia pentru realizări academice superioare.
+      <br>Dacă ai <strong>Jupiter în Casa a 9-a</strong>, ești extrem de norocos în călătorii și studii. Ai o viziune vastă și optimistă asupra lumii și s-ar putea să fii un profesor sau un editor înnăscut.</p>
 
-      <h2 id="the-tenth-house">10th House: The House of Purpose</h2>
-      <p>The Midheaven (MC). Your public reputation and your calling. It is how you achieve success and legacy.
-      <br><strong>Keywords:</strong> Career, reputation, status, legacy, public image, the father/mother, authority.</p>
-      <p>If you have the **Sun in the 10th House**, you are destined for the spotlight. You have a high need for achievement and recognition. Success is a part of your identity.
-      <br>If you have **Saturn in the 10th House**, you earn your success through hard work over a long period. You are a natural leader but may face heavy pressures at the top. You value respect over fame.
-      <br>If you have **Moon in the 10th House**, your career is tied to your emotions or the public's feelings. You might be famous but feel very vulnerable in the public eye. Your "mask" is your job.</p>
+      <h2 id="the-tenth-house">Casa a 10-a: Casa Scopului</h2>
+      <p>Mijlocul Cerului (MC). Reputația ta publică și vocația ta. Este modul în care obții succesul și lași o moștenire.
+      <br><strong>Cuvinte cheie:</strong> Carieră, reputație, statut, moștenire, imagine publică, tatăl/mama, autoritate.</p>
+      <p>Dacă ai <strong>Soarele în Casa a 10-a</strong>, ești destinat reflectoarelor. Ai o mare nevoie de realizări și recunoaștere. Succesul este o parte a identității tale.
+      <br>Dacă ai <strong>Saturn în Casa a 10-a</strong>, îți câștigi succesul prin muncă grea pe o perioadă lungă de timp. Ești un lider înnăscut, dar s-ar putea să te confrunți cu presiuni mari la vârf. Apreciezi respectul mai mult decât faima.
+      <br>Dacă ai <strong>Luna în Casa a 10-a</strong>, cariera ta este legată de emoțiile tale sau de sentimentele publicului. S-ar putea să fii faimos, dar să te simți foarte vulnerabil în ochii publicului. „Masca” ta este job-ul tău.</p>
 
-      <h2 id="the-eleventh-house">11th House: The House of Community</h2>
-      <p>Social networks and groups. It also rules your hopes, wishes, and humanitarian goals.
-      <br><strong>Keywords:</strong> Friends, networks, social media, groups, hopes, future goals, humanitarianism, ideals.</p>
-      <p>If you have **Uranus in the 11th House**, you attract eccentric friends and might be a leader in a revolutionary social movement. You want to change the world.
-      <br>If you have **Venus in the 11th House**, your friends are beautiful or artistic. You find love through your social circle and enjoy group activities.
-      <br>If you have **Mars in the 11th House**, you are very active in groups but might experience conflict or competition within your friend circle. Such energy is best applied to activism.</p>
+      <h2 id="the-eleventh-house">Casa a 11-a: Casa Comunității</h2>
+      <p>Rețele și grupuri sociale. De asemenea, guvernează speranțele, dorințele și obiectivele tale umanitare.
+      <br><strong>Cuvinte cheie:</strong> Prieteni, rețele, social media, grupuri, speranțe, obiective viitoare, umanitarism, idealuri.</p>
+      <p>Dacă ai <strong>Uranus în Casa a 11-a</strong>, atragi prieteni excentrici și ai putea fi un lider într-o mișcare socială revoluționară. Vrei să schimbi lumea.
+      <br>Dacă ai <strong>Venus în Casa a 11-a</strong>, prietenii tăi sunt frumoși sau artistici. Găsești dragostea prin cercul tău social și te bucuri de activități de grup.
+      <br>Dacă ai <strong>Marte în Casa a 11-a</strong>, ești foarte activ în grupuri, dar ai putea experimenta conflicte sau competiție în cadrul cercului de prieteni. Această energie este cel mai bine aplicată în activism.</p>
 
-      <h2 id="the-twelfth-house">12th House: The House of Unconscious</h2>
-      <p>The "closet" of the zodiac. It rules things that are hidden: spirituality, dreams, secrets, and the subconscious. It is where everything dissolves.
-      <br><strong>Keywords:</strong> Solitude, spirituality, hidden enemies, hospitals, karma, dreams, secrets, release.</p>
-      <p>If you have **Neptune in the 12th House**, you are highly psychic and sensitive. You need a lot of time alone to filter out the world's energy and connect with the divine.
-      <br>If you have the **Sun in the 12th House**, you might be a "power behind the throne." You are private and find your strength in solitude or spiritual pursuits. You are an "old soul."
-      <br>If you have **Saturn in the 12th House**, you might struggle with hidden fears or a sense of "cosmic guilt" until you master your internal world. You are working off deep karmic debts.</p>
+      <h2 id="the-twelfth-house">Casa a 12-a: Casa Inconștientului</h2>
+      <p>„Dulapul” zodiacului. Aceasta guvernează lucrurile care sunt ascunse: spiritualitatea, visele, secretele și subconștientul. Este locul unde totul se dizolvă.
+      <br><strong>Cuvinte cheie:</strong> Singurătate, spiritualitate, dușmani ascunși, spitale, karma, vise, secrete, eliberare.</p>
+      <p>Dacă ai <strong>Neptun în Casa a 12-a</strong>, ești extrem de intuitiv și sensibil. Ai nevoie de mult timp singur pentru a filtra energia lumii și pentru a te conecta cu divinitatea.
+      <br>Dacă ai <strong>Soarele în Casa a 12-a</strong>, ai putea fi o „putere din spatele tronului”. Ești discret și îți găsești puterea în singurătate sau în preocupări spirituale. Ești un „suflet bătrân”.
+      <br>Dacă ai <strong>Saturn în Casa a 12-a</strong>, s-ar putea să te lupți cu frici ascunse sau cu un sentiment de „vinovăție cosmică” până când îți vei stăpâni lumea interioară. Plătești datorii karmice profunde.</p>
 
-      <h2 id="planetary-placements">Major Planets in the Houses: A Detailed Summary</h2>
-      <p>When analyzing your chart, remember that planets are the "drivers" and the house is the "territory." 
-      <br><strong>The Sun:</strong> Where you shine. If it's in the 10th, you shine in your career. If it's in the 4th, you shine in your private life.
-      <br><strong>The Moon:</strong> Where you feel safe. If it's in the 2nd, you feel safe when you have money. If it's in the 6th, you feel safe when your routine is perfect.
-      <br><strong>Mercury:</strong> Where you talk. If it's in the 1st, you talk about yourself. If it's in the 9th, you talk about God or philosophy.
-      <br><strong>Venus:</strong> Where you love. If it's in the 11th, you love your friends. If it's in the 5th, you love the thrill of romance.
-      <br><strong>Mars:</strong> Where you fight. If it's in the 7th, you fight with your partner. If it's in the 3rd, you fight with your neighbors or through your words.
-      <br><strong>Jupiter:</strong> Where you grow. If it's in the 8th, you grow through crisis and deep intimacy. If it's in the 1st, your physical presence and vitality expand.
-      <br><strong>Saturn:</strong> Where you work. If it's in the 2nd, you work hard for every penny. If it's in the 12th, you work hard on your spiritual discipline.
-      <br><strong>Uranus:</strong> Where you disrupt. If it's in the 4th, your home life is unconventional. If it's in the 10th, your career path is a roller coaster.
-      <br><strong>Neptune:</strong> Where you dream. If it's in the 7th, you dream of a perfect partner. If it's in the 2nd, your finances are "foggy" or spiritual.
-      <br><strong>Pluto:</strong> Where you control. If it's in the 1st, you have an intense, magnetic personality. If it's in the 6th, you have an intense need to control your health and work.</p>
+      <h2 id="planetary-placements">Planetele majore în case: Un rezumat detaliat</h2>
+      <p>Când îți analizezi harta, amintește-ți că planetele sunt „șoferii”, iar casa este „teritoriul”. 
+      <br><strong>Soarele:</strong> Unde strălucești. Dacă e în a 10-a, strălucești în carieră. Dacă e în a 4-a, strălucești în viața privată.
+      <br><strong>Luna:</strong> Unde te simți în siguranță. Dacă este în a 2-a, te simți în siguranță când ai bani. Dacă este în a 6-a, te simți în siguranță când rutina ta este perfectă.
+      <br><strong>Mercur:</strong> Unde vorbești. Dacă e în prima casă, vorbești despre tine. Dacă e în a 9-a, vorbești despre Dumnezeu sau filozofie.
+      <br><strong>Venus:</strong> Unde iubești. Dacă este în a 11-a, îți iubești prietenii. Dacă este în a 5-a, iubești fiorul romantismului.
+      <br><strong>Marte:</strong> Unde te lupți. Dacă este în a 7-a, te lupți cu partenerul tăi. Dacă este în a 3-a, te lupți cu vecinii sau prin cuvinte.
+      <br><strong>Jupiter:</strong> Unde crești. Dacă este în a 8-a, crești prin crize și intimitate profundă. Dacă e în prima casă, prezența ta fizică și vitalitatea se extind.
+      <br><strong>Saturn:</strong> Unde muncești. Dacă este în a 2-a, muncești din greu pentru fiecare ban. Dacă este în a 12-a, muncești din greu la disciplina ta spirituală.
+      <br><strong>Uranus:</strong> Unde provoci schimbări. Dacă este în a 4-a, viața ta acasă este neconvențională. Dacă este în a 10-a, parcursul carierei tale este un roller coaster.
+      <br><strong>Neptun:</strong> Unde visezi. Dacă este în a 7-a, visezi la un partener perfect. Dacă este în a 2-a, finanțele tale sunt „nebuloase” sau spirituale.
+      <br><strong>Pluto:</strong> Unde controlezi. Dacă este în prima casă, ai o personalitate intensă, magnetică. Dacă este în a 6-a, ai o nevoie intensă de a-ți controla sănătatea și munca.</p>
 
-      <h2 id="stelliums">What is a Stellium in a House?</h2>
-      <p>A **Stellium** is when three or more planets gather in a single house. This creates a massive "weight" in that area of your life. If you have a 10th House Stellium, your life will revolve almost entirely around your public achievement. If you have a 12th House Stellium, your life might be lived in the shadows, focusing on healing or research. A Stellium is a "soul focus"—it shows where you have concentrated your energy over many lifetimes to master a specific theme.</p>
+      <h2 id="stelliums">Ce este un Stellium într-o casă?</h2>
+      <p>Un **Stellium** este atunci când trei sau mai multe planete se adună într-o singură casă. Acest lucru creează o „greutate” masivă în acea zonă a vieții tale. Dacă ai un Stellium în Casa a 10-a, viața ta se va învârti aproape în întregime în jurul realizărilor tale publice. Dacă ai un Stellium în Casa a 12-a, s-ar putea ca viața ta să fie trăită în umbră, concentrându-te pe vindecare sau cercetare. Un Stellium este un „foc de suflet” — arată unde ți-ai concentrat energia de-a lungul multor vieți pentru a stăpâni o temă specifică.</p>
 
-      <h2 id="empty-houses">What if a House is Empty? The Power of Rulers</h2>
-      <p>One of the most common questions in <strong>birth chart readings</strong> is: "My 7th House is empty! Does that mean I'll never get married?" The answer is a resounding NO. There are 12 houses but only 10 planets (including Sun and Moon). Mathematically, everyone has empty houses.</p>
-      <p>An empty house just means that this area of life is not a primary "focal point" for your soul's evolution in this lifetime—it's not where you have the most "work" to do. To understand an empty house, you look at the <strong>House Ruler</strong>. 
-      <br>1. Look at the sign on the cusp (the start) of the empty house.
-      <br>2. Find the planet that rules that sign (e.g., if the cusp is Taurus, the ruler is Venus).
-      <br>3. Locate that ruling planet in your chart. 
-      <br>If your empty 7th House (Partnership) is in Taurus, and your Venus is in the 10th House (Career), it means you will likely meet your partner through your work or professional life. The "story" of your partnership is tied to your career. This adds layers of depth to your <strong>astrology reading</strong>.</p>
+      <h2 id="empty-houses">Ce se întâmplă dacă o casă este goală? Puterea Guvernatorilor</h2>
+      <p>Una dintre cele mai frecvente întrebări în <strong>citirile hărților natale</strong> este: „Casa a 7-a este goală! Înseamnă că nu mă voi căsători niciodată?” Răspunsul este un NU categoric. Există 12 case, dar numai 10 planete (inclusiv Soarele și Luna). Din punct de vedere matematic, toată lumea are case goale.</p>
+      <p>O casă goală înseamnă doar că această zonă a vieții nu este un „punct focal” primar pentru evoluția sufletului tău în această viață — nu este locul unde ai cele mai multe „lecții” de învățat. Pentru a înțelege o casă goală, te uiți la <strong>Guvernatorul Casei</strong>. 
+      <br>1. Uită-te la semnul de pe vârful (începutul) casei goale.
+      <br>2. Găsește planeta care guvernează acel semn (de exemplu, dacă vârful este în Taur, guvernatorul este Venus).
+      <br>3. Localizează acea planetă guvernatoare în harta ta. 
+      <br>Dacă Casa a 7-a (Parteneriat) este goală și este în Taur, iar Venus se află în Casa a 10-a (Carieră), înseamnă că probabil îți vei întâlni partenerul prin intermediul job-ului sau al vieții profesionale. „Povestea” parteneriatului tău este legată de cariera ta. Acest lucru adaugă straturi de profunzime unei <strong>citiri astrologice</strong>.</p>
 
-      <h2 id="retrograde">Retrograde Planets in the Houses</h2>
-      <p>When a planet is retrograde in a house, its energy is turned inward. 
-      <br>**Mercury Retrograde in the 3rd:** You think deeply and reflectively, but may struggle to communicate your thoughts quickly to others.
-      <br>**Venus Retrograde in the 5th:** You might re-evaluate your past romances or find it difficult to express your creative joy publicly until later in life.
-      <br>**Mars Retrograde in the 1st:** Your drive is Internalized. You might struggle with "righteous anger" or wait a long time before taking action, but when you do, it is well-considered.
-      <br>Retrograde house placements often indicate "unfinished business" from a past life that requires deep internal reflection before it can manifest successfully in the outer world.</p>
+      <h2 id="retrograde">Planete retrograde în case</h2>
+      <p>Când o planetă este retrogradă într-o casă, energia ei este orientată spre interior. 
+      <br>**Mercur Retrograd în a 3-a:** Gândești profund și reflexiv, dar s-ar putea să ai dificultăți în a-ți comunica rapid gândurile celorlalți.
+      <br>**Venus Retrograd în a 5-a:** S-ar putea să-ți reevaluezi poveștile de dragoste din trecut sau să-ți fie greu să-ți exprimi bucuria creativă în mod public până mai târziu în viață.
+      <br>**Marte Retrograd în prima casă:** Imboldul tău este interiorizat. Te-ai putea lupta cu o „furie justificată” sau ai putea aștepta mult timp înainte de a acționa, dar când o faci, decizia este bine chibzuită.
+      <br>Pozițiile retrograde ale caselor indică adesea „probleme nerezolvate” dintr-o viață anterioară care necesită o reflecție internă profundă înainte de a se putea manifesta cu succes în lumea exterioară.</p>
 
-      <h2 id="derived-houses">Advanced Technique: Derived Houses</h2>
-      <p>Once you master the basics, you can use "Derived Houses" to see things like "the wealth of your partner" or "the siblings of your spouse." 
-      <br>For example:
-      <br>**8th House:** The 2nd House (money) of the 7th House (partner). It shows your partner's wealth and how you share it.
-      <br>**11th House:** The 2nd House (income) of the 10th House (career). It shows the money you *make* from your job.
-      <br>**6th House:** The 3rd House (communication) of the 4th House (home). It shows how you talk to your family.
-      <br>This "turning the chart" technique allows an astrologer to answer almost any specific question about people in your life using only your own birth chart.</p>
+      <h2 id="derived-houses">Tehnică avansată: Case derivate</h2>
+      <p>Odată ce stăpânești noțiunile de bază, poți folosi „Casele derivate” pentru a vedea lucruri precum „averea partenerului tău” sau „frații soțului tău”. 
+      <br>De exemplu:
+      <br>**Casa a 8-a:** Este Casa a 2-a (banii) a Casei a 7-a (partenerul). Arată averea partenerului tău și modul în care o împărțiți.
+      <br>**Casa a 11-a:** Este Casa a 2-a (venitul) a Casei a 10-a (cariera). Arată banii pe care îi *faci* de la locul de muncă.
+      <br>**Casa a 6-a:** Este Casa a 3-a (comunicarea) a Casei a 4-a (casa). Arată cum vorbești cu familia ta.
+      <br>Această tehnică de „rotire a hărții” permite unui astrolog să răspundă la aproape orice întrebare specifică despre oamenii din viața ta folosind doar propria hartă natală.</p>
 
-      <h2 id="progressions">Progressed Houses: How Your Life Cycles Evolve</h2>
-      <p>Your birth chart is your "natal seed," but you are a growing tree. Through **Secondary Progressions**, your house cusps "move" over time (roughly 1 degree per year). This means that eventually, your Progressed Sun will move from one house to the next.
-      <br>When your Sun progresses into the 10th House, you enter a 30-year cycle of career focus, regardless of where your natal Sun is. When it moves into the 4th, you suddenly want to buy a house and settle down. Understanding your Progressed Houses is the secret to timing the major chapters of your life.</p>
+      <h2 id="progressions">Case progresate: Cum evoluează ciclurile vieții tale</h2>
+      <p>Harta natală este „sămânța” ta, dar ești un copac în creștere. Prin <strong>Progresiile Secundare</strong>, vârfurile caselor tale se „mișcă” în timp (aproximativ 1 grad pe an). Acest lucru înseamnă că, în cele din urmă, Soarele tău Progresat se va muta dintr-o casă în alta.
+      <br>Când Soarele tău progresează în Casa a 10-a, intri într-un ciclu de 30 de ani de concentrare pe carieră, indiferent de locul în care se află Soarele tău natal. Când se mută în a 4-a, vrei dintr-odată să-ți cumperi o casă și să te așezi la casa ta. Înțelegerea Caselor Progresate este secretul pentru sincronizarea capitolelor majore ale vieții tale.</p>
 
-      <h2 id="conclusion">Integrating Your Map</h2>
-      <p>Understanding the 12 Houses is the key to moving from "pop astrology" to a deep, resonant understanding of your destiny. By looking at which houses have the most planets (a "Stellium"), you can identify which areas of life will be the most active for you. Is your chart concentrated in the bottom half? You are likely a more private, family-oriented person. Is it concentrated at the top? You are likely driven by public achievement and career.</p>
+      <h2 id="conclusion">Integrarea hărții tale</h2>
+      <p>Înțelegerea celor 12 case este cheia pentru a trece de la „astrologia pop” la o înțelegere profundă și rezonantă a destinului tău. Privind care case au cele mai multe planete (un „Stellium”), poți identifica care zone ale vieții vor fi cele mai active pentru tine. Harta ta este concentrată în jumătatea de jos? Probabil ești o persoană mai discretă, orientată spre familie. Este concentrată în partea de sus? Probabil ești condus de realizările publice și de carieră.</p>
       
-      <p>At Astralo, our <strong>personalized astrology reports</strong> take the guesswork out of house interpretation. We synthesize the sign, the planets, and the house rulers into a cohesive narrative that helps you navigate your life with clarity and purpose. Your map is already written in the stars—let us help you read it. Whether you are looking for career guidance or love advice, the houses hold the answer. Start your journey today and discover the stage you were born to perform on.</p>
+      <p>La Astralo, <strong>rapoartele noastre astrologice personalizate</strong> elimină presupunerile din interpretarea caselor. Sintetizăm semnul, planetele și guvernatorii caselor într-o narațiune coerentă care te ajută să-ți navighezi viața cu claritate și scop. Harta ta este deja scrisă în stele — lasă-ne să te ajutăm să o citești. Indiferent dacă ești în căutarea unor îndrumări în carieră sau a unor sfaturi în dragoste, casele dețin răspunsul. Începe-ți călătoria astăzi și descoperă scena pe care ai fost născut să joci.</p>
     `
 };

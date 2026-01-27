@@ -4,201 +4,238 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 Ghidul de Supraviețuire pentru Întoarcerea lui Saturn: Navigarea Ritualului tău Cosmic de Trecere',
+  excerpt: 'Împlinești 29 de ani? Bun venit la Întoarcerea lui Saturn. Descoperă de ce acesta este cel mai important eveniment astrologic al vieții tale de adult și cum să îi supraviețuiești cu sufletul intact.',
+  category: 'Tranzituri',
+  metaDescription: 'Ghidul suprem pentru a supraviețui Întoarcerii lui Saturn. Află ce se întâmplă când Saturn revine în poziția sa natală, cum îți afectează cariera și relațiile.',
+  keywords: 'întoarcerea lui saturn, semnificație întoarcerea lui saturn, prima întoarcere a lui saturn, tranzituri astrologice, saturn în case, criză la 30 de ani, maturitate astrologică',
+  quickSummary: [
+    'O Întoarcere a lui Saturn are loc atunci când Saturn revine în locația exactă în care se afla când te-ai născut (în jurul vârstei de 28-30 de ani).',
+    'Este un „audit cosmic” în care tot ce nu este construit pe o fundație solidă este măturat.',
+    'Deși adesea stresantă, este catalizatorul pentru o maturizare reală și pentru găsirea scopului vieții tale.',
+    'O a doua Întoarcere a lui Saturn are loc în jurul vârstei de 58-60 de ani, concentrându-se pe moștenire și înțelepciune.'
+  ],
+  keyTakeaways: [
+    'Nu te opune schimbărilor; Saturn răsplătește disciplina și responsabilitatea.',
+    'Casa în care se află Saturn al tău determină unde vei susține cel mai mare „examen final”.',
+    'Despărțirile și schimbările de carieră în această perioadă sunt adesea necesare pentru creșterea ta.',
+    'Odată ce tranzitul se încheie, vei simți un nou sentiment de autoritate și claritate.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'Ce este Întoarcerea lui Saturn?' },
+    { id: 'the-myth-of-saturn', title: 'Mitul și Supraveghetorul: Stăpânul Timpului' },
+    { id: 'timeline', title: 'Cronologia: Fazele Întoarcerii' },
+    { id: 'themes', title: 'Teme Universale ale Întoarcerii' },
+    { id: 'saturn-in-signs', title: 'Întoarcerea lui Saturn prin Semnele Zodiacale (de la Berbec la Pești)' },
+    { id: 'saturn-in-houses', title: 'Întoarcerea lui Saturn prin Case (O analiză profundă)' },
+    { id: 'house-1', title: 'Casa 1: Reinventarea Sinelui' },
+    { id: 'house-2', title: 'Casa 2: Fundația Financiară' },
+    { id: 'house-3', title: 'Casa 3: Stăpânirea Minții' },
+    { id: 'house-4', title: 'Casa 4: Vindecarea Ancestrală și Rădăcinile' },
+    { id: 'house-5', title: 'Casa 5: Disciplina Bucuriei' },
+    { id: 'house-6', title: 'Casa 6: Rutina Sacră' },
+    { id: 'house-7', title: 'Casa 7: Creuzetul Parteneriatului' },
+    { id: 'house-8', title: 'Casa 8: Moarte, Renaștere și Putere Partajată' },
+    { id: 'house-9', title: 'Casa 9: Căutarea Adevărului' },
+    { id: 'house-10', title: 'Casa 10: Vârful Carierei' },
+    { id: 'house-11', title: 'Casa 11: Scopul Colectiv' },
+    { id: 'house-12', title: 'Casa 12: Dizolvarea Finală' },
+    { id: 'retrograde', title: 'Factorul Saturn Retrograd' },
+    { id: 'psychology', title: 'Psihologia Întoarcerii lui Saturn' },
+    { id: 'how-to-survive', title: 'Sfaturi de Supraviețuire: Cum să gestionezi presiunea' },
+    { id: 'famous-examples', title: 'Povești Celebre despre Întoarcerea lui Saturn' },
+    { id: 'post-return', title: 'Viața după Foc: Anii 30' },
+    { id: 'second-return', title: 'Pregătirea pentru a Doua Întoarcere (Vârsta 58-60)' },
+    { id: 'faq', title: 'Întrebări Frecvente' },
+    { id: 'conclusion', title: 'Acceptarea Maturității Tale' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Ce este Întoarcerea lui Saturn?</h2>
+      <p>Dacă ai observat vreodată că anii dintre 27 și 30 par deosebit de haotici pentru majoritatea oamenilor, ai fost martorul puterii <strong>Întoarcerii lui Saturn</strong>. În astrologie, Saturn este planeta structurii, disciplinei, responsabilității și timpului. Este nevoie de aproximativ 29,5 ani pentru ca această planetă gigantă să finalizeze o orbită completă în jurul soarelui.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>„Întoarcerea lui Saturn” are loc atunci când planeta Saturn revine la gradul și semnul zodiacal exact pe care le ocupa în momentul nașterii tale. Este echivalentul celest al unui „examen final” pentru tinerețea ta. Este momentul în care universul întreabă: <em>„Trăiești o viață care este cu adevărat a ta, sau doar joci un rol bazat pe ceea ce ți-au spus părinții și societatea?”</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Această perioadă este adesea marcată de presiune intensă, schimbări majore de viață și o realizare bruscă a faptului că maturitatea nu mai este un concept îndepărtat, ci o realitate prezentă și grea. În timp ce „astrologia pop” descrie adesea Întoarcerea lui Saturn ca pe un timp înfricoșător de pierdere și criză, este de fapt o oportunitate profundă de a elimina versiunile „false” ale tale și de a construi o fundație care să te susțină în următoarele trei decenii. Este puntea dintre potențialul anilor 20 și puterea anilor 30.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Mitul și Supraveghetorul: Stăpânul Timpului</h2>
+      <p>Pentru a înțelege de ce acest tranzit se simte atât de greu, trebuie să ne uităm la arhetipul lui Saturn. În mitologia romană (și greacă sub numele de Kronos), Saturn era zeul timpului și al recoltei. El este adesea reprezentat cu o coasă. Aceasta nu se referă doar la moarte; este despre tăierea a ceea ce nu mai folosește. Așa cum un grădinar trebuie să taie un tufiș de trandafiri pentru ca acesta să înflorească mai frumos în sezonul următor, Saturn taie părțile din viața noastră care sunt crescute excesiv, nesănătoase sau imitații.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Saturn este „Supraveghetorul” sau „Stăpânul Karmei”. El nu vrea ca tu să suferi, dar vrea ca tu să te maturizezi. Mulți oameni trec prin anii 20 pe un amestec de noroc, potențial și așteptările părinților lor. Saturn spune că petrecerea s-a terminat. Este timpul să construiești ceva care să dureze pentru următorii 30 de ani. El răsplătește munca grea, integritatea și răbdarea. El pedepsește scurtăturile, necinstea și procrastinarea. Dacă ai „prefăcut-o”, Întoarcerea lui Saturn este momentul în care adevărul iese la iveală.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Cronologia: Fazele Întoarcerii</h2>
+      <p>Prima Întoarcere a lui Saturn începe de obicei în jurul vârstei de 27,5 ani și se încheie până la 30 de ani. Cu toate acestea, experiența poate fi împărțită în trei faze distincte:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>Faza 1: Furtuna care se adună (Vârsta 27-28)</h3>
+      <p>Începi să simți un sentiment vag de neliniște. Lucrurile care te făceau fericit – întâlnirile ocazionale, nopțile târzii, un job „doar pentru moment” – încep să se simtă goale. Ai putea simți un impuls brusc de a-ți „pune viața în ordine”, chiar dacă nu ești sigur cum arată asta încă. Ai putea începe să observi prieteni care se căsătoresc sau sunt promovați și, în loc să te bucuri pentru ei, simți o panică legată de propriul progres.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>Faza 2: Examenul Final (Vârsta 28-29)</h3>
+      <p>Aceasta este „lovitura”. Evenimentele conspiră pentru a te forța să acționezi. Acesta este momentul în care au loc despărțirile, apar schimbările de carieră sau se manifestă problemele de sănătate. Ești obligat să faci alegeri. Nu mai există stat pe gard. Saturn va continua să te împingă până când îți asumi responsabilitatea pentru rezultatele tale. Acesta este vârful intensității emoționale a tranzitului.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>Faza 3: Integrarea (Vârsta 29-30)</h3>
+      <p>Pe măsură ce Saturn trece de gradul său natal, presiunea începe să scadă. Începi să vezi înțelepciunea în alegerile pe care le-ai făcut (chiar și în cele grele). Te simți mai bătrân, dar mai solid. Ai „absolvit” maturitatea astrologică reală. Nu mai ai nevoie să verifici cu nimeni altcineva dacă „ai voie” să fii tu însuți. Pur și simplu ești.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Teme Universale ale Întoarcerii</h2>
+      <p>Deși experiența fiecărui individ este unică, câteva teme apar pentru aproape toată lumea în această perioadă:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Confruntarea cu Realitatea:</strong> Dacă ai trăit într-o fantezie sau ai evitat un adevăr major, Saturn te va forța să îl înfrunți.</li>
+        <li><strong>Încheierea Relațiilor:</strong> Relațiile pe termen lung care nu sunt menite pentru „termen foarte lung” se destramă adesea acum. Dacă rămâneți împreună, este pentru că v-ați asumat un nou nivel de maturitate.</li>
+        <li><strong>Schimbări de Carieră:</strong> Mulți oameni renunță la joburile lor stabile și plictisitoare pentru a-și urma adevărata vocație, sau realizează că „jobul visat” este de fapt un coșmar și se îndreaptă spre ceva practic.</li>
+        <li><strong>Îmbătrânirea Fizică:</strong> S-ar putea să îți simți corpul diferit brusc. Este momentul în care oamenii încep să își ia sănătatea în serios – realizând că nu mai sunt invincibili. Ai putea observa primul fir de păr alb sau o schimbare în metabolism.</li>
+        <li><strong>Stabilirea Limitelor:</strong> Învățarea de a spune „nu” părinților, prietenilor toxici și așteptărilor nerealiste este o lecție saturniană majoră. Înveți că „Nu” este o propoziție completă.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Zodiac Semns</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Întoarcerea lui Saturn prin Semnele Zodiacale</h2>
+      <p>Semnul în care se află Saturn al tău ne spune *cum* vei experimenta această tranziție. Găsește-ți semnul lui Saturn în harta Astralo pentru a vedea aroma specifică a creșterii tale:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Saturn în Berbec</h3>
+      <p>Întoarcerea ta este despre **răbdare și controlul impulsurilor**. Probabil vrei să grăbești tranziția, dar Saturn te va încetini. Înveți să conduci cu înțelepciune, nu doar cu energie brută.
+      <br><strong>Sarcina:</strong> Să îți stăpânești mânia și elanul.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Saturn în Taur</h3>
+      <p>Întoarcerea ta este despre **securitate financiară și valori**. Te-ai putea confrunta cu obstacole financiare majore care te forțează să definești ce este cu adevărat „valoros” pentru tine.
+      <br><strong>Sarcina:</strong> Să construiești o fundație financiară solidă și o stimă de sine care nu este legată de posesiunile tale.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Saturn în Gemeni</h3>
+      <p>Întoarcerea ta este despre **comunicare și concentrare**. S-ar putea să ai „prea multe idei” și Saturn te va forța să alegi una și să o stăpânești.
+      <br><strong>Sarcina:</strong> Să îți concentrezi mintea și să vorbești cu autoritate.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Saturn în Rac</h3>
+      <p>Întoarcerea ta este despre **limite emoționale și familie**. S-ar putea să ai de-a face cu răni din copilărie sau să îți asumi o responsabilitate familială grea.
+      <br><strong>Sarcina:</strong> Să te hrănești pe tine însuți și să construiești un cămin interior care nu depinde de alții.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Saturn în Leu</h3>
+      <p>Întoarcerea ta este despre **integritate creativă și recunoaștere**. Te-ai putea lupta cu nevoia de aplauze și să trebuiască să înveți să creezi pentru tine mai întâi.
+      <br><strong>Sarcina:</strong> Să găsești încrederea care vine din forța interioară, nu din laude externe.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Saturn în Fecioară</h3>
+      <p>Întoarcerea ta este despre **sănătate și serviciu**. Probabil ești deja foarte dur cu tine însuți, iar Saturn te va învăța că „perfectul” este inamicul „binelui”.
+      <br><strong>Sarcina:</strong> Să construiești o rutină sustenabilă și să înveți să fii blând cu corpul tău fizic.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Saturn în Balanță</h3>
+      <p>Întoarcerea ta este despre **dreptate și parteneriat**. Te-ai putea confrunta cu teste majore în relație care te forțează să îți găsești propria identitate în cadrul unui cuplu.
+      <br><strong>Sarcina:</strong> Să găsești echilibrul și să înveți că ești „suficient” pe cont propriu.</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Saturn în Scorpion</h3>
+      <p>Întoarcerea ta este despre **putere și intimitate**. Aceasta este o întoarcere foarte intensă care implică confruntarea cu umbra ta și învățarea încrederii.
+      <br><strong>Sarcina:</strong> Să îți transformi cele mai adânci frici în putere personală.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Saturn în Săgetător</h3>
+      <p>Întoarcerea ta este despre **credință și libertate**. Ai putea realiza că lumea este mult mai mare (sau mai mică) decât credeai și va trebui să îți redefinești filozofia.
+      <br><strong>Sarcina:</strong> Să găsești un „Adevăr” după care să poți trăi cu adevărat în fiecare zi.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Saturn în Capricorn</h3>
+      <p>Întoarcerea ta este despre **ambiție și autoritate**. Saturn este „acasă” aici, deci presiunea este extremă, dar și recompensele. Devii Șeful.
+      <br><strong>Sarcina:</strong> Să îți asumi responsabilitatea pentru moștenirea ta și să îți urci muntele cu integritate.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Saturn în Vărsător</h3>
+      <p>Întoarcerea ta este despre **comunitate și individualitate**. Înveți cum să te integrezi în grup fără să îți pierzi scânteia unică.
+      <br><strong>Sarcina:</strong> Să contribui la colectiv în timp ce îți menții limitele.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Saturn în Pești</h3>
+      <p>Întoarcerea ta este despre **spiritualitate și limite**. Te-ai putea lupta cu rămânerea ancorat în realitate și va trebui să înveți că „nu” este un act spiritual.
+      <br><strong>Sarcina:</strong> Să îți transformi visele în realitate prin disciplină.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Întoarcerea lui Saturn prin Case: O analiză profundă</h2>
+      <p>„Unde” are loc Întoarcerea lui Saturn este determinat de Casa în care se află Saturn în harta ta natală. Aceasta este scena pe care se va desfășura drama.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">Casa 1: Reinventarea Sinelui</h2>
+      <p>Când Saturn revine în Casa 1, criza este personală și fizică. Ai putea experimenta o transformare totală – nu doar a hainelor, ci a personalității tale. Simți o greutate mare pe umeri, un sentiment că trebuie să „devii cineva”. S-ar putea să fii extrem de dur cu tine însuți în timpul acestei tranziții. Ai putea experimenta scădere în greutate, îngrășare sau o schimbare în sănătate care necesită disciplină.
+      <br><strong>Lecția:</strong> Să construiești un sentiment solid al sinelui care nu depinde de aprobarea celorlalți. Înveți să fii propria ta autoritate. Ești CEO-ul propriului tău corp.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">Casa 2: Fundația Financiară</h2>
+      <p>Această întoarcere se concentrează pe finanțele și stima de sine. Te-ai putea confrunta cu dificultăți financiare, forțându-te să înveți cum să bugetezi, să economisești și să îți prețuiești timpul. Alternativ, ai putea începe în sfârșit să câștigi bani „adevărați”, dar simți o responsabilitate grea asociată cu aceștia. Redefinești ce înseamnă „securitate” pentru tine. Înveți că valoarea ta nu este un număr într-un cont bancar.
+      <br><strong>Lecția:</strong> Să găsești securitatea în tine însuți și să construiești o relație sustenabilă cu lumea materială. Înveți valoarea unui leu și valoarea sufletului tău.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">Casa 3: Stăpânirea Minții</h2>
+      <p>Presiunea este asupra minții tale și a cercului tău imediat. Ai putea decide să te întorci la școală, să finalizezi un proiect de scriere amânat de mult sau să experimentezi schimbări majore în relațiile cu frații. Ai putea simți că ai „prea multe de învățat” și nu suficient timp. Naveta zilnică ar putea deveni o sursă de stres, forțându-te să îți schimbi mediul.
+      <br><strong>Lecția:</strong> Să îți stăpânești meșteșugul și să comunici cu integritate. Înveți valoarea gândirii concentrate și a vorbirii oneste. Devii o persoană de cuvânt.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">Casa 4: Vindecarea Ancestrală și Rădăcinile</h2>
+      <p>Aceasta este una dintre cele mai emoționante întoarceri. Implică adesea părinții, situația locativă sau traumele din copilărie. Ai putea cumpăra prima ta casă sau ar putea trebui să ai grijă de un părinte în vârstă. Îți construiești propria fundație, adesea prin dezmembrarea celei pe care părinții au construit-o pentru tine. Ești noul „Cap al Familiei”.
+      <br><strong>Lecția:</strong> Să creezi un cămin și o viață privată care să îți hrănească cu adevărat sufletul, independent de așteptările familiei tale. Vindeci „arborele genealogic” fiind cel care rupe ciclul.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">Casa 5: Disciplina Bucuriei</h2>
+      <p>Saturn în Casa 5 se poate simți ca „ziua în care muzica a murit”. Hobiurile tale obișnuite sau petrecerile s-ar putea simți goale. Acesta este momentul în care mulți decid să aibă copii (asumându-și responsabilitatea supremă pentru „creație”) sau realizează că vor să transforme un hobby creativ într-o afacere serioasă. Este vorba despre maturizarea „distracției” tale.
+      <br><strong>Lecția:</strong> Să găsești bucuria prin disciplină și creativitate asumată. Înveți că jocul adevărat necesită concentrare. Este diferența dintre un „flirt” și o „romanță”.</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">Casa 6: Rutina Sacră</h2>
+      <p>Această întoarcere este despre sănătatea ta și obiceiurile zilnice. Te-ai putea confrunta cu o sperietură de sănătate care te forțează să îți schimbi dieta și exercițiile fizice. Viața profesională devine foarte solicitantă, cerându-ți să înveți delegarea și limitele. Realizezi că corpul tău este un templu care necesită întreținere. Jobul tău se poate simți ca o povară grea până când înveți să îți gestionezi mai bine timpul.
+      <br><strong>Lecția:</strong> Să îți stăpânești ritmul zilnic și să îi servești pe alții fără să te epuizezi. Eficiența este noul tău cel mai bun prieten. Construiești un corp care să dureze.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">Casa 7: Creuzetul Parteneriatului</h2>
+      <p>Casa „Căsătoriei sau Despărțirii”. Saturn aici îți testează cele mai intime legături. Dacă o relație a fost șubredă, probabil se va termina acum. Dacă este puternică, te-ai putea căsători sau ai putea intra într-un contract de afaceri serios. Înveți ce înseamnă de fapt „angajamentul” – nu este doar un sentiment, este un contract. Ai putea atrage parteneri mai în vârstă și mai serioși acum.
+      <br><strong>Lecția:</strong> Să construiești parteneriate bazate pe realitate și responsabilitate reciprocă, nu pe proiecție sau fantezie. Înveți să fii un „partener”, nu doar un „iubit”.</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">Casa 8: Moarte, Renaștere și Putere Partajată</h2>
+      <p>Aceasta este o întoarcere profundă, psihologică. Implică finanțe partajate, taxe și intimitate. Te-ai putea confrunta cu fricile tale de moarte sau de pierdere. Este un timp al „morții egoului” în care realizezi că nu poți controla totul. S-ar putea să ai de-a face cu datorii sau cu o moștenire. Pur și simplu îți îndepărtezi pielea pentru a dezvălui sufletul de dedesubt.
+      <br><strong>Lecția:</strong> Să îți stăpânești puterea personală și să înveți arta încrederii și a cedării în intimitatea profundă. Descoperi „bogăția” care nu poate fi văzută.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">Casa 9: Căutarea Adevărului</h2>
+      <p>Saturn aici îți provoacă credințele. Ai putea părăsi religia copilăriei tale sau, dimpotrivă, ai putea găsi o structură profundă într-o cale spirituală. Te-ai putea lupta cu învățământul superior sau ai putea experimenta provocări semnificative în timp ce călătorești în străinătate. Cauți un „Adevăr” după care să poți trăi cu adevărat. Ai putea decide să obții în sfârșit acel doctorat sau să scrii acea carte.
+      <br><strong>Lecția:</strong> Să construiești o filozofie de viață care să poată rezista timpurilor grele și să ofere un sens autentic. Devii o persoană a înțelepciunii, nu doar a cunoașterii.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Carieră</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">Casa 10: Vârful Carierei</h2>
+      <p>Aceasta este clasica „Criză de la 30 de ani”. Reputația ta publică și cariera sunt sub microscop. Ai putea ajunge în vârful domeniului tău și să realizezi că îl urăști, sau ai putea obține în sfârșit recunoașterea pentru care ai muncit. Ești rugat să pășești în autoritatea ta și să conduci. Lumea privește.
+      <br><strong>Lecția:</strong> Să îți aliniezi viața publică cu adevărul tău interior și să îți asumi responsabilitatea pentru moștenirea ta. Devii figura de autoritate de care te temeai odinioară.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">Casa 11: Scopul Colectiv</h2>
+      <p>Saturn aici îți triază grupul de prieteni. Ai putea realiza că „prietenii” tăi erau doar cunoștințe pentru un sezon al vieții tale și nu mai aveți nimic în comun. Te-ai putea simți atras de mentori mai în vârstă sau ai putea prelua un rol de conducere într-o organizație comunitară. Îți cauți adevăratul trib. Îți definești „speranțele și dorințele” cu pași realiști.
+      <br><strong>Lecția:</strong> Să îți găsești locul în colectiv și să îți contribui abilitățile la o cauză mai mare decât tine. Construiești o rețea care lucrează pentru viitor.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">Casa 12: Dizolvarea Finală</h2>
+      <p>Aceasta este o întoarcere foarte liniștită, internă. Te-ai putea simți singur sau izolat. Secrete din trecut ar putea ieși la lumină. Este un timp pentru vindecare profundă, terapie sau retragere spirituală. Pregătești terenul pentru un nou ciclu de 30 de ani. Este sfârșitul unei ere. Lucrezi cu strămoșii tăi și cu mintea ta subconștientă.
+      <br><strong>Lecția:</strong> Să găsești pacea în singurătate, să ierți trecutul și să te abandonezi divinului sau inconștientului colectiv. Te pregătești pentru renaștere.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Factorul Saturn Retrograd</h2>
+      <p>Dacă te-ai născut în timpul unui **Saturn Retrograd** (când Saturn pare să se miște înapoi pe cer), întoarcerea ta s-ar putea simți ușor diferit. S-ar putea să îți fi petrecut anii 20 simțind o greutate internă sau un sentiment că „nu ești suficient de bun”. În timpul întoarcerii tale, presiunea s-ar putea simți de fapt *eliberatoare*, deoarece lumea exterioară se potrivește în sfârșit cu starea ta internă de seriozitate. Ți se permite în sfârșit să pășești în rolul pentru care te-ai pregătit de la naștere. Ești în sfârșit „suficient de bun”.</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Psihologia Întoarcerii lui Saturn</h2>
+      <p>Din perspectivă psihologică, Întoarcerea lui Saturn marchează tranziția de la starea de copil etern la cea de adult. Încetăm să mai căutăm la părinții noștri sau la societate „răspunsul” și începem să oferim noi înșine răspunsul. Este moartea copilăriei egoului și nașterea maturității sufletului. Acesta este motivul pentru care este adesea însoțită de depresie sau anxietate – este o formă de doliu pentru sinele lipsit de griji pe care îl lași în urmă. Realizezi că timpul tău pe Pământ este finit.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Sfaturi de Supraviețuire: Cum să gestionezi presiunea</h2>
+      <p>Cea mai mare greșeală pe care o fac oamenii în timpul Întoarcerii lui Saturn este **rezistența**. Saturn este ca un zid – dacă alergi spre el, te vei răni. Dacă cauți ușa (prin efort și responsabilitate), vei trece într-o lume nouă.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Asumă-ți Responsabilitatea:</strong> Nu da vina pe șeful tău, pe partenerul tău sau pe părinți. Întreabă-te: „Care este partea mea în asta? Ce sunt gata să schimb?”</li>
+        <li><strong>Organizează-te:</strong> Saturn iubește tabelele. Uită-te la finanțele tale, la sănătatea ta și la programul tău. Construiește sisteme care să te susțină când te simți slab.</li>
+        <li><strong>Ai Răbdare:</strong> Saturn este zeul timpului. Acest tranzit durează 2,5 ani. Nu îl vei rezolva într-un weekend. Respectă procesul. Încetul cu încetul se face oțetul.</li>
+        <li><strong>Caută Mentorat:</strong> Saturn reprezintă „Înțeleptul”. Găsește pe cineva care a trecut prin asta și cere-i înțelepciunea. Alătură-te unui grup de oameni la 30 de ani care au ajuns de cealaltă parte.</li>
+        <li><strong>Ocupă-te de Sănătatea Ta:</strong> Corpul tău îți va da indicii. Dacă ești stresat, unde simți asta? Ia în serios întreținerea fizică. Controalele regulate sunt esențiale acum.</li>
+        <li><strong>Taie Lemnul Mort:</strong> Dacă un obicei, un prieten sau un job te epuizează fără a-ți oferi nimic în schimb, lasă-l să plece. Saturn îl va lua oricum; este mai ușor dacă îl predai de bunăvoie.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Povești Celebre despre Întoarcerea lui Saturn</h2>
+      <p>Multe celebrități și figuri istorice au experimentat cele mai transformative momente în timpul Întoarcerii lui Saturn:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> A fost înlăturat de la Apple în perioada premergătoare Întoarcerii lui Saturn, ceea ce l-a condus la fondarea NeXT și Pixar, revenind în cele din urmă la Apple și mai puternic și mai matur.</li>
+        <li><strong>Lady Gaga:</strong> Și-a transformat imaginea și cariera semnificativ la sfârșitul anilor 20, trecând de la spectacolul pop la o artă mai „serioasă” și jazz.</li>
+        <li><strong>Vincent van Gogh:</strong> A început să picteze serios abia în anii Întoarcerii lui Saturn, găsindu-și vocația printr-o perioadă de luptă intensă.</li>
+        <li><strong>J.K. Rowling:</strong> A scris prima carte Harry Potter în timp ce se lupta ca mamă singură în timpul Întoarcerii ei la Saturn – o poveste de succes „saturniană” clasică construită pe adversitate.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Foc: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Viața după Foc: Anii 30</h2>
+      <p>Odată ce Saturn merge mai departe, greutatea se ridică. Oamenii raportează adesea că se simt mai „ușori”, dar și mai „solizi” după vârsta de 30 de ani. Nu îți mai pasă atât de mult de ceea ce cred oamenii. Ai un drum. Ai supraviețuit focului și, ca aurul, ai fost purificat. Ai un sentiment al scopului pe care „tinele mai tânăr” nu l-ar fi putut înțelege niciodată. Anii 30 sunt adesea cel mai productiv și plin de satisfacții deceniu al vieții tale, deoarece știi în sfârșit cine ești.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Pregătirea pentru a Doua Întoarcere (Vârsta 58-60)</h2>
+      <p>Este important să știi că vei primi o altă „vizită” de la Saturn în jurul vârstei de 58 de ani. În timp ce prima întoarcere este despre a deveni adult, a doua este despre a deveni un **Înțelept**. Este despre moștenire, pensionare și înțelepciunea pe care o vei transmite. Dacă faci treaba în timpul primei întoarceri, a doua este mult mai ușoară – un timp al recoltei și al respectului, mai degrabă decât un timp de criză.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Întrebări Frecvente</h2>
+      <p><strong>Î: Toată lumea are o Întoarcere a lui Saturn?</strong>
+      <br>R: Da, fiecare ființă umană experimentează o Întoarcere a lui Saturn în jurul vârstei de 29, 58 și (dacă trăiește suficient de mult) 87 de ani. Este o experiență umană universală.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>Î: Este întotdeauna rău?</strong>
+      <br>R: Nu! Dacă ai muncit din greu și ai trăit cu integritate, Întoarcerea ta la Saturn poate fi un timp de promovare masivă, căsătorie și succes. Este o „recoltă” – primești înapoi exact ceea ce ai plantat în anii 20.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>Î: Cum îmi găsesc semnul lui Saturn?</strong>
+      <br>R: Poți folosi aplicația Astralo pentru a genera harta natală gratuită, care îți va arăta exact ce semn și ce casă ocupă Saturn al tău.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>Î: Ce se întâmplă dacă am Saturn în același semn cu partenerul meu?</strong>
+      <br>R: Veți trece împreună prin Întoarcerile lui Saturn! Acesta poate fi un moment decisiv pentru relație. Dacă vă susțineți reciproc creșterea, veți ieși ca un cuplu puternic.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Acceptarea Maturității Tale</h2>
+      <p>Întoarcerea lui Saturn nu este un blestem; este un cadou de la univers. Este mecanismul celest care te asigură că nu îți irosești viața trăind pentru visele altcuiva. La Astralo, credem că înțelegerea poziției lui Saturn este primul pas către eliberarea adevărată de trecutul tău. </p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>Ghidurile noastre de **Tranzit** oferă predicții lună de lună pentru Întoarcerea ta specifică la Saturn, ajutându-te să înțelegi când să apeși pedala și când să aștepți. Nu te teme de Supraveghetor – acceptă creșterea. Noua ta viață – viața ta reală – te așteaptă de cealaltă parte a vârstei de 30 de ani. Pășește în puterea ta cu încredere. </p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>Cauți mai mult ajutor? Contactează astrologii noștri experți pentru o consultație personalizată privind Întoarcerea la Saturn sau descarcă ghidul nostru specializat de supraviețuire Saturn din app store.</em></p>
     `
 };

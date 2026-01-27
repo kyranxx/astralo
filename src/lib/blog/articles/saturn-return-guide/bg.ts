@@ -4,201 +4,238 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const bg: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 Ръководство за оцеляване по време на Сатурновото завръщане: Навигиране във вашия космически ритуал на прехода',
+  excerpt: 'Навършвате 29? Добре дошли във вашето Сатурново завръщане. Разберете защо това е най-важното астрологично събитие в зрелия ви живот и как да го оцелеете със запазена душа.',
+  category: 'Транзити',
+  metaDescription: 'Окончателното ръководство за оцеляване по време на вашето Сатурново завръщане. Научете какво се случва, когато Сатурн се върне в наталната си позиция, как влияе на кариерата и отношенията ви.',
+  keywords: 'сатурново завръщане, значение на сатурново завръщане, първо сатурново завръщане, астрологични транзити, сатурн в домовете, житейски преход на 30, астрологична зрялост',
+  quickSummary: [
+    'Сатурново завръщане се случва, когато Сатурн се върне на точното място, на което е бил при вашето раждане (около 28-30 годишна възраст).',
+    'Това е „космически одит“, при който всичко, което не е изградено върху солидна основа, се помита.',
+    'Макар че често е стресиращо, то е катализаторът за истинско съзряване и намиране на целта на живота ви.',
+    'Второ Сатурново завръщане се случва около 58-60 годишна възраст, фокусирайки се върху наследството и мъдростта.'
+  ],
+  keyTakeaways: [
+    'Не се съпротивлявайте на промените; Сатурн възнаграждава дисциплината и отговорността.',
+    'Домът, в който се намира вашият Сатурн, определя къде ще се изправите пред най-големия си „държавен изпит“.',
+    'Разделите в отношенията и промените в кариерата през това време често са необходими за вашето израстване.',
+    'След като транзитът приключи, ще почувствате ново чувство за авторитет и яснота.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'Какво е Сатурново завръщане?' },
+    { id: 'the-myth-of-saturn', title: 'Митът и Наставникът: Господарят на времето' },
+    { id: 'timeline', title: 'Хронология: Фази на завръщането' },
+    { id: 'themes', title: 'Универсални теми на завръщането' },
+    { id: 'saturn-in-signs', title: 'Сатурново завръщане през зодиакалните знаци (от Овен до Риби)' },
+    { id: 'saturn-in-houses', title: 'Сатурново завръщане през домовете (Дълбоко потапяне)' },
+    { id: 'house-1', title: '1-ви дом: Преоткриване на себе си' },
+    { id: 'house-2', title: '2-ри дом: Финансовата основа' },
+    { id: 'house-3', title: '3-ти дом: Овладяване на ума' },
+    { id: 'house-4', title: '4-ти дом: Родово изцеление и корени' },
+    { id: 'house-5', title: '5-ти дом: Дисциплината на радостта' },
+    { id: 'house-6', title: '6-ти дом: Свещената рутина' },
+    { id: 'house-7', title: '7-ми дом: Горнилото на партньорството' },
+    { id: 'house-8', title: '8-ми дом: Смърт, прераждане и споделена власт' },
+    { id: 'house-9', title: '9-ти дом: Търсенето на истината' },
+    { id: 'house-10', title: '10-ти дом: Върхът на кариерата' },
+    { id: 'house-11', title: '11-ти дом: Колективната цел' },
+    { id: 'house-12', title: '12-ти дом: Окончателно разтваряне' },
+    { id: 'retrograde', title: 'Факторът „Ретрограден Сатурн“' },
+    { id: 'psychology', title: 'Психология на Сатурновото завръщане' },
+    { id: 'how-to-survive', title: 'Съвети за оцеляване: Как да се справите с напрежението' },
+    { id: 'famous-examples', title: 'Известни истории за Сатурново завръщане' },
+    { id: 'post-return', title: 'Животът след огъня: 30-те години' },
+    { id: 'second-return', title: 'Подготовка за второто завръщане (възраст 58-60)' },
+    { id: 'faq', title: 'Често задавани въпроси' },
+    { id: 'conclusion', title: 'Прегръщане на вашата зрялост' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Какво е Сатурново завръщане?</h2>
+      <p>Ако някога сте забелязали, че годините между 27 и 30 изглеждат особено хаотични за повечето хора, вие сте били свидетели на силата на <strong>Сатурновото завръщане</strong>. В астрологията Сатурн е планетата на структурата, дисциплината, отговорността и времето. Необходими са приблизително 29,5 години, за да може тази гигантска планета да направи една пълна обиколка около Слънцето.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>Вашето „Сатурново завръщане“ се случва, когато планетата Сатурн се върне в точния градус и зодиакален знак, които е заемала в момента на вашето раждане. Това е небесният еквивалент на „държавен изпит“ за вашата младост. Това е моментът, в който вселената пита: <em>„Живеете ли живот, който е наистина ваш, или просто играете роля, базирана на това, което вашите родители и обществото са ви казали?“</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Този период често е белязан от интензивен натиск, значителни житейски промени и внезапно осъзнаване, че зрелостта вече не е далечна концепция, а настояща, тежка реалност. Докато „поп астрологията“ често представя Сатурновото завръщане като страшно време на загуба и криза, то всъщност е дълбока възможност да изчистите „фалшивите“ версии на себе си и да изградите основа, която може да ви поддържа през следващите три десетилетия. То е мостът между потенциала на вашите 20 години и силата на вашите 30 години.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Митът и Наставникът: Господарят на времето</h2>
+      <p>За да разберем защо този транзит се чувства толкова тежък, трябва да погледнем към архетипа на Сатурн. В римската митология (и гръцката като Кронос), Сатурн е бил богът на времето и реколтата. Той често е изобразяван със сърп. Тук не става въпрос само за смърт; става въпрос за орязване на това, което вече не служи. Точно както градинарят трябва да подреже розовия храст, за да цъфти по-красиво през следващия сезон, Сатурн подрязва частите от нашия живот, които са обрасли, нездравословни или имитации.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Сатурн е „Наставникът“ или „Господарят на кармата“. Той не иска да страдате, но иска да пораснете. Много хора преминават през своите 20 години благодарение на смесица от късмет, потенциал и очакванията на своите родители. Сатурн казва, че партито е свършило. Време е да изградите нещо, което ще продължи през следващите 30 години. Той възнаграждава усърдната работа, почтеността и търпението. Той наказва преките пътища, нечестността и прокрастинацията. Ако сте се „престрували“, вашето Сатурново завръщане е моментът, в който истината излиза наяве.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Хронология: Фази на завръщането</h2>
+      <p>Първото Сатурново завръщане обикновено започва около 27,5-годишна възраст и завършва до 30. Опитът обаче може да бъде разделен на три отделни фази:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>Фаза 1: Събиращата се буря (възраст 27-28)</h3>
+      <p>Започвате да изпитвате неясно чувство на безпокойство. Нещата, които преди са ви правели щастливи – случайните срещи, късните нощи, работата „само за сега“ – започват да се усещат празни. Може да изпитате внезапен порив да „подредите живота си“, дори ако все още не сте сигурни как изглежда това. Може да забележите приятелите си да се женят или да се издигат в кариерата и вместо да се радвате за тях, изпитвате паника относно собствения си напредък.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>Фаза 2: Държавният изпит (възраст 28-29)</h3>
+      <p>Това е „ударът“. Събитията се стекат така, че да ви принудят към действие. Това е моментът, в който се случват разделите, настъпват промените в кариерата или се проявяват здравословните проблеми. Принудени сте да правите избори. Вече няма седене на оградата. Сатурн ще продължи да натиска, докато не поемете отговорност за резултатите си. Това е пикът на емоционалната интензивност на транзита.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>Фаза 3: Интеграцията (възраст 29-30)</h3>
+      <p>Когато Сатурн премине своя натален градус, натискът започва да намалява. Започвате да виждате мъдростта в изборите, които сте направили (дори в трудните). Чувствате се по-стари, но по-стабилни. Вие сте „завършили“ истинската астрологична зрялост. Вече нямате нужда да проверявате с никой друг дали „ви е позволено“ да бъдете себе си. Вие просто сте.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Универсални теми на завръщането</h2>
+      <p>Макар опитът на всеки индивид да е уникален, няколко теми се появяват при почти всеки през това време:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Проверка на реалността:</strong> Ако сте живели във фантазия или сте избягвали голяма истина, Сатурн ще ви принуди да се изправите пред нея.</li>
+        <li><strong>Край на отношенията:</strong> Дългосрочните връзки, които не са предназначени за „много дълъг период“, често се разпадат сега. Ако останете заедно, това е защото сте се ангажирали с ново ниво на зрялост.</li>
+        <li><strong>Промени в кариерата:</strong> Много хора напускат стабилните си, скучни работни места, за да преследват истинското си призвание, или осъзнават, че „работата на мечтите им“ всъщност е кошмар, и се насочват към нещо практично.</li>
+        <li><strong>Физическо стареене:</strong> Може внезапно да почувствате тялото си по различен начин. Това е времето, когато хората започват да приемат здравето си сериозно – осъзнавайки, че вече не са непобедими. Може да забележите първия си сив косъм или промяна в метаболизма си.</li>
+        <li><strong>Поставяне на граници:</strong> Научаването да казвате „не“ на родители, токсични приятели и нереалистични очаквания е основен Сатурнов урок. Научавате, че „Не“ е пълно изречение.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Зодия Знакs</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Сатурново завръщане през зодиакалните знаци</h2>
+      <p>Знакът, в който се намира вашият Сатурн, ни казва *как* ще преживеете този преход. Намерете знака на Сатурн във вашата Astralo карта, за да видите вашия специфичен вкус на израстване:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Сатурн в Овен</h3>
+      <p>Вашето завръщане е за **търпение и контрол на импулсите**. Вероятно искате да претупате прехода, но Сатурн ще ви забави. Учите се да ръководите с мъдрост, а не само с чиста енергия.
+      <br><strong>Задачата:</strong> Да овладеете гнева и устрема си.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Сатурн в Телец</h3>
+      <p>Вашето завръщане е за **финансова сигурност и ценности**. Може да се сблъскате с големи финансови препятствия, които да ви принудят да определите какво е наистина „ценно“ за вас.
+      <br><strong>Задачата:</strong> Да изградите солидна финансова основа и самочувствие, което не е обвързано с вашите притежания.</p>
 
       <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <p>Вашето завръщане е за **комуникация и концентрация**. Може да имате „твърде много идеи“ и Сатурн ще ви принуди да изберете една и да я овладеете.
+      <br><strong>Задачата:</strong> Да фокусирате ума си и да говорите с авторитет.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Сатурн в Рак</h3>
+      <p>Вашето завръщане е за **емоционални граници и семейство**. Може да се наложи да се справяте с детски травми или да поемете тежка семейна отговорност.
+      <br><strong>Задачата:</strong> Да се грижите за себе си и да изградите вътрешен дом, който не зависи от другите.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Сатурн в Лъв</h3>
+      <p>Вашето завръщане е за **творческа почтеност и признание**. Може да се борите с нуждата от аплодисменти и да се наложи да се научите да творите първо за себе си.
+      <br><strong>Задачата:</strong> Да намерите увереност, която идва от вътрешната сила, а не от външни хвалби.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Сатурн в Дева</h3>
+      <p>Вашето завръщане е за **здраве и служене**. Вероятно вече сте много взискателни към себе си и Сатурн ще ви научи, че „перфектното“ е враг на „свършеното“.
+      <br><strong>Задачата:</strong> Да изградите устойчива рутина и да се научите да бъдете добри към физическото си тяло.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Сатурн във Везни</h3>
+      <p>Вашето завръщане е за **справедливост и партньорство**. Може да се изправите пред големи изпитания във връзката, които да ви принудят да намерите собствената си идентичност в рамките на двойката.
+      <br><strong>Задачата:</strong> Да намерите баланс и да научите, че сте „достатъчни“ сами по себе си.</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Сатурн в Скорпион</h3>
+      <p>Вашето завръщане е за **власт и интимност**. Това е много интензивно завръщане, което включва изправяне пред вашата сянка и научаване на доверие.
+      <br><strong>Задачата:</strong> Да трансформирате най-дълбоките си страхове в лична власт.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Сатурн в Стрелец</h3>
+      <p>Вашето завръщане е за **вяра и свобода**. Може да осъзнаете, че светът е много по-голям (или по-малък), отколкото сте мислили, и ще трябва да предефинирате философията си.
+      <br><strong>Задачата:</strong> Да намерите „истина“, според която действително можете да живеете всеки ден.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Сатурн в Козирог</h3>
+      <p>Вашето завръщане е за **амбиция и авторитет**. Сатурн е „у дома“ тук, така че натискът е екстремен, но също и наградите. Вие ставате Шефът.
+      <br><strong>Задачата:</strong> Да поемете отговорност за наследството си и да изкачите вашата планина с почтеност.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Сатурн във Водолей</h3>
+      <p>Вашето завръщане е за **общност и индивидуалност**. Учите се как да се впишете в групата, без да губите своята уникална искра.
+      <br><strong>Задачата:</strong> Да допринасяте за колектива, като същевременно поддържате границите си.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Сатурн в Риби</h3>
+      <p>Вашето завръщане е за **духовност и граници**. Може да се борите с това да останете заземени и ще трябва да научите, че „не“ е духовен акт.
+      <br><strong>Задачата:</strong> Да превърнете мечтите си в реалност чрез дисциплина.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Сатурново завръщане през домовете: Дълбоко потапяне</h2>
+      <p>„Къде“ се случва вашето Сатурново завръщане се определя от дома, в който Сатурн се намира във вашата натална карта. Това е сцената, на която ще се разиграе драмата.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">1-ви дом: Преоткриване на себе си</h2>
+      <p>Когато Сатурн се върне в 1-ви дом, кризата е лична и физическа. Може да преживеете пълна промяна – не само на дрехите, но и на личността си. Чувствате тежест върху раменете си, усещане, че трябва да „станете някой“. Може да бъдете изключително взискателни към себе си по време на този преход. Може да изпитате загуба на тегло, напълняване или промяна в здравето, която изисква дисциплина.
+      <br><strong>Урокът:</strong> Да изградите солидно чувство за себе си, което не зависи от одобрението на другите. Учите се да бъдете собствен авторитет. Вие сте изпълнителният директор на собственото си тяло.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">2-ри дом: Финансовата основа</h2>
+      <p>Това завръщане се фокусира върху вашите финанси и самочувствие. Може да преживеете финансови затруднения, които да ви принудят да се научите как да правите бюджет, да спестявате и да цените времето си. Като алтернатива, може най-накрая да започнете да печелите „истински“ пари, но изпитвате тежка отговорност, свързана с тях. Предефинирате какво означава „сигурност“ за вас. Учите се, че вашата стойност не е число в банкова сметка.
+      <br><strong>Урокът:</strong> Да намерите сигурност в себе си и да изградите устойчива връзка с материалния свят. Учите стойността на лева и стойността на вашата душа.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">3-ти дом: Овладяване на ума</h2>
+      <p>Натискът е върху вашия ум и непосредственото ви обкръжение. Може да решите да се върнете в училище, да завършите отдавна спрян проект за писане или да преживеете големи промени в отношенията с братя и сестри. Може да почувствате, че имате „твърде много за учене“ и недостатъчно време. Ежедневното ви пътуване може да се превърне в източник на стрес, принуждавайки ви да промените средата си.
+      <br><strong>Урокът:</strong> Да овладеете занаята си и да общувате почтено. Учите стойността на концентрираната мисъл и честната реч. Ставате човек на думата си.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">4-ти дом: Родово изцеление и корени</h2>
+      <p>Това е едно от най-емоционалните завръщания. То често включва вашите родители, семейното ви положение или детските ви травми. Може да купите първия си дом или да се наложи да се грижите за възрастен родител. Изграждате собствена основа, често чрез разграждане на тази, която родителите ви са изградили за вас. Вие сте новият „глава на семейството“.
+      <br><strong>Урокът:</strong> Да създадете дом и личен живот, които наистина подхранват душата ви, независимо от очакванията на вашето семейство. Изцелявате „семейното дърво“, като сте човекът, който прекъсва цикъла.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">5-ти дом: Дисциплината на радостта</h2>
+      <p>Сатурн в 5-ти дом може да се почувства като „денят, в който музиката умря“. Обичайните ви хобита или партита може да се усещат празни. Това често е моментът, в който хората решават да имат деца (поемайки върховната отговорност за „съзиданието“) или осъзнават, че искат да превърнат творческо хоби в сериозен бизнес. Става въпрос за съзряване на вашето „забавление“.
+      <br><strong>Урокът:</strong> Да намерите радост чрез дисциплина и отдадено творчество. Учите се, че истинската игра изисква фокус. Това е разликата между „флирт“ и „романс“.</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">6-ти дом: Свещената рутина</h2>
+      <p>Това завръщане е за вашето здраве и ежедневните ви навици. Може да се сблъскате със здравословна стрес-ситуация, която да ви принуди да промените диетата и упражненията си. Трудовият ви живот става много взискателен, изискващ от вас да се научите на делегиране и граници. Осъзнавате, че тялото ви е храм, който изисква поддръжка. Работата ви може да се усеща като тежък товар, докато не се научите да управлявате времето си по-добре.
+      <br><strong>Урокът:</strong> Да овладеете ежедневния си ритъм и да служите на другите, без да прегаряте. Ефективността е вашият нов най-добър приятел. Изграждате тяло, което може да издържи.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">7-ми дом: Горнилото на партньорството</h2>
+      <p>Домът на „брака или раздялата“. Сатурн тук тества най-интимните ви връзки. Ако една връзка е била нестабилна, тя вероятно ще приключи сега. Ако е силна, може да се ожените или да сключите сериозен бизнес договор. Учите се какво всъщност означава „ангажираност“ – това не е просто чувство, това е договор. Може да привлечете по-възрастни и по-сериозни партньори сега.
+      <br><strong>Урокът:</strong> Да изграждате партньорства, базирани на реалността и взаимната отговорност, а не на проекция или фантазия. Учите се да бъдете „партньор“, а не просто „любовник“.</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">8-ми дом: Смърт, прераждане и споделена власт</h2>
+      <p>Това е дълбоко, психологическо завръщане. То включва споделени финанси, данъци и интимност. Може да се изправите пред страховете си от смъртта или загубата. Това е време на „смърт на егото“, в което осъзнавате, че не можете да контролирате всичко. Може да се наложи да се справяте с дългове или наследство. Вие буквално сваляте кожата си, за да разкриете душата отдолу.
+      <br><strong>Урокът:</strong> Да овладеете личната си власт и да научите изкуството на доверието и отдаването в дълбоката интимност. Откривате „богатството“, което не може да се види.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">9-ти дом: Търсенето на истината</h2>
+      <p>Сатурн тук поставя предизвикателство пред вашите вярвания. Може да напуснете религията на детството си или, обратно, да намерите дълбока структура в духовен път. Може да се борите с висшето образование или да изпитате значителни предизвикателства, докато пътувате в чужбина. Търсите „истина“, според която действително можете да живеете. Може да решите най-накрая да вземете тази докторска степен или да напишете онази книга.
+      <br><strong>Урокът:</strong> Да изградите философия на живота, която може да издържи на трудни времена и да осигури истински смисъл. Ставате човек на мъдростта, а не само на знанието.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Кариера</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">10-ти дом: Върхът на кариерата</h2>
+      <p>Това е класическата „криза на 30-те години“. Публичната ви репутация и кариера са под микроскоп. Може да достигнете върха в своята област и да осъзнаете, че го мразите, или най-накрая да получите признанието, за което сте работили. От вас се иска да стъпите в своя авторитет и да ръководите. Светът гледа.
+      <br><strong>Урокът:</strong> Да съгласувате публичния си живот с вътрешната си истина и да поемете отговорност за своето наследство. Ставате авторитетната фигура, от която някога сте се страхували.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">11-ти дом: Колективната цел</h2>
+      <p>Сатурн тук подрязва вашата приятелска група. Може да осъзнаете, че вашите „приятели“ са били просто познати за определен период от живота ви и вече нямате нищо общо. Може да се почувствате привлечени от по-възрастни ментори или да поемете лидерска роля в общностна организация. Търсите своето истинско племе. Определяте своите „надежди и желания“ с реалистични стъпки.
+      <br><strong>Урокът:</strong> Да намерите мястото си в колектива и да допринесете с уменията си за кауза, по-голяма от вас самите. Изграждате мрежа, която работи за бъдещето.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">12-ти дом: Окончателно разтваряне</h2>
+      <p>Това е много тихо, вътрешно завръщане. Може да се чувствате самотни или изолирани. Тайни от миналото могат да излязат наяве. Това е време за дълбоко изцеление, терапия или духовно уединение. Разчиствате терена за изцяло нов 30-годишен цикъл. Това е краят на една ера. Работите с вашите предци и подсъзнанието си.
+      <br><strong>Урокът:</strong> Да намерите мир в усамотението, да простите на миналото и да се отдадете на божественото или колективното подсъзнание. Подготвяте се за прераждане.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Факторът „Ретрограден Сатурн“</h2>
+      <p>Ако сте родени по време на **Ретрограден Сатурн** (когато Сатурн изглежда се движи назад в небето), вашето завръщане може да се почувства малко по-различно. Може да сте прекарали своите 20 години, чувствайки вътрешна тежест или усещане, че „не сте достатъчно добри“. По време на вашето завръщане натискът всъщност може да се почувства като *облекчение*, тъй като външният свят най-накрая съвпада с вашето вътрешно състояние на сериозност. Най-накрая ви е позволено да стъпите в ролята, за която сте се подготвяли от раждането си. Най-накрая сте „достатъчно добри“.</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Психология на Сатурновото завръщане</h2>
+      <p>От психологическа гледна точка, Сатурновото завръщане отбелязва прехода от състоянието на „вечното дете“ към това на „възрастния“. Спираме да търсим „отговора“ от нашите родители или обществото и започваме сами да даваме отговора. Това е смъртта на детството на егото и раждането на зрялостта на душата. Ето защо често е придружено от депресия или тревожност – това е форма на скръб за безгрижното аз, което оставяте зад гърба си. Осъзнавате, че времето ви на Земята е ограничено.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Съвети за оцеляване: Как да се справите с напрежението</h2>
+      <p>Най-голямата грешка, която хората правят по време на своето Сатурново завръщане, е **съпротивата**. Сатурн е като стена – ако се затичате срещу нея, ще се нараните. Ако потърсите вратата (чрез усилия и отговорност), ще преминете в нов свят.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Поемете отговорност:</strong> Не обвинявайте шефа си, партньора си или родителите си. Попитайте се: „Каква е моята роля в това? Какво съм готов да променя?“</li>
+        <li><strong>Организирайте се:</strong> Сатурн обича електронните таблици. Погледнете финансите си, здравето си и графика си. Изградете системи, които могат да ви подкрепят, когато се чувствате слаби.</li>
+        <li><strong>Бъдете търпеливи:</strong> Сатурн е богът на времето. Този транзит продължава 2,5 години. Няма да го разрешите за един уикенд. Уважавайте процеса. Бавно, но славно.</li>
+        <li><strong>Търсете менторство:</strong> Сатурн представлява „Мъдреца“. Намерете някой, който е минал през това, и го попитайте за неговата мъдрост. Присъединете се към група от хора на 30 години, които са стигнали до другия бряг.</li>
+        <li><strong>Обърнете внимание на здравето си:</strong> Тялото ви ще ви дава знаци. Ако сте стресирани, къде го чувствате? Приемете физическата поддръжка сериозно. Редовните прегледи са от съществено значение сега.</li>
+        <li><strong>Отрежете „мъртвата дървесина“:</strong> Ако някой навик, приятел или работа ви изтощава, без да ви дава нищо в замяна, пуснете го. Сатурн така или иначе ще го вземе; по-лесно е, ако го предадете доброволно.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Известни истории за Сатурново завръщане</h2>
+      <p>Много знаменитости и исторически личности са преживели най-трансформиращите си моменти по време на своето Сатурново завръщане:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Стив Джобс:</strong> Бил е отстранен от Apple в периода преди своето Сатурново завръщане, което го е довело до основаването на NeXT и Pixar, и в крайна сметка се е завърнал в Apple още по-силен и зрял.</li>
+        <li><strong>Лейди Гага:</strong> Трансформира имиджа и кариерата си значително в края на своите 20 години, преминавайки от поп зрелище към по-„сериозно“ изкуство и джаз.</li>
+        <li><strong>Винсент ван Гог:</strong> Започва да рисува сериозно едва в годините на своето Сатурново завръщане, намирайки житейското си призвание чрез период на интензивна борба.</li>
+        <li><strong>Дж. К. Роулинг:</strong> Написала първата книга за Хари Потър, докато се борела като самотна майка по време на своето Сатурново завръщане – класическа „Сатурнова“ история за успех, изграден върху трудности.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Огън: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Животът след огъня: 30-те години</h2>
+      <p>След като Сатурн продължи напред, тежестта се вдига. Хората често споделят, че се чувстват по-„леки“, но и по-„стабилни“ след 30-годишна възраст. Вече не ви пука толкова много какво мислят хората. Имате път. Оцелели сте в огъня и като златото сте били пречистени. Имате чувство за цел, което „по-младото ви аз“ никога не би могло да разбере. Вашите 30 години често са най-продуктивното и възнаграждаващо десетилетие от живота ви, защото най-накрая знаете кои сте.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Подготовка за второто завръщане (възраст 58-60)</h2>
+      <p>Важно е да знаете, че ще получите още едно „посещение“ от Сатурн около 58-годишна възраст. Докато първото завръщане е за това да станете възрастен, второто е за това да станете **Мъдрец**. Става въпрос за наследството, пенсионирането и мъдростта, която ще предадете. Ако свършите работата по време на първото си завръщане, второто е много по-лесно – време на реколта и уважение, а не време на криза.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Често задавани въпроси</h2>
+      <p><strong>В: Всеки ли преминава през Сатурново завръщане?</strong>
+      <br>О: Да, всяко човешко същество преживява Сатурново завръщане около 29, 58 и (ако живее достатъчно дълго) 87-годишна възраст. Това е универсален човешки опит.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>В: Винаги ли е лошо?</strong>
+      <br>О: Не! Ако сте работили усърдно и сте живели почтено, вашето Сатурново завръщане може да бъде време на мащабно повишение, брак и успех. Това е „реколта“ – получавате обратно точно това, което сте засадили през своите 20 години.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>В: Как да намеря своя знак на Сатурн?</strong>
+      <br>О: Можете да използвате приложението Astralo, за да генерирате своята безплатна натална карта, която ще ви покаже точно в кой знак и дом се намира вашият Сатурн.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>В: Какво става, ако имам Сатурн в същия знак като моя партньор?</strong>
+      <br>О: Ще преминете през своите Сатурнови завръщания заедно! Това може да бъде време на „всичко или нищо“ за връзката. Ако подкрепяте взаимно израстването си, ще излезете от това като силна двойка.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Прегръщане на вашата зрялост</h2>
+      <p>Сатурновото завръщане не е проклятие; то е подарък от вселената. То е небесният механизъм, който гарантира, че не пилеете живота си, живеейки за чужди мечти. В Astralo вярваме, че разбирането на позицията на вашия Сатурн е първата стъпка към истинското освобождение от вашето минало.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>Нашите **Транзитни ръководства** предоставят месечни прогнози за вашето специфично Сатурново завръщане, помагайки ви да разберете кога да действате и кога да чакате. Не се страхувайте от Наставника – прегърнете растежа. Вашият нов живот – вашият истински живот – ви чака от другата страна на 30-те. Стъпете в силата си с увереност.</p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>Търсите ли още помощ? Свържете се с нашите експерти астролози за персонализирана консултация за Сатурново завръщане или изтеглете нашето специализирано ръководство за оцеляване по време на Сатурн в магазина за приложения.</em></p>
     `
 };

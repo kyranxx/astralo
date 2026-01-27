@@ -4,51 +4,68 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: "☄️ Panduan Bertahan Hidup Merkurius Mundur 2026: Dari Kekacauan Menjadi Tenang",
+  excerpt: "Jangan takut dengan gerak mundur! Pelajari mengapa Merkurius Mundur sebenarnya adalah pengaturan ulang kosmik yang vital dan bagaimana menavigasi gangguan teknologi dan komunikasi dengan mudah.",
+  category: "Astrologi 101",
+  metaDescription: "Jangan takut dengan gerak mundur! Pelajari mengapa Merkurius Mundur adalah pengaturan ulang kosmik yang vital, cara menghindari kendala umum, dan mengapa ini waktu terbaik untuk aktivitas \"Re\".",
+  keywords: "merkurius mundur, tanggal merkurius mundur, panduan bertahan hidup, tips astrologi, planet mundur, gangguan komunikasi, gangguan teknologi",
+  quickSummary: [
+    "Merkurius Mundur adalah ilusi optik di mana Merkurius tampak bergerak mundur",
+    "Ini terjadi 3-4 kali setahun dan berlangsung selama sekitar tiga minggu setiap kali",
+    "Periode ini terkenal dengan penundaan perjalanan, kegagalan teknologi, dan miskomunikasi",
+    "Ini BUKAN waktu untuk memulai proyek baru, tetapi waktu ELITE untuk menyelesaikan yang lama"
+  ],
+  keyTakeaways: [
+    "Periksa kembali setiap email, teks, dan kontrak sebelum mengirim atau menandatangani",
+    "Cadangkan data Anda dan antisipasi gangguan teknologi kecil pada perangkat",
+    "Teman lama dan mantan sering muncul kembali selama siklus kosmik ini",
+    "Periode \"Bayangan\" sebelum dan sesudah gerak mundur sama pentingnya"
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: 'Ilmu di Balik Ilusi' },
+    { id: 'retrograde-shadow', title: 'Periode Bayangan' },
+    { id: 'survival-dos', title: 'Aturan \"RE\": Apa yang Harus Dilakukan' },
+    { id: 'survival-donts', title: 'Bendera Merah: Apa yang Harus Dihindari' },
+    { id: 'mercury-retrograde-dates', title: 'Tanggal Merkurius Mundur 2026' },
+    { id: 'final-thoughts', title: 'Hikmah' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">Ilmu di Balik Ilusi</h2>
+      <p>Tiga atau empat kali setahun, planet Merkurius—penguasa komunikasi, perjalanan, dan teknologi—tampak bergerak mundur di langit dari sudut pandang kita di Bumi. Pada kenyataannya, itu hanya ilusi optik, seperti mobil yang lebih lambat tampak bergerak mundur saat Anda melewatinya dengan kendaraan yang lebih cepat.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Tetapi sementara gerakan mundur adalah ilusi, efeknya sangat nyata. Dalam astrologi, ketika sebuah planet mundur, energinya berbalik ke dalam. Karena Merkurius mengatur \"perjalanan harian\" kehidupan kita—pikiran kita, gadget kita, dan logistik kita—semuanya mulai terasa sedikit... glitchy. <strong>Merkurius Mundur</strong> adalah cara kosmik untuk memberi tahu dunia agar menekan tombol \"Jeda\".</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Periode Bayangan: Goyangan Pra dan Pasca</h2>
+      <p>Banyak orang terkejut ketika segala sesuatunya mulai salah seminggu <em>sebelum</em> gerak mundur secara resmi dimulai. Ini disebut <strong>Bayangan Pra-Mundur</strong>. Ini adalah saat Merkurius melambat dan bersiap untuk berbalik. Demikian pula, <strong>Bayangan Pasca-Mundur</strong> berlangsung selama sekitar dua minggu setelah planet kembali bergerak langsung. Jika Anda merencanakan peluncuran besar atau pembelian besar, tunggu sampai periode bayangan berlalu untuk hasil yang paling lancar.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">Aturan \"RE\": Apa yang Harus Dilakukan</h2>
+      <p>Merkurius Mundur mendapat reputasi buruk, tetapi sebenarnya ini adalah salah satu waktu paling produktif dalam setahun jika Anda menggunakannya dengan benar. Rahasianya adalah fokus pada kata-kata yang dimulai dengan <strong>\"RE\"</strong>:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Refleksi (Reflect):</strong> Lihat kembali tujuan Anda dari awal tahun. Apakah Anda masih di jalur yang benar?</li>
+        <li><strong>Tinjau (Review):</strong> Periksa kontrak, anggaran, dan rencana Anda. Kemungkinan besar Anda akan menemukan kesalahan yang Anda lewatkan sebelumnya.</li>
+        <li><strong>Hubungkan Kembali (Reconnect):</strong> Ini adalah waktu puncak untuk mendengar kabar dari teman lama atau menyelesaikan konflik masa lalu dengan keluarga.</li>
+        <li><strong>Perbaiki (Repair):</strong> Perbaiki keran yang bocor atau masalah mobil yang selama ini Anda abaikan.</li>
+        <li><strong>Atur Ulang (Reorganize):</strong> Bersihkan lemari, kotak masuk email, dan pikiran Anda.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Bendera Merah: Apa yang Harus Dihindari</h2>
+      <p>Meskipun hidup tidak berhenti, cobalah untuk menghindari aktivitas berisiko tinggi ini selama jendela mundur tiga minggu:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Menandatangani Kontrak Besar:</strong> Jika Anda harus menandatangani, baca cetakan kecil tiga kali. Lebih baik lagi, minta pengacara membacanya.</li>
+        <li><strong>Membeli Teknologi Baru:</strong> Tunggu untuk membeli iPhone atau mobil baru itu. Teknologi yang dibeli saat mundur sering kali datang dengan \"cacat\" tersembunyi.</li>
+        <li><strong>Memulai Proyek Baru:</strong> Ide yang lahir sekarang sering berubah secara signifikan setelah planet bergerak langsung. Tunggu untuk \"meluncurkan\".</li>
+        <li><strong>Operasi Plastik atau Perubahan Rambut Besar:</strong> Merkurius juga memengaruhi cara kita memandang estetika selama siklusnya. Anda mungkin menyesali pilihan berani itu nanti.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">Tanggal Merkurius Mundur 2026</h2>
+      <p>Simpan tanggal-tanggal ini di kalender 2026 Anda untuk tetap berada di depan kurva kosmik:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25 Februari – 20 Maret</strong> (Mulai di Pisces, berakhir di Aquarius)</li>
+          <li><strong>29 Juni – 23 Juli</strong> (Di Cancer)</li>
+          <li><strong>24 Oktober – 13 November</strong> (Mulai di Scorpio, berakhir di Libra)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Hikmah</h2>
+      <p>Merkurius Mundur bukanlah kutukan; itu adalah periode pemeliharaan yang diperlukan. Tanpa itu, kita akan terus bergegas maju tanpa pernah memperbaiki fondasi kehidupan kita. Gunakan waktu ini untuk melambat, bernapas, dan mengejar ketinggalan dengan diri sendiri. Ketika Merkurius akhirnya bergerak maju, Anda akan menjadi lebih cepat dan lebih fokus dari sebelumnya.</p>
     `
 };

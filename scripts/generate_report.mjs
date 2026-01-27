@@ -147,7 +147,7 @@ let html = `<!DOCTYPE html>
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 98vw;
             margin: 0 auto;
         }
 
@@ -209,24 +209,34 @@ let html = `<!DOCTYPE html>
 
         th {
             background: rgba(255, 255, 255, 0.05);
-            padding: 15px 10px;
+            padding: 10px 5px;
             text-align: center;
             font-weight: 600;
             color: var(--text-dim);
             border-bottom: 1px solid var(--border);
+            vertical-align: bottom;
+        }
+
+        th.lang-col {
+            height: 140px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+            letter-spacing: 1px;
         }
 
         th.sticky {
             position: sticky;
             left: 0;
-            z-index: 2;
+            z-index: 20;
             background: #0d1117;
             text-align: left;
             padding-left: 25px;
+            min-width: 300px;
         }
 
         td {
-            padding: 12px 8px;
+            padding: 8px 2px;
             border-bottom: 1px solid var(--border);
             text-align: center;
         }
@@ -314,7 +324,7 @@ let html = `<!DOCTYPE html>
                         <tr>
                             <th class="sticky">Article Title</th>
                             <th>Progress</th>
-                            ${languages.map(l => `<th>${l.toUpperCase()}</th>`).join('')}
+                            ${languages.map(l => `<th class="lang-col">${l.toUpperCase()}</th>`).join('')}
                         </tr>
                     </thead>
                     <tbody>
@@ -360,4 +370,41 @@ let html = `<!DOCTYPE html>
 const outputPath = path.join(rootDir, 'TRANSLATION_DASHBOARD.html');
 fs.writeFileSync(outputPath, html);
 console.log(`Generated ${outputPath}`);
+
+// Output missing translations for automation
+const missingTranslations = [];
+articles.forEach(article => {
+    const articlePath = path.join(articlesDir, article);
+    const enFilePath = path.join(articlePath, 'en.ts');
+    let enData = null;
+
+    if (fs.existsSync(enFilePath)) {
+        const enContent = fs.readFileSync(enFilePath, 'utf8');
+        const titleMatch = enContent.match(/title:\s*["'`](.*?)["'`]/);
+        const excerptMatch = enContent.match(/excerpt:\s*["'`](.*?)["'`]/);
+        enData = {
+            title: titleMatch ? titleMatch[1].replace(/🔮|✨|🌟|🏛️|💕|☄️|❤️|🌙|🪐|🏠|🔥|📅|⭐/g, '').trim() : '',
+            excerpt: excerptMatch ? excerptMatch[1].trim() : ''
+        };
+    }
+
+    languages.forEach(lang => {
+        if (lang === 'en') return;
+        const filePath = path.join(articlePath, `${lang}.ts`);
+        let isMissing = true;
+
+        if (fs.existsSync(filePath)) {
+            const content = fs.readFileSync(filePath, 'utf8');
+            if (!isUntranslated(content, lang, enData)) {
+                isMissing = false;
+            }
+        }
+
+        if (isMissing) {
+            missingTranslations.push({ article, lang });
+        }
+    });
+});
+
+console.log('MISSING_TRANSLATIONS_JSON:' + JSON.stringify(missingTranslations));
 

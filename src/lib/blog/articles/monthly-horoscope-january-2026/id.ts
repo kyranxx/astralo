@@ -1,69 +1,87 @@
 /**
- * monthly-horoscope-january-2026 - ID
+ * Ramalan Bintang Bulanan Januari 2026 - Bahasa Indonesia
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Ramalan Bintang Bulanan Januari 2026: Fajar Era Baru',
+  excerpt: 'Prakiraan astrologi lengkap Januari 2026. Ramalan bulanan mendalam untuk Aries hingga Pisces, mencakup Pluto di Aquarius, cinta, karier, dan tren keuangan.',
+  category: 'Horoskop',
+  metaDescription: 'Prakiraan astrologi lengkap Januari 2026. Horoskop bulanan mendalam untuk semua zodiak, mencakup Pluto di Aquarius, cinta, karier, dan tren keuangan.',
+  keywords: 'ramalan bintang bulanan, astrologi januari 2026, prediksi bulanan, horoskop januari, Pluto di Aquarius, bulan baru Capricorn, bulan purnama Cancer',
+  quickSummary: [
+    'Januari 2026 didominasi oleh menetapnya Pluto di Aquarius, menandakan pergeseran sosial yang masif.',
+    'Bulan Baru di Capricorn (1 Jan) adalah energi yang sempurna untuk "Resolusi Tahun Baru".',
+    'Bayangan pasca-Merkurius Retrograde akan bersih pada 15 Jan, memperlancar komunikasi.',
+    'Mars Retrograde di Cancer membawa konflik keluarga yang belum terselesaikan ke permukaan.'
+  ],
+  keyTakeaways: [
+    'Gunakan minggu pertama Januari hanya untuk perencanaan strategis; tunda tindakan hingga pertengahan bulan.',
+    'Ekspektasikan terobosan teknologi yang tiba-tiba atau gangguan saat Uranus aktif.',
+    'Hubungan menghadapi pemeriksaan realitas di sekitar Bulan Purnama di Cancer pada 14 Jan.',
+    'Pasar keuangan mungkin bergejolak; tetaplah pada investasi aman jangka panjang.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Astrologi Januari' },
+    { id: 'key-transits', title: 'Tanggal & Transit Penting' },
+    { id: 'fire-signs', title: 'Zodiak Api (Aries, Leo, Sag)' },
+    { id: 'earth-signs', title: 'Zodiak Bumi (Taurus, Virgo, Cap)' },
+    { id: 'air-signs', title: 'Zodiak Udara (Gemini, Libra, Aqua)' },
+    { id: 'water-signs', title: 'Zodiak Air (Cancer, Scorpio, Pisces)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologi Januari 2026</h2>
+      <p>Selamat Tahun Baru! <strong>Januari 2026</strong> bukan sekadar awal tahun kalender baru; ini adalah fajar astrologi dari era baru. Dengan <strong>Pluto yang menetap kokoh di Aquarius</strong>, kita secara kolektif menjauh dari struktur hierarki selama 15 tahun terakhir (Pluto di Capricorn) dan memasuki fase inovasi cepat, fokus komunitas, dan pemberontakan.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Bulan ini dibuka dengan <strong>Bulan Baru di Capricorn</strong> pada 1 Januari—sebuah penyelarasan yang langka dan menguntungkan. Ini menggandakan energi "Tahun Baru, Diri yang Baru", menjadikannya waktu yang luar biasa untuk menetapkan tujuan jangka panjang yang disiplin. Namun, dengan Mars Retrograde di Cancer, energi kita mungkin terasa sedikit internal. Kita sedang memikirkan kembali <em>mengapa</em> kita bertindak, bukan hanya <em>bagaimana</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Tanggal & Transit Penting</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 Jan:</strong> Bulan Baru di Capricorn (Tetapkan niat).</li>
+        <li><strong>4 Jan:</strong> Mars memasuki Leo (Kebanggaan dan drama meningkat).</li>
+        <li><strong>14 Jan:</strong> Bulan Purnama di Cancer (Pelepasan emosional).</li>
+        <li><strong>20 Jan:</strong> Matahari memasuki Aquarius (Musim Masa Depan).</li>
+        <li><strong>29 Jan:</strong> Uranus Langsung (Perubahan tiba-tiba).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Api Tandas (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Zodiak Api (Aries, Leo, Sagittarius)</h2>
+      <p><strong>Tema: Merebut Kembali Semangat Anda.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Aries:</strong> Dengan penguasa Anda Mars yang tampak bergerak mundur (retrograde), Anda mungkin merasa frustrasi oleh penundaan. Ini bukan lampu merah; ini adalah lampu kuning. Gunakan Januari untuk meninjau kembali jalur karier Anda. Apakah Anda mendaki gunung yang tepat?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Leo:</strong> Hubungan adalah titik fokus. Harapkan mantan pasangan atau teman lama muncul kembali. Bulan Purnama di rumah ke-12 Anda menunjukkan kebutuhan akan kesendirian di pertengahan bulan. Isi ulang energi sosial Anda.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Sagittarius:</strong> Keuangan disorot. Anda mungkin menemukan sumber pendapatan baru atau memutuskan untuk menghentikan langganan yang tidak perlu. Ini adalah bulan untuk penganggaran praktis, bukan pengeluaran liar.</p>
 
-      <h2 id="earth-signs">🌍 Bumi Tandas (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Zodiak Bumi (Taurus, Virgo, Capricorn)</h2>
+      <p><strong>Tema: Membangun Fondasi.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Taurus:</strong> Anda biasanya lambat dalam berubah, tetapi Uranus di zodiak Anda mendorong Anda untuk bebas. Januari membawa kesempatan perjalanan yang tiba-tiba atau pergeseran dalam filosofi Anda. Katakan "ya" pada hal yang tidak diketahui.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Virgo:</strong> Planet penguasa Anda Merkurius membersihkan fase bayangannya di pertengahan bulan. Sampai saat itu, periksa kembali semua kontrak. Kreativitas melonjak setelah tanggal 20—mulailah hobi yang selama ini Anda tunda.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Capricorn:</strong> Selamat musim Ulang Tahun! Bulan Baru di zodiak Anda adalah Tahun Baru pribadi Anda. Anda memiliki izin kosmik untuk menjadi sedikit egois. Apa yang ANDA inginkan untuk 12 bulan ke depan? Nyatakan itu menjadi kenyataan.</p>
 
-      <h2 id="air-signs">💨 Udara Tandas (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Zodiak Udara (Gemini, Libra, Aquarius)</h2>
+      <p><strong>Tema: Ekspansi Intelektual.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Gemini:</strong> Sumber daya bersama dan keintiman yang mendalam adalah kuncinya. Anda mungkin menerima warisan, bonus, atau mengalami terobosan psikologis yang mendalam. Ini adalah bulan yang intens, tetapi membersihkan.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Libra:</strong> Rumah dan keluarga menjadi pusat perhatian. Anda mungkin sedang mendekorasi ulang atau menengahi konflik keluarga. Keseimbangan adalah kekuatan super Anda; gunakan itu untuk menciptakan kedamaian di tempat perlindungan Anda.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Aquarius:</strong> Inilah momen Anda. Dengan Pluto di zodiak Anda, Anda sedang mengalami metamorfosis. Anda mungkin mengubah penampilan, nama, atau seluruh deskripsi pekerjaan Anda. Dunia mulai mengejar visi Anda.</p>
 
-      <h2 id="water-signs">💧 Udara Tandas (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Zodiak Air (Cancer, Scorpio, Pisces)</h2>
+      <p><strong>Tema: Kebijaksanaan Emosional.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Cancer:</strong> Bulan Purnama di zodiak Anda pada tanggal 14 adalah puncak emosional tahun Anda. Lepaskan semuanya/ Menangislah, tertawalah, berteriaklah. Anda sedang menanggalkan kulit lama. Hubungan yang terbentuk sekarang bersifat karmik.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Scorpio:</strong> Komunikasi sangat kuat. Kata-kata Anda memiliki bobot ekstra bulan ini. Gunakan itu untuk bernegosiasi, mengajar, atau menulis. Hindari permainan mental yang manipulatif; transparansi menang.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Pisces:</strong> Lingkaran sosial Anda berkembang. Anda adalah perekat yang menyatukan komunitas Anda. Cari peluang untuk menjadi sukarelawan atau memimpin proyek kelompok. Intuisi Anda setajam silet.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Dapatkan Ramalan Bintang Lengkap 2026 Anda</h2>
+      <p>Ikhtisar bulanan ini hanyalah puncak gunung es. Setiap orang memiliki bagan unik yang berinteraksi dengan transit ini secara berbeda. Untuk menavigasi tahun 2026 dengan percaya diri, pesan <strong>Laporan Pribadi Tahun Depan</strong> Anda dari Astralo. Laporan ini merincikan transit spesifik Anda bulan demi bulan.
     `
 };

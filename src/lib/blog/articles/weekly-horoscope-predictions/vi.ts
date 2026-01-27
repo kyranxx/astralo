@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - VI (Fallback to English content)
+ * weekly-horoscope-predictions - VI
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Tử vi tuần mới: Cách điều hướng trong tuần lễ vũ trụ sắp diễn ra',
+  excerpt: 'Tận dụng tối đa tuần mới với hướng dẫn tử vi hàng tuần của chúng tôi. Hiểu rõ về các ngày hành tinh, điều hướng trong giai đoạn Mặt Trăng trống và lập kế hoạch cho lịch trình của bạn dựa trên các thời điểm chiêm tinh.',
+  category: 'Tử vi',
+  metaDescription: 'Tận dụng tối đa tuần mới với hướng dẫn tử vi hàng tuần của chúng tôi. Hiểu rõ về các ngày hành tinh, điều hướng trong giai đoạn Mặt Trăng trống và lập kế hoạch cho lịch trình của bạn dựa trên các thời điểm chiêm tinh.',
+  keywords: 'tử vi tuần mới, chiêm tinh học hàng tuần, ngày hành tinh, mặt trăng trống, dự báo cung hoàng đạo hàng tuần, kế hoạch chiêm tinh, ngày tốt nhất tuần này',
+  quickSummary: [
+    'Mỗi ngày trong tuần được cai trị bởi một hành tinh khác nhau (Thứ Hai/Mặt Trăng, Thứ Ba/Sao Hỏa, v.v.)',
+    'Tử vi hàng tuần theo dõi chuyển động của các hành tinh nhanh qua các cung hoàng đạo',
+    'Mặt Trăng trống (Void-of-Course Moon) là thời điểm "tạm dừng" quan trọng cần tránh thực hiện các hành động lớn',
+    'Thứ Hai dành cho cảm xúc, Thứ Ba dành cho hành động, Thứ Sáu dành cho sự lãng mạn'
+  ],
+  keyTakeaways: [
+    'Kiểm tra dự báo hàng tuần vào tối Chủ Nhật để lập kế hoạch cho lịch trình của bạn',
+    'Sắp xếp các cuộc họp khó khăn vào Thứ Năm (Sao Mộc) hoặc Thứ Bảy (Sao Thổ) tùy thuộc vào mục tiêu',
+    'Tránh ký hợp đồng khi Mặt Trăng đang trong giai đoạn trống',
+    'Tận dụng dòng chảy năng lượng hàng tuần thay vì cố gắng chống lại nó'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Nhịp điệu chiêm tinh' },
+    { id: 'planetary-days', title: 'Các hành tinh cai trị ngày' },
+    { id: 'void-moon', title: 'Mặt Trăng trống (Void-of-Course)' },
+    { id: 'transits', title: 'Theo dõi các góc chiếu trong tuần' },
+    { id: 'by-sign', title: 'Lời khuyên hàng tuần theo nhóm cung' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Nhịp điệu chiêm tinh trong tuần</h2>
+      <p>Bạn có bao giờ cảm thấy có những tuần trôi qua êm đềm như nước, trong khi những tuần khác lại giống như đang lội qua bùn lầy? Hay tại sao việc hoàn thành công việc vào Thứ Ba lại cảm thấy khác biệt so với Thứ Sáu? Điều này không phải là ngẫu nhiên. Cấu trúc của tuần lễ 7 ngày của chúng ta thực tế dựa hoàn toàn vào <strong>chiêm tinh học</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Hiểu về <strong>tử vi hàng tuần</strong> không chỉ đơn thuần là biết xem liệu bạn có nhận được tin nhắn phản hồi hay không. Đó là về việc điều chỉnh lịch trình của bạn phù hợp với những người cai trị hành tinh cổ đại của thời gian. Khi bạn làm việc <em>cùng với</em> năng lượng của ngày hôm đó, năng suất sẽ tăng vọt và sự kháng cự sẽ biến mất.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Các hành tinh cai trị ngày</h2>
+      <p>Mỗi ngày được đặt tên theo một hành tinh (theo nghĩa đen trong các ngôn ngữ như tiếng Pháp hoặc tiếng Tây Ban Nha). Dưới đây là hướng dẫn để bạn lập kế hoạch cho tuần của mình theo chiêm tinh:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Thứ Hai (Ngày của Mặt Trăng) 🌙</h3>
+      <p><strong>Năng lượng:</strong> Cảm xúc, trực giác, biến động.<br><strong>Tốt nhất cho:</strong> Đi chợ, dọn dẹp nhà cửa, ngủ nướng, ăn tối cùng gia đình, suy ngẫm.<br><strong>Cần tránh:</strong> Các bài thuyết trình căng thẳng hoặc logic cứng nhắc.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Thứ Ba (Ngày của Sao Hỏa) ♂</h3>
+      <p><strong>Năng lượng:</strong> Quyết liệt, tràn đầy năng lượng, sắc bén.<br><strong>Tốt nhất cho:</strong> Tập thể dục, bắt đầu dự án mới, đối mặt với vấn đề, cạnh tranh.<br><strong>Cần tránh:</strong> Thiền định, cố gắng thư giãn.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Thứ Tư (Ngày của Sao Thủy) ☿️</h3>
+      <p><strong>Năng lượng:</strong> Giao tiếp, bận rộn, nhanh chóng.<br><strong>Tốt nhất cho:</strong> Viết email, họp hành, viết lách, bán hàng, các chuyến đi ngắn, kết nối mạng lưới.<br><strong>Cần tránh:</strong> Sự im lặng (dù sao thì điều đó cũng sẽ không xảy ra).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Thứ Năm (Ngày của Sao Mộc) ♃</h3>
+      <p><strong>Năng lượng:</strong> Mở rộng, may mắn, lạc quan.<br><strong>Tốt nhất cho:</strong> Ra mắt các tầm nhìn lớn, yêu cầu tăng lương, lập kế hoạch du lịch, học tập nâng cao.<br><strong>Cần tránh:</strong> Sự keo kiệt.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Thứ Sáu (Ngày của Sao Kim) ♀</h3>
+      <p><strong>Năng lượng:</strong> Xã hội, lãng mạn, thẩm mỹ.<br><strong>Tốt nhất cho:</strong> Hẹn hò, tiệc tùng, mua sắm quần áo, nghệ thuật, thư giãn.<br><strong>Cần tránh:</strong> Các công việc chân tay bẩn thỉu hoặc sự cô độc.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Thứ Bảy (Ngày của Sao Thổ) ♄</h3>
+      <p><strong>Năng lượng:</strong> Nghiêm túc, nặng nề, kỷ luật.<br><strong>Tốt nhất cho:</strong> Làm vườn, lập kế hoạch dài hạn, học tập, giải quyết việc nhà tồn đọng, bổn phận.<br><strong>Cần tránh:</strong> Các bữa tiệc quá cuồng nhiệt (trừ khi đó là các sự kiện trang trọng).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Chủ Nhật (Ngày của Mặt Trời) ☀️</h3>
+      <p><strong>Năng lượng:</strong> Rạng rỡ, cái tôi cá nhân, tâm linh.<br><strong>Tốt nhất cho:</strong> Sở thích cá nhân, lễ bái/tâm linh, chơi đùa với trẻ nhỏ, xuất hiện trước công chúng, nghỉ ngơi.<br><strong>Cần tránh:</strong> Sự ẩn mình.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Mặt Trăng trống (Void-of-Course Moon)</h2>
+      <p>Nếu bạn chỉ muốn ghi nhớ một điều từ hướng dẫn này, hãy để đó là <strong>Mặt Trăng trống</strong>. Điều này xảy ra khi Mặt Trăng đã hoàn thành góc chiếu cuối cùng với một hành tinh trong cung hoàng đạo hiện tại của nó và đang "trôi nổi" trước khi tiến vào cung kế tiếp.</p>
+      <p><strong>Quy tắc:</strong> "Mọi việc sẽ không đi đến đâu."</p>
+      <p>Trong giai đoạn Mặt Trăng trống, đừng ký kết hợp đồng, đừng khởi động doanh nghiệp hoặc đừng gửi yêu cầu cho buổi hẹn hò đầu tiên. Năng lượng chắc chắn sẽ tan biến. Hãy tận dụng thời gian này để sắp xếp hồ sơ, ngủ hoặc chỉnh sửa những công việc bạn đã bắt đầu. Đó là một lần "nghỉ giải lao" của vũ trụ.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Theo dõi các góc chiếu trong tuần</h2>
+      <p>Một bản <strong>dự báo chiêm tinh hàng tuần</strong> tốt cũng cần xem xét các góc chiếu cụ thể mà các hành tinh tạo ra trong tuần này. Ví dụ:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Sao Thủy lục hợp Sao Kim:</strong> Một tuần hoàn hảo cho các hoạt động xã hội và yêu cầu sự giúp đỡ.</li>
+        <li><strong>Mặt Trời vuông góc Sao Diêm Vương:</strong> Một tuần của những cuộc đấu tranh quyền lực và cường độ mạnh.</li>
+        <li><strong>Sao Hỏa tiến vào Thiên Bình:</strong> Năng lượng chuyển dịch từ tập trung vào công việc sang tập trung vào các mối quan hệ.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Lời khuyên hàng tuần theo nhóm cung</h2>
+      <p>Mặc dù tuần của mỗi người là duy nhất, dưới đây là cách các nhóm cung hoàng đạo thường xử lý các biến động trong tuần:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Cung Thống lĩnh (Bạch Dương, Cự Giải, Thiên Bình, Ma Kết):</strong> Bạn là những người khởi xướng. Hãy tận dụng năng lượng đầu tuần (Thứ Hai/Thứ Ba) để bắt đầu mọi việc.</li>
+        <li><strong>Cung Kiên định (Kim Ngưu, Sư Tử, Bọ Cạp, Bảo Bình):</strong> Bạn là những người duy trì. Hãy tận dụng năng lượng giữa tuần để củng cố các tiến trình.</li>
+        <li><strong>Cung Biến đổi (Song Tử, Xử Nữ, Nhân Mã, Song Ngư):</strong> Bạn là những người điều chỉnh. Hãy tận dụng cuối tuần hoặc các ngày của Sao Thủy để thích nghi và thay đổi lộ trình.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Hãy quay lại vào mỗi Chủ Nhật để xem dự báo hàng tuần cụ thể dành cho bạn, được cập nhật bởi đội ngũ Astralo!</em>
     `
 };

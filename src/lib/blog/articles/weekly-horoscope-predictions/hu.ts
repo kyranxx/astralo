@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - HU (Fallback to English content)
+ * weekly-horoscope-predictions - HU
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Heti Horoszkóp: Hogyan navigálj az előttünk álló kozmikus héten',
+  excerpt: 'Hozd ki a legtöbbet a hetedből heti horoszkóp útmutatónkkal. Ismerd meg a bolygónapokat, navigálj a Hold üresjárat idején, és tervezd meg a menetrendedet az asztrológiai időzítés alapján.',
+  category: 'Horoszkópok',
+  metaDescription: 'Hozd ki a legtöbbet a hetedből heti horoszkóp útmutatónkkal. Ismerd meg a bolygónapokat, navigálj a Hold üresjárat idején, és tervezd meg a menetrendedet az asztrológiai időzítés alapján.',
+  keywords: 'heti horoszkóp, heti asztrológia, bolygónapok, hold üresjárat, heti csillagjegy előrejelzés, asztrológiai tervezés, a hét legjobb napjai',
+  quickSummary: [
+    'A hét minden napját egy-egy bolygó uralja (Hétfő/Hold, Kedd/Mars stb.)',
+    'A heti horoszkópok a gyors bolygók mozgását követik a csillagjegyeken keresztül',
+    'A Hold üresjárata (Void-of-Course) egy kritikus „szünet”, amikor a fontos cselekvéseket kerülni kell',
+    'A hétfők az érzelmekről, a keddek a cselekvésről, a péntekek a romantikáról szólnak'
+  ],
+  keyTakeaways: [
+    'Nézd meg a heti előrejelzést vasárnap este, hogy megtervezhesd a naptáradat',
+    'Ütemezd a nehéz tárgyalásokat csütörtökre (Jupiter) vagy szombatra (Szaturnusz), a céltól függően',
+    'Kerüld a szerződések aláírását a Hold üresjárata idején',
+    'Használd a heti energiaáramlást ahelyett, hogy küzdenél ellene'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Az asztrológiai ritmus' },
+    { id: 'planetary-days', title: 'A napok uralkodói' },
+    { id: 'void-moon', title: 'A Hold üresjárata' },
+    { id: 'transits', title: 'A heti tranzitok követése' },
+    { id: 'by-sign', title: 'Heti tanácsok jegyek szerint' }
+  ],
+  content: `
+      <h2 id="weekly-flow">A hét asztrológiai ritmusa</h2>
+      <p>Érezted már úgy, hogy egyes hetek úgy folynak, mint a víz, míg mások olyanok, mintha sárban gázolnál? Vagy hogy miért tűnik másnak a keddi intézkedés a péntekihez képest? Ez nem véletlen. A 7 napos hetünk szerkezete valójában teljes egészében az <strong>asztrológián</strong> alapul.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>A <strong>heti horoszkóp</strong> megértése többről szól, mint csupán tudni, hogy kapsz-e egy üzenetet. Ez arról szól, hogy összehangolod a menetrendedet az idő ősi bolygó-uralkodóival. Amikor az adott nap energiájával <em>együttműködve</em> dolgozol, a produktivitás nő, az ellenállás pedig eltűnik.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">A napok uralkodói</h2>
+      <p>Minden nap egy bolygóról kapta a nevét (szó szerint több nyelvben, például a franciában vagy a spanyolban). Íme az útmutatód a heted asztrológiai tervezéséhez:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Hétfő (Hold napja) 🌙</h3>
+      <p><strong>Energia:</strong> Érzelmes, intuitív, változékony.<br><strong>Legjobb:</strong> Bevásárlás, takarítás, lustálkodás, csalámi vacsorák, elmélkedés.<br><strong>Kerülendő:</strong> Nagy stresszel járó prezentációk vagy merev logika.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Kedd (Mars napja) ♂</h3>
+      <p><strong>Energia:</strong> Agresszív, energikus, éles.<br><strong>Legjobb:</strong> Edzés, új projektek indítása, problémák kezelése, verseny.<br><strong>Kerülendő:</strong> Meditáció, próbálkozás a lazítással.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Szerda (Merkúr napja) ☿️</h3>
+      <p><strong>Energia:</strong> Kommunikatív, elfoglalt, gyors.<br><strong>Legjobb:</strong> E-mailek, találkozók, írás, értékesítés, rövid utazások, kapcsolatépítés.<br><strong>Kerülendő:</strong> Csend (úgysem fog megtörténni).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Csütörtök (Jupiter napja) ♃</h3>
+      <p><strong>Energia:</strong> Kiterjedő, szerencsés, optimista.<br><strong>Legjobb:</strong> Nagy víziók megindítása, fizetésemelés kérése, utazás tervezése, magasabb szintű tanulmányok.<br><strong>Kerülendő:</strong> Garasoskodás.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Péntek (Vénusz napja) ♀</h3>
+      <p><strong>Energia:</strong> Társasági, romantikus, esztétikus.<br><strong>Legjobb:</strong> Randevúk, bulik, ruhavásárlás, művészet, kikapcsolódás.<br><strong>Kerülendő:</strong> Piszkos munka vagy magány.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Szombat (Szaturnusz napja) ♄</h3>
+      <p><strong>Energia:</strong> Komoly, nehéz, fegyelmezett.<br><strong>Legjobb:</strong> Kerti munka, hosszú távú tervezés, tanulás, házimunka elvégzése, kötelesség.<br><strong>Kerülendő:</strong> Vad bulik (hacsak nem formális események).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Vasárnap (A Nap napja) ☀️</h3>
+      <p><strong>Energia:</strong> Sugárzó, öntudatos, spirituális.<br><strong>Legjobb:</strong> Hobbi, spiritualitás, játék a gyerekekkel, társasági jelenlét, pihenés.<br><strong>Kerülendő:</strong> Láthatatlanság.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">A Hold üresjárata (Void-of-Course)</h2>
+      <p>Ha csak egy dolgot is megjegyzel ebből az útmutatóból, az a <strong>Hold üresjárata</strong> legyen. Ez akkor következik be, amikor a Hold befejezte utolsó fényszögét egy bolygóval a jelenlegi jegyében, és „lebeg”, mielőtt belépne a következő jegybe.</p>
+      <p><strong>A szabály:</strong> „Semmi sem lesz belőle.”</p>
+      <p>Hold üresjárat idején ne írj alá szerződéseket, ne indíts vállalkozást, és ne hívj el senkit első randira. Az energia elkerülhetetlenül elillan. Használd ezt az időt rendszerezésre, alvásra vagy a már megkezdett munkák finomítására. Ez egy kozmikus „időkérés”.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">A heti tranzitok követése</h2>
+      <p>Egy jó <strong>heti asztrológiai előrejelzés</strong> figyeli a bolygók által bezárt aktuális szögeket is ezen a héten. Például:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Merkúr szextil Vénusz:</strong> Tökéletes hét a társasági élethez és szívességek kéréséhez.</li>
+        <li><strong>Nap kvadrát Plútó:</strong> Hatalmi harcok és intenzitás hete.</li>
+        <li><strong>Mars belép a Mérlegbe:</strong> Az energiák a munkaközpontúról a kapcsolatközpontúra váltanak.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Heti tanács-sablonok</h2>
+      <p>Bár mindenki hete egyedi, íme, hogyan kezelik a jegyek általában a heti váltásokat:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Kardinális jegyek (Kos, Rák, Mérleg, Bak):</strong> Ti vagytok a kezdeményezők. Használjátok a hét eleji energiákat (hétfő/kedd) a dolgok elindításához.</li>
+        <li><strong>Szilárd jegyek (Bika, Oroszlán, Skorpió, Vízöntő):</strong> Ti vagytok a fenntartók. Használjátok a hét közepi energiákat az elért haladás rögzítéséhez.</li>
+        <li><strong>Változó jegyek (Ikrek, Szűz, Nyilas, Halak):</strong> Ti vagytok a szerkesztők. Használjátok a hétvégét vagy a Merkúr-napokat az alkalmazkodáshoz és az irányváltáshoz.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Nézz vissza minden vasárnap az Astralo csapata által frissített egyedi heti előrejelzésedért!</em>
     `
 };

@@ -4,51 +4,68 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: "☄️ Οδηγός επιβίωσης ανάδρομου Ερμή 2026: Από το χάος στην ηρεμία",
+  excerpt: "Μην φοβάστε την ανάδρομη πορεία! Μάθετε γιατί ο ανάδρομος Ερμής είναι στην πραγματικότητα μια ζωτική κοσμική επανεκκίνηση και πώς να πλοηγηθείτε στις τεχνολογικές και επικοινωνιακές δυσλειτουργίες με ευκολία.",
+  category: "Αστρολογία 101",
+  metaDescription: "Μην φοβάστε την ανάδρομη πορεία! Μάθετε γιατί ο ανάδρομος Ερμής είναι μια ζωτική κοσμική επανεκκίνηση, πώς να αποφύγετε τις κοινές παγίδες και γιατί είναι η καλύτερη στιγμή για δραστηριότητες \"Επανα-\".",
+  keywords: "ανάδρομος ερμής, ημερομηνίες ανάδρομου ερμή, οδηγός επιβίωσης, συμβουλές αστρολογίας, πλανητική αναδρομή, επικοινωνιακό χάος, τεχνολογικά προβλήματα",
+  quickSummary: [
+    "Ο ανάδρομος Ερμής είναι μια οπτική ψευδαίσθηση όπου ο Ερμής φαίνεται να κινείται προς τα πίσω",
+    "Συμβαίνει 3-4 φορές το χρόνο και διαρκεί περίπου τρεις εβδομάδες κάθε φορά",
+    "Αυτή η περίοδος είναι γνωστή για καθυστερήσεις ταξιδιών, τεχνολογικές αποτυχίες και παρεξηγήσεις",
+    "ΔΕΝ είναι καιρός για έναρξη νέων έργων, αλλά ΕΞΑΙΡΕΤΙΚΟΣ χρόνος για ολοκλήρωση παλιών"
+  ],
+  keyTakeaways: [
+    "Ελέγξτε διπλά κάθε email, μήνυμα και συμβόλαιο πριν πατήσετε αποστολή ή υπογράψετε",
+    "Δημιουργήστε αντίγραφα ασφαλείας των δεδομένων σας και περιμένετε μικρές τεχνολογικές δυσλειτουργίες με συσκευές",
+    "Παλιοί φίλοι και πρώην συχνά επανεμφανίζονται κατά τη διάρκεια αυτών των κοσμικών κύκλων",
+    "Η περίοδος \"σκιάς\" πριν και μετά την αναδρομή είναι εξίσου σημαντική"
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: 'Η επιστήμη της ψευδαίσθησης' },
+    { id: 'retrograde-shadow', title: 'Η περίοδος της σκιάς' },
+    { id: 'survival-dos', title: 'Ο κανόνας \"Επανα-\": Τι να κάνετε' },
+    { id: 'survival-donts', title: 'Τα κόκκινα σημάδια: Τι να αποφύγετε' },
+    { id: 'mercury-retrograde-dates', title: 'Ημερομηνίες ανάδρομου Ερμή 2026' },
+    { id: 'final-thoughts', title: 'Ασημένια επένδυση' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">Η επιστήμη της ψευδαίσθησης</h2>
+      <p>Τρεις ή τέσσερις φορές το χρόνο, ο πλανήτης Ερμής—ο κυβερνήτης της επικοινωνίας, των ταξιδιών και της τεχνολογίας—φαίνεται να κινείται προς τα πίσω στον ουρανό από τη δική μας οπτική γωνία στη Γη. Στην πραγματικότητα, είναι απλώς μια οπτική ψευδαίσθηση, όπως ένα πιο αργό αυτοκίνητο που φαίνεται να κινείται προς τα πίσω καθώς το προσπερνάτε με ένα γρηγορότερο όχημα.</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>Αλλά ενώ η κίνηση προς τα πίσω είναι μια ψευδαίσθηση, τα αποτελέσματα είναι πολύ πραγματικά. Στην αστρολογία, όταν ένας πλανήτης γυρίζει ανάδρομος, η ενέργειά του στρέφεται προς τα μέσα. Δεδομένου ότι ο Ερμής κυβερνά την \"καθημερινή μετακίνηση\" της ζωής μας—τις σκέψεις μας, τις συσκευές μας και την εφοδιαστική μας—όλα αρχίζουν να φαίνονται λίγο... δυσλειτουργικά. <strong>Ο ανάδρομος Ερμής</strong> είναι ο κοσμικός τρόπος να πει στον κόσμο να πατήσει το κουμπί \"Παύση\".</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">Η περίοδος της σκιάς: Η προ και μετα ταλάντευση</h2>
+      <p>Πολλοί άνθρωποι εκπλήσσονται όταν τα πράγματα αρχίζουν να πηγαίνουν στραβά μια εβδομάδα <em>πριν</em> ξεκινήσει επίσημα η αναδρομή. Αυτό ονομάζεται <strong>Προ-Ανάδρομη Σκιά</strong>. Είναι η στιγμή που ο Ερμής επιβραδύνει και ετοιμάζεται να γυρίσει. Παρομοίως, η <strong>Μετα-Ανάδρομη Σκιά</strong> διαρκεί περίπου δύο εβδομάδες μετά την επιστροφή του πλανήτη σε ορθή πορεία. Εάν σχεδιάζετε μια μεγάλη κυκλοφορία ή μια μεγάλη αγορά, περιμένετε μέχρι να καθαρίσει η περίοδος της σκιάς για τα πιο ομαλά αποτελέσματα.</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">Ο κανόνας \"Επανα-\": Τι να κάνετε</h2>
+      <p>Ο ανάδρομος Ερμής έχει κακή φήμη, αλλά είναι στην πραγματικότητα μια από τις πιο παραγωγικές περιόδους του έτους αν τον χρησιμοποιήσετε σωστά. Το μυστικό είναι να εστιάσετε σε λέξεις που ξεκινούν με <strong>\"Επανα-\"</strong>:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Αναλογισμός (Reflect):</strong> Κοιτάξτε πίσω στους στόχους σας από την αρχή του έτους. Είστε ακόμα σε καλό δρόμο;</li>
+        <li><strong>Αναθεώρηση (Review):</strong> Ελέγξτε τα συμβόλαιά σας, τον προϋπολογισμό σας και τα σχέδιά σας. Πιθανότατα θα βρείτε ένα λάθος που χάσατε προηγουμένως.</li>
+        <li><strong>Επανασύνδεση (Reconnect):</strong> Αυτή είναι μια κορυφαία στιγμή για να ακούσετε από παλιούς φίλους ή να επιλύσετε παλιές συγκρούσεις με την οικογένεια.</li>
+        <li><strong>Επισκευή (Repair):</strong> Διορθώστε αυτή τη βρύση που στάζει ή το πρόβλημα του αυτοκινήτου που αγνοούσατε.</li>
+        <li><strong>Αναδιοργάνωση (Reorganize):</strong> Καθαρίστε τις ντουλάπες σας, τα εισερχόμενά σας και το μυαλό σας.</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">Τα κόκκινα σημάδια: Τι να αποφύγετε</h2>
+      <p>Ενώ η ζωή δεν σταματά, προσπαθήστε να αποφύγετε αυτές τις δραστηριότητες υψηλού κινδύνου κατά τη διάρκεια του παραθύρου αναδρομής τριών εβδομάδων:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>Υπογραφή σημαντικών συμβάσεων:</strong> Εάν πρέπει να υπογράψετε, διαβάστε τα ψιλά γράμματα τρεις φορές. Καλύτερα ακόμα, βάλτε έναν δικηγόρο να το διαβάσει.</li>
+        <li><strong>Αγορά νέας τεχνολογίας:</strong> Περιμένετε να αγοράσετε αυτό το νέο iPhone ή αυτοκίνητο. Η τεχνολογία που αγοράζεται κατά τη διάρκεια της αναδρομής συχνά έρχεται με κρυμμένα \"ελαττώματα\".</li>
+        <li><strong>Έναρξη νέων έργων:</strong> Οι ιδέες που γεννιούνται τώρα συχνά αλλάζουν σημαντικά μόλις ο πλανήτης γυρίσει σε ορθή πορεία. Περιμένετε για την \"εκτόξευση\".</li>
+        <li><strong>Πλαστική χειρουργική ή μεγάλες αλλαγές στα μαλλιά:</strong> Ο Ερμής επηρεάζει επίσης το πώς αντιλαμβανόμαστε την αισθητική κατά τη διάρκεια των κύκλων του. Μπορεί να μετανιώσετε για αυτή την τολμηρή επιλογή αργότερα.</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">Ημερομηνίες ανάδρομου Ερμή 2026</h2>
+      <p>Κρατήστε αυτές τις ημερομηνίες στο ημερολόγιό σας για το 2026 για να παραμείνετε μπροστά από την κοσμική καμπύλη:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25 Φεβρουαρίου – 20 Μαρτίου</strong> (Ξεκινά στους Ιχθύες, τελειώνει στον Υδροχόο)</li>
+          <li><strong>29 Ιουνίου – 23 Ιουλίου</strong> (Στον Καρκίνο)</li>
+          <li><strong>24 Οκτωβρίου – 13 Νοεμβρίου</strong> (Ξεκινά στον Σκορπιό, τελειώνει στον Ζυγό)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">Ασημένια επένδυση</h2>
+      <p>Ο ανάδρομος Ερμής δεν είναι κατάρα. είναι μια απαραίτητη περίοδος συντήρησης. Χωρίς αυτόν, θα συνεχίζαμε να τρέχουμε μπροστά χωρίς ποτέ να διορθώνουμε τα θεμέλια της ζωής μας. Χρησιμοποιήστε αυτό το χρόνο για να επιβραδύνετε, να αναπνεύσετε και να προλάβετε τον εαυτό σας. Όταν ο Ερμής τελικά προχωρήσει μπροστά, θα είστε πιο γρήγοροι και πιο συγκεντρωμένοι από ποτέ.</p>
     `
 };

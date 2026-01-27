@@ -4,98 +4,116 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ ดูดวงรายวัน 2026: คู่มือฉบับสมบูรณ์เพื่อทำความเข้าใจคำพยากรณ์ของคุณ",
+  excerpt: "เชี่ยวชาญการทำนายดวงรายวันของคุณ คู่มือฉบับสมบูรณ์เกี่ยวกับวิธีการทำงานของโหราศาสตร์รายวัน ทำไมลัคนาของคุณถึงสำคัญ และวิธีใช้พลังงานของดวงดาวเพื่อความสำเร็จ",
+  category: "โหราศาสตร์ 101",
+  metaDescription: "เชี่ยวชาญการทำนายดวงรายวันของคุณ คู่มือฉบับสมบูรณ์เกี่ยวกับวิธีการทำงานของโหราศาสตร์รายวัน ทำไมลัคนาของคุณถึงสำคัญ และวิธีใช้พลังงานของดวงดาวเพื่อความสำเร็จ",
+  keywords: "ดูดวงรายวัน, ดวงวันนี้, ดวงรายวันวันนี้, จักรราศีรายวัน, คู่มือดูดวง, ทำความเข้าใจโหราศาสตร์, ลัคนารายวัน, การโคจรของดวงดาว",
+  quickSummary: [
+    "ดวงรายวันขับเคลื่อนโดยดวงจันทร์ที่เคลื่อนที่อย่างรวดเร็วและมุมของดวงดาวที่มีต่อแผนภูมิดวงชะตาของคุณ",
+    "การอ่านดวงตามลัคนา (Rising Sign) มักจะให้ความแม่นยำในการทำนายดวงรายวันมากกว่า",
+    "การโคจรของดวงดาว (Transit) กระตุ้นให้เกิดเหตุการณ์ อารมณ์ และโอกาสที่เฉพาะเจาะจงในแต่ละวัน",
+    "เรียนรู้ที่จะใช้ช่วงเวลาจันทร์ลอย (Void-of-Course Moon) เพื่อหลีกเลี่ยงการสูญเสียพลังงานโดยเปล่าประโยชน์"
+  ],
+  keyTakeaways: [
+    "ราศีเกิด (Sun sign) ของคุณแสดงถึงพลังชีวิตหลัก แต่ลัคนาของคุณจะเป็นตัวกำหนด \"เวที\" สำหรับชีวิตประจำวันของคุณ",
+    "ดวงจันทร์เปลี่ยนราศีทุกๆ 2.5 วัน ซึ่งเป็นตัวกำหนดอารมณ์ของส่วนรวม",
+    "ดาวพุธพักร (Mercury Retrograde) และมุมที่ \"ท้าทาย\" อื่นๆ แท้จริงแล้วคือช่วงเวลาสำหรับการทบทวนและปรับจูนใหม่",
+    "การรวมโหราศาสตร์เข้ากับกิจวัตรยามเช้าสามารถช่วยเพิ่มประสิทธิภาพในการทำงานและความสัมพันธ์ของคุณ"
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "ทำไมต้องอ่านดวงรายวัน?" },
+    { id: "science-behind-it", title: "กลกลไกเบื้องหลัง: ทำงานอย่างไร" },
+    { id: "rising-vs-sun", title: "กฎทอง: ราศีเกิด vs ลัคนา" },
+    { id: "planetary-players", title: "ดาวเคราะห์หลักที่มีบทบาทต่อคุณ" },
+    { id: "zodiac-daily-styles", title: "สไตล์รายวันของ 12 ราศี" },
+    { id: "practical-rituals", title: "พิธีกรรมทางโหราศาสตร์ในชีวิตประจำวัน" },
+    { id: "myth-busting", title: "คลายข้อสงสัยกับเรื่องเข้าใจผิด" }
+  ],
+  content: `
+      <h2 id="introduction">ทำไมต้องอ่านดวงรายวัน?</h2>
+      <p>สำหรับผู้คนนับล้านทั่วโลก การเช็ก <strong>ดวงรายวัน</strong> เป็นสิ่งที่ขาดไม่ได้พอๆ กับกาแฟมื้อเช้า มันคือช่วงเวลาแห่งการหยุดนิ่ง พิธีกรรมแห่งการสะท้อนตนเอง และวิธีเตรียมตัวรับมือกับพลังงานของวันนั้นๆ แต่คุณเคยสงสัยไหมว่าอะไรคือสิ่งที่ขับเคลื่อนคำทำนายเหล่านี้? มันเป็นเพียงคำแนะนำแบบสุ่ม หรือมีกลไกนาฬิกาแห่งจักรวาลที่ซับซ้อนอยู่เบื้องหลังกันแน่?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>ที่ Astralo เราเชื่อว่าโหราศาสตร์คือเครื่องมือในการสร้างพลังให้ตนเอง ดวงที่เขียนมาอย่างดีไม่ได้แค่ทำนายอนาคต แต่มันช่วยให้คุณ <em>สร้าง</em> อนาคตนั้นขึ้นมา ด้วยการทำความเข้าใจสภาพอากาศของจักรวาล — ตำแหน่งของดวงดาวในวันนี้เมื่อเทียบกับตำแหน่งตอนที่คุณเกิด — คุณจะสามารถฝ่าฟันอุปสรรคได้อย่างสง่างามและคว้าโอกาสที่อาจหลุดลอยไปได้</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">กลไกเบื้องหลัง: ทำงานอย่างไร</h2>
+      <p>โหราศาสตร์มักถูกเรียกว่าเป็นการศึกษาเรื่องวัฏจักร <strong>คำทำนายดวงรายวัน</strong> ของคุณถูกคำนวณโดยใช้เทคนิคที่เรียกว่า "การโคจรจร" (Transits) ลองจินตนาการว่าแผนภูมิกำเนิด (Natal Chart) ของคุณคือภาพถ่ายท้องฟ้าที่คงที่ ณ วินาทีที่คุณเกิด แต่ดาวเคราะห์ต่างๆ ยังคงเคลื่อนที่ต่อไป "การโคจรจร" เกิดขึ้นเมื่อดาวเคราะห์ที่กำลังเคลื่อนที่บนท้องฟ้าทำมุมทางคณิตศาสตร์ (มุมสัมพันธ์หรือ Aspect) กับดาวเคราะห์ในแผนภูมิกำเนิดของคุณ</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>ดวงจันทร์: เข็มนาทีแห่งโชคชะตา</h3>
+      <p>ในขณะที่ดาวเคราะห์อย่างดาวพฤหัสบดีใช้เวลาหนึ่งปีในการเปลี่ยนราศี แต่ <strong>ดวงจันทร์</strong> เคลื่อนที่เร็วมาก โดยจะเปลี่ยนราศีในเวลาเพียงประมาณ 2.5 วัน สิ่งนี้ทำให้ดวงจันทร์เป็นตัวขับเคลื่อนหลักของอารมณ์และสภาพจิตใจ <em>รายวัน</em> ของคุณ เมื่อดวงจันทร์อยู่ในราศีเมษธาตุไฟ เราจะรู้สึกหุนหันพลันแล่นและมีพลัง เมื่อเคลื่อนเข้าสู่ราศีพฤษภธาตุดิน เราจะเริ่มช้าลงและโหยหาความสะดวกสบาย</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>มุมสัมพันธ์: บทสนทนาระหว่างดวงดาว</h3>
+      <p>ดวงดาว "พูดคุย" กันผ่านมุมสัมพันธ์ มุม <strong>ตรีโกณ (120°)</strong> คือบทสนทนาที่กลมกลืน นำมาซึ่งความสะดวกและโชคลาภ มุม <strong>จตุโกณ (90°)</strong> คือจุดตึงเครียด บังคับให้ต้องลงมือทำหรือตัดสินใจ ดวงรายวันของคุณจะตีความบทสนทนาเหล่านี้ หากดาวอังคาร (การลงมือทำ) ทำมุมจตุโกณกับดาวเสาร์ (ข้อจำกัด) บนท้องฟ้า คุณอาจรู้สึกหงุดหงิดหรือถูกขัดขวางในวันนี้ การรู้สิ่งนี้จะช่วยให้คุณมีความอดทนแทนที่จะพยายามฝืนเปิดประตูที่ยังไม่ถึงเวลาเปิด</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising สัญลักษณ์</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">กฎทอง: อ่านตามลัคนาของคุณ</h2>
+      <p>นี่คือความลับที่นักโหราศาสตร์มืออาชีพรู้: <strong>เพื่อให้ได้คำทำนายรายวันที่แม่นยำที่สุด คุณควรอ่านคำทำนายสำหรับ ลัคนา (Rising Sign หรือ Ascendant) ของคุณ ไม่ใช่แค่ราศีเกิด (Sun Sign) เท่านั้น</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>เพราะอะไร? เพราะดวงรายวันถูกเขียนขึ้นโดยใช้ "ระบบเรือนชะตา" (House System) ลัคนาของคุณเป็นตัวกำหนดเลย์เอาต์ของเรือนชะตาทั้ง 12 ในแผนภูมิของคุณ เรือนที่ 1 คือตัวคุณ, เรือนที่ 2 คือการเงิน, เรือนที่ 7 คือความสัมพันธ์ และต่อๆ ไป เมื่อนักโหราศาสตร์เขียนว่า "ราศีเมษจะมีโอกาสทางการเงินในวันนี้" พวกเขากำลังดูการเคลื่อนที่ของดวงดาวผ่านเรือนที่ 2 ของแผนภูมิคนที่มีลัคนาราศีเมษ</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>อ่านตามราศีเกิด (Sun Sign)</strong> สำหรับธีมทั่วไปเกี่ยวกับตัวตน (Ego) พลังชีวิต และจุดมุ่งหมายหลักของคุณ</li>
+        <li><strong>อ่านตามลัคนา (Rising Sign)</strong> สำหรับเหตุการณ์เฉพาะเจาะจง จังหวะเวลา และสถานการณ์ที่จะเกิดขึ้นกับคุณในวันนี้</li>
+        <li><strong>อ่านตามราศีที่ดวงจันทร์สถิต (Moon Sign)</strong> หากคุณต้องการเข้าใจสภาวะอารมณ์ภายในของคุณ</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">ดาวเคราะห์หลักที่มีบทบาทต่อคุณในวันนี้</h2>
+      <p>นอกจากดวงจันทร์แล้ว ดาวเคราะห์ที่เคลื่อนที่เร็วหรือ "ดาวเคราะห์ส่วนบุคคล" อื่นๆ ก็มีส่วนกำหนดประสบการณ์รายวันของคุณเช่นกัน:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>ดาวพุธ:</strong> ผู้ปกครองด้านการสื่อสาร เทคโนโลยี และการเดินทาง สภาวะของดาวพุธจะกำหนดว่าอีเมลของคุณจะถูกส่งอย่างราบรื่นหรือหายไปในสแปม และการเดินทางของคุณจะสะดวกหรือวุ่นวาย</li>
+        <li><strong>ดาวศุกร์:</strong> ผู้ปกครองด้านความรัก การเงิน และคุณค่า วันที่ดาวศุกร์อยู่ในตำแหน่งที่ดีจะเหมาะอย่างยิ่งสำหรับการออกเดท การช้อปปิ้ง หรือการขอขึ้นเงินเดือน</li>
+        <li><strong>ดาวอังคาร:</strong> เครื่องยนต์ของจักรราศี เป็นตัวกำหนดระดับพลังงาน แรงขับเคลื่อน และความต้องการทางเพศ วันที่ดาวอังคารมีมุมท้าทายอาจนำไปสู่ภาวะหมดไฟหรือการโต้เถียง หากคุณไม่เปลี่ยนพลังงานนั้นไปใช้ในการออกกำลังกายหรือการทำงานหนัก</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 สัญลักษณ์s</h2>
+      <h2 id="zodiac-daily-styles">สไตล์รายวันของ 12 ราศี</h2>
       
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ ราศีเมษ (21 มีนาคม - 19 เมษายน)</h3>
+      <p><strong>ขับเคลื่อนโดยดาวอังคาร</strong> คุณต้องการการเคลื่อนไหวร่างกายเพื่อจัดการกับพลังงานรายวัน ดวงคนราศีเมษมักเน้นไปที่ความคิดริเริ่มใหม่ๆ ความขัดแย้งที่ต้องแก้ไข และช่วงเวลาแห่งความเป็นผู้นำ <em>นิสัยที่ควรทำทุกวัน:</em> คาร์ดิโอยามเช้า</p>
 
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ ราศีพฤษภ (20 เมษายน - 20 พฤษภาคม)</h3>
+      <p><strong>ปกครองโดยดาวศุกร์</strong> คุณประมวลผลสิ่งต่างๆ ผ่านประสาทสัมผัส ดวงของคุณมักเน้นเรื่องการเงินและความสบายทางกาย <em>นิสัยที่ควรทำทุกวัน:</em> การดื่มด่ำกับมื้อเช้าแสนอร่อยอย่างตั้งใจ</p>
 
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ ราศีเมถุน (21 พฤษภาคม - 20 มิถุนายน)</h3>
+      <p><strong>ปกครองโดยดาวพุธ</strong> ข้อมูลคือเชื้อเพลิงของคุณ คำทำนายรายวันของคุณมักเกี่ยวข้องกับการสนทนา การเรียนรู้ และการเดินทางระยะสั้น <em>นิสัยที่ควรทำทุกวัน:</em> การเขียนบันทึกหรือฟังพอดแคสต์ยามเช้า</p>
 
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ ราศีกรกฎ (21 มิถุนายน - 22 กรกฎาคม)</h3>
+      <p><strong>ปกครองโดยดวงจันทร์</strong> คุณเป็นราศีที่เปลี่ยนแปลงตามวัฏจักรมากที่สุด คำทำนายมักเน้นเรื่องบ้าน ครอบครัว และความมั่นคงทางอารมณ์ <em>นิสัยที่ควรทำทุกวัน:</em> การติดต่อถามสารทุกข์สุกดิบกับคนที่คุณรัก</p>
 
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ ราศีสิงห์ (23 กรกฎาคม - 22 สิงหาคม)</h3>
+      <p><strong>ปกครองโดยดวงอาทิตย์</strong> คุณต้องการแสดงความเป็นตัวของตัวเอง คนราศีสิงห์มักเจอธีมเรื่องความคิดสร้างสรรค์ ความพึงพอใจ และการได้รับการยอมรับในแต่ละวัน <em>นิสัยที่ควรทำทุกวัน:</em> การเลือกชุดที่คุณใส่แล้วมั่นใจ</p>
 
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ ราศีกันย์ (23 สิงหาคม - 22 กันยายน)</h3>
+      <p><strong>ปกครองโดยดาวพุธ</strong> ความเป็นระเบียบนำความสงบมาให้คุณ ดวงมักชี้ไปที่งานที่ต้องทำ กิจวัตรเพื่อสุขภาพ และการช่วยเหลือผู้อื่น <em>นิสัยที่ควรทำทุกวัน:</em> การเขียนรายการสิ่งที่ต้องทำ (To-do list)</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ ราศีตุลย์ (23 กันยายน - 22 ตุลาคม)</h3>
+      <p><strong>ปกครองโดยดาวศุกร์</strong> ความสมดุลคือหัวใจสำคัญ คุณแสวงหาความกลมเกลียวในความสัมพันธ์ ดวงรายวันของคุณมักเน้นเรื่องคู่ครองและความสวยงาม <em>นิสัยที่ควรทำทุกวัน:</em> การทำสมาธิหรือการจัดสภาพแวดล้อมให้สมดุล</p>
 
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ ราศีพิจิก (23 ตุลาคม - 21 พฤศจิกายน)</h3>
+      <p><strong>ปกครองโดยดาวพลูโตและดาวอังคาร</strong> คุณแสวงหาความลึกซึ้ง วันที่ราบเรียบเกินไปจะทำให้คุณเบื่อ ดวงของคุณเน้นเรื่องการเปลี่ยนผ่าน ความลับ และทรัพยากรที่ใช้ร่วมกัน <em>นิสัยที่ควรทำทุกวัน:</em> การค้นคว้าข้อมูลเชิงลึกหรือการไตร่ตรองเงียบๆ</p>
 
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ ราศีธนู (22 พฤศจิกายน - 21 ธันวาคม)</h3>
+      <p><strong>ปกครองโดยดาวพฤหัสบดี</strong> คุณกระหายการขยายตัว วันของคุณมักเกี่ยวกับภาพรวม ปรัชญา หรืออิทธิพลจากต่างแดน <em>นิสัยที่ควรทำทุกวัน:</em> การเรียนรู้สิ่งใหม่ๆ ที่ไม่เคยรู้มาก่อน</p>
 
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ ราศีมังกร (22 ธันวาคม - 19 มกราคม)</h3>
+      <p><strong>ปกครองโดยดาวเสาร์</strong> คุณกำลังสร้างความสำเร็จที่ยั่งยืน ธีมรายวันของคุณมักเกี่ยวกับอาชีพ ชื่อเสียง และเป้าหมายระยะยาว <em>นิสัยที่ควรทำทุกวัน:</em> การจัดการกับงานที่ยากที่สุดก่อน</p>
 
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ ราศีกุมภ์ (20 มกราคม - 18 กุมภาพันธ์)</h3>
+      <p><strong>ปกครองโดยดาวยูเรนัสและดาวเสาร์</strong> คุณมองไปที่อนาคต ดวงของคุณเน้นเรื่องเครือข่ายสังคม เทคโนโลยี และนวัตกรรม <em>นิสัยที่ควรทำทุกวัน:</em> การเชื่อมต่อกับกลุ่มสังคมหรือชุมชนของคุณ</p>
 
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ ราศีมีน (19 กุมภาพันธ์ - 20 มีนาคม)</h3>
+      <p><strong>ปกครองโดยดาวเนปจูนและดาวพฤหัสบดี</strong> คุณล่องลอยอยู่ระหว่างโลกต่างๆ คำแนะนำรายวันของคุณมักเป็นเรื่องทางจิตวิญญาณ ศิลปะ หรือสัญชาตญาณ <em>นิสัยที่ควรทำทุกวัน:</em> การจดบันทึกความฝันหรือการจินตนาการเชิงสร้างสรรค์</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">พิธีกรรมทางโหราศาสตร์ในชีวิตประจำวัน</h2>
+      <p>คุณจะใช้ข้อมูลนี้อย่างไร? อย่าแค่อ่าน แต่จงใช้ชีวิตไปกับมัน</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>เช็กดวงยามเช้า:</strong> อ่านคำทำนายของคุณ <em>ก่อน</em> เช็กอีเมล สิ่งนี้จะช่วยตั้งเข็มทิศแห่งจักรวาลให้กับวันนั้นๆ</li>
+        <li><strong>สังเกตราศีที่ดวงจันทร์สถิต:</strong> ถ้าดวงจันทร์อยู่ในราศีกันย์ ให้จัดโต๊ะทำงาน ถ้าอยู่ในราศีตุลย์ ให้โทรหาหุ้นส่วนธุรกิจ การไหลไปตามกระแสย่อมง่ายกว่าเสมอ</li>
+        <li><strong>เคารพช่วงเวลาจันทร์ลอย:</strong> ช่วง "จันทร์ลอย" (Void-of-Course Moon) คือช่วงที่ดวงจันทร์ไม่ทำมุมสัมพันธ์กับดาวดวงอื่นก่อนเปลี่ยนราศี เป็นช่วงเวลาที่ทุกอย่างจะคลุมเครือ ห้ามเซ็นสัญญาหรือเริ่มธุรกิจในช่วงนี้ ควรใช้เวลาไปกับการพักผ่อน</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">คลายข้อสงสัยกับเรื่องเข้าใจผิด</h2>
+      <p><strong>"ดูดวงมันดูคลุมเครือเกินไป"</strong> <br>ดวงตามหน้าหนังสือพิมพ์ทั่วไปอาจจะดูคลุมเครือเพราะเขาดูแค่ราศีเกิด การอ่านดวงแบบเฉพาะบุคคลที่สร้างโดย AI ที่ซับซ้อนของเราที่ Astralo จะพิจารณารายละเอียดจากแผนภูมิดวงชะตาทั้งหมดของคุณ</p>
+      <p><strong>"โหราศาสตร์ทำนายโชคชะตาที่ถูกกำหนดไว้แล้ว"</strong> <br>ไม่จริง โหราศาสตร์ทำนาย <em>พลังงาน</em> และ <em>สภาพอากาศ</em> สภาพอากาศอาจจะมีฝนตก (การโคจรจรที่ท้าทาย) แต่คุณคือคนตัดสินใจว่าจะพกร่มหรือจะออกไปเต้นระบำกลางสายฝน คุณมีเจตจำนงเสรีเสมอ</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>พร้อมที่จะเจาะลึกขึ้นหรือยัง?</h3>
+      <p>แม้ว่าการพยากรณ์ทั่วไปจะมีประโยชน์ แต่ไม่มีอะไรเทียบได้กับการอ่านดวงที่คำนวณจากเวลาและสถานที่เกิดที่แน่นอนของคุณ แผนภูมิกำเนิดที่เป็นเอกลักษณ์ของคุณคือแผนที่ที่ซับซ้อนซึ่งไม่มีใครเหมือน ปลดล็อกศักยภาพทั้งหมดของการออกแบบแห่งจักรวาลด้วยการอ่านส่วนบุคคลระดับพรีเมียมของ Astralo</p>
     `
 };

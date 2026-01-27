@@ -1,71 +1,84 @@
 /**
  * monthly-horoscope-february-2026 - SR
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const sr: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Mesečni horoskop za februar 2026: Sezona vodolijaških inovacija',
+  excerpt: 'Februar 2026. donosi talas jasnoće jer Merkur kreće direktno. Otkrijte kako će Pun Mesec u Lavu 3. februara i Venera u Ribama uticati na vaš ljubavni život i karijeru.',
+  category: 'Horoskopi',
+  metaDescription: 'Kompletna astrološka prognoza za februar 2026. Saznajte kako Pun Mesec u Lavu i Venera u Ribama utiču na vaše odnose i uspeh.',
+  keywords: 'mesečni horoskop, astrologija februar 2026, mesečna predviđanja, prognoza za februar, sezona vodolije, pun mesec u lavu, venera u ribama',
+  quickSummary: [
+    'Pun Mesec u Lavu 3. februara zahteva da zauzmete centralno mesto i izrazite svoje pravo ja',
+    'Merkur konačno kreće direktno, raščišćavajući nesporazume iz kasnog januara',
+    'Venera prelazi u sanjive Ribe, kreirajući najromantičniju energiju u celoj godini',
+    'Sezona Vodolije nas podstiče na inovacije i oslobađanje od zastarelih tradicija'
+  ],
+  keyTakeaways: [
+    'Iskoristite prvu nedelju februara za pokretanje kreativnih projekata ili promenu ličnog brenda',
+    'Dan zaljubljenih je ove godine posebno magičan uz egzaltiranu Veneru — planirajte nešto duhovno i duboko',
+    'Sredinom meseca očekujte iznenadne uvide u vezi sa tehnologijom ili društvenim grupama',
+    'Opšti horoskopi su odlični, ali za specifičan tajming su vam potrebni vaši lični tranziti'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Pregled februara 2026.' },
+    { id: 'key-transits', title: 'Ključni datumi i tranziti' },
+    { id: 'fire-signs', title: 'Vatreni znakovi (Ovan, Lav, Strelac)' },
+    { id: 'earth-signs', title: 'Zemljani znakovi (Bik, Devica, Jarac)' },
+    { id: 'air-signs', title: 'Vazdušni znakovi (Blizanci, Vaga, Vodolija)' },
+    { id: 'water-signs', title: 'Vodeni znakovi (Rak, Škorpija, Ribe)' },
+    { id: 'get-personal', title: 'Zašto opšti horoskop nije dovoljan' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologija februara 2026.</h2>
+      <p>Ako je januar bio mesec odbacivanja starog, <strong>februar 2026.</strong> je mesec hrabrog koračanja u budućnost. Duboko smo u <strong>sezoni Vodolije</strong>, vremenu koje favorizuje hrabre, neobične i inovativne. Kolektivno raspoloženje se menja iz „Kako da preživim?“ u „Kako da se ponovo osmislim?“</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Glavna vest je <strong>Pun Mesec u Lavu 3. februara</strong>. Lav od nas traži da zasijamo. Pita nas: „Gde se to ustručavaš i igraš na malo?“ Pod ovom svetlošću, skrivanje nije opcija. Uz Merkur koji završava svoju fazu senke, jasnoća se vraća u našu komunikaciju. Magla se podiže.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Ključni datumi i tranziti</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3. feb:</strong> Pun Mesec u Lavu (Drama, strast, kulminacija).</li>
+        <li><strong>10. feb:</strong> Venera ulazi u Ribe (Bezuslovna ljubav, umetnost, fantazija).</li>
+        <li><strong>18. feb:</strong> Sunce ulazi u Ribe (Počinje sezona snova).</li>
+        <li><strong>25. feb:</strong> Merkur ulazi u Ribe (Logika se rastapa u intuiciji).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Ватра Знакs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Vatreni znakovi (Ovan, Lav, Strelac)</h2>
+      <p><strong>Tema: Kreativna eksplozija.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Lav:</strong> Ovo je vaš trenutak. Pun Mesec u vašem znaku stavlja vas pod svetla reflektora. Bilo da se radi o unapređenju, raskidu ili velikom proboju, to se dešava <em>sada</em>. Ne plašite se da budete viđeni.</p>
+      <p><strong>Ovan:</strong> Vaš društveni krug je vaše bogatstvo ovog meseca. Umrežavanje donosi neočekivane koristi. Prijatelj bi mogao postati ljubavnik ili poslovni partner.</p>
+      <p><strong>Strelac:</strong> Žudite za mudrošću. Planovi za putovanja koji su odloženi u januaru konačno dobijaju zeleno svetlo. Rezervišite kartu.</p>
 
-      <h2 id="earth-signs">🌍 Земља Знакs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Zemljani znakovi (Bik, Devica, Jarac)</h2>
+      <p><strong>Tema: Duhovno uzemljenje.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Bik:</strong> Kada Venera uđe u Ribe, osećaćete se nežnije. Ovo je prelepo vreme za romansu, ali i za praštanje sebi za greške iz prošlosti. Pustite stare zamerke.</p>
+      <p><strong>Devica:</strong> Fokusirajte se na partnerstvo. Obično ste vi onaj koji pomaže, ali u februaru dopustite nekom drugom da pomogne <em>vama</em>. Ranjivost je vaša lekcija ovog meseca.</p>
+      <p><strong>Jarac:</strong> Finansijska situacija se popravlja, ali ne samo kroz naporan rad. Intuicija vodi vaše investicije. Verujte svom osećaju više nego tabelama.</p>
 
-      <h2 id="air-signs">💨 Ваздух Знакs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Vazdušni znakovi (Blizanci, Vaga, Vodolija)</h2>
+      <p><strong>Tema: Intelektualna obnova.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Vodolija:</strong> Srećan rođendan! Sunce u vašem znaku pojačava vašu vitalnost. Magnetični ste. Ovo je najbolje vreme u godini da pokrenete lični brend ili osvežite svoj izgled.</p>
+      <p><strong>Gemini:</strong> Karijera dobija novi pravac. Možda vam je dosadila rutina. Tražite neobična rešenja ili dodatne poslove koji podstiču vašu radoznalost.</p>
+      <p><strong>Vaga:</strong> Romansa je na vrhuncu, ali i kreativnost. Nešto stvarate — dete, umetničko delo ili novu romansu. Uživajte u plodnosti ovog trenutka.</p>
 
-      <h2 id="water-signs">💧 Вода Знакs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Vodeni znakovi (Rak, Škorpija, Ribe)</h2>
+      <p><strong>Tema: Emocionalno ronjenje.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Ribe:</strong> Kako se mesec završava, Sunce ulazi u vaš znak. Budite se iz dugog sna. Vaša intuicija je sada praktično vidovita. Iskoristite je.</p>
+      <p><strong>Rak:</strong> Novac i zajednički resursi su u fokusu. Možda ćete otplatiti dug ili dobiti odobrenje za kredit. Vreme je da dovedete svoje finansije u red.</p>
+      <p><strong>Škorpija:</strong> Dom je tamo gde je srce. Možda ćete renovirati stan ili se jednostavno skloniti od sveta. Odmor je trenutno veoma produktivan za vas.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Zašto opšti horoskopi nisu dovoljni</h2>
+      <p>Iako vam ova prognoza daje „kozmičku vremensku prognozu“ za vaš znak Sunca, ona propušta najvažniji deo: <strong>vašu jedinstvenu natalnu kartu.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Vi ste više od svog sunčevog znaka. Imate znak Meseca, podznak i još 8 planeta koji čine kompleksnu mapu, jedinstvenu poput otiska prsta. 
+      <br><em>Primer:</em> Neko ko ima podznak u Biku doživeće ovaj mesec potpuno drugačije od nekoga ko ima Sunce u Biku.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
-      
-      <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
-      </div>
+      <p><strong>Nemojte nagađati o svojoj budućnosti.</strong> Da biste dobili specifične datume i detalje koji se odnose na VAS lično, potrebno vam je izračunato tumačenje.</p>
     `
 };

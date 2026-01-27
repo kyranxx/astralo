@@ -1,69 +1,87 @@
 /**
- * monthly-horoscope-january-2026 - BN
+ * মাসিক রাশিফল জানুয়ারি ২০২৬ - বাংলা
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 মাসিক রাশিফল জানুয়ারি ২০২৬: এক নতুন যুগের সূচনা',
+  excerpt: 'জানুয়ারি ২০২৬-এর সম্পূর্ণ জ্যোতিষীয় পূর্বাভাস। মেষ থেকে মীন পর্যন্ত ১২টি রাশির বিস্তারিত মাসিক রাশিফল, কুম্ভ রাশিতে প্লুটোর অবস্থান, প্রেম, কর্মজীবন এবং আর্থিক প্রবণতা সম্পর্কে জানুন।',
+  category: 'রাশিফল',
+  metaDescription: 'জানুয়ারি ২০২৬-এর সম্পূর্ণ জ্যোতিষীয় পূর্বাভাস। মেষ থেকে মীন পর্যন্ত ১২টি রাশির বিস্তারিত মাসিক রাশিফল, কুম্ভ রাশিতে প্লুটোর অবস্থান, প্রেম, কর্মজীবন এবং আর্থিক প্রবণতা সম্পর্কে জানুন।',
+  keywords: 'মাসিক রাশিফল, জানুয়ারি ২০২৬ জ্যোতিষশাস্ত্র, মাসিক পূর্বাভাস, কুম্ভ রাশিতে প্লুটো, মকর রাশিতে নতুন চাঁদ, কর্কট রাশিতে পূর্ণিমা',
+  quickSummary: [
+    'জানুয়ারি ২০২৬ কুম্ভ রাশিতে প্লুটোর স্থিতিশীলতা দ্বারা প্রভাবিত, যা বিশাল সামাজিক পরিবর্তনের ইঙ্গিত দেয়।',
+    'মকর রাশিতে নতুন চাঁদ (১ জানুয়ারি) নতুন বছরের সংকল্পের জন্য নিখুঁত শক্তি সরবরাহ করে।',
+    'বুধের বিপরীতমুখী গতির প্রভাব ১৫ জানুয়ারির মধ্যে কেটে যাবে, যা যোগাযোগকে আরও সহজ করে তুলবে।',
+    'কর্কট রাশিতে মঙ্গলের বিপরীতমুখী গতি অমীমাংসিত পারিবারিক দ্বন্দ্বগুলোকে সামনে নিয়ে আসবে।'
+  ],
+  keyTakeaways: [
+    'জানুয়ারির প্রথম সপ্তাহটি কেবল কৌশলগত পরিকল্পনার জন্য ব্যবহার করুন; মাসের মাঝামাঝি পর্যন্ত কোনো বড় পদক্ষেপ নেওয়া স্থগিত রাখুন।',
+    'ইউরেনাস সক্রিয় হওয়ার সাথে সাথে হঠাৎ প্রযুক্তিগত উদ্ভাবন বা বিঘ্নের সম্ভাবনা রয়েছে।',
+    '১৪ জানুয়ারি কর্কট রাশিতে পূর্ণিমার কাছাকাছি সময়ে ব্যক্তিগত সম্পর্কগুলোতে বাস্তবতার পরীক্ষা হতে পারে।',
+    'আর্থিক বাজার অস্থির হতে পারে; দীর্ঘমেয়াদী নিরাপদ বিনিয়োগে মনোনিবেশ করুন।'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'জানুয়ারির জ্যোতিষীয় বিশ্লেষণ' },
+    { id: 'key-transits', title: 'গুরুত্বপূর্ণ তারিখ এবং পরিবর্তন' },
+    { id: 'fire-signs', title: 'অগ্নি রাশি (মেষ, সিংহ, ধনু)' },
+    { id: 'earth-signs', title: 'পৃথিবী রাশি (বৃষ, কন্যা, মকর)' },
+    { id: 'air-signs', title: 'বায়ু রাশি (মিথুন, তুলা, কুম্ভ)' },
+    { id: 'water-signs', title: 'জল রাশি (কর্কট, বৃশ্চিক, মীন)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">জানুয়ারি ২০২৬-এর জ্যোতিষশাস্ত্র</h2>
+      <p>শুভ নববর্ষ! <strong>জানুয়ারি ২০২৬</strong> কেবল একটি নতুন ক্যালেন্ডার বছরের শুরু নয়; এটি জ্যোতিষীয়ভাবে এক নতুন যুগের সূচনা। <strong>কুম্ভ রাশিতে প্লুটোর স্থিতিশীল অবস্থানের</strong> সাথে, আমরা সমষ্টিগতভাবে গত ১৫ বছরের (মকর রাশিতে প্লুটো) কঠোর কাঠামো থেকে দূরে সরে যাচ্ছি এবং দ্রুত উদ্ভাবন, সামাজিক ফোকাস এবং পরিবর্তনের এক পর্যায়ে প্রবেশ করছি।</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>মাসের শুরুতেই ১ জানুয়ারি <strong>মকর রাশিতে নতুন চাঁদ</strong> দেখা দেবে—যা একটি বিরল এবং শুভ যোগ। এটি "নতুন বছর, নতুন আমি" সংকল্পকে শক্তিশালী করে, যা শৃঙ্খলাবদ্ধ এবং দীর্ঘমেয়াদী লক্ষ্য নির্ধারণের জন্য একটি অবিশ্বাস্য সময়। তবে, কর্কট রাশিতে মঙ্গলের বিপরীতেমুখী অবস্থানের কারণে আমাদের শক্তি কিছুটা অন্তর্মুখী হতে পারে। আমরা কেবল <em>কীভাবে</em> কাজ করি তা নয়, বরং <em>কেন</em> কাজ করি তা গুরুত্ব সহকারে ভাবছি।</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">গুরুত্বপূর্ণ তারিখ এবং পরিবর্তন</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>১ জানুয়ারি:</strong> মকর রাশিতে নতুন চাঁদ (লক্ষ্য নির্ধারণের সময়)।</li>
+        <li><strong>৪ জানুয়ারি:</strong> সিংহ রাশিতে মঙ্গলের প্রবেশ (গর্ব এবং নাটকীয়তা বৃদ্ধি পাবে)।</li>
+        <li><strong>১৪ জানুয়ারি:</strong> কর্কট রাশিতে পূর্ণিমা (আবেগের বহিঃপ্রকাশ)।</li>
+        <li><strong>২০ জানুয়ারি:</strong> কুম্ভ রাশিতে সূর্যের প্রবেশ (ভবিষতের সময়)।</li>
+        <li><strong>২৯ জানুয়ারি:</strong> ইউরেনাসের সরাসরি গতি (হঠাৎ পরিবর্তন)।</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 আগুন চিহ্নs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 অগ্নি রাশি (মেষ, সিংহ, ধনু)</h2>
+      <p><strong>মূল থিম: নিজের ভেতরের তেজ ফিরিয়ে আনা।</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>মেষ রাশি:</strong> আপনার গ্রহ অধিপতি মঙ্গল বিপরীতমুখী হওয়ায় আপনি সামান্য বিলম্ব বা বাধার সম্মুখীন হতে পারেন। এটি দমে যাওয়ার সময় নয়, বরং নিজেকে যাচাই করার সময়। জানুয়ারি মাসটি আপনার ক্যারিয়ারের পথ পুনর্মূল্যায়নের জন্য ব্যবহার করুন। আপনি কি সঠিক পাহাড়েই চড়ছেন?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>সিংহ রাশি:</strong> সম্পর্কের ওপর বেশি গুরুত্ব দেওয়া হবে। পুরনো বন্ধু বা প্রাক্তন সঙ্গীদের সাথে আবার যোগাযোগ হতে পারে। মাসের মাঝামাঝি আপনার ১২তম ঘরে পূর্ণিমা হবে, যা নির্জনতার প্রয়োজনীয়তা নির্দেশ করে। সামাজিক ব্যস্ততার মাঝে নিজের শক্তি সঞ্চয় করুন।</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>ধনু রাশি:</strong> আর্থিক বিষয়গুলো সামনে আসবে। আপনি আয়ের নতুন পথ খুঁজে পেতে পারেন অথবা অপ্রয়োজনীয় খরচ কমানোর সিদ্ধান্ত নিতে পারেন। এটি বাস্তবসম্মত বাজেটিংয়ের মাস, অপচয় করার নয়।</p>
 
-      <h2 id="earth-signs">🌍 পৃথিবী চিহ্নs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 পৃথিবী রাশি (বৃষ, কন্যা, মকর)</h2>
+      <p><strong>মূল থিম: ভিত্তি মজবুত করা।</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>বৃষ রাশি:</strong> আপনি সাধারণত পরিবর্তন পছন্দ করেন না, কিন্তু আপনার রাশিতে ইউরেনাসের অবস্থান আপনাকে মুক্ত হওয়ার পথে ঠেলে দিচ্ছে। জানুয়ারি মাসে ভ্রমণের হঠাৎ সুযোগ বা আপনার চিন্তাধারায় পরিবর্তন আসতে পারে। অজানাকে স্বাগত জানান।</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>কন্যা রাশি:</strong> আপনার গ্রহ অধিপতি বুধ মাসের মাঝামাঝি সময়ে সরাসরি গতি ফিরে পাবে। ততক্ষণ পর্যন্ত সকল চুক্তি দুবার যাচাই করুন। ২০ তারিখের পর আপনার সৃজনশীলতা বৃদ্ধি পাবে—দীর্ঘদিন ধরে ফেলে রাখা শখগুলো আবার শুরু করুন।</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>মকর রাশি:</strong> শুভ জন্মদিন! আপনার রাশিতে নতুন চাঁদ মানে এটি আপনার ব্যক্তিগত নববর্ষ। এই সময় নিজের গুরুত্ব বোঝা এবং নিজের জন্য পরিকল্পনা করা প্রয়োজন। আগামী ১২ মাসের জন্য আপনি নিজের কাছে কী চান? তা স্পষ্টভাবে নির্ধারণ করুন।</p>
 
-      <h2 id="air-signs">💨 বায়ু চিহ্নs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 বায়ু রাশি (মিথুন, তুলা, কুম্ভ)</h2>
+      <p><strong>মূল থিম: বুদ্ধিবৃত্তিক প্রসার।</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>মিথুন রাশি:</strong> যৌথ সম্পদ এবং গভীর ঘনিষ্ঠতা এখন গুরুত্বপূর্ণ। আপনি উত্তরসূরি হিসেবে কিছু পেতে পারেন, বোনাস পেতে পারেন অথবা মানসিকভাবে কোনো বড় সত্য উপলব্ধি করতে পারেন। এটি একটি তীব্র কিন্তু শুদ্ধকরণের মাস।</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>তুলা রাশি:</strong> বাড়ি এবং পরিবার মূল কেন্দ্রবিন্দুতে থাকবে। আপনি ঘর সাজাতে পারেন অথবা পারিবারিক কোনো বিবাদ মেটানোর চেষ্টা করতে পারেন। ভারসাম্য বজায় রাখাই আপনার শক্তি; এটি ব্যবহার করে নিজের আশেপাশে শান্তি বজায় রাখুন।</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>কুম্ভ রাশি:</strong> এটি আপনার সময়। আপনার রাশিতে প্লুটোর অবস্থানের ফলে আপনি এক বড় রূপান্তরের মধ্য দিয়ে যাচ্ছেন। আপনি আপনার লুক, নাম বা কাজের ধরণ সম্পূর্ণ বদলে ফেলতে পারেন। পৃথিবী এখন আপনার দৃষ্টিভঙ্গি বোঝার চেষ্টা করবে।</p>
 
-      <h2 id="water-signs">💧 জল চিহ্নs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 জল রাশি (কর্কট, বৃশ্চিক, মীন)</h2>
+      <p><strong>মূল থিম: আবেগীয় প্রজ্ঞা।</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>কর্কট রাশি:</strong> ১৪ তারিখে আপনার রাশিতে পূর্ণিমা হওয়া মানে এটি আপনার বছরের আবেগীয় চরম মুহূর্ত। আবেগগুলো প্রকাশ পেতে দিন। জীবন থেকে পুরনো জীর্ণতাকে বিদায় জানান। এই সময় গড়ে ওঠা সম্পর্কগুলো দীর্ঘস্থায়ী হতে পারে।</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>বৃশ্চিক রাশি:</strong> এখন যোগাযোগের শক্তি প্রবল। এই মাসে আপনার কথার বাড়তি গুরুত্ব থাকবে। আলোচনার জন্য বা লেখালেখির জন্য এই সময়টি ব্যবহার করুন। মনের খেলা এড়িয়ে চলুন; স্বচ্ছতা বজায় রাখলে জয় আসবেই।</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>মীন রাশি:</strong> আপনার সামাজিক পরিধি বৃদ্ধি পাবে। আপনার চারপাশের মানুষকে একত্রিত রাখার কাজটি আপনিই করবেন। সামাজিক কাজে অংশ নেওয়ার বা কোনো গ্রুপ প্রজেক্টের নেতৃত্ব দেওয়ার সুযোগ খুঁজুন। আপনার অন্তর্দৃষ্টি এখন প্রবল। </p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">আপনার সম্পূর্ণ ২০২৬-এর রাশিফল সংগ্রহ করুন</h2>
+      <p>এই মাসিক রাশিফল কেবল শুরু মাত্র। প্রতিকটি মানুষের রাশিচক্রের মানচিত্র আলাদা হয় যা গ্রহের চলনের সাথে ভিন্নভাবে প্রতিক্রিয়া দেখায়। ২০২৬ সালকে আত্মবিশ্বাসের সাথে অতিবাহিত করতে Astralo থেকে আপনার <strong>ব্যক্তিগত বার্ষিক প্রতিবেদন</strong> সংগ্রহ করুন। এটি আপনার জন্য মাসের পর মাস বিস্তারিত পথনির্দেশ করবে।
     `
 };

@@ -4,98 +4,116 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const sr: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ Dnevni horoskop 2026: Konačni vodič za razumevanje vaših predviđanja",
+  excerpt: "Ovladajte predviđanjima vašeg dnevnog horoskopa. Sveobuhvatan vodič o tome kako funkcioniše dnevna astrologija, zašto je vaš podznak važan i kako koristiti planetarnu energiju za uspeh.",
+  category: "Astrologija 101",
+  metaDescription: "Ovladajte predviđanjima vašeg dnevnog horoskopa. Sveobuhvatan vodič o tome kako funkcioniše dnevna astrologija, zašto je vaš podznak važan i kako koristiti planetarnu energiju za uspeh.",
+  keywords: "dnevni horoskop, horoskop za danas, horoskop danas, dnevni zodijak, vodič kroz horoskop, razumevanje astrologije, dnevni podznak, planetarni tranziti",
+  quickSummary: [
+    "Dnevni horoskopi su pokrenuti brzim kretanjem Meseca i planetarnim aspektima prema vašoj natalnoj karti",
+    "Čitanje za vaš podznak (Ascendent) često pruža veću tačnost dnevnih predviđanja",
+    "Planetarni tranziti svakodnevno aktiviraju specifične događaje, emocije i prilike",
+    "Naučite da koristite periode Meseca \"u praznom hodu\" (Void-of-Course) kako biste izbegli uzaludan trud"
+  ],
+  keyTakeaways: [
+    "Vaš sunčev znak pokazuje vašu osnovnu vitalnost, ali vaš podznak postavlja „pozornicu“ za vaš svakodnevni život",
+    "Mesec menja znakove na svakih 2,5 dana, diktirajući kolektivno raspoloženje",
+    "Retrogradni Merkur i drugi „loši“ aspekti su zapravo periodi za reviziju i ponovnu kalibraciju",
+    "Integrisanje astrologije u vašu jutarnju rutinu može optimizovati vašu produktivnost i odnose"
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "Zašto čitati dnevni horoskop?" },
+    { id: "science-behind-it", title: "Mehanika: Kako to funkcioniše?" },
+    { id: "rising-vs-sun", title: "Zlatno pravilo: Sunčev znak naspram podznaka" },
+    { id: "planetary-players", title: "Ključni planetarni igrači" },
+    { id: "zodiac-daily-styles", title: "Dnevni stilovi 12 znakova" },
+    { id: "practical-rituals", title: "Dnevni astrološki rituali" },
+    { id: "myth-busting", title: "Razbijanje uobičajenih mitova" }
+  ],
+  content: `
+      <h2 id="introduction">Zašto čitati dnevni horoskop?</h2>
+      <p>Za milione ljudi širom sveta, proveravanje <strong>dnevnog horoskopa</strong> je podjednako važno kao i jutarnja šolja kafe. To je trenutak pauze, ritual samorefleksije i način da se pripremite za energiju dana. Ali da li ste se ikada zapitali šta zapravo pokreće ova predviđanja? Da li su to samo nasumični saveti ili u pozadini radi složeni kozmički sat?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>U Astralu verujemo da je astrologija alat za osnaživanje. Dobro napisan horoskop ne predviđa samo budućnost; on vam pomaže da je <em>stvorite</em>. Razumevanjem kozmičkog vremena – položaja planeta danas u odnosu na to gde su bile kada ste se rodili – možete navigirati kroz izazove sa milošću i iskoristiti prilike koje bi vam inače mogle promaći.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">Mehanika: Kako to funkcioniše?</h2>
+      <p>Astrologija se često naziva proučavanjem ciklusa. Vaša <strong>predviđanja dnevnog horoskopa</strong> se izračunavaju pomoću tehnike koja se zove "tranziti". Zamislite svoju natalnu kartu kao trajni snimak neba u trenutku vašeg rođenja. Planete se, međutim, neprestano kreću. "Tranziti" se dešavaju kada planeta u pokretu na nebu napravi matematički ugao (aspekt) prema planeti u vašoj natalnoj karti.</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>Mesec: Minutna kazaljka sudbine</h3>
+      <p>Dok planetama poput Jupitera treba godinu dana da promene znak, <strong>Mesec</strong> se kreće neverovatno brzo, prolazeći kroz zodijački znak za otprilike 2,5 dana. To čini Mesec primarnim pokretačem vašeg <em>dnevnog</em> raspoloženja i emocionalnog pejzaža. Kada je Mesec u vatrenom Ovnu, osećamo se impulsivno i energično. Kada pređe u prizemljenog Bika, kolektivno usporavamo i žudimo za udobnošću.</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>Aspekti: Razgovori između planeta</h3>
+      <p>Planete „razgovaraju“ jedna sa drugom putem uglova. <strong>Trigon (120°)</strong> je harmonizovan razgovor koji donosi lakoću i sreću. <strong>Kvadrat (90°)</strong> je tačka napetosti koja prisiljava na akciju ili odluku. Vaš dnevni horoskop tumači ove razgovore. Ako Mars (akcija) na nebu pravi kvadrat sa Saturnom (ograničenje), danas se možete osećati frustrirano ili blokirano. Poznavanje toga vam pomaže da budete strpljivi umesto da forsirate vrata koja se neće otvoriti.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Знак</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">Zlatno pravilo: Čitajte za svoj podznak</h2>
+      <p>Evo tajne koju profesionalni astrolozi znaju: <strong>Za najtačnije dnevno predviđanje trebali biste čitati horoskop za svoj podznak (Ascendent), a ne samo za svoj sunčev znak.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>Zašto? Jer se horoskopi pišu pomoću „sistema kuća“. Vaš podznak određuje raspored 12 kuća u vašoj karti. 1. kuća ste vi, 2. je novac, 7. su odnosi i tako dalje. Kada astrolog napiše da će „Ovan danas imati priliku za zaradu“, on gleda kretanje planeta kroz 2. kuću karte sa podznakom u Ovnu.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>Čitajte svoj sunčev znak</strong> za opšte teme o vašem egu, vitalnosti i osnovnoj svrsi.</li>
+        <li><strong>Čitajte svoj podznak</strong> za konkretne događaje, tajming i okolnosti koje će vam se desiti danas.</li>
+        <li><strong>Čitajte svoj lunarni znak</strong> ako želite da razumete svoje unutrašnje emocionalno stanje.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">Ključni planetarni igrači u vašem danu</h2>
+      <p>Pored Meseca, vaše svakodnevno iskustvo oblikuju i druge brze „lične planete“:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>Merkur:</strong> Vladar komunikacije, tehnologije i putovanja. Njegovo stanje određuje da li će vaše e-poruke dospeti na odredište ili će se izgubiti u neželjenoj pošti, kao i da li će vaš put do posla biti nesmetan ili haotičan.</li>
+        <li><strong>Venera:</strong> Vladarka ljubavi, novca i vrednosti. Dobar Venerin dan je savršen za sastanke, kupovinu ili traženje povišice.</li>
+        <li><strong>Mars:</strong> Motor zodijaka. On diktira vaš nivo energije, nagon i libido. Izazovan Marsov dan može dovesti do sagorevanja ili svađa ako se energija ne usmeri na vežbanje ili naporan rad.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Знакs</h2>
+      <h2 id="zodiac-daily-styles">Dnevni stilovi 12 znakova</h2>
       
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ Ovan (21. mart - 19. april)</h3>
+      <p><strong>Vođen Marsom.</strong> Potrebno vam je fizičko kretanje da biste preradili dnevnu energiju. Horoskop za Ovna se često fokusira na inicijative, konflikte koje treba rešiti i trenutke vođstva. <em>Najbolja dnevna navika:</em> Jutarnji kardio.</p>
 
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ Bik (20. april - 20. maj)</h3>
+      <p><strong>Pod vladavinom Venere.</strong> Dan procesuirate kroz svoja čula. Vaš horoskop često ističe finansijske poteze i fizičku udobnost. <em>Najbolja dnevna navika:</em> Promišljen, ukusan doručak.</p>
 
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ Blizanci (21. maj - 20. jun)</h3>
+      <p><strong>Pod vladavinom Merkura.</strong> Informacije su vaše gorivo. Vaša dnevna prognoza se vrti oko razgovora, učenja i kratkih putovanja. <em>Najbolja dnevna navika:</em> Pisanje dnevnika ili jutarnji podkast.</p>
 
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ Rak (21. jun - 22. jul)</h3>
+      <p><strong>Pod vladavinom Meseca.</strong> Vi ste najcikličniji znak. Vaše čitanje se često fokusira na dom, porodicu i emocionalnu sigurnost. <em>Najbolja dnevna navika:</em> Javljanje voljenoj osobi.</p>
 
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ Lav (23. jul - 22. avgust)</h3>
+      <p><strong>Pod vladavinom Sunca.</strong> Morate se izraziti. Lavovi u svom danu često nalaze teme kreativnosti, romantike i priznanja. <em>Najbolja dnevna navika:</em> Izbor odeće u kojoj se osećate samouvereno.</p>
 
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ Devica (23. avgust - 22. septembar)</h3>
+      <p><strong>Pod vladavinom Merkura.</strong> Red vam donosi mir. Vaš horoskop će često ukazivati na radne zadatke, zdravstvene rutine i služenje drugima. <em>Najbolja dnevna navika:</em> Izrada liste obaveza.</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ Vaga (23. septembar - 22. oktobar)</h3>
+      <p><strong>Pod vladavinom Venere.</strong> Ravnoteža je ključna. Tražite harmoniju u odnosima. Vaši dnevni uvidi su često usmereni na partnerstva i estetiku. <em>Najbolja dnevna navika:</em> Meditacija ili balansiranje okoline.</p>
 
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ Škorpija (23. oktobar - 21. novembar)</h3>
+      <p><strong>Pod vladavinom Plutona i Marsa.</strong> Tražite dubinu. Površni dani vam dosade; vaš horoskop naglašava transformaciju, tajne i zajedničke resurse. <em>Najbolja dnevna navika:</em> Duboko istraživanje ili privatna refleksija.</p>
 
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ Strelac (22. novembar - 21. decembar)</h3>
+      <p><strong>Pod vladavinom Jupitera.</strong> Žudite za ekspanzijom. Vaš dan je često u vezi sa širom slikom, filozofijom ili stranim uticajima. <em>Najbolja dnevna navika:</em> Učenje nečeg sasvim novog.</p>
 
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ Jarac (22. decembar - 19. januar)</h3>
+      <p><strong>Pod vladavinom Saturna.</strong> Gradite nasleđe. Dnevne teme za vas su često u vezi sa karijerom, reputacijom i dugoročnim ciljevima. <em>Najbolja dnevna navika:</em> Rešavanje najtežeg zadatka prvo.</p>
 
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ Vodolija (20. januar - 18. februar)</h3>
+      <p><strong>Pod vladavinom Urana i Saturna.</strong> Gledate u budućnost. Vaš horoskop naglašava društvene mreže, tehnologiju i inovacije. <em>Najbolja dnevna navika:</em> Povezivanje sa zajednicom.</p>
 
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ Ribe (19. februar - 20. mart)</h3>
+      <p><strong>Pod vladavinom Neptuna i Jupitera.</strong> Plutate između svetova. Vaše dnevno vođstvo je često duhovno, umetničko ili intuitivno. <em>Najbolja dnevna navika:</em> Beleženje snova ili kreativna vizuelizacija.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">Dnevni astrološki rituali</h2>
+      <p>Kako možete koristiti ove informacije? Nemojte ih samo čitati – živite ih.</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>Jutarnja provera:</strong> Pročitajte svoju prognozu <em>pre</em> nego što proverite e-poštu. To postavlja kozmičku nameru.</li>
+        <li><strong>Obratite pažnju na znak Meseca:</strong> Ako je Mesec u Devici, očistite radni sto. Ako je u Vagi, pozovite svog poslovnog partnera. Plivanje niz struju je uvek lakše.</li>
+        <li><strong>Poštujte prazan hod:</strong> Mesec „u praznom hodu“ je period kada Mesec više ne pravi aspekte pre nego što promeni znak. To je vreme nejasnoće. Nikada nemojte potpisivati ugovore niti pokretati poslove tokom praznog hoda. Iskoristite ga za odmor.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">Razbijanje uobičajenih mitova</h2>
+      <p><strong>"Horoskopi su previše nejasni."</strong> <br>Opšti novinski horoskopi su nejasni jer gledaju samo sunčeve znakove. Personalizovano čitanje, poput onih koje generiše naša sofisticirana veštačka inteligencija u Astralu, uzima u obzir nijanse cele vaše karte.</p>
+      <p><strong>"Astrologija predviđa fiksnu sudbinu."</strong> <br>Netačno. Astrologija predviđa <em>energiju</em> i <em>vreme</em>. Možda će padati kiša (težak tranzit), ali vi odlučujete da li ćete nositi kišobran ili plesati na njoj. Uvek imate slobodnu volju.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>Spremni da zaronite dublje?</h3>
+      <p>Iako su opšte prognoze korisne, ništa ne može nadmašiti čitanje izvedeno iz tačnog vremena i mesta vašeg rođenja. Vaša jedinstvena natalna karta je složena mapa koju ne dele dve osobe. Otključajte puni potencijal svog kozmičkog dizajna uz Astralo premium personalizovana čitanja.</p>
     `
 };

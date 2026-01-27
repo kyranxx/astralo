@@ -4,98 +4,116 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ Ημερήσιο Ωροσκόπιο 2026: Ο Απόλυτος Οδηγός για την Κατανόηση των Προβλέψεών σας",
+  excerpt: "Κατακτήστε τις προβλέψεις του ημερήσιου ωροσκοπίου σας. Ένας ολοκληρωμένος οδηγός για το πώς λειτουργεί η καθημερινή αστρολογία, γιατί έχει σημασία ο Ωροσκόπος σας και πώς να χρησιμοποιήσετε την πλανητική ενέργεια για επιτυχία.",
+  category: "Αστρολογία 101",
+  metaDescription: "Κατακτήστε τις προβλέψεις του ημερήσιου ωροσκοπίου σας. Ένας ολοκληρωμένος οδηγός για το πώς λειτουργεί η καθημερινή αστρολογία, γιατί έχει σημασία ο Ωροσκόπος σας και πώς να χρησιμοποιήσετε την πλανητική ενέργεια για επιτυχία.",
+  keywords: "ημερήσιο ωροσκόπιο, ωροσκόπιο σήμερα, σημερινό ωροσκόπιο, καθημερινό ζώδιο, οδηγός ωροσκοπίου, κατανόηση αστρολογίας, ημερήσιος ωροσκόπος, πλανητικές διελεύσεις",
+  quickSummary: [
+    "Τα ημερήσια ωροσκόπια τροφοδοτούνται από την ταχύτατα κινούμενη Σελήνη και τις πλανητικές όψεις προς το γενέθλιο χάρτη σας",
+    "Η ανάγνωση με βάση τον Ωροσκόπο (Ascendant) παρέχει συχνά μεγαλύτερη ακρίβεια στις καθημερινές προβλέψεις",
+    "Οι πλανητικές διελεύσεις ενεργοποιούν συγκεκριμένα γεγονότα, συναισθήματα και ευκαιρίες κάθε μέρα",
+    "Μάθετε να χρησιμοποιείτε τις περιόδους της Σελήνης σε \"κενό πορείας\" (Void-of-Course) για να αποφύγετε τη σπατάλη προσπάθειας"
+  ],
+  keyTakeaways: [
+    "Το ζώδιο του Ήλιου σας δείχνει τη βασική σας ζωτικότητα, αλλά ο Ωροσκόπος σας ορίζει τη \"σκηνή\" για την καθημερινή σας ζωή",
+    "Η Σελήνη αλλάζει ζώδιο κάθε 2,5 ημέρες, υπαγορεύοντας τη συλλογική διάθεση",
+    "Ο ανάδρομος Ερμής και άλλες \"δύσκολες\" όψεις είναι στην πραγματικότητα περίοδοι για ανασκόπηση και επαναβαθμονόμηση",
+    "Η ενσωμάτωση της αστρολογίας στην πρωινή σας ρουτίνα μπορεί να βελτιστοποιήσει την παραγωγικότητα και τις σχέσεις σας"
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "Γιατί να διαβάζετε ημερήσιο ωροσκόπιο;" },
+    { id: "science-behind-it", title: "Η Μηχανική: Πώς λειτουργεί;" },
+    { id: "rising-vs-sun", title: "Ο Χρυσός Κανόνας: Ήλιος vs. Ωροσκόπος" },
+    { id: "planetary-players", title: "Οι Βασικοί Πλανητικοί Παίκτες" },
+    { id: "zodiac-daily-styles", title: "Τα Ημερήσια Στυλ των 12 Ζωδίων" },
+    { id: "practical-rituals", title: "Καθημερινά Αστρολογικά Τελετουργικά" },
+    { id: "myth-busting", title: "Καταρρίπτοντας Κοινούς Μύθους" }
+  ],
+  content: `
+      <h2 id="introduction">Γιατί να διαβάζετε ημερήσιο ωροσκόπιο;</h2>
+      <p>Για εκατομμύρια ανθρώπους σε όλο τον κόσμο, ο έλεγχος του <strong>ημερήσιου ωροσκοπίου</strong> τους είναι εξίσου απαραίτητος όσο και ο πρωινός καφές. Είναι μια στιγμή παύσης, ένα τελετουργικό αυτοστοχασμού και ένας τρόπος προετοιμασίας για την ενέργεια της ημέρας. Αλλά αναρωτηθήκατε ποτέ τι πραγματικά τροφοδοτεί αυτές τις προβλέψεις; Είναι απλώς τυχαίες συμβουλές ή υπάρχει ένας περίπλοκος κοσμικός μηχανισμός πίσω από τις σκηνές;</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Στην Astralo, πιστεύουμε ότι η αστρολογία είναι ένα εργαλείο ενδυνάμωσης. Ένα καλογραμμένο ωροσκόπιο δεν προβλέπει απλώς το μέλλον. σας βοηθά να το <em>δημιουργήσετε</em>. Κατανοώντας τον κοσμικό καιρό — τη θέση των πλανητών σήμερα σε σχέση με το πού βρίσκονταν όταν γεννηθήκατε — μπορείτε να πλοηγηθείτε στις προκλήσεις με χάρη και να αδράξετε ευκαιρίες που διαφορετικά θα μπορούσαν να σας προσπεράσουν.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">Η Μηχανική: Πώς λειτουργεί;</h2>
+      <p>Η αστρολογία συχνά ονομάζεται μελέτη των κύκλων. Οι <strong>προβλέψεις του ημερήσιου ωροσκοπίου</strong> σας υπολογίζονται χρησιμοποιώντας μια τεχνική που ονομάζεται "διελεύσεις". Φανταστείτε τον γενέθλιο χάρτη σας ως ένα μόνιμο στιγμιότυπο του ουρανού κατά τη γέννησή σας. Οι πλανήτες, ωστόσο, συνεχίζουν να κινούνται. Οι "διελεύσεις" συμβαίνουν όταν ένας κινούμενος πλανήτης στον ουρανό σχηματίζει μια μαθηματική γωνία (μια όψη) με έναν πλανήτη στον γενέθλιο χάρτη σας.</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>Η Σελήνη: Ο λεπτοδείκτης της μοίρας</h3>
+      <p>Ενώ πλανήτες όπως ο Δίας χρειάζονται έναν χρόνο για να αλλάξουν ζώδιο, η <strong>Σελήνη</strong> κινείται απίστευτα γρήγορα, διασχίζοντας ένα ζώδιο σε περίπου 2,5 ημέρες. Αυτό καθιστά τη Σελήνη τον κύριο οδηγό της <em>καθημερινής</em> σας διάθεσης και του συναισθηματικού σας τοπίου. Όταν η Σελήνη βρίσκεται στον πύρινο Κριό, νιώθουμε παρορμητικοί και ενεργητικοί. Όταν μετατοπίζεται στον γήινο Ταύρο, συλλογικά επιβραδύνουμε και αναζητούμε την άνεση.</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>Οι Όψεις: Συνομιλίες Μεταξύ Πλανητών</h3>
+      <p>Οι πλανήτες "μιλούν" μεταξύ τους μέσω γωνιών. Ένα <strong>Τρίγωνο (120°)</strong> είναι μια αρμονική συνομιλία, που φέρνει ευκολία και τύχη. Ένα <strong>Τετράγωνο (90°)</strong> είναι ένα σημείο έντασης, που αναγκάζει σε δράση ή απόφαση. Το ημερήσιο ωροσκόπιό σας ερμηνεύει αυτές τις συνομιλίες. Εάν ο Άρης (δράση) σχηματίζει τετράγωνο με τον Κρόνο (περιορισμός) στον ουρανό, μπορεί να νιώσετε απογοητευμένοι ή μπλοκαρισμένοι σήμερα. Γνωρίζοντας αυτό, σας βοηθά να είστε υπομονετικοί αντί να πιέζετε μια πόρτα που δεν ανοίγει.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising Σήμα</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">Ο Χρυσός Κανόνας: Διαβάστε για τον Ωροσκόπο σας</h2>
+      <p>Εδώ είναι το μυστικό που γνωρίζουν οι επαγγελματίες αστρολόγοι: <strong>Για την πιο ακριβή καθημερινή πρόβλεψη, θα πρέπει να διαβάζετε το ωροσκόπιο για το ζώδιο του Ωροσκόπου σας (Ascendant), όχι μόνο για το ζώδιο του Ήλιου σας.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>Γιατί; Επειδή τα ωροσκόπια γράφονται χρησιμοποιώντας ένα "Σύστημα Οίκων". Ο Ωροσκόπος σας καθορίζει τη διάταξη των 12 οίκων στο χάρτη σας. Ο 1ος Οίκος είστε εσείς, ο 2ος είναι τα χρήματα, ο 7ος είναι οι σχέσεις, και ούτω καθεξής. Όταν ένας αστρολόγος γράφει "ο Κριός θα έχει μια οικονομική ευκαιρία σήμερα", εξετάζει τις πλανητικές κινήσεις μέσω του 2ου Οίκου ενός χάρτη με Ωροσκόπο Κριό.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>Διαβάστε το ζώδιο του Ήλιου σας</strong> για γενικά θέματα σχετικά με τον εγωισμό, τη ζωτικότητα και τον κεντρικό σας σκοπό.</li>
+        <li><strong>Διαβάστε το ζώδιο του Ωροσκόπου σας</strong> για συγκεκριμένα γεγονότα, χρονισμό και περιστάσεις που θα σας συμβούν σήμερα.</li>
+        <li><strong>Διαβάστε το ζώδιο της Σελήνης σας</strong> εάν θέλετε να κατανοήσετε την εσωτερική συναισθηματική σας κατάσταση.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">Βασικοί Πλανητικοί Παίκτες στην Ημέρα σας</h2>
+      <p>Πέρα από τη Σελήνη, άλλοι ταχέως κινούμενοι "προσωπικοί πλανήτες" διαμορφώνουν την καθημερινή σας εμπειρία:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>Ερμής:</strong> Κυβερνήτης της επικοινωνίας, της τεχνολογίας και των ταξιδιών. Η κατάστασή του καθορίζει εάν τα email σας φτάνουν στον προορισμό τους ή χάνονται στο spam, και εάν η διαδρομή σας προς τη δουλειά είναι ομαλή ή χαοτική.</li>
+        <li><strong>Αφροδίτη:</strong> Κυβερνήτης της αγάπης, του χρήματος και των αξιών. Μια καλή μέρα της Αφροδίτης είναι ιδανική για ραντεβού, αγορές ή για να ζητήσετε αύξηση.</li>
+        <li><strong>Άρης:</strong> Η μηχανή του ζωδιακού κύκλου. Υπαγορεύει τα επίπεδα ενέργειας, την ορμή και τη λίμπιντό σας. Μια απαιτητική μέρα του Άρη μπορεί να οδηγήσει σε εξουθένωση ή καυγάδες εάν δεν διοχετευθεί σε άσκηση ή σκληρή δουλειά.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 Σήμαs</h2>
+      <h2 id="zodiac-daily-styles">Τα Ημερήσια Στυλ των 12 Ζωδίων</h2>
       
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ Κριός (21 Μαρτίου - 19 Απριλίου)</h3>
+      <p><strong>Οδηγείται από τον Άρη.</strong> Χρειάζεστε σωματική κίνηση για να επεξεργαστείτε την καθημερινή ενέργεια. Ένα ωροσκόπιο Κριού επικεντρώνεται συχνά σε πρωτοβουλίες, συγκρούσεις που πρέπει να επιλυθούν και στιγμές ηγεσίας. <em>Καλύτερη καθημερινή συνήθεια:</em> Πρωινή αερόβια άσκηση.</p>
 
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ Ταύρος (20 Απριλίου - 20 Μαΐου)</h3>
+      <p><strong>Κυβερνάται από την Αφροδίτη.</strong> Επεξεργάζεστε την ημέρα μέσω των αισθήσεών σας. Το ωροσκόπιό σας συχνά επισημαίνει οικονομικές κινήσεις και σωματική άνεση. <em>Καλύτερη καθημερινή συνήθεια:</em> Ένα μελετημένο, απολαυστικό πρωινό.</p>
 
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ Δίδυμοι (21 Μαΐου - 20 Ιουνίου)</h3>
+      <p><strong>Κυβερνώνται από τον Ερμή.</strong> Η πληροφορία είναι το καύσιμό σας. Η καθημερινή σας πρόβλεψη περιστρέφεται γύρω από συνομιλίες, μάθηση και σύντομα ταξίδια. <em>Καλύτερη καθημερινή συνήθεια:</em> Καταγραφή σε ημερολόγιο ή ένα πρωινό podcast.</p>
 
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ Καρκίνος (21 Ιουνίου - 22 Ιουλίου)</h3>
+      <p><strong>Κυβερνάται από τη Σελήνη.</strong> Είστε το πιο κυκλικό ζώδιο. Η ανάγνωσή σας συχνά επικεντρώνεται στο σπίτι, την οικογένεια και τη συναισθηματική ασφάλεια. <em>Καλύτερη καθημερινή συνήθεια:</em> Επικοινωνία με ένα αγαπημένο πρόσωπο.</p>
 
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ Λέων (23 Ιουλίου - 22 Αυγούστου)</h3>
+      <p><strong>Κυβερνάται από τον Ήλιο.</strong> Πρέπει να εκφραστείτε. Οι Λέοντες βρίσκουν συχνά θέματα δημιουργικότητας, ρομαντισμού και αναγνώρισης στην ημέρα τους. <em>Καλύτερη καθημερινή συνήθεια:</em> Επιλογή ενός ντυσίματος που σας κάνει να νιώθετε αυτοπεποίθηση.</p>
 
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ Παρθένος (23 Αυγούστου - 22 Σεπτεμβρίου)</h3>
+      <p><strong>Κυβερνάται από τον Ερμή.</strong> Η τάξη σας φέρνει γαλήνη. Το ωροσκόπιό σας θα επισημαίνει συχνά εργασιακά καθήκοντα, ρουτίνες υγείας και προσφορά υπηρεσιών. <em>Καλύτερη καθημερινή συνήθεια:</em> Δημιουργία λίστας υποχρεώσεων.</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ Ζυγός (23 Σεπτεμβρίου - 22 Οκτωβρίου)</h3>
+      <p><strong>Κυβερνάται από την Αφροδίτη.</strong> Η ισορροπία είναι το κλειδί. Αναζητάτε την αρμονία στις σχέσεις. Οι καθημερινές σας γνώσεις επικεντρώνονται συχνά σε συνεργασίες και αισθητική. <em>Καλύτερη καθημερινή συνήθεια:</em> Διαλογισμός ή εξισορρόπηση του περιβάλλοντός σας.</p>
 
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ Σκορπιός (23 Οκτωβρίου - 21 Νοεμβρίου)</h3>
+      <p><strong>Κυβερνάται από τον Πλούτωνα και τον Άρη.</strong> Αναζητάτε το βάθος. Οι επιφανειακές μέρες σας κουράζουν. το ωροσκόπιό σας υπογραμμίζει τη μεταμόρφωση, τα μυστικά και τους κοινούς πόρους. <em>Καλύτερη καθημερινή συνήθεια:</em> Βαθιά έρευνα ή ιδιωτικός στοχασμός.</p>
 
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ Τοξότης (22 Νοεμβρίου - 21 Δεκεμβρίου)</h3>
+      <p><strong>Κυβερνάται από τον Δία.</strong> Επιθυμείτε την επέκταση. Η ημέρα σας αφορά συχνά τη μεγάλη εικόνα, τη φιλοσοφία ή τις ξένες επιρροές. <em>Καλύτερη καθημερινή συνήθεια:</em> Εκμάθηση κάτι εντελώς καινούργιου.</p>
 
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ Αιγόκερως (22 Δεκεμβρίου - 19 Ιανουαρίου)</h3>
+      <p><strong>Κυβερνάται από τον Κρόνο.</strong> Χτίζετε μια κληρονομιά. Τα καθημερινά θέματα για εσάς αφορούν συχνά την καριέρα, τη φήμη και τους μακροπρόθεσμους στόχους. <em>Καλύτερη καθημερινή συνήθεια:</em> Αντιμετώπιση της πιο δύσκολης εργασίας πρώτα.</p>
 
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ Υδροχόος (20 Ιανουαρίου - 18 Φεβρουαρίου)</h3>
+      <p><strong>Κυβερνάται από τον Ουρανό και τον Κρόνο.</strong> Κοιτάτε προς το μέλλον. Το ωροσκόπιό σας αναδεικνύει τα κοινωνικά δίκτυα, την τεχνολογία και την καινοτομία. <em>Καλύτερη καθημερινή συνήθεια:</em> Σύνδεση με την κοινότητά σας.</p>
 
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ Ιχθύες (19 Φεβρουαρίου - 20 Μαρτίου)</h3>
+      <p><strong>Κυβερνώνται από τον Ποσειδώνα και τον Δία.</strong> Παρασύρεστε μεταξύ κόσμων. Η καθημερινή σας καθοδήγηση είναι συχνά πνευματική, καλλιτεχνική ή διαισθητική. <em>Καλύτερη καθημερινή συνήθεια:</em> Καταγραφή ονείρων ή δημιουργική οπτικοποίηση.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">Καθημερινά Αστρολογικά Τελετουργικά</h2>
+      <p>Πώς μπορείτε να χρησιμοποιήσετε αυτές τις πληροφορίες; Μην τις διαβάζετε απλώς — ζήστε τις.</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>Το Πρωινό Check-In:</strong> Διαβάστε την πρόβλεψή σας <em>πριν</em> ελέγξετε τα email σας. Αυτό θέτει μια κοσμική πρόθεση.</li>
+        <li><strong>Σημειώστε το Ζώδιο της Σελήνης:</strong> Εάν η Σελήνη είναι στην Παρθένο, καθαρίστε το γραφείο σας. Εάν είναι στον Ζυγό, καλέστε τον επιχειρηματικό σας συνεργάτη. Το κολύμπι με το ρεύμα είναι πάντα πιο εύκολο.</li>
+        <li><strong>Σεβαστείτε το Κενό:</strong> Η Σελήνη σε "κενό πορείας" (Void-of-Course) είναι μια περίοδος όπου η Σελήνη δεν σχηματίζει άλλες όψεις πριν αλλάξει ζώδιο. Είναι μια εποχή ασάφειας. Μην υπογράφετε ποτέ συμβόλαια και μην ξεκινάτε επιχειρήσεις κατά τη διάρκεια του κενού. Χρησιμοποιήστε το για ξεκούραση.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">Καταρρίπτοντας Κοινούς Μύθους</h2>
+      <p><strong>"Τα ωροσκόπια είναι πολύ ασαφή."</strong> <br>Τα γενικά ωροσκόπια των εφημερίδων είναι ασαφή επειδή κοιτάζουν μόνο τα ζώδια του Ήλιου. Μια εξατομικευμένη ανάγνωση, όπως αυτές που δημιουργούνται από την εξελιγμένη τεχνητή νοημοσύνη μας στην Astralo, λαμβάνει υπόψη τις αποχρώσεις ολόκληρου του χάρτη σας.</p>
+      <p><strong>"Η αστρολογία προβλέπει μια σταθερή μοίρα."</strong> <br>Λάθος. Η αστρολογία προβλέπει <em>ενέργεια</em> και <em>καιρό</em>. Μπορεί να βρέξει (μια δύσκολη διέλευση), αλλά εσείς αποφασίζετε αν θα κρατήσετε ομπρέλα ή θα χορέψετε μέσα σε αυτήν. Έχετε πάντα ελεύθερη βούληση.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>Είστε έτοιμοι να βουτήξετε βαθύτερα;</h3>
+      <p>Ενώ οι γενικές προβλέψεις είναι χρήσιμες, τίποτα δεν κερδίζει μια ανάγνωση που προέρχεται από την ακριβή ώρα και τον τόπο γέννησής σας. Ο μοναδικός γενέθλιος χάρτης σας είναι ένας σύνθετος χάρτης που δεν μοιράζονται δύο άτομα. Ξεκλειδώστε το πλήρες δυναμικό του κοσμικού σας σχεδιασμού με τις premium εξατομικευμένες αναγνώσεις της Astralo.</p>
     `
 };

@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - ID (Fallback to English content)
+ * weekly-horoscope-predictions - ID
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Ramalan Bintang Mingguan: Cara Menavigasi Pekan Kosmik di Depan Anda',
+  excerpt: 'Maksimalkan pekan Anda dengan panduan ramalan bintang mingguan kami. Pahami hari-hari planet, navigigasi Bulan Kosong (Void-of-Course), dan rencanakan jadwal Anda berdasarkan waktu astrologi.',
+  category: 'Ramalan Bintang',
+  metaDescription: 'Maksimalkan pekan Anda dengan panduan ramalan bintang mingguan kami. Pahami hari-hari planet, navigigasi Bulan Kosong (Void-of-Course), dan rencanakan jadwal Anda berdasarkan waktu astrologi.',
+  keywords: 'ramalan bintang mingguan, astrologi mingguan, hari planet, bulan kosong, ramalan zodiak mingguan, perencanaan astrologi, hari terbaik pekan ini',
+  quickSummary: [
+    'Setiap hari dalam sepekan dikuasai oleh planet yang berbeda (Senin/Bulan, Selasa/Mars, dll.)',
+    'Ramalan bintang mingguan melacak pergerakan planet-planet cepat melalui tanda-tanda zodiak',
+    'Bulan Kosong (Void-of-Course Moon) adalah waktu "istirahat" kritis di mana tindakan besar harus dihindari',
+    'Senin untuk emosi, Selasa untuk tindakan, Jumat untuk romansa'
+  ],
+  keyTakeaways: [
+    'Periksa ramalan mingguan pada Minggu malam untuk merencanakan kalender Anda',
+    'Jadwalkan pertemuan sulit pada Kamis (Jupiter) atau Sabtu (Saturnus) tergantung tujuannya',
+    'Hindari menandatangani kontrak saat Bulan sedang Kosong (Void)',
+    'Gunakan aliran energi mingguan daripada melawannya'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Ritme Astrologi' },
+    { id: 'planetary-days', title: 'Penguasa Hari' },
+    { id: 'void-moon', title: 'Bulan Kosong (Void-of-Course Moon)' },
+    { id: 'transits', title: 'Melacak Transit Mingguan' },
+    { id: 'by-sign', title: 'Saran Mingguan Berdasarkan Zodiak' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Ritme Astrologi Pekan Ini</h2>
+      <p>Pernahkah Anda merasa beberapa pekan mengalir seperti air, sementara pekan lainnya terasa seperti berjalan di lumpur? Atau mengapa menyelesaikan sesuatu di hari Selasa terasa berbeda dibandingkan di hari Jumat? Ini bukan kebetulan. Struktur sepekan 7 hari kita sebenarnya sepenuhnya didasarkan pada <strong>astrologi</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Memahami <strong>ramalan bintang mingguan</strong> lebih dari sekadar mengetahui apakah Anda akan mendapatkan balasan pesan. Ini tentang menyelaraskan jadwal Anda dengan penguasa planet kuno tentang waktu. Ketika Anda bekerja <em>dengan</em> energi hari itu, produktivitas meningkat dan hambatan menghilang.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Penguasa Hari</h2>
+      <p>Setiap hari dinamai menurut sebuah planet (secara harfiah dalam bahasa seperti Prancis atau Spanyol). Berikut adalah panduan Anda untuk menjadwalkan pekan Anda secara astrologi:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Senin (Hari Bulan) 🌙</h3>
+      <p><strong>Energi:</strong> Emosional, intuitif, fluktuatif.<br><strong>Terbaik untuk:</strong> Belanja bahan makanan, membersihkan rumah, tidur lebih lama, makan malam keluarga, refleksi.<br><strong>Hindari:</strong> Presentasi dengan stres tinggi atau logika yang kaku.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Selasa (Hari Mars) ♂</h3>
+      <p><strong>Energi:</strong> Agresif, energik, tajam.<br><strong>Terbaik untuk:</strong> Olahraga, memulai proyek baru, menghadapi masalah, kompetisi.<br><strong>Hindari:</strong> Meditasi, mencoba untuk santai.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Rabu (Hari Merkurius) ☿️</h3>
+      <p><strong>Energi:</strong> Komunikatif, sibuk, cepat.<br><strong>Terbaik untuk:</strong> Email, rapat, menulis, penjualan, perjalanan singkat, networking.<br><strong>Hindari:</strong> Kebisuan (itu tidak akan terjadi juga).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Kamis (Hari Jupiter) ♃</h3>
+      <p><strong>Energi:</strong> Ekspansif, beruntung, optimis.<br><strong>Terbaik untuk:</strong> Meluncurkan visi besar, meminta kenaikan gaji, perencanaan perjalanan, pendidikan tinggi.<br><strong>Hindari:</strong> Menjadi sangat pelit.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Jumat (Hari Venus) ♀</h3>
+      <p><strong>Energi:</strong> Sosial, romantis, estetis.<br><strong>Terbaik untuk:</strong> Kencan, pesta, membeli pakaian, seni, relaksasi.<br><strong>Hindari:</strong> Pekerjaan kotor atau kesendirian.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Sabtu (Hari Saturnus) ♄</h3>
+      <p><strong>Energi:</strong> Serius, berat, disiplin.<br><strong>Terbaik untuk:</strong> Pekerjaan taman, perencanaan jangka panjang, belajar, mengerjakan tugas rumah yang tertunda, kewajiban.<br><strong>Hindari:</strong> Pesta liar (kecuali acara formal).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Minggu (Hari Matahari) ☀️</h3>
+      <p><strong>Energi:</strong> Bersinar, berpusat pada ego, spiritual.<br><strong>Terbaik untuk:</strong> Hobi, ibadah/spiritualitas, bermain dengan anak-anak, tampil di publik, istirahat.<br><strong>Hindari:</strong> Menjadi tidak terlihat.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Bulan Kosong (Void-of-Course Moon)</h2>
+      <p>Jika Anda hanya mengingat satu hal dari panduan ini, biarlah itu adalah <strong>Bulan Kosong</strong>. Ini terjadi ketika Bulan telah menyelesaikan aspek terakhirnya dengan planet di tanda zodiaknya saat ini dan "melayang" sebelum memasuki tanda berikutnya.</p>
+      <p><strong>Aturannya:</strong> "Tidak akan ada hasil dari masalah tersebut."</p>
+      <p>Selama Bulan Kosong, jangan menandatangani kontrak, meluncurkan bisnis, atau mengirim permintaan kencan pertama. Energinya pasti akan memudar. Gunakan waktu ini untuk pengarsipan, tidur, atau mengedit pekerjaan yang sudah Anda mulai. Ini adalah waktu istirahat kosmik.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Melacak Transit Mingguan</h2>
+      <p><strong>Ramalan astrologi mingguan</strong> yang baik juga melihat sudut-sudut tertentu yang dibuat planet-planet pekan ini. Sebagai contoh:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Merkurius Sextile Venus:</strong> Pekan yang sempurna untuk keanggunan sosial dan meminta bantuan.</li>
+        <li><strong>Matahari Square Pluto:</strong> Pekan perebutan kekuasaan dan intensitas.</li>
+        <li><strong>Mars memasuki Libra:</strong> Energi bergeser dari fokus pada pekerjaan ke fokus pada hubungan.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Template Saran Mingguan</h2>
+      <p>Meskipun pekan setiap orang unik, berikut adalah cara tanda-tanda zodiak biasanya menangani perubahan mingguan:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Zodiak Kardinal (Aries, Cancer, Libra, Capricorn):</strong> Anda adalah inisiator. Gunakan energi awal pekan (Senin/Selasa) untuk memulai berbagai hal.</li>
+        <li><strong>Zodiak Tetap (Taurus, Leo, Scorpio, Aquarius):</strong> Anda adalah penopang. Gunakan energi pertengahan pekan untuk mengunci kemajuan.</li>
+        <li><strong>Zodiak Berubah (Gemini, Virgo, Sagitarius, Pisces):</strong> Anda adalah editor. Gunakan akhir pekan atau hari Merkurius untuk beradaptasi dan mengubah jalur.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Periksa kembali setiap hari Minggu untuk ramalan mingguan spesifik Anda yang diperbarui oleh tim Astralo!</em>
     `
 };

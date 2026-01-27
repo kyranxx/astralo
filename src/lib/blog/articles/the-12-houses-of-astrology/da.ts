@@ -1,101 +1,129 @@
 /**
- * De 12 huse i astrologien - DA
+ * The 12 Houses of Astrology - Danish (Complete Guide)
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const da: BlogPostTranslation = {
-  title: "🏠 De 12 huse i astrologien: Dit livs scene",
-  excerpt: "Forvirret af det nummererede hjul i dit fødselshoroskop? Opdag hvad astrologiens 12 huse faktisk betyder, og hvordan de former alt fra din karriere til dine dybeste hemmeligheder.",
-  category: "Grundlæggende",
-  metaDescription: "Komplet guide til de 12 astrologiske huse. Forstå hvad hvert hus i dit horoskop står for, fra identitet (Hus 1) til det underbevidste (Hus 12).",
-  keywords: "12 huse astrologi, astrologiske huse, hus et, hus syv, medium coeli, ascendant, fødselshoroskop forklaret",
+  title: '🏠 Astrologiens 12 Huse: Den Komplette Guide til Dit Livskort',
+  excerpt: 'Opdag dit livs skjulte kort. Et dybdyk ned i astrologiens 12 huse, der forklarer, hvor din planetariske energi udspiller sig, og hvordan du mestrer din skæbne.',
+  category: 'Astrologi Grundlæggende',
+  metaDescription: 'Komplet guide til de 12 astrologiske huse. Lær hvad hvert hus betyder, hvordan de påvirker livsområder som karriere og kærlighed, og hvordan du tolker huse i dit fødselshoroskop som en ekspert.',
+  keywords: 'astrologiske huse, 12 huse, stjernetegn huse, fødselshoroskop tolkning, første hus, syvende hus, midhimmel, angulære huse, efterfølgende huse, faldende huse, hus herskere, stellium',
   quickSummary: [
-    "Fødselshoroskopet er delt op i 12 områder kaldet 'huse', ligesom pizzastykker.",
-    "Husene repræsenterer 'HVOR' begivenhederne i dit liv udspiller sig (scenen).",
-    "Kardinalhusene (1, 4, 7, 10) er de mest magtfulde og definerer strukturen i dit liv.",
-    "At have tomme huse (uden planeter) er normalt og betyder ikke, at det livsområde er tomt."
+    'De 12 Huse repræsenterer "HVOR" i dit liv – specifikke arenaer som karriere, hjem og forhold.',
+    'Husene er opdelt i Angulære, Efterfølgende og Faldende, hver med forskellige energiniveauer.',
+    'Ascendanten markerer starten på det 1. hus og sætter strukturen for hele horoskopet.',
+    'Tomme huse betyder ikke, at det område af livet "mangler" – de styres af en bestemt planet.'
   ],
   keyTakeaways: [
-    "Hus 1 (Ascendanten) er din maske og din fysiske krop.",
-    "Hus 7 er spejlet af dine relationer og dine åbne fjender.",
-    "Hus 10 (Medium Coeli) repræsenterer dit ry og din offentlige karriere.",
-    "Det mystiske Hus 12 vogter dine hemmeligheder, din karma og dit spirituelle potentiale."
+    'Angulære Huse (1, 4, 7, 10) er de mest aktive og synlige i dit liv.',
+    'Herskeren af et hus (planeten der styrer tegnet på husspidsen) giver den hemmelige nøgle til det livsområde.',
+    'De fire hovedvinkler (AC, IC, DC, MC) definerer korset for dit livsformål.',
+    'Forståelse af huse er afgørende for timing og forudsigelse i astrologi.'
   ],
   tableOfContents: [
-    { id: 'introduction', title: 'Scenen: Hvorfor husene er vigtige' },
-    { id: 'house-systems', title: 'Hussystemer: Placidus vs. hele tegn' },
-    { id: 'houses-1-6', title: 'Personlige huse (1-6)' },
-    { id: 'houses-7-12', title: 'Transpersonelle huse (7-12)' }
+    { id: 'introduction', title: 'Scenen: Hvorfor Huse Betyder Noget' },
+    { id: 'house-systems', title: 'Forståelse af Hussystemer: Placidus vs. Whole Sign' },
+    { id: 'angular-succedent-cadent', title: 'De Tre Modaliteter: Kraft og Tid' },
+    { id: 'the-first-house', title: '1. Hus: Selvets Hus (Identitet)' },
+    { id: 'the-second-house', title: '2. Hus: Værdiens Hus (Rigdom)' },
+    { id: 'the-third-house', title: '3. Hus: Kommunikations Hus' },
+    { id: 'the-fourth-house', title: '4. Hus: Hjemmets Hus (Rødder)' },
+    { id: 'the-fifth-house', title: '5. Hus: Glædens Hus' },
+    { id: 'the-sixth-house', title: '6. Hus: Tjenestens Hus' },
+    { id: 'the-seventh-house', title: '7. Hus: Partnerskabets Hus' },
+    { id: 'the-eighth-house', title: '8. Hus: Transformationens Hus' },
+    { id: 'the-ninth-house', title: '9. Hus: Visdommens Hus' },
+    { id: 'the-tenth-house', title: '10. Hus: Formålets Hus' },
+    { id: 'the-eleventh-house', title: '11. Hus: Fællesskabets Hus' },
+    { id: 'the-twelfth-house', title: '12. Hus: Det Ubevidstes Hus' },
+    { id: 'planetary-placements', title: 'Store Planeter i Husene' },
+    { id: 'stelliums', title: 'Hvad er et Stellium?' },
+    { id: 'empty-houses', title: 'Hvad hvis et Hus er Tomt? Herskernes Magt' },
+    { id: 'retrograde', title: 'Retrograde Planeter i Huse' },
+    { id: 'derived-houses', title: 'Avanceret Teknik: Afledte Huse' },
+    { id: 'progressions', title: 'Progressive Huse: Hvordan Livscyklusser Udvikler Sig' },
+    { id: 'conclusion', title: 'Integration af Dit Horoskop' }
   ],
   content: `
-      <h2 id="introduction">Scenen: Hvorfor husene er vigtige</h2>
-      <p>Hvis du nogensinde har set på dit fødselshoroskop og følt dig overvældet af linjer, symboler og geometriske former, er du ikke alene. Astrologi er et sprog, der består af tre hoveddele: tegn, planeter og huse. Mens <strong>planeterne</strong> er "skuespillerne" (hvad der sker) og <strong>tegnene</strong> repræsenterer "kostumerne" (hvordan det sker), repræsenterer de <strong>12 huse i astrologien</strong> "scenen" (hvor det sker).</p>
+      <h2 id="introduction">Scenen: Hvorfor Huse Betyder Noget</h2>
+      <p>Hvis du nogensinde har kigget på dit fødselshoroskop og følt dig overvældet af linjerne, symbolerne og de geometriske former, er du ikke alene. Astrologi er et sprog bestående af tre hovedkomponenter: tegn, planeter og huse. Mens **planeter** repræsenterer "skuespillerne" (hvad der sker) og **tegn** repræsenterer "kostumerne" (hvordan det sker), repræsenterer **astrologiens 12 huse** "scenen" (hvor det sker).</p>
       
-      <p>Forestil dig dit liv som et teaterstykke. Mars kan være skuespilleren – fuld af energi og aggressivitet. Hvis han bærer Vædderens "kostume", vil han være hurtig, impulsiv og dristig. Men hvor optræder han? Befinder han sig i det 10. hus for karriere, vil han være en dynamisk iværksætter. Befinner han sig i det 4. hus for privatliv, vil han sandsynligvis være en, der lægger al sin energi i at renovere hjemmet eller måske oplever familiekonflikter. Uden husene er astrologi ren psykologi; med husene bliver den praktisk og forudsigelig.</p>
+      <p>Forestil dig dit liv er et skuespil. Mars er skuespilleren (fuld af drivkraft). Hvis han er i Vædderen, er han hurtig. Men hvor optræder han? Hvis han er i det 10. Hus for Karriere, er han en driftig iværksætter. Uden husene er astrologi rent psykologisk; med husene bliver det praktisk og forudsigende.</p>
 
-      <h2 id="house-systems">Hussystemer: Placidus vs. hele tegn</h2>
-      <p>Før vi går dybere ind i de specifikke betydninger, skal vi nævne hussystemerne. Der findes dusinvis af måder at opdele himlen på. De to mest almindelige er:</p>
-      <ul>
-        <li><strong>Placidus:</strong> Det moderne standardsystem. Tidsbaseret. Husene kan have forskellige størrelser. Fremragende til dyb psykologi.</li>
-        <li><strong>Hele tegn (Whole Sign):</strong> Det ældgamle system. Hvert stjernetegn svarer til ét fuldt hus. Fremragende til klare og konkrete forudsigelser. Astralo bruger dette system som standard for bedre overblik.</li>
-      </ul>
-
-      <h2 id="houses-1-6">Personlige huse: Udviklingen af "jeget"</h2>
+      <h2 id="house-systems">Forståelse af Hussystemer: Placidus vs. Whole Sign</h2>
+      <p>Der er snesevis af måder at opdele himlen på. De mest almindelige:</p>
       
-      <h3>Hus 1: Selvets hus (Ascendanten)</h3>
-      <p><strong>Nøgleord:</strong> Identitet, krop, udseende, første indtryk.<br>
-      Dette er det vigtigste hus. Det markerer begyndelsen på dit liv. Planeter her har en massiv indvirkning på din personlighed og vitalitet.</p>
+      <h3>Placidus Systemet</h3>
+      <p>Det moderne standardsystem. Tidsbaseret. Huse kan have forskellige størrelser. Fremragende til dyb psykologi.</p>
 
-      <h3>Hus 2: Værdiernes hus</h3>
-      <p><strong>Nøgleord:</strong> Penge, ejendele, selvværd, talenter.<br>
-      Det handler ikke kun om, hvor meget du tjener, men hvordan du tjener det, og hvad du virkelig værdsætter. Det viser dit forhold til den materielle verden.</p>
+      <h3>Whole Sign Systemet</h3>
+      <p>Det ældste system. Hvert stjernetegn er et helt hus. Fremragende til klare, konkrete forudsigelser. Astralo bruger dette system som standard for klarhed.</p>
 
-      <h3>Hus 3: Kommunikationens hus</h3>
-      <p><strong>Nøgleord:</strong> Sindet, søskende, korte rejser, naboer.<br>
-      Her lærer vi at tale og tænke. Det styrer grundskoleuddannelse, sladder, sociale medier og dine nærmeste omgivelser.</p>
+      <h2 id="angular-succedent-cadent">De Tre Modaliteter: Kraft og Tid</h2>
+      <p>Husene er opdelt i tre grupper, der dikterer deres "dynamiske" energi.</p>
+      
+      <h3>1. Angulære Huse (1, 4, 7, 10)</h3>
+      <p>Disse er "Power Houses". Planeter her er meget aktive og synlige. De definerer de fire hovedpunkter i dit horoskop: Ascendant, IC, Descendant og Midhimmel.</p>
 
-      <h3>Hus 4: Hjemmets hus (Imum Coeli)</h3>
-      <p><strong>Nøgleord:</strong> Familie, rødder, far/mor, privatliv, fast ejendom.<br>
-      Hjørnestenen i dit horoskop. Det viser, hvor du kommer fra, og hvordan dit liv ser ud, når ingen kigger.</p>
+      <h3>2. Efterfølgende Huse (Succedent) (2, 5, 8, 11)</h3>
+      <p>De giver stabilitet og ressourcer (penge, børn, fælles rigdom). De repræsenterer "mellem" fasen, hvor vi konsoliderer vores gevinster.</p>
 
-      <h3>Hus 5: Glædens hus</h3>
-      <p><strong>Nøgleord:</strong> Kreativitet, romantik, børn, leg, risiko.<br>
-      Festens hus! Her udtrykker vi vores glæde. Det styrer hobbyer, tilfældig sex, kunstneriske projekter og dit "indre barn".</p>
+      <h3>3. Faldende Huse (Cadent) (3, 6, 9, 12)</h3>
+      <p>Huse for overgang og mental bearbejdning. Planeter her er ofte mere interne eller intellektuelle. De forbereder os på den næste cyklus.</p>
 
-      <h3>Hus 6: Rutinernes hus</h3>
-      <p><strong>Nøgleord:</strong> Sundhed, dagligt arbejde, kæledyr, tjeneste.<br>
-      Det handler ikke om din karriere (det er hus 10), men om det daglige arbejde. Hvordan du organiserer dagen, hvad du spiser, og hvordan du tjener andre.</p>
+      <h2 id="the-first-house">1. Hus: Selvets Hus (Identitet)</h2>
+      <p>Starter ved **Ascendanten**. Det filter, hvorigennem du ser verden. Hersker over dit udseende og vitalitet.<br><strong>Sol i 1.:</strong> Stærk tilstedeværelse, høj energi.<br><strong>Saturn i 1.:</strong> Seriøs fremtoning, blomstrer sent.</p>
 
-      <h2 id="houses-7-12">Transpersonelle huse: Interaktion med verden</h2>
+      <h2 id="the-second-house">2. Hus: Værdiens Hus (Rigdom)</h2>
+      <p>Din bankkonto, men også dit selvværd. Hersker over personlige ejendele.<br><strong>Jupiter i 2.:</strong> Held med penge.<br><strong>Pluto i 2.:</strong> Intense cyklusser af finansiel død og genfødsel.</p>
 
-      <h3>Hus 7: Partnerskabets hus (Descendanten)</h3>
-      <p><strong>Nøgleord:</strong> Ægteskab, forretningspartnere, åbne fjender.<br>
-      Direkte modsat Hus 1. Her holder vi op med at være "jeg" for at blive "vi". Det styrer alle juridiske kontrakter og langsigtede forpligtelser.</p>
+      <h2 id="the-third-house">3. Hus: Kommunikations Hus</h2>
+      <p>Dit umiddelbare miljø. Hvordan du tænker og taler.<br><strong>Merkur i 3.:</strong> Hurtigt sind, "evig studerende".</p>
 
-      <h3>Hus 8: Transformationens hus</h3>
-      <p><strong>Nøgleord:</strong> Sex, død, skat, andres penge, okkultisme.<br>
-      Det mest mystiske hus. Det håndterer det, vi deler dybt med andre (intimitet og ressourcer), og de kriser, der transformerer os.</p>
+      <h2 id="the-fourth-house">4. Hus: Hjemmets Hus (Rødder)</h2>
+      <p>Bunden af horoskopet (IC). Familie, rødder og privatliv.<br><strong>Månen i 4.:</strong> Dybt beskyttende og følelsesladet omkring hjemmet.</p>
 
-      <h3>Hus 9: Filosofiens hus</h3>
-      <p><strong>Nøgleord:</strong> Langrejser, højere uddannelse, religion, publikationer.<br>
-      Jagten på mening. Her udvider vi horisonten gennem studier eller rejser til fjerne lande.</p>
+      <h2 id="the-fifth-house">5. Hus: Glædens Hus</h2>
+      <p>Selvudtryk og sjov. Kreativitet, romantik og børn.<br><strong>Venus i 5.:</strong> Forelsket i kærligheden, kunstnerisk.</p>
 
-      <h3>Hus 10: Statusens hus (Medium Coeli)</h3>
-      <p><strong>Nøgleord:</strong> Karriere, offentligt ry, arv, autoritet.<br>
-      Horoskopets højeste punkt. Det viser, hvordan verden ser os, og vores største ambition. Det er din "berømmelse".</p>
+      <h2 id="the-sixth-house">6. Hus: Tjenestens Hus</h2>
+      <p>Daglige rutiner og sundhed. Ikke din karriere (det er det 10.), men dit daglige job.<br><strong>Mars i 6.:</strong> Hårdt arbejdende, aktiv rutine.</p>
 
-      <h3>Hus 11: Community-huset</h3>
-      <p><strong>Nøgleord:</strong> Venner, grupper, håb, drømme, teknologi.<br>
-      Hvor vi finder vores "stamme". Det styrer sociale medier, humanitære organisationer og professionelle gevinster.</p>
+      <h2 id="the-seventh-house">7. Hus: Partnerskabets Hus</h2>
+      <p>Descendanten. Forpligtende forhold – ægteskab og forretningspartnere.<br><strong>Saturn i 7.:</strong> Søger stabilitet, sendt ægteskab.</p>
 
-      <h3>Hus 12: Det underbevidstes hus</h3>
-      <p><strong>Nøgleord:</strong> Hemmeligheder, karma, ensomhed, spiritualitet, selv-sabotage.<br>
-      Slutningen på cyklussen. Her opløser vi selvet. Det styrer drømme, psykisk intuition, men også hospitaler og fængsler (steder for isolation).</p>
+      <h2 id="the-eighth-house">8. Hus: Transformationens Hus</h2>
+      <p>Dybe vande. Sex, død, skat og hemmeligheder.<br><strong>Pluto i 8.:</strong> Kraftfuld, modstandsdygtig, tiltrukket af dybden.</p>
 
-      <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Hvilke huse er aktive i DIT liv?</h3>
-          <p>At vide, hvilke planeter der bor i dine huse, er nøglen til at låse op for din skæbne. Få din fuldstændige analyse i dag.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Se mit horoskop</a>
-      </div>
+      <h2 id="the-ninth-house">9. Hus: Visdommens Hus</h2>
+      <p>Udvidelse af sind og horisont. Lang rejse og videregående uddannelse.<br><strong>Jupiter i 9.:</strong> Held i rejser og læring.</p>
+
+      <h2 id="the-tenth-house">10. Hus: Formålets Hus</h2>
+      <p>Midhimmel (MC). Offentligt omdømme og kald.<br><strong>Sol i 10.:</strong> Skæbnebestemt til rampelyset, ambitiøs.</p>
+
+      <h2 id="the-eleventh-house">11. Hus: Fællesskabets Hus</h2>
+      <p>Sociale netværk og grupper. Håb og humanitære mål.<br><strong>Uranus i 11.:</strong> Excentriske venner, leder i sociale bevægelser.</p>
+
+      <h2 id="the-twelfth-house">12. Hus: Det Ubevidstes Hus</h2>
+      <p>Zodiakens "skab". Skjulte ting, spiritualitet, karma.<br><strong>Neptun i 12.:</strong> Meget intuitiv, har brug for alenetid.</p>
+
+      <h2 id="stelliums">Hvad er et Stellium?</h2>
+      <p>**Et stellium** er, når 3 eller flere planeter samles i ét hus. Dette skaber et massivt fokus af energi. Det viser, hvor din sjæl har koncentreret sin energi i dette liv.</p>
+
+      <h2 id="empty-houses">Hvad hvis et Hus er Tomt? Herskernes Magt</h2>
+      <p>Et tomt hus betyder ikke, at det område af livet "mangler". Se på **Husherskeren** (planeten der styrer tegnet på husspidsen).<br>Eksempel: Tomt 7. hus i Tyren? Se på Venus.</p>
+
+      <h2 id="retrograde">Retrograde Planeter i Huse</h2>
+      <p>Når en planet er retrograd i et hus, vendes dens energi indad. Du kan udvikle dybt indre mesterskab over emnet.</p>
+
+      <h2 id="derived-houses">Avanceret Teknik: Afledte Huse</h2>
+      <p>Du kan "dreje" horoskopet for at se andre.<br><strong>8. Hus:</strong> 2. fra det 7. (Partners Penge).<br><strong>11. Hus:</strong> 2. fra det 10. (Penge fra Karriere).</p>
+
+      <h2 id="progressions">Progressive Huse: Hvordan Livscyklusser Udvikler Sig</h2>
+      <p>Gennem **Sekundære Progressioner** bevæger dine husspidser sig. Din progressive sol vil bevæge sig gennem husene og markere 30-årige kapitler med fokus.</p>
+
+      <h2 id="conclusion">Integration af Dit Horoskop</h2>
+      <p>Forståelse af de 12 huse forvandler astrologi fra et selskabsspil til et livskort. Hos Astralo syntetiserer vores rapporter dette for dig og forklarer ikke kun *hvem* du er, men *hvor* du er på vej hen.</p>
     `
 };

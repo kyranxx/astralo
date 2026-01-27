@@ -1,150 +1,99 @@
 /**
- * twin-flames-and-soulmates-astrology - BN
+ * টুইন ফ্লেম, সোলমেট এবং কর্মফল - বাংলা
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "🔥 Twin Flames, Soulmates, and Karma: The Astrology of Deep Connections",
-    excerpt: "Is it love, or is it fate? Explore the mystical world of relationship astrology. Learn how to identify Twin Flames, Soulmates, and Karmic lessons in your birth chart.",
-    category: "Love & Relationships",
-    metaDescription: "Complete guide to the astrology of deep connections. Discover the difference between twin flames and soulmates, learn synastry aspects for lifelong love, and understand karmic roles.",
-    keywords: "twin flames, soulmates, karmic relationships, synastry, composite charts, north node love, soulmate aspects, venus conjunct mars, saturn synastry, asteroid love astrology, vertex astrology, pallas athene, juno, eros",
-    quickSummary: ["A Soulmate is someone from your soul family who supports your growth and makes life feel \"home.\"","A Twin Flame is your \"mirror soul,\" designed to trigger intense transformation and ego death.","Karmic Partners arrive to help you settle \"spiritual debts\" and learn difficult life lessons.","Astrology uses Synastry (comparing two charts) and Composite Charts (the energy of the relationship itself)."],
-    keyTakeaways: ["Saturn aspects in synastry are the \"glue\" that keeps a couple together through hard times.","The South Node indicates past-life connections, while the North Node shows your future destiny together.","Venus and Mars aspects determine the sexual and romantic \"spark,\" but they don't guarantee longevity.","Most \"Twin Flame\" stories in pop culture are actually high-intensity karmic relationships."],
-    tableOfContents: [{"id":"introduction","title":"Beyond the Spark: The Mystery of Connection"},{"id":"definitions","title":"Soulmates vs. Twin Flames vs. Karmic Partners"},{"id":"synastry","title":"Synastry: How We Impact Each Other"},{"id":"personal-planets","title":"The Big Three of Love: Sun, Moon, and Ascendant"},{"id":"love-planets","title":"The Spark: Venus & Mars Dynamic"},{"id":"the-glue","title":"The Long Haul: Saturn, Jupiter & The Outer Planets"},{"id":"the-nodes","title":"The Nodes: Past Lives & Soul Destiny"},{"id":"the-vertex","title":"The Vertex: Fated Encounters"},{"id":"asteroids","title":"Asteroids of Love: Juno, Eros, and Psyche"},{"id":"composite-charts","title":"The Composite Chart: The Entity of \"Us\""},{"id":"house-overlays","title":"House Overlays: Where We Live in Each Other's Lives"},{"id":"twin-flames-signs","title":"Twin Flame Dynamics Through the 12 Signs"},{"id":"karmic-elements","title":"Karmic Relationships by Element"},{"id":"famous-cases","title":"Fated Unions: Famous Astrology Case Studies"},{"id":"red-flags","title":"Astrological Red Flags: When Love Becomes Toxic"},{"id":"timing","title":"Timing the One: Transits & Progressions"},{"id":"healing","title":"Healing from a Twin Flame Split"},{"id":"faq","title":"Relationship Astrology FAQs"},{"id":"conclusion","title":"The True Meaning of Love"}],
-    content: `
-      <h2 id="introduction">Beyond the Spark: The Mystery of Connection</h2>
-      <p>Have you ever met someone and felt an instant, unshakeable "pull" toward them? A feeling that you have known them for lifetimes, even though you just met? Or perhaps you are in a relationship that is so intense it feels like it's burning you from the inside out. In the modern world, we use words like **Soulmate** and **Twin Flame** to describe these experiences, but astrology gives us the technical map of *why* they happen.</p>
+  title: '🔥 টুইন ফ্লেম, সোলমেট এবং কর্মফল: গভীর সম্পর্কের জ্যোতিষশাস্ত্র',
+  excerpt: 'এটি কি ভালোবাসা, নাকি ভাগ্য? জ্যোতিষশাস্ত্রের মাধ্যমে সম্পর্কের রহস্যময় জগৎ অন্বেষণ করুন। আপনার জন্মকুণ্ডলীতে টুইন ফ্লেম, সোলমেট এবং কর্মফলের শিক্ষা কীভাবে চিনবেন তা শিখুন।',
+  category: 'প্রেম ও সম্পর্ক',
+  metaDescription: 'গভীর আধ্যাত্মিক সংযোগের জ্যোতিষশাস্ত্রের সম্পূর্ণ নির্দেশিকা। টুইন ফ্লেম এবং সোলমেটের মধ্যে পার্থক্য আবিষ্কার করুন এবং দীর্ঘস্থায়ী ভালোবাসার জন্য সিনাস্ট্রি সম্পর্কে জানুন।',
+  keywords: 'টুইন ফ্লেম, সোলমেট, কর্মফল ভিত্তিক সম্পর্ক, সিনাস্ট্রি, কম্পোজিট চার্ট, উত্তর নোড প্রেম, সোলমেট দিক, শুক্র ও মঙ্গলের সংযোগ, শনি সিনাস্ট্রি, গ্রহাণু জ্যোতিষশাস্ত্র',
+  quickSummary: [
+    'সোলমেট (Soulmate) হল আপনার আত্মার পরিবারের কেউ যিনি আপনার বৃদ্ধিতে সহায়তা করেন এবং যার সাথে থাকলে মনে হয় আপনি আপনার "ঘরে" আছেন।',
+    'টুইন ফ্লেম (Twin Flame) হল আপনার "আয়না আত্মা", যা তৈরি হয়েছে আপনার মধ্যে তীব্র পরিবর্তন এবং অহংবোধের বিনাশ ঘটানোর জন্য।',
+    'কার্মিক পার্টনার (Karmic Partner) আসে আপনার "আধ্যাত্মিক ঋণ" পরিশোধ করতে এবং জীবনের কঠিন শিক্ষা দিতে।',
+    'জ্যোতিষশাস্ত্রে সম্পর্কের গভীরতা বুঝতে সিনাস্ট্রি (দুইটি চার্টের তুলনা) এবং কম্পোজিট চার্ট (সম্পর্কের নিজস্ব শক্তি) ব্যবহার করা হয়।'
+  ],
+  keyTakeaways: [
+    'সিনাস্ট্রিতে শনির অবস্থান অনেকটা "আঠার" মতো কাজ করে যা কঠিন সময়েও দম্পতিকে একসাথে ধরে রাখে।',
+    'দক্ষিণ নোড পূর্বজন্মের সংযোগ নির্দেশ করে, অন্যদিকে উত্তর নোড আপনাদের একসাথে ভবিষ্যৎ ভাগ্য প্রদর্শন করে।',
+    'শুক্র এবং মঙ্গলের অবস্থান রোমান্টিক এবং শারীরিক আকর্ষণ নির্ধারণ করে, কিন্তু এটি দীর্ঘস্থায়ী সম্পর্কের গ্যারান্টি দেয় না।',
+    'পপ কালচারে বেশির ভাগ "টুইন ফ্লেম" গল্প আসলে অত্যন্ত তীব্র কার্মিক সম্পর্ক।'
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: 'আকর্ষণের বাইরে: সংযোগের রহস্য' },
+    { id: 'definitions', title: 'সোলমেট বনাম টুইন ফ্লেম বনাম কার্মিক পার্টনার' },
+    { id: 'synastry', title: 'সিনাস্ট্রি: আমরা একে অপরের ওপর কীভাবে প্রভাব ফেলি' },
+    { id: 'personal-planets', title: 'ভালোবাসার প্রধান তিনটি বিষয়: রবি, চন্দ্র এবং লগ্ন' },
+    { id: 'love-planets', title: 'আকর্ষণ: শুক্র ও মঙ্গলের গতিশীলতা' },
+    { id: 'the-glue', title: 'দীর্ঘ পথচলা: শনি, বৃহস্পতি এবং অন্যান্য গ্রহ' },
+    { id: 'the-nodes', title: 'নোড: পূর্বজন্ম এবং আত্মার ভাগ্য' },
+    { id: 'the-vertex', title: 'ভার্টেক্স: বিধিনির্ধারিত সাক্ষাৎ' },
+    { id: 'asteroids', title: 'ভালোবাসার গ্রহাণু: জুনো, ইরোস এবং সাইকি' },
+    { id: 'composite-charts', title: 'কম্পোজিট চার্ট: সম্পর্কের সত্তা "আমরা"' },
+    { id: 'house-overlays', title: 'হাউস ওভারলে: আমরা একে অপরের জীবনের কোথায় আছি' },
+    { id: 'twin-flames-signs', title: '১২টি রাশির মাধ্যমে টুইন ফ্লেমের গতিশীলতা' },
+    { id: 'karmic-elements', title: 'উপাদান অনুসারে কার্মিক সম্পর্ক' },
+    { id: 'red-flags', title: 'জ্যোতিষীয় রেড ফ্ল্যাগ বা সতর্কবার্তা: যখন প্রেম বিষাক্ত হয়' },
+    { id: 'healing', title: 'টুইন ফ্লেম বিচ্ছেদের পর নিরাময়' },
+    { id: 'faq', title: 'সম্পর্ক জ্যোতিষশাস্ত্র নিয়ে সাধারণ জিজ্ঞাসা' },
+    { id: 'conclusion', title: 'ভালোবাসার প্রকৃত অর্থ' }
+  ],
+  content: `
+      <h2 id="introduction">আকর্ষণের বাইরে: সংযোগের রহস্য</h2>
+      <p>আপনি কি কখনও এমন কারো সাথে দেখা করেছেন যাকে দেখে মনে হয়েছে আপনি তাকে বহু জন্ম ধরে চেনেন? আধুনিক বিশ্বে আমরা এই অভিজ্ঞতাগুলোকে **সোলমেট** বা **টুইন ফ্লেম** বলি, কিন্তু জ্যোতিষশাস্ত্র আমাদের প্রযুক্তিগতভাবে এই সংযোগগুলোর পেছনের কারণ বুঝিয়ে দেয়।</p>
       
-      <p>Relationship astrology (Synastry) is the art of comparing two souls to see how they harmonize, where they clash, and what their shared destiny might be. It is not about whether you are "compatible" (everyone can be compatible with consciousness and effort); it is about the *purpose* of the connection. Is this relationship here to give you peace, or is it here to wake you up?</p>
+      <p>সম্পর্ক জ্যোতিষশাস্ত্র (Synastry) হল দুটি আত্মার তুলনা করার শিল্প যাতে বোঝা যায় তারা কীভাবে একে অপরের পরিপূরক হয়, কোথায় তাদের বিরোধ বা সংঘর্ষ হতে পারে এবং তাদের ভাগ্য কোন দিকে নিয়ে যাচ্ছে। এই সম্পর্কটি কি আপনার জীবনে শান্তি আনতে এসেছে, নাকি আপনাকে আধ্যাত্মিকভাবে জাগিয়ে তুলতে এসেছে?</p>
 
-      <p>In this guide, we will dive deep into the cosmic mechanics of love. We will move beyond Sun signs and look at the "Master Plan" of your relationship. Whether you are searching for "The One" or trying to understand why your current partner drives you crazy, the answer is written in the geometry of the heavens. We will explore the deep waters of Synastry, Composite Charts, and the fated points of the soul.</p>
-
-      <h2 id="definitions">Soulmates vs. Twin Flames vs. Karmic Partners</h2>
-      <p>While pop culture often uses these terms interchangeably, from an astrological and spiritual perspective, they are vastly different types of contracts. Understanding which one you are in can save you years of confusion and heartache.</p>
+      <h2 id="definitions">সোলমেট বনাম টুইন ফ্লেম বনাম কার্মিক পার্টনার</h2>
+      <p>জ্যোতিষীয় এবং আধ্যাত্মিক দৃষ্টিকোণ থেকে এগুলি সম্পূর্ণ আলাদা ধরনের আত্মার চুক্তি। আপনার সম্পর্কটি কোন ধরনের তা বুঝতে পারলে অনেক বিভ্রান্তি এবং কষ্ট লাঘব হতে পারে।</p>
       
-      <h3>1. Soulmates (The Comfortable Home)</h3>
-      <p>A soulmate is someone whose energy aligns with yours in a way that feels like "coming home." You likely have many soulmates—friends, family members, and romantic partners. In a birth chart, this is often seen through "easy" aspects (Trines and Sextiles) between personal planets like the Moon or Venus. A soulmate isn't here to break you; they are here to walk beside you, support your dreams, and make the journey of life less lonely. They feel safe, reliable, and nurturing. Marriage is often most successful with a soulmate. They represent "Soul Families" traveling together.</p>
+      <h3>১. সোলমেট (আরামদায়ক ঘর)</h3>
+      <p>সোলমেট বা জীবনসঙ্গী এমন একজন যার শক্তি আপনার সাথে এমনভাবে মিশে যায় যা মনে হয় "ঘরে ফেরা"। জন্মকুণ্ডলীতে চন্দ্র বা শুক্রের মতো ব্যক্তিগত গ্রহগুলোর মধ্যে সহজ সম্পর্কের (যেমন ট্রাইন বা সেক্সটাইল) মাধ্যমে এটি দেখা যায়। সোলমেট আপনাকে ভেঙে ফেলার জন্য নয়, বরং আপনার স্বপ্নকে সমর্থন করতে এবং জীবনের যাত্রাকে সহজ করতে আসে। বিয়ের ক্ষেত্রে সোলমেট সংযোগ সবচেয়ে সফল হয়।</p>
 
-      <h3>2. Twin Flames (The Mirror Soul)</h3>
-      <p>The Twin Flame concept is much more intense. It is the idea that a single soul was split into two bodies at the dawn of time. When they meet, the recognition is instant and often overwhelming. In astrology, this usually manifests as strong "Oppositions" (the two halves of a whole) or "Conjunctions" to personal points like the Ascendant or the Sun. They are your mirror. Half of the fire is in you, and half is in them. The purpose of a Twin Flame is **total transformation**. They trigger your deepest wounds and highest potentials. It is rarely "easy," but it is always evolution-heavy. The "Runner and Chaser" dynamic is a common feature of this path, as one soul often feels overwhelmed by the intensity and tries to flee the connection.</p>
+      <h3>২. টুইন ফ্লেম (আয়না আত্মা)</h3>
+      <p>টুইন ফ্লেম ধারণাটি অনেক বেশি তীব্র। এটি এমন একটি ধারণা যেখানে সৃষ্টির শুরুতে একটি আত্মা দুটি শরীরে বিভক্ত হয়েছিল। তাদের দেখা হলে মুহূর্তের মধ্যেই একে অপরকে চিনতে পারে এবং এই অনুভূতি অত্যন্ত প্রবল হয়। জ্যোতিষশাস্ত্রে এটি রবি বা লগ্নের মতো গুরুত্বপূর্ণ জায়গায় বিপরীত অবস্থানের (Opposition) মাধ্যমে দেখা যায়। টুইন ফ্লেমের উদ্দেশ্য হল আপনার **সম্পূর্ণ রূপান্তর**। তারা আপনার গভীর ক্ষত এবং সুপ্ত সম্ভাবনাগুলোকে জাগিয়ে দেয়।</p>
 
-      <h3>3. Karmic Partners (The Debt Collector)</h3>
-      <p>Karmic relationships are often mistaken for Twin Flames because they are incredibly intense and "magnetic." However, they are usually exhausting and involve a lot of repetitive conflict. In astrology, these are marked by heavy Saturn or Pluto aspects to the South Node or the Sun. You have "unfinished business" from a past life. You might feel "stuck" together until a specific lesson is learned—often about power, boundaries, or self-worth. Once the lesson is integrated, the relationship often ends as quickly as it began, leaving you forever changed and ready for a healthier union.</p>
+      <h3>৩. কার্মিক পার্টনার (ঋণ সংগ্রাহক)</h3>
+      <p>কার্মিক সম্পর্কগুলোকে প্রায়ই টুইন ফ্লেম বলে ভুল করা হয় কারণ এগুলি অত্যন্ত তীব্র এবং আকর্ষণীয়। তবে, এগুলি সাধারণত মানসিকভাবে ক্লান্তিকর হয় এবং এতে বারবার ঝগড়া বা বিবাদ দেখা দেয়। জ্যোতিষশাস্ত্রে শনি বা প্লুটোর কঠিন অবস্থানের মাধ্যমে কার্মিক সম্পর্ক বোঝা যায়। আপনার পূর্বজন্মের কোনো "অসমাপ্ত কাজ" বা ঋণ মেটানোর জন্য এই পার্টনার আপনার জীবনে আসে।</p>
 
-      <h2 id="synastry">Synastry: How We Impact Each Other</h2>
-      <p>To understand a relationship, we use <strong>Synastry</strong>. This involves placing one person's chart (Person A) on top of another's (Person B). Think of it as a chemical reaction. When my Mars sits on your Moon, I "activate" your emotions through my actions. This could be exciting (high sexual attraction), or it could be irritating (feeling emotionally attacked). Synastry shows the friction and the flow between two individuals. It is the "energetic blueprint" of how you interact on a daily basis.</p>
+      <h2 id="synastry">সিনাস্ট্রি: আমরা একে অপরের ওপর কীভাবে প্রভাব ফেলি</h2>
+      <p>সিনাস্ট্রি বলতে একজনের চার্ট অন্যজনের চার্টের ওপর রাখা বোঝায়। এটিকে একটি রাসায়নিক বিক্রিয়ার মতো ভাবুন। যখন আমার মঙ্গল আপনার চন্দ্রের ওপর বসে, তখন আমি কাজের মাধ্যমে আপনার আবেগকে "সক্রিয়" করি। সিনাস্ট্রি দেখায় দুই ব্যক্তির মধ্যে ঘর্ষণ এবং প্রবাহ কেমন হবে।</p>
 
-      <h2 id="personal-planets">The Big Three of প্রেম: Sun, Moon, and Ascendant</h2>
-      <p>Before looking at the "love planets" (Venus and Mars), we must look at the foundation of the personality. If the Big Three are not in harmony, the rest of the relationship will struggle to find a stable footing.</p>
+      <h2 id="personal-planets">ভালোবাসার প্রধান তিনটি বিষয়: রবি, চন্দ্র এবং লগ্ন</h2>
+      <p>শুক্র এবং মঙ্গলের মতো "প্রেমের গ্রহ" দেখার আগে আমাদের ব্যক্তিত্বের ভিত্তি দেখতে হবে।</p>
       <ul>
-        <li><strong>Sun Synastry (Identity):</strong> Do our core identities align? If our Suns are in harmony (like a Trine or Sextile), we feel seen and respected by each other. We understand each other's basic life path and core ego needs.</li>
-        <li><strong>Moon Synastry (Emotion):</strong> This is the most important for living together and emotional safety. If your Moons are incompatible (e.g., Moon Square Moon), one person will always feel emotionally unsafe or misunderstood at home. Moon conjunct Moon is a hallmark of a soulmate connection—you "feel" the same way at the same time.</li>
-        <li><strong>Rising Sign Synastry (Interaction):</strong> This is about physical attraction and how you "interact" with the world together. If your partner's Sun is in your 1st House, you are instantly attracted to their physical presence—they "light up" your life just by being there.</li>
+        <li><strong>রবি সিনাস্ট্রি (পরিচয়):</strong> আমাদের মৌলিক পরিচয় কি একে অপরের সাথে মিলে যায়? যদি দুজনেই একে অপরকে সম্মান করতে পারি, তবে রবি সংযোগ ভালো থাকে।</li>
+        <li><strong>চন্দ্র সিনাস্ট্রি (আবেগ):</strong> একসাথে বসবাস এবং মানসিক নিরাপত্তার জন্য এটি সবচেয়ে গুরুত্বপূর্ণ বিষয়। চন্দ্রের সাথে চন্দ্রের সংযোগ সোলমেট সম্পর্কের অন্যতম লক্ষণ—আপনারা একই সময়ে একই রকম অনুভব করবেন।</li>
       </ul>
 
-      <h2 id="love-planets">The Spark: Venus & Mars Dynamic</h2>
-      <p>When we first meet someone, we are feeling the energy of Venus and Mars. This is the "fire" of the relationship.
-      <br><strong>Venus:</strong> Your style of affection, what you find beautiful, and what you value. When my Venus is in your sign, I find you incredibly lovable. I like how you move, talk, and spend money. You are my "ideal."
-      <br><strong>Mars:</strong> Your libido, your "drive," and how you handle conflict. When my Mars connects to your Venus, we have "fire in the bedroom." This is the classic indicator of high sexual chemistry and pursuit. It creates a magnetic pull that is hard to ignore.
-      <br><em>Tip:</em> For a lasting relationship, you want more than just Mars-Venus chemistry. You need a mental connection (Mercury) and an emotional one (Moon) to bridge the gap after the initial honeymoon phase ends. Without them, the fire eventually burns out the house.</p>
+      <h2 id="love-planets">আকর্ষণ: শুক্র ও মঙ্গলের গতিশীলতা</h2>
+      <p><strong>শুক্র (Venus):</strong> আপনার ভালোবাসার ধরণ, আপনি কী সুন্দর মনে করেন এবং আপনি কী মূল্য দেন তা শুক্র নির্ধারণ করে।
+      <br><strong>মঙ্গল (Mars):</strong> আপনার কামশক্তি এবং আপনি কীভাবে বিবাদের মোকাবিলা করেন। যখন আমার মঙ্গল আপনার শুক্রের সাথে যুক্ত হয়, তখন সেটি তীব্র শারীরিক আকর্ষণের পরিচয় দেয়।</p>
 
-      <h2 id="the-glue">The Long Haul: Saturn, Jupiter & The Outer Planets</h2>
-      <p>Chemistry is great for a first date, but what keeps a couple together for 50 years? That is the domain of <strong>Saturn</strong>. Though often called the "Greater Malefic," in relationship astrology, Saturn is essential. Without strong Saturn aspects, a relationship lacks the "glue" to withstand hard times. It provides "staying power," duty, and commitment. If my Saturn is on your Moon, you feel I am your "rock," even if I occasionally feel a bit restrictive or serious. We are bound by more than just feelings.</p>
-      <p><strong>Jupiter</strong>, on the other hand, brings growth, abundance, and joy. If your partner's Jupiter touches your planets, they make you feel lucky, optimistic, and expanded. They represent the "blessings" in the relationship. <strong>Pluto</strong> brings obsession, depth, and power dynamics—it's the intense, transformative energy that can lead to total merging or total destruction. <strong>Neptune</strong> can bring a "dreamy" spiritual connection—or total delusion and gaslighting. Use caution with heavy Neptune synastry.</p>
+      <h2 id="the-glue">দীর্ঘ পথচলা: শনি, বৃহস্পতি</h2>
+      <p>কেমিস্ট্রি প্রথম ডেটের জন্য ভালো, কিন্তু ৫০ বছর কে একসাথে রাখে? সেটি হল <strong>শনির</strong> কাজ। শনির মজবুত অবস্থান ছাড়া কঠিন সময়ে সম্পর্কের "আঠা" আলগা হয়ে যায়। এটি প্রতিশ্রুতি এবং দায়িত্ববোধ দান করে।</p>
 
-      <h2 id="the-nodes">The Nodes: Past Lives & Soul Destiny</h2>
-      <p>The Lunar Nodes are the "points of fate" in the chart, indicating the soul's journey through time.
-      <br>If your planets touch someone's <strong>South Node</strong>, you have a past-life history together. You might fall into old, familiar patterns together very quickly. It feels like you've done this a thousand times before—because you probably have.
-      <br>If your planets touch their <strong>North Node</strong>, you are part of their future evolution. Being together pushes you both to grow into the people you are meant to become in this lifetime. This is the hallmark of a "fated" connection that has a specific spiritual purpose beyond just personal satisfaction.</p>
+      <h2 id="the-nodes">নোড: পূর্বজন্ম এবং আত্মার ভাগ্য</h2>
+      <p><strong>দক্ষিণ নোড:</strong> যদি আপনার গ্রহ কারো দক্ষিণ নোড স্পর্শ করে, তবে বুঝতে হবে আপনাদের পূর্বজন্মের ইতিহাস আছে। আপনাদের মনে হবে আপনারা অনেক আগে থেকেই একে অপরকে চেনেন।
+      <br><strong>উত্তর নোড:</strong> যদি আপনাদের সংযোগ উত্তর নোডের সাথে হয়, তবে বুঝতে হবে আপনারা একে অপরের আধ্যাত্মিক বিবর্তনের অংশ। এটি একটি "বিধিনির্ধারিত" সম্পর্কের লক্ষণ।</p>
 
-      <h2 id="the-vertex">The Vertex: Fated Encounters</h2>
-      <p>Often overlooked by beginners, the **Vertex** is called the "Third Angle" or the "Destiny Point" of the chart. It represents fated encounters that are outside of our conscious control. When a person's personal planets (like Sun or Moon) conjunct your Vertex, it often feels like a "meeting of destiny" that changes the course of your life forever. You literally "couldn't avoid" this person if you tried. These meetings often happen during major life transits or solar returns.</p>
+      <h2 id="asteroids">ভালোবাসার গ্রহাণু: জুনো, ইরোস</h2>
+      <p><strong>জুনো (Juno):</strong> বিবাহের গ্রহাণু। এটি দেখায় যে দীর্ঘমেয়াদী প্রতিশ্রুতির জন্য আপনার *আসলে* কী ধরণের সঙ্গী প্রয়োজন।
+      <br><strong>কাইরন (Chiron):</strong> "আহত নিরাময়কারী"। যখন সঙ্গীর গ্রহ আপনার কাইরন স্পর্শ করে, তারা হয় আপনার গভীর ক্ষত খুঁচিয়ে দেয় অথবা আপনাকে তা নিরাময়ে সাহায্য করে।</p>
 
-      <h2 id="asteroids">Asteroids of প্রেম: Juno, Eros, and Psyche</h2>
-      <p>For those who want to go deeper than the nine planets, we look at the asteroids, which add nuanced flavors to the connection.
-      <br><strong>Juno:</strong> The "Marriage" asteroid. It shows what you *actually* need in a long-term committed partner (as opposed to what you find attractive). If your Juno is in Scorpio, you need intensity and total loyalty in marriage.
-      <br><strong>Eros & Psyche:</strong> These represent the higher level of erotic and spiritual merging. When these are in harmony between two charts, the connection feels "otherworldly," poetic, and destined.
-      <br><strong>Chiron:</strong> The "Wounded Healer." When your partner's planets touch your Chiron, they either poke your deepest wounds or help you heal them. This is the key to a truly transformative, therapeutic union.</p>
+      <h2 id="red-flags">জ্যোতিষীয় সতর্কবার্তা</h2>
+      <p><strong>প্লুটো-শুক্র স্কোয়ার:</strong> এটি ক্ষমতার লড়াই বা অতিরিক্ত আধিপত্য বিস্তার নির্দেশ করতে পারে যেখানে ভালোবাসাকে নিয়ন্ত্রণের হাতিয়ার হিসেবে ব্যবহার করা হয়।
+      <br><strong>নেপচুন-রবি স্কোয়ার:</strong> একজন মিথ্যা বলতে পারে, অথবা আপনারা দুজনেই একে অপরের একটি অবাস্তব বা কাল্পনিক সংস্করণের প্রেমে পড়েছেন যা ভবিষ্যতে কষ্টের কারণ হতে পারে।</p>
 
-      <h2 id="composite-charts">The Composite Chart: The Entity of "Us"</h2>
-      <p>While Synastry looks at how you affect each other, a <strong>Composite Chart</strong> is a single chart calculated using the midpoints between your planets. This is the chart of the relationship itself—the "third entity" in the room. Even two very different people can have a beautiful Composite Chart, meaning they "work" better together than they do separately. It shows the destiny and character of the union itself. Is this relationship here to build a family (Composite 4th House) or a public legacy (Composite 10th House)?</p>
+      <h2 id="healing">টুইন ফ্লেম বিচ্ছেদের পর নিরাময়</h2>
+      <p>টুইন ফ্লেম বিচ্ছেদ বা সেপারেশন ফেজ আপনার নিজের আত্মউন্নয়নের জন্য একটি নির্ধারিত সময়। এই সময়ে নিজের উত্তর নোড এবং আত্মার লক্ষ্যের ওপর মনোযোগ দিন। আত্মার সংযোগ কখনো ছিন্ন হয় না; শারীরিক দূরত্ব তা কখনো ভাঙতে পারে না।</p>
 
-      <h2 id="house-overlays">House Overlays: Where We Live in Each Other's Lives</h2>
-      <p>Where my planets fall in your houses tells me where I "show up" and influence your life spheres.</p>
-      <ul>
-        <li><strong>Your planets in my 1st House:</strong> You have a massive impact on my identity. I see myself through your eyes and you help me "become" me.</li>
-        <li><strong>Your planets in my 4th House:</strong> You feel like family. I want to build a home, share a kitchen, and have a private world with you.</li>
-        <li><strong>Your planets in my 5th House:</strong> You are my source of fun, romance, and creativity. We have incredible "play" and joy together.</li>
-        <li><strong>Your planets in my 7th House:</strong> I see you as the ultimate partner. You fit my "template" for a spouse perfectly.</li>
-        <li><strong>Your planets in my 8th House:</strong> We have a deep, possibly obsessive, sexual and psychological bond. You see my secrets and I see yours.</li>
-        <li><strong>Your planets in my 10th House:</strong> You help me with my career or reputation. You are my "power partner" in the world.</li>
-        <li><strong>Your planets in my 12th House:</strong> This is a "soulmate" indicator but can be confusing. We share a psychic connection, but there might be things we keep hidden or a sense of "sacrifice" in the union.</li>
-      </ul>
-
-      <h2 id="twin-flames-signs">Twin Flame Dynamics Through the 12 চিহ্নs</h2>
-      <p>How your Twin Flame connection manifests depends on the sign of your union (often seen in the Composite Sun):</p>
-      <ul>
-        <li><strong>Aries Union:</strong> Intense, fast-paced, and full of action. You trigger each other to be more courageous and independent.</li>
-        <li><strong>Taurus Union:</strong> Extremely physical, sensory, and stable. You are here to build material security and lasting beauty together.</li>
-        <li><strong>Gemini Union:</strong> Intellectual, talkative, and restless. You are here to learn, travel, and teach together.</li>
-        <li><strong>Cancer Union:</strong> Deeply emotional, sensitive, and focused on home. You are here to heal each other's ancestral families.</li>
-        <li><strong>Leo Union:</strong> Creative, warm, and highly visible. You are here to shine and be a "power couple" who inspires others.</li>
-        <li><strong>Virgo Union:</strong> Practical, efficient, and healing. You are here to serve a higher purpose through your daily life together.</li>
-        <li><strong>Libra Union:</strong> Harmonious, diplomatic, and focused on justice. You are here to master the high art of "we."</li>
-        <li><strong>Scorpio Union:</strong> Obsessive, deep, and transformative. You are here to undergo total ego death and spiritual rebirth together.</li>
-        <li><strong>Sagittarius Union:</strong> Adventurous, free, and philosophical. You are here to explore the world and the mind together.</li>
-        <li><strong>Capricorn Union:</strong> Stable, traditional, and ambitious. You are here to build a legacy or an "empire" for future generations.</li>
-        <li><strong>Aquarius Union:</strong> Unconventional, friendly, and progressive. You are here to change society through your unique, perhaps "weird" bond.</li>
-        <li><strong>Pisces Union:</strong> Spiritual, psychic, and boundary-less. You are here to dissolve the ego and merge with the divine through love.</li>
-      </ul>
-
-      <h2 id="karmic-elements">Karmic Relationships by Element</h2>
-      <p>The "flavor" of your karmic lessons often follows the elements of your South Node synastry. This shows you where you "left off" in a past life:</p>
-      <p><strong>🔥 Fire Karma:</strong> Lessons about ego, competition, aggression, and leadership. You may have been rivals or warriors in a past life.</p>
-      <p><strong>🌍 Earth Karma:</strong> Lessons about money, survival, the physical body, and reliability. You may have been business partners or landlord/tenant.</p>
-      <p><strong>💨 Air Karma:</strong> Lessons about communication, truth, logic, and friendship. You may have been siblings or teacher and student.</p>
-      <p><strong>💧 Water Karma:</strong> Lessons about emotion, intuition, family, and merging. You may have been parent and child or lovers who were tragically separated.</p>
-
-      <h2 id="famous-cases">Fated Unions: Famous Astrology Case Studies</h2>
-      <p>Looking at famous couples helps us see these patterns in action:</p>
-      <ul>
-        <li><strong>Elizabeth Taylor & Richard Burton:</strong> A classic "Twin Flame" or high-intensity karmic bond. Their synastry was full of Pluto and Mars aspects, leading to a "can't live with you, can't live without you" dynamic that saw them marry and divorce twice.</li>
-        <li><strong>Prince Harry & Meghan Markle:</strong> Strong Nodes and 7th house synastry. They are part of each other's "North Node" (future destiny), pushing each other into new, unconventional roles.</li>
-        <li><strong>John Lennon & Yoko Ono:</strong> A deep spiritual and intellectual bond seen through strong Uranus and Neptune synastry—they changed the world's consciousness together.</li>
-      </ul>
-
-      <h2 id="red-flags">Astrological Red Flags: When প্রেম Becomes Toxic</h2>
-      <p>Astrology should never be used to judge someone's character, but it can provide vital warnings about potential low-vibration dynamics.</p>
-      <br><strong>Pluto-Venus Squares/Oppositions:</strong> Can indicate a "power struggle" or obsession where love is used as a weapon of control or jealousy.
-      <br><strong>Mars-Mars Squares:</strong> High volatility and conflict. You might "clash" physically or lose your patience with each other constantly over minor things.
-      <br><strong>Neptune-Sun Squares:</strong> One person may be lying, or you are both in love with a fantasy version of each other. Disillusionment is inevitable.
-      <br><strong>Saturn-Moon Squares:</strong> One person feels emotionally "frozen," judged, or limited by the other. It feels like "hard work" with no emotional reward.
-
-      <h2 id="timing">Timing the One: Transits & Progressions</h2>
-      <p>Astrology can also tell us *when* we are ready for these connections. When **Jupiter** transits your 7th house, your "market value" increases and you meet many new people. When **Saturn** transits your 7th, you often get married or get serious about a long-term union. If you are going through your **Progressed Moon Return** (around age 27), your emotional needs are shifting, making way for a new type of partner. Watching these "Transits to the Seventh House" is the best way to know when to put yourself out there and open your heart.</p>
-
-      <h2 id="healing">Healing from a Twin Flame Split</h2>
-      <p>Because the Twin Flame connection is designed for transformation, it often involves a period of intense separation (the "Running" phase). This can be devastating. Astrologically, this is a time to focus on your own **Chiron** (healing) and **North Node** (destiny). The "Running" only stops when you stop chasing the other person and start evolving toward your own soul mission. Use this time for therapy, spiritual work, and mastering your own energy. The connection is in the soul; it can never truly be broken by physical distance.</p>
-
-      <h2 id="faq">Relationship Astrology FAQs</h2>
-      <p><strong>Q: Can a "bad" synastry work?</strong>
-      <br>A: Yes! It just takes more consciousness and work. Constant friction (Squares) creates more energy and growth than easy flow (Trines). Some of the most successful, high-achieving couples have "difficult" synastry that keeps them growing and challenged.</p>
+      <h2 id="conclusion">ভালোবাসার প্রকৃত অর্থ</h2>
+      <p>জন্মকুণ্ডলী সম্ভাবনার মানচিত্র, ভাগ্যের কারাগার নয়। জ্যোতিষশাস্ত্র আমাদের সম্পর্কের "আবহাওয়া" দেখায়—কোথায় ঝড় হবে আর কোথায় রোদ থাকবে তা জানায়—কিন্তু ঘর তৈরির সিদ্ধান্ত আপনার।</p>
       
-      <p><strong>Q: I found my Twin Flame but they are with someone else. Why?</strong>
-      <br>A: Often this is about "Divine Timing." One or both of you carries karmic baggage (South Node work) that needs to be cleared with someone else before you are ready for the intensity of the Twin Flame union.</p>
-
-      <p><strong>Q: Does my Sun sign determine my soulmate?</strong>
-      <br>A: No. Your Sun sign is only about 5% of the total picture. Your Moon (emotions) and Venus (love style) signs are much more important for long-term compatibility and day-to-day happiness.</p>
-
-      <p><strong>Q: How do I find our Composite Chart?</strong>
-      <br>A: In the Astralo app, use the "Relationship" tool. Enter both birth times and locations, and we will generate your shared map instantly. We even provide a compatibility score based on over 100 different factors.</p>
-
-      <h2 id="conclusion">The True Meaning of প্রেম</h2>
-      <p>Ultimately, a birth chart is a map of potentials, not a prison of fate. Life is built on choices. Astrology shows us the "weather" of the relationship—it shows us where there will be storms and where there will be sunshine—but you are the one who decides to build the house. Even the most "incompatible" signs can build a beautiful life together through consciousness, effort, and unconditional love. The stars impel, they do not compel.</p>
-      
-      <p>At Astralo, our <strong>Synastry and Relationship Reports</strong> go beyond simple "percentage" matching. We dive deep into the karmic signatures, the emotional needs, and the sexual chemistry of your unique union. Whether you are dealing with a Twin Flame "runner" or searching for your forever soulmate, we help you understand the cosmic logic of your heart. Learn to love with your eyes wide open. Your soulmate is waiting—not in your dreams, but in the stars. </p>
-      
-      <p><em>Ready to see if your flame is forever? Get your detailed compatibility analysis today in the Astralo app.</em></p>
+      <p>অ্যাস্ট্রালোতে (Astralo) আমাদের সম্পর্ক রিপোর্টগুলো সাধারণ শতাংশের হিসেবের চেয়ে অনেক গভীর। আমরা আপনাকে আপনার হৃদয়ের মহাজাগতিক যুক্তি বুঝতে সাহায্য করি। আপনার সোলমেট আপনার জন্য অপেক্ষা করছে—কল্পনায় নয়, বরং নক্ষত্রপুঞ্জে।</p>
     `
 };

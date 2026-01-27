@@ -1,69 +1,87 @@
 /**
- * monthly-horoscope-january-2026 - HR
+ * Mjesečni horoskop siječanj 2026. - Hrvatski
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Mjesečni horoskop siječanj 2026.: Zora nove ere',
+  excerpt: 'Kompletna astrološka prognoza za siječanj 2026. Detaljan mjesečni horoskop od Ovna do Riba, uključujući Pluton u Vodenjaku te trendove u ljubavi, karijeri i novcu.',
+  category: 'Horoskopi',
+  metaDescription: 'Kompletna astrološka prognoza za siječanj 2026. Detaljan mjesečni horoskop od Ovna do Riba, uključujući Pluton u Vodenjaku te trendove u ljubavi, karijeri i novcu.',
+  keywords: 'mjesečni horoskop, astrologija siječanj 2026, mjesečna predviđanja, horoskop siječanj, Pluton u Vodenjaku, mlađak u Jarcu, uštap u Raku',
+  quickSummary: [
+    'Siječanj 2026. obilježen je Plutonovim učvršćivanjem u Vodenjaku, što najavljuje goleme društvene promjene.',
+    'Mlađak u Jarcu (1. siječnja) donosi savršenu energiju za novogodišnje odluke.',
+    'Sjena Merkurova retrogradnog kretanja nestaje do 15. siječnja, olakšavajući komunikaciju.',
+    'Retrogradni Mars u Raku izvlači na površinu neriješene obiteljske sukobe.'
+  ],
+  keyTakeaways: [
+    'Prvi tjedan siječnja koristite samo za strateško planiranje; odgodite akciju do sredine mjeseca.',
+    'Očekujte iznenadne tehnološke proboje ili poremećaje kako se Uran aktivira.',
+    'Odnosi se suočavaju s provjerom stvarnosti oko uštapa u Raku 14. siječnja.',
+    'Financijska tržišta mogu biti nestabilna; držite se dugoročnih sigurnih ulaganja.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Astrologija siječnja' },
+    { id: 'key-transits', title: 'Ključni datumi i tranziti' },
+    { id: 'fire-signs', title: 'Vatreni znakovi (Ovan, Lav, Strijelac)' },
+    { id: 'earth-signs', title: 'Zemljani znakovi (Bik, Djevica, Jarac)' },
+    { id: 'air-signs', title: 'Zračni znakovi (Blizanci, Vaga, Vodenjak)' },
+    { id: 'water-signs', title: 'Vodeni znakovi (Rak, Škorpion, Ribe)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologija siječnja 2026.</h2>
+      <p>Sretna Nova godina! <strong>Siječanj 2026.</strong> nije samo početak nove kalendarske godine; to je astrološka zora nove ere. S <strong>Plutonom čvrsto u Vodenjaku</strong>, kolektivno se udaljavamo od krutih struktura proteklih 15 godina (Pluton u Jarcu) i ulazimo u fazu brze inovacije, fokusa na zajednicu i pobune protiv zastarjelog.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>Mjesec započinje <strong>mlađakom u Jarcu</strong> 1. siječnja—rijetko i povoljno poravnanje. Ovo pojačava energiju "nova godina, nova ja", čineći ovo nevjerojatnim vremenom za postavljanje discipliniranih, dugoročnih ciljeva. Međutim, s retrogradnim Marsom u Raku, naša energija mogla bi biti usmjerena prema unutra. Preispitujemo <em>zašto</em> djelujemo, a ne samo <em>kako</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Ključni datumi i tranziti</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1. sij:</strong> Mlađak u Jarcu (Postavite namjere).</li>
+        <li><strong>4. sij:</strong> Mars ulazi u Lava (Ponos i drama se pojačavaju).</li>
+        <li><strong>14. sij:</strong> Uštap u Raku (Emocionalno oslobađanje).</li>
+        <li><strong>20. sij:</strong> Sunce ulazi u Vodenjaka (Sezona budućnosti).</li>
+        <li><strong>29. sij:</strong> Uran kreće direktno (Iznenadne promjene).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Vatra Znaks (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Vatreni znakovi (Ovan, Lav, Strijelac)</h2>
+      <p><strong>Tema: Vraćanje vlastite Iskre.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Ovan:</strong> S vašim vladarom Marsom koji se prividno kreće unatrag (retrogradno), mogli biste osjetiti frustraciju zbog zastoja. Ovo nije crveno svjetlo, već žuto. Iskoristite siječanj za reviziju svog karijernog puta. penjete li se na pravu planinu?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Lav:</strong> Odnosi su u fokusu. Očekujte da će se bivši partneri ili stari prijatelji ponovno pojaviti. Uštap u vašoj 12. kući sugerira potrebu za osamom sredinom mjeseca. Napunite svoje društvene baterije.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Strijelac:</strong> Financije su naglašene. Možda ćete pronaći novi izvor prihoda ili odlučiti prekinuti nepotrebne pretplate. Ovo je mjesec za praktično planiranje proračuna, a ne za divlje trošenje.</p>
 
-      <h2 id="earth-signs">🌍 Zemlja Znaks (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Zemljani znakovi (Bik, Djevica, Jarac)</h2>
+      <p><strong>Tema: Izgradnja temelja.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Bik:</strong> Obično ste spori u promjenama, ali Uran u vašem znaku tjera vas na oslobađanje. Siječanj donosi iznenadnu priliku za putovanje ili pomak u vašoj filozofiji. Recite "da" nepoznatom.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Djevica:</strong> Vaš vladajući planet Merkur izlazi iz sjene sredinom mjeseca. Do tada, dvaput provjerite sve ugovore. Kreativnost skače nakon 20. siječnja—pokrenite onaj hobi koji ste odgađali.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Jarac:</strong> Sretna sezona rođendana! Mlađak u vašem znaku je vaša osobna Nova godina. Imate kozmičku dozvolu da budete sebični. Što VI želite za sljedećih 12 mjeseci? Izgovorite to naglas.</p>
 
-      <h2 id="air-signs">💨 Zrak Znaks (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Zračni znakovi (Blizanci, Vaga, Vodenjak)</h2>
+      <p><strong>Tema: Intelektualna ekspanzija.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Blizanci:</strong> Zajednički resursi i duboka intimnost su ključni. Mogli biste primiti nasljedstvo, bonus ili doživjeti dubok psihološki proboj. Intenzivan je mjesec, ali donosi pročišćenje.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Vaga:</strong> Dom i obitelj zauzimaju središnje mjesto. Možda ćete preuređivati dom ili posredovati u obiteljskom sukobu. Ravnoteža je vaša supermoć; iskoristite je za stvaranje mira u svom utočištu.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vodenjak:</strong> Ovo je vaš trenutak. S Plutonom u vašem znaku, prolazite kroz metamorfozu. Mogli biste promijeniti svoj izgled, ime ili cijeli opis posla. Svijet tek sustiže vašu viziju.</p>
 
-      <h2 id="water-signs">💧 Voda Znaks (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Vodeni znakovi (Rak, Škorpion, Ribe)</h2>
+      <p><strong>Tema: Emocionalna mudrost.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rak:</strong> Uštap u vašem znaku 14. siječnja emocionalni je vrhunac vaše godine. Pustite sve van. Plačite, smijte se, vrištite. Skidate staru kožu. Odnosi koji se sada formiraju su karmički.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Škorpion:</strong> Komunikacija je moćna. Vaše riječi imaju dodatnu težinu ovog mjeseca. Koristite ih za pregovaranje, podučavanje ili pisanje. Izbjegavajte manipulativne mentalne igre; transparentnost pobjeđuje.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Ribe:</strong> Vaš društveni krug se širi. Vi ste ljepilo koje drži vašu zajednicu na okupu. Potražite prilike za volontiranje ili vođenje grupnog projekta. Vaša intuicija je oštra poput britve.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Nabavite svoj potpuni horoskop za 2026.</h2>
+      <p>Ovaj mjesečni pregled samo je vrh ledenog brijega. Svaka osoba ima jedinstvenu kartu koja s ovim tranzitima stupa u interakciju na drugačiji način. Kako biste kroz 2026. prošli s povjerenjem, naručite svoj <strong>Personalizirani godišnji izvještaj</strong> od Astrala. On donosi pregled vaših specifičnih tranzita mjesec po mjesec.
     `
 };

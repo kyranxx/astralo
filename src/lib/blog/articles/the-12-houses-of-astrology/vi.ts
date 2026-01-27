@@ -4,179 +4,167 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: "🏠 The 12 Houses of Astrology: The Ultimate Guide to Your Life's Journey",
-    excerpt: "Discover the hidden map of your life. A deep dive into the 12 Houses of Astrology, explaining where your planetary energy manifests and how to master your destiny.",
-    category: "Astrology Basics",
-    metaDescription: "Complete guide to the 12 houses of astrology. Learn what each house means, how they influence your life spheres, and how to interpret your birth chart houses like an expert.",
-    keywords: "astrology houses, 12 houses, zodiac houses, birth chart interpretation, first house, seventh house, midheaven, angular houses, succedent houses, cadent houses, house rulers, stellium, intercepted houses",
-    quickSummary: ["The 12 Houses represent the \"where\" of your life—the specific spheres like career, home, and love.","Houses are divided into Angular, Succedent, and Cadent, each with a different level of power.","The Ascendant marks the beginning of the 1st House and sets the entire chart's structure.","Empty houses doesn't mean that area of life is \"missing\"—they are ruled by a specific planet."],
-    keyTakeaways: ["Angular houses (1, 4, 7, 10) are the most active and visible in your life.","The ruler of a house (the planet that owns the sign on the cusp) provides the secret key to that life area.","The \"Big Four\" points (AC, IC, DC, MC) define the cross of your life purpose.","Understanding houses is essential for accurate timing and prediction in astrology."],
-    tableOfContents: [{"id":"introduction","title":"The Stage: Why Houses Matter"},{"id":"house-systems","title":"Understanding House Systems: Placidus vs. Whole Sign"},{"id":"angular-succedent-cadent","title":"The Three Modalities: Power & Timing"},{"id":"the-first-house","title":"1st House: The House of Self (Identity)"},{"id":"the-second-house","title":"2nd House: The House of Value (Wealth)"},{"id":"the-third-house","title":"3rd House: The House of Communication"},{"id":"the-fourth-house","title":"4th House: The House of Home (Roots)"},{"id":"the-fifth-house","title":"5th House: The House of Joy"},{"id":"the-sixth-house","title":"6th House: The House of Service"},{"id":"the-seventh-house","title":"7th House: The House of Partnership"},{"id":"the-eighth-house","title":"8th House: The House of Transformation"},{"id":"the-ninth-house","title":"9th House: The House of Wisdom"},{"id":"the-tenth-house","title":"10th House: The House of Purpose"},{"id":"the-eleventh-house","title":"11th House: The House of Community"},{"id":"the-twelfth-house","title":"12th House: The House of Unconscious"},{"id":"planetary-placements","title":"Major Planets in the Houses"},{"id":"stelliums","title":"What is a Stellium in a House?"},{"id":"empty-houses","title":"What if a House is Empty? The Power of Rulers"},{"id":"retrograde","title":"Retrograde Planets in the Houses"},{"id":"derived-houses","title":"Advanced Technique: Derived Houses"},{"id":"progressions","title":"Progressed Houses: How Your Life Cycles Eveolve"},{"id":"conclusion","title":"Integrating Your Map"}],
-    content: `
-      <h2 id="introduction">The Stage: Why Houses Matter</h2>
-      <p>If you have ever looked at your birth chart and felt overwhelmed by the lines, symbols, and geometric shapes, you are not alone. Astrology is a language of three main components: signs, planets, and houses. While <strong>planets</strong> represent the "actors" (what is happening) and <strong>signs</strong> represent the "costumes" (how it is happening), the <strong>12 Houses of Astrology</strong> represent the "stage" (where it is happening).</p>
+  title: "🏠 12 Cung Nhà Trong Chiêm Tinh: Hướng Dẫn Toàn Tập Về Bản Đồ Cuộc Đời",
+  excerpt: "Khám phá bản đồ ẩn giấu của cuộc đời bạn. Đi sâu vào 12 Cung Nhà trong chiêm tinh, giải thích nơi năng lượng hành tinh của bạn thể hiện và cách làm chủ vận mệnh.",
+  category: "Kiến Thức Chiêm Tinh",
+  metaDescription: "Hướng dẫn đầy đủ về 12 cung nhà chiêm tinh. Tìm hiểu ý nghĩa của mỗi cung nhà, cách chúng ảnh hưởng đến các lĩnh vực đời sống như sự nghiệp và tình yêu, và cách diễn giải các cung nhà trong bản đồ sao của bạn như một chuyên gia.",
+  keywords: "các cung nhà chiêm tinh, 12 cung nhà, cung nhà hoàng đạo, diễn giải bản đồ sao, nhà 1, nhà 7, thiên đỉnh, cung nhà góc, cung nhà kế, cung nhà linh hoạt, chủ quản nhà, cụm hành tinh, nhà bị chặn",
+  quickSummary: [
+    "12 Cung Nhà đại diện cho câu hỏi \"Ở ĐÂU\" trong cuộc sống của bạn—các lĩnh vực cụ thể như sự nghiệp, gia đình và các mối quan hệ.",
+    "Các cung nhà được chia thành nhà Góc (Angular), nhà Kế (Succedent) and nhà Linh Hoạt (Cadent), mỗi loại có mức độ quyền năng khác nhau.",
+    "Điểm Mọc (Ascendant) đánh dấu sự bắt đầu của Nhà 1 và xác lập cấu trúc cho toàn bộ bản đồ sao.",
+    "Nhà trống không có nghĩa là lĩnh vực đời sống đó bị \"mất đi\"—chúng vẫn được cai quản bởi một hành tinh cụ thể."
+  ],
+  keyTakeaways: [
+    "Các nhà Góc (1, 4, 7, 10) là những nhà hoạt động mạnh nhất và dễ thấy nhất trong cuộc sống của bạn.",
+    "Chủ quản của một nhà (hành tinh cai quản cung hoàng đạo nằm ở đỉnh nhà) cung cấp chìa khóa bí mật cho lĩnh vực đời sống đó.",
+    "Bốn góc chính (AC, IC, DC, MC) xác định khung sườn cho mục đích sống của bạn.",
+    "Hiểu về các cung nhà là điều cần thiết để xác định thời điểm và dự đoán trong chiêm tinh học."
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: "Sân Khấu: Tại Sao Các Cung Nhà Lại Quan Trọng" },
+    { id: 'house-systems', title: "Hiểu Về Các Hệ Thống Nhà: Placidus vs. Whole Sign" },
+    { id: 'angular-succedent-cadent', title: "Ba Đặc Tính: Quyền Năng và Thời Gian" },
+    { id: 'the-first-house', title: "Nhà 1: Cung Nhà Của Bản Thân (Bản Sắc)" },
+    { id: 'the-second-house', title: "Nhà 2: Cung Nhà Của Giá Trị (Tài Sản)" },
+    { id: 'the-third-house', title: "Nhà 3: Cung Nhà Của Giao Tiếp" },
+    { id: 'the-fourth-house', title: "Nhà 4: Cung Nhà Của Gia Đình (Nguồn Cội)" },
+    { id: 'the-fifth-house', title: "Nhà 5: Cung Nhà Của Niềm Vui" },
+    { id: 'the-sixth-house', title: "Nhà 6: Cung Nhà Của Sự Phục Vụ" },
+    { id: 'the-seventh-house', title: "Nhà 7: Cung Nhà Của Đối Tác" },
+    { id: 'the-eighth-house', title: "Nhà 8: Cung Nhà Của Sự Biến Đổi" },
+    { id: 'the-ninth-house', title: "Nhà 9: Cung Nhà Của Trí Tuệ" },
+    { id: 'the-tenth-house', title: "Nhà 10: Cung Nhà Của Mục Đích" },
+    { id: 'the-eleventh-house', title: "Nhà 11: Cung Nhà Của Cộng Đồng" },
+    { id: 'the-twelfth-house', title: "Nhà 12: Cung Nhà Của Vô Thức" },
+    { id: 'planetary-placements', title: "Các Hành Tinh Chính Trong Các Cung Nhà" },
+    { id: 'stelliums', title: "Cụm Hành Tinh (Stellium) Là Gì?" },
+    { id: 'empty-houses', title: "Nếu Một Cung Nhà Trống Thì Sao? Quyền Năng Của Chủ Quản" },
+    { id: 'retrograde', title: "Hành Tinh Nghịch Hành Trong Các Cung Nhà" },
+    { id: 'derived-houses', title: "Kỹ Thuật Nâng Cao: Nhà Phái Sinh" },
+    { id: 'progressions', title: "Nhà Thứ Cấp (Progressed Houses): Sự Tiến Hóa Của Các Chu Kỳ Đời Người" },
+    { id: 'conclusion', title: "Tích Hợp Bản Đồ Sao Của Bạn" }
+  ],
+  content: `
+      <h2 id="introduction">Sân Khấu: Tại Sao Các Cung Nhà Lại Quan Trọng</h2>
+      <p>Nếu bạn đã từng nhìn vào bản đồ sao cá nhân và cảm thấy choáng ngợp trước những đường kẻ, biểu tượng và hình khối hình học, bạn không đơn độc. Chiêm tinh học là ngôn ngữ của ba thành phần chính: cung hoàng đạo, hành tinh và cung nhà. Trong khi <strong>hành tinh</strong> đại diện cho các "diễn viên" (cái gì đang xảy ra) và <strong>cung hoàng đạo</strong> đại diện cho "trang phục" (xảy ra như thế nào), thì <strong>12 Cung Nhà trong Chiêm Tinh</strong> đại diện cho "sân khấu" (xảy ra ở đâu).</p>
       
-      <p>Imagine your life is a play. Mars might be the actor—full of drive and aggression. If he is wearing the "costume" of Aries, he is fast, impulsive, and bold. But where does he perform? If he is in the 10th House of Career, he is a driven entrepreneur. If he is in the 4th House of Home, he might be someone who spends their energy fixing up their house or perhaps experiences conflict within the family unit. Without the houses, astrology is purely psychological; with the houses, it becomes practical and predictive.</p>
+      <p>Hãy tưởng tượng cuộc đời bạn là một vở kịch. Sao Hỏa có thể là diễn viên—đầy nhiệt huyết và hung hăng. Nếu anh ấy mặc "trang phục" của Bạch Dương, anh ấy sẽ nhanh nhẹn, bốc đồng và táo bạo. Nhưng anh ấy biểu diễn ở đâu? Nếu anh ấy ở Nhà 10 của Sự nghiệp, anh ấy là một doanh nhân đầy quyết tâm. Nếu anh ấy ở Nhà 4 của Gia đình, anh ấy có thể là người dồn năng lượng vào việc sửa sang nhà cửa hoặc có thể gặp phải xung đột trong đơn vị gia đình. Nếu không có các cung nhà, chiêm tinh học thuần túy là tâm lý học; có các cung nhà, nó trở nên thực tiễn và mang tính dự đoán.</p>
 
-      <p>In this comprehensive guide, we will explore every nook and cranny of these twelve life spheres, helping you understand how to read your own chart like a professional astrologer. Whether you are curious about your financial future, your romantic potential, or your soul's hidden purpose, the houses hold the key.</p>
+      <p>Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá mọi ngóc ngách của mười hai lĩnh vực đời sống này, giúp bạn hiểu cách đọc bản đồ sao của chính mình như một nhà chiêm tinh chuyên nghiệp. Dù bạn tò mò về tương lai tài chính, tiềm năng lãng mạn hay mục đích ẩn giấu của linh hồn, các cung nhà đều nắm giữ chìa khóa.</p>
 
-      <h2 id="house-systems">Understanding House Systems: Placidus vs. Whole Cung</h2>
-      <p>Before we dive into the specific meanings, we must address the "elephant in the room": House Systems. There are dozens of ways to divide the sky, and which one you choose can change your chart significantly.</p>
+      <h2 id="house-systems">Hiểu Về Các Hệ Thống Nhà: Placidus vs. Whole Cung</h2>
+      <p>Trước khi đi sâu vào các ý nghĩa cụ thể, chúng ta phải giải quyết vấn đề cốt lõi: Các Hệ Thống Nhà. Có hàng chục cách để phân chia bầu trời và sự lựa chọn của bạn có thể thay đổi đáng kể bản đồ sao của bạn.</p>
       
-      <h3>Placidus System</h3>
-      <p>This is the most popular system in modern Western astrology. It calculates houses based on how long it takes for a planet to travel from the horizon to the meridian. Because the Earth is tilted, this often leads to "intercepted houses" (houses that span more than one sign) and houses of varying sizes. Fans of Placidus argue it is more psychologically nuanced and reflects the "stretching" of time and experience.</p>
+      <h3>Hệ Thống Placidus</h3>
+      <p>Đây là hệ thống phổ biến nhất trong chiêm tinh học phương Tây hiện đại. Nó tính toán các cung nhà dựa trên thời gian một hành tinh di chuyển từ đường chân trời đến kinh tuyến. Vì Trái đất nằm nghiêng, điều này thường dẫn đến các "nhà bị chặn" (các nhà bao trùm nhiều hơn một cung hoàng đạo) và các nhà có kích thước khác nhau. Những người ủng hộ cho rằng nó mang tính sắc thái tâm lý hơn.</p>
 
-      <h3>Whole Cung System</h3>
-      <p>The oldest system, recently making a huge comeback in traditional and Hellenistic astrology. In this system, the entire sign of your Ascendant becomes your 1st House. If you are 29 degrees Aries Rising, the *entire* sign of Aries is your 1st House. This system is cleaner, creates "Equal" houses of 30 degrees, and many find it more accurate for predicting concrete life events.</p>
+      <h3>Hệ Thống Whole Cung (Cả Cung)</h3>
+      <p>Hệ thống lâu đời nhất, gần đây đang có sự trở lại mạnh mẽ. Trong hệ thống này, toàn bộ cung hoàng đạo của Điểm Mọc trở thành Nhà 1 của bạn. Hệ thống này sạch sẽ hơn, tạo ra các nhà "Bằng nhau" 30 độ, và nhiều người thấy nó chính xác hơn để dự đoán các sự kiện đời sống cụ thể.</p>
 
-      <h3>Equal House System</h3>
-      <p>Here, the Ascendant degree marks the start of the 1st House, and every house is exactly 30 degrees. This system is popular in the UK and provides a middle ground between the "naturalness" of Whole Sign and the degree-specific accuracy of the Ascendant. It avoids the "warping" that occurs in Placidus for people born far from the equator.</p>
+      <h3>Bạn nên sử dụng hệ thống nào?</h3>
+      <p>Tại Astralo, chúng tôi khuyên bạn nên bắt đầu với <strong>Whole Cung</strong> để có sự rõ ràng, nhưng hãy khám phá <strong>Placidus</strong> để có chiều sâu tâm lý. Nếu bạn có các cung hoàng đạo "bị chặn" trong Placidus, nó thường chỉ ra một phần tính cách của bạn đã bị "kìm nén" hoặc khó tiếp cận trong giai đoạn đầu đời.</p>
 
-      <h3>Which should you use?</h3>
-      <p>At Astralo, we recommend starting with **Whole Sign** for clarity, but exploring **Placidus** for psychological depth. If you have "intercepted" signs in Placidus, it often indicates a part of your personality that was "suppressed" or difficult to access in early life.</p>
-
-      <h2 id="angular-succedent-cadent">The Three Modalities: Power & Timing</h2>
-      <p>Houses are divided into three groups of four, which dictate their "dynamic" energy and how they manifest in time.</p>
+      <h2 id="angular-succedent-cadent">Ba Đặc Tính: Quyền Năng và Thời Gian</h2>
+      <p>Các cung nhà được chia thành ba nhóm bốn nhà, quy định năng lượng "động" của chúng và cách chúng thể hiện theo thời gian.</p>
       
-      <h3>1. Angular Houses (1, 4, 7, 10)</h3>
-      <p>These are the "Power Houses." They correspond to the Cardinal signs (Aries, Cancer, Libra, Capricorn). Planets found here are very active and visible in the world. They define the "Big Four" points of your chart: the Ascendant, IC, Descendant, and Midheaven. Events in these houses tend to be public, life-changing, and initiated by you. If you have many planets in angular houses, you are a "doer" who makes things happen.</p>
+      <h3>1. Nhà Góc (1, 4, 7, 10)</h3>
+      <p>Đây là các "Nhà Quyền Năng". Chúng tương ứng với các cung Thống lĩnh (Cardinal). Các hành tinh ở đây rất năng động và dễ thấy trong thế giới bên ngoài. Chúng xác định bốn điểm chính trên bản đồ sao của bạn: Điểm Mọc (AC), Tận Cùng Bầu Trời (IC), Điểm Lặn (DC) và Thiên Đỉnh (MC). Các sự kiện ở đây có xu hướng công khai và thay đổi cuộc đời.</p>
 
-      <h3>2. Succedent Houses (2, 5, 8, 11)</h3>
-      <p>These correspond to the Fixed signs (Taurus, Leo, Scorpio, Aquarius). These houses "follow" (succeed) the angular ones. They provide stability and resources. Here we find things like personal values, children, shared wealth, and long-term goals. They represent the "middle" phase of a process where we consolidate our gains and build substance. Planets here are steady but less "loud" than angular planets.</p>
+      <h3>2. Nhà Kế (2, 5, 8, 11)</h3>
+      <p>Các nhà này "kế tiếp" hoặc đi theo các nhà Góc. Chúng cung cấp sự ổn định và nguồn lực (tiền bạc, con cái, tài sản chung, mục tiêu dài hạn). chúng đại diện cho giai đoạn "giữa" của một quá trình nơi chúng ta củng cố các thành quả của mình.</p>
 
-      <h3>3. Cadent Houses (3, 6, 9, 12)</h3>
-      <p>These correspond to the Mutable signs (Gemini, Virgo, Sagittarius, Pisces). These houses represent transition, preparation, and the mental processing of experience. They are the "falling away" houses. Planets here are often more "internal," intellectual, or involve service and learning. They are the final phase before a new cycle begins. In traditional astrology, cadent houses were considered "weak," but in modern psychology, they are viewed as the most spiritual and complex.</p>
+      <h3>3. Nhà Linh Hoạt (3, 6, 9, 12)</h3>
+      <p>Đây là các nhà của sự chuyển giao và xử lý tinh thần. Chúng là những nhà "rút lui". Các hành tinh ở đây thường mang tính nội tâm hơn, trí tuệ hơn, hoặc liên quan đến sự phục vụ và học hỏi. Chúng chuẩn bị cho chúng ta chu kỳ tiếp theo.</p>
 
-      <h2 id="the-first-house">1st House: The House of Self (Identity)</h2>
-      <p>The 1st House begins at the <strong>Ascendant (Rising Sign)</strong>. It is the filter through which you view the world and how the world views you. It governs your physical appearance, your temperament, and your vitality.
-      <br><strong>Keywords:</strong> Identity, appearance, health, first impressions, vitality, survival instinct, self-start.</p>
-      <p>If you have the **Sun in the 1st House**, you have a strong presence and high energy. You may be very self-reliant. 
-      <br>If you have **Mars in the 1st House**, you are likely athletic, impulsive, or have a "warrior" spirit. You move fast and ask questions later.
-      <br>If you have **Saturn in the 1st House**, you might have been a serious child, or you feel a heavy responsibility for your own life. You likely age "backwards," appearing older when young and younger when old. This placement gives incredible stamina.</p>
+      <h2 id="the-first-house">Nhà 1: Cung Nhà Của Bản Thân (Bản Sắc)</h2>
+      <p>Bắt đầu tại <strong>Điểm Mọc</strong>. Bộ lọc qua đó bạn nhìn thế giới và thế giới nhìn bạn. Cai quản ngoại hình, khí chất và sức sống của bạn.
+      <br><strong>Từ khóa:</strong> Bản sắc, ngoại hình, sức khỏe, ấn tượng đầu tiên, bản năng sinh tồn.</p>
+      <p>Nếu bạn có <strong>Mặt Trời ở Nhà 1</strong>, bạn có sự hiện diện mạnh mẽ và năng lượng cao. Bạn có thể rất tự lực.
+      <br>Nếu bạn có <strong>Sao Thổ ở Nhà 1</strong>, bạn có phong thái nghiêm túc, là người thành công muộn và có khả năng phục hồi đáng kinh ngạc.</p>
 
-      <h2 id="the-second-house">2nd House: The House of Value (Wealth)</h2>
-      <p>This is where we find your bank account, but also your self-esteem. It rules your personal possessions, your earning capacity, and your values.
-      <br><strong>Keywords:</strong> Money, values, self-worth, possessions, financial security, sensory pleasures, income.</p>
-      <p>If you have **Jupiter in the 2nd House**, you are often lucky with money or have a "big" appetite for life. You might earn well but also spend generously. You believe the universe is abundant.
-      <br>If you have **Venus in the 2nd House**, you attract money through art, beauty, or luxury. You value comfort and high-quality items. You might be "in love" with your things.
-      <br>If you have **Pluto in the 2nd House**, your finances may undergo major "death and rebirth" cycles. You might have a powerful, almost obsessive drive to achieve extreme wealth or power over your resources.</p>
+      <h2 id="the-second-house">Nhà 2: Cung Nhà Của Giá Trị (Tài Sản)</h2>
+      <p>Đây là tài khoản ngân hàng của bạn, nhưng cũng là lòng tự trọng của bạn. Cai quản tài sản cá nhân và khả năng kiếm tiền.
+      <br><strong>Từ khóa:</strong> Tiền bạc, giá trị, lòng tự trọng, tài sản, niềm vui giác quan.</p>
+      <p>Nếu bạn có <strong>Sao Mộc ở Nhà 2</strong>, bạn thường may mắn với tiền bạc hoặc có sự "ham thích" lớn với cuộc sống.
+      <br>Nếu bạn có <strong>Sao Diêm Vương ở Nhà 2</strong>, tài chính của bạn có thể trải qua những chu kỳ "chết đi và tái sinh" mãnh liệt.</p>
 
-      <h2 id="the-third-house">3rd House: The House of Communication</h2>
-      <p>Your local environment. It governs how you think, how you speak, and your relationships with siblings and neighbors. It also rules short-distance travel.
-      <br><strong>Keywords:</strong> Logic, writing, speaking, siblings, neighbors, schooling, daily commute, social media, curiosity.</p>
-      <p>If you have **Mercury in the 3rd House**, you are a "lifelong learner" with a quick, restless mind. Communication is your survival skill.
-      <br>If you have **Uranus in the 3rd House**, your ideas are eccentric or ahead of their time. You might have a very unusual relationship with your siblings or your local community. You think "outside the box."
-      <br>If you have the **Moon in the 3rd House**, your emotions are deeply tied to your communication. You need to speak or write how you feel to process it. You are a natural storyteller.</p>
+      <h2 id="the-third-house">Nhà 3: Cung Nhà Của Giao Tiếp</h2>
+      <p>Môi trường xung quanh bạn. Cách bạn suy nghĩ, nói năng và mối quan hệ với anh chị em/hàng xóm.
+      <br><strong>Từ khóa:</strong> logic, viết lách, anh chị em, những chuyến đi ngắn, sự tò mò.</p>
+      <p>Nếu bạn có <strong>Sao Thủy ở Nhà 3</strong>, bạn có trí óc nhạy bén, là một "người học trọn đời" và là người kể chuyện bẩm sinh.</p>
 
-      <h2 id="the-fourth-house">4th House: The House of Home (Roots)</h2>
-      <p>The base of the chart (the IC). It represents your family of origin, your ancestors, your literal home, and your private life. It is the most "internal" house.
-      <br><strong>Keywords:</strong> Privacy, roots, the mother/father, ancestors, real estate, the end of life, inner sanctuary.</p>
-      <p>If you have the **Moon in the 4th House**, you are deeply private and emotional about your home. You need a "nest" to feel safe. Your family is your world.
-      <br>If you have **Saturn in the 4th House**, you may have had a strict or cold childhood, or you take the responsibility of "home" very seriously. You are building a legacy for your future family.
-      <br>If you have **Jupiter in the 4th House**, you might have a large family or find great benefit and expansion through your domestic life. Your home is a place of healing and philosophy.</p>
+      <h2 id="the-fourth-house">Nhà 4: Cung Nhà Của Gia Đình (Nguồn Cội)</h2>
+      <p>Phần đáy của bản đồ sao (IC). Gia đình, tổ tiên, đời sống riêng tư.
+      <br><strong>Từ khóa:</strong> Nhà cửa, nguồn cội, cha mẹ, bất động sản, nơi trú ẩn nội tâm.</p>
+      <p>Nếu bạn có <strong>Mặt Trăng ở Nhà 4</strong>, bạn rất kín đáo và tình cảm về ngôi nhà của mình; cần một "chiếc tổ" để cảm thấy an toàn.</p>
 
-      <h2 id="the-fifth-house">5th House: The House of Joy</h2>
-      <p>Self-expression and fun. This is the house of creativity, romance, dating, children, and speculative risks.
-      <br><strong>Keywords:</strong> Creativity, play, romance, children, hobbies, fame, gambling, theater, personal spark.</p>
-      <p>If you have **Venus in the 5th House**, you are "in love with love." You are likely artistic and have a charm that attracts many romantic interests. You express your soul through beauty.
-      <br>If you have **Mars in the 5th House**, you are competitive in sports or creative pursuits. You have a "fiery" approach to dating and need excitement in your romantic life.
-      <br>If you have **Neptune in the 5th House**, you may be a visionary artist but might also experience "delusions" in romance or struggle with boundaries with children. You seek a soul-merging love.</p>
+      <h2 id="the-fifth-house">Nhà 5: Cung Nhà Của Niềm Vui</h2>
+      <p>Sự tự thể hiện và niềm vui. Sự sáng tạo, lãng mạn, con cái và sự rủi ro.
+      <br><strong>Từ khóa:</strong> Sáng tạo, vui chơi, lãng mạn, con cái, sự mạo hiểm, kịch nghệ.</p>
+      <p>Nếu bạn có <strong>Sao Kim ở Nhà 5</strong>, bạn là người "yêu tình yêu", mang tính nghệ sĩ và quyến rũ.</p>
 
-      <h2 id="the-sixth-house">6th House: The House of Service</h2>
-      <p>Daily routines and physical health. It rules your job, your colleagues, your pets, and how you manage the tasks of everyday life.
-      <br><strong>Keywords:</strong> Routine, health, work, service, pets, hygiene, analytical skills, maintenance.</p>
-      <p>If you have **Virgo in the 6th House**, you are likely a perfectionist about your work. You notice the details others miss.
-      <br>If you have **Pluto in the 6th House**, you might be obsessed with your health or experience total transformations in your career path. You work with intensity or not at all.
-      <br>If you have **Mercury in the 6th House**, you are highly efficient and good with detail. You solve problems locally and practically. Your mind is always "on the job."</p>
+      <h2 id="the-sixth-house">Nhà 6: Cung Nhà Của Sự Phục Vụ</h2>
+      <p>Các thói quen hàng ngày và sức khỏe thể chất. Không phải sự nghiệp của bạn, mà là công việc hàng ngày của bạn.
+      <br><strong>Từ khóa:</strong> Thói quen, sức khỏe, công việc, phục vụ, thú cưng, hiệu quả.</p>
+      <p>Nếu bạn có <strong>Sao Hỏa ở Nhà 6</strong>, bạn là người làm việc chăm chỉ, có thói quen hàng ngày năng động nhưng dễ bị viêm nhiễm.</p>
 
-      <h2 id="the-seventh-house">7th House: The House of Partnership</h2>
-      <p>The Descendant. It governs committed relationships—marriage, serious business partners, and even "open enemies."
-      <br><strong>Keywords:</strong> Marriage, partnership, contracts, harmony, the "Other," public relations, law.</p>
-      <p>If you have **Jupiter in the 7th House**, you find luck through your partners. Your spouse might be foreign, wealthy, or a teacher. You attract "big" characters into your life.
-      <br>If you have **Saturn in the 7th House**, you seek stability and might marry someone older or more established. You take commitment very seriously and may experience delays in finding "The One," but what you build is meant to last.
-      <br>If you have **Uranus in the 7th House**, you need a lot of freedom in your relationships. Your partners might be unconventional or the relationship may start/end suddenly. You hate being bored in love.</p>
+      <h2 id="the-seventh-house">Nhà 7: Cung Nhà Của Đối Tác</h2>
+      <p>Điểm Lặn (Descendant). Các mối quan hệ cam kết—hôn nhân, đối tác kinh doanh và kẻ thù công khai.
+      <br><strong>Từ khóa:</strong> Hôn nhân, hợp đồng, sự hòa hợp, "Người Khác", luật pháp.</p>
+      <p>Nếu bạn có <strong>Sao Thổ ở Nhà 7</strong>, bạn tìm kiếm sự ổn định, có thể kết hôn muộn và coi trọng các cam kết.</p>
 
-      <h2 id="the-eighth-house">8th House: The House of Transformation</h2>
-      <p>Deep water. It rules birth, death, sex, transformation, secrets, and "other people's money."
-      <br><strong>Keywords:</strong> Intimacy, inheritance, taxes, psychology, the occult, shared resources, crisis management, power.</p>
-      <p>If you have **Pluto in the 8th House**, you are incredibly powerful and resilient. You are drawn to the hidden depths of the human psyche and might work in finance or therapy.
-      <br>If you have the **Sun in the 8th House**, your life is a series of "death and rebirth" cycles. You find your identity through intense transformative experiences. You are a phoenix.
-      <br>If you have **Venus in the 8th House**, you seek deep, soul-level intimacy. You might also find wealth through marriage or inheritance, but the connection must be intense to satisfy you.</p>
+      <h2 id="the-eighth-house">Nhà 8: Cung Nhà Của Sự Biến Đổi</h2>
+      <p>Vùng nước sâu. Tình dục, cái chết, thuế, bí mật và "tiền của người khác".
+      <br><strong>Từ khóa:</strong> Sự thân mật, thừa kế, thuế, tâm lý học, huyền học, quyền năng.</p>
+      <p>Nếu bạn có <strong>Sao Diêm Vương ở Nhà 8</strong>, bạn là người quyền năng, kiên cường, bị thu hút bởi những góc khuất trong tâm hồn.</p>
 
-      <h2 id="the-ninth-house">9th House: The House of Wisdom</h2>
-      <p>Expansion of the mind and horizon. It rules long travel, higher education, philosophy, and religion.
-      <br><strong>Keywords:</strong> Travel, philosophy, higher learning, law, religion, publishing, adventure, the quest.</p>
-      <p>If you have **Sagittarius in the 9th House**, you are a natural explorer. You feel at home when you are in a foreign land.
-      <br>If you have **Mars in the 9th House**, you fight for your beliefs. You might be a "crusader" for a cause or spend your energy on higher academic achievement.
-      <br>If you have **Jupiter in the 9th House**, you are extremely lucky in travel and academics. You have a vast, optimistic worldview and might be a natural teacher or publisher.</p>
+      <h2 id="the-ninth-house">Nhà 9: Cung Nhà Của Trí Tuệ</h2>
+      <p>Mở rộng tâm trí và tầm nhìn. Chuyến đi dài, giáo dục đại học, triết học.
+      <br><strong>Từ khóa:</strong> Du lịch, triết học, giáo dục đại học, xuất bản, phiêu lưu.</p>
+      <p>Nếu bạn có <strong>Sao Mộc ở Nhà 9</strong>, bạn là "người đi khắp thế giới", may mắn trong du lịch và học hỏi.</p>
 
-      <h2 id="the-tenth-house">10th House: The House of Purpose</h2>
-      <p>The Midheaven (MC). Your public reputation and your calling. It is how you achieve success and legacy.
-      <br><strong>Keywords:</strong> Career, reputation, status, legacy, public image, the father/mother, authority.</p>
-      <p>If you have the **Sun in the 10th House**, you are destined for the spotlight. You have a high need for achievement and recognition. Success is a part of your identity.
-      <br>If you have **Saturn in the 10th House**, you earn your success through hard work over a long period. You are a natural leader but may face heavy pressures at the top. You value respect over fame.
-      <br>If you have **Moon in the 10th House**, your career is tied to your emotions or the public's feelings. You might be famous but feel very vulnerable in the public eye. Your "mask" is your job.</p>
+      <h2 id="the-tenth-house">Nhà 10: Cung Nhà Của Mục Đích</h2>
+      <p>Thiên Đỉnh (MC). Danh tiếng công khai và tiếng gọi. Di sản của bạn.
+      <br><strong>Từ khóa:</strong> Sự nghiệp, danh tiếng, địa vị, di sản, uy tín.</p>
+      <p>Nếu bạn có <strong>Mặt Trời ở Nhà 10</strong>, bạn được định sẵn cho sự nổi bật, tham vọng và định hướng thành công.</p>
 
-      <h2 id="the-eleventh-house">11th House: The House of Community</h2>
-      <p>Social networks and groups. It also rules your hopes, wishes, and humanitarian goals.
-      <br><strong>Keywords:</strong> Friends, networks, social media, groups, hopes, future goals, humanitarianism, ideals.</p>
-      <p>If you have **Uranus in the 11th House**, you attract eccentric friends and might be a leader in a revolutionary social movement. You want to change the world.
-      <br>If you have **Venus in the 11th House**, your friends are beautiful or artistic. You find love through your social circle and enjoy group activities.
-      <br>If you have **Mars in the 11th House**, you are very active in groups but might experience conflict or competition within your friend circle. Such energy is best applied to activism.</p>
+      <h2 id="the-eleventh-house">Nhà 11: Cung Nhà Của Cộng Đồng</h2>
+      <p>Mạng lưới xã hội và các nhóm. Hy vọng, mong ước và các mục tiêu nhân đạo.
+      <br><strong>Từ khóa:</strong> Bạn bè, mạng lưới, nhóm, hy vọng, mục tiêu tương lai.</p>
+      <p>Nếu bạn có <strong>Sao Thiên Vương ở Nhà 11</strong>, bạn có những người bạn lập dị, là người dẫn đầu trong các phong trào xã hội.</p>
 
-      <h2 id="the-twelfth-house">12th House: The House of Unconscious</h2>
-      <p>The "closet" of the zodiac. It rules things that are hidden: spirituality, dreams, secrets, and the subconscious. It is where everything dissolves.
-      <br><strong>Keywords:</strong> Solitude, spirituality, hidden enemies, hospitals, karma, dreams, secrets, release.</p>
-      <p>If you have **Neptune in the 12th House**, you are highly psychic and sensitive. You need a lot of time alone to filter out the world's energy and connect with the divine.
-      <br>If you have the **Sun in the 12th House**, you might be a "power behind the throne." You are private and find your strength in solitude or spiritual pursuits. You are an "old soul."
-      <br>If you have **Saturn in the 12th House**, you might struggle with hidden fears or a sense of "cosmic guilt" until you master your internal world. You are working off deep karmic debts.</p>
+      <h2 id="the-twelfth-house">Nhà 12: Cung Nhà Của Vô Thức</h2>
+      <p>"Ngăn tủ" của vòng tròn hoàng đạo. Những điều ẩn giấu, tâm linh, giấc mơ, nghiệp quả.
+      <br><strong>Từ khóa:</strong> Sự cô độc, tâm linh, kẻ thù ẩn giấu, bệnh viện, sự giải thoát.</p>
+      <p>Nếu bạn có <strong>Sao Hải Vương ở Nhà 12</strong>, bạn rất trực giác, cần thời gian một mình, có kết nối tâm linh mạnh mẽ.</p>
 
-      <h2 id="planetary-placements">Major Planets in the Houses: A Detailed Summary</h2>
-      <p>When analyzing your chart, remember that planets are the "drivers" and the house is the "territory." 
-      <br><strong>The Sun:</strong> Where you shine. If it's in the 10th, you shine in your career. If it's in the 4th, you shine in your private life.
-      <br><strong>The Moon:</strong> Where you feel safe. If it's in the 2nd, you feel safe when you have money. If it's in the 6th, you feel safe when your routine is perfect.
-      <br><strong>Mercury:</strong> Where you talk. If it's in the 1st, you talk about yourself. If it's in the 9th, you talk about God or philosophy.
-      <br><strong>Venus:</strong> Where you love. If it's in the 11th, you love your friends. If it's in the 5th, you love the thrill of romance.
-      <br><strong>Mars:</strong> Where you fight. If it's in the 7th, you fight with your partner. If it's in the 3rd, you fight with your neighbors or through your words.
-      <br><strong>Jupiter:</strong> Where you grow. If it's in the 8th, you grow through crisis and deep intimacy. If it's in the 1st, your physical presence and vitality expand.
-      <br><strong>Saturn:</strong> Where you work. If it's in the 2nd, you work hard for every penny. If it's in the 12th, you work hard on your spiritual discipline.
-      <br><strong>Uranus:</strong> Where you disrupt. If it's in the 4th, your home life is unconventional. If it's in the 10th, your career path is a roller coaster.
-      <br><strong>Neptune:</strong> Where you dream. If it's in the 7th, you dream of a perfect partner. If it's in the 2nd, your finances are "foggy" or spiritual.
-      <br><strong>Pluto:</strong> Where you control. If it's in the 1st, you have an intense, magnetic personality. If it's in the 6th, you have an intense need to control your health and work.</p>
+      <h2 id="planetary-placements">Các Hành Tinh Chính Trong Các Cung Nhà: Tóm Tắt</h2>
+      <p>Ghi nhớ: Hành tinh là "người lái xe", Cung nhà là "lãnh thổ".
+      <br><strong>Mặt Trời:</strong> Nơi bạn tỏa sáng.
+      <br><strong>Mặt Trăng:</strong> Nơi bạn tìm thấy sự an toàn.
+      <br><strong>Sao Thổ:</strong> Nơi bạn làm việc chăm chỉ và đạt được sự tinh thông.</p>
 
-      <h2 id="stelliums">What is a Stellium in a House?</h2>
-      <p>A **Stellium** is when three or more planets gather in a single house. This creates a massive "weight" in that area of your life. If you have a 10th House Stellium, your life will revolve almost entirely around your public achievement. If you have a 12th House Stellium, your life might be lived in the shadows, focusing on healing or research. A Stellium is a "soul focus"—it shows where you have concentrated your energy over many lifetimes to master a specific theme.</p>
+      <h2 id="stelliums">Cụm Hành Tinh (Stellium) Là Gì?</h2>
+      <p>Một <strong>cụm hành tinh (stellium)</strong> là khi có từ 3 hành tinh trở lên tập trung trong một cung nhà. Điều này tạo ra một sự tập trung năng lượng khổng lồ. Nếu bạn có cụm hành tinh ở Nhà 10, cuộc sống của bạn hầu như xoay quanh sự nghiệp. Nó cho thấy linh hồn bạn đã tập trung năng lượng vào đâu trong kiếp sống này.</p>
 
-      <h2 id="empty-houses">What if a House is Empty? The Power of Rulers</h2>
-      <p>One of the most common questions in <strong>birth chart readings</strong> is: "My 7th House is empty! Does that mean I'll never get married?" The answer is a resounding NO. There are 12 houses but only 10 planets (including Sun and Moon). Mathematically, everyone has empty houses.</p>
-      <p>An empty house just means that this area of life is not a primary "focal point" for your soul's evolution in this lifetime—it's not where you have the most "work" to do. To understand an empty house, you look at the <strong>House Ruler</strong>. 
-      <br>1. Look at the sign on the cusp (the start) of the empty house.
-      <br>2. Find the planet that rules that sign (e.g., if the cusp is Taurus, the ruler is Venus).
-      <br>3. Locate that ruling planet in your chart. 
-      <br>If your empty 7th House (Partnership) is in Taurus, and your Venus is in the 10th House (Career), it means you will likely meet your partner through your work or professional life. The "story" of your partnership is tied to your career. This adds layers of depth to your <strong>astrology reading</strong>.</p>
+      <h2 id="empty-houses">Nếu Một Cung Nhà Trống Thì Sao? Quyền Năng Của Chủ Quản</h2>
+      <p>Một trong những câu hỏi phổ biến nhất: "Nhà 7 của tôi trống! Có phải tôi sẽ không bao giờ kết hôn không?" KHÔNG. Mọi người đều có những cung nhà trống. Để đọc một cung nhà trống, hãy nhìn vào <strong>Chủ quản nhà</strong> (hành tinh cai quản cung hoàng đạo ở đỉnh nhà).
+      <br>Ví dụ: Nhà 7 trống ở Kim Ngưu? Hãy nhìn vào Sao Kim. Nếu Sao Kim ở Nhà 10, bạn có thể gặp người bạn đời của mình tại nơi làm việc.</p>
 
-      <h2 id="retrograde">Retrograde Planets in the Houses</h2>
-      <p>When a planet is retrograde in a house, its energy is turned inward. 
-      <br>**Mercury Retrograde in the 3rd:** You think deeply and reflectively, but may struggle to communicate your thoughts quickly to others.
-      <br>**Venus Retrograde in the 5th:** You might re-evaluate your past romances or find it difficult to express your creative joy publicly until later in life.
-      <br>**Mars Retrograde in the 1st:** Your drive is Internalized. You might struggle with "righteous anger" or wait a long time before taking action, but when you do, it is well-considered.
-      <br>Retrograde house placements often indicate "unfinished business" from a past life that requires deep internal reflection before it can manifest successfully in the outer world.</p>
+      <h2 id="retrograde">Hành Tinh Nghịch Hành Trong Các Cung Nhà</h2>
+      <p>Khi một hành tinh nghịch hành trong một cung nhà, năng lượng của nó hướng vào bên trong. Bạn có thể gặp khó khăn trong việc thể hiện năng lượng đó ra bên ngoài cho đến giai đoạn sau của cuộc đời, nhưng bạn sẽ phát triển sự tinh thông nội tâm sâu sắc về lĩnh vực đó.</p>
 
-      <h2 id="derived-houses">Advanced Technique: Derived Houses</h2>
-      <p>Once you master the basics, you can use "Derived Houses" to see things like "the wealth of your partner" or "the siblings of your spouse." 
-      <br>For example:
-      <br>**8th House:** The 2nd House (money) of the 7th House (partner). It shows your partner's wealth and how you share it.
-      <br>**11th House:** The 2nd House (income) of the 10th House (career). It shows the money you *make* from your job.
-      <br>**6th House:** The 3rd House (communication) of the 4th House (home). It shows how you talk to your family.
-      <br>This "turning the chart" technique allows an astrologer to answer almost any specific question about people in your life using only your own birth chart.</p>
+      <h2 id="derived-houses">Kỹ Thuật Nâng Cao: Nhà Phái Sinh</h2>
+      <p>Bạn có thể "xoay" bản đồ sao để xem về những người khác.
+      <br><strong>Nhà 8:</strong> Nhà thứ 2 tính từ Nhà 7 (Tiền bạc của đối tác).
+      <br><strong>Nhà 11:</strong> Nhà thứ 2 tính từ Nhà 10 (Tiền bạc từ sự nghiệp).</p>
 
-      <h2 id="progressions">Progressed Houses: How Your Life Cycles Evolve</h2>
-      <p>Your birth chart is your "natal seed," but you are a growing tree. Through **Secondary Progressions**, your house cusps "move" over time (roughly 1 degree per year). This means that eventually, your Progressed Sun will move from one house to the next.
-      <br>When your Sun progresses into the 10th House, you enter a 30-year cycle of career focus, regardless of where your natal Sun is. When it moves into the 4th, you suddenly want to buy a house and settle down. Understanding your Progressed Houses is the secret to timing the major chapters of your life.</p>
+      <h2 id="progressions">Nhà Thứ Cấp (Progressed Houses): Sự Tiến Hóa Của Các Chu Kỳ Đời Người</h2>
+      <p>Thông qua <strong>Hành tinh thứ cấp (Secondary Progressions)</strong>, các đỉnh nhà của bạn di chuyển. Mặt Trời thứ cấp của bạn sẽ di chuyển qua các cung nhà, đánh dấu các chương đời kéo dài 30 năm (ví dụ: một "Giai đoạn Nhà 4" về việc xây dựng gia đình).</p>
 
-      <h2 id="conclusion">Integrating Your Map</h2>
-      <p>Understanding the 12 Houses is the key to moving from "pop astrology" to a deep, resonant understanding of your destiny. By looking at which houses have the most planets (a "Stellium"), you can identify which areas of life will be the most active for you. Is your chart concentrated in the bottom half? You are likely a more private, family-oriented person. Is it concentrated at the top? You are likely driven by public achievement and career.</p>
-      
-      <p>At Astralo, our <strong>personalized astrology reports</strong> take the guesswork out of house interpretation. We synthesize the sign, the planets, and the house rulers into a cohesive narrative that helps you navigate your life with clarity and purpose. Your map is already written in the stars—let us help you read it. Whether you are looking for career guidance or love advice, the houses hold the answer. Start your journey today and discover the stage you were born to perform on.</p>
+      <h2 id="conclusion">Tích Hợp Bản Đồ Sao Của Bạn</h2>
+      <p>Hiểu về 12 cung nhà sẽ biến chiêm tinh học từ một trò chơi giải trí thành một bản đồ cuộc đời. Bằng cách nhìn thấy các hành tinh của bạn đang "trú ngụ" ở đâu, bạn chấp nhận con đường độc nhất của mình. Tại Astralo, các <strong>Bản Báo Cáo Cá Nhân</strong> của chúng tôi thực hiện sự tổng hợp này cho bạn, giải thích không chỉ bạn là <em>ai</em>, mà còn là bạn đang <em>đi đâu</em>.</p>
     `
 };
+

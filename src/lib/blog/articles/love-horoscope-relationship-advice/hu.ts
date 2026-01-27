@@ -4,53 +4,53 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: "💕 Szerelem Horoscope 2026: The Master Guide to Zodiákus Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">Szerelem is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Szerelmi horoszkóp 2026: A zodiákus romantika mesterkalauza",
+  excerpt: "Alakítsa át szerelmi életét az asztrológia segítségével. Mélymerülés a Vénusz-jegyekbe, a házasság 7. házába, a Mars szenvedélystílusaiba és abba, hogyan navigáljunk a kapcsolatokban a Merkúr-retrográd idején.",
+  category: "Szerelem és kapcsolatok",
+  metaDescription: "Alakítsa át szerelmi életét az asztrológia segítségével. Mélymerülés a Vénusz-jegyekbe, a házasság 7. házába, a Mars szenvedélystílusaiba és a retrográdok kezelésébe.",
+  keywords: "szerelmi horoszkóp, párkapcsolati asztrológia, Vénusz-jegy jelentése, Mars-jegy és randizás, 7. ház házasság, szinasztria útmutató, zodiákus randi tanácsok, szerelmi kompatibilitás",
+  quickSummary: ["Szeretetnyelvét a Vénusz-jegye határozza meg, nem csak a Nap-jegye", "A képletedben lévő 7. ház írja le az ideális hosszú távú partneredet", "A Mars határozza meg, hogyan törekszel a romantikus érdekekre és a szexuális kémiára", "A párkapcsolati időzítés minden — soha ne házasodj Vénusz-retrográd idején"],
+  keyTakeaways: ["Ha tudni akarod, hogyan flörtöl valaki, nézd meg a Vénusz-jegyét", "Ha tudni akarod, hogyan veszekszik vagy szexel valaki, nézd meg a Mars-jegyét", "A \"Deszcendens\" (a Felkelő jegyeddel ellentétes jegy) általában az a jegy, amelyhez a legjobban vonzódsz", "A szinasztria két képlet összehasonlításának művészete, hogy lássuk, tartós-e a kapcsolat"],
+  tableOfContents: [{ "id": "love-guide", "title": "A szerelem egy készség" }, { "id": "venus-signs", "title": "Vénusz: Amit szeretsz" }, { "id": "mars-signs", "title": "Mars: Hogyan vágysz" }, { "id": "7th-house", "title": "A házasság 7. háza" }, { "id": "retrograde-love", "title": "Túlélni a retrográd romantikát" }, { "id": "partner-analysis", "title": "Kompatibilitási elemzés" }],
+  content: `
+      <h2 id="love-guide">A szerelem egy készség (és az asztrológia a kézikönyv)</h2>
+      <p>Gyakran kezeljük a szerelmet misztikus erőként, ami csak "történik" velünk. De az asztrológiában a szerelem egy fogaskerekekből és karokból álló mechanizmus. A <strong>szerelmi horoszkópod</strong> nem csak a véletlen találkozásokról szól; ez a párkapcsolati pszichológiai szükséleteid tervrajza.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Miért vonzod folyton ugyanazt a "rossz" típust? Miért szakad meg a kommunikáció mindig három hónap után? A válaszok a képletedben vannak. Saját kozmikus szerelmi tervezésed megértésével abbahagyhatod a minták ismétlését, és elkezdheted építeni azt a kapcsolatot, amire valójában vágysz.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Vénusz: A vonzalom művészete</h2>
+      <p>A <strong>Vénusz</strong> a vonzalom, az értékek és a harmónia bolygója. Az a jegy, amelyben a Vénusz állt születésedkor, leírja, mit találsz szépnek, és hogyan mutatod ki a vonzalmadat.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+        <li><strong>Vénusz Tüzes jegyekben (Kos, Oroszlán, Nyilas):</strong> Szereti a vadászatot. Drámára, nagy gesztusokra és spontaneitásra van szüksége. Könnyen elunja magát. <em>Tanács:</em> Tartsd izgalmasan.</li>
+        <li><strong>Vénusz Földi jegyekben (Bika, Szűz, Bak):</strong> Szereti a stabilitást. Elkötelezettségre, megbízhatóságra és fizikai érintésre van szüksége. Utálja a játszmákat. <em>Tanács:</em> Légy következetes.</li>
+        <li><strong>Vénusz Levegős jegyekben (Ikrek, Mérleg, Vízöntő):</strong> Szereti az elmét. Beszélgetésre, szellemességre és először barátságra van szüksége. Kerüli a súlyos érzelmeket. <em>Tanács:</em> Légy érdekes.</li>
+        <li><strong>Vénusz Vizes jegyekben (Rák, Skorpió, Halak):</strong> Szereti a lelket. Mély érzelmi összeolvadásra, sebezhetőségre és biztonságra van szüksége. <em>Tanács:</em> Légy őszinte.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: A vágy motorja</h2>
+      <p>Míg a Vénusz az, amit szeretsz, a <strong>Mars</strong> az, ahogyan megszerzed. A Mars uralja a libidót, a törekvést és a konfliktusokat.</p>
+      <p>Ha a <strong>Marsod a Skorpióban</strong> van, intenzív vagy, birtokló és mindent vagy semmit típusú. Lehet, hogy elijesztesz egy csapongó <strong>Ikrek Marsot</strong>, aki csak flörtölni és szórakozni akar. Partnered Mars-jegyének ismerete a csaló kód a szexuális elégedettséghez és a viták szakítás nélküli rendezéséhez.</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">A 7. ház: A "másik feled"</h2>
+      <p>Nézd meg a Felkelő jegyedet (Aszcendens). Most nézd meg a vele pontosan szemben lévő jegyet. Ez a <strong>Deszcendensed</strong>, a partnerség 7. házának ura.</p>
+      <p>Gyakran mágnesesen vonzódunk azokhoz az emberekhez, akik a 7. házunk tulajdonságait hordozzák, mert náluk megvan az, ami belőlünk hiányzik.
+      <br><em>Példa:</em> Egy fegyelmezett <strong>Szűz Aszcendens</strong> gyakran választ álmodozó, kaotikus <strong>Halak (7. ház)</strong> partnert. A Szűz rendszerezi a Halak életét; a Halak megtanítja a Szüzet lazítani. Ez az egyensúly tengelye.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Túlélni a retrográd romantikát</h2>
+      <p>Hallottál már a Merkúr-retrográdról (félreértések), de a <strong>Vénusz-retrográd</strong> az igazi párkapcsolati tesztelő. 18 havonta fordul elő, és ilyenkor:
+      <br>1. Az exek visszatérnek ("Zombizás").
+      <br>2. A gyenge kapcsolatok felbomlanak.
+      <br>3. A titkos viszonyok lelepleződnek.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Aranyszabály:</strong> Soha ne házasodj meg, ne kérd meg a kezét, és ne tégy hatalmas elköteleződést Vénusz-retrográd idején. Várd meg, amíg az árnyékidőszak elmúlik (általában 40 nap), hogy lásd, még mindig ugyanúgy érzel-e.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Párkapcsolati kompatibilitási elemzés</h2>
+      <p>Te is összetett vagy, és a partnered is. Egy általános "Oroszlán + Vízöntő" horoszkóp nem tudja megragadni az egyedi kapcsolatotok árnyalatait. <strong>Prémium Párkapcsolati Jelentésünk</strong> elemzi:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+        <li><strong>Szinasztria:</strong> Hogyan érintik a te bolygóid az övéit (Kémia).</li>
+        <li><strong>Kompozit képlet:</strong> Magának a kapcsolatnak az energiája (Sors).</li>
+        <li><strong>Davison-képlet:</strong> Találkozásotok célja (Karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Ne bízd a szívedet a véletlenre. Dekódold szerelmi életedet az Astralo segítségével.</p>
     `
 };

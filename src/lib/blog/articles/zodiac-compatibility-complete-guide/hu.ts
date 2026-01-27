@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: "❤️ Zodiákus Jegy Compatibility: The Definitive Guide to Cosmic Szerelem",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Jegys Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Csillagjegy kompatibilitás: A kozmikus szerelem végleges útmutatója",
+  excerpt: "A végső 2026-os útmutató a zodiákus kompatibilitáshoz. Lépj túl a Nap-jegyeken, és fedezd fel, hogyan befolyásolják az elemek, a Vénusz és a Mars a romantikus kémiádat és a hosszú távú potenciált.",
+  category: "Szerelem és Kapcsolatok",
+  metaDescription: "A végső 2026-os útmutató a zodiákus kompatibilitáshoz. Lépj túl a Nap-jegyeken, és fedezd fel, hogyan befolyásolják az Elmek, a Vénusz és a Mars kapcsolatodat.",
+  keywords: "csillagjegy kompatibilitás, szerelmi horoszkóp, szinasztria, csillagjegy párhoroszkóp, vénusz jegy szerelem, mars jegy szenvedély, párkapcsolati asztrológia, legjobb párok",
+  quickSummary: [
+    "A valódi kompatibilitás a teljes születési képletek összehasonlítását jelenti (Szinasztria), nem csak a Nap-jegyekét",
+    "Az elemi egyensúly (Tűz, Föld, Levegő, Víz) a párkapcsolati harmónia alapja",
+    "A \"nem kompatibilis\" jegyek gyakran a legnagyobb lehetőséget kínálják a lélek fejlődésére",
+    "A Vénusz határozza meg a szeretet stílusát, míg a Mars a szenvedélyt és a konfliktuskezelést"
+  ],
+  keyTakeaways: [
+    "Keresd a trikonokat (azonos elem) a könnyedségért, és az oppozíciókat az intenzív vonzalomért",
+    "A Hold-jegy kompatibilitása kulcsfontosságú az együttéléshez és az érzelmi biztonsághoz",
+    "A Merkúr kompatibilitása határozza meg, mennyire jól oldjátok meg együtt a problémákat",
+    "Nincs \"tökéletes\" pár; minden párosításnak megvannak az erősségei és kihívásai"
+  ],
+  tableOfContents: [
+    { id: 'beyond-sun-signs', title: 'Miért nem minden a Nap-jegy?' },
+    { id: 'elemental-love', title: 'A 4 elem a szerelemben' },
+    { id: 'love-planets', title: 'Vénusz, Mars és a Hold' },
+    { id: 'challenging-matches', title: 'Az igazság a "rossz" párosításokról' },
+    { id: 'best-matches-deep-dive', title: 'Mélymerülés: Legjobb párosítások' },
+    { id: 'synastry', title: 'Haladó tipp: Szinasztria' }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Miért nem minden a Nap-jegy?</h2>
+      <p>Mindannyian voltunk már így: megnéztük egy magazinban vagy applikációban, hogy a kiszemeltünk jegye összeillik-e a miénkkel. "Jaj ne, én Oroszlán vagyok, ő meg Skorpió – nekünk végünk!" De álljunk meg. A <strong>zodiákus kompatibilitás</strong> végtelenül összetettebb – és reménytelibb –, mint az egyszerű táblázatos párosítás.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
-
-      <h2 id="elemental-love">The 4 Elements in Szerelem</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
-      
-      <h3>🔥 Tűz Jegys (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
-
-      <h3>🌍 Föld Jegys (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
-
-      <h3>💨 Levegő Jegys (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
-
-      <h3>💧 Víz Jegys (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
-
-      <h2 id="love-planets">The Real Szerelem Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
-
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
-
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
-
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
-
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
-      
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
-
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiákus PLevegőings</h2>
-      
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
-
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
-      
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
-
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
-      
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
-      
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
-      
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
-    `
+      <p>Míg a Nap-jegyed az alapvető egódat és életcélodat képviseli, a kapcsolatok érzelmekre, kommunikációra és értékekre épülnek. Ezért találhatod magad boldog házasságban egy olyan jeggyel, amely állítólag "nem kompatibilis", vagy küzdhetsz az úgynevezett "tökéletes pároddal". Ahhoz, hogy valóban megértsük a <strong>szerelmi párosításokat</strong>, az égbolt teljes képét kell néznünk.</p>
+ 
+       <h2 id="elemental-love">A 4 elem a szerelemben</h2>
+       <p>A leggyorsabb módja a kezdeti kémia felmérésének az Elemeken keresztül történik. Az azonos elemű jegyek általában "egy nyelvet beszélnek".</p>
+       
+       <h3>🔥 Tűz jegyek (Kos, Oroszlán, Nyilas)</h3>
+       <p><strong>Szeretetnyelv:</strong> Szenvedély, Kaland, Spontaneitás.</p>
+       <p>A Tűz jegyeknek olyan partner kell, aki képes táplálni a lángjaikat anélkül, hogy eloltaná őket. Vágyják az izgalmat és utálják az unalmat.
+       <br><em>Legjobban illik hozzá:</em> Más Tűz jegyek (azonnali forróság) vagy Levegő jegyek (a Levegő táplálja a Tüzet).</p>
+ 
+       <h3>🌍 Föld jegyek (Bika, Szűz, Bak)</h3>
+       <p><strong>Szeretetnyelv:</strong> Szolgálat, Stabilitás, Érintés.</p>
+       <p>A Föld jegyek igeként kezelik a szeretetet. Érzéseiket gyakorlati szolgálattal és a közös élet építésével fejezik ki. Szükségük van megbízhatóságra.
+       <br><em>Legjobban illik hozzá:</em> Más Föld jegyek (szilárd alap) vagy Víz jegyek (a Víz táplálja a Földet).</p>
+ 
+       <h3>💨 Levegő jegyek (Ikrek, Mérleg, Vízöntő)</h3>
+       <p><strong>Szeretetnyelv:</strong> Beszélgetés, Szellemesség, Szabadság.</p>
+       <p>A Levegő jegyek számára az elme a legerogénebb zóna. Mentális stimulációra és olyan partnerre van szükségük, aki egyben a legjobb barátjuk is.
+       <br><em>Legjobban illik hozzá:</em> Más Levegő jegyek (végtelen beszélgetés) vagy Tűz jegyek (inspiráció).</p>
+ 
+       <h3>💧 Víz jegyek (Rák, Skorpió, Halak)</h3>
+       <p><strong>Szeretetnyelv:</strong> Sebezhetőség, Intuíció, Összeolvadás.</p>
+       <p>A Víz jegyek mély érzelmi kapcsolatot keresnek. Azt akarják, hogy szavak nélkül is megértsék őket, és biztonságos kikötőre vágynak.
+       <br><em>Legjobban illik hozzá:</em> Más Víz jegyek (lelki kötelék) vagy Föld jegyek (a tartály a vizük számára).</p>
+ 
+       <h2 id="love-planets">A valódi szerelmi bolygók: Vénusz, Mars és a Hold</h2>
+       <p>Ha tudni akarod, hogy valóban ki fogtok-e jönni a mindennapokban, a Nap-jegy kompatibilitás ellenőrzése nem elég. Közelebbről meg kell vizsgálnod három konkrét bolygót a párod képletében:</p>
+ 
+       <h3>1. A Hold 🌙 (Érzelmi biztonság)</h3>
+       <p>Egy hosszú távú házasságban vagy együttélésben a <strong>Hold-jegy kompatibilitás a király</strong>. A Hold-jegyed diktálja, mire van szükséged ahhoz, hogy biztonságban érezd magad, hogyan reagálsz, ha fáradt vagy éhes vagy, és hogyan gondoskodsz másokról. 
+       <br><em>Példa:</em> Egy Kos Nap keménynek tűnhet, de ha Rák Holdja van, valójában hatalmas vajszívű, akinek szüksége van ölelésre és megnyugtatásra otthon.</p>
+ 
+       <h3>2. Vénusz ♀ (Romantika és Értékek)</h3>
+       <p>A Vénusz határozza meg, mit találsz szépnek és mit értékelsz. Ez mutatja meg a "flörtstílusodat".
+       <br><em>Tipp:</em> Ha a Vénusz-jegyeitek ugyanabban az elemben vannak, az ízlésetek és költési szokásaitok valószínűleg könnyen összehangolódnak.</p>
+ 
+       <h3>3. Mars ♂ (Szenvedély és Vita)</h3>
+       <p>A Mars a libidó és a konfliktus bolygója. Azt mutatja, hogyan veszekszel és milyen a szexuális életed.
+       <br><em>Tipp:</em> A kompatibilis Mars-jegyek biztosítják, hogy a viták gyorsan megoldódjanak, és a fizikai kémia életben maradjon.</p>
+ 
+       <h2 id="challenging-matches">Az igazság a "rossz" párosításokról</h2>
+       <p>Mi van, ha olyan jegybe szeretsz bele, amely "nem kompatibilis"? Például egy Oroszlán (Tűz) és egy Skorpió (Víz)?</p>
+       
+       <p>Ezek a kapcsolatok gyakran a leginkább <strong>átalakító erejűek</strong>. Az asztrológia ezeket "Kvadrát" vagy "Kvinkunx" fényszögeknek nevezi. Ezek súrlódást teremtenek. De a súrlódás hőt termel! A "kihívást jelentő" párosítások növekedésre kényszerítenek, új nyelvet tanítanak, és kilépésre a komfortzónádból. Ezek gyakran nagy szenvedéllyel, nagy drámával járó lelki társ kapcsolatok, amelyek a lelked fejlesztésére szolgálnak, még ha több munkát is igényelnek.</p>
+ 
+       <h2 id="best-matches-deep-dive">Mélymerülés: Híres zodiákus párosítások</h2>
+       
+       <h3>Az "Erőpáros": Kos és Mérleg</h3>
+       <p>Az ellentétek vonzzák egymást! A Kos az "Én először", a Mérleg a "Mi először". A Kos önérvényesítésre tanítja a Mérleget; a Mérleg diplomáciára tanítja a Kost. Ez egy mágneses vonzás, amelyet nehéz megtörni.</p>
+ 
+       <h3>A "Birodalomépítők": Bika és Bak</h3>
+       <p>Két földjegy, akik értékelik a minőséget, a pénzt és a biztonságot. Hatalmas sikereket építenek együtt, bár emlékezniük kell arra, hogy szórakozzanak is, ne csak dolgozzanak.</p>
+       
+       <h3>A "Pán Péter" duó: Ikrek és Nyilas</h3>
+       <p>Levegő és Tűz. Mindkettő szereti a szabadságot, az utazást és a filozófiát. Lehet, hogy soha nem állapodnak meg a hagyományos értelemben, de örökre bűntársak maradnak.</p>
+ 
+       <h3>A "Pszichikus Kapocs": Rák és Skorpió</h3>
+       <p>Amikor ez a két vízjegy találkozik, a világ eltűnik. Telepatikus kapcsolatuk és birtoklási vágyuk van, ami vadul hűségessé teszi őket egymáshoz.</p>
+       
+       <h2 id="synastry">Haladó kompatibilitás: Szinasztria</h2>
+       <p>Hogy valódi választ kapj a kapcsolatodra, egy <strong>Szinasztria elemzésre</strong> van szükséged. Ez azt jelenti, hogy a te képletedet ráhelyezzük a párodéra.</p>
+       
+       <p>Olyan kapcsolódásokat keresünk, mint:
+       <br><strong>Nap-Hold együttállások:</strong> A klasszikus "férj/feleség" fényszög.
+       <br><strong>Vénusz-Mars cserék:</strong> Hihetetlen szexuális vonzalom.
+       <br><strong>Szaturnusz kapcsolatok:</strong> A ragasztó, ami egy életre összetartja az embereket (még a nehéz időkben is).</p>
+       
+       <p>Az Astralónál fejlett algoritmusaink és szakértő asztrológusaink nem csak egy százalékot adnak. Elkészítjük kapcsolatotok lelkének térképét. Hagyd abba a találgatást, és kezdd el megérteni egyesülésetek kozmikus célját.</p>
+     `
 };

@@ -1,204 +1,242 @@
 /**
- * saturn-return-guide - HE
+ * מדריך הישרדות לשובו של סטורן (Saturn Return) - עברית
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 מדריך הישרדות ל"שובו של סטורן": ניווט בטקס המעבר הקוסמי שלך',
+  excerpt: 'עומדים לחגוג 29? ברוכים הבאים לשובו של סטורן. גלו מדוע האירוע האסטרולוגי הזה הוא אבן הדרך החשובה ביותר בחייכם הבוגרים ואיך לשרוד אותו כשהנשמה שלכם שלמה.',
+  category: 'טרנזיטים',
+  metaDescription: 'המדריך האולטימטיבי להישרדות במהלך שובו של סטורן (Saturn Return). למדו מה קורה כשסטורן חוזר למיקומו המקורי, השפעתו על הקריירה והזוגיות, ופירוש לפי הבתים.',
+  keywords: 'שובו של סטורן, מה זה סטורן ריטרן, סטורן בבתים, משבר גיל 30, בגרות אסטרולוגית, סטורן בנסיגה, איך לשרוד את סטורן ריטרן, שבתאי במזלות',
+  quickSummary: [
+    'שובו של סטורן מתרחש כאשר כוכב הלכת סטורן (שבתאי) חוזר לאותו מיקום שבו היה בלידתכם (בסביבות גיל 28-30).',
+    'זוהי "ביקורת קוסמית" שבה כל מה שלא נבנה על יסודות מוצקים נשטף.',
+    'למרות שזה לעתים קרובות מלחיץ, זהו הזרז לבשלות אמיתית ולמציאת ייעוד החיים שלכם.',
+    'שובו של סטורן השני מתרחש בגיל 58-60 לערך, ומתמקד במורשת ובחכמה.'
+  ],
+  keyTakeaways: [
+    'אל תתנגדו לשינוי; סטורן מתגמל משמעת ואחריות.',
+    'הבית שבו נמצא סטורן שלכם יקבע היכן תתמודדו עם "מבחן הגמר" הגדול ביותר.',
+    'פרידות במערכות יחסים ושינויי קריירה בזמן הזה הם לעתים קרובות הכרחיים לצמיחה שלכם.',
+    'ברגע שהטרנזיט מסתיים, תרגישו תחושת סמכות ובהירות חדשה לגבי עצמכם.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'מה זה שובו של סטורן?' },
+    { id: 'the-myth-of-saturn', title: 'המיתוס והמורה הקשוח: אדון הזמן' },
+    { id: 'timeline', title: 'לוח זמנים: שלבי השיבה' },
+    { id: 'themes', title: 'נושאים אוניברסליים של השיבה' },
+    { id: 'saturn-in-signs', title: 'שובו של סטורן דרך המזלות' },
+    { id: 'saturn-in-houses', title: 'שובו של סטורן דרך הבתים (ניתוח מעמיק)' },
+    { id: 'house-1', title: 'בית 1: המצאה עצמית מחדש' },
+    { id: 'house-2', title: 'בית 2: יסודות כלכליים' },
+    { id: 'house-3', title: 'בית 3: שליטה בתודעה' },
+    { id: 'house-4', title: 'בית 4: ריפוי שורשים ואבות קדמונים' },
+    { id: 'house-5', title: 'בית 5: משמעת של שמחה' },
+    { id: 'house-6', title: 'בית 6: שגרה מקודשת' },
+    { id: 'house-7', title: 'בית 7: מבחן השותפות' },
+    { id: 'house-8', title: 'בית 8: מוות, לידה מחדש ועוצמה משותפת' },
+    { id: 'house-9', title: 'בית 9: החיפוש אחר האמת' },
+    { id: 'house-10', title: 'בית 10: שיא הקריירה' },
+    { id: 'house-11', title: 'בית 11: מטרה קולקטיבית' },
+    { id: 'house-12', title: 'בית 12: ההתמוססות האחרונה' },
+    { id: 'retrograde', title: 'פקטור הנסיגה של סטורן' },
+    { id: 'psychology', title: 'הפסיכולוגיה של שובו של סטורן' },
+    { id: 'how-to-survive', title: 'טיפים להישרדות: איך להתמודד עם הלחץ' },
+    { id: 'famous-examples', title: 'סיפורים מפורסמים על שובו של סטורן' },
+    { id: 'post-return', title: 'החיים אחרי השריפה: שנות ה-30' },
+    { id: 'second-return', title: 'הכנה לשיבה השנייה (גיל 58-60)' },
+    { id: 'faq', title: 'שאלות נפוצות' },
+    { id: 'conclusion', title: 'לאמץ את הבגרות שלך' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">מה זה שובו של סטורן?</h2>
+      <p>אם אי פעם שמתם לב שהשנים שבין 27 ל-30 נראות כאוטיות ומכוננות במיוחד עבור רוב האנשים, הייתם עדים לכוחו של <strong>שובו של סטורן</strong> (Saturn Return). באסטרולוגיה, סטורן הוא כוכב הלכת של המבנה, המשמעת, האחריות והזמן. כוכב הלכת הענק הזה זקוק לכ-29.5 שנים כדי להשלים הקפה שלמה סביב השמש.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>"שובו של סטורן" שלכם מתרחש כאשר סטורן חוזר בדיוק לאותה מעלה ומזל שבהם שהה ברגע שנולדתם. זהו המקבילה הקוסמית ל"מבחן הגמר" של הנעורים שלכם. זה הרגע שבו היקום שואל אתכם: <em>"האם אתם חיים חיים שהם באמת שלכם, או שאתם רק משחקים תפקיד המבוסס על מה שהוריכם והחברה אמרו לכם?"</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>תקופה זו מאופיינת לעתים קרובות בלחץ עז, שינויים גדולים בחיים והכרה פתאומית שבגרות היא כבר לא מושג רחוק, אלא מציאות נוכחת וכבדה. בעוד ש"אסטרולוגיית פופ" מציירת לעתים קרובות את שובו של סטורן כזמן מפחיד של אובדן ומשבר, זוהי למעשה הזדמנות עמוקה להשיל את הגרסאות ה"מזויפות" שלכם ולבנות יסודות שיתמכו בכם בשלושת העשורים הבאים. זהו הגשר בין הפוטנציאל של שנות ה-20 שלכם לבין העוצמה של שנות ה-30 שלכם.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">המיתוס והמורה הקשוח: אדון הזמן</h2>
+      <p>כדי להבין מדוע הטרנזיט הזה מרגיש כל כך כבד, עלינו להסתכל על הארכיטיפ של סטורן. במיתולוגיה הרומית (והיוונית כקרונוס), סטורן היה אל הזמן והקציר. הוא מתואר לעתים קרובות עם מגל. לא מדובר רק במוות; מדובר בגיזום של מה שכבר לא משרת מטרה. בדיוק כפי שגנן חייב לגזום שיח ורדים כדי שיפרח יפה יותר בעונה הבאה, סטורן גוזם את חלקי חיינו שגדלו יתר על המידה, לא בריאים או סתם העמדת פנים.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>סטורן הוא ה"מורה הקשוח" או "אדון הקארמה". הוא לא רוצה שתסבלו, אבל הוא רוצה שתגדלו. אנשים רבים עוברים את שנות ה-20 שלהם על שילוב של מזל, פוטנציאל וציפיות של הוריהם. סטורן אומר שהמסיבה נגמרה. הגיע הזמן לבנות משהו שיחזיק מעמד ב-30 השנים הבאות. הוא מתגמל עבודה קשה, יושרה וסבלנות. והוא מעניש על קיצורי דרך, חוסר יושר ודחיינות. אם הייתם "מזייפים" את זה, שובו של סטורן הוא הרגע שבו האמת יוצאת לאור.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">לוח זמנים: שלבי השיבה</h2>
+      <p>שובו של סטורן הראשון מתחיל בדרך כלל בסביבות גיל 27.5 ומסתיים עד גיל 30. עם זאת, ניתן לחלק את החוויה לשלושה שלבים נפרדים:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>שלב 1: הסערה מתקרבת (גיל 27-28)</h3>
+      <p>אתם מתחילים להרגיש תחושה עמומה של חוסר נוחות. דברים שפעם גרמו לכם אושר – דייטינג שטחי, בילויים ליליים, עבודה "לבינתיים" – מתחילים להרגיש ריקים. אתם עשויים להרגיש צורך פתאומי "לסדר את החיים", גם אם אתם לא בטוחים איך זה נראה עדיין. אתם עשויים לשים לב לחברים שמתחתנים או מקבלים קידום, ובמקום לשמוח בשבילם, אתם מרגישים פאניקה לגבי ההתקדמות האישית שלכם.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>שלב 2: מבחן הגמר (גיל 28-29)</h3>
+      <p>זהו ה"אימפקט" הממשי. אירועים משתפים פעולה כדי לאלץ אתכם לפעול. זה הזמן שבו מתרחשות פרידות, שינויי קריירה נעשים או שבעיות בריאותיות צפות. אתם נאלצים לקבל החלטות. אין יותר ישיבה על הגדר. סטורן ימשיך להפעיל לחץ עד שתקחו אחריות על התוצאות שלכם. זהו שיא האינטנסיביות הרגשית של הטרנזיט.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>שלב 3: אינטגרציה (גיל 29-30)</h3>
+      <p>כאשר סטורן חוצה את מעלת הלידה שלו, הלחץ מתחיל להתפוגג. אתם מתחילים לראות את החכמה בבחירות שעשיתם (אפילו הקשות שבהן). אתם מרגישים מבוגרים יותר, אך יציבים יותר. "סיימתם" את הבגרות האסטרולוגית האמיתית. אתם כבר לא צריכים לבדוק עם אף אחד אחר אם "מותר" לכם להיות עצמכם. אתם פשוט שם.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">נושאים אוניברסליים של השיבה</h2>
+      <p>בעוד שחווייתו של כל אדם היא ייחודית, כמה נושאים מופיעים אצל כמעט כולם בתקופה זו:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>מבחן מציאות:</strong> אם חייתם באשליה או נמנעתם מאמת חשובה, סטורן יכריח אתכם להתמודד איתה.</li>
+        <li><strong>סיום מערכות יחסים:</strong> מערכות יחסים ארוכות טווח שלא נועדו ל"טווח הארוך באמת" קורסות לעתים קרובות כעת. אם נשארתם יחד, זה בגלל שהתחייבתם לרמה חדשה של בשלות.</li>
+        <li><strong>שינויי קריירה:</strong> אנשים רבים עוזבים עבודות יציבות ומשעממות כדי לעקוב אחר קריאתם האמיתית, או מבינים ש"עבודת החלומות" היא למעשה סיוט ועוברים לעבר משהו מעשי.</li>
+        <li><strong>הזדקנות פיזית:</strong> אתם עשויים להרגיש פתאום את הגוף שלכם אחרת. זה הזמן שבו אנשים מתחילים לקחת את בריאותם ברצינות – מתוך הכרה שהם אינם בני אלמוות. אתם עשויים להבחין בשערה הלבנה הראשונה שלכם או בשינוי בחילוף החומרים.</li>
+        <li><strong>הצבת גבולות:</strong> למידה לומר "לא" להורים, לחברים רעילים ולציפיות לא מציאותיות היא השיעור העיקרי של סטורן. אתם לומדים ש"לא" הוא משפט שלם.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the גלגל המזלות מזלs</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">שובו של סטורן דרך המזלות</h2>
+      <p>המזל שבו נמצא סטורן שלכם אומר *איך* תחוו את הטרנספורמציה הזו. חפשו את מזל סטורן שלכם במפה של Astralo כדי לראות את גוון הצמיחה הספציפי שלכם:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>סטורן בטלה</h3>
+      <p>השיבה שלכם עוסקת ב**סבלנות ושליטה בדחפים**. סביר להניח שתרצו למהר דרך הטרנספורמציה הזו, אבל סטורן יאט אתכם. אתם לומדים להוביל עם חוכמה, לא רק עם אנרגיה גולמית.
+      <br><strong>המשימה שלכם:</strong> לאלף את הכעס ואת כוח הדחף שלכם.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>סטורן בשור</h3>
+      <p>השיבה שלכם עוסקת ב**ביטחון כלכלי וערכים**. אתם עשויים להתמודד עם מכשולים כלכליים גדולים שמאלצים אתכם להגדיר מה באמת "בעל ערך" עבורכם.
+      <br><strong>המשימה שלכם:</strong> לבנות בסיס כלכלי מוצק והערכה עצמית שאינה קשורה לרכוש.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>סטורן בתאומים</h3>
+      <p>השיבה שלכם עוסקת ב**תקשורת ומיקוד**. אולי יש לכם "יותר מדי רעיונות" וסטורן יכריח אתכם לבחור אחד ולהתמחות בו.
+      <br><strong>המשימה שלכם:</strong> למקד את המחשבה שלכם ולדבר בסמכותיות.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>סטורן בסרטן</h3>
+      <p>השיבה שלכם עוסקת ב**גבולות רגשיים ומשפחה**. ייתכן שתצטרכו לעבד טראומות ילדות או לקחת אחריות משפחתית כבדה.
+      <br><strong>המשימה שלכם:</strong> ללמוד להזין את עצמכם ולבנות בית פנימי שאינו תלוי באחרים.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>סטורן באריה</h3>
+      <p>השיבה שלכם עוסקת ב**יושרה יצירתית והכרה**. אתם עשויים להילחם בצורך במחיאות כפיים ותצטרכו ללמוד ליצור עבור עצמכם קודם כל.
+      <br><strong>המשימה שלכם:</strong> למצוא את הביטחון שנובע מעוצמה פנימית, לא משבחים חיצוניים.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>סטורן בבתולה</h3>
+      <p>השיבה שלכם עוסקת ב**בריאות ושירות**. סביר להניח שאתם כבר קשוחים מאוד עם עצמכם, וסטורן ילמד אתכם ש"פרפקציוניזם" הוא האויב של "תוצאות".
+      <br><strong>המשימה שלכם:</strong> לבנות שגרות בנות קיימא וללמוד להיות אדיבים לגוף הפיזי שלכם.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>סטורן במאזניים</h3>
+      <p>השיבה שלכם עוסקת ב**צדק ושותפות**. אתם עשויים להתמודד עם מבחנים גדולים במערכות יחסים שמאלצים אתכם למצוא את הזהות העצמית שלכם בתוך זוגיות.
+      <br><strong>המשימה שלכם:</strong> למצוא איזון וללמוד שאתם "מספיקים" לבדכם.</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>סטורן בעקרב</h3>
+      <p>השיבה שלכם עוסקת ב**עוצמה ואינטימיות**. זוהי שיבה אינטנסיבית מאוד הכוללת התמודדות עם הצל שלכם ולמידה לסמוך.
+      <br><strong>המשימה שלכם:</strong> להתמיר את הפחדים העמוקים ביותר שלכם לעוצמה אישית.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>סטורן בקשת</h3>
+      <p>השיבה שלכם עוסקת ב**אמונה וחופש**. אתם עשויים להבין שהעולם הרבה יותר גדול (או קטן) ממה שחשבתם ותצטרכו להגדיר מחדש את הפילוסופיה שלכם.
+      <br><strong>המשימה שלכם:</strong> למצוא "אמת" שתוכלו באמת לחיות לפיה בכל יום.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>סטורן בגדי</h3>
+      <p>השיבה שלכם עוסקת ב**שאפתנות וסמכות**. סטורן "בבית" כאן, ולכן הלחץ הוא קיצוני, אבל כך גם התגמולים. אתם הופכים ל"בוס".
+      <br><strong>המשימה שלכם:</strong> לקחת אחריות על המורשת שלכם ולטפס על ההר שלכם ביושרה.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>סטורן בדלי</h3>
+      <p>השיבה שלכם עוסקת ב**קהילה ואינדיבידואליות**. אתם לומדים איך להשתלב בקבוצה מבלי לאבד את הניצוץ הייחודי שלכם.
+      <br><strong>המשימה שלכם:</strong> לתרום לקולקטיב תוך שמירה על הגבולות שלכם.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>סטורן בדגים</h3>
+      <p>השיבה שלכם עוסקת ב**רוחניות וגבולות**. ייתכן שתתקשו להישאר מקורקעים ותצטרכו ללמוד ש"לא" הוא מעשה רוחני.
+      <br><strong>המשימה שלכם:</strong> להפוך את החלומות שלכם למציאות דרך משמעת.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">שובו של סטורן דרך הבתים: ניתוח מעמיק</h2>
+      <p>השאלה "היכן" יתרחש טרנזיט השיבה של סטורן נענית על ידי ה"בית" שבו נמצא סטורן במפת הלידה שלכם. זוהי הבמה עליה תתקיים דרמת החיים.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">בית 1: המצאה עצמית מחדש</h2>
+      <p>כאשר סטורן חוזר לבית הראשון, המשבר הוא אישי ופיזי. אתם עשויים לעבור טרנספורמציה כוללת – לא רק של המלתחה, אלא של האישיות. אתם מרגישים משקל כבד על כתפיכם, תחושה שאתם "חייבים להפוך למישהו". אתם עשויים להיות קשוחים מאוד עם עצמכם בתהליך הזה. אתם עשויים לחוות ירידה במשקל, עלייה, או שינוי בבריאות שדורש משמעת.
+      <br><strong>השיעור:</strong> לבנות תחושת עצמי חזקה שאינה תלויה באישור של אחרים. אתם לומדים להיות הסמכות של עצמכם. אתם המנכ"ל של הגוף שלכם.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">בית 2: יסודות כלכליים</h2>
+      <p>השיבה הזו מתמקדת בכספים שלכם ובהערכה העצמית שלכם. אתם עשויים להיתקל בקשיים כלכליים, מה שיאלץ אתכם ללמוד איך לתקצב, לחסוך ולהעריך את הזמן שלכם. לחלופין, אתם עשויים סוף סוף להתחיל להרוויח כסף "אמיתי", אך להרגיש אחריות כבדה המלווה לכך. אתם מגדירים מחדש מהו "ביטחון". אתם לומדים שהערך שלכם אינו מספר בחשבון בנק.
+      <br><strong>השיעור:</strong> למצוא ביטחון בתוך עצמכם ולבנות מערכת יחסים בת קיימא עם העולם החומרי. אתם לומדים את הערך של הכסף ואת הערך של הנשמה שלכם.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">בית 3: שליטה בתודעה</h2>
+      <p>הלחץ נופל על המחשבה שלכם ועל הסביבה המידית שלכם. אולי תחליטו לחזור ללימודים, לסיים פרויקט כתיבה שנעצר מזמן, או לחוות שינויים גדולים ביחסים עם אחים. אתם עשויים להרגיש שיש "יותר מדי מה ללמוד" ומעט מדי זמן. הנסיעות היומיות שלכם עשויות להפוך למקור של סטרס, מה שיאלץ אתכם לשנות סביבה.
+      <br><strong>השיעור:</strong> להתמקצע במלאכה שלכם ולתקשר ביושרה. אתם לומדים את הערך של מחשבה ממוקדת ודיבור כנה. אתם הופכים לאדם של מילה.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">בית 4: ריפוי שורשים ואבות קדמונים</h2>
+      <p>זוהי אחת השיבות הרגשיות ביותר. היא עוסקת לעתים קרובות בהורים שלכם, במצב המגורים שלכם או בטראומות ילדות. ייתכן שתקנו את הבית הראשון שלכם או שתצטרכו לטפל בהורה מזדקן. אתם בונים את היסודות שלכם, לעתים קרובות על ידי פירוק מה שהוריו בנו עבורכם. אתם "ראש המשפחה" החדש.
+      <br><strong>השיעור:</strong> ליצור בית וחיים פרטיים שבאמת מזינים את הנשמה שלכם, ללא קשר לציפיות של המשפחה שלכם. אתם מרפאים את "עץ המשפחה" בכך שאתם אלו ששוברים את המחזור.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">בית 5: משמעת של שמחה</h2>
+      <p>סטורן בבית 5 יכול להרגיש כאילו "המוזיקה פסקה". תחביבים או בילויים שפעם נהניתם מהם עשויים להרגיש ריקים. זהו הזמן שבו אנשים מחליטים לעתים קרובות להביא ילדים (לקיחת אחריות עליונה על "יצירה") או מבינים שהם רוצים להפוך תחביב יצירתי לעבודה רצינית. זוהי התבגרות של ה"שעשוע" שלכם.
+      <br><strong>השיעור:</strong> למצוא שמחה דרך משמעת ויצירה מסורה. אתם לומדים שמשחק אמיתי דורש מיקוד. זהו ההבדל בין "פלרטוט" לבין "רומנטיקה אמיתית".</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">בית 6: שגרה מקודשת</h2>
+      <p>השיבה הזו עוסקת בבריאות שלכם ובהרגלים היומיומיים שלכם. אתם עשויים להתמודד עם בעיה בריאותית שתאלץ אתכם לשנות את התזונה והפעילות הגופנית. חיי העבודה הופכים לתובעניים מאוד, מה שדורש מכם ללמוד להאציל סמכויות ולהציב גבולות. אתם מבינים שהגוף הוא מקדש שדורש תחזוקה. העבודה עשויה להרגיש כמו נטל כבד עד שתלמדו לנהל את הזמן שלכם טוב יותר.
+      <br><strong>השיעור:</strong> לשלוט בקצב היומי שלכם ולשרת אחרים מבלי להישרף. יעילות היא החברה הכי טובה החדשה שלכם. אתם בונים גוף שיכול להחזיק מעמד לזמן רב.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">בית 7: מבחן השותפות</h2>
+      <p>בית ה"חתונה או פרידה". סטורן בוחן כאן את הקשרים האינטימיים ביותר שלכם. אם קשר הוא רעוע, סביר להניח שהוא יסתיים. אם הוא חזק, אתם עשויים להתחתן או לחתום על חוזה עסקי רציני. אתם לומדים מהי משמעותה של "מחויבות" באמת – זה לא רק רגש, זה חוזה. אתם עשויים להימשך לשותפים מבוגרים ורציניים יותר כעת.
+      <br><strong>השיעור:</strong> לבנות שותפויות המבוססות על מציאות ואחריות משותפת, לא על השלכה או פנטזיה. אתם לומדים איך להיות "שותף", לא רק "מאהב".</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">בית 8: מוות, לידה מחדש ועוצמה משותפת</h2>
+      <p>זוהי שיבה פסיכולוגית עמוקה. היא כוללת כספים משותפים, מסים ואינטימיות. אתם עשויים להתמודד עם הפחדים שלכם ממוות או אובדן. זהו זמן של "מות האגו" שבו אתם מבינים שאתם לא יכולים לשלוט בכל דבר. ייתכן שתצטרכו להתמודד עם חובות או ירושה. אתם ממש משילים את עורכם כדי לחשוף את הנשמה שמתחתיו.
+      <br><strong>השיעור:</strong> לשלוט בעוצמה אישית וללמוד את אמנות האמון והכניעה באינטימיות עמוקה. אתם מגלים את ה"עושר" שלא ניתן לראות.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">בית 9: החיפוש אחר האמת</h2>
+      <p>סטורן כאן מאתגר את האמונות שלכם. אולי תעזבו את דת ילדותכם או לחלופין, תמצאו מבנה עמוק במסלול רוחני. אתם עשויים להיתקבל בקשיים בלימודים גבוהים או לעמוד בפני אתגרים גדולים בזמן נסיעה לחו"ל. אתם מחפשים "אמת" שתוכלו באמת לחיות לפיה בכל יום. אולי תחליטו סוף סוף להוציא את הדוקטורט ההוא או לכתוב את הספר ההוא.
+      <br><strong>השיעור:</strong> לבנות פילוסופיית חיים שתוכל לעמוד בזמנים קשים ולהציע משמעות אמיתית. אתם הופכים לאדם של חוכמה, לא רק של ידע.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of קריירה</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">בית 10: שיא הקריירה</h2>
+      <p>זהו "משבר אמצע החיים בגיל 30" הקלאסי. המוניטין הציבורי שלכם והקריירה שלכם תחת זכוכית מגדלת. אתם עשויים להגיע לשיא בתחומכם ולגלות שאתם שונאים אותו, או שסוף סוף תקבלו את ההכרה שעבדתם בשבילה. אתם מתבקשים להיכנס לסמכות שלכם ולהוביל. העולם צופה בכם.
+      <br><strong>השיעור:</strong> ליישר את חייכם הציבוריים עם האמת הפנימית שלכם ולקחת אחריות על המורשת שלכם. אתם הופכים לדמות הסמכות שפעם פחדתם ממנה.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">בית 11: מטרה קולקטיבית</h2>
+      <p>סטורן כאן יגזום את מעגל החברים שלכם. אתם עשויים להבין ש"חבריכם" היו רק מכרים לתקופה מסוימת בחייכם, ושאין לכם יותר שום דבר במשותף. ייתכן שתמצאו את עצמכם נמשכים למנטורים מבוגרים יותר או לוקחים תפקיד מנהיגותי בארגון קהילתי. אתם מחפשים את השבט האמיתי שלכם. אתם מגדירים "תקוות ומשאלות" בצעדים מציאותיים.
+      <br><strong>השיעור:</strong> למצוא את מקומכם בקולקטיב ולתרום את כישוריכם למטרה שגדולה מכם. אתם בונים רשת שעובדת עבור העתיד.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">בית 12: ההתמוססות האחרונה</h2>
+      <p>זוהי שיבה פנימית ושקטה מאוד. אתם עשויים להרגיש בודדים או מבודדים. סודות מהעבר עשויים לצוף על פני השטח. זה זמן לריפוי עמוק, לטיפול או לנסיגה רוחנית. אתם מנקים את השטח למחזור חדש לגמרי של 30 שנה. זהו סוף עידן. אתם עובדים עם האבות הקדמונים ותת-המודע שלכם.
+      <br><strong>השיעור:</strong> למצוא שקט בבדידות, לסלוח לעבר ולהיכנע לרצון האלוהי או לתת-מודע הקולקטיבי. אתם מתכוננים ללידה מחדש.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">פקטור הנסיגה של סטורן</h2>
+      <p>אם נולדתם בזמן ש**סטורן היה בנסיגה** (כאשר סטורן נראה כאילו הוא נע אחורה בשמיים), ייתכן שתרגישו את השיבה שלכם קצת אחרת. אולי העברתם את שנות ה-20 שלכם בתחושת כובד פנימית או תחושה ש"אתם לא מספיק טובים". בזמן השיבה שלכם, הלחץ עשוי להרגיש למעשה כמו *הקלה*, כי העולם החיצוני סוף סוף תואם את המצב הפנימי הרציני שלכם. מותר לכם סוף סוף לקחת את התפקיד שאליו התכוננתם מאז הלידה. אתם סוף סוף "מספיק טובים".</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">הפסיכולוגיה של שובו של סטורן</h2>
+      <p>מנקודת מבט פסיכולוגית, שובו של סטורן מסמן את המעבר מ"הילד הנצחי" (puer/puella aeternus) ל"מבוגר". אנחנו מפסיקים לחפש אצל ההורים או החברה את ה"תשובה" ומתחילים לספק את התשובה בעצמנו. זהו מותו של האגו הילדותי ולידת הבשלות של הנשמה. לכן זה מלווה לעתים קרובות בדיכאון או חרדה – זוהי צורה של אבל על העצמי חסר הדאגות שאתם משאירים מאחור. אתם מכירים בכך שהזמן שלכם על כדור הארץ מוגבל.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">טיפים להישרדות: איך להתמודד עם הלחץ</h2>
+      <p>הטעות הגדולה ביותר שאנשים עושים במהלך שובו של סטורן היא **התנגדות**. סטורן הוא כמו קיר – אם תרוצו לעברו, תיפגעו. אם תחפשו את הדלת (דרך מאמץ ואחריות), תעברו לעולם חדש.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>קחו אחריות:</strong> אל תאשימו את הבוס שלכם, את בן/בת הזוג או את ההורים. שאלו את עצמכם: "מה החלק שלי בזה? מה אני מוכן לשנות?"</li>
+        <li><strong>התארגנו:</strong> סטורן אוהב גיליונות אקסל. הסתכלו על הכספים שלכם, הבריאות שלכם ועל לוח הזמנים שלכם. בנו מערכות שיוכלו להחזיק אתכם כשאתם מרגישים חלשים.</li>
+        <li><strong>היו סבלניים:</strong> סטורן הוא אדון הזמן. הטרנזיט הזה אורך שנתיים וחצי. לא תפתרו אותו בסוף שבוע אחד. כבדו את התהליך. לאט ובטוח מנצח במירוץ.</li>
+        <li><strong>חפשו מנטור:</strong> סטורן מייצג את ה"זקנים". מצאו מישהו שעבר את זה ובקשו את חוכמתו. הצטרפו לקבוצה של אנשים בשנות ה-30 שלהם שהגיעו לצד השני.</li>
+        <li><strong>דאגו לבריאות שלכם:</strong> הגוף שלכם ייתן לכם רמזים. אם אתם בסטרס, איפה אתם מרגישים את זה? קחו את התחזוקה הפיזית ברצינות. בדיקות תקופתיות הן חובה עכשיו.</li>
+        <li><strong>גזמו את המיותר:</strong> אם הרגל, חבר או עבודה מתישים אתכם מבלי לתת דבר בתמורה, שחררו. סטורן ייקח את זה בכל מקרה; קל יותר אם תמסרו את זה מרצונכם.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">סיפורים מפורסמים על שובו של סטורן</h2>
+      <p>סלבס ודמויות היסטוריות רבות חוו את הרגעים הכי משני חיים שלהם במהלך שובו של סטורן:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>סטיב ג'ובס:</strong> פוטר מאפל בתחילת שובו של סטורן שלו, מה שהוביל אותו להקים את NeXT ואת Pixar ובסופו של דבר לחזור לאפל חזק ובוגר יותר.</li>
+        <li><strong>ליידי גאגא:</strong> שינתה את התדמית והקריירה שלה באופן דרסטי בסוף שנות ה-20 לחייה, כשהיא עוברת ממופעי פופ למשהו "רציני" יותר וג'אז.</li>
+        <li><strong>וינסנט ואן גוך:</strong> התחיל לצייר ברצינות רק בשנות שובו של סטורן שלו, ומצא את הייעוד שלו בחיים דרך תקופה של מאבק עז.</li>
+        <li><strong>ג'.ק. רולינג:</strong> כתבה את הספר הראשון של הארי פוטר בזמן שהתמודדה כאם חד הורית במהלך שובו של סטורן שלה – סיפור הצלחה "סטורני" קלאסי שנבנה על התגברות על מצוקה.</li>
       </ul>
 
-      <h2 id="post-return">Life After the אש: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">החיים אחרי השריפה: שנות ה-30</h2>
+      <p>כאשר סטורן מתרחק, המשקל מורם. אנשים מדווחים לעתים קרובות שהם מרגישים "קלים יותר" אך עם זאת "מוצקים יותר" אחרי גיל 30. כבר לא אכפת לכם מה אנשים חושבים. יש לכם נתיב. שרדתם את האש, וכמו זהב נוקיתם. יש לכם תחושת מטרה שה"אני הצעיר" שלכם לא יכול היה להבין לעולם. שנות ה-30 שלכם הן לעתים קרובות העשור הכי פרודוקטיבי ומתגמל בחייכם כי אתם סוף סוף יודעים מי אתם.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">הכנה לשיבה השנייה (גיל 58-60)</h2>
+      <p>חשוב לדעת שתקבלו "ביקור" נוסף מסטורן בסביבות גיל 58. בעוד שהשיבה הראשונה הייתה להפוך למבוגרים, השנייה היא להפוך ל**חכמי השבט** (Elder). מדובר במורשת, בפרישה ובחכמה שתעבירו הלאה. אם תעשו את העבודה בזמן השיבה הראשונה, השנייה תהיה הרבה יותר קלה – זמן של קציר וכבוד, ולא זמן של משבר.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">שאלות נפוצות</h2>
+      <p><strong>ש: האם לכולם יש שובו של סטורן?</strong>
+      <br>ת: כן, כל בן אנוש חווה שובו של סטורן בגיל 29, 58 ו(אם הוא חי מספיק זמן) גיל 87 לערך. זו חוויה אנושית אוניברסלית.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>ש: האם זה תמיד רע?</strong>
+      <br>ת: בכלל לא! אם אתם עובדים קשה וחיים ביושרה, שובו של סטורן יכול להיות זמן של קידומים גדולים, חתונה והצלחה. זו "עונת הקציר" – אתם מקבלים בדיוק את מה שזרעתם במהלך שנות ה-20 שלכם.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>ש: איך אני יכול למצוא את מזל סטורן שלי?</strong>
+      <br>ת: אתם יכולים להשתמש באפליקציית Astralo כדי ליצור את מפת הלידה החינמית שלכם, שתראה לכם בדיוק באיזה מזל ובית נמצא סטורן שלכם.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>ש: מה קורה אם יש לי את אותו מזל סטורן כמו של בן הזוג שלי?</strong>
+      <br>ת: תעברו את שובו של סטורן ביחד! זה יכול להיות זמן מכריע לקשר. אם תתמכו בצמיחה אחד של השנייה, תצאו כזוג חזק מאוד.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">לאמץ את הבגרות שלך</h2>
+      <p>שובו של סטורן אינו קללה; זו מתנה מהיקום. זהו המנגנון השמימי שמבטיח שלא תבזבזו את חייכם בלחיות עבור חלומות של מישהו אחר. ב-Astralo אנחנו מאמינים שהבנת המיקום של סטורן היא הצעד הראשון לקראת שחרור אמיתי מהעבר שלכם.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p><strong>מדריכי הטרנזיטים</strong> שלנו מציעים תחזיות חודשיות עבור שובו של סטורן הספציפי שלכם, ועוזרים לכם להבין מתי ללחוץ ומתי להמתין. אל תפחדו מהמורה הקשוח – אמצו את הצמיחה. החיים החדשים שלכם – החיים האמיתיים שלכם – מחכים בצד השני של גיל 30. צעדו אל תוך הכוח שלכם בביטחון.</p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>מחפשים עזרה נוספת? צרו קשר עם מומחי האסטרולוגיה שלנו לייעוץ אישי בנושא שובו של סטורן או הורידו את מדריך ההישרדות של סטורן הייעודי שלנו בחנות האפליקציות.</em></p>
     `
 };

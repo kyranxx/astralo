@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "❤️ Zodiac Semn Compatibility: The Definitive Guide to Cosmic Dragoste",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Semns Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Compatibilitatea zodiilor: Ghidul definitiv pentru dragostea cosmică",
+  excerpt: "Ghidul suprem 2026 pentru compatibilitatea zodiacală. Mergi dincolo de semnele Soarelui și descoperă cum Elementele, Venus și Marte îți influențează chimia romantică și potențialul pe termen lung.",
+  category: "Dragoste și Relații",
+  metaDescription: "Ghidul suprem 2026 pentru compatibilitatea zodiacală. Mergi dincolo de semnele Soarelui și descoperă cum Elementele, Venus și Marte îți influențează relația.",
+  keywords: "compatibilitate zodii, horoscop dragoste, sinastrie, compatibilitate semne zodiacale, semn venus dragoste, semn marte pasiune, astrologia relațiilor, cele mai bune potriviri",
+  quickSummary: [
+    "Adevărata compatibilitate implică compararea hărților natale complete (Sinastria), nu doar a semnelor Soarelui",
+    "Echilibrul Elementelor (Foc, Pământ, Aer, Apă) este baza armoniei relaționale",
+    "Semnele „Incompatibile” oferă adesea cele mai mari oportunități pentru creșterea sufletească",
+    "Venus determină stilul de afecțiune, în timp ce Marte conduce pasiunea și stilul de conflict"
+  ],
+  keyTakeaways: [
+    "Caută trigoane (același element) pentru ușurință și opoziții pentru atracție intensă",
+    "Compatibilitatea semnului Lunii este crucială pentru conviețuire și siguranță emoțională",
+    "Compatibilitatea lui Mercur dictează cât de bine rezolvați problemele împreună",
+    "Nu există o potrivire „perfectă”; fiecare pereche are puncte forte și provocări"
+  ],
+  tableOfContents: [
+    { id: 'beyond-sun-signs', title: 'De ce semnele Soarelui nu sunt totul' },
+    { id: 'elemental-love', title: 'Cele 4 Elemente în dragoste' },
+    { id: 'love-planets', title: 'Venus, Marte și Luna' },
+    { id: 'challenging-matches', title: 'Adevărul despre potrivirile „rele”' },
+    { id: 'best-matches-deep-dive', title: 'Aprofundare: Cele mai bune potriviri' },
+    { id: 'synastry', title: 'Sfat avansat: Sinastria' }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">De ce semnele Soarelui nu sunt totul</h2>
+      <p>Am trecut cu toții prin asta: verificăm o revistă sau o aplicație pentru a vedea dacă semnul persoanei de care ne place este compatibil cu al nostru. „O, nu, eu sunt Leu și el e Scorpion - suntem condamnați!” Dar stai așa. <strong>Compatibilitatea zodiacală</strong> este infinit mai complexă — și plină de speranță — decât o simplă potrivire în tabel.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
-
-      <h2 id="elemental-love">The 4 Elements in Dragoste</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
-      
-      <h3>🔥 Foc Semns (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
-
-      <h3>🌍 Pământ Semns (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
-
-      <h3>💨 Aer Semns (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
-
-      <h3>💧 Apă Semns (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
-
-      <h2 id="love-planets">The Real Dragoste Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
-
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
-
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
-
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
-
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
-      
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
-
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiac PAerings</h2>
-      
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
-
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
-      
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
-
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
-      
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
-      
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
-      
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
-    `
+      <p>În timp ce semnul tău Solar reprezintă ego-ul tău central și scopul vieții, relațiile se construiesc pe emoții, comunicare și valori. De aceea s-ar putea să te trezești fericit căsătorit cu un semn care este presupus „incompatibil” sau să te lupți cu așa-numita ta „pereche perfectă”. Pentru a înțelege cu adevărat <strong>potrivirile amoroase</strong>, trebuie să privim imaginea completă a cerului.</p>
+ 
+       <h2 id="elemental-love">Cele 4 Elemente în dragoste</h2>
+       <p>Cea mai rapidă modalitate de a evalua chimia inițială este prin intermediul Elementelor. Semnele aceluiași element „vorbesc în general aceeași limbă”.</p>
+       
+       <h3>🔥 Semne de Foc (Berbec, Leu, Săgetător)</h3>
+       <p><strong>Limbajul dragostei:</strong> Pasiune, Aventură, Spontaneitate.</p>
+       <p>Semnele de Foc au nevoie de un partener care să le ațâțe flăcările fără a le stinge. Tînjesc după entuziasm și urăsc să se plictisească.
+       <br><em>Cel mai bine cu:</em> Alte semne de Foc (căldură instantanee) sau semne de Aer (Aerul hrănește Focul).</p>
+ 
+       <h3>🌍 Semne de Pământ (Taur, Fecioară, Capricorn)</h3>
+       <p><strong>Limbajul dragostei:</strong> Serviciu, Stabilitate, Atingere.</p>
+       <p>Semnele de Pământ tratează dragostea ca pe un verb. Își arată afecțiunea prin acte practice de serviciu și construind o viață împreună. Au nevoie de fiabilitate.
+       <br><em>Cel mai bine cu:</em> Alte semne de Pământ (fundație solidă) sau semne de Apă (Apa hrănește Pământul).</p>
+ 
+       <h3>💨 Semne de Aer (Gemeni, Balanță, Vărsător)</h3>
+       <p><strong>Limbajul dragostei:</strong> Conversație, Spirit, Libertate.</p>
+       <p>Pentru semnele de Aer, mintea este cea mai erogenă zonă. Au nevoie de stimulare mentală și de un partener care să le fie și cel mai bun prieten.
+       <br><em>Cel mai bine cu:</em> Alte semne de Aer (discuții nesfârșite) sau semne de Foc (inspirație).</p>
+ 
+       <h3>💧 Semne de Apă (Rac, Scorpion, Pești)</h3>
+       <p><strong>Limbajul dragostei:</strong> Vulnerabilitate, Intuiție, Fuziune.</p>
+       <p>Semnele de Apă caută o conexiune emoțională profundă. Vor să fie înțelese fără cuvinte și au nevoie de un port sigur.
+       <br><em>Cel mai bine cu:</em> Alte semne de Apă (legătură psihică) sau semne de Pământ (recipientul pentru apa lor).</p>
+ 
+       <h2 id="love-planets">Adevăratele planete ale dragostei: Venus, Marte și Luna</h2>
+       <p>Dacă vrei să știi dacă vă veți înțelege cu adevărat zi de zi, verificarea compatibilității semnului Solar nu este suficientă. Trebuie să te uiți mai atent la trei planete specifice din harta partenerului tău:</p>
+ 
+       <h3>1. Luna 🌙 (Siguranță Emoțională)</h3>
+       <p>Într-o căsătorie pe termen lung sau coabitare, <strong>compatibilitatea semnului Lunii este rege</strong>. Semnul tău Lunar dictează de ce ai nevoie pentru a te simți în siguranță, cum reacționezi când ești obosit sau flămând și cum oferi îngrijire. 
+       <br><em>Exemplu:</em> Un Berbec (Soare) ar putea părea dur, dar dacă are Luna în Rac, este de fapt o persoană foarte sensibilă care are nevoie de îmbrățișări și reasigurare acasă.</p>
+ 
+       <h3>2. Venus ♀ (Romantism și Valori)</h3>
+       <p>Venus determină ce consideri frumos și ce prețuiești. Îți arată „stilul de flirt”.
+       <br><em>Sfat:</em> Dacă semnele voastre Venus sunt în același element, gusturile și obiceiurile voastre de cheltuieli se vor alinia probabil ușor.</p>
+ 
+       <h3>3. Marte ♂ (Pasiune și Argumente)</h3>
+       <p>Marte este planeta libidoului și a conflictului. Arată cum te cerți și cum faci sex.
+       <br><em>Sfat:</em> Semnele Marte compatibile asigură că argumentele sunt rezolvate rapid și că chimia fizică rămâne vie.</p>
+ 
+       <h2 id="challenging-matches">Adevărul despre potrivirile „rele”</h2>
+       <p>Ce se întâmplă dacă te îndrăgostești de un semn care este „incompatibil”? De exemplu, un Leu (Foc) și un Scorpion (Apă)?</p>
+       
+       <p>Aceste relații sunt adesea cele mai <strong>transformatoare</strong>. Astrologia le numește aspecte de „Careu” sau „Quincunx”. Ele creează fricțiune. Dar fricțiunea generează căldură! Potrivirile „provocatoare” te forțează să crești, să înveți o limbă nouă și să ieși din zona ta de confort. Ele sunt adesea conexiuni de suflete pereche cu pasiune mare și dramă mare, concepute pentru a-ți evolua sufletul, chiar dacă necesită mai multă muncă.</p>
+ 
+       <h2 id="best-matches-deep-dive">Aprofundare: Perechi zodiacale faimoase</h2>
+       
+       <h3>„Cuplul Putere”: Berbec și Balanță</h3>
+       <p>Opusele se atrag! Berbecul este „Eu primul”, Balanța este „Noi primii”. Berbecul învață Balanța asertivitatea; Balanța învață Berbecul diplomația. Este o atracție magnetică greu de rupt.</p>
+ 
+       <h3>„Constructorii de imperii”: Taur și Capricorn</h3>
+       <p>Două semne de pământ care prețuiesc calitatea, banii și siguranța. Construiesc un succes masiv împreună, deși trebuie să-și amintească să se și distreze, nu doar să muncească.</p>
+       
+       <h3>Duo-ul „Peter Pan”: Gemeni și Săgetător</h3>
+       <p>Aer și Foc. Ambii iubesc libertatea, călătoriile și filozofia. S-ar putea să nu se așeze niciodată la casa lor în sensul tradițional, dar vor fi parteneri de crimă pentru totdeauna.</p>
+ 
+       <h3>„Legătura psihică”: Rac și Scorpion</h3>
+       <p>Când aceste două semne de apă se întâlnesc, lumea dispare. Au o conexiune telepatică și o posesivitate care îi face să fie extrem de loiali unul altuia.</p>
+       
+       <h2 id="synastry">Compatibilitate avansată: Sinastria</h2>
+       <p>Pentru a obține răspunsul real despre relația ta, ai nevoie de o <strong>Citire de Sinastrie</strong>. Aceasta implică suprapunerea hărții tale peste cea a partenerului tău.</p>
+       
+       <p>Căutăm conexiuni precum:
+       <br><strong>Conjuncții Soare-Lună:</strong> Aspectul clasic de „soț/soție”.
+       <br><strong>Schimburi Venus-Marte:</strong> Atracție sexuală incredibilă.
+       <br><strong>Contacte Saturn:</strong> Adezivul care ține oamenii împreună o viață întreagă (chiar și în momentele grele).</p>
+       
+       <p>La Astralo, algoritmii noștri avansați și astrologii experți nu îți oferă doar un procent. Creăm o hartă a sufletului relației voastre. Încetează să ghicești și începe să înțelegi scopul cosmic al uniunii voastre.</p>
+     `
 };

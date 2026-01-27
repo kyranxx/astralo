@@ -4,51 +4,68 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "☄️ Mercury Retrograde Survival Guide 2026: From Chaos to Calm",
-    excerpt: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset and how to navigate technology and communication glitches with ease.",
-    category: "Astrology 101",
-    metaDescription: "Don't fear the retrograde! Learn why Mercury Retrograde is actually a vital cosmic reset, how to avoid common pitfalls, and why it's the best time for \"Re\" activities.",
-    keywords: "mercury retrograde, mercury retrograde dates, survival guide, astrology tips, planetary retrograde, communication breakdown, tech glitches",
-    quickSummary: ["Mercury Retrograde is an optical illusion where Mercury appears to move backward","It happens 3-4 times a year and lasts for about three weeks each time","This period is notorious for travel delays, tech failures, and miscommunications","It is NOT a time to start new projects, but an ELITE time for finishing old ones"],
-    keyTakeaways: ["Double-check every email, text, and contract before hitting send or signing","Back up your data and expect minor technological glitches with devices","Old friends and exes often reappear during these cosmic cycles","The \"Shadow Period\" before and after the retrograde is just as important"],
-    tableOfContents: [{"id":"what-is-mercury-retrograde","title":"The Science of the Illusion"},{"id":"retrograde-shadow","title":"The Shadow Period"},{"id":"survival-dos","title":"The \"RE\" Rule: What to Do"},{"id":"survival-donts","title":"The Red Flags: What to Avoid"},{"id":"mercury-retrograde-dates","title":"2026 Retrograde Dates"},{"id":"final-thoughts","title":"Silver Linings"}],
-    content: `
-      <h2 id="what-is-mercury-retrograde">The Science of the Illusion</h2>
-      <p>Three or four times a year, the planet Mercury—the ruler of communication, travel, and technology—appears to move backward in the sky from our vantage point on Earth. In reality, it's just an optical illusion, much like a slower car appearing to move backward as you pass it in a faster vehicle.</p>
+  title: "☄️ คู่มือเอาตัวรอดช่วงดาวพุธถอยหลังปี 2026: จากความวุ่นวายสู่ความสงบ",
+  excerpt: "อย่ากลัวช่วงถอยหลัง! เรียนรู้ว่าทำไมดาวพุธถอยหลังถึงเป็นการรีเซ็ตจักรวาลที่สำคัญ และวิธีรับมือกับความผิดพลาดทางเทคโนโลยีและการสื่อสารอย่างง่ายดาย",
+  category: "โหราศาสตร์ 101",
+  metaDescription: "อย่ากลัวช่วงถอยหลัง! เรียนรู้ว่าทำไมการที่ดาวพุธถอยหลังถึงเป็นการรีเซ็ตจักรวาลที่สำคัญ วิธีหลีกเลี่ยงหลุมพรางทั่วไป และทำไมถึงเป็นเวลาที่ดีที่สุดสำหรับกิจกรรม \"Re\"",
+  keywords: "ดาวพุธถอยหลัง, วันที่ดาวพุธถอยหลัง, คู่มือเอาตัวรอด, เคล็ดลับโหราศาสตร์, ดาวเคราะห์ถอยหลัง, การสื่อสารล่ม, ความผิดพลาดทางเทคโนโลยี",
+  quickSummary: [
+    "ดาวพุธถอยหลังเป็นภาพลวงตาทางสายตาที่ดูเหมือนว่าดาวพุธกำลังเคลื่อนที่ถอยหลัง",
+    "เกิดขึ้น 3-4 ครั้งต่อปีและกินเวลาประมาณสามสัปดาห์ในแต่ละครั้ง",
+    "ช่วงเวลานี้มีชื่อเสียงในเรื่องความล่าช้าในการเดินทาง ความล้มเหลวทางเทคโนโลยี และการสื่อสารที่ผิดพลาด",
+    "นี่ไม่ใช่เวลาเริ่มโครงการใหม่ แต่เป็นเวลาที่ยอดเยี่ยมสำหรับการทำสิ่งที่คั่งค้างให้เสร็จ"
+  ],
+  keyTakeaways: [
+    "ตรวจสอบอีเมล ข้อความ และสัญญาทุกฉบับซ้ำสองรอบก่อนกดส่งหรือเซ็นชื่อ",
+    "สำรองข้อมูลของคุณและคาดการณ์ว่าจะมีความผิดพลาดทางเทคโนโลยีเล็กน้อยกับอุปกรณ์ต่างๆ",
+    "เพื่อนเก่าและแฟนเก่ามักจะปรากฏตัวขึ้นอีกครั้งในช่วงวงจรจักรวาลเหล่านี้",
+    "ช่วงเวลา \"เงา\" ก่อนและหลังการถอยหลังก็มีความสำคัญไม่แพ้กัน"
+  ],
+  tableOfContents: [
+    { id: 'what-is-mercury-retrograde', title: 'วิทยาศาสตร์ของภาพลวงตา' },
+    { id: 'retrograde-shadow', title: 'ช่วงเวลาเงา' },
+    { id: 'survival-dos', title: 'กฎ \"Re\": สิ่งที่ควรทำ' },
+    { id: 'survival-donts', title: 'ธงแดง: สิ่งที่ควรหลีกเลี่ยง' },
+    { id: 'mercury-retrograde-dates', title: 'วันที่ดาวพุธถอยหลังปี 2026' },
+    { id: 'final-thoughts', title: 'แสงสว่างที่ปลายอุโมงค์' }
+  ],
+  content: `
+      <h2 id="what-is-mercury-retrograde">วิทยาศาสตร์ของภาพลวงตา</h2>
+      <p>ปีละสามหรือสี่ครั้ง ดาวพุธ—ผู้ปกครองการสื่อสาร การเดินทาง และเทคโนโลยี—ดูเหมือนจะเคลื่อนที่ถอยหลังบนท้องฟ้าจากจุดที่เรามองเห็นบนโลก ในความเป็นจริง มันเป็นเพียงภาพลวงตาทางสายตา เหมือนกับรถที่ช้ากว่าดูเหมือนจะถอยหลังเมื่อคุณขับแซงด้วยรถที่เร็วกว่า</p>
       
-      <p>But while the backward motion is an illusion, the effects are very real. In astrology, when a planet goes retrograde, its energy turns inward. Since Mercury rules the "daily commute" of our lives—our thoughts, our gadgets, and our logistics—everything starts to feel a little... glitchy. <strong>Mercury Retrograde</strong> is the cosmic way of telling the world to hit the "Pause" button.</p>
+      <p>แต่ในขณะที่การเคลื่อนที่ถอยหลังเป็นภาพลวงตา ผลกระทบนั้นเป็นของจริง ในโหราศาสตร์ เมื่อดาวเคราะห์โคจรวิปริต (Retrograde) พลังงานของมันจะหันเข้าสู่ภายใน เนื่องจากดาวพุธปกครอง \"การเดินทางประจำวัน\" ของชีวิตเรา—ความคิดของแก็ดเจ็ต และโลจิสติกส์ของเรา—ทุกอย่างจึงเริ่มรู้สึก... ผิดปกติเล็กน้อย <strong>ดาวพุธถอยหลัง</strong> คือวิธีที่จักรวาลบอกให้โลกกดปุ่ม \"หยุดชั่วคราว\"</p>
 
-      <h2 id="retrograde-shadow">The Shadow Period: The Pre and Post Wobble</h2>
-      <p>Many people are surprised when things start going wrong a week <em>before</em> the retrograde officially begins. This is called the <strong>Pre-Retrograde Shadow</strong>. This is when Mercury slows down and preparing to flip. Similarly, the <strong>Post-Retrograde Shadow</strong> lasts for about two weeks after the planet turns direct. If you are planning a major launch or a big purchase, wait until the post-shadow period has cleared for the smoothest results.</p>
+      <h2 id="retrograde-shadow">ช่วงเวลาเงา: ความวุ่นวายก่อนและหลัง</h2>
+      <p>หลายคนประหลาดใจเมื่อสิ่งต่างๆ เริ่มผิดพลาดหนึ่งสัปดาห์ <em>ก่อน</em> การถอยหลังจะเริ่มขึ้นอย่างเป็นทางการ สิ่งนี้เรียกว่า <strong>เงาก่อนการถอยหลัง (Pre-Retrograde Shadow)</strong> นี่คือช่วงที่ดาวพุธชะลอตัวและเตรียมที่จะกลับทิศทาง ในทำนองเดียวกัน <strong>เงาหลังการถอยหลัง (Post-Retrograde Shadow)</strong> จะกินเวลาประมาณสองสัปดาห์หลังจากที่ดาวเคราะห์กลับมาเดินหน้าตามปกติ หากคุณกำลังวางแผนเปิดตัวครั้งใหญ่หรือซื้อของชิ้นใหญ่ ให้รอจนกว่าช่วงเวลาเงาจะผ่านพ้นไปเพื่อผลลัพธ์ที่ราบรื่นที่สุด</p>
 
-      <h2 id="survival-dos">The "RE" Rule: What to Do</h2>
-      <p>Mercury Retrograde gets a bad reputation, but it is actually one of the most productive times of the year if you use it correctly. The secret is to focus on words that start with <strong>"RE"</strong>:</p>
+      <h2 id="survival-dos">กฎ \"Re\": สิ่งที่ควรทำ</h2>
+      <p>ดาวพุธถอยหลังมีชื่อเสียงที่ไม่ดี แต่จริงๆ แล้วเป็นช่วงเวลาที่มีประสิทธิผลที่สุดช่วงหนึ่งของปีหากคุณใช้มันอย่างถูกต้อง เคล็ดลับคือให้ความสำคัญกับคำที่ขึ้นต้นด้วย <strong>\"Re\"</strong>:</p>
       <ul>
-        <li><strong>Reflect:</strong> Look back at your goals from the start of the year. Are you still on track?</li>
-        <li><strong>Review:</strong> Go over your contracts, your budget, and your plans. You'll likely find a mistake you missed before.</li>
-        <li><strong>Reconnect:</strong> This is a peak time for hearing from old friends or resolving past conflicts with family.</li>
-        <li><strong>Repair:</strong> Fix that leaky faucet or the car issue you've been ignoring.</li>
-        <li><strong>Reorganize:</strong> Clean your closets, your inbox, and your mind.</li>
+        <li><strong>Reflect (สะท้อนคิด):</strong> มองย้อนกลับไปที่เป้าหมายของคุณตั้งแต่ต้นปี คุณยังมาถูกทางหรือไม่?</li>
+        <li><strong>Review (ทบทวน):</strong> ตรวจสอบสัญญา งบประมาณ และแผนงานของคุณ คุณมักจะพบข้อผิดพลาดที่คุณพลาดไปก่อนหน้านี้</li>
+        <li><strong>Reconnect (เชื่อมต่อใหม่):</strong> นี่เป็นช่วงเวลาที่ดีที่สุดในการได้รับการติดต่อจากเพื่อนเก่าหรือแก้ไขความขัดแย้งในอดีตกับครอบครัว</li>
+        <li><strong>Repair (ซ่อมแซม):</strong> ซ่อมก๊อกน้ำที่รั่วหรือปัญหารถที่คุณเพิกเฉย</li>
+        <li><strong>Reorganize (จัดระเบียบใหม่):</strong> ทำความสะอาดตู้เสื้อผ้า กล่องจดหมาย และจิตใจของคุณ</li>
       </ul>
 
-      <h2 id="survival-donts">The Red Flags: What to Avoid</h2>
-      <p>While life doesn't stop, try to avoid these high-risk activities during the three-week retrograde window:</p>
+      <h2 id="survival-donts">ธงแดง: สิ่งที่ควรหลีกเลี่ยง</h2>
+      <p>ในขณะที่ชีวิตไม่ได้หยุดลง พยายามหลีกเลี่ยงกิจกรรมที่มีความเสี่ยงสูงเหล่านี้ในช่วงระยะเวลาสามสัปดาห์ของการถอยหลัง:</p>
       <ul>
-        <li><strong>Signing Major Contracts:</strong> If you must sign, read the fine print three times. Better yet, have a lawyer read it.</li>
-        <li><strong>Buying New Tech:</strong> Wait to buy that new iPhone or car. Retrograde tech often comes with hidden "lemons."</li>
-        <li><strong>Starting New Projects:</strong> Ideas born now often change significantly once the planet goes direct. Wait to "launch."</li>
-        <li><strong>Plastic Surgery or Big Hair Changes:</strong> Mercury also affects how we perceive aesthetics during its cycles. You might regret that bold choice later.</li>
+        <li><strong>การเซ็นสัญญาสำคัญ:</strong> หากคุณต้องเซ็น ให้อ่านตัวหนังสือเล็กๆ สามรอบ ยิ่งไปกว่านั้น ให้ทนายความอ่านให้</li>
+        <li><strong>การซื้อเทคโนโลยีใหม่:</strong> รอที่จะซื้อ iPhone หรือรถยนต์คันใหม่ เทคโนโลยีที่ซื้อในช่วงถอยหลังมักมาพร้อมกับ \"ข้อบกพร่อง\" ที่ซ่อนอยู่</li>
+        <li><strong>การเริ่มโครงการใหม่:</strong> ความคิดที่เกิดขึ้นตอนนี้มักจะเปลี่ยนไปอย่างมากเมื่อดาวเคราะห์กลับมาเดินหน้า รอที่จะ \"เปิดตัว\"</li>
+        <li><strong>การศัลยกรรมพลาสติกหรือเปลี่ยนทรงผมครั้งใหญ่:</strong> ดาวพุธยังส่งผลต่อการรับรู้ความงามของเราในช่วงวงจรของมันด้วย คุณอาจเสียใจกับการตัดสินใจที่กล้าหาญนั้นในภายหลัง</li>
       </ul>
 
-      <h2 id="mercury-retrograde-dates">2026 Mercury Retrograde Dates</h2>
-      <p>Keep these dates in your 2026 calendar to stay ahead of the cosmic curve:</p>
+      <h2 id="mercury-retrograde-dates">วันที่ดาวพุธถอยหลังปี 2026</h2>
+      <p>บันทึกวันที่เหล่านี้ในปฏิทินปี 2026 ของคุณเพื่อเตรียมพร้อมรับมือจักรวาล:</p>
       <ol>
-          <li><strong>February 25 – March 20</strong> (Starting in Pisces, ending in Aquarius)</li>
-          <li><strong>June 29 – July 23</strong> (In Cancer)</li>
-          <li><strong>October 24 – November 13</strong> (Starting in Scorpio, ending in Libra)</li>
+          <li><strong>25 กุมภาพันธ์ – 20 มีนาคม</strong> (เริ่มในราศีมีน สิ้นสุดในราศีกุมภ์)</li>
+          <li><strong>29 มิถุนายน – 23 กรกฎาคม</strong> (ในราศีกระกฎ)</li>
+          <li><strong>24 ตุลาคม – 13 พฤศจิกายน</strong> (เริ่มในราศีพิจิก สิ้นสุดในราศีตุลย์)</li>
       </ol>
 
-      <h2 id="final-thoughts">Silver Linings</h2>
-      <p>Mercury Retrograde is not a curse; it's a necessary maintenance period. Without it, we would keep rushing forward without ever fixing the foundation of our lives. Use this time to slow down, breathe, and catch up with yourself. When Mercury finally moves forward, you'll be faster and more focused than ever before.</p>
+      <h2 id="final-thoughts">แสงสว่างที่ปลายอุโมงค์</h2>
+      <p>ดาวพุธถอยหลังไม่ใช่คำสาป; มันเป็นช่วงเวลาการบำรุงรักษาที่จำเป็น หากไม่มีมัน เราคงเอาแต่วิ่งไปข้างหน้าโดยไม่เคยซ่อมแซมรากฐานชีวิตของเรา ใช้เวลานี้เพื่อชะลอความเร็ว หายใจ และตามให้ทันตัวเอง เมื่อดาวพุธกลับมาเดินหน้าในที่สุด คุณจะเร็วขึ้นและมีสมาธิมากขึ้นกว่าที่เคย</p>
     `
 };

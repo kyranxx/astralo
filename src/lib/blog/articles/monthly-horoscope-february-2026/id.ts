@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - ID
+ * Monthly Horoscope February 2026 - ID
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Ramalan Bintang Bulanan Februari 2026: Musim Inovasi Aquarius',
+  excerpt: 'Februari 2026 membawa gelombang kejelasan saat Merkurius bergerak Maju. Temukan bagaimana Bulan Purnama di Leo pada 3 Februari dan Venus di Pisces akan memengaruhi kehidupan cinta dan karier Anda.',
+  category: 'Ramalan Bintang',
+  metaDescription: 'Prakiraan astrologi lengkap Februari 2026. Prediksi bulanan terperinci untuk semua tanda zodiak, berfokus pada Bulan Purnama Leo dan Venus yang memasuki masa kejayaannya di Pisces.',
+  keywords: 'ramalan bintang bulanan, astrologi februari 2026, prediksi bulanan, prakiraan zodiak februari, musim aquarius, bulan purnama leo, venus pisces',
+  quickSummary: [
+    'Bulan Purnama di Leo pada 3 Februari menuntut Anda untuk mengambil panggung utama dan mengekspresikan jati diri Anda yang sebenarnya',
+    'Merkurius akhirnya bergerak Maju, menjernihkan miskomunikasi dari akhir Januari',
+    'Venus bergerak ke Pisces yang penuh mimpi, menciptakan energi paling romantis sepanjang tahun',
+    'Musim Aquarius mendorong kita untuk berinovasi dan membebaskan diri dari tradisi usang'
+  ],
+  keyTakeaways: [
+    'Gunakan minggu pertama Februari untuk meluncurkan proyek kreatif atau mengubah citra diri Anda',
+    'Hari Valentine sangat ajaib tahun ini dengan Venus yang ditinggikan—rencanakan sesuatu yang spiritual dan mendalam',
+    'Harapkan wawasan mendadak mengenai teknologi atau kelompok komunitas di pertengahan bulan',
+    'Ramalan bintang umum itu bagus, tetapi untuk waktu yang spesifik, Anda memerlukan transit pribadi Anda'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Tinjauan Februari 2026' },
+    { id: 'key-transits', title: 'Tanggal & Transit Penting' },
+    { id: 'fire-signs', title: 'Tanda Api (Aries, Leo, Sagitarius)' },
+    { id: 'earth-signs', title: 'Tanda Bumi (Taurus, Virgo, Capricorn)' },
+    { id: 'air-signs', title: 'Tanda Udara (Gemini, Libra, Aquarius)' },
+    { id: 'water-signs', title: 'Tanda Air (Cancer, Scorpio, Pisces)' },
+    { id: 'get-personal', title: 'Mengapa Umum Tidak Cukup' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologi Februari 2026</h2>
+      <p>Jika Januari adalah tentang melepaskan tahun lama, <strong>Februari 2026</strong> adalah tentang melangkah dengan berani ke masa depan. Kita berada jauh di dalam <strong>Musim Aquarius</strong>, waktu yang memihak pada yang berani, yang aneh, dan yang inovatif. Suasana hati kolektif bergeser dari "Bagaimana saya bertahan?" menjadi "Bagaimana saya menemukan kembali diri saya?"</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Berita utamanya adalah <strong>Bulan Purnama di Leo pada 3 Februari</strong>. Leo meminta kita untuk bersinar. Ia bertanya: "Di mana Anda bermain kecil?" Di bawah cahaya ini, bersembunyi bukanlah pilihan. Dikombinasikan dengan Merkurius yang mengakhiri fase bayangannya, kejelasan kembali ke komunikasi kita. Kabut terangkat.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Tanggal & Transit Penting</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 Feb:</strong> Bulan Purnama di Leo (Drama, Gairah, Puncak).</li>
+        <li><strong>10 Feb:</strong> Venus memasuki Pisces (Cinta Tanpa Syarat, Seni, Fantasi).</li>
+        <li><strong>18 Feb:</strong> Matahari memasuki Pisces (Musim Mimpi dimulai).</li>
+        <li><strong>25 Feb:</strong> Merkurius memasuki Pisces (Logika larut ke dalam Intuisi).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Api Tandas (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Tanda Api (Aries, Leo, Sagitarius)</h2>
+      <p><strong>Tema: Ledakan Kreatif.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Leo:</strong> Ini adalah momen Anda. Bulan Purnama di tanda Anda menempatkan Anda dalam sorotan. Baik itu promosi, perpisahan, atau terobosan, itu terjadi <em>sekarang</em>. Jangan takut untuk terlihat.</p>
+      <p><strong>Aries:</strong> Lingkaran sosial Anda adalah kekayaan Anda bulan ini. Jejaring membawa emas yang tak terduga. Seorang teman mungkin menjadi kekasih atau mitra bisnis.</p>
+      <p><strong>Sagitarius:</strong> Anda mendambakan kebijaksanaan. Rencana perjalanan yang tertunda di bulan Januari akhirnya mendapat lampu hijau. Pesan tiketnya.</p>
 
-      <h2 id="earth-signs">🌍 Bumi Tandas (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Tanda Bumi (Taurus, Virgo, Capricorn)</h2>
+      <p><strong>Tema: landasan Spiritual.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Taurus:</strong> Saat Venus memasuki Pisces, Anda merasa lebih lembut. Ini adalah waktu yang indah untuk romansa, tetapi juga untuk memaafkan diri sendiri atas kesalahan masa lalu. Lepaskan dendam.</p>
+      <p><strong>Virgo:</strong> Fokus pada kemitraan. Anda biasanya adalah penolong, tetapi di bulan Februari, biarkan seseorang membantu <em>Anda</em>. Kerentanan adalah pelajaran Anda bulan ini.</p>
+      <p><strong>Capricorn:</strong> Masalah uang membaik, tetapi bukan melalui kerja keras saja. Intuisi memandu investasi Anda. Percayai naluri Anda lebih dari spreadsheet.</p>
 
-      <h2 id="air-signs">💨 Udara Tandas (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Tanda Udara (Gemini, Libra, Aquarius)</h2>
+      <p><strong>Tema: Pembaruan Intelektual.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Aquarius:</strong> Selamat Ulang Tahun! Matahari di tanda Anda memperkuat vitalitas Anda. Anda magnetis. Ini adalah waktu terbaik tahun ini untuk meluncurkan merek pribadi atau memperbarui penampilan Anda.</p>
+      <p><strong>Gemini:</strong> Karier berubah. Anda mungkin bosan dengan rutinitas. Cari solusi yang tidak biasa atau "pekerjaan sampingan" yang memicu rasa ingin tahu Anda.</p>
+      <p><strong>Libra:</strong> Romansa sedang tinggi, begitu juga kreativitas. Anda melahirkan sesuatu—seorang anak, karya seni, atau romansa baru. Nikmati kesuburan momen ini.</p>
 
-      <h2 id="water-signs">💧 Udara Tandas (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Tanda Air (Cancer, Scorpio, Pisces)</h2>
+      <p><strong>Tema: Penyelaman Emosional Mendalam.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Pisces:</strong> Saat bulan berakhir, Matahari memasuki tanda Anda. Anda bangun dari tidur panjang. Intuisi Anda hampir seperti cenayang sekarang. Gunakan itu.</p>
+      <p><strong>Cancer:</strong> Uang dan sumber daya bersama disorot. Utang mungkin lunas, atau pinjaman disetujui. Saatnya menata keuangan rumah tangga Anda.</p>
+      <p><strong>Scorpio:</strong> Rumah adalah tempat hati berada. Anda mungkin sedang merenovasi atau hanya bersembunyi dari dunia. Istirahat itu produktif bagi Anda saat ini.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Mengapa Ramalan Bintang Umum Tidak Cukup</h2>
+      <p>Meskipun prakiraan ini memberi Anda "cuaca kosmik" untuk tanda Matahari Anda, ini melewatkan bagian paling kritis: <strong>Bagan Unik Anda.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Anda lebih dari sekadar tanda Matahari Anda. Anda memiliki Bulan, tanda Terbit, dan 8 planet lain yang membentuk peta kompleks dan unik seperti sidik jari. 
+      <br><em>Contoh:</em> Seorang Taurus Terbit (Rising) akan mengalami bulan ini sepenuhnya berbeda dari seorang Taurus Matahari.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Jangan menebak masa depan Anda.</strong> Untuk mendapatkan tanggal dan detail spesifik yang berlaku untuk ANDA secara pribadi, Anda memerlukan pembacaan yang diperhitungkan.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Siap untuk Kebenaran Pribadi Anda?</h3>
+          <p>Dapatkan Laporan Transit Pribadi 2026 lengkap Anda. Lihat persis bagaimana planet berinteraksi dengan cetak biru kelahiran Anda.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Dapatkan Pembacaan Pribadi Saya</a>
       </div>
     `
 };

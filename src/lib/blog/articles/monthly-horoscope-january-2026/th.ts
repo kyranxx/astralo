@@ -1,69 +1,87 @@
 /**
- * monthly-horoscope-january-2026 - TH
+ * ดวงรายเดือน มกราคม 2569 - ภาษาไทย
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 ดวงรายเดือน มกราคม 2569: รุ่งอรุณแห่งยุคสมัยใหม่',
+  excerpt: 'พยากรณ์ดวงชะตาเดือนมกราคม 2569 อย่างครบถ้วน เจาะลึกดวงรายเดือนสำหรับชาว 12 ราศี ตั้งแต่ราศีเมษถึงราศีมีน ครอบคลุมเรื่องดาวพลูโตในราศีกุมภ์ ความรัก การงาน และแนวโน้มด้านการเงิน',
+  category: 'ดูดวง',
+  metaDescription: 'พยากรณ์ดวงชะตาเดือนมกราคม 2569 อย่างครบถ้วน เจาะลึกดวงรายเดือนสำหรับชาว 12 ราศี ตั้งแต่ราศีเมษถึงราศีมีน ครอบคลุมเรื่องดาวพลูโตในราศีกุมภ์ ความรัก การงาน และแนวโน้มด้านการเงิน',
+  keywords: 'ดวงรายเดือน, โหราศาสตร์มกราคม 2569, คำพยากรณ์รายเดือน, ดวงชะตามกราคม, พลูโตในราศีกุมภ์, มูนในราศีมังกร, ฟูลมูนในราศีกรกฎ',
+  quickSummary: [
+    'เดือนมกราคม 2569 ถูกครอบงำด้วยการที่ดาวพลูโตเข้าสู่ราศีกุมภ์อย่างมั่นคง ส่งสัญญาณถึงการเปลี่ยนแปลงครั้งใหญ่ทางสังคม',
+    'ปรากฏการณ์เดือนมืด (New Moon) ในราศีมังกร (1 ม.ค.) มอบพลังงานที่สมบูรณ์แบบสำหรับการตั้งปณิธานรับปีใหม่',
+    'ผลกระทบจากดาวพุธถอยหลังจะเริ่มคลี่คลายภายในวันที่ 15 ม.ค. ทำให้การสื่อสารราบรื่นขึ้น',
+    'ดาวอังคารพักรในราศีกรกฎจะนำพาความขัดแย้งในครอบครัวที่ยังไม่ได้รับการแก้ไขให้กลับมาเป็นประเด็นอีกครั้ง'
+  ],
+  keyTakeaways: [
+    'ใช้สัปดาห์แรกของเดือนมกราคมเพื่อการวางแผนเชิงกลยุทธ์เท่านั้น และควรเลื่อนการลงมือทำออกไปจนถึงช่วงกลางเดือน',
+    'เตรียมพร้อมรับการค้นพบทางเทคโนโลยีที่กะทันหันหรือเหตุการณ์พลิกผันเมื่อดาวยูเรนัสเริ่มทำงาน',
+    'ความสัมพันธ์จะเผชิญกับการตรวจสอบความเป็นจริงในช่วงฟูลมูนในราศีกรกฎ วันที่ 14 ม.ค.',
+    'ตลาดการเงินอาจมีความผันผวน ควรยึดติดกับการลงทุนในระยะยาวที่ปลอดภัย'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'ภาพรวมโหราศาสตร์เดือนมกราคม' },
+    { id: 'key-transits', title: 'วันที่สำคัญและการโคจรของดวงดาว' },
+    { id: 'fire-signs', title: 'ธาตุไฟ (เมษ, สิงห์, ธนู)' },
+    { id: 'earth-signs', title: 'ธาตุดิน (พฤษภ, กันย์, มังกร)' },
+    { id: 'air-signs', title: 'ธาตุลม (เมถุน, ตุลย์, กุมภ์)' },
+    { id: 'water-signs', title: 'ธาตุน้ำ (กรกฎ, พิจิก, มีน)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">ภาพรวมโหราศาสตร์เดือนมกราคม 2569</h2>
+      <p>สวัสดีปีใหม่! <strong>มกราคม 2569</strong> ไม่ใช่เพียงแค่การเริ่มต้นปีปฏิทินใหม่เท่านั้น แต่ยังเป็นรุ่งอรุณทางโหราศาสตร์ของยุคสมัยใหม่ ด้วยการที่ <strong>ดาวพลูโตเข้าสู่ราศีกุมภ์อย่างเต็มตัว</strong> เรากำลังเคลื่อนออกจากโครงสร้างอำนาจจากบนลงล่างในช่วง 15 ปีที่ผ่านมา (ดาวพลูโตในราศีมังกร) และเข้าสู่ช่วงเวลาแห่งนวัตกรรมที่รวดเร็ว การให้ความสำคัญกับชุมชน และการปฏิวัติ</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>เริ่มต้นเดือนด้วย <strong>New Moon ในราศีมังกร</strong> ในวันที่ 1 มกราคม ซึ่งเป็นการเรียงตัวที่หาได้ยากและเป็นมงคล พลังงานนี้ช่วยส่งเสริมความตั้งใจ "ปีใหม่ คนใหม่" ทำให้เป็นช่วงเวลาที่ยอดเยี่ยมในการตั้งเป้าหมายระยะยาวที่มีวินัย อย่างไรก็ตาม ด้วยการที่ดาวอังคารพักร (Retrograde) ในราศีกรกฎ พลังงานของเราอาจจะดูเหมือนถูกเก็บไว้ภายใน เรากำลังทบทวนว่า <em>ทำไม</em> เราถึงลงมือทำ ไม่ใช่แค่ <em>อย่างไร</em></p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">วันที่สำคัญและการโคจรของดวงดาว</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>1 ม.ค.:</strong> New Moon ในราศีมังกร (ตั้งความปรารถนา)</li>
+        <li><strong>4 ม.ค.:</strong> ดาวอังคารเข้าสู่ราศีสิงห์ (ความภาคภูมิใจและดราม่าเพิ่มสูงขึ้น)</li>
+        <li><strong>14 ม.ค.:</strong> ฟูลมูนในราศีกรกฎ (การปลดปล่อยอารมณ์)</li>
+        <li><strong>20 ม.ค.:</strong> ดวงอาทิตย์เข้าสู่ราศีกุมภ์ (ฤดูกาลแห่งอนาคต)</li>
+        <li><strong>29 ม.ค.:</strong> ดาวยูเรนัสเดินหน้าปกติ (การเปลี่ยนแปลงอย่างฉับพลัน)</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 ไฟ สัญลักษณ์s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 ธาตุไฟ (เมษ, สิงห์, ธนู)</h2>
+      <p><strong>ธีมหลัก: การทวงคืนประกายไฟในตัวคุณ</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>ราศีเมษ:</strong> ด้วยดาวอังคารซึ่งเป็นดาวเจ้าเรือนของคุณโคจรถอยหลัง คุณอาจรู้สึกหงุดหงิดกับความล่าช้า นี่ไม่ใช่ไฟแดง แต่มันคือไฟเหลือง ใช้เดือนมกราคมเพื่อทบทวนเส้นทางอาชีพของคุณ คุณกำลังปีนเขาถูกลูกอยู่หรือไม่?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>ราศีสิงห์:</strong> ความสัมพันธ์คือจุดโฟกัสสำคัญ เตรียมรับมือกับคนรักเก่าหรือเพื่อนเก่าที่อาจกลับมาปรากฏตัวอีกครั้ง ฟูลมูนในเรือนที่ 12 ของคุณบ่งบอกถึงความต้องการความสันโดษในช่วงกลางเดือน เพื่อชาร์จแบตเตอรี่ทางสังคมของคุณใหม่</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>ราศีธนู:</strong> เรื่องการเงินจะโดดเด่นมาก คุณอาจพบช่องทางการรายได้ใหม่ หรือตัดสินใจยกเลิกการสมัครสมาชิกที่ไม่จำเป็น เป็นเดือนสำหรับการวางแผนงบประมาณที่ทำได้จริง ไม่ใช่การใช้จ่ายอย่างบ้าคลั่ง</p>
 
-      <h2 id="earth-signs">🌍 ดิน สัญลักษณ์s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 ธาตุดิน (พฤษภ, กันย์, มังกร)</h2>
+      <p><strong>ธีมหลัก: การสร้างรากฐาน</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>ราศีพฤษภ:</strong> ปกติคุณจะเป็นคนเปลี่ยนแปลงช้า แต่ดาวยูเรนัสในราศีของคุณกำลังผลักดันให้คุณเป็นอิสระ มกราคมนี้นำพาโอกาสในการเดินทางที่กะทันหันหรือการเปลี่ยนมุมมองความคิด จงตอบ "ตกลง" กับสิ่งที่ไม่คุ้นเคย</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>ราศีกันย์:</strong> ดาวพุธซึ่งเป็นดาวเจ้าเรือนของคุณจะพ้นจากระยะเงาในช่วงกลางเดือน จนกว่าจะถึงตอนนั้น ควรตรวจสอบสัญญาต่างๆ ให้รอบคอบเป็นสองเท่า ความคิดสร้างสรรค์จะพุ่งสูงขึ้นหลังวันที่ 20 มกราคม—เริ่มงานอดิเรกที่คุณผัดวันประกันพุ่งมานานได้เลย</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>ราศีมังกร:</strong> สุขสันต์วันเกิด! New Moon ในราศีของคุณคือปีใหม่ส่วนตัวของคุณ คุณได้รับอนุญาตจากจักรวาลให้เห็นแก่ตัวได้บ้าง คุณต้องการอะไรสำหรับ 12 เดือนข้างหน้า? จงพูดมันออกมาให้เป็นจริง</p>
 
-      <h2 id="air-signs">💨 ลม สัญลักษณ์s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 ธาตุลม (เมถุน, ตุลย์, กุมภ์)</h2>
+      <p><strong>ธีมหลัก: การขยายตัวทางสติปัญญา</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>ราศีเมถุน:</strong> ทรัพยากรที่มีร่วมกันและความสัมพันธ์ที่ลึกซึ้งคือกุญแจสำคัญ คุณอาจได้รับมรดก โบนัส หรือมีการค้นพบทางจิตวิทยาที่ลึกซึ้ง เป็นเดือนที่เข้มข้นแต่จะช่วยชำระล้างสิ่งต่างๆ ให้ชัดเจน</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>ราศีตุลย์:</strong> เรื่องบ้านและครอบครัวจะกลายเป็นจุดสนใจหลัก คุณอาจจะกำลังตกแต่งบ้านใหม่หรือเป็นคนกลางไกล่เกลี่ยความขัดแย้งในครอบครัว ความสมดุลคือพลังพิเศษของคุณ จงใช้มันเพื่อสร้างความสงบสุขในพื้นที่ส่วนตัว</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>ราศีกุมภ์:</strong> นี่คือช่วงเวลาของคุณ เมื่อดาวพลูโตอยู่ในราศีของคุณ คุณกำลังอยู่ระหว่างการเปลี่ยนร่าง (Metamorphosis) คุณอาจเปลี่ยนลุคใหม่ เปลี่ยนชื่อ หรือเปลี่ยนขอบเขตงานทั้งหมด โลกกำลังตามทันวิสัยทัศน์ของคุณแล้ว</p>
 
-      <h2 id="water-signs">💧 น้ำ สัญลักษณ์s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 ธาตุน้ำ (กรกฎ, พิจิก, มีน)</h2>
+      <p><strong>ธีมหลัก: ความฉลาดทางอารมณ์</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>ราศีกรกฎ:</strong> ฟูลมูนในราศีของคุณในวันที่ 14 มกราคม คือจุดไคลแมกซ์ทางอารมณ์ของปี จงปลดปล่อยมันออกมา ร้องไห้ หัวเราะ หรือตะโกน คุณกำลังผลัดผิวใหม่ ความสัมพันธ์ที่เกิดขึ้นในช่วงนี้มักจะเป็นความสัมพันธ์ประเภทบุพเพสันนิวาสหรือที่มีพันธะกรรมต่อกัน</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>ราศีพิจิก:</strong> การสื่อสารทรงพลังมาก คำพูดของคุณจะมีน้ำหนักเป็นพิเศษในเดือนนี้ ใช้มันเพื่อการต่อรอง การสอน หรือการเขียน หลีกเลี่ยงเกมทางจิตวิทยาเพื่อบงการผู้อื่น ความโปร่งใสจะนำมาซึ่งชัยชนะ</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>ราศีมีน:</strong> สังคมของคุณกำลังขยายตัว คุณคือศูนย์กลางที่ยึดโยงชุมชนของคุณเข้าด้วยกัน มองหาโอกาสในการเป็นอาสาสมัครหรือเป็นผู้นำโครงการกลุ่ม สัญชาตญาณของคุณเฉียบคมมากในช่วงนี้</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">รับคำพยากรณ์ดวงชะตาปี 2569 ที่สมบูรณ์ของคุณ</h2>
+      <p>ภาพรวมรายเดือนนี้เป็นเพียงส่วนเสี้ยวเดียวเท่านั้น แต่ละคนมีดวงชะตาเฉพาะตัวที่โต้ตอบกับดวงดาวเหล่านี้แตกต่างกัน เพื่อนำทางปี 2569 ด้วยความมั่นใจ สั่งซื้อ <strong>รายงานดวงชะตารายปีส่วนบุคคล</strong> ของคุณจาก Astralo ซึ่งจะเจาะลึกดวงชะตาของคุณแบบเดือนต่อเดือน
     `
 };

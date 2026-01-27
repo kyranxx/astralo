@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - BN
+ * Monthly Horoscope February 2026 - BN
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ মাসিক রাশিফল ফেব্রুয়ারি ২০২৬: কুম্ভের উদ্ভাবনের ঋতু',
+  excerpt: 'ফেব্রুয়ারি ২০২৬ স্পষ্টতার একটি ঢেউ নিয়ে আসছে কারণ বুধ সরাসরি হচ্ছে। জানুন কীভাবে ৩রা ফেব্রুয়ারিতে সিংহের পূর্ণিমা এবং মীনে শুক্র আপনার প্রেম জীবন এবং ক্যারিয়ারকে প্রভাবিত করবে।',
+  category: 'রাশিফল',
+  metaDescription: 'সম্পূর্ণ ফেব্রুয়ারি ২০২৬ জ্যোতিষশাস্ত্রীয় পূর্বাভাস। সমস্ত রাশির জন্য বিস্তারিত মাসিক ভবিষ্যদ্বাণী, মীন রাশিতে শুক্রের প্রবেশ এবং সিংহ রাশির পূর্ণিমার উপর দৃষ্টি নিবদ্ধ করে।',
+  keywords: 'মাসিক রাশিফল, ফেব্রুয়ারি ২০২৬ জ্যোতিষশাস্ত্র, মাসিক ভবিষ্যদ্বাণী, রাশিচক্র পূর্বাভাস ফেব্রুয়ারি, কুম্ভ ঋতু, সিংহ পূর্ণিমা, মীন শুক্র',
+  quickSummary: [
+    '৩রা ফেব্রুয়ারি সিংহ রাশির পূর্ণিমা দাবি করে যে আপনি কেন্দ্রবিন্দুতে আসুন এবং আপনার প্রকৃত আত্মপ্রকাশ করুন',
+    'বুধ অবশেষে সরাসরি হচ্ছে, জানুয়ারি শেষের ভুল বোঝাবুঝিগুলি দূর করছে',
+    'শুক্র স্বপ্নময় মীন রাশিতে প্রবেশ করছে, পুরো বছরের সবচেয়ে রোমান্টিক শক্তি তৈরি করছে',
+    'কুম্ভ ঋতু আমাদের উদ্ভাবন করতে এবং সেকেলে প্রথা থেকে মুক্ত হতে উৎসাহিত করে'
+  ],
+  keyTakeaways: [
+    'ফেব্রুয়ারির প্রথম সপ্তাহটি সৃজনশীল প্রকল্প চালু করতে বা নিজেকে নতুনভাবে ব্র্যান্ড করতে ব্যবহার করুন',
+    'ভ্যালেন্টাইনস ডে এই বছর শুক্রের উচ্চ অবস্থানের সাথে অতিরিক্ত জাদুকরী—আধ্যাত্মিক এবং গভীর কিছু পরিকল্পনা করুন',
+    'মাসের মাঝামাঝি প্রযুক্তি বা কমিউনিটি গ্রুপ সম্পর্কে হঠাৎ অন্তর্দৃষ্টি আশা করুন',
+    'সাধারণ রাশিফলগুলি দুর্দান্ত, তবে নির্দিষ্ট সময়ের জন্য, আপনার ব্যক্তিগত ট্রানজিট প্রয়োজন'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'ফেব্রুয়ারি ২০২৬ ওভারভিউ' },
+    { id: 'key-transits', title: 'মূল তারিখ এবং ট্রানজিট' },
+    { id: 'fire-signs', title: 'অগ্নি রাশি (মেষ, সিংহ, ধনু)' },
+    { id: 'earth-signs', title: 'পৃথিবী রাশি (বৃষ, কন্যা, মকর)' },
+    { id: 'air-signs', title: 'বায়ু রাশি (মিথুন, তুলা, কুম্ভ)' },
+    { id: 'water-signs', title: 'জল রাশি (কর্কট, বৃশ্চিক, মীন)' },
+    { id: 'get-personal', title: 'কেন সাধারণ যথেষ্ট নয়' }
+  ],
+  content: `
+      <h2 id="monthly-overview">ফেব্রুয়ারি ২০২৬-এর জ্যোতিষশাস্ত্র</h2>
+      <p>যদি জানুয়ারি পুরনো বছরের ঝেড়ে ফেলার বিষয় হয়ে থাকে, তবে <strong>ফেব্রুয়ারি ২০২৬</strong> সাহসিকতার সাথে ভবিষ্যতের দিকে পা বাড়ানোর বিষয়। আমরা <strong>কুম্ভ ঋতুর</strong> গভীরে রয়েছি, এমন একটি সময় যা সাহসী, অদ্ভুত এবং উদ্ভাবনীকে সমর্থন করে। সমষ্টিগত মেজাজ "আমি কীভাবে বেঁচে থাকব?" থেকে "আমি কীভাবে নিজেকে নতুনভাবে তৈরি করব?"-এ পরিবর্তিত হয়।</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>প্রধান খবর হল <strong>৩রা ফেব্রুয়ারি সিংহ রাশিতে পূর্ণিমা</strong>। সিংহ আমাদের উজ্জ্বল হতে বলে। এটি জিজ্ঞাসা করে: "আপনি কোথায় নিজেকে ছোট করে রাখছেন?" এই আলোর নিচে, লুকিয়ে থাকা কোনও বিকল্প নয়। বুধ তার ছায়া পর্যায় শেষ করার সাথে সাথে, আমাদের যোগাযোগে স্পষ্টতা ফিরে আসে। কুয়াশা কেটে যায়।</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">মূল তারিখ এবং ট্রানজিট</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>৩রা ফেব:</strong> সিংহ রাশিতে পূর্ণিমা (নাটক, আবেগ, সমাপ্তি)।</li>
+        <li><strong>১০ই ফেব:</strong> শুক্র মীন রাশিতে প্রবেশ করে (শর্তহীন প্রেম, শিল্প, কল্পনা)।</li>
+        <li><strong>১৮ই ফেব:</strong> সূর্য মীন রাশিতে প্রবেশ করে (স্বপ্নের ঋতু শুরু হয়)।</li>
+        <li><strong>২৫শে ফেব:</strong> বুধ মীন রাশিতে প্রবেশ করে (যুক্তি অন্তর্দৃষ্টিতে বিলীন হয়)।</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 আগুন চিহ্নs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 অগ্নি রাশি (মেষ, সিংহ, ধনু)</h2>
+      <p><strong>থিম: সৃজনশীল বিস্ফোরণ।</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>সিংহ:</strong> এটি আপনার মুহূর্ত। আপনার রাশিতে পূর্ণিমা আপনাকে স্পটলাইটে রাখে। এটি পদোন্নতি, বিচ্ছেদ বা সাফল্য যাই হোক না কেন, এটি <em>এখনই</em> ঘটে। দেখা যেতে ভয় পাবেন না।</p>
+      <p><strong>মেষ:</strong> এই মাসে আপনার সামাজিক বৃত্তই আপনার সম্পদ। নেটওয়ার্কিং অপ্রত্যাশিত স্বর্ণ নিয়ে আসে। একজন বন্ধু প্রেমিক বা ব্যবসায়িক অংশীদার হতে পারে।</p>
+      <p><strong>ধনু:</strong> আপনি জ্ঞানের আকাঙ্ক্ষা করছেন। জানুয়ারিতে বিলম্বিত হওয়া ভ্রমণ পরিকল্পনাগুলি অবশেষে সবুজ সংকেত পায়। টিকিট বুক করুন।</p>
 
-      <h2 id="earth-signs">🌍 পৃথিবী চিহ্নs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 পৃথিবী রাশি (বৃষ, কন্যা, মকর)</h2>
+      <p><strong>থিম: আধ্যাত্মিক ভিত্তি।</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>বৃষ:</strong> যখন শুক্র মীন রাশিতে প্রবেশ করে, আপনি আরও কোমল অনুভব করেন। এটি রোম্যান্সের জন্য একটি সুন্দর সময়, তবে অতীতের ভুলের জন্য নিজেকে ক্ষমা করার জন্যও। ক্ষোভ ঝেড়ে ফেলুন।</p>
+      <p><strong>কন্যা:</strong> অংশীদারিত্বের উপর ফোকাস করুন। আপনি সাধারণত সাহায্যকারী, কিন্তু ফেব্রুয়ারিতে, কাউকে <em>আপনাকে</em> সাহায্য করতে দিন। দুর্বলতা এই মাসে আপনার শিক্ষা।</p>
+      <p><strong>মকর:</strong> অর্থের বিষয়গুলি ভাল দেখাচ্ছে, তবে কেবল কঠোর পরিশ্রমের মাধ্যমে নয়। অন্তর্দৃষ্টি আপনার বিনিয়োগকে গাইড করে। স্প্রেডশীটের চেয়ে আপনার সহজাত প্রবৃত্তিকে বেশি বিশ্বাস করুন।</p>
 
-      <h2 id="air-signs">💨 বায়ু চিহ্নs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 বায়ু রাশি (মিথুন, তুলা, কুম্ভ)</h2>
+      <p><strong>থিম: বুদ্ধিবৃত্তিক নবায়ন।</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>কুম্ভ:</strong> শুভ জন্মদিন! আপনার রাশিতে সূর্য আপনার জীবনীশক্তি বাড়িয়ে তোলে। আপনি আকর্ষণীয়। ব্যক্তিগত ব্র্যান্ড চালু করার বা আপনার চেহারা আপডেট করার জন্য এটি বছরের সেরা সময়।</p>
+      <p><strong>মিথুন:</strong> ক্যারিয়ার একটি মোড় নেয়। আপনি রুটিনে বিরক্ত হতে পারেন। অস্বাভাবিক সমাধান বা "সাইড হাসল" খুঁজুন যা আপনার কৌতূহল জাগিয়ে তোলে।</p>
+      <p><strong>তুলা:</strong> রোম্যান্স তুঙ্গে, এবং সৃজনশীলতাও। আপনি কিছু জন্ম দিচ্ছেন—একটি শিশু, একটি শিল্পকর্ম, বা একটি নতুন রোম্যান্স। মুহূর্তের উর্বরতা উপভোগ করুন।</p>
 
-      <h2 id="water-signs">💧 জল চিহ্নs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 জল রাশি (কর্কট, বৃশ্চিক, মীন)</h2>
+      <p><strong>থিম: গভীর আবেগপূর্ণ ডুব।</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>মীন:</strong> মাস শেষ হওয়ার সাথে সাথে, সূর্য আপনার রাশিতে প্রবেশ করে। আপনি দীর্ঘ ঘুম থেকে জেগে উঠছেন। আপনার অন্তর্দৃষ্টি এখন প্রায় সাইকিক। এটি ব্যবহার করুন।</p>
+      <p><strong>কর্কট:</strong> অর্থ এবং যৌথ সম্পদ হাইলাইট করা হয়েছে। ঋণ পরিশোধ হতে পারে, বা লোন অনুমোদিত হতে পারে। আপনার আর্থিক ঘর গুছিয়ে নেওয়ার সময় এসেছে।</p>
+      <p><strong>বৃশ্চিক:</strong> বাড়ি সেখানেই যেখানে হৃদয় থাকে। আপনি হয়তো সংস্কার করছেন বা কেবল বিশ্ব থেকে লুকিয়ে আছেন। বিশ্রাম এখন আপনার জন্য ফলপ্রসূ।</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">কেন সাধারণ রাশিফল যথেষ্ট নয়</h2>
+      <p>যদিও এই পূর্বাভাস আপনাকে আপনার সূর্য রাশির জন্য "মহাজাগতিক আবহাওয়া" দেয়, এটি সবচেয়ে গুরুত্বপূর্ণ অংশটি মিস করে: <strong>আপনার অনন্য চার্ট।</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>আপনি কেবল আপনার সূর্য রাশির চেয়ে বেশি। আপনার একটি চাঁদ, একটি লগ্ন এবং ৮টি অন্যান্য গ্রহ রয়েছে যা একটি জটিল, আঙুলের ছাপের মতো অনন্য মানচিত্র তৈরি করে। 
+      <br><em>উদাহরণ:</em> বৃষ লগ্ন এই মাসটি বৃষ সূর্যের চেয়ে সম্পূর্ণ ভিন্নভাবে অনুভব করবে।</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>আপনার ভবিষ্যত নিয়ে অনুমান করবেন না।</strong> নির্দিষ্ট তারিখ এবং বিস্তারিত পেতে যা ব্যক্তিগতভাবে আপনার ক্ষেত্রে প্রযোজ্য, আপনার একটি গণনাকৃত রিডিং প্রয়োজন।</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">আপনার ব্যক্তিগত সত্যের জন্য প্রস্তুত?</h3>
+          <p>আপনার সম্পূর্ণ ২০২৬ ব্যক্তিগত ট্রানজিট রিপোর্ট পান। দেখুন ঠিক কীভাবে গ্রহগুলি আপনার জন্মগত ব্লুপ্রিন্টের সাথে যোগাযোগ করে।</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">আমার ব্যক্তিগত রিডিং পান</a>
       </div>
     `
 };

@@ -4,201 +4,238 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 Szaturnusz-visszatérés túlélési útmutató: Navigálás a kozmikus beavatásodon',
+  excerpt: 'Közeledsz a 29-hez? Üdvözöljük a Szaturnusz-visszatérésed alkalmából. Tudd meg, miért ez felnőtt életed legfontosabb asztrológiai eseménye, és hogyan éld túl ép lélekkel.',
+  category: 'Tranzitok',
+  metaDescription: 'A végső útmutató a Szaturnusz-visszatérés túléléséhez. Tudja meg, mi történik, amikor a Szaturnusz visszatér születési helyére, hogyan hat a karrierjére és kapcsolataira.',
+  keywords: 'szaturnusz visszatérés, szaturnusz visszatérés jelentése, első szaturnusz visszatérés, asztrológiai tranzitok, szaturnusz a házakban, életközépi válság 30 évesen, asztrológiai felnőttkor',
+  quickSummary: [
+    'A Szaturnusz-visszatérés akkor következik be, amikor a Szaturnusz pontosan oda tér vissza, ahol születésedkor volt (28-30 éves kor körül).',
+    'Ez egy „kozmikus audit”, ahol minden, ami nem szilárd alapokra épült, elsöprésre kerül.',
+    'Bár gyakran stresszes, ez a valódi érettség és az életcél megtalálásának katalizátora.',
+    'A második Szaturnusz-visszatérés 58-60 éves kor körül történik, az örökségre és a bölcsességre összpontosít.'
+  ],
+  keyTakeaways: [
+    'Ne állj ellen a változásoknak; a Szaturnusz jutalmazza a fegyelmet és a felelősségvállalást.',
+    'A ház, amelyben a Szaturnuszod található, meghatározza, hol kell szembenézned a legnagyobb „záróvizsgáddal”.',
+    'A párkapcsolati szakítások és a karrierváltások ebben az időszakban gyakran szükségesek a fejlődésedhez.',
+    'Amint a tranzit véget ér, az autoritás és a tisztánlátás új érzését fogod tapasztalni.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'Mi az a Szaturnusz-visszatérés?' },
+    { id: 'the-myth-of-saturn', title: 'A mítosz és a feladatmester: Az idő ura' },
+    { id: 'timeline', title: 'Az idővonal: A visszatérés fázisai' },
+    { id: 'themes', title: 'A visszatérés egyetemes témái' },
+    { id: 'saturn-in-signs', title: 'Szaturnusz-visszatérés a jegyekben (Kostól a Halakig)' },
+    { id: 'saturn-in-houses', title: 'Szaturnusz-visszatérés a házakban (Mélymerülés)' },
+    { id: 'house-1', title: '1. ház: Az önmagunk újrafeltalálása' },
+    { id: 'house-2', title: '2. ház: A pénzügyi alapok' },
+    { id: 'house-3', title: '3. ház: Az elme uralma' },
+    { id: 'house-4', title: '4. ház: Ősi gyógyítás és gyökerek' },
+    { id: 'house-5', title: '5. ház: Az öröm fegyelme' },
+    { id: 'house-6', title: '6. ház: A szent rutin' },
+    { id: 'house-7', title: '7. ház: A partnerség próbatétele' },
+    { id: 'house-8', title: '8. ház: Halál, újjászületés és közös hatalom' },
+    { id: 'house-9', title: '9. ház: Az igazság keresése' },
+    { id: 'house-10', title: '10. ház: A karrier csúcsa' },
+    { id: 'house-11', title: '11. ház: A kollektív cél' },
+    { id: 'house-12', title: '12. ház: A végső feloldódás' },
+    { id: 'retrograde', title: 'A Szaturnusz-retrográd tényező' },
+    { id: 'psychology', title: 'A Szaturnusz-visszatérés pszichológiája' },
+    { id: 'how-to-survive', title: 'Túlélési tippek: Hogyan kezeld a nyomást' },
+    { id: 'famous-examples', title: 'Híres Szaturnusz-visszatérési történetek' },
+    { id: 'post-return', title: 'Élet a tűz után: A 30-as évek' },
+    { id: 'second-return', title: 'Felkészülés a második visszatérésre (58-60 éves kor)' },
+    { id: 'faq', title: 'Gyakran Ismételt Kérdések' },
+    { id: 'conclusion', title: 'Felnőttkorod átölelése' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Mi az a Szaturnusz-visszatérés?</h2>
+      <p>Ha valaha is észrevetted, hogy a 27 és 30 év közötti évek a legtöbb ember számára különösen kaotikusak, akkor tanúja voltál a <strong>Szaturnusz-visszatérés</strong> erejének. Az asztrológiában a Szaturnusz a struktúra, a fegyelem, a felelősség és az idő bolygója. Körülbelül 29,5 évbe telik, amíg ez az óriásbolygó egy teljes kört tesz a Nap körül.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>A „Szaturnusz-visszatérésed” akkor következik be, amikor a Szaturnusz bolygó visszatér pontosan arra a fokra és abba a zodiákus jegybe, amelyet születésed pillanatában elfoglalt. Ez a fiatalkorod „záróvizsgájának” égi megfelelője. Ez az a pillanat, amikor az univerzum megkérdezi: <em>„Olyan életet élsz, ami valóban a tiéd, vagy csak egy szerepet játszol a szüleid és a társadalom elvárásai alapján?”</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Ezt az időszakot gyakran intenzív nyomás, jelentős életmódbeli változások és az a hirtelen felismerés jellemzi, hogy a felnőttkor már nem egy távoli fogalom, hanem egy jelen lévő, súlyos valóság. Míg a „pop-asztrológia” gyakran a veszteség és a válság ijesztő időszakaként mutatja be a Szaturnusz-visszatérést, valójában ez egy mélyreható lehetőség arra, hogy lefejtsd magadról a „hamis” énedet, és olyan alapot építs, amely a következő három évtizedben támogatni tud. Ez a híd a 20-as éveid lehetőségei és a 30-as éveid ereje között.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">A mítosz és a feladatmester: Az idő ura</h2>
+      <p>Ahhoz, hogy megértsük, miért érezzük olyan súlyosnak ezt a tranzitot, meg kell vizsgálnunk a Szaturnusz archetípusát. A római mitológiában (a görögöknél Kronosz) Szaturnusz az idő és az aratás istene volt. Gyakran ábrázolják sarlóval a kezében. Ez nem csak a halálról szól; ez arról szól, hogy lemetsszük azt, ami már nem szolgál minket. Ahogy a kertésznek vissza kell vágnia a rózsabokrot, hogy a következő szezonban még szebben virágozzon, a Szaturnusz is visszavágja életünk azon részeit, amelyek túlburjánzottak, egészségtelenek vagy csak utánzatok.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Szaturnusz a „Feladatmester” vagy a „Karma Ura”. Nem azt akarja, hogy szenvedj, de azt akarja, hogy felnőj. Sokan a szerencse, a lehetőségek és a szülői elvárások keverékén evickélnek át a 20-as éveiken. Szaturnusz azt mondja: a partinak vége. Itt az ideje, hogy építs valami olyat, ami a következő 30 évben is megállja a helyét. Jutalmazza a kemény munkát, a tisztességet és a türelmet. Bünteti a rövidítéseket, a becstelenséget és a halogatást. Ha „színlelted” a dolgokat, a Szaturnusz-visszatérésed az az időszak, amikor kiderül az igazság.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Az idővonal: A visszatérés fázisai</h2>
+      <p>Az első Szaturnusz-visszatérés jellemzően 27,5 éves kor körül kezdődik és 30 éves korra ér véget. A tapasztalat azonban három különálló szakaszra bontható:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>1. fázis: A gyülekező vihar (27-28 éves kor)</h3>
+      <p>Kezdesz érezni egy bizonytalan nyugtalanságot. Azok a dolgok, amik régebben boldoggá tettek – alkalmi randizás, átmulatott éjszakák, egy „csak mostantól” munka – kezdenek üresnek tűnni. Hirtelen sürgető vágyat érezhetsz, hogy „rendbe tedd az életedet”, még ha nem is tudod pontosan, ez mit jelent. Észreveheted, hogy a barátaid összeházasodnak vagy előléptetik őket, és ahelyett, hogy örülnél nekik, pánikba esel a saját haladásod miatt.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>2. fázis: A záróvizsga (28-29 éves kor)</h3>
+      <p>Ez a „csapás”. Az események összeesküsznek, hogy cselekvésre kényszerítsenek. Ekkor történnek a szakítások, a karrierváltások vagy ekkor jelentkeznek az egészségügyi problémák. Választásokra kényszerülsz. Nincs többé várakozás. Szaturnusz addig fog lökdösni, amíg felelősséget nem vállalsz az eredményeidért. Ez a tranzit érzelmi intenzitásának csúcspontja.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>3. fázis: Az integráció (29-30 éves kor)</h3>
+      <p>Amint a Szaturnusz túlhalad a születési fokán, a nyomás kezd enyhülni. Kezded látni a bölcsességet a meghozott döntéseidben (még a nehezekben is). Idősebbnek, de szilárdabbnak érzed magad. „Levizsgáztál” a valódi asztrológiai felnőttkorból. Többé nincs szükséged arra, hogy bárkitől is megkérdezd, „szabad-e” önmagadnak lenned. Egyszerűen az vagy.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">A visszatérés egyetemes témái</h2>
+      <p>Bár minden egyén tapasztalata egyedi, számos téma szinte mindenkinél megjelenik ebben az időszakban:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Valóságellenőrzés:</strong> Ha fantáziában éltél, vagy elkerültél egy fontos igazságot, a Szaturnusz kényszeríteni fog, hogy szembenézz vele.</li>
+        <li><strong>Kapcsolatok lezárása:</strong> A hosszú távú kapcsolatok, amik nem „nagyon hosszú távra” szólnak, gyakran most hullanak szét. Ha együtt maradtok, az azért van, mert elköteleztétek magatok az érettség egy új szintje mellett.</li>
+        <li><strong>Karrierváltások:</strong> Sokan feladják biztos, de unalmas munkájukat, hogy a valódi hivatásukat kövessék, vagy rájönnek, hogy az „álommunka” valójában rémálom, és valami praktikusabb felé mozdulnak el.</li>
+        <li><strong>Fizikai öregedés:</strong> Hirtelen másképp érezheted a testedet. Ez az az időszak, amikor az emberek elkezdik komolyan venni az egészségüket – felismerve, hogy már nem sérthetetlenek. Észreveheted az első ősz hajszáladat vagy a változást az anyagcserédben.</li>
+        <li><strong>Határok kijelölése:</strong> Megtanulni „nemet” mondani a szülőknek, a mérgező barátoknak és az irreális elvárásoknak egy jelentős szaturnuszi lecke. Megtanulod, hogy a „Nem” egy teljes mondat.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Zodiákus Jegys</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Szaturnusz-visszatérés a zodiákus jegyekben</h2>
+      <p>A jegy, amelyben a Szaturnuszod áll, elárulja, *hogyan* fogod megélni ezt az átmenetet. Keresd meg a Szaturnusz-jegyedet az Astralo képletedben, hogy lásd a fejlődésed egyedi ízét:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Szaturnusz a Kosban</h3>
+      <p>A visszatérésed a **türelemről és az impulzuskontrollról** szól. Valószínűleg át akarsz rohanni az átmeneten, de a Szaturnusz le fog lassítani. Tanulod, hogy ne csak nyers erővel, hanem bölcsességgel vezess.
+      <br><strong>A feladat:</strong> Uralni a dühödet és a hajtóerődet.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Szaturnusz a Bikában</h3>
+      <p>A visszatérésed a **pénzügyi biztonságról és az értékekről** szól. Komoly pénzügyi akadályokkal szembesülhetsz, amik arra kényszerítenek, hogy meghatározd, mi az, ami valójában „értékes” számodra.
+      <br><strong>A feladat:</strong> Szilárd pénzügyi alapok és önbecsülés kiépítése, ami nem a tulajdonodhoz kötődik.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Szaturnusz az Ikrekben</h3>
+      <p>A visszatérésed a **kommunikációról és a koncentrációról** szól. Lehet, hogy „túl sok ötleted” van, és a Szaturnusz arra kényszerít, hogy válassz egyet és válj mesterévé.
+      <br><strong>A feladat:</strong> Az elméd fókuszálása és az autoritással való beszéd.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Szaturnusz a Rákban</h3>
+      <p>A visszatérésed az **érzelmi határokról és a családról** szól. Lehet, hogy gyermekkori sebekkel kell foglalkoznod, vagy súlyos családi felelősséget kell vállalnod.
+      <br><strong>A feladat:</strong> Önmagad táplálása és egy olyan belső otthon felépítése, amely nem függ másoktól.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Szaturnusz az Oroszlánban</h3>
+      <p>A visszatérésed a **kreatív integritásról és az elismerésről** szól. Küzdhetsz a taps iránti vággyal, és meg kell tanulnod először önmagadnak alkotni.
+      <br><strong>A feladat:</strong> Találd meg az önbizalmat, ami a belső erőből fakad, nem a külső dicséretből.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Szaturnusz a Szűzben</h3>
+      <p>A visszatérésed az **egészségről és a szolgálatról** szól. Valószínűleg már amúgy is nagyon kemény vagy magaddal, és a Szaturnusz megtanítja, hogy a „tökéletes” a „kész” ellensége.
+      <br><strong>A feladat:</strong> Fenntartható rutin kialakítása és az, hogy tanulj meg kedvesebb lenni a fizikai testeddel.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Szaturnusz a Mérlegben</h3>
+      <p>A visszatérésed az **igazságosságról és a partnerségről** szól. Komoly párkapcsolati tesztekkel szembesülhetsz, amik arra kényszerítenek, hogy megtaláld a saját identitásodat egy páron belül.
+      <br><strong>A feladat:</strong> Megtalálni az egyensúlyt és megtanulni, hogy önmagadban is „elég” vagy.</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Szaturnusz a Skorpióban</h3>
+      <p>A visszatérésed a **hatalomról és az intimitásról** szól. Ez egy nagyon intenzív visszatérés, ami magában foglalja az árnyékoddal való szembenézést és a bizalom tanulását.
+      <br><strong>A feladat:</strong> A legmélyebb félelmeid átalakítása személyes hatalommá.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Szaturnusz a Nyilasban</h3>
+      <p>A visszatérésed a **hitről és a szabadságról** szól. Rájöhetsz, hogy a világ sokkal nagyobb (vagy kisebb), mint hitted, és újra kell definiálnod a filozófiádat.
+      <br><strong>A feladat:</strong> Találni egy olyan „Igazságot”, amivel a mindennapokban ténylegesen együtt tudsz élni.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Szaturnusz a Bakban</h3>
+      <p>A visszatérésed az **ambícióról és az autoritásról** szól. Szaturnusz itt „otthon” van, így a nyomás extrém, de a jutalom is az. Te válsz a Főnökké.
+      <br><strong>A feladat:</strong> Felelősséget vállalni az örökségedért és integritással megmászni a saját hegyedet.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Szaturnusz a Vízöntőben</h3>
+      <p>A visszatérésed a **közösségről és az egyéniségről** szól. Megtanulod, hogyan illeszkedj be a csoportba anélkül, hogy elveszítenéd egyedi szikrádat.
+      <br><strong>A feladat:</strong> Hozzájárulni a kollektívához, miközben fenntartod a határaidat.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Szaturnusz a Halakban</h3>
+      <p>A visszatérésed a **spiritualitásról és a határokról** szól. Küzdhetsz a földelés megtartásával, és meg kell tanulnod, hogy a „nem” egy spirituális tett.
+      <br><strong>A feladat:</strong> Álamaidat a valósággá váltani a fegyelem által.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Szaturnusz-visszatérés a házakban: Mélymerülés</h2>
+      <p>A Szaturnusz-visszatérésed „holja” azt a házat határozza meg, ahol a Szaturnusz a születési képletedben áll. Ez az a színpad, ahol a dráma lejátszódik.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">1. ház: Az önmagunk újrafeltalálása</h2>
+      <p>Amikor a Szaturnusz az 1. házba tér vissza, a válság személyes és fizikai. Teljes átalakuláson mehetsz keresztül – nem csak a ruháid, hanem a személyiséged tekintetében is. Nehéz súlyt érzel a válladon, egy érzést, hogy „valakivé kell válnod”. Lehet, hogy rendkívül kemény vagy magaddal ebben az átmenetben. Tapasztalhatsz fogyást, hízást vagy olyan változást az egészségedben, ami fegyelmet igényel.
+      <br><strong>A lecke:</strong> Kiépíteni egy szilárd énképet, ami nem függ mások jóváhagyásától. Tanulod, hogy a saját autoritásod legyél. Te vagy a saját tested vezérigazgatója.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">2. ház: A pénzügyi alapok</h2>
+      <p>Ez a visszatérés a pénzügyeidre és az önbecsülésedre összpontosít. Pénzügyi nehézségeket tapasztalhatsz, amik arra kényszerítenek, hogy megtanulj költségvetést készíteni, spórolni és értékelni az idődet. Alternatív megoldásként előfordulhat, hogy végre elkezdesz „valódi” pénzt keresni, de súlyos felelősséget érzel ezzel kapcsolatban. Újraértelmezed, mit jelent számodra a „biztonság”. Tanulod, hogy az értéked nem egy szám a bankszámládon.
+      <br><strong>A lecke:</strong> Megtalálni a biztonságot önmagadban, és fenntartható kapcsolatot kialakítani az anyagi világgal. Tanulod a pénz értékét és a lelked értékét.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">3. ház: Az elme uralma</h2>
+      <p>A nyomás az elméden és a közvetlen környezeteden van. Úgy dönthetsz, hogy visszatérsz az iskolába, befejezel egy régóta görgetett írói projektet, vagy jelentős változásokat tapasztalsz a testvéreiddel való kapcsolatodban. Úgy érezheted, hogy „túl sokat kell tanulnod” és nincs elég időd. A napi ingázásod stresszforrássá válhat, ami környezetváltozásra kényszerít.
+      <br><strong>A lecke:</strong> Mesterévé válni a mesterségednek és integritással kommunikálni. Tanulod a koncentrált gondolkodás és az őszinte beszéd értékét. Olyan emberré válsz, aki állja a szavát.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">4. ház: Ősi gyógyítás és gyökerek</h2>
+      <p>Ez az egyik legérzelmesebb visszatérés. Gyakran érinti a szüleidet, a lakhatási helyzetedet vagy a gyermekkori traumáidat. Megveheted az első otthonodat, vagy gondoskodnod kell egy idősödő szülőről. Saját alapokat építesz, gyakran azáltal, hogy lebontod azt, amit a szüleid építettek neked. Te vagy az új „családfő”.
+      <br><strong>A lecke:</strong> Olyan otthont és magánéletet teremteni, ami valóban táplálja a lelkedet, függetlenül a családod elvárásaitól. Gyógyítod a „családfát” azáltal, hogy te vagy az, aki megtöri a körforgást.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">5. ház: Az öröm fegyelme</h2>
+      <p>Szaturnusz az 5. házban olyan érzés lehet, mintha „meghalt volna a zene”. A szokásos hobbijaid vagy a bulizás üresnek tűnhet. Gyakran ekkor döntenek az emberek a gyerekvállalás mellett (átvállalva a végső felelősséget a „teremtésért”), vagy rájönnek, hogy egy kreatív hobbit komoly üzletté akarnak fejleszteni. Ez a „szórakozásod” beérése.
+      <br><strong>A lecke:</strong> Megtalálni az örömöt a fegyelem és az elkötelezett kreativitás által. Tanulod, hogy a valódi játékhoz fókusz kell. Ez a különbség egy „flört” és egy „románc” között.</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">6. ház: A szent rutin</h2>
+      <p>Ez a visszatérés az egészségedről és a napi szokásaidról szól. Szembesülhetsz egy egészségügyi ijedtséggel, ami étrended és edzésed megváltoztatására kényszerít. A munkád nagyon megterhelővé válik, megkövetelve a delegálás és a határok kijelölésének megtanulását. Felismered, hogy a tested egy templom, ami karbantartást igényel. A munkád súlyos tehernek tűnhet, amíg meg nem tanulod jobban beosztani az idődet.
+      <br><strong>A lecke:</strong> Uralni a napi ritmusodat és szolgálni másokat anélkül, hogy kiégnél. A hatékonyság az új legjobb barátod. Olyan testet építesz, ami tartós.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">7. ház: A partnerség próbatétele</h2>
+      <p>A „Házasság vagy szakítás” háza. Szaturnusz itt a legszorosabb kötelékeidet teszteli. Ha egy kapcsolat ingatag volt, valószínűleg most véget ér. Ha erős, összeházasodhattok, vagy komoly üzleti szerződést köthettek. Tanulod, mit jelent valójában az „elköteleződés” – ez nem csak egy érzés, hanem egy szerződés. Most vonzhatsz idősebb, komolyabb partnereket.
+      <br><strong>A lecke:</strong> Valóságon és közös felelősségen alapuló partnerségeket építeni, nem pedig kivetítésen vagy fantázián. Tanulsz „partnerré” válni, nem csak „szeretővé”.</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">8. ház: Halál, újjászületés és közös hatalom</h2>
+      <p>Ez egy mély, pszichológiai visszatérés. Közös pénzügyeket, adókat és intimitást érint. Szembesülhetsz a haláltól vagy a veszteségtől való félelmeiddel. Ez az „egó halálának” ideje, amikor rájössz, hogy nem irányíthatsz mindent. Lehet, hogy adóssággal vagy örökséggel kell foglalkoznod. Szó szerint lefejted a bőrödet, hogy felfedd az alatta lévő lelket.
+      <br><strong>A lecke:</strong> Uralni a személyes hatalmadat, és megtanulni a bizalom és az átadás művészetét a mély intimitásban. Felfedezed a „vagyont”, ami nem látható.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">9. ház: Az igazság keresése</h2>
+      <p>Szaturnusz itt kihívást intéz a hited ellen. Elhagyhatod gyermekkorod vallását, vagy éppen ellenkezőleg, mély struktúrát találhatsz egy spirituális úton. Küzdhetsz a felsőoktatással, vagy jelentős kihívásokat tapasztalhatsz külföldi utazások során. Olyan „Igazságot” keresel, amivel ténylegesen együtt tudsz élni. Úgy dönthetsz, hogy végre megszerzed azt a PhD-t vagy megírod azt a könyvet.
+      <br><strong>The Lesson:</strong> Olyan életfilozófiát építeni, ami ellenáll a nehéz időknek és valódi értelmet ad. A bölcsesség emberévé válsz, nem csak a tudásévé.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Karrier</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">10. ház: A karrier csúcsa</h2>
+      <p>Ez a klasszikus „életközépi válság 30 évesen”. A nyilvános hírneved és a karriered mikroszkóp alatt van. Elérheted a csúcsot a szakterületeden és rájöhetsz, hogy gyűlölöd, vagy végre megkaphatod az elismerést, amiért dolgoztál. Arra kérnek, hogy lépj be az autoritásodba és vezess. A világ figyel.
+      <br><strong>A lecke:</strong> Összehangolni a nyilvános életedet a belső igazságoddal, és felelősséget vállalni az örökségedért. Azzá az autoritás-személlyé válsz, akitől valaha féltél.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">11. ház: A kollektív cél</h2>
+      <p>Szaturnusz itt lemetssze a baráti körödet. Rájöhetsz, hogy a „barátaid” csak ismerősök voltak életed egy szakaszában, és már nincs bennetek semmi közös. Vonzódhatsz idősebb mentorokhoz, vagy vezető szerepet vállalhatsz egy közösségi szervezetben. Keresed a valódi törzsedet. Reális lépésekkel határozod meg a „reményeidet és vágyaidat”.
+      <br><strong>A lecke:</strong> Megtalálni a helyedet a kollektívában, és hozzájárulni képességeiddel egy nálad nagyobb célhoz. Olyan hálózatot építesz, ami a jövőnek dolgozik.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">12. ház: A végső feloldódás</h2>
+      <p>Ez egy nagyon csendes, belső visszatérés. Magányosnak vagy elszigeteltnek érezheted magad. Titkok derülhetnek ki a múltból. Ez a mély gyógyulás, a terápia vagy a spirituális elvonulás ideje. Tisztítod a terepet egy teljesen új, 30 éves ciklushoz. Egy korszak vége. Az őseiddel és a tudatalattiddal dolgozol.
+      <br><strong>A lecke:</strong> Megtalálni a békét a magányban, megbocsájtani a múltnak, és átadni magad az isteni vagy a kollektív tudattalannak. Felkészülsz az újjászületésre.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">A Szaturnusz-retrográd tényező</h2>
+      <p>Ha **Szaturnusz-retrográd** idején születtél (amikor a Szaturnusz látszólag visszafelé mozog az égen), a visszatérésed kissé másnak tűnhet. Lehet, hogy a 20-as éveidet belső súllyal vagy azzal az érzéssel töltötted, hogy „nem vagy elég jó”. A visszatérésed során a nyomás valójában *megkönnyebbülést* hozhat, mivel a külvilág végre illeszkedik a belső komolyságodhoz. Végre beléphetsz abba a szerepbe, amire születésed óta készülsz. Végre „elég jó” vagy.</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">A Szaturnusz-visszatérés pszichológiája</h2>
+      <p>Pszichológiai szempontból a Szaturnusz-visszatérés az örök gyermeki létből a felnőttkorba való átmenetet jelzi. Elhagyjuk a szüleinket vagy a társadalmat, mint a „válaszok” forrását, és elkezdjük mi magunk megadni a választ. Ez az egó gyermekkorának halála és a lélek érettségének születése. Ezért kíséri gyakran depresszió vagy szorongás – ez a gyász egy formája a gondtalan énedért, amit hátrahagysz. Rájössz, hogy a Földön töltött időd véges.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Túlélési tippek: Hogyan kezeld a nyomást</h2>
+      <p>A legnagyobb hiba, amit az emberek elkövetnek a Szaturnusz-visszatérésük alatt, az **ellenállás**. Szaturnusz olyan, mint egy fal – ha nekimész, megsérülsz. Ha keresed az ajtót (erőfeszítésen és felelősségvállaláson keresztül), átjutsz egy új világba.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Vállalj felelősséget:</strong> Ne okold a főnöködet, a párodat vagy a szüleidet. Kérdezd meg: „Mi az én részem ebben? Mire vagyok kész változtatni?”</li>
+        <li><strong>Szervezd meg magad:</strong> Szaturnusz imádja a táblázatokat. Nézd meg a pénzügyeid, az egészséged és az időbeosztásod. Építs rendszereket, amik megtartanak, ha gyengének érzed magad.</li>
+        <li><strong>Légy türelmes:</strong> Szaturnusz az idő istene. Ez a tranzit 2,5 évig tart. Nem fogod megoldani egy hétvége alatt. Tiszteld a folyamatot. Lassan járj, tovább érsz.</li>
+        <li><strong>Keress mentorálást:</strong> Szaturnusz képviseli a „Bölcset”. Keress valakit, aki már átesett ezen, és kérd ki a bölcsességét. Csatlakozz 30-as éveikben járó emberekhez, akik már átjutottak a túlsó oldalra.</li>
+        <li><strong>Foglalkozz az egészségeddel:</strong> A tested jelzéseket fog adni. Ha stresszes vagy, hol érzed? Vedd komolyan a fizikai karbantartást. A rendszeres szűrések most elengedhetetlenek.</li>
+        <li><strong>Vágd le a száraz ágakat:</strong> Ha egy szokás, egy barát vagy egy munka leszív, de nem ad vissza semmit, engedd el. Szaturnusz amúgy is elvenné; egyszerűbb, ha önként átadod.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Híres Szaturnusz-visszatérési történetek</h2>
+      <p>Számos híresség és történelmi alak élte át legmeghatározóbb pillanatait a Szaturnusz-visszatérése alatt:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> A Szaturnusz-visszatérése előtt távolították el az Apple-től, ami elvezette a NeXT és a Pixar megalapításához, végül még erősebben és érettebben tért vissza az Apple-höz.</li>
+        <li><strong>Lady Gaga:</strong> A 20-as évei végén jelentősen átalakította képét és karrierjét, a pop-látványosságtól a „komolyabb” művészet és a jazz felé mozdulva.</li>
+        <li><strong>Vincent van Gogh:</strong> Csak a Szaturnusz-visszatérése idején kezdett el komolyan festeni, megtalálva életcélját egy intenzív küzdelmes időszakon keresztül.</li>
+        <li><strong>J.K. Rowling:</strong> Az első Harry Potter könyvet egyedülálló anyaként, a Szaturnusz-visszatérése alatti nehézségek közepette írta – egy klasszikus „szaturnuszi” sikertörténet, ami a megpróbáltatásokra épült.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Tűz: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Élet a tűz után: A 30-as évek</h2>
+      <p>Amint a Szaturnusz továbbáll, a súly megemelkedik. Az emberek gyakran számolnak be arról, hogy „könnyebbnek”, de „szilárdabbnak” érzik magukat 30 éves koruk után. Már nem érdekli őket annyira, mit gondolnak az emberek. Van egy útjuk. Túlélték a tüzet, és mint az arany, megtisztultak. Olyan céltudatosságod van, amit a „fiatalabb éned” sosem érthetett volna meg. A 30-as éveid gyakran életed legtermékenyebb és legkifizetődőbb évtizedei, mert végre tudod, ki vagy.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Felkészülés a második visszatérésre (58-60 éves kor)</h2>
+      <p>Fontos tudni, hogy 58 éves korod körül kapsz egy újabb „látogatást” a Szaturnusztól. Míg az első visszatérés a felnőtté válásról szól, a második visszatérés a **Bölccsé** válásról. Az örökségről, a nyugdíjazásról és a bölcsességről szól, amit továbbadsz. Ha elvégzed a munkát az első visszatérésed alatt, a második sokkal könnyebb – az aratás és a tisztelet ideje a válság ideje helyett.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Gyakran Ismételt Kérdések</h2>
+      <p><strong>K: Mindenkinek van Szaturnusz-visszatérése?</strong>
+      <br>V: Igen, minden ember átéli a Szaturnusz-visszatérést 29, 58 és (ha elég sokáig él) 87 éves kora körül. Ez egy egyetemes emberi tapasztalat.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>K: Mindig rossz?</strong>
+      <br>V: Nem! Ha keményen dolgoztál és tisztességesen éltél, a Szaturnusz-visszatérésed a hatalmas előléptetés, a házasság és a siker ideje lehet. Ez egy „aratás” – pontosan azt kapod vissza, amit a 20-as éveidben elvetettél.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>K: Hogyan találom meg a Szaturnusz-jegyemet?</strong>
+      <br>V: Használhatod az Astralo alkalmazást az ingyenes születési képleted generálásához, amely megmutatja, pontosan melyik jegyben és házban áll a Szaturnuszod.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>K: Mi van, ha a párommal azonos jegyben van a Szaturnuszunk?</strong>
+      <br>V: Együtt fogtok keresztülmenni a Szaturnusz-visszatéréseiteken! Ez egy „mindent vagy semmit” időszak lehet a kapcsolat számára. Ha támogatjátok egymás fejlődését, igazi „power couple”-ként kerültök ki belőle.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Felnőttkorod átölelése</h2>
+      <p>A Szaturnusz-visszatérés nem átok; ez egy ajándék az univerzumtól. Ez az égi mechanizmus biztosítja, hogy ne vesztegesd el az életedet valaki más álmaiért. Az Astralo-nál hiszünk abban, hogy a Szaturnusz-helyzeted megértése az első lépés a múltad alóli valódi felszabadulás felé.</p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>A **Tranzit útmutatóink** hónapról hónapra előrejelzéseket adnak a te specifikus Szaturnusz-visszatérésedre, segítve megérteni, mikor kell nyomni és mikor kell várni. Ne félj a Feladatmestertől – öleld át a fejlődést. Az új életed – a valódi életed – a 30-as éveid túlsó oldalán vár. Lépj bele a hatalmadba magabiztosan.</p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>További segítségre van szükséged? Fordulj szakértő asztrológusainkhoz személyre szabott Szaturnusz-visszatérési konzultációért, vagy töltsd le speciális Szaturnusz túlélési útmutatónkat az alkalmazásboltból.</em></p>
     `
 };

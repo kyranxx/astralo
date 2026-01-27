@@ -1,88 +1,106 @@
 /**
  * zodiac-compatibility-complete-guide - UK
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const uk: BlogPostTranslation = {
-    title: "❤️ Зодіак Знак Compatibility: The Definitive Guide to Cosmic Любов",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Знакs Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: '❤️ Сумісність знаків зодіаку: Повний путівник по космічному коханню',
+  excerpt: 'Найкращий путівник по сумісності зодіаку на 2026 рік. Вийдіть за межі сонячних знаків і дізнайтеся, як стихії, Венера та Марс впливають на вашу романтичну хімію та довгостроковий потенціал.',
+  category: 'Кохання та стосунки',
+  metaDescription: 'Повний путівник по сумісності знаків зодіаку. Дізнайтеся, як стихії та планети впливають на ваші стосунки та знайдіть свою ідеальну пару.',
+  keywords: 'сумісність зодіаку, любовний гороскоп, синастрія, сумісність знаків, венера в коханні, марс і пристрасть, астрологія стосунків, найкращі пари',
+  quickSummary: [
+    "Справжня сумісність передбачає порівняння повних натальних карт (синастрія), а не лише сонячних знаків",
+    "Елементарний баланс (Вогонь, Земля, Повітря, Вода) — це основа гармонії у стосунках",
+    "«Несумісні» знаки часто дають найбільші можливості для росту душі",
+    "Венера визначає стиль вираження прихильності, тоді як Марс керує пристрастю та стилем конфліктів"
+  ],
+  keyTakeaways: [
+    "Шукайте тригони (однакова стихія) для легкості та опозиції для інтенсивного тяжіння",
+    "Сумісність знаків Місяця є вирішальною для спільного життя та емоційної безпеки",
+    "Сумісність Меркурія визначає, наскільки добре ви разом вирішуєте проблеми",
+    "Не існує «ідеальної» пари; у кожного союзу є свої сильні сторони та виклики"
+  ],
+  tableOfContents: [
+    { id: 'beyond-sun-signs', title: "Чому сонячні знаки — це ще не все" },
+    { id: 'elemental-love', title: "4 стихії в коханні" },
+    { id: 'love-planets', title: "Венера, Марс і Місяць" },
+    { id: 'challenging-matches', title: "Правда про «погані» пари" },
+    { id: 'best-matches-deep-dive', title: "Глибоке занурення: Найкращі пари" },
+    { id: 'synastry', title: "Порада для просунутих: Синастрія" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Чому сонячні знаки — це ще не все</h2>
+      <p>Ми всі через це проходили: перевіряли журнали або додатки, щоб побачити, чи сумісний знак нашого обранця з нашим. «О ні, я Лев, а він Скорпіон — ми приречені!» Але зачекайте. <strong>Сумісність зодіаку</strong> нескінченно складніша — і дає більше надії — ніж просте зіставлення за таблицями.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Хоча ваш сонячний знак представляє ваше основне его та життєву мету, стосунки будуються на емоціях, спілкуванні та цінностях. Ось чому ви можете бути щасливі в шлюбі зі знаком, який вважається «несумісним», або мати труднощі з так званою «ідеальною парою». Щоб по-справжньому зрозуміти <strong>любовну сумісність</strong>, ми повинні подивитися на повну картину неба.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Любов</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 стихії в коханні</h2>
+      <p>Найшвидший спосіб оцінити початкову хімію — через стихії. Знаки однієї стихії зазвичай «говорять однією мовою».</p>
       
-      <h3>🔥 Вогонь Знакs (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Знаки Вогню (Овен, Лев, Стрілець)</h3>
+      <p><strong>Мова кохання:</strong> Пристрасть, пригоди, спонтанність.</p>
+      <p>Знакам Вогню потрібен партнер, який може роздмухувати їхнє полум'я, не гасячи його. Вони прагнуть азарту і ненавидять нудьгу.
+      <br><em>Найкраще з:</em> Іншими знаками Вогню (миттєве тепло) або знаками Повітря (повітря живить вогонь).</p>
 
-      <h3>🌍 Земля Знакs (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Знаки Землі (Телець, Діва, Козеріг)</h3>
+      <p><strong>Мова кохання:</strong> Допомога, стабільність, дотики.</p>
+      <p>Знаки Землі ставляться до любові як до дії. Вони проявляють прихильність через практичну допомогу та спільну розбудову життя. Їм потрібна надійність.
+      <br><em>Найкраще з:</em> Іншими знаками Землі (міцний фундамент) або знаками Води (вода живить землю).</p>
 
-      <h3>💨 Повітря Знакs (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Знаки Повітря (Близнюки, Терези, Водолій)</h3>
+      <p><strong>Мова кохання:</strong> Спілкування, дотепність, свобода.</p>
+      <p>Для знаків Повітря інтелект — це найсексуальніша риса. Їм потрібна ментальна стимуляція і партнер, який є також їхнім найкращим другом.
+      <br><em>Найкраще з:</em> Іншими знаками Повітря (нескінченні розмови) або знаками Вогню (натхнення).</p>
 
-      <h3>💧 Вода Знакs (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Знаки Води (Рак, Скорпіон, Риби)</h3>
+      <p><strong>Мова кохання:</strong> Вразливість, інтуїція, злиття.</p>
+      <p>Знаки Води шукають глибокого емоційного зв'язку. Вони хочуть, щоб їх розуміли без слів, і потребують безпечної гавані.
+      <br><em>Найкраще з:</em> Іншими знаками Води (психічний зв'язок) або знаками Землі (контейнер для їхньої води).</p>
 
-      <h2 id="love-planets">The Real Любов Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Справжні планети кохання: Венера, Марс і Місяць</h2>
+      <p>Якщо ви хочете знати, чи дійсно ви ладнатимете щодня, перевірки лише сонячного знака недостатньо. Вам потрібно уважніше подивитися на три специфічні планети в карті партнера:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Місяць 🌙 (Емоційна безпека)</h3>
+      <p>У тривалому шлюбі або спільному проживанні <strong>сумісність знаків Місяця є головною</strong>. Ваш знак Місяця диктує, що вам потрібно, щоб почуватися в безпеці, як ви реагуєте, коли втомлені чи голодні, і як ви проявляєте турботу. 
+      <br><em>Приклад:</em> Овен за Сонцем може здаватися жорстким, але якщо у нього Місяць у Раку, він насправді дуже чутливий і потребує обіймів та підтримки вдома.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Венера ♀ (Романтика та цінності)</h3>
+      <p>Венера визначає, що ви вважаєте прекрасним і що цінуєте. Вона показує ваш «стиль флірту».
+      <br><em>Порада:</em> Якщо ваші знаки Венери належать до однієї стихії, ваші смаки та звички щодо витрат, швидше за excavations, легко співпадуть.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Марс ♂ (Пристрасть та конфлікти)</h3>
+      <p>Марс — це планета лібідо та конфліктів. Він показує, як ви сваритеся і як ведете себе в сексі.
+      <br><em>Порада:</em> Сумісні знаки Марса гарантують, що суперечки вирішуватимуться швидко і що фізична хімія залишатиметься живою.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Правда про «погані» пари</h2>
+      <p>Що, якщо ви закохаєтесь у знак, який вважається «несумісним»? Наприклад, Лев (Вогонь) і Скорпіон (Вода)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Ці стосунки часто є найбільш <strong>трансформаційними</strong>. Астрологія називає ці аспекти «квадрат» або «квіконс». Вони створюють тертя. Але тертя створює тепло! «Складні» пари змушують вас рости, вивчати нову мову та виходити із зони комфорту. Це часто зв'язки споріднених душ з високим рівнем пристрасті та драми, призначені для еволюції вашої душі, навіть якщо вони потребують більше роботи.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Зодіак PПовітряings</h2>
+      <h2 id="best-matches-deep-dive">Глибоке занурення: Відомі зодіакальні пари</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>«Потужна пара»: Овен і Терези</h3>
+      <p>Протилежності притягуються! Овен — це «Я насамперед», Терези — це «МИ насамперед». Овен вчить Терезів наполегливості; Терези вчать Овна дипломатії. Це магнетичне тяжіння, яке важко розірвати.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>«Будівельники імперії»: Телець і Козеріг</h3>
+      <p>Два знаки Землі, які цінують якість, гроші та безпеку. Вони разом будують величезний успіх, хоча їм потрібно не забувати розважатися, а не лише працювати.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>Дует «Пітера Пена»: Близнюки та Стрілець</h3>
+      <p>Повітря і Вогонь. Обидва люблять свободу, подорожі та філософію. Можливо, вони ніколи не сховаються в традиційному розумінні, але назавжди залишаться партнерами по пригодах.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>«Психічний зв'язок»: Рак і Скорпіон</h3>
+      <p>Коли ці два знаки Води зустрічаються, світ зникає. У них телепатичний зв'язок і власність, яка робить їх люто вірними один одному.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Просунута сумісність: Синастрія</h2>
+      <p>Щоб отримати справжню відповідь про ваші стосунки, вам потрібне <strong>читання синастрії</strong>. Це передбачає накладання вашої карти на карту партнера.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Ми шукаємо такі зв'язки, як:
+      <br><strong>Сполучення Сонце-Місяць:</strong> Класичний аспект «чоловік/дружина».
+      <br><strong>Обмін Венера-Марс:</strong> Неймовірна сексуальна привабливість.
+      <br><strong>Контакти Сатурна:</strong> Клей, який тримає людей разом протягом усього життя (навіть у важкі часи).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>В Astralo наші передові алгоритми та експерти-астрологи не просто дають вам відсоток. Ми створюємо карту душі ваших стосунків. Припиніть вгадувати і почніть розуміти космічну мету вашого союзу.</p>
     `
 };

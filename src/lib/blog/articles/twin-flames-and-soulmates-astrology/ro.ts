@@ -4,147 +4,177 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "🔥 Twin Flames, Soulmates, and Karma: The Astrology of Deep Connections",
-    excerpt: "Is it love, or is it fate? Explore the mystical world of relationship astrology. Learn how to identify Twin Flames, Soulmates, and Karmic lessons in your birth chart.",
-    category: "Love & Relationships",
-    metaDescription: "Complete guide to the astrology of deep connections. Discover the difference between twin flames and soulmates, learn synastry aspects for lifelong love, and understand karmic roles.",
-    keywords: "twin flames, soulmates, karmic relationships, synastry, composite charts, north node love, soulmate aspects, venus conjunct mars, saturn synastry, asteroid love astrology, vertex astrology, pallas athene, juno, eros",
-    quickSummary: ["A Soulmate is someone from your soul family who supports your growth and makes life feel \"home.\"","A Twin Flame is your \"mirror soul,\" designed to trigger intense transformation and ego death.","Karmic Partners arrive to help you settle \"spiritual debts\" and learn difficult life lessons.","Astrology uses Synastry (comparing two charts) and Composite Charts (the energy of the relationship itself)."],
-    keyTakeaways: ["Saturn aspects in synastry are the \"glue\" that keeps a couple together through hard times.","The South Node indicates past-life connections, while the North Node shows your future destiny together.","Venus and Mars aspects determine the sexual and romantic \"spark,\" but they don't guarantee longevity.","Most \"Twin Flame\" stories in pop culture are actually high-intensity karmic relationships."],
-    tableOfContents: [{"id":"introduction","title":"Beyond the Spark: The Mystery of Connection"},{"id":"definitions","title":"Soulmates vs. Twin Flames vs. Karmic Partners"},{"id":"synastry","title":"Synastry: How We Impact Each Other"},{"id":"personal-planets","title":"The Big Three of Love: Sun, Moon, and Ascendant"},{"id":"love-planets","title":"The Spark: Venus & Mars Dynamic"},{"id":"the-glue","title":"The Long Haul: Saturn, Jupiter & The Outer Planets"},{"id":"the-nodes","title":"The Nodes: Past Lives & Soul Destiny"},{"id":"the-vertex","title":"The Vertex: Fated Encounters"},{"id":"asteroids","title":"Asteroids of Love: Juno, Eros, and Psyche"},{"id":"composite-charts","title":"The Composite Chart: The Entity of \"Us\""},{"id":"house-overlays","title":"House Overlays: Where We Live in Each Other's Lives"},{"id":"twin-flames-signs","title":"Twin Flame Dynamics Through the 12 Signs"},{"id":"karmic-elements","title":"Karmic Relationships by Element"},{"id":"famous-cases","title":"Fated Unions: Famous Astrology Case Studies"},{"id":"red-flags","title":"Astrological Red Flags: When Love Becomes Toxic"},{"id":"timing","title":"Timing the One: Transits & Progressions"},{"id":"healing","title":"Healing from a Twin Flame Split"},{"id":"faq","title":"Relationship Astrology FAQs"},{"id":"conclusion","title":"The True Meaning of Love"}],
-    content: `
-      <h2 id="introduction">Beyond the Spark: The Mystery of Connection</h2>
-      <p>Have you ever met someone and felt an instant, unshakeable "pull" toward them? A feeling that you have known them for lifetimes, even though you just met? Or perhaps you are in a relationship that is so intense it feels like it's burning you from the inside out. In the modern world, we use words like **Soulmate** and **Twin Flame** to describe these experiences, but astrology gives us the technical map of *why* they happen.</p>
+  title: '🔥 Flăcări Gemene, Suflete Pereche și Karma: Astrologia Conexiunilor Profunde',
+  excerpt: 'Este dragoste sau este soartă? Explorează lumea mistică a astrologiei relaționale. Învață cum să identifici Flăcările Gemene, Sufletele Pereche și lecțiile karmice în harta ta natală.',
+  category: 'Dragoste și Relații',
+  metaDescription: 'Ghid complet despre astrologia conexiunilor profunde. Descoperă diferența dintre flăcările gemene și sufletele pereche, învață aspectele de sinastrie și rolurile karmice.',
+  keywords: 'flăcări gemene, suflete pereche, relații karmice, sinastrie, hartă compozită, nodul sud dragoste, aspecte suflet pereche, venus conjuncție marte, saturn sinastrie, astrologia asteroizilor dragostei',
+  quickSummary: [
+    'Un Suflet Pereche este cineva din familia ta de suflete care îți susține creșterea și face ca viața să pară „acasă”.',
+    'O Flacără Geamănă este „sufletul tău oglindă”, menit să declanșeze o transformare intensă și moartea egoului.',
+    'Partenerii Karmici sosesc pentru a te ajuta să achiți „datorii spirituale” și pentru a te învăța lecții dificile de viață.',
+    'Astrologia folosește Sinastria (compararea a două hărți) și Hărțile Compozite (energia relației în sine).'
+  ],
+  keyTakeaways: [
+    'Aspectele lui Saturn în sinastrie sunt „lipiciul” care menține un cuplu împreună în perioadele grele.',
+    'Nodul Sud indică conexiuni din vieți anterioare, în timp ce Nodul Nord arată destinul vostru viitor împreună.',
+    'Aspectele lui Venus și Marte determină „scânteia” sexuală și romantică, dar nu garantează longevitatea.',
+    'Majoritatea poveștilor despre „Flăcări Gemene” din cultura pop sunt, de fapt, relații karmice de mare intensitate.'
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: 'Dincolo de Scânteie: Misterul Conexiunii' },
+    { id: 'definitions', title: 'Suflete Pereche vs. Flăcări Gemene vs. Parteneri Karmici' },
+    { id: 'synastry', title: 'Sinastria: Cum ne impactăm reciproc' },
+    { id: 'personal-planets', title: 'Marea Triadă a Iubirii: Soare, Lună și Ascendent' },
+    { id: 'love-planets', title: 'Scânteia: Dinamica Venus și Marte' },
+    { id: 'the-glue', title: 'Pe Termen Lung: Saturn, Jupiter și Planetele Exterioare' },
+    { id: 'the-nodes', title: 'Nodurile: Vieți Anterioare și Destinul Sufletului' },
+    { id: 'the-vertex', title: 'Vertex-ul: Întâlniri Sursite' },
+    { id: 'asteroids', title: 'Asteroizii Iubirii: Juno, Eros și Psyche' },
+    { id: 'composite-charts', title: 'Harta Compozită: Entitatea lui „Noi”' },
+    { id: 'house-overlays', title: 'Suprapunerea Caselor: Unde trăim în viața celuilalt' },
+    { id: 'twin-flames-signs', title: 'Dinamica Flăcărilor Gemene prin cele 12 Semne' },
+    { id: 'karmic-elements', title: 'Relațiile Karmice după Elemente' },
+    { id: 'famous-cases', title: 'Uniuni Sursite: Studii de Caz Celebre' },
+    { id: 'red-flags', title: 'Steaguri Roșii Astrologice: Când Iubirea Devine Toxică' },
+    { id: 'timing', title: 'Momentul Potrivit: Tranzite și Progresii' },
+    { id: 'healing', title: 'Vindecarea după o despărțire de Flacăra Geamănă' },
+    { id: 'faq', title: 'Întrebări Frecvente despre Astrologia Relațională' },
+    { id: 'conclusion', title: 'Adevăratul Sens al Iubirii' }
+  ],
+  content: `
+      <h2 id="introduction">Dincolo de Scânteie: Misterul Conexiunii</h2>
+      <p>Ai întâlnit vreodată pe cineva și ai simțit o „atracție” instantanee și de neclintit? Sentimentul că îl cunoști de vieți întregi, deși abia v-ați întâlnit? Sau poate ești într-o relație atât de intensă încât simți că te arde pe interior. În lumea modernă, folosim cuvinte precum **Suflet Pereche** și **Flacără Geamănă** pentru a descrie aceste experiențe, dar astrologia ne oferă harta tehnică a motivului *pentru care* acestea se întâmplă.</p>
       
-      <p>Relationship astrology (Synastry) is the art of comparing two souls to see how they harmonize, where they clash, and what their shared destiny might be. It is not about whether you are "compatible" (everyone can be compatible with consciousness and effort); it is about the *purpose* of the connection. Is this relationship here to give you peace, or is it here to wake you up?</p>
+      <p>Astrologia relațională (Sinastria) este arta compărării a două suflete pentru a vedea cum se armonizează, unde se ciocnesc și care ar putea fi destinul lor comun. Nu este vorba despre dacă sunteți „compatibili” (oricine poate fi compatibil prin conștientizare și efort); este despre *scopul* conexiunii. Această relație este aici să-ți ofere pace sau să te trezească?</p>
 
-      <p>In this guide, we will dive deep into the cosmic mechanics of love. We will move beyond Sun signs and look at the "Master Plan" of your relationship. Whether you are searching for "The One" or trying to understand why your current partner drives you crazy, the answer is written in the geometry of the heavens. We will explore the deep waters of Synastry, Composite Charts, and the fated points of the soul.</p>
+      <p>În acest ghid, vom pătrunde adânc în mecanica cosmică a iubirii. Vom merge dincolo de semnele solare și ne vom uita la „Planul General” al relației tale. Fie că ești în căutarea „Aceluia” sau încerci să înțelegi de ce partenerul tău actual te scoate din minți, răspunsul este scris în geometria cerului. Vom explora apele adânci ale Sinastriei, Hărțile Compozite și punctele predestinate ale sufletului.</p>
 
-      <h2 id="definitions">Soulmates vs. Twin Flames vs. Karmic Partners</h2>
-      <p>While pop culture often uses these terms interchangeably, from an astrological and spiritual perspective, they are vastly different types of contracts. Understanding which one you are in can save you years of confusion and heartache.</p>
+      <h2 id="definitions">Suflete Pereche vs. Flăcări Gemene vs. Parteneri Karmici</h2>
+      <p>Deși cultura pop folosește adesea acești termeni interschimbabil, din perspectivă astrologică și spirituală, aceștia reprezintă tipuri de contracte foarte diferite. Înțelegerea celui în care te afli îți poate economisi ani de confuzie și durere.</p>
       
-      <h3>1. Soulmates (The Comfortable Home)</h3>
-      <p>A soulmate is someone whose energy aligns with yours in a way that feels like "coming home." You likely have many soulmates—friends, family members, and romantic partners. In a birth chart, this is often seen through "easy" aspects (Trines and Sextiles) between personal planets like the Moon or Venus. A soulmate isn't here to break you; they are here to walk beside you, support your dreams, and make the journey of life less lonely. They feel safe, reliable, and nurturing. Marriage is often most successful with a soulmate. They represent "Soul Families" traveling together.</p>
+      <h3>1. Suflete Pereche (Căminul Confortabil)</h3>
+      <p>Un suflet pereche este cineva a cărui energie se aliniază cu a ta într-un mod care se simte ca o „întoarcere acasă”. Probabil ai multe suflete pereche – prieteni, membri ai familiei și parteneri romantici. Într-o hartă natală, acest lucru este adesea văzut prin aspecte „ușoare” (Trigoane și Sextile) între planetele personale precum Luna sau Venus. Un suflet pereche nu este aici să te distrugă; este aici să meargă alături de tine, să-ți susțină visurile și să facă călătoria vieții mai puțin singuratică. Se simt în siguranță, demni de încredere și hrănitori. Căsătoria este adesea cea mai de succes cu un suflet pereche. Ei reprezintă „Familiile de Suflete” care călătoresc împreună.</p>
 
-      <h3>2. Twin Flames (The Mirror Soul)</h3>
-      <p>The Twin Flame concept is much more intense. It is the idea that a single soul was split into two bodies at the dawn of time. When they meet, the recognition is instant and often overwhelming. In astrology, this usually manifests as strong "Oppositions" (the two halves of a whole) or "Conjunctions" to personal points like the Ascendant or the Sun. They are your mirror. Half of the fire is in you, and half is in them. The purpose of a Twin Flame is **total transformation**. They trigger your deepest wounds and highest potentials. It is rarely "easy," but it is always evolution-heavy. The "Runner and Chaser" dynamic is a common feature of this path, as one soul often feels overwhelmed by the intensity and tries to flee the connection.</p>
+      <h3>2. Flăcări Gemene (Sufletul Oglindă)</h3>
+      <p>Conceptul de Flacără Geamănă este mult mai intens. Este ideea că un singur suflet a fost împărțit în două corpuri la începutul timpului. Când se întâlnesc, recunoașterea este instantanee și adesea copleșitoare. În astrologie, acest lucru se manifestă de obicei ca „Opoziții” puternice (cele două jumătăți ale unui întreg) sau „Conjuncții” la punctele personale precum Ascendentul sau Soarele. Ei sunt oglinda ta. Jumătate din foc este în tine, jumătate în ei. Scopul unei Flăcări Gemene este **transformarea totală**. Ei îți declanșează cele mai adânci răni și cele mai înalte potențiale. Rareori este „ușor”, dar este întotdeauna plin de evoluție. Dinamica „Urmăritor și Fugit” este o caracteristică comună a acestei căi, deoarece un suflet se simte adesea copleșit de intensitate și încearcă să fugă de conexiune.</p>
 
-      <h3>3. Karmic Partners (The Debt Collector)</h3>
-      <p>Karmic relationships are often mistaken for Twin Flames because they are incredibly intense and "magnetic." However, they are usually exhausting and involve a lot of repetitive conflict. In astrology, these are marked by heavy Saturn or Pluto aspects to the South Node or the Sun. You have "unfinished business" from a past life. You might feel "stuck" together until a specific lesson is learned—often about power, boundaries, or self-worth. Once the lesson is integrated, the relationship often ends as quickly as it began, leaving you forever changed and ready for a healthier union.</p>
+      <h3>3. Parteneri Karmici (Colectorul de Datorii)</h3>
+      <p>Relațiile karmice sunt adesea confundate cu Flăcările Gemene deoarece sunt incredibil de intense și „magnetice”. Cu toate acestea, ele sunt de obicei epuizante și implică multe conflicte repetitive. În astrologie, acestea sunt marcate de aspecte grele ale lui Saturn sau Pluto către Nodul Sud sau Soare. Ai „afaceri neterminate” dintr-o viață anterioară. S-ar putea să te simți „blocat” împreună până când cineva învață o lecție specifică – adesea despre putere, limite sau stima de sine. Odată ce lecția este integrată, relația se termină adesea la fel de repede cum a început, lăsându-te schimbat pentru totdeauna și pregătit pentru o uniune mai sănătoasă.</p>
 
-      <h2 id="synastry">Synastry: How We Impact Each Other</h2>
-      <p>To understand a relationship, we use <strong>Synastry</strong>. This involves placing one person's chart (Person A) on top of another's (Person B). Think of it as a chemical reaction. When my Mars sits on your Moon, I "activate" your emotions through my actions. This could be exciting (high sexual attraction), or it could be irritating (feeling emotionally attacked). Synastry shows the friction and the flow between two individuals. It is the "energetic blueprint" of how you interact on a daily basis.</p>
+      <h2 id="synastry">Sinastria: Cum ne impactăm reciproc</h2>
+      <p>Pentru a înțelege o relație, folosim <strong>Sinastria</strong>. Aceasta presupune plasarea hărții unei persoane (Persoana A) peste a celeilalte (Persoana B). Gândește-te la asta ca la o reacție chimică. Când Marte al meu stă pe Luna ta, eu îți „activez” emoțiile prin acțiunile mele. Acest lucru ar putea fi captivant (atracție sexuală ridicată) sau ar putea fi iritant (sentimentul de a fi atacat emoțional). Sinastria arată fricțiunea și fluxul dintre doi indivizi. Este „proiectul energetic” al modului în care interacționați zilnic.</p>
 
-      <h2 id="personal-planets">The Big Three of Dragoste: Sun, Moon, and Ascendant</h2>
-      <p>Before looking at the "love planets" (Venus and Mars), we must look at the foundation of the personality. If the Big Three are not in harmony, the rest of the relationship will struggle to find a stable footing.</p>
+      <h2 id="personal-planets">Marea Triadă a Iubirii: Soare, Lună și Ascendent</h2>
+      <p>Înainte de a ne uita la „planetele iubirii” (Venus și Marte), trebuie să ne uităm la fundamentul personalității. Dacă Marea Triadă nu este în armonie, restul relației se va strădui să găsească o bază stabilă.</p>
       <ul>
-        <li><strong>Sun Synastry (Identity):</strong> Do our core identities align? If our Suns are in harmony (like a Trine or Sextile), we feel seen and respected by each other. We understand each other's basic life path and core ego needs.</li>
-        <li><strong>Moon Synastry (Emotion):</strong> This is the most important for living together and emotional safety. If your Moons are incompatible (e.g., Moon Square Moon), one person will always feel emotionally unsafe or misunderstood at home. Moon conjunct Moon is a hallmark of a soulmate connection—you "feel" the same way at the same time.</li>
-        <li><strong>Rising Sign Synastry (Interaction):</strong> This is about physical attraction and how you "interact" with the world together. If your partner's Sun is in your 1st House, you are instantly attracted to their physical presence—they "light up" your life just by being there.</li>
+        <li><strong>Sinastria Soarelui (Identitate):</strong> Identitățile noastre de bază se aliniază? Dacă Soarele nostru este în armonie (ca un Trigon sau Sextil), ne simțim văzuți și respectați unul de celălalt. Înțelegem calea fundamentală de viață a celuilalt și nevoile de bază ale egoului.</li>
+        <li><strong>Sinastria Lunii (Emoție):</strong> Aceasta este cea mai importantă pentru traiul împreună și siguranța emoțională. Dacă Lunile voastre sunt incompatibile (de exemplu, Lună Cuadrat Lună), o persoană se va simți întotdeauna nesigură emoțional sau neînțeleasă acasă. Luna în conjuncție cu Luna este semnul unei conexiuni de suflet pereche – „simțiți” același lucru în același timp.</li>
+        <li><strong>Sinastria Semnului Ascendent (Interacțiune):</strong> Este vorba despre atracția fizică și despre modul în care „interacționați” cu lumea împreună. Dacă Soarele partenerului tău este în Casa 1 a ta, ești atras instantaneu de prezența sa fizică – el îți „luminează” viața doar prin faptul că este acolo.</li>
       </ul>
 
-      <h2 id="love-planets">The Spark: Venus & Mars Dynamic</h2>
-      <p>When we first meet someone, we are feeling the energy of Venus and Mars. This is the "fire" of the relationship.
-      <br><strong>Venus:</strong> Your style of affection, what you find beautiful, and what you value. When my Venus is in your sign, I find you incredibly lovable. I like how you move, talk, and spend money. You are my "ideal."
-      <br><strong>Mars:</strong> Your libido, your "drive," and how you handle conflict. When my Mars connects to your Venus, we have "fire in the bedroom." This is the classic indicator of high sexual chemistry and pursuit. It creates a magnetic pull that is hard to ignore.
-      <br><em>Tip:</em> For a lasting relationship, you want more than just Mars-Venus chemistry. You need a mental connection (Mercury) and an emotional one (Moon) to bridge the gap after the initial honeymoon phase ends. Without them, the fire eventually burns out the house.</p>
+      <h2 id="love-planets">Scânteia: Dinamica Venus și Marte</h2>
+      <p>Când întâlnim prima dată pe cineva, simțim energia lui Venus și Marte. Acesta este „focul” relației.
+      <br><strong>Venus:</strong> Stilul tău de afecțiune, ceea ce consideri frumos și ceea ce prețuiești. Când Venus a mea este în semnul tău, te găsesc incredibil de demn de iubit. Îmi place cum te miști, cum vorbești și cum cheltuiești banii. Ești „idealul” meu.
+      <br><strong>Marte:</strong> Libidoul tău, „elanul” tău și modul în care gestionezi conflictele. Când Marte al meu se conectează cu Venus a ta, avem „foc în dormitor”. Acesta este indicatorul clasic al chimiei sexuale ridicate și al urmăririi. Creează o atracție magnetică greu de ignorat.
+      <br><em>Sfat:</em> Pentru o relație de durată, ai nevoie de mai mult decât chimia Marte-Venus. Ai nevoie de o conexiune mentală (Mercur) și de una emoțională (Lună) pentru a umple golul după ce etapa inițială de miere se termină. Fără ele, focul în cele din urmă arde casa.</p>
 
-      <h2 id="the-glue">The Long Haul: Saturn, Jupiter & The Outer Planets</h2>
-      <p>Chemistry is great for a first date, but what keeps a couple together for 50 years? That is the domain of <strong>Saturn</strong>. Though often called the "Greater Malefic," in relationship astrology, Saturn is essential. Without strong Saturn aspects, a relationship lacks the "glue" to withstand hard times. It provides "staying power," duty, and commitment. If my Saturn is on your Moon, you feel I am your "rock," even if I occasionally feel a bit restrictive or serious. We are bound by more than just feelings.</p>
-      <p><strong>Jupiter</strong>, on the other hand, brings growth, abundance, and joy. If your partner's Jupiter touches your planets, they make you feel lucky, optimistic, and expanded. They represent the "blessings" in the relationship. <strong>Pluto</strong> brings obsession, depth, and power dynamics—it's the intense, transformative energy that can lead to total merging or total destruction. <strong>Neptune</strong> can bring a "dreamy" spiritual connection—or total delusion and gaslighting. Use caution with heavy Neptune synastry.</p>
+      <h2 id="the-glue">Pe Termen Lung: Saturn, Jupiter și Planetele Exterioare</h2>
+      <p>Chimia este grozavă pentru o primă întâlnire, dar ce ține un cuplu împreună timp de 50 de ani? Acesta este domeniul lui <strong>Saturn</strong>. Deși adesea numit „Marele Malefic”, în astrologia relațională, Saturn este esențial. Fără aspecte puternice ale lui Saturn, unei relații îi lipsește „lipiciul” pentru a rezista vremurilor grele. Oferă „putere de a rămâne”, simțul datoriei și angajament. Dacă Saturn al meu este pe Luna ta, simți că sunt „stânca” ta, chiar dacă uneori mă simt puțin restrictiv sau serios. Suntem legați de mai mult decât simple sentimente.</p>
+      <p><strong>Jupiter</strong>, pe de altă parte, aduce creștere, abundență și bucurie. Dacă Jupiter al partenerului tău îți atinge planetele, te face să te simți norocos, optimist și expansiv. Ei reprezintă „binecuvântările” din relație. <strong>Pluto</strong> aduce obsesie, profunzime și dinamici de putere – este energia intensă, transformatoare, care poate duce la fuziune totală sau distrugere totală. <strong>Neptun</strong> poate aduce o conexiune spirituală „visătoare” – sau iluzie totală și gaslighting. Manifestă prudență cu aspectele grele ale lui Neptun în sinastrie.</p>
 
-      <h2 id="the-nodes">The Nodes: Past Lives & Soul Destiny</h2>
-      <p>The Lunar Nodes are the "points of fate" in the chart, indicating the soul's journey through time.
-      <br>If your planets touch someone's <strong>South Node</strong>, you have a past-life history together. You might fall into old, familiar patterns together very quickly. It feels like you've done this a thousand times before—because you probably have.
-      <br>If your planets touch their <strong>North Node</strong>, you are part of their future evolution. Being together pushes you both to grow into the people you are meant to become in this lifetime. This is the hallmark of a "fated" connection that has a specific spiritual purpose beyond just personal satisfaction.</p>
+      <h2 id="the-nodes">Nodurile: Vieți Anterioare și Destinul Sufletului</h2>
+      <p>Nodurile Lunare sunt „punctele de soartă” din hartă, indicând călătoria sufletului prin timp.
+      <br>Dacă planetele tale ating <strong>Nodul Sud</strong> al cuiva, aveți o istorie dintr-o viață anterioară. S-ar putea să cădeți foarte repede în vechi tipare familiare. Se simte ca și cum ați fi făcut asta de o mie de ori înainte – pentru că probabil ați făcut-o.
+      <br>Dacă planetele tale ating <strong>Nodul Nord</strong> al acestora, faci parte din evoluția lor viitoare. Faptul de a fi împreună vă împinge pe amândoi să creșteți în persoanele care sunteți meniți să deveniți în această viață. Acesta este semnul unei conexiuni „predestinate” care are un scop spiritual specific dincolo de simpla satisfacție personală.</p>
 
-      <h2 id="the-vertex">The Vertex: Fated Encounters</h2>
-      <p>Often overlooked by beginners, the **Vertex** is called the "Third Angle" or the "Destiny Point" of the chart. It represents fated encounters that are outside of our conscious control. When a person's personal planets (like Sun or Moon) conjunct your Vertex, it often feels like a "meeting of destiny" that changes the course of your life forever. You literally "couldn't avoid" this person if you tried. These meetings often happen during major life transits or solar returns.</p>
+      <h2 id="the-vertex">Vertex-ul: Întâlniri Sursite</h2>
+      <p>Adesea trecut cu vederea de începători, **Vertex-ul** este numit „A treia Unghiulară” sau „Punctul Destinului” hărții. Acesta reprezintă întâlniri predestinate care sunt în afara controlului nostru conștient. Când planetele personale ale unei persoane (precum Soarele sau Luna) sunt în conjuncție cu Vertex-ul tău, se simte adesea ca o „întâlnire a destinului” care schimbă cursul vieții tale pentru totdeauna. Pur și simplu „nu ai fi putut evita” această persoană chiar dacă ai fi încercat. Aceste întâlniri au loc adesea în timpul marilor tranzite de viață sau al revoluțiilor solare.</p>
 
-      <h2 id="asteroids">Asteroids of Dragoste: Juno, Eros, and Psyche</h2>
-      <p>For those who want to go deeper than the nine planets, we look at the asteroids, which add nuanced flavors to the connection.
-      <br><strong>Juno:</strong> The "Marriage" asteroid. It shows what you *actually* need in a long-term committed partner (as opposed to what you find attractive). If your Juno is in Scorpio, you need intensity and total loyalty in marriage.
-      <br><strong>Eros & Psyche:</strong> These represent the higher level of erotic and spiritual merging. When these are in harmony between two charts, the connection feels "otherworldly," poetic, and destined.
-      <br><strong>Chiron:</strong> The "Wounded Healer." When your partner's planets touch your Chiron, they either poke your deepest wounds or help you heal them. This is the key to a truly transformative, therapeutic union.</p>
+      <h2 id="asteroids">Asteroizii Iubirii: Juno, Eros și Psyche</h2>
+      <p>Pentru cei care vor să meargă mai adânc decât cele nouă planete, ne uităm la asteroizi, care adaugă nuanțe specifice conexiunii.
+      <br><strong>Juno:</strong> Asteroidul „Căsătoriei”. Arată de ce ai *cu adevărat* nevoie la un partener dedicat pe termen lung (spre deosebire de ceea ce găsești atractiv). Dacă Juno a ta este în Scorpion, ai nevoie de intensitate și loialitate totală în căsătorie.
+      <br><strong>Eros și Psyche:</strong> Aceștia reprezintă nivelul superior de fuziune erotică și spirituală. Când aceștia sunt în armonie între două hărți, conexiunea se simte „din altă lume”, poetică și predestinată.
+      <br><strong>Chiron:</strong> „Vindecătorul Rănit”. Când planetele partenerului tău îți ating Chiron-ul, aceștia fie îți ating cele mai adânci răni, fie te ajută să le vindeci. Aceasta este cheia unei uniuni cu adevărat transformatoare și terapeutice.</p>
 
-      <h2 id="composite-charts">The Composite Chart: The Entity of "Us"</h2>
-      <p>While Synastry looks at how you affect each other, a <strong>Composite Chart</strong> is a single chart calculated using the midpoints between your planets. This is the chart of the relationship itself—the "third entity" in the room. Even two very different people can have a beautiful Composite Chart, meaning they "work" better together than they do separately. It shows the destiny and character of the union itself. Is this relationship here to build a family (Composite 4th House) or a public legacy (Composite 10th House)?</p>
+      <h2 id="composite-charts">Harta Compozită: Entitatea lui „Noi”</h2>
+      <p>În timp ce Sinastria se uită la modul în care vă afectați reciproc, o <strong>Hartă Compozită</strong> este o singură hartă calculată folosind punctele medii dintre planetele voastre. Aceasta este harta relației în sine – „a treia entitate” din cameră. Chiar și doi oameni foarte diferiți pot avea o Hartă Compozită frumoasă, ceea ce înseamnă că „funcționează” mai bine împreună decât separat. Arată destinul și caracterul uniunii în sine. Această relație este aici pentru a întemeia o familie (Casa 4 Compozită) sau pentru o moștenire publică (Casa 10 Compozită)?</p>
 
-      <h2 id="house-overlays">House Overlays: Where We Live in Each Other's Lives</h2>
-      <p>Where my planets fall in your houses tells me where I "show up" and influence your life spheres.</p>
+      <h2 id="house-overlays">Suprapunerea Caselor: Unde trăim în viața celuilalt</h2>
+      <p>Locul în care planetele mele cad în casele tale îmi spune unde îmi „fac simțită prezența” și unde îți influențez sferele vieții.</p>
       <ul>
-        <li><strong>Your planets in my 1st House:</strong> You have a massive impact on my identity. I see myself through your eyes and you help me "become" me.</li>
-        <li><strong>Your planets in my 4th House:</strong> You feel like family. I want to build a home, share a kitchen, and have a private world with you.</li>
-        <li><strong>Your planets in my 5th House:</strong> You are my source of fun, romance, and creativity. We have incredible "play" and joy together.</li>
-        <li><strong>Your planets in my 7th House:</strong> I see you as the ultimate partner. You fit my "template" for a spouse perfectly.</li>
-        <li><strong>Your planets in my 8th House:</strong> We have a deep, possibly obsessive, sexual and psychological bond. You see my secrets and I see yours.</li>
-        <li><strong>Your planets in my 10th House:</strong> You help me with my career or reputation. You are my "power partner" in the world.</li>
-        <li><strong>Your planets in my 12th House:</strong> This is a "soulmate" indicator but can be confusing. We share a psychic connection, but there might be things we keep hidden or a sense of "sacrifice" in the union.</li>
+        <li>**Planetele tale în Casa mea 1:** Ai un impact masiv asupra identității mele. Mă văd prin ochii tăi și mă ajuți să „devin” eu însumi.</li>
+        <li>**Planetele tale în Casa mea 4:** Te simți ca familia mea. Vreau să construiesc un cămin, să împart o bucătărie și să am o lume privată cu tine.</li>
+        <li>**Planetele tale în Casa mea 5:** Ești sursa mea de distracție, romantism și creativitate. Ne „jucăm” și ne bucurăm incredibil împreună.</li>
+        <li>**Planetele tale în Casa mea 7:** Te văd ca pe partenerul suprem. Te potrivești perfect „șablonului” meu pentru un soț.</li>
+        <li>**Planetele tale în Casa mea 8:** Avem o legătură sexuală și psihologică profundă, posibil obsesivă. Tu îmi vezi secretele și eu pe ale tale.</li>
+        <li>**Planetele tale în Casa mea 10:** Mă ajuți în carieră sau cu reputația. Ești partenerul meu de putere în lume.</li>
+        <li>**Planetele tale în Casa mea 12:** Acesta este un indicator de „suflet pereche”, dar poate fi confuz. Împărtășim o conexiune psihică, dar pot exista lucruri pe care le ținem ascunse sau un sentiment de „sacrificiu” în uniune.</li>
       </ul>
 
-      <h2 id="twin-flames-signs">Twin Flame Dynamics Through the 12 Semns</h2>
-      <p>How your Twin Flame connection manifests depends on the sign of your union (often seen in the Composite Sun):</p>
+      <h2 id="twin-flames-signs">Dinamica Flăcărilor Gemene prin cele 12 Semne</h2>
+      <p>Modul în care se manifestă conexiunea ta cu Flacăra Geamănă depinde de semnul uniunii voastre (văzut adesea în Soarele Compozit):</p>
       <ul>
-        <li><strong>Aries Union:</strong> Intense, fast-paced, and full of action. You trigger each other to be more courageous and independent.</li>
-        <li><strong>Taurus Union:</strong> Extremely physical, sensory, and stable. You are here to build material security and lasting beauty together.</li>
-        <li><strong>Gemini Union:</strong> Intellectual, talkative, and restless. You are here to learn, travel, and teach together.</li>
-        <li><strong>Cancer Union:</strong> Deeply emotional, sensitive, and focused on home. You are here to heal each other's ancestral families.</li>
-        <li><strong>Leo Union:</strong> Creative, warm, and highly visible. You are here to shine and be a "power couple" who inspires others.</li>
-        <li><strong>Virgo Union:</strong> Practical, efficient, and healing. You are here to serve a higher purpose through your daily life together.</li>
-        <li><strong>Libra Union:</strong> Harmonious, diplomatic, and focused on justice. You are here to master the high art of "we."</li>
-        <li><strong>Scorpio Union:</strong> Obsessive, deep, and transformative. You are here to undergo total ego death and spiritual rebirth together.</li>
-        <li><strong>Sagittarius Union:</strong> Adventurous, free, and philosophical. You are here to explore the world and the mind together.</li>
-        <li><strong>Capricorn Union:</strong> Stable, traditional, and ambitious. You are here to build a legacy or an "empire" for future generations.</li>
-        <li><strong>Aquarius Union:</strong> Unconventional, friendly, and progressive. You are here to change society through your unique, perhaps "weird" bond.</li>
-        <li><strong>Pisces Union:</strong> Spiritual, psychic, and boundary-less. You are here to dissolve the ego and merge with the divine through love.</li>
+        <li>**Uniunea Berbec:** Intensă, rapidă și plină de acțiune. Vă stimulați reciproc să fiți mai curajoși și independenți.</li>
+        <li>**Uniunea Taur:** Extrem de fizică, senzorială și stabilă. Sunteți aici să construiți siguranță materială și frumusețe durabilă împreună.</li>
+        <li>**Uniunea Gemeni:** Intelectuală, comunicativă și neobosită. Sunteți aici să învățați, să călătoriți și să predați împreună.</li>
+        <li>**Uniunea Rac:** Profund emoțională, sensibilă și concentrată pe cămin. Sunteți aici să vă vindecați reciproc familiile ancestrale.</li>
+        <li>**Uniunea Leu:** Creativă, caldă și foarte vizibilă. Sunteți aici să străluciți și să fiți un „cuplu de putere” care îi inspiră pe alții.</li>
+        <li>**Uniunea Fecioară:** Practică, eficientă și vindecătoare. Sunteți aici pentru a servi unui scop mai înalt prin viața voastră de zi cu zi împreună.</li>
+        <li>**Uniunea Balanță:** Armonioasă, diplomatică și concentrată pe dreptate. Sunteți aici să stăpâniți marea artă a lui „noi”.</li>
+        <li>**Uniunea Scorpion:** Obsesivă, profundă și transformatoare. Sunteți aici pentru a trece prin moartea totală a egoului și renașterea spirituală împreună.</li>
+        <li>**Uniunea Săgetător:** Aventuroasă, liberă și filozofică. Sunteți aici pentru a explora lumea și mintea împreună.</li>
+        <li>**Uniunea Capricorn:** Stabilă, tradițională și ambițioasă. Sunteți aici pentru a construi o moștenire sau un „imperiu” pentru generațiile viitoare.</li>
+        <li>**Uniunea Vărsător:** Neconvențională, prietenoasă și progresivă. Sunteți aici să schimbați societatea prin legătura voastră unică, poate „ciudată”.</li>
+        <li>**Uniunea Pești:** Spirituală, psihică și fără limite. Sunteți aici pentru a dizolva egoul și a fuziona cu divinul prin iubire.</li>
       </ul>
 
-      <h2 id="karmic-elements">Karmic Relationships by Element</h2>
-      <p>The "flavor" of your karmic lessons often follows the elements of your South Node synastry. This shows you where you "left off" in a past life:</p>
-      <p><strong>🔥 Fire Karma:</strong> Lessons about ego, competition, aggression, and leadership. You may have been rivals or warriors in a past life.</p>
-      <p><strong>🌍 Earth Karma:</strong> Lessons about money, survival, the physical body, and reliability. You may have been business partners or landlord/tenant.</p>
-      <p><strong>💨 Air Karma:</strong> Lessons about communication, truth, logic, and friendship. You may have been siblings or teacher and student.</p>
-      <p><strong>💧 Water Karma:</strong> Lessons about emotion, intuition, family, and merging. You may have been parent and child or lovers who were tragically separated.</p>
+      <h2 id="karmic-elements">Relațiile Karmice după Elemente</h2>
+      <p>„Aroma” lecțiilor tale karmice urmează adesea elementele sinastriei tale cu Nodul Sud. Acest lucru îți arată unde ai „rămas” într-o viață anterioară:</p>
+      <p>**🔥 Karma de Foc:** Lecții despre ego, competiție, agresiune și conducere. S-ar putea să fi fost rivali sau războinici într-o viață anterioară.</p>
+      <p>**🌍 Karma de Pământ:** Lecții despre bani, supraviețuire, corpul fizic și fiabilitate. S-ar putea să fi fost parteneri de afaceri sau proprietar și chiriaș.</p>
+      <p>**💨 Karma de Aer:** Lecții despre comunicare, adevăr, logică și prietenie. S-ar putea să fi fost frați sau profesor și elev.</p>
+      <p>**💧 Karma de Apă:** Lecții despre emoție, intuiție, familie și fuziune. S-ar putea să fi fost părinte și copil sau iubiți care au fost despărțiți în mod tragic.</p>
 
-      <h2 id="famous-cases">Fated Unions: Famous Astrology Case Studies</h2>
-      <p>Looking at famous couples helps us see these patterns in action:</p>
+      <h2 id="famous-cases">Uniuni Sursite: Studii de Caz Celebre</h2>
+      <p>Privind cuplurile celebre ne ajută să vedem aceste tipare în acțiune:</p>
       <ul>
-        <li><strong>Elizabeth Taylor & Richard Burton:</strong> A classic "Twin Flame" or high-intensity karmic bond. Their synastry was full of Pluto and Mars aspects, leading to a "can't live with you, can't live without you" dynamic that saw them marry and divorce twice.</li>
-        <li><strong>Prince Harry & Meghan Markle:</strong> Strong Nodes and 7th house synastry. They are part of each other's "North Node" (future destiny), pushing each other into new, unconventional roles.</li>
-        <li><strong>John Lennon & Yoko Ono:</strong> A deep spiritual and intellectual bond seen through strong Uranus and Neptune synastry—they changed the world's consciousness together.</li>
+        <li>**Elizabeth Taylor și Richard Burton:** O conexiune clasică de „Flacără Geamănă” sau o legătură karmică de mare intensitate. Sinastria lor a fost plină de aspecte Pluto și Marte, ducând la o dinamică de tipul „nu pot trăi cu tine, nu pot trăi fără tine”, care i-a făcut să se căsătorească și să divorțeze de două ori.</li>
+        <li>**Prințul Harry și Meghan Markle:** Noduri puternice și sinastrie de casa a 7-a. Ei fac parte din „Nodul Nord” (destinul viitor) al celuilalt, împingându-se reciproc în noi roluri neconvenționale.</li>
+        <li>**John Lennon și Yoko Ono:** O legătură spirituală și intelectuală profundă, văzută prin sinastria puternică Uranus și Neptun – au schimbat împreună conștiința lumii.</li>
       </ul>
 
-      <h2 id="red-flags">Astrological Red Flags: When Dragoste Becomes Toxic</h2>
-      <p>Astrology should never be used to judge someone's character, but it can provide vital warnings about potential low-vibration dynamics.</p>
-      <br><strong>Pluto-Venus Squares/Oppositions:</strong> Can indicate a "power struggle" or obsession where love is used as a weapon of control or jealousy.
-      <br><strong>Mars-Mars Squares:</strong> High volatility and conflict. You might "clash" physically or lose your patience with each other constantly over minor things.
-      <br><strong>Neptune-Sun Squares:</strong> One person may be lying, or you are both in love with a fantasy version of each other. Disillusionment is inevitable.
-      <br><strong>Saturn-Moon Squares:</strong> One person feels emotionally "frozen," judged, or limited by the other. It feels like "hard work" with no emotional reward.
+      <h2 id="red-flags">Steaguri Roșii Astrologice: Când Iubirea Devine Toxică</h2>
+      <p>Astrologia nu ar trebui niciodată folosită pentru a judeca caracterul cuiva, dar poate oferi avertismente vitale despre potențiale dinamici de vibrație joasă.</p>
+      <br>**Cuadrate/Opoziții Pluto-Venus:** Pot indica o „luptă pentru putere” sau o obsesie în care iubirea este folosită ca armă de control sau gelozie.
+      <br>**Cuadrate Marte-Marte:** Volatilitate și conflict ridicate. S-ar putea să vă „ciocniți” fizic sau să vă pierdeți constant răbdarea unul cu celălalt pentru lucruri minore.
+      <br>**Cuadrate Neptun-Soare:** O persoană s-ar putea să mintă sau sunteți amândoi îndrăgostiți de o versiune fantezistă a celuilalt. Deziluzia este inevitabilă.
+      <br>**Cuadrate Saturn-Lună:** O persoană se simte „înghețată” emoțional, judecată sau limitată de cealaltă. Se simte ca o „muncă grea” fără recompensă emoțională.
 
-      <h2 id="timing">Timing the One: Transits & Progressions</h2>
-      <p>Astrology can also tell us *when* we are ready for these connections. When **Jupiter** transits your 7th house, your "market value" increases and you meet many new people. When **Saturn** transits your 7th, you often get married or get serious about a long-term union. If you are going through your **Progressed Moon Return** (around age 27), your emotional needs are shifting, making way for a new type of partner. Watching these "Transits to the Seventh House" is the best way to know when to put yourself out there and open your heart.</p>
+      <h2 id="timing">Momentul Potrivit: Tranzite și Progresii</h2>
+      <p>Astrologia ne poate spune și *când* suntem pregătiți pentru aceste conexiuni. Când **Jupiter** tranzitează casa ta a 7-a, „valoarea ta pe piață” crește și întâlnești mulți oameni noi. Când **Saturn** tranzitează a 7-a, te căsătorești adesea sau devii serios cu privire la o uniune pe termen lung. Dacă treci prin **Revoluția Lunii Progresate** (în jurul vârstei de 27 de ani), nevoile tale emoționale se schimbă, făcând loc unui nou tip de partener. Urmărirea acestor „Tranzite în Casa a Șaptea” este cel mai bun mod de a ști când să te expui și să-ți deschizi inima.</p>
 
-      <h2 id="healing">Healing from a Twin Flame Split</h2>
-      <p>Because the Twin Flame connection is designed for transformation, it often involves a period of intense separation (the "Running" phase). This can be devastating. Astrologically, this is a time to focus on your own **Chiron** (healing) and **North Node** (destiny). The "Running" only stops when you stop chasing the other person and start evolving toward your own soul mission. Use this time for therapy, spiritual work, and mastering your own energy. The connection is in the soul; it can never truly be broken by physical distance.</p>
+      <h2 id="healing">Vindecarea după o despărțire de Flacăra Geamănă</h2>
+      <p>Deoarece conexiunea cu Flacăra Geamănă este concepută pentru transformare, aceasta implică adesea o perioadă de separare intensă (faza de „Fugă”). Aceasta poate fi devastatoare. Astrologic, acesta este un moment pentru a te concentra pe propriul tău **Chiron** (vindecare) și **Nod Nord** (destin). „Fuga” se oprește doar atunci când încetezi să urmărești cealaltă persoană și începi să evoluezi spre misiunea propriului tău suflet. Folosește acest timp pentru terapie, muncă spirituală și stăpânirea propriei energii. Conexiunea este în suflet; nu poate fi niciodată ruptă cu adevărat de distanța fizică.</p>
 
-      <h2 id="faq">Relationship Astrology FAQs</h2>
-      <p><strong>Q: Can a "bad" synastry work?</strong>
-      <br>A: Yes! It just takes more consciousness and work. Constant friction (Squares) creates more energy and growth than easy flow (Trines). Some of the most successful, high-achieving couples have "difficult" synastry that keeps them growing and challenged.</p>
+      <h2 id="faq">Întrebări Frecvente despre Astrologia Relațională</h2>
+      <p>**Î: Poate funcționa o sinastrie „proastă”?**
+      <br>R: Da! Este nevoie doar de mai multă conștientizare și muncă. Fricțiunea constantă (Cuadrate) creează mai multă energie și creștere decât fluxul ușor (Trigoane). Unele dintre cele mai de succes cupluri, cu realizări mari, au o sinastrie „dificilă” care îi face să crească și îi provoacă continuu.</p>
       
-      <p><strong>Q: I found my Twin Flame but they are with someone else. Why?</strong>
-      <br>A: Often this is about "Divine Timing." One or both of you carries karmic baggage (South Node work) that needs to be cleared with someone else before you are ready for the intensity of the Twin Flame union.</p>
+      <p>**Î: Mi-am găsit Flacăra Geamănă, dar este cu altcineva. De ce?**
+      <br>R: Adesea, este vorba despre „Sincronizarea Divină”. Unul sau amândoi purtați un bagaj karmic (muncă cu Nodul Sud) care trebuie curățat cu altcineva înainte de a fi pregătiți pentru intensitatea uniunii dintre Flăcările Gemene.</p>
 
-      <p><strong>Q: Does my Sun sign determine my soulmate?</strong>
-      <br>A: No. Your Sun sign is only about 5% of the total picture. Your Moon (emotions) and Venus (love style) signs are much more important for long-term compatibility and day-to-day happiness.</p>
+      <p>**Î: Semnul meu solar îmi determină sufletul pereche?**
+      <br>R: Nu. Semnul tău solar reprezintă doar aproximativ 5% din imaginea de ansamblu. Semnele Lunii (emoții) și Venus (stilul de iubire) sunt mult mai importante pentru compatibilitatea pe termen lung și fericirea de zi cu zi.</p>
 
-      <p><strong>Q: How do I find our Composite Chart?</strong>
-      <br>A: In the Astralo app, use the "Relationship" tool. Enter both birth times and locations, and we will generate your shared map instantly. We even provide a compatibility score based on over 100 different factors.</p>
+      <p>**Î: Cum găsesc Harta noastră Compozită?**
+      <br>R: În aplicația Astralo, folosește instrumentul „Relationship”. Introdu ambele ore și locații de naștere și vom genera harta voastră comună instantaneu. Oferim chiar și un scor de compatibilitate bazat pe peste 100 de factori diferiți.</p>
 
-      <h2 id="conclusion">The True Meaning of Dragoste</h2>
-      <p>Ultimately, a birth chart is a map of potentials, not a prison of fate. Life is built on choices. Astrology shows us the "weather" of the relationship—it shows us where there will be storms and where there will be sunshine—but you are the one who decides to build the house. Even the most "incompatible" signs can build a beautiful life together through consciousness, effort, and unconditional love. The stars impel, they do not compel.</p>
+      <h2 id="conclusion">Adevăratul Sens al Iubirii</h2>
+      <p>În cele din urmă, o hartă natală este o hartă a potențialelor, nu o închisoare a sorții. Viața este construită pe alegeri. Astrologia ne arată „vremea” relației – ne arată unde vor fi furtuni și unde va fi soare – dar tu ești cel care decide să construiască casa. Chiar și cele mai „incompatible” semne pot construi o viață frumoasă împreună prin conștientizare, efort și iubire necondiționată. Stelele îndeamnă, ele nu obligă.</p>
       
-      <p>At Astralo, our <strong>Synastry and Relationship Reports</strong> go beyond simple "percentage" matching. We dive deep into the karmic signatures, the emotional needs, and the sexual chemistry of your unique union. Whether you are dealing with a Twin Flame "runner" or searching for your forever soulmate, we help you understand the cosmic logic of your heart. Learn to love with your eyes wide open. Your soulmate is waiting—not in your dreams, but in the stars. </p>
+      <p>La Astralo, **Rapoartele noastre de Sinastrie și Relație** merg dincolo de o simplă potrivire „procentuală”. Pătrundem adânc în semnăturile karmice, nevoile emoționale și chimia sexuală a uniunii voastre unice. Fie că te confrunți cu o Flacără Geamănă care „fuge” sau ești în căutarea sufletului tău pereche pentru totdeauna, te ajutăm să înțelegi logica cosmică a inimii tale. Învață să iubești cu ochii larg deschiși. Sufletul tău pereche te așteaptă – nu în visurile tale, ci în stele.</p>
       
-      <p><em>Ready to see if your flame is forever? Get your detailed compatibility analysis today in the Astralo app.</em></p>
+      <p>*Ești gata să vezi dacă flacăra ta este veșnică? Obține analiza detaliată a compatibilității astăzi în aplicația Astralo.*</p>
     `
 };

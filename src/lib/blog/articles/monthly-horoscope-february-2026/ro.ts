@@ -4,68 +4,86 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Horoscop Lunar Februarie 2026: Sezonul Inovației Vărsătorului',
+  excerpt: 'Februarie 2026 aduce un val de claritate pe măsură ce Mercur revine în mers direct. Descoperă cum Luna Plină în Leu din 3 februarie și Venus în Pești îți vor influența viața amorosă și cariera.',
+  category: 'Horoscoape',
+  metaDescription: 'Prognoză astrologică completă pentru februarie 2026. Predicții lunare detaliate pentru toate semnele zodiacale, cu accent pe Luna Plină în Leu și intrarea lui Venus în Pești.',
+  keywords: 'horoscop lunar, astrologie februarie 2026, predicții lunare, prognoză zodiacală februarie, sezonul vărsătorului, lună plină în leu, venus în pești',
+  quickSummary: [
+    'Luna Plină în Leu din 3 februarie îți cere să ieși în față și să îți exprimi adevărata personalitate.',
+    'Mercur revine în sfârșit în mers direct, clarificând neînțelegerile de la sfârșitul lunii ianuarie.',
+    'Venus intră în visătorii Pești, creând cea mai romantică energie a întregului an.',
+    'Sezonul Vărsătorului ne îndeamnă să inovăm și să ne eliberăm de tradițiile învechite.'
+  ],
+  keyTakeaways: [
+    'Folosește prima săptămână din februarie pentru a lansa proiecte creative sau pentru a-ți schimba imaginea.',
+    'Ziua Îndrăgostiților este extra magică anul acesta cu Venus în exaltare – planifică ceva spiritual și profund.',
+    'Așteaptă-te la revelații bruște privind tehnologia sau grupurile comunitare la jumătatea lunii.',
+    'Horoscoapele generale sunt utile, dar pentru o cronologie precisă, ai nevoie de tranzitele tale personale.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Prezentare Generală Februarie 2026' },
+    { id: 'key-transits', title: 'Date Cheie și Tranzituri' },
+    { id: 'fire-signs', title: 'Semne de Foc (Berbec, Leu, Săgetător)' },
+    { id: 'earth-signs', title: 'Semne de Pământ (Taur, Fecioară, Capricorn)' },
+    { id: 'air-signs', title: 'Semne de Aer (Gemeni, Balanță, Vărsător)' },
+    { id: 'water-signs', title: 'Semne de Apă (Rac, Scorpion, Pești)' },
+    { id: 'get-personal', title: 'De ce horoscopul general nu este suficient' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Astrologia Lunii Februarie 2026</h2>
+      <p>Dacă ianuarie a fost despre scuturarea vechiului an, <strong>februarie 2026</strong> este despre pășirea cu curaj în viitor. Suntem în plin <strong>Sezon al Vărsătorului</strong>, un timp care îi favorizează pe cei curajoși, originali și inovatori. Starea colectivă se schimbă de la „Cum supraviețuiesc?” la „Cum mă reinventez?”</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Știrea principală este <strong>Luna Plină în Leu din 3 februarie</strong>. Leul ne cere să strălucim. Întreabă: „Unde te mulțumești cu puțin?” Sub această lumină, ascunderea nu este o opțiune. Combinată cu Mercur care își încheie faza de umbră, claritatea revine în comunicările noastre. Ceața se ridică.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Date Cheie și Tranzituri</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 feb.:</strong> Lună Plină în Leu (Dramă, Pasiune, Culminare).</li>
+        <li><strong>10 feb.:</strong> Venus intră în Pești (Iubire necondiționată, Artă, Fantezie).</li>
+        <li><strong>18 feb.:</strong> Soarele intră în Pești (Începe Sezonul Viselor).</li>
+        <li><strong>25 feb.:</strong> Mercur intră în Pești (Logica se dizolvă în Intuiție).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Foc Semns (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Semne de Foc (Berbec, Leu, Săgetător)</h2>
+      <p><strong>Temă: Explozie Creativă.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Leu:</strong> Acesta este momentul tău. Luna Plină în semnul tău te pune în lumina reflectoarelor. Fie că este vorba despre o promovare, o despărțire sau o revelație, se întâmplă <em>acum</em>. Nu te teme să fii văzut.</p>
+      <p><strong>Berbec:</strong> Cercul tău social este bogăția ta luna aceasta. Networking-ul aduce câștiguri neașteptate. Un prieten ar putea deveni iubit sau partener de afaceri.</p>
+      <p><strong>Săgetător:</strong> Tânjești după înțelepciune. Planurile de călătorie care au fost amânate în ianuarie primesc în sfârșit undă verde. Rezervă biletul.</p>
 
-      <h2 id="earth-signs">🌍 Pământ Semns (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Semne de Pământ (Taur, Fecioară, Capricorn)</h2>
+      <p><strong>Temă: Împământare Spirituală.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Taur:</strong> Când Venus intră în Pești, te simți mai sensibil. Este un moment frumos pentru romantism, dar și pentru a te ierta pentru greșelile din trecut. Renunță la ranchiună.</p>
+      <p><strong>Fecioară:</strong> Concentrează-te pe parteneriate. De obicei ești cel care ajută, dar în februarie, lasă pe cineva să <em>te</em> ajute. Vulnerabilitatea este lecția ta luna aceasta.</p>
+      <p><strong>Capricorn:</strong> Situația financiară se îmbunătățește, dar nu doar prin muncă grea. Intuiția îți ghidează investițiile. Ai încredere în instinctul tău mai mult decât în tabelele de calcul.</p>
 
-      <h2 id="air-signs">💨 Aer Semns (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Semne de Aer (Gemeni, Balanță, Vărsător)</h2>
+      <p><strong>Temă: Reînnoire Intelectuală.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Vărsător:</strong> La mulți ani! Soarele în semnul tău îți amplifică vitalitatea. Ești magnetic. Este cel mai bun moment al anului pentru a-ți lansa un brand personal sau pentru a-ți actualiza look-ul.</p>
+      <p><strong>Gemeni:</strong> Cariera ia o întorsătură. S-ar putea să te plictisești de rutină. Caută soluții neobișnuite sau activități secundare care să îți stârnească curiozitatea.</p>
+      <p><strong>Balanță:</strong> Romantismul este la cote înalte, dar și creativitatea. Dai naștere la ceva – un copil, o operă de artă sau o nouă poveste de dragoste. Bucură-te de fertilitatea momentului.</p>
 
-      <h2 id="water-signs">💧 Apă Semns (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Semne de Apă (Rac, Scorpion, Pești)</h2>
+      <p><strong>Temă: Imersiune Emoțională Profundă.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Pești:</strong> Pe măsură ce luna se încheie, Soarele intră în semnul tău. Te trezești dintr-un somn lung. Intuiția ta este practic psihică acum. Folosește-o.</p>
+      <p><strong>Rac:</strong> Banii și resursele partajate sunt evidențiate. O datorie ar putea fi achitată sau un împrumut aprobat. Este momentul să îți pui ordine în finanțe.</p>
+      <p><strong>Scorpion:</strong> Acasă este locul unde te simți cel mai bine. S-ar putea să renovezi sau pur și simplu să te ascunzi de lume. Odihna este productivă pentru tine acum.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">De ce horoscoapele generale nu sunt suficiente</h2>
+      <p>În timp ce această prognoză îți oferă „vremea cosmică” pentru zodia ta, îi lipsește partea cea mai critică: <strong>Harta Ta Unică.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Ești mai mult decât zodia ta solară. Ai Lună, Ascendent și alte 8 planete care formează o hartă complexă, unică precum o amprentă.
+      <br><em>Exemplu:</em> Cineva cu Ascendent în Taur va experimenta această lună complet diferit față de un Taur cu Soarele în acest semn.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Nu ghici viitorul tău.</strong> Pentru a obține datele și detaliile specifice care ți se aplică ȚIE personal, ai nevoie de o analiză calculată.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Ești gata pentru adevărul tău personal?</h3>
+          <p>Obține raportul tău complet de tranzit personal pentru 2026. Vezi exact cum interacționează planetele cu amprenta ta natală.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Vreau analiza mea personală</a>
       </div>
     `
 };

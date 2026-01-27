@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - TH
+ * ดวงรายเดือน กุมภาพันธ์ 2026 - TH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ ดวงรายเดือน กุมภาพันธ์ 2026: ฤดูกาลแห่งนวัตกรรมของชาวกุมภ์',
+  excerpt: 'กุมภาพันธ์ 2026 นำมาซึ่งความชัดเจนเมื่อดาวพุธเดินหน้า Discover อย่างไรที่พระจันทร์เต็มดวงในราศีสิงห์วันที่ 3 กุมภาพันธ์ และดาวศุกร์ในราศีมีนจะส่งผลต่อชีวิตรักและอาชีพของคุณ',
+  category: 'ดูดวง',
+  metaDescription: 'พยากรณ์โหราศาสตร์กุมภาพันธ์ 2026 ฉบับเต็ม คำทำนายรายเดือนโดยละเอียดสำหรับทุกราศี เน้นที่พระจันทร์เต็มดวงในราศีสิงห์และดาวศุกร์เข้าสู่ราศีมีน',
+  keywords: 'ดวงรายเดือน, โหราศาสตร์ กุมภาพันธ์ 2026, คำทำนายรายเดือน, พยากรณ์ราศี กุมภาพันธ์, ฤดูกาลกุมภ์, พระจันทร์เต็มดวงราศีสิงห์, ดาวศุกร์ราศีมีน',
+  quickSummary: [
+    'พระจันทร์เต็มดวงในราศีสิงห์วันที่ 3 กุมภาพันธ์ ผลักดันให้คุณก้าวขึ้นสู่เวทีและแสดงตัวตนที่แท้จริงของคุณ',
+    'ในที่สุดดาวพุธก็เดินหน้า ช่วยคลี่คลายการสื่อสารที่ผิดพลาดมาตั้งแต่ปลายเดือนมกราคม',
+    'ดาวศุกร์ย้ายเข้าสู่ราศีมีนที่ชวนฝัน สร้างพลังงานสุดโรแมนติกที่สุดในรอบปี',
+    'ฤดูกาลกุมภ์กระตุ้นให้เราสร้างสรรค์สิ่งใหม่และปลดปล่อยตัวเองจากประเพณีที่ล้าสมัย'
+  ],
+  keyTakeaways: [
+    'ใช้สัปดาห์แรกของเดือนกุมภาพันธ์เพื่อเริ่มต้นโครงการสร้างสรรค์หรือสร้างแบรนด์ใหม่ให้กับตัวเอง',
+    'วันวาเลนไทน์ปีนี้มีความพิเศษอย่างยิ่งเมื่อดาวศุกร์ทรงพลัง—วางแผนสิ่งที่ลึกซึ้งและมีความหมาย',
+    'เตรียมรับข้อมูลเชิงลึกที่คาดไม่ถึงเกี่ยวกับเทคโนโลยีหรือกลุ่มสังคมในช่วงกลางเดือน',
+    'ดวงราศีแบบทั่วไปนั้นดี แต่สำหรับช่วงเวลาที่เจาะจง คุณต้องการข้อมูลดาวจรส่วนบุคคลของคุณ'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'ภาพรวมกุมภาพันธ์ 2026' },
+    { id: 'key-transits', title: 'วันที่และตำแหน่งดวงดาวสำคัญ' },
+    { id: 'fire-signs', title: 'ราศีธาตุไฟ (เมษ, สิงห์, ธนู)' },
+    { id: 'earth-signs', title: 'ราศีธาตุดิน (พฤษภ, กันย์, มังกร)' },
+    { id: 'air-signs', title: 'ราศีธาตุลม (เมถุน, ตุลย์, กุมภ์)' },
+    { id: 'water-signs', title: 'ราศีธาตุน้ำ (กรกฎ, พิจิก, มีน)' },
+    { id: 'get-personal', title: 'ทำไมดวงทั่วไปถึงไม่เพียงพอ' }
+  ],
+  content: `
+      <h2 id="monthly-overview">โหราศาสตร์เดือนกุมภาพันธ์ 2026</h2>
+      <p>หากเดือนมกราคมคือการสลัดภาพปีเก่าทิ้งไป <strong>กุมภาพันธ์ 2026</strong> ก็คือการก้าวไปข้างหน้าอย่างกล้าหาญสู่อนาคต เราอยู่ในช่วงลึกของ <strong>ฤดูกาลกุมภ์</strong> ซึ่งเป็นเวลาที่เอื้ออำนวยต่อคนกล้า คนที่แตกต่าง และคนที่มีความคิดสร้างสรรค์ อารมณ์โดยรวมเปลี่ยนจากการถามว่า "ฉันจะรอดได้อย่างไร?" เป็น "ฉันจะสร้างตัวเองใหม่ได้อย่างไร?"</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>ข่าวใหญ่คือ <strong>พระจันทร์เต็มดวงในราศีสิงห์ วันที่ 3 กุมภาพันธ์</strong> ราศีสิงห์กระตุ้นให้เราโดดเด่น มันถามว่า: "คุณกำลังจำกัดตัวเองอยู่ที่ไหน?" ภายใต้แสงนี้ การหลบซ่อนตัวไม่ใช่ทางเลือก เมื่อประกอบกับดาวพุธที่สิ้นสุดช่วงเงามืด ความชัดเจนจะกลับมาสู่การสื่อสารของเรา หมอกควันเริ่มจางหายไป</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">วันที่และตำแหน่งดวงดาวสำคัญ</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 ก.พ.:</strong> พระจันทร์เต็มดวงในราศีสิงห์ (ดราม่า, ความหลงใหล, จุดสูงสุด)</li>
+        <li><strong>10 ก.พ.:</strong> ดาวศุกร์ย้ายเข้าสู่ราศีมีน (ความรักที่ไม่มีเงื่อนไข, ศิลปะ, จินตนาการ)</li>
+        <li><strong>18 ก.พ.:</strong> ดวงอาทิตย์ย้ายเข้าสู่ราศีมีน (ฤดูกาลแห่งความฝันเริ่มต้นขึ้น)</li>
+        <li><strong>25 ก.พ.:</strong> ดาวพุธย้ายเข้าสู่ราศีมีน (ตรรกะละลายไปพร้อมกับสัญชาตญาณ)</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 ไฟ สัญลักษณ์s (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 ราศีธาตุไฟ (เมษ, สิงห์, ธนู)</h2>
+      <p><strong>หัวข้อหลัก: การระเบิดของความคิดสร้างสรรค์</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>ราศีสิงห์:</strong> นี่คือเวลาของคุณ พระจันทร์เต็มดวงในราศีของคุณทำให้คุณเป็นจุดสนใจ ไม่ว่าจะเป็นการเลื่อนตำแหน่ง การเลิกรา หรือการก้าวกระโดดครั้งใหญ่ มันจะเกิดขึ้น <em>ตอนนี้</em> อย่ากลัวที่จะให้ใครเห็น</p>
+      <p><strong>ราศีเมษ:</strong> วงสังคมของคุณคือทรัพย์สินของคุณในเดือนนี้ การสร้างเครือข่ายนำมาซึ่งโชคลาภอย่างไม่คาดคิด เพื่อนอาจกลายเป็นคนรักหรือหุ้นส่วนทางธุรกิจ</p>
+      <p><strong>ราศีธนู:</strong> คุณกำลังโหยหาความรู้ แผนการเดินทางที่ล่าช้าในเดือนมกราคมจะได้รับสัญญาณไฟเขียวในที่สุด จองตั๋วได้เลย</p>
 
-      <h2 id="earth-signs">🌍 ดิน สัญลักษณ์s (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 ราศีธาตุดิน (พฤษภ, กันย์, มังกร)</h2>
+      <p><strong>หัวข้อหลัก: รากฐานทางจิตวิญญาณ</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>ราศีพฤษภ:</strong> เมื่อดาวศุกร์เข้าสู่ราศีมีน คุณจะรู้สึกอ่อนโยนขึ้น เป็นเวลาที่สวยงามสำหรับความรัก และยังเป็นเวลาสำหรับการให้อภัยตัวเองสำหรับความผิดพลาดในอดีต ปล่อยวางความแค้นนั้นไป</p>
+      <p><strong>ราศีกันย์:</strong> ให้ความสำคัญกับความสัมพันธ์ ปกติคุณมักจะเป็นคนช่วยเหลือคนอื่น แต่ในเดือนกุมภาพันธ์ ลองให้คนอื่นช่วย <em>คุณ</em> บ้าง การเปิดเผยความอ่อนแอคือบทเรียนของคุณในเดือนนี้</p>
+      <p><strong>ราศีมังกร:</strong> เรื่องการเงินดูดีขึ้น แต่ไม่ใช่แค่จากการทำงานหนักเพียงอย่างเดียว สัญชาตญาณจะเป็นตัวนำทางในการลงทุนของคุณ เชื่อมั่นในความรู้สึกส่วนตัวมากกว่าตารางตัวเลข</p>
 
-      <h2 id="air-signs">💨 ลม สัญลักษณ์s (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 ราศีธาตุลม (เมถุน, ตุลย์, กุมภ์)</h2>
+      <p><strong>หัวข้อหลัก: การฟื้นฟูทางปัญญา</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>ราศีกุมภ์:</strong> สุขสันต์วันเกิด! ดวงอาทิตย์ในราศีของคุณเพิ่มความมีชีวิตชีวา คุณมีแรงดึงดูด เป็นช่วงเวลาที่ดีที่สุดของปีในการสร้างแบรนด์ส่วนตัวหรือปรับปรุงลุคของคุณ</p>
+      <p><strong>ราศีเมถุน:</strong> อาชีพการงานมีการเปลี่ยนแปลง คุณอาจจะเบื่อหน่ายกับกิจวัตรเดิมๆ มองหาวิธีการที่แปลกใหม่หรือ "งานเสริม" ที่กระตุ้นความอยากรู้อยากเห็นของคุณ</p>
+      <p><strong>ราศีตุลย์:</strong> เรื่องความรักพุ่งสูง เช่นเดียวกับความคิดสร้างสรรค์ คุณกำลังให้กำเนิดบางสิ่ง—บุตร, ผลงานศิลปะ หรือความรักครั้งใหม่ สนุกไปกับช่วงเวลาที่อุดมสมบูรณ์นี้</p>
 
-      <h2 id="water-signs">💧 น้ำ สัญลักษณ์s (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 ราศีธาตุน้ำ (กรกฎ, พิจิก, มีน)</h2>
+      <p><strong>หัวข้อหลัก: การจมดิ่งสู่อารมณ์ที่ลึกซึ้ง</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>ราศีมีน:</strong> เมื่อสิ้นสุดเดือน ดวงอาทิตย์จะย้ายเข้าสู่ราศีของคุณ คุณกำลังตื่นจากการหลับใหลที่ยาวนาน สัญชาตญาณของคุณแทบจะเหมือนมีญาณทิพย์ในตอนนี้ จงใช้มัน</p>
+      <p><strong>ราศีกรกฎ:</strong> เรื่องการเงินและทรัพยากรร่วมกันได้รับความสนใจ หนี้สินอาจได้รับการชำระ অথবাได้รับการอนุมัติเงินกู้ ถึงเวลาจัดการบ้านทางการเงินของคุณให้เป็นระเบียบ</p>
+      <p><strong>ราศีพิจิก:</strong> บ้านคือที่พักพิงของหัวใจ คุณอาจจะกำลังรีโนเวทบ้านหรือแค่ต้องการหลบจากโลกภายนอก การพักผ่อนเป็นสิ่งที่มีประสิทธิภาพสำหรับคุณในตอนนี้</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">ทำไมดวงราศีทั่วไปถึงไม่เพียงพอ</h2>
+      <p>แม้ว่าพยากรณ์นี้จะบอก "สภาพอากาศในจักรวาล" สำหรับราศีหลักของคุณ แต่ก็ยังขาดส่วนที่สำคัญที่สุด: <strong>แผนผังดวงเฉพาะตัวของคุณ</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>คุณมีอะไรมากกว่าแค่ราศีเกิด คุณมีดวงจันทร์ ลัคนา และดาวเคราะห์อีก 8 ดวงที่สร้างแผนที่ซับซ้อนและมีเอกลักษณ์เหมือนลายนิ้วมือ 
+      <br><em>ตัวอย่าง:</em> คนที่มีลัคนารศีพฤษภจะมีประสบการณ์ในเดือนนี้แตกต่างจากคนที่มีดวงอาทิตย์ในราศีพฤษภอย่างสิ้นเชิง</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>อย่าเดาสุ่มกับอนาคตของคุณ</strong> เพื่อให้ได้วันที่และรายละเอียดเฉพาะที่ใช้กับคุณโดยตรง คุณต้องได้รับการอ่านดวงแบบคำนวณส่วนบุคคล</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">พร้อมสำหรับความจริงส่วนบุคคลของคุณหรือยัง?</h3>
+          <p>รับรายงานดาวจรส่วนบุคคลปี 2026 ฉบับเต็ม ดูว่าดวงดาวมีปฏิสัมพันธ์กับพื้นดวงกำเนิดของคุณอย่างไร</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">รับการทำนายส่วนบุคคลของฉัน</a>
       </div>
     `
 };

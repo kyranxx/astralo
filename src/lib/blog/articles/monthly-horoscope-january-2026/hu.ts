@@ -4,66 +4,83 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hu: BlogPostTranslation = {
-    title: "🌙 Monthly Horoscope January 2026: The Dawn of a New Era",
-    excerpt: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    category: "Horoscopes",
-    metaDescription: "Complete January 2026 astrological forecast. Detailed monthly horoscope for Aries through Pisces, covering Pluto in Aquarius, love, career, and money trends.",
-    keywords: "monthly horoscope, january 2026 astrology, monthly predictions, zodiac forecast january, pluto in aquarius, new moon capricorn, full moon cancer",
-    quickSummary: ["January 2026 is dominated by Pluto settling into Aquarius, signaling massive social shifts","The New Moon in Capricorn (Jan 1) is the perfect \"New Year's Resolution\" energy","Mercury Retrograde post-shadow clears up by Jan 15, smoothing out communication","Mars Retrograde in Cancer brings unresolved family conflicts to the surface"],
-    keyTakeaways: ["Use the first week of January for strategic planning only; delay action until mid-month","Expect sudden technological breakthroughs or disruptions as Uranus activates","Relationships face a reality check near the Full Moon in Cancer on Jan 14","Financial markets may be volatile; stick to long-term safe investments"],
-    tableOfContents: [{"id":"monthly-overview","title":"The Astrology of January"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of January 2026</h2>
-      <p>Happy New Year! <strong>January 2026</strong> is not just the start of a new calendar year; it is the astrological dawn of a new era. With <strong>Pluto firmly in Aquarius</strong>, we are collectively moving away from the top-down structures of the past 15 years (Pluto in Capricorn) and entering a phase of rapid innovation, community focus, and rebellion.</p>
+  title: '🌙 Havi horoszkóp 2026. január: Egy új korszak hajnala',
+  excerpt: 'Teljes 2026. januári asztrológiai előrejelzés. Részletes havi horoszkóp a Kostól a Halakig, beleértve a Plútó Vízöntőbe lépését, szerelmi, karrier- és pénzügyi trendeket.',
+  category: 'Horoszkópok',
+  metaDescription: 'Teljes 2026. januári asztrológiai előrejelzés. Részletes havi horoszkóp minden csillagjegy számára, Plútó a Vízöntőben, szerelem és pénzügyi trendek.',
+  keywords: 'havi horoszkóp, 2026. januári asztrológia, havi előrejelzések, januári horoszkóp, Plútó a Vízöntőben, Újhold a Bakban, Telihold a Rákban',
+  quickSummary: [
+    '2026 januárját a Plútó Vízöntőbe való berendezkedése uralja, ami hatalmas társadalmi változásokat jelez.',
+    'A Bak Újhold (január 1.) tökéletes energia az „Újévi fogadalmakhoz”.',
+    'A hátráló Merkúr árnyék fázisa január 15-ig kitisztul, megkönnyítve a kommunikációt.',
+    'A hátráló Mars a Rákban megoldatlan családi konfliktusokat hozhat a felszínre.'
+  ],
+  keyTakeaways: [
+    'Január első hetét csak stratégiai tervezésre használja; a cselekvést halassza a hónap közepére.',
+    'Hirtelen technológiai áttörésekre vagy fennakadásokra számíthat az Uránusz aktiválódásával.',
+    'A kapcsolatok január 14-én, a Rák Telihold idején kerülnek górcső alá.',
+    'A pénzügyi piacok volatilisek lehetnek; ragaszkodjon a hosszú távú, biztonságos befektetésekhez.'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Januári asztrológia' },
+    { id: 'key-transits', title: 'Fontos dátumok és tranzitok' },
+    { id: 'fire-signs', title: 'Tűz jegyek (Kos, Oroszlán, Nyilas)' },
+    { id: 'earth-signs', title: 'Föld jegyek (Bika, Szűz, Bak)' },
+    { id: 'air-signs', title: 'Levegő jegyek (Ikrek, Mérleg, Vízöntő)' },
+    { id: 'water-signs', title: 'Víz jegyek (Rák, Skorpió, Halak)' }
+  ],
+  content: `
+      <h2 id="monthly-overview">2026. januári asztrológia</h2>
+      <p>Boldog Új Évet! <strong>2026 januárja</strong> nemcsak egy új naptári év kezdete, hanem egy új asztrológiai korszak hajnala is. A <strong>Plútóval a Vízöntőben</strong> kollektíven távolodunk az elmúlt 15 év hierarchikus struktúráitól (Plútó a Bakban), és belépünk a gyors innováció, a közösségi fókusz és a lázadás fázisába.</p>
       
-      <p>The month opens with a <strong>New Moon in Capricorn</strong> on January 1st—a rare and auspicious alignment. This doubles down on the "New Year, New Me" energy, making it an incredible time for setting disciplined, long-term goals. However, with Mars Retrograde in Cancer, our energy might feel a bit internal. We are rethinking <em>why</em> we act, not just <em>how</em>.</p>
+      <p>A hónap egy <strong>Bak Újholddal</strong> nyit január 1-jén – ez egy ritka és szerencsés együttállás. Ez felerősíti az „Új év, új én” energiát, így hihetetlen alkalom a fegyelmezett, hosszú távú célok kitűzésére. Azonban a hátráló Marssal a Rákban az energiánk inkább befelé irányulhat. Inkább azon gondolkodunk, <em>miért</em> cselekszünk, nem csak azon, hogy <em>hogyan</em>.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Fontos dátumok és tranzitok</h2>
       <ul>
-        <li><strong>Jan 1:</strong> New Moon in Capricorn (Set intentions).</li>
-        <li><strong>Jan 4:</strong> Mars enters Leo (Pride and drama increase).</li>
-        <li><strong>Jan 14:</strong> Full Moon in Cancer (Emotional release).</li>
-        <li><strong>Jan 20:</strong> Sun enters Aquarius (The Season of the Future).</li>
-        <li><strong>Jan 29:</strong> Uranus Direct (Sudden changes).</li>
+        <li><strong>Jan. 1:</strong> Újhold a Bakban (Szándékok kitűzése).</li>
+        <li><strong>Jan. 4:</strong> Mars az Oroszlánba lép (A büszkeség és a dráma fokozódik).</li>
+        <li><strong>Jan. 14:</strong> Telihold a Rákban (Érzelmi felszabadulás).</li>
+        <li><strong>Jan. 20:</strong> A Nap a Vízöntőbe lép (A jövő szezonja).</li>
+        <li><strong>Jan. 29:</strong> Az Uránusz direktbe fordul (Hirtelen változások).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Tűz Jegys (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Reclaiming Your Spark.</strong></p>
+      <h2 id="fire-signs">🔥 Tűz jegyek (Kos, Oroszlán, Nyilas)</h2>
+      <p><strong>Téma: A szikra visszaszerzése.</strong></p>
       
-      <p><strong>Aries:</strong> With your ruler Mars appearing to move backward (retrograde), you might feel frustrated by delays. This is not a red light; it's a yellow light. Use January to review your career path. Are you climbing the right mountain?</p>
+      <p><strong>Kos:</strong> Mivel uralkodó bolygója, a Mars hátráló mozgást végez, frusztrálhatják a késések. Ez nem piros lámpa, hanem sárga. Használja a januárt karrierje felülvizsgálatára. A megfelelő hegyet mássza?</p>
       
-      <p><strong>Leo:</strong> Relationships are the focal point. Expect ex-partners or old friends to resurface. The Full Moon in your 12th house suggests a need for solitude mid-month. Recharge your social batteries.</p>
+      <p><strong>Oroszlán:</strong> A kapcsolatok állnak a fókuszban. Számítson ex-partnerek vagy régi barátok felbukkanására. A Telihold a 12. házában a hónap közepén egyedüllétet igényel. Töltse fel közösségi akkumulátorait.</p>
       
-      <p><strong>Sagittarius:</strong> Finances are highlighted. You may find a new income stream or decide to cut unnecessary subscriptions. It's a month for practical budgeting, not wild spending.</p>
+      <p><strong>Nyilas:</strong> A pénzügyek kerülnek előtérbe. Új jövedelemforrást találhat, vagy dönthet úgy, hogy lemondja a felesleges előfizetéseket. Ez a gyakorlatias költségvetés-készítés hónapja, nem a vad költekezésé.</p>
 
-      <h2 id="earth-signs">🌍 Föld Jegys (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Building the Foundation.</strong></p>
+      <h2 id="earth-signs">🌍 Föld jegyek (Bika, Szűz, Bak)</h2>
+      <p><strong>Téma: Az alapok építése.</strong></p>
       
-      <p><strong>Taurus:</strong> You are usually slow to change, but Uranus in your sign is pushing you to break free. January brings a sudden travel opportunity or a shift in your philosophy. Say yes to the unknown.</p>
+      <p><strong>Bika:</strong> Általában lassan változik, de az Uránusz az Ön jegyében a kitörésre ösztönzi. Január hirtelen utazási lehetőséget vagy szemléletváltást hozhat. Mondjon igent az ismeretlenre.</p>
       
-      <p><strong>Virgo:</strong> Your ruling planet Mercury clears its shadow phase mid-month. Until then, double-check all contracts. Creativity spikes after the 20th—start that hobby you've been putting off.</p>
+      <p><strong>Szűz:</strong> Uralkodó bolygója, a Merkúr a hónap közepén befejezi árnyék fázisát. Addig is kétszeresen ellenőrizzen minden szerződést. A kreativitás húszadika után tetőzik – kezdje el azt a hobbit, amit eddig halogatott.</p>
       
-      <p><strong>Capricorn:</strong> Happy Birthday season! The New Moon in your sign is your personal New Year. You have cosmic permission to be selfish. What do YOU want for the next 12 months? Speak it into existence.</p>
+      <p><strong>Bak:</strong> Boldog születésnapot! Az Újhold az Ön jegyében az Ön személyes Újéve. Kozmikus engedélye van arra, hogy önző legyen. Mit akar ÖN a következő 12 hónapban? Mondja ki bátran.</p>
 
-      <h2 id="air-signs">💨 Levegő Jegys (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Expansion.</strong></p>
+      <h2 id="air-signs">💨 Levegő jegyek (Ikrek, Mérleg, Vízöntő)</h2>
+      <p><strong>Téma: Szellemi tágulás.</strong></p>
       
-      <p><strong>Gemini:</strong> Shared resources and deep intimacy are key. You might receive an inheritance, a bonus, or have a deep psychological breakthrough. It’s a intense month, but clearing.</p>
+      <p><strong>Ikrek:</strong> A közös erőforrások és a mély intimitás a kulcs. Örökséget, bónuszt kaphat, vagy mély pszichológiai áttörést élhet át. Intenzív, de tisztító hónap.</p>
       
-      <p><strong>Libra:</strong> Home and family take center stage. You might be redecorating or mediating a family conflict. Balance is your superpower; use it to create peace in your sanctuary.</p>
+      <p><strong>Mérleg:</strong> Az otthon és a család kerül a középpontba. Lehet, hogy átrendezi a lakást, vagy egy családi konfliktusban közvetít. Az egyensúly az Ön szuperereje; használja arra, hogy békét teremtsen szentélyében.</p>
       
-      <p><strong>Aquarius:</strong> This is your moment. With Pluto in your sign, you are undergoing a metamorphosis. You might change your look, your name, or your entire job description. The world is catching up to your vision.</p>
+      <p><strong>Vízöntő:</strong> Ez az Ön pillanata. A Plútóval az Ön jegyében átalakuláson megy keresztül. Megváltoztathatja a külsejét, a nevét vagy a teljes munkaköri leírását. A világ végre felzárkózik az Ön víziójához.</p>
 
-      <h2 id="water-signs">💧 Víz Jegys (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Wisdom.</strong></p>
+      <h2 id="water-signs">💧 Víz jegyek (Rák, Skorpió, Halak)</h2>
+      <p><strong>Téma: Érzelmi bölcsesség.</strong></p>
       
-      <p><strong>Cancer:</strong> The Full Moon in your sign on the 14th is the emotional climax of your year. Let it all out. Cry, laugh, scream. You are shedding an old skin. Relationships formed now are karmic.</p>
+      <p><strong>Rák:</strong> A Telihold az Ön jegyében 14-én az év érzelmi csúcspontja. Adja ki magából! Sírjon, nevessen, üvöltsön. Vedlik, mint a kígyó. Az ekkor kötött kapcsolatok karmikusak.</p>
       
-      <p><strong>Scorpio:</strong> Communication is powerful. Your words have extra weight this month. Use them to negotiate, teach, or write. Avoid manipulative mind games; transparency wins.</p>
+      <p><strong>Skorpió:</strong> A kommunikáció ereje hatalmas. Szavainak extra súlya van ebben a hónapban. Használja őket tárgyalásra, tanításra vagy írásra. Kerülje a manipulatív játszmákat; az őszinteség nyer.</p>
       
-      <p><strong>Pisces:</strong> Your social circle is expanding. You are the glue holding your community together. Look for opportunities to volunteer or lead a group project. Your intuition is razor-sharp.</p>
+      <p><strong>Halak:</strong> Szociális köre tágul. Ön a ragasztó, ami összetartja a közösségét. Keressen lehetőséget önkénteskedésre vagy egy csoportos projekt vezetésére. Intuíciója borotvaéles.</p>
 
-      <h2 id="complete-horoscope">Get Your Complete 2026 Horoscope</h2>
-      <p>This monthly overview is just the tip of the iceberg. Each person has a unique chart that interacts with these transits differently. To navigate 2026 with confidence, order your <strong>Personalized Year-Ahead Report</strong> from Astralo. It breaks down your specific transits month-by-month.
+      <h2 id="complete-horoscope">Szerezze be teljes 2026-os horoszkópját</h2>
+      <p>Ez a havi áttekintés csak a jéghegy csúcsa. Mindenkinek egyedi képlete van, amely másként reagál ezekre a tranzitokra. Hogy magabiztosan navigálhasson 2026-ban, rendelje meg <strong>Személyre szabott éves jelentését</strong> az Astralo-tól. Ez lebontja az Ön konkrét tranzitjait hónapról hónapra.
     `
 };

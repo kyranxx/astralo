@@ -1,71 +1,89 @@
 /**
- * monthly-horoscope-february-2026 - EL
+ * Μηνιαίο Ωροσκόπιο Φεβρουάριος 2026 - EL
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const el: BlogPostTranslation = {
-    title: "❤️ Monthly Horoscope February 2026: Season of Aquarian Innovation",
-    excerpt: "February 2026 brings a wave of clarity as Mercury goes Direct. Discover how the Full Moon in Leo on Feb 3rd and Venus in Pisces will impact your love life and career.",
-    category: "Horoscopes",
-    metaDescription: "Complete February 2026 astrological forecast. Detailed monthly predictions for all zodiac signs, focusing on the Leo Full Moon and Venus entering their exaltation in Pisces.",
-    keywords: "monthly horoscope, february 2026 astrology, monthly predictions, zodiac forecast february, aquarius season, full moon leo, venus pisces",
-    quickSummary: ["The Full Moon in Leo on Feb 3rd demands that you take center stage and express your true self","Mercury finally goes Direct, clearing up the miscommunications from late January","Venus moves into dreamy Pisces, creating the most romantic energy of the entire year","Aquarius Season pushes us to innovate and break free from outdated traditions"],
-    keyTakeaways: ["Use the first week of February to launch creative projects or re-brand yourself","Valentine's Day is extra magical this year with Venus exalted—plan something spiritual and deep","Expect sudden insights regarding technology or community groups mid-month","General horoscopes are great, but for specific timing, you need your personal transits"],
-    tableOfContents: [{"id":"monthly-overview","title":"February 2026 Overview"},{"id":"key-transits","title":"Key Dates & Transits"},{"id":"fire-signs","title":"Fire Signs (Aries, Leo, Sag)"},{"id":"earth-signs","title":"Earth Signs (Taurus, Virgo, Cap)"},{"id":"air-signs","title":"Air Signs (Gemini, Libra, Aqua)"},{"id":"water-signs","title":"Water Signs (Cancer, Scorpio, Pisces)"},{"id":"get-personal","title":"Why General isn't Enough"}],
-    content: `
-      <h2 id="monthly-overview">The Astrology of February 2026</h2>
-      <p>If January was about shaking off the old year, <strong>February 2026</strong> is about stepping boldly into the future. We are deep in <strong>Aquarius Season</strong>, a time that favors the bold, the weird, and the innovative. The collective mood shifts from "How do I survive?" to "How do I reinvent?"</p>
+  title: '❤️ Μηνιαίο Ωροσκόπιο Φεβρουάριος 2026: Η Εποχή της Καινοτομίας του Υδροχόου',
+  excerpt: 'Ο Φεβρουάριος 2026 φέρνει ένα κύμα σαφήνειας καθώς ο Ερμής επιστρέφει σε ορθή πορεία. Ανακαλύψτε πώς η Πανσέληνος στον Λέοντα στις 3 Φεβρουαρίου και η Αφροδίτη στους Ιχθύες θα επηρεάσουν την ερωτική σας ζωή και την καριέρα σας.',
+  category: 'Ωροσκόπια',
+  metaDescription: 'Πλήρης αστρολογική πρόβλεψη για τον Φεβρουάριο 2026. Λεπτομερείς μηνιαίες προβλέψεις για όλα τα ζώδια, με έμφαση στην Πανσέληνο στον Λέοντα και την Αφροδίτη που εισέρχεται στην έξαρσή της στους Ιχθύες.',
+  keywords: 'μηνιαίο ωροσκόπιο, αστρολογία Φεβρουάριος 2026, μηνιαίες προβλέψεις, αστρολογική πρόβλεψη Φεβρουαρίου, εποχή Υδροχόου, πανσέληνος στον λέοντα, αφροδίτη στους ιχθύες',
+  quickSummary: [
+    'Η Πανσέληνος στον Λέοντα στις 3 Φεβρουαρίου απαιτεί να βγείτε στο προσκήνιο και να εκφράσετε τον αληθινό σας εαυτό',
+    'Ο Ερμής τελικά γυρίζει σε ορθή πορεία, ξεκαθαρίζοντας τις παρεξηγήσεις από τα τέλη Ιανουαρίου',
+    'Η Αφροδίτη μετακινείται στους ονειρικούς Ιχθύες, δημιουργώντας την πιο ρομαντική ενέργεια ολόκληρου του έτους',
+    'Η Εποχή του Υδροχόου μας ωθεί να καινοτομήσουμε και να απελευθερωθούμε από ξεπερασμένες παραδόσεις'
+  ],
+  keyTakeaways: [
+    'Χρησιμοποιήστε την πρώτη εβδομάδα του Φεβρουαρίου για να ξεκινήσετε δημιουργικά έργα ή να ανανεώσετε την εικόνα σας',
+    'Η Ημέρα του Αγίου Βαλεντίνου είναι εξαιρετικά μαγική φέτος με την Αφροδίτη σε έξαρση—προγραμματίστε κάτι πνευματικό και βαθύ',
+    'Περιμένετε ξαφνικές αποκαλύψεις σχετικά με την τεχνολογία ή κοινωνικές ομάδες στα μέσα του μήνα',
+    'Τα γενικά ωροσκόπια είναι εξαιρετικά, αλλά για συγκεκριμένο χρονισμό, χρειάζεστε τις προσωπικές σας διελεύσεις'
+  ],
+  tableOfContents: [
+    { id: 'monthly-overview', title: 'Επισκόπηση Φεβρουαρίου 2026' },
+    { id: 'key-transits', title: 'Βασικές Ημερομηνίες και Διελεύσεις' },
+    { id: 'fire-signs', title: 'Ζώδια της Φωτιάς (Κριός, Λέων, Τοξότης)' },
+    { id: 'earth-signs', title: 'Ζώδια της Γης (Ταύρος, Παρθένος, Αιγόκερως)' },
+    { id: 'air-signs', title: 'Ζώδια του Αέρα (Δίδυμοι, Ζυγός, Υδροχόος)' },
+    { id: 'water-signs', title: 'Ζώδια του Νερού (Καρκίνος, Σκορπιός, Ιχθύες)' },
+    { id: 'get-personal', title: 'Γιατί οι Γενικές Προβλέψεις δεν είναι Αρκετές' }
+  ],
+  content: `
+      <h2 id="monthly-overview">Η Αστρολογία του Φεβρουαρίου 2026</h2>
+      <p>Αν ο Ιανουάριος ήταν για να αποτινάξετε το παλιό έτος, ο <strong>Φεβρουάριος 2026</strong> είναι για να προχωρήσετε τολμηρά στο μέλλον. Βρισκόμαστε βαθιά στην <strong>Εποχή του Υδροχόου</strong>, μια εποχή που ευνοεί τους τολμηρούς, τους ιδιαίτερους και τους καινοτόμους. Η συλλογική διάθεση μετατοπίζεται από το "Πώς θα επιβιώσω;" στο "Πώς θα ανακαλύψω ξανά τον εαυτό μου;".</p>
       
-      <p>The headline news is the <strong>Full Moon in Leo on February 3rd</strong>. Leo asks us to shine. It asks: "Where are you playing small?" Under this light, hiding is not an option. Combined with Mercury ending its shadow phase, clarity returns to our communications. The fog lifts.</p>
+      <p>Η κυρίαρχη είδηση είναι η <strong>Πανσέληνος στον Λέοντα στις 3 Φεβρουαρίου</strong>. Ο Λέων μας ζητά να λάμψουμε. Ρωτάει: "Πού περιορίζετε τον εαυτό σας;". Υπό αυτό το φως, το να κρύβεστε δεν είναι επιλογή. Σε συνδυασμό με τον Ερμή που ολοκληρώνει τη σκιώδη φάση του, η σαφήνεια επιστρέφει στις επικοινωνίες μας. Η ομίχλη διαλύεται.</p>
 
-      <h2 id="key-transits">Key Dates & Transits</h2>
+      <h2 id="key-transits">Βασικές Ημερομηνίες και Διελεύσεις</h2>
       <ul>
-        <li><strong>Feb 3:</strong> Full Moon in Leo (Drama, Passion, Culmination).</li>
-        <li><strong>Feb 10:</strong> Venus enters Pisces (Unconditional Love, Art, Fantasy).</li>
-        <li><strong>Feb 18:</strong> Sun enters Pisces (The Season of Dreams begins).</li>
-        <li><strong>Feb 25:</strong> Mercury enters Pisces (Logic dissolves into Intuition).</li>
+        <li><strong>3 Φεβ:</strong> Πανσέληνος στον Λέοντα (Δράμα, Πάθος, Κορύφωση).</li>
+        <li><strong>10 Φεβ:</strong> Η Αφροδίτη εισέρχεται στους Ιχθύες (Ανιδιοτελής Αγάπη, Τέχνη, Φαντασία).</li>
+        <li><strong>18 Φεβ:</strong> Ο Ήλιος εισέρχεται στους Ιχθύες (Η Εποχή των Ονείρων ξεκινά).</li>
+        <li><strong>25 Φεβ:</strong> Ο Ερμής εισέρχεται στους Ιχθύες (Η Λογική διαλύεται στη Διαίσθηση).</li>
       </ul>
 
-      <h2 id="fire-signs">🔥 Φωτιά Σήμαs (Aries, Leo, Sagittarius)</h2>
-      <p><strong>Theme: Creative Explosion.</strong></p>
+      <h2 id="fire-signs">🔥 Ζώδια της Φωτιάς (Κριός, Λέων, Τοξότης)</h2>
+      <p><strong>Θέμα: Δημιουργική Έκρηξη.</strong></p>
       
-      <p><strong>Leo:</strong> This is your moment. The Full Moon in your sign puts you in the spotlight. Whether it's a promotion, a breakup, or a breakthrough, it happens <em>now</em>. Do not be afraid to be seen.</p>
-      <p><strong>Aries:</strong> Your social circle is your wealth this month. Networking brings unexpected gold. A friend might become a lover or a business partner.</p>
-      <p><strong>Sagittarius:</strong> You are craving wisdom. Travel plans that were delayed in January finally get the green light. Book the ticket.</p>
+      <p><strong>Λέων:</strong> Αυτή είναι η στιγμή σας. Η Πανσέληνος στο ζώδιό σας σας θέτει στο επίκεντρο. Είτε πρόκειται για μια προαγωγή, έναν χωρισμό ή μια ανακάλυψη, συμβαίνει <em>τώρα</em>. Μην φοβάστε να σας δουν.</p>
+      <p><strong>Κριός:</strong> Ο κοινωνικός σας κύκλος είναι ο πλούτος σας αυτόν τον μήνα. Η δικτύωση φέρνει απροσδόκητα οφέλη. Ένας φίλος μπορεί να γίνει εραστής ή επιχειρηματικός συνεργάτης.</p>
+      <p><strong>Τοξότης:</strong> Διψάτε για σοφία. Τα ταξιδιωτικά σχέδια που καθυστέρησαν τον Ιανουάριο παίρνουν τελικά το πράσινο φως. Κλείστε το εισιτήριο.</p>
 
-      <h2 id="earth-signs">🌍 Γη Σήμαs (Taurus, Virgo, Capricorn)</h2>
-      <p><strong>Theme: Spiritual Grounding.</strong></p>
+      <h2 id="earth-signs">🌍 Ζώδια της Γης (Ταύρος, Παρθένος, Αιγόκερως)</h2>
+      <p><strong>Θέμα: Πνευματική Γείωση.</strong></p>
       
-      <p><strong>Taurus:</strong> When Venus enters Pisces, you feel softer. It's a beautiful time for romance, but also for forgiving yourself for past mistakes. Let go of the grudge.</p>
-      <p><strong>Virgo:</strong> Focus on partnership. You are usually the helper, but in February, let someone help <em>you</em>. Vulnerability is your lesson this month.</p>
-      <p><strong>Capricorn:</strong> Money matters look up, but not through hard work alone. Intuition guides your investments. Trust your gut over the spreadsheet.</p>
+      <p><strong>Ταύρος:</strong> Καθώς η Αφροδίτη εισέρχεται στους Ιχθύες, αισθάνεστε πιο ήρεμοι. Είναι μια όμορφη στιγμή για ρομαντισμό, αλλά και για να συγχωρήσετε τον εαυτό σας για λάθη του παρελθόντος. Αφήστε πίσω τις κακίες.</p>
+      <p><strong>Παρθένος:</strong> Εστιάστε στη συντροφικότητα. Συνήθως είστε εσείς που βοηθάτε, αλλά τον Φεβρουάριο αφήστε κάποιον να σας βοηθήσει <em>εσάς</em>. Η ευαλωτότητα είναι το μάθημά σας αυτόν τον μήνα.</p>
+      <p><strong>Αιγόκερως:</strong> Τα οικονομικά θέματα βελτιώνονται, αλλά όχι μόνο μέσω σκληρής δουλειάς. Η διαίσθηση καθοδηγεί τις επενδύσεις σας. Εμπιστευτείτε το ένστικτό σας περισσότερο από τα υπολογιστικά φύλλα.</p>
 
-      <h2 id="air-signs">💨 Αέρας Σήμαs (Gemini, Libra, Aquarius)</h2>
-      <p><strong>Theme: Intellectual Renewal.</strong></p>
+      <h2 id="air-signs">💨 Ζώδια του Αέρα (Δίδυμοι, Ζυγός, Υδροχόος)</h2>
+      <p><strong>Θέμα: Πνευματική Ανανέωση.</strong></p>
       
-      <p><strong>Aquarius:</strong> Happy Birthday! The Sun in your sign amplifies your vitality. You are magnetic. It's the best time of the year to launch a personal brand or update your look.</p>
-      <p><strong>Gemini:</strong> Career takes a turn. You might be bored with the routine. Look for unusual solutions or "side hustles" that spark your curiosity.</p>
-      <p><strong>Libra:</strong> Romance is high, but so is creativity. You are birthing something—a child, an art piece, or a new romance. Enjoy the fertility of the moment.</p>
+      <p><strong>Υδροχόος:</strong> Χρόνια Πολλά! Ο Ήλιος στο ζώδιό σας ενισχύει τη ζωτικότητά σας. Είστε μαγνητικοί. Είναι η καλύτερη εποχή του έτους για να ξεκινήσετε ένα προσωπικό brand ή να ανανεώσετε την εμφάνισή σας.</p>
+      <p><strong>Δίδυμοι:</strong> Η καριέρα παίρνει μια τροπή. Ίσως βαριέστε με τη ρουτίνα. Αναζητήστε ασυνήθιστες λύσεις ή παράπλευρες δραστηριότητες που εξάπτουν την περιέργειά σας.</p>
+      <p><strong>Ζυγός:</strong> Ο ρομαντισμός είναι στα ύψη, το ίδιο και η δημιουργικότητα. Γεννάτε κάτι—ένα παιδί, ένα έργο τέχνης ή έναν νέο έρωτα. Απολαύστε τη γονιμότητα της στιγμής.</p>
 
-      <h2 id="water-signs">💧 Νερό Σήμαs (Cancer, Scorpio, Pisces)</h2>
-      <p><strong>Theme: Emotional Deep Dive.</strong></p>
+      <h2 id="water-signs">💧 Ζώδια του Νερού (Καρκίνος, Σκορπιός, Ιχθύες)</h2>
+      <p><strong>Θέμα: Βαθιά Συναισθηματική Βουτιά.</strong></p>
       
-      <p><strong>Pisces:</strong> As the month ends, the Sun enters your sign. You are waking up from a long sleep. Your intuition is practically psychic now. Use it.</p>
-      <p><strong>Cancer:</strong> Money and shared resources are highlighted. A debt might be paid off, or a loan approved. It's a time to get your financial house in order.</p>
-      <p><strong>Scorpio:</strong> Home is where the heart is. You might be renovating or simply hiding away from the world. Rest is productive for you right now.</p>
+      <p><strong>Ιχθύες:</strong> Καθώς ο μήνας τελειώνει, ο Ήλιος εισέρχεται στο ζώδιό σας. Ξυπνάτε από έναν μακρύ ύπνο. Η διαίσθησή σας είναι σχεδόν προφητική τώρα. Χρησιμοποιήστε την.</p>
+      <p><strong>Καρκίνος:</strong> Τα χρήματα και οι κοινοί πόροι αναδεικνύονται. Ένα χρέος μπορεί να εξοφληθεί ή ένα δάνειο να εγκριθεί. Είναι καιρός να βάλετε σε τάξη τα οικονομικά σας.</p>
+      <p><strong>Σκορπιός:</strong> Το σπίτι είναι εκεί που βρίσκεται η καρδιά. Ίσως κάνετε ανακαίνιση ή απλά κρύβεστε από τον κόσμο. Η ξεκούραση είναι παραγωγική για εσάς αυτή τη στιγμή.</p>
 
-      <h2 id="get-personal">Why General Horoscopes Aren't Enough</h2>
-      <p>While this forecast gives you the "cosmic weather" for your Sun Sign, it misses the most critical part: <strong>Your Unique Chart.</strong></p>
+      <h2 id="get-personal">Γιατί οι Γενικές Προβλέψεις δεν είναι Αρκετές</h2>
+      <p>Ενώ αυτή η πρόβλεψη σας δίνει τον "αστρολογικό καιρό" για το ζώδιό σας, παραλείπει το πιο κρίσιμο μέρος: <strong>Τον Μοναδικό σας Χάρτη.</strong></p>
       
-      <p>You are more than just your Sun sign. You have a Moon, a Rising sign, and 8 other planets that form a complex, thumbprint-unique map. 
-      <br><em>Example:</em> A Taurus Rising will experience this month completely differently than a Taurus Sun.</p>
+      <p>Είστε κάτι περισσότερο από το ζώδιό σας. Έχετε Σελήνη, Ωροσκόπο και άλλα 8 πλανήτες που σχηματίζουν έναν πολύπλοκο χάρτη, μοναδικό σαν δακτυλικό αποτύπωμα. 
+      <br><em>Παράδειγμα:</em> Ένας Ταύρος με Ωροσκόπο θα βιώσει αυτόν τον μήνα εντελώς διαφορετικά από έναν Ταύρο στον Ήλιο.</p>
       
-      <p><strong>Don't guess with your future.</strong> To get the specific dates and details that apply to YOU personally, you need a calculated reading.</p>
+      <p><strong>Μην μαντεύετε για το μέλλον σας.</strong> Για να λάβετε τις συγκεκριμένες ημερομηνίες και λεπτομέρειες που ισχύουν για ΕΣΑΣ προσωπικά, χρειάζεστε μια εξειδικευμένη ανάλυση.</p>
       
       <div class="cta-box" style="background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%); padding: 2rem; border-radius: 1rem; color: white; text-align: center; margin-top: 2rem;">
-          <h3 style="margin-top:0;">Ready for Your Personal Truth?</h3>
-          <p>Get your full 2026 Personal Transit Report. See exactly how the planets interact with your natal blueprint.</p>
-          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Get My Personal Reading</a>
+          <h3 style="margin-top:0;">Έτοιμοι για την Προσωπική σας Αλήθεια;</h3>
+          <p>Λάβετε την πλήρη Προσωπική Έκθεση Διελεύσεων για το 2026. Δείτε ακριβώς πώς αλληλεπιδρούν οι πλανήτες με το γενέθλιο σχέδιό σας.</p>
+          <a href="/" style="background: white; color: #FF5E62; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">Λάβετε την Προσωπική μου Ανάλυση</a>
       </div>
     `
 };

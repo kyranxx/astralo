@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - HE (Fallback to English content)
+ * weekly-horoscope-predictions - HE
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 הורוסקופ שבועי: איך לנווט בשבוע הקוסמי שלפניכם',
+  excerpt: 'הפיקו את המרב מהשבוע שלכם עם המדריך שלנו להורוסקופ שבועי. הבינו את ימי הפלנטות, ניווטו בירח בנתיב ריק (Void-of-Course) ותכננו את לוח הזמנים שלכם לפי תזמון אסטרולוגי.',
+  category: 'הורוסקופים',
+  metaDescription: 'הפיקו את המרב מהשבוע שלכם עם המדריך שלנו להורוסקופ שבועי. הבינו את ימי הפלנטות, ניווטו בירח בנתיב ריק (Void-of-Course) ותכננו את לוח הזמנים שלכם לפי תזמון אסטרולוגי.',
+  keywords: 'הורוסקופ שבועי, אסטרולוגיה שבועית, ימי פלנטות, ירח ריק, תחזית שבועית למזלות, תכנון אסטרולוגי, הימים הטובים ביותר השבוע',
+  quickSummary: [
+    'כל יום בשבוע נשלט על ידי פלנטה אחרת (שני/ירח, שלישי/מרס, וכו\')',
+    'הורוסקופים שבועיים עוקבים אחר תנועת הפלנטות המהירות דרך המזלות',
+    'ירח בנתיב ריק (Void-of-Course) הוא "זמן הפסקה" קריטי שבו כדאי להימנע מפעולות משמעותיות',
+    'ימי שני מוקדשים לרגש, ימי שלישי לפעולה, וימי שישי לרומנטיקה'
+  ],
+  keyTakeaways: [
+    'בדקו את התחזית השבועית במוצאי שבת או ראשון בבוקר כדי לתכנן את לוח השנה שלכם',
+    'קבעו פגישות קשות ביום חמישי (יופיטר) או שבת (סטורן) בהתאם למטרה',
+    'הימנעו מחתימה על חוזים כאשר הירח בנתיב ריק',
+    'השתמשו בזרימה האנרגטית השבועית במקום להילחם בה'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'המקצב האסטרולוגי' },
+    { id: 'planetary-days', title: 'שליטי הימים' },
+    { id: 'void-moon', title: 'ירח בנתיב ריק (Void-of-Course)' },
+    { id: 'transits', title: 'מעקב אחר מעברים שבועיים' },
+    { id: 'by-sign', title: 'עצות שבועיות לפי מזלות' }
+  ],
+  content: `
+      <h2 id="weekly-flow">המקצב האסטרולוגי של השבוע</h2>
+      <p>האם אי פעם הרגשתם ששבועות מסוימים זורמים כמו מים, בעוד שאחרים מרגישים כמו דשדוש בבוץ? או למה ביצוע משימות ביום שלישי מרגיש שונה מביצוען ביום שישי? זה לא מקרי. המבנה של שבוע בן 7 ימים מבוסס למעשה כולו על <strong>אסטרולוגיה</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>הבנת ה<strong>הורוסקופ השבועי</strong> היא מעבר לידיעה אם תקבלו הודעה בחזרה. מדובר בהתאמת לוח הזמנים שלכם לשליטי הפלנטות העתיקים של הזמן. כשאתם עובדים <em>עם</em> האנרגיה של היום, הפרודוקטיביות עולה וההתנגדות נעלמת.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">שליטי הימים</h2>
+      <p>כל יום נקרא על שם פלנטה (באופן מילולי בשפות כמו צרפתית או ספרדית). הנה המדריך שלכם לתזמון השבוע שלכם באופן אסטרולוגי:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>יום שני (יום הירח) 🌙</h3>
+      <p><strong>אנרגיה:</strong> רגשית, אינטואיטיבית, תנודתית.<br><strong>הכי טוב עבור:</strong> קניות בסופר, ניקיון הבית, שינה מאוחרת, ארוחות משפחתיות, התבוננות פנימה.<br><strong>הימנעו מ:</strong> מצגות בלחץ גבוה או לוגיקה נוקשה.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>יום שלישי (יום מרס) ♂</h3>
+      <p><strong>אנרגיה:</strong> אגרסיבית, אנרגטית, חדה.<br><strong>הכי טוב עבור:</strong> פעילות גופנית, התחלת פרויקטים חדשים, התמודדות עם בעיות, תחרות.<br><strong>הימנעו מ:</strong> מדיטציה, ניסיון להירגע.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>יום רביעי (יום מרקורי) ☿️</h3>
+      <p><strong>אנרגיה:</strong> תקשורתית, עמוסה, מהירה.<br><strong>הכי טוב עבור:</strong> אימיילים, פגישות, כתיבה, מכירות, טיולים קצרים, נטוורקינג.<br><strong>הימנעו מ:</strong> שקט (זה לא יקרה בכל מקרה).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>יום חמישי (יום יופיטר) ♃</h3>
+      <p><strong>אנרגיה:</strong> מתרחבת, בת מזל, אופטימית.<br><strong>הכי טוב עבור:</strong> השקת חזונות גדולים, בקשת העלאה בשכר, תכנון טיולים, השכלה גבוהה.<br><strong>הימנעו מ:</strong> קמצנות.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>יום שישי (יום ונוס) ♀</h3>
+      <p><strong>אנרגיה:</strong> חברתית, רומנטית, אסתטית.<br><strong>הכי טוב עבור:</strong> דייטים, מסיבות, קניית בגדים, אמנות, רגיעה.<br><strong>הימנעו מ:</strong> עבודה מלכלכת או בדידות.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>יום שבת (יום סטורן) ♄</h3>
+      <p><strong>אנרגיה:</strong> רצינית, כבדה, ממושמעת.<br><strong>הכי טוב עבור:</strong> עבודה בגינה, תכנון לטווח ארוך, לימודים, השלמת עבודות בית, חובה.<br><strong>הימנעו מ:</strong> מסיבות פרועות (אלא אם מדובר באירועים רשמיים).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>יום ראשון (יום השמש) ☀️</h3>
+      <p><strong>אנרגיה:</strong> קורנת, ממוקדת באגו, רוחנית.<br><strong>הכי טוב עבור:</strong> תחביבים, תפילה/רוחניות, משחק עם ילדים, להיות במרכז העניינים, מנוחה.<br><strong>הימנעו מ:</strong> להיות בלתי נראים.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">הירח בנתיב ריק (Void-of-Course)</h2>
+      <p>אם תזכרו דבר אחד מהמדריך הזה, שזה יהיה ה<strong>ירח בנתיב ריק</strong>. זה קורה כאשר הירח סיים את ההיבט האחרון שלו לפלנטה במזל הנוכחי שלו ו"צף" לפני הכניסה למזל הבא.</p>
+      <p><strong>הכלל:</strong> "שום דבר לא ייצא מהעניין."</p>
+      <p>במהלך ירח ריק, אל תחתמו על חוזים, אל תשיקו עסקים ואל תשלחו בקשות לדייטים ראשונים. האנרגיה בהכרח מתפוגגת. השתמשו בזמן הזה לתיוק, שינה או עריכת עבודה שכבר התחלתם. זהו "פסק זמן" קוסמי.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">מעקב אחר מעברים שבועיים</h2>
+      <p>תחזית <strong>אסטרולוגיה שבועית</strong> טובה מסתכלת גם על הזוויות הספציפיות שהפלנטות יוצרות השבוע. לדוגמה:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>מרקורי בסקסטייל לוונוס:</strong> שבוע מושלם לחן חברתי ובקשת טובות.</li>
+        <li><strong>שמש בריבוע לפלוטו:</strong> שבוע של מאבקי כוח ואינטנסיביות.</li>
+        <li><strong>מרס נכנס למאזניים:</strong> האנרגיה עוברת ממיקוד בעבודה למיקוד במערכות יחסים.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">תבניות לעצות שבועיות</h2>
+      <p>למרות שהשבוע של כל אחד הוא ייחודי, הנה איך המזלות מתמודדים בדרך כלל עם שינויים שבועיים:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>מזלות קרדינליים (טלה, סרטן, מאזניים, גדי):</strong> אתם היוזמים. השתמשו באנרגיה של תחילת השבוע (שני/שלישי) כדי להתחיל דברים.</li>
+        <li><strong>מזלות קבועים (שור, אריה, עקרב, דלי):</strong> אתם המקיימים. השתמשו באנרגיה של אמצע השבוע כדי לקבע התקדמות.</li>
+        <li><strong>מזלות משתנים (תאומים, בתולה, קשת, דגים):</strong> אתם העורכים. השתמשו בסוף השבוע או בימי מרקורי כדי להסתגל ולשנות מסלול.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>חזרו בכל יום ראשון לתחזית השבועית הספציפית שלכם המעודכנת על ידי צוות Astralo!</em>
     `
 };

@@ -1,204 +1,242 @@
 /**
- * saturn-return-guide - HR
+ * Saturnov povratak: Vodič za preživljavanje - Hrvatski
  */
+
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-    title: "🪐 The Saturn Return Survival Guide: Navigating Your Cosmic Rite of Passage",
-    excerpt: "Turning 29? Welcome to your Saturn Return. Discover why this is the most important astrological event of your adult life and how to survive it with your soul intact.",
-    category: "Transits",
-    metaDescription: "The ultimate guide to surviving your Saturn Return. Learn what happens when Saturn returns to its natal position, how it affects your career and relationships, and house-by-house interpretations.",
-    keywords: "saturn return, saturn return meaning, first saturn return, astrology transits, saturn in houses, life transition at 30, astrological adulthood, saturn retrograde, how to survive saturn return, saturn in signs",
-    quickSummary: ["A Saturn Return happens when Saturn returns to the exact location it was in when you were born (around age 28-30).","It is a \"cosmic audit\" where everything that isn't built on a solid foundation is swept away.","While often stressful, it is the catalyst for true maturation and finding your life's purpose.","A second Saturn Return happens around age 58-60, focusing on legacy and wisdom."],
-    keyTakeaways: ["Do not resist the changes; Saturn rewards discipline and responsibility.","The house where your Saturn is located determines where you will face your biggest \"final exam.\"","Relationship breakups and career shifts during this time are often necessary for your growth.","Once the transit finishes, you will feel a new sense of authority and clarity."],
-    tableOfContents: [{"id":"what-is-saturn-return","title":"What is a Saturn Return?"},{"id":"the-myth-of-saturn","title":"The Myth & The Taskmaster: Lord of Time"},{"id":"timeline","title":"The Timeline: Phases of the Return"},{"id":"themes","title":"Universal Themes of the Return"},{"id":"saturn-in-signs","title":"Saturn Return Through the Zodiac Signs (Aries to Pisces)"},{"id":"saturn-in-houses","title":"Saturn Return Through the Houses (A Deep Dive)"},{"id":"house-1","title":"1st House: The Reinvention of Self"},{"id":"house-2","title":"2nd House: The Financial Foundation"},{"id":"house-3","title":"3rd House: The Mastery of Mind"},{"id":"house-4","title":"4th House: Ancestral Healing & Roots"},{"id":"house-5","title":"5th House: The Discipline of Joy"},{"id":"house-6","title":"6th House: The Sacred Routine"},{"id":"house-7","title":"7th House: The Crucible of Partnership"},{"id":"house-8","title":"8th House: Death, Rebirth & Shared Power"},{"id":"house-9","title":"9th House: The Search for Truth"},{"id":"house-10","title":"10th House: The Mountaintop of Career"},{"id":"house-11","title":"11th House: The Collective Purpose"},{"id":"house-12","title":"12th House: The Final Dissolution"},{"id":"retrograde","title":"The Saturn Retrograde Factor"},{"id":"psychology","title":"The Psychology of the Saturn Return"},{"id":"how-to-survive","title":"Survival Tips: How to Handle the Pressure"},{"id":"famous-examples","title":"Famous Saturn Return Stories"},{"id":"post-return","title":"Life After the Fire: The 30s"},{"id":"second-return","title":"Preparing for the Second Return (Age 58-60)"},{"id":"faq","title":"Frequently Asked Questions"},{"id":"conclusion","title":"Embracing Your Adulthood"}],
-    content: `
-      <h2 id="what-is-saturn-return">What is a Saturn Return?</h2>
-      <p>If you have ever noticed that the years between 27 and 30 seem particularly chaotic for most people, you have witnessed the power of the <strong>Saturn Return</strong>. In astrology, Saturn is the planet of structure, discipline, responsibility, and time. It takes approximately 29.5 years for this giant planet to complete one full orbit around the sun.</p>
+  title: '🪐 Vodič za preživljavanje Saturnovog povratka: Navigacija kroz vaš kozmički obred prijelaza',
+  excerpt: 'Navršavate 29 godina? Dobrodošli u svoj Saturnov povratak. Otkrijte zašto je ovo najvažniji astrološki događaj vašeg odraslog života i kako ga preživjeti s netaknutom dušom.',
+  category: 'Tranziti',
+  metaDescription: 'Vrhunski vodič za preživljavanje Saturnovog povratka. Saznajte što se događa kada se Saturn vrati na svoju natalnu poziciju, kako utječe na karijeru i odnose, te tumačenja po kućama.',
+  keywords: 'Saturnov povratak, značenje Saturnovog povratka, prvi Saturnov povratak, astrološki tranziti, Saturn u kućama, životna tranzicija u 30-ima, astrološka odraslost, Saturnov retrogradni hod, kako preživjeti Saturnov povratak, Saturn u znakovima',
+  quickSummary: [
+    'Saturnov povratak se događa kada se Saturn vrati na točno mjesto na kojem je bio kada ste se rodili (oko 28.-30. godine).',
+    'To je "kozmička revizija" u kojoj se sve što nije izgrađeno na čvrstim temeljima briše.',
+    'Iako je često stresan, on je katalizator za istinsko sazrijevanje i pronalaženje životne svrhe.',
+    'Drugi Saturnov povratak događa se oko 58.-60. godine, fokusirajući se na nasljeđe i mudrost.'
+  ],
+  keyTakeaways: [
+    'Ne odupirite se promjenama; Saturn nagrađuje disciplinu i odgovornost.',
+    'Kuća u kojoj se nalazi vaš Saturn određuje gdje ćete se suočiti sa svojim najvećim "završnim ispitom".',
+    'Prekidi veza i promjene karijere tijekom ovog vremena često su nužni za vaš rast.',
+    'Kada tranzit završi, osjetit ćete novi smisao autoriteta i jasnosti.'
+  ],
+  tableOfContents: [
+    { id: 'what-is-saturn-return', title: 'Što je Saturnov povratak?' },
+    { id: 'the-myth-of-saturn', title: 'Mit i strogi učitelj: Gospodar vremena' },
+    { id: 'timeline', title: 'Vremenska linija: Faze povratka' },
+    { id: 'themes', title: 'Univerzalne teme povratka' },
+    { id: 'saturn-in-signs', title: 'Saturnov povratak kroz horoskopske znakove' },
+    { id: 'saturn-in-houses', title: 'Saturnov povratak kroz kuće (Dubinska analiza)' },
+    { id: 'house-1', title: '1. kuća: Ponovno otkrivanje sebe' },
+    { id: 'house-2', title: '2. kuća: Financijski temelji' },
+    { id: 'house-3', title: '3. kuća: Ovladavanje umom' },
+    { id: 'house-4', title: '4. kuća: Iscjeljivanje predaka i korijeni' },
+    { id: 'house-5', title: '5. kuća: Disciplina radosti' },
+    { id: 'house-6', title: '6. kuća: Sveti rutinski rad' },
+    { id: 'house-7', title: '7. kuća: Iskušenje partnerstva' },
+    { id: 'house-8', title: '8. kuća: Smrt, ponovno rođenje i zajednička moć' },
+    { id: 'house-9', title: '9. kuća: Potraga za istinom' },
+    { id: 'house-10', title: '10. kuća: Vrhunac karijere' },
+    { id: 'house-11', title: '11. kuća: Kolektivna svrha' },
+    { id: 'house-12', title: '12. kuća: Konačno otapanje' },
+    { id: 'retrograde', title: 'Faktor retrogradnog Saturna' },
+    { id: 'psychology', title: 'Psihologija Saturnovog povratka' },
+    { id: 'how-to-survive', title: 'Savjeti za preživljavanje: Kako se nositi s pritiskom' },
+    { id: 'famous-examples', title: 'Priče o poznatim Saturnovim povratcima' },
+    { id: 'post-return', title: 'Život nakon vatre: Tridesete' },
+    { id: 'second-return', title: 'Priprema za drugi povratak (58-60 g.)' },
+    { id: 'faq', title: 'Često postavljana pitanja' },
+    { id: 'conclusion', title: 'Prihvaćanje vaše odraslosti' }
+  ],
+  content: `
+      <h2 id="what-is-saturn-return">Što je Saturnov povratak?</h2>
+      <p>Ako ste ikada primijetili da se godine između 27. i 30. čine posebno kaotičnima za većinu ljudi, svjedočili ste moći <strong>Saturnovog povratka</strong>. U astrologiji, Saturn je planet strukture, discipline, odgovornosti i vremena. Potrebno je otprilike 29,5 godina da ovaj divovski planet završi jednu punu orbitu oko Sunca.</p>
       
-      <p>Your "Saturn Return" occurs when the planet Saturn returns to the exact degree and zodiac sign it occupied at the moment of your birth. It is the celestial equivalent of a "final exam" for your youth. It is the moment the universe asks: <em>"Are you living a life that is truly yours, or are you just playing a role based on what your parents and society told you?"</em></p>
+      <p>Vaš "Saturnov povratak" događa se kada se planet Saturn vrati na točan stupanj i horoskopski znak koji je zauzimao u trenutku vašeg rođenja. To je nebeski ekvivalent "završnom ispitu" za vašu mladost. To je trenutak kada vas svemir pita: <em>"Živite li život koji je doista vaš ili samo igrate ulogu temeljenu na onome što su vam rekli roditelji i društvo?"</em></p>
 
-      <p>This period is often marked by intense pressure, significant life changes, and a sudden realization that adulthood is no longer a distant concept but a present, heavy reality. While "pop astrology" often portrays the Saturn Return as a scary time of loss and crisis, it is actually a profound opportunity to strip away the "fake" versions of yourself and build a foundation that can support you for the next three decades. It is the bridge between the potential of your 20s and the power of your 30s.</p>
+      <p>Ovo razdoblje često je obilježeno intenzivnim pritiskom, značajnim životnim promjenama i iznenadnom spoznajom da odraslost više nije daleki koncept, već sadašnja, teška stvarnost. Dok "pop astrologija" često prikazuje Saturnov povratak kao strašno vrijeme gubitka i krize, to je zapravo duboka prilika da skinete "lažne" verzije sebe i izgradite temelj koji vas može podržavati sljedeća tri desetljeća. To je most između potencijala vaših 20-ih i moći vaših 30-ih.</p>
 
-      <h2 id="the-myth-of-saturn">The Myth & The Taskmaster: Lord of Time</h2>
-      <p>To understand why this transit feels so heavy, we must look at the archetype of Saturn. In Roman mythology (and Greek as Kronos), Saturn was the god of time and the harvest. He is often depicted with a scythe. This isn't just about death; it's about pruning what no longer serves. Just as a gardener must cut back a rosebush for it to bloom more beautifully next season, Saturn cuts back the parts of our lives that are overgrown, unhealthy, or imitation.</p>
+      <h2 id="the-myth-of-saturn">Mit i strogi učitelj: Gospodar vremena</h2>
+      <p>Da bismo razumjeli zašto se ovaj tranzit čini tako teškim, moramo pogledati arhetip Saturna. U rimskoj mitologiji (i grčkoj kao Kron), Saturn je bio bog vremena i žetve. Često se prikazuje s kosom. Ovdje se ne radi samo o smrti; radi se o obrezivanju onoga što više ne služi svrsi. Baš kao što vrtlar mora orezati ružin grm kako bi ljepše cvjetao sljedeće sezone, Saturn orezuje dijelove naših života koji su prerasli, nezdravi ili imitacija.</p>
       
-      <p>Saturn is the "Taskmaster" or "The Lord of Karma." He doesn't want you to suffer, but he does want you to grow up. Many people sail through their 20s on a mix of luck, potential, and the expectations of their parents. Saturn says the party is over. It is time to build something that will last for the next 30 years. He rewards hard work, integrity, and patience. He punishes shortcuts, dishonesty, and procrastination. If you've been "faking it," your Saturn Return is when the truth comes out.</p>
+      <p>Saturn je "Strogi učitelj" ili "Gospodar karme". On ne želi da patite, ali želi da odrastete. Mnogi ljudi plove kroz svoje 20-e mješavinom sreće, potencijala i očekivanja svojih roditelja. Saturn kaže da je zabava gotova. Vrijeme je da izgradite nešto što će trajati sljedećih 30 godina. On nagrađuje naporan rad, integritet i strpljenje. Kažnjava prečace, nepoštenje i odugovlačenje. Ako ste se "pretvarali", vaš Saturnov povratak je trenutak kada istina izlazi na vidjelo.</p>
 
-      <h2 id="timeline">The Timeline: Phases of the Return</h2>
-      <p>The first Saturn Return typically begins around age 27.5 and ends by age 30. However, the experience can be broken down into three distinct phases:</p>
+      <h2 id="timeline">Vremenska linija: Faze povratka</h2>
+      <p>Prvi Saturnov povratak obično počinje oko 27,5 godine i završava do 30. godine. Međutim, iskustvo se može podijeliti u tri jasne faze:</p>
       
-      <h3>Phase 1: The Gathering Storm (Age 27-28)</h3>
-      <p>You begin to feel a vague sense of unease. The things that used to make you happy—casual dating, late nights, a "just for now" job—start to feel hollow. You might feel a sudden urge to "get your life together," even if you aren't sure what that looks like yet. You might start noticing your friends getting married or promoted, and instead of feeling happy for them, you feel a panic about your own progress.</p>
+      <h3>1. faza: Oluja se sprema (27-28 g.)</h3>
+      <p>Počinjete osjećati nejasan osjećaj nelagode. Stvari koje su vas usrećivale—povremeni spojevi, kasni izlasci, posao "samo za sada"—počinju se činiti ispraznima. Možda osjetite iznenadnu potrebu da "dovedete život u red", čak i ako još niste sigurni kako to izgleda. Mogli biste primijetiti svoje prijatelje kako se vjenčavaju ili napreduju, i umjesto da budete sretni zbog njih, osjećate paniku zbog vlastitog napretka.</p>
 
-      <h3>Phase 2: The Final Exam (Age 28-29)</h3>
-      <p>This is the "hit." Events conspire to force you into action. This is when the breakups happen, the career changes occur, or the health scares manifest. You are forced to make choices. There is no more sitting on the fence. Saturn will keep pushing until you take responsibility for your results. This is the peak emotional intensity of the transit.</p>
+      <h3>2. faza: Završni ispit (28-29 g.)</h3>
+      <p>Ovo je "udarac". Događaji se urote kako bi vas natjerali na akciju. To je vrijeme kada se događaju prekidi, promjene karijere ili se manifestiraju zdravstveni problemi. Prisiljeni ste donijeti odluke. Više nema sjedenja na dvije stolice. Saturn će nastaviti pritiskati dok ne preuzmete odgovornost za svoje rezultate. Ovo je vrhunac emocionalnog intenziteta tranzita.</p>
 
-      <h3>Phase 3: The Integration (Age 29-30)</h3>
-      <p>As Saturn moves past its natal degree, the pressure begins to lift. You start to see the wisdom in the choices you made (even the hard ones). You feel older, but sturdier. You have "graduated" into true astrological adulthood. You no longer need to check with anyone else if you "are allowed" to be yourself. You simply are.</p>
+      <h3>3. faza: Integracija (29-30 g.)</h3>
+      <p>Kako Saturn prolazi pored svog natalnog stupnja, pritisak počinje popuštati. Počinjete uviđati mudrost u odlukama koje ste donijeli (čak i onim teškima). Osjećate se starije, ali čvršće. "Diplomirali" ste u istinsku astrološku odraslost. Više ne trebate provjeravati s bilo kim drugim "smijete li" biti svoji. Jednostavno jeste.</p>
 
-      <h2 id="themes">Universal Themes of the Return</h2>
-      <p>While every individual's experience is unique, several themes appear for almost everyone during this time:</p>
+      <h2 id="themes">Univerzalne teme povratka</h2>
+      <p>Iako je iskustvo svakog pojedinca jedinstveno, tijekom ovog vremena kod gotovo svih se pojavljuje nekoliko tema:</p>
       <ul>
-        <li><strong>Reality Checks:</strong> If you've been living in a fantasy or avoiding a major truth, Saturn will force you to face it.</li>
-        <li><strong>Ending Relationships:</strong> Long-term relationships that aren't meant for the "long-long term" often crumble now. If you stay together, it's because you've committed to a new level of maturity.</li>
-        <li><strong>Career Shifts:</strong> Many people quit their stable, boring jobs to pursue their true calling, or they realize their "dream job" is actually a nightmare and move toward something practical.</li>
-        <li><strong>Physical Aging:</strong> You might suddenly feel your body differently. It's the time people start taking their health seriously—realizing they are no longer invincible. You might notice your first gray hair or a change in your metabolism.</li>
-        <li><strong>Setting Boundaries:</strong> Learning to say "no" to parents, toxic friends, and unrealistic expectations is a major Saturnian lesson. You are learning that "No" is a complete sentence.</li>
+        <li><strong>Suočavanje sa stvarnošću:</strong> Ako ste živjeli u fantaziji ili izbjegavali glavnu istinu, Saturn će vas prisiliti da se suočite s njom.</li>
+        <li><strong>Prekid odnosa:</strong> Dugogodišnje veze koje nisu namijenjene za "jako duge staze" često se sada raspadaju. Ako ostanete zajedno, to je zato što ste se obvezali na novu razinu zrelosti.</li>
+        <li><strong>Promjene karijere:</strong> Mnogi ljudi napuštaju svoje stabilne, dosadne poslove kako bi slijedili svoj pravi poziv, ili shvaćaju da je njihov "posao iz snova" zapravo noćna mora i kreću se prema nečem praktičnom.</li>
+        <li><strong>Fizičko starenje:</strong> Odjednom biste mogli drugačije osjećati svoje tijelo. To je vrijeme kada ljudi počinju ozbiljno shvaćati svoje zdravlje—shvaćajući da više nisu nepobjedivi. Možda primijetite prvu sijedu vlas ili promjenu u metabolizmu.</li>
+        <li><strong>Postavljanje granica:</strong> Učenje kako reći "ne" roditeljima, toksičnim prijateljima i nerealnim očekivanjima glavna je Saturnova lekcija. Učite da je "Ne" potpuna rečenica.</li>
       </ul>
 
-      <h2 id="saturn-in-signs">Saturn Return Through the Zodijak Znaks</h2>
-      <p>The sign your Saturn is in tells us *how* you will experience this transition. Find your Saturn sign in your Astralo chart to see your specific flavor of growth:</p>
+      <h2 id="saturn-in-signs">Saturnov povratak kroz horoskopske znakove</h2>
+      <p>Znak u kojem se nalazi vaš Saturn govori nam *kako* ćete doživjeti ovu tranziciju. Pronađite svoj znak Saturna u svom Astralo grafikonu da vidite svoj specifičan okus rasta:</p>
       
-      <h3>Saturn in Aries</h3>
-      <p>Your return is about **patience and impulse control**. You probably want to rush through the transition, but Saturn will slow you down. You are learning to lead with wisdom, not just raw energy.
-      <br><strong>The Task:</strong> To master your anger and your drive.</p>
+      <h3>Saturn u Ovnu</h3>
+      <p>Vaš povratak se odnosi na **strpljenje i kontrolu impulsa**. Vjerojatno želite požuriti kroz tranziciju, ali Saturn će vas usporiti. Učite voditi mudrošću, a ne samo sirovom energijom.
+      <br><strong>Zadatak:</strong> Ovladati bijesom i svojom pokretačkom snagom.</p>
 
-      <h3>Saturn in Taurus</h3>
-      <p>Your return is about **financial security and values**. You might face major financial hurdles that force you to define what is truly "valuable" to you.
-      <br><strong>The Task:</strong> To build a solid financial foundation and self-worth that isn't tied to your possessions.</p>
+      <h3>Saturn u Biku</h3>
+      <p>Vaš povratak se odnosi na **financijsku sigurnost i vrijednosti**. Mogli biste se suočiti s velikim financijskim preprekama koje će vas prisiliti da definirate što vam je uistinu "vrijedno".
+      <br><strong>Zadatak:</strong> Izgraditi čvrst financijski temelj i samopoštovanje koje nije vezano za vaše posjede.</p>
 
-      <h3>Saturn in Gemini</h3>
-      <p>Your return is about **communication and concentration**. You might have "too many ideas" and Saturn will force you to pick one and master it.
-      <br><strong>The Task:</strong> To focus your mind and speak with authority.</p>
+      <h3>Saturn u Blizancima</h3>
+      <p>Vaš povratak se odnosi na **komunikaciju i koncentraciju**. Možda imate "previše ideja" i Saturn će vas prisiliti da odaberete jednu i ovladate njome.
+      <br><strong>Zadatak:</strong> Fokusirati um i govoriti s autoritetom.</p>
 
-      <h3>Saturn in Cancer</h3>
-      <p>Your return is about **emotional boundaries and family**. You might have to deal with childhood wounds or take on a heavy family responsibility.
-      <br><strong>The Task:</strong> To nurture yourself and build an inner home that doesn't depend on others.</p>
+      <h3>Saturn u Raku</h3>
+      <p>Vaš povratak se odnosi na **emocionalne granice i obitelj**. Možda ćete se morati nositi s ranama iz djetinjstva ili preuzeti tešku obiteljsku odgovornost.
+      <br><strong>Zadatak:</strong> Njegovati sebe i izgraditi unutarnji dom koji ne ovisi o drugima.</p>
 
-      <h3>Saturn in Leo</h3>
-      <p>Your return is about **creative integrity and recognition**. You might struggle with the need for applause and have to learn to create for yourself first.
-      <br><strong>The Task:</strong> To find confidence that comes from inner strength, not external praise.</p>
+      <h3>Saturn u Lavu</h3>
+      <p>Vaš povratak se odnosi na **kreativni integritet i priznanje**. Možda ćete se boriti s potrebom za pljeskom i morat ćete naučiti stvarati prvo za sebe.
+      <br><strong>Zadatak:</strong> Pronaći samopouzdanje koje dolazi iz unutarnje snage, a ne iz vanjskih pohvala.</p>
 
-      <h3>Saturn in Virgo</h3>
-      <p>Your return is about **health and service**. You are likely already very hard on yourself, and Saturn will teach you that "perfect" is the enemy of "done."
-      <br><strong>The Task:</strong> To build a sustainable routine and learn to be kind to your physical body.</p>
+      <h3>Saturn u Djevici</h3>
+      <p>Vaš povratak se odnosi na **zdravlje i služenje**. Vjerojatno ste već vrlo strogi prema sebi, a Saturn će vas naučiti da je "savršeno" neprijatelj "gotovog".
+      <br><strong>Zadatak:</strong> Izgraditi održivu rutinu i naučiti biti ljubazan prema svom fizičkom tijelu.</p>
 
-      <h3>Saturn in Libra</h3>
-      <p>Your return is about **justice and partnership**. You might face major relationship tests that force you to find your own identity within a pair.
-      <br><strong>The Task:</strong> To find balance and learn that you are "enough" on your own.</p>
+      <h3>Saturn u Vagi</h3>
+      <p>Vaš povratak se odnosi na **pravdu i partnerstvo**. Mogli biste se suočiti s velikim testovima u odnosima koji će vas prisiliti da pronađete vlastiti identitet unutar para.
+      <br><strong>Zadatak:</strong> Pronaći ravnotežu i naučiti da ste "dovoljni" sami za sebe.</p>
 
-      <h3>Saturn in Scorpio</h3>
-      <p>Your return is about **power and intimacy**. This is a very intense return that involves facing your shadow and learning to trust.
-      <br><strong>The Task:</strong> To transform your deepest fears into personal power.</p>
+      <h3>Saturn u Škorpionu</h3>
+      <p>Vaš povratak se odnosi na **moć i intimnost**. Ovo je vrlo intenzivan povratak koji uključuje suočavanje sa svojom sjenom i učenje povjerenja.
+      <br><strong>Zadatak:</strong> Transformirati svoje najdublje strahove u osobnu moć.</p>
 
-      <h3>Saturn in Sagittarius</h3>
-      <p>Your return is about **belief and freedom**. You might realize the world is much bigger (or smaller) than you thought and have to redefine your philosophy.
-      <br><strong>The Task:</strong> To find a "Truth" that you can actually live by every day.</p>
+      <h3>Saturn u Strijelcu</h3>
+      <p>Vaš povratak se odnosi na **vjeru i slobodu**. Mogli biste shvatiti da je svijet mnogo veći (ili manji) nego što ste mislili i morat ćete redefinirati svoju filozofiju.
+      <br><strong>Zadatak:</strong> Pronaći "Istinu" po kojoj zapravo možete živjeti svaki dan.</p>
 
-      <h3>Saturn in Capricorn</h3>
-      <p>Your return is about **ambition and authority**. Saturn is "at home" here, so the pressure is extreme, but so are the rewards. You are becoming the Boss.
-      <br><strong>The Task:</strong> To take responsibility for your legacy and climb your mountain with integrity.</p>
+      <h3>Saturn u Jarcu</h3>
+      <p>Vaš povratak se odnosi na **ambiciju i autoritet**. Saturn je ovdje "kod kuće", pa je pritisak ekstreman, ali takve su i nagrade. Postajete Šef.
+      <br><strong>Zadatak:</strong> Preuzeti odgovornost za svoje nasljeđe i popeti se na svoju planinu s integritetom.</p>
 
-      <h3>Saturn in Aquarius</h3>
-      <p>Your return is about **community and individuality**. You are learning how to fit into the group without losing your unique spark.
-      <br><strong>The Task:</strong> To contribute to the collective while maintaining your boundaries.</p>
+      <h3>Saturn u Vodenjaku</h3>
+      <p>Vaš povratak se odnosi na **zajednicu i individualnost**. Učite kako se uklopiti u grupu bez gubljenja svoje jedinstvene iskre.
+      <br><strong>Zadatak:</strong> Doprinijeti kolektivu uz zadržavanje vlastitih granica.</p>
 
-      <h3>Saturn in Pisces</h3>
-      <p>Your return is about **spirituality and boundaries**. You might struggle with staying grounded and have to learn that "no" is a spiritual act.
-      <br><strong>The Task:</strong> To turn your dreams into reality through discipline.</p>
+      <h3>Saturn u Ribama</h3>
+      <p>Vaš povratak se odnosi na **duhovnost i granice**. Možda ćete se boriti da ostanete prizemljeni i morat ćete naučiti da je "ne" duhovni čin.
+      <br><strong>Zadatak:</strong> Pretvoriti svoje snove u stvarnost kroz disciplinu.</p>
 
-      <h2 id="saturn-in-houses">Saturn Return Through the Houses: A Deep Dive</h2>
-      <p>The "Where" of your Saturn Return is determined by the House where Saturn sits in your birth chart. This is the stage where the drama will unfold.</p>
+      <h2 id="saturn-in-houses">Saturnov povratak kroz kuće: Dubinska analiza</h2>
+      <p>Pitanje "Gdje" vašeg Saturnovog povratka određeno je Kućom u kojoj Saturn sjedi u vašoj natalnoj karti. To je pozornica na kojoj će se drama odvijati.</p>
 
-      <h2 id="house-1">1st House: The Reinvention of Self</h2>
-      <p>When Saturn returns to the 1st House, the crisis is professional and physical. You might experience a total makeover—not just of your clothes, but of your personality. You feel a heavy weight on your shoulders, a sense that you must "become someone." You might be extremely hard on yourself during this transition. You might experience weight loss, gain, or a change in your health that requires discipline.
-      <br><strong>The Lesson:</strong> To build a solid sense of self that doesn't depend on others' approval. You are learning to be your own authority. You are the CEO of your own body.</p>
+      <h2 id="house-1">1. kuća: Ponovno otkrivanje sebe</h2>
+      <p>Kada se Saturn vrati u 1. kuću, kriza je profesionalna i fizička. Mogli biste doživjeti potpunu transformaciju—ne samo odjeće, već i osobnosti. Osjećate težak teret na ramenima, osjećaj da morate "postati netko". Možda ćete biti izuzetno strogi prema sebi tijekom ove tranzicije. Mogli biste doživjeti gubitak kilograma, dobitak ili promjenu u zdravlju koja zahtijeva disciplinu.
+      <br><strong>Lekcija:</strong> Izgraditi snažan osjećaj sebe koji ne ovisi o tuđem odobravanju. Učite biti vlastiti autoritet. Vi ste izvršni direktor vlastitog tijela.</p>
 
-      <h2 id="house-2">2nd House: The Financial Foundation</h2>
-      <p>This return focuses on your finances and self-worth. You might experience financial hardship, forcing you to learn how to budget, save, and value your time. Alternatively, you might finally start making "real" money but feel a heavy responsibility associated with it. You are redefining what "security" means to you. You are learning that your value is not a number in a bank account.
-      <br><strong>The Lesson:</strong> To find security within yourself and build a sustainable relationship with the material world. You are learning the value of a dollar and the value of your soul.</p>
+      <h2 id="house-2">2. kuća: Financijski temelji</h2>
+      <p>Ovaj povratak fokusiran je na vaše financije i samopoštovanje. Mogli biste doživjeti financijske poteškoće, što će vas prisiliti da naučite kako planirati proračun, štedjeti i cijeniti svoje vrijeme. Alternativno, mogli biste napokon početi zarađivati "pravi" novac, ali osjećati tešku odgovornost povezanu s tim. Redefinirate što za vas znači "sigurnost". Učite da vaša vrijednost nije broj na bankovnom računu.
+      <br><strong>Lekcija:</strong> Pronaći sigurnost u sebi i izgraditi održiv odnos s materijalnim svijetom. Učite vrijednost dolara i vrijednost svoje duše.</p>
 
-      <h2 id="house-3">3rd House: The Mastery of Mind</h2>
-      <p>The pressure is on your mind and your immediate circle. You might decide to go back to school, finish a long-stalled writing project, or experience major shifts in your relationships with siblings. You might feel like you have "too much to learn" and not enough time. Your daily commute might become a source of stress, forcing you to change your environment.
-      <br><strong>The Lesson:</strong> To master your craft and communicate with integrity. You are learning the value of concentrated thought and honest speech. You are becoming a person of your word.</p>
+      <h2 id="house-3">3. kuća: Ovladavanje umom</h2>
+      <p>Pritisak je na vašem umu i vašem neposrednom okruženju. Možda se odlučite vratiti u školu, završiti davno zaustavljeni projekt pisanja ili doživjeti velike promjene u odnosima s braćom i sestrama. Mogli biste se osjećati kao da imate "previše za naučiti", a premalo vremena. Vaša svakodnevna putovanja na posao mogla bi postati izvor stresa, tjerajući vas da promijenite svoje okruženje.
+      <br><strong>Lekcija:</strong> Ovladati svojim zanatom i komunicirati s integritetom. Učite vrijednost koncentrirane misli i iskrenog govora. Postajete osoba od riječi.</p>
 
-      <h2 id="house-4">4th House: Ancestral Healing & Roots</h2>
-      <p>This is one of the most emotional returns. It often involves your parents, your living situation, or your childhood trauma. You might buy your first home, or you might have to take care of an aging parent. You are building your own foundation, often by dismantling the one your parents built for you. You are the new "Head of the Household."
-      <br><strong>The Lesson:</strong> To create a home and a private life that truly nourishes your soul, independent of your family's expectations. You are healing the "family tree" by being the one who breaks the cycle.</p>
+      <h2 id="house-4">4. kuća: Iscjeljivanje predaka i korijeni</h2>
+      <p>Ovo je jedan od najemotivnijih povrataka. Često uključuje vaše roditelje, vašu životnu situaciju ili traume iz djetinjstva. Možda kupite svoj prvi dom ili ćete se morati brinuti o ostarjelom roditelju. Gradite vlastiti temelj, često rastavljajući onaj koji su roditelji izgradili za vas. Vi ste nova "glava kućanstva".
+      <br><strong>Lekcija:</strong> Stvoriti dom i privatan život koji uistinu hrani vašu dušu, neovisno o očekivanjima vaše obitelji. Iscjeljujete "obiteljsko stablo" tako što ste vi taj koji prekida krug.</p>
 
-      <h2 id="house-5">5th House: The Discipline of Joy</h2>
-      <p>Saturn in the 5th House can feel like "the day the music died." Your usual hobbies or partying might feel hollow. This is often when people decide to have children (taking on the ultimate responsibility for "creation") or realize they want to take a creative hobby and turn it into a serious business. It's about maturing your "fun."
-      <br><strong>The Lesson:</strong> To find joy through discipline and committed creativity. You are learning that true play requires focus. It's the difference between a "flirt" and a "romance."</p>
+      <h2 id="house-5">5. kuća: Disciplina radosti</h2>
+      <p>Saturn u 5. kući može se osjećati kao da je "glazba utihnula". Vaši uobičajeni hobiji ili zabave mogli bi se činiti ispraznima. To je često vrijeme kada se ljudi odlučuju za djecu (preuzimajući vrhunsku odgovornost za "kreaciju") ili shvaćaju da žele pretvoriti kreativni hobi u ozbiljan posao. Radi se o sazrijevanju vaše "zabave".
+      <br><strong>Lekcija:</strong> Pronaći radost kroz disciplinu i predanu kreativnost. Učite da prava igra zahtijeva fokus. To je razlika između "flerta" i "romanse".</p>
 
-      <h2 id="house-6">6th House: The Sacred Routine</h2>
-      <p>This return is about your health and your daily habits. You might face a health scare that forces you to change your diet and exercise. Your work life becomes very demanding, requiring you to learn delegation and boundaries. You realize that your body is a temple that requires maintenance. Your job may feel like a heavy burden until you learn to manage your time better.
-      <br><strong>The Lesson:</strong> To master your daily rhythm and serve others without burning yourself out. Efficiency is your new best friend. You are building a body that can last.</p>
+      <h2 id="house-6">6. kuća: Sveti rutinski rad</h2>
+      <p>Ovaj povratak je o vašem zdravlju i svakodnevnim navikama. Mogli biste se suočiti sa zdravstvenim problemom koji vas tjera da promijenite prehranu i vježbanje. Vaš radni život postaje vrlo zahtjevan, tražeći od vas učenje delegiranja i postavljanje granica. Shvaćate da je vaše tijelo hram koji zahtijeva održavanje. Vaš posao se može činiti kao težak teret dok ne naučite bolje upravljati svojim vremenom.
+      <br><strong>Lekcija:</strong> Ovladati svakodnevnim ritmom i služiti drugima bez izgaranja. Učinkovitost je vaš novi najbolji prijatelj. Gradite tijelo koje može dugo trajati.</p>
 
-      <h2 id="house-7">7th House: The Crucible of Partnership</h2>
-      <p>The "Marriage or Breakup" house. Saturn here tests your most intimate bonds. If a relationship has been shaky, it will likely end. If it is strong, you might get married or enter a serious business contract. You are learning what "commitment" actually means—it's not just a feeling, it's a contract. You might attract older, more serious partners now.
-      <br><strong>The Lesson:</strong> To build partnerships based on reality and mutual responsibility, not projection or fantasy. You are learning to be a "partner," not just a "lover."</p>
+      <h2 id="house-7">7. kuća: Iskušenje partnerstva</h2>
+      <p>Kuća "braka ili prekida". Saturn ovdje testira vaše najintimnije veze. Ako je veza bila poljuljana, vjerojatno će završiti. Ako je jaka, mogli biste se vjenčati ili potpisati ozbiljan poslovni ugovor. Učite što "obveza" zapravo znači—to nije samo osjećaj, to je ugovor. Sada biste mogli privlačiti starije, ozbiljnije partnere.
+      <br><strong>Lekcija:</strong> Izgraditi partnerstva temeljena na stvarnosti i uzajamnoj odgovornosti, a ne na projekciji ili fantaziji. Učite biti "partner", a ne samo "ljubavnik".</p>
 
-      <h2 id="house-8">8th House: Death, Rebirth & Shared Power</h2>
-      <p>This is a deep, psychological return. It involves shared finances, taxes, and intimacy. You might face your fears of death or loss. It is a time of "ego death" where you realize you cannot control everything. You might have to deal with debt or an inheritance. You are literally stripping away your skin to reveal the soul underneath.
-      <br><strong>The Lesson:</strong> To master your personal power and learn the art of trust and surrender in deep intimacy. You are discovering the "wealth" that cannot be seen.</p>
+      <h2 id="house-8">8. kuća: Smrt, ponovno rođenje i zajednička moć</h2>
+      <p>Ovo je dubok, psihološki povratak. Uključuje zajedničke financije, poreze i intimnost. Mogli biste se suočiti sa svojim strahovima od smrti ili gubitka. To je vrijeme "smrti ega" gdje shvaćate da ne možete kontrolirati sve. Možda ćete se morati nositi s dugom ili nasljedstvom. Doslovno skidate kožu da biste otkrili dušu ispod nje.
+      <br><strong>Lekcija:</strong> Ovladati osobnom moći i naučiti umjetnost povjerenja i predaje u dubokoj intimnosti. Otkrivate "bogatstvo" koje se ne može vidjeti.</p>
 
-      <h2 id="house-9">9th House: The Search for Truth</h2>
-      <p>Saturn here challenges your beliefs. You might leave the religion of your childhood, or conversely, find deep structure in a spiritual path. You might struggle with higher education or experience significant challenges while traveling abroad. You are looking for a "Truth" you can actually live by. You might decide to finally get that PhD or write that book.
-      <br><strong>The Lesson:</strong> To build a philosophy of life that can withstand hard times and provide genuine meaning. You are becoming a person of wisdom, not just knowledge.</p>
+      <h2 id="house-9">9. kuća: Potraga za istinom</h2>
+      <p>Saturn ovdje izaziva vaša uvjerenja. Mogli biste napustiti religiju svog djetinjstva ili, suprotno tome, pronaći duboku strukturu na duhovnom putu. Mogli biste se boriti s visokim obrazovanjem ili doživjeti značajne izazove tijekom putovanja u inozemstvo. Tražite "Istinu" po kojoj zapravo možete živjeti. Možda se odlučite napokon dobiti taj doktorat ili napisati tu knjigu.
+      <br><strong>Lekcija:</strong> Izgraditi filozofiju života koja može izdržati teška vremena i pružiti istinski smisao. Postajete osoba od mudrosti, a ne samo od znanja.</p>
 
-      <h2 id="house-10">10th House: The Mountaintop of Karijera</h2>
-      <p>This is the classic "Mid-life Crisis at 30." Your public reputation and career are under the microscope. You might reach the top of your field and realize you hate it, or you might finally get the recognition you've worked for. You are being asked to step into your authority and lead. The world is watching.
-      <br><strong>The Lesson:</strong> To align your public life with your inner truth and take responsibility for your legacy. You are becoming the authority figure you once feared.</p>
+      <h2 id="house-10">10. kuća: Vrhunac karijere</h2>
+      <p>Ovo je klasična "kriza srednjih godina u 30-oj". Vaš ugled u javnosti i karijera su pod povećalom. Mogli biste dosegnuti vrhunac svog polja i shvatiti da ga mrzite, ili biste napokon mogli dobiti priznanje za koje ste radili. Od vas se traži da zakoračite u svoj autoritet i vodite. Svijet gleda.
+      <br><strong>Lekcija:</strong> Uskladiti javni život s unutarnjom istinom i preuzeti odgovornost za svoje nasljeđe. Postajete figura autoriteta koje ste se nekoć bojali.</p>
 
-      <h2 id="house-11">11th House: The Collective Purpose</h2>
-      <p>Saturn here prunes your friend group. You might realize your "friends" were just acquaintances for a season of your life and you no longer have anything in common. You might find yourself drawn to older mentors or taking a leadership role in a community organization. You are looking for your true tribe. You are defining your "hopes and wishes" with realistic steps.
-      <br><strong>The Lesson:</strong> To find your place in the collective and contribute your skills to a cause larger than yourself. You are building a network that works for the future.</p>
+      <h2 id="house-11">11. kuća: Kolektivna svrha</h2>
+      <p>Saturn ovdje orezuje vaš krug prijatelja. Mogli biste shvatiti da su vaši "prijatelji" bili samo poznanici za jedno razdoblje vašeg života i da više nemate ništa zajedničko. Mogli biste se naći privučeni starijim mentorima ili preuzeti vodeću ulogu u društvenoj organizaciji. Tražite svoje pravo pleme. Definirate svoje "nade i želje" realnim koracima.
+      <br><strong>Lekcija:</strong> Pronaći svoje mjesto u kolektivu i doprinijeti svojim vještinama cilju većem od vas samih. Gradite mrežu koja radi za budućnost.</p>
 
-      <h2 id="house-12">12th House: The Final Dissolution</h2>
-      <p>This is a very quiet, internal return. You might feel lonely or isolated. Secrets from the past may come to light. It is a time for deep healing, therapy, or spiritual retreat. You are clearing the deck for a brand new 30-year cycle. It is the end of an era. You are working with your ancestors and your subconscious mind.
-      <br><strong>The Lesson:</strong> To find peace in solitude, forgive the past, and surrender to the divine or the collective unconscious. You are preparing for rebirth.</p>
+      <h2 id="house-12">12. kuća: Konačno otapanje</h2>
+      <p>Ovo je vrlo tih, unutarnji povratak. Mogli biste se osjećati usamljeno ili izolirano. Tajne iz prošlosti mogle bi izaći na vidjelo. To je vrijeme za duboko iscjeljivanje, terapiju ili duhovno povlačenje. Čistite prostor za potpuno novi 30-godišnji ciklus. To je kraj jedne ere. Radite sa svojim precima i podsvijesti.
+      <br><strong>Lekcija:</strong> Pronaći mir u samoći, oprostiti prošlosti i predati se božanskom ili kolektivnom nesvjesnom. Pripremate se za ponovno rođenje.</p>
 
-      <h2 id="retrograde">The Saturn Retrograde Factor</h2>
-      <p>If you were born during a **Saturn Retrograde** (when Saturn appears to move backwards in the sky), your return might feel slightly different. You may have spent your 20s feeling an internal weight or a sense of "not being good enough." During your return, the pressure might actually feel *relieving*, as the external world finally matches your internal state of seriousness. You are finally allowed to step into the role you've been preparing for since birth. You are finally "good enough."</p>
+      <h2 id="retrograde">Faktor retrogradnog Saturna</h2>
+      <p>Ako ste rođeni tijekom **retrogradnog Saturna** (kada se čini da se Saturn kreće unatrag na nebu), vaš bi se povratak mogao osjećati malo drugačije. Možda ste proveli svoje 20-e osjećajući unutarnji teret ili osjećaj "da niste dovoljno dobri". Tijekom vašeg povratka, pritisak bi se zapravo mogao osjećati kao *olakšanje*, jer se vanjski svijet napokon podudara s vašim unutarnjim stanjem ozbiljnosti. Konačno smijete zakoračiti u ulogu za koju ste se pripremali od rođenja. Napokon ste "dovoljno dobri".</p>
 
-      <h2 id="psychology">The Psychology of the Saturn Return</h2>
-      <p>From a psychological perspective, the Saturn Return marks the transition from "the puel/puella" (the eternal child) to the "adult." We stop looking to our parents or society for the "answer" and start providing the answer ourselves. It is the death of the ego's childhood and the birth of the soul's maturity. This is why it is often accompanied by depression or anxiety—it is a form of grieving for the carefree self you are leaving behind. You are realizing that your time on Earth is finite.</p>
+      <h2 id="psychology">Psihologija Saturnovog povratka</h2>
+      <p>Iz psihološke perspektive, Saturnov povratak označava prijelaz s "vječnog djeteta" (puer/puella aeternus) na "odraslu osobu". Prestajemo tražiti "odgovor" od svojih roditelja ili društva i počinjemo sami davati odgovore. To je smrt djetinjstva ega i rođenje zrelosti duše. Zato ga često prate depresija ili anksioznost—to je oblik tugovanja za bezbrižnim sobom kojeg ostavljate iza sebe. Shvaćate da je vaše vrijeme na Zemlji ograničeno.</p>
 
-      <h2 id="how-to-survive">Survival Tips: How to Handle the Pressure</h2>
-      <p>The biggest mistake people make during their Saturn Return is **resisting**. Saturn is like a wall—if you run at it, you will get hurt. If you look for the door (through effort and responsibility), you will pass through into a new world.</p>
+      <h2 id="how-to-survive">Savjeti za preživljavanje: Kako se nositi s pritiskom</h2>
+      <p>Najveća pogreška koju ljudi čine tijekom Saturnovog povratka je **opiranje**. Saturn je poput zida—ako trčite prema njemu, ozlijedit ćete se. Ako tražite vrata (kroz trud i odgovornost), proći ćete u novi svijet.</p>
       <ul>
-        <li><strong>Take Responsibility:</strong> Don't blame your boss, your partner, or your parents. Ask: "What is my part in this? What am I ready to change?"</li>
-        <li><strong>Get Organized:</strong> Saturn loves a spreadsheet. Look at your finances, your health, and your schedule. Build systems that can hold you when you feel weak.</li>
-        <li><strong>Be Patient:</strong> Saturn is the god of time. This transit lasts for 2.5 years. You won't solve it in a weekend. Respect the process. Slow and steady wins the race.</li>
-        <li><strong>Seek Mentorship:</strong> Saturn represents the "Elder." Find someone who has been through it and ask for their wisdom. Join a group of people in their 30s who have made it to the other side.</li>
-        <li><strong>Address Your Health:</strong> Your body will give you clues. If you are stressed, where do you feel it? Take the physical maintenance seriously. Regular check-ups are essential now.</li>
-        <li><strong>Cut the Dead Wood:</strong> If a habit, a friend, or a job is draining you without giving back, let it go. Saturn will take it anyway; it's easier if you hand it over willingly.</li>
+        <li><strong>Preuzmite odgovornost:</strong> Ne krivite svog šefa, partnera ili roditelje. Pitajte: "Koji je moj dio u ovome? Što sam spreman promijeniti?"</li>
+        <li><strong>Organizirajte se:</strong> Saturn voli tablice. Pogledajte svoje financije, svoje zdravlje i svoj raspored. Izgradite sustave koji vas mogu držati kad se osjećate slabo.</li>
+        <li><strong>Budite strpljivi:</strong> Saturn je bog vremena. Ovaj tranzit traje 2.5 godine. Nećete ga riješiti u jednom vikendu. Poštujte proces. Polako i postojano pobjeđuje u utrci.</li>
+        <li><strong>Potražite mentorstvo:</strong> Saturn predstavlja "Starca". Pronađite nekoga tko je to prošao i pitajte za njihovu mudrost. Pridružite se grupi ljudi u 30-ima koji su stigli na drugu stranu.</li>
+        <li><strong>Pozabavite se svojim zdravljem:</strong> Vaše tijelo će vam davati tragove. Ako ste pod stresom, gdje to osjećate? Ozbiljno shvatite fizičko održavanje. Redoviti pregledi su sada neophodni.</li>
+        <li><strong>Odrežite mrtvo drvo:</strong> Ako vas navika, prijatelj ili posao iscrpljuje bez davanja zauzvrat, pustite to. Saturn će to ionako uzeti; lakše je ako to sami dobrovoljno predate.</li>
       </ul>
 
-      <h2 id="famous-examples">Famous Saturn Return Stories</h2>
-      <p>Many celebrities and historical figures experienced their most transformative moments during their Saturn Return:</p>
+      <h2 id="famous-examples">Priče o poznatim Saturnovim povratcima</h2>
+      <p>Mnoge poznate osobe i povijesne ličnosti doživjele su svoje najtransformnije trenutke tijekom Saturnovog povratka:</p>
       <ul>
-        <li><strong>Steve Jobs:</strong> Was ousted from Apple during the lead-up to his Saturn Return, which led him to found NeXT and Pixar, eventually returning to Apple even stronger and more mature.</li>
-        <li><strong>Lady Gaga:</strong> Transformed her image and career significantly during her late 20s, moving from pop spectacle to more "serious" artistry and jazz.</li>
-        <li><strong>Vincent van Gogh:</strong> Only began painting seriously during his Saturn Return years, finding his life's calling through a period of intense struggle.</li>
-        <li><strong>J.K. Rowling:</strong> Wrote the first Harry Potter book while struggling as a single mother during her Saturn Return—a classic "Saturnian" success story built on adversity.</li>
+        <li><strong>Steve Jobs:</strong> Izbačen je iz Applea tijekom uvertire u svoj Saturnov povratak, što ga je dovelo do osnivanja tvrtki NeXT i Pixar, da bi se na kraju vratio u Apple još jači i zreliji.</li>
+        <li><strong>Lady Gaga:</strong> Značajno je transformirala svoj imidž i karijeru tijekom svojih kasnih 20-ih, prelazeći s pop spektakla na "ozbiljniju" umjetnost i jazz.</li>
+        <li><strong>Vincent van Gogh:</strong> Ozbiljno je počeo slikati tek tijekom godina svog Saturnovog povratka, pronalazeći svoj životni poziv kroz razdoblje intenzivne borbe.</li>
+        <li><strong>J.K. Rowling:</strong> Napisala je prvu knjigu o Harryju Potteru boreći se kao samohrana majka tijekom svog Saturnovog povratka—klasična "Saturnovska" priča o uspjehu izgrađena na nedaćama.</li>
       </ul>
 
-      <h2 id="post-return">Life After the Vatra: The 30s</h2>
-      <p>Once Saturn moves on, the weight lifts. People often report feeling "lighter" but also "sturdier" after age 30. You no longer care as much about what people think. You have a path. You have survived the fire, and like gold, you have been refined. You have a sense of purpose that the "younger you" could never have understood. Your 30s are often the most productive and rewarding decade of your life because you finally know who you are.</p>
+      <h2 id="post-return">Život nakon vatre: Tridesete</h2>
+      <p>Kada Saturn krene dalje, težina se podiže. Ljudi često izvještavaju da se osjećaju "lakše", ali i "čvršće" nakon 30. godine. Više vas nije toliko briga što ljudi misle. Imate put. Preživjeli ste vatru i, poput zlata, pročišćeni ste. Imate osjećaj svrhe koji "mlađi vi" nikada ne biste mogli razumjeti. Vaše 30-e su često najproduktivnije i najisplativije desetljeće vašeg života jer napokon znate tko ste.</p>
 
-      <h2 id="second-return">Preparing for the Second Return (Age 58-60)</h2>
-      <p>It's important to know that you'll get another "visit" from Saturn around age 58. While the first return is about becoming an adult, the second return is about becoming an **Elder**. It's about legacy, retirement, and the wisdom you will pass on. If you do the work during your first return, the second one is much easier—a time of harvest and respect rather than a time of crisis.</p>
+      <h2 id="second-return">Priprema za drugi povratak (58-60 g.)</h2>
+      <p>Važno je znati da ćete dobiti još jedan "posjet" Saturna oko 58. godine. Dok se prvi povratak odnosi na postajanje odraslom osobom, drugi povratak je o postajanju **Starješinom**. Radi se o nasljeđu, mirovini i mudrosti koju ćete prenijeti. Ako odradite posao tijekom prvog povratka, drugi je mnogo lakši—vrijeme žetve i poštovanja, a ne vrijeme krize.</p>
 
-      <h2 id="faq">Frequently Asked Questions</h2>
-      <p><strong>Q: Does everyone have a Saturn Return?</strong>
-      <br>A: Yes, every human being experiences a Saturn Return around age 29, 58, and (if they live long enough) 87. It is a universal human experience.</p>
+      <h2 id="faq">Često postavljana pitanja</h2>
+      <p><strong>P: Imaju li svi Saturnov povratak?</strong>
+      <br>O: Da, svako ljudsko biće doživljava Saturnov povratak oko 29., 58. i (ako žive dovoljno dugo) 87. godine. To je univerzalno ljudsko iskustvo.</p>
       
-      <p><strong>Q: Is it always bad?</strong>
-      <br>A: No! If you have been working hard and living with integrity, your Saturn Return can be a time of massive promotion, marriage, and success. It is a "harvest"—you get back exactly what you planted during your 20s.</p>
+      <p><strong>P: Je li to uvijek loše?</strong>
+      <br>O: Ne! Ako ste naporno radili i živjeli s integritetom, vaš Saturnov povratak može biti vrijeme masovnog napredovanja, braka i uspjeha. To je "žetva"—dobivate natrag točno ono što ste posadili tijekom svojih 20-ih.</p>
 
-      <p><strong>Q: How do I find my Saturn sign?</strong>
-      <br>A: You can use the Astralo app to generate your free birth chart, which will show you exactly which sign and house your Saturn occupies.</p>
+      <p><strong>P: Kako mogu pronaći svoj Saturnov znak?</strong>
+      <br>O: Možete koristiti aplikaciju Astralo za generiranje besplatne natalne karte, koja će vam točno pokazati u kojem se znaku i kući nalazi vaš Saturn.</p>
 
-      <p><strong>Q: What if I have Saturn in the same sign as my partner?</strong>
-      <br>A: You will go through your Saturn Returns together! This can be a "make or break" time for the relationship. If you support each other's growth, you will emerge as a power couple.</p>
+      <p><strong>P: Što ako imam Saturna u istom znaku kao i moj partner?</strong>
+      <br>O: Proći ćete kroz svoje Saturnove povratke zajedno! Ovo može biti vrijeme "biti ili ne biti" za vezu. Ako međusobno podržavate rast, izronit ćete kao moćan par.</p>
 
-      <h2 id="conclusion">Embracing Your Adulthood</h2>
-      <p>The Saturn Return is not a curse; it is a gift from the universe. It is the celestial mechanism ensuring that you don't waste your life living for someone else's dreams. At Astralo, we believe that understanding your Saturn placement is the first step toward true liberation from your past. </p>
+      <h2 id="conclusion">Prihvaćanje vaše odraslosti</h2>
+      <p>Saturnov povratak nije kletva; to je dar iz svemira. To je nebeski mehanizam koji osigurava da ne protratite život živeći za nečije tuđe snove. U Astralu vjerujemo da je razumijevanje vašeg položaja Saturna prvi korak prema istinskom oslobađanju od prošlosti. </p>
       
-      <p>Our <strong>Transit Guides</strong> provide month-by-month predictions for your specific Saturn Return, helping you understand when to push and when to wait. Don't fear the Taskmaster—embrace the growth. Your new life—your real life—is waiting on the other side of 30. Step into your power with confidence. </p>
+      <p>Naši <strong>Vodiči kroz tranzite</strong> pružaju predviđanja iz mjeseca u mjesec za vaš specifičan Saturnov povratak, pomažući vam razumjeti kada gurati, a kada čekati. Ne bojte se strogog učitelja—prihvatite rast. Vaš novi život—vaš stvarni život—čeka na drugoj strani 30. godine. Zakoračite u svoju moć s povjerenjem. </p>
       
-      <p><em>Looking for more help? Reach out to our expert astrologers for a personalized Saturn Return consultation or download our specialized Saturn Survival Guide in the app store.</em></p>
+      <p><em>Tražite više pomoći? Obratite se našim stručnim astrolozima za personalizirane konzultacije o Saturnovom povratku ili preuzmite naš specijalizirani Vodič za preživljavanje Saturna u trgovini aplikacija.</em></p>
     `
 };

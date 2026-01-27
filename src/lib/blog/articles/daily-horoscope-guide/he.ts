@@ -4,98 +4,116 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ הורוסקופ יומי 2026: המדריך המלא להבנת התחזיות שלך",
+  excerpt: "שלטו בתחזיות ההורוסקופ היומיות שלכם. מדריך מקיף להבנת אופן הפעולה של האסטרולוגיה היומית, מדוע האופק שלכם חשוב, וכיצד להשתמש באנרגיה פלנטרית להצלחה.",
+  category: "אסטרולוגיה 101",
+  metaDescription: "שלטו בתחזיות ההורוסקופ היומיות שלכם. מדריך מקיף להבנת אופן הפעולה של האסטרולוגיה היומית, מדוע האופק שלכם חשוב, וכיצד להשתמש באנרגיה פלנטרית להצלחה.",
+  keywords: "הורוסקופ יומי, הורוסקופ היום, תחזית יומית, גלגל המזלות, מדריך אסטרולוגי, הבנת אסטרולוגיה, מזל אופק, מעברים פלנטריים",
+  quickSummary: [
+    "הורוסקופים יומיים מונעים על ידי הירח שנע במהירות והיבטים פלנטריים למפה שלכם",
+    "קריאה עבור מזל האופק (Ascendant) מספקת לעיתים קרובות דיוק רב יותר בתחזיות היומיות",
+    "מעברים פלנטריים מעוררים אירועים, רגשות והזדמנויות ספציפיים בכל יום",
+    "למדו להשתמש בתקופות 'ירח שחור' (Void-of-Course Moon) כדי למנוע מאמץ מבוזבז"
+  ],
+  keyTakeaways: [
+    "מזל השמש שלכם מראה את חיוניות הליבה שלכם, אך האופק קובע את ה'במה' לחיי היומיום שלכם",
+    "הירח מחליף מזל כל 2.5 ימים, ומכתיב את מצב הרוח הקולקטיבי",
+    "מרקורי בנסיגה והיבטים 'קשים' אחרים הם למעשה תקופות לבחינה מחדש וכיול",
+    "שילוב אסטרולוגיה בשגרת הבוקר שלכם יכול לייעל את הפרודוקטיביות והמערכות היחסים שלכם"
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "למה לקרוא הורוסקופ יומי?" },
+    { id: "science-behind-it", title: "המכניקה: איך זה עובד" },
+    { id: "rising-vs-sun", title: "כלל הזהב: שמש מול אופק" },
+    { id: "planetary-players", title: "השחקנים הפלנטריים המרכזיים" },
+    { id: "zodiac-daily-styles", title: "סגנונות יומיומיים של 12 המזלות" },
+    { id: "practical-rituals", title: "טקסים אסטרולוגיים יומיומיים" },
+    { id: "myth-busting", title: "ניפוץ מיתוסים נפוצים" }
+  ],
+  content: `
+      <h2 id="introduction">למה לקרוא הורוסקופ יומי?</h2>
+      <p>עבור מיליוני אנשים ברחבי העולם, בדיקת ה<strong>הורוסקופ היומי</strong> חיונית כמו כוס קפה של בוקר. זהו רגע של עצירה, טקס של התבוננות עצמית ודרך להתכונן לאנרגיה של היום. אבל האם תהיתם פעם מה באמת מניע את התחזיות האלה? האם זו רק עצה אקראית, או שיש מנגנון שעון קוסמי מורכב מאחורי הקלעים?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>ב-Astralo, אנו מאמינים שאסטרולוגיה היא כלי להעצמה. הורוסקופ כתוב היטב לא רק חוזה את העתיד; הוא עוזר לכם <em>ליצור</em> אותו. על ידי הבנת מזג האוויר הקוסמי — מיקום כוכבי הלכת היום ביחס למיקום שהיו בו כשנולדתם — אתם יכולים לנווט באתגרים בחן ולנצל הזדמנויות שאחרת היו חומקות מכם.</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">המכניקה: איך זה עובד</h2>
+      <p>אסטרולוגיה נקראת לעיתים קרובות חקר המחזורים. ה<strong>תחזיות היומיות</strong> שלכם מחושבות באמצעות טכניקה הנקראת "מעברים" (Transits). דמיינו שמפת הלידה שלכם היא תצלום קבוע של השמים ברגע לידתכם. עם זאת, כוכבי הלכת ממשיכים לנוע. "מעברים" מתרחשים כאשר כוכב לכת נע בשמים יוצר זווית מתמטית (היבט) לכוכב לכת במפת הלידה שלכם.</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>הירח: מחוג הדקות של הגורל</h3>
+      <p>בעוד שכוכבי לכת כמו יופיטר זקוקים לשנה כדי להחליף מזל, ה<strong>ירח</strong> נע מהר מאוד, ועובר מזל בערך כל 2.5 ימים. זה הופך את הירח למניע העיקרי של מצב הרוח והנוף הרגשי ה<em>יומי</em> שלכם. כאשר הירח נמצא במזל טלה הלוהט, אנו מרגישים אימפולסיביים ונמרצים. כשהוא עובר למזל שור המקורקע, אנו מאטים באופן קולקטיבי ומשתוקקים לנוחות.</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>ההיבטים: שיחות בין כוכבי לכת</h3>
+      <p>כוכבי לכת "מדברים" זה עם זה דרך זוויות. <strong>טרינ (120°)</strong> הוא שיחה הרמונית, המביאה קלות ומזל. <strong>סקוור (90°)</strong> הוא נקודת מתח, המאלצת פעולה או החלטה. ההורוסקופ היומי שלכם מפרש את השיחות הללו. אם מאדים (פעולה) יוצר סקוור לשבתאי (הגבלה) בשמים היום, אתם עלולים להרגיש מתוסכלים או חסומים. הידיעה הזו עוזרת לכם להיות סבלניים במקום לנסות בכוח לפתוח דלת שלא תיפתח.</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising מזל</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">כלל הזהב: קראו לפי מזל האופק שלכם</h2>
+      <p>הנה הסוד שאסטרולוגים מקצועיים יודעים: <strong>לתחזית היומית המדויקת ביותר, כדאי לקרוא את ההורוסקופ למזל האופק שלכם (Rising Sign), לא רק למזל השמש.</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>למה? מכיוון שהורוסקופים נכתבים באמצעות "מערכת בתים". מזל האופק שלכם קובע את הפריסה של 12 הבתים במפה שלכם. הבית הראשון הוא אתם, השני הוא כסף, השביעי הוא מערכות יחסים, וכן הלאה. כשמנבא כותב "למזל טלה תהיה הזדמנות כספית היום", הוא מסתכל על תנועות פלנטריות דרך הבית השני של מפת אופק טלה.</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>קראו את מזל השמש</strong> לקבלת נושאים כלליים על האגו, החיוניות והמטרה המרכזית שלכם.</li>
+        <li><strong>קראו את מזל האופק</strong> לאירועים ספציפיים, תזמון ונסיבות שיקרו לכם היום.</li>
+        <li><strong>קראו את מזל הירח</strong> אם אתם רוצים להבין את המצב הרגשי הפנימי שלכם.</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">שחקנים פלנטריים מרכזיים ביום שלכם</h2>
+      <p>מעבר לירח, כוכבי לכת "אישיים" אחרים הנעים במהירות מעצבים את החוויה היומית שלכם:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>מרקורי:</strong> שליט התקשורת, הטכנולוגיה והנסיעות. מצבו קובע אם המיילים שלכם יגיעו ליעדם או יאבדו בספאם, ואם הנסיעה לעבודה תהיה חלקה או כאוטית.</li>
+        <li><strong>ונוס:</strong> שליטת האהבה, הכסף והערכים. יום ונוס טוב מושלם לדייטים, קניות או בקשת העלאה בשכר.</li>
+        <li><strong>מאדים:</strong> המנוע של גלגל המזלות. הוא מכתיב את רמות האנרגיה, הדחף והחשק המיני שלכם. יום מאדים מאתגר עלול להוביל לשחיקה או לוויכוחים אם לא מתועל לפעילות גופנית או לעבודה קשה.</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 מזלs</h2>
+      <h2 id="zodiac-daily-styles">סגנונות יומיומיים של 12 המזלות</h2>
       
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ טלה (21 במרץ - 19 באפריל)</h3>
+      <p><strong>מונע על ידי מאדים.</strong> אתם זקוקים לתנועה פיזית כדי לעבד אנרגיה יומית. הורוסקופ טלה מתמקד לעיתים קרובות ביוזמות, קונפליקטים לפתרון ורגעי מנהיגות. <em>הרגיל יומי מומלץ:</em> אירובי בבוקר.</p>
 
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ שור (20 באפריל - 20 במאי)</h3>
+      <p><strong>נשלט על ידי ונוס.</strong> אתם מעבדים את היום דרך החושים שלכם. ההורוסקופ שלכם מדגיש לעיתים קרובות מהלכים פיננסיים ונוחות פיזית. <em>הרגיל יומי מומלץ:</em> ארוחת בוקר טעימה ונינוחה.</p>
 
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ תאומים (21 במאי - 20 ביוני)</h3>
+      <p><strong>נשלט על ידי מרקורי.</strong> מידע הוא הדלק שלכם. התחזית היומית שלכם סובבת סביב שיחות, למידה ונסיעות קצרות. <em>הרגיל יומי מומלץ:</em> כתיבת יומן או פודקאסט בבוקר.</p>
 
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ סרטן (21 ביוני - 22 ביולי)</h3>
+      <p><strong>נשלט על ידי הירח.</strong> אתם המזל המחזורי ביותר. הקריאה שלכם מתמקדת לעיתים קרובות בבית, משפחה וביטחון רגשי. <em>הרגיל יומי מומלץ:</em> שיחת עדכון עם אדם אהוב.</p>
 
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ אריה (23 ביולי - 22 באוגוסט)</h3>
+      <p><strong>נשלט על ידי השמש.</strong> אתם צריכים להביע את עצמכם. בני מזל אריה מוצאים לעיתים קרובות נושאים של יצירתיות, רומנטיקה והכרה ביומם. <em>הרגיל יומי מומלץ:</em> בחירת תלבושת שגורמת לכם להרגיש בטוחים.</p>
 
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ בתולה (23 באוגוסט - 22 בספטמבר)</h3>
+      <p><strong>נשלט על ידי מרקורי.</strong> סדר מביא לכם שלווה. ההורוסקופ שלכם יצביע לעיתים קרובות על משימות עבודה, שגרות בריאות ושירות. <em>הרגיל יומי מומלץ:</em> הכנת רשימת מטלות.</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ מאזניים (23 בספטמבר - 22 באוקטובר)</h3>
+      <p><strong>נשלט על ידי ונוס.</strong> איזון הוא המפתח. אתם מחפשים הרמוניה במערכות יחסים. התובנות היומיות שלכם מתמקדות לעיתים קרובות בשותפויות ואסתטיקה. <em>הרגיל יומי מומלץ:</em> מדיטציה או איזון הסביבה שלכם.</p>
 
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ עקרב (23 באוקטובר - 21 בנובמבר)</h3>
+      <p><strong>נשלט על ידי פלוטו ומאדים.</strong> אתם מחפשים עומק. ימים שטחיים משעממים אתכם; ההורוסקופ שלכם מדגיש טרנספורמציה, סודות ומשאבים משותפים. <em>הרגיל יומי מומלץ:</em> מחקר מעמיק או רפלקציה פרטית.</p>
 
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ קשת (22 בנובמבר - 21 בדצמבר)</h3>
+      <p><strong>נשלט על ידי יופיטר.</strong> אתם משתוקקים להתרחבות. היום שלכם עוסק לעיתים קרובות בתמונה הגדולה, פילוסופיה או השפעות זרות. <em>הרגיל יומי מומלץ:</em> למידת משהו חדש לחלוטין.</p>
 
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ גדי (22 בדצמבר - 19 בינואר)</h3>
+      <p><strong>נשלט על ידי שבתאי.</strong> אתם בונים מורשת. נושאים יומיים עבורכם הם לעיתים קרובות סביב קריירה, מוניטין ומטרות ארוכות טווח. <em>הרגיל יומי מומלץ:</em> התמודדות עם המשימה הקשה ביותר קודם.</p>
 
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ דלי (20 בינואר - 18 בפברואר)</h3>
+      <p><strong>נשלט על ידי אורנוס ושבתאי.</strong> אתם מסתכלים לעתיד. ההורוסקופ שלכם מדגיש רשתות חברתיות, טכנולוגיה וחדשנות. <em>הרגיל יומי מומלץ:</em> חיבור לקהילה שלכם.</p>
 
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ דגים (19 בפברואר - 20 במרץ)</h3>
+      <p><strong>נשלט על ידי נפטון ויופיטר.</strong> אתם נסחפים בין עולמות. ההדרכה היומית שלכם היא לעיתים קרובות רוחנית, אמנותית או אינטואיטיבית. <em>הרגיל יומי מומלץ:</em> רישום חלומות או ויזואליזציה יצירתית.</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">טקסים אסטרולוגיים יומיומיים</h2>
+      <p>איך תוכלו להשתמש במידע הזה? אל תסתפקו רק בקריאה — חיו אותו.</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>הבדיקה המוקדמת בבוקר:</strong> קראו את התחזית שלכם <em>לפני</em> שתבדקו מיילים. זה קובע כוונה קוסמית.</li>
+        <li><strong>שימו לב למזל הירח:</strong> אם הירח בבתולה, נקו את שולחן העבודה. אם הוא במאזניים, התקשרו לשותף העסקי. שחייה עם הזרם תמיד קלה יותר.</li>
+        <li><strong>כבדו את ה'ירח השחור':</strong> תקופה שבה הירח לא יוצר היבטים נוספים לפני החלפת מזל. זה זמן של ערפול. אל תחתמו על חוזים או תשיקו עסקים במהלך ה'ירח השחור'. השתמשו בו למנוחה.</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">ניפוץ מיתוסים נפוצים</h2>
+      <p><strong>"הורוסקופים הם מעורפלים מדי."</strong> <br>הורוסקופים כלליים בעיתונים הם מעורפלים כי הם מסתכלים רק על מזל השמש. קריאה מותאמת אישית, כמו אלה שנוצרות על ידי ה-AI המתוחכם שלנו ב-Astralo, לוקחת בחשבון את הניואנסים של המפה המלאה שלכם.</p>
+      <p><strong>"אסטרולוגיה חוזה גורל קבוע."</strong> <br>לא נכון. אסטרולוגיה חוזה <em>אנרגיה</em> ו<em>מזג אוויר</em>. יכול לרדת גשם (מעבר מאתגר), אבל אתם מחליטים אם לקחת מטריה או לרקוד בו. תמיד יש לכם בחירה חופשית.</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>מוכנים לצלול עמוק יותר?</h3>
+      <p>בעוד שתחזיות כלליות הן מועילות, אין דבר שמשתווה לקריאה המבוססת על זמן ומקום הלידה המדויקים שלכם. מפת הלידה הייחודית שלכם היא מפה מורכבת שאין לשני אנשים. פתחו את מלוא הפוטנציאל של העיצוב הקוסמי שלכם עם קריאות מותאמות אישית פרימיום של Astralo.</p>
     `
 };

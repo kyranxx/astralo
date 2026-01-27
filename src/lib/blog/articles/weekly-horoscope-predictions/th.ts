@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - TH (Fallback to English content)
+ * weekly-horoscope-predictions - TH
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 ดวงรายสัปดาห์: วิธีรับมือกับกระแสพลังงานคอสมิกในสัปดาห์หน้า',
+  excerpt: 'ใช้ประโยชน์สูงสุดจากสัปดาห์ของคุณด้วยคู่มือดวงรายสัปดาห์ของเรา ทำความเข้าใจวันตามดาวเคราะห์ รับมือกับช่วงพระจันทร์ว่าง (Void-of-Course Moon) และวางแผนตารางเวลาของคุณตามหลักโหราศาสตร์',
+  category: 'ดวงรายสัปดาห์',
+  metaDescription: 'ใช้ประโยชน์สูงสุดจากสัปดาห์ของคุณด้วยคู่มือดวงรายสัปดาห์ของเรา ทำความเข้าใจวันตามดาวเคราะห์ รับมือกับช่วงพระจันทร์ว่าง (Void-of-Course Moon) และวางแผนตารางเวลาของคุณตามหลักโหราศาสตร์',
+  keywords: 'ดวงรายสัปดาห์, โหราศาสตร์รายสัปดาห์, วันตามดาวเคราะห์, พระจันทร์ว่าง, พยากรณ์ดวงรายสัปดาห์, การวางแผนตามโหราศาสตร์, วันที่ดีที่สุดในสัปดาห์นี้',
+  quickSummary: [
+    'แต่ละวันในสัปดาห์ถูกปกครองโดยดาวเคราะห์ที่แตกต่างกัน (จันทร์/ดวงจันทร์, อังคาร/ดาวอังคาร ฯลฯ)',
+    'ดวงรายสัปดาห์ติดตามการเคลื่อนที่ของดาวกลุ่มดาวเคราะห์เร็วที่ผ่านจักราศีต่างๆ',
+    'พระจันทร์ว่าง (Void-of-Course Moon) เป็นช่วงเวลา "หยุดพัก" ที่สำคัญซึ่งควรหลีกเลี่ยงการดำเนินการเรื่องใหญ่ๆ',
+    'วันจันทร์เหมาะสำหรับอารมณ์ความรู้สึก, วันอังคารสำหรับการลงมือทำ, วันศุกร์สำหรับความโรแมนติก'
+  ],
+  keyTakeaways: [
+    'เช็กดวงพยากรณ์รายสัปดาห์ในคืนวันอาทิตย์เพื่อวางแผนปฏิทินของคุณ',
+    'วางแผนการประชุมที่ยากลำบากในวันพฤหัสบดี (ดาวพฤหัสบดี) หรือวันเสาร์ (ดาวเสาร์) ขึ้นอยู่กับเป้าหมาย',
+    'หลีกเลี่ยงการเซ็นสัญญาเมื่อดวงจันทร์กำลังอยู่ในช่วงว่าง',
+    'ใช้กระแสพลังงานประจำสัปดาห์ให้เป็นประโยชน์แทนที่จะฝืน'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'จังหวะทางโหราศาสตร์' },
+    { id: 'planetary-days', title: 'ผู้ปกครองวันต่างๆ' },
+    { id: 'void-moon', title: 'ช่วงพระจันทร์ว่าง (Void-of-Course Moon)' },
+    { id: 'transits', title: 'ติดตามการโคจรประจำสัปดาห์' },
+    { id: 'by-sign', title: 'คำแนะนำรายสัปดาห์ตามราศี' }
+  ],
+  content: `
+      <h2 id="weekly-flow">จังหวะทางโหราศาสตร์ของสัปดาห์</h2>
+      <p>คุณเคยรู้สึกไหมว่าบางสัปดาห์ราบรื่นเหมือนสายน้ำ ในขณะที่บางสัปดาห์กลับรู้สึกเหมือนกำลังเดินลุยโคลน? หรือทำไมการทำสิ่งต่างๆ ให้เสร็จในวันอังคารจึงให้ความรู้สึกที่ต่างจากวันศุกร์? นี่ไม่ใช่เรื่องบังเอิญ โครงสร้างของสัปดาห์ 7 วันของเรานั้นอิงตาม <strong>โหราศาสตร์</strong> ทั้งหมด</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>การเข้าใจ <strong>ดวงรายสัปดาห์</strong> เป็นมากกว่าการรู้ว่าจะได้รับการตอบกลับข้อความหรือไม่ แต่มันคือการปรับตารางเวลาของคุณให้เข้ากับผู้ปกครองดวงดาวแห่งกาลเวลา เมื่อคุณทำงาน <em>ร่วมกับ</em> พลังงานของวันนั้นๆ ประสิทธิภาพก็จะเพิ่มขึ้นและความเหนื่อยล้าก็จะลดลง</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">ผู้ปกครองวันต่างๆ</h2>
+      <p>แต่ละวันตั้งชื่อตามดาวเคราะห์ (เห็นได้ชัดในภาษาเช่น ฝรั่งเศส หรือ สเปน) นี่คือคู่มือการวางแผนสัปดาห์ของคุณตามหลักโหราศาสตร์:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>วันจันทร์ (วันแห่งดวงจันทร์) 🌙</h3>
+      <p><strong>พลังงาน:</strong> อารมณ์, สัญชาตญาณ, ผันผวน<br><strong>ดีที่สุดสําหรับ:</strong> ซื้อของเข้าบ้าน, ทำความสะอาดบ้าน, นอนตื่นสาย, ทานข้าวกับครอบครัว, ทบทวนตัวเอง<br><strong>ควรหลีกเลี่ยง:</strong> การนำเสนอที่เคร่งเครียด หรือตรรกะที่เข้มงวด</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>วันอังคาร (วันแห่งดาวอังคาร) ♂</h3>
+      <p><strong>พลังงาน:</strong> รุกรัน, พลังงานสูง, เฉียบแหลม<br><strong>ดีที่สุดสําหรับ:</strong> ออกกำลังกาย, เริ่มโปรเจกต์ใหม่, เผชิญหน้ากับปัญหา, การแข่งขัน<br><strong>ควรหลีกเลี่ยง:</strong> การทำสมาธิ หรือพยายามผ่อนคลาย</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>วันพุธ (วันแห่งดาวพุธ) ☿️</h3>
+      <p><strong>พลังงาน:</strong> การสื่อสาร, ยุ่งเหยิง, รวดเร็ว<br><strong>ดีที่สุดสําหรับ:</strong> อีเมล, การประชุม, การเขียน, การขาย, การเดินทางระยะสั้น, การสร้างเครือข่าย<br><strong>ควรหลีกเลี่ยง:</strong> ความเงียบ (เพราะมันจะไม่เกิดขึ้นอยู่ดี)</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>วันพฤหัสบดี (วันแห่งดาวพฤหัสบดี) ♃</h3>
+      <p><strong>พลังงาน:</strong> ขยายตัว, โชคดี, มองโลกในแง่ดี<br><strong>ดีที่สุดสําหรับ:</strong> เปิดตัววิสัยทัศน์ใหญ่ๆ, ขอขึ้นเงินเดือน, วางแผนการเดินทาง, การเรียนต่อชั้นสูง<br><strong>ควรหลีกเลี่ยง:</strong> การตระหนี่ถี่เหนียว</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>วันศุกร์ (วันแห่งดาวศุกร์) ♀</h3>
+      <p><strong>พลังงาน:</strong> สังคม, โรแมนติก, สุนทรียภาพ<br><strong>ดีที่สุดสําหรับ:</strong> นัดเดท, ปาร์ตี้, ซื้อเสื้อผ้า, งานศิลปะ, การพักผ่อน<br><strong>ควรหลีกเลี่ยง:</strong> งานที่สกปรกเลอะเทอะ หรือการอยู่ลำพัง</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>วันเสาร์ (วันแห่งดาวเสาร์) ♄</h3>
+      <p><strong>พลังงาน:</strong> จริงจัง, หนักหน่วง, มีวินัย<br><strong>ดีที่สุดสําหรับ:</strong> งานสวน, วางแผนระยะยาว, การเรียน, จัดการงานบ้านที่คั่งค้าง, หน้าที่ความรับผิดชอบ<br><strong>ควรหลีกเลี่ยง:</strong> ปาร์ตี้สุดเหวี่ยง (เว้นแต่จะเป็นงานทางการ)</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>วันอาทิตย์ (วันแห่งดวงอาทิตย์) ☀️</h3>
+      <p><strong>พลังงาน:</strong> เปล่งประกาย, เน้นที่ตัวตน, จิตวิญญาณ<br><strong>ดีที่สุดสําหรับ:</strong> งานอดิเรก, การไหว้พระ/จิตวิญญาณ, เล่นกับเด็กๆ, การปรากฏตัวในสังคม, พักผ่อน<br><strong>ควรหลีกเลี่ยง:</strong> การเก็บตัวเงียบไม่ให้ใครเห็น</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">ช่วงพระจันทร์ว่าง (Void-of-Course Moon)</h2>
+      <p>หากคุณจะจำเพียงสิ่งเดียวจากคู่มือนี้ ขอให้เป็นเรื่อง <strong>พระจันทร์ว่าง</strong> สิ่งนี้จะเกิดขึ้นเมื่อดวงจันทร์ทำมุมสุดท้ายกับดวงดาวในราศีปัจจุบันเสร็จสิ้นแล้ว และกำลัง "ลอยตัว" อยู่ก่อนที่จะย้ายเข้าสู่ราศีถัดไป</p>
+      <p><strong>กฎเหล็ก:</strong> "จะไม่มีอะไรคืบหน้าจากเรื่องนั้น"</p>
+      <p>ในช่วงพระจันทร์ว่าง อย่าเซ็นสัญญา อย่าเปิดธุรกิจ หรืออย่าพึ่งนัดเดทแรก พลังงานจะค่อยๆ จางหายไปอย่างไร้เหตุผล ใช้เวลานี้ในการจัดระเบียบเอกสาร การนอน หรือการแก้ไขงานที่คุณเริ่มไว้แล้ว มันคือ "ช่วงเวลานอก" ของจักรวาล</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">ติดตามการโคจรประจำสัปดาห์</h2>
+      <p><strong>พยากรณ์โหราศาสตร์รายสัปดาห์</strong> ที่ดี ควรดูมุมต่างๆ ที่ดาวเคราะห์กำลังทำมุมกันในสัปดาห์นี้ด้วย ตัวอย่างเช่น:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>ดาวพุธทำมุมเซ็กซ์ไทล์กับดาวศุกร์:</strong> สัปดาห์ที่สมบูรณ์แบบสำหรับการเข้าสังคมและการขอความช่วยเหลือ</li>
+        <li><strong>ดวงอาทิตย์ทำมุมสแควร์กับดาวพลูโต:</strong> สัปดาห์แห่งการแย่งชิงอำนาจและความเข้มข้น</li>
+        <li><strong>ดาวอังคารย้ายเข้าสู่ราศีตุลย์:</strong> พลังงานเปลี่ยนจากการเน้นที่งานไปสู่การเน้นที่ความสัมพันธ์</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">คำแนะนำรายสัปดาห์ตามประเภทราศี</h2>
+      <p>แม้ว่าสัปดาห์ของทุกคนจะไม่เหมือนกัน แต่ราศีแต่ละกลุ่มมักจะรับมือกับการเปลี่ยนแปลงประจำสัปดาห์ดังนี้:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>ราศีแม่ธาตุ (เมษ, กรกฎ, ตุลย์, มังกร):</strong> คุณคือผู้ริเริ่ม ใช้พลังงานในช่วงต้นสัปดาห์ (จันทร์/อังคาร) เพื่อเริ่มต้นสิ่งต่างๆ</li>
+        <li><strong>ราศีกลางธาตุ (พฤษภ, สิงห์, พิจิก, กุมภ์):</strong> คุณคือผู้ประคอง ใช้พลังงานในช่วงกลางสัปดาห์เพื่อรักษาความคืบหน้าให้มั่นคง</li>
+        <li><strong>ราศีปลายธาตุ (เมถุน, กันย์, ธนู, มีน):</strong> คุณคือผู้ปรับแก้ ใช้ช่วงสุดสัปดาห์หรือวันแห่งดาวพุธเพื่อปรับตัวและเปลี่ยนทิศทาง</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>กลับมาติดตามดวงพยากรณ์รายสัปดาห์เฉพาะของคุณได้ทุกวันอาทิตย์ อัปเดตโดยทีมงาน Astralo!</em>
     `
 };

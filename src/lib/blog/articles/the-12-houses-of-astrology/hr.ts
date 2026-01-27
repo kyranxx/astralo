@@ -4,179 +4,212 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-    title: "🏠 The 12 Houses of Astrology: The Ultimate Guide to Your Life's Journey",
-    excerpt: "Discover the hidden map of your life. A deep dive into the 12 Houses of Astrology, explaining where your planetary energy manifests and how to master your destiny.",
-    category: "Astrology Basics",
-    metaDescription: "Complete guide to the 12 houses of astrology. Learn what each house means, how they influence your life spheres, and how to interpret your birth chart houses like an expert.",
-    keywords: "astrology houses, 12 houses, zodiac houses, birth chart interpretation, first house, seventh house, midheaven, angular houses, succedent houses, cadent houses, house rulers, stellium, intercepted houses",
-    quickSummary: ["The 12 Houses represent the \"where\" of your life—the specific spheres like career, home, and love.","Houses are divided into Angular, Succedent, and Cadent, each with a different level of power.","The Ascendant marks the beginning of the 1st House and sets the entire chart's structure.","Empty houses doesn't mean that area of life is \"missing\"—they are ruled by a specific planet."],
-    keyTakeaways: ["Angular houses (1, 4, 7, 10) are the most active and visible in your life.","The ruler of a house (the planet that owns the sign on the cusp) provides the secret key to that life area.","The \"Big Four\" points (AC, IC, DC, MC) define the cross of your life purpose.","Understanding houses is essential for accurate timing and prediction in astrology."],
-    tableOfContents: [{"id":"introduction","title":"The Stage: Why Houses Matter"},{"id":"house-systems","title":"Understanding House Systems: Placidus vs. Whole Sign"},{"id":"angular-succedent-cadent","title":"The Three Modalities: Power & Timing"},{"id":"the-first-house","title":"1st House: The House of Self (Identity)"},{"id":"the-second-house","title":"2nd House: The House of Value (Wealth)"},{"id":"the-third-house","title":"3rd House: The House of Communication"},{"id":"the-fourth-house","title":"4th House: The House of Home (Roots)"},{"id":"the-fifth-house","title":"5th House: The House of Joy"},{"id":"the-sixth-house","title":"6th House: The House of Service"},{"id":"the-seventh-house","title":"7th House: The House of Partnership"},{"id":"the-eighth-house","title":"8th House: The House of Transformation"},{"id":"the-ninth-house","title":"9th House: The House of Wisdom"},{"id":"the-tenth-house","title":"10th House: The House of Purpose"},{"id":"the-eleventh-house","title":"11th House: The House of Community"},{"id":"the-twelfth-house","title":"12th House: The House of Unconscious"},{"id":"planetary-placements","title":"Major Planets in the Houses"},{"id":"stelliums","title":"What is a Stellium in a House?"},{"id":"empty-houses","title":"What if a House is Empty? The Power of Rulers"},{"id":"retrograde","title":"Retrograde Planets in the Houses"},{"id":"derived-houses","title":"Advanced Technique: Derived Houses"},{"id":"progressions","title":"Progressed Houses: How Your Life Cycles Eveolve"},{"id":"conclusion","title":"Integrating Your Map"}],
-    content: `
-      <h2 id="introduction">The Stage: Why Houses Matter</h2>
-      <p>If you have ever looked at your birth chart and felt overwhelmed by the lines, symbols, and geometric shapes, you are not alone. Astrology is a language of three main components: signs, planets, and houses. While <strong>planets</strong> represent the "actors" (what is happening) and <strong>signs</strong> represent the "costumes" (how it is happening), the <strong>12 Houses of Astrology</strong> represent the "stage" (where it is happening).</p>
+  title: "🏠 12 kuća astrologije: Konačni vodič kroz vaše životno putovanje",
+  excerpt: "Otkrijte skrivenu kartu svog života. Duboko zaronite u 12 kuća astrologije, objašnjavajući gdje se manifestira vaša planetarna energija i kako ovladati svojom sudbinom.",
+  category: "Osnove Astrologije",
+  metaDescription: "Kompletan vodič kroz 12 kuća astrologije. Saznajte što svaka kuća znači, kako utječu na vaše životne sfere i kako tumačiti kuće u vašoj natalnoj karti poput stručnjaka.",
+  keywords: "astrološke kuće, 12 kuća, zodijačke kuće, tumačenje natalne karte, prva kuća, sedma kuća, mc, kutne kuće, sljedujuće kuće, padajuće kuće, vladari kuća, stelium, umetnute kuće",
+  quickSummary: [
+    "12 kuća predstavlja \"gdje\" vašeg života—specifične sfere poput karijere, doma i ljubavi.",
+    "Kuće su podijeljene na kutne, sljedujuće i padajuće, svaka s različitom razinom moći.",
+    "Podznak (Ascendent) označava početak 1. kuće i postavlja strukturu cijele karte.",
+    "Prazne kuće ne znače da taj dio života \"nedostaje\"—njima vlada određeni planet."
+  ],
+  keyTakeaways: [
+    "Kutne kuće (1, 4, 7, 10) su najaktivnije i najvidljivije u vašem životu.",
+    "Vladar kuće (planet koji posjeduje znak na vrhu kuće) pruža tajni ključ za to životno područje.",
+    "Točke \"Velike četvorke\" (AC, IC, DC, MC) definiraju križ vaše životne svrhe.",
+    "Razumijevanje kuća ključno je za točno određivanje vremena i predviđanje u astrologiji."
+  ],
+  tableOfContents: [
+    { id: 'introduction', title: 'Pozornica: Zašto su kuće važne' },
+    { id: 'house-systems', title: 'Razumijevanje sustava kuća: Placidus vs. Cijeli znak' },
+    { id: 'angular-succedent-cadent', title: 'Tri modaliteta: Moć i vrijeme' },
+    { id: 'the-first-house', title: '1. kuća: Kuća sebe (Identitet)' },
+    { id: 'the-second-house', title: '2. kuća: Kuća vrijednosti (Bogatstvo)' },
+    { id: 'the-third-house', title: '3. kuća: Kuća komunikacije' },
+    { id: 'the-fourth-house', title: '4. kuća: Kuća doma (Korijeni)' },
+    { id: 'the-fifth-house', title: '5. kuća: Kuća radosti' },
+    { id: 'the-sixth-house', title: '6. kuća: Kuća služenja' },
+    { id: 'the-seventh-house', title: '7. kuća: Kuća partnerstva' },
+    { id: 'the-eighth-house', title: '8. kuća: Kuća transformacije' },
+    { id: 'the-ninth-house', title: '9. kuća: Kuća mudrosti' },
+    { id: 'the-tenth-house', title: '10. kuća: Kuća svrhe' },
+    { id: 'the-eleventh-house', title: '11. kuća: Kuća zajednice' },
+    { id: 'the-twelfth-house', title: '12. kuća: Kuća nesvjesnog' },
+    { id: 'planetary-placements', title: 'Glavni planeti u kućama' },
+    { id: 'stelliums', title: 'Što je stelium u kući?' },
+    { id: 'empty-houses', title: 'Što ako je kuća prazna? Moć vladara' },
+    { id: 'retrograde', title: 'Retrogradni planeti u kućama' },
+    { id: 'derived-houses', title: 'Napredna tehnika: Izvedene kuće' },
+    { id: 'progressions', title: 'Progresivne kuće: Kako vaši životni ciklusi evoluiraju' },
+    { id: 'conclusion', title: 'Integracija vaše karte' }
+  ],
+  content: `
+      <h2 id="introduction">Pozornica: Zašto su kuće važne</h2>
+      <p>Ako ste ikada pogledali svoju natalnu kartu i osjećali se preplavljeno linijama, simbolima i geometrijskim oblicima, niste sami. Astrologija je jezik triju glavnih komponenti: znakova, planeta i kuća. Dok <strong>planeti</strong> predstavljaju "glumce" (što se događa), a <strong>znakovi</strong> predstavljaju "kostime" (kako se to događa), <strong>12 kuća astrologije</strong> predstavlja "pozornicu" (gdje se to događa).</p>
       
-      <p>Imagine your life is a play. Mars might be the actor—full of drive and aggression. If he is wearing the "costume" of Aries, he is fast, impulsive, and bold. But where does he perform? If he is in the 10th House of Career, he is a driven entrepreneur. If he is in the 4th House of Home, he might be someone who spends their energy fixing up their house or perhaps experiences conflict within the family unit. Without the houses, astrology is purely psychological; with the houses, it becomes practical and predictive.</p>
+      <p>Zamislite da je vaš život predstava. Mars može biti glumac—pun nagona i agresije. Ako nosi "kostim" Ovna, brz je, impulzivan i hrabar. Ali gdje on nastupa? Ako je u 10. kući karijere, on je poduzetnik s puno pogona. Ako je u 4. kući doma, možda je netko tko troši energiju na uređenje kuće ili možda doživljava sukobe unutar obitelji. Bez kuća, astrologija je čisto psihološka; s kućama, ona postaje praktična i prediktivna.</p>
 
-      <p>In this comprehensive guide, we will explore every nook and cranny of these twelve life spheres, helping you understand how to read your own chart like a professional astrologer. Whether you are curious about your financial future, your romantic potential, or your soul's hidden purpose, the houses hold the key.</p>
+      <p>U ovom sveobuhvatnom vodiču istražit ćemo svaki kutak ovih dvanaest životnih sfera, pomažući vam da razumijete kako čitati vlastitu kartu poput profesionalnog astrologa. Bilo da vas zanima vaša financijska budućnost, vaš romantični potencijal ili skrivena svrha vaše duše, kuće drže ključ.</p>
 
-      <h2 id="house-systems">Understanding House Systems: Placidus vs. Whole Znak</h2>
-      <p>Before we dive into the specific meanings, we must address the "elephant in the room": House Systems. There are dozens of ways to divide the sky, and which one you choose can change your chart significantly.</p>
+      <h2 id="house-systems">Razumijevanje sustava kuća: Placidus vs. Cijeli znak</h2>
+      <p>Prije nego što zaronimo u specifična značenja, moramo se pozabaviti "slonom u sobi": Sustavima kuća. Postoje deseci načina za podjelu neba, a onaj koji odaberete može značajno promijeniti vašu kartu.</p>
       
-      <h3>Placidus System</h3>
-      <p>This is the most popular system in modern Western astrology. It calculates houses based on how long it takes for a planet to travel from the horizon to the meridian. Because the Earth is tilted, this often leads to "intercepted houses" (houses that span more than one sign) and houses of varying sizes. Fans of Placidus argue it is more psychologically nuanced and reflects the "stretching" of time and experience.</p>
+      <h3>Placidus sustav</h3>
+      <p>Ovo je najpopularniji sustav u modernoj zapadnoj astrologiji. Izračunava kuće na temelju toga koliko je planetu potrebno da putuje od horizonta do meridijana. Budući da je Zemlja nagnuta, to često dovodi do "umetnutih kuća" (kuća koje obuhvaćaju više od jednog znaka) i kuća različitih veličina. Ljubitelji Placidusa tvrde da je psihološki nijansiraniji i odražava "rastezanje" vremena i iskustva.</p>
 
-      <h3>Whole Znak System</h3>
-      <p>The oldest system, recently making a huge comeback in traditional and Hellenistic astrology. In this system, the entire sign of your Ascendant becomes your 1st House. If you are 29 degrees Aries Rising, the *entire* sign of Aries is your 1st House. This system is cleaner, creates "Equal" houses of 30 degrees, and many find it more accurate for predicting concrete life events.</p>
+      <h3>Sustav cijelih znakova (Whole Sign)</h3>
+      <p>Najstariji sustav, koji se nedavno vratio u tradicionalnoj i helenističkoj astrologiji. U ovom sustavu, cijeli znak vašeg podznaka postaje vaša 1. kuća. Ako ste podznak Ovan na 29 stupnjeva, *cijeli* znak Ovna je vaša 1. kuća. Ovaj sustav je čišći, stvara "jednake" kuće od 30 stupnjeva, i mnogi ga smatraju točnijim za predviđanje konkretnih životnih događaja.</p>
 
-      <h3>Equal House System</h3>
-      <p>Here, the Ascendant degree marks the start of the 1st House, and every house is exactly 30 degrees. This system is popular in the UK and provides a middle ground between the "naturalness" of Whole Sign and the degree-specific accuracy of the Ascendant. It avoids the "warping" that occurs in Placidus for people born far from the equator.</p>
+      <h3>Sustav jednakih kuća (Equal House)</h3>
+      <p>Ovdje stupanj Ascendenta označava početak 1. kuće, a svaka kuća ima točno 30 stupnjeva. Ovaj sustav je popularan u Velikoj Britaniji i pruža sredinu između "prirodnosti" Cijelog znaka i točnosti stupnja Ascendenta. Izbjegava "iskrivljenje" koje se javlja u Placidusu za ljude rođene daleko od ekvatora.</p>
 
-      <h3>Which should you use?</h3>
-      <p>At Astralo, we recommend starting with **Whole Sign** for clarity, but exploring **Placidus** for psychological depth. If you have "intercepted" signs in Placidus, it often indicates a part of your personality that was "suppressed" or difficult to access in early life.</p>
+      <h3>Koji biste trebali koristiti?</h3>
+      <p>U Astralu preporučujemo da počnete s **Cijelim znakom** radi jasnoće, ali istražite **Placidus** za psihološku dubinu. Ako imate "umetnute" znakove u Placidusu, to često ukazuje na dio vaše osobnosti koji je bio "potisnut" ili mu je bilo teško pristupiti u ranom životu.</p>
 
-      <h2 id="angular-succedent-cadent">The Three Modalities: Power & Timing</h2>
-      <p>Houses are divided into three groups of four, which dictate their "dynamic" energy and how they manifest in time.</p>
+      <h2 id="angular-succedent-cadent">Tri modaliteta: Moć i vrijeme</h2>
+      <p>Kuće su podijeljene u tri grupe po četiri, koje diktiraju njihovu "dinamičku" energiju i kako se manifestiraju u vremenu.</p>
       
-      <h3>1. Angular Houses (1, 4, 7, 10)</h3>
-      <p>These are the "Power Houses." They correspond to the Cardinal signs (Aries, Cancer, Libra, Capricorn). Planets found here are very active and visible in the world. They define the "Big Four" points of your chart: the Ascendant, IC, Descendant, and Midheaven. Events in these houses tend to be public, life-changing, and initiated by you. If you have many planets in angular houses, you are a "doer" who makes things happen.</p>
+      <h3>1. Kutne kuće (1, 4, 7, 10)</h3>
+      <p>Ovo su "Kuće moći". Odgovaraju kardinalnim znakovima (Ovan, Rak, Vaga, Jarac). Planeti koji se ovdje nalaze vrlo su aktivni i vidljivi u svijetu. One definiraju "Veliku četvorku" točaka vaše karte: Ascendent, IC, Descendent i Midheaven. Događaji u ovim kućama obično su javni, mijenjaju život i pokrećete ih vi. Ako imate puno planeta u kutnim kućama, vi ste "činitelj" koji pokreće stvari.</p>
 
-      <h3>2. Succedent Houses (2, 5, 8, 11)</h3>
-      <p>These correspond to the Fixed signs (Taurus, Leo, Scorpio, Aquarius). These houses "follow" (succeed) the angular ones. They provide stability and resources. Here we find things like personal values, children, shared wealth, and long-term goals. They represent the "middle" phase of a process where we consolidate our gains and build substance. Planets here are steady but less "loud" than angular planets.</p>
+      <h3>2. Sljedujuće kuće (2, 5, 8, 11)</h3>
+      <p>One odgovaraju fiksnim znakovima (Bik, Lav, Škorpion, Vodenjak). Ove kuće "slijede" (nasljeđuju) kutne. One pružaju stabilnost i resurse. Ovdje nalazimo stvari poput osobnih vrijednosti, djece, zajedničkog bogatstva i dugoročnih ciljeva. One predstavljaju "srednju" fazu procesa u kojoj konsolidiramo svoje dobitke i gradimo supstancu. Planeti su ovdje postojani, ali manje "glasni" od kutnih planeta.</p>
 
-      <h3>3. Cadent Houses (3, 6, 9, 12)</h3>
-      <p>These correspond to the Mutable signs (Gemini, Virgo, Sagittarius, Pisces). These houses represent transition, preparation, and the mental processing of experience. They are the "falling away" houses. Planets here are often more "internal," intellectual, or involve service and learning. They are the final phase before a new cycle begins. In traditional astrology, cadent houses were considered "weak," but in modern psychology, they are viewed as the most spiritual and complex.</p>
+      <h3>3. Padajuće kuće (3, 6, 9, 12)</h3>
+      <p>One odgovaraju promjenjivim znakovima (Blizanci, Djevica, Strijelac, Ribe). Ove kuće predstavljaju tranziciju, pripremu i mentalnu obradu iskustva. One su kuće "otpadanja". Planeti su ovdje često više "unutarnji", intelektualni ili uključuju služenje i učenje. One su završna faza prije početka novog ciklusa. U tradicionalnoj astrologiji padajuće kuće smatrane su "slabima", ali u modernoj psihologiji na njih se gleda kao na najduhovnije i najsloženije.</p>
 
-      <h2 id="the-first-house">1st House: The House of Self (Identity)</h2>
-      <p>The 1st House begins at the <strong>Ascendant (Rising Sign)</strong>. It is the filter through which you view the world and how the world views you. It governs your physical appearance, your temperament, and your vitality.
-      <br><strong>Keywords:</strong> Identity, appearance, health, first impressions, vitality, survival instinct, self-start.</p>
-      <p>If you have the **Sun in the 1st House**, you have a strong presence and high energy. You may be very self-reliant. 
-      <br>If you have **Mars in the 1st House**, you are likely athletic, impulsive, or have a "warrior" spirit. You move fast and ask questions later.
-      <br>If you have **Saturn in the 1st House**, you might have been a serious child, or you feel a heavy responsibility for your own life. You likely age "backwards," appearing older when young and younger when old. This placement gives incredible stamina.</p>
+      <h2 id="the-first-house">1. kuća: Kuća sebe (Identitet)</h2>
+      <p>1. kuća počinje na <strong>Ascendentu (Podznaku)</strong>. To je filtar kroz koji gledate svijet i kako svijet gleda vas. Upravlja vašim fizičkim izgledom, vašim temperamentom i vašom vitalnošću.
+      <br><strong>Ključne riječi:</strong> Identitet, izgled, zdravlje, prvi dojmovi, vitalnost, instinkt preživljavanja, samopokretanje.</p>
+      <p>Ako imate **Sunce u 1. kući**, imate snažnu prisutnost i visoku energiju. Možda ste vrlo samostalni. 
+      <br>Ako imate **Mars u 1. kući**, vjerojatno ste atletski tip, impulzivni ili imate "ratnički" duh. Krećete se brzo i pitanja postavljate kasnije.
+      <br>Ako imate **Saturn u 1. kući**, možda ste bili ozbiljno dijete ili osjećate tešku odgovornost za vlastiti život. Vjerojatno starite "unatrag", izgledajući starije kad ste mladi i mlađe kad ste stari. Ovaj položaj daje nevjerojatnu izdržljivost.</p>
 
-      <h2 id="the-second-house">2nd House: The House of Value (Wealth)</h2>
-      <p>This is where we find your bank account, but also your self-esteem. It rules your personal possessions, your earning capacity, and your values.
-      <br><strong>Keywords:</strong> Money, values, self-worth, possessions, financial security, sensory pleasures, income.</p>
-      <p>If you have **Jupiter in the 2nd House**, you are often lucky with money or have a "big" appetite for life. You might earn well but also spend generously. You believe the universe is abundant.
-      <br>If you have **Venus in the 2nd House**, you attract money through art, beauty, or luxury. You value comfort and high-quality items. You might be "in love" with your things.
-      <br>If you have **Pluto in the 2nd House**, your finances may undergo major "death and rebirth" cycles. You might have a powerful, almost obsessive drive to achieve extreme wealth or power over your resources.</p>
+      <h2 id="the-second-house">2. kuća: Kuća vrijednosti (Bogatstvo)</h2>
+      <p>Ovdje nalazimo vaš bankovni račun, ali i vaše samopoštovanje. Vlada vašom osobnom imovinom, vašom sposobnošću zarade i vašim vrijednostima.
+      <br><strong>Ključne riječi:</strong> Novac, vrijednosti, samopoštovanje, imovina, financijska sigurnost, osjetilna zadovoljstva, prihod.</p>
+      <p>Ako imate **Jupitera u 2. kući**, često imate sreće s novcem ili imate "veliki" apetit za život. Možda dobro zarađujete, ali i velikodušno trošite. Vjerujete da je svemir obilan.
+      <br>Ako imate **Veneru u 2. kući**, privlačite novac kroz umjetnost, ljepotu ili luksuz. Cijenite udobnost i visokokvalitetne predmete. Možda ste "zaljubljeni" u svoje stvari.
+      <br>Ako imate **Plutona u 2. kući**, vaše financije mogu prolaziti kroz velike cikluse "smrti i ponovnog rađanja". Možda imate snažan, gotovo opsesivan nagon za postizanjem ekstremnog bogatstva ili moći nad svojim resursima.</p>
 
-      <h2 id="the-third-house">3rd House: The House of Communication</h2>
-      <p>Your local environment. It governs how you think, how you speak, and your relationships with siblings and neighbors. It also rules short-distance travel.
-      <br><strong>Keywords:</strong> Logic, writing, speaking, siblings, neighbors, schooling, daily commute, social media, curiosity.</p>
-      <p>If you have **Mercury in the 3rd House**, you are a "lifelong learner" with a quick, restless mind. Communication is your survival skill.
-      <br>If you have **Uranus in the 3rd House**, your ideas are eccentric or ahead of their time. You might have a very unusual relationship with your siblings or your local community. You think "outside the box."
-      <br>If you have the **Moon in the 3rd House**, your emotions are deeply tied to your communication. You need to speak or write how you feel to process it. You are a natural storyteller.</p>
+      <h2 id="the-third-house">3. kuća: Kuća komunikacije</h2>
+      <p>Vaše lokalno okruženje. Upravlja onim kako razmišljate, kako govorite i vašim odnosima s braćom, sestrama i susjedima. Također vlada putovanjima na kratke udaljenosti.
+      <br><strong>Ključne riječi:</strong> Logika, pisanje, govorenje, braća i sestre, susjedi, školovanje, svakodnevno putovanje, društveni mediji, znatiželja.</p>
+      <p>Ako imate **Merkura u 3. kući**, vi ste "cjeloživotni učenik" s brzim, nemirnim umom. Komunikacija je vaša vještina preživljavanja.
+      <br>Ako imate **Urana u 3. kući**, vaše ideje su ekscentrične ili ispred svog vremena. Možda imate vrlo neobičan odnos s braćom i sestrama ili lokalnom zajednicom. Razmišljate "izvan okvira".
+      <br>Ako imate **Mjesec u 3. kući**, vaše su emocije duboko vezane uz vašu komunikaciju. Morate izgovoriti ili napisati kako se osjećate da biste to procesuirali. Vi ste prirodni pripovjedač.</p>
 
-      <h2 id="the-fourth-house">4th House: The House of Home (Roots)</h2>
-      <p>The base of the chart (the IC). It represents your family of origin, your ancestors, your literal home, and your private life. It is the most "internal" house.
-      <br><strong>Keywords:</strong> Privacy, roots, the mother/father, ancestors, real estate, the end of life, inner sanctuary.</p>
-      <p>If you have the **Moon in the 4th House**, you are deeply private and emotional about your home. You need a "nest" to feel safe. Your family is your world.
-      <br>If you have **Saturn in the 4th House**, you may have had a strict or cold childhood, or you take the responsibility of "home" very seriously. You are building a legacy for your future family.
-      <br>If you have **Jupiter in the 4th House**, you might have a large family or find great benefit and expansion through your domestic life. Your home is a place of healing and philosophy.</p>
+      <h2 id="the-fourth-house">4. kuća: Kuća doma (Korijeni)</h2>
+      <p>Baza karte (IC). Predstavlja vašu obitelj porijekla, vaše pretke, vaš doslovni dom i vaš privatni život. To je "najunutrašnjija" kuća.
+      <br><strong>Ključne riječi:</strong> Privatnost, korijeni, majka/otac, preci, nekretnine, kraj života, unutarnje utočište.</p>
+      <p>Ako imate **Mjesec u 4. kući**, duboko ste privatni i emocionalni u vezi s domom. Trebate "gnijezdo" da biste se osjećali sigurno. Vaša obitelj je vaš svijet.
+      <br>Ako imate **Saturn u 4. kući**, možda ste imali strogo ili hladno djetinjstvo, ili odgovornost "doma" shvaćate vrlo ozbiljno. Gradite nasljeđe za svoju buduću obitelj.
+      <br>Ako imate **Jupitera u 4. kući**, možda imate veliku obitelj ili nalazite veliku korist i širenje kroz svoj domaći život. Vaš dom je mjesto iscjeljenja i filozofije.</p>
 
-      <h2 id="the-fifth-house">5th House: The House of Joy</h2>
-      <p>Self-expression and fun. This is the house of creativity, romance, dating, children, and speculative risks.
-      <br><strong>Keywords:</strong> Creativity, play, romance, children, hobbies, fame, gambling, theater, personal spark.</p>
-      <p>If you have **Venus in the 5th House**, you are "in love with love." You are likely artistic and have a charm that attracts many romantic interests. You express your soul through beauty.
-      <br>If you have **Mars in the 5th House**, you are competitive in sports or creative pursuits. You have a "fiery" approach to dating and need excitement in your romantic life.
-      <br>If you have **Neptune in the 5th House**, you may be a visionary artist but might also experience "delusions" in romance or struggle with boundaries with children. You seek a soul-merging love.</p>
+      <h2 id="the-fifth-house">5. kuća: Kuća radosti</h2>
+      <p>Samoizražavanje i zabava. Ovo je kuća kreativnosti, romantike, izlazaka, djece i spekulativnih rizika.
+      <br><strong>Ključne riječi:</strong> Kreativnost, igra, romantika, djeca, hobiji, slava, kockanje, kazalište, osobna iskra.</p>
+      <p>Ako imate **Veneru u 5. kući**, "zaljubljeni ste u ljubav". Vjerojatno ste umjetnički nastrojeni i imate šarm koji privlači mnoge romantične interese. Svoju dušu izražavate kroz ljepotu.
+      <br>Ako imate **Mars u 5. kući**, natjecateljski ste raspoloženi u sportu ili kreativnim potragama. Imate "vatreni" pristup izlascima i trebate uzbuđenje u svom romantičnom životu.
+      <br>Ako imate **Neptuna u 5. kući**, možda ste vizionarski umjetnik, ali biste također mogli iskusiti "zablude" u romantici ili se boriti s granicama s djecom. Tražite ljubav koja stapa duše.</p>
 
-      <h2 id="the-sixth-house">6th House: The House of Service</h2>
-      <p>Daily routines and physical health. It rules your job, your colleagues, your pets, and how you manage the tasks of everyday life.
-      <br><strong>Keywords:</strong> Routine, health, work, service, pets, hygiene, analytical skills, maintenance.</p>
-      <p>If you have **Virgo in the 6th House**, you are likely a perfectionist about your work. You notice the details others miss.
-      <br>If you have **Pluto in the 6th House**, you might be obsessed with your health or experience total transformations in your career path. You work with intensity or not at all.
-      <br>If you have **Mercury in the 6th House**, you are highly efficient and good with detail. You solve problems locally and practically. Your mind is always "on the job."</p>
+      <h2 id="the-sixth-house">6. kuća: Kuća služenja</h2>
+      <p>Dnevne rutine i fizičko zdravlje. Vlada vašim poslom, vašim kolegama, vašim kućnim ljubimcima i načinom na koji upravljate zadacima svakodnevnog života.
+      <br><strong>Ključne riječi:</strong> Rutina, zdravlje, posao, služenje, kućni ljubimci, higijena, analitičke vještine, održavanje.</p>
+      <p>Ako imate **Djevicu u 6. kući**, vjerojatno ste perfekcionist u svom poslu. Primjećujete detalje koje drugi propuštaju.
+      <br>Ako imate **Plutona u 6. kući**, možda ste opsjednuti svojim zdravljem ili doživljavate potpune transformacije u karijeri. Radite s intenzitetom ili nikako.
+      <br>Ako imate **Merkura u 6. kući**, vrlo ste učinkoviti i dobri s detaljima. Probleme rješavate lokalno i praktično. Vaš um je uvijek "na poslu".</p>
 
-      <h2 id="the-seventh-house">7th House: The House of Partnership</h2>
-      <p>The Descendant. It governs committed relationships—marriage, serious business partners, and even "open enemies."
-      <br><strong>Keywords:</strong> Marriage, partnership, contracts, harmony, the "Other," public relations, law.</p>
-      <p>If you have **Jupiter in the 7th House**, you find luck through your partners. Your spouse might be foreign, wealthy, or a teacher. You attract "big" characters into your life.
-      <br>If you have **Saturn in the 7th House**, you seek stability and might marry someone older or more established. You take commitment very seriously and may experience delays in finding "The One," but what you build is meant to last.
-      <br>If you have **Uranus in the 7th House**, you need a lot of freedom in your relationships. Your partners might be unconventional or the relationship may start/end suddenly. You hate being bored in love.</p>
+      <h2 id="the-seventh-house">7. kuća: Kuća partnerstva</h2>
+      <p>Descendent. Upravlja predanim odnosima—brakom, ozbiljnim poslovnim partnerima, pa čak i "otvorenim neprijateljima".
+      <br><strong>Ključne riječi:</strong> Brak, partnerstvo, ugovori, sklad, "Drugi", odnosi s javnošću, zakon.</p>
+      <p>Ako imate **Jupitera u 7. kući**, sreću nalazite kroz partnere. Vaš supružnik bi mogao biti stranac, bogat ili učitelj. Privlačite "velike" likove u svoj život.
+      <br>Ako imate **Saturn u 7. kući**, tražite stabilnost i možda ćete se vjenčati za nekoga starijeg ili etabliranijeg. Predanost shvaćate vrlo ozbiljno i možete doživjeti kašnjenja u pronalaženju "Onog pravog", ali ono što izgradite namijenjeno je da traje.
+      <br>Ako imate **Urana u 7. kući**, trebate puno slobode u odnosima. Vaši partneri mogu biti nekonvencionalni ili odnos može početi/završiti iznenada. Mrzite dosadu u ljubavi.</p>
 
-      <h2 id="the-eighth-house">8th House: The House of Transformation</h2>
-      <p>Deep water. It rules birth, death, sex, transformation, secrets, and "other people's money."
-      <br><strong>Keywords:</strong> Intimacy, inheritance, taxes, psychology, the occult, shared resources, crisis management, power.</p>
-      <p>If you have **Pluto in the 8th House**, you are incredibly powerful and resilient. You are drawn to the hidden depths of the human psyche and might work in finance or therapy.
-      <br>If you have the **Sun in the 8th House**, your life is a series of "death and rebirth" cycles. You find your identity through intense transformative experiences. You are a phoenix.
-      <br>If you have **Venus in the 8th House**, you seek deep, soul-level intimacy. You might also find wealth through marriage or inheritance, but the connection must be intense to satisfy you.</p>
+      <h2 id="the-eighth-house">8. kuća: Kuća transformacije</h2>
+      <p>Duboka voda. Vlada rođenjem, smrću, seksom, transformacijom, tajnama i "tuđim novcem".
+      <br><strong>Ključne riječi:</strong> Intimnost, nasljeđe, porezi, psihologija, okultno, zajednički resursi, upravljanje krizama, moć.</p>
+      <p>Ako imate **Plutona u 8. kući**, nevjerojatno ste moćni i otporni. Privlače vas skrivene dubine ljudske psihe i možda radite u financijama ili terapiji.
+      <br>Ako imate **Sunce u 8. kući**, vaš život je niz ciklusa "smrti i ponovnog rađanja". Svoj identitet pronalazite kroz intenzivna transformativna iskustva. Vi ste feniks.
+      <br>Ako imate **Veneru u 8. kući**, tražite duboku intimnost na razini duše. Također biste mogli pronaći bogatstvo kroz brak ili nasljeđe, ali veza mora biti intenzivna da bi vas zadovoljila.</p>
 
-      <h2 id="the-ninth-house">9th House: The House of Wisdom</h2>
-      <p>Expansion of the mind and horizon. It rules long travel, higher education, philosophy, and religion.
-      <br><strong>Keywords:</strong> Travel, philosophy, higher learning, law, religion, publishing, adventure, the quest.</p>
-      <p>If you have **Sagittarius in the 9th House**, you are a natural explorer. You feel at home when you are in a foreign land.
-      <br>If you have **Mars in the 9th House**, you fight for your beliefs. You might be a "crusader" for a cause or spend your energy on higher academic achievement.
-      <br>If you have **Jupiter in the 9th House**, you are extremely lucky in travel and academics. You have a vast, optimistic worldview and might be a natural teacher or publisher.</p>
+      <h2 id="the-ninth-house">9. kuća: Kuća mudrosti</h2>
+      <p>Širenje uma i horizonta. Vlada dugim putovanjima, visokim obrazovanjem, filozofijom i religijom.
+      <br><strong>Ključne riječi:</strong> Putovanja, filozofija, visoko učenje, zakon, religija, izdavaštvo, avantura, potraga.</p>
+      <p>Ako imate **Strijelca u 9. kući**, prirodni ste istraživač. Osjećate se kao kod kuće kada ste u stranoj zemlji.
+      <br>Ako imate **Mars u 9. kući**, borite se za svoja uvjerenja. Možda ste "križar" za neki cilj ili trošite energiju na visoka akademska postignuća.
+      <br>Ako imate **Jupitera u 9. kući**, izuzetno ste sretni u putovanjima i akademskom radu. Imate širok, optimističan svjetonazor i možda ste prirodni učitelj ili izdavač.</p>
 
-      <h2 id="the-tenth-house">10th House: The House of Purpose</h2>
-      <p>The Midheaven (MC). Your public reputation and your calling. It is how you achieve success and legacy.
-      <br><strong>Keywords:</strong> Career, reputation, status, legacy, public image, the father/mother, authority.</p>
-      <p>If you have the **Sun in the 10th House**, you are destined for the spotlight. You have a high need for achievement and recognition. Success is a part of your identity.
-      <br>If you have **Saturn in the 10th House**, you earn your success through hard work over a long period. You are a natural leader but may face heavy pressures at the top. You value respect over fame.
-      <br>If you have **Moon in the 10th House**, your career is tied to your emotions or the public's feelings. You might be famous but feel very vulnerable in the public eye. Your "mask" is your job.</p>
+      <h2 id="the-tenth-house">10. kuća: Kuća svrhe</h2>
+      <p>Midheaven (MC). Vaš javni ugled i vaš poziv. To je način na koji postižete uspjeh i nasljeđe.
+      <br><strong>Ključne riječi:</strong> Karijera, reputacija, status, nasljeđe, javni imidž, otac/majka, autoritet.</p>
+      <p>Ako imate **Sunce u 10. kući**, predodređeni ste za svjetla reflektora. Imate veliku potrebu za postignućem i priznanjem. Uspjeh je dio vašeg identiteta.
+      <br>Ako imate **Saturn u 10. kući**, svoj uspjeh zarađujete teškim radom kroz dugo razdoblje. Prirodni ste vođa, ali se možete suočiti s teškim pritiscima na vrhu. Više cijenite poštovanje nego slavu.
+      <br>Ako imate **Mjesec u 10. kući**, vaša karijera je vezana uz vaše emocije ili osjećaje javnosti. Možda ste poznati, ali se osjećate vrlo ranjivo u očima javnosti. Vaša "maska" je vaš posao.</p>
 
-      <h2 id="the-eleventh-house">11th House: The House of Community</h2>
-      <p>Social networks and groups. It also rules your hopes, wishes, and humanitarian goals.
-      <br><strong>Keywords:</strong> Friends, networks, social media, groups, hopes, future goals, humanitarianism, ideals.</p>
-      <p>If you have **Uranus in the 11th House**, you attract eccentric friends and might be a leader in a revolutionary social movement. You want to change the world.
-      <br>If you have **Venus in the 11th House**, your friends are beautiful or artistic. You find love through your social circle and enjoy group activities.
-      <br>If you have **Mars in the 11th House**, you are very active in groups but might experience conflict or competition within your friend circle. Such energy is best applied to activism.</p>
+      <h2 id="the-eleventh-house">11. kuća: Kuća zajednice</h2>
+      <p>Društvene mreže i grupe. Također vlada vašim nadama, željama i humanitarnim ciljevima.
+      <br><strong>Ključne riječi:</strong> Prijatelji, mreže, društveni mediji, grupe, nade, budući ciljevi, humanitarizam, ideali.</p>
+      <p>Ako imate **Urana u 11. kući**, privlačite ekscentrične prijatelje i možda ste vođa u revolucionarnom društvenom pokretu. Želite promijeniti svijet.
+      <br>Ako imate **Veneru u 11. kući**, vaši prijatelji su lijepi ili umjetnički nastrojeni. Ljubav nalazite kroz svoj društveni krug i uživate u grupnim aktivnostima.
+      <br>Ako imate **Mars u 11. kući**, vrlo ste aktivni u grupama, ali biste mogli doživjeti sukob ili natjecanje unutar kruga prijatelja. Takva energija se najbolje primjenjuje u aktivizmu.</p>
 
-      <h2 id="the-twelfth-house">12th House: The House of Unconscious</h2>
-      <p>The "closet" of the zodiac. It rules things that are hidden: spirituality, dreams, secrets, and the subconscious. It is where everything dissolves.
-      <br><strong>Keywords:</strong> Solitude, spirituality, hidden enemies, hospitals, karma, dreams, secrets, release.</p>
-      <p>If you have **Neptune in the 12th House**, you are highly psychic and sensitive. You need a lot of time alone to filter out the world's energy and connect with the divine.
-      <br>If you have the **Sun in the 12th House**, you might be a "power behind the throne." You are private and find your strength in solitude or spiritual pursuits. You are an "old soul."
-      <br>If you have **Saturn in the 12th House**, you might struggle with hidden fears or a sense of "cosmic guilt" until you master your internal world. You are working off deep karmic debts.</p>
+      <h2 id="the-twelfth-house">12. kuća: Kuća nesvjesnog</h2>
+      <p>"Ormar" zodijaka. Vlada stvarima koje su skrivene: duhovnošću, snovima, tajnama i podsviješću. To je mjesto gdje se sve stapa.
+      <br><strong>Ključne riječi:</strong> Samoća, duhovnost, skriveni neprijatelji, bolnice, karma, snovi, tajne, otpuštanje.</p>
+      <p>Ako imate **Neptuna u 12. kući**, vrlo ste vidoviti i osjetljivi. Trebate puno vremena sami da filtrirate energiju svijeta i povežete se s božanskim.
+      <br>Ako imate **Sunce u 12. kući**, možda ste "moć iza prijestolja". Privatni ste i svoju snagu nalazite u samoći ili duhovnim potragama. Vi ste "stara duša".
+      <br>Ako imate **Saturn u 12. kući**, možda se borite sa skrivenim strahovima ili osjećajem "kozmičke krivnje" dok ne ovladate svojim unutarnjim svijetom. Odrađujete duboke karmičke dugove.</p>
 
-      <h2 id="planetary-placements">Major Planets in the Houses: A Detailed Summary</h2>
-      <p>When analyzing your chart, remember that planets are the "drivers" and the house is the "territory." 
-      <br><strong>The Sun:</strong> Where you shine. If it's in the 10th, you shine in your career. If it's in the 4th, you shine in your private life.
-      <br><strong>The Moon:</strong> Where you feel safe. If it's in the 2nd, you feel safe when you have money. If it's in the 6th, you feel safe when your routine is perfect.
-      <br><strong>Mercury:</strong> Where you talk. If it's in the 1st, you talk about yourself. If it's in the 9th, you talk about God or philosophy.
-      <br><strong>Venus:</strong> Where you love. If it's in the 11th, you love your friends. If it's in the 5th, you love the thrill of romance.
-      <br><strong>Mars:</strong> Where you fight. If it's in the 7th, you fight with your partner. If it's in the 3rd, you fight with your neighbors or through your words.
-      <br><strong>Jupiter:</strong> Where you grow. If it's in the 8th, you grow through crisis and deep intimacy. If it's in the 1st, your physical presence and vitality expand.
-      <br><strong>Saturn:</strong> Where you work. If it's in the 2nd, you work hard for every penny. If it's in the 12th, you work hard on your spiritual discipline.
-      <br><strong>Uranus:</strong> Where you disrupt. If it's in the 4th, your home life is unconventional. If it's in the 10th, your career path is a roller coaster.
-      <br><strong>Neptune:</strong> Where you dream. If it's in the 7th, you dream of a perfect partner. If it's in the 2nd, your finances are "foggy" or spiritual.
-      <br><strong>Pluto:</strong> Where you control. If it's in the 1st, you have an intense, magnetic personality. If it's in the 6th, you have an intense need to control your health and work.</p>
+      <h2 id="planetary-placements">Glavni planeti u kućama: Detaljan sažetak</h2>
+      <p>Kada analizirate svoju kartu, zapamtite da su planeti "vozači", a kuća je "teritorij". 
+      <br><strong>Sunce:</strong> Gdje sjajite. Ako je u 10., sjajite u karijeri. Ako je u 4., sjajite u privatnom životu.
+      <br><strong>Mjesec:</strong> Gdje se osjećate sigurno. Ako je u 2., osjećate se sigurno kada imate novca. Ako je u 6., osjećate se sigurno kada je vaša rutina savršena.
+      <br><strong>Merkur:</strong> Gdje govorite. Ako je u 1., govorite o sebi. Ako je u 9., govorite o Bogu ili filozofiji.
+      <br><strong>Venera:</strong> Gdje volite. Ako je u 11., volite svoje prijatelje. Ako je u 5., volite uzbuđenje romantike.
+      <br><strong>Mars:</strong> Gdje se borite. Ako je u 7., borite se s partnerom. Ako je u 3., borite se sa susjedima ili riječima.
+      <br><strong>Jupiter:</strong> Gdje rastete. Ako je u 8., rastete kroz krizu i duboku intimnost. Ako je u 1., vaša fizička prisutnost i vitalnost se šire.
+      <br><strong>Saturn:</strong> Gdje radite. Ako je u 2., radite naporno za svaki novčić. Ako je u 12., radite naporno na svojoj duhovnoj disciplini.
+      <br><strong>Uran:</strong> Gdje ometate. Ako je u 4., vaš obiteljski život je nekonvencionalan. Ako je u 10., vaš put karijere je vrtuljak.
+      <br><strong>Neptun:</strong> Gdje sanjate. Ako je u 7., sanjate o savršenom partneru. Ako je u 2., vaše financije su "maglovite" ili duhovne.
+      <br><strong>Pluton:</strong> Gdje kontrolirate. Ako je u 1., imate intenzivnu, magnetsku osobnost. Ako je u 6., imate intenzivnu potrebu kontrolirati svoje zdravlje i posao.</p>
 
-      <h2 id="stelliums">What is a Stellium in a House?</h2>
-      <p>A **Stellium** is when three or more planets gather in a single house. This creates a massive "weight" in that area of your life. If you have a 10th House Stellium, your life will revolve almost entirely around your public achievement. If you have a 12th House Stellium, your life might be lived in the shadows, focusing on healing or research. A Stellium is a "soul focus"—it shows where you have concentrated your energy over many lifetimes to master a specific theme.</p>
+      <h2 id="stelliums">Što je stelium u kući?</h2>
+      <p>**Stelium** je kada se tri ili više planeta okupe u jednoj kući. To stvara ogromnu "težinu" u tom području vašeg života. Ako imate stelium u 10. kući, vaš život će se gotovo u potpunosti vrtjeti oko vašeg javnog postignuća. Ako imate stelium u 12. kući, vaš život bi se mogao odvijati u sjeni, fokusirajući se na iscjeljivanje ili istraživanje. Stelium je "fokus duše"—pokazuje gdje ste koncentrirali svoju energiju tijekom mnogih života kako biste ovladali određenom temom.</p>
 
-      <h2 id="empty-houses">What if a House is Empty? The Power of Rulers</h2>
-      <p>One of the most common questions in <strong>birth chart readings</strong> is: "My 7th House is empty! Does that mean I'll never get married?" The answer is a resounding NO. There are 12 houses but only 10 planets (including Sun and Moon). Mathematically, everyone has empty houses.</p>
-      <p>An empty house just means that this area of life is not a primary "focal point" for your soul's evolution in this lifetime—it's not where you have the most "work" to do. To understand an empty house, you look at the <strong>House Ruler</strong>. 
-      <br>1. Look at the sign on the cusp (the start) of the empty house.
-      <br>2. Find the planet that rules that sign (e.g., if the cusp is Taurus, the ruler is Venus).
-      <br>3. Locate that ruling planet in your chart. 
-      <br>If your empty 7th House (Partnership) is in Taurus, and your Venus is in the 10th House (Career), it means you will likely meet your partner through your work or professional life. The "story" of your partnership is tied to your career. This adds layers of depth to your <strong>astrology reading</strong>.</p>
+      <h2 id="empty-houses">Što ako je kuća prazna? Moć vladara</h2>
+      <p>Jedno od najčešćih pitanja u <strong>čitanjima natalnih karata</strong> je: "Moja 7. kuća je prazna! Znači li to da se nikada neću vjenčati?" Odgovor je odlučno NE. Postoji 12 kuća, ali samo 10 planeta (uključujući Sunce i Mjesec). Matematički, svatko ima prazne kuće.</p>
+      <p>Prazna kuća samo znači da to područje života nije primarna "žarišna točka" za evoluciju vaše duše u ovom životu—to nije mjesto gdje imate najviše "posla". Da biste razumjeli praznu kuću, gledate <strong>vladara kuće</strong>. 
+      <br>1. Pogledajte znak na vrhu (početku) prazne kuće.
+      <br>2. Pronađite planet koji vlada tim znakom (npr. ako je vrh Bik, vladar je Venera).
+      <br>3. Locirajte taj vladajući planet u svojoj karti. 
+      <br>Ako je vaša prazna 7. kuća (partnerstvo) u Biku, a vaša Venera u 10. kući (karijera), to znači da ćete vjerojatno upoznati svog partnera kroz posao ili profesionalni život. "Priča" vašeg partnerstva vezana je uz vašu karijeru. Ovo dodaje slojeve dubine vašem <strong>astrološkom čitanju</strong>.</p>
 
-      <h2 id="retrograde">Retrograde Planets in the Houses</h2>
-      <p>When a planet is retrograde in a house, its energy is turned inward. 
-      <br>**Mercury Retrograde in the 3rd:** You think deeply and reflectively, but may struggle to communicate your thoughts quickly to others.
-      <br>**Venus Retrograde in the 5th:** You might re-evaluate your past romances or find it difficult to express your creative joy publicly until later in life.
-      <br>**Mars Retrograde in the 1st:** Your drive is Internalized. You might struggle with "righteous anger" or wait a long time before taking action, but when you do, it is well-considered.
-      <br>Retrograde house placements often indicate "unfinished business" from a past life that requires deep internal reflection before it can manifest successfully in the outer world.</p>
+      <h2 id="retrograde">Retrogradni planeti u kućama</h2>
+      <p>Kada je planet retrogradan u kući, njegova energija je okrenuta prema unutra. 
+      <br>**Retrogradni Merkur u 3. kući:** Razmišljate duboko i refleksivno, ali se možda borite brzo prenijeti svoje misli drugima.
+      <br>**Retrogradna Venera u 5. kući:** Možda ćete ponovno procijeniti svoje prošle romanse ili vam biti teško javno izraziti svoju kreativnu radost do kasnije u životu.
+      <br>**Retrogradni Mars u 1. kući:** Vaš nagon je internaliziran. Možda se borite s "pravednim gnjevom" ili dugo čekate prije poduzimanja akcije, ali kada to učinite, to je dobro promišljeno.
+      <br>Položaji retrogradnih kuća često ukazuju na "nezavršeni posao" iz prošlog života koji zahtijeva duboku unutarnju refleksiju prije nego što se može uspješno manifestirati u vanjskom svijetu.</p>
 
-      <h2 id="derived-houses">Advanced Technique: Derived Houses</h2>
-      <p>Once you master the basics, you can use "Derived Houses" to see things like "the wealth of your partner" or "the siblings of your spouse." 
-      <br>For example:
-      <br>**8th House:** The 2nd House (money) of the 7th House (partner). It shows your partner's wealth and how you share it.
-      <br>**11th House:** The 2nd House (income) of the 10th House (career). It shows the money you *make* from your job.
-      <br>**6th House:** The 3rd House (communication) of the 4th House (home). It shows how you talk to your family.
-      <br>This "turning the chart" technique allows an astrologer to answer almost any specific question about people in your life using only your own birth chart.</p>
+      <h2 id="derived-houses">Napredna tehnika: Izvedene kuće</h2>
+      <p>Jednom kada savladate osnove, možete koristiti "Izvedene kuće" da biste vidjeli stvari poput "bogatstva vašeg partnera" ili "braće i sestara vašeg supružnika". 
+      <br>Na primjer:
+      <br>**8. kuća:** 2. kuća (novac) 7. kuće (partner). Pokazuje bogatstvo vašeg partnera i kako ga dijelite.
+      <br>**11. kuća:** 2. kuća (prihod) 10. kuće (karijera). Pokazuje novac koji *zarađujete* od svog posla.
+      <br>**6. kuća:** 3. kuća (komunikacija) 4. kuće (dom). Pokazuje kako razgovarate s obitelji.
+      <br>Ova tehnika "okretanja karte" omogućuje astrologu da odgovori na gotovo svako specifično pitanje o ljudima u vašem životu koristeći samo vašu natalnu kartu.</p>
 
-      <h2 id="progressions">Progressed Houses: How Your Life Cycles Evolve</h2>
-      <p>Your birth chart is your "natal seed," but you are a growing tree. Through **Secondary Progressions**, your house cusps "move" over time (roughly 1 degree per year). This means that eventually, your Progressed Sun will move from one house to the next.
-      <br>When your Sun progresses into the 10th House, you enter a 30-year cycle of career focus, regardless of where your natal Sun is. When it moves into the 4th, you suddenly want to buy a house and settle down. Understanding your Progressed Houses is the secret to timing the major chapters of your life.</p>
+      <h2 id="progressions">Progresivne kuće: Kako vaši životni ciklusi evoluiraju</h2>
+      <p>Vaša natalna karta je vaše "natalno sjeme", ali vi ste stablo koje raste. Kroz **sekundarne progresije**, vrhovi vaših kuća se "pomiču" tijekom vremena (otprilike 1 stupanj godišnje). To znači da će se na kraju vaše Progresivno Sunce pomaknuti iz jedne kuće u drugu.
+      <br>Kada vaše Sunce napreduje u 10. kuću, ulazite u tridesetogodišnji ciklus fokusa na karijeru, bez obzira na to gdje je vaše natalno Sunce. Kada se preseli u 4., iznenada želite kupiti kuću i skrasiti se. Razumijevanje vaših progresivnih kuća tajna je određivanja vremena glavnih poglavlja vašeg života.</p>
 
-      <h2 id="conclusion">Integrating Your Map</h2>
-      <p>Understanding the 12 Houses is the key to moving from "pop astrology" to a deep, resonant understanding of your destiny. By looking at which houses have the most planets (a "Stellium"), you can identify which areas of life will be the most active for you. Is your chart concentrated in the bottom half? You are likely a more private, family-oriented person. Is it concentrated at the top? You are likely driven by public achievement and career.</p>
+      <h2 id="conclusion">Integracija vaše karte</h2>
+      <p>Razumijevanje 12 kuća ključ je za prelazak s "pop astrologije" na duboko, rezonantno razumijevanje vaše sudbine. Gledajući koje kuće imaju najviše planeta ("Stelium"), možete identificirati koja će područja života biti najaktivnija za vas. Je li vaša karta koncentrirana u donjoj polovici? Vjerojatno ste privatnija, obiteljski orijentirana osoba. Je li koncentrirana na vrhu? Vjerojatno vas pokreću javna postignuća i karijera.</p>
       
-      <p>At Astralo, our <strong>personalized astrology reports</strong> take the guesswork out of house interpretation. We synthesize the sign, the planets, and the house rulers into a cohesive narrative that helps you navigate your life with clarity and purpose. Your map is already written in the stars—let us help you read it. Whether you are looking for career guidance or love advice, the houses hold the answer. Start your journey today and discover the stage you were born to perform on.</p>
+      <p>U Astralu, naši <strong>personalizirani astrološki izvještaji</strong> uklanjaju nagađanja iz tumačenja kuća. Sintetiziramo znak, planete i vladare kuća u kohezivnu priču koja vam pomaže navigirati životom s jasnoćom i svrhom. Vaša karta je već zapisana u zvijezdama—dopustite nam da vam pomognemo da je pročitate. Bilo da tražite savjet za karijeru ili ljubavni savjet, kuće drže odgovor. Započnite svoje putovanje danas i otkrijte pozornicu na kojoj ste rođeni da nastupate.</p>
     `
 };

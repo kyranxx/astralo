@@ -1,84 +1,84 @@
 /**
- * weekly-horoscope-predictions - RO (Fallback to English content)
+ * weekly-horoscope-predictions - RO
  */
 import type { BlogPostTranslation } from '../../types';
 
 export const ro: BlogPostTranslation = {
-    title: '📅 Weekly Horoscope: How to Navigate the Cosmic Week Ahead',
-    excerpt: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    category: 'Horoscopes',
-    metaDescription: 'Maximize your week with our weekly horoscope guide. Understand planetary days, navigate the Void-of-Course Moon, and plan your schedule around astrological timing.',
-    keywords: 'weekly horoscope, weekly astrology, planetary days, void of course moon, weekly zodiac forecast, astrology planning, best days this week',
-    quickSummary: [
-        'Each day of the week is ruled by a different planet (Monday/Moon, Tuesday/Mars, etc.)',
-        'Weekly horoscopes track the movement of faster planets through the zodiac signs',
-        'The Void-of-Course Moon is a critical "pause time" where major actions should be avoided',
-        'Mondays are for emotion, Tuesdays for action, Fridays for romance'
-    ],
-    keyTakeaways: [
-        'Check the weekly forecast on Sunday evening to plan your calendar',
-        'Schedule difficult meetings on Thursday (Jupiter) or Saturday (Saturn) depending on the goal',
-        'Avoid signing contracts when the Moon is Void',
-        'Use the weekly energy flow rather than fighting against it'
-    ],
-    tableOfContents: [
-        { id: 'weekly-flow', title: 'The Astrological Rhythm' },
-        { id: 'planetary-days', title: 'Rulers of the Days' },
-        { id: 'void-moon', title: 'The Void-of-Course Moon' },
-        { id: 'transits', title: 'Tracking Weekly Transits' },
-        { id: 'by-sign', title: 'Weekly Advice by Sign' }
-    ],
-    content: `
-      <h2 id="weekly-flow">The Astrological Rhythm of the Week</h2>
-      <p>Do you ever feel like some weeks flow like water, while others feel like wading through mud? Or why getting things done on a Tuesday feels different than on a Friday? This isn't random. The structure of our 7-day week is actually based entirely on <strong>astrology</strong>.</p>
+  title: '📅 Horoscop Săptămânal: Cum să navighezi în săptămâna cosmică ce urmează',
+  excerpt: 'Profită la maximum de săptămâna ta cu ghidul nostru de horoscop săptămânal. Înțelege zilele planetare, navighează în perioadele de Lună fără curs și planifică-ți programul în funcție de sincronizarea astrologică.',
+  category: 'Horoscop',
+  metaDescription: 'Profită la maximum de săptămâna ta cu ghidul nostru de horoscop săptămânal. Înțelege zilele planetare, navighează în perioadele de Lună fără curs și planifică-ți programul în funcție de sincronizarea astrologică.',
+  keywords: 'horoscop săptămânal, astrologie săptămânală, zile planetare, lună fără curs, previziuni zodiacale săptămânale, planificare astrologică, cele mai bune zile din această săptămână',
+  quickSummary: [
+    'Fiecare zi a săptămânii este guvernată de o planetă diferită (Luni/Lună, Marți/Marte, etc.)',
+    'Horoscopul săptămânal urmărește mișcarea planetelor rapide prin semnele zodiacale',
+    'Luna fără curs (Void-of-Course) este un moment critic de „pauză” în care ar trebui evitate acțiunile majore',
+    'Zilele de luni sunt pentru emoții, marțile pentru acțiune, vinerile pentru romantism'
+  ],
+  keyTakeaways: [
+    'Verifică prognoza săptămânală duminică seara pentru a-ți planifica calendarul',
+    'Programează întâlnirile dificile joi (Jupiter) sau sâmbătă (Saturn), în funcție de obiectiv',
+    'Evită semnarea contractelor atunci când Luna este fără curs',
+    'Folosește fluxul energetic săptămânal în loc să lupți împotriva lui'
+  ],
+  tableOfContents: [
+    { id: 'weekly-flow', title: 'Ritmul Astrologic' },
+    { id: 'planetary-days', title: 'Guvernatorii Zilelor' },
+    { id: 'void-moon', title: 'Luna fără curs (Void-of-Course)' },
+    { id: 'transits', title: 'Urmărirea Tranzitelor Săptămânale' },
+    { id: 'by-sign', title: 'Sfaturi Săptămânale pe Semne' }
+  ],
+  content: `
+      <h2 id="weekly-flow">Ritmul Astrologic al Săptămânii</h2>
+      <p>Ai simțit vreodată că unele săptămâni curg ca apa, în timp ce altele par o luptă prin noroi? Sau de ce finalizarea lucrurilor într-o marți se simte diferit față de o vineri? Acest lucru nu este întâmplător. Structura săptămânii noastre de 7 zile se bazează, de fapt, în întregime pe <strong>astrologie</strong>.</p>
       
-      <p>Understanding the <strong>weekly horoscope</strong> is about more than just knowing if you'll get a text back. It's about aligning your schedule with the ancient planetary rulers of time. When you work <em>with</em> the energy of the day, productivity increases and resistance vanishes.</p>
+      <p>Înțelegerea <strong>horoscopului săptămânal</strong> înseamnă mai mult decât a ști dacă vei primi un mesaj înapoi. Este vorba despre alinierea programului tău cu vechii guvernatori planetari ai timpului. Când lucrezi <em>cu</em> energia zilei, productivitatea crește și rezistența dispare.</p>
 
-      <h2 id="planetary-days">Rulers of the Days</h2>
-      <p>Each day is named after a planet (quite literally in languages like French or Spanish). Here is your guide to scheduling your week astrologically:</p>
+      <h2 id="planetary-days">Guvernatorii Zilelor</h2>
+      <p>Fiecare zi este numită după o planetă (literalmente în limbi precum franceza sau spaniola). Iată ghidul tău pentru planificarea săptămânii din punct de vedere astrologic:</p>
       
-      <h3>Monday (Moon Day) 🌙</h3>
-      <p><strong>Energy:</strong> Emotional, intuitive, fluctuating.<br><strong>Best for:</strong> Grocery shopping, cleaning the house, sleeping in, family dinners, reflecting.<br><strong>Avoid:</strong> High-stress presentations or rigid logic.</p>
+      <h3>Luni (Ziua Lunii) 🌙</h3>
+      <p><strong>Energie:</strong> Emoțională, intuitivă, fluctuantă.<br><strong>Recomandat pentru:</strong> Cumpărături alimentare, curățarea casei, dormit până târziu, cine în familie, reflecție.<br><strong>De evitat:</strong> Prezentări cu stres ridicat sau logică rigidă.</p>
 
-      <h3>Tuesday (Mars Day) ♂</h3>
-      <p><strong>Energy:</strong> Aggressive, energetic, sharp.<br><strong>Best for:</strong> Exercise, starting new projects, confronting issues, surgery, competition.<br><strong>Avoid:</strong> Meditation, trying to chill.</p>
+      <h3>Marți (Ziua lui Marte) ♂</h3>
+      <p><strong>Energie:</strong> Agresivă, energică, ascuțită.<br><strong>Recomandat pentru:</strong> Exerciții fizice, începerea de noi proiecte, confruntarea problemelor, competiție.<br><strong>De evitat:</strong> Meditație, încercarea de relaxare.</p>
       
-      <h3>Wednesday (Mercury Day) ☿️</h3>
-      <p><strong>Energy:</strong> Communicative, busy, fast.<br><strong>Best for:</strong> Emails, meetings, writing, sales, short trips, networking.<br><strong>Avoid:</strong> Silence (it won't happen anyway).</p>
+      <h3>Miercuri (Ziua lui Mercur) ☿️</h3>
+      <p><strong>Energie:</strong> Comunicativă, ocupată, rapidă.<br><strong>Recomandat pentru:</strong> Email-uri, întâlniri, scris, vânzări, călătorii scurte, networking.<br><strong>De evitat:</strong> Tăcere (oricum nu se va întâmpla).</p>
       
-      <h3>Thursday (Jupiter Day) ♃</h3>
-      <p><strong>Energy:</strong> Expansive, lucky, optimistic.<br><strong>Best for:</strong> Launching big visions, asking for a raise, travel planning, higher learning.<br><strong>Avoid:</strong> Pinching pennies.</p>
+      <h3>Joi (Ziua lui Jupiter) ♃</h3>
+      <p><strong>Energie:</strong> Expansivă, norocoasă, optimistă.<br><strong>Recomandat pentru:</strong> Lansarea unor viziuni mari, cererea unei măriri de salariu, planificarea călătoriilor, învățământul superior.<br><strong>De evitat:</strong> Zgârcenia.</p>
       
-      <h3>Friday (Venus Day) ♀</h3>
-      <p><strong>Energy:</strong> Social, romantic, aesthetic.<br><strong>Best for:</strong> Dates, parties, buying clothes, art, relaxation, happy hour.<br><strong>Avoid:</strong> Dirty work or solitude.</p>
+      <h3>Vineri (Ziua lui Venus) ♀</h3>
+      <p><strong>Energie:</strong> Socială, romantică, estetică.<br><strong>Recomandat pentru:</strong> Întâlniri, petreceri, cumpărarea de haine, artă, relaxare.<br><strong>De evitat:</strong> Munca murdară sau solitudinea.</p>
       
-      <h3>Saturday (Saturn Day) ♄</h3>
-      <p><strong>Energy:</strong> Serious, heavy, disciplined.<br><strong>Best for:</strong> Yard work, long-term planning, studying, catching up on chores, duty.<br><strong>Avoid:</strong> Wild parties (unless they are formal events).</p>
+      <h3>Sâmbătă (Ziua lui Saturn) ♄</h3>
+      <p><strong>Energie:</strong> Serioasă, grea, disciplinată.<br><strong>Recomandat pentru:</strong> Lucrări în grădină, planificare pe termen lung, studiu, recuperarea sarcinilor casnice, datorie.<br><strong>De evitat:</strong> Petreceri sălbatice (cu excepția celor care sunt evenimente formale).</p>
       
-      <h3>Sunday (Sun Day) ☀️</h3>
-      <p><strong>Energy:</strong> Radiant, ego-centric, spiritual.<br><strong>Best for:</strong> Hobbies, worship/spirituality, playing with kids, being seen, rest.<br><strong>Avoid:</strong> Being invisible.</p>
+      <h3>Duminică (Ziua Soarelui) ☀️</h3>
+      <p><strong>Energie:</strong> Radiantă, egocentrică, spirituală.<br><strong>Recomandat pentru:</strong> Hobby-uri, spiritualitate, joaca cu copiii, a fi văzut, odihnă.<br><strong>De evitat:</strong> A fi invizibil.</p>
 
-      <h2 id="void-moon">The Void-of-Course Moon</h2>
-      <p>If you take one thing from this guide, let it be the <strong>Void-of-Course Moon</strong>. This occurs when the Moon has finished its last aspect to a planet in its current sign and is "floating" before entering the next sign.</p>
-      <p><strong>The Rule:</strong> "Nothing will come of the matter."</p>
-      <p>During a Void Moon, do not sign contracts, launch businesses, or send first dates requests. The energy inevitably sizzles out. Use this time for filing, sleeping, or editing work you've already started. It is a cosmic "time out."</p>
+      <h2 id="void-moon">Luna fără curs (Void-of-Course)</h2>
+      <p>Dacă reții un singur lucru din acest ghid, acela să fie <strong>Luna fără curs</strong>. Acest fenomen apare atunci când Luna a terminat ultimul său aspect cu o planetă în semnul actual și „plutește” înainte de a intra în următorul semn.</p>
+      <p><strong>Regula:</strong> „Nimic nu se va finaliza în această chestiune.”</p>
+      <p>În timpul unei Luni fără curs, nu semna contracte, nu lansa afaceri și nu trimite cereri pentru primele întâlniri. Energia se risipește inevitabil. Folosește acest timp pentru arhivare, somn sau editarea muncii pe care ai început-o deja. Este un „time out” cosmic.</p>
 
-      <h2 id="transits">Tracking Weekly Transits</h2>
-      <p>A good <strong>weekly astrology forecast</strong> also looks at the specific angles planets are making this week. For example:</p>
+      <h2 id="transits">Urmărirea Tranzitelor Săptămânale</h2>
+      <p>Un bun <strong>prognoză astrologică săptămânală</strong> analizează, de asemenea, unghiurile specifice pe care planetele le formează în această săptămână. De exemplu:</p>
       <ul>
-        <li><strong>Mercury Sextile Venus:</strong> A perfect week for social grace and asking for favors.</li>
-        <li><strong>Sun Square Pluto:</strong> A week of power struggles and intensity.</li>
-        <li><strong>Mars entering Libra:</strong> Energy shifts from work-focused to relationship-focused.</li>
+        <li><strong>Mercur Sextil Venus:</strong> O săptămână perfectă pentru grație socială și pentru a cere favoruri.</li>
+        <li><strong>Soare Careu Pluto:</strong> O săptămână de lupte pentru putere și intensitate.</li>
+        <li><strong>Marte intră în Balanță:</strong> Energia se mută de la orientarea spre muncă la orientarea spre relații.</li>
       </ul>
 
-      <h2 id="by-sign">Weekly Advice Templates</h2>
-      <p>While everyone's week is unique, here is how the signs typically handle weekly shifts:</p>
+      <h2 id="by-sign">Șabloane de Sfaturi Săptămânale</h2>
+      <p>Deși săptămâna fiecăruia este unică, iată cum gestionează semnele, de obicei, schimbările săptămânale:</p>
       <ul>
-        <li><strong>Cardinal Signs (Aries, Cancer, Libra, Capricorn):</strong> You are the initiators. Use the early week energy (Mon/Tue) to start things.</li>
-        <li><strong>Fixed Signs (Taurus, Leo, Scorpio, Aquarius):</strong> You are the sustainers. Use the mid-week energy to lock in progress.</li>
-        <li><strong>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces):</strong> You are the editors. Use the weekend or Mercury days to adapt and change course.</li>
+        <li><strong>Semne Cardinale (Berbec, Rac, Balanță, Capricorn):</strong> Sunteți inițiatorii. Folosiți energia de la începutul săptămânii (Luni/Marți) pentru a începe lucruri.</li>
+        <li><strong>Semne Fixe (Taur, Leu, Scorpion, Vărsător):</strong> Sunteți cei care susțin. Folosiți energia de la mijlocul săptămânii pentru a consolida progresul.</li>
+        <li><strong>Semne Mutabile (Gemeni, Fecioară, Săgetător, Pești):</strong> Sunteți editorii. Folosiți weekend-ul sau zilele lui Mercur pentru a vă adapta și a schimba cursul.</li>
       </ul>
       
-      <p><em>Check back every Sunday for your specific weekly forecast updated by the Astralo team!</em>
+      <p><em>Revino în fiecare duminică pentru prognoza ta săptămânală specifică, actualizată de echipa Astralo!</em>
     `
 };

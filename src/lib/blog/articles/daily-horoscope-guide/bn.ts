@@ -4,98 +4,116 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "⭐ Daily Horoscope 2026: The Ultimate Guide to Understanding Your Predictions",
-    excerpt: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    category: "Astrology 101",
-    metaDescription: "Master your daily horoscope predictions. A comprehensive guide to understanding how daily astrology works, why your Rising sign matters, and how to use planetary energy for success.",
-    keywords: "daily horoscope, horoscope today, today horoscope, daily zodiac, horoscope guide, understanding astrology, rising sign daily, planetary transits",
-    quickSummary: ["Daily horoscopes are powered by the fast-moving Moon and planetary aspects to your chart","Reading for your Rising Sign (Ascendant) often provides more accurate daily prediction accuracy","Planetary transits trigger specific events, emotions, and opportunities each day","Learn to use the Void-of-Course Moon periods to avoid wasted effort"],
-    keyTakeaways: ["Your Sun sign shows your core vitality, but your Rising sign sets the \"stage\" for your daily life","The Moon changes signs every 2.5 days, dictating the collective mood","Mercury Retrograde and other \"bad\" aspects are actually periods for review and recalibration","Integrating astrology into your morning routine can optimize your productivity and relationships"],
-    tableOfContents: [{"id":"introduction","title":"Why Read a Daily Horoscope?"},{"id":"science-behind-it","title":"The Mechanics: How It Works"},{"id":"rising-vs-sun","title":"The Golden Rule: Sun vs. Rising"},{"id":"planetary-players","title":"Key Planetary Players"},{"id":"zodiac-daily-styles","title":"Daily Styles of the 12 Signs"},{"id":"practical-rituals","title":"Daily Astrological Rituals"},{"id":"myth-busting","title":"Busting Common Myths"}],
-    content: `
-      <h2 id="introduction">Why Read a Daily Horoscope?</h2>
-      <p>For millions of people around the world, checking their <strong>daily horoscope</strong> is as essential as a morning cup of coffee. It’s a moment of pause, a ritual of self-reflection, and a way to prepare for the day's energy. But have you ever wondered what actually powers these predictions? Is it just random advice, or is there a complex cosmic clockwork behind the scenes?</p>
+  title: "⭐ আজকের রাশিফল ২০২৬: আপনার ভাগ্য বোঝার চূড়ান্ত নির্দেশিকা",
+  excerpt: "আপনার দৈনন্দিন রাশিফল নিয়ন্ত্রণে আনুন। প্রতিদিনের জ্যোতিষশাস্ত্র কীভাবে কাজ করে, কেন আপনার লগ্ন রাশি (Rising sign) গুরুত্বপূর্ণ এবং সাফল্যের জন্য কীভাবে গ্রহের শক্তি ব্যবহার করবেন তার একটি বিস্তারিত নির্দেশিকা।",
+  category: "জ্যোতিষশাস্ত্র ১০১",
+  metaDescription: "আপনার দৈনন্দিন রাশিফল নিয়ন্ত্রণে আনুন। প্রতিদিনের জ্যোতিষশাস্ত্র কীভাবে কাজ করে, কেন আপনার লগ্ন রাশি (Rising sign) গুরুত্বপূর্ণ এবং সাফল্যের জন্য কীভাবে গ্রহের শক্তি ব্যবহার করবেন তার একটি বিস্তারিত নির্দেশিকা।",
+  keywords: "আজকের রাশিফল, আজকের ভাগ্যফল, দৈনিক রাশিফল, রাশিচক্র, জ্যোতিষ নির্দেশিকা, লগ্ন রাশি, গ্রহের অবস্থান",
+  quickSummary: [
+    "দৈনিক রাশিফল দ্রুতগামী চন্দ্র এবং আপনার জন্মছকের সাথে গ্রহের অবস্থানের উপর ভিত্তি করে তৈরি হয়।",
+    "লগ্ন রাশির (Rising Sign) ওপর ভিত্তি করে রাশিফল পড়লে দৈনিক পূর্বাভাসে বেশি নির্ভুলতা পাওয়া যায়।",
+    "গ্রহের অবস্থান প্রতিদিন নির্দিষ্ট ঘটনা, আবেগ এবং সুযোগ তৈরি করে।",
+    "বৃথা শ্রম এড়াতে চন্দ্রের 'ভয়েড-অফ-কোর্স' (Void-of-Course) সময়কাল ব্যবহার করতে শিখুন।"
+  ],
+  keyTakeaways: [
+    "আপনার জন্মরাশি (Sun Sign) আপনার মূল সত্তাকে প্রকাশ করে, কিন্তু লগ্ন রাশি আপনার দৈনন্দিন জীবনের প্রেক্ষাপট তৈরি করে।",
+    "চন্দ্র প্রতি ২.৫ দিনে রাশি পরিবর্তন করে, যা আমাদের সমষ্টিগত মেজাজ নির্ধারণ করে।",
+    "বুধের বক্রী চলন (Mercury Retrograde) এবং অন্যান্য নেতিবাচক অবস্থান আসলে নিজেকে নতুন করে সাজানোর সময়।",
+    "আপনার সকালের রুটিনে জ্যোতিষশাস্ত্রকে অন্তর্ভুক্ত করলে আপনার উৎপাদনশীলতা এবং সামাজিক সম্পর্ক উন্নত হতে পারে।"
+  ],
+  tableOfContents: [
+    { id: "introduction", title: "কেন আজকের রাশিফল পড়বেন?" },
+    { id: "science-behind-it", title: "এর পিছনের বিজ্ঞান: কীভাবে এটি কাজ করে" },
+    { id: "rising-vs-sun", title: "সুবর্ণ নিয়ম: জন্মরাশি বনাম লগ্ন রাশি" },
+    { id: "planetary-players", title: "প্রধান গ্রহসমূহ" },
+    { id: "zodiac-daily-styles", title: "১২টি রাশির দৈনিক বৈশিষ্ট্য" },
+    { id: "practical-rituals", title: "দৈনন্দিন জ্যোতিষ আচার" },
+    { id: "myth-busting", title: "সাধারণ ভুল ধারণা দূর করা" }
+  ],
+  content: `
+      <h2 id="introduction">কেন আজকের রাশিফল পড়বেন?</h2>
+      <p>বিশ্বজুড়ে লক্ষ লক্ষ মানুষের কাছে সকালের এক কাপ চায়ের মতোই <strong>আজকের রাশিফল</strong> দেখা একটি অপরিহার্য বিষয়। এটি নিজেকে বোঝার একটি মুহূর্ত এবং দিনের শক্তির জন্য নিজেকে প্রস্তুত করার একটি মাধ্যম। কিন্তু আপনি কি কখনও ভেবে দেখেছেন এই পূর্বাভাসগুলোর পিছনে আসলে কী রয়েছে? এটি কি কেবল কিছু এলোমেলো পরামর্শ, নাকি এর পিছনে মহাজাগতিক কোনো বিজ্ঞান কাজ করে?</p>
       
-      <p>At Astralo, we believe that astrology is a tool for empowerment. A well-written horoscope doesn't just predict the future; it helps you <em>create</em> it. By understanding the cosmic weather—the position of the planets today relative to where they were when you were born—you can navigate challenges with grace and seize opportunities that might otherwise pass you by.</p>
+      <p>Astralo-তে আমরা বিশ্বাস করি যে জ্যোতিষশাস্ত্র হলো নিজেকে শক্তিশালী করার একটি হাতিয়ার। একটি ভালো রাশিফল কেবল ভবিষ্যৎবাণী করে না; বরং এটি আপনাকে আপনার ভবিষ্যৎ <em>সঠিকভাবে গড়তে</em> সাহায্য করে। আপনার জন্মের সময় গ্রহের অবস্থানের তুলনায় আজকের গ্রহের অবস্থান বুঝে আপনি চ্যালেঞ্জগুলো মোকাবেলা করতে পারেন এবং আসন্ন সুযোগগুলো লুফে নিতে পারেন।</p>
 
-      <h2 id="science-behind-it">The Mechanics: How It Works</h2>
-      <p>Astrology is often called the study of cycles. Your <strong>daily horoscope predictions</strong> are calculated using a technique called "transits." Imagine your birth chart (natal chart) is a permanent snapshot of the sky at your birth. The planets, however, keep moving. "Transits" occur when a moving planet in the sky makes a mathematical angle (an aspect) to a planet in your birth chart.</p>
+      <h2 id="science-behind-it">এর পিছনের বিজ্ঞান: কীভাবে এটি কাজ করে</h2>
+      <p>জ্যোতিষশাস্ত্রকে প্রায়ই চক্রের অধ্যয়ন বলা হয়। আপনার <strong>দৈনিক রাশিফল</strong> এক ধরণের বিশেষ কৌশলে গণনা করা হয় যাকে বলা হয় "ট্রানজিট" বা গোচর। কল্পনা করুন আপনার জন্মছক হলো আপনার জন্মের সময়ের মহাকাশের একটি স্থির ছবি। কিন্তু গ্রহগুলো সবসময় চলতে থাকে। যখন মহাকাশে চলমান কোনো গ্রহ আপনার জন্মছকের কোনো গ্রহের সাথে গণিতিক কোণ তৈরি করে, তখনই গোচর ঘটে।</p>
       
-      <h3>The Moon: The Minute Hand of Fate</h3>
-      <p>While planets like Jupiter take a year to change signs, the <strong>Moon</strong> moves incredibly fast, zipping through a zodiac sign in just about 2.5 days. This makes the Moon the primary driver of your <em>daily</em> mood and emotional landscape. When the Moon is in fiery Aries, we feel impulsive and energetic. When it shifts into grounded Taurus, we collectively slow down and crave comfort.</p>
+      <h3>চন্দ্র: ভাগ্যের মিনিটের কাঁটা</h3>
+      <p>বৃহস্পতির মতো গ্রহগুলোর রাশি পরিবর্তন করতে এক বছর সময় লাগলেও, <strong>চন্দ্র</strong> অত্যন্ত দ্রুত চলে এবং মাত্র ২.৫ দিনে একটি রাশি অতিক্রম করে। একারণেই চন্দ্র আপনার <em>দৈনিক</em> মেজাজ এবং আবেগের প্রধান নিয়ন্ত্রক। চন্দ্র যখন অগ্নিরাশি মেষ রাশিতে থাকে, তখন আমরা উদ্যমী বোধ করি। আবার যখন এটি বৃষ রাশিতে প্রবেশ করে, তখন আমরা ধীরস্থির এবং স্বাচ্ছন্দ্যপ্রিয় হয়ে উঠি।</p>
 
-      <h3>The Aspects: Conversations Between Planets</h3>
-      <p>Planets "talk" to each other through angles. A <strong>Trine (120°)</strong> is a harmonious conversation, bringing ease and luck. A <strong>Square (90°)</strong> is a tension point, forcing action or decision. Your daily horoscope interprets these conversations. If Mars (action) squares Saturn (restriction) in the sky, you might feel frustrated or blocked today. Knowing this helps you be patient rather than forcing a door that won't open.</p>
+      <h3>গ্রহের দৃষ্টি: গ্রহদের মধ্যে কথোপকথন</h3>
+      <p>গ্রহগুলো বিভিন্ন কোণের মাধ্যমে একে অপরের সাথে "কথা" বলে। <strong>ত্রিকোণ দৃষ্টি (১২০°)</strong> হলো একটি বন্ধুত্বপূর্ণ কথোপকথন যা শুভ ফল আনে। আবার <strong>কেন্দ্র দৃষ্টি (৯০°)</strong> হলো উত্তেজনার বিন্দু যা আপনাকে কোনো সিদ্ধান্ত নিতে বাধ্য করে। আপনার দৈনিক রাশিফল এই কথোপকথনগুলো ব্যাখ্যা করে।</p>
 
-      <h2 id="rising-vs-sun">The Golden Rule: Read for Your Rising চিহ্ন</h2>
-      <p>Here is the secret that professional astrologers know: <strong>For the most accurate daily prediction, you should read the horoscope for your Rising Sign (Ascendant), not just your Sun Sign.</strong></p>
+      <h2 id="rising-vs-sun">সুবর্ণ নিয়ম: আপনার লগ্ন রাশি অনুযায়ী পড়ুন</h2>
+      <p>পেশাদার জ্যোতিষীদের একটি গোপন তথ্য হলো: <strong>সবচেয়ে নির্ভুল পূর্বাভাসের জন্য আপনার জন্মরাশির (Sun Sign) পরিবর্তে লগ্ন রাশির (Rising Sign বা Ascendant) রাশিফল পড়া উচিত।</strong></p>
       
-      <p>Why? Because horoscopes are written using a "House System." Your Rising Sign determines the layout of the 12 houses in your chart. The 1st House is you, the 2nd is money, the 7th is relationships, and so on. When an astrologer writes "Aries will have a money opportunity today," they are looking at planetary movements through the 2nd House of an Aries Rising chart.</p>
+      <p>কেন? কারণ রাশিফলগুলি একটি "হাউস সিস্টেম" বা ভাব চক্রের ওপর ভিত্তি করে লেখা হয়। আপনার লগ্ন রাশি আপনার ছকের ১২টি ভাবের অবস্থান নির্ধারণ করে। প্রথম ভাব হলো আপনি স্বয়ং, দ্বিতীয় ভাব হলো অর্থ, সপ্তম ভাব হলো সম্পর্ক ইত্যাদি। যখন একজন জ্যোতিষী লেখেন "মেষ রাশির আজ অর্থলাভের যোগ রয়েছে", তখন তিনি আসলে লগ্ন মেষ রাশির ছকের দ্বিতীয় ভাবের গ্রহ সঞ্চার দেখেন।</p>
       <ul>
-        <li><strong>Read your Sun Sign</strong> for general themes about your ego, vitality, and core purpose.</li>
-        <li><strong>Read your Rising Sign</strong> for specific events, timing, and circumstances that will happen to you today.</li>
-        <li><strong>Read your Moon Sign</strong> if you want to understand your internal emotional state.</li>
+        <li><strong>জন্মরাশি (Sun Sign) পড়ুন</strong> আপনার মূল ব্যক্তিত্ব এবং প্রাণশক্তি সম্পর্কে জানতে।</li>
+        <li><strong>লগ্ন রাশি (Rising Sign) পড়ুন</strong> আজ আপনার সাথে ঘটবে এমন নির্দিষ্ট ঘটনা এবং সময় সম্পর্কে জানতে।</li>
+        <li><strong>চন্দ্র রাশি (Moon Sign) পড়ুন</strong> আপনার অভ্যন্তরীণ মানসিক অবস্থা বুঝতে।</li>
       </ul>
 
-      <h2 id="planetary-players">Key Planetary Players in Your Day</h2>
-      <p>Beyond the Moon, other fast-moving "personal planets" shape your daily experience:</p>
+      <h2 id="planetary-players">আপনার দিনের প্রধান গ্রহসমূহ</h2>
+      <p>চন্দ্র ছাড়াও অন্যান্য দ্রুতগামী গ্রহ আপনার দৈনন্দিন অভিজ্ঞতা নির্ধারণ করে:</p>
       <ul>
-        <li><strong>Mercury:</strong> Ruler of communication, technology, and travel. Its condition determines whether your emails land well or get lost in spam, and whether your commute is smooth or chaotic.</li>
-        <li><strong>Venus:</strong> Ruler of love, money, and values. A good Venus day is perfect for dates, shopping, or asking for a raise.</li>
-        <li><strong>Mars:</strong> The engine of the zodiac. It dictates your energy levels, drive, and libido. A challenging Mars day might lead to burnout or arguments if not channeled into exercise or hard work.</li>
+        <li><strong>বুধ:</strong> যোগাযোগ, প্রযুক্তি এবং ভ্রমণের কারক গ্রহ। আপনার ইমেইল সঠিক জায়গায় পৌঁছাবে নাকি স্প্যামে যাবে, তা বুধের অবস্থানের ওপর নির্ভর করে।</li>
+        <li><strong>শুক্র:</strong> প্রেম, অর্থ এবং সৌন্দর্যের কারক। শুক্রের শুভ অবস্থান ডেটিং বা বেতন বৃদ্ধির আলোচনার জন্য উপযুক্ত।</li>
+        <li><strong>মঙ্গল:</strong> রাশিচক্রের চালিকাশক্তি। এটি আপনার কাজের উদ্যম এবং শারীরিক শক্তি নিয়ন্ত্রণ করে। মঙ্গলের অশুভ অবস্থান আজ আপনাকে খিটখিটে করে তুলতে পারে।</li>
       </ul>
 
-      <h2 id="zodiac-daily-styles">Daily Styles of the 12 চিহ্নs</h2>
+      <h2 id="zodiac-daily-styles">১২টি রাশির দৈনিক বৈশিষ্ট্য</h2>
       
-      <h3>♈ Aries (March 21 - April 19)</h3>
-      <p><strong>Driven by Mars.</strong> You need physical movement to process daily energy. An Aries horoscope often focuses on initiatives, conflicts to resolve, and leadership moments. <em>Best daily habit:</em> Morning cardio.</p>
+      <h3>♈ মেষ (২১ মার্চ - ১৯ এপ্রিল)</h3>
+      <p><strong>মঙ্গল দ্বারা চালিত।</strong> আপনার শক্তি সঞ্চয় করতে শারীরিক পরিশ্রম প্রয়োজন। মেষ রাশির রাশিফল প্রায়ই নতুন উদ্যোগ এবং নেতৃত্বের ওপর গুরুত্ব দেয়। <em>সেরা অভ্যাস:</em> সকালে ব্যায়াম করা।</p>
 
-      <h3>♉ Taurus (April 20 - May 20)</h3>
-      <p><strong>Ruled by Venus.</strong> You process the day through your senses. Your horoscope often highlights financial moves and physical comfort. <em>Best daily habit:</em> A deliberate, delicious breakfast.</p>
+      <h3>♉ বৃষ (২০ এপ্রিল - ২০ মে)</h3>
+      <p><strong>শুক্র দ্বারা শাসিত।</strong> আপনি দিনটিকে আপনার ইন্দ্রিয় দিয়ে অনুভব করেন। আপনার রাশিফল প্রায়ই আর্থিক উন্নতি এবং শারীরিক স্বাচ্ছন্দ্যের ওপর আলোকপাত করে। <em>সেরা অভ্যাস:</em> এক চিমটি আয়েশ করে সকালের নাস্তা করা।</p>
 
-      <h3>♊ Gemini (May 21 - June 20)</h3>
-      <p><strong>Ruled by Mercury.</strong> Information is your fuel. Your daily forecast revolves around conversations, learning, and short trips. <em>Best daily habit:</em> Journaling or a morning podcast.</p>
+      <h3>♊ মিথুন (২১ মে - ২০ জুন)</h3>
+      <p><strong>বুধ দ্বারা শাসিত।</strong> তথ্যই আপনার চালিকাশক্তি। আপনার পূর্বাভাসে প্রায়ই কথোপকথন, শিক্ষা এবং ছোট ভ্রমণের কথা থাকে। <em>সেরা অভ্যাস:</em> ডায়েরি লেখা বা পডকাস্ট শোনা।</p>
 
-      <h3>♋ Cancer (June 21 - July 22)</h3>
-      <p><strong>Ruled by the Moon.</strong> You are the most cyclical sign. Your reading often centers on home, family, and emotional security. <em>Best daily habit:</em> Checking in with a loved one.</p>
+      <h3>♋ কর্কট (২১ জুন - ২২ জুলাই)</h3>
+      <p><strong>চন্দ্র দ্বারা শাসিত।</strong> আপনি অত্যন্ত আবেগপ্রবণ। আপনার রাশিফল প্রায়ই ঘর, পরিবার এবং মানসিক নিরাপত্তার ওপর গুরুত্ব দেয়। <em>সেরা অভ্যাস:</em> প্রিয়জনের খোঁজ নেওয়া।</p>
 
-      <h3>♌ Leo (July 23 - August 22)</h3>
-      <p><strong>Ruled by the Sun.</strong> You need to express yourself. Leos often find themes of creativity, romance, and recognition in their day. <em>Best daily habit:</em> Choosing an outfit that makes you feel confident.</p>
+      <h3>♌ সিংহ (২৩ জুলাই - ২২ আগস্ট)</h3>
+      <p><strong>সূর্য দ্বারা শাসিত।</strong> আপনি নিজেকে প্রকাশ করতে ভালোবাসেন। সিংহ রাশির মানুষেরা প্রায়ই সৃজনশীলতা এবং রোমান্সের ছোঁয়া পান। <em>সেরা অভ্যাস:</em> আত্মবিশ্বাস বাড়াতে ভালো পোশাক পরা।</p>
 
-      <h3>♍ Virgo (August 23 - September 22)</h3>
-      <p><strong>Ruled by Mercury.</strong> Order brings you peace. Your horoscope will frequently point to work tasks, health routines, and service. <em>Best daily habit:</em> Making a to-do list.</p>
+      <h3>♍ কন্যা (২৩ আগস্ট - ২২ সেপ্টেম্বর)</h3>
+      <p><strong>বুধ দ্বারা শাসিত।</strong> শৃঙ্খলা আপনাকে শান্তি দেয়। আপনার রাশিফলে কাজ, স্বাস্থ্য রুটিন এবং সেবার ওপর গুরুত্ব দেওয়া হয়। <em>সেরা অভ্যাস:</em> কাজের তালিকা তৈরি করা।</p>
 
-      <h3>♎ Libra (September 23 - October 22)</h3>
-      <p><strong>Ruled by Venus.</strong> Balance is key. You look for harmony in relationships. Your daily insights often focus on partnerships and aesthetics. <em>Best daily habit:</em> Meditation or balancing your environment.</p>
+      <h3>♎ তুলা (২৩ সেপ্টেম্বর - ২২ অক্টোবর)</h3>
+      <p><strong>শুক্র দ্বারা শাসিত।</strong> ভারসাম্যই আপনার মূলকথা। সম্পর্কে মধুরতা বজায় রাখতে আপনার রাশিফল সাহায্য করে। <em>সেরা অভ্যাস:</em> ধ্যান করা।</p>
 
-      <h3>♏ Scorpio (October 23 - November 21)</h3>
-      <p><strong>Ruled by Pluto & Mars.</strong> You seek depth. Surface-level days bore you; your horoscope highlights transformation, secrets, and shared resources. <em>Best daily habit:</em> Deep research or private reflection.</p>
+      <h3>♏ বৃশ্চিক (২৩ অক্টোবর - ২১ নভেম্বর)</h3>
+      <p><strong>প্লুটো ও মঙ্গল দ্বারা শাসিত।</strong> আপনি গভীরতা খোঁজেন। আপনার রাশিফলে পরিবর্তন এবং গোপন রহস্যের উন্মোচন ঘটতে পারে। <em>সেরা অভ্যাস:</em> নিভৃতে সময় কাটানো।</p>
 
-      <h3>♐ Sagittarius (November 22 - December 21)</h3>
-      <p><strong>Ruled by Jupiter.</strong> You crave expansion. Your day is often about the big picture, philosophy, or foreign influences. <em>Best daily habit:</em> Learning something entirely new.</p>
+      <h3>♐ ধনু (২২ নভেম্বর - ২১ ডিসেম্বর)</h3>
+      <p><strong>বৃহস্পতি দ্বারা শাসিত।</strong> আপনি নতুন কিছু শিখতে চান। আপনার দিনটি প্রায়ই দর্শন বা উচ্চতর জ্ঞানের ওপর গুরুত্ব দেয়। <em>সেরা অভ্যাস:</em> নতুন কিছু শেখা।</p>
 
-      <h3>♑ Capricorn (December 22 - January 19)</h3>
-      <p><strong>Ruled by Saturn.</strong> You are building a legacy. Daily themes for you are often about career, reputation, and long-term goals. <em>Best daily habit:</em> Tackling the hardest task first.</p>
+      <h3>♑ মকর (২২ ডিসেম্বর - ১৯ জানুয়ারি)</h3>
+      <p><strong>শনি দ্বারা শাসিত।</strong> আপনি নিজের ভবিষ্যৎ গড়ছেন। ক্যারিয়ার এবং লক্ষ্য পূরণের ওপর আপনার রাশিফল গুরুত্ব দেয়। <em>সেরা অভ্যাস:</em> কঠিন কাজটি আগে করা।</p>
 
-      <h3>♒ Aquarius (January 20 - February 18)</h3>
-      <p><strong>Ruled by Uranus & Saturn.</strong> You look to the future. Your horoscope highlights social networks, technology, and innovation. <em>Best daily habit:</em> Connecting with your community.</p>
+      <h3>♒ কুম্ভ (২০ জানুয়ারি - ১৮ ফেব্রুয়ারি)</h3>
+      <p><strong>ইউরেনাস ও শনি দ্বারা শাসিত।</strong> আপনি ভবিষ্যৎ নিয়ে ভাবেন। সামাজিক যোগাযোগ এবং উদ্ভাবনের ওপর আপনার রাশিফল গুরুত্ব পায়। <em>সেরা অভ্যাস:</em> বন্ধুদের সাথে যোগাযোগ রাখা।</p>
 
-      <h3>♓ Pisces (February 19 - March 20)</h3>
-      <p><strong>Ruled by Neptune & Jupiter.</strong> You drift between worlds. Your daily guidance is often spiritual, artistic, or intuitive. <em>Best daily habit:</em> Dream recording or creative visualization.</p>
+      <h3>♓ মীন (১৯ ফেব্রুয়ারি - ২০ মার্চ)</h3>
+      <p><strong>নেপচুন ও বৃহস্পতি দ্বারা শাসিত।</strong> আপনি অন্য জগতে বাস করেন। আপনার নির্দেশনা প্রায়ই আধ্যাত্মিক এবং শৈল্পিক হয়। <em>সেরা অভ্যাস:</em> স্বপ্নের কথা লিখে রাখা।</p>
 
-      <h2 id="practical-rituals">Daily Astrological Rituals</h2>
-      <p>How can you use this information? Don't just read it—live it.</p>
+      <h2 id="practical-rituals">দৈনন্দিন জ্যোতিষ আচার</h2>
+      <p>আপনি এই তথ্যগুলো কীভাবে ব্যবহার করবেন? কেবল পড়বেন না—এটি প্রয়োগ করুন।</p>
       <ol>
-        <li><strong>The Morning Check-In:</strong> Read your forecast <em>before</em> you check your email. This sets a cosmic intention.</li>
-        <li><strong>Note the Moon Sign:</strong> If the Moon is in Virgo, clean your desk. If it's in Libra, call your business partner. Swimming with the current is always easier.</li>
-        <li><strong>Respect the Void:</strong> The "Void-of-Course" Moon is a period when the Moon makes no more aspects before changing signs. It's a time of fuzziness. Never sign contracts or launch businesses during the Void. Use it for rest.</li>
+        <li><strong>সকালের রুটিন:</strong> ইমেইল দেখার <em>আগে</em> আপনার রাশিফল পড়ুন। এটি আপনার সারাদিনের লক্ষ্য স্থির করতে সাহায্য করবে।</li>
+        <li><strong>চন্দ্রের অবস্থান লক্ষ্য করুন:</strong> চন্দ্র যদি কন্যা রাশিতে থাকে, তবে ঘর পরিষ্কার করুন। তুলা রাশিতে থাকলে সঙ্গীকে সময় দিন। স্রােতের অনুকূলে চলা সবসময় সহজ।</li>
+        <li><strong>ভয়েড-অফ-কোর্স সময়কে সম্মান করুন:</strong> রাশি পরিবর্তনের আগে চন্দ্রের নিষ্ক্রিয় সময়কাল হলো ভয়েড-অফ-কোর্স। এই সময় কোনো চুক্তিতে সই করবেন না বা নতুন কিছু শুরু করবেন না।</li>
       </ol>
 
-      <h2 id="myth-busting">Busting Common Myths</h2>
-      <p><strong>"Horoscopes are too vague."</strong> <br>Generic newspaper horoscopes are vague because they only look at Sun Signs. A personalized reading, like the ones generated by our sophisticated AI at Astralo, considers the nuance of your entire chart.</p>
-      <p><strong>"Astrology predicts a fixed fate."</strong> <br>False. Astrology predicts <em>energy</em> and <em>weather</em>. It might rain (a difficult transit), but you decide whether to carry an umbrella or dance in it. You always have free will.</p>
+      <h2 id="myth-busting">সাধারণ ভুল ধারণা দূর করা</h2>
+      <p><strong>"রাশিফল খুব বেশি অস্পষ্ট হয়।"</strong> <br>সাধারণ সংবাদপত্রের রাশিফল অস্পষ্ট হতে পারে কারণ তারা কেবল জন্মরাশি দেখে। Astralo-র উন্নত AI দ্বারা তৈরি রাশিফল আপনার পুরো জন্মছকের সূক্ষ্ম বিষয়গুলো বিবেচনা করে।</p>
+      <p><strong>"জ্যোতিষশাস্ত্র ভাগ্যকে স্থির করে দেয়।"</strong> <br>ভুল। জ্যোতিষশাস্ত্র কেবল দিনের <em>শক্তি</em> এবং <em>ধরণ</em> পূর্বাভাস দেয়। বৃষ্টি হতে পারে (চ্যালেঞ্জিং গোচর), কিন্তু আপনি ছাতা নেবেন নাকি বৃষ্টিতে ভিজবেন—তা আপনার সিদ্ধান্ত।</p>
       
-      <h3>Ready to Dive Deeper?</h3>
-      <p>While general forecasts are helpful, nothing beats a reading derived from your exact time and place of birth. Your unique natal chart is a complex map that no two people share. Unlock the full potential of your cosmic design with Astralo’s premium personalized readings.</p>
+      <h3>আরও গভীরে যেতে চান?</h3>
+      <p>সাধারণ পূর্বাভাস সহায়ক হলেও, আপনার সঠিক জন্ম সময় এবং স্থানের ওপর ভিত্তি করে তৈরি ব্যক্তিগত রাশিফলের কোনো বিকল্প নেই। আপনার অনন্য জন্মছক হলো আপনার জীবনের মানচিত্র। Astralo-র প্রিমিয়াম ব্যক্তিগত রাশিফলের মাধ্যমে আপনার পূর্ণ সম্ভাবনাকে উন্মোচন করুন।</p>
     `
 };
