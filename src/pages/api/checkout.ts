@@ -94,7 +94,8 @@ export const POST: APIRoute = async ({ request }) => {
             return 'auto';
         };
 
-        const session = await stripe.checkout.sessions.create({
+        // Build session params - invoice creation may fail if Stripe account doesn't have business profile
+        const sessionParams: Stripe.Checkout.SessionCreateParams = {
             payment_method_types: ['card'],
             line_items: [
                 {
@@ -109,16 +110,6 @@ export const POST: APIRoute = async ({ request }) => {
                 },
             ],
             mode: 'payment',
-            invoice_creation: {
-                enabled: true,
-                invoice_data: {
-                    description: productName,
-                    metadata: {
-                        productKey,
-                        ...sanitizedFormData
-                    },
-                },
-            },
             // automatic_tax disabled - not needed for small business under €10k EU threshold
             // Enable later after OSS registration if EU sales exceed €10,000
             // automatic_tax: {
@@ -132,16 +123,37 @@ export const POST: APIRoute = async ({ request }) => {
                 lang: data.lang || 'en',
                 ...sanitizedFormData
             }
-        });
+        };
+
+        // Invoice creation disabled - requires business profile on Stripe
+        // Enable after completing Stripe business verification
+        // sessionParams.invoice_creation = {
+        //     enabled: true,
+        //     invoice_data: {
+        //         description: productName,
+        //         metadata: {
+        //             productKey,
+        //             ...sanitizedFormData
+        //         },
+        //     },
+        // };
+
+        const session = await stripe.checkout.sessions.create(sessionParams);
 
         return new Response(JSON.stringify({ url: session.url }), { status: 200 });
     } catch (error: any) {
         // Log detailed error server-side only
-        console.error('Stripe checkout error:', error.message);
+        console.error('Stripe checkout error:', error);
+        console.error('Error type:', error.type);
+        console.error('Error code:', error.code);
+        console.error('Error message:', error.message);
+        console.error('Stripe key prefix:', stripeKey?.substring(0, 7));
 
         return new Response(JSON.stringify({
             error: 'Error creating checkout session. Please try again.',
-            details: error.message // Exposed temporarily for debugging
+            details: error.message,
+            type: error.type,
+            code: error.code
         }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
