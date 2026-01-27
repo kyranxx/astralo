@@ -4,53 +4,71 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: "💕 אהבה Horoscope 2026: The Master Guide to גלגל המזלות Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">אהבה is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 הורוסκόפ אהבה 2026: המדריך המלא לרומנטיקה מזלות",
+  excerpt: "שנו את חיי האהבה שלכם בעזרת אסטרולוגיה. צלילה עמוקה למזלות ונוס, הבית השביעי של הנישואין, סגנונות התשוקה של מאדים ואיך לנווט במרקורי בנסיגה במערכות יחסים.",
+  category: "אהבה ומערכות יחסים",
+  metaDescription: "שנו את חיי האהבה שלכם בעזרת אסטרולוגיה. צלילה עמוקה למזלות ונוס, הבית השביעי של הנישואין ותשוקת מאדים.",
+  keywords: "הורוסκόפ אהבה, אסטרולוגיה של מערכות יחסים, משמעות מזל ונוס, מאדים בדייטינג, הבית ה-7 נישואין, מדריך סינסטריה, ייעוץ דייטינג למזלות, התאמה זוגית",
+  quickSummary: [
+    "שפת האהבה שלכם נקבעת על פי מזל ונוס שלכם, לא רק על פי המזל האסטרולוגי שלכם",
+    "הבית השביעי במפה שלכם מתאר את השותף האידיאלי לטווח ארוך עבורכם",
+    "מאדים קובע כיצד אתם רודפים אחר אינטרסים רומנטיים ואת הכימיה המינית שלכם",
+    "תזמון במערכות יחסים הוא הכל — לעולם אל תתחתנו בזמן שונוס בנסיגה"
+  ],
+  keyTakeaways: [
+    "אם אתם רוצים לדעת איך מישהו מפלרטט, הסתכלו על מזל ונוס שלו",
+    "אם אתם רוצים לדעת איך מישהו רב או חווה סקס, הסתכלו על מזל מאדים שלו",
+    "ה\"צאצא\" (ההפך מהאופק שלכם) הוא בדרך כלל המזל שאליו אתם הכי נמשכים",
+    "סינסטריה היא האמנות של השוואת שתי מפות כדי לראות אם מערכת יחסים בנויה להחזיק מעמד"
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "אהבה היא מיומנות" },
+    { id: "venus-signs", title: "ונוס: מה אתם אוהבים" },
+    { id: "mars-signs", title: "מאדים: איך אתם משתוקקים" },
+    { id: "7th-house", title: "הבית השביעי של נישואין" },
+    { id: "retrograde-love", title: "לשרוד רומנטיקה בנסיגה" },
+    { id: "partner-analysis", title: "ניתוח התאמה" }
+  ],
+  content: `
+      <h2 id="love-guide">אהבה היא מיומנות (ואסטרולוגיה היא המדריך)</h2>
+      <p>לעתים קרובות אנו מתייחסים לאהבה כאל כוח מסתורי שפשוט "קורה" לנו. אבל באסטרולוגיה, אהבה היא מנגנון עם גלגלי שיניים ומנופים. <strong>הורוסקופ האהבה</strong> שלכם אינו רק עניין של פגישות מקריות; זהו שרטוט של הצרכים הפסיכולוגיים שלכם בשותפות.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>למה אתם ממשיכים למשוך את אותו טיפוס "רע"? למה התקשורת תמיד קורסת אחרי שלושה חודשים? התשובות נמצאות במפה שלכם. על ידי הבנת עיצוב האהבה הקוסמי שלכם, תוכלו להפסיק לחזור על תבניות ולהתחיל לבנות את מערכת היחסים שאתם באמת רוצים.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">ונוס: אמנות החיבה</h2>
+      <p><strong>ונוס</strong> היא כוכב הלכת של משיכה, ערכים והרמוניה. המזל שבו הייתה ונוס בזמן שנולדתם מתאר מה אתם מוצאים כיפה ואיך אתם מראים חיבה.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+          <li><strong>ונוס באש (טלה, אריה, קשת):</strong> אוהבת את המרדף. זקוקה לדרמה, מחוות גדולות וספונטניות. משתעממת בקלות. <em>טיפ:</em> שמרו על המתח.</li>
+          <li><strong>ונוס באדמה (שור, בתולה, גדי):</strong> אוהבת יציבות. זקוקה למחויבות, אמינות ומגע פיזי. סולדת ממשחקים. <em>טיפ:</em> היו עקביים.</li>
+          <li><strong>ונוס באוויר (תאומים, מאזניים, דלי):</strong> אוהבת את המיינד. זקוקה לשיחה, שנינות וחברות תחילה. נמנעת מרגשות כבדים. <em>טיפ:</em> היו מעניינים.</li>
+          <li><strong>ונוס במים (סרטן, עקרב, דגים):</strong> אוהבת את הנשמה. זקוקה למיזוג רגשי עמוק, פגיעות וביטחון. <em>טיפ:</em> היו אמיתיים.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">מאדים: המנוע של התשוקה</h2>
+      <p>בעוד שונוס היא מה שאתם אוהבים, <strong>מאדים</strong> הוא הדרך שבה אתם הולכים להשיג זאת. מאדים שולט בליבידו, במרדף ובקונפליקט.</p>
+      <p>אם יש לכם <strong>מאדים בעקרב</strong>, אתם אינטנסיביים, רכושניים והולכים על הכל או כלום. אתם עלולים להפחיד <strong>מאדים בתאומים</strong> קליל, שרק רוצה לפלרטט ולהשתעשע. הכרת מזל המאדים של בן הזוג שלכם היא ה"קוד" לסיפוק מיני ולפתרון ויכוחים בלי להיפרד.</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">הבית השביעי: ה"חצי השני" שלכם</h2>
+      <p>הסתכלו על המזל האופק שלכם (Rising Sign). עכשיו הסתכלו על המזל שנמצא בדיוק מולו. זהו ה-<strong>Descendant</strong> שלכם, השולט בבית השביעי של השותפות שלכם.</p>
+      <p>לעתים קרובות אנו נמשכים באופן מגנטי לאנשים שמגלמים את התכונות של הבית השביעי שלנו כי הם מחזיקים במה שחסר לנו.
+      <br><em>דוגמה:</em> <strong>אופק בתולה</strong> ממושמע יתחתן לעתים קרובות עם <strong>דגים (בית 7)</strong> חולמני וכאוטי. הבתולה מארגנת את חיי הדגים; הדגים מלמדים את הבתולה להירגע. זהו ציר האיזון.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">לשרוד רומנטיקה בנסיגה</h2>
+      <p>שמעתם על מרקורי בנסיגה (חוסר תקשורת), אבל <strong>ונוס בנסיגה</strong> היא המבחן האמיתי למערכות יחסים. זה קורה כל 18 חודשים ואז:
+      <br>1. האקסים חוזרים ("Zombieing").
+      <br>2. מערכות יחסים חלשות מתפרקות.
+      <br>3. פרשיות נסתרות נחשפות.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>כלל זהב:</strong> לעולם אל תתחתנו, תציעו נישואין או תתחייבו להתחייבות ענקית בזמן שונוס בנסיגה. חכו עד שתקופת הצל תעבור (בדרך כלל 40 יום) כדי לראות אם אתם עדיין מרגישים אותו דבר.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">ניתוח התאמה זוגית</h2>
+      <p>אתם מורכבים, וגם בן הזוג שלכם. הורוסקופ גנרי של "אריה + דלי" לא יכול לתפוס את הניואנסים של הקשר הייחודי שלכם. <strong>דוח היחסים הפרימיום</strong> שלנו מנתח:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+          <li><strong>סינסטריה:</strong> איך כוכבי הלכת שלכם נוגעים בשלהם (כימיה).</li>
+          <li><strong>מפה משולבת (Composite):</strong> האנרגיה של מערכת היחסים עצמה (גורל).</li>
+          <li><strong>מפת דייוויסון:</strong> המטרה של המפגש שלכם (קארמה).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>אל תשאירו את הלב שלכם ליד המקרה. פענחו את חיי האהבה שלכם עם Astralo.</p>
     `
 };
+

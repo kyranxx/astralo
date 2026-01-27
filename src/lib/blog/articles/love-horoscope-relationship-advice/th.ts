@@ -4,53 +4,70 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "💕 ความรัก Horoscope 2026: The Master Guide to ราศี Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">ความรัก is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 ดวงความรัก 2026: คู่มือฉบับสมบูรณ์สำหรับความโรแมนติกตามจักรราศี",
+  excerpt: "เปลี่ยนชีวิตรักของคุณด้วยโหราศาสตร์ เจาะลึกเรื่องดาวศุกร์ (Venus), บ้านที่ 7 แห่งการครองคู่, สไตล์ความปรารถนาของดาวอังคาร (Mars) และวิธีรับมือกับดาวพุธพักร (Mercury Retrograde) ในความสัมพันธ์",
+  category: "ความรักและความสัมพันธ์",
+  metaDescription: "เปลี่ยนชีวิตรักของคุณด้วยโหราศาสตร์ เจาะลึกเรื่องดาวศุกร์ (Venus), บ้านที่ 7 แห่งการครองคู่ และความปรารถนาของดาวอังคาร (Mars)",
+  keywords: "ดวงความรัก, โหราศาสตร์ความสัมพันธ์, ความหมายดาวศุกร์, ดาวอังคารในการเดท, บ้านที่ 7 การแต่งงาน, คู่มือซินาสทรี (Synastry), คำแนะนำการเดทตามราศี, การสมพงษ์ของคู่รัก",
+  quickSummary: [
+    "ภาษาความรักของคุณถูกกำหนดโดยดาวศุกร์ (Venus Sign) ไม่ใช่แค่ราศีเกิด (Sun Sign) ของคุณเท่านั้น",
+    "บ้านที่ 7 ในแผนภูมิของคุณบอกลักษณะของคู่ชีวิตที่เหมาะกับคุณที่สุด",
+    "ดาวอังคารเป็นตัวกำหนดวิธีที่คุณเข้าหาคนที่แอบชอบและเคมีทางเพศของคุณ",
+    "จังหวะเวลาเป็นสิ่งสำคัญที่สุดในความสัมพันธ์ อย่าแต่งงานในช่วงดาวศุกร์พักร (Venus Retrograde)"
+  ],
+  keyTakeaways: [
+    "ถ้าอยากรู้ว่าใครมีสไตล์การจีบอย่างไร ให้ดูที่ตำแหน่งดาวศุกร์ของเขา",
+    "ถ้าอยากรู้ว่าใครเวลาทะเลาะหรือเรื่องบนเตียงเป็นอย่างไร ให้ดูที่ตำแหน่งดาวอังคาร",
+    "ลัคนาคู่ครอง (Descendant) ซึ่งอยู่ตรงข้ามกับลัคนาของคุณ มักจะเป็นราศีที่คุณดึงดูดมากที่สุด",
+    "ซินาสทรี (Synastry) คือศิลปะการเปรียบเทียบดวงของคนสองคนเพื่อดูว่าความสัมพันธ์นั้นจะยั่งยืนหรือไม่"
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "ความรักคือทักษะอย่างหนึ่ง" },
+    { id: "venus-signs", title: "ดาวศุกร์: สิ่งที่คุณรัก" },
+    { id: "mars-signs", title: "ดาวอังคาร: แรงปรารถนาของคุณ" },
+    { id: "7th-house", title: "บ้านที่ 7 แห่งการครองคู่" },
+    { id: "retrograde-love", title: "การเอาตัวรอดจากความรักช่วงดาวถอยหลัง" },
+    { id: "partner-analysis", title: "การวิเคราะห์การสมพงษ์" }
+  ],
+  content: `
+      <h2 id="love-guide">ความรักคือทักษะ (และโหราศาสตร์คือคู่มือ)</h2>
+      <p>เรามักมองความรักเป็นเรื่องลึกลับที่อยู่ๆ ก็ "เกิดขึ้น" กับเรา แต่ในทางโหราศาสตร์ ความรักคือกลไกที่มีฟันเฟืองและคานดีด <strong>ดวงความรัก</strong>ของคุณไม่ใช่แค่เรื่องของความบังเอิญ แต่มันคือพิมพ์เขียวของความต้องการทางจิตวิทยาในความสัมพันธ์</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>ทำไมคุณถึงดึงดูดคนประเภทเดิมๆ ที่ "ไม่ใช่" สำหรับคุณอยู่เสมอ? ทำไมการสื่อสารถึงล้มเหลวหลังจากคบกันได้ 3 เดือน? คำตอบอยู่ในแผนภูมิของคุณ การเข้าใจการออกแบบความรักตามดวงดาวจะช่วยให้คุณหยุดวงจรซ้ำรอยเดิม และเริ่มสร้างความสัมพันธ์ในแบบที่คุณต้องการจริงๆ</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">ดาวศุกร์: ศิลปะแห่งความเสน่หา</h2>
+      <p><strong>ดาวศุกร์ (Venus)</strong> คือดาวแห่งการดึงดูด ค่าความนิยม และความกลมกลืน ตำแหน่งราศีที่ดาวศุกร์สถิตอยู่ในขณะที่คุณเกิด บอกถึงสิ่งที่คุณมองว่าสวยงามและวิธีที่คุณแสดงความรัก</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+          <li><strong>ดาวศุกร์ในธาตุไฟ (เมษ, สิงห์, ธนู):</strong> รักการไล่ล่า ต้องการความตื่นเต้น การแสดงออกที่ยิ่งใหญ่ และความฉับพลัน เบื่อง่าย <em>คำแนะนำ:</em> หมั่นทำให้หัวใจเต้นแรงเสมอ</li>
+          <li><strong>ดาวศุกร์ในธาตุดิน (พฤษภ, กันย์, มังกร):</strong> รักความมั่นคง ต้องการความผูกพัน ความน่าเชื่อถือ และการสัมผัสทางกาย ไม่ชอบการเล่นแง่ <em>คำแนะนำ:</em> มีความสม่ำเสมอ</li>
+          <li><strong>ดาวศุกร์ในธาตุลม (เมถุน, ตุลย์, กุมภ์):</strong> รักทางสติปัญญา ต้องการบทสนทนา ความเฉลียวฉลาด และการเป็นเพื่อนก่อน หลีกเลี่ยงอารมณ์ที่หนักหน่วง <em>คำแนะนำ:</em> ทำตัวให้ดูน่าสนใจ</li>
+          <li><strong>ดาวศุกร์ในธาตุน้ำ (กรกฎ, พิจิก, มีน):</strong> รักทางจิตวิญญาณ ต้องการการหลอมรวมทางอารมณ์ที่ลึกซึ้ง ความอ่อนไหว และความปลอดภัย <em>คำแนะนำ:</em> จริงใจและเปิดเผย</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">ดาวอังคาร: เครื่องยนต์แห่งความปรารถนา</h2>
+      <p>ในขณะที่ดาวศุกร์คือสิ่งที่คุณชอบ <strong>ดาวอังคาร (Mars)</strong> คือวิธีที่คุณเข้าหาเพื่อให้ได้สิ่งนั้นมา ดาวอังคารครองเรื่องแรงขับทางเพศ การไล่ตาม และความขัดแย้ง</p>
+      <p>หากคุณมี <strong>ดาวอังคารในราศีพิจิก</strong> คุณจะเข้มข้น มีความหึงหวง และยอมทุ่มหมดตัว คุณอาจจะทำให้คนที่มี <strong>ดาวอังคารในราศีเมถุน</strong> ซึ่งเป็นคนขี้เล่นและแค่อยากโปรยเสน่ห์รู้สึกตกใจได้ การรู้ตำแหน่งดาวอังคารของคู่รักคือ "สูตรลับ" สำหรับความพึงพอใจทางเพศและการแก้ปัญหาความขัดแย้งโดยไม่ต้องเลิกรากัน</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">บ้านที่ 7: "อีกครึ่งหนึ่ง" ของคุณ</h2>
+      <p>ดูลัคนาของคุณ (Rising Sign) แล้วมองไปยังราศีที่อยู่ตรงข้ามกันพอดี นั่นคือ <strong>ลัคนาคู่ครอง (Descendant)</strong> ผู้ปกครองบ้านที่ 7 แห่งการครองคู่</p>
+      <p>เรามักจะถูกดึงดูดด้วยแรงดึงดูดมหาศาลเข้าหาคนที่มีคุณสมบัติของบ้านที่ 7 ของเรา เพราะเขามีในสิ่งที่เราขาด
+      <br><em>ตัวอย่างเช่น:</em> คนที่ <strong>ลัคนาเป็นราศีกันย์</strong> ซึ่งมีระเบียบวินัย มักจะแต่งงานกับคน <strong>ราศีมีน (บ้านที่ 7)</strong> ที่ช่างฝันและดูไร้ระเบียบ ชาวกันย์จะเข้ามาจัดการชีวิตให้ชาวมีน ส่วนชาวมีนจะสอนให้ชาวกันย์รู้จักผ่อนคลาย มันคือแกนแห่งความสมดุล</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">การเอาตัวรอดจากความรักช่วงดาวถอยหลัง</h2>
+      <p>คุณอาจเคยได้ยินเรื่องดาวพุธพักร (Mercury Retrograde) ที่ทำให้สื่อสารผิดพลาด แต่ <strong>ดาวศุกร์พักร (Venus Retrograde)</strong> คือบททดสอบความสัมพันธ์ที่แท้จริง ซึ่งจะเกิดขึ้นทุกๆ 18 เดือน และนี่คือสิ่งที่จะเกิดขึ้น:
+      <br>1. แฟนเก่ากลับมา ("Zombieing")
+      <br>2. ความสัมพันธ์ที่เปราะบางจะแตกหัก
+      <br>3. ความลับหรือเรื่องชู้สาวถูกเปิดเผย</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>กฎเหล็ก:</strong> อย่าแต่งงาน ขอแต่งงาน หรือทำข้อตกลงครั้งใหญ่ในช่วงดาวศุกร์พักร ให้รอจนกว่าช่วงเงาของดาวจะผ่านพ้นไป (ปกติคือ 40 วัน) เพื่อดูว่าคุณยังรู้สึกแบบเดิมอยู่หรือไม่</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">การวิเคราะห์การสมพงษ์ของคู่รัก</h2>
+      <p>คุณมีความซับซ้อน และคู่รักของคุณก็เช่นกัน ดวงแบบเหมาเข่งอย่าง "ราศีสิงห์ + ราศีกุมภ์" ไม่สามารถบอกรายละเอียดความสัมพันธ์ที่ไม่เหมือนใครของคุณได้ <strong>รายงานความสัมพันธ์ฉบับพรีเมียม</strong> ของเราจะวิเคราะห์:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+          <li><strong>Synastry:</strong> ดาวดาวของคุณส่งผลถึงกันอย่างไร (เคมี)</li>
+          <li><strong>Composite Chart:</strong> พลังงานของความสัมพันธ์นั้นเอง (พรหมลิขิต)</li>
+          <li><strong>Davison Chart:</strong> วัตถุประสงค์ของการมาพบกัน (กรรม)</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>อย่าปล่อยให้หัวใจของคุณเป็นเรื่องของโชคชะตา ถอดรหัสชีวิตรักของคุณกับ Astralo</p>
     `
 };

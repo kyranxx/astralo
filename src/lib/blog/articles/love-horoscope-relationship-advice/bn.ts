@@ -4,53 +4,71 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "💕 প্রেম Horoscope 2026: The Master Guide to রাশিচক্র Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">প্রেম is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 প্রেম রাশিফল ২০২৬: রাশিচক্রের রোম্যান্সের চূড়ান্ত গাইড",
+  excerpt: "জ্যোতিষশাস্ত্রের মাধ্যমে আপনার প্রেম জীবনকে বদলে ফেলুন। শুক্র রাশি, বিবাহের সপ্তম ঘর, মঙ্গলের আবেগের ধরণ এবং সম্পর্কের ক্ষেত্রে বুধের বক্রী গতির (Mercury Retrograde) প্রভাব নিয়ে গভীর আলোচনা।",
+  category: "প্রেম ও সম্পর্ক",
+  metaDescription: "জ্যোতিষশাস্ত্রের মাধ্যমে আপনার প্রেম জীবনকে বদলে ফেলুন। শুক্র রাশি, বিবাহের সপ্তম ঘর এবং মঙ্গলের আবেগ নিয়ে গভীর আলোচনা।",
+  keywords: "প্রেম রাশিফল, সম্পর্কের জ্যোতিষশাস্ত্র, শুক্র রাশির গুরুত্ব, মঙ্গলের প্রভাব, সপ্তম ঘর বিবাহ, সিনাস্ট্রি গাইড, রাশিচক্রের ডেটিং পরামর্শ, প্রেমের সামঞ্জস্য",
+  quickSummary: [
+    "আপনার প্রেমের ভাষা আপনার শুক্র রাশি দ্বারা নির্ধারিত হয়, শুধুমাত্র আপনার সূর্য রাশি দ্বারা নয়",
+    "আপনার কুণ্ডলীতে সপ্তম ঘর আপনার আদর্শ দীর্ঘমেয়াদী সঙ্গীর বর্ণনা দেয়",
+    "মঙ্গল নির্ধারণ করে যে আপনি কীভাবে প্রেমের সম্পর্ক অনুসরণ করেন এবং আপনাদের যৌন রসায়ন কেমন",
+    "সম্পর্কের ক্ষেত্রে সঠিক সময় খুবই গুরুত্বপূর্ণ — শুক্রের বক্রী গতির সময় কখনো বিয়ে করবেন না"
+  ],
+  keyTakeaways: [
+    "কেউ কীভাবে ফ্লার্ট করে তা জানতে চাইলে তার শুক্র রাশি দেখুন",
+    "কেউ কীভাবে ঝগড়া করে বা যৌন মিলন উপভোগ করে তা জানতে চাইলে তার মঙ্গল দেখুন",
+    "আপনার লগ্ন চিহ্নের ঠিক বিপরীত ঘরটি সাধারণত সেই রাশি যাকে আপনি সবচেয়ে বেশি আকর্ষণ করেন",
+    "সিনাস্ট্রি (Synastry) হল দুটি কুণ্ডলী তুলনা করার শিল্প যা থেকে বোঝা যায় একটি সম্পর্ক স্থায়ী হবে কিনা"
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "প্রেম একটি দক্ষতা" },
+    { id: "venus-signs", title: "শুক্র: আপনি যা ভালোবাসেন" },
+    { id: "mars-signs", title: "মঙ্গল: আপনার বাসনা" },
+    { id: "7th-house", title: "বিবাহের সপ্তম ঘর" },
+    { id: "retrograde-love", title: "বক্রী গতির সময় প্রেম সামলানো" },
+    { id: "partner-analysis", title: "সামঞ্জস্য বিশ্লেষণ" }
+  ],
+  content: `
+      <h2 id="love-guide">প্রেম একটি দক্ষতা (এবং জ্যোতিষশাস্ত্র হল এর নির্দেশিকা)</h2>
+      <p>আমরা প্রায়শই প্রেমকে একটি রহস্যময় শক্তি হিসাবে বিবেচনা করি যা কেবল আমাদের সাথে "ঘটে"। কিন্তু জ্যোতিষশাস্ত্রে, প্রেম হল চাকা এবং লিভারের মতো একটি প্রক্রিয়া। আপনার <strong>প্রেমের রাশিফল</strong> কেবল আকস্মিক সাক্ষাত নয়; এটি একটি অংশীদারিত্বে আপনার মনস্তাত্ত্বিক প্রয়োজনের একটি নকশা।</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>কেন আপনি বারবার একই ধরণের "খারাপ" মানুষের প্রতি আকৃষ্ট হন? কেন তিন মাস পরে যোগাযোগ সবসময় বিচ্ছিন্ন হয়ে যায়? উত্তরগুলো আপনার কুণ্ডলীতে আছে। আপনার নিজস্ব মহাজাগতিক প্রেমের নকশা বোঝার মাধ্যমে, আপনি পুরনো অভ্যাসের পুনরাবৃত্তি বন্ধ করতে পারেন এবং আপনার কাঙ্ক্ষিত সম্পর্ক গড়ে তুলতে পারেন।</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">শুক্র: স্নেহের শিল্প</h2>
+      <p><strong>শুক্র</strong> হল আকর্ষণ, মূল্যবোধ এবং সম্প্রীতির গ্রহ। আপনি যখন জন্মগ্রহণ করেছিলেন তখন শুক্র কোন রাশিতে ছিল তা বর্ণনা করে যে আপনি কী সুন্দর মনে করেন এবং আপনি কীভাবে স্নেহ প্রদর্শন করেন।</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+          <li><strong>আগুনের রাশিতে শুক্র (মেষ, সিংহ, ধনু):</strong> ধাওয়া করা পছন্দ করে। নাটকীয়তা, বড় ধরণের অঙ্গভঙ্গি এবং স্বতঃস্ফূর্ততা প্রয়োজন। সহজে বিরক্ত হয়। <em>পরামর্শ:</em> উত্তেজনা বজায় রাখুন।</li>
+          <li><strong>পৃথিবীর রাশিতে শুক্র (বৃষ, কন্যা, মকর):</strong> স্থিতিশীলতা পছন্দ করে। প্রতিশ্রুতি, নির্ভরযোগ্যতা এবং শারীরিক স্পর্শ প্রয়োজন। গেম খেলা পছন্দ করে না। <em>পরামর্শ:</em> ধারাবাহিক হোন।</li>
+          <li><strong>বাতাসের রাশিতে শুক্র (মিথুন, তুলা, কুম্ভ):</strong> মন বা বুদ্ধিমত্তা পছন্দ করে। প্রথমে কথোপকথন, বুদ্ধি এবং বন্ধুত্বের প্রয়োজন। ভারী আবেগ এড়িয়ে চলে। <em>পরামর্শ:</em> কৌতুহলী হোন।</li>
+          <li><strong>জলের রাশিতে শুক্র (কর্কট, বৃশ্চিক, মীন):</strong> আত্মা পছন্দ করে। গভীর আবেগীয় মিলন, দুর্বলতা এবং নিরাপত্তা প্রয়োজন। <em>পরামর্শ:</em> বাস্তববাদী হোন।</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">মঙ্গল: বাসনার ইঞ্জিন</h2>
+      <p>শুক্র যেমন আপনি যা পছন্দ করেন তা নির্দেশ করে, <strong>মঙ্গল</strong> নির্দেশ করে আপনি কীভাবে তা অর্জন করবেন। মঙ্গল লিবিডো, অন্বেষণ এবং সংঘাত পরিচালনা করে।</p>
+      <p>আপনার যদি <strong>মঙ্গল বৃশ্চিক রাশিতে</strong> থাকে, তবে আপনি তীব্র, অধিকারবোধসম্পন্ন এবং সব বা কিছুই নয়—এমন মানসিকতার। আপনি অলস বা চঞ্চল <strong>মিথুন রাশির মঙ্গলকে</strong> ভয় পাইয়ে দিতে পারেন, যে কেবল ফ্লার্ট করতে এবং মজা করতে চায়। আপনার সঙ্গীর মঙ্গল রাশি জানা হল যৌন তৃপ্তি এবং বিচ্ছেদ ছাড়াই তর্ক সমাধানের "শর্টকাট"।</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">সপ্তম ঘর: আপনার "অন্য অর্ধেক"</h2>
+      <p>আপনার লগ্ন রাশি দেখুন। এবার তার ঠিক উল্টো রাশিটির দিকে তাকান। এটি আপনার <strong>অবরোহী (Descendant)</strong>, আপনার অংশীদারিত্বের সপ্তম ঘরের শাসক।</p>
+      <p>আমরা প্রায়শই চুম্বকের মতো সেইসব মানুষের প্রতি আকৃষ্ট হই যারা আমাদের সপ্তম ঘরের গুণাবলী বহন করে কারণ তাদের কাছে তা থাকে যা আমাদের অভাব।
+      <br><em>উদাহরণ:</em> একজন শৃঙ্খলাবদ্ধ <strong>কন্যা লগ্নের</strong> ব্যক্তি প্রায়ই একজন স্বপ্নালু, বিশৃঙ্খল <strong>মীন রাশির (৭ম ঘর)</strong> ব্যক্তিকে বিয়ে করবেন। কন্যা মীন রাশির জীবন গুছিয়ে দেয়; মীন কন্যাকে শিথিল হতে শেখায়। এটি ভারসাম্যের অক্ষ।</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">বক্রী গতির সময় প্রেম সামলানো</h2>
+      <p>আপনি হয়তো বুধের বক্রী গতির (ভুল যোগাযোগ) কথা শুনেছেন, কিন্তু <strong>শুক্রের বক্রী গতি</strong> হল সম্পর্কের আসল পরীক্ষা। প্রতি ১৮ মাস অন্তর এটি ঘটে এবং তখন:
+      <br>১. প্রাক্তনেরা ফিরে আসে ("Zombieing")।
+      <br>২. দুর্বল সম্পর্ক ভেঙে যায়।
+      <br>৩. লুকানো প্রেম বা সম্পর্ক প্রকাশ পায়।</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>সুবর্ণ নিয়ম:</strong> শুক্রের বক্রী গতির সময় কখনই বিয়ে করবেন না, প্রস্তাব দেবেন না বা বড় কোনো প্রতিশ্রুতি দেবেন না। আপনি এখনও একই রকম অনুভব করছেন কিনা তা দেখার জন্য ছায়া পর্যায় (সাধারণত ৪০ দিন) শেষ হওয়া পর্যন্ত অপেক্ষা করুন।</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">সঙ্গীর সামঞ্জস্য বিশ্লেষণ</h2>
+      <p>আপনি যেমন জটিল, আপনার সঙ্গীও তেমনই। একটি সাধারণ "সিংহ + কুম্ভ" রাশিফল আপনার অনন্য সম্পর্কের সূক্ষ্মতাগুলো তুলে ধরতে পারে না। আমাদের <strong>প্রিমিয়াম রিলেশনশিপ রিপোর্ট</strong> বিশ্লেষণ করে:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+          <li><strong>সিনাসট্রি (Synastry):</strong> কীভাবে আপনার গ্রহগুলো তাদের গ্রহগুলোকে স্পর্শ করে (রসায়ন)।</li>
+          <li><strong>কম্পোজিট চার্ট (Composite Chart):</strong> খোদ সম্পর্কের শক্তি (ভাগ্য)।</li>
+          <li><strong>ডেভিসন চার্ট (Davison Chart):</strong> আপনাদের সাক্ষাতের উদ্দেশ্য (কর্মফল)।</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>আপনার হৃদয়কে ভাগ্যের ওপর ছেড়ে দেবেন না। Astralo-র মাধ্যমে আপনার প্রেম জীবনের রহস্য উদঘাটন করুন।</p>
     `
 };
+

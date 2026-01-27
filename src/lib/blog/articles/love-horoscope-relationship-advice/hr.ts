@@ -4,53 +4,71 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const hr: BlogPostTranslation = {
-    title: "💕 Ljubav Horoscope 2026: The Master Guide to Zodijak Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">Ljubav is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Ljubavni horoskop 2026: Vrhunski vodič kroz zodiakalnu romansu",
+  excerpt: "Transformirajte svoj ljubavni život pomoću astrologije. Duboki uvid u znakove Venere, 7. kuću braka, stilove strasti Marsa i kako prebroditi retrogradni Merkur u vezama.",
+  category: "Ljubav i veze",
+  metaDescription: "Transformirajte svoj ljubavni život pomoću astrologije. Duboki uvid u znakove Venere, 7. kuću braka i strasti Marsa.",
+  keywords: "ljubavni horoskop, partnerska astrologija, značenje Venere, Mars u spojevima, 7. kuća braka, vodič kroz sinastriju, savjeti za spojeve, ljubavna kompatibilnost",
+  quickSummary: [
+    "Vaš ljubavni jezik diktira vaš znak Venere, a ne samo vaš sunčev znak",
+    "7. kuća u vašoj karti opisuje vašeg idealnog dugoročnog partnera",
+    "Mars određuje kako slijedite romantične interese i vašu seksualnu kemiju",
+    "Tajming je u vezama sve — nikada se ne vjenčajte za vrijeme retrogradne Venere"
+  ],
+  keyTakeaways: [
+    "Ako želite znati kako netko flertuje, pogledajte njegov znak Venere",
+    "Ako želite znati kako se netko svađa ili doživljava seks, pogledajte njegov Mars",
+    "\"Descendent\" (nasuprot vašem podznaku) obično je znak koji vas najviše privlači",
+    "Sinastrija je umjetnost usporedbe dviju karata kako bi se vidjelo je li veza izgrađena da traje"
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "Ljubav je vještina" },
+    { id: "venus-signs", title: "Venera: Što volite" },
+    { id: "mars-signs", title: "Mars: Kako žudite" },
+    { id: "7th-house", title: "7. kuća braka" },
+    { id: "retrograde-love", title: "Preživljavanje retrogradne romance" },
+    { id: "partner-analysis", title: "Analiza kompatibilnosti" }
+  ],
+  content: `
+      <h2 id="love-guide">Ljubav je vještina (a astrologija je priručnik)</h2>
+      <p>Ljubav često tretiramo kao tajanstvenu silu koja nam se jednostavno "dogodi". No u astrologiji, ljubav je mehanizam sa zupčanicima i polugama. Vaš <strong>ljubavni horoskop</strong> nije samo pitanje slučajnih susreta; to je nacrt vaših psiholoških potreba u partnerstvu.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Zašto stalno privlačite isti "loš" tip? Zašto komunikacija uvijek zakaže nakon tri mjeseca? Odgovori su u vašoj karti. Razumijevanjem vlastitog kozmičkog dizajna za ljubav, možete prestati ponavljati obrasce i početi graditi vezu kakvu doista želite.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Venera: Umjetnost naklonosti</h2>
+      <p><strong>Venera</strong> je planet privlačnosti, vrijednosti i harmonije. Znak u kojem je Venera bila u trenutku vašeg rođenja opisuje što smatrate lijepim i kako pokazujete naklonost.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+          <li><strong>Venera u vatri (Ovan, Lav, Strijelac):</strong> Voli lov. Potrebna joj je drama, velike geste i spontanost. Brzo joj postaje dosadno. <em>Savjet:</em> Održavajte uzbuđenje.</li>
+          <li><strong>Venera u zemlji (Bik, Djevica, Jarac):</strong> Voli stabilnost. Potrebna joj je predanost, pouzdanost i fizički dodir. Ne voli igrice. <em>Savjet:</em> Budite dosljedni.</li>
+          <li><strong>Venera u zraku (Blizanci, Vaga, Vodenjak):</strong> Voli um. Potrebni su joj razgovor, duhovitost i prvo prijateljstvo. Izbjegava teške emocije. <em>Savjet:</em> Budite zanimljivi.</li>
+          <li><strong>Venera u vodi (Rak, Škorpion, Ribe):</strong> Voli dušu. Potrebno joj je duboko emotivno stapanje, ranjivost i sigurnost. <em>Savjet:</em> Budite iskreni.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Mars: Motor želje</h2>
+      <p>Dok je Venera ono što vam se sviđa, <strong>Mars</strong> je način na koji to idete dobiti. Mars vlada libidom, potjerom i sukobima.</p>
+      <p>Ako imate <strong>Marsa u Škorpionu</strong>, intenzivni ste, posjedovalački i idete na sve ili ništa. Mogli biste preplašiti prevrtljivog <strong>Marsa u Blizancima</strong>, koji samo želi flertovati i zabavljati se. Poznavanje partnerovog znaka Marsa je "šalabahter" za seksualno zadovoljstvo i rješavanje svađa bez prekida.</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">7. kuća: Vaša "druga polovica"</h2>
+      <p>Pogledajte svoj podznak (Ascendent). Sada pogledajte znak koji se nalazi točno nasuprot njega. To je vaš <strong>Descendent</strong>, vladar vaše 7. kuće partnerstva.</p>
+      <p>Često nas magnetski privlače ljudi koji utjelovljuju kvalitete naše 7. kuće jer oni posjeduju ono što nama nedostaje.
+      <br><em>Primjer:</em> Disciplinirana <strong>Djevica u podznaku</strong> često će se udati za sanjive, kaotične <strong>Ribe (7. kuća)</strong>. Djevica organizira život Ribama; Ribe uče Djevicu kako se opustiti. To je os ravnoteže.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Preživljavanje retrogradne romance</h2>
+      <p>Čuli ste za retrogradni Merkur (loša komunikacija), ali <strong>retrogradna Venera</strong> je pravi test za veze. Događa se svakih 18 mjeseci i tada:
+      <br>1. Bivši se vraćaju ("Zombieing").
+      <br>2. Slabe veze pucaju.
+      <br>3. Skrivene afere izlaze na vidjelo.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Zlatno pravilo:</strong> Nikada se ne vjenčajte, ne zaručujte i ne donosite velike obveze tijekom retrogradne Venere. Pričekajte dok prođe razdoblje sjene (obično 40 dana) kako biste vidjeli osjećate li se i dalje isto.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Analiza kompatibilnosti partnera</h2>
+      <p>Vi ste složeni, a takav je i vaš partner. Generički horoskop "Lav + Vodenjak" ne može obuhvatiti nijanse vaše jedinstvene povezanosti. Naše <strong>Premium izvješće o vezi</strong> analizira:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+          <li><strong>Sinastrija:</strong> Kako vaši planeti dotiču njihove (kemija).</li>
+          <li><strong>Kompozitna karta:</strong> Energija same veze (sudbina).</li>
+          <li><strong>Davisonova karta:</strong> Svrha vašeg susreta (karma).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Ne prepuštajte svoje srce slučaju. Dekodirajte svoj ljubavni život uz Astralo.</p>
     `
 };
+

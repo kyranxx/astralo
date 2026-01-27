@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const th: BlogPostTranslation = {
-    title: "❤️ ราศี สัญลักษณ์ Compatibility: The Definitive Guide to Cosmic ความรัก",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun สัญลักษณ์s Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ การสมพงษ์ของราศี: คู่มือฉบับสมบูรณ์สู่ความรักแห่งจักรวาล",
+  excerpt: "คู่มือการสมพงษ์ของราศีฉบับปี 2026 ก้าวข้ามแค่ราศีเกิดและค้นพบว่าธาตุ ดาวศุกร์ และดาวอังคาร ส่งผลต่อเคมีทางอารมณ์และความสัมพันธ์ระยะยาวของคุณอย่างไร",
+  category: "ความรักและความสัมพันธ์",
+  metaDescription: "คู่มือการสมพงษ์ของราศีฉบับปี 2026 ค้นพบว่าธาตุ ดาวศุกร์ และดาวอังคาร ส่งผลต่อความรักของคุณอย่างไร",
+  keywords: "การสมพงษ์ของราศี, ดวงความรัก, ซินาสทรี, ความเข้ากันได้ของราศี, ดาวศุกร์ความรัก, ดาวอังคารความหลงใหล, โหราศาสตร์ความสัมพันธ์, คู่ที่เหมาะสมที่สุด",
+  quickSummary: [
+    "ความเข้ากันได้ที่แท้จริงต้องอาศัยการเปรียบเทียบแผนภูมิเกิดทั้งหมด (Synastry) ไม่ใช่แค่ราศีเกิดเท่านั้น",
+    "ความสมดุลของธาตุ (ไฟ, ดิน, ลม, น้ำ) คือรากฐานของความกลมกลืนในความสัมพันธ์",
+    "ราศีที่ดูเหมือน \"ไม่เข้ากัน\" มักจะเป็นโอกาสที่ดีที่สุดสำหรับการเติบโตของจิตวิญญาณ",
+    "ดาวศุกร์กำหนดรูปแบบการแสดงออกถึงความรัก ในขณะที่ดาวอังคารขับเคลื่อนความหลงใหลและรูปแบบความขัดแย้ง"
+  ],
+  keyTakeaways: [
+    "มองหาความเชื่อมโยงของธาตุเดียวกันเพื่อความราบรื่น และราศีตรงข้ามเพื่อแรงดึงดูดที่รุนแรง",
+    "ความเข้ากันได้ของลัคนาราศีจันทร์มีความสำคัญอย่างยิ่งต่อการใช้ชีวิตร่วมกันและความปลอดภัยทางอารมณ์",
+    "ความเข้ากันได้ของดาวพุธกำหนดว่าคุณจะแก้ปัญหาร่วมกันได้ดีเพียงใด",
+    "ไม่มีคู่ใดที่ \"สมบูรณ์แบบ\" ทุกการจับคู่ย่อมมีทั้งจุดแข็งและจุดท้าทาย"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "ทำไมราศีเกิดถึงไม่ใช่ทุกอย่าง" },
+    { id: "elemental-love", title: "ธาตุทั้ง 4 ในความรัก" },
+    { id: "love-planets", title: "ดาวศุกร์, ดาวอังคาร และดวงจันทร์" },
+    { id: "challenging-matches", title: "ความจริงเกี่ยวกับคู่ที่ \"ไม่เหมาะสม\"" },
+    { id: "best-matches-deep-dive", title: "เจาะลึก: คู่ที่เหมาะสมที่สุด" },
+    { id: "synastry", title: "เคล็ดลับขั้นสูง: ซินาสทรี" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">ทำไมราศีเกิดถึงไม่ใช่ทุกอย่าง</h2>
+      <p>เราทุกคนเคยผ่านจุดนั้นมาแล้ว: เช็คจากแมกกาซีนหรือแอปว่าราศีของคนที่เราแอบชอบเข้ากับเราได้ไหม \"แย่แล้ว ฉันราศีสิงห์ ส่วนเขาเป็นราศีพิจิก — เราไปกันไม่รอดแน่!\" แต่เดี๋ยวก่อน <strong>การสมพงษ์ของราศี</strong> นั้นซับซ้อนกว่าการจับคู่ตามตารางพื้นๆ มาก และมันยังมีความหวังมากกว่าที่คุณคิด</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>แม้ว่าราศีเกิด (Sun sign) จะแสดงถึงตัวตนและเป้าหมายในชีวิตของคุณ แต่ความสัมพันธ์นั้นสร้างขึ้นจากอารมณ์ การสื่อสาร และคุณค่า นี่คือเหตุผลที่คุณอาจพบว่าตัวเองแต่งงานอย่างมีความสุขกับราศีที่ดูเหมือน \"ไม่เข้ากัน\" หรือมีปัญหากับคู่ที่ดูเหมือนจะ \"สมบูรณ์แบบ\" หากจะเข้าใจ <strong>การจับคู่ทางความรัก</strong> ให้ลึกซึ้ง เราต้องมองภาพรวมทั้งหมดของท้องฟ้า</p>
 
-      <h2 id="elemental-love">The 4 Elements in ความรัก</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">ธาตุทั้ง 4 ในความรัก</h2>
+      <p>วิธีที่เร็วที่สุดในการประเมินเคมีเริ่มต้นคือการดูผ่านธาตุ ราศีในธาตุเดียวกันมักจะ \"พูดภาษาเดียวกัน\"</p>
       
-      <h3>🔥 ไฟ สัญลักษณ์s (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 ราศีธาตุไฟ (เมษ, สิงห์, ธนู)</h3>
+      <p><strong>ภาษาความรัก:</strong> ความหลงใหล, การผจญภัย, ความฉับพลัน</p>
+      <p>ชาวธาตุไฟต้องการคู่ครองที่สามารถส่งเสริมเปลวไฟของพวกเขาได้โดยไม่ทำให้มันดับไป พวกเขาต้องการความตื่นเต้นและเกลียดความน่าเบื่อ
+      <br><em>ดีที่สุดกับ:</em> ราศีธาตุไฟอื่นๆ (ความร้อนแรงในทันที) หรือราศีธาตุลม (ลมช่วยให้ไฟโชติช่วง)</p>
 
-      <h3>🌍 ดิน สัญลักษณ์s (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 ราศีธาตุดิน (พฤษภ, กันย์, มังกร)</h3>
+      <p><strong>ภาษาความรัก:</strong> การบริการ, ความมั่นคง, การสัมผัส</p>
+      <p>ชาวธาตุดินปฏิบัติต่อความรักเหมือนเป็นการกระทำ พวกเขาแสดงความรักผ่านการช่วยเหลือในทางปฏิบัติและการสร้างชีวิตร่วมกัน พวกเขาต้องการความน่าเชื่อถือ
+      <br><em>ดีที่สุดกับ:</em> ราศีธาตุดินอื่นๆ (รากฐานที่มั่นคง) หรือราศีธาตุน้ำ (น้ำช่วยหล่อเลี้ยงดิน)</p>
 
-      <h3>💨 ลม สัญลักษณ์s (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 ราศีธาตุลม (เมถุน, ตุลย์, กุมภ์)</h3>
+      <p><strong>ภาษาความรัก:</strong> บทสนทนา, ไหวพริบ, อิสระ</p>
+      <p>สำหรับชาวธาตุลม จิตใจคือส่วนที่น่าดึงดูดใจที่สุด พวกเขาต้องการการกระตุ้นทางสติปัญญาและคู่ครองที่เป็นเพื่อนที่ดีที่สุดได้ด้วย
+      <br><em>ดีที่สุดกับ:</em> ราศีธาตุลมอื่นๆ (คุยกันไม่รู้จบ) หรือราศีธาตุไฟ (แรงบันดาลใจ)</p>
 
-      <h3>💧 น้ำ สัญลักษณ์s (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 ราศีธาตุน้ำ (กรกฎ, พิจิก, มีน)</h3>
+      <p><strong>ภาษาความรัก:</strong> ความอ่อนไหว, สัญชาตญาณ, การหลอมรวม</p>
+      <p>ชาวธาตุน้ำแสวงหาความเชื่อมโยงทางอารมณ์ที่ลึกซึ้ง พวกเขาต้องการให้คู่ครองเข้าใจโดยไม่ต้องใช้คำพูดและต้องการพื้นที่ที่ปลอดภัย
+      <br><em>ดีที่สุดกับ:</em> ราศีธาตุน้ำอื่นๆ (สายสัมพันธ์ทางจิตใจ) หรือราศีธาตุดิน (เป็นภาชนะรองรับน้ำ)</p>
 
-      <h2 id="love-planets">The Real ความรัก Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">ดาวเคราะห์แห่งความรักที่แท้จริง: ดาวศุกร์, ดาวอังคาร และดวงจันทร์</h2>
+      <p>หากคุณอยากรู้ว่าคุณจะไปกันได้ดีในแต่ละวันหรือไม่ การเช็คแค่ราศีเกิดนั้นไม่เพียงพอ คุณต้องดูที่ดาวเคราะห์ 3 ดวงนี้ในแผนภูมิของคู่ครองของคุณ:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. ดวงจันทร์ 🌙 (ความปลอดภัยทางอารมณ์)</h3>
+      <p>ในการใช้ชีวิตร่วมกันระยะยาว <strong>ความเข้ากันได้ของราศีจันทร์คือหัวใจสำคัญ</strong> ราศีจันทร์กำหนดสิ่งที่คุณต้องการเพื่อให้รู้สึกปลอดภัย วิธีการตอบสนองเมื่อเหนื่อยหรือหิว และวิธีการดูแลผู้อื่น 
+      <br><em>ตัวอย่างเช่น:</em> ชาวราศีเมษอาจดูเข้มแข็งภายนอก แต่ถ้าเขามีลัคนาราศีจันทร์ในราศีกรกฎ จริงๆ แล้วเขาเป็นคนอ่อนโยนมากและต้องการอ้อมกอดและความมั่นใจเมื่ออยู่ที่บ้าน</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. ดาวศุกร์ ♀ (ความโรแมนติกและคุณค่า)</h3>
+      <p>ดาวศุกร์กำหนดสิ่งที่คุณมองว่าสวยงามและสิ่งที่คุณให้คุณค่า มันแสดงถึง \"สไตล์การบริหารเสน่ห์\" ของคุณ
+      <br><em>เคล็ดลับ:</em> หากดาวศุกร์ของคุณอยู่ในธาตุเดียวกัน รสนิยมและนิสัยการใช้เงินของคุณมักจะสอดคล้องกันได้ง่าย</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. ดาวอังคาร ♂ (ความหลงใหลและการโต้เถียง)</h3>
+      <p>ดาวอังคารคือดาวแห่งแรงขับทางเพศและความขัดแย้ง มันแสดงถึงวิธีที่คุณสู้และวิธีที่คุณแสดงความรัก
+      <br><em>เคล็ดลับ:</em> ดาวอังคารที่เข้ากันได้ช่วยให้มั่นใจว่าการโต้เถียงจะคลี่คลายอย่างรวดเร็วและเคมีทางกายยังคงมีชีวิตชีวา</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">ความจริงเกี่ยวกับคู่ที่ \"ไม่เหมาะสม\"</h2>
+      <p>จะเกิดอะไรขึ้นถ้าคุณตกหลุมรักราศีที่ \"ไม่เข้ากัน\"? เช่น ราศีสิงห์ (ไฟ) และราศีพิจิก (น้ำ)</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>ความสัมพันธ์เหล่านี้มักจะเป็นความสัมพันธ์ที่ <strong>สร้างความเปลี่ยนแปลง</strong> ได้มากที่สุด โหราศาสตร์เรียกสิ่งนี้ว่ามุม \"Square\" หรือ \"Quincunx\" ซึ่งทำให้เกิดความเสียดสี แต่ความเสียดสีนั้นทำให้เกิดความร้อน! คู่ที่ \"ท้าทาย\" จะบังคับให้คุณเติบโต เรียนรู้ภาษาใหม่ และก้าวออกจาก comfort zone ของคุณ พวกเขามักจะเป็นเนื้อคู่ที่มีความหลงใหลสูงและมีความดราม่า ซึ่งถูกออกแบบมาเพื่อวิวัฒนาการจิตวิญญาณของคุณ แม้ว่าจะต้องใช้ความพยายามมากขึ้นก็ตาม</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous ราศี Pลมings</h2>
+      <h2 id="best-matches-deep-dive">เจาะลึก: คู่ราศีที่มีชื่อเสียง</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>\"คู่รักทรงพลัง\": เมษ และ ตุลย์</h3>
+      <p>สิ่งที่ตรงกันข้ามมักดึงดูดกัน! เมษคือ \"ฉันต้องมาก่อน\" ส่วนตุลย์คือ \"เราต้องมาก่อน\" เมษสอนให้ตุลย์มีความมั่นใจในตัวเอง ส่วนตุลย์สอนให้เมษมีวาทศิลป์ มันคือแรงดึงดูดที่ยากจะต้านทาน</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>\"นักสร้างอาณาจักร\": พฤษภ และ มังกร</h3>
+      <p>สองราศีธาตุดินที่ให้ความสำคัญกับคุณภาพ เงิน และความมั่นคง พวกเขาสร้างความสำเร็จที่ยิ่งใหญ่ร่วมกันได้ แต่ต้องไม่ลืมที่จะมีความสุขและไม่ใช่แค่ทำงานอย่างเดียว</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>\"ปีเตอร์แพน\": เมถุน และ ธนู</h3>
+      <p>ลมและไฟ ทั้งคู่รักอิสระ การเดินทาง และปรัชญา พวกเขาอาจจะไม่เคยตั้งถิ่นฐานในแบบดั้งเดิม แต่พวกเขาจะเป็นคู่หูที่ร่วมผจญภัยไปด้วยกันตลอดไป</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>\"สายใยทางจิต\": กรกฎ และ พิจิก</h3>
+      <p>เมื่อราศีธาตุน้ำสองราศีนี้พบกัน โลกภายนอกจะเลือนหายไป พวกเขามีความเชื่อมโยงทางโทรจิตและความเป็นเจ้าของซึ่งกันและกัน ทำให้พวกเขามีความซื่อสัตย์ต่อกันอย่างรุนแรง</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">ความเข้ากันได้ขั้นสูง: ซินาสทรี</h2>
+      <p>เพื่อให้ได้คำตอบที่แท้จริงเกี่ยวกับความสัมพันธ์ของคุณ คุณต้องการการอ่าน <strong>ซินาสทรี (Synastry Reading)</strong> นี่คือการนำแผนภูมิของคุณไปวางทับบนแผนภูมิของคู่ครอง</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>เรามองหาความเชื่อมโยงเช่น:
+      <br><strong>Sun-Moon Conjunctions:</strong> มุมคลาสสิกของ \"สามี/ภรรยา\"
+      <br><strong>Venus-Mars Exchanges:</strong> แรงดึงดูดทางเพศที่น่าทึ่ง
+      <br><strong>Saturn Contacts:</strong> กาวที่ยึดโยงผู้คนเข้าด้วยกันชั่วชีวิต (แม้ในช่วงเวลาที่ยากลำบาก)</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>ที่ Astralo อัลกอริทึมขั้นสูงและนักโหราศาสตร์ผู้เชี่ยวชาญของเราไม่ได้ให้แค่เปอร์เซ็นต์แก่คุณ เราสร้างแอปแผนที่จิตวิญญาณของความสัมพันธ์ของคุณ เลิกคาดเดาและเริ่มเข้าใจวัตถุประสงค์แห่งจักรวาลของการพบกันของคุณ</p>
     `
 };

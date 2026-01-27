@@ -4,53 +4,70 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: "💕 Tình yêu Horoscope 2026: The Master Guide to Hoàng đạo Romance",
-    excerpt: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    category: "Love & Relationships",
-    metaDescription: "Transform your love life with astrology. A deep dive into Venus signs, the 7th House of Marriage, Mars passion styles, and how to navigate Mercury Retrograde in relationships.",
-    keywords: "love horoscope, relationship astrology, venus sign meaning, mars sign dating, 7th house marriage, synastry guide, zodiac dating advice, love compatibility",
-    quickSummary: ["Your Love Language is dictated by your Venus Sign, not just your Sun Sign","The 7th House in your chart describes your ideal long-term partner","Mars determines how you pursue romantic interests and sexual chemistry","Relationship timing is everything—never marry during Venus Retrograde"],
-    keyTakeaways: ["If you want to know how someone flirts, look at their Venus sign","If you want to know how someone fights or has sex, look at their Mars sign","The \"Descendant\" (opposite your Rising Sign) is usually the sign you are most attracted to","Synastry is the art of comparing two charts to see if a relationship is built to last"],
-    tableOfContents: [{"id":"love-guide","title":"Love is a Skill"},{"id":"venus-signs","title":"Venus: What You Love"},{"id":"mars-signs","title":"Mars: How You Lust"},{"id":"7th-house","title":"The 7th House of Marriage"},{"id":"retrograde-love","title":"Surviving Retrograde Romance"},{"id":"partner-analysis","title":"Compatibility Analysis"}],
-    content: `
-      <h2 id="love-guide">Tình yêu is a Skill (and Astrology is the Manual)</h2>
-      <p>We often treat love as a mysterious force that just "happens" to us. But in astrology, love is a mechanism with gears and levers. Your <strong>love horoscope</strong> isn't just about chance encounters; it's a blueprint of your psychological needs in a partnership.</p>
+  title: "💕 Tử Vi Tình Yêu 2026: Cẩm Nang Toàn Tập Về Sự Lãng Mạn Của Các Cung Hoàng Đạo",
+  excerpt: "Thay đổi cuộc sống tình ái của bạn bằng chiêm tinh học. Đi sâu tìm hiểu về cung Sao Kim, Nhà số 7 của Hôn nhân, các phong cách đam mê của Sao Hỏa và cách điều hướng Sao Thủy Nghịch Hành trong các mối quan hệ.",
+  category: "Tình Yêu & Mối Quan Hệ",
+  metaDescription: "Thay đổi cuộc sống tình ái của bạn bằng chiêm tinh học. Đi sâu tìm hiểu về cung Sao Kim, Nhà số 7 của Hôn nhân và đam mê của Sao Hỏa.",
+  keywords: "tử vi tình yêu, chiêm tinh mối quan hệ, ý nghĩa cung sao kim, sao hỏa trong hẹn hò, nhà số 7 hôn nhân, hướng dẫn synastry, lời khuyên hẹn hò hoàng đạo, độ hợp tình duyên",
+  quickSummary: [
+    "Ngôn ngữ tình yêu của bạn được quyết định bởi Cung Sao Kim, không chỉ là Cung Mặt Trời",
+    "Nhà số 7 trong biểu đồ của bạn mô tả người bạn đời lý tưởng lâu dài của bạn",
+    "Sao Hỏa quyết định cách bạn theo đuổi các mối quan tâm lãng mạn và phản ứng hóa học tình dục",
+    "Thời điểm trong các mối quan hệ là tất cả — đừng bao giờ kết hôn khi Sao Kim Nghịch Hành"
+  ],
+  keyTakeaways: [
+    "Nếu muốn biết cách ai đó tán tỉnh, hãy nhìn vào cung Sao Kim của họ",
+    "Nếu muốn biết cách ai đó tranh cãi hoặc làm tình, hãy nhìn vào cung Sao Hỏa của họ",
+    "\"Cung Lặn\" (đối diện với Cung Mọc của bạn) thường là cung mà bạn bị thu hút nhất",
+    "Synastry (Chiêm tinh học đối chiếu) là nghệ thuật so sánh hai biểu đồ để xem một mối quan hệ có bền vững hay không"
+  ],
+  tableOfContents: [
+    { id: "love-guide", title: "Tình Yêu Là Một Kỹ Năng" },
+    { id: "venus-signs", title: "Sao Kim: Những Gì Bạn Yêu" },
+    { id: "mars-signs", title: "Sao Hỏa: Cách Bạn Khao Khát" },
+    { id: "7th-house", title: "Nhà Số 7 Của Hôn Nhân" },
+    { id: "retrograde-love", title: "Sống Sót Qua Những Mùa Nghịch Hành" },
+    { id: "partner-analysis", title: "Phân Tích Độ Hợp Nhau" }
+  ],
+  content: `
+      <h2 id="love-guide">Tình Yêu Là Một Kỹ Năng (Và Chiêm Tinh Học Là Sách Hướng Dẫn)</h2>
+      <p>Chúng ta thường coi tình yêu như một thế lực huyền bí chỉ đơn giản là "ập đến" với mình. Nhưng trong chiêm tinh học, tình yêu là một cơ chế với các bánh răng và đòn bẩy. <strong>Tử vi tình yêu</strong> của bạn không chỉ là những cuộc gặp gỡ ngẫu nhiên; đó là bản thiết kế các nhu cầu tâm lý của bạn trong một mối quan hệ đối tác.</p>
       
-      <p>Why do you keep attracting the same "bad" type? Why does communication always break down after three months? The answers are in your chart. By understanding your own cosmic love design, you can stop repeating patterns and start building the relationship you actually want.</p>
+      <p>Tại sao bạn cứ mãi thu hút cùng một kiểu người "tệ"? Tại sao giao tiếp luôn đổ vỡ sau ba tháng? Câu trả lời nằm trong biểu đồ của bạn. Bằng cách hiểu thiết kế tình yêu vũ trụ của riêng mình, bạn có thể ngừng lặp lại các khuôn mẫu và bắt đầu xây dựng mối quan hệ mà bạn thực sự mong muốn.</p>
       
-      <h2 id="venus-signs">Venus: The Art of Affection</h2>
-      <p><strong>Venus</strong> is the planet of attraction, values, and harmony. The sign Venus was in when you were born describes what you find beautiful and how you show affection.</p>
+      <h2 id="venus-signs">Sao Kim: Nghệ Thuật Của Sự Ái Ân</h2>
+      <p><strong>Sao Kim</strong> là hành tinh của sự thu hút, các giá trị và sự hài hòa. Cung mà Sao Kim cư ngụ khi bạn sinh ra mô tả những gì bạn thấy đẹp và cách bạn thể hiện tình cảm.</p>
       <ul>
-        <li><strong>Venus in Fire (Aries, Leo, Sag):</strong> Loves the chase. Needs drama, grand gestures, and spontaneity. Bores easily. <em>Advice:</em> Keep it exciting.</li>
-        <li><strong>Venus in Earth (Taurus, Virgo, Cap):</strong> Loves stability. Needs commitment, reliability, and physical touch. Dislikes games. <em>Advice:</em> Be consistent.</li>
-        <li><strong>Venus in Air (Gemini, Libra, Aqua):</strong> Loves the mind. Needs conversation, wit, and friendship first. Avoids heavy emotions. <em>Advice:</em> Be interesting.</li>
-        <li><strong>Venus in Water (Cancer, Scorpio, Pisces):</strong> Loves the soul. Needs deep emotional merging, vulnerability, and safety. <em>Advice:</em> Be real.</li>
+          <li><strong>Sao Kim ở nhóm Lửa (Bạch Dương, Sư Tử, Nhân Mã):</strong> Thích sự theo đuổi. Cần kịch tính, những cử chỉ hào phóng và sự tự phát. Dễ chán. <em>Lời khuyên:</em> Giữ cho mọi thứ luôn thú vị.</li>
+          <li><strong>Sao Kim ở nhóm Đất (Kim Ngưu, Xử Nữ, Ma Kết):</strong> Thích sự ổn định. Cần sự cam kết, tin cậy và đụng chạm thể xác. Ghét trò chơi tình ái. <em>Lời khuyên:</em> Hãy nhất quán.</li>
+          <li><strong>Sao Kim ở nhóm Khí (Song Tử, Thiên Bình, Bảo Bình):</strong> Thích trí tuệ. Cần trò chuyện, sự hóm hỉnh và tình bạn trước tiên. Tránh các cảm xúc nặng nề. <em>Lời khuyên:</em> Hãy là người thú vị.</li>
+          <li><strong>Sao Kim ở nhóm Nước (Cự Giải, Bọ Cạp, Song Ngư):</strong> Thích tâm hồn. Cần sự hòa quyện cảm xúc sâu sắc, sự tổn thương và an toàn. <em>Lời khuyên:</em> Hãy sống thật.</li>
       </ul>
 
-      <h2 id="mars-signs">Mars: The Engine of Desire</h2>
-      <p>While Venus is what you like, <strong>Mars</strong> is how you go get it. Mars rules libido, pursuit, and conflict.</p>
-      <p>If you have <strong>Mars in Scorpio</strong>, you are intense, possessive, and all-or-nothing. You might scare off a flighty <strong>Mars in Gemini</strong>, who just wants to flirt and have fun. Knowing your partner's Mars sign is the cheat code to sexual satisfaction and resolving arguments without breaking up.</p>
+      <h2 id="mars-signs">Sao Hỏa: Động Cơ Của Sự Khao Khát</h2>
+      <p>Trong khi Sao Kim là những gì bạn thích, <strong>Sao Hỏa</strong> là cách bạn đi lấy nó. Sao Hỏa cai quản ham muốn, sự theo đuổi và xung đột.</p>
+      <p>Nếu bạn có <strong>Sao Hỏa ở Bọ Cạp</strong>, bạn mãnh liệt, chiếm hữu và được ăn cả ngã về không. Bạn có thể làm khiếp sợ một <strong>Sao Hỏa ở Song Tử</strong> phù phiếm, người chỉ muốn tán tỉnh và vui vẻ. Biết cung Sao Hỏa của đối phương là "mã gian lận" để đạt được sự thỏa mãn và giải quyết tranh cãi mà không phải chia tay.</p>
 
-      <h2 id="7th-house">The 7th House: Your "Other Half"</h2>
-      <p>Look at your Rising Sign. Now look at the sign directly opposite it. This is your <strong>Descendant</strong>, the ruler of your 7th House of Partnership.</p>
-      <p>We are often magnetically attracted to people who embody the qualities of our 7th House because they possess what we lack.
-      <br><em>Example:</em> A disciplined <strong>Virgo Rising</strong> will often marry a dreamy, chaotic <strong>Pisces (7th House)</strong>. The Virgo organizes the Pisces' life; the Pisces teaches the Virgo to relax. It's the axis of balance.</p>
+      <h2 id="7th-house">Nhà Số 7: "Nửa Kia" Của Bạn</h2>
+      <p>Hãy nhìn vào Cung Mọc của bạn. Bây giờ hãy nhìn vào cung đối diện trực tiếp với nó. Đây là <strong>Cung Lặn</strong> của bạn, chủ quản Nhà số 7 của các Mối quan hệ đối tác.</p>
+      <p>Chúng ta thường bị thu hút một cách mãnh liệt bởi những người thể hiện các phẩm chất của Nhà số 7 vì họ sở hữu những gì chúng ta thiếu.
+      <br><em>Ví dụ:</em> Một <strong>Cung Mọc Xử Nữ</strong> kỷ luật thường sẽ kết hôn with một <strong>Song Ngư (Nhà số 7)</strong> mơ mộng, hỗn loạn. Xử Nữ tổ chức cuộc sống của Song Ngư; Song Ngư dạy Xử Nữ cách thư giãn. Đó là trục cân bằng.</p>
 
-      <h2 id="retrograde-love">Surviving Retrograde Romance</h2>
-      <p>You've heard of Mercury Retrograde (miscommunication), but <strong>Venus Retrograde</strong> is the real relationship tester. Happening every 18 months, this is when:
-      <br>1. Exes come back ("Zombieing").
-      <br>2. Weak relationships break up.
-      <br>3. Hidden affairs are revealed.</p>
+      <h2 id="retrograde-love">Sống Sót Qua Những Mùa Nghịch Hành</h2>
+      <p>Bạn đã nghe nói về Sao Thủy Nghịch Hành (truyền thông sai lệch), nhưng <strong>Sao Kim Nghịch Hành</strong> mới là bài kiểm tra thực sự cho mối quan hệ. Xảy ra mỗi 18 tháng, đây là lúc:
+      <br>1. Người cũ quay lại ("Zombieing").
+      <br>2. Các mối quan hệ lỏng lẻo tan vỡ.
+      <br>3. Những bí mật riêng tư bị tiết lộ.</p>
       
-      <p><strong>Golden Rule:</strong> Never get married, propose, or make a massive commitment during Venus Retrograde. Wait until the shadow period passes (usually 40 days) to see if you still feel the same way.</p>
+      <p><strong>Quy tắc vàng:</strong> Đừng bao giờ kết hôn, cầu hôn hoặc đưa ra một cam kết lớn trong thời gian Sao Kim Nghịch Hành. Hãy đợi cho đến khi giai đoạn bóng mờ kết thúc (thường là 40 ngày) để xem bạn có còn cảm thấy như cũ hay không.</p>
 
-      <h2 id="partner-analysis">Partner Compatibility Analysis</h2>
-      <p>You are complex, and so is your partner. A generic "Leo + Aquarius" horoscope can't capture the nuance of your unique connection. Our <strong>Premium Relationship Report</strong> analyzes:</p>
+      <h2 id="partner-analysis">Phân Tích Độ Hợp Nhau Của Đối Tác</h2>
+      <p>Bạn phức tạp, và đối tác của bạn cũng vậy. Một tử vi chung chung "Sư Tử + Bảo Bình" không thể ghi lại những sắc thái trong kết nối độc đáo của bạn. <strong>Báo Cáo Quan Hệ Cao Cấp</strong> của chúng tôi phân tích:</p>
       <ul>
-        <li><strong>Synastry:</strong> How your planets touch theirs (Chemistry).</li>
-        <li><strong>Composite Chart:</strong> The energy of the relationship itself (Destiny).</li>
-        <li><strong>Davison Chart:</strong> The purpose of your meeting (Karma).</li>
+          <li><strong>Synastry:</strong> Cách các hành tinh của bạn chạm vào hành tinh của họ (Hóa học).</li>
+          <li><strong>Biểu đồ Hợp nhất (Composite):</strong> Năng lượng của chính mối quan hệ (Định mệnh).</li>
+          <li><strong>Biểu đồ Davison:</strong> Mục đích của cuộc gặp gỡ (Nghiệp lực).</li>
       </ul>
-      <p>Don't leave your heart to chance. Decode your love life with Astralo.</p>
+      <p>Đừng để trái tim mình cho sự may rủi. Giải mã cuộc sống tình yêu của bạn với Astralo.</p>
     `
 };

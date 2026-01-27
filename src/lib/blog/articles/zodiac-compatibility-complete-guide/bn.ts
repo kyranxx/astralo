@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const bn: BlogPostTranslation = {
-    title: "❤️ রাশিচক্র চিহ্ন Compatibility: The Definitive Guide to Cosmic প্রেম",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun চিহ্নs Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ রাশিচক্রের সামঞ্জস্য: মহাজাগতিক ভালোবাসার চূড়ান্ত নির্দেশিকা",
+  excerpt: "২০২৬ সালের রাশিচক্রের সামঞ্জস্যের চূড়ান্ত নির্দেশিকা। শুধুমাত্র সূর্য চিহ্নের বাইরে গিয়ে জানুন কীভাবে উপাদান, শুক্র এবং মঙ্গল আপনার রোমান্টিক রসায়ন এবং দীর্ঘমেয়াদী সম্ভাবনাকে প্রভাবিত করে।",
+  category: "ভালোবাসা ও সম্পর্ক",
+  metaDescription: "২০২৬ সালের রাশিচক্রের সামঞ্জস্যের চূড়ান্ত নির্দেশিকা। জানুন কীভাবে উপাদান, শুক্র এবং মঙ্গল আপনার রোমান্টিক রসায়নকে প্রভাবিত করে।",
+  keywords: "রাশিচক্রের সামঞ্জস্য, প্রেম রাশিফল, সিনাস্ট্রি, রাশি চিহ্নের সামঞ্জস্য, শুক্র চিহ্নের প্রেম, মঙ্গল চিহ্নের আবেগ, সম্পর্কের জ্যোতিষশাস্ত্র, সেরা মিল",
+  quickSummary: [
+    "প্রকৃত সামঞ্জস্যের জন্য শুধুমাত্র সূর্য চিহ্ন নয়, বরং সম্পূর্ণ জন্মকুণ্ডলী (সিনাস্ট্রি) তুলনা করা প্রয়োজন",
+    "উপাদানের ভারসাম্য (আগুন, পৃথিবী, বায়ু, জল) সম্পর্কের সম্প্রীতির ভিত্তি",
+    "\"অসংগতিপূর্ণ\" চিহ্নগুলো প্রায়ই আত্মার উন্নতির জন্য সবচেয়ে বড় সুযোগ প্রদান করে",
+    "শুক্র অনুরাগের ধরণ নির্ধারণ করে, আর মঙ্গল আবেগ এবং দ্বন্দ্ব নিরসনের ধরণ নিয়ন্ত্রণ করে"
+  ],
+  keyTakeaways: [
+    "সহজ সম্পর্কের জন্য একই উপাদানের মধ্যে সংযোগ এবং তীব্র আকর্ষণের জন্য বিপরীত চিহ্নের দিকে নজর দিন",
+    "একসঙ্গে থাকা এবং মানসিক নিরাপত্তার জন্য চন্দ্র চিহ্নের সামঞ্জস্য অত্যন্ত গুরুত্বপূর্ণ",
+    "বুধের সামঞ্জস্য নির্ধারণ করে আপনারা কতটা ভালোভাবে সমস্যার সমাধান করতে পারবেন",
+    "কোনো মিলই \"নিখুঁত\" নয়; প্রতিটি জুটিরই সবল দিক এবং চ্যালেঞ্জ রয়েছে"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "কেন সূর্য চিহ্নই সব কিছু নয়" },
+    { id: "elemental-love", title: "প্রেমের ক্ষেত্রে ৪টি উপাদান" },
+    { id: "love-planets", title: "শুক্র, মঙ্গল এবং চাঁদ" },
+    { id: "challenging-matches", title: "\"খারাপ\" জোড় সম্পর্কে আসল সত্য" },
+    { id: "best-matches-deep-dive", title: "গভীর বিশ্লেষণ: সেরা মিলগুলো" },
+    { id: "synastry", title: "উন্নত টিপস: সিনাস্ট্রি" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">কেন সূর্য চিহ্নই সব কিছু নয়</h2>
+      <p>আমরা সবাই কখনো না কখনো আমাদের পছন্দের মানুষের চিহ্নের সাথে নিজের চিহ্নের মিল আছে কি না তা পরীক্ষা করেছি। \"ওহ না, আমি সিংহ আর সে বৃশ্চিক — আমাদের সম্পর্ক টিকবে না!\" কিন্তু একটু থামুন। <strong>রাশিচক্রের সামঞ্জস্য</strong> টেবিল মেলানোর চেয়ে অনেক বেশি জটিল এবং আশাব্যঞ্জক।</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>যদিও আপনার সূর্য চিহ্ন আপনার মূল অহং এবং জীবনের উদ্দেশ্যকে প্রতিনিধিত্ব করে, সম্পর্ক গড়ে ওঠে আবেগ, যোগাযোগ এবং মূল্যবোধের উপর। এজন্যই হয়তো আপনি এমন একজনের সাথে সুখে সংসার করছেন যার চিহ্ন আপনার সাথে \"অসংগতিপূর্ণ\", অথবা আপনার তথাকথিত \"নিখুঁত মিল\" থাকা সত্ত্বেও সম্পর্কের টানাপোড়েন চলছে। <strong>প্রেমের মিল</strong> সত্যিকার অর্থে বুঝতে হলে আমাদের আকাশের সম্পূর্ণ চিত্রের দিকে তাকাতে হবে।</p>
 
-      <h2 id="elemental-love">The 4 Elements in প্রেম</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">প্রেমের ক্ষেত্রে ৪টি উপাদান</h2>
+      <p>প্রাথমিক রসায়ন বোঝার দ্রুততম উপায় হলো উপাদানগুলোর মাধ্যমে দেখা। একই উপাদানের চিহ্নগুলো সাধারণত \"একই ভাষায় কথা বলে\"।</p>
       
-      <h3>🔥 আগুন চিহ্নs (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 আগুনের চিহ্ন (মেষ, সিংহ, ধনু)</h3>
+      <p><strong>প্রেমের ভাষা:</strong> আবেগ, অ্যাডভেঞ্চার, স্বতঃস্ফূর্ততা।</p>
+      <p>আগুনের চিহ্নগুলোর এমন একজন সঙ্গী প্রয়োজন যিনি তাদের আগুনকে নিভিয়ে না ফেলে আরও উজ্জ্বল করতে পারেন। তারা উত্তেজনা পছন্দ করে এবং একঘেয়েমি ঘৃণা করে।
+      <br><em>সেরা মিল:</em> অন্যান্য আগুনের চিহ্ন (তাৎক্ষণিক উষ্ণতা) অথবা বায়ুর চিহ্ন (বায়ু আগুনকে বাড়িয়ে দেয়)।</p>
 
-      <h3>🌍 পৃথিবী চিহ্নs (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 পৃথিবীর চিহ্ন (বৃষ, কন্যা, মকর)</h3>
+      <p><strong>প্রেমের ভাষা:</strong> সেবা, স্থিতিশীলতা, স্পর্শ।</p>
+      <p>পৃথিবীর চিহ্নগুলো ভালোবাসাকে একটি কাজের মতো দেখে। তারা ব্যবহারিক কাজের মাধ্যমে এবং একসাথে জীবন গড়ার মধ্য দিয়ে অনুরাগ প্রকাশ করে। তাদের নির্ভরতা প্রয়োজন।
+      <br><em>সেরা মিল:</em> অন্যান্য পৃথিবীর চিহ্ন (দৃঢ় ভিত্তি) অথবা জলের চিহ্ন (জল পৃথিবীকে পুষ্ট করে)।</p>
 
-      <h3>💨 বায়ু চিহ্নs (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 বায়ুর চিহ্ন (মিথুন, তুলা, কুম্ভ)</h3>
+      <p><strong>প্রেমের ভাষা:</strong> কথোপকথন, বুদ্ধি, স্বাধীনতা।</p>
+      <p>বায়ুর চিহ্নগুলোর জন্য মন হলো সবচেয়ে আকর্ষণীয় জায়গা। তাদের মানসিক উদ্দীপনা এবং এমন একজন সঙ্গী প্রয়োজন যিনি তাদের সেরা বন্ধু হতে পারেন।
+      <br><em>সেরা মিল:</em> অন্যান্য বায়ুর চিহ্ন (অবিরাম কথা) অথবা আগুনের চিহ্ন (অনুপ্রেরণা)।</p>
 
-      <h3>💧 জল চিহ্নs (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 জলের চিহ্ন (কর্কট, বৃশ্চিক, মীন)</h3>
+      <p><strong>প্রেমের ভাষা:</strong> দুর্বলতা, অন্তর্দৃষ্টি, একীভূত হওয়া।</p>
+      <p>জলের চিহ্নগুলো গভীর আবেগীয় সংযোগ খোঁজে। তারা কথা না বলেই একে অপরকে বুঝতে চায় এবং একটি নিরাপদ আশ্রয় প্রয়োজন।
+      <br><em>সেরা মিল:</em> অন্যান্য জলের চিহ্ন (মানসিক বন্ধন) অথবা পৃথিবীর চিহ্ন (যা জলের জন্য আধার হিসেবে কাজ করে)।</p>
 
-      <h2 id="love-planets">The Real প্রেম Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">প্রেমের আসল গ্রহ: শুক্র, মঙ্গল এবং চাঁদ</h2>
+      <p>আপনি যদি জানতে চান যে দৈনন্দিন জীবনে আপনাদের সম্পর্ক কেমন হবে, তবে শুধু সূর্য চিহ্নের সামঞ্জস্য যথেষ্ট নয়। আপনার সঙ্গীর কুণ্ডলীতে তিনটি বিশেষ গ্রহের দিকে নজর দিতে হবে:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>১. চাঁদ 🌙 (মানসিক নিরাপত্তা)</h3>
+      <p>দীর্ঘমেয়াদী বিবাহ বা একসাথে থাকার ক্ষেত্রে, <strong>চাঁদ চিহ্নের সামঞ্জস্যতা হলো আসল চাবিকাঠি</strong>। আপনার চাঁদ চিহ্ন নির্ধারণ করে আপনি কিসে নিরাপদ বোধ করবেন, ক্লান্ত বা ক্ষুধার্ত থাকলে কেমন আচরণ করবেন এবং কীভাবে অন্যদের যত্ন নেবেন। 
+      <br><em>উদাহরণ:</em> একজন মেষ সূর্যের মানুষ বাইরে কঠোর মনে হতে পারে, কিন্তু যদি তাদের চাঁদ কর্কট হয়, তবে তারা আসলে খুব নরম মনের এবং বাড়িতে তাদের স্নেহ ও নিরাপত্তার প্রয়োজন হয়।</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>২. শুক্র ♀ (রোমান্স ও মূল্যবোধ)</h3>
+      <p>শুক্র নির্ধারণ করে আপনার কাছে কোনটা সুন্দর এবং আপনি কোনটাকে মূল্যবান মনে করেন। এটি আপনার \"ফ্লার্টিং স্টাইল\" দেখায়।
+      <br><em>টিপ:</em> যদি আপনাদের শুক্র চিহ্ন একই উপাদানে থাকে, তবে আপনাদের রুচি এবং খরচের অভ্যাস সহজেই মিলে যাবে।</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>৩. মঙ্গল ♂ (আবেগ ও তর্ক)</h3>
+      <p>মঙ্গল হলো লিবিডো এবং দ্বন্দ্বের গ্রহ। এটি দেখায় যে আপনি লড়াই করবেন কীভাবে এবং ভালোবাসা করবেন কীভাবে।
+      <br><em>টিপ:</em> সামঞ্জস্যপূর্ণ মঙ্গল চিহ্নগুলো নিশ্চিত করে যে তর্কগুলো দ্রুত মিটে যাচ্ছে এবং শারীরিক রসায়ন বজায় থাকছে।</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">\"খারাপ\" জোড় সম্পর্কে আসল সত্য</h2>
+      <p>যদি আপনি এমন কারো প্রেমে পড়েন যার চিহ্ন আপনার সাথে \"অসংগতিপূর্ণ\"? যেমন, সিংহ (আগুন) এবং বৃশ্চিক (জল)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>এই সম্পর্কগুলো প্রায়শই সবচেয়ে বেশি <strong>পরিবর্তনকামী</strong> হয়। জ্যোতিষশাস্ত্রে এগুলোকে \"স্কয়ার\" বা \"কুইনকাঙ্কস\" অ্যাসপেক্ট বলা হয়। এগুলো ঘর্ষণ তৈরি করে। কিন্তু ঘর্ষণ থেকেই তাপ তৈরি হয়! \"চ্যালেঞ্জিং\" জোড়গুলো আপনাকে বড় হতে, নতুন ভাষা শিখতে এবং আপনার কমফোর্ট জোনের বাইরে যেতে বাধ্য করে। এগুলো প্রায়শই উচ্চ-আবেগ এবং ড্রামা সম্পন্ন সোলমেট কানেকশন হয় যা আপনার আত্মার বিবর্তনের জন্য তৈরি, যদিও এতে বেশি পরিশ্রমের প্রয়োজন হয়।</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous রাশিচক্র Pবায়ুings</h2>
+      <h2 id="best-matches-deep-dive">গভীর বিশ্লেষণ: বিখ্যাত রাশিচক্রের জুড়ি</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>\"পাওয়ার কাপল\": মেষ ও তুলা</h3>
+      <p>বিপরীতরা আকর্ষণ করে! মেষ হলো \"আমি আগে\", তুলা হলো \"আমরা আগে\"। মেষ তুলাকে দৃঢ়তা শেখায়; তুলা মেষকে কূটনীতি শেখায়। এটি একটি চৌম্বকীয় আকর্ষণ যা ভাঙা কঠিন।</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>\"সাম্রাজ্য নির্মাতা\": বৃষ ও মকর</h3>
+      <p>পৃথিবীর দুটি চিহ্ন যারা গুণমান, অর্থ এবং নিরাপত্তাকে মূল্য দেয়। তারা একসাথে বিশাল সাফল্য অর্জন করে, যদিও তাদের মনে রাখতে হবে শুধু কাজ নয়, আনন্দও করতে হবে।</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>\"পিটার প্যান\" জুটি: মিথুন ও ধনু</h3>
+      <p>বায়ু এবং আগুন। উভয়েই স্বাধীনতা, ভ্রমণ এবং দর্শন ভালোবাসে। তারা হয়তো প্রথাগতভাবে কখনো থিতু হবে না, কিন্তু তারা চিরদিনের মতো একে অপরের সঙ্গী হয়ে থাকবে।</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>\"মানসিক সংযোগ\": কর্কট ও বৃশ্চিক</h3>
+      <p>যখন এই জলের দুটি চিহ্ন মিলিত হয়, পৃথিবী বিলীন হয়ে যায়। তাদের মধ্যে একটি টেলিপ্যাথিক সংযোগ এবং আধিপত্য বজায় রাখার ইচ্ছা থাকে যা তাদের একে অপরের প্রতি প্রচণ্ড বিশ্বস্ত করে তোলে।</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">উন্নত সামঞ্জস্য: সিনাস্ট্রি</h2>
+      <p>আপনার সম্পর্ক সম্পর্কে আসল উত্তর পেতে আপনার একটি <strong>সিনাস্ট্রি রিডিং</strong> প্রয়োজন। এতে আপনার কুণ্ডলীর উপর আপনার সঙ্গীর কুণ্ডলী স্থাপন করা হয়।</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>আমরা যা খুঁজি:
+      <br><strong>সূর্য-চন্দ্র সংযোগ:</strong> ক্লাসিক \"স্বামী/স্ত্রী\" সমীকরণ।
+      <br><strong>শুক্র-মঙ্গল বিনিময়:</strong> অসাধারণ যৌন আকর্ষণ।
+      <br><strong>শনি সংযোগ:</strong> সেই আঠা যা সারা জীবনের জন্য মানুষকে একসাথে ধরে রাখে (এমনকি কঠিন সময়েও)।</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>অ্যাস্ট্রালোতে, আমাদের উন্নত অ্যালগরিদম এবং বিশেষজ্ঞ জ্যোতিষীরা আপনাকে শুধু একটি শতকরা হার দেন না। আমরা আপনাদের সম্পর্কের আত্মার একটি মানচিত্র তৈরি করি। অনুমান করা বন্ধ করুন এবং আপনার মিলনের মহাজাগতিক উদ্দেশ্য বুঝতে শুরু করুন।</p>
     `
 };

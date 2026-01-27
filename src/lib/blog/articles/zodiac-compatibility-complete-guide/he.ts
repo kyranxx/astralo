@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const he: BlogPostTranslation = {
-    title: "❤️ גלגל המזלות מזל Compatibility: The Definitive Guide to Cosmic אהבה",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun מזלs Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ התאמת מזלות: המדריך המלא לאהבה קוסמית",
+  excerpt: "המדריך האולטימטיבי להתאמת מזלות ב-2026. לכו מעבר למזל השמש וגלו כיצד האלמנטים, ונוס ומאדים משפיעים על הכימיה הרומנטית והפוטנציאל לטווח ארוך.",
+  category: "אהבה ומערכות יחסים",
+  metaDescription: "המדריך האולטימטיבי להתאמת מזלות ב-2026. גלו כיצד האלמנטים, ונוס ומאדים משפיעים על הכימיה הרומנטית שלכם.",
+  keywords: "התאמת מזלות, הורוסקופ אהבה, סינסטרי, התאמה בין מזלות, ונוס באהבה, מאדים ותשוקה, אסטרולוגיה של מערכות יחסים, זיווגים מנצחים",
+  quickSummary: [
+    "התאמה אמיתית כוללת השוואה של מפות לידה מלאות (סינסטרי), לא רק מזלות שמש",
+    "איזון בין אלמנטים (אש, אדמה, אוויר, מים) הוא הבסיס להרמוניה במערכת היחסים",
+    "מזלות \"לא מתאימים\" מספקים לעיתים קרובות את ההזדמנויות הגדולות ביותר לצמיחה נשמתית",
+    "ונוס קובעת את סגנון החיבה, בעוד מאדים מניע את התשוקה ואת סגנון ניהול הקונפליקטים"
+  ],
+  keyTakeaways: [
+    "חפשו טריגונים (אותו אלמנט) למערכת יחסים קלה, ומולויות למשיכה עזה",
+    "התאמת מזל הירח היא קריטית לחיים משותפים ולביטחון רגשי",
+    "התאמת מרקורי קובעת עד כמה טוב תפתרו בעיות יחד",
+    "אין דבר כזה זיווג \"מושלם\"; לכל זיווג יש נקודות חוזק ואתגרים"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "למה מזל השמש הוא לא הכל" },
+    { id: "elemental-love", title: "4 האלמנטים באהבה" },
+    { id: "love-planets", title: "ונוס, מאדים והירח" },
+    { id: "challenging-matches", title: "האמת על זיווגים \"גרועים\"" },
+    { id: "best-matches-deep-dive", title: "צלילה לעומק: הזיווגים הטובים ביותר" },
+    { id: "synastry", title: "טיפ למתקדמים: סינסטרי" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">למה מזלות השמש הם לא הכל</h2>
+      <p>כולנו היינו שם: בודקים במגזין או באפליקציה אם המזל של מי שאנחנו דלוקים עליו מתאים לשלנו. \"אוי לא, אני אריה והוא עקרב - אנחנו אבודים!\" אבל חכו רגע. <strong>התאמת מזלות</strong> היא הרבה יותר מורכבת — ומלאת תקווה — מאשר התאמה בטבלה פשוטה.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>בעוד שמזל השמש שלכם מייצג את הליבה של האגו ואת מטרת החיים שלכם, מערכות יחסים נבנות על רגשות, תקשורת וערכים. זו הסיבה שאתם עשויים למצוא את עצמכם נשואים באושר למזל שנחשב לכאורה ל\"לא מתאים\", או נאבקים עם הזיווג שנקרא \"מושלם\". כדי להבין באמת <strong>זיווגי אהבה</strong>, עלינו להסתכל על התמונה המלאה של השמיים.</p>
 
-      <h2 id="elemental-love">The 4 Elements in אהבה</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 האלמנטים באהבה</h2>
+      <p>הדרך המהירה ביותר לאמוד כימיה ראשונית היא באמצעות האלמנטים. מזלות מאותו אלמנט בדרך כלל \"מדברים באותה שפה\".</p>
       
-      <h3>🔥 אש מזלs (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 מזלות אש (טלה, אריה, קשת)</h3>
+      <p><strong>שפת אהבה:</strong> תשוקה, הרפתקאות, ספונטניות.</p>
+      <p>מזלות האש זקוקים לפרטנר שיכול ללבות את הלהבות שלהם מבלי לכבות אותן. הם משתוקקים להתרגשות ושונאים להשתעמם.
+      <br><em>הכי מתאימים עם:</em> מזלות אש אחרים (חום מיידי) או מזלות אוויר (אוויר מזין אש).</p>
 
-      <h3>🌍 אדמה מזלs (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 מזלות אדמה (שור, בתולה, גדי)</h3>
+      <p><strong>שפת אהבה:</strong> שירות, יציבות, מגע.</p>
+      <p>מזלות האדמה מתייחסים לאהבה כפועל. הם מראים חיבה באמצעות מעשים פרקטיים של שירות ובניית חיים משותפים. הם זקוקים לאמינות.
+      <br><em>הכי מתאימים עם:</em> מזלות אדמה אחרים (בסיס איתן) או מזלות מים (מים מזינים את האדמה).</p>
 
-      <h3>💨 אוויר מזלs (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 מזלות אוויר (תאומים, מאזניים, דלי)</h3>
+      <p><strong>שפת אהבה:</strong> שיחה, שנינות, חופש.</p>
+      <p>עבור מזלות האוויר, המוח הוא האזור האירוגני ביותר. הם זקוקים לגירוי מנטלי ולפרטנר שהוא גם החבר הכי טוב שלהם.
+      <br><em>הכי מתאימים עם:</em> מזלות אוויר אחרים (שיחות בלתי נגמרות) או מזלות אש (השראה).</p>
 
-      <h3>💧 מים מזלs (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 מזלות מים (סרטן, עקרב, דגים)</h3>
+      <p><strong>שפת אהבה:</strong> פגיעות, אינטואיציה, מיזוג.</p>
+      <p>מזלות המים מחפשים חיבור רגשי עמוק. הם רוצים שיבינו אותם ללא מילים וזקוקים לחוף מבטחים.
+      <br><em>הכי מתאימים עם:</em> מזלות מים אחרים (קשר נפשי) או מזלות אדמה (הכלי שמכיל את המים שלהם).</p>
 
-      <h2 id="love-planets">The Real אהבה Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">כוכבי הלכת האמיתיים של האהבה: ונוס, מאדים והירח</h2>
+      <p>אם אתם רוצים לדעת אם באמת תסתדרו ביום-יום, בדיקת התאמת מזל השמש אינה מספיקה. עליכם להסתכל מקרוב על שלושה כוכבי לכת ספציפיים במפת השותף שלכם:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. הירח 🌙 (ביטחון רגשי)</h3>
+      <p>בנישואין ארוכי טווח או במגורים משותפים, <strong>התאמת מזל הירח היא המלכה</strong>. מזל הירח שלכם קובע מה אתם צריכים כדי להרגיש בטוחים, איך אתם מגיבים כשאתם עייפים או רעבים, ואיך אתם מטפחים אחרים. 
+      <br><em>דוגמה:</em> שמש בטלה עשויה להיראות קשוחה, אבל אם יש להם ירח בסרטן, הם למעשה רגישים מאוד שזקוקים לחיבוקים וחיזוקים בבית.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. ונוס ♀ (רומנטיקה וערכים)</h3>
+      <p>ונוס קובעת מה נראה לכם יפה ומה אתם מעריכים. היא מראה את \"סגנון הפלירטוט\" שלכם.
+      <br><em>טיפ:</em> אם מזלות הונוס שלכם הם מאותו אלמנט, הטעמים והרגלי ההוצאות שלכם כנראה יתואמו בקלות.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. מאדים ♂ (תשוקה וויכוחים)</h3>
+      <p>מאדים הוא כוכב הלכת של הליבידו והקונפליקט. הוא מראה איך אתם נלחמים ואיך אתם מקיימים יחסי מין.
+      <br><em>טיפ:</em> מזלות מאדים תואמים מבטיחים ויכוחים שיושבו במהירות וכימיה פיזית שתישאר בחיים.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">האמת על זיווגים \"גרועים\"</h2>
+      <p>מה אם אתם מתאהבים במזל שהוא \"לא מתאים\"? למשל, אריה (אש) ועקרב (מים)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>מערכות יחסים אלו הן לרוב ה<strong>מעצבות</strong> ביותר. האסטרולוגיה קוראת להיבטים אלו \"ריבוע\" (Square) או \"קווינקונקס\" (Quincunx). הם יוצרים חיכוך. אבל חיכוך מייצר חום! זיווגים \"מאתגרים\" מאלצים אתכם לצמוח, ללמוד שפה חדשה ולצאת מאזור הנוחות שלכם. הם לרוב קשרי נשמה מלאי תשוקה ודרמה שנועדו לפתח את הנשמה שלכם, גם אם הם דורשים יותר עבודה.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous גלגל המזלות Pאווירings</h2>
+      <h2 id="best-matches-deep-dive">צלילה לעומק: זיווגים מפורסמים</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>\"זוג חזק\": טלה ומאזניים</h3>
+      <p>הפכים נמשכים! טלה הוא \"אני קודם\", מאזניים הוא \"אנחנו קודם\". טלה מלמד את מאזניים אסרטיביות; מאזניים מלמד את טלה דיפלומטיה. זוהי משיכה מגנטית שקשה לשבור.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>\"בוני האימפריות\": שור וגדי</h3>
+      <p>שני מזלות אדמה שמעריכים איכות, כסף וביטחון. הם בונים הצלחה אדירה יחד, אם כי הם צריכים לזכור גם ליהנות ולא רק לעבוד.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>צמד \"פיטר פן\": תאומים וקשת</h3>
+      <p>אוויר ואש. שניהם אוהבים חופש, נסיעות ופילוסופיה. הם אולי לעולם לא יתמסדו במובן המסורתי, אבל הם יהיו שותפים לפשע לנצח.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>\"הקשר הנפשי\": סרטן ועקרב</h3>
+      <p>כששני מזלות המים האלו נפגשים, העולם נעלם. יש להם חיבור טלפתי ורכושנות שהופכת אותם לנאמנים בחירוף נפש אחד לשני.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">התאמה מתקדמת: סינסטרי</h2>
+      <p>כדי לקבל את התשובה האמיתית לגבי מערכת היחסים שלכם, אתם זקוקים ל<strong>קריאת סינסטרי</strong>. זה כולל הנחת המפה שלכם על גבי המפה של השותף שלכם.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>אנו מחפשים קשרים כמו:
+      <br><strong>צמידות שמש-ירח:</strong> ההיבט הקלאסי של \"בעל ואישה\".
+      <br><strong>חילופי ונוס-מאדים:</strong> משיכה מינית מדהימה.
+      <br><strong>קשרי שבתאי:</strong> הדבק שמחזיק אנשים יחד לכל החיים (אפילו בזמנים קשים).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>ב-Astralo, האלגוריתמים המתקדמים והאסטרולוגים המומחים שלנו לא נותנים לכם רק אחוזים. אנו יוצרים מפה של נשמת מערכת היחסים שלכם. הפסיקו לנחש והתחילו להבין את המטרה הקוסמית של האיחוד שלכם.</p>
     `
 };

@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const id: BlogPostTranslation = {
-    title: "❤️ Zodiak Tanda Compatibility: The Definitive Guide to Cosmic Cinta",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Tandas Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Kecocokan Zodiak: Panduan Definitif untuk Cinta Kosmik",
+  excerpt: "Panduan utama kecocokan zodiak tahun 2026. Melampaui zodiak Matahari dan temukan bagaimana Elemen, Venus, dan Mars memengaruhi chemistry romantis serta potensi jangka panjang Anda.",
+  category: "Cinta & Hubungan",
+  metaDescription: "Panduan utama kecocokan zodiak tahun 2026. Temukan bagaimana Elemen, Venus, dan Mars memengaruhi chemistry romantis Anda.",
+  keywords: "kecocokan zodiak, horoskop cinta, sinastri, kecocokan tanda bintang, cinta venus, gairah mars, astrologi hubungan, pasangan terbaik",
+  quickSummary: [
+    "Kecocokan sejati melibatkan perbandingan peta kelahiran lengkap (Sinastri), bukan hanya zodiak Matahari",
+    "Keseimbangan Elemen (Api, Tanah, Udara, Air) adalah fondasi harmoni hubungan",
+    "Tanda-tanda yang \"tidak cocok\" sering kali memberikan peluang terbesar bagi pertumbuhan jiwa",
+    "Venus menentukan gaya kasih sayang, sementara Mars menggerakkan gairah dan gaya penyelesaian konflik"
+  ],
+  keyTakeaways: [
+    "Cari aspek trine (elemen yang sama) untuk kemudahan, dan oposisi untuk daya tarik yang intens",
+    "Kecocokan tanda Bulan sangat penting untuk tinggal bersama dan keamanan emosional",
+    "Kecocokan Merkurius mendikte seberapa baik Anda memecahkan masalah bersama",
+    "Tidak ada pasangan yang \"sempurna\"; setiap pasangan memiliki kekuatan dan tantangan"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "Mengapa Zodiak Matahari Bukan Segalanya" },
+    { id: "elemental-love", title: "4 Elemen dalam Cinta" },
+    { id: "love-planets", title: "Venus, Mars & Bulan" },
+    { id: "challenging-matches", title: "Kebenaran Tentang Pasangan \"Buruk\"" },
+    { id: "best-matches-deep-dive", title: "Analisis Mendalam: Pasangan Terbaik" },
+    { id: "synastry", title: "Tips Lanjutan: Sinastri" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Mengapa Zodiak Matahari Bukan Segalanya</h2>
+      <p>Kita semua pernah mengalaminya: memeriksa majalah atau aplikasi untuk melihat apakah zodiak gebetan kita cocok dengan zodiak kita. \"Oh tidak, aku Leo dan dia Scorpio - kita ditakdirkan gagal!\" Tapi tunggu dulu. <strong>Kecocokan zodiak</strong> jauh lebih kompleks — dan penuh harapan — daripada sekadar pencocokan tabel sederhana.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Meskipun zodiak Matahari mewakili ego inti dan tujuan hidup Anda, hubungan dibangun di atas emosi, komunikasi, dan nilai-nilai. Inilah sebabnya mengapa Anda mungkin mendapati diri Anda bahagia menikah dengan zodiak yang seharusnya \"tidak cocok,\" atau berjuang dengan apa yang disebut \"pasangan sempurna\" Anda. Untuk benar-benar memahami <strong>kecocokan cinta</strong>, kita harus melihat gambaran langit secara utuh.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Cinta</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 Elemen dalam Cinta</h2>
+      <p>Cara tercepat untuk mengukur chemistry awal adalah melalui Elemen. Zodiak dengan elemen yang sama umumnya \"berbicara bahasa yang sama\".</p>
       
-      <h3>🔥 Api Tandas (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Zodiak Api (Aries, Leo, Sagitarius)</h3>
+      <p><strong>Bahasa Cinta:</strong> Gairah, Petualangan, Spontanitas.</p>
+      <p>Zodiak Api membutuhkan pasangan yang bisa mengobarkan api mereka tanpa memadamkannya. Mereka mendambakan kegembiraan dan benci merasa bosan.
+      <br><em>Terbaik dengan:</em> Zodiak Api lainnya (kehangatan instan) atau zodiak Udara (Udara memberi energi pada Api).</p>
 
-      <h3>🌍 Bumi Tandas (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Zodiak Tanah (Taurus, Virgo, Capricorn)</h3>
+      <p><strong>Bahasa Cinta:</strong> Pelayanan, Stabilitas, Sentuhan.</p>
+      <p>Zodiak Tanah memperlakukan cinta sebagai kata kerja. Mereka menunjukkan kasih sayang melalui tindakan nyata dalam melayani dan membangun kehidupan bersama. Mereka butuh keandalan.
+      <br><em>Terbaik dengan:</em> Zodiak Tanah lainnya (fondasi kokoh) atau zodiak Air (Air menyuburkan Tanah).</p>
 
-      <h3>💨 Udara Tandas (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Zodiak Udara (Gemini, Libra, Aquarius)</h3>
+      <p><strong>Bahasa Cinta:</strong> Percakapan, Kecerdasan, Kebebasan.</p>
+      <p>Bagi zodiak Udara, pikiran adalah zona paling erotis. Mereka membutuhkan stimulasi mental dan pasangan yang juga merupakan sahabat terbaik mereka.
+      <br><em>Terbaik dengan:</em> Zodiak Udara lainnya (pembicaraan tanpa henti) atau zodiak Api (inspirasi).</p>
 
-      <h3>💧 Udara Tandas (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Zodiak Air (Cancer, Scorpio, Pisces)</h3>
+      <p><strong>Bahasa Cinta:</strong> Kerentanan, Intuisi, Penyatuan.</p>
+      <p>Zodiak Air mencari hubungan emosional yang mendalam. Mereka ingin dipahami tanpa kata-kata dan membutuhkan pelabuhan yang aman.
+      <br><em>Terbaik dengan:</em> Zodiak Air lainnya (ikatan psikis) atau zodiak Tanah (wadah bagi air mereka).</p>
 
-      <h2 id="love-planets">The Real Cinta Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Planet Cinta Sejati: Venus, Mars & Bulan</h2>
+      <p>Jika Anda ingin tahu apakah Anda akan benar-benar rukun sehari-hari, memeriksa kecocokan zodiak Matahari saja tidak cukup. Anda perlu melihat lebih dekat pada tiga planet spesifik dalam grafik pasangan Anda:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Bulan 🌙 (Keamanan Emosional)</h3>
+      <p>Dalam pernikahan jangka panjang atau tinggal bersama, <strong>kecocokan tanda Bulan adalah kuncinya</strong>. Tanda Bulan Anda mendikte apa yang Anda butuhkan untuk merasa aman, bagaimana Anda bereaksi saat lelah atau lapar, dan bagaimana Anda mengasuh. 
+      <br><em>Contoh:</em> Aries Matahari mungkin tampak tangguh, tetapi jika mereka memiliki Bulan Cancer, mereka sebenarnya sangat lembut yang butuh pelukan dan kepastian di rumah.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Venus ♀ (Romansa & Nilai)</h3>
+      <p>Venus menentukan apa yang menurut Anda indah dan apa yang Anda hargai. Ini menunjukkan \"gaya menggoda\" Anda.
+      <br><em>Tips:</em> Jika tanda Venus Anda berada di elemen yang sama, selera dan kebiasaan belanja Anda kemungkinan akan selaras dengan mudah.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Mars ♂ (Gairah & Pertengkaran)</h3>
+      <p>Mars adalah planet libido dan konflik. Ini menunjukkan bagaimana Anda bertempur dan bagaimana Anda berhubungan seks.
+      <br><em>Tips:</em> Tanda Mars yang kompatibel memastikan bahwa pertengkaran diselesaikan dengan cepat dan chemistry fisik tetap hidup.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Kebenaran Tentang Pasangan \"Buruk\"</h2>
+      <p>Bagaimana jika Anda jatuh cinta pada zodiak yang \"tidak cocok\"? Misalnya, Leo (Api) dan Scorpio (Air)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Hubungan ini sering kali menjadi yang paling <strong>transformatif</strong>. Astrologi menyebut aspek-aspek ini sebagai \"Square\" atau \"Quincunx\". Mereka menciptakan gesekan. Tapi gesekan menghasilkan panas! Pasangan \"menantang\" memaksa Anda untuk tumbuh, mempelajari bahasa baru, dan melangkah keluar dari zona nyaman Anda. Hubungan ini sering kali merupakan koneksi belahan jiwa yang penuh gairah dan drama yang dirancang untuk mengevolusi jiwa Anda, meskipun membutuhkan lebih banyak usaha.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiak PUdaraings</h2>
+      <h2 id="best-matches-deep-dive">Analisis Mendalam: Pasangan Zodiak Terkenal</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>Pasangan \"Power Couple\": Aries & Libra</h3>
+      <p>Lawan jenis saling tarik-menarik! Aries adalah \"Aku yang utama,\" Libra adalah \"Kita yang utama.\" Aries mengajarkan ketegasan pada Libra; Libra mengajarkan diplomasi pada Aries. Ini adalah daya tarik magnetis yang sulit dipatahkan.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>\"Pembangun Kerajaan\": Taurus & Capricorn</h3>
+      <p>Dua zodiak Tanah yang menghargai kualitas, uang, dan keamanan. Mereka membangun kesuksesan besar bersama, meskipun mereka perlu ingat untuk bersenang-senang dan bukan hanya bekerja.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>Duo \"Peter Pan\": Gemini & Sagitarius</h3>
+      <p>Udara dan Api. Keduanya mencintai kebebasan, perjalanan, dan filosofi. Mereka mungkin tidak pernah menetap dalam arti tradisional, tetapi mereka akan menjadi partner dalam kejahatan selamanya.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>\"Ikatan Psikis\": Cancer & Scorpio</h3>
+      <p>Ketika dua zodiak Air ini bertemu, dunia seakan lenyap. Mereka memiliki koneksi telepati dan rasa posesif yang membuat mereka sangat setia satu sama lain.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Kecocokan Lanjutan: Sinastri</h2>
+      <p>Untuk mendapatkan jawaban nyata tentang hubungan Anda, Anda memerlukan <strong>Pembacaan Sinastri</strong>. Ini melibatkan menumpuk grafik Anda di atas grafik pasangan Anda.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Kami mencari koneksi seperti:
+      <br><strong>Konjungsi Matahari-Bulan:</strong> Aspek klasik \"suami/istri\".
+      <br><strong>Pertukaran Venus-Mars:</strong> Daya tarik seksual yang luar biasa.
+      <br><strong>Kontak Saturnus:</strong> Perekat yang menyatukan orang seumur hidup (bahkan melalui masa-masa sulit).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Di Astralo, algoritma canggih dan astrolog ahli kami tidak hanya memberi Anda persentase. Kami membuat peta jiwa hubungan Anda. Berhentilah menebak-nebak dan mulailah memahami tujuan kosmik dari persatuan Anda.</p>
     `
 };

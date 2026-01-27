@@ -4,85 +4,103 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const sl: BlogPostTranslation = {
-    title: "❤️ Zodiak Znamenje Compatibility: The Definitive Guide to Cosmic Ljubezen",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Znamenjes Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Združljivost zodiakalnih znamenj: Popoln priročnik za kozmično ljubezen",
+  excerpt: "Vrhunski vodič za leto 2026 o združljivosti zodiaka. Presezite sončna znamenja in odkrijte, kako elementi, Venera in Mars vplivajo na vašo romantično kemijo in dolgoročni potencial.",
+  category: "Ljubezen in odnosi",
+  metaDescription: "Vrhunski vodič za leto 2026 o združljivosti zodiaka. Presezite sončna znamenja in odkrijte, kako elementi, Venera in Mars vplivajo na vašo romantično kemijo.",
+  keywords: "zodiakalna združljivost, ljubezenski horoskop, sinastrija, združljivost znamenj, ljubezen Venera, strast Mars, partnerska astrologija, najboljša ujemanja",
+  quickSummary: [
+    "Prava združljivost vključuje primerjavo celotnih rojstnih kart (sinastrija), ne le sončnih znamenj",
+    "Ravnovesje elementov (ogenj, zemlja, zrak, voda) je temelj harmonije v odnosu",
+    "\"Nezdružljiva\" znamenja pogosto ponujajo največje priložnosti za rast duše",
+    "Venera določa slog naklonjenosti, medtem ko Mars spodbuja strast in slog reševanja konfliktov"
+  ],
+  keyTakeaways: [
+    "Iščite trigone (isti element) za lahkotnost in opozicije za intenzivno privlačnost",
+    "Združljivost luninega znamenja je ključna za skupno bivanje in čustveno varnost",
+    "Združljivost Merkurja narekuje, kako dobro boste skupaj reševali težave",
+    "Ni \"popolnega\" ujemanja; vsak par ima svoje prednosti in izzive"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "Zakaj sončna znamenja niso vse" },
+    { id: "elemental-love", title: "4 elementi v ljubezni" },
+    { id: "love-planets", title: "Venera, Mars in Luna" },
+    { id: "challenging-matches", title: "Resnica o \"slabih\" ujemanjih" },
+    { id: "best-matches-deep-dive", title: "Poglobljen pregled: Najboljša ujemanja" },
+    { id: "synastry", title: "Napredni nasvet: Sinastrija" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Zakaj sončna znamenja niso vse</h2>
+      <p>Vsi smo že bili tam: preverjanje revije ali aplikacije, da bi videli, ali je znamenje naše simpatije združljivo z našim. "O ne, jaz sem Lev in on je Škorpijon – obsojena sva na propad!" Toda počakajte. <strong>Združljivost zodiaka</strong> je neskončno bolj kompleksna — in polna upanja — kot preprosto ujemanje tabel.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Čeprav vaše sončno znamenje predstavlja vaš osrednji jaz in življenjski namen, so odnosi zgrajeni na čustvih, komunikaciji in vrednotah. Zato se lahko zgodi, da ste srečno poročeni z znamenjem, ki je domnevno "nezdružljivo", ali pa se trudite s svojim tako imenovanim "popolnim ujemanjem". Da bi zares razumeli <strong>ljubezenska ujemanja</strong>, moramo gledati širšo sliko neba.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Ljubezen</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 elementi v ljubezni</h2>
+      <p>Najhitrejši način za oceno začetne kemije je preko elementov. Znamenja istega elementa na splošno "govorijo isti jezik".</p>
       
-      <h3>🔥 Ogenj Znamenjes (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Ognjena znamenja (Oven, Lev, Strelec)</h3>
+      <p><strong>Ljubezenski jezik:</strong> Strast, pustolovščina, spontanost.</p>
+      <p>Ognjena znamenja potrebujejo partnerja, ki lahko razpiha njihov plamen, ne da bi ga ugasnil. Hrepenijo po vznemirjenju in sovražijo dolgčas.
+      <br><em>Najbolje z:</em> drugimi ognjenimi znamenji (takojšnja vročina) ali zračnimi znamenji (zrak hrani ogenj).</p>
 
-      <h3>🌍 Zemlja Znamenjes (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Zemeljska znamenja (Bik, Devica, Kozorog)</h3>
+      <p><strong>Ljubezenski jezik:</strong> Služenje, stabilnost, dotik.</p>
+      <p>Zemeljska znamenja obravnavajo ljubezen kot glagol. Naklonjenost kažejo s praktičnimi dejanji in skupnim gradnjo življenja. Potrebujejo zanesljivost.
+      <br><em>Najbolje z:</em> drugimi zemeljskimi znamenji (trdna podlaga) ali vodnimi znamenji (voda hrani zemljo).</p>
 
-      <h3>💨 Zrak Znamenjes (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Zračna znamenja (Dvojčka, Tehtnica, Vodnar)</h3>
+      <p><strong>Ljubezenski jezik:</strong> Pogovor, duhovitost, svoboda.</p>
+      <p>Za zračna znamenja je um najbolj erogena cona. Potrebujejo mentalno stimulacijo in partnerja, ki je hkrati njihov najboljši prijatelj.
+      <br><em>Najbolje z:</em> drugimi zračnimi znamenji (neskončni pogovori) ali ognjenimi znamenji (navdih).</p>
 
-      <h3>💧 Voda Znamenjes (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Vodna znamenja (Rak, Škorpijon, Ribi)</h3>
+      <p><strong>Ljubezenski jezik:</strong> Ranljivost, intuicija, zlitje.</p>
+      <p>Vodna znamenja iščejo globoko čustveno povezanost. Želijo biti razumljena brez besed in potrebujejo varno zavetje.
+      <br><em>Najbolje z:</em> drugimi vodnimi znamenji (psihična vez) ali zemeljskimi znamenji (posoda za njihovo vodo).</p>
 
-      <h2 id="love-planets">The Real Ljubezen Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Pravi planeti ljubezni: Venera, Mars in Luna</h2>
+      <p>Če želite vedeti, ali se boste v vsakdanjem življenju dejansko razumeli, preverjanje združljivosti sončnih znamenj ni dovolj. Pobliže si morate ogledati tri specifične planete v partnerjevi karti:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Luna 🌙 (Čustvena varnost)</h3>
+      <p>V dolgotrajnem zakonu ali skupnem bivanju je <strong>združljivost luninega znamenja ključna</strong>. Vaše lunino znamenje narekuje, kaj potrebujete za občutek varnosti, kako reagirate, ko ste utrujeni ali lačni, in kako negujete. 
+      <br><em>Primer:</em> Oven v soncu se morda zdi močan, toda če ima Luno v Raku, je v resnici zelo nežen in potrebuje objeme ter zagotovila doma.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Venera ♀ (Romanca in vrednote)</h3>
+      <p>Venera določa, kaj vam je lepo in kaj cenite. Kaže vaš "slog spogledovanja".
+      <br><em>Nasvet:</em> Če sta vaša znaka Venere v istem elementu, se bodo vaši okusi in potrošniške navade verjetno zlahka uskladili.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Mars ♂ (Strast in prepiri)</h3>
+      <p>Mars je planet libida in konfliktov. Kaže, kako se borite in kako doživljate spolnost.
+      <br><em>Nasvet:</em> Združljiva znamenja Marsa zagotavljajo, da se prepiri hitro razrešijo in da fizična kemija ostaja živa.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Resnica o "slabih" ujemanjih</h2>
+      <p>Kaj če se zaljubite v znamenje, ki je "nezdružljivo"? Na primer Lev (ogenj) in Škorpijon (voda)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Ti odnosi so pogosto najbolj <strong>transformativni</strong>. Astrologija te odnose imenuje "kvadrat" ali "inkonjunkcija". Ustvarjajo trenje. Toda trenje ustvarja toploto! "Izzivalna" ujemanja vas silijo v rast, učenje novega jezika in stopanje iz cone udobja. Pogosto so to visoko strastne povezave sorodnih duš, namenjene razvoju vaše duše, čeprav zahtevajo več dela.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Zodiak PZrakings</h2>
+      <h2 id="best-matches-deep-dive">Poglobljen pregled: Slavni zodiakalni pari</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>"Močan par": Oven in Tehtnica</h3>
+      <p>Nasprotja se privlačijo! Oven pravi "najprej jaz", Tehtnica pa "najprej mi". Oven uči Tehtnico odločnosti; Tehtnica uči Ovna diplomacije. Gre za magnetno privlačnost, ki jo je težko prekiniti.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>"Graditelja imperija": Bik in Kozorog</h3>
+      <p>Dve zemeljski znamenji, ki cenita kakovost, denar in varnost. Skupaj gradita ogromen uspeh, čeprav se morata opomniti na zabavo in ne le na delo.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>"Peter Pan" duo: Dvojčka in Strelec</h3>
+      <p>Zrak in ogenj. Oba ljubita svobodo, potovanja in filozofijo. Morda se nikoli ne bosta ustalila v tradicionalnem smislu, vendar bosta za vedno partnerja v dogodivščinah.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>"Psihična vez": Rak in Škorpijon</h3>
+      <p>Ko se srečata ti dve vodni znamenji, svet izgine. Imata telepatsko povezavo in posesivnost, zaradi katere sta si močno zvesta.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Napredna združljivost: Sinastrija</h2>
+      <p>Da bi dobili pravi odgovor o vašem odnosu, potrebujete <strong>branje sinastrije</strong>. To vključuje prekrivanje vaše karte s partnerjevo.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Iščemo povezave, kot so:
+      <br><strong>Konjunkcija Sonca in Lune:</strong> Klasičen vidik "mož/žena".
+      <br><strong>Izmenjave Venere in Marsa:</strong> Izjemna spolna privlačnost.
+      <br><strong>Stiki Saturna:</strong> Lepilo, ki drži ljudi skupaj celo življenje (tudi skozi težke čase).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Pri Astralu naši napredni algoritmi in strokovni astrologi ne dajo le odstotka. Ustvarimo zemljevid duše vašega odnosa. Nehajte ugibati in začnite razumeti kozmični namen vaše zveze.</p>
     `
 };
+

@@ -4,85 +4,102 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const vi: BlogPostTranslation = {
-    title: "❤️ Hoàng đạo Cung Compatibility: The Definitive Guide to Cosmic Tình yêu",
-    excerpt: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    category: "Love & Relationships",
-    metaDescription: "The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.",
-    keywords: "zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches",
-    quickSummary: ["True compatibility involves comparing full birth charts (Synastry), not just Sun signs","Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony","The \"Incompatible\" signs often provide the greatest opportunities for soul growth","Venus determines affection style, while Mars drives passion and conflict style"],
-    keyTakeaways: ["Look for trines (same element) for ease, and oppositions for intense attraction","Moon sign compatibility is crucial for living together and emotional safety","Mercury compatibility dictates how well you solve problems together","There is no \"perfect\" match; every pairing has strengths and challenges"],
-    tableOfContents: [{"id":"beyond-sun-signs","title":"Why Sun Signs Aren't Everything"},{"id":"elemental-love","title":"The 4 Elements in Love"},{"id":"love-planets","title":"Venus, Mars & The Moon"},{"id":"challenging-matches","title":"The Truth About \"Bad\" Matches"},{"id":"best-matches-deep-dive","title":"Deep Dive: Best Matches"},{"id":"synastry","title":"Advanced Tip: Synastry"}],
-    content: `
-      <h2 id="beyond-sun-signs">Why Sun Cungs Aren't Everything</h2>
-      <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+  title: "❤️ Tương hợp Cung Hoàng Đạo: Hướng dẫn cuối cùng về Tình yêu Vũ trụ",
+  excerpt: "Hướng dẫn tối ưu năm 2026 về sự tương hợp giữa các cung hoàng đạo. Khám phá cách các Nguyên tố, Kim tinh và Hỏa tinh ảnh hưởng đến phản ứng hóa học lãng mạn của bạn.",
+  category: "Tình yêu & Mối quan hệ",
+  metaDescription: "Hướng dẫn tối ưu năm 2026 về sự tương hợp giữa các cung hoàng đạo. Tìm hiểu cách Kim tinh và Hỏa tinh ảnh hưởng đến tình yêu.",
+  keywords: "tương hợp hoàng đạo, tử vi tình yêu, synastry, độ hợp nhau của các cung, tình yêu kim tinh, đam mê hỏa tinh, chiêm tinh mối quan hệ, cặp đôi đẹp nhất",
+  quickSummary: [
+    "Sự tương hợp thực sự liên quan đến việc so sánh toàn bộ bản đồ sao (Synastry), không chỉ riêng cung Mặt trời",
+    "Sự cân bằng các Nguyên tố (Lửa, Đất, Khí, Nước) là nền tảng của sự hòa hợp trong mối quan hệ",
+    "Những cung được coi là \"không hợp\" thường mang lại cơ hội lớn nhất cho sự phát triển của linh hồn",
+    "Kim tinh quyết định cách thể hiện tình cảm, trong khi Hỏa tinh thúc đẩy đam mê và cách giải quyết xung đột"
+  ],
+  keyTakeaways: [
+    "Tìm kiếm các góc tam hợp (cùng nguyên tố) để có sự hòa hợp, và góc đối đỉnh để có sức hút mãnh liệt",
+    "Sự tương hợp của cung Mặt trăng là yếu tố then chốt cho việc sống chung và cảm giác an toàn về cảm xúc",
+    "Sự tương hợp của Thủy tinh quyết định khả năng cùng nhau giải quyết vấn đề của hai bạn",
+    "Không có sự kết hợp nào là \"hoàn hảo\" tuyệt đối; mỗi cặp đôi đều có những thế mạnh và thách thức riêng"
+  ],
+  tableOfContents: [
+    { id: "beyond-sun-signs", title: "Tại sao cung Mặt trời không phải là tất cả" },
+    { id: "elemental-love", title: "4 Nguyên tố trong Tình yêu" },
+    { id: "love-planets", title: "Kim tinh, Hỏa tinh & Mặt trăng" },
+    { id: "challenging-matches", title: "Sự thật về những cặp đôi \"không hợp\"" },
+    { id: "best-matches-deep-dive", title: "Đi sâu: Những cặp đôi đẹp nhất" },
+    { id: "synastry", title: "Mẹo nâng cao: Synastry" }
+  ],
+  content: `
+      <h2 id="beyond-sun-signs">Tại sao cung Mặt trời không phải là tất cả</h2>
+      <p>Tất cả chúng ta đều đã từng: kiểm tra tạp chí hoặc ứng dụng để xem cung của người mình thầm thương có hợp với mình không. \"Ôi không, mình là Sư Tử còn anh ấy là Thiên Yết — chúng mình tiêu rồi!\" Nhưng hãy khoan. <strong>Sự tương hợp hoàng đạo</strong> phức tạp hơn nhiều so với việc chỉ đối chiếu bảng đơn thuần.</p>
       
-      <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+      <p>Trong khi cung Mặt trời đại diện cho cái tôi cốt lõi và mục đích sống, thì các mối quan hệ lại được xây dựng trên cảm xúc, sự giao tiếp và các giá trị. Đây là lý do tại sao bạn có thể chung sống hạnh phúc với một người thuộc cung vốn được coi là \"không hợp\", hoặc gặp khó khăn với một người được cho là \"mảnh ghép hoàn hảo\". Để thực sự hiểu về <strong>các cặp đôi tình yêu</strong>, chúng ta phải nhìn vào bức tranh toàn cảnh của bầu trời.</p>
 
-      <h2 id="elemental-love">The 4 Elements in Tình yêu</h2>
-      <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
+      <h2 id="elemental-love">4 Nguyên tố trong Tình yêu</h2>
+      <p>Cách nhanh nhất để đánh giá phản ứng hóa học ban đầu là thông qua các Nguyên tố. Những người thuộc cùng một nguyên tố thường có chung tiếng nói.</p>
       
-      <h3>🔥 Lửa Cungs (Aries, Leo, Sagittarius)</h3>
-      <p><strong>Love Language:</strong> Passion, Adventure, Spontaneity.</p>
-      <p>Fire signs need a partner who can fan their flames without extinguishing them. They crave excitement and hate being bored.
-      <br><em>Best with:</em> Other Fire signs (instant heat) or Air signs (Air feeds Fire).</p>
+      <h3>🔥 Các cung nhóm Lửa (Bạch Dương, Sư Tử, Nhân Mã)</h3>
+      <p><strong>Ngôn ngữ tình yêu:</strong> Đam mê, Phiêu lưu, Ngẫu hứng.</p>
+      <p>Cung Lửa cần một đối tác có thể bùng cháy cùng họ mà không dập tắt ngọn lửa đó. Họ khao khát sự cuồng nhiệt và ghét sự nhàm chán.
+      <br><em>Hợp nhất với:</em> Các cung nhóm Lửa khác (nhiệt huyết tức thì) hoặc cung nhóm Khí (Khí nuôi dưỡng Lửa).</p>
 
-      <h3>🌍 Đất Cungs (Taurus, Virgo, Capricorn)</h3>
-      <p><strong>Love Language:</strong> Service, Stability, Touch.</p>
-      <p>Earth signs treat love as a verb. They show affection through practical acts of service and building a life together. They need reliability.
-      <br><em>Best with:</em> Other Earth signs (solid foundation) or Water signs (Water nourishes the Earth).</p>
+      <h3>🌍 Các cung nhóm Đất (Kim Ngưu, Xử Nữ, Ma Kết)</h3>
+      <p><strong>Ngôn ngữ tình yêu:</strong> Sự chăm sóc, Ổn định, Đụng chạm.</p>
+      <p>Cung Đất coi tình yêu là một động từ. Họ thể hiện tình cảm thông qua những hành động thực tế và việc cùng nhau xây dựng cuộc sống. Họ cần sự tin cậy.
+      <br><em>Hợp nhất with:</em> Các cung nhóm Đất khác (nền tảng vững chắc) hoặc cung nhóm Nước (Nước nuôi dưỡng Đất).</p>
 
-      <h3>💨 Khí Cungs (Gemini, Libra, Aquarius)</h3>
-      <p><strong>Love Language:</strong> Conversation, Wit, Freedom.</p>
-      <p>For Air signs, the mind is the most erogenous zone. They need mental stimulation and a partner who is also their best friend.
-      <br><em>Best with:</em> Other Air signs (endless talk) or Fire signs (inspiration).</p>
+      <h3>💨 Các cung nhóm Khí (Song Tử, Thiên Bình, Bảo Bình)</h3>
+      <p><strong>Ngôn ngữ tình yêu:</strong> Trò chuyện, Trí tuệ, Tự do.</p>
+      <p>Đối với cung Khí, trí tuệ là điểm quyến rũ nhất. Họ cần sự kích thích về tinh thần và một người bạn đời cũng là người bạn thân nhất của họ.
+      <br><em>Hợp nhất với:</em> Các cung nhóm Khí khác (trò chuyện không dứt) hoặc cung nhóm Lửa (nguồn cảm hứng).</p>
 
-      <h3>💧 Nước Cungs (Cancer, Scorpio, Pisces)</h3>
-      <p><strong>Love Language:</strong> Vulnerability, Intuition, Merging.</p>
-      <p>Water signs seek deep emotional connection. They want to be understood without words and need a safe harbor.
-      <br><em>Best with:</em> Other Water signs (psychic bond) or Earth signs (the container for their water).</p>
+      <h3>💧 Các cung nhóm Nước (Cự Giải, Thiên Yết, Song Ngư)</h3>
+      <p><strong>Ngôn ngữ tình yêu:</strong> Sự thấu cảm, Trực giác, Hòa quyện.</p>
+      <p>Cung Nước tìm kiếm sự kết nối cảm xúc sâu sắc. Họ muốn được thấu hiểu mà không cần lời nói và cần một bến đỗ an toàn.
+      <br><em>Hợp nhất với:</em> Các cung nhóm Nước khác (sự gắn kết tâm linh) hoặc cung nhóm Đất (vật chứa cho dòng nước của họ).</p>
 
-      <h2 id="love-planets">The Real Tình yêu Planets: Venus, Mars & The Moon</h2>
-      <p>If you want to know if you'll actually get along day-to-day, checking Sun sign compatibility is not enough. You need to look closer at three specific planets in your partner's chart:</p>
+      <h2 id="love-planets">Những hành tinh tình yêu thực sự: Kim tinh, Hỏa tinh & Mặt trăng</h2>
+      <p>Nếu bạn muốn biết liệu mình có thực sự hòa hợp trong cuộc sống hàng ngày hay không, chỉ kiểm tra cung Mặt trời là không đủ. Bạn cần nhìn kỹ hơn vào ba hành tinh cụ thể trong bản đồ sao của đối phương:</p>
 
-      <h3>1. The Moon 🌙 (Emotional Safety)</h3>
-      <p>In a long-term marriage or cohabitation, <strong>Moon sign compatibility is king</strong>. Your Moon sign dictates what you need to feel safe, how you react when you're tired or hungry, and how you nurture. 
-      <br><em>Example:</em> An Aries Sun might seem tough, but if they have a Cancer Moon, they are actually huge softies who need cuddles and reassurance at home.</p>
+      <h3>1. Mặt trăng 🌙 (An toàn cảm xúc)</h3>
+      <p>Trong một cuộc hôn nhân lâu dài hoặc khi chung sống, <strong>sự tương hợp cung Mặt trăng là quan trọng nhất</strong>. Cung Mặt trăng quyết định điều bạn cần để cảm thấy an toàn, cách bạn phản ứng khi mệt mỏi hoặc đói, và cách bạn nuôi dưỡng. 
+      <br><em>Ví dụ:</em> Một người cung Mặt trời Bạch Dương có vẻ cứng rắn, nhưng nếu họ có Mặt trăng Cự Giải, họ thực chất rất nhạy cảm và cần sự vỗ về, trấn an khi ở nhà.</p>
 
-      <h3>2. Venus ♀ (Romance & Values)</h3>
-      <p>Venus determines what you find beautiful and what you value. It shows your "flirting style."
-      <br><em>Tip:</em> If your Venus signs are in the same element, your tastes and spending habits will likely align easily.</p>
+      <h3>2. Kim tinh ♀ (Sự lãng mạn & Giá trị)</h3>
+      <p>Kim tinh quyết định điều bạn thấy đẹp và những gì bạn coi trọng. Nó cho thấy phong cách \"tán tỉnh\" của bạn.
+      <br><em>Mẹo:</em> Nếu cung Kim tinh của cả hai cùng thuộc một nguyên tố, sở thích và thói quen chi tiêu của bạn sẽ dễ dàng đồng điệu.</p>
 
-      <h3>3. Mars ♂ (Passion & Argument)</h3>
-      <p>Mars is the planet of libido and conflict. It shows how you fight and how you have sex.
-      <br><em>Tip:</em> Compatible Mars signs ensure that arguments are resolved quickly and that physical chemistry stays alive.</p>
+      <h3>3. Hỏa tinh ♂ (Đam mê & Tranh luận)</h3>
+      <p>Hỏa tinh là hành tinh của ham muốn và xung đột. Nó cho thấy cách bạn tranh đấu và cách bạn thể hiện đam mê thể xác.
+      <br><em>Mẹo:</em> Sự tương hợp của Hỏa tinh đảm bảo rằng các cuộc tranh luận được giải quyết nhanh chóng và phản ứng hóa học thể xác luôn sống động.</p>
 
-      <h2 id="challenging-matches">The Truth About "Bad" Matches</h2>
-      <p>What if you fall for a sign that is "incompatible"? For example, a Leo (Fire) and a Scorpio (Water)?</p>
+      <h2 id="challenging-matches">Sự thật về những cặp đôi \"không hợp\"</h2>
+      <p>Điều gì xảy ra nếu bạn yêu một người thuộc cung vốn được coi là \"không hợp\"? Ví dụ, Sư Tử (Lửa) và Thiên Yết (Nước)?</p>
       
-      <p>These relationships are often the most <strong>transformative</strong>. Astrology calls these "Square" or "Quincunx" aspects. They create friction. But friction generates heat! "Challenging" matches force you to grow, to learn a new language, and to step outside your comfort zone. They are often high-passion, high-drama soulmate connections designed to evolve your soul, even if they require more work.</p>
+      <p>Những mối quan hệ này thường mang tính <strong>biến đổi</strong> mạnh mẽ nhất. Chiêm tinh học gọi đây là các góc hợp \"Square\" hoặc \"Quincunx\". chúng tạo ra sự ma sát. Nhưng ma sát sinh ra nhiệt! Những cặp đôi \"thách thức\" buộc bạn phải trưởng thành, học một ngôn ngữ mới và bước ra khỏi vùng an toàn. Chúng thường là những kết nối tri kỷ đầy đam mê và kịch tính được thiết kế để phát triển linh hồn bạn, ngay cả khi chúng đòi hỏi nhiều nỗ lực hơn.</p>
 
-      <h2 id="best-matches-deep-dive">Deep Dive: Famous Hoàng đạo PKhíings</h2>
+      <h2 id="best-matches-deep-dive">Đi sâu: Những cặp đôi hoàng đạo nổi tiếng</h2>
       
-      <h3>The "Power Couple": Aries & Libra</h3>
-      <p>Opposites attract! Aries is "Me first," Libra is "We first." Aries teaches Libra assertiveness; Libra teaches Aries diplomacy. It's a magnetic pull that is hard to break.</p>
+      <h3>Cặp đôi quyền lực: Bạch Dương & Thiên Bình</h3>
+      <p>Trái dấu hút nhau! Bạch Dương là \"Tôi trước tiên\", Thiên Bình là \"Chúng ta trước tiên\". Bạch Dương dạy Thiên Bình sự quyết đoán; Thiên Bình dạy Bạch Dương sự ngoại giao. Đó là một sức hút từ tính khó có thể phá bỏ.</p>
 
-      <h3>The "Empire Builders": Taurus & Capricorn</h3>
-      <p>Two earth signs who value quality, money, and security. They build massive success together, though they need to remember to have fun and not just work.</p>
+      <h3>Những người xây dựng đế chế: Kim Ngưu & Ma Kết</h3>
+      <p>Hai cung nhóm Đất coi trọng chất lượng, tiền bạc và sự ổn định. Họ cùng nhau xây dựng những thành công to lớn, dù họ cần nhớ phải vui chơi chứ không chỉ có công việc.</p>
       
-      <h3>The "Peter Pan" Duo: Gemini & Sagittarius</h3>
-      <p>Air and Fire. Both love freedom, travel, and philosophy. They might never settle down in a traditional sense, but they will be partners in crime forever.</p>
+      <h3>Cặp đôi Peter Pan: Song Tử & Nhân Mã</h3>
+      <p>Khí và Lửa. Cả hai đều yêu tự do, du lịch và triết học. Họ có thể không bao giờ ổn định theo cách truyền thống, nhưng họ sẽ là những người bạn đồng hành trong mọi cuộc phiêu lưu mãi mãi.</p>
 
-      <h3>The "Psychic Link": Cancer & Scorpio</h3>
-      <p>When these two water signs meet, the world vanishes. They have a telepathic connection and possessiveness that makes them fiercely loyal to each other.</p>
+      <h3>Sự kết nối tâm linh: Cự Giải & Thiên Yết</h3>
+      <p>Khi hai cung nhóm Nước này gặp nhau, thế giới xung quanh biến mất. Họ có một sự kết nối ngoại cảm và tính sở hữu khiến họ cực kỳ trung thành với nhau.</p>
       
-      <h2 id="synastry">Advanced Compatibility: Synastry</h2>
-      <p>To get the real answer about your relationship, you need a <strong>Synastry Reading</strong>. This involves overlaying your chart on top of your partner's.</p>
+      <h2 id="synastry">Tương hợp nâng cao: Synastry</h2>
+      <p>Để có câu trả lời thực sự về mối quan hệ của bạn, bạn cần một buổi <strong>Đọc bản đồ sao đôi (Synastry Reading)</strong>. Việc này liên quan đến việc đặt bản đồ sao của bạn chồng lên bản đồ sao của đối phương.</p>
       
-      <p>We look for connections like:
-      <br><strong>Sun-Moon Conjunctions:</strong> The classic "husband/wife" aspect.
-      <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
-      <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
+      <p>Chúng tôi tìm kiếm các kết nối như:
+      <br><strong>Góc trùng tụ Mặt trời - Mặt trăng:</strong> Sự kết hợp kinh điển kiểu \"vợ chồng\".
+      <br><strong>Sự trao đổi Kim tinh - Hỏa tinh:</strong> Sức hút tình dục mãnh liệt.
+      <br><strong>Các liên kết với Thổ tinh:</strong> Chất keo gắn kết mọi người lại với nhau trọn đời (ngay cả trong những thời điểm khó khăn).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Tại Astralo, các thuật toán nâng cao và các chuyên gia chiêm tinh của chúng tôi không chỉ đưa ra một tỷ lệ phần trăm. Chúng tôi tạo ra một bản đồ linh hồn cho mối quan hệ của bạn. Đừng đoán mò nữa và hãy bắt đầu tìm hiểu mục đích vũ trụ của sự kết hợp của hai bạn.</p>
     `
 };
