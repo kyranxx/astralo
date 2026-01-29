@@ -75,11 +75,11 @@ export default defineConfig({
           item.changefreq = 'daily';
           item.priority = 1.0;
         }
-        // Blog posts - high priority, updated weekly
+        // Blog posts - high priority, updated frequently
         else if (url.includes('/blog/') && !url.endsWith('/blog')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'weekly';
-          item.priority = 0.8;
+          item.changefreq = 'daily';
+          item.priority = 0.9;
         }
         // Blog index
         else if (url.endsWith('/blog')) {
@@ -90,14 +90,14 @@ export default defineConfig({
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'yearly';
+          item.changefreq = 'monthly';
           item.priority = 0.3;
         }
         // Default for other pages
         else {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'monthly';
-          item.priority = 0.5;
+          item.changefreq = 'weekly';
+          item.priority = 0.6;
         }
 
         return item;
