@@ -156,4 +156,21 @@ export interface Translations {
         q6: string;
         a6: string;
     };
+    emailCapture?: {
+        title: string;
+        subtitle: string;
+        placeholder: string;
+        button: string;
+        consent: string;
+        success: string;
+        error: string;
+    };
+    ads?: {
+        sticky: string;
+        claim: string;
+        limited: string;
+        unlock: string;
+        waiting: string;
+        join: string;
+    };
 }

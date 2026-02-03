@@ -136,9 +136,26 @@ const ro: Translations = {
         q4: 'Ce metode de plată acceptați?',
         a4: 'Acceptăm toate cardurile de credit și debit importante (Visa, Mastercard, American Express) prin Stripe, un procesor de plăți securizat certificat PCI-DSS Nivel 1. Toate tranzacțiile sunt protejate cu criptare SSL.',
         q5: 'Cât costă horoscopurile?',
-        a5: 'Oferim patru produse: Horoscop Zilnic la 0,99 €, Horoscop Săptămânal la 2,99 €, Horoscop Lunar la 7,99 € și Horoscop de Cuplu la 7,99 €. Toate prețurile includ livrare instantanee.',
+        a5: 'Oferim patru produse: Horoscop Zilnic la 0,99 €, Horoscop Săptămânal la 1,99 €, Horoscop Lunar la 4,99 € și Horoscop de Cuplu la 2,99 €. Toate prețurile includ livrare instantanee.',
         q6: 'Ce informații am nevoie pentru a comanda?',
         a6: 'Pentru horoscopul tău personalizat, ai nevoie de: numele complet, adresa de email, data nașterii, ora nașterii (opțional dar recomandat) și locul nașterii. Pentru horoscoapele de cuplu, vei avea nevoie și de datele de naștere ale partenerului.',
+    },
+    emailCapture: {
+        title: '✨ Obține Gratuit Astrograma și Previziunile Săptămânale',
+        subtitle: 'Alătură-te celor peste 50.000 de persoane care primesc previziuni cosmice personalizate și rapoarte gratuite în fiecare luni!',
+        placeholder: 'Introdu adresa de email',
+        button: 'Vreau lectura gratuită',
+        consent: 'Sunt de acord să primesc previziuni cosmice și accept politica de confidențialitate.',
+        success: '✨ Bun venit! Prima ta lectură gratuită este pe drum.',
+        error: 'Ceva nu a mers bine. Te rugăm să încerci din nou.',
+    },
+    ads: {
+        sticky: 'Ultimele ore: 50% reducere specială deblocată',
+        claim: 'Revendică acum',
+        limited: 'Ofertă limitată',
+        unlock: 'Deblochează-ți',
+        waiting: 'te așteaptă...',
+        join: 'Alătură-te celor peste 50.000 de suflete care au găsit claritate în stele.',
     },
 };
 

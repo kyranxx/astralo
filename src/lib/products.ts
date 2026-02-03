@@ -6,10 +6,10 @@
 // Product price configuration (in cents)
 // Stripe minimum charge is €0.50 for EUR currency
 export const productPrices = {
-    daily: 50,    // €0.50 (Stripe minimum)
-    weekly: 59,   // €0.59
-    monthly: 159, // €1.59
-    partner: 159, // €1.59
+    daily: 99,    // €0.99
+    weekly: 199,  // €1.99
+    monthly: 499, // €4.99
+    partner: 299, // €2.99
 } as const;
 
 export type ProductKey = keyof typeof productPrices;

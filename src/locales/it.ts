@@ -136,9 +136,26 @@ const it: Translations = {
         q4: 'Quali metodi di pagamento accettate?',
         a4: 'Accettiamo tutte le principali carte di credito e debito (Visa, Mastercard, American Express) tramite Stripe, un processore di pagamenti sicuro certificato PCI-DSS Livello 1. Tutte le transazioni sono protette con crittografia SSL.',
         q5: 'Quanto costano gli oroscopi?',
-        a5: 'Offriamo quattro prodotti: Oroscopo Giornaliero a 0,99 €, Oroscopo Settimanale a 2,99 €, Oroscopo Mensile a 7,99 € e Oroscopo di Coppia a 7,99 €. Tutti i prezzi includono la consegna istantanea.',
+        a5: 'Offriamo quattro prodotti: Oroscopo Giornaliero a 0,99 €, Oroscopo Settimanale a 1,99 €, Oroscopo Mensile a 4,99 € e Oroscopo di Coppia a 2,99 €. Tutti i prezzi includono la consegna istantanea.',
         q6: 'Quali informazioni mi servono per ordinare?',
         a6: 'Per ottenere il tuo oroscopo personalizzato, hai bisogno di: nome completo, indirizzo email, data di nascita, ora di nascita (opzionale ma consigliato) e luogo di nascita. Per gli oroscopi di coppia, avrai bisogno anche dei dati di nascita del tuo partner.',
+    },
+    emailCapture: {
+        title: '✨ Ottieni il tuo tema natale e le previsioni settimanali gratis',
+        subtitle: 'Unisciti a oltre 50.000 persone che ricevono approfondimenti cosmici personalizzati e rapporti gratuiti ogni lunedì!',
+        placeholder: 'Inserisci la tua email',
+        button: 'Ottieni la mia lettura gratuita',
+        consent: 'Accetto di ricevere approfondimenti cosmici e accetto l\'informativa sulla privacy.',
+        success: '✨ Benvenuto! La tua prima lettura gratuita è in arrivo.',
+        error: 'Qualcosa è andato storto. Riprova più tardi.',
+    },
+    ads: {
+        sticky: 'Ultime ore: 50% di sconto speciale sbloccato',
+        claim: 'Riscatta ora',
+        limited: 'Offerta limitata',
+        unlock: 'Sblocca il tuo',
+        waiting: 'ti sta aspettando...',
+        join: 'Unisciti a oltre 50.000 anime che hanno trovato chiarezza nelle stelle.',
     },
 };
 

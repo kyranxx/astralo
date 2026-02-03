@@ -136,9 +136,26 @@ const sv: Translations = {
         q4: 'Vilka betalningsmetoder accepterar ni?',
         a4: 'Vi accepterar alla större kredit- och betalkort (Visa, Mastercard, American Express) via Stripe, en säker PCI-DSS Level 1-certifierad betalningsprocessor. Alla transaktioner är skyddade med SSL-kryptering.',
         q5: 'Hur mycket kostar horoskopen?',
-        a5: 'Vi erbjuder fyra produkter: Dagligt Horoskop för 0,99 €, Veckohoroskop för 2,99 €, Månadshoroskop för 7,99 € och Partnerhoroskop för 7,99 €. Alla priser inkluderar omedelbar leverans.',
+        a5: 'Vi erbjuder fyra produkter: Dagligt Horoskop för 0,99 €, Veckohoroskop för 1,99 €, Månadshoroskop för 4,99 € och Partnerhoroskop för 2,99 €. Alla priser inkluderar omedelbar leverans.',
         q6: 'Vilken information behöver jag för att beställa?',
         a6: 'För att få ditt personliga horoskop behöver du: ditt fullständiga namn, e-postadress, födelsedatum, födelsetid (valfritt men rekommenderat) och födelseort. För partnerhoroskop behöver du också din partners födelsedata.',
+    },
+    emailCapture: {
+        title: '✨ Få gratis födelsehoroskop och veckoprognos',
+        subtitle: 'Gå med i 50 000+ andra som får personliga kosmiska insikter och gratisrapporter varje måndag!',
+        placeholder: 'Ange din e-post',
+        button: 'Få min gratistolkning',
+        consent: 'Jag godkänner att få kosmiska insikter och accepterar integritetspolicyn.',
+        success: '✨ Välkommen! Din första gratistolkning är på väg.',
+        error: 'Något gick fel. Försök igen.',
+    },
+    ads: {
+        sticky: 'Sista timmarna: 50% specialrabatt upplåst',
+        claim: 'Hämta nu',
+        limited: 'Begränsat erbjudande',
+        unlock: 'Lås upp din',
+        waiting: 'väntar på dig...',
+        join: 'Gå med i 50 000+ själar som fann klarhet i stjärnorna.',
     },
 };
 

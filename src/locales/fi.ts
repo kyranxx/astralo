@@ -136,9 +136,26 @@ const fi: Translations = {
         q4: 'Mitä maksutapoja hyväksytte?',
         a4: 'Hyväksymme kaikki suurimmat luotto- ja pankkikortit (Visa, Mastercard, American Express) Stripen kautta, joka on turvallinen PCI-DSS Level 1 -sertifioitu maksunkäsittelijä. Kaikki tapahtumat on suojattu SSL-salauksella.',
         q5: 'Paljonko horoskooppit maksavat?',
-        a5: 'Tarjoamme neljä tuotetta: Päivähoroskooppi 0,99 €, Viikkohoroskooppi 2,99 €, Kuukausihoroskooppi 7,99 € ja Kumppanihoroskooppi 7,99 €. Kaikki hinnat sisältävät välittömän toimituksen.',
+        a5: 'Tarjoamme neljä tuotetta: Päivähoroskooppi 0,99 €, Viikkohoroskooppi 1,99 €, Kuukausihoroskooppi 4,99 € ja Kumppanihoroskooppi 2,99 €. Kaikki hinnat sisältävät välittömän toimituksen.',
         q6: 'Mitä tietoja tarvitsen tilaukseen?',
         a6: 'Henkilökohtaista horoskooppiasi varten tarvitset: koko nimesi, sähköpostiosoitteesi, syntymäpäiväsi, syntymäaikasi (valinnainen mutta suositeltava) ja syntymäpaikkasi. Kumppanihoroskooppeja varten tarvitset myös kumppanisi syntymätiedot.',
+    },
+    emailCapture: {
+        title: '✨ Hanki ilmainen syntymäkartta ja viikkoennuste',
+        subtitle: 'Liity 50 000+ muun joukkoon, jotka saavat henkilökohtaisia kosmisia oivalluksia ja ilmaisraportteja joka maanantai!',
+        placeholder: 'Syötä sähköpostisi',
+        button: 'Hanki ilmainen tulkintani',
+        consent: 'Suostun vastaanottamaan kosmisia oivalluksia ja hyväksyn tietosuojakäytännön.',
+        success: '✨ Tervetuloa! Ensimmäinen ilmainen tulkintasi on matkalla.',
+        error: 'Jokin meni vikaan. Yritä uudelleen.',
+    },
+    ads: {
+        sticky: 'Viimeiset tunnit: 50% erikoisalennus avattu',
+        claim: 'Lunasta nyt',
+        limited: 'Rajoitettu tarjous',
+        unlock: 'Avaa omasi',
+        waiting: 'odottaa sinua...',
+        join: 'Liity 50 000+ sielun joukkoon, jotka löysivät selkeyden tähdistä.',
     },
 };
 

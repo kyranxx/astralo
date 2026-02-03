@@ -136,9 +136,26 @@ const de: Translations = {
         q4: 'Welche Zahlungsmethoden akzeptieren Sie?',
         a4: 'Wir akzeptieren alle gängigen Kredit- und Debitkarten (Visa, Mastercard, American Express) über Stripe, einen sicheren PCI-DSS Level 1 zertifizierten Zahlungsanbieter. Alle Transaktionen sind durch SSL-Verschlüsselung geschützt.',
         q5: 'Was kosten die Horoskope?',
-        a5: 'Wir bieten vier Produkte an: Tageshoroskop für 0,99 €, Wochenhoroskop für 2,99 €, Monatshoroskop für 7,99 € und Partnerhoroskop für 7,99 €. Alle Preise beinhalten sofortige Lieferung.',
+        a5: 'Wir bieten vier Produkte an: Tageshoroskop für 0,99 €, Wochenhoroskop für 1,99 €, Monatshoroskop für 4,99 € und Partnerhoroskop für 2,99 €. Alle Preise beinhalten sofortige Lieferung.',
         q6: 'Welche Informationen benötige ich für die Bestellung?',
         a6: 'Für Ihr personalisiertes Horoskop benötigen Sie: Ihren vollständigen Namen, E-Mail-Adresse, Geburtsdatum, Geburtszeit (optional, aber empfohlen) und Geburtsort. Für Partnerhoroskope benötigen Sie auch die Geburtsdaten Ihres Partners.',
+    },
+    emailCapture: {
+        title: '✨ Holen Sie sich Ihr kostenloses Geburtshoroskop',
+        subtitle: 'Schließen Sie sich 50.000+ anderen an und erhalten Sie jeden Montag personalisierte kosmische Einblicke!',
+        placeholder: 'E-Mail eingeben',
+        button: 'Kostenlose Analyse erhalten',
+        consent: 'Ich stimme dem Erhalt kosmischer Einblicke zu und akzeptiere die Datenschutzbestimmungen.',
+        success: '✨ Willkommen! Ihre erste kostenlose Analyse ist unterwegs.',
+        error: 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.',
+    },
+    ads: {
+        sticky: 'Letzte Stunden: 50% Sonder-Rabatt freigeschaltet',
+        claim: 'Jetzt sichern',
+        limited: 'Limitiertes Angebot',
+        unlock: 'Freischalten:',
+        waiting: 'wartet auf Sie...',
+        join: 'Schließen Sie sich 50.000+ Seelen an, die Klarheit in den Sternen fanden.',
     },
 };
 

@@ -136,9 +136,26 @@ const pl: Translations = {
         q4: 'Jakie metody płatności akceptujecie?',
         a4: 'Akceptujemy wszystkie główne karty kredytowe i debetowe (Visa, Mastercard, American Express) przez Stripe, bezpieczny procesor płatności z certyfikatem PCI-DSS Level 1. Wszystkie transakcje są chronione szyfrowaniem SSL.',
         q5: 'Ile kosztują horoskopy?',
-        a5: 'Oferujemy cztery produkty: Horoskop Dzienny za 0,99 €, Horoskop Tygodniowy za 2,99 €, Horoskop Miesięczny za 7,99 € i Horoskop Partnerski za 7,99 €. Wszystkie ceny zawierają natychmiastową dostawę.',
+        a5: 'Oferujemy cztery produkty: Horoskop Dzienny za 0,99 €, Horoskop Tygodniowy za 1,99 €, Horoskop Miesięczny za 4,99 € i Horoskop Partnerski za 2,99 €. Wszystkie ceny zawierają natychmiastową dostawę.',
         q6: 'Jakie informacje są potrzebne do zamówienia?',
         a6: 'Do otrzymania spersonalizowanego horoskopu potrzebujesz: pełnego imienia i nazwiska, adresu email, daty urodzenia, godziny urodzenia (opcjonalnie, ale zalecane) i miejsca urodzenia. Dla horoskopów partnerskich potrzebujesz również danych urodzenia partnera.',
+    },
+    emailCapture: {
+        title: '✨ Odbierz bezpłatny kosmogram i prognozę tygodniową',
+        subtitle: 'Dołącz do ponad 50 000 osób otrzymujących spersonalizowane kosmogramy i bezpłatne raporty w każdy poniedziałek!',
+        placeholder: 'Wpisz swój email',
+        button: 'Odbierz bezpłatny odczyt',
+        consent: 'Zgadzam się na otrzymywanie informacji oraz akceptuję politykę prywatności.',
+        success: '✨ Witamy! Twój pierwszy bezpłatny odczyt jest już w drodze.',
+        error: 'Coś poszło nie tak. Spróbuj ponownie.',
+    },
+    ads: {
+        sticky: 'Ostatnie godziny: 50% specjalnej zniżki odblokowane',
+        claim: 'Odbierz teraz',
+        limited: 'Oferta limitowana',
+        unlock: 'Odblokuj swój',
+        waiting: 'czeka na Ciebie...',
+        join: 'Dołącz do ponad 50 000 dusz, które znalazły jasność w gwiazdach.',
     },
 };
 

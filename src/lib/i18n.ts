@@ -1,6 +1,6 @@
 /**
  * i18n - Internationalization System
- * Supports 31 languages for global reach
+ * Supports 34 languages for global reach
  * 
  * Translations are stored in src/locales/translations.ts
  * Types are defined in src/locales/types.ts

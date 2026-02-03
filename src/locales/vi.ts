@@ -136,9 +136,26 @@ const vi: Translations = {
         q4: 'Bạn chấp nhận phương thức thanh toán nào?',
         a4: 'Chúng tôi chấp nhận tất cả các thẻ tín dụng và ghi nợ chính (Visa, Mastercard, American Express) thông qua Stripe, bộ xử lý thanh toán an toàn được chứng nhận PCI-DSS Level 1. Tất cả giao dịch được bảo vệ bằng mã hóa SSL.',
         q5: 'Tử vi có giá bao nhiêu?',
-        a5: 'Chúng tôi cung cấp bốn sản phẩm: Tử Vi Hàng Ngày 0,99 €, Tử Vi Hàng Tuần 2,99 €, Tử Vi Hàng Tháng 7,99 € và Tử Vi Cặp Đôi 7,99 €. Tất cả các mức giá đều bao gồm giao hàng ngay.',
+        a5: 'Chúng tôi cung cấp bốn sản phẩm: Tử Vi Hàng Ngày 0,99 €, Tử Vi Hàng Tuần 1,99 €, Tử Vi Hàng Tháng 4,99 € và Tử Vi Cặp Đôi 2,99 €. Tất cả các mức giá đều bao gồm giao hàng ngay.',
         q6: 'Tôi cần thông tin gì để đặt hàng?',
         a6: 'Để nhận tử vi cá nhân hóa, bạn cần: họ tên đầy đủ, địa chỉ email, ngày sinh, giờ sinh (tùy chọn nhưng khuyến nghị) và nơi sinh. Đối với tử vi cặp đôi, bạn cũng cần thông tin sinh của đối tác.',
+    },
+    emailCapture: {
+        title: '✨ Nhận Bản Đồ Sao và Dự Báo Hàng Tuần Miễn Phí',
+        subtitle: 'Tham gia cùng 50.000+ người nhận thông tin vũ trụ cá nhân và báo cáo miễn phí vào mỗi thứ Hai!',
+        placeholder: 'Nhập email của bạn',
+        button: 'Nhận bản đọc miễn phí',
+        consent: 'Tôi đồng ý nhận thông tin vũ trụ và chấp nhận chính sách bảo mật.',
+        success: '✨ Chào mừng! Bản đọc miễn phí đầu tiên của bạn đang trên đường đến.',
+        error: 'Đã có lỗi xảy ra. Vui lòng thử lại.',
+    },
+    ads: {
+        sticky: 'Những giờ cuối cùng: Mở khóa giảm giá đặc biệt 50%',
+        claim: 'Nhận ngay',
+        limited: 'Ưu đãi có hạn',
+        unlock: 'Mở khóa của bạn',
+        waiting: 'đang chờ bạn...',
+        join: 'Tham gia cùng 50.000+ tâm hồn đã tìm thấy sự rõ ràng trong các vì sao.',
     },
 };
 

@@ -136,9 +136,26 @@ const fr: Translations = {
         q4: 'Quels modes de paiement acceptez-vous?',
         a4: 'Nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express) via Stripe, un processeur de paiement sécurisé certifié PCI-DSS Niveau 1. Toutes les transactions sont protégées par un cryptage SSL.',
         q5: 'Combien coûtent les horoscopes?',
-        a5: 'Nous proposons quatre produits: Horoscope Quotidien à 0,99 €, Horoscope Hebdomadaire à 2,99 €, Horoscope Mensuel à 7,99 € et Horoscope de Couple à 7,99 €. Tous les prix incluent la livraison instantanée.',
+        a5: 'Nous proposons quatre produits: Horoscope Quotidien à 0,99 €, Horoscope Hebdomadaire à 1,99 €, Horoscope Mensuel à 4,99 € et Horoscope de Couple à 2,99 €. Tous les prix incluent la livraison instantanée.',
         q6: 'Quelles informations dois-je fournir pour commander?',
         a6: 'Pour obtenir votre horoscope personnalisé, vous avez besoin de: votre nom complet, adresse email, date de naissance, heure de naissance (optionnel mais recommandé) et lieu de naissance. Pour les horoscopes de couple, vous aurez également besoin des informations de naissance de votre partenaire.',
+    },
+    emailCapture: {
+        title: '✨ Obtenez votre thème astral & prévisions hebdomadaires gratuits',
+        subtitle: 'Rejoignez 50 000+ personnes recevant des informations cosmiques personnalisées et des rapports gratuits chaque lundi !',
+        placeholder: 'Entrez votre email',
+        button: 'Obtenir ma lecture gratuite',
+        consent: 'J\'accepte de recevoir des informations cosmiques et j\'accepte la politique de confidentialité.',
+        success: '✨ Bienvenue ! Votre première lecture gratuite est en route.',
+        error: 'Une erreur s\'est produite. Veuillez réessayer.',
+    },
+    ads: {
+        sticky: 'Dernières heures : 50% de réduction spéciale débloquée',
+        claim: 'Profiter maintenant',
+        limited: 'Offre limitée',
+        unlock: 'Débloquez votre',
+        waiting: 'vous attend...',
+        join: 'Rejoignez 50 000+ âmes qui ont trouvé la clarté dans les étoiles.',
     },
 };
 

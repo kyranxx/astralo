@@ -136,9 +136,26 @@ const no: Translations = {
         q4: 'Hvilke betalingsmetoder godtar dere?',
         a4: 'Vi godtar alle større kredit- og debetkort (Visa, Mastercard, American Express) via Stripe, en sikker PCI-DSS Level 1-sertifisert betalingsbehandler. Alle transaksjoner er beskyttet med SSL-kryptering.',
         q5: 'Hva koster horoskopene?',
-        a5: 'Vi tilbyr fire produkter: Daglig Horoskop til 0,99 €, Ukehoroskop til 2,99 €, Månedshoroskop til 7,99 € og Partnerhoroskop til 7,99 €. Alle priser inkluderer øyeblikkelig levering.',
+        a5: 'Vi tilbyr fire produkter: Daglig Horoskop til 0,99 €, Ukehoroskop til 1,99 €, Månedshoroskop til 4,99 € og Partnerhoroskop til 2,99 €. Alle priser inkluderer umiddelbar levering.',
         q6: 'Hvilken informasjon trenger jeg for å bestille?',
         a6: 'For å få ditt personlige horoskop trenger du: ditt fulle navn, e-postadresse, fødselsdato, fødselstidspunkt (valgfritt men anbefalt) og fødested. For partnerhoroskoper trenger du også partnerens fødselsopplysninger.',
+    },
+    emailCapture: {
+        title: '✨ Få gratis fødselshoroskop og ukeprognose',
+        subtitle: 'Bli med 50 000+ andre som mottar personlig kosmisk innsikt og gratisrapporter hver mandag!',
+        placeholder: 'Skriv inn e-post',
+        button: 'Få min gratis tolkning',
+        consent: 'Jeg godtar å motta kosmisk innsikt och aksepterer personvernreglene.',
+        success: '✨ Velkommen! Din første gratis tolkning er på vei.',
+        error: 'Noe gikk galt. Vennligst prøv igjen.',
+    },
+    ads: {
+        sticky: 'Siste timer: 50% spesialrabatt låst opp',
+        claim: 'Hent nå',
+        limited: 'Begrenset tilbud',
+        unlock: 'Lås opp din',
+        waiting: 'venter på deg...',
+        join: 'Bli med 50 000+ sjeler som fant klarhet i stjernene.',
     },
 };
 

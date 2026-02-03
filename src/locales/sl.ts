@@ -136,9 +136,26 @@ const sl: Translations = {
         q4: 'Katere plačilne metode sprejemate?',
         a4: 'Sprejemamo vse večje kreditne in debetne kartice (Visa, Mastercard, American Express) prek Stripe, varnega procesorja plačil s certifikatom PCI-DSS Level 1. Vse transakcije so zaščitene s šifriranjem SSL.',
         q5: 'Koliko stanejo horoskopi?',
-        a5: 'Ponujamo štiri izdelke: Dnevni Horoskop za 0,99 €, Tedenski Horoskop za 2,99 €, Mesečni Horoskop za 7,99 € in Partnerski Horoskop za 7,99 €. Vse cene vključujejo takojšnjo dostavo.',
+        a5: 'Ponujamo štiri izdelke: Dnevni Horoskop za 0,99 €, Tedenski Horoskop za 1,99 €, Mesečni Horoskop za 4,99 € in Partnerski Horoskop za 2,99 €. Vse cene vključujejo takojšnjo dostavo.',
         q6: 'Katere informacije potrebujem za naročilo?',
         a6: 'Za vaš personaliziran horoskop potrebujete: polno ime, e-poštni naslov, datum rojstva, čas rojstva (neobvezno vendar priporočeno) in kraj rojstva. Za partnerske horoskope boste potrebovali tudi rojstne podatke vašega partnerja.',
+    },
+    emailCapture: {
+        title: '✨ Pridobite brezplačno rojstno karto in tedensko napoved',
+        subtitle: 'Pridružite se 50.000+ drugim, ki vsak ponedeljek prejmejo personalizirane kozmične vpoglede in brezplačna poročila!',
+        placeholder: 'Vnesite svoj email',
+        button: 'Prejmi moje brezplačno branje',
+        consent: 'Strinjam se s prejemanjem kozmičnih vpogledov in sprejemam politiko zasebnosti.',
+        success: '✨ Dobrodošli! Vaše prvo brezplačno branje je na poti.',
+        error: 'Nekaj je šlo narobe. Prosimo, poskusite ponovno.',
+    },
+    ads: {
+        sticky: 'Zadnje ure: 50% poseben popust odklenjen',
+        claim: 'Prevzemi zdaj',
+        limited: 'Omejena ponudba',
+        unlock: 'Odklenite svoj',
+        waiting: 'vas čaka...',
+        join: 'Pridružite se 50.000+ dušam, ki so našle jasnost v zvezdah.',
     },
 };
 

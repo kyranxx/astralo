@@ -1,0 +1,87 @@
+---
+/**
+ * CosmicAd.astro
+ * An attention-grabbing "ad" component to push horoscope sales
+ */
+import { Sparkles, TrendingUp, Zap } from 'lucide-astro';
+import { getProductPriceInEuros } from '../lib/products';
+
+interface Props {
+    type?: 'sidebar' | 'inline' | 'floating';
+    productKey?: 'daily' | 'weekly' | 'monthly' | 'partner';
+    lang?: string;
+}
+
+const { type = 'inline', productKey = 'monthly', lang = 'en' } = Astro.props;
+
+import { getTranslations, type SupportedLocale } from '../lib/i18n';
+const t = getTranslations(lang as SupportedLocale);
+
+const price = getProductPriceInEuros(productKey).toFixed(2);
+const originalPrice = (Number(price) * 2).toFixed(2);
+
+const productData = {
+    daily: { name: t.products.daily.name, icon: Zap, color: 'from-amber-400 to-orange-500' },
+    weekly: { name: t.products.weekly.name, icon: TrendingUp, color: 'from-blue-400 to-purple-500' },
+    monthly: { name: t.products.monthly.name, icon: Sparkles, color: 'from-purple-400 to-amber-500' },
+    partner: { name: t.products.partner.name, icon: Zap, color: 'from-pink-400 to-red-500' }
+};
+
+const data = productData[productKey];
+const Icon = data.icon;
+---
+
+{type === 'sidebar' && (
+    <div class="glass-strong rounded-2xl p-6 border border-amber-500/20 bg-slate-900/40 sticky top-24 overflow-hidden group">
+        <div class={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${data.color}`}></div>
+        <div class="relative z-10">
+            <div class="flex items-center gap-2 mb-4">
+                <Icon class="w-5 h-5 text-amber-400" />
+                <span class="text-xs font-bold uppercase tracking-widest text-white/50">{t.ads?.limited || 'Limited Offer'}</span>
+            </div>
+            <h4 class="text-xl font-black text-white mb-2 leading-tight">{t.ads?.unlock || 'Unlock Your'} {data.name}</h4>
+            <p class="text-white/60 text-sm mb-6">{t.products[productKey].description}</p>
+            
+            <div class="flex items-baseline gap-2 mb-6">
+                <span class="text-3xl font-black text-white">€{price}</span>
+                <span class="text-sm text-white/30 line-through">€{originalPrice}</span>
+            </div>
+            
+            <a href={`/form/${productKey}`} class={`flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r ${data.color} text-black font-bold rounded-xl hover:scale-[1.02] transition-all shadow-lg shadow-amber-500/10`}>
+                {t.ads?.claim || 'Claim 50% OFF'}
+            </a>
+        </div>
+    </div>
+)}
+
+{type === 'floating' && (
+    <div id="floating-ad" class="fixed bottom-6 right-6 z-[100] max-w-[320px] opacity-0 pointer-events-none transition-all duration-500 translate-y-4 hidden md:block">
+        <div class="glass-strong rounded-2xl p-5 border border-white/10 bg-slate-900/90 shadow-2xl relative overflow-hidden group">
+            <button onclick="this.closest('#floating-ad').remove()" class="absolute top-2 right-2 text-white/20 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="flex items-start gap-4">
+                <div class={`w-12 h-12 rounded-xl bg-gradient-to-br ${data.color} flex items-center justify-center shrink-0 shadow-lg`}>
+                    <Icon class="w-6 h-6 text-black" />
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white mb-1">{t.ads?.unlock || 'Unlock Your'} {data.name}</h5>
+                    <p class="text-[11px] text-white/50 mb-3">{t.ads?.join || 'Join 50,000+ others who found clarity in the stars.'}</p>
+                    <a href={`/form/${productKey}`} class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                        Get it for €{price} <span class="text-[10px] opacity-100">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script is:inline>
+        setTimeout(() => {
+            const ad = document.getElementById('floating-ad');
+            // Don't show on homepage or if already hidden
+            if (ad && window.location.pathname !== '/' && window.location.pathname !== '/sk' && window.location.pathname !== '/cs') {
+                ad.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+        }, 15000); // Show after 15 seconds
+    </script>
+)}

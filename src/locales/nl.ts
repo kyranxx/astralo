@@ -136,9 +136,26 @@ const nl: Translations = {
         q4: 'Welke betaalmethoden accepteren jullie?',
         a4: 'We accepteren alle gangbare credit- en debetkaarten (Visa, Mastercard, American Express) via Stripe, een veilige PCI-DSS Level 1 gecertificeerde betalingsverwerker. Alle transacties zijn beschermd met SSL-encryptie.',
         q5: 'Hoeveel kosten de horoscopen?',
-        a5: 'We bieden vier producten: Daghoroscoop voor €0,99, Weekhoroscoop voor €2,99, Maandhoroscoop voor €7,99 en Partnerhoroscoop voor €7,99. Alle prijzen zijn inclusief directe levering.',
+        a5: 'We bieden vier producten: Daghoroscoop voor €0,99, Weekhoroscoop voor €1,99, Maandhoroscoop voor €4,99 en Partnerhoroscoop voor €2,99. Alle prijzen zijn inclusief directe levering.',
         q6: 'Welke informatie heb ik nodig om te bestellen?',
         a6: 'Voor je gepersonaliseerde horoscoop heb je nodig: je volledige naam, e-mailadres, geboortedatum, geboortetijd (optioneel maar aanbevolen) en geboorteplaats. Voor partnerhoroscopen heb je ook de geboortegegevens van je partner nodig.',
+    },
+    emailCapture: {
+        title: '✨ Ontvang je gratis geboortehoroscoop & weekvoorspelling',
+        subtitle: 'Sluit je aan bij 50.000+ anderen die elke maandag gepersonaliseerde kosmische inzichten en gratis rapporten ontvangen!',
+        placeholder: 'Vul je e-mail in',
+        button: 'Ontvang mijn gratis lezing',
+        consent: 'Ik ga akkoord met het ontvangen van kosmische inzichten en accepteer het privacybeleid.',
+        success: '✨ Welkom! Je eerste gratis lezing is onderweg.',
+        error: 'Er is iets misgegaan. Probeer het opnieuw.',
+    },
+    ads: {
+        sticky: 'Laatste uren: 50% speciale korting ontgrendeld',
+        claim: 'Nu claimen',
+        limited: 'Beperkte aanbieding',
+        unlock: 'Ontgrendel je',
+        waiting: 'wacht op je...',
+        join: 'Sluit je aan bij 50.000+ zielen die helderheid vonden in de sterren.',
     },
 };
 

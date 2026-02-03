@@ -136,9 +136,26 @@ const es: Translations = {
         q4: '¿Qué métodos de pago aceptan?',
         a4: 'Aceptamos todas las principales tarjetas de crédito y débito (Visa, Mastercard, American Express) a través de Stripe, un procesador de pagos seguro certificado PCI-DSS Nivel 1. Todas las transacciones están protegidas con encriptación SSL.',
         q5: '¿Cuánto cuestan los horóscopos?',
-        a5: 'Ofrecemos cuatro productos: Horóscopo Diario a 0,99 €, Horóscopo Semanal a 2,99 €, Horóscopo Mensual a 7,99 € y Horóscopo de Pareja a 7,99 €. Todos los precios incluyen entrega instantánea.',
+        a5: 'Ofrecemos cuatro productos: Horóscopo Diario a 0,99 €, Horóscopo Semanal a 1,99 €, Horóscopo Mensual a 4,99 € y Horóscopo de Pareja a 2,99 €. Todos los precios incluyen entrega instantánea.',
         q6: '¿Qué información necesito para hacer un pedido?',
         a6: 'Para obtener tu horóscopo personalizado, necesitas: tu nombre completo, dirección de email, fecha de nacimiento, hora de nacimiento (opcional pero recomendado) y lugar de nacimiento. Para horóscopos de pareja, también necesitarás la información de nacimiento de tu pareja.',
+    },
+    emailCapture: {
+        title: '✨ Obtén tu carta astral y pronóstico semanal gratis',
+        subtitle: '¡Únete a más de 50.000 personas que reciben información cósmica personalizada y reportes gratuitos cada lunes!',
+        placeholder: 'Introduce tu email',
+        button: 'Obtener mi lectura gratis',
+        consent: 'Acepto recibir información cósmica y acepto la política de privacidad.',
+        success: '✨ ¡Bienvenido! Tu primera lectura gratuita está en camino.',
+        error: 'Algo salió mal. Por favor, inténtalo de nuevo.',
+    },
+    ads: {
+        sticky: 'Últimas horas: 50% de descuento especial desbloqueado',
+        claim: 'Reclamar ahora',
+        limited: 'Oferta limitada',
+        unlock: 'Desbloquea tu',
+        waiting: 'te está esperando...',
+        join: 'Únete a más de 50.000 almas que encontraron claridad en las estrellas.',
     },
 };
 

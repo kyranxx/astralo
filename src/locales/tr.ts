@@ -136,9 +136,26 @@ const tr: Translations = {
         q4: 'Hangi ödeme yöntemlerini kabul ediyorsunuz?',
         a4: 'PCI-DSS Seviye 1 sertifikalı güvenli ödeme işlemcisi Stripe üzerinden tüm büyük kredi ve banka kartlarını (Visa, Mastercard, American Express) kabul ediyoruz. Tüm işlemler SSL şifrelemesiyle korunmaktadır.',
         q5: 'Burç yorumları ne kadar?',
-        a5: 'Dört ürün sunuyoruz: Günlük Burç 0,99 €, Haftalık Burç 2,99 €, Aylık Burç 7,99 € ve Partner Burcu 7,99 €. Tüm fiyatlar anında teslimatı içerir.',
+        a5: 'Dört ürün sunuyoruz: Günlük Burç 0,99 €, Haftalık Burç 1,99 €, Aylık Burç 4,99 € ve Partner Burcu 2,99 €. Tüm fiyatlar anında teslimatı içerir.',
         q6: 'Sipariş için hangi bilgilere ihtiyacım var?',
         a6: 'Kişiselleştirilmiş burç yorumunuz için şunlara ihtiyacınız var: tam ad, e-posta adresi, doğum tarihi, doğum saati (isteğe bağlı ancak önerilir) ve doğum yeri. Partner burç yorumları için partnerinizin doğum bilgilerine de ihtiyacınız olacak.',
+    },
+    emailCapture: {
+        title: '✨ Ücretsiz Doğum Haritası ve Haftalık Öngörü Alın',
+        subtitle: 'Her Pazartesi kişiselleştirilmiş kozmik bilgiler ve ücretsiz raporlar alan 50.000\'den fazla kişiye katılın!',
+        placeholder: 'E-postanızı girin',
+        button: 'Ücretsiz okumamı al',
+        consent: 'Kozmik bilgiler almayı kabul ediyorum ve gizlilik politikasını onaylıyorum.',
+        success: '✨ Hoş geldiniz! İlk ücretsiz okumanız yolda.',
+        error: 'Bir şeyler ters gitti. Lütfen tekrar deneyin.',
+    },
+    ads: {
+        sticky: 'Son saatler: %50 özel indirim aktif',
+        claim: 'Şimdi al',
+        limited: 'Sınırlı teklif',
+        unlock: 'Kilidini aç:',
+        waiting: 'seni bekliyor...',
+        join: 'Yıldızlarda netlik bulan 50.000\'den fazla ruha katılın.',
     },
 };
 

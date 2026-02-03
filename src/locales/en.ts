@@ -136,11 +136,27 @@ const en: Translations = {
         q4: 'What payment methods do you accept?',
         a4: 'We accept all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, a secure PCI-DSS Level 1 certified payment processor. All transactions are protected with SSL encryption.',
         q5: 'How much do horoscopes cost?',
-        a5: 'We offer four products: Daily Horoscope at €0.99, Weekly Horoscope at €2.99, Monthly Horoscope at €7.99, and Partner Compatibility at €7.99. All prices include instant delivery.',
+        a5: 'We offer four products: Daily Horoscope at €0.99, Weekly Horoscope at €1.99, Monthly Horoscope at €4.99, and Partner Compatibility at €2.99. All prices include instant delivery.',
         q6: 'What information do I need to order?',
-        a6: 'To get your personalized horoscope, you need: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you\'ll also need your partner\'s birth information.',
+        a6: 'To get your personalized horoscope, you need to provide: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you will also need your partner\'s birth data.',
+    },
+    emailCapture: {
+        title: '✨ Get Your Free Birth Chart & Weekly Forecast',
+        subtitle: 'Join 50,000+ others receiving personalized cosmic insights and free reports every Monday!',
+        placeholder: 'Enter your email',
+        button: 'Get My Free Reading',
+        consent: 'I agree to receive cosmic insights and accept the privacy policy.',
+        success: '✨ Welcome! Your first free reading is on its way.',
+        error: 'Something went wrong. Please try again.',
+    },
+    ads: {
+        sticky: 'Last Hours: 50% Special Discount Unlocked',
+        claim: 'Claim Now',
+        limited: 'Limited Offer',
+        unlock: 'Unlock Your',
+        waiting: 'is waiting...',
+        join: 'Join 50,000+ others who found clarity in the stars.',
     },
 };
 
 export default en;
-

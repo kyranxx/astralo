@@ -136,9 +136,26 @@ const sk: Translations = {
         q4: 'Aké platobné metódy akceptujete?',
         a4: 'Akceptujeme všetky hlavné kreditné a debetné karty (Visa, Mastercard, American Express) cez Stripe, bezpečný platobný procesor s certifikáciou PCI-DSS Level 1. Všetky transakcie sú chránené šifrovaním SSL.',
         q5: 'Koľko stoja horoskopy?',
-        a5: 'Ponúkame štyri produkty: Denný horoskop za 0,99 €, Týždenný horoskop za 2,99 €, Mesačný horoskop za 7,99 € a Partnerský horoskop za 7,99 €. Všetky ceny zahŕňajú okamžité doručenie.',
+        a5: 'Ponúkame štyri produkty: Denný horoskop za 0,99 €, Týždenný horoskop za 1,99 €, Mesačný horoskop za 4,99 € a Partnerský horoskop za 2,99 €. Všetky ceny zahŕňajú okamžité doručenie.',
         q6: 'Aké informácie potrebujem na objednávku?',
         a6: 'Na získanie vášho personalizovaného horoskopu potrebujete: vaše celé meno, emailovú adresu, dátum narodenia, čas narodenia (voliteľné, ale odporúčané) a miesto narodenia. Pre partnerské horoskopy budete potrebovať aj údaje o narodení vášho partnera.',
+    },
+    emailCapture: {
+        title: '✨ Získajte Osobný Horoskop Zadarmo',
+        subtitle: 'Pridajte sa k 50 000+ odoberateľom a získajte týždenné kozmické postrehy do vašej schránky.',
+        placeholder: 'Zadajte váš email',
+        button: 'Získať Zadarmo',
+        consent: 'Súhlasím s prijímaním emailov a akceptujem zásady ochrany osobných údajov.',
+        success: '✨ Vitajte! Váš prvý horoskop je na ceste.',
+        error: 'Niečo sa pokazilo. Skúste znova.',
+    },
+    ads: {
+        sticky: 'Posledné hodiny: 50% Špeciálna zľava odomknutá',
+        claim: 'Využiť teraz',
+        limited: 'Limitovaná ponuka',
+        unlock: 'Odomknite svoj',
+        waiting: 'vás čaká...',
+        join: 'Pridajte sa k 50 000+ dušiam, ktoré našli jas v hviezdach.',
     },
 };
 

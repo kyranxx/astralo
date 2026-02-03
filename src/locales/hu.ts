@@ -136,9 +136,26 @@ const hu: Translations = {
         q4: 'Milyen fizetési módokat fogadnak el?',
         a4: 'Minden főbb hitel- és betéti kártyát elfogadunk (Visa, Mastercard, American Express) a Stripe-on keresztül, amely egy PCI-DSS Level 1 tanúsítvánnyal rendelkező biztonságos fizetési feldolgozó. Minden tranzakció SSL titkosítással védett.',
         q5: 'Mennyibe kerülnek a horoszkópok?',
-        a5: 'Négy terméket kínálunk: Napi Horoszkóp 0,99 €, Heti Horoszkóp 2,99 €, Havi Horoszkóp 7,99 € és Partner Horoszkóp 7,99 €. Minden ár tartalmazza az azonnali kézbesítést.',
+        a5: 'Négy terméket kínálunk: Napi Horoszkóp 0,99 €, Heti Horoszkóp 1,99 €, Havi Horoszkóp 4,99 € és Partner Horoszkóp 2,99 €. Minden ár tartalmazza az azonnali kézbesítést.',
         q6: 'Milyen információra van szükségem a rendeléshez?',
         a6: 'Személyre szabott horoszkópjához szüksége van: teljes névre, e-mail címre, születési dátumra, születési időre (opcionális, de ajánlott) és születési helyre. Partner horoszkópokhoz partnere születési adataira is szükség van.',
+    },
+    emailCapture: {
+        title: '✨ Ingyenes Születési Képlet és Heti Előrejelzés',
+        subtitle: 'Csatlakozzon több mint 50 000 emberhez, akik minden hétfőn személyre szabott kozmikus betekintést és ingyenes jelentéseket kapnak!',
+        placeholder: 'Adja meg az e-mail címét',
+        button: 'Kérem az ingyenes elemzésemet',
+        consent: 'Hozzájárulok a kozmikus betekintések küldéséhez és elfogadom az adatvédelmi irányelveket.',
+        success: '✨ Üdvözöljük! Az első ingyenes elemzése már úton van.',
+        error: 'Valami hiba történt. Kérjük, próbálja újra.',
+    },
+    ads: {
+        sticky: 'Utolsó órák: 50% speciális kedvezmény feloldva',
+        claim: 'Igényelje most',
+        limited: 'Limitált ajánlat',
+        unlock: 'Oldja fel a',
+        waiting: 'vár Önre...',
+        join: 'Csatlakozzon több mint 50 000 lélekhez, akik tisztánlátást találtak a csillagokban.',
     },
 };
 

@@ -136,9 +136,26 @@ const id: Translations = {
         q4: 'Metode pembayaran apa yang Anda terima?',
         a4: 'Kami menerima semua kartu kredit dan debit utama (Visa, Mastercard, American Express) melalui Stripe, pemroses pembayaran aman bersertifikat PCI-DSS Level 1. Semua transaksi dilindungi dengan enkripsi SSL.',
         q5: 'Berapa harga horoskop?',
-        a5: 'Kami menawarkan empat produk: Horoskop Harian 0,99 €, Horoskop Mingguan 2,99 €, Horoskop Bulanan 7,99 €, dan Horoskop Pasangan 7,99 €. Semua harga termasuk pengiriman instan.',
+        a5: 'Kami menawarkan empat produk: Horoskop Harian 0,99 €, Horoskop Mingguan 1,99 €, Horoskop Bulanan 4,99 €, dan Horoskop Pasangan 2,99 €. Semua harga termasuk pengiriman instan.',
         q6: 'Informasi apa yang saya butuhkan untuk memesan?',
         a6: 'Untuk mendapatkan horoskop personal Anda, Anda memerlukan: nama lengkap, alamat email, tanggal lahir, waktu lahir (opsional tapi disarankan), dan tempat lahir. Untuk horoskop pasangan, Anda juga memerlukan detail kelahiran pasangan Anda.',
+    },
+    emailCapture: {
+        title: '✨ Dapatkan Peta Kelahiran & Ramalan Mingguan Gratis',
+        subtitle: 'Bergabunglah dengan 50.000+ orang yang menerima wawasan kosmik personal dan laporan gratis setiap hari Senin!',
+        placeholder: 'Masukkan email Anda',
+        button: 'Dapatkan pembacaan gratis',
+        consent: 'Saya setuju untuk menerima wawasan kosmik dan menerima kebijakan privasi.',
+        success: '✨ Selamat datang! Pembacaan gratis pertama Anda sedang dikirim.',
+        error: 'Terjadi kesalahan. Silakan coba lagi.',
+    },
+    ads: {
+        sticky: 'Jam-jam terakhir: Diskon khusus 50% dibuka',
+        claim: 'Klaim sekarang',
+        limited: 'Penawaran terbatas',
+        unlock: 'Buka milik Anda',
+        waiting: 'menunggu Anda...',
+        join: 'Bergabunglah dengan 50.000+ jiwa yang menemukan kejelasan di bintang-bintang.',
     },
 };
 
