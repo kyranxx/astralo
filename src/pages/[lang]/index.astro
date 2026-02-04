@@ -7,6 +7,7 @@ import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon, Boo
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
 import { getTestimonials } from '../../lib/testimonials';
 import { getAllArticleSlugs, getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
+import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../../lib/products';
 
 export const prerender = true;
 
@@ -29,49 +30,33 @@ const latestArticles = allSlugs.slice(0, 3).map(slug => {
   return { slug, translation, meta };
 }).filter(a => a.translation && a.meta);
 
-const horoscopeTypes = [
+const horoscopeTypes = ([
   {
     id: "daily",
-    name: t.products.daily.name,
-    description: t.products.daily.description,
-    originalPrice: 0.99,
-    price: 0.50,
     icon: "Sun",
-    wordCount: t.products.daily.wordCount,
-    benefits: t.products.daily.benefits
   },
   {
     id: "weekly",
-    name: t.products.weekly.name,
-    description: t.products.weekly.description,
-    originalPrice: 1.19,
-    price: 0.59,
     icon: "Calendar",
-    wordCount: t.products.weekly.wordCount,
     popular: true,
-    benefits: t.products.weekly.benefits
   },
   {
     id: "monthly",
-    name: t.products.monthly.name,
-    description: t.products.monthly.description,
-    originalPrice: 3.19,
-    price: 1.59,
     icon: "Moon",
-    wordCount: t.products.monthly.wordCount,
-    benefits: t.products.monthly.benefits
   },
   {
     id: "partner",
-    name: t.products.partner.name,
-    description: t.products.partner.description,
-    originalPrice: 3.19,
-    price: 1.59,
     icon: "Heart",
-    wordCount: t.products.partner.wordCount,
-    benefits: t.products.partner.benefits
   },
-];
+] as const).map(type => ({
+  ...type,
+  name: t.products[type.id].name,
+  description: t.products[type.id].description,
+  price: getProductPriceInEuros(type.id as ProductKey),
+  originalPrice: getProductOriginalPriceInEuros(type.id as ProductKey),
+  wordCount: t.products[type.id].wordCount,
+  benefits: t.products[type.id].benefits
+}));
 
 const iconMap = {
   Calendar,

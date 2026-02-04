@@ -156,6 +156,7 @@ const no: Translations = {
         unlock: 'Lås opp din',
         waiting: 'venter på deg...',
         join: 'Bli med 50 000+ sjeler som fant klarhet i stjernene.',
+        getFor: 'Få det for',
     },
 };
 

@@ -12,11 +12,23 @@ export const productPrices = {
     partner: 299, // €2.99
 } as const;
 
+export const productOriginalPrices = {
+    daily: 199,   // €1.99
+    weekly: 399,  // €3.99
+    monthly: 999, // €9.99
+    partner: 599, // €5.99
+} as const;
+
 export type ProductKey = keyof typeof productPrices;
 
 // Get price in euros (for display)
 export function getProductPriceInEuros(productKey: ProductKey): number {
     return productPrices[productKey] / 100;
+}
+
+// Get original price in euros (for display)
+export function getProductOriginalPriceInEuros(productKey: ProductKey): number {
+    return productOriginalPrices[productKey] / 100;
 }
 
 // Localized product names for all supported languages

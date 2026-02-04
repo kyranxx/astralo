@@ -156,6 +156,7 @@ const pt: Translations = {
         unlock: 'Desbloqueie o seu',
         waiting: 'está à sua espera...',
         join: 'Junte-se a mais de 50.000 almas que encontraram clareza nas estrelas.',
+        getFor: 'Obtenha por',
     },
 };
 

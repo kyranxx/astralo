@@ -156,6 +156,7 @@ const ko: Translations = {
         unlock: '당신의 운세 잠금 해제',
         waiting: '당신을 기다리고 있습니다...',
         join: '별에서 명확함을 찾은 50,000명 이상의 영혼들과 함께하세요.',
+        getFor: '지금 구매',
     },
 };
 

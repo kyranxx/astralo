@@ -156,6 +156,7 @@ const vi: Translations = {
         unlock: 'Mở khóa của bạn',
         waiting: 'đang chờ bạn...',
         join: 'Tham gia cùng 50.000+ tâm hồn đã tìm thấy sự rõ ràng trong các vì sao.',
+        getFor: 'Nhận ngay với',
     },
 };
 

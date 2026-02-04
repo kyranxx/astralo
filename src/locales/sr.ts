@@ -156,6 +156,7 @@ const sr: Translations = {
         unlock: 'Otključajte svoj',
         waiting: 'vas čeka...',
         join: 'Pridružite se 50.000+ duša koje su pronašle jasnost u zvezdama.',
+        getFor: 'Nabavite za',
     },
 };
 

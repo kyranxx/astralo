@@ -172,5 +172,6 @@ export interface Translations {
         unlock: string;
         waiting: string;
         join: string;
+        getFor: string;
     };
 }

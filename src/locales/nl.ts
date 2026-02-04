@@ -156,6 +156,7 @@ const nl: Translations = {
         unlock: 'Ontgrendel je',
         waiting: 'wacht op je...',
         join: 'Sluit je aan bij 50.000+ zielen die helderheid vonden in de sterren.',
+        getFor: 'Krijg het voor',
     },
 };
 

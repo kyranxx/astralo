@@ -156,6 +156,7 @@ const de: Translations = {
         unlock: 'Freischalten:',
         waiting: 'wartet auf Sie...',
         join: 'Schließen Sie sich 50.000+ Seelen an, die Klarheit in den Sternen fanden.',
+        getFor: 'Jetzt für',
     },
 };
 

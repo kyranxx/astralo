@@ -156,6 +156,7 @@ const id: Translations = {
         unlock: 'Buka milik Anda',
         waiting: 'menunggu Anda...',
         join: 'Bergabunglah dengan 50.000+ jiwa yang menemukan kejelasan di bintang-bintang.',
+        getFor: 'Dapatkan seharga',
     },
 };
 

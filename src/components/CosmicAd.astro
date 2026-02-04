@@ -29,6 +29,9 @@ const productData = {
 
 const data = productData[productKey];
 const Icon = data.icon;
+
+// Helper for localized links
+const formLink = lang === 'en' ? `/form/${productKey}` : `/${lang}/form/${productKey}`;
 ---
 
 {type === 'sidebar' && (
@@ -47,7 +50,7 @@ const Icon = data.icon;
                 <span class="text-sm text-white/30 line-through">€{originalPrice}</span>
             </div>
             
-            <a href={`/form/${productKey}`} class={`flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r ${data.color} text-black font-bold rounded-xl hover:scale-[1.02] transition-all shadow-lg shadow-amber-500/10`}>
+            <a href={formLink} class={`flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r ${data.color} text-black font-bold rounded-xl hover:scale-[1.02] transition-all shadow-lg shadow-amber-500/10`}>
                 {t.ads?.claim || 'Claim 50% OFF'}
             </a>
         </div>
@@ -67,8 +70,8 @@ const Icon = data.icon;
                 <div>
                     <h5 class="text-sm font-bold text-white mb-1">{t.ads?.unlock || 'Unlock Your'} {data.name}</h5>
                     <p class="text-[11px] text-white/50 mb-3">{t.ads?.join || 'Join 50,000+ others who found clarity in the stars.'}</p>
-                    <a href={`/form/${productKey}`} class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
-                        Get it for €{price} <span class="text-[10px] opacity-100">→</span>
+                    <a href={formLink} class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                        {t.ads?.getFor || 'Get it for'} €{price} <span class="text-[10px] opacity-100">→</span>
                     </a>
                 </div>
             </div>

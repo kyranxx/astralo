@@ -156,6 +156,7 @@ const pl: Translations = {
         unlock: 'Odblokuj swój',
         waiting: 'czeka na Ciebie...',
         join: 'Dołącz do ponad 50 000 dusz, które znalazły jasność w gwiazdach.',
+        getFor: 'Kup za',
     },
 };
 

@@ -156,6 +156,7 @@ const fr: Translations = {
         unlock: 'Débloquez votre',
         waiting: 'vous attend...',
         join: 'Rejoignez 50 000+ âmes qui ont trouvé la clarté dans les étoiles.',
+        getFor: 'Obtenir pour',
     },
 };
 

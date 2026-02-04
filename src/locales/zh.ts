@@ -156,6 +156,7 @@ const zh: Translations = {
         unlock: '解锁您的',
         waiting: '正在等待您...',
         join: '加入 50,000+ 在星辰中找到指引的灵魂。',
+        getFor: '立即获取',
     },
 };
 

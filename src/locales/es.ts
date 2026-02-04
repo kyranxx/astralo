@@ -156,6 +156,7 @@ const es: Translations = {
         unlock: 'Desbloquea tu',
         waiting: 'te está esperando...',
         join: 'Únete a más de 50.000 almas que encontraron claridad en las estrellas.',
+        getFor: 'Consíguelo por',
     },
 };
 

@@ -156,6 +156,7 @@ const it: Translations = {
         unlock: 'Sblocca il tuo',
         waiting: 'ti sta aspettando...',
         join: 'Unisciti a oltre 50.000 anime che hanno trovato chiarezza nelle stelle.',
+        getFor: 'Ottienilo per',
     },
 };
 

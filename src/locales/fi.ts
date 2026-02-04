@@ -156,6 +156,7 @@ const fi: Translations = {
         unlock: 'Avaa omasi',
         waiting: 'odottaa sinua...',
         join: 'Liity 50 000+ sielun joukkoon, jotka löysivät selkeyden tähdistä.',
+        getFor: 'Hanki se hintaan',
     },
 };
 

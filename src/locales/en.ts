@@ -156,6 +156,7 @@ const en: Translations = {
         unlock: 'Unlock Your',
         waiting: 'is waiting...',
         join: 'Join 50,000+ others who found clarity in the stars.',
+        getFor: 'Get it for',
     },
 };
 

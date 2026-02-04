@@ -156,6 +156,7 @@ const cs: Translations = {
         unlock: 'Odemkněte svůj',
         waiting: 'vás čeká...',
         join: 'Přidejte se k 50 000+ duším, které našly jas v hvězdách.',
+        getFor: 'Získat za',
     },
 };
 

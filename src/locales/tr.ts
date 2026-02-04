@@ -156,6 +156,7 @@ const tr: Translations = {
         unlock: 'Kilidini aç:',
         waiting: 'seni bekliyor...',
         join: 'Yıldızlarda netlik bulan 50.000\'den fazla ruha katılın.',
+        getFor: 'Şunun için al',
     },
 };
 

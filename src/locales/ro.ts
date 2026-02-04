@@ -156,6 +156,7 @@ const ro: Translations = {
         unlock: 'Deblochează-ți',
         waiting: 'te așteaptă...',
         join: 'Alătură-te celor peste 50.000 de suflete care au găsit claritate în stele.',
+        getFor: 'Obține-l pentru',
     },
 };
 

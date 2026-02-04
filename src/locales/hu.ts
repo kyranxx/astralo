@@ -156,6 +156,7 @@ const hu: Translations = {
         unlock: 'Oldja fel a',
         waiting: 'vár Önre...',
         join: 'Csatlakozzon több mint 50 000 lélekhez, akik tisztánlátást találtak a csillagokban.',
+        getFor: 'Szerezd meg',
     },
 };
 
