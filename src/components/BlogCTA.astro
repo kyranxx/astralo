@@ -5,6 +5,8 @@
  */
 import { Star, ArrowRight, Sparkles } from 'lucide-astro';
 import { getProductPriceInEuros, getProductName } from '../lib/products';
+import { getProductLandingPath } from '../lib/seo';
+import type { SupportedLocale } from '../lib/i18n';
 
 interface Props {
   productKey?: 'daily' | 'weekly' | 'monthly' | 'partner';
@@ -14,6 +16,7 @@ interface Props {
 const { productKey = 'monthly', lang = 'en' } = Astro.props;
 const price = getProductPriceInEuros(productKey);
 const productName = getProductName(productKey, lang);
+const ctaHref = getProductLandingPath(lang as SupportedLocale, productKey);
 
 // Selection of compelling CTA texts based on product
 const productCTAs = {
@@ -70,7 +73,7 @@ const content = productCTAs[productKey as keyof typeof productCTAs];
         <div class="text-amber-500 text-xs font-bold uppercase tracking-tighter">Limited 50% Offer</div>
       </div>
 
-      <a href={`/form/${productKey}`} class="w-full md:w-64 inline-flex items-center justify-center gap-3 px-8 py-5 bg-amber-500 text-black font-black text-lg rounded-2xl hover:bg-amber-400 transition-all hover:scale-105 shadow-[0_10px_30px_rgba(245,158,11,0.3)] group-hover:shadow-[0_15px_40px_rgba(245,158,11,0.4)]">
+      <a href={ctaHref} class="w-full md:w-64 inline-flex items-center justify-center gap-3 px-8 py-5 bg-amber-500 text-black font-black text-lg rounded-2xl hover:bg-amber-400 transition-all hover:scale-105 shadow-[0_10px_30px_rgba(245,158,11,0.3)] group-hover:shadow-[0_15px_40px_rgba(245,158,11,0.4)]">
         Get My {productName.split(' ')[0]}
         <ArrowRight class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </a>

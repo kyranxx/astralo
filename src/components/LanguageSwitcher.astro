@@ -7,6 +7,9 @@ interface Props {
 
 const { lang } = Astro.props;
 const currentLocale = locales[lang as SupportedLocale] || locales.en;
+const currentPath = Astro.url.pathname;
+const currentSearch = Astro.url.search || '';
+const basePath = currentPath.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
 
 // Flag CDN - using flagcdn.com for real flag images
 // flagcdn.com uses lowercase ISO 3166-1 alpha-2 country codes, NOT language codes
@@ -74,8 +77,10 @@ const allLangs = orderedLangs;
       {allLangs.map((code) => {
         const locale = locales[code];
         const isActive = code === lang;
-        // English at root (/), other languages at /[lang]/
-        const href = code === 'en' ? '/' : `/${code}/`;
+        const normalizedBasePath = basePath === '/' ? '' : basePath;
+        const href = code === 'en'
+          ? `${normalizedBasePath || '/'}${currentSearch}`
+          : `/${code}${normalizedBasePath}${currentSearch}`;
         
         return (
           <a

@@ -10,6 +10,8 @@ import { loveHoroscopeRelationshipAdvice } from './blog/articles/love-horoscope-
 import { mercuryRetrogradeSurvivalGuide } from './blog/articles/mercury-retrograde-survival-guide';
 import { monthlyHoroscope as monthlyHoroscopeFeb } from './blog/articles/monthly-horoscope-february-2026';
 import { monthlyHoroscopeJanuary2026 } from './blog/articles/monthly-horoscope-january-2026';
+import { monthlyHoroscopeMarch2026 } from './blog/articles/monthly-horoscope-march-2026';
+import { monthlyHoroscopeApril2026 } from './blog/articles/monthly-horoscope-april-2026';
 import { saturnReturnGuide } from './blog/articles/saturn-return-guide';
 import { the12HousesOfAstrology } from './blog/articles/the-12-houses-of-astrology';
 import { twinFlamesAndSoulmatesAstrology } from './blog/articles/twin-flames-and-soulmates-astrology';
@@ -35,6 +37,8 @@ const postsMap: Record<string, Record<string, BlogPostTranslation>> = {
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
     'monthly-horoscope-february-2026': monthlyHoroscopeFeb,
     'monthly-horoscope-january-2026': monthlyHoroscopeJanuary2026,
+    'monthly-horoscope-march-2026': monthlyHoroscopeMarch2026,
+    'monthly-horoscope-april-2026': monthlyHoroscopeApril2026,
     'saturn-return-guide': saturnReturnGuide,
     'the-12-houses-of-astrology': the12HousesOfAstrology,
     'twin-flames-and-soulmates-astrology': twinFlamesAndSoulmatesAstrology,

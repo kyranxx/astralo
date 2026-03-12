@@ -1,0 +1,26 @@
+---
+import ProductLandingPage from '../../../components/ProductLandingPage.astro';
+import { getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../lib/i18n';
+import { isValidProductKey } from '../../../lib/products';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return getSupportedLocales()
+    .filter((lang) => lang !== 'en')
+    .flatMap((lang) =>
+      ['daily', 'weekly', 'monthly', 'partner'].map((type) => ({
+        params: { lang, type },
+      })),
+    );
+}
+
+const { lang, type } = Astro.params;
+const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+
+if (!type || !isValidProductKey(type)) {
+  return Astro.redirect(`/${currentLang}/`);
+}
+---
+
+<ProductLandingPage lang={currentLang} type={type} />

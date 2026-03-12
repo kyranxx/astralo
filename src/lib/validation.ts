@@ -25,6 +25,21 @@ export const CheckoutSchema = z.object({
     birthTime2: timeString,
     birthPlace2: z.string().max(100).optional(),
 
+    // Marketing attribution
+    landingPath: z.string().max(300).optional(),
+    lastPath: z.string().max(300).optional(),
+    referrer: z.string().max(500).optional(),
+    firstSeenAt: z.string().max(100).optional(),
+    lastSeenAt: z.string().max(100).optional(),
+    utm_source: z.string().max(200).optional(),
+    utm_medium: z.string().max(200).optional(),
+    utm_campaign: z.string().max(200).optional(),
+    utm_term: z.string().max(200).optional(),
+    utm_content: z.string().max(200).optional(),
+    gclid: z.string().max(200).optional(),
+    fbclid: z.string().max(200).optional(),
+    msclkid: z.string().max(200).optional(),
+
     // Payment source URL for redirection (security check)
     currentUrl: z.string().url().optional(),
 }).refine(data => {

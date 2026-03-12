@@ -87,6 +87,12 @@ export default defineConfig({
           item.changefreq = 'daily';
           item.priority = 0.9;
         }
+        // Product landing pages - key commercial URLs
+        else if (url.includes('/horoscope/')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = 'weekly';
+          item.priority = 0.95;
+        }
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {
           item.lastmod = new Date().toISOString();

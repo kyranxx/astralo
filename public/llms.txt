@@ -1,0 +1,35 @@
+# Astralo
+
+> Astralo is a multilingual astrology website selling personalized horoscope readings delivered by email as digital PDF reports.
+
+## Main URLs
+- Home: https://astralo.online/
+- Blog: https://astralo.online/blog
+- RSS: https://astralo.online/rss.xml
+
+## Commercial Pages
+- Daily Horoscope: https://astralo.online/horoscope/daily
+- Weekly Horoscope: https://astralo.online/horoscope/weekly
+- Monthly Horoscope: https://astralo.online/horoscope/monthly
+- Partner Horoscope: https://astralo.online/horoscope/partner
+- Zodiac Sign Variants: https://astralo.online/horoscope/monthly/aries
+- Localized Sign Variants: https://astralo.online/de/horoscope/monthly/aries
+
+## What Astralo Sells
+- Daily horoscope readings with short-term guidance
+- Weekly horoscope readings with planning insights
+- Monthly horoscope readings with deeper forecasts
+- Partner compatibility readings based on birth data
+- Sign-specific landing pages that map the four reading types to all 12 zodiac signs
+
+## Public Content
+- Astrology explainers
+- Compatibility guides
+- Monthly and weekly horoscope articles
+- Birth chart education
+
+## Contact
+- Support: mailto:apollotechsro@gmail.com
+
+## More
+- Full guide: https://astralo.online/llms-full.txt

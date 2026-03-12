@@ -1,0 +1,20 @@
+---
+import ProductLandingPage from '../../components/ProductLandingPage.astro';
+import { isValidProductKey } from '../../lib/products';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return ['daily', 'weekly', 'monthly', 'partner'].map((type) => ({
+    params: { type },
+  }));
+}
+
+const { type } = Astro.params;
+
+if (!type || !isValidProductKey(type)) {
+  return Astro.redirect('/');
+}
+---
+
+<ProductLandingPage lang="en" type={type} />

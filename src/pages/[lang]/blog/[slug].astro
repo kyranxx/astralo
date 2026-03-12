@@ -7,9 +7,18 @@
 
 import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
+import EmailCapture from '../../../components/EmailCapture.astro';
 import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
 import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogUiTranslations, type BlogPostTranslation, type BlogPostMeta } from '../../../lib/blog';
+import {
+  buildArticleSchema,
+  buildBreadcrumbSchema,
+  getProductLandingPath,
+  getSuggestedProductForArticle,
+  rewriteBlogOfferLinks,
+  siteUrl,
+} from '../../../lib/seo';
 
 export const prerender = true;
 
@@ -66,7 +75,7 @@ const relatedPosts = allSlugs
   .slice(0, 2);
 
 // Generate share URLs
-const currentUrl = `https://astralo.online/${currentLang}/blog/${slug}`;
+const currentUrl = `${siteUrl}/${currentLang}/blog/${slug}`;
 const safeEncode = (str: string) => {
   try {
     return encodeURIComponent(str);
@@ -80,6 +89,26 @@ const shareUrls = {
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${safeEncode(currentUrl)}`,
   linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${safeEncode(currentUrl)}`
 };
+const productKey = getSuggestedProductForArticle(slug as string);
+const landingPath = getProductLandingPath(currentLang, productKey);
+const renderedContent = rewriteBlogOfferLinks(post.content, currentLang, slug as string);
+const contentParts = renderedContent.split('</p>');
+const injectionPoint = Math.min(3, Math.floor(contentParts.length / 2));
+const firstHalf = contentParts.slice(0, injectionPoint).join('</p>') + (contentParts.length > injectionPoint ? '</p>' : '');
+const secondHalf = contentParts.slice(injectionPoint).join('</p>');
+const pageSchema = [
+  buildArticleSchema({
+    lang: currentLang,
+    url: currentUrl,
+    translation: localizedPost,
+    meta,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Home', url: `${siteUrl}/${currentLang}` },
+    { name: ui.blogTitle, url: `${siteUrl}/${currentLang}/blog` },
+    { name: displayTitle, url: currentUrl },
+  ]),
+];
 ---
 
 <Layout 
@@ -87,6 +116,11 @@ const shareUrls = {
   description={post.metaDescription}
   keywords={post.keywords}
   lang={currentLang}
+  schema={pageSchema}
+  ogType="article"
+  publishedTime={meta.date}
+  modifiedTime={meta.date}
+  floatingProductKey={productKey}
 >
   <!-- Reading Progress Bar -->
   <div id="reading-progress" class="fixed top-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 z-[100] transition-all duration-150"></div>
@@ -215,8 +249,31 @@ const shareUrls = {
             prose-ol:text-gray-100 prose-ol:my-8 prose-ol:list-decimal prose-ol:pl-6
             prose-a:text-amber-400 prose-a:no-underline hover:prose-a:text-amber-300 transition-colors
             prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:bg-white/5 prose-blockquote:p-6 prose-blockquote:rounded-r-lg prose-blockquote:italic"
-          set:html={post.content}
-        />
+        >
+          <div set:html={firstHalf} />
+
+          <div class="my-12 glass-strong rounded-3xl p-8 sm:p-10 border border-amber-500/30 bg-gradient-to-br from-amber-500/10 via-slate-900/40 to-transparent shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 blur-[80px] rounded-full"></div>
+            <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-sky-500/10 blur-[80px] rounded-full"></div>
+
+            <div class="relative z-10 text-center md:text-left md:flex md:items-center md:justify-between md:gap-8">
+              <div class="md:flex-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">
+                  {t.header.badge}
+                </div>
+                <h3 class="text-3xl sm:text-4xl font-black text-white mb-3 tracking-tight">{ui.getPersonalized}</h3>
+                <p class="text-white/70 text-lg leading-relaxed">{t.products[productKey].description}</p>
+              </div>
+
+              <a href={landingPath} class="mt-6 md:mt-0 inline-flex items-center justify-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-2xl hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20 whitespace-nowrap">
+                <Star class="w-5 h-5" />
+                {ui.orderNow}
+              </a>
+            </div>
+          </div>
+
+          <div set:html={secondHalf} />
+        </div>
 
         <!-- Key Takeaways Box -->
         {post.keyTakeaways && (
@@ -239,12 +296,14 @@ const shareUrls = {
         <!-- CTA -->
         <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
           <h3 class="text-3xl font-bold text-white mb-4">{ui.getPersonalized}</h3>
-          <p class="text-white/80 mb-8 text-lg">{ui.basedOnBirthData}</p>
-          <a href={`/${currentLang}/`} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
+          <p class="text-white/80 mb-8 text-lg">{t.products[productKey].description}</p>
+          <a href={landingPath} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
             <Star class="w-5 h-5" />
             {ui.orderNow}
           </a>
         </div>
+
+        <EmailCapture lang={currentLang} inline={true} />
 
         <!-- Related Posts -->
         {relatedPosts.length > 0 && (

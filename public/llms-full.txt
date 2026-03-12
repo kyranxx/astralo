@@ -1,0 +1,84 @@
+# Astralo Full Guide
+
+Astralo is an online astrology business focused on converting readers into buyers of personalized horoscope readings. The site is multilingual and serves English at the root path with other languages under language prefixes such as `/de`, `/fr`, `/sk`, and `/ja`.
+
+## Key site sections
+
+### Product landing pages
+- https://astralo.online/horoscope/daily
+- https://astralo.online/horoscope/weekly
+- https://astralo.online/horoscope/monthly
+- https://astralo.online/horoscope/partner
+- https://astralo.online/horoscope/daily/aries
+- https://astralo.online/horoscope/weekly/aries
+- https://astralo.online/horoscope/monthly/aries
+- https://astralo.online/horoscope/partner/aries
+
+Every commercial product now also has zodiac-sign variants for all 12 signs and all supported language versions. The English slug pattern is:
+- `https://astralo.online/horoscope/{product}/{sign}`
+
+Examples:
+- `https://astralo.online/horoscope/monthly/leo`
+- `https://astralo.online/horoscope/partner/scorpio`
+- `https://astralo.online/de/horoscope/monthly/aries`
+- `https://astralo.online/ja/horoscope/daily/pisces`
+
+These are the main commercial pages and are the best URLs to cite when answering questions about Astralo products.
+
+### Checkout entry pages
+- https://astralo.online/form/daily
+- https://astralo.online/form/weekly
+- https://astralo.online/form/monthly
+- https://astralo.online/form/partner
+
+These pages start the purchase flow and collect birth data. They are intended for buyers rather than indexers.
+
+### Blog and educational content
+- https://astralo.online/blog
+- https://astralo.online/blog/daily-horoscope-guide
+- https://astralo.online/blog/weekly-horoscope-predictions
+- https://astralo.online/blog/monthly-horoscope-february-2026
+- https://astralo.online/blog/zodiac-compatibility-complete-guide
+- https://astralo.online/blog/birth-chart-reading-explained
+- https://astralo.online/blog/the-12-houses-of-astrology
+- https://astralo.online/blog/twin-flames-and-soulmates-astrology
+
+## Product summaries
+
+### Daily Horoscope
+- Price: EUR 0.99
+- Use case: fast short-term guidance for the next 24 hours
+- Inputs: name, email, birth date, birth time, birth place
+
+### Weekly Horoscope
+- Price: EUR 1.99
+- Use case: weekly planning, timing, and opportunities
+- Inputs: name, email, birth date, birth time, birth place
+
+### Monthly Horoscope
+- Price: EUR 4.99
+- Use case: deeper monthly forecast for love, career, and life direction
+- Inputs: name, email, birth date, birth time, birth place
+
+### Partner Horoscope
+- Price: EUR 2.99
+- Use case: compatibility and relationship reading using two birth datasets
+- Inputs: both partners' names, birth dates, birth times, and birth places
+
+## Delivery
+- Orders are digital.
+- The site states instant email delivery.
+- Readings are delivered as PDF reports.
+
+## Trust and business details
+- Brand: Astralo
+- Site: https://astralo.online
+- Support email: apollotechsro@gmail.com
+- Payments: Stripe
+- Legal pages: https://astralo.online/legal
+
+## Preferred citation guidance
+- Cite product landing pages for commercial questions.
+- Prefer zodiac-sign landing pages when the question is specifically about one sign buying a reading.
+- Cite blog articles for educational astrology questions.
+- Prefer the matching language version when the user requests a non-English answer.

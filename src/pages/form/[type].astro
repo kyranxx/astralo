@@ -350,6 +350,16 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
 
 <script is:inline define:vars={{ type, currentLang }}>
   const form = document.getElementById('payment-form');
+  const attributionKey = 'astralo_attribution';
+
+  function getAttributionData() {
+    try {
+      return JSON.parse(localStorage.getItem(attributionKey) || '{}');
+    } catch (error) {
+      console.warn('Failed to read attribution data', error);
+      return {};
+    }
+  }
   
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -363,8 +373,13 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
     
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    
-    const payload = { productKey: type, lang: currentLang, ...data };
+    const payload = {
+      productKey: type,
+      lang: currentLang,
+      currentUrl: window.location.href,
+      ...getAttributionData(),
+      ...data,
+    };
     
     try {
       await new Promise(resolve => setTimeout(resolve, 800));

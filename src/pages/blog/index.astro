@@ -9,6 +9,7 @@ import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
+import { buildBreadcrumbSchema, buildCollectionPageSchema, siteUrl } from '../../lib/seo';
 
 export const prerender = true;
 
@@ -16,8 +17,10 @@ const currentLang = 'en';
 const blogUi = getBlogUiTranslations(currentLang);
 
 const blogPostsBase = [
-  { slug: 'daily-horoscope-guide', featured: true },
+  { slug: 'monthly-horoscope-april-2026', featured: true },
+  { slug: 'monthly-horoscope-march-2026', featured: false },
   { slug: 'monthly-horoscope-february-2026', featured: false },
+  { slug: 'daily-horoscope-guide', featured: false },
   { slug: 'birth-chart-reading-explained', featured: false },
   { slug: 'monthly-horoscope-january-2026', featured: false },
   { slug: 'love-horoscope-relationship-advice', featured: false },
@@ -46,12 +49,31 @@ const blogPosts = blogPostsBase.map(base => {
 }).filter(p => p !== null);
 
 const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
+const pageTitle = 'Astrology Blog - Daily Horoscope, Zodiac Compatibility & Predictions | Astralo';
+const pageDescription = 'Explore our astrology blog for daily horoscopes, zodiac compatibility guides, birth chart readings, and expert astrological predictions. Free horoscope content updated weekly.';
+const pageSchema = [
+  buildCollectionPageSchema({
+    url: `${siteUrl}/blog`,
+    title: pageTitle,
+    description: pageDescription,
+    lang: 'en',
+    items: blogPosts.map((post) => ({
+      url: `${siteUrl}/blog/${post.slug}`,
+      name: post.title,
+    })),
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Home', url: siteUrl },
+    { name: 'Blog', url: `${siteUrl}/blog` },
+  ]),
+];
 ---
 
 <Layout 
-  title="Astrology Blog - Daily Horoscope, Zodiac Compatibility & Predictions | Astralo"
-  description="Explore our astrology blog for daily horoscopes, zodiac compatibility guides, birth chart readings, and expert astrological predictions. Free horoscope content updated weekly."
+  title={pageTitle}
+  description={pageDescription}
   lang="en"
+  schema={pageSchema}
 >
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Header -->
@@ -145,7 +167,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               <strong>birth chart</strong>, we have comprehensive resources for every astrology enthusiast.
             </p>
             <div class="mt-6 flex flex-wrap gap-3">
-              <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
+              <a href="/horoscope/monthly" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
                 <TrendingUp class="w-4 h-4" />
                 Get Your Personalized Horoscope
               </a>

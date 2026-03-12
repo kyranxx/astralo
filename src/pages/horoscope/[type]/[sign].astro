@@ -1,0 +1,23 @@
+---
+import ZodiacProductLandingPage from '../../../components/ZodiacProductLandingPage.astro';
+import { isValidProductKey } from '../../../lib/products';
+import { isValidZodiacSign, zodiacSignSlugs } from '../../../lib/zodiac';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+    return ['daily', 'weekly', 'monthly', 'partner'].flatMap((type) =>
+        zodiacSignSlugs.map((sign) => ({
+            params: { type, sign },
+        })),
+    );
+}
+
+const { type, sign } = Astro.params;
+
+if (!type || !isValidProductKey(type) || !sign || !isValidZodiacSign(sign)) {
+    return Astro.redirect('/');
+}
+---
+
+<ZodiacProductLandingPage lang="en" type={type} sign={sign} />

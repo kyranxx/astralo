@@ -10,6 +10,7 @@ import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
 import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../../lib/blog';
+import { buildBreadcrumbSchema, buildCollectionPageSchema, siteUrl } from '../../../lib/seo';
 
 export const prerender = true;
 
@@ -69,8 +70,10 @@ const seoTitle = `${blogUi.blogTitle} | Astralo`;
 const seoDesc = blogUi.blogSubtitle;
 
 const blogPostsBase = [
-  { slug: 'daily-horoscope-guide', featured: true },
+  { slug: 'monthly-horoscope-april-2026', featured: true },
+  { slug: 'monthly-horoscope-march-2026', featured: false },
   { slug: 'monthly-horoscope-february-2026', featured: false },
+  { slug: 'daily-horoscope-guide', featured: false },
   { slug: 'birth-chart-reading-explained', featured: false },
   { slug: 'monthly-horoscope-january-2026', featured: false },
   { slug: 'love-horoscope-relationship-advice', featured: false },
@@ -99,12 +102,29 @@ const blogPosts = blogPostsBase.map(base => {
 }).filter(p => p !== null);
 
 const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basics'];
+const pageSchema = [
+  buildCollectionPageSchema({
+    url: `${siteUrl}/${currentLang}/blog`,
+    title: seoTitle,
+    description: seoDesc,
+    lang: currentLang,
+    items: blogPosts.map((post) => ({
+      url: `${siteUrl}/${currentLang}/blog/${post.slug}`,
+      name: post.title,
+    })),
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Home', url: `${siteUrl}/${currentLang}` },
+    { name: blogUi.blogTitle, url: `${siteUrl}/${currentLang}/blog` },
+  ]),
+];
 ---
 
 <Layout 
   title={seoTitle}
   description={seoDesc}
   lang={currentLang}
+  schema={pageSchema}
 >
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Header -->
@@ -195,7 +215,7 @@ const categories = ['All', 'Horoscopes', 'Love & Relationships', 'Astrology Basi
               {blogUi.blogSubtitle}. {keywords.secondary.join(', ')}.
             </p>
             <div class="mt-6 flex flex-wrap gap-3">
-              <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
+              <a href={`/${currentLang}/horoscope/monthly`} class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition-colors">
                 <TrendingUp class="w-4 h-4" />
                 {t.cta?.orderNow || 'Get Your Horoscope'}
               </a>

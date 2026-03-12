@@ -1,12 +1,52 @@
 # Robots.txt for Astralo
 # https://astralo.online
 
-# Allow all search engine bots
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
-# Sitemap location
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /success
+
 Sitemap: https://astralo.online/sitemap-index.xml

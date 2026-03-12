@@ -4,7 +4,18 @@ import CookieConsent from '../components/CookieConsent.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import CosmicAd from '../components/CosmicAd.astro';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
-import { productNames, productPrices, getProductPriceInEuros } from '../lib/products';
+import type { ProductKey } from '../lib/products';
+import {
+    brandName,
+    buildAlternateLanguageUrls,
+    buildOrganizationSchema,
+    buildWebSiteSchema,
+    defaultOgImage,
+    getHomePath,
+    isRtlLocale,
+    ogLocaleMap,
+    siteUrl,
+} from '../lib/seo';
 import '@fontsource/outfit/300.css';
 import '@fontsource/outfit/400.css';
 import '@fontsource/outfit/500.css';
@@ -13,526 +24,260 @@ import '@fontsource/outfit/700.css';
 import '@fontsource/outfit/800.css';
 
 interface Props {
-	title: string;
-	backgroundImage?: string;
-	lang?: string;
-	canonicalUrl?: string;
-	description?: string;
-	keywords?: string;
-	noIndex?: boolean;
+    title: string;
+    backgroundImage?: string;
+    lang?: string;
+    canonicalUrl?: string;
+    description?: string;
+    keywords?: string;
+    noIndex?: boolean;
+    ogType?: 'website' | 'article';
+    ogImage?: string;
+    publishedTime?: string;
+    modifiedTime?: string;
+    schema?: Record<string, any>[];
+    floatingProductKey?: ProductKey;
 }
 
-const { 
-	title, 
-	backgroundImage = "/background5.webp",
-	lang = "en",
-	canonicalUrl,
-	description,
-	keywords,
-	noIndex = false
+const {
+    title,
+    backgroundImage = '/background5.webp',
+    lang = 'en',
+    canonicalUrl,
+    description,
+    keywords,
+    noIndex = false,
+    ogType = 'website',
+    ogImage = defaultOgImage,
+    publishedTime,
+    modifiedTime,
+    schema = [],
+    floatingProductKey = 'monthly',
 } = Astro.props;
 
-// Get translations for current language
-const currentLang = isValidLocale(lang) ? lang as SupportedLocale : 'en';
+const currentLang = isValidLocale(lang) ? (lang as SupportedLocale) : 'en';
 const t = getTranslations(currentLang);
-
-// Use passed props or fall back to translation defaults
 const currentDescription = description || t.meta.description;
 const currentKeywords = keywords || t.meta.keywords;
-
-// Generate canonical URL based on current language
-const siteUrl = 'https://astralo.online';
 const currentPath = Astro.url.pathname;
-// Remove any trailing slash for consistency, unless it's just /
 const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
 const computedCanonicalUrl = canonicalUrl || `${siteUrl}${cleanPath}`;
-
-// All 34 supported languages for hreflang tags (critical for international SEO)
-const allLanguages = [
-	{ code: 'en', hreflang: 'en', name: 'English' },
-	{ code: 'sk', hreflang: 'sk', name: 'Slovak' },
-	{ code: 'cs', hreflang: 'cs', name: 'Czech' },
-	{ code: 'de', hreflang: 'de', name: 'German' },
-	{ code: 'fr', hreflang: 'fr', name: 'French' },
-	{ code: 'es', hreflang: 'es', name: 'Spanish' },
-	{ code: 'it', hreflang: 'it', name: 'Italian' },
-	{ code: 'pt', hreflang: 'pt', name: 'Portuguese' },
-	{ code: 'nl', hreflang: 'nl', name: 'Dutch' },
-	{ code: 'pl', hreflang: 'pl', name: 'Polish' },
-	{ code: 'hu', hreflang: 'hu', name: 'Hungarian' },
-	{ code: 'ro', hreflang: 'ro', name: 'Romanian' },
-	{ code: 'bg', hreflang: 'bg', name: 'Bulgarian' },
-	{ code: 'hr', hreflang: 'hr', name: 'Croatian' },
-	{ code: 'sl', hreflang: 'sl', name: 'Slovenian' },
-	{ code: 'sr', hreflang: 'sr', name: 'Serbian' },
-	{ code: 'uk', hreflang: 'uk', name: 'Ukrainian' },
-	{ code: 'ru', hreflang: 'ru', name: 'Russian' },
-	{ code: 'el', hreflang: 'el', name: 'Greek' },
-	{ code: 'tr', hreflang: 'tr', name: 'Turkish' },
-	{ code: 'ar', hreflang: 'ar', name: 'Arabic' },
-	{ code: 'hi', hreflang: 'hi', name: 'Hindi' },
-	{ code: 'bn', hreflang: 'bn', name: 'Bengali' },
-	{ code: 'th', hreflang: 'th', name: 'Thai' },
-	{ code: 'vi', hreflang: 'vi', name: 'Vietnamese' },
-	{ code: 'id', hreflang: 'id', name: 'Indonesian' },
-	{ code: 'ja', hreflang: 'ja', name: 'Japanese' },
-	{ code: 'ko', hreflang: 'ko', name: 'Korean' },
-	{ code: 'zh', hreflang: 'zh', name: 'Chinese' },
-	{ code: 'sv', hreflang: 'sv', name: 'Swedish' },
-	{ code: 'da', hreflang: 'da', name: 'Danish' },
-	{ code: 'no', hreflang: 'no', name: 'Norwegian' },
-	{ code: 'fi', hreflang: 'fi', name: 'Finnish' },
-	{ code: 'he', hreflang: 'he', name: 'Hebrew' },
+const alternateLanguageUrls = buildAlternateLanguageUrls(currentPath);
+const defaultAlternateUrl = alternateLanguageUrls.find(({ code }) => code === 'en')?.href || siteUrl;
+const dir = isRtlLocale(currentLang) ? 'rtl' : 'ltr';
+const homeLink = getHomePath(currentLang);
+const pageSchema = [
+    buildWebSiteSchema(currentDescription),
+    buildOrganizationSchema(currentDescription),
+    ...schema,
 ];
-
-// Generate hreflang URL for language code
-// CRITICAL: URLs must match canonical URL format (no trailing slashes except for homepage)
-const getHreflangUrl = (langCode: string) => {
-	// Remove existing lang prefix and normalize
-	let basePath = currentPath
-		.replace(/^\/[a-z]{2}(\/|$)/, '/') // Remove existing lang prefix
-		.replace(/^\/+/, '/'); // Normalize leading slashes
-	
-	// Remove trailing slash for consistency (except root)
-	if (basePath !== '/' && basePath.endsWith('/')) {
-		basePath = basePath.slice(0, -1);
-	}
-    
-    // English is at root, others at /[lang]
-    if (langCode === 'en') {
-		// English homepage: https://astralo.online (no trailing slash)
-		// English other pages: https://astralo.online/blog/slug
-        return basePath === '/' ? siteUrl : `${siteUrl}${basePath}`;
-    }
-	// Other languages homepage: https://astralo.online/sk (no trailing slash)
-	// Other languages pages: https://astralo.online/sk/blog/slug
-	return basePath === '/' ? `${siteUrl}/${langCode}` : `${siteUrl}/${langCode}${basePath}`;
-};
-
-// Language-specific OG locale mapping
-const ogLocaleMap: Record<string, string> = {
-	en: 'en_US', sk: 'sk_SK', cs: 'cs_CZ', de: 'de_DE', fr: 'fr_FR',
-	es: 'es_ES', it: 'it_IT', pt: 'pt_PT', nl: 'nl_NL', pl: 'pl_PL',
-	hu: 'hu_HU', ro: 'ro_RO', bg: 'bg_BG', hr: 'hr_HR', sl: 'sl_SI',
-	sr: 'sr_RS', uk: 'uk_UA', ru: 'ru_RU', el: 'el_GR', tr: 'tr_TR',
-	ar: 'ar_SA', hi: 'hi_IN', bn: 'bn_BD', th: 'th_TH', vi: 'vi_VN',
-	id: 'id_ID', ja: 'ja_JP', ko: 'ko_KR', zh: 'zh_CN', sv: 'sv_SE',
-	da: 'da_DK', no: 'nb_NO', fi: 'fi_FI', he: 'he_IL'
-};
-
-// Direction for RTL languages
-const rtlLanguages = ['ar', 'he'];
-const dir = rtlLanguages.includes(currentLang) ? 'rtl' : 'ltr';
-
-// Get localized product names from centralized module
-const localizedProducts = productNames[currentLang] || productNames.en;
-
-// Helper for home links
-const homeLink = currentLang === 'en' ? '/' : `/${currentLang}/`;
+const backgroundImageType = backgroundImage.endsWith('.png')
+    ? 'image/png'
+    : backgroundImage.endsWith('.jpg') || backgroundImage.endsWith('.jpeg')
+        ? 'image/jpeg'
+        : 'image/webp';
 ---
 
 <!doctype html>
-<html lang={lang} dir={dir} prefix="og: https://ogp.me/ns#">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<!-- Primary SEO Meta Tags -->
-		<title>{title}</title>
-		<meta name="title" content={title} />
-		<meta name="description" content={currentDescription} />
-		<meta name="keywords" content={currentKeywords} />
-		<meta name="author" content="Astralo" />
-		<meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
-		<meta name="google-site-verification" content="nnTYdANVVkW6nOtVRWJ0xIVe-u5DRY4yK5QZ3nQLUdQ" />
-		
-		<!-- Canonical URL (Critical for SEO) -->
-		<link rel="canonical" href={computedCanonicalUrl} />
+<html lang={currentLang} dir={dir} prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Astralo" />
-		<meta property="og:url" content={computedCanonicalUrl} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={currentDescription} />
-		<meta property="og:image" content={`${siteUrl}/og-image.png`} />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="Astralo - Professional Horoscopes" />
-		<meta property="og:logo" content={`${siteUrl}/logo.png`} />
-		<meta property="og:locale" content={ogLocaleMap[currentLang] || 'en_US'} />
-		{allLanguages.filter(l => l.code !== currentLang).map(({ code }) => (
-			<meta property="og:locale:alternate" content={ogLocaleMap[code] || 'en_US'} />
-		))}
-		
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:url" content={computedCanonicalUrl} />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={currentDescription} />
-		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
-		
-		<!-- Hreflang Tags for International SEO (All 34 Languages) -->
-		{allLanguages.map(({ code, hreflang }) => (
-			<link rel="alternate" hreflang={hreflang} href={getHreflangUrl(code)} />
-		))}
-		<link rel="alternate" hreflang="x-default" href={siteUrl} />
-		
-		<!-- Google Fonts replaced by self-hosted @fontsource/outfit -->
-		
-		<!-- Preload critical images for LCP -->
-		<link rel="preload" href="/logo.webp" as="image" type="image/webp" fetchpriority="high" />
-		<link rel="preload" href={backgroundImage} as="image" type="image/webp" fetchpriority="high" />
-		
-		<!-- Favicon -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
-		
-		<!-- Generator -->
-		<meta name="generator" content={Astro.generator} />
-		
-		<!-- Mobile Web App Capable -->
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="theme-color" content="#0a0a1a" />
-		
-		<!-- Structured Data (JSON-LD) for Rich Snippets -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"name": "Astralo",
-			"alternateName": "Astralo Horoscopes",
-			"url": siteUrl,
-			"description": currentDescription,
-			"inLanguage": lang,
-			"potentialAction": {
-				"@type": "SearchAction",
-				"target": `${siteUrl}${lang === 'en' ? '' : '/' + lang}/`,
-				"query-input": "required name=search_term_string"
-			}
-		})} />
-		
-			<!-- Organization Schema (Enhanced - No LocalBusiness needed for online-only service) -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "Organization",
-			"name": "Astralo",
-			"alternateName": "Astralo Horoscopes",
-			"url": siteUrl,
-			"logo": `${siteUrl}/logo.png`,
-			"image": `${siteUrl}/og-image.png`,
-			"description": currentDescription,
-			"email": "apollotechsro@gmail.com",
-			"foundingDate": "2024",
-			"sameAs": [],
-			"contactPoint": {
-				"@type": "ContactPoint",
-				"email": "apollotechsro@gmail.com",
-				"contactType": "customer support",
-				"availableLanguage": ["English", "German", "French", "Spanish", "Italian", "Portuguese", "Dutch", "Polish", "Czech", "Slovak"]
-			}
-		})} />
-		
-		<!-- BreadcrumbList Schema -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "BreadcrumbList",
-			"itemListElement": [
-				{
-					"@type": "ListItem",
-					"position": 1,
-					"name": "Home",
-					"item": `${siteUrl}${lang === 'en' ? '' : '/' + lang}/`
-				}
-			]
-		})} />
-		
-		<!-- Product Schema with Reviews for Rich Snippets -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "Product",
-			"name": "Personalized Horoscope Readings",
-			"description": currentDescription,
-			"brand": {
-				"@type": "Brand",
-				"name": "Astralo"
-			},
-			"image": `${siteUrl}/logo.png`,
-			"offers": {
-				"@type": "AggregateOffer",
-				"lowPrice": "0.99",
-				"highPrice": "7.99",
-				"priceCurrency": "EUR",
-				"offerCount": "4",
-				"availability": "https://schema.org/InStock"
-			},
-			"aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.9",
-				"bestRating": "5",
-				"worstRating": "1",
-				"ratingCount": "50000",
-				"reviewCount": "12847"
-			},
-			"review": [
-				{
-					"@type": "Review",
-					"author": {"@type": "Person", "name": "Sarah M."},
-					"datePublished": "2024-11-15",
-					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-					"reviewBody": "The most accurate horoscope I've ever received! Everything came true exactly as predicted."
-				},
-				{
-					"@type": "Review",
-					"author": {"@type": "Person", "name": "James W."},
-					"datePublished": "2024-11-20",
-					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-					"reviewBody": "The monthly horoscope helped me make the right career decision. Highly recommended!"
-				},
-				{
-					"@type": "Review",
-					"author": {"@type": "Person", "name": "Emma T."},
-					"datePublished": "2024-12-01",
-					"reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-					"reviewBody": "Amazing accuracy and detail in the partner analysis. Finally understood our relationship dynamics!"
-				}
-			]
-		})} />
-		
-		<!-- Service Schema for Professional Services -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "Service",
-			"serviceType": "Personalized Horoscope Reading",
-			"provider": {
-				"@type": "Organization",
-				"name": "Astralo",
-				"url": siteUrl
-			},
-			"areaServed": {
-				"@type": "Place",
-				"name": "Worldwide"
-			},
-			"hasOfferCatalog": {
-				"@type": "OfferCatalog",
-				"name": "Horoscope Services",
-				"itemListElement": [
-					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.daily}, "price": "0.99", "priceCurrency": "EUR"},
-					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.weekly}, "price": "2.99", "priceCurrency": "EUR"},
-					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.monthly}, "price": "7.99", "priceCurrency": "EUR"},
-					{"@type": "Offer", "itemOffered": {"@type": "Service", "name": localizedProducts.partner}, "price": "7.99", "priceCurrency": "EUR"}
-				]
-			},
-			"description": "Professional personalized horoscope readings based on your exact birth data. Daily, weekly, monthly forecasts and partner compatibility analysis.",
-			"audience": {
-				"@type": "PeopleAudience",
-				"suggestedMinAge": "18"
-			}
-		})} />
-		
-		<!-- FAQ Schema for Rich Snippets & LLM Optimization -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "FAQPage",
-			"mainEntity": [
-				{
-					"@type": "Question",
-					"name": "What is Astralo?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "How accurate are Astralo horoscopes?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes. Each horoscope is uniquely generated for you based on planetary positions at your exact birth moment."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "How fast will I receive my horoscope?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You'll receive a professional PDF document with your complete astrological reading, plus a PNG image summary."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "What payment methods does Astralo accept?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Astralo accepts all major credit and debit cards (Visa, Mastercard, American Express) through Stripe, a secure PCI-DSS Level 1 certified payment processor. All transactions are protected with SSL encryption."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "How much do Astralo horoscopes cost?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Astralo offers four horoscope products: Daily Horoscope at €0.99 (about 200 words), Weekly Horoscope at €2.99 (about 400 words), Monthly Horoscope at €7.99 (about 1000 words), and Partner Compatibility Horoscope at €7.99 (about 1200 words). All prices include a 50% discount and instant delivery."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "In what languages are Astralo horoscopes available?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Astralo horoscopes are available in 33 languages including English, German, French, Spanish, Italian, Portuguese, Dutch, Polish, Swedish, Danish, Norwegian, Finnish, Czech, Slovak, Hungarian, Romanian, Bulgarian, Croatian, Slovenian, Serbian, Ukrainian, Russian, Greek, Turkish, Arabic, Hindi, Bengali, Thai, Vietnamese, Indonesian, Japanese, Korean, and Chinese."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "What information do I need to order a horoscope?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "To get your personalized horoscope, you need to provide: your full name, email address, date of birth, time of birth (optional but recommended for accuracy), and place of birth. For partner horoscopes, you'll also need your partner's birth information."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "Can I get a refund for my horoscope?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Due to the digital and personalized nature of our horoscopes, refunds are handled on a case-by-case basis. If you haven't received your horoscope within 30 minutes or there's a technical issue, please contact us at apollotechsro@gmail.com. We're committed to ensuring your satisfaction."
-					}
-				}
-			]
-		})} />
-		
-		<!-- SoftwareApplication Schema (for AI/LLM understanding) -->
-		<script is:inline type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@type": "WebApplication",
-			"name": "Astralo",
-			"applicationCategory": "LifestyleApplication",
-			"operatingSystem": "Web Browser",
-			"offers": {
-				"@type": "Offer",
-				"price": "0.99",
-				"priceCurrency": "EUR"
-			},
-			"aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.9",
-				"ratingCount": "50000"
-			}
-		})} />
-		
-		<!-- Critical CSS inline for faster FCP -->
-		<style is:inline>
-			/* Critical above-the-fold styles - prevents FOUC and improves FCP/LCP */
-			*,*::before,*::after{box-sizing:border-box}
-			body{margin:0;background:#0a0a1a;color:#fff;font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
-			img{max-width:100%;height:auto;display:block}
-			a{color:inherit;text-decoration:none}
-			h1,h2,h3,h4{margin:0;font-weight:700}
-			.cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0a0a1a 0%,#1a0f2e 50%,#0f1729 100%);z-index:-2}
-			.cosmic-overlay{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.4;z-index:-1;mix-blend-mode:screen}
-			.glass-strong{background:rgba(0,0,0,0.6);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.15)}
-			.min-h-screen{min-height:100vh}
-			.flex{display:flex}
-			.flex-col{flex-direction:column}
-			.items-center{align-items:center}
-			.justify-between{justify-content:space-between}
-			.text-center{text-align:center}
-			.text-white{color:#fff}
-			.text-amber-400{color:#fbbf24}
-			.bg-gradient-to-r{background:linear-gradient(to right,var(--tw-gradient-stops))}
-			.from-amber-500{--tw-gradient-from:#f59e0b}
-			.via-amber-400{--tw-gradient-stops:#f59e0b,#fbbf24,var(--tw-gradient-to,#fbbf24)}
-			.to-amber-500{--tw-gradient-to:#f59e0b}
-			/* CRITICAL: Animation classes - ensure content visible by default */
-			.animate-on-load{opacity:1}
-			.animate-delay-1,.animate-delay-2,.animate-delay-3,.animate-delay-4{opacity:1}
-		</style>
-		
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={currentDescription} />
+        <meta name="keywords" content={currentKeywords} />
+        <meta name="author" content={brandName} />
+        <meta
+            name="robots"
+            content={noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}
+        />
+        <meta name="google-site-verification" content="nnTYdANVVkW6nOtVRWJ0xIVe-u5DRY4yK5QZ3nQLUdQ" />
+        <link rel="canonical" href={computedCanonicalUrl} />
 
-	</head>
-	<body>
-		<!-- Global Sticky Promo Bar -->
-		<div class="sticky top-0 z-[60] bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 py-1.5 px-4 text-center shadow-lg">
-			<div class="flex items-center justify-center gap-2 sm:gap-4 text-black text-[11px] sm:text-xs font-black uppercase tracking-widest">
-				<span class="flex items-center gap-1.5">
-					<span class="animate-pulse">🔥</span>
-					<span>{t.ads?.sticky || 'Last Hours: 50% Special Discount Unlocked'}</span>
-				</span>
-				<span class="hidden sm:inline opacity-30">|</span>
-				<a href={`${homeLink}#horoscopes`} class="underline hover:opacity-80 transition-opacity">{t.ads?.claim || 'Claim Now'}</a>
-			</div>
-		</div>
+        <meta property="og:type" content={ogType} />
+        <meta property="og:site_name" content={brandName} />
+        <meta property="og:url" content={computedCanonicalUrl} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={currentDescription} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:url" content={ogImage} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${brandName} astrology reading preview`} />
+        <meta property="og:locale" content={ogLocaleMap[currentLang] || 'en_US'} />
+        {alternateLanguageUrls.filter(({ code }) => code !== currentLang).map(({ code }) => (
+            <meta property="og:locale:alternate" content={ogLocaleMap[code] || 'en_US'} />
+        ))}
+        {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+        {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
-		<div class="cosmic-bg"></div>
-		{backgroundImage && (
-			<img
-				src={backgroundImage}
-				alt="Cosmic background"
-				class="cosmic-overlay"
-				width="1920"
-				height="1080"
-				fetchpriority="high"
-				role="presentation"
-				aria-hidden="true"
-			/>
-		)}
-		<slot />
-		
-		<!-- Cookie Consent -->
-		<CookieConsent lang={lang} />
-		
-		<!-- Email Capture Popup -->
-		<EmailCapture lang={lang} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={computedCanonicalUrl} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={currentDescription} />
+        <meta name="twitter:image" content={ogImage} />
 
-		<!-- Floating Promotional Ad -->
-		<CosmicAd type="floating" productKey="monthly" lang={lang} />
-		
-		<!-- Microsoft Clarity Analytics - Deferred until idle -->
-		<script is:inline>
-			(function(){
-				function loadClarity() {
-					(function(c,l,a,r,i,t,y){
-						c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-						t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-						y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-					})(window, document, "clarity", "script", "uq8y5sm9rv");
-				}
-				// Defer Clarity until browser is idle or after 3 seconds
-				if ('requestIdleCallback' in window) {
-					requestIdleCallback(loadClarity, { timeout: 3000 });
-				} else {
-					setTimeout(loadClarity, 5000);
-				}
-			})();
-		</script>
+        {alternateLanguageUrls.map(({ hreflang, href }) => (
+            <link rel="alternate" hreflang={hreflang} href={href} />
+        ))}
+        <link rel="alternate" hreflang="x-default" href={defaultAlternateUrl} />
+        <link rel="alternate" type="application/rss+xml" title={`${brandName} Blog`} href={`${siteUrl}/rss.xml`} />
 
-		<!-- Google Analytics 4 - Deferred for Performance -->
-		<script is:inline>
-			(function() {
-				function loadGA() {
-					// Load the script
-					var script = document.createElement('script');
-					script.async = true;
-					script.src = "https://www.googletagmanager.com/gtag/js?id=G-M4VCEJ31XV";
-					document.head.appendChild(script);
+        <link rel="preload" href="/logo.webp" as="image" type="image/webp" fetchpriority="high" />
+        <link rel="preload" href={backgroundImage} as="image" type={backgroundImageType} fetchpriority="high" />
 
-					// Initialize
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', 'G-M4VCEJ31XV');
-				}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/og-image.png" />
 
-				// Defer GA until browser is idle or after 3 seconds
-				if ('requestIdleCallback' in window) {
-					requestIdleCallback(loadGA, { timeout: 3000 });
-				} else {
-					setTimeout(loadGA, 4000);
-				}
-			})();
-		</script>
-	</body>
+        <meta name="generator" content={Astro.generator} />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#0a0a1a" />
+
+        {pageSchema.map((entry) => (
+            <script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />
+        ))}
+
+        <style is:inline>
+            *,*::before,*::after{box-sizing:border-box}
+            body{margin:0;background:#0a0a1a;color:#fff;font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
+            img{max-width:100%;height:auto;display:block}
+            a{color:inherit;text-decoration:none}
+            h1,h2,h3,h4{margin:0;font-weight:700}
+            .cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0a0a1a 0%,#1a0f2e 50%,#0f1729 100%);z-index:-2}
+            .cosmic-overlay{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:.4;z-index:-1;mix-blend-mode:screen}
+            .glass-strong{background:rgba(0,0,0,.6);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.15)}
+            .min-h-screen{min-height:100vh}
+            .flex{display:flex}
+            .flex-col{flex-direction:column}
+            .items-center{align-items:center}
+            .justify-between{justify-content:space-between}
+            .text-center{text-align:center}
+            .text-white{color:#fff}
+            .text-amber-400{color:#fbbf24}
+            .animate-on-load{opacity:1}
+            .animate-delay-1,.animate-delay-2,.animate-delay-3,.animate-delay-4{opacity:1}
+        </style>
+    </head>
+    <body>
+        <div class="sticky top-0 z-[60] bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 py-1.5 px-4 text-center shadow-lg">
+            <div class="flex items-center justify-center gap-2 sm:gap-4 text-black text-[11px] sm:text-xs font-black uppercase tracking-widest">
+                <span>{t.ads?.sticky || 'Last Hours: 50% Special Discount Unlocked'}</span>
+                <span class="hidden sm:inline opacity-30">|</span>
+                <a href={`${homeLink}#horoscopes`} class="underline hover:opacity-80 transition-opacity">
+                    {t.ads?.claim || 'Claim Now'}
+                </a>
+            </div>
+        </div>
+
+        <div class="cosmic-bg"></div>
+        {backgroundImage && (
+            <img
+                src={backgroundImage}
+                alt="Cosmic background"
+                class="cosmic-overlay"
+                width="1920"
+                height="1080"
+                fetchpriority="high"
+                role="presentation"
+                aria-hidden="true"
+            />
+        )}
+
+        <slot />
+
+        <CookieConsent lang={currentLang} />
+        <EmailCapture lang={currentLang} />
+        <CosmicAd type="floating" productKey={floatingProductKey} lang={currentLang} />
+
+        <script is:inline>
+            (function () {
+                function loadClarity() {
+                    (function(c,l,a,r,i,t,y){
+                        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                        t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
+                        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                    })(window, document, 'clarity', 'script', 'uq8y5sm9rv');
+                }
+
+                if ('requestIdleCallback' in window) {
+                    requestIdleCallback(loadClarity, { timeout: 3000 });
+                } else {
+                    setTimeout(loadClarity, 5000);
+                }
+            })();
+        </script>
+
+        <script is:inline>
+            (function () {
+                function loadGA() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-M4VCEJ31XV';
+                    document.head.appendChild(script);
+
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-M4VCEJ31XV');
+                }
+
+                if ('requestIdleCallback' in window) {
+                    requestIdleCallback(loadGA, { timeout: 3000 });
+                } else {
+                    setTimeout(loadGA, 4000);
+                }
+            })();
+        </script>
+
+        <script is:inline>
+            (function () {
+                var storageKey = 'astralo_attribution';
+                var campaignKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid'];
+
+                try {
+                    var params = new URLSearchParams(window.location.search);
+                    var existing = JSON.parse(localStorage.getItem(storageKey) || '{}');
+                    var next = Object.assign({}, existing);
+                    var now = new Date().toISOString();
+                    var hasCampaignParams = false;
+
+                    for (var i = 0; i < campaignKeys.length; i++) {
+                        var key = campaignKeys[i];
+                        var value = params.get(key);
+                        if (value) {
+                            next[key] = value;
+                            hasCampaignParams = true;
+                        }
+                    }
+
+                    var referrer = document.referrer && document.referrer.indexOf(window.location.origin) !== 0
+                        ? document.referrer
+                        : '';
+
+                    if (!existing.firstSeenAt) {
+                        next.firstSeenAt = now;
+                        next.landingPath = window.location.pathname;
+                    }
+
+                    if (referrer && (!existing.referrer || hasCampaignParams)) {
+                        next.referrer = referrer;
+                    }
+
+                    if (hasCampaignParams || !existing.lastSeenAt) {
+                        next.lastSeenAt = now;
+                        next.lastPath = window.location.pathname;
+                    }
+
+                    localStorage.setItem(storageKey, JSON.stringify(next));
+                } catch (error) {
+                    console.warn('Failed to persist attribution data', error);
+                }
+            })();
+        </script>
+    </body>
 </html>

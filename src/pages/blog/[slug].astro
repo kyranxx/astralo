@@ -11,7 +11,14 @@ import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, B
 import { getArticleTranslation, getArticleMeta, getAllArticleSlugs } from '../../lib/blog';
 import BlogCTA from '../../components/BlogCTA.astro';
 import EmailCapture from '../../components/EmailCapture.astro';
-import CosmicAd from '../../components/CosmicAd.astro';
+import {
+  buildArticleSchema,
+  buildBreadcrumbSchema,
+  getProductLandingPath,
+  getSuggestedProductForArticle,
+  rewriteBlogOfferLinks,
+  siteUrl,
+} from '../../lib/seo';
 
 export const prerender = true;
 
@@ -49,22 +56,14 @@ const relatedPosts = allSlugs
   .slice(0, 2);
 
 // Generate share URLs
-const currentUrl = `https://astralo.online/blog/${slug}`;
+const currentUrl = `${siteUrl}/blog/${slug}`;
 const shareText = encodeURIComponent(post.displayTitle);
-// Helper to map blog content to products
-const getRelatedProduct = (slug: string): 'daily' | 'weekly' | 'monthly' | 'partner' => {
-  const s = slug.toLowerCase();
-  if (s.includes('monthly')) return 'monthly';
-  if (s.includes('weekly')) return 'weekly';
-  if (s.includes('daily')) return 'daily';
-  if (s.includes('partner') || s.includes('compatibility') || s.includes('love') || s.includes('flame') || s.includes('soulmate')) return 'partner';
-  return 'monthly'; // Default to premium
-};
-
-const productKey = getRelatedProduct(slug as string);
+const productKey = getSuggestedProductForArticle(slug as string);
+const landingPath = getProductLandingPath('en', productKey);
+const renderedContent = rewriteBlogOfferLinks(post.content, 'en', slug as string);
 
 // Content splitting for mid-article CTA
-const contentParts = post.content.split('</p>');
+const contentParts = renderedContent.split('</p>');
 const injectionPoint = Math.min(3, Math.floor(contentParts.length / 2));
 const firstHalf = contentParts.slice(0, injectionPoint).join('</p>') + (contentParts.length > injectionPoint ? '</p>' : '');
 const secondHalf = contentParts.slice(injectionPoint).join('</p>');
@@ -73,6 +72,19 @@ const shareUrls = {
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
   linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`
 };
+const pageSchema = [
+  buildArticleSchema({
+    lang: 'en',
+    url: currentUrl,
+    translation,
+    meta,
+  }),
+  buildBreadcrumbSchema([
+    { name: 'Home', url: siteUrl },
+    { name: 'Blog', url: `${siteUrl}/blog` },
+    { name: post.displayTitle, url: currentUrl },
+  ]),
+];
 ---
 
 <Layout 
@@ -80,6 +92,11 @@ const shareUrls = {
   description={post.metaDescription}
   keywords={post.keywords}
   lang="en"
+  schema={pageSchema}
+  ogType="article"
+  publishedTime={meta.date}
+  modifiedTime={meta.date}
+  floatingProductKey={productKey}
 >
   <!-- Reading Progress Bar -->
   <div id="reading-progress" class="fixed top-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 z-[100] transition-all duration-150"></div>
@@ -239,7 +256,7 @@ const shareUrls = {
         <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
           <h3 class="text-3xl font-bold text-white mb-4">✨ Get Your Personalized Horoscope</h3>
           <p class="text-white/80 mb-8 text-lg">Based on your exact birth data for maximum accuracy</p>
-          <a href={`/form/${productKey}`} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
+          <a href={landingPath} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
             <Star class="w-5 h-5" />
             Order Now - 50% OFF
           </a>
@@ -266,9 +283,6 @@ const shareUrls = {
       </article>
     </main>
     <Footer lang="en" />
-    
-    <!-- Floating Ad for conversion -->
-    <CosmicAd type="floating" productKey={productKey} lang="en" />
   </div>
 </Layout>
 
