@@ -2,49 +2,56 @@
 # https://astralo.online
 
 User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
-Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: GPTBot
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: ChatGPT-User
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: OAI-SearchBot
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: ClaudeBot
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: PerplexityBot
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: Google-Extended
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
 Disallow: /success
 
 User-agent: Applebot-Extended
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 Allow: /
 Disallow: /api/
 Disallow: /admin
