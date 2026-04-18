@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { supportedLocaleCodes } from '../../lib/agent-ready';
+---
+
+<Layout
+    title="Astralo API Documentation"
+    description="Human-readable documentation for the public Astralo API surface."
+    canonicalUrl="https://astralo.online/docs/api"
+    floatingProductKey="weekly"
+>
+    <div class="min-h-screen flex flex-col relative z-10">
+        <main class="flex-1 px-4 py-10 sm:py-14">
+            <div class="max-w-4xl mx-auto glass-strong rounded-3xl p-6 sm:p-10">
+                <div class="mb-8">
+                    <p class="text-amber-400 text-sm font-semibold uppercase tracking-[0.2em] mb-3">Public API</p>
+                    <h1 class="text-3xl sm:text-5xl font-bold text-white mb-4">Astralo API Documentation</h1>
+                    <p class="text-white/75 text-base sm:text-lg leading-relaxed">
+                        These endpoints power the Astralo website. The machine-readable source of truth lives at
+                        <a href="/openapi.json" class="text-amber-400 underline underline-offset-4 ml-1">/openapi.json</a>.
+                    </p>
+                </div>
+
+                <div class="space-y-8 text-white/80">
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-3">Discovery</h2>
+                        <ul class="space-y-2 list-disc pl-6">
+                            <li><a href="/.well-known/api-catalog" class="text-amber-400 underline underline-offset-4">/.well-known/api-catalog</a> returns an RFC 9727 API catalog.</li>
+                            <li><a href="/openapi.json" class="text-amber-400 underline underline-offset-4">/openapi.json</a> returns the OpenAPI 3.1 spec.</li>
+                            <li><a href="/api/health" class="text-amber-400 underline underline-offset-4">/api/health</a> returns a lightweight health response.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-3">Endpoints</h2>
+                        <div class="space-y-5">
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-amber-400 font-semibold mb-2">POST /api/checkout</p>
+                                <p>Create a Stripe Checkout session for one of these products: daily, weekly, monthly, partner.</p>
+                                <p class="mt-2">Astralo enforces allowed origin or referer checks on this route.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-amber-400 font-semibold mb-2">POST /api/horoscope</p>
+                                <p>Uses a Stripe checkout session id to generate or return horoscope content.</p>
+                                <p class="mt-2">Astralo enforces allowed origin or referer checks on this route too.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-amber-400 font-semibold mb-2">POST /api/subscribe</p>
+                                <p>Adds an email to the Astralo newsletter list.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-amber-400 font-semibold mb-2">POST /api/contact</p>
+                                <p>Sends a contact request to the Astralo support inbox. hCaptcha is expected when configured.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                                <p class="text-sm text-amber-400 font-semibold mb-2">GET /api/health</p>
+                                <p>Returns a small JSON health payload for monitoring and API catalog status links.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-3">Locales</h2>
+                        <p class="mb-3">Astralo supports these locale codes across its website flows:</p>
+                        <p class="text-white/65 leading-relaxed">{supportedLocaleCodes.join(', ')}</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</Layout>

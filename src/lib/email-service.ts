@@ -5,7 +5,7 @@ import { getProductPriceInEuros } from './products';
 const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
 
 /**
- * Send a welcome email to new subscribers with "Ads" for horoscopes
+ * Send a newsletter welcome email with a soft upsell to paid readings
  */
 export async function sendWelcomeEmail(email: string, lang: string = 'en') {
     if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
@@ -20,7 +20,7 @@ export async function sendWelcomeEmail(email: string, lang: string = 'en') {
         auth: { user: SMTP_USER, pass: SMTP_PASS },
     });
 
-    // Prices for the "Ads" in the email
+    // Prices for the paid readings shown below the free newsletter welcome
     const prices = {
         daily: getProductPriceInEuros('daily').toFixed(2),
         weekly: getProductPriceInEuros('weekly').toFixed(2),
@@ -29,17 +29,23 @@ export async function sendWelcomeEmail(email: string, lang: string = 'en') {
 
     const content = {
         en: {
-            subject: "Welcome to your celestial journey! ✨",
-            title: "You're now part of Astralo",
-            description: "We're thrilled to have you! You'll now receive our premium astrological insights and weekly horoscopes for free.",
-            promoTitle: "Discover your true potential",
-            promoDesc: "Get 50% OFF your first personalized reading. Our reports are 100% unique to your birth data.",
-            ctaButton: "Get My Horoscope",
-            products: "Our Popular Readings",
-            daily: "Daily Guide",
-            monthly: "Monthly Deep-Dive",
-            unlocked: "PROMO CODE UNLOCKED: COSMIC50",
-            footer: "Sent with ❤️ from the Astralo team."
+            subject: 'Welcome to Astralo Weekly ✨',
+            title: "You're subscribed to Astralo Weekly",
+            description: "Your free weekly horoscope newsletter is on. We'll send astrology insights, fresh blog highlights, and occasional offers for deeper personalized readings.",
+            whatsInsideTitle: 'What you will get',
+            whatsInside: [
+                'A free weekly horoscope email',
+                'New astrology guides and blog picks',
+                'Occasional discounts on personalized readings'
+            ],
+            promoTitle: 'Want a deeper personal reading?',
+            promoDesc: 'Our paid reports use your birth data for a more personal reading when you are ready.',
+            ctaButton: 'Explore Readings',
+            products: 'Popular Readings',
+            daily: 'Daily Guide',
+            weekly: 'Weekly Forecast',
+            monthly: 'Monthly Deep-Dive',
+            footer: 'Sent by the Astralo team.'
         }
     };
 
@@ -57,10 +63,10 @@ export async function sendWelcomeEmail(email: string, lang: string = 'en') {
             .content { padding: 30px 20px; text-align: center; }
             .promo-box { border: 2px dashed #fbbf24; background-color: #fffbeb; padding: 25px; border-radius: 12px; margin: 25px 0; }
             .btn { display: inline-block; padding: 15px 35px; background-color: #fbbf24; color: #000; text-decoration: none; font-weight: bold; border-radius: 50px; margin-top: 20px; transition: transform 0.2s; }
-            .products { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
-            .product-card { border: 1px solid #eee; padding: 15px; border-radius: 8px; text-align: center; }
             .footer { padding: 20px; text-align: center; font-size: 12px; color: #999; }
             .price { color: #fbbf24; font-weight: bold; font-size: 18px; }
+            .bullet-list { text-align: left; max-width: 420px; margin: 24px auto; padding-left: 20px; }
+            .bullet-list li { margin-bottom: 10px; }
         </style>
     </head>
     <body>
@@ -71,11 +77,15 @@ export async function sendWelcomeEmail(email: string, lang: string = 'en') {
             </div>
             <div class="content">
                 <p style="font-size: 18px;">${t.description}</p>
+
+                <h2 style="margin-top: 32px; color: #1a0f2e;">${t.whatsInsideTitle}</h2>
+                <ul class="bullet-list">
+                    ${t.whatsInside.map((item) => `<li>${item}</li>`).join('')}
+                </ul>
                 
                 <div class="promo-box">
                     <h2 style="margin-top:0; color: #1a0f2e;">${t.promoTitle}</h2>
                     <p>${t.promoDesc}</p>
-                    <div style="font-size: 24px; font-weight: bold; color: #fbbf24; margin: 15px 0;">${t.unlocked}</div>
                     <a href="https://astralo.online" class="btn">${t.ctaButton}</a>
                 </div>
 
@@ -84,6 +94,10 @@ export async function sendWelcomeEmail(email: string, lang: string = 'en') {
                     <div style="display: table-cell; border: 1px solid #eee; padding: 15px; border-radius: 8px;">
                         <strong>${t.daily}</strong><br>
                         <span class="price">€${prices.daily}</span>
+                    </div>
+                    <div style="display: table-cell; border: 1px solid #eee; padding: 15px; border-radius: 8px;">
+                        <strong>${t.weekly}</strong><br>
+                        <span class="price">€${prices.weekly}</span>
                     </div>
                     <div style="display: table-cell; border: 1px solid #eee; padding: 15px; border-radius: 8px;">
                         <strong>${t.monthly}</strong><br>

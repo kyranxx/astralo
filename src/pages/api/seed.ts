@@ -1,6 +1,7 @@
 
 import type { APIRoute } from 'astro';
 import { supabase } from '../../lib/supabase';
+import { getPasswordFromRequest, verifyAdminPassword } from '../../lib/auth';
 
 export const GET: APIRoute = async ({ request }) => {
     // Block in production - seeding should only be done in development
@@ -8,10 +9,8 @@ export const GET: APIRoute = async ({ request }) => {
         return new Response('Not available', { status: 404 });
     }
 
-    // Basic protection
-    const url = new URL(request.url);
-    const password = url.searchParams.get('password');
-    if (password !== import.meta.env.ADMIN_PASSWORD) {
+    const password = getPasswordFromRequest(request);
+    if (!verifyAdminPassword(password)) {
         return new Response('Unauthorized', { status: 401 });
     }
 

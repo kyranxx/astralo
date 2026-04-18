@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
+import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
 import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
@@ -72,37 +72,37 @@ export default defineConfig({
         // Homepage - highest priority
         if (url === 'https://astralo.online' || url.match(/\/[a-z]{2}$/)) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 1.0;
         }
         // Blog posts - high priority, updated frequently
         else if (url.includes('/blog/') && !url.endsWith('/blog')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 0.9;
         }
         // Blog index
         else if (url.endsWith('/blog')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 0.9;
         }
         // Product landing pages - key commercial URLs
         else if (url.includes('/horoscope/')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.95;
         }
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
           item.priority = 0.3;
         }
         // Default for other pages
         else {
           item.lastmod = new Date().toISOString();
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.6;
         }
 

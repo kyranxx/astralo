@@ -19,6 +19,7 @@
     "@supabase/supabase-js": "^2.89.0",
     "astro": "^5.16.4",
     "lucide-astro": "^0.525.0",
+    "node-html-markdown": "^2.0.0",
     "nodemailer": "^7.0.10",
     "pdf-lib": "^1.17.1",
     "puppeteer-core": "^24.32.1",

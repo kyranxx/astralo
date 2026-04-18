@@ -51,7 +51,7 @@ export const POST: APIRoute = async ({ request }) => {
             });
         }
 
-        // Send welcome email with ads
+        // Send the newsletter welcome email without blocking subscription
         try {
             await sendWelcomeEmail(email, lang);
         } catch (emailErr) {

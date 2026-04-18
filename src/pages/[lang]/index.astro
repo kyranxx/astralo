@@ -4,22 +4,22 @@ import Footer from '../../components/Footer.astro';
 import FAQ from '../../components/FAQ.astro';
 import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon, BookOpen, ArrowRight } from 'lucide-astro';
-import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
+import { isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
 import { getTestimonials } from '../../lib/testimonials';
 import { getLatestArticleSlugs, getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
 import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../../lib/products';
-import { buildFaqSchema, buildOfferCatalogSchema, buildWebPageSchema, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../../lib/seo';
-
-export const prerender = true;
-
-export function getStaticPaths() {
-  // Exclude 'en' - English is served at root (/) without language prefix
-  const locales = getSupportedLocales().filter(lang => lang !== 'en');
-  return locales.map(lang => ({ params: { lang } }));
-}
+import { buildFaqSchema, buildWebPageSchema, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../../lib/seo';
 
 const { lang } = Astro.params;
-const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+if (!lang || lang === 'en') {
+  return Astro.redirect('/', 301);
+}
+
+if (!isValidLocale(lang)) {
+  return new Response(null, { status: 404, statusText: 'Not Found' });
+}
+
+const currentLang = lang as SupportedLocale;
 const t = getTranslations(currentLang);
 const blogUi = getBlogUiTranslations(currentLang);
 const pageSchema = [
@@ -29,16 +29,24 @@ const pageSchema = [
     description: t.meta.description,
     lang: currentLang,
   }),
-  buildOfferCatalogSchema(currentLang, t),
   buildFaqSchema(getGeneralFaqEntries(t)),
 ];
 
 // Get latest blog articles for internal linking (SEO: prevents orphan pages)
-const latestArticles = getLatestArticleSlugs(3).map(slug => {
-  const translation = getArticleTranslation(slug, currentLang);
-  const meta = getArticleMeta(slug);
-  return { slug, translation, meta };
-}).filter(a => a.translation && a.meta);
+const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
+const latestArticles = getLatestArticleSlugs(3)
+  .map(slug => {
+    const translation = getArticleTranslation(slug, currentLang);
+    const meta = getArticleMeta(slug);
+    if (!translation || !meta) return null;
+    return {
+      slug,
+      translation,
+      meta,
+      displayTitle: stripEmojis(translation.title) || translation.title,
+    };
+  })
+  .filter((article): article is NonNullable<typeof article> => Boolean(article));
 
 const horoscopeTypes = ([
   {
@@ -60,6 +68,7 @@ const horoscopeTypes = ([
   },
 ] as const).map(type => ({
   ...type,
+  popular: 'popular' in type && type.popular === true,
   name: t.products[type.id].name,
   description: t.products[type.id].description,
   price: getProductPriceInEuros(type.id as ProductKey),
@@ -390,7 +399,7 @@ const testimonials = getTestimonials(currentLang);
                   <div class="flex-1">
                     <span class="text-xs text-amber-400 font-medium uppercase tracking-wider">{article.translation?.category}</span>
                     <h3 class="text-white font-semibold text-base sm:text-lg group-hover:text-amber-400 transition-colors line-clamp-2">
-                      {article.translation?.displayTitle}
+                      {article.displayTitle}
                     </h3>
                   </div>
                 </div>

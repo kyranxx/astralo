@@ -17,8 +17,7 @@ import {
 export const GET: APIRoute = async ({ request, url }) => {
     const action = url.searchParams.get('action') || 'stats';
 
-    // Get password from Authorization header (preferred) or URL param (fallback)
-    const password = getPasswordFromRequest(request, url);
+    const password = getPasswordFromRequest(request);
 
     // Password protection using centralized auth
     if (!verifyAdminPassword(password)) {

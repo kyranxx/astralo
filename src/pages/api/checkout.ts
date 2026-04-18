@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
-import { productPrices, getProductName, type ProductKey } from '../../lib/products';
+import { productPrices, getProductName } from '../../lib/products';
 import { CheckoutSchema, validateReferer } from '../../lib/validation';
 
 export const GET: APIRoute = async () => {
@@ -47,12 +47,7 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const data = validation.data;
-    const { productKey } = data; // Type-safe now
-
-    // We can cast data to any since we know it has all fields from schema, but let's be cleaner
-    // Extract formData explicitly from recognized keys
-    // Simplified: we will just use `data` object as the source but exclude productKey for formData.
-    const { productKey: _pk, ...formData } = data; // Separate productKey
+    const { productKey } = data;
 
     const productPrice = productPrices[productKey as keyof typeof productPrices];
     const lang = data.lang;
@@ -76,7 +71,44 @@ export const POST: APIRoute = async ({ request }) => {
         };
 
         const sanitizedFormData: Record<string, string> = {};
-        for (const [key, value] of Object.entries(formData)) {
+        const attributionFields = {
+            landingPath: data.landingPath,
+            lastPath: data.lastPath,
+            referrer: data.referrer,
+            firstSeenAt: data.firstSeenAt,
+            lastSeenAt: data.lastSeenAt,
+            utm_source: data.utm_source,
+            utm_medium: data.utm_medium,
+            utm_campaign: data.utm_campaign,
+            utm_term: data.utm_term,
+            utm_content: data.utm_content,
+            gclid: data.gclid,
+            fbclid: data.fbclid,
+            msclkid: data.msclkid,
+            currentUrl: data.currentUrl,
+        };
+
+        const normalizedCustomerData = productKey === 'partner'
+            ? {
+                name: data.name1,
+                birthDate: data.birthDate1,
+                birthTime: data.birthTime1,
+                birthPlace: data.birthPlace1,
+                partnerName: data.name2,
+                partnerBirthDate: data.birthDate2,
+                partnerBirthTime: data.birthTime2,
+                partnerBirthPlace: data.birthPlace2,
+                customerEmail: data.email1,
+            }
+            : {
+                name: data.name,
+                birthDate: data.birthDate,
+                birthTime: data.birthTime,
+                birthPlace: data.birthPlace,
+                customerEmail: data.email,
+            };
+
+        for (const [key, value] of Object.entries({ ...attributionFields, ...normalizedCustomerData })) {
             sanitizedFormData[key] = sanitizeForStripe(value);
         }
 
@@ -110,6 +142,7 @@ export const POST: APIRoute = async ({ request }) => {
                 },
             ],
             mode: 'payment',
+            customer_email: data.email || data.email1,
             // automatic_tax disabled - not needed for small business under €10k EU threshold
             // Enable later after OSS registration if EU sales exceed €10,000
             // automatic_tax: {

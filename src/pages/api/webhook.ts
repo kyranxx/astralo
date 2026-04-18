@@ -3,16 +3,11 @@ import Stripe from 'stripe';
 import { fulfillOrder } from '../../lib/fulfillment';
 import {
   addOrder,
+  findOrderBySessionId,
   generateOrderId,
   type Order
 } from '../../lib/orders';
-
-const products: Record<string, { name: string; price: number }> = {
-  daily: { name: 'Daily Horoscope', price: 199 },
-  weekly: { name: 'Weekly Horoscope', price: 399 },
-  monthly: { name: 'Monthly Horoscope', price: 999 },
-  partner: { name: 'Partner Horoscope', price: 1499 },
-};
+import { getProductName, isValidProductKey, productPrices } from '../../lib/products';
 
 // Set max duration for Webhook to 60 seconds (requires Pro plan, will be 10s on Hobby)
 export const maxDuration = 60;
@@ -44,7 +39,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     if (event.type === 'checkout.session.completed') {
       const session = event.data.object;
-      const customerEmail = session.customer_details?.email || '';
+      const customerEmail = session.customer_details?.email || session.customer_email || '';
       const metadata = session.metadata || {};
 
       // Extract customer location from Stripe
@@ -53,8 +48,17 @@ export const POST: APIRoute = async ({ request }) => {
       const countryName = getCountryName(country);
 
       // Get product info
-      const productKey = metadata.productKey as keyof typeof products || 'daily';
-      const product = products[productKey] || products.daily;
+      const lang = metadata.lang || 'en';
+      const productKey = isValidProductKey(metadata.productKey || '')
+        ? metadata.productKey as keyof typeof productPrices
+        : 'daily';
+      const productName = getProductName(productKey, lang);
+      const productPrice = productPrices[productKey];
+
+      const existingOrder = await findOrderBySessionId(session.id);
+      if (existingOrder) {
+        return new Response(JSON.stringify({ received: true, duplicate: true }), { status: 200 });
+      }
 
       // Create order in our database
       const orderId = generateOrderId();
@@ -65,7 +69,7 @@ export const POST: APIRoute = async ({ request }) => {
         createdAt: new Date().toISOString(),
 
         // Customer info
-        customerEmail,
+        customerEmail: customerEmail || metadata.customerEmail || '',
         customerName: metadata.name || session.customer_details?.name || 'Unknown',
         birthDate: metadata.birthDate || '',
         birthTime: metadata.birthTime,
@@ -79,8 +83,8 @@ export const POST: APIRoute = async ({ request }) => {
 
         // Product info
         productKey: productKey as Order['productKey'],
-        productName: product.name,
-        amount: session.amount_total || product.price,
+        productName,
+        amount: session.amount_total || productPrice,
         currency: session.currency || 'eur',
 
         // Location
@@ -91,7 +95,7 @@ export const POST: APIRoute = async ({ request }) => {
         status: 'completed',
 
         // Language
-        lang: metadata.lang || 'en'
+        lang
       };
 
       // Save order to database

@@ -14,14 +14,15 @@ interface Props {
 const { lang = 'en', inline = false } = Astro.props;
 
 const translations = getTranslations(lang as SupportedLocale);
-const t = translations.emailCapture || {
-  title: '✨ Get Your Free Birth Chart & Weekly Forecast',
-  subtitle: 'Join 50,000+ others receiving personalized cosmic insights and free reports every Monday!',
-  placeholder: 'Enter your email',
-  button: 'Get My Free Reading',
-  consent: 'I agree to receive cosmic insights and accept the privacy policy.',
-  success: '✨ Welcome! Your first free reading is on its way.',
-  error: 'Something went wrong. Please try again.',
+const localizedEmailCapture = translations.emailCapture;
+const t = {
+  title: '✨ Get Your Free Weekly Horoscope',
+  subtitle: 'Join our newsletter for weekly astrology insights, new guides, and occasional special offers.',
+  placeholder: localizedEmailCapture?.placeholder || 'Enter your email',
+  button: 'Subscribe Free',
+  consent: localizedEmailCapture?.consent || 'I agree to receive cosmic insights and accept the privacy policy.',
+  success: '✨ Welcome! Your free weekly horoscope emails are on.',
+  error: localizedEmailCapture?.error || 'Something went wrong. Please try again.',
 };
 ---
 
@@ -39,6 +40,7 @@ const t = translations.emailCapture || {
         <input 
           type="email" 
           name="email"
+          autocomplete="email"
           placeholder={t.placeholder}
           required
           class="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/30 text-lg"
@@ -85,6 +87,7 @@ const t = translations.emailCapture || {
           <input 
             type="email" 
             name="email"
+            autocomplete="email"
             placeholder={t.placeholder}
             required
             class="w-full px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/30 text-lg"
@@ -183,13 +186,13 @@ const t = translations.emailCapture || {
         } else {
           throw new Error(data.error);
         }
-      } catch (err) {
-        messageEl.textContent = 'Something went wrong. Please try again.';
-        messageEl.className = 'email-capture-message mt-4 text-lg font-medium text-red-400';
-        messageEl.classList.remove('hidden');
-        button.disabled = false;
-        button.textContent = 'Subscribe Free';
-      }
-    });
+        } catch (err) {
+          messageEl.textContent = 'Something went wrong. Please try again.';
+          messageEl.className = 'email-capture-message mt-4 text-lg font-medium text-red-400';
+          messageEl.classList.remove('hidden');
+          button.disabled = false;
+          button.textContent = 'Subscribe Free';
+        }
+      });
   });
 </script>

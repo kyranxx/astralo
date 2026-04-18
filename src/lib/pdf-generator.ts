@@ -138,7 +138,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         // Load and embed logo image
         let logoImage: any = null;
         try {
-            const logoPath = join(process.cwd(), 'public', 'logo.png');
+            const logoPath = join(process.cwd(), 'public', 'ma_symbol_opt_73_3x.png');
             const logoBytes = await readFile(logoPath);
             logoImage = await doc.embedPng(logoBytes);
         } catch (e) {

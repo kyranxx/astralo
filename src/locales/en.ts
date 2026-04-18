@@ -141,12 +141,12 @@ const en: Translations = {
         a6: 'To get your personalized horoscope, you need to provide: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you will also need your partner\'s birth data.',
     },
     emailCapture: {
-        title: '✨ Get Your Free Birth Chart & Weekly Forecast',
-        subtitle: 'Join 50,000+ others receiving personalized cosmic insights and free reports every Monday!',
+        title: '✨ Get Your Free Weekly Horoscope',
+        subtitle: 'Join our newsletter for weekly astrology insights, new guides, and occasional special offers.',
         placeholder: 'Enter your email',
-        button: 'Get My Free Reading',
+        button: 'Subscribe Free',
         consent: 'I agree to receive cosmic insights and accept the privacy policy.',
-        success: '✨ Welcome! Your first free reading is on its way.',
+        success: '✨ Welcome! Your free weekly horoscope emails are on.',
         error: 'Something went wrong. Please try again.',
     },
     ads: {

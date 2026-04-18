@@ -10,7 +10,7 @@ import Footer from '../../../components/Footer.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
 import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogUiTranslations, type BlogPostTranslation, type BlogPostMeta } from '../../../lib/blog';
+import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogUiTranslations } from '../../../lib/blog';
 import {
   buildArticleSchema,
   buildBreadcrumbSchema,
@@ -52,8 +52,6 @@ if (!meta || !localizedPost) {
 const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
 
 const displayTitle = stripEmojis(localizedPost.title) || localizedPost.title;
-const fullTitle = localizedPost.title;
-
 const post = {
   ...localizedPost,
   ...meta,
@@ -69,7 +67,7 @@ const relatedPosts = allSlugs
     const m = getArticleMeta(s);
     const p = getArticleTranslation(s, currentLang);
     if (!m || !p) return null;
-    return { slug: s, ...m, ...p, displayTitle: stripEmojis(p.title) || p.title };
+    return { ...m, ...p, displayTitle: stripEmojis(p.title) || p.title };
   })
   .filter(p => p && p.category === post.category)
   .slice(0, 2);

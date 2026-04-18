@@ -119,7 +119,7 @@ export const POST: APIRoute = async ({ request }) => {
             subject: 'We received your message - Astralo',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <img src="https://astralo.online/logo.png" alt="Astralo" style="height: 40px; margin-bottom: 20px;">
+                    <img src="https://astralo.online/ma_symbol_opt_73_3x.png" alt="Astralo" style="height: 40px; margin-bottom: 20px;">
                     <h2 style="color: #f59e0b;">Thank you for contacting us!</h2>
                     <p>Hi ${safeName},</p>
                     <p>We've received your message and will get back to you as soon as possible, typically within 24 hours.</p>

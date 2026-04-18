@@ -656,7 +656,7 @@ export const POST: APIRoute = async ({ request }) => {
                 <tr>
                     <td class="header-padding" style="background-color: #1a1a2e; padding: 40px 30px; text-align: center;">
                         <span style="font-size: 20px; color: #fbbf24; display: block; margin-bottom: 10px;">★</span>
-                        <img src="https://astralo.online/logo.png" width="180" height="auto" alt="Astralo" style="display: block; margin: 0 auto;">
+                        <img src="https://astralo.online/ma_symbol_opt_73_3x.png" width="180" height="auto" alt="Astralo" style="display: block; margin: 0 auto;">
                         <p style="margin: 15px 0 0 0; font-family: 'Times New Roman', Georgia, serif; font-size: 13px; color: #9ca3af; letter-spacing: 4px; text-transform: uppercase;">
                             ${t.slogan || 'Your Stars • Your Destiny'}
                         </p>
@@ -749,7 +749,7 @@ export const POST: APIRoute = async ({ request }) => {
                 <!-- Footer -->
                 <tr>
                     <td style="background-color: #0a0a1a; padding: 40px 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
-                        <img src="https://astralo.online/logo.png" width="120" height="auto" alt="Astralo" style="opacity: 0.5; margin-bottom: 25px;">
+                        <img src="https://astralo.online/ma_symbol_opt_73_3x.png" width="120" height="auto" alt="Astralo" style="opacity: 0.5; margin-bottom: 25px;">
                         <p style="margin: 0 0 8px 0; font-family: Arial, sans-serif; font-size: 11px; color: #6b7280; letter-spacing: 1px; text-transform: uppercase;">
                             Apollo Tech s.r.o. • Slovakia, European Union
                         </p>

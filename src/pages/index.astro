@@ -8,9 +8,7 @@ import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { getTestimonials } from '../lib/testimonials';
 import { getLatestArticleSlugs, getArticleTranslation, getArticleMeta } from '../lib/blog';
 import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../lib/products';
-import { buildFaqSchema, buildOfferCatalogSchema, buildWebPageSchema, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../lib/seo';
-
-export const prerender = true;
+import { buildFaqSchema, buildWebPageSchema, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../lib/seo';
 
 // English is the default - served at root without /en prefix
 const currentLang: SupportedLocale = 'en';
@@ -22,16 +20,24 @@ const pageSchema = [
     description: t.meta.description,
     lang: currentLang,
   }),
-  buildOfferCatalogSchema(currentLang, t),
   buildFaqSchema(getGeneralFaqEntries(t)),
 ];
 
 // Get latest blog articles for internal linking (SEO: prevents orphan pages)
-const latestArticles = getLatestArticleSlugs(3).map(slug => {
-  const translation = getArticleTranslation(slug, currentLang);
-  const meta = getArticleMeta(slug);
-  return { slug, translation, meta };
-}).filter(a => a.translation && a.meta);
+const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
+const latestArticles = getLatestArticleSlugs(3)
+  .map(slug => {
+    const translation = getArticleTranslation(slug, currentLang);
+    const meta = getArticleMeta(slug);
+    if (!translation || !meta) return null;
+    return {
+      slug,
+      translation,
+      meta,
+      displayTitle: stripEmojis(translation.title) || translation.title,
+    };
+  })
+  .filter((article): article is NonNullable<typeof article> => Boolean(article));
 
 const horoscopeTypes = ([
   {
@@ -53,6 +59,7 @@ const horoscopeTypes = ([
   },
 ] as const).map(type => ({
   ...type,
+  popular: 'popular' in type && type.popular === true,
   name: t.products[type.id].name,
   description: t.products[type.id].description,
   price: getProductPriceInEuros(type.id as ProductKey),
@@ -383,7 +390,7 @@ const testimonials = getTestimonials(currentLang);
                   <div class="flex-1">
                     <span class="text-xs text-amber-400 font-medium uppercase tracking-wider">{article.translation?.category}</span>
                     <h3 class="text-white font-semibold text-base sm:text-lg group-hover:text-amber-400 transition-colors line-clamp-2">
-                      {article.translation?.displayTitle}
+                      {article.displayTitle}
                     </h3>
                   </div>
                 </div>

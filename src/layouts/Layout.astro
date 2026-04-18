@@ -3,6 +3,7 @@ import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import CosmicAd from '../components/CosmicAd.astro';
+import { productCatalog, supportedLocaleCodes } from '../lib/agent-ready';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
 import type { ProductKey } from '../lib/products';
 import {
@@ -71,6 +72,15 @@ const pageSchema = [
     buildOrganizationSchema(currentDescription),
     ...schema,
 ];
+const webMcpConfig = {
+    locales: supportedLocaleCodes,
+    products: Object.values(productCatalog).map((product) => ({
+        slug: product.slug,
+        path: product.path,
+        name: product.name,
+    })),
+    blogPath: '/blog',
+};
 const backgroundImageType = backgroundImage.endsWith('.png')
     ? 'image/png'
     : backgroundImage.endsWith('.jpg') || backgroundImage.endsWith('.jpeg')
@@ -277,6 +287,149 @@ const backgroundImageType = backgroundImage.endsWith('.png')
                 } catch (error) {
                     console.warn('Failed to persist attribution data', error);
                 }
+            })();
+        </script>
+
+        <script is:inline define:vars={{ webMcpConfig }}>
+            (function () {
+                var modelContext = typeof navigator !== 'undefined' ? navigator.modelContext : undefined;
+                if (!modelContext) return;
+
+                var controller = new AbortController();
+
+                function localizePath(path, locale) {
+                    return locale && locale !== 'en' ? '/' + locale + path : path;
+                }
+
+                function navigate(path) {
+                    window.location.href = path;
+                    return { ok: true, url: new URL(path, window.location.origin).toString() };
+                }
+
+                function buildTool(config) {
+                    if (config.name === 'open_horoscope_product') {
+                        return {
+                            name: config.name,
+                            description: config.description,
+                            inputSchema: config.inputSchema,
+                            execute: async function (input) {
+                                var locale = input && input.locale ? input.locale : 'en';
+                                var product = input && input.product ? input.product : 'daily';
+                                var productConfig = webMcpConfig.products.find(function (item) {
+                                    return item.slug === product;
+                                });
+
+                                if (!productConfig) {
+                                    return { ok: false, error: 'Unknown product.' };
+                                }
+
+                                return navigate(localizePath(productConfig.path, locale));
+                            }
+                        };
+                    }
+
+                    if (config.name === 'switch_language_home') {
+                        return {
+                            name: config.name,
+                            description: config.description,
+                            inputSchema: config.inputSchema,
+                            execute: async function (input) {
+                                var locale = input && input.locale ? input.locale : 'en';
+                                return navigate(localizePath('', locale) || '/');
+                            }
+                        };
+                    }
+
+                    return {
+                        name: config.name,
+                        description: config.description,
+                        inputSchema: config.inputSchema,
+                        execute: async function () {
+                            return navigate(webMcpConfig.blogPath);
+                        }
+                    };
+                }
+
+                var toolConfigs = [
+                    {
+                        name: 'open_horoscope_product',
+                        description: 'Open one of Astralo\'s horoscope product pages.',
+                        inputSchema: {
+                            type: 'object',
+                            properties: {
+                                product: {
+                                    type: 'string',
+                                    enum: webMcpConfig.products.map(function (item) { return item.slug; })
+                                },
+                                locale: {
+                                    type: 'string',
+                                    enum: webMcpConfig.locales
+                                }
+                            },
+                            required: ['product']
+                        }
+                    },
+                    {
+                        name: 'switch_language_home',
+                        description: 'Open the Astralo homepage in a supported locale.',
+                        inputSchema: {
+                            type: 'object',
+                            properties: {
+                                locale: {
+                                    type: 'string',
+                                    enum: webMcpConfig.locales
+                                }
+                            },
+                            required: ['locale']
+                        }
+                    },
+                    {
+                        name: 'open_blog_index',
+                        description: 'Open the Astralo blog index.',
+                        inputSchema: {
+                            type: 'object',
+                            properties: {}
+                        }
+                    }
+                ];
+
+                var tools = toolConfigs.map(buildTool);
+
+                try {
+                    if (typeof modelContext.provideContext === 'function') {
+                        modelContext.provideContext({ tools: tools }, { signal: controller.signal });
+                        return;
+                    }
+                } catch (error) {
+                    console.warn('WebMCP provideContext failed', error);
+                }
+
+                try {
+                    if (typeof modelContext.registerTools === 'function') {
+                        modelContext.registerTools(tools, { signal: controller.signal });
+                        return;
+                    }
+                } catch (error) {
+                    console.warn('WebMCP registerTools failed', error);
+                }
+
+                if (typeof modelContext.registerTool === 'function') {
+                    tools.forEach(function (tool) {
+                        try {
+                            modelContext.registerTool(tool, { signal: controller.signal });
+                        } catch (error) {
+                            try {
+                                modelContext.registerTool(tool);
+                            } catch (innerError) {
+                                console.warn('WebMCP registerTool failed', innerError);
+                            }
+                        }
+                    });
+                }
+
+                window.addEventListener('pagehide', function () {
+                    controller.abort();
+                }, { once: true });
             })();
         </script>
     </body>

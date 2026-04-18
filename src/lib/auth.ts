@@ -27,17 +27,12 @@ export function verifyAdminPassword(passwordOrRequest: string | Request | null):
 }
 
 /**
- * Extract password from request (Authorization header or URL param as fallback)
+ * Extract password from Authorization header
  */
-export function getPasswordFromRequest(request: Request, url?: URL): string | null {
-    // Prefer Authorization header
+export function getPasswordFromRequest(request: Request): string | null {
     const authHeader = request.headers.get('Authorization');
     if (authHeader?.startsWith('Bearer ')) {
         return authHeader.slice(7);
-    }
-    // Fallback to URL param (for backward compatibility, but less secure)
-    if (url) {
-        return url.searchParams.get('password');
     }
     return null;
 }
