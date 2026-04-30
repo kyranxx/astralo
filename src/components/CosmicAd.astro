@@ -1,7 +1,7 @@
 ---
 /**
  * CosmicAd.astro
- * An attention-grabbing "ad" component to push horoscope sales
+ * A restrained product prompt for horoscope sales.
  */
 import { Sparkles, TrendingUp, Zap } from 'lucide-astro';
 import { getProductPriceInEuros } from '../lib/products';
@@ -22,10 +22,10 @@ const price = getProductPriceInEuros(productKey).toFixed(2);
 const originalPrice = (Number(price) * 2).toFixed(2);
 
 const productData = {
-    daily: { name: t.products.daily.name, icon: Zap, color: 'from-amber-400 to-orange-500' },
-    weekly: { name: t.products.weekly.name, icon: TrendingUp, color: 'from-blue-400 to-purple-500' },
-    monthly: { name: t.products.monthly.name, icon: Sparkles, color: 'from-purple-400 to-amber-500' },
-    partner: { name: t.products.partner.name, icon: Zap, color: 'from-pink-400 to-red-500' }
+    daily: { name: t.products.daily.name, icon: Zap },
+    weekly: { name: t.products.weekly.name, icon: TrendingUp },
+    monthly: { name: t.products.monthly.name, icon: Sparkles },
+    partner: { name: t.products.partner.name, icon: Zap }
 };
 
 const data = productData[productKey];
@@ -35,8 +35,8 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
 ---
 
 {type === 'sidebar' && (
-    <div class="glass-strong rounded-2xl p-6 border border-amber-500/20 bg-slate-900/40 sticky top-24 overflow-hidden group">
-        <div class={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${data.color}`}></div>
+    <div class="glass-strong rounded-2xl p-6 border border-white/10 bg-slate-900/40 sticky top-24 overflow-hidden group">
+        <div class="absolute top-0 left-0 w-full h-1 bg-amber-500/70"></div>
         <div class="relative z-10">
             <div class="flex items-center gap-2 mb-4">
                 <Icon class="w-5 h-5 text-amber-400" />
@@ -50,8 +50,8 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
                 <span class="text-sm text-white/30 line-through">€{originalPrice}</span>
             </div>
             
-            <a href={ctaLink} class={`flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r ${data.color} text-black font-bold rounded-xl hover:scale-[1.02] transition-all shadow-lg shadow-amber-500/10`}>
-                {t.ads?.claim || 'Claim 50% OFF'}
+            <a href={ctaLink} class="flex items-center justify-center w-full py-3 px-6 bg-amber-500 text-black font-bold rounded-xl hover:bg-amber-400 transition-colors">
+                {t.ads?.claim || 'Order Now'}
             </a>
         </div>
     </div>
@@ -59,13 +59,13 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
 
 {type === 'floating' && (
     <div id="floating-ad" class="fixed bottom-6 right-6 z-[100] max-w-[320px] opacity-0 pointer-events-none transition-all duration-500 translate-y-4 hidden md:block">
-        <div class="glass-strong rounded-2xl p-5 border border-white/10 bg-slate-900/90 shadow-2xl relative overflow-hidden group">
+        <div class="glass-strong rounded-2xl p-5 border border-white/10 bg-slate-900/90 relative overflow-hidden group">
             <button onclick="this.closest('#floating-ad').remove()" class="absolute top-2 right-2 text-white/20 hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
             <div class="flex items-start gap-4">
-                <div class={`w-12 h-12 rounded-xl bg-gradient-to-br ${data.color} flex items-center justify-center shrink-0 shadow-lg`}>
-                    <Icon class="w-6 h-6 text-black" />
+                <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-400/20 flex items-center justify-center shrink-0">
+                    <Icon class="w-6 h-6 text-amber-400" />
                 </div>
                 <div>
                     <h5 class="text-sm font-bold text-white mb-1">{t.ads?.unlock || 'Unlock Your'} {data.name}</h5>
@@ -85,6 +85,6 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
             if (ad && window.location.pathname !== '/' && window.location.pathname !== '/sk' && window.location.pathname !== '/cs') {
                 ad.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
             }
-        }, 15000); // Show after 15 seconds
+        }, 25000); // Show after 25 seconds
     </script>
 )}

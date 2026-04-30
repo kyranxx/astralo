@@ -4,10 +4,9 @@ import Footer from './Footer.astro';
 import FAQ from './FAQ.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import ZodiacSignGrid from './ZodiacSignGrid.astro';
-import { ArrowLeft, ArrowRight, BookOpen, Calendar, Shield, Sparkles, Star, Zap } from 'lucide-astro';
+import { ArrowLeft, Calendar, Shield, Sparkles, Star, Zap } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { getTestimonials } from '../lib/testimonials';
-import { getArticleMeta, getArticleTranslation, getBlogUiTranslations } from '../lib/blog';
 import { getProductOriginalPriceInEuros, getProductPriceInEuros, type ProductKey } from '../lib/products';
 import { fillZodiacTemplate, getZodiacLocaleCopy, type ZodiacSignSlug } from '../lib/zodiac';
 import {
@@ -34,7 +33,6 @@ const t = getTranslations(lang);
 const zodiac = getZodiacLocaleCopy(lang);
 const signData = zodiac.signs[sign];
 const product = t.products[type];
-const blogUi = getBlogUiTranslations(lang);
 const homePath = getHomePath(lang);
 const baseProductPath = getProductLandingPath(lang, type);
 const pagePath = getZodiacProductPath(lang, type, sign);
@@ -64,12 +62,6 @@ const whyFitsDescription = fillZodiacTemplate(zodiac.ui.whyFitsDescription, {
     '{{PRODUCT_LOWER}}': productName,
     '{{FOCUS}}': signData.focus,
 });
-const ctaTitle = fillZodiacTemplate(zodiac.ui.ctaTitle, {
-    '{{SIGN}}': signData.name,
-    '{{PRODUCT}}': productName,
-    '{{PRODUCT_LOWER}}': productName,
-    '{{FOCUS}}': signData.focus,
-});
 const pageTitle = `${signData.name} ${productName} | Astralo`;
 const seoDescription = `${localizedIntro} ${signData.summary}`;
 const seoKeywords = [
@@ -80,21 +72,6 @@ const seoKeywords = [
     signData.ruler,
     signData.focus,
 ].join(', ');
-
-const relatedArticleSlugs: Record<ProductKey, string[]> = {
-    daily: ['daily-horoscope-guide', 'weekly-horoscope-predictions', 'mercury-retrograde-survival-guide'],
-    weekly: ['weekly-horoscope-predictions', 'daily-horoscope-guide', 'mercury-retrograde-survival-guide'],
-    monthly: ['monthly-horoscope-april-2026', 'birth-chart-reading-explained', 'daily-horoscope-guide'],
-    partner: ['zodiac-compatibility-complete-guide', 'love-horoscope-relationship-advice', 'twin-flames-and-soulmates-astrology'],
-};
-
-const relatedArticles = relatedArticleSlugs[type]
-    .map((slug) => {
-        const meta = getArticleMeta(slug);
-        const translation = getArticleTranslation(slug, lang);
-        return meta && translation ? { slug, meta, translation } : null;
-    })
-    .filter((article): article is { slug: string; meta: NonNullable<ReturnType<typeof getArticleMeta>>; translation: NonNullable<ReturnType<typeof getArticleTranslation>> } => article !== null);
 
 const pageSchema = [
     buildWebPageSchema({
@@ -146,7 +123,7 @@ const pageSchema = [
 
         <main class="flex-1 px-4 py-10 sm:py-14">
             <div class="max-w-6xl mx-auto space-y-10">
-                <section class="glass-strong rounded-3xl p-6 sm:p-10 border border-white/10">
+                <section class="glass-strong rounded-2xl p-6 sm:p-10 border border-white/10">
                     <div class="grid lg:grid-cols-[1.2fr_.8fr] gap-8 items-center">
                         <div>
                             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-[0.2em] mb-5">
@@ -160,13 +137,13 @@ const pageSchema = [
                             <p class="text-white/60 leading-relaxed max-w-3xl">{signData.summary}</p>
                         </div>
 
-                        <div class="rounded-3xl bg-white/5 border border-white/10 p-6 sm:p-8 text-center">
+                        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 text-center">
                             <p class="text-white/60 text-sm uppercase tracking-[0.3em] mb-2">Today&apos;s Price</p>
                             <div class="flex items-end justify-center gap-3 mb-2">
                                 <span class="text-white/40 text-xl line-through">{originalPrice.toFixed(2)} EUR</span>
                                 <span class="text-5xl font-black text-white leading-none">{productPrice.toFixed(2)} EUR</span>
                             </div>
-                            <p class="text-amber-400 font-bold uppercase tracking-[0.25em] text-xs mb-6">50% off</p>
+                            <p class="text-amber-400 font-bold uppercase tracking-[0.18em] text-xs mb-6">Limited offer</p>
 
                             <a
                                 href={formPath}
@@ -195,7 +172,7 @@ const pageSchema = [
                 </section>
 
                 <section class="grid lg:grid-cols-[1fr_.9fr] gap-8">
-                    <div class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
+                    <div class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
                         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">{fillZodiacTemplate(zodiac.ui.snapshotTitle, { '{{SIGN}}': signData.name, '{{PRODUCT}}': productName, '{{PRODUCT_LOWER}}': productName, '{{FOCUS}}': signData.focus })}</h2>
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
@@ -217,21 +194,35 @@ const pageSchema = [
                         </div>
                     </div>
 
-                    <div class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
-                        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">{whyFitsTitle}</h2>
-                        <p class="text-white/70 leading-relaxed mb-6">{whyFitsDescription}</p>
-                        <div class="flex flex-wrap gap-3">
-                            {signData.traits.map((trait) => (
-                                <span class="inline-flex items-center rounded-full bg-amber-500/10 border border-amber-400/20 px-4 py-2 text-sm text-amber-200">
-                                    {trait}
-                                </span>
-                            ))}
+                    <div class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <h2 class="text-2xl sm:text-3xl font-bold text-white">{t.pdfPreview?.title || 'PDF Preview'}</h2>
+                            <span class="rounded-full bg-amber-500/15 px-3 py-1 text-xs font-bold text-amber-300">{signData.name}</span>
+                        </div>
+                        <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+                            <img
+                                src="/pdf-sample-preview.webp"
+                                alt="Sample horoscope PDF preview"
+                                class="w-full rounded-xl border border-white/10"
+                                loading="eager"
+                                decoding="async"
+                                width="574"
+                                height="574"
+                            />
                         </div>
                     </div>
                 </section>
 
-                <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
+                <section class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
                     <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">{zodiac.ui.traitsTitle.replaceAll('{{SIGN}}', signData.name)}</h2>
+                    <p class="text-white/70 leading-relaxed mb-6">{whyFitsDescription}</p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        {signData.traits.map((trait) => (
+                            <span class="inline-flex items-center rounded-full bg-amber-500/10 border border-amber-400/20 px-4 py-2 text-sm text-amber-200">
+                                {trait}
+                            </span>
+                        ))}
+                    </div>
                     <div class="grid sm:grid-cols-2 gap-4">
                         {product.benefits.map((benefit) => (
                             <div class="flex items-center gap-3 rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white/85">
@@ -242,26 +233,14 @@ const pageSchema = [
                     </div>
                 </section>
 
-                <section class="glass-strong rounded-3xl p-8 sm:p-10 border border-amber-400/20 bg-gradient-to-br from-amber-500/10 to-transparent text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{ctaTitle}</h2>
-                    <p class="text-white/70 text-lg max-w-2xl mx-auto mb-6">{zodiac.ui.ctaDescription}</p>
-                    <a
-                        href={formPath}
-                        class="inline-flex items-center gap-2 rounded-2xl bg-amber-500 px-8 py-4 text-black font-bold text-base hover:bg-amber-400 transition-colors"
-                    >
-                        <Sparkles class="w-5 h-5" />
-                        <span>{t.cta.orderNow}</span>
-                    </a>
-                </section>
-
-                <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
+                <section class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
                     <div class="flex items-center gap-3 mb-6">
                         <Star class="w-6 h-6 text-amber-400" />
                         <h2 class="text-2xl sm:text-3xl font-bold text-white">{t.testimonials.title}</h2>
                     </div>
                     <div class="grid md:grid-cols-3 gap-4">
                         {testimonials.map((testimonial) => (
-                            <article class="rounded-2xl bg-white/5 border border-white/10 p-5">
+                            <article class="rounded-xl bg-white/5 border border-white/10 p-5">
                                 <div class="flex items-center gap-1 mb-3">
                                     {[...Array(testimonial.rating)].map(() => (
                                         <Star class="w-4 h-4 text-amber-400 fill-amber-400" />
@@ -274,33 +253,6 @@ const pageSchema = [
                         ))}
                     </div>
                 </section>
-
-                {relatedArticles.length > 0 && (
-                    <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
-                        <div class="flex items-center gap-3 mb-6">
-                            <BookOpen class="w-6 h-6 text-amber-400" />
-                            <h2 class="text-2xl sm:text-3xl font-bold text-white">{blogUi.blogTitle}</h2>
-                        </div>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            {relatedArticles.map((article) => (
-                                <a href={lang === 'en' ? `/blog/${article.slug}` : `/${lang}/blog/${article.slug}`} class="rounded-2xl bg-white/5 border border-white/10 p-5 hover:border-amber-400/40 transition-colors">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <span class="text-2xl">{article.meta.emoji}</span>
-                                        <div>
-                                            <p class="text-amber-400 text-xs uppercase tracking-[0.2em] mb-1">{article.translation.category}</p>
-                                            <h3 class="text-white font-semibold leading-snug">{article.translation.title}</h3>
-                                        </div>
-                                    </div>
-                                    <p class="text-white/60 text-sm mb-4">{article.translation.excerpt}</p>
-                                    <span class="inline-flex items-center gap-2 text-amber-400 text-sm font-medium">
-                                        <span>{blogUi.readArticle || 'Read article'}</span>
-                                        <ArrowRight class="w-4 h-4" />
-                                    </span>
-                                </a>
-                            ))}
-                        </div>
-                    </section>
-                )}
 
                 <ZodiacSignGrid lang={lang} type={type} currentSign={sign} />
 
