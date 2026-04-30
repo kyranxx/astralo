@@ -5,6 +5,7 @@
  * Appears after 30 seconds on any page
  */
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
+import { buildSafeLeadSubtitle, hasUnsupportedSocialProof } from '../lib/marketing-copy';
 
 interface Props {
   lang?: string;
@@ -15,14 +16,21 @@ const { lang = 'en', inline = false } = Astro.props;
 
 const translations = getTranslations(lang as SupportedLocale);
 const localizedEmailCapture = translations.emailCapture;
+const fallbackSubtitle = buildSafeLeadSubtitle(
+  localizedEmailCapture?.title || 'Get Your Free 7-Day Horoscope',
+  translations.promo?.delivery || 'Instant delivery to your email'
+);
 const t = {
-  title: '✨ Get Your Free Weekly Horoscope',
-  subtitle: 'Join our newsletter for weekly astrology insights, new guides, and occasional special offers.',
+  title: localizedEmailCapture?.title || '✨ Get Your Free 7-Day Horoscope',
+  subtitle: localizedEmailCapture?.subtitle && !hasUnsupportedSocialProof(localizedEmailCapture.subtitle)
+    ? localizedEmailCapture.subtitle
+    : fallbackSubtitle,
   placeholder: localizedEmailCapture?.placeholder || 'Enter your email',
-  button: 'Subscribe Free',
+  button: localizedEmailCapture?.button || 'Get My Free Horoscope',
   consent: localizedEmailCapture?.consent || 'I agree to receive cosmic insights and accept the privacy policy.',
-  success: '✨ Welcome! Your free weekly horoscope emails are on.',
+  success: localizedEmailCapture?.success || '✨ Welcome! Your free 7-day horoscope is on the way.',
   error: localizedEmailCapture?.error || 'Something went wrong. Please try again.',
+  validation: 'Please enter your email and accept consent.',
 };
 ---
 
@@ -36,7 +44,14 @@ const t = {
       <h3 class="text-3xl sm:text-4xl font-black text-white mb-3">{t.title}</h3>
       <p class="text-white/70 text-lg mb-6 max-w-xl mx-auto">{t.subtitle}</p>
       
-      <form class="email-capture-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-4" data-lang={lang}>
+      <form
+        class="email-capture-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-4"
+        data-lang={lang}
+        data-button-text={t.button}
+        data-success-message={t.success}
+        data-error-message={t.error}
+        data-validation-message={t.validation}
+      >
         <input 
           type="email" 
           name="email"
@@ -83,7 +98,14 @@ const t = {
         <h3 class="text-3xl sm:text-4xl font-black text-white mb-3">{t.title}</h3>
         <p class="text-white/70 text-lg mb-6">{t.subtitle}</p>
         
-        <form class="email-capture-form flex flex-col gap-3 mb-4" data-lang={lang}>
+        <form
+          class="email-capture-form flex flex-col gap-3 mb-4"
+          data-lang={lang}
+          data-button-text={t.button}
+          data-success-message={t.success}
+          data-error-message={t.error}
+          data-validation-message={t.validation}
+        >
           <input 
             type="email" 
             name="email"
@@ -147,9 +169,14 @@ const t = {
       const messageEl = formEl.closest('.email-capture-inline, .relative')?.querySelector('.email-capture-message') as HTMLElement;
       const button = formEl.querySelector('button[type="submit"]') as HTMLButtonElement;
       const lang = formEl.dataset.lang || 'en';
+      const captureSource = formEl.closest('.email-capture-inline') ? 'inline' : 'popup';
+      const defaultButtonText = formEl.dataset.buttonText || button.textContent || 'Get My Free Horoscope';
+      const successMessage = formEl.dataset.successMessage || '✨ Welcome! Your free 7-day horoscope is on the way.';
+      const errorMessage = formEl.dataset.errorMessage || 'Something went wrong. Please try again.';
+      const validationMessage = formEl.dataset.validationMessage || 'Please enter your email and accept consent.';
       
       if (!emailInput.value || !consentInput?.checked) {
-        messageEl.textContent = 'Please enter email and accept consent.';
+        messageEl.textContent = validationMessage;
         messageEl.className = 'email-capture-message mt-4 text-lg font-medium text-red-400';
         messageEl.classList.remove('hidden');
         return;
@@ -164,7 +191,7 @@ const t = {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             email: emailInput.value,
-            source: 'popup',
+            source: captureSource,
             lang,
             gdprConsent: true
           })
@@ -173,7 +200,17 @@ const t = {
         const data = await response.json();
         
         if (data.success) {
-          messageEl.textContent = '✨ Welcome! Check your inbox soon.';
+          const isNewSignup = data.message !== 'Already subscribed';
+          const track = window['astraloTrack'];
+          if (isNewSignup && typeof track === 'function') {
+            track('sign_up', {
+              method: 'email_capture',
+              signup_surface: captureSource,
+              language: lang,
+            });
+          }
+
+          messageEl.textContent = successMessage;
           messageEl.className = 'email-capture-message mt-4 text-lg font-medium text-green-400';
           messageEl.classList.remove('hidden');
           formEl.reset();
@@ -187,11 +224,11 @@ const t = {
           throw new Error(data.error);
         }
         } catch (err) {
-          messageEl.textContent = 'Something went wrong. Please try again.';
+          messageEl.textContent = errorMessage;
           messageEl.className = 'email-capture-message mt-4 text-lg font-medium text-red-400';
           messageEl.classList.remove('hidden');
           button.disabled = false;
-          button.textContent = 'Subscribe Free';
+          button.textContent = defaultButtonText;
         }
       });
   });

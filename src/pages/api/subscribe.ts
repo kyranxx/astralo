@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { buildFollowupRows } from '../../lib/email-drip';
 import { supabase } from '../../lib/supabase';
 import { sendWelcomeEmail } from '../../lib/email-service';
 
@@ -57,6 +58,20 @@ export const POST: APIRoute = async ({ request }) => {
         } catch (emailErr) {
             console.error('Failed to send welcome email:', emailErr);
             // Don't fail the whole request if email sending fails
+        }
+
+        // Queue daily follow-up emails when the email_followups table is available
+        try {
+            const followupRows = buildFollowupRows(email, lang);
+            const { error: followupError } = await supabase
+                .from('email_followups')
+                .upsert(followupRows, { onConflict: 'email,step_key' });
+
+            if (followupError) {
+                console.error('Failed to queue email followups:', followupError);
+            }
+        } catch (followupErr) {
+            console.error('Failed to queue email followups:', followupErr);
         }
 
         return new Response(JSON.stringify({ success: true }), {

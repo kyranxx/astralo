@@ -21,6 +21,7 @@ import { weeklyHoroscopePredictions } from './articles/weekly-horoscope-predicti
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
+import { isStaleMonthlyHoroscopeSlug } from '../indexing';
 
 // All article translations indexed by slug
 const articleTranslations: Record<string, Record<string, BlogPostTranslation>> = {
@@ -173,9 +174,14 @@ export function getAllArticleSlugs(): string[] {
 export function getLatestArticleSlugs(limit = Object.keys(articleMeta).length): string[] {
     return Object.values(articleMeta)
         .slice()
+        .filter((article) => !isStaleMonthlyHoroscopeSlug(article.slug))
         .sort((left, right) => new Date(right.date).getTime() - new Date(left.date).getTime())
         .slice(0, limit)
         .map((article) => article.slug);
+}
+
+export function getIndexableArticleSlugs(): string[] {
+    return Object.keys(articleMeta).filter((slug) => !isStaleMonthlyHoroscopeSlug(slug));
 }
 
 /**

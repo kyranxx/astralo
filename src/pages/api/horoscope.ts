@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 import { supabase } from '../../lib/supabase';
 import { HoroscopeRequestSchema, validateReferer } from '../../lib/validation';
+import { getProductPriceInEuros, isValidProductKey, type ProductKey } from '../../lib/products';
 
 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
@@ -10,6 +11,20 @@ if (!stripeKey) {
 }
 
 const stripe = new Stripe(stripeKey);
+
+function getResponsePrice(productKey: string): number {
+    if (!isValidProductKey(productKey)) {
+        return 0;
+    }
+
+    return getProductPriceInEuros(productKey as ProductKey);
+}
+
+function formatBirthSummary(name: string | undefined, birthDate: string | undefined, birthTime: string | undefined, birthPlace: string | undefined): string {
+    const timePart = birthTime ? ` at ${birthTime}` : '';
+    const placePart = birthPlace ? ` in ${birthPlace}` : '';
+    return `${name || 'Unknown'}, born ${birthDate || 'Unknown'}${timePart}${placePart}`;
+}
 
 // Set max duration for Vercel Serverless Functions to 60 seconds (requires Pro plan, will be 10s on Hobby)
 export const maxDuration = 60;
@@ -59,8 +74,7 @@ export const POST: APIRoute = async ({ request }) => {
 
         if (existingOrder && existingOrder.horoscope_content) {
             console.log('🔮 Horoscope API: Order already has content, returning cached data');
-            const products = { daily: 0.99, weekly: 2.99, monthly: 7.99, partner: 7.99 };
-            const price = products[existingOrder.product_key as keyof typeof products] || 0;
+            const price = getResponsePrice(existingOrder.product_key);
 
             return new Response(JSON.stringify({
                 error: 'already_processed', // Keep this flag so frontend knows to show "Success" immediately
@@ -146,8 +160,8 @@ export const POST: APIRoute = async ({ request }) => {
             const { birthDate1, birthTime1, birthPlace1, name1, birthDate2, birthTime2, birthPlace2, name2 } = formData;
             prompt = `You are a friendly astrologer writing for everyday people. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
 
-Person 1: ${name1}, born ${birthDate1} at ${birthTime1} in ${birthPlace1}
-Person 2: ${name2}, born ${birthDate2} at ${birthTime2} in ${birthPlace2}
+Person 1: ${formatBirthSummary(name1, birthDate1, birthTime1, birthPlace1)}
+Person 2: ${formatBirthSummary(name2, birthDate2, birthTime2, birthPlace2)}
 
 ${productBenefits.partner}
 
@@ -174,7 +188,7 @@ CONTENT RULES:
 
             prompt = `You are a friendly astrologer writing for everyday people. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${useLangForPdf} language.
 
-For: ${name}, born ${birthDate} at ${birthTime} in ${birthPlace}
+For: ${formatBirthSummary(name, birthDate, birthTime, birthPlace)}
 
 ${benefits}
 
@@ -214,14 +228,7 @@ CONTENT RULES:
         const horoscope = result.response.text();
         console.log('🔮 Horoscope API: Content generated successfully');
 
-        // Get price based on product
-        const products = {
-            daily: 0.99,
-            weekly: 2.99,
-            monthly: 7.99,
-            partner: 7.99,
-        };
-        const price = products[productKey as keyof typeof products] || 0;
+        const price = getResponsePrice(productKey);
 
         // SAVE TO DATABASE - Prevent data loss
         try {

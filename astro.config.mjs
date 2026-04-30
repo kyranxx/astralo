@@ -5,12 +5,47 @@ import tailwind from "@astrojs/tailwind";
 import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
 import vercel from '@astrojs/vercel';
 
+const monthlyBlogPattern = /\/(?:[a-z]{2}\/)?blog\/monthly-horoscope-([a-z]+)-(\d{4})\/?$/;
+const zodiacLandingPattern = /\/(?:[a-z]{2}\/)?horoscope\/(?:daily|weekly|monthly|partner)\/[^/]+\/?$/;
+const monthNameToIndex = {
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
+};
+
+function isStaleMonthlyBlogUrl(page) {
+  const match = page.match(monthlyBlogPattern);
+  if (!match) return false;
+
+  const [, monthName, yearValue] = match;
+  const monthIndex = monthNameToIndex[monthName];
+  const year = Number(yearValue);
+
+  if (!Number.isInteger(monthIndex) || !Number.isInteger(year)) {
+    return false;
+  }
+
+  return new Date() >= new Date(year, monthIndex + 1, 1);
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astralo.online',
   integrations: [
     tailwind(),
     sitemap({
+      customPages: [
+        'https://astralo.online/free-horoscope',
+      ],
       i18n: {
         defaultLocale: 'en',
         locales: {
@@ -56,6 +91,8 @@ export default defineConfig({
         if (page.includes('/admin')) return false;
         if (page.includes('/success')) return false;
         if (page.includes('/form/')) return false;
+        if (zodiacLandingPattern.test(page)) return false;
+        if (isStaleMonthlyBlogUrl(page)) return false;
         // Exclude /en/ pages - they're just 301 redirects to root
         if (page.match(/\/en\//) || page.endsWith('/en')) return false;
         return true;
@@ -92,6 +129,12 @@ export default defineConfig({
           item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.95;
+        }
+        // Free lead magnet - key email capture URL
+        else if (url.endsWith('/free-horoscope')) {
+          item.lastmod = new Date().toISOString();
+          item.changefreq = ChangeFreqEnum.WEEKLY;
+          item.priority = 0.9;
         }
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {

@@ -3,7 +3,7 @@ import type { Translations } from './types';
 const en: Translations = {
     meta: {
         title: 'Astralo - Personalized Horoscope Readings | 50% OFF',
-        description: 'Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. 50,000+ happy customers. Instant PDF delivery!',
+        description: 'Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. Instant PDF delivery!',
         keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2026, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
     },
     header: {
@@ -13,13 +13,13 @@ const en: Translations = {
     promo: {
         offer: 'LIMITED OFFER: 50% OFF all horoscopes!',
         delivery: 'Instant delivery to your email',
-        customers: '50,000+ happy customers',
+        customers: 'Trusted readings',
         secure: 'Secure payment with Stripe',
     },
     hero: {
         title: 'Your Personal Horoscope',
         subtitle: 'Finally, truly accurate horoscope • Created specially for you',
-        features: '✨ Instant delivery • 🔒 Secure payments • ⭐ 50,000+ satisfied customers',
+        features: '✨ Instant delivery • 🔒 Secure payments • ⭐ Personalized insights',
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const en: Translations = {
         technology: { title: 'Advanced Technology', description: 'State-of-the-art technology for accurate predictions' },
         instant: { title: 'Instant', description: 'Your horoscope ready within minutes' },
         professional: { title: 'Professional', description: 'Created according to astrological principles' },
-        verified: { title: 'Verified', description: '50,000+ satisfied customers' },
+        verified: { title: 'Verified', description: 'Trusted astrology readings' },
     },
     form: {
         title: 'Get Your Horoscope',
@@ -130,7 +130,7 @@ const en: Translations = {
         q1: 'What is Astralo?',
         a1: 'Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email.',
         q2: 'How accurate are Astralo horoscopes?',
-        a2: 'Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes.',
+        a2: 'Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. Our personalized readings provide detailed insights for entertainment purposes.',
         q3: 'How fast will I receive my horoscope?',
         a3: 'Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You\'ll receive a professional PDF document with your complete astrological reading.',
         q4: 'What payment methods do you accept?',
@@ -141,12 +141,12 @@ const en: Translations = {
         a6: 'To get your personalized horoscope, you need to provide: your full name, email address, date of birth, time of birth (optional but recommended), and place of birth. For partner horoscopes, you will also need your partner\'s birth data.',
     },
     emailCapture: {
-        title: '✨ Get Your Free Weekly Horoscope',
-        subtitle: 'Join our newsletter for weekly astrology insights, new guides, and occasional special offers.',
+        title: '✨ Get Your Free 7-Day Horoscope',
+        subtitle: 'Enter your email and get a free 7-day horoscope, plus occasional astrology offers.',
         placeholder: 'Enter your email',
-        button: 'Subscribe Free',
+        button: 'Get My Free Horoscope',
         consent: 'I agree to receive cosmic insights and accept the privacy policy.',
-        success: '✨ Welcome! Your free weekly horoscope emails are on.',
+        success: '✨ Welcome! Your free 7-day horoscope is on the way.',
         error: 'Something went wrong. Please try again.',
     },
     ads: {
@@ -155,7 +155,7 @@ const en: Translations = {
         limited: 'Limited Offer',
         unlock: 'Unlock Your',
         waiting: 'is waiting...',
-        join: 'Join 50,000+ others who found clarity in the stars.',
+        join: 'Find clarity in the stars.',
         getFor: 'Get it for',
     },
 };

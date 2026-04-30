@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from './Footer.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import EmailCapture from './EmailCapture.astro';
+import { ArrowLeft, Calendar, Heart, Mail, Sparkles } from 'lucide-astro';
+import { getTranslations, type SupportedLocale } from '../lib/i18n';
+import { buildSafeLeadSubtitle, hasUnsupportedSocialProof } from '../lib/marketing-copy';
+import { getProductPriceInEuros } from '../lib/products';
+import {
+    buildBreadcrumbSchema,
+    buildWebPageSchema,
+    getFreeHoroscopePath,
+    getHomePath,
+    getProductLandingPath,
+    siteUrl,
+} from '../lib/seo';
+
+interface Props {
+    lang: SupportedLocale;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+const homePath = getHomePath(lang);
+const freePath = getFreeHoroscopePath(lang);
+const pageUrl = `${siteUrl}${freePath}`;
+const pageTitle = `${t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'} | Astralo`;
+const pageDescription = t.emailCapture?.subtitle && !hasUnsupportedSocialProof(t.emailCapture.subtitle)
+    ? t.emailCapture.subtitle
+    : buildSafeLeadSubtitle(
+        t.emailCapture?.title || 'Get Your Free 7-Day Horoscope',
+        t.promo.delivery
+      );
+const pageKeywords = [
+    t.emailCapture?.title || 'free horoscope',
+    t.products.weekly.name,
+    t.products.monthly.name,
+    t.products.partner.name,
+    t.header.badge,
+].join(', ');
+const paidProducts = [
+    {
+        icon: Calendar,
+        name: t.products.weekly.name,
+        description: t.products.weekly.description,
+        price: getProductPriceInEuros('weekly').toFixed(2),
+        href: getProductLandingPath(lang, 'weekly'),
+    },
+    {
+        icon: Sparkles,
+        name: t.products.monthly.name,
+        description: t.products.monthly.description,
+        price: getProductPriceInEuros('monthly').toFixed(2),
+        href: getProductLandingPath(lang, 'monthly'),
+    },
+    {
+        icon: Heart,
+        name: t.products.partner.name,
+        description: t.products.partner.description,
+        price: getProductPriceInEuros('partner').toFixed(2),
+        href: getProductLandingPath(lang, 'partner'),
+    },
+];
+const pageSchema = [
+    buildWebPageSchema({
+        url: pageUrl,
+        title: pageTitle,
+        description: pageDescription,
+        lang,
+    }),
+    buildBreadcrumbSchema([
+        { name: 'Home', url: `${siteUrl}${homePath === '/' ? '' : homePath.replace(/\/$/, '')}` || siteUrl },
+        { name: t.emailCapture?.title || 'Free Horoscope', url: pageUrl },
+    ]),
+];
+---
+
+<Layout
+    title={pageTitle}
+    description={pageDescription}
+    keywords={pageKeywords}
+    lang={lang}
+    schema={pageSchema}
+    floatingProductKey="monthly"
+>
+    <div class="min-h-screen flex flex-col relative z-10">
+        <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <a href={homePath} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+                        <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                        <span class="text-sm">{t.form.back || 'Home'}</span>
+                    </a>
+                    <a href={homePath} class="block hover:opacity-80 transition-opacity">
+                        <img src="/logo.webp" alt="Astralo" class="h-10" style="aspect-ratio: 3.41;" />
+                    </a>
+                    <LanguageSwitcher lang={lang} />
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 px-4 py-10 sm:py-14">
+            <div class="max-w-6xl mx-auto space-y-10">
+                <section class="glass-strong rounded-3xl p-6 sm:p-10 border border-white/10">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-[0.2em] mb-5">
+                            <Mail class="w-4 h-4" />
+                            <span>{t.header.badge}</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">{t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'}</h1>
+                        <p class="text-white/75 text-lg leading-relaxed mb-6">{pageDescription}</p>
+                        <div class="flex flex-wrap items-center justify-center gap-3 text-sm text-white/70">
+                            <span class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2">
+                                <Sparkles class="w-4 h-4 text-amber-400" />
+                                <span>{t.products.weekly.name}</span>
+                            </span>
+                            <span class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2">
+                                <Mail class="w-4 h-4 text-amber-400" />
+                                <span>{t.promo.delivery}</span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <EmailCapture lang={lang} inline={true} />
+
+                <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">{t.header.badge}</h2>
+                        <p class="text-white/65 max-w-2xl mx-auto">
+                            {t.products.monthly.description}
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-4">
+                        {paidProducts.map((product) => {
+                            const Icon = product.icon;
+                            return (
+                                <a href={product.href} class="rounded-2xl bg-white/5 border border-white/10 p-6 hover:border-amber-400/40 transition-colors">
+                                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-400/20 flex items-center justify-center mb-4">
+                                        <Icon class="w-6 h-6 text-amber-400" />
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white mb-2">{product.name}</h3>
+                                    <p class="text-white/65 text-sm leading-relaxed mb-4">{product.description}</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-amber-400 font-bold">€{product.price}</span>
+                                        <span class="text-white text-sm font-medium">{t.cta.orderNow}</span>
+                                    </div>
+                                </a>
+                            );
+                        })}
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <Footer lang={lang} />
+    </div>
+</Layout>

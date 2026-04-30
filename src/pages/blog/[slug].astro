@@ -19,6 +19,7 @@ import {
   rewriteBlogOfferLinks,
   siteUrl,
 } from '../../lib/seo';
+import { isStaleMonthlyHoroscopeSlug } from '../../lib/indexing';
 
 export const prerender = true;
 
@@ -61,6 +62,7 @@ const shareText = encodeURIComponent(post.displayTitle);
 const productKey = getSuggestedProductForArticle(slug as string);
 const landingPath = getProductLandingPath('en', productKey);
 const renderedContent = rewriteBlogOfferLinks(post.content, 'en', slug as string);
+const noIndex = isStaleMonthlyHoroscopeSlug(slug as string);
 
 // Content splitting for mid-article CTA
 const contentParts = renderedContent.split('</p>');
@@ -97,6 +99,7 @@ const pageSchema = [
   publishedTime={meta.date}
   modifiedTime={meta.date}
   floatingProductKey={productKey}
+  noIndex={noIndex}
 >
   <!-- Reading Progress Bar -->
   <div id="reading-progress" class="fixed top-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-600 z-[100] transition-all duration-150"></div>

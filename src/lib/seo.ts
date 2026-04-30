@@ -58,6 +58,10 @@ export function getBlogIndexPath(lang: SupportedLocale): string {
     return lang === 'en' ? '/blog' : `/${lang}/blog`;
 }
 
+export function getFreeHoroscopePath(lang: SupportedLocale): string {
+    return lang === 'en' ? '/free-horoscope' : `/${lang}/free-horoscope`;
+}
+
 export function getFormPath(lang: SupportedLocale, productKey: ProductKey): string {
     return lang === 'en' ? `/form/${productKey}` : `/${lang}/form/${productKey}`;
 }

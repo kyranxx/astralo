@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut, Calendar, ChevronDown } from 'lucide-astro';
+import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut, Calendar, ChevronDown, Mail } from 'lucide-astro';
 ---
 
 <Layout title="Admin Dashboard - Astralo" backgroundImage="/background4.png">
@@ -105,8 +105,8 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
         </div>
       </div>
 
-      <!-- Stats Grid - 2x2 on mobile, 4 on desktop -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+      <!-- Stats Grid - 2x2 on mobile, 5 on desktop -->
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
         <!-- Total Revenue -->
         <div class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10">
           <div class="flex items-center justify-between mb-2">
@@ -127,6 +127,19 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           <p class="text-xs text-white/40 mt-1">
             <span class="text-green-400" id="completedOrders">0</span> ✓ 
             <span class="text-red-400" id="refundedOrders">0</span> ↩
+          </p>
+        </div>
+
+        <!-- Free Subscribers -->
+        <div class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10">
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-white/60 text-xs sm:text-sm">Free Subs</p>
+            <Mail class="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white" id="freeSubscribers">0</h3>
+          <p class="text-xs text-white/40 mt-1">
+            <span id="freeSubscribersInline">0</span> inline · 
+            <span id="freeSubscribersPopup">0</span> popup
           </p>
         </div>
 
@@ -705,6 +718,9 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
       document.getElementById('totalOrders')!.textContent = stats.totalOrders.toString();
       document.getElementById('completedOrders')!.textContent = stats.completedOrders.toString();
       document.getElementById('refundedOrders')!.textContent = stats.refundedOrders.toString();
+      document.getElementById('freeSubscribers')!.textContent = stats.freeSubscribers.toString();
+      document.getElementById('freeSubscribersInline')!.textContent = stats.freeSubscribersInline.toString();
+      document.getElementById('freeSubscribersPopup')!.textContent = stats.freeSubscribersPopup.toString();
       
       if (stats.revenueByCountry.length > 0) {
         const top = stats.revenueByCountry[0];

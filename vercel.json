@@ -2,6 +2,12 @@
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "framework": "astro",
+    "crons": [
+        {
+            "path": "/api/email-drip",
+            "schedule": "0 9 * * *"
+        }
+    ],
     "headers": [
         {
             "source": "/(.*)",

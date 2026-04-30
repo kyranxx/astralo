@@ -7,6 +7,7 @@
 
 import { ChevronDown, HelpCircle } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
+import { stripUnsupportedSocialProof } from '../lib/marketing-copy';
 
 interface Props {
   lang?: SupportedLocale;
@@ -23,7 +24,9 @@ const faqItems = [
   },
   {
     question: t.faq?.q2 || "How accurate are Astralo horoscopes?",
-    answer: t.faq?.a2 || "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. With over 50,000 satisfied customers and a 4.9/5 star rating, our personalized readings provide detailed insights for entertainment purposes."
+    answer: stripUnsupportedSocialProof(
+      t.faq?.a2 || "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. Our personalized readings provide detailed insights for entertainment purposes."
+    )
   },
   {
     question: t.faq?.q3 || "How fast will I receive my horoscope?",

@@ -11,6 +11,7 @@ import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-as
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
 import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../../lib/blog';
 import { buildBreadcrumbSchema, buildCollectionPageSchema, siteUrl } from '../../../lib/seo';
+import { isStaleMonthlyHoroscopeSlug } from '../../../lib/indexing';
 
 export const prerender = true;
 
@@ -87,7 +88,9 @@ const blogPostsBase = [
 ];
 
 // Merge base data with localized content from lib/blog
-const blogPosts = blogPostsBase.map(base => {
+const blogPosts = blogPostsBase
+  .filter((base) => !isStaleMonthlyHoroscopeSlug(base.slug))
+  .map(base => {
   const meta = getArticleMeta(base.slug);
   const translation = getArticleTranslation(base.slug, currentLang);
   

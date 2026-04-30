@@ -194,7 +194,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                           <Clock class="w-5 h-5 text-amber-400" />
                           {t.form.birthTime}
                         </label>
-                        <input id="birthTime1" name="birthTime1" type="time" required class="input w-full text-lg p-4" />
+                        <input id="birthTime1" name="birthTime1" type="time" class="input w-full text-lg p-4" />
                       </div>
                     </div>
 
@@ -240,7 +240,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                           <Clock class="w-5 h-5 text-amber-400" />
                           {t.form.partnerBirthTime}
                         </label>
-                        <input id="birthTime2" name="birthTime2" type="time" required class="input w-full text-lg p-4" />
+                        <input id="birthTime2" name="birthTime2" type="time" class="input w-full text-lg p-4" />
                       </div>
                     </div>
 
@@ -286,7 +286,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
                       <Clock class="w-5 h-5 text-amber-400" />
                       {t.form.birthTime}
                     </label>
-                    <input id="birthTime" name="birthTime" type="time" required class="input w-full text-lg p-4" />
+                    <input id="birthTime" name="birthTime" type="time" class="input w-full text-lg p-4" />
                   </div>
                 </div>
 
@@ -356,7 +356,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
   </div>
 </Layout>
 
-<script is:inline define:vars={{ type, currentLang }}>
+<script is:inline define:vars={{ type, currentLang, productName, selectedPrice: selectedType.price }}>
   const form = document.getElementById('payment-form');
   const attributionKey = 'astralo_attribution';
 
@@ -390,6 +390,25 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
     };
     
     try {
+      const track = window['astraloTrack'];
+      if (typeof track === 'function') {
+        track('begin_checkout', {
+          currency: 'EUR',
+          value: Number(Number(selectedPrice).toFixed(2)),
+          language: currentLang,
+          items: [
+            {
+              item_id: type,
+              item_name: productName,
+              item_category: 'horoscope',
+              item_variant: currentLang,
+              price: Number(Number(selectedPrice).toFixed(2)),
+              quantity: 1,
+            }
+          ]
+        });
+      }
+
       await new Promise(resolve => setTimeout(resolve, 800));
 
       const response = await fetch('/api/checkout', {

@@ -36,6 +36,9 @@ export interface Statistics {
     completedOrders: number;
     refundedOrders: number;
     refundedAmount: number;
+    freeSubscribers: number;
+    freeSubscribersInline: number;
+    freeSubscribersPopup: number;
     revenueByCountry: RevenueByCountry[];
     revenueByProduct: RevenueByProduct[];
     monthlyData: MonthlyData[];
@@ -162,6 +165,9 @@ export function createEmptyStatistics(startDate?: string, endDate?: string): Sta
         completedOrders: 0,
         refundedOrders: 0,
         refundedAmount: 0,
+        freeSubscribers: 0,
+        freeSubscribersInline: 0,
+        freeSubscribersPopup: 0,
         revenueByCountry: [],
         revenueByProduct: [],
         monthlyData: [],

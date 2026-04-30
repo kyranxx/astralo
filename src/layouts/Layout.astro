@@ -63,7 +63,7 @@ const currentKeywords = keywords || t.meta.keywords;
 const currentPath = Astro.url.pathname;
 const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
 const computedCanonicalUrl = canonicalUrl || `${siteUrl}${cleanPath}`;
-const alternateLanguageUrls = buildAlternateLanguageUrls(currentPath);
+const alternateLanguageUrls = noIndex ? [] : buildAlternateLanguageUrls(currentPath);
 const defaultAlternateUrl = alternateLanguageUrls.find(({ code }) => code === 'en')?.href || siteUrl;
 const dir = isRtlLocale(currentLang) ? 'rtl' : 'ltr';
 const homeLink = getHomePath(currentLang);
@@ -206,6 +206,24 @@ const backgroundImageType = backgroundImage.endsWith('.png')
 
         <script is:inline>
             (function () {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = window.gtag || function () {
+                    window.dataLayer.push(arguments);
+                };
+                window.astraloTrack = window.astraloTrack || function (eventName, params) {
+                    if (!eventName) return;
+
+                    try {
+                        window.gtag('event', eventName, params || {});
+                    } catch (error) {
+                        console.warn('GA4 tracking failed', error);
+                    }
+                };
+            })();
+        </script>
+
+        <script is:inline>
+            (function () {
                 function loadClarity() {
                     (function(c,l,a,r,i,t,y){
                         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -230,10 +248,8 @@ const backgroundImageType = backgroundImage.endsWith('.png')
                     script.src = 'https://www.googletagmanager.com/gtag/js?id=G-M4VCEJ31XV';
                     document.head.appendChild(script);
 
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-M4VCEJ31XV');
+                    window.gtag('js', new Date());
+                    window.gtag('config', 'G-M4VCEJ31XV');
                 }
 
                 if ('requestIdleCallback' in window) {

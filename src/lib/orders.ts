@@ -260,6 +260,7 @@ export async function getStatistics(startDate?: string, endDate?: string) {
 
     // Total revenue (completed orders only)
     const totalRevenue = completedOrders.reduce((sum: number, o: Order) => sum + o.amount, 0);
+    const subscriberStats = await getFreeSubscriberStats(startDate, endDate);
 
     return {
         totalRevenue: totalRevenue / 100,
@@ -267,12 +268,45 @@ export async function getStatistics(startDate?: string, endDate?: string) {
         completedOrders: completedOrders.length,
         refundedOrders: refundedOrders.length,
         refundedAmount: refundedOrders.reduce((sum: number, o: Order) => sum + o.amount, 0) / 100,
+        ...subscriberStats,
         revenueByCountry: calculateRevenueByCountry(completedOrders),
         revenueByProduct: calculateRevenueByProduct(completedOrders),
         monthlyData: calculateMonthlyData(completedOrders),
         dailyData: calculateDailyData(completedOrders),
         dateRange: { startDate, endDate },
         lastUpdated: new Date().toISOString()
+    };
+}
+
+async function getFreeSubscriberStats(startDate?: string, endDate?: string) {
+    let query = supabase
+        .from('email_subscribers')
+        .select('source, subscribed_at');
+
+    if (startDate) {
+        query = query.gte('subscribed_at', startDate);
+    }
+    if (endDate) {
+        query = query.lte('subscribed_at', endDate);
+    }
+
+    const { data, error } = await query;
+
+    if (error) {
+        console.error('Error loading free subscriber statistics:', error);
+        return {
+            freeSubscribers: 0,
+            freeSubscribersInline: 0,
+            freeSubscribersPopup: 0,
+        };
+    }
+
+    const subscribers = data || [];
+
+    return {
+        freeSubscribers: subscribers.length,
+        freeSubscribersInline: subscribers.filter((subscriber: any) => subscriber.source === 'inline').length,
+        freeSubscribersPopup: subscribers.filter((subscriber: any) => subscriber.source === 'popup').length,
     };
 }
 

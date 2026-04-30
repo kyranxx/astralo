@@ -75,16 +75,16 @@ const seoDescription = `${localizedIntro} ${signData.summary}`;
 const seoKeywords = [
     signData.name,
     productName,
+    localizedIntro,
     signData.element,
     signData.ruler,
     signData.focus,
-    t.meta.keywords,
 ].join(', ');
 
 const relatedArticleSlugs: Record<ProductKey, string[]> = {
     daily: ['daily-horoscope-guide', 'weekly-horoscope-predictions', 'mercury-retrograde-survival-guide'],
     weekly: ['weekly-horoscope-predictions', 'daily-horoscope-guide', 'mercury-retrograde-survival-guide'],
-    monthly: ['monthly-horoscope-april-2026', 'monthly-horoscope-march-2026', 'monthly-horoscope-february-2026'],
+    monthly: ['monthly-horoscope-april-2026', 'birth-chart-reading-explained', 'daily-horoscope-guide'],
     partner: ['zodiac-compatibility-complete-guide', 'love-horoscope-relationship-advice', 'twin-flames-and-soulmates-astrology'],
 };
 
@@ -125,6 +125,8 @@ const pageSchema = [
     lang={lang}
     schema={pageSchema}
     floatingProductKey={type}
+    canonicalUrl={`${siteUrl}${baseProductPath}`}
+    noIndex={true}
 >
     <div class="min-h-screen flex flex-col relative z-10">
         <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
@@ -309,3 +311,38 @@ const pageSchema = [
         <Footer lang={lang} />
     </div>
 </Layout>
+
+<script
+    is:inline
+    define:vars={{
+        type,
+        lang,
+        sign,
+        productName,
+        productPrice,
+    }}
+>
+    (function () {
+        var track = window['astraloTrack'];
+        if (typeof track !== 'function') return;
+
+        var normalizedPrice = Number(Number(productPrice).toFixed(2));
+        track('view_item', {
+            currency: 'EUR',
+            value: normalizedPrice,
+            page_type: 'zodiac_product_landing',
+            language: lang,
+            zodiac_sign: sign,
+            items: [
+                {
+                    item_id: type + '_' + sign,
+                    item_name: productName,
+                    item_category: 'horoscope',
+                    item_variant: sign,
+                    price: normalizedPrice,
+                    quantity: 1,
+                },
+            ],
+        });
+    })();
+</script>

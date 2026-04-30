@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import { CheckCircle, Mail, Home, Sparkles, Star, ChevronLeft } from 'lucide-astro';
 import { isValidLocale, getTranslations, type SupportedLocale } from '../lib/i18n';
+import { getProductPriceInEuros } from '../lib/products';
 
 // Get lang from URL params
 const langParam = Astro.url.searchParams.get('lang') || 'en';
@@ -736,6 +737,12 @@ const horoscopeTypes = [
   { id: "monthly", name: t.products.monthly.name },
   { id: "partner", name: t.products.partner.name },
 ];
+const productPriceMap = {
+  daily: getProductPriceInEuros('daily'),
+  weekly: getProductPriceInEuros('weekly'),
+  monthly: getProductPriceInEuros('monthly'),
+  partner: getProductPriceInEuros('partner'),
+};
 
 const sessionId = Astro.url.searchParams.get('session_id');
 
@@ -899,7 +906,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
   </div>
 </Layout>
 
-<script is:inline define:vars={{ sessionId, horoscopeTypes, st }}>
+<script is:inline define:vars={{ sessionId, horoscopeTypes, productPriceMap, st }}>
   let horoscopeData = null;
 
   // Progress stages
@@ -931,6 +938,43 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       const delay = currentStage < 2 ? 2000 : 4000;
       setTimeout(animateProgress, delay);
     }
+  }
+
+  function resolveProductName(productId) {
+    const product = horoscopeTypes.find(item => item.id === productId);
+    return product ? product.name : 'Your Horoscope';
+  }
+
+  function trackPurchase(data, productName) {
+    if (!data || !data.product || !sessionId) return;
+
+    const storageKey = `astralo_purchase_tracked_${sessionId}`;
+    if (localStorage.getItem(storageKey)) return;
+
+    const track = window['astraloTrack'];
+    if (typeof track !== 'function') return;
+
+    const mappedPrice = productPriceMap[data.product];
+    const normalizedPrice = Number(Number(mappedPrice || data.price || 0).toFixed(2));
+
+    track('purchase', {
+      transaction_id: sessionId,
+      currency: 'EUR',
+      value: normalizedPrice,
+      language: data.lang || 'en',
+      items: [
+        {
+          item_id: data.product,
+          item_name: productName || resolveProductName(data.product),
+          item_category: 'horoscope',
+          item_variant: data.lang || 'en',
+          price: normalizedPrice,
+          quantity: 1,
+        }
+      ]
+    });
+
+    localStorage.setItem(storageKey, 'true');
   }
 
   async function fetchHoroscope() {
@@ -965,6 +1009,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       // Check if horoscope was already generated for this session (prevents duplicate on page reload)
       if (data.error === 'already_processed') {
         console.log('🚀 Horoscope already generated, showing success state');
+        trackPurchase(data, resolveProductName(data.product));
         document.getElementById('loading-state').classList.add('hidden');
         document.getElementById('success-state').classList.remove('hidden');
         document.getElementById('product-name').textContent = 'Horoscope';
@@ -982,6 +1027,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       
       const product = horoscopeTypes.find(t => t.id === data.product);
       const productName = product ? product.name : 'Your Horoscope';
+      trackPurchase(data, productName);
       document.getElementById('product-name').textContent = productName;
       document.getElementById('customer-email').textContent = data.email;
 

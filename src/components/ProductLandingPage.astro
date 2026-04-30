@@ -15,6 +15,7 @@ import {
     buildProductServiceSchema,
     buildWebPageSchema,
     getFormPath,
+    getFreeHoroscopePath,
     getGeneralFaqEntries,
     getHomePath,
     getProductLandingPath,
@@ -33,6 +34,7 @@ const product = t.products[type];
 const testimonials = getTestimonials(lang).slice(0, 3);
 const homePath = getHomePath(lang);
 const formPath = getFormPath(lang, type);
+const freeHoroscopePath = getFreeHoroscopePath(lang);
 const landingPath = getProductLandingPath(lang, type);
 const pageUrl = `${siteUrl}${landingPath}`;
 const productPrice = getProductPriceInEuros(type);
@@ -42,7 +44,7 @@ const generalFaqs = getGeneralFaqEntries(t);
 const relatedArticleSlugs: Record<ProductKey, string[]> = {
     daily: ['daily-horoscope-guide', 'weekly-horoscope-predictions', 'mercury-retrograde-survival-guide'],
     weekly: ['weekly-horoscope-predictions', 'daily-horoscope-guide', 'mercury-retrograde-survival-guide'],
-    monthly: ['monthly-horoscope-april-2026', 'monthly-horoscope-march-2026', 'monthly-horoscope-february-2026'],
+    monthly: ['monthly-horoscope-april-2026', 'birth-chart-reading-explained', 'daily-horoscope-guide'],
     partner: ['zodiac-compatibility-complete-guide', 'love-horoscope-relationship-advice', 'twin-flames-and-soulmates-astrology'],
 };
 
@@ -58,9 +60,9 @@ const pageTitle = `${product.name} | ${t.header.badge} | Astralo`;
 const seoDescription = `${product.name} from Astralo. ${product.description}. ${t.promo.delivery}. ${t.promo.secure}.`;
 const seoKeywords = [
     product.name,
+    t.header.badge,
     product.description,
     ...product.benefits.map((benefit) => benefit.replace(/^[^\s]+\s*/, '').trim()),
-    t.meta.keywords,
 ].join(', ');
 
 const pageSchema = [
@@ -132,10 +134,6 @@ const checklist = type === 'partner'
                                     <Shield class="w-4 h-4 text-amber-400" />
                                     <span>{t.promo.secure}</span>
                                 </div>
-                                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm">
-                                    <Star class="w-4 h-4 text-amber-400" />
-                                    <span>{t.trust.customers}</span>
-                                </div>
                             </div>
 
                             <div class="grid sm:grid-cols-2 gap-3">
@@ -162,6 +160,12 @@ const checklist = type === 'partner'
                             >
                                 <Zap class="w-5 h-5" />
                                 <span>{t.form.submit}</span>
+                            </a>
+                            <a
+                                href={freeHoroscopePath}
+                                class="mt-3 inline-flex w-full items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-white font-medium hover:border-amber-400/40 transition-colors"
+                            >
+                                {t.emailCapture?.button || 'Get My Free Horoscope'}
                             </a>
 
                             <div class="mt-6 pt-6 border-t border-white/10 space-y-3 text-left text-sm text-white/70">
@@ -297,3 +301,36 @@ const checklist = type === 'partner'
         <Footer lang={lang} />
     </div>
 </Layout>
+
+<script
+    is:inline
+    define:vars={{
+        type,
+        lang,
+        productName: product.name,
+        productPrice,
+    }}
+>
+    (function () {
+        var track = window['astraloTrack'];
+        if (typeof track !== 'function') return;
+
+        var normalizedPrice = Number(Number(productPrice).toFixed(2));
+        track('view_item', {
+            currency: 'EUR',
+            value: normalizedPrice,
+            page_type: 'product_landing',
+            language: lang,
+            items: [
+                {
+                    item_id: type,
+                    item_name: productName,
+                    item_category: 'horoscope',
+                    item_variant: lang,
+                    price: normalizedPrice,
+                    quantity: 1,
+                },
+            ],
+        });
+    })();
+</script>
