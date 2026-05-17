@@ -4,11 +4,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const cs: BlogPostTranslation = {
-  title: "🏠 12 domů v astrologii: Ultimátní průvodce vaší životní cestou",
+  title: "🏠 12 domů v astrologii: systém domů Placidus a význam každého domu",
   excerpt: "Objevte skrytou mapu svého života. Hloubkový vhled do 12 domů astrologie, který vysvětluje, kde se projevuje vaše planetární energie a jak ovládnout svůj osud.",
   category: "Základy astrologie",
-  metaDescription: "Kompletní průvodce 12 domy astrologie. Zjistěte, co každý dům znamená, jak ovlivňují vaše životní sféry a jak interpretovat domy ve svém horoskopu jako expert.",
-  keywords: "astrologické domy, 12 domů, domy zvěrokruhu, interpretace horoskopu, první dům, sedmý dům, midheaven, úhlové domy, následné domy, upadající domy, vládci domů, stellium, zachycená znamení",
+  metaDescription: "Kompletní průvodce 12 domy astrologie: systém domů Placidus, Whole Sign, 1. dům, 11. dům a význam každého domu v horoskopu.",
+  keywords: "systém domů placidus, systém domů, 12 domů astrologie, astrologie domy, 1 dům astrologie, 11 dům v astrologii, interpretace horoskopu, úhlové domy, vládci domů",
   quickSummary: [
     "12 domů představuje „KDE“ se váš život odehrává – specifické sféry jako kariéra, domov a vztahy.",
     "Domy se dělí na úhlové, následné a upadající, přičemž každý má jinou úroveň síly.",
@@ -55,6 +55,7 @@ export const cs: BlogPostTranslation = {
 
       <h2 id="house-systems">Systémy domů: Placidus vs. Whole Sign</h2>
       <p>Než se ponoříme do konkrétních významů, musíme zmínit systémy domů. Existují desítky způsobů, jak rozdělit oblohu, a volba, kterou učiníte, může váš horoskop výrazně změnit.</p>
+      <p><strong>Systém domů Placidus</strong> je v českém prostředí jedním z nejčastěji hledaných způsobů výpočtu astrologických domů. Pokud tedy řešíte „systém domů“ obecně, začněte porovnáním Placidus a Whole Sign: první ukáže jemnější psychologické vrstvy, druhý dá čistší přehled o tom, kde se v horoskopu odehrává 1. dům, 11. dům a další životní oblasti.</p>
       
       <h3>Systém Placidus</h3>
       <p>Toto je nejoblíbenější systém v moderní západní astrologii. Počítá domy na základě doby, kterou planeta potřebuje k cestě od obzoru k poledníku. Protože je Země nakloněná, vede to často k „zachyceným znamením“ (domům, které pokrývají více než jedno znamení) a domům různých velikostí. Příznivci Placidus tvrdí, že je psychologicky jemnější.</p>

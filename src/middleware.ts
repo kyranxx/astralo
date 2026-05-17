@@ -34,7 +34,31 @@ function shouldAdvertiseDiscovery(pathname: string) {
     return pathname === '/' || /^\/[a-z]{2}\/?$/.test(pathname);
 }
 
-export const onRequest = defineMiddleware(async ({ request, url }, next) => {
+function getCanonicalPathname(pathname: string) {
+    if (pathname === '/' || !pathname.endsWith('/')) {
+        return pathname;
+    }
+
+    return pathname.replace(/\/+$/, '') || '/';
+}
+
+export const onRequest = defineMiddleware(async ({ request, url, isPrerendered }, next) => {
+    if (request.method === 'GET' || request.method === 'HEAD') {
+        const canonicalPathname = getCanonicalPathname(url.pathname);
+
+        if (canonicalPathname !== url.pathname) {
+            const redirectUrl = new URL(request.url);
+            redirectUrl.pathname = canonicalPathname;
+
+            return new Response(null, {
+                status: 308,
+                headers: {
+                    Location: `${redirectUrl.pathname}${redirectUrl.search}`,
+                },
+            });
+        }
+    }
+
     const response = await next();
     const headers = new Headers(response.headers);
     const contentType = headers.get('content-type') || '';
@@ -50,6 +74,14 @@ export const onRequest = defineMiddleware(async ({ request, url }, next) => {
     }
 
     if (response.status === 204 || request.method === 'HEAD') {
+        return new Response(null, {
+            status: response.status,
+            statusText: response.statusText,
+            headers,
+        });
+    }
+
+    if (isPrerendered) {
         return new Response(response.body, {
             status: response.status,
             statusText: response.statusText,
@@ -89,4 +121,3 @@ export const onRequest = defineMiddleware(async ({ request, url }, next) => {
         headers,
     });
 });
-

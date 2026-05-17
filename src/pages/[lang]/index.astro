@@ -8,7 +8,7 @@ import { isValidLocale, getTranslations, type SupportedLocale } from '../../lib/
 import { getTestimonials } from '../../lib/testimonials';
 import { getLatestArticleSlugs, getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
 import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../../lib/products';
-import { buildFaqSchema, buildWebPageSchema, getFreeHoroscopePath, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../../lib/seo';
+import { buildFaqSchema, buildWebPageSchema, getFreeHoroscopePath, getGeneralFaqEntries, getHomeSeoOverride, getProductLandingPath, siteUrl } from '../../lib/seo';
 
 const { lang } = Astro.params;
 if (!lang || lang === 'en') {
@@ -70,13 +70,14 @@ const horoscopeTypes = ([
   landingPath: getProductLandingPath(currentLang, type.id as ProductKey)
 }));
 
-const homepageTitle = `${t.hero.title} | ${t.header.badge} | Astralo`;
-const homepageDescription = [
+const homeSeoOverride = getHomeSeoOverride(currentLang);
+const fallbackHomepageTitle = `${t.hero.title} | ${t.header.badge} | Astralo`;
+const fallbackHomepageDescription = [
   t.hero.subtitle.replace(/\s*•\s*/g, ', '),
   horoscopeTypes.map((type) => type.name).join(', '),
   t.promo.delivery,
 ].join('. ');
-const homepageKeywords = [
+const fallbackHomepageKeywords = [
   t.header.badge,
   ...horoscopeTypes.map((type) => type.name),
   ...horoscopeTypes.map((type) => type.description),
@@ -84,6 +85,9 @@ const homepageKeywords = [
     type.benefits.map((benefit) => benefit.replace(/^[^\s]+\s*/, '').trim())
   ),
 ].join(', ');
+const homepageTitle = homeSeoOverride?.title || fallbackHomepageTitle;
+const homepageDescription = homeSeoOverride?.description || fallbackHomepageDescription;
+const homepageKeywords = homeSeoOverride?.keywords || fallbackHomepageKeywords;
 const pageSchema = [
   buildWebPageSchema({
     url: `${siteUrl}/${currentLang}`,
@@ -150,6 +154,11 @@ const testimonials = getTestimonials(currentLang);
             <p class="text-xl sm:text-xl text-white/80 max-w-3xl mx-auto mb-4">
               {t.hero.subtitle}
             </p>
+            {homeSeoOverride?.supportingCopy && (
+              <p class="text-white/70 text-base max-w-2xl mx-auto mb-4">
+                {homeSeoOverride.supportingCopy}
+              </p>
+            )}
             <p class="text-white/60 text-base">
               ✨ {t.promo.delivery} • 🔒 {t.promo.secure}
             </p>

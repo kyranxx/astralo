@@ -202,7 +202,9 @@ const t = {
         
         if (data.success) {
           const isNewSignup = data.message !== 'Already subscribed';
-          const track = window['astraloTrack'];
+          const track = (window as Window & {
+            astraloTrack?: (eventName: string, params?: Record<string, unknown>) => void;
+          }).astraloTrack;
           if (isNewSignup && typeof track === 'function') {
             track('sign_up', {
               method: 'email_capture',

@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "pull:growth": "node scripts/pull_google_growth_data.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",

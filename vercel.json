@@ -2,10 +2,18 @@
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "framework": "astro",
+    "trailingSlash": false,
     "crons": [
         {
             "path": "/api/email-drip",
             "schedule": "0 9 * * *"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/sitemap.xml",
+            "destination": "/sitemap-index.xml",
+            "permanent": true
         }
     ],
     "headers": [

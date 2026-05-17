@@ -7,6 +7,7 @@ import vercel from '@astrojs/vercel';
 
 const monthlyBlogPattern = /\/(?:[a-z]{2}\/)?blog\/monthly-horoscope-([a-z]+)-(\d{4})\/?$/;
 const zodiacLandingPattern = /\/(?:[a-z]{2}\/)?horoscope\/(?:daily|weekly|monthly|partner)\/[^/]+\/?$/;
+/** @type {Record<string, number>} */
 const monthNameToIndex = {
   january: 0,
   february: 1,
@@ -22,6 +23,7 @@ const monthNameToIndex = {
   december: 11,
 };
 
+/** @param {string} page */
 function isStaleMonthlyBlogUrl(page) {
   const match = page.match(monthlyBlogPattern);
   if (!match) return false;
@@ -91,6 +93,7 @@ export default defineConfig({
         if (page.includes('/admin')) return false;
         if (page.includes('/success')) return false;
         if (page.includes('/form/')) return false;
+        if (page.match(/\/[a-z]{2}\/legal\/(?:terms|privacy|refund|cookies)\/?$/)) return false;
         if (zodiacLandingPattern.test(page)) return false;
         if (isStaleMonthlyBlogUrl(page)) return false;
         // Exclude /en/ pages - they're just 301 redirects to root
@@ -155,7 +158,7 @@ export default defineConfig({
   ],
   output: 'server',
   adapter: vercel(),
-  trailingSlash: 'ignore',
+  trailingSlash: 'never',
   build: {
     format: 'file'
   }

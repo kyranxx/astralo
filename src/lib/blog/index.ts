@@ -10,6 +10,7 @@ import { monthlyHoroscopeJanuary2026 } from './articles/monthly-horoscope-januar
 import { monthlyHoroscope as monthlyHoroscopeFeb } from './articles/monthly-horoscope-february-2026/index';
 import { monthlyHoroscopeMarch2026 } from './articles/monthly-horoscope-march-2026/index';
 import { monthlyHoroscopeApril2026 } from './articles/monthly-horoscope-april-2026/index';
+import { monthlyHoroscopeJune2026 } from './articles/monthly-horoscope-june-2026/index';
 import { loveHoroscopeRelationshipAdvice } from './articles/love-horoscope-relationship-advice/index';
 import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
 import { historyOfAstrology } from './articles/history-of-astrology/index';
@@ -32,6 +33,7 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'monthly-horoscope-february-2026': monthlyHoroscopeFeb,
     'monthly-horoscope-march-2026': monthlyHoroscopeMarch2026,
     'monthly-horoscope-april-2026': monthlyHoroscopeApril2026,
+    'monthly-horoscope-june-2026': monthlyHoroscopeJune2026,
     'love-horoscope-relationship-advice': loveHoroscopeRelationshipAdvice,
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
     'history-of-astrology': historyOfAstrology,
@@ -89,6 +91,13 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         slug: 'monthly-horoscope-april-2026',
         emoji: '☀️',
         date: '2026-03-12T18:00:00Z',
+        readTime: '11',
+        author: 'Astralo Team',
+    },
+    'monthly-horoscope-june-2026': {
+        slug: 'monthly-horoscope-june-2026',
+        emoji: '♊',
+        date: '2026-05-17',
         readTime: '11',
         author: 'Astralo Team',
     },

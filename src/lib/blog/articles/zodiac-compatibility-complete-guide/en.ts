@@ -6,11 +6,11 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '❤️ Zodiac Sign Compatibility: The Definitive Guide to Cosmic Love',
-    excerpt: 'The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.',
+    title: '❤️ Zodiac Compatibility: Best Matches for Every Star Sign in 2026',
+    excerpt: 'The ultimate 2026 guide to zodiac compatibility, zodiac sign compatibility, and star sign compatibility. Compare elements, Venus, Mars, and Moon signs for real relationship insight.',
     category: 'Love & Relationships',
-    metaDescription: 'The ultimate 2026 guide to zodiac compatibility. Go beyond Sun signs and discover how Elements, Venus, and Mars influence your romantic chemistry and long-term potential.',
-    keywords: 'zodiac compatibility, love horoscope, synastry, star sign compatibility, venus sign love, mars sign passion, relationship astrology, best matches',
+    metaDescription: 'Zodiac compatibility guide for 2026: compare zodiac sign compatibility, star sign compatibility, love matches, Venus, Mars, Moon signs, and synastry.',
+    keywords: 'zodiac compatibility, zodiac sign compatibility, zodiac signs compatibility, star sign compatibility, horoscope compatibility, zodiac love compatibility, compatibility zodiac, love horoscope, synastry, best matches',
     quickSummary: [
         'True compatibility involves comparing full birth charts (Synastry), not just Sun signs',
         'Elemental Balance (Fire, Earth, Air, Water) is the foundation of relationship harmony',
@@ -34,6 +34,7 @@ export const en: BlogPostTranslation = {
     content: `
       <h2 id="beyond-sun-signs">Why Sun Signs Aren't Everything</h2>
       <p>We've all been there: checking a magazine or app to see if our crush's sign is compatible with ours. "Oh no, I'm a Leo and he's a Scorpio - we're doomed!" But hold on. <strong>Zodiac compatibility</strong> is infinitely more complex—and hopeful—than simple table matching.</p>
+      <p>This guide covers the search people usually mean by <strong>zodiac sign compatibility</strong>, <strong>star sign compatibility</strong>, <strong>horoscope compatibility</strong>, and <strong>zodiac love compatibility</strong>: which signs feel natural together, which pairs need more work, and when the full birth chart changes the answer.</p>
       
       <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
 

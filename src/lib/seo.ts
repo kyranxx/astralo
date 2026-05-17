@@ -6,8 +6,10 @@ import type { ZodiacSignSlug } from './zodiac';
 
 export const siteUrl = 'https://astralo.online';
 export const brandName = 'Astralo';
+export const legalName = 'Apollo Tech s.r.o.';
 export const supportEmail = 'apollotechsro@gmail.com';
 export const defaultOgImage = `${siteUrl}/og-image.png`;
+const organizationDescription = 'Astralo provides personalized astrology readings and horoscope reports delivered digitally by email.';
 
 export const supportedLocaleOrder: SupportedLocale[] = [
     'en', 'sk', 'cs', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'hu', 'ro',
@@ -24,6 +26,44 @@ export const ogLocaleMap: Record<string, string> = {
     zh: 'zh_CN', th: 'th_TH', vi: 'vi_VN', id: 'id_ID', sv: 'sv_SE',
     da: 'da_DK', fi: 'fi_FI', no: 'nb_NO', bn: 'bn_BD',
 };
+
+export interface HomeSeoOverride {
+    title: string;
+    description: string;
+    keywords: string;
+    supportingCopy: string;
+}
+
+const homeSeoOverrides: Partial<Record<SupportedLocale, HomeSeoOverride>> = {
+    no: {
+        title: 'Gratis personlig horoskop | Personlig horoskop gratis | Astralo',
+        description: 'Start med et gratis personlig horoskop og få en nøyaktig personlig horoskoprapport for kjærlighet, karriere og månedlig astrologi.',
+        keywords: 'gratis personlig horoskop, personlig horoskop gratis, gratis horoskop, gratis norsk horoskop 2026, astrologi horoskop gratis',
+        supportingCopy: 'Start med et gratis personlig horoskop, eller bestill en detaljert rapport basert på fødselsdato, fødselstid og sted.',
+    },
+    de: {
+        title: 'Astral Horoskop online | Persönliches Horoskop | Astralo',
+        description: 'Erstellen Sie Ihr persönliches Astral Horoskop online: Tageshoroskop, Monatshoroskop, Partnerhoroskop und genaue astrologische PDF-Deutung.',
+        keywords: 'astral horoskop, persönliches tageshoroskop, horoskop online, horoskop kostenlos, geburtshoroskop',
+        supportingCopy: 'Ihr Astral Horoskop verbindet Geburtsdaten, Sternzeichen und aktuelle astrologische Themen zu einer persönlichen Deutung.',
+    },
+    da: {
+        title: 'Professionelt horoskop online | Personligt horoskop | Astralo',
+        description: 'Få et professionelt horoskop online med personlig astrologisk læsning for kærlighed, karriere, månedlige temaer og forhold.',
+        keywords: 'professionelt horoskop, få lagt horoskop online, horoskop online, personligt horoskop, horoskop personligt gratis',
+        supportingCopy: 'Få et professionelt horoskop online, skrevet til dine fødselsdata og leveret som en klar personlig rapport.',
+    },
+    fi: {
+        title: 'Astral horoskooppi | Ilmainen päivähoroskooppi | Astralo',
+        description: 'Lue Astral horoskooppi ja aloita ilmaisella päivähoroskoopilla. Saat henkilökohtaisen horoskoopin rakkauteen, uraan ja kuukauden teemoihin.',
+        keywords: 'astral horoskooppi, horoskooppi astral, ilmainen päivähoroskooppi, ilmainen horoskooppi, ilmainen viikkohoroskooppi',
+        supportingCopy: 'Astral horoskooppi näyttää päivän, viikon ja kuukauden tärkeimmät teemat henkilökohtaisen syntymäkarttasi pohjalta.',
+    },
+};
+
+export function getHomeSeoOverride(lang: SupportedLocale): HomeSeoOverride | null {
+    return homeSeoOverrides[lang] || null;
+}
 
 const rtlLocales = new Set<SupportedLocale>(['ar', 'he']);
 
@@ -168,11 +208,24 @@ export function buildOrganizationSchema(description: string) {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
         name: brandName,
+        legalName,
         url: siteUrl,
         logo: `${siteUrl}/logo.webp`,
         image: defaultOgImage,
-        description,
+        description: organizationDescription || description,
         email: supportEmail,
+        areaServed: 'Worldwide',
+        foundingLocation: {
+            '@type': 'Country',
+            name: 'Slovakia',
+        },
+        knowsAbout: [
+            'Astrology',
+            'Horoscopes',
+            'Birth charts',
+            'Zodiac compatibility',
+            'Digital astrology reports',
+        ],
         contactPoint: {
             '@type': 'ContactPoint',
             email: supportEmail,

@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import LanguageSwitcher from '../../../components/LanguageSwitcher.astro';
 import { ArrowLeft, Mail, User, MessageSquare, Send } from 'lucide-astro';
-import { getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../lib/i18n';
+import { getLocaleConfig, getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../lib/i18n';
 import { getContactTranslations } from '../../../locales/contact';
 
 export const prerender = true;
@@ -19,9 +19,12 @@ const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
 
 // Get translations for current language, fallback to English
 const text = getContactTranslations(currentLang);
+const locale = getLocaleConfig(currentLang);
+const pageTitle = `${text.title} - Astralo (${locale.nativeName})`;
+const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
 ---
 
-<Layout title={`${text.title} - Astralo`} lang={currentLang} description="Have a question about your horoscope? Contact the Astralo team. We typically respond within 24 hours.">
+<Layout title={pageTitle} lang={currentLang} description={pageDescription}>
   <!-- hCaptcha Script - must load before captcha widget -->
   <script is:inline src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <div class="min-h-screen flex flex-col relative z-10">

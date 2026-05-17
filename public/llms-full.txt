@@ -37,11 +37,18 @@ These pages start the purchase flow and collect birth data. They are intended fo
 - https://astralo.online/blog
 - https://astralo.online/blog/daily-horoscope-guide
 - https://astralo.online/blog/weekly-horoscope-predictions
+- https://astralo.online/blog/monthly-horoscope-june-2026
 - https://astralo.online/blog/monthly-horoscope-february-2026
 - https://astralo.online/blog/zodiac-compatibility-complete-guide
 - https://astralo.online/blog/birth-chart-reading-explained
 - https://astralo.online/blog/the-12-houses-of-astrology
 - https://astralo.online/blog/twin-flames-and-soulmates-astrology
+
+## How readings are created
+
+Astralo readings use the customer's submitted birth data, product-specific astrology instructions, and AI-assisted writing to create a personalized report. The report generation prompts are designed for simple language, practical guidance, and inclusive content. Astralo avoids medical, legal, financial, political, religious, and dietary advice in generated readings.
+
+All readings are entertainment and reflection products. They should not be treated as professional advice or as a substitute for decisions that require a qualified expert.
 
 ## Product summaries
 

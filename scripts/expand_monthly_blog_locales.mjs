@@ -18,6 +18,11 @@ const ARTICLE_CONFIGS = [
     exportName: 'monthlyHoroscopeApril2026',
     lockedLocales: ['en', 'sk', 'pl', 'hu'],
   },
+  {
+    dir: 'src/lib/blog/articles/monthly-horoscope-june-2026',
+    exportName: 'monthlyHoroscopeJune2026',
+    lockedLocales: ['en'],
+  },
 ];
 
 const TRANSLATE_BASE_URL = 'https://translate.googleapis.com/translate_a/single';
@@ -269,7 +274,7 @@ async function generateMissingLocales(config) {
       alreadyExists = false;
     }
 
-    if (alreadyExists && lockedLocales.has(locale)) {
+    if (alreadyExists) {
       console.log(`[skip] ${config.dir}/${locale}.ts already exists`);
       continue;
     }
