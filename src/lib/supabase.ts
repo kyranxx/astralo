@@ -79,3 +79,12 @@ export interface OrderRow {
     refund_reason: string | null;
     stripe_refund_id: string | null;
 }
+
+export interface EmailSubscriberRow {
+    email: string;
+    source: string;
+    lang: string;
+    gdpr_consent: boolean;
+    subscribed_at: string;
+    updated_at: string;
+}

@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 import {
     loadOrders,
+    loadFreeSubscribers,
     getStatistics,
     updateOrder,
     findOrderById
@@ -77,6 +78,25 @@ export const GET: APIRoute = async ({ request, url }) => {
                     limit,
                     totalPages: Math.ceil(filteredOrders.length / limit)
                 });
+
+            case 'subscribers':
+                const subscribersStartDate = url.searchParams.get('startDate') || undefined;
+                const subscribersEndDate = url.searchParams.get('endDate') || undefined;
+                const subscribersPage = parseInt(url.searchParams.get('page') || '1');
+                const subscribersLimit = parseInt(url.searchParams.get('limit') || '20');
+                const subscribersSource = url.searchParams.get('source');
+                const subscribersSearch = url.searchParams.get('search') || undefined;
+
+                const subscribers = await loadFreeSubscribers({
+                    startDate: subscribersStartDate,
+                    endDate: subscribersEndDate,
+                    page: subscribersPage,
+                    limit: subscribersLimit,
+                    source: subscribersSource,
+                    search: subscribersSearch,
+                });
+
+                return createJsonResponse(subscribers);
 
             case 'order':
                 const orderId = url.searchParams.get('id');

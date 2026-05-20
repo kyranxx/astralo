@@ -3,7 +3,7 @@
  * Stores order data in Supabase for admin dashboard
  */
 
-import { supabase, type OrderRow } from './supabase';
+import { supabase, type EmailSubscriberRow, type OrderRow } from './supabase';
 
 export interface Order {
     id: string;
@@ -59,6 +59,23 @@ export interface OrdersData {
     lastUpdated: string;
 }
 
+export interface FreeSubscriber {
+    email: string;
+    source: string;
+    lang: string;
+    gdprConsent: boolean;
+    subscribedAt: string;
+    updatedAt: string;
+}
+
+export interface FreeSubscribersData {
+    subscribers: FreeSubscriber[];
+    total: number;
+    page: number;
+    limit: number;
+    totalPages: number;
+}
+
 // Convert database row to Order interface (snake_case to camelCase)
 function rowToOrder(row: OrderRow): Order {
     return {
@@ -90,6 +107,17 @@ function rowToOrder(row: OrderRow): Order {
         refundedAt: row.refunded_at || undefined,
         refundReason: row.refund_reason || undefined,
         stripeRefundId: row.stripe_refund_id || undefined,
+    };
+}
+
+function rowToFreeSubscriber(row: EmailSubscriberRow): FreeSubscriber {
+    return {
+        email: row.email,
+        source: row.source,
+        lang: row.lang,
+        gdprConsent: row.gdpr_consent,
+        subscribedAt: row.subscribed_at,
+        updatedAt: row.updated_at,
     };
 }
 
@@ -141,6 +169,68 @@ export async function loadOrders(): Promise<OrdersData> {
 
     const orders = (data || []).map(rowToOrder);
     return { orders, lastUpdated: new Date().toISOString() };
+}
+
+export async function loadFreeSubscribers({
+    startDate,
+    endDate,
+    page = 1,
+    limit = 20,
+    source,
+    search,
+}: {
+    startDate?: string;
+    endDate?: string;
+    page?: number;
+    limit?: number;
+    source?: string | null;
+    search?: string;
+} = {}): Promise<FreeSubscribersData> {
+    const normalizedPage = Number.isFinite(page) ? Math.max(Math.floor(page), 1) : 1;
+    const normalizedLimit = Number.isFinite(limit) ? Math.min(Math.max(Math.floor(limit), 1), 100) : 20;
+    const from = (normalizedPage - 1) * normalizedLimit;
+    const to = from + normalizedLimit - 1;
+
+    let query = supabase
+        .from('email_subscribers')
+        .select('email, source, lang, gdpr_consent, subscribed_at, updated_at', { count: 'exact' })
+        .order('subscribed_at', { ascending: false });
+
+    if (startDate) {
+        query = query.gte('subscribed_at', startDate);
+    }
+    if (endDate) {
+        query = query.lte('subscribed_at', endDate);
+    }
+    if (source && source !== 'all') {
+        query = query.eq('source', source);
+    }
+    if (search?.trim()) {
+        query = query.ilike('email', `%${search.trim()}%`);
+    }
+
+    const { data, error, count } = await query.range(from, to);
+
+    if (error) {
+        console.error('Error loading free subscribers from Supabase:', error);
+        return {
+            subscribers: [],
+            total: 0,
+            page: normalizedPage,
+            limit: normalizedLimit,
+            totalPages: 1,
+        };
+    }
+
+    const total = count || 0;
+
+    return {
+        subscribers: (data || []).map(rowToFreeSubscriber),
+        total,
+        page: normalizedPage,
+        limit: normalizedLimit,
+        totalPages: Math.max(Math.ceil(total / normalizedLimit), 1),
+    };
 }
 
 // Add new order to Supabase
