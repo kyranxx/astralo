@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
 import EmailCapture from '../components/EmailCapture.astro';
+import FeedbackWidget from '../components/FeedbackWidget.astro';
 import { productCatalog, supportedLocaleCodes } from '../lib/agent-ready';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
 import type { ProductKey } from '../lib/products';
@@ -198,6 +199,7 @@ const backgroundImageType = backgroundImage.endsWith('.png')
 
         <slot />
 
+        <FeedbackWidget lang={currentLang} />
         <CookieConsent lang={currentLang} />
         <EmailCapture lang={currentLang} />
         <script is:inline>
