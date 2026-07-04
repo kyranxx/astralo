@@ -1,5 +1,6 @@
 ---
 import { MessageSquare, Send, ThumbsDown, ThumbsUp, X } from 'lucide-astro';
+import { getFeedbackWidgetCopy, getHcaptchaLanguage } from '../lib/feedback-widget-copy';
 
 interface Props {
     lang?: string;
@@ -7,24 +8,33 @@ interface Props {
 
 const { lang = 'en' } = Astro.props;
 const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
+const copy = getFeedbackWidgetCopy(lang);
+const hcaptchaLanguage = getHcaptchaLanguage(lang);
 ---
 
 <div
     id="page-feedback"
     data-lang={lang}
     data-hcaptcha-sitekey={hcaptchaSiteKey}
+    data-hcaptcha-language={hcaptchaLanguage}
+    data-message-choose-rating={copy.chooseRating}
+    data-message-negative-required={copy.negativeRequired}
+    data-message-captcha-required={copy.captchaRequired}
+    data-message-captcha-failed={copy.captchaFailed}
+    data-message-success={copy.success}
+    data-message-failure={copy.failure}
 >
     <button
         id="page-feedback-open"
         type="button"
         class="fixed right-3 bottom-24 z-[70] flex h-12 max-w-[calc(100vw-1.5rem)] items-center justify-center gap-2 rounded-full border border-amber-300/50 bg-amber-500 px-4 text-black shadow-lg shadow-black/30 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2"
-        aria-label="Do you like this page? Give feedback"
+        aria-label={copy.buttonAriaLabel}
         aria-controls="page-feedback-dialog"
         aria-expanded="false"
-        title="Do you like this page?"
+        title={copy.buttonQuestion}
     >
         <MessageSquare class="h-5 w-5 shrink-0" />
-        <span class="text-xs font-bold leading-tight">Do you like this page?</span>
+        <span class="min-w-0 max-w-[14rem] truncate text-xs font-bold leading-tight">{copy.buttonQuestion}</span>
     </button>
 
     <div
@@ -38,7 +48,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
             type="button"
             class="absolute inset-0 bg-black/70 backdrop-blur-sm"
             data-feedback-close
-            aria-label="Close feedback form"
+            aria-label={copy.closeLabel}
         ></button>
 
         <div class="glass-strong relative z-10 w-full max-w-md rounded-2xl border border-white/10 p-5 shadow-2xl sm:p-7">
@@ -46,16 +56,16 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                 type="button"
                 class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/70 transition hover:bg-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-amber-300"
                 data-feedback-close
-                aria-label="Close feedback form"
+                aria-label={copy.closeLabel}
             >
                 <X class="h-5 w-5" />
             </button>
 
             <div class="pr-10">
-                <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-amber-300">Page feedback</p>
-                <h2 id="page-feedback-title" class="text-2xl font-bold text-white">Do you like this page?</h2>
+                <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-amber-300">{copy.eyebrow}</p>
+                <h2 id="page-feedback-title" class="text-2xl font-bold text-white">{copy.title}</h2>
                 <p class="mt-2 text-sm leading-relaxed text-white/65">
-                    Tell us what worked, or what you expected, wanted changed, or wanted added.
+                    {copy.intro}
                 </p>
             </div>
 
@@ -74,7 +84,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                         data-rating="helpful"
                     >
                         <ThumbsUp class="h-4 w-4 shrink-0 text-amber-300" />
-                        Yes
+                        {copy.yes}
                     </button>
                     <button
                         type="button"
@@ -82,13 +92,13 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                         data-rating="not_helpful"
                     >
                         <ThumbsDown class="h-4 w-4 shrink-0 text-amber-300" />
-                        Not really
+                        {copy.notReally}
                     </button>
                 </div>
 
                 <div>
                     <label for="page-feedback-text" class="mb-2 block text-sm font-medium text-white/90">
-                        What should we change or add?
+                        {copy.feedbackLabel}
                     </label>
                     <textarea
                         id="page-feedback-text"
@@ -96,13 +106,13 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                         rows="4"
                         maxlength="1500"
                         class="input w-full resize-none p-4 text-base"
-                        placeholder="Short, honest feedback is enough."
+                        placeholder={copy.feedbackPlaceholder}
                     ></textarea>
                 </div>
 
                 <div>
                     <label for="page-feedback-email" class="mb-2 block text-sm font-medium text-white/90">
-                        Email optional
+                        {copy.emailLabel}
                     </label>
                     <input
                         id="page-feedback-email"
@@ -110,7 +120,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                         type="email"
                         autocomplete="email"
                         class="input w-full p-4 text-base"
-                        placeholder="Only if you want a reply"
+                        placeholder={copy.emailPlaceholder}
                     />
                 </div>
 
@@ -126,7 +136,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
                     class="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-amber-500 px-5 font-bold text-black transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                     <Send class="h-4 w-4" />
-                    <span>Send feedback</span>
+                    <span>{copy.submit}</span>
                 </button>
             </form>
         </div>
@@ -135,7 +145,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
 
 <script>
     type HcaptchaApi = {
-        render: (container: HTMLElement, options: { sitekey: string; theme: string }) => string | number;
+        render: (container: HTMLElement, options: { sitekey: string; theme: string; hl?: string }) => string | number;
         getResponse: (widgetId?: string | number) => string;
         reset: (widgetId?: string | number) => void;
     };
@@ -150,6 +160,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
     const submitButton = document.getElementById('page-feedback-submit') as HTMLButtonElement | null;
     const captchaContainer = document.getElementById('page-feedback-captcha');
     const hcaptchaSiteKey = root?.dataset.hcaptchaSitekey || '';
+    const hcaptchaLanguage = root?.dataset.hcaptchaLanguage || 'en';
     let captchaWidgetId: string | number | null = null;
     let captchaLoading = false;
 
@@ -174,6 +185,10 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
         message.className = 'hidden text-sm font-medium';
     }
 
+    function getMessage(key: string, fallback: string) {
+        return root?.dataset[key] || fallback;
+    }
+
     function renderCaptcha() {
         const hcaptcha = getHcaptcha();
         if (!hcaptcha || !captchaContainer || !hcaptchaSiteKey || captchaWidgetId !== null) return;
@@ -181,6 +196,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
         captchaWidgetId = hcaptcha.render(captchaContainer, {
             sitekey: hcaptchaSiteKey,
             theme: 'dark',
+            hl: hcaptchaLanguage,
         });
     }
 
@@ -194,7 +210,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
         captchaLoading = true;
 
         const script = document.createElement('script');
-        script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit';
+        script.src = `https://js.hcaptcha.com/1/api.js?render=explicit&hl=${encodeURIComponent(hcaptchaLanguage)}`;
         script.async = true;
         script.defer = true;
         script.addEventListener('load', renderCaptcha, { once: true });
@@ -257,19 +273,19 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
 
         const feedbackText = (form.querySelector('[name="feedback"]') as HTMLTextAreaElement | null)?.value.trim() || '';
         if (!ratingInput.value) {
-            setMessage('Please choose yes or not really.', 'error');
+            setMessage(getMessage('messageChooseRating', 'Please choose yes or not really.'), 'error');
             return;
         }
 
         if (ratingInput.value === 'not_helpful' && !feedbackText) {
-            setMessage('Please tell us what you expected, wanted changed, or wanted added.', 'error');
+            setMessage(getMessage('messageNegativeRequired', 'Please tell us what you expected, wanted changed, or wanted added.'), 'error');
             return;
         }
 
         const hcaptcha = getHcaptcha();
         const hcaptchaToken = hcaptcha && captchaWidgetId !== null ? hcaptcha.getResponse(captchaWidgetId) : '';
         if (!hcaptchaToken) {
-            setMessage('Please complete the captcha.', 'error');
+            setMessage(getMessage('messageCaptchaRequired', 'Please complete the captcha.'), 'error');
             return;
         }
 
@@ -294,10 +310,13 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
             const data = await response.json().catch(() => ({}));
 
             if (!response.ok || !data.success) {
-                throw new Error(data.error || 'Failed to send feedback.');
+                const fallbackError = data.errorCode === 'captcha_failed'
+                    ? getMessage('messageCaptchaFailed', 'Captcha verification failed. Please try again.')
+                    : getMessage('messageFailure', 'Failed to send feedback.');
+                throw new Error(fallbackError);
             }
 
-            setMessage('Thanks - your feedback was sent.', 'success');
+            setMessage(getMessage('messageSuccess', 'Thanks - your feedback was sent.'), 'success');
             form.reset();
             selectRating('');
             if (captchaWidgetId !== null) {
@@ -305,7 +324,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
             }
             setTimeout(closeDialog, 1800);
         } catch (error) {
-            setMessage(error instanceof Error ? error.message : 'Failed to send feedback.', 'error');
+            setMessage(error instanceof Error ? error.message : getMessage('messageFailure', 'Failed to send feedback.'), 'error');
             if (captchaWidgetId !== null) {
                 hcaptcha?.reset(captchaWidgetId);
             }

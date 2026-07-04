@@ -13,7 +13,7 @@ export const POST: APIRoute = async ({ request }) => {
     try {
         body = await request.json();
     } catch {
-        return new Response(JSON.stringify({ error: 'Invalid JSON' }), {
+        return new Response(JSON.stringify({ error: 'Invalid JSON', errorCode: 'invalid_json' }), {
             status: 400,
             headers: jsonHeaders,
         });
@@ -23,7 +23,7 @@ export const POST: APIRoute = async ({ request }) => {
     const parsed = parsePageFeedbackPayload(enrichedBody);
 
     if (!parsed.ok) {
-        return new Response(JSON.stringify({ error: parsed.error }), {
+        return new Response(JSON.stringify({ error: parsed.error, errorCode: 'invalid_feedback' }), {
             status: 400,
             headers: jsonHeaders,
         });
@@ -33,7 +33,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (!HCAPTCHA_SECRET) {
         console.error('Page feedback hCaptcha secret missing');
-        return new Response(JSON.stringify({ error: 'Feedback protection is not configured.' }), {
+        return new Response(JSON.stringify({ error: 'Feedback protection is not configured.', errorCode: 'captcha_not_configured' }), {
             status: 500,
             headers: jsonHeaders,
         });
@@ -46,7 +46,7 @@ export const POST: APIRoute = async ({ request }) => {
     );
 
     if (!captchaOk) {
-        return new Response(JSON.stringify({ error: 'Captcha verification failed. Please try again.' }), {
+        return new Response(JSON.stringify({ error: 'Captcha verification failed. Please try again.', errorCode: 'captcha_failed' }), {
             status: 400,
             headers: jsonHeaders,
         });
@@ -54,7 +54,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
         console.error('Page feedback SMTP configuration missing');
-        return new Response(JSON.stringify({ error: 'Email service is not configured.' }), {
+        return new Response(JSON.stringify({ error: 'Email service is not configured.', errorCode: 'email_not_configured' }), {
             status: 500,
             headers: jsonHeaders,
         });
@@ -85,7 +85,7 @@ export const POST: APIRoute = async ({ request }) => {
         });
     } catch (error) {
         console.error('Page feedback email error:', error);
-        return new Response(JSON.stringify({ error: 'Failed to send feedback.' }), {
+        return new Response(JSON.stringify({ error: 'Failed to send feedback.', errorCode: 'email_failed' }), {
             status: 500,
             headers: jsonHeaders,
         });
