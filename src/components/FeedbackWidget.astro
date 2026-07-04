@@ -17,13 +17,14 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
     <button
         id="page-feedback-open"
         type="button"
-        class="fixed right-3 bottom-24 z-[70] flex h-12 w-12 items-center justify-center rounded-full border border-amber-300/50 bg-amber-500 text-black shadow-lg shadow-black/30 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2"
-        aria-label="Give page feedback"
+        class="fixed right-3 bottom-24 z-[70] flex h-12 max-w-[calc(100vw-1.5rem)] items-center justify-center gap-2 rounded-full border border-amber-300/50 bg-amber-500 px-4 text-black shadow-lg shadow-black/30 transition hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2"
+        aria-label="Do you like this page? Give feedback"
         aria-controls="page-feedback-dialog"
         aria-expanded="false"
-        title="Give feedback"
+        title="Do you like this page?"
     >
-        <MessageSquare class="h-5 w-5" />
+        <MessageSquare class="h-5 w-5 shrink-0" />
+        <span class="text-xs font-bold leading-tight">Do you like this page?</span>
     </button>
 
     <div
@@ -52,7 +53,7 @@ const hcaptchaSiteKey = '9ece67fe-3494-49f8-a400-021e108e0138';
 
             <div class="pr-10">
                 <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-amber-300">Page feedback</p>
-                <h2 id="page-feedback-title" class="text-2xl font-bold text-white">Was this page helpful?</h2>
+                <h2 id="page-feedback-title" class="text-2xl font-bold text-white">Do you like this page?</h2>
                 <p class="mt-2 text-sm leading-relaxed text-white/65">
                     Tell us what worked, or what you expected, wanted changed, or wanted added.
                 </p>
