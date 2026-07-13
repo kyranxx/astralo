@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const sr: Translations = {
     meta: {
-        title: 'Astralo - Profesionalni Horoskopi',
-        description: 'Dobijte personalizovani horoskop. Tačna predviđanja za dnevni, nedeljni, mesečni i partnerski horoskop.',
+        title: "Astralo - Profesionalni Horoskopi",
+        description: "Dobijte personalizovani horoskop. Tačna predviđanja za dnevni, nedeljni, mesečni i partnerski horoskop.",
         keywords: 'horoskop, astrologija, zodijak, predviđanja, personalizovani horoskop'
     },
     header: {
@@ -11,15 +11,15 @@ const sr: Translations = {
         online: 'Online'
     },
     promo: {
-        offer: 'OGRANIČENA PONUDA: 50% popusta!',
+        offer: "Profesionalni Horoskopi",
         delivery: 'Trenutna dostava',
-        customers: '50.000+ zadovoljnih kupaca',
+        customers: "Trenutna dostava",
         secure: 'Sigurno plaćanje'
     },
     hero: {
         title: 'Vaš Lični Horoskop',
         subtitle: 'Konačno tačan horoskop • Kreiran posebno za vas',
-        features: '✨ Trenutna dostava • 🔒 Sigurna plaćanja • ⭐ 50.000+ kupaca'
+        features: "✨ Trenutna dostava • 🔒 Sigurno plaćanje • ⭐ Profesionalni Horoskopi"
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const sr: Translations = {
         technology: { title: 'Tehnologija', description: 'Moderna tehnologija' },
         instant: { title: 'Trenutno', description: 'Gotovo za minute' },
         professional: { title: 'Profesionalno', description: 'Astrološki principi' },
-        verified: { title: 'Provereno', description: '50.000+ kupaca' }
+        verified: { title: 'Provereno', description: "Profesionalni Horoskopi" }
     },
     form: {
         title: 'Dobijte horoskop',
@@ -130,7 +130,7 @@ const sr: Translations = {
         q1: 'Šta je Astralo?',
         a1: 'Astralo je profesionalna online horoskop usluga koja pruža personalizovana astrološka čitanja zasnovana na vašim tačnim podacima o rođenju (datum, vreme i mesto). Nudimo dnevne, nedeljne, mesečne horoskope i analizu partnerske kompatibilnosti, isporučene trenutno kao prelepo dizajnirani PDF dokumenti na vaš imejl.',
         q2: 'Koliko su tačni Astralo horoskopi?',
-        a2: 'Astralo horoskopi su kreirani koristeći napredne astrološke algoritme zasnovane na vašim preciznim podacima o rođenju. Sa preko 50.000 zadovoljnih kupaca i ocenom 4,9/5 zvezdica, naša personalizovana čitanja pružaju detaljne uvide za zabavne svrhe.',
+        a2: "Astralo horoskopi su kreirani koristeći napredne astrološke algoritme zasnovane na vašim preciznim podacima o rođenju.",
         q3: 'Koliko brzo ću dobiti svoj horoskop?',
         a3: 'Vaš personalizovani horoskop se generiše i isporučuje trenutno na vaš imejl u roku od 2-5 minuta od plaćanja. Dobićete profesionalni PDF dokument sa vašim potpunim astrološkim čitanjem.',
         q4: 'Koje načine plaćanja prihvatate?',
@@ -142,7 +142,7 @@ const sr: Translations = {
     },
     emailCapture: {
         title: '✨ Dobijte besplatnu natalnu kartu i nedeljnu prognozu',
-        subtitle: 'Pridružite se 50.000+ drugih koji svakog ponedeljka dobijaju personalizovane kosmičke uvide i besplatne izveštaje!',
+        subtitle: "Dobijte besplatnu natalnu kartu i nedeljnu prognozu. Trenutna dostava.",
         placeholder: 'Unesite svoj email',
         button: 'Dobijte moje besplatno čitanje',
         consent: 'Pristajem na primanje kosmičkih uvida i prihvatam pravila privatnosti.',
@@ -150,12 +150,12 @@ const sr: Translations = {
         error: 'Nešto je pošlo po zlu. Molimo pokušajte ponovo.',
     },
     ads: {
-        sticky: 'Poslednji sati: 50% poseban popust otključan',
+        sticky: "Profesionalni Horoskopi",
         claim: 'Preuzmi sada',
-        limited: 'Ograničena ponuda',
+        limited: "Trenutna dostava",
         unlock: 'Otključajte svoj',
         waiting: 'vas čeka...',
-        join: 'Pridružite se 50.000+ duša koje su pronašle jasnost u zvezdama.',
+        join: "Profesionalni Horoskopi",
         getFor: 'Nabavite za',
     },
 };

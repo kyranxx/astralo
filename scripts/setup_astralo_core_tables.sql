@@ -25,7 +25,7 @@ create table if not exists public.orders (
   partner_birth_date text,
   partner_birth_time text,
   partner_birth_place text,
-  product_key text not null check (product_key in ('daily', 'weekly', 'monthly', 'partner')),
+  product_key text not null check (product_key in ('daily', 'weekly', 'monthly', 'partner', 'lifetime')),
   product_name text not null,
   amount integer not null,
   currency text not null default 'eur',

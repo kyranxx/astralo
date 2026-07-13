@@ -2,6 +2,7 @@ import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
+import { getProductKeys, getProductName, getProductPriceInEuros } from './products';
 
 // ============================================================================
 // MULTI-LANGUAGE FONT SUPPORT - LOCAL FONTS (BLAZING FAST!)
@@ -138,7 +139,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         // Load and embed logo image
         let logoImage: any = null;
         try {
-            const logoPath = join(process.cwd(), 'public', 'ma_symbol_opt_73_3x.png');
+            const logoPath = join(process.cwd(), 'public', 'logo.png');
             const logoBytes = await readFile(logoPath);
             logoImage = await doc.embedPng(logoBytes);
         } catch (e) {
@@ -319,7 +320,7 @@ export async function generateLegalPDFs(language: string = 'en'): Promise<{ file
         y -= 18;
 
         // Version and date line
-        const dateText = `Version 1.0 • Last updated: December 5, 2026`;
+        const dateText = `Version 1.0 • Last updated: May 27, 2026`;
         const dateWidth = font.widthOfTextAtSize(dateText, 9);
         currentPage.drawText(dateText, {
             x: (width - dateWidth) / 2,
@@ -487,6 +488,10 @@ Používame cookies na:
 Môžete kontrolovať a spravovať cookies v nastaveniach vášho prehliadača. Upozorňujeme, že deaktivácia cookies môže ovplyvniť funkcionalitu našej webovej stránky.
 `;
 
+    const productTermsList = getProductKeys()
+        .map((productKey) => `- ${getProductName(productKey, 'en')} (€${getProductPriceInEuros(productKey).toFixed(2)})`)
+        .join('\n');
+
     // ENGLISH LEGAL DOCUMENTS (matching webapp content exactly)
     const termsContentEn = `
 IMPORTANT: This agreement is governed by the laws of the Slovak Republic and the European Union. By using our services, you agree to submit to the exclusive jurisdiction of Slovak courts.
@@ -501,10 +506,7 @@ These Terms of Service govern your use of the Astralo website and services opera
 
 2. Service Description
 Astralo provides personalized horoscope services including:
-- Daily Horoscope (€0.99)
-- Weekly Horoscope (€2.99)
-- Monthly Horoscope (€7.99)
-- Partner Compatibility Horoscope (€7.99)
+${productTermsList}
 
 All horoscopes are personalized based on the birth data you provide and are delivered digitally via email as PDF documents.
 

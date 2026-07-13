@@ -4,6 +4,8 @@
  */
 
 import { supabase, type EmailSubscriberRow, type OrderRow } from './supabase';
+import { getSubscriberCaptureSurface } from './lead-attribution';
+import type { ProductKey } from './products';
 
 export interface Order {
     id: string;
@@ -25,7 +27,7 @@ export interface Order {
     partnerBirthPlace?: string;
 
     // Product info
-    productKey: 'daily' | 'weekly' | 'monthly' | 'partner';
+    productKey: ProductKey;
     productName: string;
     amount: number; // in cents
     currency: string;
@@ -393,10 +395,12 @@ async function getFreeSubscriberStats(startDate?: string, endDate?: string) {
 
     const subscribers = data || [];
 
+    const captureSurfaces = subscribers.map((subscriber: any) => getSubscriberCaptureSurface(subscriber.source || ''));
+
     return {
         freeSubscribers: subscribers.length,
-        freeSubscribersInline: subscribers.filter((subscriber: any) => subscriber.source === 'inline').length,
-        freeSubscribersPopup: subscribers.filter((subscriber: any) => subscriber.source === 'popup').length,
+        freeSubscribersInline: captureSurfaces.filter((surface) => surface === 'inline').length,
+        freeSubscribersPopup: captureSurfaces.filter((surface) => surface === 'popup').length,
     };
 }
 

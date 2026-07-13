@@ -1,6 +1,29 @@
-import { getTranslations, isValidLocale, type SupportedLocale } from './i18n';
-import { getProductName, type ProductKey } from './products';
-import { getProductLandingPath, siteUrl } from './seo';
+import { getProductName, type ProductKey } from './products.ts';
+
+const siteUrl = 'https://astralo.online';
+const supportedLocales = [
+    'en', 'sk', 'cs', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'hu', 'ro',
+    'bg', 'hr', 'sl', 'sr', 'uk', 'ru', 'el', 'tr', 'ar', 'he', 'hi', 'ja',
+    'ko', 'zh', 'th', 'vi', 'id', 'sv', 'da', 'fi', 'no', 'bn',
+] as const;
+type SupportedLocale = (typeof supportedLocales)[number];
+
+const supportedLocaleSet = new Set<string>(supportedLocales);
+
+function normalizeFollowupLang(lang: string): SupportedLocale {
+    const normalized = lang.toLowerCase().trim();
+    return supportedLocaleSet.has(normalized) ? normalized as SupportedLocale : 'en';
+}
+
+function getFollowupProductLandingPath(lang: SupportedLocale, productKey: ProductKey): string {
+    return lang === 'en' ? `/horoscope/${productKey}` : `/${lang}/horoscope/${productKey}`;
+}
+
+function getDeliveryCopy(lang: SupportedLocale): string {
+    if (lang === 'pt') return 'Entrega instantânea por email';
+    if (lang === 'cs') return 'Okamžité doručení e-mailem';
+    return 'Instant email delivery';
+}
 
 export interface EmailFollowupRow {
     id?: string;
@@ -27,6 +50,8 @@ type FollowupDefinition = {
     bullets: string[];
     ctaLabel: string;
 };
+
+type FollowupCopy = Pick<FollowupDefinition, 'subject' | 'headline' | 'body' | 'bullets' | 'ctaLabel'>;
 
 const followupDefinitions: FollowupDefinition[] = [
     {
@@ -121,19 +146,96 @@ const followupDefinitions: FollowupDefinition[] = [
     },
 ];
 
+const localizedFollowupCopy: Partial<Record<SupportedLocale, Record<string, FollowupCopy>>> = {
+    pt: {
+        day_1_weekly: {
+            subject: 'Dia 1: veja os próximos 7 dias com mais clareza',
+            headline: 'A sua próxima semana fica mais clara com uma previsão semanal',
+            body: 'O guia gratuito dá uma direção geral. A leitura semanal acrescenta melhor timing para trabalho, dinheiro e relações.',
+            bullets: [
+                'Veja o dia mais forte da semana',
+                'Identifique o melhor momento para agir',
+                'Receba uma leitura paga rápida antes de a semana mudar',
+            ],
+            ctaLabel: 'Abrir leitura semanal',
+        },
+        day_2_monthly: {
+            subject: 'Dia 2: aprofunde mais do que um horóscopo geral',
+            headline: 'Uma leitura mensal dá mais contexto e melhor timing',
+            body: 'Conteúdo geral ajuda na direção. A leitura mensal é melhor quando quer timing mais amplo e apoio para decisões.',
+            bullets: [
+                'Veja onde a sua energia está mais forte este mês',
+                'Planeie mudanças importantes antes de reagir tarde',
+                'Use os seus dados de nascimento para uma leitura mais pessoal',
+            ],
+            ctaLabel: 'Abrir leitura mensal',
+        },
+        day_3_partner: {
+            subject: 'Dia 3: amor e compatibilidade ficam mais claros',
+            headline: 'O timing da relação melhora com uma leitura de casal',
+            body: 'Se amor ou relação são temas importantes agora, uma leitura de casal costuma ser mais útil do que uma previsão geral.',
+            bullets: [
+                'Compare pontos fortes e desafios da relação',
+                'Entenda melhor o timing emocional',
+                'Veja onde a compatibilidade flui ou bloqueia',
+            ],
+            ctaLabel: 'Abrir leitura de casal',
+        },
+        day_4_monthly: {
+            subject: 'Dia 4: o que o horóscopo gratuito não mostra totalmente',
+            headline: 'O timing pessoal melhora quando usamos os seus dados de nascimento',
+            body: 'Conteúdo gratuito ajuda com tendências amplas. Leituras pagas aprofundam porque usam os seus detalhes de nascimento e o seu mapa.',
+            bullets: [
+                'Mais pessoal do que um artigo geral sobre signos',
+                'Melhor timing para escolhas maiores',
+                'Útil quando quer detalhe, não só inspiração',
+            ],
+            ctaLabel: 'Ver leitura mensal',
+        },
+        day_5_weekly: {
+            subject: 'Dia 5: a hora de nascimento é opcional',
+            headline: 'Pode encomendar mesmo sem saber a hora de nascimento',
+            body: 'Não saber a hora exata não bloqueia a leitura. Se souber, ótimo. Se não souber, ainda pode avançar e receber orientação útil.',
+            bullets: [
+                'A hora de nascimento é opcional no formulário',
+                'A leitura semanal é o próximo passo mais rápido',
+                'Boa escolha quando quer clareza sem esperar',
+            ],
+            ctaLabel: 'Começar leitura semanal',
+        },
+        day_6_final: {
+            subject: 'Dia 6: último lembrete para uma leitura pessoal mais profunda',
+            headline: 'A sua semana gratuita está quase completa',
+            body: 'Se o guia gratuito ajudou, o próximo passo é uma leitura pessoal com mais detalhe sobre timing, foco e o que importa agora.',
+            bullets: [
+                'Passe de orientação geral para timing pessoal',
+                'Escolha a leitura que combina com a sua próxima decisão',
+                'Aproveite enquanto o interesse está fresco',
+            ],
+            ctaLabel: 'Abrir próxima leitura',
+        },
+    },
+};
+
+function getLocalizedFollowupDefinition(definition: FollowupDefinition, lang: SupportedLocale): FollowupDefinition {
+    const copy = localizedFollowupCopy[lang]?.[definition.stepKey];
+    return copy ? { ...definition, ...copy } : definition;
+}
+
 export function getFollowupDefinitions(): FollowupDefinition[] {
     return followupDefinitions;
 }
 
 export function buildFollowupRows(email: string, lang: string, subscribedAt = new Date()): EmailFollowupRow[] {
     const normalizedEmail = email.toLowerCase().trim();
+    const normalizedLang = normalizeFollowupLang(lang);
     return followupDefinitions.map((definition) => {
         const scheduledFor = new Date(subscribedAt);
         scheduledFor.setUTCDate(scheduledFor.getUTCDate() + definition.delayDays);
 
         return {
             email: normalizedEmail,
-            lang,
+            lang: normalizedLang,
             step_key: definition.stepKey,
             step_number: definition.stepNumber,
             product_key: definition.productKey,
@@ -147,13 +249,13 @@ export function getFollowupDefinition(stepKey: string): FollowupDefinition | und
 }
 
 export function buildFollowupEmailHtml(email: string, lang: string, stepKey: string): { subject: string; html: string } | null {
-    const definition = getFollowupDefinition(stepKey);
-    if (!definition) return null;
+    const baseDefinition = getFollowupDefinition(stepKey);
+    if (!baseDefinition) return null;
 
-    const normalizedLang: SupportedLocale = isValidLocale(lang) ? lang : 'en';
-    const translations = getTranslations(normalizedLang);
+    const normalizedLang = normalizeFollowupLang(lang);
+    const definition = getLocalizedFollowupDefinition(baseDefinition, normalizedLang);
     const productName = getProductName(definition.productKey, normalizedLang);
-    const path = getProductLandingPath(normalizedLang, definition.productKey);
+    const path = getFollowupProductLandingPath(normalizedLang, definition.productKey);
     const trackedUrl = `${siteUrl}${path}?utm_source=email&utm_medium=drip&utm_campaign=${definition.stepKey}`;
 
     const html = `
@@ -191,7 +293,7 @@ export function buildFollowupEmailHtml(email: string, lang: string, stepKey: str
                     <a href="${trackedUrl}" class="btn">${definition.ctaLabel}</a>
                 </div>
 
-                <p class="muted">${translations.promo.delivery}</p>
+                <p class="muted">${getDeliveryCopy(normalizedLang)}</p>
                 <p class="muted">Sent to ${email} by the Astralo team.</p>
             </div>
         </div>

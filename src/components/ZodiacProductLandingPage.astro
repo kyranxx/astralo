@@ -7,8 +7,9 @@ import ZodiacSignGrid from './ZodiacSignGrid.astro';
 import { ArrowLeft, Calendar, Shield, Sparkles, Star, Zap } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { getTestimonials } from '../lib/testimonials';
-import { getProductOriginalPriceInEuros, getProductPriceInEuros, type ProductKey } from '../lib/products';
+import { getProductCopy, getProductPriceInEuros, type ProductKey } from '../lib/products';
 import { fillZodiacTemplate, getZodiacLocaleCopy, type ZodiacSignSlug } from '../lib/zodiac';
+import { blogUiTranslations } from '../lib/blog/ui-translations';
 import {
     buildBreadcrumbSchema,
     buildFaqSchema,
@@ -30,18 +31,18 @@ interface Props {
 
 const { lang, type, sign } = Astro.props;
 const t = getTranslations(lang);
+const ui = blogUiTranslations[lang] || blogUiTranslations.en;
 const zodiac = getZodiacLocaleCopy(lang);
 const signData = zodiac.signs[sign];
-const product = t.products[type];
+const product = getProductCopy(type, lang, t);
 const homePath = getHomePath(lang);
 const baseProductPath = getProductLandingPath(lang, type);
 const pagePath = getZodiacProductPath(lang, type, sign);
 const formPath = getFormPath(lang, type);
 const pageUrl = `${siteUrl}${pagePath}`;
 const productPrice = getProductPriceInEuros(type);
-const originalPrice = getProductOriginalPriceInEuros(type);
 const testimonials = getTestimonials(lang).slice(0, 3);
-const generalFaqs = getGeneralFaqEntries(t);
+const generalFaqs = getGeneralFaqEntries(t, lang);
 
 const productName = product.name;
 const localizedIntro = fillZodiacTemplate(zodiac.ui.intro, {
@@ -81,7 +82,7 @@ const pageSchema = [
         lang,
     }),
     buildBreadcrumbSchema([
-        { name: 'Home', url: `${siteUrl}${homePath === '/' ? '' : homePath.replace(/\/$/, '')}` || siteUrl },
+        { name: ui.home, url: `${siteUrl}${homePath === '/' ? '' : homePath.replace(/\/$/, '')}` || siteUrl },
         { name: productName, url: `${siteUrl}${baseProductPath}` },
         { name: signData.name, url: pageUrl },
     ]),
@@ -138,12 +139,10 @@ const pageSchema = [
                         </div>
 
                         <div class="rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 text-center">
-                            <p class="text-white/60 text-sm uppercase tracking-[0.3em] mb-2">Today&apos;s Price</p>
-                            <div class="flex items-end justify-center gap-3 mb-2">
-                                <span class="text-white/40 text-xl line-through">{originalPrice.toFixed(2)} EUR</span>
+                            <p class="text-white/60 text-sm uppercase mb-2">{t.promo.delivery}</p>
+                            <div class="flex items-end justify-center mb-6">
                                 <span class="text-5xl font-black text-white leading-none">{productPrice.toFixed(2)} EUR</span>
                             </div>
-                            <p class="text-amber-400 font-bold uppercase tracking-[0.18em] text-xs mb-6">Limited offer</p>
 
                             <a
                                 href={formPath}
@@ -202,7 +201,7 @@ const pageSchema = [
                         <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
                             <img
                                 src="/pdf-sample-preview.webp"
-                                alt="Sample horoscope PDF preview"
+                                alt={`${productName} PDF`}
                                 class="w-full rounded-xl border border-white/10"
                                 loading="eager"
                                 decoding="async"
@@ -233,26 +232,28 @@ const pageSchema = [
                     </div>
                 </section>
 
-                <section class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
-                    <div class="flex items-center gap-3 mb-6">
-                        <Star class="w-6 h-6 text-amber-400" />
-                        <h2 class="text-2xl sm:text-3xl font-bold text-white">{t.testimonials.title}</h2>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        {testimonials.map((testimonial) => (
-                            <article class="rounded-xl bg-white/5 border border-white/10 p-5">
-                                <div class="flex items-center gap-1 mb-3">
-                                    {[...Array(testimonial.rating)].map(() => (
-                                        <Star class="w-4 h-4 text-amber-400 fill-amber-400" />
-                                    ))}
-                                </div>
-                                <p class="text-white/85 leading-relaxed mb-4">&quot;{testimonial.text}&quot;</p>
-                                <p class="text-white font-semibold">{testimonial.name}</p>
-                                <p class="text-white/50 text-sm">{testimonial.location}</p>
-                            </article>
-                        ))}
-                    </div>
-                </section>
+                {testimonials.length > 0 && (
+                    <section class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <Star class="w-6 h-6 text-amber-400" />
+                            <h2 class="text-2xl sm:text-3xl font-bold text-white">{t.testimonials.title}</h2>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            {testimonials.map((testimonial) => (
+                                <article class="rounded-xl bg-white/5 border border-white/10 p-5">
+                                    <div class="flex items-center gap-1 mb-3">
+                                        {[...Array(testimonial.rating)].map(() => (
+                                            <Star class="w-4 h-4 text-amber-400 fill-amber-400" />
+                                        ))}
+                                    </div>
+                                    <p class="text-white/85 leading-relaxed mb-4">&quot;{testimonial.text}&quot;</p>
+                                    <p class="text-white font-semibold">{testimonial.name}</p>
+                                    <p class="text-white/50 text-sm">{testimonial.location}</p>
+                                </article>
+                            ))}
+                        </div>
+                    </section>
+                )}
 
                 <ZodiacSignGrid lang={lang} type={type} currentSign={sign} />
 

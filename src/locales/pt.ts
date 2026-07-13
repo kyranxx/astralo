@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const pt: Translations = {
     meta: {
-        title: 'Astralo - Horóscopo de Hoje Grátis 2026 | Previsões Signos Zodíaco',
-        description: 'Obtenha seu horóscopo GRÁTIS hoje! ⭐ Horóscopo diário, semanal e mensal. Compatibilidade amorosa, carreira e previsões. 50.000+ clientes satisfeitos. Entrega instantânea!',
+        title: "Astralo - Horóscopo de Hoje Grátis 2026 | Previsões Signos Zodíaco",
+        description: "Obtenha seu horóscopo GRÁTIS hoje! ⭐ Horóscopo diário, semanal e mensal. Compatibilidade amorosa, carreira e previsões. Entrega instantânea!",
         keywords: 'horóscopo de hoje, horóscopo grátis, horóscopo 2026, signos do zodíaco, horóscopo amor, compatibilidade signos, horóscopo semanal, horóscopo mensal, mapa astral, ascendente, previsões astrológicas, horóscopo personalizado, tarot, astrologia',
     },
     header: {
@@ -11,15 +11,15 @@ const pt: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'OFERTA LIMITADA: 50% de desconto em todos os horóscopos!',
+        offer: "Horóscopos Personalizados",
         delivery: 'Entrega instantânea por email',
-        customers: '50.000+ clientes satisfeitos',
+        customers: "Entrega instantânea por email",
         secure: 'Pagamento seguro com Stripe',
     },
     hero: {
         title: 'O Seu Horóscopo Pessoal',
         subtitle: 'Finalmente um horóscopo verdadeiramente preciso • Criado especialmente para si',
-        features: '✨ Entrega instantânea • 🔒 Pagamentos seguros • ⭐ 50.000+ clientes satisfeitos',
+        features: "✨ Entrega instantânea por email • 🔒 Pagamento seguro com Stripe • ⭐ Horóscopos Personalizados",
     },
     products: {
         daily: {
@@ -30,7 +30,7 @@ const pt: Translations = {
         },
         weekly: {
             name: 'Horóscopo Semanal',
-            description: 'Visão completa da sua semana com datas importantes e recomendações',
+            description: 'Receba um horóscopo semanal personalizado para planear os próximos 7 dias com datas importantes e recomendações práticas',
             wordCount: '~400 palavras',
             benefits: ['✅ Tudo do diário', '🎯 Dia de sorte', '💰 Previsão financeira', '❤️ Amor e carreira'],
         },
@@ -64,7 +64,7 @@ const pt: Translations = {
         technology: { title: 'Tecnologia Avançada', description: 'Tecnologia de ponta para previsões precisas' },
         instant: { title: 'Instantâneo', description: 'O seu horóscopo pronto em minutos' },
         professional: { title: 'Profissional', description: 'Criado segundo princípios astrológicos' },
-        verified: { title: 'Verificado', description: '50.000+ clientes satisfeitos' },
+        verified: { title: 'Verificado', description: "Horóscopos Personalizados" },
     },
     form: {
         title: 'Obtenha o seu horóscopo',
@@ -130,32 +130,32 @@ const pt: Translations = {
         q1: 'O que é Astralo?',
         a1: 'Astralo é um serviço profissional de horóscopo online que fornece leituras astrológicas personalizadas baseadas nos seus dados de nascimento exatos (data, hora e local). Oferecemos horóscopos diários, semanais, mensais e análise de compatibilidade de casal, entregues instantaneamente como documentos PDF lindamente concebidos para o seu email.',
         q2: 'Quão precisos são os horóscopos Astralo?',
-        a2: 'Os horóscopos Astralo são criados usando algoritmos astrológicos avançados baseados nos seus dados de nascimento precisos. Com mais de 50.000 clientes satisfeitos e uma classificação de 4,9/5 estrelas, as nossas leituras personalizadas fornecem informações detalhadas para fins de entretenimento.',
+        a2: "Os horóscopos Astralo são criados usando algoritmos astrológicos avançados baseados nos seus dados de nascimento precisos.",
         q3: 'Quanto tempo demora a receber o meu horóscopo?',
         a3: 'O seu horóscopo personalizado é gerado e entregue instantaneamente no seu email em 2-5 minutos após o pagamento. Receberá um documento PDF profissional com a sua leitura astrológica completa.',
         q4: 'Que métodos de pagamento aceitam?',
         a4: 'Aceitamos todos os principais cartões de crédito e débito (Visa, Mastercard, American Express) através do Stripe, um processador de pagamentos seguro com certificação PCI-DSS Nível 1. Todas as transações são protegidas com encriptação SSL.',
         q5: 'Quanto custam os horóscopos?',
-        a5: 'Oferecemos quatro produtos: Horóscopo Diário a 0,99 €, Horóscopo Semanal a 1,99 €, Horóscopo Mensual a 4,99 € y Horóscopo de Pareja a 2,99 €. Todos los precios incluyen entrega instantánea.',
+        a5: 'Oferecemos quatro produtos: Horóscopo Diário a 0,99 €, Horóscopo Semanal a 1,99 €, Horóscopo Mensal a 4,99 € e Horóscopo de Casal a 2,99 €. Todos os preços incluem entrega instantânea.',
         q6: 'Que informações preciso para encomendar?',
         a6: 'Para obter o seu horóscopo personalizado, precisa de: nome completo, endereço de email, data de nascimento, hora de nascimento (opcional mas recomendado) e local de nascimento. Para horóscopos de casal, também precisará das informações de nascimento do seu parceiro.',
     },
     emailCapture: {
         title: '✨ Obtenha o seu Mapa Astral e Previsão Semanal Grátis',
-        subtitle: 'Junte-se a mais de 50.000 pessoas que recebem informações cósmicas personalizadas e relatórios gratuitos todas as segundas-feiras!',
+        subtitle: "Obtenha o seu Mapa Astral e Previsão Semanal Grátis. Entrega instantânea por email.",
         placeholder: 'Introduza o seu email',
-        button: 'Obter a minha leitura grátis',
+        button: 'Ver o meu horóscopo gratuito',
         consent: 'Aceito receber informações cósmicas e aceito a política de privacidade.',
         success: '✨ Bem-vindo! A sua primeira leitura gratuita está a caminho.',
         error: 'Algo correu mal. Por favor, tente novamente.',
     },
     ads: {
-        sticky: 'Últimas horas: 50% de desconto especial desbloqueado',
+        sticky: "Horóscopos Personalizados",
         claim: 'Reclamar agora',
-        limited: 'Oferta limitada',
+        limited: "Entrega instantânea por email",
         unlock: 'Desbloqueie o seu',
         waiting: 'está à sua espera...',
-        join: 'Junte-se a mais de 50.000 almas que encontraram clareza nas estrelas.',
+        join: "Horóscopos Personalizados",
         getFor: 'Obtenha por',
     },
 };

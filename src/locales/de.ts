@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const de: Translations = {
     meta: {
-        title: 'Astralo - Tageshoroskop Heute Kostenlos 2026 | Genaue Sternzeichen Vorhersagen',
-        description: 'Holen Sie sich Ihr GRATIS Tageshoroskop heute! ⭐ Tägliche, wöchentliche & monatliche Vorhersagen. Liebeshoroskop, Partnerhoroskop & Karriere. 50.000+ zufriedene Kunden. Sofortige Lieferung!',
+        title: "Astralo - Tageshoroskop Heute Kostenlos 2026 | Genaue Sternzeichen Vorhersagen",
+        description: "Holen Sie sich Ihr GRATIS Tageshoroskop heute! ⭐ Tägliche, wöchentliche & monatliche Vorhersagen. Liebeshoroskop, Partnerhoroskop & Karriere. Sofortige Lieferung!",
         keywords: 'Tageshoroskop heute, Horoskop kostenlos, Wochenhoroskop, Monatshoroskop, Sternzeichen, Liebeshoroskop, Partnerhoroskop, Astrologie, Horoskop 2026, Steinbock Horoskop, Widder Horoskop, Wassermann Horoskop, genaues Horoskop, Geburtshoroskop',
     },
     header: {
@@ -11,15 +11,15 @@ const de: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'LIMITIERTES ANGEBOT: 50% RABATT auf alle Horoskope!',
+        offer: "Personalisierte Horoskope",
         delivery: 'Sofortige Lieferung per Email',
-        customers: '50.000+ zufriedene Kunden',
+        customers: "Sofortige Lieferung per Email",
         secure: 'Sichere Zahlung mit Stripe',
     },
     hero: {
         title: 'Ihr Persönliches Horoskop',
         subtitle: 'Endlich ein wirklich genaues Horoskop • Speziell für Sie erstellt',
-        features: '✨ Sofortige Lieferung • 🔒 Sichere Zahlungen • ⭐ 50.000+ zufriedene Kunden',
+        features: "✨ Sofortige Lieferung per Email • 🔒 Sichere Zahlung mit Stripe • ⭐ Personalisierte Horoskope",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const de: Translations = {
         technology: { title: 'Fortschrittliche Technologie', description: 'Modernste Technologie für präzise Vorhersagen' },
         instant: { title: 'Sofort', description: 'Ihr Horoskop in wenigen Minuten bereit' },
         professional: { title: 'Professionell', description: 'Nach astrologischen Prinzipien erstellt' },
-        verified: { title: 'Verifiziert', description: '50.000+ zufriedene Kunden' },
+        verified: { title: 'Verifiziert', description: "Personalisierte Horoskope" },
     },
     form: {
         title: 'Holen Sie sich Ihr Horoskop',
@@ -130,7 +130,7 @@ const de: Translations = {
         q1: 'Was ist Astralo?',
         a1: 'Astralo ist ein professioneller Online-Horoskop-Service, der personalisierte astrologische Deutungen basierend auf Ihren genauen Geburtsdaten (Datum, Uhrzeit und Ort) bietet. Wir bieten tägliche, wöchentliche, monatliche Horoskope und Partnerschaftsanalysen, die sofort als wunderschön gestaltete PDF-Dokumente per E-Mail geliefert werden.',
         q2: 'Wie genau sind die Horoskope von Astralo?',
-        a2: 'Astralo-Horoskope werden mit fortschrittlichen astrologischen Algorithmen erstellt, die auf Ihren präzisen Geburtsdaten basieren. Mit über 50.000 zufriedenen Kunden und einer Bewertung von 4,9/5 Sternen bieten unsere personalisierten Deutungen detaillierte Einblicke zu Unterhaltungszwecken.',
+        a2: "Astralo-Horoskope werden mit fortschrittlichen astrologischen Algorithmen erstellt, die auf Ihren präzisen Geburtsdaten basieren.",
         q3: 'Wie schnell erhalte ich mein Horoskop?',
         a3: 'Ihr personalisiertes Horoskop wird innerhalb von 2-5 Minuten nach der Zahlung generiert und sofort an Ihre E-Mail gesendet. Sie erhalten ein professionelles PDF-Dokument mit Ihrer kompletten astrologischen Deutung.',
         q4: 'Welche Zahlungsmethoden akzeptieren Sie?',
@@ -142,20 +142,20 @@ const de: Translations = {
     },
     emailCapture: {
         title: '✨ Holen Sie sich Ihr kostenloses Geburtshoroskop',
-        subtitle: 'Schließen Sie sich 50.000+ anderen an und erhalten Sie jeden Montag personalisierte kosmische Einblicke!',
+        subtitle: "Holen Sie sich Ihr kostenloses Geburtshoroskop. Sofortige Lieferung per Email.",
         placeholder: 'E-Mail eingeben',
-        button: 'Kostenlose Analyse erhalten',
+        button: 'Kostenloses Horoskop ansehen',
         consent: 'Ich stimme dem Erhalt kosmischer Einblicke zu und akzeptiere die Datenschutzbestimmungen.',
         success: '✨ Willkommen! Ihre erste kostenlose Analyse ist unterwegs.',
         error: 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.',
     },
     ads: {
-        sticky: 'Letzte Stunden: 50% Sonder-Rabatt freigeschaltet',
+        sticky: "Personalisierte Horoskope",
         claim: 'Jetzt sichern',
-        limited: 'Limitiertes Angebot',
+        limited: "Sofortige Lieferung per Email",
         unlock: 'Freischalten:',
         waiting: 'wartet auf Sie...',
-        join: 'Schließen Sie sich 50.000+ Seelen an, die Klarheit in den Sternen fanden.',
+        join: "Personalisierte Horoskope",
         getFor: 'Jetzt für',
     },
 };

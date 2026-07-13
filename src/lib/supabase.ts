@@ -4,6 +4,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
+import type { ProductKey } from './products';
 
 const supabaseUrl = import.meta.env.SUPABASE_URL;
 const supabaseServiceKey = import.meta.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -63,7 +64,7 @@ export interface OrderRow {
     partner_birth_date: string | null;
     partner_birth_time: string | null;
     partner_birth_place: string | null;
-    product_key: 'daily' | 'weekly' | 'monthly' | 'partner';
+    product_key: ProductKey;
     product_name: string;
     amount: number;
     currency: string;

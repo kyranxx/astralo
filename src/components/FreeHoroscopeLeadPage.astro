@@ -6,9 +6,11 @@ import EmailCapture from './EmailCapture.astro';
 import { ArrowLeft, Calendar, Heart, Mail, Sparkles } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { buildSafeLeadSubtitle, hasUnsupportedSocialProof } from '../lib/marketing-copy';
+import { blogUiTranslations } from '../lib/blog/ui-translations';
 import { getProductPriceInEuros } from '../lib/products';
 import {
     buildBreadcrumbSchema,
+    buildFaqSchema,
     buildWebPageSchema,
     getFreeHoroscopePath,
     getHomePath,
@@ -22,17 +24,254 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = getTranslations(lang);
+const ui = blogUiTranslations[lang] || blogUiTranslations.en;
 const homePath = getHomePath(lang);
 const freePath = getFreeHoroscopePath(lang);
 const pageUrl = `${siteUrl}${freePath}`;
-const pageTitle = `${t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'} | Astralo`;
-const pageDescription = t.emailCapture?.subtitle && !hasUnsupportedSocialProof(t.emailCapture.subtitle)
+const localizedFreeSeoContent: Partial<Record<SupportedLocale, {
+    pageTitle: string;
+    heroTitle: string;
+    description: string;
+    keywords: string;
+    sectionTitle: string;
+    sectionIntro: string;
+    points: Array<{ title: string; body: string }>;
+    faqs: Array<{ question: string; answer: string }>;
+}>> = {
+    no: {
+        pageTitle: 'Gratis personlig horoskop | Personlig horoskop gratis | Astralo',
+        heroTitle: 'Gratis personlig horoskop',
+        description: 'Start med et gratis personlig horoskop fra Astralo. Få en enkel kosmisk tolkning på e-post, og velg en dypere rapport når du vil ha mer detaljer.',
+        keywords: 'gratis personlig horoskop, personlig horoskop gratis, gratis horoskop, gratis fødselshoroskop, norsk horoskop gratis',
+        sectionTitle: 'Hva du får gratis',
+        sectionIntro: 'Gratislesningen er laget som et trygt første steg: nyttig nok til å starte, uten at du må betale før du vet om stilen passer deg.',
+        points: [
+            {
+                title: 'Personlig start',
+                body: 'Du får en enkel horoskopstart knyttet til personlig astrologi, ikke bare en tilfeldig tekst for alle i samme stjernetegn.',
+            },
+            {
+                title: 'Sendes til e-post',
+                body: 'Du legger igjen e-postadressen din, samtykker til oppfølging, og mottar gratis kosmisk innsikt fra Astralo.',
+            },
+            {
+                title: 'Mulighet for mer dybde',
+                body: 'Hvis du vil gå videre, kan du bestille ukehoroskop, månedshoroskop eller partnerhoroskop med mer detaljerte råd.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Er Astralos gratis personlige horoskop virkelig gratis?',
+                answer: 'Ja. Du kan starte gratis med e-postlesningen. Betalte rapporter er valgfrie hvis du ønsker mer dybde.',
+            },
+            {
+                question: 'Hva er forskjellen på gratis horoskop og betalt rapport?',
+                answer: 'Gratislesningen er en kort start. Betalte rapporter går dypere inn i periode, kjærlighet, karriere eller forhold basert på flere detaljer.',
+            },
+        ],
+    },
+    da: {
+        pageTitle: 'Gratis fødselshoroskop | Horoskop gratis | Astralo',
+        heroTitle: 'Gratis fødselshoroskop',
+        description: 'Start med et gratis fødselshoroskop fra Astralo. Få en enkel astrologisk læsning via e-mail, og vælg en mere detaljeret rapport, hvis du vil gå videre.',
+        keywords: 'gratis fødselshoroskop, fødselshoroskop gratis, horoskop gratis, horoskoper gratis, personligt horoskop gratis',
+        sectionTitle: 'Det får du gratis',
+        sectionIntro: 'Den gratis læsning er en enkel start for dig, der vil prøve Astralo, før du bestiller en mere detaljeret rapport.',
+        points: [
+            {
+                title: 'En personlig start',
+                body: 'Du får en astrologisk introduktion, der hjælper dig videre end en kort standardtekst for alle med samme stjernetegn.',
+            },
+            {
+                title: 'Leveret via e-mail',
+                body: 'Indtast din e-mailadresse, acceptér opfølgende beskeder, og modtag din første læsning fra Astralo.',
+            },
+            {
+                title: 'Mere dybde efter behov',
+                body: 'Hvis du vil videre, kan du vælge uge-, måneds- eller partnerhoroskop med flere detaljer.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Er Astralos gratis fødselshoroskop virkelig gratis?',
+                answer: 'Ja. Du kan starte gratis med læsningen via e-mail. Betalte rapporter er valgfrie, hvis du ønsker mere dybde.',
+            },
+            {
+                question: 'Hvad er forskellen på et gratis horoskop og en betalt rapport?',
+                answer: 'Den gratis læsning er en enkel introduktion. Betalte rapporter går mere i dybden med periode, kærlighed, karriere eller forhold.',
+            },
+        ],
+    },
+    nl: {
+        pageTitle: 'Gratis geboortehoroscoop | Horoscoop gratis | Astralo',
+        heroTitle: 'Gratis geboortehoroscoop',
+        description: 'Start met een gratis geboortehoroscoop van Astralo. Ontvang een astrologische lezing per e-mail en kies een uitgebreider rapport als je meer diepgang wilt.',
+        keywords: 'gratis geboortehoroscoop, geboortehoroscoop gratis, gratis horoscoop, horoscoop gratis, persoonlijke horoscoop gratis',
+        sectionTitle: 'Dit krijg je gratis',
+        sectionIntro: 'De gratis lezing is een eenvoudige eerste stap voor wie Astralo wil proberen voordat een uitgebreider rapport nodig is.',
+        points: [
+            {
+                title: 'Een persoonlijke start',
+                body: 'Je krijgt een astrologische introductie die verder gaat dan dezelfde korte standaardtekst voor iedereen met hetzelfde sterrenbeeld.',
+            },
+            {
+                title: 'Per e-mail geleverd',
+                body: 'Vul je e-mailadres in, ga akkoord met nuttige vervolgberichten en ontvang je eerste lezing van Astralo.',
+            },
+            {
+                title: 'Meer diepgang wanneer je wilt',
+                body: 'Kies later voor een week-, maand- of partnerhoroscoop als je een uitgebreider rapport wilt.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Is de gratis geboortehoroscoop van Astralo echt gratis?',
+                answer: 'Ja. Je kunt gratis beginnen met de lezing per e-mail. Betaalde rapporten zijn alleen een optie als je meer diepgang wilt.',
+            },
+            {
+                question: 'Wat is het verschil tussen een gratis horoscoop en een betaald rapport?',
+                answer: 'De gratis lezing is een eenvoudige introductie. Betaalde rapporten gaan dieper in op periode, liefde, carrière of relaties.',
+            },
+        ],
+    },
+    cs: {
+        pageTitle: 'Astrologický horoskop zdarma | Osobní horoskop | Astralo',
+        heroTitle: 'Astrologický horoskop zdarma',
+        description: 'Začněte s astrologickým horoskopem zdarma od Astralo. Získejte úvodní výklad e-mailem a podrobnější placenou zprávu si vyberte jen tehdy, když budete chtít.',
+        keywords: 'astrologický horoskop zdarma, horoskop online zdarma, osobní horoskop zdarma, horoskopy zdarma, astralo',
+        sectionTitle: 'Co získáte zdarma',
+        sectionIntro: 'Bezplatný výklad je jednoduchý první krok pro každého, kdo si chce Astralo vyzkoušet před objednáním podrobnější zprávy.',
+        points: [
+            {
+                title: 'Osobní začátek',
+                body: 'Získáte úvodní astrologický výklad, který je užitečnější než stejný krátký text pro všechny se stejným znamením.',
+            },
+            {
+                title: 'Doručení e-mailem',
+                body: 'Zadejte e-mail, odsouhlaste užitečné navazující zprávy a obdržíte první výklad od Astralo.',
+            },
+            {
+                title: 'Více detailů podle potřeby',
+                body: 'Pokud budete chtít pokračovat, vyberte si týdenní, měsíční nebo partnerský horoskop s podrobnějším výkladem.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Je astrologický horoskop na Astralo opravdu zdarma?',
+                answer: 'Ano. Začít můžete bezplatným výkladem e-mailem. Placené zprávy jsou volitelné, pokud chcete podrobnější obsah.',
+            },
+            {
+                question: 'Jaký je rozdíl mezi horoskopem zdarma a placeným výkladem?',
+                answer: 'Bezplatný výklad je jednoduchý úvod. Placené zprávy jdou více do hloubky v tématech období, lásky, kariéry nebo vztahů.',
+            },
+        ],
+    },
+    tr: {
+        pageTitle: 'Ücretsiz doğum haritası başlangıcı | Astroloji yorumu | Astralo',
+        heroTitle: 'Ücretsiz doğum haritası başlangıcı',
+        description: 'Astralo ile ücretsiz doğum haritası başlangıcı yapın. E-posta ile basit bir astroloji okuması alın; ayrıntılı raporu yalnızca isterseniz seçin.',
+        keywords: 'ücretsiz doğum haritası, doğum haritası ücretsiz, ücretsiz yıldız haritası, doğum haritası yorumu, saatsiz doğum haritası',
+        sectionTitle: 'Ücretsiz başlangıçta ne alırsınız?',
+        sectionIntro: 'Ücretsiz e-posta okuması basit bir astroloji başlangıcıdır. Tam doğum haritası analizi veya daha ayrıntılı kişisel yorum istediğinizde ek rapor seçebilirsiniz.',
+        points: [
+            {
+                title: 'Basit bir astroloji başlangıcı',
+                body: 'İlk e-posta okuması Astralo yaklaşımını denemenize yardımcı olur. Ayrıntılı bir doğum haritası analizi olduğunu iddia etmez.',
+            },
+            {
+                title: 'E-posta ile teslim',
+                body: 'E-posta adresinizi girin, yararlı takip mesajlarını kabul edin ve ilk astroloji okumanızı alın.',
+            },
+            {
+                title: 'İsterseniz daha fazla ayrıntı',
+                body: 'Daha derin bir yorum istediğinizde haftalık, aylık veya partner raporlarından birini seçebilirsiniz.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Astralo ücretsiz doğum haritası başlangıcını gerçekten ücretsiz sunuyor mu?',
+                answer: 'Evet. E-posta ile gelen basit başlangıç okuması ücretsizdir. Daha ayrıntılı ücretli raporlar yalnızca isterseniz seçebileceğiniz seçeneklerdir.',
+            },
+            {
+                question: 'Doğum saati olmadan ücretsiz astroloji başlangıcı alabilir miyim?',
+                answer: 'Evet. Ücretsiz e-posta başlangıcı için doğum saati gerekli değildir. Daha ayrıntılı kişisel yorumlarda doğum saati ek bağlam sağlayabilir.',
+            },
+        ],
+    },
+    ro: {
+        pageTitle: 'Horoscop personalizat gratuit | Horoscop online | Astralo',
+        heroTitle: 'Horoscop personalizat gratuit',
+        description: 'Începe cu un horoscop personalizat gratuit de la Astralo. Primești o introducere astrologică pe email și poți alege o analiză mai detaliată când vrei.',
+        keywords: 'horoscop personalizat gratuit, horoscop gratuit, horoscop online, horoscop personalizat, astralo',
+        sectionTitle: 'Ce primești gratuit',
+        sectionIntro: 'Pagina gratuită este făcută pentru vizitatorii care vor să testeze Astralo înainte de a comanda o analiză completă.',
+        points: [
+            {
+                title: 'Un început personal',
+                body: 'Primești o interpretare de pornire legată de astrologia personală, nu doar un text general pentru toate zodiile.',
+            },
+            {
+                title: 'Livrare pe email',
+                body: 'Lași adresa de email, accepți urmărirea prin mesaje utile și primești primul ghid astrologic de la Astralo.',
+            },
+            {
+                title: 'Analiză mai profundă la nevoie',
+                body: 'Dacă vrei mai multe detalii, poți continua cu horoscop săptămânal, lunar sau de compatibilitate.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Horoscopul personalizat gratuit de la Astralo chiar este gratuit?',
+                answer: 'Da. Poți începe gratuit cu lectura pe email. Rapoartele plătite sunt opționale dacă vrei mai multă profunzime.',
+            },
+            {
+                question: 'Ce diferență este între un horoscop gratuit și un raport plătit?',
+                answer: 'Lectura gratuită este o introducere. Rapoartele plătite oferă mai multe detalii despre perioadă, dragoste, carieră sau relații.',
+            },
+        ],
+    },
+    id: {
+        pageTitle: 'Horoskop gratis online | Horoskop pribadi | Astralo',
+        heroTitle: 'Horoskop gratis online',
+        description: 'Mulai dengan horoskop gratis online dari Astralo. Dapatkan bacaan awal lewat email, lalu pilih laporan pribadi jika kamu ingin detail lebih dalam.',
+        keywords: 'horoskop gratis, horoskop gratis online, horoskop pribadi, ramalan zodiak online, astralo',
+        sectionTitle: 'Apa yang kamu dapatkan gratis',
+        sectionIntro: 'Bacaan gratis ini adalah langkah awal yang ringan sebelum kamu memilih laporan astrologi yang lebih lengkap.',
+        points: [
+            {
+                title: 'Awal yang lebih pribadi',
+                body: 'Bacaan dibuat sebagai pengantar personal, bukan hanya ramalan zodiak umum yang sama untuk semua orang.',
+            },
+            {
+                title: 'Dikirim lewat email',
+                body: 'Masukkan email, setujui pesan lanjutan, dan Astralo akan mengirim insight astrologi awal untukmu.',
+            },
+            {
+                title: 'Bisa lanjut lebih dalam',
+                body: 'Jika cocok, kamu bisa memilih horoskop mingguan, bulanan, atau kompatibilitas pasangan dengan detail lebih lengkap.',
+            },
+        ],
+        faqs: [
+            {
+                question: 'Apakah horoskop gratis online Astralo benar-benar gratis?',
+                answer: 'Ya. Kamu bisa mulai dengan bacaan email gratis. Laporan berbayar hanya pilihan jika kamu ingin analisis yang lebih lengkap.',
+            },
+            {
+                question: 'Apa bedanya horoskop gratis dan laporan berbayar?',
+                answer: 'Horoskop gratis adalah pengantar singkat. Laporan berbayar memberi detail lebih dalam tentang waktu, cinta, karier, atau hubungan.',
+            },
+        ],
+    },
+};
+const freeSeoContent = localizedFreeSeoContent[lang] || null;
+const pageTitle = freeSeoContent?.pageTitle || `${t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'} | Astralo`;
+const pageDescription = freeSeoContent?.description || (t.emailCapture?.subtitle && !hasUnsupportedSocialProof(t.emailCapture.subtitle)
     ? t.emailCapture.subtitle
     : buildSafeLeadSubtitle(
         t.emailCapture?.title || 'Get Your Free 7-Day Horoscope',
         t.promo.delivery
-      );
-const pageKeywords = [
+      ));
+const pageKeywords = freeSeoContent?.keywords || [
     t.emailCapture?.title || 'free horoscope',
     t.products.weekly.name,
     t.products.monthly.name,
@@ -70,9 +309,10 @@ const pageSchema = [
         lang,
     }),
     buildBreadcrumbSchema([
-        { name: 'Home', url: `${siteUrl}${homePath === '/' ? '' : homePath.replace(/\/$/, '')}` || siteUrl },
+        { name: ui.home, url: `${siteUrl}${homePath === '/' ? '' : homePath.replace(/\/$/, '')}` || siteUrl },
         { name: t.emailCapture?.title || 'Free Horoscope', url: pageUrl },
     ]),
+    ...(freeSeoContent ? [buildFaqSchema(freeSeoContent.faqs)] : []),
 ];
 ---
 
@@ -108,7 +348,7 @@ const pageSchema = [
                             <Mail class="w-4 h-4" />
                             <span>{t.header.badge}</span>
                         </div>
-                        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">{t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'}</h1>
+                        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">{freeSeoContent?.heroTitle || t.emailCapture?.title || 'Get Your Free 7-Day Horoscope'}</h1>
                         <p class="text-white/75 text-lg leading-relaxed mb-6">{pageDescription}</p>
                         <div class="flex flex-wrap items-center justify-center gap-3 text-sm text-white/70">
                             <span class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2">
@@ -124,6 +364,33 @@ const pageSchema = [
                 </section>
 
                 <EmailCapture lang={lang} inline={true} />
+
+                {freeSeoContent && (
+                    <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
+                        <div class="max-w-3xl mx-auto text-center mb-8">
+                            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">{freeSeoContent.sectionTitle}</h2>
+                            <p class="text-white/65 leading-relaxed">{freeSeoContent.sectionIntro}</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-4 mb-8">
+                            {freeSeoContent.points.map((point) => (
+                                <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+                                    <h3 class="text-lg font-bold text-white mb-2">{point.title}</h3>
+                                    <p class="text-white/65 text-sm leading-relaxed">{point.body}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            {freeSeoContent.faqs.map((faq) => (
+                                <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+                                    <h3 class="text-white font-bold mb-2">{faq.question}</h3>
+                                    <p class="text-white/65 text-sm leading-relaxed">{faq.answer}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                )}
 
                 <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">
                     <div class="text-center mb-8">

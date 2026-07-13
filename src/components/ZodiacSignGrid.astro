@@ -1,6 +1,6 @@
 ---
 import type { SupportedLocale } from '../lib/i18n';
-import type { ProductKey } from '../lib/products';
+import { getProductCopy, type ProductKey } from '../lib/products';
 import type { ZodiacSignSlug } from '../lib/zodiac';
 import { getTranslations } from '../lib/i18n';
 import { getZodiacLocaleCopy, zodiacSignSlugs, fillZodiacTemplate } from '../lib/zodiac';
@@ -15,7 +15,7 @@ interface Props {
 const { lang, type, currentSign } = Astro.props;
 const t = getTranslations(lang);
 const zodiac = getZodiacLocaleCopy(lang);
-const productName = t.products[type].name;
+const productName = getProductCopy(type, lang, t).name;
 ---
 
 <section class="glass-strong rounded-3xl p-6 sm:p-8 border border-white/10">

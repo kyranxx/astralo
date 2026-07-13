@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const ko: Translations = {
     meta: {
-        title: 'Astralo - 무료 오늘의 운세 2026 | 정확한 별자리 운세',
-        description: '오늘 무료 맞춤 운세를 받으세요! ⭐ 매일, 매주, 매월 운세. 연애 궁합, 직장 조언. 즉시 배송!',
+        title: "Astralo - 무료 오늘의 운세 2026 | 정확한 별자리 운세",
+        description: "오늘 무료 맞춤 운세를 받으세요! ⭐ 매일, 매주, 매월 운세. 연애 궁합, 직장 조언. 즉시 배송!",
         keywords: '오늘의 운세, 무료 운세, 운세 2026, 별자리, 연애 운세, 궁합, 주간 운세, 월간 운세, 점성술, 맞춤 운세',
     },
     header: {
@@ -11,15 +11,15 @@ const ko: Translations = {
         online: '온라인',
     },
     promo: {
-        offer: '한정 할인: 전 운세 50% 할인!',
+        offer: "맞춤 운세",
         delivery: '즉시 배송',
-        customers: '신뢰할 수 있는 리딩',
+        customers: "즉시 배송",
         secure: '안전한 결제',
     },
     hero: {
         title: '당신만의 운세',
         subtitle: '드디어 진정으로 정확한 운세 • 당신만을 위해 제작',
-        features: '✨ 즉시 배송 • 🔒 안전한 결제 • ⭐ 맞춤 인사이트',
+        features: "✨ 즉시 배송 • 🔒 안전한 결제 • ⭐ 맞춤 운세",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const ko: Translations = {
         technology: { title: '첨단 기술', description: '정확한 예측을 위한 최신 기술' },
         instant: { title: '즉시', description: '몇 분 안에 운세 완성' },
         professional: { title: '전문적', description: '점성술 원칙에 따라 제작' },
-        verified: { title: '검증됨', description: '신뢰할 수 있는 점성술 리딩' },
+        verified: { title: '검증됨', description: "맞춤 운세" },
     },
     form: {
         title: '운세 받기',
@@ -130,7 +130,7 @@ const ko: Translations = {
         q1: 'Astralo란 무엇인가요?',
         a1: 'Astralo는 정확한 출생 데이터(날짜, 시간, 장소)를 기반으로 맞춤형 점성술 분석을 제공하는 전문 온라인 운세 서비스입니다. 일일, 주간, 월간 운세와 궁합 분석을 제공하며, 아름답게 디자인된 PDF 문서로 이메일로 즉시 배송됩니다.',
         q2: 'Astralo 운세는 얼마나 정확한가요?',
-        a2: 'Astralo 운세는 정확한 출생 데이터를 기반으로 한 고급 점성술 알고리즘을 사용하여 생성됩니다. 맞춤형 분석은 엔터테인먼트 목적의 상세한 통찰력을 제공합니다.',
+        a2: "Astralo 운세는 정확한 출생 데이터를 기반으로 한 고급 점성술 알고리즘을 사용하여 생성됩니다. 맞춤형 분석은 엔터테인먼트 목적의 상세한 통찰력을 제공합니다.",
         q3: '운세를 얼마나 빨리 받을 수 있나요?',
         a3: '맞춤형 운세는 결제 후 2-5분 이내에 생성되어 이메일로 즉시 배송됩니다. 완전한 점성술 분석이 포함된 전문 PDF 문서를 받게 됩니다.',
         q4: '어떤 결제 방법을 사용할 수 있나요?',
@@ -142,20 +142,20 @@ const ko: Translations = {
     },
     emailCapture: {
         title: '✨ 무료 출생 차트와 주간 운세를 받으세요',
-        subtitle: '이메일로 개인화된 우주의 통찰력과 무료 보고서를 받아보세요.',
+        subtitle: "무료 출생 차트와 주간 운세를 받으세요. 즉시 배송.",
         placeholder: '이메일을 입력하세요',
-        button: '무료 분석 받기',
+        button: '무료 운세 보기',
         consent: '우주의 통찰력 수신에 동의하며 개인정보 처리방침을 수락합니다.',
         success: '✨ 환영합니다! 첫 번째 무료 분석이 준비 중입니다.',
         error: '문제가 발생했습니다. 다시 시도해 주세요.',
     },
     ads: {
-        sticky: '마지막 몇 시간: 50% 특별 할인 혜택 활성화',
+        sticky: "맞춤 운세",
         claim: '지금 받기',
-        limited: '한정 기간 혜택',
+        limited: "즉시 배송",
         unlock: '당신의 운세 잠금 해제',
         waiting: '당신을 기다리고 있습니다...',
-        join: '별에서 더 선명한 방향을 찾으세요.',
+        join: "맞춤 운세",
         getFor: '지금 구매',
     },
 };

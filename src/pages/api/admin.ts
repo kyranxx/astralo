@@ -14,6 +14,12 @@ import {
     createJsonResponse,
     createErrorResponse
 } from '../../lib/auth';
+import { getCheckoutReadiness } from '../../lib/checkout-readiness';
+import { verifyOpenAIProvider } from '../../lib/horoscope-ai';
+import { fulfillOrder, generateHoroscopeContent, sendFulfillmentPreviewToOwner } from '../../lib/fulfillment';
+import { buildFulfillmentEmail } from '../../lib/fulfillment-email-template';
+
+export const maxDuration = 60;
 
 export const GET: APIRoute = async ({ request, url }) => {
     const action = url.searchParams.get('action') || 'stats';
@@ -109,6 +115,9 @@ export const GET: APIRoute = async ({ request, url }) => {
                 }
                 return createJsonResponse(order);
 
+            case 'readiness':
+                return createJsonResponse(getCheckoutReadiness(undefined, await verifyOpenAIProvider()));
+
             default:
                 return createErrorResponse('Invalid action', 400);
         }
@@ -120,7 +129,7 @@ export const GET: APIRoute = async ({ request, url }) => {
 
 export const POST: APIRoute = async ({ request }) => {
     const body = await request.json();
-    const { action, orderId, reason } = body;
+    const { action, orderId, reason, serviceMessage, content } = body;
 
     // Get password from Authorization header
     const password = getPasswordFromRequest(request);
@@ -132,6 +141,85 @@ export const POST: APIRoute = async ({ request }) => {
 
     try {
         switch (action) {
+            case 'send-fulfillment-preview': {
+                if (!orderId) {
+                    return createErrorResponse('Order ID required', 400);
+                }
+                if (typeof content !== 'string' || !content.trim()) {
+                    return createErrorResponse('Preview content required', 400);
+                }
+
+                const order = await findOrderById(orderId);
+                if (!order) {
+                    return createErrorResponse('Order not found', 404);
+                }
+
+                await sendFulfillmentPreviewToOwner(order, content.trim().slice(0, 50_000), {
+                    serviceMessage: typeof serviceMessage === 'string'
+                        ? serviceMessage.trim().slice(0, 2000)
+                        : undefined,
+                });
+
+                return createJsonResponse({
+                    success: true,
+                    previewOnly: true,
+                    customerContacted: false,
+                    message: 'Full fulfillment preview sent to the configured owner inbox',
+                });
+            }
+
+            case 'preview-fulfillment': {
+                if (!orderId) {
+                    return createErrorResponse('Order ID required', 400);
+                }
+
+                const order = await findOrderById(orderId);
+                if (!order) {
+                    return createErrorResponse('Order not found', 404);
+                }
+
+                const content = order.horoscopeContent || await generateHoroscopeContent(order);
+                const email = buildFulfillmentEmail(order, content, '', {
+                    serviceMessage: typeof serviceMessage === 'string'
+                        ? serviceMessage.trim().slice(0, 2000)
+                        : undefined,
+                });
+
+                return createJsonResponse({
+                    success: true,
+                    previewOnly: true,
+                    subject: email.subject,
+                    html: email.html,
+                    content,
+                });
+            }
+
+            case 'fulfill-order': {
+                if (!orderId) {
+                    return createErrorResponse('Order ID required', 400);
+                }
+
+                const order = await findOrderById(orderId);
+                if (!order) {
+                    return createErrorResponse('Order not found', 404);
+                }
+                if (order.emailSentAt) {
+                    return createErrorResponse('Order email has already been sent', 409);
+                }
+                if (typeof serviceMessage !== 'string' || !serviceMessage.trim()) {
+                    return createErrorResponse('Customer service message required', 400);
+                }
+
+                await fulfillOrder(order, null, 'Invoice.pdf', '', {
+                    serviceMessage: serviceMessage.trim().slice(0, 2000),
+                });
+
+                return createJsonResponse({
+                    success: true,
+                    message: 'Order fulfilled and customer email sent',
+                });
+            }
+
             case 'refund':
                 if (!orderId) {
                     return createErrorResponse('Order ID required', 400);
@@ -152,9 +240,7 @@ export const POST: APIRoute = async ({ request }) => {
                     return createErrorResponse('Stripe not configured', 500);
                 }
 
-                const stripe = new Stripe(stripeKey, {
-                    apiVersion: '2026-11-20.acacia' as any,
-                });
+                const stripe = new Stripe(stripeKey);
 
                 if (!order.stripePaymentIntentId) {
                     return createErrorResponse('No payment intent found for this order', 400);

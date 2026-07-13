@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { getAllArticleSlugs, getArticleMeta, getArticleTranslation } from '../lib/blog';
+import { getArticleMeta, getArticleTranslation, getIndexableArticleSlugs } from '../lib/blog';
 import { siteUrl } from '../lib/seo';
 
 function escapeXml(value: string): string {
@@ -12,7 +12,7 @@ function escapeXml(value: string): string {
 }
 
 export const GET: APIRoute = async () => {
-    const items = getAllArticleSlugs()
+    const items = getIndexableArticleSlugs()
         .map((slug) => {
             const meta = getArticleMeta(slug);
             const translation = getArticleTranslation(slug, 'en');

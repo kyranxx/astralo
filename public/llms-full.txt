@@ -46,7 +46,7 @@ These pages start the purchase flow and collect birth data. They are intended fo
 
 ## How readings are created
 
-Astralo readings use the customer's submitted birth data, product-specific astrology instructions, and AI-assisted writing to create a personalized report. The report generation prompts are designed for simple language, practical guidance, and inclusive content. Astralo avoids medical, legal, financial, political, religious, and dietary advice in generated readings.
+Astralo readings use the customer's submitted birth data and product-specific astrology instructions to create a personalized report. Reports are written in simple language with practical guidance and inclusive content. Astralo avoids medical, legal, financial, political, religious, and dietary advice in its readings.
 
 All readings are entertainment and reflection products. They should not be treated as professional advice or as a substitute for decisions that require a qualified expert.
 

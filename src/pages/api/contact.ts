@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
+import { verifyTurnstileToken } from '../../lib/turnstile';
 
 export const POST: APIRoute = async ({ request }) => {
     let data;
@@ -9,50 +10,40 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400 });
     }
 
-    const { name, email, subject, message } = data;
-    const hcaptchaToken = data['h-captcha-response'];
+    const name = typeof data?.name === 'string' ? data.name.trim().slice(0, 120) : '';
+    const email = typeof data?.email === 'string' ? data.email.trim().slice(0, 254) : '';
+    const subject = typeof data?.subject === 'string' ? data.subject.trim().slice(0, 80) : '';
+    const message = typeof data?.message === 'string' ? data.message.trim().slice(0, 5000) : '';
+    const turnstileToken = typeof data?.turnstileToken === 'string' ? data.turnstileToken.trim() : '';
 
     if (!name || !email || !subject || !message) {
         return new Response(JSON.stringify({ error: 'All fields are required' }), { status: 400 });
     }
 
-    // hCaptcha verification enabled
-    const HCAPTCHA_DISABLED_FOR_DEV = false;
+    const turnstileSecret = import.meta.env.TURNSTILE_SECRET_KEY;
+    if (!turnstileSecret) {
+        console.error('Contact form: TURNSTILE_SECRET_KEY is missing');
+        return new Response(JSON.stringify({ error: 'Contact form protection is not configured.' }), { status: 503 });
+    }
 
-    // Verify hCaptcha token
-    const hcaptchaSecret = import.meta.env.HCAPTCHA_SECRET;
-    console.log('Contact form: hCaptcha check - secret exists:', !!hcaptchaSecret, 'token exists:', !!hcaptchaToken);
+    if (!turnstileToken) {
+        return new Response(JSON.stringify({ error: 'Please complete the security check.' }), { status: 400 });
+    }
 
-    if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && hcaptchaToken) {
-        try {
-            const verifyResponse = await fetch('https://api.hcaptcha.com/siteverify', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: `response=${hcaptchaToken}&secret=${hcaptchaSecret}`,
-            });
-            const verifyResult = await verifyResponse.json();
-            console.log('hCaptcha verification result:', JSON.stringify(verifyResult));
+    const remoteIp = request.headers.get('cf-connecting-ip')
+        || request.headers.get('x-real-ip')
+        || request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+        || undefined;
+    const turnstileResult = await verifyTurnstileToken({
+        token: turnstileToken,
+        secret: turnstileSecret,
+        remoteIp,
+        expectedAction: 'contact',
+    });
 
-            if (!verifyResult.success) {
-                console.error('hCaptcha verification failed:', verifyResult);
-                const errorCodes = verifyResult['error-codes'] || [];
-                const errorMessage = errorCodes.includes('sitekey-secret-mismatch')
-                    ? 'hCaptcha configuration error. Please contact support.'
-                    : 'Captcha verification failed. Please try again.';
-                return new Response(JSON.stringify({
-                    error: errorMessage,
-                    debug: errorCodes.join(', ')
-                }), { status: 400 });
-            }
-        } catch (e) {
-            console.error('hCaptcha verification error:', e);
-            // Allow through if hCaptcha service is down
-        }
-    } else if (!HCAPTCHA_DISABLED_FOR_DEV && hcaptchaSecret && !hcaptchaToken) {
-        console.log('Contact form: No captcha token provided');
-        return new Response(JSON.stringify({ error: 'Please complete the captcha' }), { status: 400 });
-    } else if (!hcaptchaSecret) {
-        console.log('Contact form: No HCAPTCHA_SECRET configured, skipping verification');
+    if (!turnstileResult.success) {
+        console.error('Contact form: Turnstile verification failed', turnstileResult.errorCodes);
+        return new Response(JSON.stringify({ error: 'Security check failed. Please try again.' }), { status: 400 });
     }
 
     // Send email via SMTP (same as horoscope emails)
@@ -88,7 +79,8 @@ export const POST: APIRoute = async ({ request }) => {
     const safeMessage = escapeHtml(message);
 
     try {
-        // Send to the owner
+        // Owner delivery is the primary operation. Customer confirmation must
+        // never turn a successfully received support request into a UI failure.
         await transporter.sendMail({
             from: `"Astralo Contact" <${SMTP_USER}>`,
             to: 'apollotechsro@gmail.com',
@@ -112,14 +104,28 @@ export const POST: APIRoute = async ({ request }) => {
             `,
         });
 
-        // Send confirmation to customer
+    } catch (error: any) {
+        console.error('Contact owner email error:', {
+            code: error?.code,
+            command: error?.command,
+            responseCode: error?.responseCode,
+            message: error?.message,
+        });
+        return new Response(JSON.stringify({
+            error: 'Your message could not be delivered to support. Please email apollotechsro@gmail.com directly.',
+            errorCode: 'owner_email_failed',
+        }), { status: 502 });
+    }
+
+    let confirmationSent = true;
+    try {
         await transporter.sendMail({
             from: `"Astralo" <${SMTP_USER}>`,
             to: email,
             subject: 'We received your message - Astralo',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <img src="https://astralo.online/ma_symbol_opt_73_3x.png" alt="Astralo" style="height: 40px; margin-bottom: 20px;">
+                    <img src="https://astralo.online/logo.png" alt="Astralo" style="height: 40px; width: auto; margin-bottom: 20px;">
                     <h2 style="color: #f59e0b;">Thank you for contacting us!</h2>
                     <p>Hi ${safeName},</p>
                     <p>We've received your message and will get back to you as soon as possible, typically within 24 hours.</p>
@@ -132,9 +138,15 @@ export const POST: APIRoute = async ({ request }) => {
             `,
         });
 
-        return new Response(JSON.stringify({ success: true }), { status: 200 });
     } catch (error: any) {
-        console.error('Contact email error:', error);
-        return new Response(JSON.stringify({ error: 'Failed to send email' }), { status: 500 });
+        confirmationSent = false;
+        console.error('Contact confirmation email error:', {
+            code: error?.code,
+            command: error?.command,
+            responseCode: error?.responseCode,
+            message: error?.message,
+        });
     }
+
+    return new Response(JSON.stringify({ success: true, confirmationSent }), { status: 200 });
 };

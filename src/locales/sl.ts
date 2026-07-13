@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const sl: Translations = {
     meta: {
-        title: 'Astralo - Brezplačni Dnevni Horoskop Danes 2026 | Natančne Napovedi Zodiaka',
-        description: 'Pridobite BREZPLAČNI personaliziran horoskop danes! ⭐ Dnevne, tedenske in mesečne napovedi. Ljubezenska združljivost, karierni nasveti. 50.000+ zadovoljnih strank. Takojšnja dostava!',
+        title: "Astralo - Brezplačni Dnevni Horoskop Danes 2026 | Natančne Napovedi Zodiaka",
+        description: "Pridobite BREZPLAČNI personaliziran horoskop danes! ⭐ Dnevne, tedenske in mesečne napovedi. Ljubezenska združljivost, karierni nasveti. Takojšnja dostava!",
         keywords: 'dnevni horoskop, brezplačni horoskop, horoskop danes, tedenski horoskop, mesečni horoskop, ljubezenski horoskop, zodiak, astrologija, horoskop 2026, personaliziran horoskop',
     },
     header: {
@@ -11,15 +11,15 @@ const sl: Translations = {
         online: 'Na spletu',
     },
     promo: {
-        offer: 'OMEJENA PONUDBA: 50% popust na vse horoskope!',
+        offer: "Personalizirani Horoskopi",
         delivery: 'Takojšnja dostava',
-        customers: '50.000+ zadovoljnih strank',
+        customers: "Takojšnja dostava",
         secure: 'Varno plačilo',
     },
     hero: {
         title: 'Vaš Osebni Horoskop',
         subtitle: 'Končno natančen horoskop • Ustvarjen posebej za vas',
-        features: '✨ Takojšnja dostava • 🔒 Varna plačila • ⭐ 50.000+ strank',
+        features: "✨ Takojšnja dostava • 🔒 Varno plačilo • ⭐ Personalizirani Horoskopi",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const sl: Translations = {
         technology: { title: 'Napredna Tehnologija', description: 'Najsodobnejša tehnologija za natančne napovedi' },
         instant: { title: 'Takoj', description: 'Vaš horoskop pripravljen v nekaj minutah' },
         professional: { title: 'Profesionalno', description: 'Ustvarjeno po astroloških načelih' },
-        verified: { title: 'Preverjeno', description: '50.000+ zadovoljnih strank' },
+        verified: { title: 'Preverjeno', description: "Personalizirani Horoskopi" },
     },
     form: {
         title: 'Pridobite svoj horoskop',
@@ -130,7 +130,7 @@ const sl: Translations = {
         q1: 'Kaj je Astralo?',
         a1: 'Astralo je profesionalna spletna horoskop storitev, ki zagotavlja personalizirana astrološka branja na podlagi vaših natančnih rojstnih podatkov (datum, čas in kraj). Ponujamo dnevne, tedenske, mesečne horoskope in analizo partnerske združljivosti, dostavljene takoj kot lepo oblikovani PDF dokumenti na vaš e-poštni naslov.',
         q2: 'Kako natančni so Astralo horoskopi?',
-        a2: 'Astralo horoskopi so ustvarjeni z uporabo naprednih astroloških algoritmov na podlagi vaših natančnih rojstnih podatkov. Z več kot 50.000 zadovoljnimi strankami in oceno 4,9/5 zvezdic, naša personalizirana branja zagotavljajo podrobne vpoglede za zabavne namene.',
+        a2: "Astralo horoskopi so ustvarjeni z uporabo naprednih astroloških algoritmov na podlagi vaših natančnih rojstnih podatkov.",
         q3: 'Kako hitro bom prejel svoj horoskop?',
         a3: 'Vaš personalizirani horoskop je ustvarjen in dostavljen takoj na vaš e-poštni naslov v 2-5 minutah po plačilu. Prejeli boste profesionalni PDF dokument s popolnim astrološkim branjem.',
         q4: 'Katere plačilne metode sprejemate?',
@@ -142,7 +142,7 @@ const sl: Translations = {
     },
     emailCapture: {
         title: '✨ Pridobite brezplačno rojstno karto in tedensko napoved',
-        subtitle: 'Pridružite se 50.000+ drugim, ki vsak ponedeljek prejmejo personalizirane kozmične vpoglede in brezplačna poročila!',
+        subtitle: "Pridobite brezplačno rojstno karto in tedensko napoved. Takojšnja dostava.",
         placeholder: 'Vnesite svoj email',
         button: 'Prejmi moje brezplačno branje',
         consent: 'Strinjam se s prejemanjem kozmičnih vpogledov in sprejemam politiko zasebnosti.',
@@ -150,12 +150,12 @@ const sl: Translations = {
         error: 'Nekaj je šlo narobe. Prosimo, poskusite ponovno.',
     },
     ads: {
-        sticky: 'Zadnje ure: 50% poseben popust odklenjen',
+        sticky: "Personalizirani Horoskopi",
         claim: 'Prevzemi zdaj',
-        limited: 'Omejena ponudba',
+        limited: "Takojšnja dostava",
         unlock: 'Odklenite svoj',
         waiting: 'vas čaka...',
-        join: 'Pridružite se 50.000+ dušam, ki so našle jasnost v zvezdah.',
+        join: "Personalizirani Horoskopi",
         getFor: 'Zagotovite si za',
     },
 };

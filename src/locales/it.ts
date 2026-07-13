@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const it: Translations = {
     meta: {
-        title: 'Astralo - Oroscopo di Oggi Gratis 2026 | Previsioni Segni Zodiacali',
-        description: 'Ottieni il tuo oroscopo GRATIS oggi! ⭐ Oroscopo giornaliero, settimanale e mensile. Affinità di coppia, carriera e previsioni. 50.000+ clienti soddisfatti. Consegna istantanea!',
+        title: "Astralo - Oroscopo di Oggi Gratis 2026 | Previsioni Segni Zodiacali",
+        description: "Ottieni il tuo oroscopo GRATIS oggi! ⭐ Oroscopo giornaliero, settimanale e mensile. Affinità di coppia, carriera e previsioni. Consegna istantanea!",
         keywords: 'oroscopo di oggi, oroscopo gratis, oroscopo 2026, segni zodiacali, oroscopo amore, affinità di coppia, oroscopo settimanale, oroscopo mensile, tema natale, ascendente, previsioni astrologiche, oroscopo personalizzato, tarocchi, astrologia',
     },
     header: {
@@ -11,15 +11,15 @@ const it: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'OFFERTA LIMITATA: 50% di sconto su tutti gli oroscopi!',
+        offer: "Oroscopi Personalizzati",
         delivery: 'Consegna istantanea via email',
-        customers: '50.000+ clienti soddisfatti',
+        customers: "Consegna istantanea via email",
         secure: 'Pagamento sicuro con Stripe',
     },
     hero: {
         title: 'Il Tuo Oroscopo Personale',
         subtitle: 'Finalmente un oroscopo davvero accurato • Creato appositamente per te',
-        features: '✨ Consegna istantanea • 🔒 Pagamenti sicuri • ⭐ 50.000+ clienti soddisfatti',
+        features: "✨ Consegna istantanea via email • 🔒 Pagamento sicuro con Stripe • ⭐ Oroscopi Personalizzati",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const it: Translations = {
         technology: { title: 'Tecnologia Avanzata', description: 'Tecnologia all\'avanguardia per previsioni accurate' },
         instant: { title: 'Istantaneo', description: 'Il tuo oroscopo pronto in pochi minuti' },
         professional: { title: 'Professionale', description: 'Creato secondo i principi astrologici' },
-        verified: { title: 'Verificato', description: '50.000+ clienti soddisfatti' },
+        verified: { title: 'Verificato', description: "Oroscopi Personalizzati" },
     },
     form: {
         title: 'Ottieni il tuo oroscopo',
@@ -130,7 +130,7 @@ const it: Translations = {
         q1: 'Cos\'è Astralo?',
         a1: 'Astralo è un servizio professionale di oroscopo online che fornisce letture astrologiche personalizzate basate sui tuoi dati di nascita esatti (data, ora e luogo). Offriamo oroscopi giornalieri, settimanali, mensili e analisi di compatibilità di coppia, consegnati istantaneamente come documenti PDF splendidamente progettati alla tua email.',
         q2: 'Quanto sono accurati gli oroscopi di Astralo?',
-        a2: 'Gli oroscopi di Astralo sono creati utilizzando algoritmi astrologici avanzati basati sui tuoi dati di nascita precisi. Con oltre 50.000 clienti soddisfatti e una valutazione di 4,9/5 stelle, le nostre letture personalizzate forniscono informazioni dettagliate a scopo di intrattenimento.',
+        a2: "Gli oroscopi di Astralo sono creati utilizzando algoritmi astrologici avanzati basati sui tuoi dati di nascita precisi.",
         q3: 'Quanto tempo ci vuole per ricevere il mio oroscopo?',
         a3: 'Il tuo oroscopo personalizzato viene generato e consegnato istantaneamente alla tua email entro 2-5 minuti dal pagamento. Riceverai un documento PDF professionale con la tua lettura astrologica completa.',
         q4: 'Quali metodi di pagamento accettate?',
@@ -142,7 +142,7 @@ const it: Translations = {
     },
     emailCapture: {
         title: '✨ Ottieni il tuo tema natale e le previsioni settimanali gratis',
-        subtitle: 'Unisciti a oltre 50.000 persone che ricevono approfondimenti cosmici personalizzati e rapporti gratuiti ogni lunedì!',
+        subtitle: "Ottieni il tuo tema natale e le previsioni settimanali gratis. Consegna istantanea via email.",
         placeholder: 'Inserisci la tua email',
         button: 'Ottieni la mia lettura gratuita',
         consent: 'Accetto di ricevere approfondimenti cosmici e accetto l\'informativa sulla privacy.',
@@ -150,12 +150,12 @@ const it: Translations = {
         error: 'Qualcosa è andato storto. Riprova più tardi.',
     },
     ads: {
-        sticky: 'Ultime ore: 50% di sconto speciale sbloccato',
+        sticky: "Oroscopi Personalizzati",
         claim: 'Riscatta ora',
-        limited: 'Offerta limitata',
+        limited: "Consegna istantanea via email",
         unlock: 'Sblocca il tuo',
         waiting: 'ti sta aspettando...',
-        join: 'Unisciti a oltre 50.000 anime che hanno trovato chiarezza nelle stelle.',
+        join: "Oroscopi Personalizzati",
         getFor: 'Ottienilo per',
     },
 };

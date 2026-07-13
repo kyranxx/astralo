@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const tr: Translations = {
     meta: {
-        title: 'Astralo - Günlük Burç Yorumu Ücretsiz 2026 | Doğru Astroloji Tahminleri',
-        description: 'ÜCRETSİZ burç yorumunuzu alın bugün! ⭐ Günlük, haftalık ve aylık burç yorumları. Aşk burcu, partner uyumu ve kariyer. 50.000+ mutlu müşteri. Anında teslimat!',
+        title: "Astralo - Günlük Burç Yorumu Ücretsiz 2026 | Doğru Astroloji Tahminleri",
+        description: "ÜCRETSİZ burç yorumunuzu alın bugün! ⭐ Günlük, haftalık ve aylık burç yorumları. Aşk burcu, partner uyumu ve kariyer. Anında teslimat!",
         keywords: 'günlük burç yorumu, burç yorumu ücretsiz, burç yorumu 2026, koç burcu, boğa burcu, ikizler burcu, aşk burcu, partner uyumu, haftalık burç, aylık burç, astroloji, yıldız haritası, doğum haritası',
     },
     header: {
@@ -11,15 +11,15 @@ const tr: Translations = {
         online: 'Çevrimiçi',
     },
     promo: {
-        offer: 'SINIRLI TEKLİF: %50 indirim!',
+        offer: "Kişisel Burç Yorumları",
         delivery: 'Anında teslimat',
-        customers: '50.000+ mutlu müşteri',
+        customers: "Anında teslimat",
         secure: 'Güvenli ödeme',
     },
     hero: {
         title: 'Kişisel Burç Yorumunuz',
         subtitle: 'Sonunda doğru burç yorumu • Özellikle sizin için oluşturuldu',
-        features: '✨ Anında teslimat • 🔒 Güvenli ödemeler • ⭐ 50.000+ müşteri',
+        features: "✨ Anında teslimat • 🔒 Güvenli ödeme • ⭐ Kişisel Burç Yorumları",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const tr: Translations = {
         technology: { title: 'Teknoloji', description: 'Modern teknoloji' },
         instant: { title: 'Anında', description: 'Dakikalar içinde hazır' },
         professional: { title: 'Profesyonel', description: 'Astrolojik prensipler' },
-        verified: { title: 'Doğrulanmış', description: '50.000+ müşteri' },
+        verified: { title: 'Doğrulanmış', description: "Kişisel Burç Yorumları" },
     },
     form: {
         title: 'Burç yorumunuzu alın',
@@ -130,7 +130,7 @@ const tr: Translations = {
         q1: 'Astralo nedir?',
         a1: 'Astralo, kesin doğum verilerinize (tarih, saat ve yer) dayalı kişiselleştirilmiş astrolojik okumalar sunan profesyonel bir çevrimiçi burç yorumu hizmetidir. Günlük, haftalık, aylık burç yorumları ve partner uyumluluk analizleri sunuyoruz, bunlar güzelce tasarlanmış PDF belgeleri olarak anında e-postanıza teslim edilir.',
         q2: 'Astralo burç yorumları ne kadar doğru?',
-        a2: 'Astralo burç yorumları, kesin doğum verilerinize dayalı gelişmiş astrolojik algoritmalar kullanılarak oluşturulur. 50.000\'den fazla memnun müşteri ve 4,9/5 yıldız değerlendirmesiyle, kişiselleştirilmiş okumalarımız eğlence amaçlı ayrıntılı bilgiler sağlar.',
+        a2: "Astralo burç yorumları, kesin doğum verilerinize dayalı gelişmiş astrolojik algoritmalar kullanılarak oluşturulur.",
         q3: 'Burç yorumumu ne kadar çabuk alacağım?',
         a3: 'Kişiselleştirilmiş burç yorumunuz ödeme sonrasında 2-5 dakika içinde oluşturulur ve anında e-postanıza teslim edilir. Tam astrolojik okumamızı içeren profesyonel bir PDF belgesi alacaksınız.',
         q4: 'Hangi ödeme yöntemlerini kabul ediyorsunuz?',
@@ -142,20 +142,20 @@ const tr: Translations = {
     },
     emailCapture: {
         title: '✨ Ücretsiz Doğum Haritası ve Haftalık Öngörü Alın',
-        subtitle: 'Her Pazartesi kişiselleştirilmiş kozmik bilgiler ve ücretsiz raporlar alan 50.000\'den fazla kişiye katılın!',
+        subtitle: "Ücretsiz Doğum Haritası ve Haftalık Öngörü Alın. Anında teslimat.",
         placeholder: 'E-postanızı girin',
-        button: 'Ücretsiz okumamı al',
+        button: 'Ücretsiz burç yorumumu gör',
         consent: 'Kozmik bilgiler almayı kabul ediyorum ve gizlilik politikasını onaylıyorum.',
         success: '✨ Hoş geldiniz! İlk ücretsiz okumanız yolda.',
         error: 'Bir şeyler ters gitti. Lütfen tekrar deneyin.',
     },
     ads: {
-        sticky: 'Son saatler: %50 özel indirim aktif',
+        sticky: "Kişisel Burç Yorumları",
         claim: 'Şimdi al',
-        limited: 'Sınırlı teklif',
+        limited: "Anında teslimat",
         unlock: 'Kilidini aç:',
         waiting: 'seni bekliyor...',
-        join: 'Yıldızlarda netlik bulan 50.000\'den fazla ruha katılın.',
+        join: "Kişisel Burç Yorumları",
         getFor: 'Şunun için al',
     },
 };

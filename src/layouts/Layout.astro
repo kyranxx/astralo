@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import CookieConsent from '../components/CookieConsent.astro';
+import CosmicAd from '../components/CosmicAd.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import FeedbackWidget from '../components/FeedbackWidget.astro';
 import { productCatalog, supportedLocaleCodes } from '../lib/agent-ready';
@@ -14,6 +15,7 @@ import {
     defaultOgImage,
     getHomePath,
     isRtlLocale,
+    normalizeCanonicalUrl,
     ogLocaleMap,
     siteUrl,
 } from '../lib/seo';
@@ -29,6 +31,7 @@ interface Props {
     backgroundImage?: string;
     lang?: string;
     canonicalUrl?: string;
+    alternateLanguageUrls?: Array<{ code: SupportedLocale; hreflang: string; href: string }>;
     description?: string;
     keywords?: string;
     noIndex?: boolean;
@@ -45,6 +48,7 @@ const {
     backgroundImage = '/background5.webp',
     lang = 'en',
     canonicalUrl,
+    alternateLanguageUrls: providedAlternateLanguageUrls,
     description,
     keywords,
     noIndex = false,
@@ -53,6 +57,7 @@ const {
     publishedTime,
     modifiedTime,
     schema = [],
+    floatingProductKey,
 } = Astro.props;
 
 const currentLang = isValidLocale(lang) ? (lang as SupportedLocale) : 'en';
@@ -61,8 +66,13 @@ const currentDescription = description || t.meta.description;
 const currentKeywords = keywords || t.meta.keywords;
 const currentPath = Astro.url.pathname;
 const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
-const computedCanonicalUrl = canonicalUrl || `${siteUrl}${cleanPath}`;
-const alternateLanguageUrls = noIndex ? [] : buildAlternateLanguageUrls(currentPath);
+const isLocaleHomePath = /^\/[a-z]{2}$/.test(cleanPath);
+const isCommercePath = cleanPath === '/'
+    || isLocaleHomePath
+    || /^\/(?:[a-z]{2}\/)?(?:form|horoscope|free-horoscope)(?:\/|$)/.test(cleanPath);
+const showFeedbackWidget = !isCommercePath;
+const computedCanonicalUrl = normalizeCanonicalUrl(canonicalUrl || `${siteUrl}${cleanPath}`);
+const alternateLanguageUrls = noIndex ? [] : (providedAlternateLanguageUrls || buildAlternateLanguageUrls(currentPath));
 const defaultAlternateUrl = alternateLanguageUrls.find(({ code }) => code === 'en')?.href || siteUrl;
 const dir = isRtlLocale(currentLang) ? 'rtl' : 'ltr';
 const homeLink = getHomePath(currentLang);
@@ -171,14 +181,41 @@ const backgroundImageType = backgroundImage.endsWith('.png')
             .animate-on-load{opacity:1}
             .animate-delay-1,.animate-delay-2,.animate-delay-3,.animate-delay-4{opacity:1}
         </style>
+        <script is:inline>
+            (function () {
+                function getGaClientIdFromCookie() {
+                    var match = document.cookie.match(/(?:^|;\s*)_ga=([^;]+)/);
+                    if (!match) return '';
+
+                    var value = decodeURIComponent(match[1]);
+                    var gaMatch = value.match(/^GA\d+\.\d+\.(.+)$/);
+                    return gaMatch ? gaMatch[1] : value;
+                }
+
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = window.gtag || function () {
+                    window.dataLayer.push(arguments);
+                };
+                window.astraloGetGaClientId = window.astraloGetGaClientId || getGaClientIdFromCookie;
+                window.astraloTrack = window.astraloTrack || function (eventName, params) {
+                    if (!eventName) return;
+
+                    try {
+                        window.gtag('event', eventName, params || {});
+                    } catch (error) {
+                        console.warn('GA4 tracking failed', error);
+                    }
+                };
+            })();
+        </script>
     </head>
     <body>
         <div class="sticky top-0 z-[60] bg-amber-500/95 py-1.5 px-4 text-center shadow-sm">
             <div class="flex items-center justify-center gap-2 sm:gap-4 text-black text-[11px] sm:text-xs font-bold uppercase tracking-wider">
-                <span>{t.ads?.sticky || 'Last Hours: 50% Special Discount Unlocked'}</span>
+                <span>{t.promo.delivery}</span>
                 <span class="hidden sm:inline opacity-30">|</span>
                 <a href={`${homeLink}#horoscopes`} class="underline hover:opacity-80 transition-opacity">
-                    {t.ads?.claim || 'Claim Now'}
+                    {t.promo.secure}
                 </a>
             </div>
         </div>
@@ -199,26 +236,10 @@ const backgroundImageType = backgroundImage.endsWith('.png')
 
         <slot />
 
-        <FeedbackWidget lang={currentLang} />
+        {floatingProductKey && <CosmicAd type="floating" productKey={floatingProductKey} lang={currentLang} />}
+        {showFeedbackWidget && <FeedbackWidget lang={currentLang} />}
         <CookieConsent lang={currentLang} />
         <EmailCapture lang={currentLang} />
-        <script is:inline>
-            (function () {
-                window.dataLayer = window.dataLayer || [];
-                window.gtag = window.gtag || function () {
-                    window.dataLayer.push(arguments);
-                };
-                window.astraloTrack = window.astraloTrack || function (eventName, params) {
-                    if (!eventName) return;
-
-                    try {
-                        window.gtag('event', eventName, params || {});
-                    } catch (error) {
-                        console.warn('GA4 tracking failed', error);
-                    }
-                };
-            })();
-        </script>
 
         <script is:inline>
             (function () {

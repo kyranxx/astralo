@@ -6,7 +6,8 @@ import { sendWelcomeEmail } from '../../lib/email-service';
 export const POST: APIRoute = async ({ request }) => {
     try {
         const body = await request.json();
-        const { email, source = 'website', lang = 'en', gdprConsent = true } = body;
+        const { email, lang = 'en', gdprConsent = true } = body;
+        const source = normalizeSubscriberSource(body.source);
 
         // Validate email
         if (!email || !email.includes('@')) {
@@ -87,3 +88,14 @@ export const POST: APIRoute = async ({ request }) => {
         });
     }
 };
+
+function normalizeSubscriberSource(value: unknown): string {
+    const source = String(value || 'website')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9_-]/g, '_')
+        .replace(/_+/g, '_')
+        .slice(0, 80);
+
+    return source || 'website';
+}

@@ -7,13 +7,13 @@
 
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
-import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
-import { getArticleTranslation, getArticleMeta, getAllArticleSlugs } from '../../lib/blog';
+import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen } from 'lucide-astro';
+import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogDisplayTitle, getBlogSeoTitle, getArticleLanguageCodes } from '../../lib/blog';
 import BlogCTA from '../../components/BlogCTA.astro';
-import EmailCapture from '../../components/EmailCapture.astro';
 import {
   buildArticleSchema,
   buildBreadcrumbSchema,
+  buildLocaleUrl,
   getProductLandingPath,
   getSuggestedProductForArticle,
   rewriteBlogOfferLinks,
@@ -31,8 +31,9 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const translation = getArticleTranslation(slug as string, 'en');
-const meta = getArticleMeta(slug as string);
+const blogSlug = slug as string;
+const translation = getArticleTranslation(blogSlug, 'en');
+const meta = getArticleMeta(blogSlug);
 
 if (!translation || !meta) {
   return Astro.redirect('/blog');
@@ -41,8 +42,9 @@ if (!translation || !meta) {
 const post = {
   ...translation,
   ...meta,
-  displayTitle: translation.title
+  displayTitle: getBlogDisplayTitle(translation.title)
 };
+const seoTitle = getBlogSeoTitle(post.displayTitle, post.seoTitle);
 
 // Related posts (exclude current) - simplistic logic for now
 const allSlugs = getAllArticleSlugs();
@@ -58,11 +60,16 @@ const relatedPosts = allSlugs
 
 // Generate share URLs
 const currentUrl = `${siteUrl}/blog/${slug}`;
+const blogAlternateLanguageUrls = getArticleLanguageCodes(blogSlug).map((code) => ({
+  code,
+  hreflang: code,
+  href: buildLocaleUrl(`/blog/${blogSlug}`, code),
+}));
 const shareText = encodeURIComponent(post.displayTitle);
-const productKey = getSuggestedProductForArticle(slug as string);
+const productKey = getSuggestedProductForArticle(blogSlug);
 const landingPath = getProductLandingPath('en', productKey);
-const renderedContent = rewriteBlogOfferLinks(post.content, 'en', slug as string);
-const noIndex = isStaleMonthlyHoroscopeSlug(slug as string);
+const renderedContent = rewriteBlogOfferLinks(post.content, 'en', blogSlug);
+const noIndex = isStaleMonthlyHoroscopeSlug(blogSlug);
 
 // Content splitting for mid-article CTA
 const contentParts = renderedContent.split('</p>');
@@ -90,10 +97,11 @@ const pageSchema = [
 ---
 
 <Layout 
-  title={`${post.displayTitle} | Astralo`}
+  title={`${seoTitle} | Astralo`}
   description={post.metaDescription}
   keywords={post.keywords}
   lang="en"
+  alternateLanguageUrls={blogAlternateLanguageUrls}
   schema={pageSchema}
   ogType="article"
   publishedTime={meta.date}
@@ -149,7 +157,6 @@ const pageSchema = [
             </div>
             <div>
               <p class="text-white font-bold text-lg">{post.author}</p>
-              <p class="text-white/50 text-sm">Expert Astrologer</p>
             </div>
           </div>
           
@@ -197,25 +204,6 @@ const pageSchema = [
         </div>
         )}
 
-        <!-- Table of Contents -->
-        {post.tableOfContents && post.tableOfContents.length > 0 && (
-          <div class="glass rounded-2xl p-8 mb-12 border border-white/5">
-            <div class="flex items-center gap-3 mb-6">
-              <List class="w-6 h-6 text-amber-400" />
-              <h3 class="text-xl font-bold text-white">📑 Table of Contents</h3>
-            </div>
-            <nav class="space-y-3">
-              {post.tableOfContents.map((item: { id: string; title: string }, index: number) => (
-                <a href={`#${item.id}`} 
-                   class="flex items-center gap-4 text-white/70 hover:text-amber-400 transition-colors py-1 group">
-                  <span class="text-white/20 text-sm font-mono group-hover:text-amber-500/50 transition-colors">{String(index + 1).padStart(2, '0')}</span>
-                  <span class="text-lg">{item.title}</span>
-                </a>
-              ))}
-            </nav>
-          </div>
-        )}
-
         <!-- Content -->
         <!-- Added prose-p:mb-10 relative to leading-loose for massive Medium-style gaps -->
         <div 
@@ -232,41 +220,10 @@ const pageSchema = [
         >
           <div set:html={firstHalf} />
           
-          <BlogCTA productKey={productKey} lang="en" />
+          <BlogCTA productKey={productKey} lang="en" sourceSlug={blogSlug} />
           
           <div set:html={secondHalf} />
         </div>
-
-        <!-- Key Takeaways Box -->
-        {post.keyTakeaways && (
-        <div class="glass-strong rounded-2xl p-8 mt-16 border border-green-500/30 bg-green-500/5">
-          <div class="flex items-center gap-3 mb-6">
-            <Star class="w-6 h-6 text-green-400" />
-            <h3 class="text-xl font-bold text-white">🎯 Key Takeaways</h3>
-          </div>
-          <ul class="space-y-4">
-            {post.keyTakeaways.map((point: string) => (
-              <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
-                <span class="text-green-400 mt-1.5 font-bold">★</span>
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        )}
-
-        <!-- CTA -->
-        <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
-          <h3 class="text-3xl font-bold text-white mb-4">✨ Get Your Personalized Horoscope</h3>
-          <p class="text-white/80 mb-8 text-lg">Based on your exact birth data for maximum accuracy</p>
-          <a href={landingPath} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
-            <Star class="w-5 h-5" />
-            Order Now - 50% OFF
-          </a>
-        </div>
-
-        <!-- Email Capture -->
-        <EmailCapture lang="en" inline={true} />
 
         <!-- Related Posts -->
         {relatedPosts.length > 0 && (
@@ -353,5 +310,21 @@ const pageSchema = [
     } catch (err) {
       console.error('Failed to copy link:', err);
     }
+  });
+
+  document.querySelectorAll('[data-astralo-track-click]').forEach((element) => {
+    element.addEventListener('click', () => {
+      const track = window['astraloTrack'];
+      if (typeof track !== 'function') return;
+
+      const target = element;
+      track(target.dataset.astraloTrackClick || 'internal_click', {
+        blog_slug: target.dataset.blogSlug || '',
+        click_surface: target.dataset.clickSurface || '',
+        item_id: target.dataset.productKey || '',
+        language: target.dataset.language || 'en',
+        link_url: target.getAttribute('href') || '',
+      });
+    });
   });
 </script>

@@ -6,8 +6,8 @@ import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon, BookOpen, ArrowRight } from 'lucide-astro';
 import { isValidLocale, getTranslations, type SupportedLocale } from '../../lib/i18n';
 import { getTestimonials } from '../../lib/testimonials';
-import { getLatestArticleSlugs, getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
-import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../../lib/products';
+import { getLatestArticleSlugsForLang, getExactArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
+import { getProductCopy, getProductKeys, getProductPriceInEuros, type ProductKey } from '../../lib/products';
 import { buildFaqSchema, buildWebPageSchema, getFreeHoroscopePath, getGeneralFaqEntries, getHomeSeoOverride, getProductLandingPath, siteUrl } from '../../lib/seo';
 
 const { lang } = Astro.params;
@@ -26,9 +26,9 @@ const freeHoroscopePath = getFreeHoroscopePath(currentLang);
 
 // Get latest blog articles for internal linking (SEO: prevents orphan pages)
 const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
-const latestArticles = getLatestArticleSlugs(3)
+const latestArticles = getLatestArticleSlugsForLang(currentLang, 3)
   .map(slug => {
-    const translation = getArticleTranslation(slug, currentLang);
+    const translation = getExactArticleTranslation(slug, currentLang);
     const meta = getArticleMeta(slug);
     if (!translation || !meta) return null;
     return {
@@ -40,38 +40,254 @@ const latestArticles = getLatestArticleSlugs(3)
   })
   .filter((article): article is NonNullable<typeof article> => Boolean(article));
 
-const horoscopeTypes = ([
-  {
-    id: "daily",
-    icon: "Sun",
-  },
-  {
-    id: "weekly",
-    icon: "Calendar",
-    popular: true,
-  },
-  {
-    id: "monthly",
-    icon: "Moon",
-  },
-  {
-    id: "partner",
-    icon: "Heart",
-  },
-] as const).map(type => ({
-  ...type,
-  popular: 'popular' in type && type.popular === true,
-  name: t.products[type.id].name,
-  description: t.products[type.id].description,
-  price: getProductPriceInEuros(type.id as ProductKey),
-  originalPrice: getProductOriginalPriceInEuros(type.id as ProductKey),
-  wordCount: t.products[type.id].wordCount,
-  benefits: t.products[type.id].benefits,
-  landingPath: getProductLandingPath(currentLang, type.id as ProductKey)
+const productUiMeta: Record<ProductKey, { icon: keyof typeof iconMap; popular?: boolean }> = {
+  daily: { icon: 'Sun' },
+  weekly: { icon: 'Calendar', popular: true },
+  monthly: { icon: 'Moon' },
+  partner: { icon: 'Heart' },
+  lifetime: { icon: 'Sparkles' },
+};
+
+const horoscopeTypes = getProductKeys().map((productKey) => ({
+  id: productKey,
+  ...productUiMeta[productKey],
+  popular: productUiMeta[productKey].popular === true,
+  ...getProductCopy(productKey, currentLang, t),
+  price: getProductPriceInEuros(productKey),
+  landingPath: getProductLandingPath(currentLang, productKey)
 }));
 
+const localizedSeoSection = (() => {
+  const sections: Partial<Record<SupportedLocale, {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    primaryPath: string;
+    primaryLabel: string;
+    secondaryPath: string;
+    secondaryLabel: string;
+    footerPath: string;
+    footerLabel: string;
+    points: Array<{ title: string; body: string }>;
+    faqs: Array<{ question: string; answer: string }>;
+  }>> = {
+    pt: {
+      eyebrow: 'Horóscopo personalizado online 2026',
+      title: 'Melhor horóscopo personalizado online 2026',
+      intro: 'Se procura uma leitura mais útil do que um horóscopo genérico, a Astralo combina data, hora e local de nascimento para criar previsões pessoais em formato digital.',
+      primaryPath: getProductLandingPath(currentLang, 'monthly'),
+      primaryLabel: t.products.monthly.name,
+      secondaryPath: freeHoroscopePath,
+      secondaryLabel: t.emailCapture?.button || 'Obter leitura grátis',
+      footerPath: getProductLandingPath(currentLang, 'partner'),
+      footerLabel: t.products.partner.name,
+      points: [
+        {
+          title: 'Personalizado pelos seus dados',
+          body: 'As leituras usam os seus dados de nascimento para adaptar amor, carreira, energia do período e conselhos práticos.',
+        },
+        {
+          title: 'Escolha a profundidade certa',
+          body: 'Comece grátis ou encomende horóscopo diário, semanal, mensal ou de casal conforme a pergunta que quer resolver.',
+        },
+        {
+          title: 'Entrega online por email',
+          body: 'Recebe o relatório em PDF no seu email, com pagamento seguro e acesso simples depois da encomenda.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Qual é o melhor horóscopo personalizado online em 2026?',
+          answer: 'O melhor horóscopo personalizado deve usar data, hora e local de nascimento, explicar amor, carreira e timing de forma clara, e entregar uma leitura que não seja apenas texto genérico.',
+        },
+        {
+          question: 'Posso começar com um horóscopo grátis?',
+          answer: 'Sim. Pode começar com a leitura grátis da Astralo e depois escolher um relatório diário, semanal, mensal ou de casal se quiser mais detalhe.',
+        },
+      ],
+    },
+    de: {
+      eyebrow: 'Astral Horoskop online',
+      title: 'Astral Horoskop: persönlich berechnet statt allgemein',
+      intro: 'Wenn Sie nach einem Astral Horoskop suchen, hilft eine persönliche Deutung mehr als ein kurzer Sternzeichen-Text. Astralo verbindet Geburtsdatum, Geburtszeit und Geburtsort mit aktuellen astrologischen Themen.',
+      primaryPath: getProductLandingPath(currentLang, 'monthly'),
+      primaryLabel: t.products.monthly.name,
+      secondaryPath: freeHoroscopePath,
+      secondaryLabel: t.emailCapture?.button || 'Kostenlose Analyse erhalten',
+      footerPath: getProductLandingPath(currentLang, 'partner'),
+      footerLabel: t.products.partner.name,
+      points: [
+        {
+          title: 'Mit Ihren Geburtsdaten',
+          body: 'Datum, Uhrzeit und Ort machen die Deutung konkreter als ein allgemeines Horoskop nach Sternzeichen.',
+        },
+        {
+          title: 'Für Alltag und Entscheidungen',
+          body: 'Wählen Sie Tageshoroskop, Wochenhoroskop oder Monatshoroskop je nachdem, wie weit Sie planen möchten.',
+        },
+        {
+          title: 'Online bestellt, per E-Mail geliefert',
+          body: 'Der Bericht wird digital erstellt und nach der Zahlung an Ihre E-Mail-Adresse gesendet.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Was ist ein Astral Horoskop?',
+          answer: 'Ein Astral Horoskop ist eine persönliche astrologische Deutung, die Ihre Geburtsdaten mit Planeten, Sternzeichen und aktuellen Zeitqualitäten verbindet.',
+        },
+        {
+          question: 'Ist ein Astral Horoskop genauer als ein normales Tageshoroskop?',
+          answer: 'Es kann persönlicher sein, weil es nicht nur das Sternzeichen nutzt, sondern auch Geburtsdatum, Geburtszeit und Geburtsort berücksichtigt.',
+        },
+      ],
+    },
+    no: {
+      eyebrow: 'Gratis personlig horoskop',
+      title: 'Gratis personlig horoskop som startpunkt',
+      intro: 'Et gratis personlig horoskop er best når det gir deg en tydelig start, ikke bare en generell tekst for stjernetegnet ditt. Astralo lar deg begynne gratis og gå videre til en mer detaljert rapport når du vil ha mer dybde.',
+      primaryPath: freeHoroscopePath,
+      primaryLabel: t.emailCapture?.button || 'Få min gratis tolkning',
+      secondaryPath: getProductLandingPath(currentLang, 'monthly'),
+      secondaryLabel: t.products.monthly.name,
+      footerPath: getProductLandingPath(currentLang, 'weekly'),
+      footerLabel: t.products.weekly.name,
+      points: [
+        {
+          title: 'Gratis start',
+          body: 'Bruk gratislesningen for å se om personlig astrologi passer for deg før du bestiller en dypere rapport.',
+        },
+        {
+          title: 'Basert på fødselsdata',
+          body: 'Fødselsdato, fødselstid og fødested gir et bedre grunnlag enn et vanlig horoskop for alle i samme tegn.',
+        },
+        {
+          title: 'Mer dybde ved behov',
+          body: 'Velg ukehoroskop, månedshoroskop eller partnerhoroskop når du vil ha mer konkret veiledning.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Hvor kan jeg få et gratis personlig horoskop?',
+          answer: 'Du kan starte med Astralos gratis personlige horoskop og senere velge en betalt rapport hvis du vil ha mer detaljert astrologisk tolkning.',
+        },
+        {
+          question: 'Hva betyr personlig horoskop gratis?',
+          answer: 'Det betyr en gratis horoskopstart som bruker personlige data eller preferanser, i stedet for bare et generelt stjernetegnshoroskop.',
+        },
+      ],
+    },
+    da: {
+      eyebrow: 'Professionelt horoskop online',
+      title: 'Professionelt horoskop: personlig læsning frem for standardtekst',
+      intro: 'Et professionelt horoskop bliver mere brugbart, når det tager udgangspunkt i dine fødselsdata. Astralo kombinerer fødselsdato, fødselstid og fødested med astrologiske temaer for kærlighed, karriere og den kommende periode.',
+      primaryPath: getProductLandingPath(currentLang, 'monthly'),
+      primaryLabel: t.products.monthly.name,
+      secondaryPath: freeHoroscopePath,
+      secondaryLabel: t.emailCapture?.button || 'Få min gratis læsning',
+      footerPath: getProductLandingPath(currentLang, 'partner'),
+      footerLabel: t.products.partner.name,
+      points: [
+        {
+          title: 'Baseret på dine fødselsdata',
+          body: 'Dato, tidspunkt og sted giver et mere personligt udgangspunkt end en kort standardtekst for alle med samme stjernetegn.',
+        },
+        {
+          title: 'Vælg den rette dybde',
+          body: 'Start gratis, eller vælg et dags-, uge-, måneds- eller partnerhoroskop alt efter det spørgsmål, du vil undersøge.',
+        },
+        {
+          title: 'Bestil online og modtag via e-mail',
+          body: 'Din rapport oprettes digitalt og sendes til din e-mail efter sikker betaling.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Hvad er et professionelt horoskop?',
+          answer: 'Et professionelt horoskop er en personlig astrologisk læsning, der bruger dine fødselsdata og forklarer relevante temaer tydeligt i stedet for kun at give en generel tekst for dit stjernetegn.',
+        },
+        {
+          question: 'Kan jeg starte gratis, før jeg bestiller en rapport?',
+          answer: 'Ja. Du kan starte med Astralos gratis læsning og senere vælge et dags-, uge-, måneds- eller partnerhoroskop, hvis du ønsker flere detaljer.',
+        },
+      ],
+    },
+    fi: {
+      eyebrow: 'Ilmainen päivähoroskooppi',
+      title: 'Ilmainen päivähoroskooppi henkilökohtaisen astrologian alkuun',
+      intro: 'Ilmainen päivähoroskooppi on hyödyllisin silloin, kun se auttaa sinua ymmärtämään päivän teemoja selkeästi. Astralossa voit aloittaa maksuttomalla sähköpostilukemisella ja valita yksityiskohtaisemman raportin, jos haluat lisää syvyyttä.',
+      primaryPath: freeHoroscopePath,
+      primaryLabel: t.emailCapture?.button || 'Aloita ilmaiseksi',
+      secondaryPath: getProductLandingPath(currentLang, 'daily'),
+      secondaryLabel: t.products.daily.name,
+      footerPath: getProductLandingPath(currentLang, 'monthly'),
+      footerLabel: t.products.monthly.name,
+      points: [
+        {
+          title: 'Ilmainen aloitus',
+          body: 'Saat ensin maksuttoman astrologisen sähköpostilukemisen ja voit tutustua Astralon tyyliin ilman tilausta.',
+        },
+        {
+          title: 'Päivän teemat selkeästi',
+          body: 'Henkilökohtainen tulkinta auttaa tarkastelemaan päivän energiaa, päätöksiä ja ihmissuhteita tavallista yleistekstiä tarkemmin.',
+        },
+        {
+          title: 'Lisää syvyyttä tarvittaessa',
+          body: 'Jos haluat yksityiskohtaisemman tulkinnan, voit valita päivä-, viikko-, kuukausi- tai parisuhdehoroskoopin.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Onko Astralon päivähoroskooppi ilmainen?',
+          answer: 'Voit aloittaa ilmaisella sähköpostilukemisella. Yksityiskohtaisempi päivähoroskooppiraportti on vapaaehtoinen maksullinen valinta, jos haluat lisää sisältöä.',
+        },
+        {
+          question: 'Miten henkilökohtainen päivähoroskooppi eroaa yleisestä horoskoopista?',
+          answer: 'Henkilökohtainen tulkinta pyrkii antamaan sinulle hyödyllisemmän lähtökohdan kuin sama lyhyt teksti kaikille saman horoskooppimerkin lukijoille.',
+        },
+      ],
+    },
+    sv: {
+      eyebrow: 'Gratis personligt horoskop',
+      title: 'Gratis personligt horoskop som en tydlig start',
+      intro: 'Ett gratis personligt horoskop är mest hjälpsamt när det ger dig en tydlig första bild utan att lova mer än det kan hålla. Astralo låter dig börja med en kostnadsfri e-postläsning och välja en djupare rapport om du vill gå vidare.',
+      primaryPath: freeHoroscopePath,
+      primaryLabel: t.emailCapture?.button || 'Starta gratis',
+      secondaryPath: getProductLandingPath(currentLang, 'monthly'),
+      secondaryLabel: t.products.monthly.name,
+      footerPath: getProductLandingPath(currentLang, 'partner'),
+      footerLabel: t.products.partner.name,
+      points: [
+        {
+          title: 'Kostnadsfri start',
+          body: 'Börja med en enkel astrologisk e-postläsning och känn efter om Astralos stil passar dig innan du beställer mer.',
+        },
+        {
+          title: 'Mer personligt än en standardtext',
+          body: 'Födelsedata och dina frågor ger ett bättre utgångsläge än samma korta text för alla med samma stjärntecken.',
+        },
+        {
+          title: 'Mer djup när du vill',
+          body: 'Välj vecko-, månads- eller partnerhoroskop när du vill ha en mer detaljerad rapport.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Var kan jag få ett gratis personligt horoskop?',
+          answer: 'Du kan börja med Astralos kostnadsfria e-postläsning och senare välja en mer detaljerad rapport om du vill gå vidare.',
+        },
+        {
+          question: 'Vad är skillnaden mellan ett gratis horoskop och en betald rapport?',
+          answer: 'Den kostnadsfria läsningen är en enkel start. Betalda rapporter går djupare in i periodens teman, relationer eller personliga frågor.',
+        },
+      ],
+    },
+  };
+
+  return sections[currentLang] || null;
+})();
+
 const homeSeoOverride = getHomeSeoOverride(currentLang);
-const fallbackHomepageTitle = `${t.hero.title} | ${t.header.badge} | Astralo`;
+const fallbackHomepageTitle = `Astralo | ${t.hero.title} | ${t.header.badge}`;
 const fallbackHomepageDescription = [
   t.hero.subtitle.replace(/\s*•\s*/g, ', '),
   horoscopeTypes.map((type) => type.name).join(', '),
@@ -86,6 +302,7 @@ const fallbackHomepageKeywords = [
   ),
 ].join(', ');
 const homepageTitle = homeSeoOverride?.title || fallbackHomepageTitle;
+const homepageHeroTitle = homeSeoOverride?.heroTitle || t.hero.title;
 const homepageDescription = homeSeoOverride?.description || fallbackHomepageDescription;
 const homepageKeywords = homeSeoOverride?.keywords || fallbackHomepageKeywords;
 const pageSchema = [
@@ -95,7 +312,10 @@ const pageSchema = [
     description: homepageDescription,
     lang: currentLang,
   }),
-  buildFaqSchema(getGeneralFaqEntries(t)),
+  buildFaqSchema([
+    ...getGeneralFaqEntries(t, currentLang),
+    ...(localizedSeoSection?.faqs || []),
+  ]),
 ];
 
 const iconMap = {
@@ -126,7 +346,7 @@ const testimonials = getTestimonials(currentLang);
     <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href={`/${currentLang}/`} class="flex items-center">
+          <a href={`/${currentLang}`} class="flex items-center">
             <img src="/logo.webp" alt="Astralo" width="756" height="222" class="h-9 sm:h-11 w-auto" fetchpriority="high" />
           </a>
           
@@ -148,7 +368,7 @@ const testimonials = getTestimonials(currentLang);
         <!-- Hero Section -->
         <div class="text-center mb-10 sm:mb-12">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-            {t.hero.title}
+            {homepageHeroTitle}
           </h1>
           <div class="animate-fade-in-up">
             <p class="text-xl sm:text-xl text-white/80 max-w-3xl mx-auto mb-4">
@@ -179,8 +399,58 @@ const testimonials = getTestimonials(currentLang);
           </div>
         </div>
 
+        {localizedSeoSection && (
+          <section class="mb-12 sm:mb-16 max-w-5xl mx-auto">
+            <div class="glass-strong rounded-2xl border border-white/10 p-5 sm:p-8">
+              <div class="flex items-center gap-2 mb-3 text-amber-400 text-sm font-semibold uppercase tracking-wider">
+                <Sparkles class="w-4 h-4" />
+                <span>{localizedSeoSection.eyebrow}</span>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-6 lg:gap-8 items-start">
+                <div>
+                  <h2 class="text-2xl sm:text-3xl font-black text-white mb-4">
+                    {localizedSeoSection.title}
+                  </h2>
+                  <p class="text-white/75 leading-relaxed mb-5">
+                    {localizedSeoSection.intro}
+                  </p>
+                  <div class="flex flex-wrap gap-3">
+                    <a
+                      href={localizedSeoSection.primaryPath}
+                      class="inline-flex items-center justify-center rounded-xl bg-amber-400 px-5 py-3 text-black font-bold hover:bg-amber-300 transition-colors"
+                    >
+                      {localizedSeoSection.primaryLabel}
+                    </a>
+                    <a
+                      href={localizedSeoSection.secondaryPath}
+                      class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-white font-semibold hover:border-amber-400/40 transition-colors"
+                    >
+                      {localizedSeoSection.secondaryLabel}
+                    </a>
+                  </div>
+                </div>
+                <div class="grid gap-3">
+                  {localizedSeoSection.points.map((point) => (
+                    <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+                      <h3 class="text-white font-bold mb-1">{point.title}</h3>
+                      <p class="text-white/65 text-sm leading-relaxed">{point.body}</p>
+                    </div>
+                  ))}
+                  <a
+                    href={localizedSeoSection.footerPath}
+                    class="text-amber-300 hover:text-amber-200 text-sm font-semibold inline-flex items-center gap-2"
+                  >
+                    {localizedSeoSection.footerLabel}
+                    <ArrowRight class="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         <!-- Horoscope Cards -->
-        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-5xl mx-auto">
+        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-5 mb-12 sm:mb-16 max-w-6xl mx-auto">
           {horoscopeTypes.map((type, index) => {
             const Icon = iconMap[type.icon as keyof typeof iconMap];
             return (
@@ -213,10 +483,6 @@ const testimonials = getTestimonials(currentLang);
                   <div class="flex flex-col items-center mb-3 sm:mb-6 py-2 sm:py-4 border-y border-white/5 bg-white/[0.02] rounded-xl sm:rounded-2xl">
                     <div class="flex items-center gap-2 sm:gap-3">
                       <span class="text-2xl sm:text-3xl font-black text-white tracking-tighter">{type.price.toFixed(2)}€</span>
-                      <div class="flex flex-col items-start leading-none">
-                        <span class="text-xs sm:text-xs text-white/60 line-through">{type.originalPrice.toFixed(2)}€</span>
-                        <span class="text-[10px] sm:text-[10px] font-bold text-amber-500 uppercase">-50%</span>
-                      </div>
                     </div>
                   </div>
 
@@ -308,6 +574,7 @@ const testimonials = getTestimonials(currentLang);
         </div>
 
         <!-- Testimonials -->
+        {testimonials.length > 0 && (
         <div class="mb-12 sm:mb-16">
           <h2 class="text-2xl sm:text-4xl font-bold text-white text-center mb-6 sm:mb-10">
             {t.testimonials.title}
@@ -333,6 +600,7 @@ const testimonials = getTestimonials(currentLang);
             ))}
           </div>
         </div>
+        )}
 
         <!-- Latest Articles Section (SEO: Internal Linking) -->
         <div class="mb-12 sm:mb-16">
@@ -341,7 +609,7 @@ const testimonials = getTestimonials(currentLang);
               <BookOpen class="w-6 h-6 sm:w-8 sm:h-8 text-amber-400" />
               {blogUi.latestArticles || 'Latest Articles'}
             </h2>
-            <a href={`/${currentLang}/blog/`} class="flex items-center gap-1 text-amber-400 hover:text-amber-300 transition-colors text-sm sm:text-base font-medium">
+            <a href={`/${currentLang}/blog`} class="flex items-center gap-1 text-amber-400 hover:text-amber-300 transition-colors text-sm sm:text-base font-medium">
               {blogUi.viewAll || 'View All'}
               <ArrowRight class="w-4 h-4" />
             </a>
@@ -349,7 +617,7 @@ const testimonials = getTestimonials(currentLang);
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {latestArticles.map((article, index) => (
               <a 
-                href={`/${currentLang}/blog/${article.slug}/`}
+                href={`/${currentLang}/blog/${article.slug}`}
                 class={`glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 group border border-white/10 hover:border-amber-400/30 animate-on-load animate-delay-${index + 1}`}
               >
                 <div class="flex items-start gap-3 mb-3">

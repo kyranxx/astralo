@@ -3,8 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { ArrowLeft, Scale } from 'lucide-astro';
+import { getProductKeys, getProductName, getProductPriceInEuros } from '../../lib/products';
 
 export const prerender = true;
+
+const productList = getProductKeys().map((productKey) => ({
+  name: getProductName(productKey, 'en'),
+  price: getProductPriceInEuros(productKey).toFixed(2),
+}));
 ---
 
 <Layout 
@@ -37,7 +43,7 @@ export const prerender = true;
             </div>
             <div>
               <h1 class="text-2xl sm:text-3xl font-bold text-white">Terms of Service</h1>
-              <p class="text-white/50 text-sm">Version 1.0 • Last updated: December 5, 2026</p>
+              <p class="text-white/50 text-sm">Version 1.0 • Last updated: May 27, 2026</p>
             </div>
           </div>
           
@@ -71,10 +77,9 @@ export const prerender = true;
                 Astralo provides personalized horoscope services including:
               </p>
               <ul class="list-disc pl-6 space-y-1 mt-2">
-                <li>Daily Horoscope (€0.99)</li>
-                <li>Weekly Horoscope (€1.99)</li>
-                <li>Monthly Horoscope (€4.99)</li>
-                <li>Partner Compatibility Horoscope (€2.99)</li>
+                {productList.map((product) => (
+                  <li>{product.name} (€{product.price})</li>
+                ))}
               </ul>
               <p class="mt-3">
                 All horoscopes are personalized based on the birth data you provide and are delivered digitally via email as PDF documents.

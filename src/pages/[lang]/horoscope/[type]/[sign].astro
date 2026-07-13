@@ -1,7 +1,7 @@
 ---
 import ZodiacProductLandingPage from '../../../../components/ZodiacProductLandingPage.astro';
 import { getSupportedLocales, isValidLocale, type SupportedLocale } from '../../../../lib/i18n';
-import { isValidProductKey } from '../../../../lib/products';
+import { getZodiacProductKeys, isValidProductKey } from '../../../../lib/products';
 import { isValidZodiacSign, zodiacSignSlugs } from '../../../../lib/zodiac';
 
 export const prerender = true;
@@ -10,7 +10,7 @@ export function getStaticPaths() {
     return getSupportedLocales()
         .filter((lang) => lang !== 'en')
         .flatMap((lang) =>
-            ['daily', 'weekly', 'monthly', 'partner'].flatMap((type) =>
+            getZodiacProductKeys().flatMap((type) =>
                 zodiacSignSlugs.map((sign) => ({
                     params: { lang, type, sign },
                 })),
@@ -22,7 +22,7 @@ const { lang, type, sign } = Astro.params;
 const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
 
 if (!type || !isValidProductKey(type) || !sign || !isValidZodiacSign(sign)) {
-    return Astro.redirect(`/${currentLang}/`);
+    return Astro.redirect(`/${currentLang}`);
 }
 ---
 

@@ -2,11 +2,17 @@ import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from '../../lib/pdf-generator';
 import { generateHoroscopeImage } from '../../lib/png-generator';
+import { findOrderBySessionId, updateOrder } from '../../lib/orders';
+import { validateReferer } from '../../lib/validation';
 
 // Set max duration for Vercel Serverless Functions to 60 seconds (requires Pro plan, will be 10s on Hobby)
 export const maxDuration = 60;
 
 export const POST: APIRoute = async ({ request }) => {
+    if (!validateReferer(request)) {
+        return new Response(JSON.stringify({ error: 'Unauthorized origin' }), { status: 403 });
+    }
+
     const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
 
     if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
@@ -25,7 +31,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     try {
         const data = await request.json();
-        const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime } = data;
+        const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime, sessionId } = data;
 
         console.log('📧 Send Email API - Received data:', {
             hasEmail: !!email,
@@ -36,9 +42,21 @@ export const POST: APIRoute = async ({ request }) => {
             lang
         });
 
-        if (!email || !horoscopeContent) {
-            console.error('📧 Send Email API - Missing required fields:', { email: !!email, horoscopeContent: !!horoscopeContent });
-            return new Response(JSON.stringify({ error: 'Missing required fields', details: { hasEmail: !!email, hasHoroscopeContent: !!horoscopeContent } }), { status: 400 });
+        if (!email || !horoscopeContent || !sessionId) {
+            console.error('📧 Send Email API - Missing required fields:', { email: !!email, horoscopeContent: !!horoscopeContent, sessionId: !!sessionId });
+            return new Response(JSON.stringify({
+                error: 'Missing required fields',
+                details: { hasEmail: !!email, hasHoroscopeContent: !!horoscopeContent, hasSessionId: !!sessionId }
+            }), { status: 400 });
+        }
+
+        const order = await findOrderBySessionId(sessionId);
+        if (!order) {
+            return new Response(JSON.stringify({ error: 'Paid order not found for this session' }), { status: 404 });
+        }
+
+        if (order.customerEmail && order.customerEmail.toLowerCase() !== String(email).toLowerCase()) {
+            return new Response(JSON.stringify({ error: 'Email does not match paid order' }), { status: 403 });
         }
 
         // Expanded translations for all languages
@@ -656,7 +674,7 @@ export const POST: APIRoute = async ({ request }) => {
                 <tr>
                     <td class="header-padding" style="background-color: #1a1a2e; padding: 40px 30px; text-align: center;">
                         <span style="font-size: 20px; color: #fbbf24; display: block; margin-bottom: 10px;">★</span>
-                        <img src="https://astralo.online/ma_symbol_opt_73_3x.png" width="180" height="auto" alt="Astralo" style="display: block; margin: 0 auto;">
+                        <img src="https://astralo.online/logo.png" width="180" height="auto" alt="Astralo" style="display: block; margin: 0 auto;">
                         <p style="margin: 15px 0 0 0; font-family: 'Times New Roman', Georgia, serif; font-size: 13px; color: #9ca3af; letter-spacing: 4px; text-transform: uppercase;">
                             ${t.slogan || 'Your Stars • Your Destiny'}
                         </p>
@@ -749,7 +767,7 @@ export const POST: APIRoute = async ({ request }) => {
                 <!-- Footer -->
                 <tr>
                     <td style="background-color: #0a0a1a; padding: 40px 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
-                        <img src="https://astralo.online/ma_symbol_opt_73_3x.png" width="120" height="auto" alt="Astralo" style="opacity: 0.5; margin-bottom: 25px;">
+                        <img src="https://astralo.online/logo.png" width="120" height="auto" alt="Astralo" style="opacity: 0.5; margin-bottom: 25px;">
                         <p style="margin: 0 0 8px 0; font-family: Arial, sans-serif; font-size: 11px; color: #6b7280; letter-spacing: 1px; text-transform: uppercase;">
                             Apollo Tech s.r.o. • Slovakia, European Union
                         </p>
@@ -814,6 +832,11 @@ export const POST: APIRoute = async ({ request }) => {
             subject: t.subject,
             html: html,
             attachments
+        });
+
+        await updateOrder(order.id, {
+            status: 'completed',
+            emailSentAt: new Date().toISOString(),
         });
 
         return new Response(JSON.stringify({ success: true }), { status: 200 });

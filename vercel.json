@@ -7,12 +7,76 @@
         {
             "path": "/api/email-drip",
             "schedule": "0 9 * * *"
+        },
+        {
+            "path": "/api/order-recovery",
+            "schedule": "30 9 * * *"
         }
     ],
     "redirects": [
         {
+            "source": "/en/blog",
+            "destination": "/blog",
+            "permanent": true
+        },
+        {
+            "source": "/en/blog/:slug",
+            "destination": "/blog/:slug",
+            "permanent": true
+        },
+        {
             "source": "/sitemap.xml",
             "destination": "/sitemap-index.xml",
+            "permanent": true
+        },
+        {
+            "source": "/blog/monthly-horoscope-january-2026",
+            "destination": "/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/:lang/blog/monthly-horoscope-january-2026",
+            "destination": "/:lang/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/blog/monthly-horoscope-february-2026",
+            "destination": "/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/:lang/blog/monthly-horoscope-february-2026",
+            "destination": "/:lang/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/blog/monthly-horoscope-march-2026",
+            "destination": "/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/:lang/blog/monthly-horoscope-march-2026",
+            "destination": "/:lang/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/blog/monthly-horoscope-april-2026",
+            "destination": "/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/:lang/blog/monthly-horoscope-april-2026",
+            "destination": "/:lang/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/blog/monthly-horoscope-june-2026",
+            "destination": "/horoscope/monthly",
+            "permanent": true
+        },
+        {
+            "source": "/:lang/blog/monthly-horoscope-june-2026",
+            "destination": "/:lang/horoscope/monthly",
             "permanent": true
         }
     ],

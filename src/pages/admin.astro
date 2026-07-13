@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut, Calendar, ChevronDown, Mail } from 'lucide-astro';
+import { CheckCircle2, DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLeft, ArrowRight, Globe, LogOut, Calendar, ChevronDown, Mail } from 'lucide-astro';
 ---
 
 <Layout title="Admin Dashboard - Astralo" backgroundImage="/background4.png">
@@ -104,6 +104,25 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
           Showing: <span id="activeFilterText" class="text-amber-400">All Time</span>
         </div>
       </div>
+
+      <section id="readinessPanel" class="bg-black/50 backdrop-blur-xl rounded-xl p-4 sm:p-5 border border-white/10 mb-6">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div class="min-w-0">
+            <div class="flex items-center gap-2 mb-2">
+              <CheckCircle2 class="w-5 h-5 text-green-400" />
+              <h2 class="text-base sm:text-lg font-bold text-white">Checkout proof readiness</h2>
+              <span id="readinessStatus" class="px-2 py-1 rounded-full border text-[10px] font-bold uppercase tracking-wider bg-white/10 text-white/60 border-white/10">
+                Checking
+              </span>
+            </div>
+            <p id="readinessSummary" class="text-sm text-white/60">Checking checkout, order, email, and GA4 purchase tracking config.</p>
+          </div>
+          <div class="grid gap-2 sm:grid-cols-2 lg:min-w-[520px]" id="readinessChecks">
+            <div class="text-white/50 text-sm">Loading...</div>
+          </div>
+        </div>
+        <div id="readinessActions" class="mt-4 hidden rounded-lg border border-amber-400/20 bg-amber-400/10 p-3 text-sm text-amber-100"></div>
+      </section>
 
       <!-- Stats Grid - 2x2 on mobile, 5 on desktop -->
       <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -775,7 +794,88 @@ import { DollarSign, ShoppingCart, Star, TrendingUp, RefreshCw, Search, ArrowLef
   }
   
   async function loadDashboardData() {
-    await Promise.all([loadStats(), loadOrders()]);
+    await Promise.all([loadReadiness(), loadStats(), loadOrders()]);
+  }
+
+  async function loadReadiness() {
+    const statusEl = document.getElementById('readinessStatus')!;
+    const summaryEl = document.getElementById('readinessSummary')!;
+    const checksEl = document.getElementById('readinessChecks')!;
+    const actionsEl = document.getElementById('readinessActions')!;
+
+    try {
+      const response = await fetch('/api/admin?action=readiness', { headers: authHeaders() });
+      if (!response.ok) throw new Error('Failed');
+
+      const readiness = await response.json();
+      const statusConfig = {
+        ready: {
+          label: 'Ready',
+          className: 'bg-green-400/10 text-green-300 border-green-400/20',
+          summary: 'Config is ready for one real paid proof order.',
+        },
+        needs_attention: {
+          label: 'Needs action',
+          className: 'bg-amber-400/10 text-amber-300 border-amber-400/20',
+          summary: 'Core checkout can run, but proof tracking still needs attention.',
+        },
+        blocked: {
+          label: 'Blocked',
+          className: 'bg-red-400/10 text-red-300 border-red-400/20',
+          summary: 'One or more required payment/order delivery settings are missing.',
+        },
+      }[readiness.status] || {
+        label: 'Unknown',
+        className: 'bg-white/10 text-white/60 border-white/10',
+        summary: 'Readiness status is unknown.',
+      };
+
+      statusEl.textContent = statusConfig.label;
+      statusEl.className = `px-2 py-1 rounded-full border text-[10px] font-bold uppercase tracking-wider ${statusConfig.className}`;
+      summaryEl.textContent = statusConfig.summary;
+      checksEl.innerHTML = readiness.checks.map((check: any) => {
+        const className = check.severity === 'ok'
+          ? 'bg-green-400/10 text-green-200 border-green-400/20'
+          : check.severity === 'critical'
+            ? 'bg-red-400/10 text-red-200 border-red-400/20'
+            : 'bg-amber-400/10 text-amber-100 border-amber-400/20';
+        const mark = check.severity === 'ok' ? '✓' : check.severity === 'critical' ? '!' : '•';
+        return `
+          <div class="rounded-lg border p-3 ${className}">
+            <div class="flex items-center gap-2">
+              <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-black/20 text-xs font-bold">${mark}</span>
+              <span class="text-sm font-semibold">${escapeHtml(check.label)}</span>
+            </div>
+            <p class="mt-1 text-xs opacity-80">${escapeHtml(check.message)}</p>
+          </div>
+        `;
+      }).join('');
+
+      if (readiness.actions?.length) {
+        actionsEl.classList.remove('hidden');
+        actionsEl.innerHTML = `
+          <div class="flex items-start gap-2">
+            <span class="mt-0.5 font-bold">!</span>
+            <div>
+              <p class="font-semibold mb-1">Next proof step</p>
+              <ul class="list-disc pl-4 space-y-1">
+                ${readiness.actions.map((action: string) => `<li>${escapeHtml(action)}</li>`).join('')}
+              </ul>
+            </div>
+          </div>
+        `;
+      } else {
+        actionsEl.classList.add('hidden');
+        actionsEl.innerHTML = '';
+      }
+    } catch (error) {
+      console.error('Readiness error:', error);
+      statusEl.textContent = 'Failed';
+      statusEl.className = 'px-2 py-1 rounded-full border text-[10px] font-bold uppercase tracking-wider bg-red-400/10 text-red-300 border-red-400/20';
+      summaryEl.textContent = 'Could not load checkout readiness.';
+      checksEl.innerHTML = '<div class="text-red-300 text-sm">Failed to load readiness checks.</div>';
+      actionsEl.classList.add('hidden');
+    }
   }
   
   async function loadStats() {

@@ -6,7 +6,8 @@
 import type { BlogPostTranslation } from '../../types';
 
 export const en: BlogPostTranslation = {
-    title: '❤️ Zodiac Compatibility: Best Matches for Every Star Sign in 2026',
+    title: 'Zodiac Compatibility: Best Matches for Every Star Sign in 2026',
+    seoTitle: 'Zodiac Compatibility 2026: Sign Match Table',
     excerpt: 'The ultimate 2026 guide to zodiac compatibility, zodiac sign compatibility, and star sign compatibility. Compare elements, Venus, Mars, and Moon signs for real relationship insight.',
     category: 'Love & Relationships',
     metaDescription: 'Zodiac compatibility guide for 2026: compare zodiac sign compatibility, star sign compatibility, love matches, Venus, Mars, Moon signs, and synastry.',
@@ -25,6 +26,8 @@ export const en: BlogPostTranslation = {
     ],
     tableOfContents: [
         { id: 'beyond-sun-signs', title: 'Why Sun Signs Aren\'t Everything' },
+        { id: 'zodiac-compatibility-table', title: 'Zodiac Signs Compatibility Table' },
+        { id: 'compatibility-by-sign', title: 'Compatibility by Sign' },
         { id: 'elemental-love', title: 'The 4 Elements in Love' },
         { id: 'love-planets', title: 'Venus, Mars & The Moon' },
         { id: 'challenging-matches', title: 'The Truth About "Bad" Matches' },
@@ -37,6 +40,74 @@ export const en: BlogPostTranslation = {
       <p>This guide covers the search people usually mean by <strong>zodiac sign compatibility</strong>, <strong>star sign compatibility</strong>, <strong>horoscope compatibility</strong>, and <strong>zodiac love compatibility</strong>: which signs feel natural together, which pairs need more work, and when the full birth chart changes the answer.</p>
       
       <p>While your Sun sign represents your core ego and life purpose, relationships are built on emotions, communication, and values. This is why you might find yourself happily married to a sign that is supposedly "incompatible," or struggling with your so-called "perfect match." To truly understand <strong>love matches</strong>, we must look at the full picture of the sky.</p>
+
+      <h2 id="zodiac-compatibility-table">Zodiac Signs Compatibility Table</h2>
+      <p>Use this zodiac compatibility table as a quick starting point, not a final verdict. Natural-flow matches often share an element. Complementary matches can add balance. More-effort pairings can still work when communication is strong and the full birth charts support the relationship.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[680px] border-collapse text-left">
+          <thead>
+            <tr>
+              <th scope="col">Sign</th>
+              <th scope="col">Natural-flow matches</th>
+              <th scope="col">Complementary matches</th>
+              <th scope="col">Often needs more care</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Aries</th><td>Leo, Sagittarius</td><td>Gemini, Aquarius</td><td>Cancer, Capricorn</td></tr>
+            <tr><th scope="row">Taurus</th><td>Virgo, Capricorn</td><td>Cancer, Pisces</td><td>Leo, Aquarius</td></tr>
+            <tr><th scope="row">Gemini</th><td>Libra, Aquarius</td><td>Aries, Leo</td><td>Virgo, Pisces</td></tr>
+            <tr><th scope="row">Cancer</th><td>Scorpio, Pisces</td><td>Taurus, Virgo</td><td>Aries, Libra</td></tr>
+            <tr><th scope="row">Leo</th><td>Aries, Sagittarius</td><td>Gemini, Libra</td><td>Taurus, Scorpio</td></tr>
+            <tr><th scope="row">Virgo</th><td>Taurus, Capricorn</td><td>Cancer, Scorpio</td><td>Gemini, Sagittarius</td></tr>
+            <tr><th scope="row">Libra</th><td>Gemini, Aquarius</td><td>Leo, Sagittarius</td><td>Cancer, Capricorn</td></tr>
+            <tr><th scope="row">Scorpio</th><td>Cancer, Pisces</td><td>Virgo, Capricorn</td><td>Leo, Aquarius</td></tr>
+            <tr><th scope="row">Sagittarius</th><td>Aries, Leo</td><td>Libra, Aquarius</td><td>Virgo, Pisces</td></tr>
+            <tr><th scope="row">Capricorn</th><td>Taurus, Virgo</td><td>Scorpio, Pisces</td><td>Aries, Libra</td></tr>
+            <tr><th scope="row">Aquarius</th><td>Gemini, Libra</td><td>Aries, Sagittarius</td><td>Taurus, Scorpio</td></tr>
+            <tr><th scope="row">Pisces</th><td>Cancer, Scorpio</td><td>Taurus, Capricorn</td><td>Gemini, Sagittarius</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="compatibility-by-sign">Zodiac Compatibility by Sign</h2>
+      <p>These short star sign compatibility notes help you compare the table quickly. They describe common Sun-sign dynamics, while Moon, Venus, Mars, and rising signs add important detail.</p>
+
+      <h3>Aries compatibility</h3>
+      <p>Aries often clicks with Leo and Sagittarius because all three value momentum and directness. Gemini and Aquarius can add fresh ideas, while Cancer and Capricorn may need clearer pacing and expectations.</p>
+
+      <h3>Taurus compatibility</h3>
+      <p>Taurus often feels comfortable with Virgo and Capricorn through shared steadiness. Cancer and Pisces can add warmth and sensitivity, while Leo and Aquarius may require more flexibility around routines.</p>
+
+      <h3>Gemini compatibility</h3>
+      <p>Gemini often connects easily with Libra and Aquarius through conversation and curiosity. Aries and Leo can keep the relationship lively, while Virgo and Pisces may need extra clarity when communication styles differ.</p>
+
+      <h3>Cancer compatibility</h3>
+      <p>Cancer often feels understood by Scorpio and Pisces. Taurus and Virgo can add grounding, while Aries and Libra may need to talk openly about emotional timing and decision-making.</p>
+
+      <h3>Leo compatibility</h3>
+      <p>Leo often enjoys the confidence of Aries and Sagittarius. Gemini and Libra can bring social ease, while Taurus and Scorpio may need more patience when strong preferences meet.</p>
+
+      <h3>Virgo compatibility</h3>
+      <p>Virgo often builds trust with Taurus and Capricorn through reliability. Cancer and Scorpio can add emotional depth, while Gemini and Sagittarius may need to agree on how much structure feels helpful.</p>
+
+      <h3>Libra compatibility</h3>
+      <p>Libra often finds natural rapport with Gemini and Aquarius. Leo and Sagittarius can add energy, while Cancer and Capricorn may need more explicit conversations about priorities and pace.</p>
+
+      <h3>Scorpio compatibility</h3>
+      <p>Scorpio often bonds deeply with Cancer and Pisces. Virgo and Capricorn can add stability, while Leo and Aquarius may need to make space for different ways of handling intensity and independence.</p>
+
+      <h3>Sagittarius compatibility</h3>
+      <p>Sagittarius often thrives with Aries and Leo through optimism and movement. Libra and Aquarius can support freedom, while Virgo and Pisces may need clearer agreements around plans and boundaries.</p>
+
+      <h3>Capricorn compatibility</h3>
+      <p>Capricorn often works well with Taurus and Virgo through shared focus. Scorpio and Pisces can add emotional perspective, while Aries and Libra may need to negotiate speed, responsibility, and compromise.</p>
+
+      <h3>Aquarius compatibility</h3>
+      <p>Aquarius often connects with Gemini and Libra through ideas and independence. Aries and Sagittarius can add momentum, while Taurus and Scorpio may need extra room for different comfort levels with change.</p>
+
+      <h3>Pisces compatibility</h3>
+      <p>Pisces often feels at home with Cancer and Scorpio. Taurus and Capricorn can offer grounding, while Gemini and Sagittarius may need clearer communication around consistency and emotional nuance.</p>
 
       <h2 id="elemental-love">The 4 Elements in Love</h2>
       <p>The quickest way to gauge initial chemistry is through the Elements. Signs of the same element generally "speak the same language."</p>
@@ -103,6 +174,6 @@ export const en: BlogPostTranslation = {
       <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
       <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
       
-      <p>At Astralo, our advanced algorithms and expert astrologers don't just give you a percentage. We create a map of your relationship's soul. Stop guessing and start understanding the cosmic purpose of your union.
+      <p>Astralo's <a href="/horoscope/partner?utm_source=blog&amp;utm_medium=internal&amp;utm_campaign=zodiac-compatibility-complete-guide&amp;utm_content=synastry_context_link">partner horoscope report</a> helps you move beyond a single percentage and explore the relationship themes that matter to you.</p>
     `
 };

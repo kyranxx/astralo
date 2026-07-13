@@ -5,9 +5,10 @@ import type { BlogPostTranslation } from '../../types';
 
 export const no: BlogPostTranslation = {
   title: "⭐ Dagshoroskop 2026: Den ultimate guiden til å forstå dine forutsigelser",
+  seoTitle: "Dagens horoskop: Guide til dagshoroskop",
   excerpt: "Mestre dine daglige astrologiske forutsigelser. En omfattende guide til å forstå dagens astrologi, hvorfor din ascendant er viktig og hvordan du bruker planetariske energier for suksess.",
   category: "Astrologi 101",
-  metaDescription: "Mestre dine daglige astrologiske forutsigelser. En omfattende guide til å forstå dagens astrologi, hvorfor din ascendant er viktig og hvordan du bruker planetariske energier for suksess.",
+  metaDescription: "Forstå dagens horoskop med en enkel guide til dagshoroskop, ascendant, månen og planetariske transitter. Bruk horoskopet bedre i hverdagen.",
   keywords: "dagshoroskop, horoskop i dag, dagens horoskop, dyrekretsen i dag, horoskopguide, forstå astrologi, dagens ascendant, planetariske transitter",
   quickSummary: [
     "Dagshoroskop bestemmes av månens raske bevegelse og planetariske aspekter i forhold til ditt fødselshoroskop.",

@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "internalNetworkErrors": [],
+  "statusOk": true,
+  "overflowX": false,
+  "pageFeedbackPresent": false,
+  "images": [
+    {
+      "alt": "Visa",
+      "complete": true,
+      "naturalWidth": 172,
+      "naturalHeight": 56,
+      "loading": ""
+    },
+    {
+      "alt": "Mastercard",
+      "complete": true,
+      "naturalWidth": 98,
+      "naturalHeight": 69,
+      "loading": ""
+    },
+    {
+      "alt": "Stripe",
+      "complete": true,
+      "naturalWidth": 100,
+      "naturalHeight": 42,
+      "loading": ""
+    }
+  ]
+}

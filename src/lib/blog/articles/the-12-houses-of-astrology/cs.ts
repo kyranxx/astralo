@@ -24,6 +24,7 @@ export const cs: BlogPostTranslation = {
   tableOfContents: [
     { id: 'introduction', title: "Scéna: Proč na domech záleží" },
     { id: 'house-systems', title: "Systémy domů: Placidus vs. Whole Sign" },
+    { id: 'placidus-faq', title: "Systém domů Placidus: rychlé odpovědi" },
     { id: 'angular-succedent-cadent', title: "Tři modality: Síla a načasování" },
     { id: 'the-first-house', title: "1. dům: Dům já (Identita)" },
     { id: 'the-second-house', title: "2. dům: Dům hodnot (Bohatství)" },
@@ -65,6 +66,18 @@ export const cs: BlogPostTranslation = {
 
       <h3>Který byste měli použít?</h3>
       <p>V Astralo doporučujeme pro začátek <strong>Whole Sign</strong> kvůli jasnosti, ale prozkoumejte i <strong>Placidus</strong> pro psychologickou hloubku. Pokud máte v Placidus „zachycená“ znamení, často to naznačuje část vaší osobnosti, která byla v raném životě „potlačena“ nebo k ní byl obtížný přístup.</p>
+
+      <h2 id="placidus-faq">Systém domů Placidus: rychlé odpovědi</h2>
+      <p>Pokud hledáte <strong>systém domů Placidus</strong>, obvykle chcete vědět dvě věci: proč domy nejsou stejně velké a co to mění při výkladu horoskopu. Stručná odpověď zní: Placidus pracuje s časem, za který se body oblohy pohybují mezi obzorem a poledníkem, takže výsledkem mohou být domy různých šířek.</p>
+
+      <h3>Jak se Placidus liší od Whole Sign?</h3>
+      <p>Whole Sign dá každému domu celé znamení a čte horoskop velmi přehledně. Placidus sleduje přesnější vztah k místu a času narození, proto může lépe ukázat jemné psychologické vrstvy, hlavně kolem ascendentu, descendentu a MC.</p>
+
+      <h3>Kdy dává Placidus největší smysl?</h3>
+      <p>Placidus je užitečný, když máte přesný čas narození a chcete detailní osobní interpretaci. U nejasného času narození je lepší začít opatrně, protože i malá chyba v čase může posunout hroty domů a změnit výklad.</p>
+
+      <h3>Proč má každý dům jinou velikost?</h3>
+      <p>Velikost domů závisí na zeměpisné šířce, roční době a čase narození. Neznamená to, že větší dům je automaticky „důležitější“. Vždy sledujte planety v domě, znamení na hrotu a vládce domu.</p>
 
       <h2 id="angular-succedent-cadent">Tři modality: Síla a načasování</h2>
       <p>Domy jsou rozděleny do tří skupin po čtyřech, které určují jejich „dynamickou“ energii a to, jak se projevují v čase.</p>

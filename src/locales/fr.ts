@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const fr: Translations = {
     meta: {
-        title: 'Astralo - Horoscope du Jour Gratuit 2026 | Prédictions Signes Astrologiques',
-        description: 'Obtenez votre horoscope GRATUIT aujourd\'hui! ⭐ Horoscope quotidien, hebdomadaire & mensuel. Compatibilité amoureuse, carrière & voyance. 50 000+ clients satisfaits. Livraison instantanée!',
+        title: "Astralo - Horoscope du Jour Gratuit 2026 | Prédictions Signes Astrologiques",
+        description: "Obtenez votre horoscope GRATUIT aujourd'hui! ⭐ Horoscope quotidien, hebdomadaire & mensuel. Compatibilité amoureuse, carrière & voyance. Livraison instantanée!",
         keywords: 'horoscope du jour, horoscope gratuit, horoscope 2026, signe astrologique, horoscope amour, compatibilité amoureuse, horoscope mensuel, horoscope hebdomadaire, thème astral, ascendant, prédictions astrologiques, horoscope personnalisé, voyance, astrologie',
     },
     header: {
@@ -11,15 +11,15 @@ const fr: Translations = {
         online: 'En ligne',
     },
     promo: {
-        offer: 'OFFRE LIMITÉE: 50% de réduction sur tous les horoscopes!',
+        offer: "Horoscopes Personnalisés",
         delivery: 'Livraison instantanée par email',
-        customers: '50 000+ clients satisfaits',
+        customers: "Livraison instantanée par email",
         secure: 'Paiement sécurisé via Stripe',
     },
     hero: {
         title: 'Votre Horoscope Personnel',
         subtitle: 'Enfin un horoscope vraiment précis • Créé spécialement pour vous',
-        features: '✨ Livraison instantanée • 🔒 Paiements sécurisés • ⭐ 50 000+ clients satisfaits',
+        features: "✨ Livraison instantanée par email • 🔒 Paiement sécurisé via Stripe • ⭐ Horoscopes Personnalisés",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const fr: Translations = {
         technology: { title: 'Technologie Avancée', description: 'Technologie de pointe pour des prédictions précises' },
         instant: { title: 'Instantané', description: 'Votre horoscope prêt en quelques minutes' },
         professional: { title: 'Professionnel', description: 'Créé selon les principes astrologiques' },
-        verified: { title: 'Vérifié', description: '50 000+ clients satisfaits' },
+        verified: { title: 'Vérifié', description: "Horoscopes Personnalisés" },
     },
     form: {
         title: 'Obtenez votre horoscope',
@@ -130,7 +130,7 @@ const fr: Translations = {
         q1: 'Qu\'est-ce qu\'Astralo?',
         a1: 'Astralo est un service d\'horoscope professionnel en ligne qui fournit des lectures astrologiques personnalisées basées sur vos données de naissance exactes (date, heure et lieu). Nous proposons des horoscopes quotidiens, hebdomadaires, mensuels et des analyses de compatibilité, livrés instantanément sous forme de documents PDF magnifiquement conçus par email.',
         q2: 'Quelle est la précision des horoscopes Astralo?',
-        a2: 'Les horoscopes Astralo sont créés à l\'aide d\'algorithmes astrologiques avancés basés sur vos données de naissance précises. Avec plus de 50 000 clients satisfaits et une note de 4,9/5 étoiles, nos lectures personnalisées fournissent des informations détaillées à des fins de divertissement.',
+        a2: "Les horoscopes Astralo sont créés à l'aide d'algorithmes astrologiques avancés basés sur vos données de naissance précises.",
         q3: 'Combien de temps faudra-t-il pour recevoir mon horoscope?',
         a3: 'Votre horoscope personnalisé est généré et livré instantanément à votre email dans les 2-5 minutes suivant le paiement. Vous recevrez un document PDF professionnel avec votre lecture astrologique complète.',
         q4: 'Quels modes de paiement acceptez-vous?',
@@ -142,20 +142,20 @@ const fr: Translations = {
     },
     emailCapture: {
         title: '✨ Obtenez votre thème astral & prévisions hebdomadaires gratuits',
-        subtitle: 'Rejoignez 50 000+ personnes recevant des informations cosmiques personnalisées et des rapports gratuits chaque lundi !',
+        subtitle: "Obtenez votre thème astral & prévisions hebdomadaires gratuits. Livraison instantanée par email.",
         placeholder: 'Entrez votre email',
-        button: 'Obtenir ma lecture gratuite',
+        button: 'Voir mon horoscope gratuit',
         consent: 'J\'accepte de recevoir des informations cosmiques et j\'accepte la politique de confidentialité.',
         success: '✨ Bienvenue ! Votre première lecture gratuite est en route.',
         error: 'Une erreur s\'est produite. Veuillez réessayer.',
     },
     ads: {
-        sticky: 'Dernières heures : 50% de réduction spéciale débloquée',
+        sticky: "Horoscopes Personnalisés",
         claim: 'Profiter maintenant',
-        limited: 'Offre limitée',
+        limited: "Livraison instantanée par email",
         unlock: 'Débloquez votre',
         waiting: 'vous attend...',
-        join: 'Rejoignez 50 000+ âmes qui ont trouvé la clarté dans les étoiles.',
+        join: "Horoscopes Personnalisés",
         getFor: 'Obtenir pour',
     },
 };

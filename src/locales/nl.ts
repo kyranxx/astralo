@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const nl: Translations = {
     meta: {
-        title: 'Astralo - Horoscoop Vandaag Gratis 2026 | Nauwkeurige Sterrenbeeld Voorspellingen',
-        description: 'Krijg je GRATIS horoscoop vandaag! ⭐ Dagelijkse, wekelijkse & maandelijkse voorspellingen. Liefdeshoroscoop, partner compatibiliteit & carrière. 50.000+ tevreden klanten. Directe levering!',
+        title: "Astralo - Horoscoop Vandaag Gratis 2026 | Nauwkeurige Sterrenbeeld Voorspellingen",
+        description: "Krijg je GRATIS horoscoop vandaag! ⭐ Dagelijkse, wekelijkse & maandelijkse voorspellingen. Liefdeshoroscoop, partner compatibiliteit & carrière. Directe levering!",
         keywords: 'horoscoop vandaag, horoscoop gratis, horoscoop 2026, sterrenbeeld, liefdeshoroscoop, partnerhoroscoop, weekhoroscoop, maandhoroscoop, astrologie, ram horoscoop, stier horoscoop, tweelingen horoscoop, nauwkeurige horoscoop, geboortehoroscoop',
     },
     header: {
@@ -11,15 +11,15 @@ const nl: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'BEPERKTE AANBIEDING: 50% korting op alle horoscopen!',
+        offer: "Gepersonaliseerde Horoscopen",
         delivery: 'Directe levering per email',
-        customers: '50.000+ tevreden klanten',
+        customers: "Directe levering per email",
         secure: 'Veilige betaling met Stripe',
     },
     hero: {
         title: 'Jouw Persoonlijke Horoscoop',
         subtitle: 'Eindelijk een echt nauwkeurige horoscoop • Speciaal voor jou gemaakt',
-        features: '✨ Directe levering • 🔒 Veilige betalingen • ⭐ 50.000+ tevreden klanten',
+        features: "✨ Directe levering per email • 🔒 Veilige betaling met Stripe • ⭐ Gepersonaliseerde Horoscopen",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const nl: Translations = {
         technology: { title: 'Geavanceerde Technologie', description: 'State-of-the-art technologie voor nauwkeurige voorspellingen' },
         instant: { title: 'Direct', description: 'Je horoscoop klaar binnen enkele minuten' },
         professional: { title: 'Professioneel', description: 'Gemaakt volgens astrologische principes' },
-        verified: { title: 'Geverifieerd', description: '50.000+ tevreden klanten' },
+        verified: { title: 'Geverifieerd', description: "Gepersonaliseerde Horoscopen" },
     },
     form: {
         title: 'Ontvang je horoscoop',
@@ -130,7 +130,7 @@ const nl: Translations = {
         q1: 'Wat is Astralo?',
         a1: 'Astralo is een professionele online horoscoopdienst die gepersonaliseerde astrologische lezingen biedt op basis van je exacte geboortegegevens (datum, tijd en plaats). We bieden dagelijkse, wekelijkse, maandelijkse horoscopen en partneranalyses, direct geleverd als prachtig ontworpen PDF-documenten naar je email.',
         q2: 'Hoe nauwkeurig zijn Astralo horoscopen?',
-        a2: 'Astralo horoscopen worden gemaakt met geavanceerde astrologische algoritmes gebaseerd op je precieze geboortegegevens. Met meer dan 50.000 tevreden klanten en een 4,9/5 sterrenbeoordeling bieden onze gepersonaliseerde lezingen gedetailleerde inzichten voor amusementsdoeleinden.',
+        a2: "Astralo horoscopen worden gemaakt met geavanceerde astrologische algoritmes gebaseerd op je precieze geboortegegevens.",
         q3: 'Hoe snel ontvang ik mijn horoscoop?',
         a3: 'Je gepersonaliseerde horoscoop wordt gegenereerd en direct naar je email verzonden binnen 2-5 minuten na betaling. Je ontvangt een professioneel PDF-document met je volledige astrologische lezing.',
         q4: 'Welke betaalmethoden accepteren jullie?',
@@ -142,7 +142,7 @@ const nl: Translations = {
     },
     emailCapture: {
         title: '✨ Ontvang je gratis geboortehoroscoop & weekvoorspelling',
-        subtitle: 'Sluit je aan bij 50.000+ anderen die elke maandag gepersonaliseerde kosmische inzichten en gratis rapporten ontvangen!',
+        subtitle: "Ontvang je gratis geboortehoroscoop & weekvoorspelling. Directe levering per email.",
         placeholder: 'Vul je e-mail in',
         button: 'Ontvang mijn gratis lezing',
         consent: 'Ik ga akkoord met het ontvangen van kosmische inzichten en accepteer het privacybeleid.',
@@ -150,12 +150,12 @@ const nl: Translations = {
         error: 'Er is iets misgegaan. Probeer het opnieuw.',
     },
     ads: {
-        sticky: 'Laatste uren: 50% speciale korting ontgrendeld',
+        sticky: "Gepersonaliseerde Horoscopen",
         claim: 'Nu claimen',
-        limited: 'Beperkte aanbieding',
+        limited: "Directe levering per email",
         unlock: 'Ontgrendel je',
         waiting: 'wacht op je...',
-        join: 'Sluit je aan bij 50.000+ zielen die helderheid vonden in de sterren.',
+        join: "Gepersonaliseerde Horoscopen",
         getFor: 'Krijg het voor',
     },
 };

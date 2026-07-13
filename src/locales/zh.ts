@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const zh: Translations = {
     meta: {
-        title: 'Astralo - 免费每日星座运势 2026 | 准确的星座预测',
-        description: '今天获取您的免费个性化星座运势！⭐ 每日、每周和每月预测。爱情配对、事业建议。即时配送！',
+        title: "Astralo - 免费每日星座运势 2026 | 准确的星座预测",
+        description: "今天获取您的免费个性化星座运势！⭐ 每日、每周和每月预测。爱情配对、事业建议。即时配送！",
         keywords: '每日运势, 免费星座, 今日运势, 每周运势, 每月运势, 爱情运势, 星座, 占星术, 运势 2026, 个性化运势',
     },
     header: {
@@ -11,15 +11,15 @@ const zh: Translations = {
         online: '在线',
     },
     promo: {
-        offer: '限时优惠：所有星座运势5折！',
+        offer: "个性化星座运势",
         delivery: '即时配送',
-        customers: '值得信赖的解读',
+        customers: "即时配送",
         secure: '安全支付',
     },
     hero: {
         title: '您的专属星座运势',
         subtitle: '终于有了真正准确的星座运势 • 专为您打造',
-        features: '✨ 即时配送 • 🔒 安全支付 • ⭐ 个性化解读',
+        features: "✨ 即时配送 • 🔒 安全支付 • ⭐ 个性化星座运势",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const zh: Translations = {
         technology: { title: '先进技术', description: '准确预测的尖端技术' },
         instant: { title: '即时', description: '几分钟内准备好您的运势' },
         professional: { title: '专业', description: '根据占星原则创建' },
-        verified: { title: '已验证', description: '值得信赖的占星解读' },
+        verified: { title: '已验证', description: "个性化星座运势" },
     },
     form: {
         title: '获取您的运势',
@@ -130,7 +130,7 @@ const zh: Translations = {
         q1: '什么是Astralo？',
         a1: 'Astralo是一项专业的在线星座运势服务，根据您的精确出生数据（日期、时间和地点）提供个性化星象解读。我们提供每日、每周、每月运势和配对分析，以精美设计的PDF文档形式即时发送到您的邮箱。',
         q2: 'Astralo的星座运势有多准确？',
-        a2: 'Astralo的星座运势使用基于您精确出生数据的高级星象算法创建。我们的个性化解读为娱乐目的提供详细的洞察。',
+        a2: "Astralo的星座运势使用基于您精确出生数据的高级星象算法创建。我们的个性化解读为娱乐目的提供详细的洞察。",
         q3: '我多快能收到我的星座运势？',
         a3: '您的个性化星座运势在付款后2-5分钟内生成并即时发送到您的邮箱。您将收到一份包含完整星象解读的专业PDF文档。',
         q4: '您接受哪些支付方式？',
@@ -142,20 +142,20 @@ const zh: Translations = {
     },
     emailCapture: {
         title: '✨ 获取免费星盘和每周预测',
-        subtitle: '通过电子邮件接收个性化宇宙洞察和免费报告。',
+        subtitle: "获取免费星盘和每周预测. 即时配送.",
         placeholder: '输入您的电子邮箱',
-        button: '获取免费解读',
+        button: '查看免费运势',
         consent: '我同意接收宇宙洞察并接受隐私政策。',
         success: '✨ 欢迎！您的第一份免费解读已在路上。',
         error: '出错了。请重试。',
     },
     ads: {
-        sticky: '最后几小时：50% 特别折扣已解锁',
+        sticky: "个性化星座运势",
         claim: '立即领取',
-        limited: '限时优惠',
+        limited: "即时配送",
         unlock: '解锁您的',
         waiting: '正在等待您...',
-        join: '在星辰中找到更清晰的方向。',
+        join: "个性化星座运势",
         getFor: '立即获取',
     },
 };

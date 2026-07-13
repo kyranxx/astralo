@@ -23,7 +23,7 @@
 - Sign-specific landing pages that map the four reading types to all 12 zodiac signs
 
 ## How Readings Are Created
-- Astralo uses submitted birth data, product-specific astrology rules, and AI-assisted writing to create each report.
+- Astralo uses submitted birth data and product-specific astrology rules to create each personalized report.
 - Readings are entertainment and reflection products, not medical, legal, financial, political, or religious advice.
 
 ## Public Content

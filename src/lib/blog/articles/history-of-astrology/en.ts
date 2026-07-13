@@ -49,9 +49,9 @@ export const en: BlogPostTranslation = {
       
       <p>This shifted the focus of astrology from "What is going to happen to me?" to "Who am I, and why do I react this way?"</p>
 
-      <h2 id="future-astrology">The Future: AI & Big Data</h2>
-      <p>We are currently in a new Golden Age of Astrology. Technology has removed the need for complex manual calculations, allowing anyone with a smartphone to see their chart. More importantly, <strong>Artificial Intelligence</strong> is now being used to analyze vast amounts of data, finding deeper patterns in transits and personality traits that were previously impossible to see.</p>
+      <h2 id="future-astrology">The Future: Faster Calculations & Better Access</h2>
+      <p>We are currently in a new Golden Age of Astrology. Modern software has removed the need for complex manual calculations, allowing anyone with a smartphone to explore their chart and understand important patterns more easily.</p>
       
-      <p>At Astralo, we combine this 5,000-year-old heritage with cutting-edge machine learning to provide you with the most accurate and insightful guidance in human history.</p>
+      <p>At Astralo, we combine this 5,000-year-old heritage with modern chart-calculation tools to provide clear, practical, and thoughtful guidance.</p>
     `
 };

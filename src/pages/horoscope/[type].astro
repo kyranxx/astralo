@@ -1,11 +1,11 @@
 ---
 import ProductLandingPage from '../../components/ProductLandingPage.astro';
-import { isValidProductKey } from '../../lib/products';
+import { getProductKeys, isValidProductKey } from '../../lib/products';
 
 export const prerender = true;
 
 export function getStaticPaths() {
-  return ['daily', 'weekly', 'monthly', 'partner'].map((type) => ({
+  return getProductKeys().map((type) => ({
     params: { type },
   }));
 }

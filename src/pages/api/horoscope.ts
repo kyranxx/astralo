@@ -3,6 +3,9 @@ import Stripe from 'stripe';
 import { supabase } from '../../lib/supabase';
 import { HoroscopeRequestSchema, validateReferer } from '../../lib/validation';
 import { getProductPriceInEuros, isValidProductKey, type ProductKey } from '../../lib/products';
+import { addOrder, findOrderBySessionId } from '../../lib/orders';
+import { buildOrderFromCheckoutSession, isPaidCheckoutSession } from '../../lib/stripe-order';
+import { buildHoroscopeResponseFromOrder } from '../../lib/horoscope-response';
 
 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
@@ -58,34 +61,15 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({ error: 'Session ID is required' }), { status: 400 });
     }
 
-    // Check if this session was already completed in DB (prevents duplicate generation)
-    // We check specifically for completed status or if horoscope_content is already present
+    // Check if this session already has generated content.
+    // If the product email was not sent, return cached content so the success page can retry delivery.
     try {
-        const { data: existingOrder, error: fetchError } = await supabase
-            .from('orders')
-            .select('id, status, horoscope_content, customer_email, customer_name, product_key, lang, birth_date, birth_place, birth_time')
-            .eq('stripe_session_id', sessionId)
-            .single();
-
-        if (fetchError && fetchError.code !== 'PGRST116') { // PGRST116 is "Row not found"
-            console.error('🔮 Horoscope API: DB Check Error:', fetchError);
-            // Continue intentionally - if DB fails, we still try to generate to not block user
-        }
-
-        if (existingOrder && existingOrder.horoscope_content) {
+        const existingOrder = await findOrderBySessionId(sessionId);
+        if (existingOrder && existingOrder.horoscopeContent) {
             console.log('🔮 Horoscope API: Order already has content, returning cached data');
-            const price = getResponsePrice(existingOrder.product_key);
+            const price = getResponsePrice(existingOrder.productKey);
 
-            return new Response(JSON.stringify({
-                error: 'already_processed', // Keep this flag so frontend knows to show "Success" immediately
-                message: 'Horoscope already generated',
-                horoscope: existingOrder.horoscope_content,
-                product: existingOrder.product_key,
-                email: existingOrder.customer_email,
-                name: existingOrder.customer_name,
-                price,
-                lang: existingOrder.lang
-            }), { status: 200 });
+            return new Response(JSON.stringify(buildHoroscopeResponseFromOrder(existingOrder, price)), { status: 200 });
         }
     } catch (dbError) {
         console.error('🔮 Horoscope API: Unexpected DB error:', dbError);
@@ -95,6 +79,33 @@ export const POST: APIRoute = async ({ request }) => {
         const session = await stripe.checkout.sessions.retrieve(sessionId);
         const formData = session.metadata;
 
+        if (!isPaidCheckoutSession(session)) {
+            console.warn('🔮 Horoscope API: Unpaid Checkout session blocked', {
+                sessionId,
+                status: session.status,
+                paymentStatus: session.payment_status,
+            });
+            return new Response(JSON.stringify({
+                error: 'Payment is not complete yet. Please wait a moment and refresh this page.'
+            }), { status: 402 });
+        }
+
+        const existingOrder = await findOrderBySessionId(session.id);
+        if (!existingOrder) {
+            const recoveredOrder = buildOrderFromCheckoutSession(session);
+
+            try {
+                await addOrder(recoveredOrder);
+                console.log('🔮 Horoscope API: Recovered missing paid order from Stripe session');
+            } catch (orderError) {
+                const racedOrder = await findOrderBySessionId(session.id);
+                if (!racedOrder) {
+                    console.error('🔮 Horoscope API: Failed to recover missing paid order:', orderError);
+                    throw orderError;
+                }
+            }
+        }
+
         // Customer email is stored in session, not in metadata
         const customerEmail = session.customer_details?.email || session.customer_email || '';
 
@@ -103,6 +114,9 @@ export const POST: APIRoute = async ({ request }) => {
         }
 
         const { productKey, lang } = formData;
+        const normalizedProductKey: ProductKey = isValidProductKey(productKey || '')
+            ? productKey as ProductKey
+            : 'daily';
         const language = lang || 'en';
 
         // Language name mapping for dynamic prompts
@@ -151,12 +165,21 @@ export const POST: APIRoute = async ({ request }) => {
                     💬 Communication Styles Comparison
                     ❤️ Love Language Match
                     💫 Future Potential Together
-                    🌟 Synastry Insights (planetary connections)`
+                    🌟 Synastry Insights (planetary connections)`,
+            lifetime: `REQUIRED SECTIONS:
+                    🌌 Life Path Overview
+                    🪞 Core Personality Pattern
+                    ❤️ Love and Relationship Patterns
+                    💼 Career and Vocation Cycles
+                    💰 Money and Security Themes
+                    🪐 Long-Term Timing Windows
+                    🌱 Growth Lessons and Practical Next Steps
+                    ⭐ Personal Strengths to Use for the Rest of Life`
         };
 
         let prompt;
 
-        if (productKey === 'partner') {
+        if (normalizedProductKey === 'partner') {
             const { birthDate1, birthTime1, birthPlace1, name1, birthDate2, birthTime2, birthPlace2, name2 } = formData;
             prompt = `You are a friendly astrologer writing for everyday people. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
 
@@ -183,10 +206,10 @@ CONTENT RULES:
 - Be inclusive and positive`;
         } else {
             const { birthDate, birthTime, birthPlace, name } = formData;
-            const benefits = productBenefits[productKey] || productBenefits.daily;
-            const wordCount = { daily: 200, weekly: 400, monthly: 1000, partner: 1200 };
+            const benefits = productBenefits[normalizedProductKey] || productBenefits.daily;
+            const wordCount: Record<ProductKey, number> = { daily: 200, weekly: 400, monthly: 1000, partner: 1200, lifetime: 3000 };
 
-            prompt = `You are a friendly astrologer writing for everyday people. Write a detailed ${productKey} horoscope (~${wordCount[productKey as keyof typeof wordCount]} words) in ${useLangForPdf} language.
+            prompt = `You are a friendly astrologer writing for everyday people. Write a detailed ${normalizedProductKey} horoscope (~${wordCount[normalizedProductKey]} words) in ${useLangForPdf} language.
 
 For: ${formatBirthSummary(name, birthDate, birthTime, birthPlace)}
 
@@ -213,22 +236,12 @@ CONTENT RULES:
 - Be inclusive and positive`;
         }
 
-        const apiKey = import.meta.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
-        if (!apiKey) {
-            console.error('🔮 Horoscope API: GEMINI_API_KEY is missing');
-            throw new Error('GEMINI_API_KEY is not configured');
-        }
-
-        console.log('🔮 Horoscope API: Generating content with Gemini...');
-        const { GoogleGenerativeAI } = await import('@google/generative-ai');
-        const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
-
-        const result = await model.generateContent(prompt);
-        const horoscope = result.response.text();
+        console.log('🔮 Horoscope API: Generating content with OpenAI...');
+        const { generateHoroscopeText } = await import('../../lib/horoscope-ai');
+        const horoscope = await generateHoroscopeText(prompt);
         console.log('🔮 Horoscope API: Content generated successfully');
 
-        const price = getResponsePrice(productKey);
+        const price = getResponsePrice(normalizedProductKey);
 
         // SAVE TO DATABASE - Prevent data loss
         try {
@@ -253,11 +266,12 @@ CONTENT RULES:
 
         const responseData = JSON.stringify({
             horoscope,
-            product: productKey,
+            product: normalizedProductKey,
             email: customerEmail, // Email from Stripe session, not metadata
             name: formData.name || formData.name1,
             price,
             lang: language,
+            emailSent: false,
             // Include birth data for email image generation
             birthDate: formData.birthDate || formData.birthDate1,
             birthPlace: formData.birthPlace || formData.birthPlace1,

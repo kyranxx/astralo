@@ -1,6 +1,6 @@
 import crypto from 'node:crypto';
 import { getSupportedLocales } from './i18n';
-import { productPrices } from './products';
+import { getProductKeys, getProductName, productPrices, type ProductKey } from './products';
 import { siteUrl } from './seo';
 
 export const contentSignal = 'ai-train=no, search=yes, ai-input=yes';
@@ -13,32 +13,17 @@ export const llmsPath = '/llms.txt';
 
 export const supportedLocaleCodes = getSupportedLocales();
 
-export const productCatalog = {
-    daily: {
-        slug: 'daily',
-        name: 'Daily Horoscope',
-        priceEur: productPrices.daily / 100,
-        path: '/horoscope/daily',
-    },
-    weekly: {
-        slug: 'weekly',
-        name: 'Weekly Horoscope',
-        priceEur: productPrices.weekly / 100,
-        path: '/horoscope/weekly',
-    },
-    monthly: {
-        slug: 'monthly',
-        name: 'Monthly Horoscope',
-        priceEur: productPrices.monthly / 100,
-        path: '/horoscope/monthly',
-    },
-    partner: {
-        slug: 'partner',
-        name: 'Partner Horoscope',
-        priceEur: productPrices.partner / 100,
-        path: '/horoscope/partner',
-    },
-} as const;
+export const productCatalog = Object.fromEntries(
+    getProductKeys().map((productKey) => [
+        productKey,
+        {
+            slug: productKey,
+            name: getProductName(productKey, 'en'),
+            priceEur: productPrices[productKey] / 100,
+            path: `/horoscope/${productKey}`,
+        },
+    ]),
+) as Record<ProductKey, { slug: ProductKey; name: string; priceEur: number; path: string }>;
 
 export type ProductSlug = keyof typeof productCatalog;
 
@@ -150,7 +135,7 @@ export function buildOpenApiSpec() {
                                     properties: {
                                         productKey: {
                                             type: 'string',
-                                            enum: ['daily', 'weekly', 'monthly', 'partner'],
+                                            enum: getProductKeys(),
                                         },
                                         lang: {
                                             type: 'string',
@@ -351,10 +336,7 @@ Use this skill when a user wants to compare, open, or explain Astralo horoscope 
 
 ## Product routes
 
-- daily: ${siteUrl}/horoscope/daily
-- weekly: ${siteUrl}/horoscope/weekly
-- monthly: ${siteUrl}/horoscope/monthly
-- partner: ${siteUrl}/horoscope/partner
+${getProductKeys().map((productKey) => `- ${productKey}: ${siteUrl}/horoscope/${productKey}`).join('\n')}
 
 ## Notes
 
@@ -364,10 +346,7 @@ Use this skill when a user wants to compare, open, or explain Astralo horoscope 
 
 ## Product pricing
 
-- daily: EUR ${productCatalog.daily.priceEur.toFixed(2)}
-- weekly: EUR ${productCatalog.weekly.priceEur.toFixed(2)}
-- monthly: EUR ${productCatalog.monthly.priceEur.toFixed(2)}
-- partner: EUR ${productCatalog.partner.priceEur.toFixed(2)}
+${getProductKeys().map((productKey) => `- ${productKey}: EUR ${productCatalog[productKey].priceEur.toFixed(2)}`).join('\n')}
 `;
 
 const blogSkillBody = `# Read Astralo Blog Content
@@ -436,4 +415,3 @@ export function getAgentSkill(slug: string) {
 export function sha256(value: string) {
     return `sha256:${crypto.createHash('sha256').update(value).digest('hex')}`;
 }
-

@@ -2,6 +2,7 @@
 import type { APIRoute } from 'astro';
 import { supabase } from '../../lib/supabase';
 import { getPasswordFromRequest, verifyAdminPassword } from '../../lib/auth';
+import { getProductKeys, getProductName, productPrices } from '../../lib/products';
 
 export const GET: APIRoute = async ({ request }) => {
     // Block in production - seeding should only be done in development
@@ -25,12 +26,11 @@ export const GET: APIRoute = async ({ request }) => {
         { name: 'Czech Republic', code: 'CZ' }
     ];
 
-    const products = [
-        { key: 'daily', name: 'Daily Horoscope', price: 199 },
-        { key: 'weekly', name: 'Weekly Horoscope', price: 499 },
-        { key: 'monthly', name: 'Monthly Horoscope', price: 999 },
-        { key: 'partner', name: 'Partner Compatibility', price: 1499 }
-    ];
+    const products = getProductKeys().map((key) => ({
+        key,
+        name: getProductName(key, 'en'),
+        price: productPrices[key],
+    }));
 
     const names = [
         'Alice Smith', 'Bob Johnson', 'Charlie Brown', 'Diana Ross', 'Edward Norton',

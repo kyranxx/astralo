@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const en: Translations = {
     meta: {
-        title: 'Astralo - Personalized Horoscope Readings | 50% OFF',
-        description: 'Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. Instant PDF delivery!',
+        title: "Astralo - Personalized Horoscope Readings",
+        description: "Get your personalized horoscope today! Daily, weekly & monthly predictions. Love, career & zodiac forecasts. Instant PDF delivery!",
         keywords: 'daily horoscope today, free horoscope, horoscope today, weekly horoscope, monthly horoscope, love horoscope, zodiac signs, astrology predictions, horoscope 2026, star sign compatibility, birth chart reading, personalized horoscope, accurate horoscope, zodiac compatibility',
     },
     header: {
@@ -11,15 +11,15 @@ const en: Translations = {
         online: 'Online Now',
     },
     promo: {
-        offer: 'LIMITED OFFER: 50% OFF all horoscopes!',
+        offer: "Personalized Horoscopes",
         delivery: 'Instant delivery to your email',
-        customers: 'Trusted readings',
+        customers: "Instant delivery to your email",
         secure: 'Secure payment with Stripe',
     },
     hero: {
         title: 'Your Personal Horoscope',
         subtitle: 'Finally, truly accurate horoscope • Created specially for you',
-        features: '✨ Instant delivery • 🔒 Secure payments • ⭐ Personalized insights',
+        features: "✨ Instant delivery to your email • 🔒 Secure payment with Stripe • ⭐ Personalized Horoscopes",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const en: Translations = {
         technology: { title: 'Advanced Technology', description: 'State-of-the-art technology for accurate predictions' },
         instant: { title: 'Instant', description: 'Your horoscope ready within minutes' },
         professional: { title: 'Professional', description: 'Created according to astrological principles' },
-        verified: { title: 'Verified', description: 'Trusted astrology readings' },
+        verified: { title: 'Verified', description: "Personalized Horoscopes" },
     },
     form: {
         title: 'Get Your Horoscope',
@@ -130,7 +130,7 @@ const en: Translations = {
         q1: 'What is Astralo?',
         a1: 'Astralo is a professional online horoscope service that provides personalized astrological readings based on your exact birth data (date, time, and place). We offer daily, weekly, monthly horoscopes and partner compatibility analysis, delivered instantly as beautifully designed PDF documents to your email.',
         q2: 'How accurate are Astralo horoscopes?',
-        a2: 'Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. Our personalized readings provide detailed insights for entertainment purposes.',
+        a2: "Astralo horoscopes are created using advanced astrological algorithms based on your precise birth chart data. Our personalized readings provide detailed insights for entertainment purposes.",
         q3: 'How fast will I receive my horoscope?',
         a3: 'Your personalized horoscope is generated and delivered instantly to your email within 2-5 minutes after payment. You\'ll receive a professional PDF document with your complete astrological reading.',
         q4: 'What payment methods do you accept?',
@@ -142,7 +142,7 @@ const en: Translations = {
     },
     emailCapture: {
         title: '✨ Get Your Free 7-Day Horoscope',
-        subtitle: 'Enter your email and get a free 7-day horoscope, plus occasional astrology offers.',
+        subtitle: "Get Your Free 7-Day Horoscope. Instant delivery to your email.",
         placeholder: 'Enter your email',
         button: 'Get My Free Horoscope',
         consent: 'I agree to receive cosmic insights and accept the privacy policy.',
@@ -150,12 +150,12 @@ const en: Translations = {
         error: 'Something went wrong. Please try again.',
     },
     ads: {
-        sticky: 'Last Hours: 50% Special Discount Unlocked',
+        sticky: "Personalized Horoscopes",
         claim: 'Claim Now',
-        limited: 'Limited Offer',
+        limited: "Instant delivery to your email",
         unlock: 'Unlock Your',
         waiting: 'is waiting...',
-        join: 'Find clarity in the stars.',
+        join: "Personalized Horoscopes",
         getFor: 'Get it for',
     },
 };

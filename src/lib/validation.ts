@@ -1,11 +1,12 @@
 import { z } from 'zod';
+import { productKeys } from './products';
 
 // Helper to validate date strings YYYY-MM-DD
 const dateString = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, { message: "Invalid date format (YYYY-MM-DD)" });
 const timeString = z.string().regex(/^\d{2}:\d{2}$/, { message: "Invalid time format (HH:MM)" }).optional().or(z.literal(''));
 
 export const CheckoutSchema = z.object({
-    productKey: z.enum(['daily', 'weekly', 'monthly', 'partner']),
+    productKey: z.enum(productKeys),
     lang: z.string().length(2).default('en'),
 
     // Common fields
@@ -41,6 +42,7 @@ export const CheckoutSchema = z.object({
     gclid: z.string().max(200).optional(),
     fbclid: z.string().max(200).optional(),
     msclkid: z.string().max(200).optional(),
+    gaClientId: z.string().max(100).optional(),
 
     // Payment source URL for redirection (security check)
     currentUrl: z.string().url().optional(),
@@ -60,24 +62,44 @@ export const HoroscopeRequestSchema = z.object({
     sessionId: z.string().min(10, "Invalid Session ID"),
 });
 
-// Simple Referer Check (Basic CSRF protection)
+function isAllowedRequestUrl(value: string | null) {
+    if (!value) return false;
+
+    try {
+        const url = new URL(value);
+        const hostname = url.hostname.toLowerCase();
+        const isHttps = url.protocol === 'https:';
+        const isHttp = url.protocol === 'http:';
+
+        if (isHttps && (hostname === 'astralo.online' || hostname === 'www.astralo.online')) {
+            return true;
+        }
+
+        if (isHttps && hostname.startsWith('astralo-') && hostname.endsWith('.vercel.app')) {
+            return true;
+        }
+
+        if ((isHttp || isHttps) && (hostname === 'localhost' || hostname === '127.0.0.1')) {
+            const port = url.port ? Number(url.port) : undefined;
+            return port === undefined || (Number.isInteger(port) && port > 0 && port <= 65535);
+        }
+    } catch {
+        return false;
+    }
+
+    return false;
+}
+
+// Basic CSRF protection for browser-submitted commerce endpoints.
 export function validateReferer(request: Request) {
     const referer = request.headers.get('referer');
     const origin = request.headers.get('origin');
-    const allowed = [
-        'https://astralo.online',
-        'http://localhost:4321',
-        'http://localhost:3000'
-    ];
 
-    const check = (url: string | null) => {
-        if (!url) return false;
-        return allowed.some(domain => url.startsWith(domain));
-    };
+    const originAllowed = origin ? isAllowedRequestUrl(origin) : false;
+    const refererAllowed = referer ? isAllowedRequestUrl(referer) : false;
 
-    // Strict mode: both must be valid if present, but typically Referer is enough
-    if (!check(origin) && !check(referer)) {
-        return false;
-    }
-    return true;
+    if (origin && !originAllowed) return false;
+    if (referer && !refererAllowed) return false;
+
+    return originAllowed || refererAllowed;
 }

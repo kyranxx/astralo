@@ -1,5 +1,5 @@
 ---
-import { getProductName, type ProductKey } from '../lib/products';
+import { getProductKeys, getProductName } from '../lib/products';
 import { getTranslations, isValidLocale, type SupportedLocale } from '../lib/i18n';
 import { getFreeHoroscopePath } from '../lib/seo';
 
@@ -578,7 +578,7 @@ const t = translations[lang] || translations.en;
 // English uses root paths, other languages use /[lang]/ prefix
 const basePath = lang === 'en' ? '' : `/${lang}`;
 const legalBasePath = `${basePath}/legal`;
-const productLinks: ProductKey[] = ['daily', 'weekly', 'monthly', 'partner'];
+const productLinks = getProductKeys();
 ---
 
 <footer class="relative mt-auto bg-black/60 backdrop-blur-xl border-t border-white/10">
@@ -609,6 +609,11 @@ const productLinks: ProductKey[] = ['daily', 'weekly', 'monthly', 'partner'];
           <a href={freeHoroscopePath} class="text-white/70 text-sm hover:text-amber-400 transition-colors">
             {siteTranslations.emailCapture?.title || 'Free Horoscope'}
           </a>
+          {currentLang === 'en' && (
+            <a href="/sitemap" class="text-white/70 text-sm hover:text-amber-400 transition-colors">
+              Sitemap
+            </a>
+          )}
           <a href={lang === 'en' ? '/blog' : `/${lang}/blog`} class="text-white/70 text-sm hover:text-amber-400 transition-colors inline-flex items-center gap-1">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -640,13 +645,13 @@ const productLinks: ProductKey[] = ['daily', 'weekly', 'monthly', 'partner'];
         <h3 class="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">{t.paymentMethods}</h3>
         <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
           <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
-            <img src="/visa-brandmark-blue-1960x622.webp" alt="Visa" class="h-4 w-auto" width="172" height="56" loading="lazy" />
+            <img src="/visa-brandmark-blue-1960x622.webp" alt="Visa" class="h-4 w-auto" width="172" height="56" decoding="async" />
           </div>
           <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
-            <img src="/ma_symbol_opt_73_3x.webp" alt="Mastercard" class="h-5 w-auto" width="98" height="70" loading="lazy" />
+            <img src="/ma_symbol_opt_73_3x.webp" alt="Mastercard" class="h-5 w-auto" width="98" height="70" decoding="async" />
           </div>
           <div class="bg-white rounded px-2 py-1 h-7 flex items-center">
-            <img src="/stripe-logo.webp" alt="Stripe" class="h-4 w-auto" width="100" height="42" loading="lazy" />
+            <img src="/stripe-logo.webp" alt="Stripe" class="h-4 w-auto" width="100" height="42" decoding="async" />
           </div>
         </div>
         

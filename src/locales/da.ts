@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const da: Translations = {
     meta: {
-        title: 'Astralo - Gratis Dagligt Horoskop I Dag 2026 | Præcise Stjernetegnsprognoser',
-        description: 'Få dit GRATIS personlige horoskop i dag! ⭐ Daglige, ugentlige og månedlige forudsigelser. Kærlighedskompatibilitet, karriererådgivning. 50.000+ tilfredse kunder. Øjeblikkelig levering!',
+        title: "Astralo - Gratis Dagligt Horoskop I Dag 2026 | Præcise Stjernetegnsprognoser",
+        description: "Få dit GRATIS personlige horoskop i dag! ⭐ Daglige, ugentlige og månedlige forudsigelser. Kærlighedskompatibilitet, karriererådgivning. Øjeblikkelig levering!",
         keywords: 'dagligt horoskop, gratis horoskop, horoskop i dag, ugehoroskop, månedshoroskop, kærlighedshoroskop, stjernetegn, astrologi, horoskop 2026, personligt horoskop',
     },
     header: {
@@ -11,15 +11,15 @@ const da: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'BEGRÆNSET TILBUD: 50% rabat på alle horoskoper!',
+        offer: "Personlige Horoskoper",
         delivery: 'Øjeblikkelig levering',
-        customers: '50.000+ tilfredse kunder',
+        customers: "Øjeblikkelig levering",
         secure: 'Sikker betaling',
     },
     hero: {
         title: 'Dit Personlige Horoskop',
         subtitle: 'Endelig et virkelig præcist horoskop • Skabt specielt til dig',
-        features: '✨ Øjeblikkelig levering • 🔒 Sikre betalinger • ⭐ 50.000+ tilfredse kunder',
+        features: "✨ Øjeblikkelig levering • 🔒 Sikker betaling • ⭐ Personlige Horoskoper",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const da: Translations = {
         technology: { title: 'Avanceret Teknologi', description: 'Banebrydende teknologi til præcise prognoser' },
         instant: { title: 'Øjeblikkeligt', description: 'Dit horoskop klar på få minutter' },
         professional: { title: 'Professionelt', description: 'Skabt efter astrologiske principper' },
-        verified: { title: 'Verificeret', description: '50.000+ tilfredse kunder' },
+        verified: { title: 'Verificeret', description: "Personlige Horoskoper" },
     },
     form: {
         title: 'Få dit horoskop',
@@ -130,7 +130,7 @@ const da: Translations = {
         q1: 'Hvad er Astralo?',
         a1: 'Astralo er en professionel online horoskoptjeneste, der leverer personlige astrologiske læsninger baseret på dine nøjagtige fødselsdata (dato, tid og sted). Vi tilbyder daglige, ugentlige, månedlige horoskoper og partnerkompatibilitetsanalyse, leveret øjeblikkeligt som smukt designede PDF-dokumenter til din e-mail.',
         q2: 'Hvor præcise er Astralos horoskoper?',
-        a2: 'Astralos horoskoper er skabt ved hjælp af avancerede astrologiske algoritmer baseret på dine præcise fødselsdata. Med over 50.000 tilfredse kunder og en bedømmelse på 4,9/5 stjerner giver vores personlige læsninger detaljeret indsigt til underholdningsformål.',
+        a2: "Astralos horoskoper er skabt ved hjælp af avancerede astrologiske algoritmer baseret på dine præcise fødselsdata.",
         q3: 'Hvor hurtigt får jeg mit horoskop?',
         a3: 'Dit personlige horoskop genereres og leveres øjeblikkeligt til din e-mail inden for 2-5 minutter efter betaling. Du modtager et professionelt PDF-dokument med din komplette astrologiske læsning.',
         q4: 'Hvilke betalingsmetoder accepterer I?',
@@ -142,7 +142,7 @@ const da: Translations = {
     },
     emailCapture: {
         title: '✨ Få dit gratis fødselshoroskop og ugeprognose',
-        subtitle: 'Slut dig til 50.000+ andre, der modtager personlig kosmisk indsigt og gratis rapporter hver mandag!',
+        subtitle: "Få dit gratis fødselshoroskop og ugeprognose. Øjeblikkelig levering.",
         placeholder: 'Indtast din e-mail',
         button: 'Få min gratis læsning',
         consent: 'Jeg accepterer at modtage kosmisk indsigt og accepterer privatlivspolitikken.',
@@ -150,12 +150,12 @@ const da: Translations = {
         error: 'Noget gik galt. Prøv venligst igen.',
     },
     ads: {
-        sticky: 'Sidste timer: 50% særlig rabat låst op',
+        sticky: "Personlige Horoskoper",
         claim: 'Hent nu',
-        limited: 'Begrænset tilbud',
+        limited: "Øjeblikkelig levering",
         unlock: 'Lås op for din',
         waiting: 'venter på dig...',
-        join: 'Slut dig til 50.000+ sjæle, der fandt klarhed i stjernerne.',
+        join: "Personlige Horoskoper",
         getFor: 'Få det for',
     },
 };

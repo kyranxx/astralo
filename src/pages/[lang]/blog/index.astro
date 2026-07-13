@@ -9,7 +9,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
 import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../../lib/blog';
+import { getExactArticleTranslation, getArticleMeta, getBlogUiTranslations, getLatestArticleSlugsForLang } from '../../../lib/blog';
 import { buildBreadcrumbSchema, buildCollectionPageSchema, siteUrl } from '../../../lib/seo';
 import { isStaleMonthlyHoroscopeSlug } from '../../../lib/indexing';
 
@@ -55,7 +55,7 @@ const localizedKeywords: Record<string, { primary: string; secondary: string[] }
   vi: { primary: 'Tử vi hôm nay', secondary: ['Tử vi hàng ngày', 'Cung hoàng đạo hợp nhau'] },
   id: { primary: 'Ramalan zodiak hari ini', secondary: ['Horoskop harian', 'Kecocokan zodiak'] },
   bg: { primary: 'Дневен хороскоп', secondary: ['Хороскоп днес', 'Съвместимост на зодии'] },
-  hr: { primary: 'Дnevni horoskop', secondary: ['Horoskop danas', 'Kompatibilnost znakova'] },
+  hr: { primary: 'Dnevni horoskop', secondary: ['Horoskop danas', 'Kompatibilnost znakova'] },
   sl: { primary: 'Dnevni horoskop', secondary: ['Horoskop danes', 'Združljivost znakov'] },
   sr: { primary: 'Дневни хороскоп', secondary: ['Хороскоп данас', 'Компатибилност знакова'] },
   uk: { primary: 'Гороскоп на сьогодні', secondary: ['Щоденний гороскоп', 'Сумісність знаків'] },
@@ -70,30 +70,17 @@ const keywords = localizedKeywords[currentLang] || localizedKeywords.en;
 const seoTitle = `${blogUi.blogTitle} | Astralo`;
 const seoDesc = blogUi.blogSubtitle;
 
-const blogPostsBase = [
-  { slug: 'monthly-horoscope-june-2026', featured: true },
-  { slug: 'monthly-horoscope-april-2026', featured: false },
-  { slug: 'monthly-horoscope-march-2026', featured: false },
-  { slug: 'monthly-horoscope-february-2026', featured: false },
-  { slug: 'daily-horoscope-guide', featured: false },
-  { slug: 'birth-chart-reading-explained', featured: false },
-  { slug: 'monthly-horoscope-january-2026', featured: false },
-  { slug: 'love-horoscope-relationship-advice', featured: false },
-  { slug: 'weekly-horoscope-predictions', featured: false },
-  { slug: 'mercury-retrograde-survival-guide', featured: false },
-  { slug: 'history-of-astrology', featured: false },
-  { slug: 'zodiac-compatibility-complete-guide', featured: false },
-  { slug: 'saturn-return-guide', featured: false },
-  { slug: 'the-12-houses-of-astrology', featured: false },
-  { slug: 'twin-flames-and-soulmates-astrology', featured: false },
-];
+const blogPostsBase = getLatestArticleSlugsForLang(currentLang).map((slug, index) => ({
+  slug,
+  featured: index === 0,
+}));
 
 // Merge base data with localized content from lib/blog
 const blogPosts = blogPostsBase
   .filter((base) => !isStaleMonthlyHoroscopeSlug(base.slug))
   .map(base => {
   const meta = getArticleMeta(base.slug);
-  const translation = getArticleTranslation(base.slug, currentLang);
+  const translation = getExactArticleTranslation(base.slug, currentLang);
   
   if (!meta || !translation) return null;
 
@@ -118,7 +105,7 @@ const pageSchema = [
     })),
   }),
   buildBreadcrumbSchema([
-    { name: 'Home', url: `${siteUrl}/${currentLang}` },
+    { name: blogUi.home, url: `${siteUrl}/${currentLang}` },
     { name: blogUi.blogTitle, url: `${siteUrl}/${currentLang}/blog` },
   ]),
 ];
@@ -135,11 +122,11 @@ const pageSchema = [
     <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
       <div class="max-w-6xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+          <a href={`/${currentLang}`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span class="text-sm">{blogUi.home}</span>
           </a>
-          <a href={`/${currentLang}/`}><img src="/logo.webp" alt="Astralo" class="h-9" style="aspect-ratio: 3.41;" fetchpriority="high" /></a>
+          <a href={`/${currentLang}`}><img src="/logo.webp" alt="Astralo" class="h-9" style="aspect-ratio: 3.41;" fetchpriority="high" /></a>
           <div class="w-16"></div>
         </div>
       </div>

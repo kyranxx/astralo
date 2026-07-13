@@ -1,12 +1,12 @@
 ---
 import ZodiacProductLandingPage from '../../../components/ZodiacProductLandingPage.astro';
-import { isValidProductKey } from '../../../lib/products';
+import { getZodiacProductKeys, isValidProductKey } from '../../../lib/products';
 import { isValidZodiacSign, zodiacSignSlugs } from '../../../lib/zodiac';
 
 export const prerender = true;
 
 export function getStaticPaths() {
-    return ['daily', 'weekly', 'monthly', 'partner'].flatMap((type) =>
+    return getZodiacProductKeys().flatMap((type) =>
         zodiacSignSlugs.map((sign) => ({
             params: { type, sign },
         })),

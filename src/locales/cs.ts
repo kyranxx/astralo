@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const cs: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Dnes Zdarma 2026 | Přesné Předpovědi Znamení',
-        description: 'Získejte ZDARMA horoskop dnes! ⭐ Denní, týdenní a měsíční horoskop. Láskový horoskop, partnerská shoda a kariéra. 50 000+ spokojených zákazníků. Okamžité doručení!',
+        title: "Astralo - Horoskop Dnes Zdarma 2026 | Přesné Předpovědi Znamení",
+        description: "Získejte ZDARMA horoskop dnes! ⭐ Denní, týdenní a měsíční horoskop. Láskový horoskop, partnerská shoda a kariéra. Okamžité doručení!",
         keywords: 'horoskop dnes, horoskop zdarma, horoskop 2026, znamení zvěrokruhu, láskový horoskop, partnerský horoskop, týdenní horoskop, měsíční horoskop, astrologie, beran horoskop, býk horoskop, blíženci horoskop, přesný horoskop, narozeninový horoskop',
     },
     header: {
@@ -11,15 +11,15 @@ const cs: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'LIMITOVANÁ NABÍDKA: 50% SLEVA na všechny horoskopy!',
+        offer: "Personalizované Horoskopy",
         delivery: 'Okamžité doručení na email',
-        customers: '50 000+ spokojených zákazníků',
+        customers: "Okamžité doručení na email",
         secure: 'Bezpečná platba přes Stripe',
     },
     hero: {
         title: 'Váš Osobní Horoskop',
         subtitle: 'Konečně skutečně přesný horoskop • Vytvořený speciálně pro vás',
-        features: '✨ Okamžité doručení • 🔒 Bezpečné platby • ⭐ 50 000+ spokojených zákazníků',
+        features: "✨ Okamžité doručení na email • 🔒 Bezpečná platba přes Stripe • ⭐ Personalizované Horoskopy",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const cs: Translations = {
         technology: { title: 'Pokročilá Technologie', description: 'Nejmodernější technologie pro přesné předpovědi' },
         instant: { title: 'Okamžité', description: 'Váš horoskop připravený během několika minut' },
         professional: { title: 'Profesionální', description: 'Vytvořené podle astrologických principů' },
-        verified: { title: 'Ověřené', description: '50 000+ spokojených zákazníků' },
+        verified: { title: 'Ověřené', description: "Personalizované Horoskopy" },
     },
     form: {
         title: 'Získejte svůj horoskop',
@@ -130,7 +130,7 @@ const cs: Translations = {
         q1: 'Co je Astralo?',
         a1: 'Astralo je profesionální online horoskopová služba, která poskytuje personalizovaná astrologická čtení na základě vašich přesných údajů o narození (datum, čas a místo). Nabízíme denní, týdenní, měsíční horoskopy a analýzu partnerského vztahu, doručené okamžitě jako krásně navržené PDF dokumenty na váš email.',
         q2: 'Jak přesné jsou horoskopy Astralo?',
-        a2: 'Horoskopy Astralo jsou vytvořeny pomocí pokročilých astrologických algoritmů založených na vašich přesných údajích o narození. S více než 50 000 spokojenými zákazníky a hodnocením 4,9/5 hvězdiček poskytují naše personalizovaná čtení podrobné informace pro zábavné účely.',
+        a2: "Horoskopy Astralo jsou vytvořeny pomocí pokročilých astrologických algoritmů založených na vašich přesných údajích o narození.",
         q3: 'Jak rychle dostanu svůj horoskop?',
         a3: 'Váš personalizovaný horoskop se vygeneruje a doručí okamžitě na váš email do 2-5 minut po platbě. Dostanete profesionální PDF dokument s vaším kompletním astrologickým čtením.',
         q4: 'Jaké platební metody akceptujete?',
@@ -142,7 +142,7 @@ const cs: Translations = {
     },
     emailCapture: {
         title: '✨ Získejte Osobní Horoskop Zdarma',
-        subtitle: 'Přidejte se k 50 000+ odběratelům a získejte týdenní kosmické postřehy do vaší schránky.',
+        subtitle: "Získejte Osobní Horoskop Zdarma. Okamžité doručení na email.",
         placeholder: 'Zadejte váš email',
         button: 'Získat Zdarma',
         consent: 'Souhlasím s přijímáním emailů a akceptuji zásady ochrany osobních údajů.',
@@ -150,12 +150,12 @@ const cs: Translations = {
         error: 'Něco se pokazilo. Zkuste znovu.',
     },
     ads: {
-        sticky: 'Poslední hodiny: 50% Speciální sleva odemčena',
+        sticky: "Personalizované Horoskopy",
         claim: 'Využít nyní',
-        limited: 'Limitovaná nabídka',
+        limited: "Okamžité doručení na email",
         unlock: 'Odemkněte svůj',
         waiting: 'vás čeká...',
-        join: 'Přidejte se k 50 000+ duším, které našly jas v hvězdách.',
+        join: "Personalizované Horoskopy",
         getFor: 'Získat za',
     },
 };

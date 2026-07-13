@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const hu: Translations = {
     meta: {
-        title: 'Astralo - Napi Horoszkóp Ingyen 2026 | Pontos Csillagjegy Előrejelzések',
-        description: 'Kapja meg INGYENES horoszkópját ma! ⭐ Napi, heti és havi horoszkóp. Szerelmi horoszkóp, partner egyezőség és karrier. 50.000+ elégedett ügyfél. Azonnali kézbesítés!',
+        title: "Astralo - Napi Horoszkóp Ingyen 2026 | Pontos Csillagjegy Előrejelzések",
+        description: "Kapja meg INGYENES horoszkópját ma! ⭐ Napi, heti és havi horoszkóp. Szerelmi horoszkóp, partner egyezőség és karrier. Azonnali kézbesítés!",
         keywords: 'napi horoszkóp, ingyenes horoszkóp, horoszkóp 2026, csillagjegyek, szerelmi horoszkóp, partner horoszkóp, heti horoszkóp, havi horoszkóp, asztrológia, kos horoszkóp, bika horoszkóp, ikrek horoszkóp, pontos horoszkóp',
     },
     header: {
@@ -11,15 +11,15 @@ const hu: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'LIMITÁLT AJÁNLAT: 50% kedvezmény minden horoszkópra!',
+        offer: "Személyre Szabott Horoszkópok",
         delivery: 'Azonnali kézbesítés emailben',
-        customers: '50 000+ elégedett ügyfél',
+        customers: "Azonnali kézbesítés emailben",
         secure: 'Biztonságos fizetés Stripe-pal',
     },
     hero: {
         title: 'Az Ön Személyes Horoszkópja',
         subtitle: 'Végre egy igazán pontos horoszkóp • Kifejezetten Önnek készítve',
-        features: '✨ Azonnali kézbesítés • 🔒 Biztonságos fizetés • ⭐ 50 000+ elégedett ügyfél',
+        features: "✨ Azonnali kézbesítés emailben • 🔒 Biztonságos fizetés Stripe-pal • ⭐ Személyre Szabott Horoszkópok",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const hu: Translations = {
         technology: { title: 'Fejlett Technológia', description: 'A legmodernebb technológia pontos előrejelzésekhez' },
         instant: { title: 'Azonnali', description: 'Horoszkópja percek alatt elkészül' },
         professional: { title: 'Professzionális', description: 'Asztrológiai elvek szerint készült' },
-        verified: { title: 'Ellenőrzött', description: '50 000+ elégedett ügyfél' },
+        verified: { title: 'Ellenőrzött', description: "Személyre Szabott Horoszkópok" },
     },
     form: {
         title: 'Kapja meg horoszkópját',
@@ -130,7 +130,7 @@ const hu: Translations = {
         q1: 'Mi az Astralo?',
         a1: 'Az Astralo egy professzionális online horoszkóp szolgáltatás, amely személyre szabott asztrológiai olvasásokat nyújt az Ön pontos születési adatai (dátum, idő és hely) alapján. Napi, heti, havi horoszkópokat és partner kompatibilitási elemzéseket kínálunk, amelyek azonnal, gyönyörűen megtervezett PDF dokumentumokként kerülnek kézbesítésre e-mailben.',
         q2: 'Mennyire pontosak az Astralo horoszkópok?',
-        a2: 'Az Astralo horoszkópokat fejlett asztrológiai algoritmusok segítségével készítjük, az Ön pontos születési adatai alapján. Több mint 50 000 elégedett ügyféllel és 4,9/5 csillagos értékeléssel, személyre szabott olvasásaink részletes betekintést nyújtanak szórakoztatási célokra.',
+        a2: "Az Astralo horoszkópokat fejlett asztrológiai algoritmusok segítségével készítjük, az Ön pontos születési adatai alapján.",
         q3: 'Milyen gyorsan kapom meg a horoszkópomat?',
         a3: 'Személyre szabott horoszkópja a fizetés után 2-5 percen belül generálódik és azonnal kézbesítésre kerül az e-mail címére. Professzionális PDF dokumentumot kap a teljes asztrológiai olvasással.',
         q4: 'Milyen fizetési módokat fogadnak el?',
@@ -142,7 +142,7 @@ const hu: Translations = {
     },
     emailCapture: {
         title: '✨ Ingyenes Születési Képlet és Heti Előrejelzés',
-        subtitle: 'Csatlakozzon több mint 50 000 emberhez, akik minden hétfőn személyre szabott kozmikus betekintést és ingyenes jelentéseket kapnak!',
+        subtitle: "Ingyenes Születési Képlet és Heti Előrejelzés. Azonnali kézbesítés emailben.",
         placeholder: 'Adja meg az e-mail címét',
         button: 'Kérem az ingyenes elemzésemet',
         consent: 'Hozzájárulok a kozmikus betekintések küldéséhez és elfogadom az adatvédelmi irányelveket.',
@@ -150,12 +150,12 @@ const hu: Translations = {
         error: 'Valami hiba történt. Kérjük, próbálja újra.',
     },
     ads: {
-        sticky: 'Utolsó órák: 50% speciális kedvezmény feloldva',
+        sticky: "Személyre Szabott Horoszkópok",
         claim: 'Igényelje most',
-        limited: 'Limitált ajánlat',
+        limited: "Azonnali kézbesítés emailben",
         unlock: 'Oldja fel a',
         waiting: 'vár Önre...',
-        join: 'Csatlakozzon több mint 50 000 lélekhez, akik tisztánlátást találtak a csillagokban.',
+        join: "Személyre Szabott Horoszkópok",
         getFor: 'Szerezd meg',
     },
 };

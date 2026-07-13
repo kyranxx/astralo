@@ -4,12 +4,12 @@
  * A restrained product prompt for horoscope sales.
  */
 import { Sparkles, TrendingUp, Zap } from 'lucide-astro';
-import { getProductPriceInEuros } from '../lib/products';
+import { getProductCopy, getProductPriceInEuros, type ProductKey } from '../lib/products';
 import { getProductLandingPath } from '../lib/seo';
 
 interface Props {
     type?: 'sidebar' | 'inline' | 'floating';
-    productKey?: 'daily' | 'weekly' | 'monthly' | 'partner';
+    productKey?: ProductKey;
     lang?: string;
 }
 
@@ -19,13 +19,14 @@ import { getTranslations, type SupportedLocale } from '../lib/i18n';
 const t = getTranslations(lang as SupportedLocale);
 
 const price = getProductPriceInEuros(productKey).toFixed(2);
-const originalPrice = (Number(price) * 2).toFixed(2);
+const product = getProductCopy(productKey, lang as SupportedLocale, t);
 
 const productData = {
-    daily: { name: t.products.daily.name, icon: Zap },
-    weekly: { name: t.products.weekly.name, icon: TrendingUp },
-    monthly: { name: t.products.monthly.name, icon: Sparkles },
-    partner: { name: t.products.partner.name, icon: Zap }
+    daily: { name: getProductCopy('daily', lang as SupportedLocale, t).name, icon: Zap },
+    weekly: { name: getProductCopy('weekly', lang as SupportedLocale, t).name, icon: TrendingUp },
+    monthly: { name: getProductCopy('monthly', lang as SupportedLocale, t).name, icon: Sparkles },
+    partner: { name: getProductCopy('partner', lang as SupportedLocale, t).name, icon: Zap },
+    lifetime: { name: product.name, icon: Sparkles }
 };
 
 const data = productData[productKey];
@@ -40,14 +41,13 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
         <div class="relative z-10">
             <div class="flex items-center gap-2 mb-4">
                 <Icon class="w-5 h-5 text-amber-400" />
-                <span class="text-xs font-bold uppercase tracking-widest text-white/50">{t.ads?.limited || 'Limited Offer'}</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-white/50">{t.promo?.delivery || 'Instant delivery'}</span>
             </div>
-            <h4 class="text-xl font-black text-white mb-2 leading-tight">{t.ads?.unlock || 'Unlock Your'} {data.name}</h4>
-            <p class="text-white/60 text-sm mb-6">{t.products[productKey].description}</p>
+            <h4 class="text-xl font-black text-white mb-2 leading-tight">{data.name}</h4>
+            <p class="text-white/60 text-sm mb-6">{product.description}</p>
             
             <div class="flex items-baseline gap-2 mb-6">
                 <span class="text-3xl font-black text-white">€{price}</span>
-                <span class="text-sm text-white/30 line-through">€{originalPrice}</span>
             </div>
             
             <a href={ctaLink} class="flex items-center justify-center w-full py-3 px-6 bg-amber-500 text-black font-bold rounded-xl hover:bg-amber-400 transition-colors">
@@ -68,10 +68,10 @@ const ctaLink = getProductLandingPath(lang as SupportedLocale, productKey);
                     <Icon class="w-6 h-6 text-amber-400" />
                 </div>
                 <div>
-                    <h5 class="text-sm font-bold text-white mb-1">{t.ads?.unlock || 'Unlock Your'} {data.name}</h5>
-                    <p class="text-[11px] text-white/50 mb-3">{t.products[productKey].description}</p>
+                    <h5 class="text-sm font-bold text-white mb-1">{data.name}</h5>
+                    <p class="text-[11px] text-white/50 mb-3">{product.description}</p>
                     <a href={ctaLink} class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
-                        {t.ads?.getFor || 'Get it for'} €{price} <span class="text-[10px] opacity-100">→</span>
+                        {t.ads?.claim || t.cta.orderNow} · €{price} <span class="text-[10px] opacity-100">→</span>
                     </a>
                 </div>
             </div>

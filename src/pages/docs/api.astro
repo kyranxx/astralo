@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { supportedLocaleCodes } from '../../lib/agent-ready';
+import { getProductKeys } from '../../lib/products';
 ---
 
 <Layout
@@ -8,6 +9,7 @@ import { supportedLocaleCodes } from '../../lib/agent-ready';
     description="Human-readable documentation for the public Astralo API surface."
     canonicalUrl="https://astralo.online/docs/api"
     floatingProductKey="weekly"
+    noIndex={true}
 >
     <div class="min-h-screen flex flex-col relative z-10">
         <main class="flex-1 px-4 py-10 sm:py-14">
@@ -36,7 +38,7 @@ import { supportedLocaleCodes } from '../../lib/agent-ready';
                         <div class="space-y-5">
                             <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
                                 <p class="text-sm text-amber-400 font-semibold mb-2">POST /api/checkout</p>
-                                <p>Create a Stripe Checkout session for one of these products: daily, weekly, monthly, partner.</p>
+                                <p>Create a Stripe Checkout session for one of these products: {getProductKeys().join(', ')}.</p>
                                 <p class="mt-2">Astralo enforces allowed origin or referer checks on this route.</p>
                             </div>
                             <div class="rounded-2xl border border-white/10 bg-white/5 p-5">

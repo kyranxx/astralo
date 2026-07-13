@@ -1,0 +1,70 @@
+---
+import { ArrowRight, Sparkles } from 'lucide-astro';
+import { getTranslations, type SupportedLocale } from '../lib/i18n';
+import { getProductLandingPath } from '../lib/seo';
+import { buildInternalCampaignUrl } from '../lib/internal-campaign';
+import { getProductCopy, getProductKeys, getProductPriceInEuros } from '../lib/products';
+
+interface Props {
+  lang?: SupportedLocale;
+  sourceSlug?: string;
+}
+
+const { lang = 'en', sourceSlug = 'blog_article' } = Astro.props;
+const t = getTranslations(lang);
+const productKeys = getProductKeys();
+---
+
+<section class="my-16 py-10 border-y border-white/10">
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-8">
+    <div>
+      <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
+        <Sparkles class="w-4 h-4" />
+        {t.header.badge}
+      </div>
+      <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+        {t.hero.title}
+      </h3>
+    </div>
+    <p class="text-white/60 max-w-xl leading-relaxed">
+      {t.hero.subtitle}
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 gap-4">
+    {productKeys.map((productKey) => {
+      const product = getProductCopy(productKey, lang, t);
+      return (
+        <a
+          href={buildInternalCampaignUrl(getProductLandingPath(lang, productKey), {
+            source: 'blog',
+            campaign: sourceSlug,
+            content: `product_grid_${productKey}`,
+          })}
+          class="group rounded-lg border border-white/10 bg-white/[0.03] p-5 transition-colors hover:border-amber-400/40 hover:bg-white/[0.06]"
+          data-astralo-track-click="blog_product_click"
+          data-blog-slug={sourceSlug}
+          data-click-surface={`product_grid_${productKey}`}
+          data-product-key={productKey}
+          data-language={lang}
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h4 class="text-lg font-bold text-white group-hover:text-amber-200 transition-colors">
+                {product.name}
+              </h4>
+              <p class="mt-2 text-sm leading-6 text-white/65">
+                {product.description}
+              </p>
+            </div>
+            <ArrowRight class="w-5 h-5 text-amber-400 shrink-0 mt-1 transition-transform group-hover:translate-x-1" />
+          </div>
+          <div class="mt-4 flex items-center gap-3 text-sm">
+            <span class="text-amber-400 font-bold">€{getProductPriceInEuros(productKey).toFixed(2)}</span>
+            <span class="text-white/35">{product.wordCount}</span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</section>

@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const id: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Harian Gratis 2026 | Prediksi Zodiak Akurat',
-        description: 'Dapatkan horoskop pribadi gratis hari ini! ⭐ Prediksi harian, mingguan, dan bulanan. Kecocokan cinta, saran karir. 50.000+ pelanggan puas. Pengiriman instan!',
+        title: "Astralo - Horoskop Harian Gratis 2026 | Prediksi Zodiak Akurat",
+        description: "Dapatkan horoskop pribadi gratis hari ini! ⭐ Prediksi harian, mingguan, dan bulanan. Kecocokan cinta, saran karir. Pengiriman instan!",
         keywords: 'horoskop harian, horoskop gratis, horoskop hari ini, horoskop mingguan, horoskop bulanan, horoskop cinta, zodiak, astrologi, horoskop 2026, horoskop pribadi',
     },
     header: {
@@ -11,15 +11,15 @@ const id: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'PENAWARAN TERBATAS: Diskon 50% semua horoskop!',
+        offer: "Horoskop Pribadi",
         delivery: 'Pengiriman instan',
-        customers: '50.000+ pelanggan puas',
+        customers: "Pengiriman instan",
         secure: 'Pembayaran aman',
     },
     hero: {
         title: 'Horoskop Pribadi Anda',
         subtitle: 'Akhirnya horoskop yang benar-benar akurat • Dibuat khusus untuk Anda',
-        features: '✨ Pengiriman instan • 🔒 Pembayaran aman • ⭐ 50.000+ pelanggan puas',
+        features: "✨ Pengiriman instan • 🔒 Pembayaran aman • ⭐ Horoskop Pribadi",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const id: Translations = {
         technology: { title: 'Teknologi Canggih', description: 'Teknologi mutakhir untuk prediksi akurat' },
         instant: { title: 'Instan', description: 'Horoskop Anda siap dalam hitungan menit' },
         professional: { title: 'Profesional', description: 'Dibuat sesuai prinsip astrologi' },
-        verified: { title: 'Terverifikasi', description: '50.000+ pelanggan puas' },
+        verified: { title: 'Terverifikasi', description: "Horoskop Pribadi" },
     },
     form: {
         title: 'Dapatkan horoskop Anda',
@@ -130,7 +130,7 @@ const id: Translations = {
         q1: 'Apa itu Astralo?',
         a1: 'Astralo adalah layanan horoskop online profesional yang menyediakan pembacaan astrologi personal berdasarkan data kelahiran Anda yang tepat (tanggal, waktu, dan tempat). Kami menawarkan horoskop harian, mingguan, bulanan, dan analisis kompatibilitas pasangan, dikirimkan secara instan sebagai dokumen PDF yang dirancang dengan indah ke email Anda.',
         q2: 'Seberapa akurat horoskop Astralo?',
-        a2: 'Horoskop Astralo dibuat menggunakan algoritma astrologi canggih berdasarkan data kelahiran Anda yang tepat. Dengan lebih dari 50.000 pelanggan puas dan rating 4,9/5 bintang, pembacaan personal kami memberikan wawasan terperinci untuk tujuan hiburan.',
+        a2: "Horoskop Astralo dibuat menggunakan algoritma astrologi canggih berdasarkan data kelahiran Anda yang tepat.",
         q3: 'Seberapa cepat saya akan menerima horoskop saya?',
         a3: 'Horoskop personal Anda dihasilkan dan dikirimkan secara instan ke email Anda dalam 2-5 menit setelah pembayaran. Anda akan menerima dokumen PDF profesional dengan pembacaan astrologi lengkap Anda.',
         q4: 'Metode pembayaran apa yang Anda terima?',
@@ -142,20 +142,20 @@ const id: Translations = {
     },
     emailCapture: {
         title: '✨ Dapatkan Peta Kelahiran & Ramalan Mingguan Gratis',
-        subtitle: 'Bergabunglah dengan 50.000+ orang yang menerima wawasan kosmik personal dan laporan gratis setiap hari Senin!',
+        subtitle: "Dapatkan Peta Kelahiran & Ramalan Mingguan Gratis. Pengiriman instan.",
         placeholder: 'Masukkan email Anda',
-        button: 'Dapatkan pembacaan gratis',
+        button: 'Lihat horoskop gratis saya',
         consent: 'Saya setuju untuk menerima wawasan kosmik dan menerima kebijakan privasi.',
         success: '✨ Selamat datang! Pembacaan gratis pertama Anda sedang dikirim.',
         error: 'Terjadi kesalahan. Silakan coba lagi.',
     },
     ads: {
-        sticky: 'Jam-jam terakhir: Diskon khusus 50% dibuka',
+        sticky: "Horoskop Pribadi",
         claim: 'Klaim sekarang',
-        limited: 'Penawaran terbatas',
+        limited: "Pengiriman instan",
         unlock: 'Buka milik Anda',
         waiting: 'menunggu Anda...',
-        join: 'Bergabunglah dengan 50.000+ jiwa yang menemukan kejelasan di bintang-bintang.',
+        join: "Horoskop Pribadi",
         getFor: 'Dapatkan seharga',
     },
 };

@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const es: Translations = {
     meta: {
-        title: 'Astralo - Horóscopo de Hoy Gratis 2026 | Predicciones Signos Zodiaco',
-        description: '¡Obtén tu horóscopo GRATIS hoy! ⭐ Horóscopo diario, semanal y mensual. Compatibilidad amorosa, carrera y predicciones. ¡Entrega instantánea!',
+        title: "Astralo - Horóscopo de Hoy Gratis 2026 | Predicciones Signos Zodiaco",
+        description: "¡Obtén tu horóscopo GRATIS hoy! ⭐ Horóscopo diario, semanal y mensual. Compatibilidad amorosa, carrera y predicciones. ¡Entrega instantánea!",
         keywords: 'horóscopo de hoy, horóscopo gratis, horóscopo 2026, signos del zodiaco, horóscopo amor, compatibilidad signos, horóscopo semanal, horóscopo mensual, carta astral, ascendente, predicciones astrológicas, horóscopo personalizado, tarot, astrología',
     },
     header: {
@@ -11,15 +11,15 @@ const es: Translations = {
         online: 'En línea',
     },
     promo: {
-        offer: '¡OFERTA LIMITADA: 50% de descuento en todos los horóscopos!',
+        offer: "Horóscopos Personalizados",
         delivery: 'Entrega instantánea por email',
-        customers: 'Lecturas de confianza',
+        customers: "Entrega instantánea por email",
         secure: 'Pago seguro con Stripe',
     },
     hero: {
         title: 'Tu Horóscopo Personal',
         subtitle: 'Por fin un horóscopo realmente preciso • Creado especialmente para ti',
-        features: '✨ Entrega instantánea • 🔒 Pagos seguros • ⭐ Lecturas personalizadas',
+        features: "✨ Entrega instantánea por email • 🔒 Pago seguro con Stripe • ⭐ Horóscopos Personalizados",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const es: Translations = {
         technology: { title: 'Tecnología Avanzada', description: 'Tecnología de vanguardia para predicciones precisas' },
         instant: { title: 'Instantáneo', description: 'Tu horóscopo listo en minutos' },
         professional: { title: 'Profesional', description: 'Creado según principios astrológicos' },
-        verified: { title: 'Verificado', description: 'Lecturas astrológicas de confianza' },
+        verified: { title: 'Verificado', description: "Horóscopos Personalizados" },
     },
     form: {
         title: 'Obtén tu horóscopo',
@@ -130,7 +130,7 @@ const es: Translations = {
         q1: '¿Qué es Astralo?',
         a1: 'Astralo es un servicio profesional de horóscopo en línea que proporciona lecturas astrológicas personalizadas basadas en tus datos de nacimiento exactos (fecha, hora y lugar). Ofrecemos horóscopos diarios, semanales, mensuales y análisis de compatibilidad de pareja, entregados instantáneamente como documentos PDF bellamente diseñados a tu email.',
         q2: '¿Qué tan precisos son los horóscopos de Astralo?',
-        a2: 'Los horóscopos de Astralo se crean utilizando algoritmos astrológicos avanzados basados en tus datos de nacimiento precisos. Nuestras lecturas personalizadas proporcionan información detallada con fines de entretenimiento.',
+        a2: "Los horóscopos de Astralo se crean utilizando algoritmos astrológicos avanzados basados en tus datos de nacimiento precisos. Nuestras lecturas personalizadas proporcionan información detallada con fines de entretenimiento.",
         q3: '¿Qué tan rápido recibiré mi horóscopo?',
         a3: 'Tu horóscopo personalizado se genera y entrega instantáneamente a tu email en 2-5 minutos después del pago. Recibirás un documento PDF profesional con tu lectura astrológica completa.',
         q4: '¿Qué métodos de pago aceptan?',
@@ -142,20 +142,20 @@ const es: Translations = {
     },
     emailCapture: {
         title: '✨ Obtén tu carta astral y pronóstico semanal gratis',
-        subtitle: 'Recibe información cósmica personalizada y reportes gratuitos por email.',
+        subtitle: "Obtén tu carta astral y pronóstico semanal gratis. Entrega instantánea por email.",
         placeholder: 'Introduce tu email',
-        button: 'Obtener mi lectura gratis',
+        button: 'Ver mi horóscopo gratis',
         consent: 'Acepto recibir información cósmica y acepto la política de privacidad.',
         success: '✨ ¡Bienvenido! Tu primera lectura gratuita está en camino.',
         error: 'Algo salió mal. Por favor, inténtalo de nuevo.',
     },
     ads: {
-        sticky: 'Últimas horas: 50% de descuento especial desbloqueado',
+        sticky: "Horóscopos Personalizados",
         claim: 'Reclamar ahora',
-        limited: 'Oferta limitada',
+        limited: "Entrega instantánea por email",
         unlock: 'Desbloquea tu',
         waiting: 'te está esperando...',
-        join: 'Encuentra claridad en las estrellas.',
+        join: "Horóscopos Personalizados",
         getFor: 'Consíguelo por',
     },
 };

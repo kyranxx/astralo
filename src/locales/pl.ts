@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const pl: Translations = {
     meta: {
-        title: 'Astralo - Horoskop Na Dziś Za Darmo 2026 | Dokładne Przepowiednie Zodiakalne',
-        description: 'Pobierz swój DARMOWY horoskop dziś! ⭐ Horoskopy dzienne, tygodniowe i miesięczne. Miłość, kariera i przepowiednie. 50 000+ zadowolonych klientów. Natychmiastowa dostawa!',
+        title: "Astralo - Horoskop Na Dziś Za Darmo 2026 | Dokładne Przepowiednie Zodiakalne",
+        description: "Pobierz swój DARMOWY horoskop dziś! ⭐ Horoskopy dzienne, tygodniowe i miesięczne. Miłość, kariera i przepowiednie. Natychmiastowa dostawa!",
         keywords: 'horoskop na dziś, horoskop darmowy, horoskop 2026, znaki zodiaku, horoskop miłosny, horoskop partnerski, horoskop tygodniowy, horoskop miesięczny, astrologia, baran horoskop, byk horoskop, bliźnięta horoskop, dokładny horoskop, horoskop urodzeniowy',
     },
     header: {
@@ -11,15 +11,15 @@ const pl: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'LIMITOWANA OFERTA: 50% zniżki na wszystkie horoskopy!',
+        offer: "Spersonalizowane Horoskopy",
         delivery: 'Natychmiastowa dostawa na email',
-        customers: '50 000+ zadowolonych klientów',
+        customers: "Natychmiastowa dostawa na email",
         secure: 'Bezpieczna płatność przez Stripe',
     },
     hero: {
         title: 'Twój Osobisty Horoskop',
         subtitle: 'Wreszcie naprawdę dokładny horoskop • Stworzony specjalnie dla Ciebie',
-        features: '✨ Natychmiastowa dostawa • 🔒 Bezpieczne płatności • ⭐ 50 000+ zadowolonych klientów',
+        features: "✨ Natychmiastowa dostawa na email • 🔒 Bezpieczna płatność przez Stripe • ⭐ Spersonalizowane Horoskopy",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const pl: Translations = {
         technology: { title: 'Zaawansowana Technologia', description: 'Najnowocześniejsza technologia dla dokładnych prognoz' },
         instant: { title: 'Natychmiast', description: 'Twój horoskop gotowy w kilka minut' },
         professional: { title: 'Profesjonalnie', description: 'Stworzony zgodnie z zasadami astrologii' },
-        verified: { title: 'Zweryfikowane', description: '50 000+ zadowolonych klientów' },
+        verified: { title: 'Zweryfikowane', description: "Spersonalizowane Horoskopy" },
     },
     form: {
         title: 'Otrzymaj swój horoskop',
@@ -130,7 +130,7 @@ const pl: Translations = {
         q1: 'Czym jest Astralo?',
         a1: 'Astralo to profesjonalna usługa horoskopowa online, która dostarcza spersonalizowane odczyty astrologiczne oparte na Twoich dokładnych danych urodzenia (data, godzina i miejsce). Oferujemy horoskopy dzienne, tygodniowe, miesięczne oraz analizę partnerską, dostarczane natychmiast jako pięknie zaprojektowane dokumenty PDF na Twój email.',
         q2: 'Jak dokładne są horoskopy Astralo?',
-        a2: 'Horoskopy Astralo są tworzone przy użyciu zaawansowanych algorytmów astrologicznych opartych na Twoich precyzyjnych danych urodzenia. Z ponad 50 000 zadowolonych klientów i oceną 4,9/5 gwiazdek, nasze spersonalizowane odczyty dostarczają szczegółowych informacji w celach rozrywkowych.',
+        a2: "Horoskopy Astralo są tworzone przy użyciu zaawansowanych algorytmów astrologicznych opartych na Twoich precyzyjnych danych urodzenia.",
         q3: 'Jak szybko otrzymam swój horoskop?',
         a3: 'Twój spersonalizowany horoskop jest generowany i dostarczany natychmiast na Twój email w ciągu 2-5 minut po płatności. Otrzymasz profesjonalny dokument PDF z pełnym odczytem astrologicznym.',
         q4: 'Jakie metody płatności akceptujecie?',
@@ -142,20 +142,20 @@ const pl: Translations = {
     },
     emailCapture: {
         title: '✨ Odbierz bezpłatny kosmogram i prognozę tygodniową',
-        subtitle: 'Dołącz do ponad 50 000 osób otrzymujących spersonalizowane kosmogramy i bezpłatne raporty w każdy poniedziałek!',
+        subtitle: "Odbierz bezpłatny kosmogram i prognozę tygodniową. Natychmiastowa dostawa na email.",
         placeholder: 'Wpisz swój email',
-        button: 'Odbierz bezpłatny odczyt',
+        button: 'Sprawdź bezpłatny horoskop',
         consent: 'Zgadzam się na otrzymywanie informacji oraz akceptuję politykę prywatności.',
         success: '✨ Witamy! Twój pierwszy bezpłatny odczyt jest już w drodze.',
         error: 'Coś poszło nie tak. Spróbuj ponownie.',
     },
     ads: {
-        sticky: 'Ostatnie godziny: 50% specjalnej zniżki odblokowane',
+        sticky: "Spersonalizowane Horoskopy",
         claim: 'Odbierz teraz',
-        limited: 'Oferta limitowana',
+        limited: "Natychmiastowa dostawa na email",
         unlock: 'Odblokuj swój',
         waiting: 'czeka na Ciebie...',
-        join: 'Dołącz do ponad 50 000 dusz, które znalazły jasność w gwiazdach.',
+        join: "Spersonalizowane Horoskopy",
         getFor: 'Kup za',
     },
 };

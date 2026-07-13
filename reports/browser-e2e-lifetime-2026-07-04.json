@@ -1,0 +1,60 @@
+{
+  "findings": [
+    {
+      "route": "/",
+      "label": "home-mobile",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\Desktop\\Projects\\Astralo\\output\\playwright\\home-mobile.png",
+      "h1": "Astralo Personalized Horoscope Readings",
+      "overflowX": false,
+      "pageFeedbackPresent": false,
+      "submitButtonText": "",
+      "assertionFailures": []
+    },
+    {
+      "route": "/horoscope/lifetime",
+      "label": "lifetime-landing-mobile",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\Desktop\\Projects\\Astralo\\output\\playwright\\lifetime-landing-mobile.png",
+      "h1": "Lifetime Horoscope",
+      "overflowX": false,
+      "pageFeedbackPresent": false,
+      "submitButtonText": "",
+      "assertionFailures": []
+    },
+    {
+      "route": "/sk/horoscope/lifetime",
+      "label": "lifetime-sk-mobile",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\Desktop\\Projects\\Astralo\\output\\playwright\\lifetime-sk-mobile.png",
+      "h1": "Celoživotný horoskop",
+      "overflowX": false,
+      "pageFeedbackPresent": false,
+      "submitButtonText": "",
+      "assertionFailures": []
+    },
+    {
+      "route": "/form/lifetime",
+      "label": "lifetime-form-mobile",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\Desktop\\Projects\\Astralo\\output\\playwright\\lifetime-form-mobile.png",
+      "h1": "Lifetime Horoscope",
+      "overflowX": false,
+      "pageFeedbackPresent": false,
+      "submitButtonText": "Continue to Payment 29.99€",
+      "assertionFailures": []
+    },
+    {
+      "route": "/form/lifetime",
+      "label": "checkout-api-lifetime",
+      "status": 200,
+      "ok": true,
+      "hasStripeUrl": true,
+      "pageFeedbackPresent": false,
+      "buttonText": "Continue to Payment 29.99€"
+    }
+  ],
+  "pageErrors": [],
+  "internalNetworkErrors": [],
+  "failed": []
+}

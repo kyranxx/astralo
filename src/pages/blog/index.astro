@@ -8,7 +8,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import { ArrowLeft, Calendar, ArrowRight, BookOpen, TrendingUp } from 'lucide-astro';
-import { getArticleTranslation, getArticleMeta, getBlogUiTranslations } from '../../lib/blog';
+import { getArticleTranslation, getArticleMeta, getBlogUiTranslations, getLatestArticleSlugs } from '../../lib/blog';
 import { buildBreadcrumbSchema, buildCollectionPageSchema, siteUrl } from '../../lib/seo';
 import { isStaleMonthlyHoroscopeSlug } from '../../lib/indexing';
 
@@ -17,23 +17,10 @@ export const prerender = true;
 const currentLang = 'en';
 const blogUi = getBlogUiTranslations(currentLang);
 
-const blogPostsBase = [
-  { slug: 'monthly-horoscope-june-2026', featured: true },
-  { slug: 'monthly-horoscope-april-2026', featured: false },
-  { slug: 'monthly-horoscope-march-2026', featured: false },
-  { slug: 'monthly-horoscope-february-2026', featured: false },
-  { slug: 'daily-horoscope-guide', featured: false },
-  { slug: 'birth-chart-reading-explained', featured: false },
-  { slug: 'monthly-horoscope-january-2026', featured: false },
-  { slug: 'love-horoscope-relationship-advice', featured: false },
-  { slug: 'weekly-horoscope-predictions', featured: false },
-  { slug: 'mercury-retrograde-survival-guide', featured: false },
-  { slug: 'history-of-astrology', featured: false },
-  { slug: 'zodiac-compatibility-complete-guide', featured: false },
-  { slug: 'saturn-return-guide', featured: false },
-  { slug: 'the-12-houses-of-astrology', featured: false },
-  { slug: 'twin-flames-and-soulmates-astrology', featured: false },
-];
+const blogPostsBase = getLatestArticleSlugs().map((slug, index) => ({
+  slug,
+  featured: index === 0,
+}));
 
 // Merge base data with localized content from lib/blog
 const blogPosts = blogPostsBase

@@ -1,4 +1,4 @@
-const socialProofPattern = /50(?:[.,]000\+?|[.,]000|,000\+?|,000)|50,000名|50,000명|50,000 אנשים|50,000 คน/u;
+const socialProofPattern = /50[.,\s\u00a0\u202f]000\+?|৫০,০০০\+?|50,000名|50,000명|50,000 אנשים|50,000 คน/u;
 const ratingPattern = /4[.,]9\/5/u;
 const sentenceBoundaries = ['.', '!', '?', '。', '！', '？', '।'];
 

@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
-import { productPrices, getProductName } from '../../lib/products';
+import { productPrices, getProductName, getProductKeys } from '../../lib/products';
 import { CheckoutSchema, validateReferer } from '../../lib/validation';
 
 export const GET: APIRoute = async () => {
@@ -11,6 +11,18 @@ export const POST: APIRoute = async ({ request }) => {
     // 1. Security Check: Origin/Referer
     if (!validateReferer(request)) {
         return new Response(JSON.stringify({ error: 'Unauthorized origin' }), { status: 403 });
+    }
+
+    const checkoutPaused = import.meta.env.CHECKOUT_PAUSED || process.env.CHECKOUT_PAUSED;
+    if (checkoutPaused === 'true') {
+        console.error('[checkout] paused because fulfillment is unavailable');
+        return new Response(JSON.stringify({
+            error: 'Paid readings are temporarily unavailable while we restore delivery. Please try again later.',
+            errorCode: 'fulfillment_paused',
+        }), {
+            status: 503,
+            headers: { 'Content-Type': 'application/json', 'Retry-After': '3600' },
+        });
     }
 
     const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
@@ -49,6 +61,10 @@ export const POST: APIRoute = async ({ request }) => {
     const data = validation.data;
     const { productKey } = data;
 
+    if (!getProductKeys().includes(productKey)) {
+        return new Response(JSON.stringify({ error: 'Product is not available' }), { status: 400 });
+    }
+
     const productPrice = productPrices[productKey as keyof typeof productPrices];
     const lang = data.lang;
     const productName = getProductName(productKey, lang);
@@ -85,6 +101,7 @@ export const POST: APIRoute = async ({ request }) => {
             gclid: data.gclid,
             fbclid: data.fbclid,
             msclkid: data.msclkid,
+            gaClientId: data.gaClientId,
             currentUrl: data.currentUrl,
         };
 
@@ -126,9 +143,9 @@ export const POST: APIRoute = async ({ request }) => {
             return 'auto';
         };
 
-        // Build session params - invoice creation may fail if Stripe account doesn't have business profile
+        // Build session params. Omitting payment_method_types lets Stripe Checkout use
+        // dashboard-configured dynamic payment methods for the customer locale.
         const sessionParams: Stripe.Checkout.SessionCreateParams = {
-            payment_method_types: ['card'],
             line_items: [
                 {
                     price_data: {

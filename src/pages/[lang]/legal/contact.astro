@@ -22,21 +22,21 @@ const text = getContactTranslations(currentLang);
 const locale = getLocaleConfig(currentLang);
 const pageTitle = `${text.title} - Astralo (${locale.nativeName})`;
 const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
 ---
 
 <Layout title={pageTitle} lang={currentLang} description={pageDescription}>
-  <!-- hCaptcha Script - must load before captcha widget -->
-  <script is:inline src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <div class="min-h-screen flex flex-col relative z-10">
     <!-- Header -->
     <header class="glass-strong border-b border-white/10 sticky top-0 z-50">
       <div class="max-w-5xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-          <a href={`/${currentLang}/`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
+          <a href={`/${currentLang}`} class="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors group">
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span class="text-sm">{text.back}</span>
           </a>
-          <a href={`/${currentLang}/`} class="block hover:opacity-80 transition-opacity">
+          <a href={`/${currentLang}`} class="block hover:opacity-80 transition-opacity">
             <img src="/logo.webp" alt="Astralo" class="h-10" style="aspect-ratio: 3.41;" />
           </a>
           <LanguageSwitcher lang={currentLang} />
@@ -71,6 +71,7 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
                 id="name" 
                 name="name" 
                 type="text" 
+                autocomplete="name"
                 placeholder={text.namePlaceholder}
                 required
                 class="input w-full text-lg p-4"
@@ -101,6 +102,7 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
               <select 
                 id="subject" 
                 name="subject" 
+                autocomplete="off"
                 required
                 class="input w-full text-lg p-4"
               >
@@ -120,6 +122,7 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
               <textarea 
                 id="message" 
                 name="message" 
+                autocomplete="off"
                 rows="5" 
                 placeholder={text.messagePlaceholder}
                 required
@@ -127,9 +130,9 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
               ></textarea>
             </div>
 
-            <!-- hCaptcha -->
+            <!-- Cloudflare Turnstile -->
             <div class="pt-2 flex justify-center">
-              <div class="h-captcha" data-sitekey="9ece67fe-3494-49f8-a400-021e108e0138" data-theme="dark"></div>
+              <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-action="contact" data-theme="dark" data-language={currentLang}></div>
             </div>
 
             <!-- Submit Button -->
@@ -182,15 +185,14 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     
-    // Get hCaptcha token
-    const hcaptchaResponse = document.querySelector('[name="h-captcha-response"]')?.value;
-    if (!hcaptchaResponse) {
-      alert('Please complete the captcha verification.');
+    const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]')?.value;
+    if (!turnstileResponse) {
+      alert('Please complete the security check.');
       btn.disabled = false;
       btn.innerHTML = originalHTML;
       return;
     }
-    data['h-captcha-response'] = hcaptchaResponse;
+    data.turnstileToken = turnstileResponse;
     
     try {
       const response = await fetch('/api/contact', {
@@ -199,7 +201,8 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
         body: JSON.stringify(data),
       });
       
-      if (!response.ok) throw new Error('Failed to send message');
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Failed to send message');
       
       // Show success message
       form.classList.add('hidden');
@@ -207,7 +210,8 @@ const pageDescription = `${text.subtitle} Astralo ${locale.nativeName}.`;
       
     } catch (error) {
       console.error('Contact form error:', error);
-      alert('Failed to send message. Please try again or email us directly.');
+      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again or email us directly.');
+      window.turnstile?.reset();
       btn.disabled = false;
       btn.innerHTML = originalHTML;
     }

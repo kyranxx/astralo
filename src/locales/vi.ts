@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const vi: Translations = {
     meta: {
-        title: 'Astralo - Tử Vi Miễn Phí Hôm Nay 2026 | Dự Đoán Cung Hoàng Đạo Chính Xác',
-        description: 'Nhận tử vi cá nhân miễn phí hôm nay! ⭐ Dự đoán hàng ngày, hàng tuần và hàng tháng. Tương hợp tình yêu, lời khuyên nghề nghiệp. 50.000+ khách hàng hài lòng. Giao hàng ngay!',
+        title: "Astralo - Tử Vi Miễn Phí Hôm Nay 2026 | Dự Đoán Cung Hoàng Đạo Chính Xác",
+        description: "Nhận tử vi cá nhân miễn phí hôm nay! ⭐ Dự đoán hàng ngày, hàng tuần và hàng tháng. Tương hợp tình yêu, lời khuyên nghề nghiệp. Giao hàng ngay!",
         keywords: 'tử vi hàng ngày, tử vi miễn phí, tử vi hôm nay, tử vi hàng tuần, tử vi hàng tháng, tử vi tình yêu, cung hoàng đạo, chiêm tinh, tử vi 2026, tử vi cá nhân',
     },
     header: {
@@ -11,15 +11,15 @@ const vi: Translations = {
         online: 'Trực tuyến',
     },
     promo: {
-        offer: 'ƯU ĐÃI HẠN CHẾ: Giảm 50% tất cả tử vi!',
+        offer: "Tử Vi Cá Nhân",
         delivery: 'Giao hàng ngay',
-        customers: '50.000+ khách hàng hài lòng',
+        customers: "Giao hàng ngay",
         secure: 'Thanh toán an toàn',
     },
     hero: {
         title: 'Tử Vi Riêng Của Bạn',
         subtitle: 'Cuối cùng cũng có tử vi thực sự chính xác • Được tạo riêng cho bạn',
-        features: '✨ Giao hàng ngay • 🔒 Thanh toán an toàn • ⭐ 50.000+ khách hàng hài lòng',
+        features: "✨ Giao hàng ngay • 🔒 Thanh toán an toàn • ⭐ Tử Vi Cá Nhân",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const vi: Translations = {
         technology: { title: 'Công Nghệ Tiên Tiến', description: 'Công nghệ hiện đại nhất cho dự đoán chính xác' },
         instant: { title: 'Ngay Lập Tức', description: 'Tử vi của bạn sẵn sàng trong vài phút' },
         professional: { title: 'Chuyên Nghiệp', description: 'Được tạo theo nguyên tắc chiêm tinh' },
-        verified: { title: 'Đã Xác Minh', description: '50.000+ khách hàng hài lòng' },
+        verified: { title: 'Đã Xác Minh', description: "Tử Vi Cá Nhân" },
     },
     form: {
         title: 'Nhận tử vi của bạn',
@@ -130,7 +130,7 @@ const vi: Translations = {
         q1: 'Astralo là gì?',
         a1: 'Astralo là dịch vụ tử vi trực tuyến chuyên nghiệp cung cấp các bản đọc chiêm tinh cá nhân hóa dựa trên dữ liệu sinh chính xác của bạn (ngày, giờ và nơi sinh). Chúng tôi cung cấp tử vi hàng ngày, hàng tuần, hàng tháng và phân tích tương hợp cặp đôi, được giao ngay lập tức dưới dạng tài liệu PDF được thiết kế đẹp mắt đến email của bạn.',
         q2: 'Tử vi Astralo chính xác như thế nào?',
-        a2: 'Tử vi Astralo được tạo ra bằng các thuật toán chiêm tinh tiên tiến dựa trên dữ liệu sinh chính xác của bạn. Với hơn 50.000 khách hàng hài lòng và đánh giá 4,9/5 sao, các bản đọc cá nhân hóa của chúng tôi cung cấp thông tin chi tiết cho mục đích giải trí.',
+        a2: "Tử vi Astralo được tạo ra bằng các thuật toán chiêm tinh tiên tiến dựa trên dữ liệu sinh chính xác của bạn.",
         q3: 'Tôi sẽ nhận được tử vi nhanh như thế nào?',
         a3: 'Tử vi cá nhân hóa của bạn được tạo và giao ngay lập tức đến email của bạn trong vòng 2-5 phút sau khi thanh toán. Bạn sẽ nhận được một tài liệu PDF chuyên nghiệp với bản đọc chiêm tinh đầy đủ của bạn.',
         q4: 'Bạn chấp nhận phương thức thanh toán nào?',
@@ -142,7 +142,7 @@ const vi: Translations = {
     },
     emailCapture: {
         title: '✨ Nhận Bản Đồ Sao và Dự Báo Hàng Tuần Miễn Phí',
-        subtitle: 'Tham gia cùng 50.000+ người nhận thông tin vũ trụ cá nhân và báo cáo miễn phí vào mỗi thứ Hai!',
+        subtitle: "Nhận Bản Đồ Sao và Dự Báo Hàng Tuần Miễn Phí. Giao hàng ngay.",
         placeholder: 'Nhập email của bạn',
         button: 'Nhận bản đọc miễn phí',
         consent: 'Tôi đồng ý nhận thông tin vũ trụ và chấp nhận chính sách bảo mật.',
@@ -150,12 +150,12 @@ const vi: Translations = {
         error: 'Đã có lỗi xảy ra. Vui lòng thử lại.',
     },
     ads: {
-        sticky: 'Những giờ cuối cùng: Mở khóa giảm giá đặc biệt 50%',
+        sticky: "Tử Vi Cá Nhân",
         claim: 'Nhận ngay',
-        limited: 'Ưu đãi có hạn',
+        limited: "Giao hàng ngay",
         unlock: 'Mở khóa của bạn',
         waiting: 'đang chờ bạn...',
-        join: 'Tham gia cùng 50.000+ tâm hồn đã tìm thấy sự rõ ràng trong các vì sao.',
+        join: "Tử Vi Cá Nhân",
         getFor: 'Nhận ngay với',
     },
 };

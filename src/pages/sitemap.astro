@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import { getLatestArticleSlugs, getArticleTranslation } from '../lib/blog';
+import { getProductKeys, getProductName } from '../lib/products';
+import {
+  buildWebPageSchema,
+  getBlogIndexPath,
+  getFreeHoroscopePath,
+  getHomePath,
+  getProductLandingPath,
+  siteUrl,
+  supportedLocaleOrder,
+} from '../lib/seo';
+
+const currentLang = 'en';
+const title = 'Sitemap | Astralo';
+const description = 'A complete index of the main Astralo pages, readings, language versions, and recent astrology articles.';
+const canonicalUrl = `${siteUrl}/sitemap`;
+
+const mainLinks = [
+  { href: getHomePath(currentLang), label: 'Home' },
+  { href: getFreeHoroscopePath(currentLang), label: 'Free Horoscope' },
+  { href: getBlogIndexPath(currentLang), label: 'Blog' },
+  ...getProductKeys().map((productKey) => ({
+    href: getProductLandingPath(currentLang, productKey),
+    label: getProductName(productKey, currentLang),
+  })),
+];
+
+const languageLinks = supportedLocaleOrder.map((locale) => ({
+  href: getHomePath(locale),
+  label: locale === 'en' ? 'English homepage' : `${locale.toUpperCase()} homepage`,
+}));
+
+const articleLinks = getLatestArticleSlugs()
+  .map((slug) => {
+    const article = getArticleTranslation(slug, currentLang);
+
+    if (!article) {
+      return null;
+    }
+
+    return {
+      href: `/blog/${slug}`,
+      label: article.title.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim() || article.title,
+    };
+  })
+  .filter((entry): entry is { href: string; label: string } => Boolean(entry));
+
+const sections = [
+  { title: 'Main Pages', links: mainLinks },
+  { title: 'Language Versions', links: languageLinks },
+  { title: 'Latest Articles', links: articleLinks },
+];
+
+const pageSchema = [
+  buildWebPageSchema({
+    url: canonicalUrl,
+    title,
+    description,
+    lang: currentLang,
+  }),
+];
+---
+
+<Layout
+  title={title}
+  description={description}
+  lang={currentLang}
+  canonicalUrl={canonicalUrl}
+  alternateLanguageUrls={[]}
+  schema={pageSchema}
+>
+  <div class="min-h-screen flex flex-col relative z-10">
+    <main class="flex-1 px-4 py-12 sm:py-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-10 max-w-3xl">
+          <p class="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-3">Site index</p>
+          <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Sitemap</h1>
+          <p class="text-white/70 text-lg">
+            Quick links to the public Astralo pages, reading pages, language homes, and recent astrology articles.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {sections.map((section) => (
+            <section class="glass-strong rounded-2xl border border-white/10 p-6">
+              <h2 class="text-xl font-bold text-white mb-4">{section.title}</h2>
+              <ul class="space-y-2">
+                {section.links.map((link) => (
+                  <li>
+                    <a href={link.href} class="text-white/75 hover:text-amber-400 transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </div>
+    </main>
+
+    <Footer lang={currentLang} />
+  </div>
+</Layout>

@@ -1,6 +1,6 @@
 /**
- * Locale Index - Imports all 33 language translations
- * Each language is in its own file (~50 lines each)
+ * Locale Index - Imports all 34 language translations.
+ * Each language is stored in its own typed catalog file.
  */
 
 import type { Translations } from './types';

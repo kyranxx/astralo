@@ -6,14 +6,9 @@
 import { dailyHoroscopeGuide } from './articles/daily-horoscope-guide/index';
 import { zodiacCompatibilityCompleteGuide } from './articles/zodiac-compatibility-complete-guide/index';
 import { birthChartReadingExplained } from './articles/birth-chart-reading-explained/index';
-import { monthlyHoroscopeJanuary2026 } from './articles/monthly-horoscope-january-2026/index';
-import { monthlyHoroscope as monthlyHoroscopeFeb } from './articles/monthly-horoscope-february-2026/index';
-import { monthlyHoroscopeMarch2026 } from './articles/monthly-horoscope-march-2026/index';
-import { monthlyHoroscopeApril2026 } from './articles/monthly-horoscope-april-2026/index';
-import { monthlyHoroscopeJune2026 } from './articles/monthly-horoscope-june-2026/index';
+import { monthlyHoroscopeJuly2026 } from './articles/monthly-horoscope-july-2026/index';
 import { loveHoroscopeRelationshipAdvice } from './articles/love-horoscope-relationship-advice/index';
 import { mercuryRetrogradeSurvivalGuide } from './articles/mercury-retrograde-survival-guide/index';
-import { historyOfAstrology } from './articles/history-of-astrology/index';
 import { the12HousesOfAstrology } from './articles/the-12-houses-of-astrology/index';
 import { saturnReturnGuide } from './articles/saturn-return-guide/index';
 import { twinFlamesAndSoulmatesAstrology } from './articles/twin-flames-and-soulmates-astrology/index';
@@ -21,6 +16,7 @@ import { weeklyHoroscopePredictions } from './articles/weekly-horoscope-predicti
 
 import type { BlogPostTranslation, BlogPostMeta } from './types';
 export type { BlogPostTranslation, BlogPostMeta } from './types';
+import type { SupportedLocale } from '../i18n';
 import { blogUiTranslations, type BlogUiTranslations } from './ui-translations';
 import { isStaleMonthlyHoroscopeSlug } from '../indexing';
 
@@ -29,14 +25,9 @@ const articleTranslations: Record<string, Record<string, BlogPostTranslation>> =
     'daily-horoscope-guide': dailyHoroscopeGuide,
     'zodiac-compatibility-complete-guide': zodiacCompatibilityCompleteGuide,
     'birth-chart-reading-explained': birthChartReadingExplained,
-    'monthly-horoscope-january-2026': monthlyHoroscopeJanuary2026,
-    'monthly-horoscope-february-2026': monthlyHoroscopeFeb,
-    'monthly-horoscope-march-2026': monthlyHoroscopeMarch2026,
-    'monthly-horoscope-april-2026': monthlyHoroscopeApril2026,
-    'monthly-horoscope-june-2026': monthlyHoroscopeJune2026,
+    'monthly-horoscope-july-2026': monthlyHoroscopeJuly2026,
     'love-horoscope-relationship-advice': loveHoroscopeRelationshipAdvice,
     'mercury-retrograde-survival-guide': mercuryRetrogradeSurvivalGuide,
-    'history-of-astrology': historyOfAstrology,
     'the-12-houses-of-astrology': the12HousesOfAstrology,
     'saturn-return-guide': saturnReturnGuide,
     'twin-flames-and-soulmates-astrology': twinFlamesAndSoulmatesAstrology,
@@ -66,39 +57,11 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         readTime: '10',
         author: 'Astralo Team',
     },
-    'monthly-horoscope-january-2026': {
-        slug: 'monthly-horoscope-january-2026',
-        emoji: '🌙',
-        date: '2026-01-01',
-        readTime: '15',
-        author: 'Astralo Team',
-    },
-    'monthly-horoscope-february-2026': {
-        slug: 'monthly-horoscope-february-2026',
-        emoji: '❤️',
-        date: '2026-02-01',
-        readTime: '15',
-        author: 'Astralo Team',
-    },
-    'monthly-horoscope-march-2026': {
-        slug: 'monthly-horoscope-march-2026',
-        emoji: 'đźŚ±',
-        date: '2026-03-12',
-        readTime: '11',
-        author: 'Astralo Team',
-    },
-    'monthly-horoscope-april-2026': {
-        slug: 'monthly-horoscope-april-2026',
-        emoji: '☀️',
-        date: '2026-03-12T18:00:00Z',
-        readTime: '11',
-        author: 'Astralo Team',
-    },
-    'monthly-horoscope-june-2026': {
-        slug: 'monthly-horoscope-june-2026',
-        emoji: '♊',
-        date: '2026-05-17',
-        readTime: '11',
+    'monthly-horoscope-july-2026': {
+        slug: 'monthly-horoscope-july-2026',
+        emoji: '♋',
+        date: '2026-05-28',
+        readTime: '10',
         author: 'Astralo Team',
     },
     'love-horoscope-relationship-advice': {
@@ -120,13 +83,6 @@ export const articleMeta: Record<string, BlogPostMeta> = {
         emoji: '☄️',
         date: '2026-02-24',
         readTime: '18',
-        author: 'Astralo Team',
-    },
-    'history-of-astrology': {
-        slug: 'history-of-astrology',
-        emoji: '🏛️',
-        date: '2026-02-14',
-        readTime: '22',
         author: 'Astralo Team',
     },
     'the-12-houses-of-astrology': {
@@ -163,11 +119,47 @@ export function getArticleTranslation(slug: string, lang: string): BlogPostTrans
     return article[lang] || article.en || null;
 }
 
+export function getExactArticleTranslation(slug: string, lang: string): BlogPostTranslation | null {
+    return articleTranslations[slug]?.[lang] || null;
+}
+
+export function hasArticleTranslation(slug: string, lang: string): boolean {
+    return Boolean(articleTranslations[slug]?.[lang]);
+}
+
+export function getArticleLanguageCodes(slug: string): SupportedLocale[] {
+    return Object.keys(articleTranslations[slug] || {}) as SupportedLocale[];
+}
+
+export function getBlogSeoTitle(title: string, seoTitle?: string): string {
+    if (seoTitle?.trim()) return seoTitle.trim();
+
+    const cleanTitle = getBlogDisplayTitle(title);
+    const conciseTitle = cleanTitle.split(':')[0]?.trim();
+
+    return conciseTitle && conciseTitle.length >= 12 ? conciseTitle : cleanTitle;
+}
+
+export function getBlogDisplayTitle(title: string): string {
+    return stripEmojis(title).trim() || title;
+}
+
+function stripEmojis(value: string): string {
+    return value
+        .replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '')
+        .trim();
+}
+
 /**
  * Get UI translations for blog pages
  */
 export function getBlogUiTranslations(lang: string): BlogUiTranslations {
-    return blogUiTranslations[lang] || blogUiTranslations.en;
+    const translations = blogUiTranslations[lang] || blogUiTranslations.en;
+
+    return {
+        ...translations,
+        orderNow: translations.orderNow.split(' - ')[0],
+    };
 }
 
 /**
@@ -191,6 +183,20 @@ export function getLatestArticleSlugs(limit = Object.keys(articleMeta).length): 
 
 export function getIndexableArticleSlugs(): string[] {
     return Object.keys(articleMeta).filter((slug) => !isStaleMonthlyHoroscopeSlug(slug));
+}
+
+export function getArticleSlugsForLang(lang: string): string[] {
+    return Object.keys(articleMeta).filter((slug) => hasArticleTranslation(slug, lang));
+}
+
+export function getLatestArticleSlugsForLang(lang: string, limit = Object.keys(articleMeta).length): string[] {
+    return Object.values(articleMeta)
+        .slice()
+        .filter((article) => hasArticleTranslation(article.slug, lang))
+        .filter((article) => !isStaleMonthlyHoroscopeSlug(article.slug))
+        .sort((left, right) => new Date(right.date).getTime() - new Date(left.date).getTime())
+        .slice(0, limit)
+        .map((article) => article.slug);
 }
 
 /**

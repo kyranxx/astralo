@@ -7,7 +7,7 @@ import { Sparkles, Star, Heart, Calendar, TrendingUp, Zap, Clock, Sun, Moon, Boo
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { getTestimonials } from '../lib/testimonials';
 import { getLatestArticleSlugs, getArticleTranslation, getArticleMeta } from '../lib/blog';
-import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey } from '../lib/products';
+import { getProductCopy, getProductKeys, getProductPriceInEuros, type ProductKey } from '../lib/products';
 import { buildFaqSchema, buildWebPageSchema, getFreeHoroscopePath, getGeneralFaqEntries, getProductLandingPath, siteUrl } from '../lib/seo';
 
 // English is the default - served at root without /en prefix
@@ -31,42 +31,26 @@ const latestArticles = getLatestArticleSlugs(3)
   })
   .filter((article): article is NonNullable<typeof article> => Boolean(article));
 
-const horoscopeTypes = ([
-  {
-    id: "daily",
-    icon: "Sun",
-  },
-  {
-    id: "weekly",
-    icon: "Calendar",
-    popular: true,
-  },
-  {
-    id: "monthly",
-    icon: "Moon",
-  },
-  {
-    id: "partner",
-    icon: "Heart",
-  },
-] as const).map(type => ({
-  ...type,
-  popular: 'popular' in type && type.popular === true,
-  name: t.products[type.id].name,
-  description: t.products[type.id].description,
-  price: getProductPriceInEuros(type.id as ProductKey),
-  originalPrice: getProductOriginalPriceInEuros(type.id as ProductKey),
-  wordCount: t.products[type.id].wordCount,
-  benefits: t.products[type.id].benefits,
-  landingPath: getProductLandingPath(currentLang, type.id as ProductKey)
+const productUiMeta: Record<ProductKey, { icon: keyof typeof iconMap; popular?: boolean }> = {
+  daily: { icon: 'Sun' },
+  weekly: { icon: 'Calendar', popular: true },
+  monthly: { icon: 'Moon' },
+  partner: { icon: 'Heart' },
+  lifetime: { icon: 'Sparkles' },
+};
+
+const horoscopeTypes = getProductKeys().map((productKey) => ({
+  id: productKey,
+  ...productUiMeta[productKey],
+  popular: productUiMeta[productKey].popular === true,
+  ...getProductCopy(productKey, currentLang, t),
+  price: getProductPriceInEuros(productKey),
+  landingPath: getProductLandingPath(currentLang, productKey)
 }));
 
-const homepageTitle = `${t.hero.title} | ${t.header.badge} | Astralo`;
-const homepageDescription = [
-  t.hero.subtitle.replace(/\s*•\s*/g, ', '),
-  horoscopeTypes.map((type) => type.name).join(', '),
-  t.promo.delivery,
-].join('. ');
+const homepageHeroTitle = 'Astralo Personalized Horoscope Readings';
+const homepageTitle = 'Astralo | Personalized Horoscope Readings Online';
+const homepageDescription = 'Official Astralo website for personalized daily, weekly, monthly, and partner horoscope reports from your birth data, delivered by email.';
 const homepageKeywords = [
   t.header.badge,
   ...horoscopeTypes.map((type) => type.name),
@@ -82,7 +66,7 @@ const pageSchema = [
     description: homepageDescription,
     lang: currentLang,
   }),
-  buildFaqSchema(getGeneralFaqEntries(t)),
+  buildFaqSchema(getGeneralFaqEntries(t, currentLang)),
 ];
 
 const iconMap = {
@@ -135,7 +119,7 @@ const testimonials = getTestimonials(currentLang);
         <!-- Hero Section -->
         <div class="text-center mb-10 sm:mb-12">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-            {t.hero.title}
+            {homepageHeroTitle}
           </h1>
           <div class="animate-fade-in-up">
             <p class="text-xl sm:text-xl text-white/80 max-w-3xl mx-auto mb-4">
@@ -162,7 +146,7 @@ const testimonials = getTestimonials(currentLang);
         </div>
 
         <!-- Horoscope Cards -->
-        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-5xl mx-auto">
+        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-5 mb-12 sm:mb-16 max-w-6xl mx-auto">
           {horoscopeTypes.map((type, index) => {
             const Icon = iconMap[type.icon as keyof typeof iconMap];
             return (
@@ -195,10 +179,6 @@ const testimonials = getTestimonials(currentLang);
                   <div class="flex flex-col items-center mb-3 sm:mb-6 py-2 sm:py-4 border-y border-white/5 bg-white/[0.02] rounded-xl sm:rounded-2xl">
                     <div class="flex items-center gap-2 sm:gap-3">
                       <span class="text-2xl sm:text-3xl font-black text-white tracking-tighter">{type.price.toFixed(2)}€</span>
-                      <div class="flex flex-col items-start leading-none">
-                        <span class="text-xs sm:text-xs text-white/60 line-through">{type.originalPrice.toFixed(2)}€</span>
-                        <span class="text-[10px] sm:text-[10px] font-bold text-amber-500 uppercase">-50%</span>
-                      </div>
                     </div>
                   </div>
 
@@ -290,6 +270,7 @@ const testimonials = getTestimonials(currentLang);
         </div>
 
         <!-- Testimonials -->
+        {testimonials.length > 0 && (
         <div class="mb-12 sm:mb-16">
           <h2 class="text-2xl sm:text-4xl font-bold text-white text-center mb-6 sm:mb-10">
             {t.testimonials.title}
@@ -315,6 +296,7 @@ const testimonials = getTestimonials(currentLang);
             ))}
           </div>
         </div>
+        )}
 
         <!-- Latest Articles Section (SEO: Internal Linking) -->
         <div class="mb-12 sm:mb-16">
@@ -331,7 +313,7 @@ const testimonials = getTestimonials(currentLang);
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {latestArticles.map((article, index) => (
               <a 
-                href={`/blog/${article.slug}/`}
+                href={`/blog/${article.slug}`}
                 class={`glass rounded-2xl p-5 sm:p-6 hover:bg-white/5 transition-all duration-300 group border border-white/10 hover:border-amber-400/30 animate-on-load animate-delay-${index + 1}`}
               >
                 <div class="flex items-start gap-3 mb-3">

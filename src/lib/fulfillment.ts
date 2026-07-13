@@ -1,18 +1,19 @@
 
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import { supabase } from './supabase'; // You might need to adjust this path
 import { generateHoroscopeImage } from './png-generator';
 import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from './pdf-generator';
 import type { Order } from './orders';
+import type { ProductKey } from './products';
+import { generateHoroscopeText } from './horoscope-ai';
+import { buildFulfillmentEmail, type FulfillmentEmailOptions } from './fulfillment-email-template';
 
 // Configuration
-const GEMINI_API_KEY = import.meta.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
 const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = import.meta.env;
 
 // --- Horoscope Content Generation (from api/horoscope.ts) ---
 
-const productBenefits: Record<string, string> = {
+const productBenefits: Record<ProductKey, string> = {
     daily: `REQUIRED SECTIONS:
             🌅 Today's Energy Forecast
             🍀 Lucky Number (one number with explanation)
@@ -42,7 +43,16 @@ const productBenefits: Record<string, string> = {
             💬 Communication Styles Comparison
             ❤️ Love Language Match
             💫 Future Potential Together
-            🌟 Synastry Insights (planetary connections)`
+            🌟 Synastry Insights (planetary connections)`,
+    lifetime: `REQUIRED SECTIONS:
+            🌌 Life Path Overview
+            🪞 Core Personality Pattern
+            ❤️ Love and Relationship Patterns
+            💼 Career and Vocation Cycles
+            💰 Money and Security Themes
+            🪐 Long-Term Timing Windows
+            🌱 Growth Lessons and Practical Next Steps
+            ⭐ Personal Strengths to Use for the Rest of Life`
 };
 
 // Language map
@@ -57,20 +67,19 @@ const languageNames: Record<string, string> = {
 };
 
 export async function generateHoroscopeContent(order: Order): Promise<string> {
-    if (!GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is not configured');
+    const prompt = buildHoroscopeGenerationPrompt(order);
+    return generateHoroscopeText(prompt);
+}
 
+export function buildHoroscopeGenerationPrompt(order: Order): string {
     const language = order.lang || 'en';
     const langName = languageNames[language] || 'English';
-    const useLangForPdf = langName;
     const productKey = order.productKey;
-
-    let prompt;
 
     if (productKey === 'partner') {
         const { birthDate, birthTime, birthPlace, customerName, partnerName, partnerBirthDate, partnerBirthTime, partnerBirthPlace } = order;
-        // Construct prompt similar to api/horoscope.ts
-        // Note: Mapping order fields to the prompt variables
-        prompt = `You are a friendly astrologer writing for everyday people. Write a detailed partner compatibility horoscope in ${useLangForPdf} language.
+
+        return `You are a friendly astrologer writing for everyday people. Write a detailed partner compatibility horoscope in ${langName} language.
 
 Person 1: ${customerName}, born ${birthDate} at ${birthTime || 'Unknown'} in ${birthPlace || 'Unknown'}
 Person 2: ${partnerName}, born ${partnerBirthDate} at ${partnerBirthTime || 'Unknown'} in ${partnerBirthPlace || 'Unknown'}
@@ -81,25 +90,31 @@ WRITING STYLE - VERY IMPORTANT:
 - Use SIMPLE, everyday language that anyone can understand (avoid complex astrological jargon)
 - Write like you're talking to a friend, warm and approachable
 - Use short sentences and paragraphs (2-3 sentences max)
-- PROOFREAD for grammar - ensure the ${useLangForPdf} grammar is 100% correct
+- PROOFREAD for grammar - ensure the ${langName} grammar is 100% correct
 - Use relevant emojis (💖❤️✨🌟💫⭐🔮🌙💕🪐💝)
 - Start with an attention-grabbing opening
 - End with encouraging advice
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write entirely in ${useLangForPdf} language with correct grammar and spelling.
+- Write entirely in ${langName} language with correct grammar and spelling.
 
 CONTENT RULES:
 - NEVER mention any religion, religious figures (Jesus, Muhammad, Buddha, etc.)
 - Focus on planets, stars, cosmic energy - universal spirituality only
 - Avoid politics, religious holidays, dietary restrictions
 - Be inclusive and positive`;
+    }
 
-    } else {
-        const { birthDate, birthTime, birthPlace, customerName } = order;
-        const benefits = productBenefits[productKey] || productBenefits.daily;
-        const wordCount = { daily: 200, weekly: 400, monthly: 1000, partner: 1200 };
+    const { birthDate, birthTime, birthPlace, customerName } = order;
+    const benefits = productBenefits[productKey] || productBenefits.daily;
+    const wordCount: Record<ProductKey, number> = {
+        daily: 200,
+        weekly: 400,
+        monthly: 1000,
+        partner: 1200,
+        lifetime: 3000,
+    };
 
-        prompt = `You are a friendly astrologer writing for everyday people. Write a detailed ${productKey} horoscope (~${wordCount[productKey]} words) in ${useLangForPdf} language.
+    return `You are a friendly astrologer writing for everyday people. Write a detailed ${productKey} horoscope (~${wordCount[productKey]} words) in ${langName} language.
 
 For: ${customerName}, born ${birthDate} at ${birthTime || 'Unknown'} in ${birthPlace || 'Unknown'}
 
@@ -111,26 +126,19 @@ WRITING STYLE - VERY IMPORTANT:
 - Write like you're talking to a friend, warm and approachable
 - Use short sentences (no long, complicated sentences)
 - Short paragraphs (2-3 sentences max)
-- PROOFREAD for grammar - ensure the ${useLangForPdf} grammar is 100% correct
-- Double-check spelling and sentence structure in ${useLangForPdf}
+- PROOFREAD for grammar - ensure the ${langName} grammar is 100% correct
+- Double-check spelling and sentence structure in ${langName}
 - Use relevant emojis (✨🌟💫⭐🔮🌙🪐💖🌸🎯💪🌈☀️)
 - Make it practical and actionable
 - End with positive, encouraging words
 - DO NOT use markdown like ## or **. Use emojis as section headers.
-- Write entirely in ${useLangForPdf} language with perfect grammar.
+- Write entirely in ${langName} language with perfect grammar.
 
 CONTENT RULES:
 - NEVER mention any religion, religious figures (Jesus, Muhammad, Buddha, etc.)
 - Focus on planets, stars, cosmic energy - universal spirituality only
 - Avoid politics, religious holidays, dietary restrictions
 - Be inclusive and positive`;
-    }
-
-    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
-
-    const result = await model.generateContent(prompt);
-    return result.response.text();
 }
 
 
@@ -140,7 +148,8 @@ export async function fulfillOrder(
     order: Order,
     invoicePdfBuffer: Buffer | null = null,
     invoiceFilename: string = 'Invoice.pdf',
-    downloadUrl: string = ''
+    downloadUrl: string = '',
+    emailOptions: FulfillmentEmailOptions = {},
 ) {
     console.log(`🚀 Starting fulfillment for Order ${order.id}`);
 
@@ -184,7 +193,7 @@ export async function fulfillOrder(
 
     // 3. Send Email
     console.log(`Sending email for Order ${order.id}...`);
-    await sendFulfillmentEmail(order, content, horoscopeImages, invoicePdfBuffer, invoiceFilename, downloadUrl);
+    await sendFulfillmentEmail(order, content, horoscopeImages, invoicePdfBuffer, invoiceFilename, downloadUrl, emailOptions);
 
     // 4. Update Status
     await supabase.from('orders').update({
@@ -195,6 +204,41 @@ export async function fulfillOrder(
     console.log(`✅ Fulfillment complete for Order ${order.id}`);
 }
 
+export async function sendFulfillmentPreviewToOwner(
+    order: Order,
+    content: string,
+    emailOptions: FulfillmentEmailOptions = {},
+) {
+    if (!SMTP_USER) {
+        throw new Error('SMTP preview recipient is not configured');
+    }
+
+    let horoscopeImages: { filename: string; content: Buffer }[] = [];
+    try {
+        horoscopeImages = await generateHoroscopeImage({
+            customerName: order.customerName,
+            productName: order.productName,
+            horoscopeContent: content,
+            birthDate: order.birthDate,
+            birthPlace: order.birthPlace || '',
+            birthTime: order.birthTime || '',
+            lang: order.lang,
+        });
+    } catch (error) {
+        console.error(`Preview image generation failed for Order ${order.id}:`, error);
+    }
+
+    await sendFulfillmentEmail(
+        { ...order, customerEmail: SMTP_USER },
+        content,
+        horoscopeImages,
+        null,
+        'Invoice.pdf',
+        '',
+        emailOptions,
+    );
+}
+
 
 async function sendFulfillmentEmail(
     order: Order,
@@ -202,7 +246,8 @@ async function sendFulfillmentEmail(
     images: { filename: string; content: Buffer }[],
     invoicePdf: Buffer | null,
     invoiceFilename: string,
-    link: string
+    link: string,
+    emailOptions: FulfillmentEmailOptions,
 ) {
     if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
         throw new Error('SMTP configuration missing');
@@ -215,41 +260,7 @@ async function sendFulfillmentEmail(
         auth: { user: SMTP_USER, pass: SMTP_PASS },
     });
 
-    // Reuse the translation logic from api/send-email.ts? 
-    // Ideally refactor that into a shared translation file, but for now duplicate 
-    // or just import the translations if they are exported. 
-    // Since send-email.ts has them inline, I'll use a simplified English version or 
-    // ideally we should extract the translations to `src/lib/email-translations.ts`.
-    // FOR NOW: I will rely on the `send-email.ts` flow being triggered by the client, 
-    // OR copypaste the critical translation logic here. 
-    // To stay clean: We should extract translations. 
-
-    // Actually, let's keep it simple. The webhook ALREADY sends a confirmation email.
-    // The previous webhook implementation only sent "Confirmation" + Legal Docs.
-    // The "Product" email was sent by client JS calling /api/send-email.
-
-    // The goal here is to MERGE them.
-    // We want ONE email or at least the PRODUCT email to be sent by server.
-
-    // Let's use the same translations object as before, but maybe streamlined.
-    // I will assume for this step that we want the FULL product email.
-
-    // ... (Imports and setup same as api/send-email.ts)
-    // To save context space I will not copy the giant translation map again here 
-    // unless necessary. 
-    // Use a basic English fallback or simple subject line for now to prove architecture.
-
-    // Logic from api/send-email.ts regarding HTML formatting...
-    const formattedHoroscope = content
-        .replace(/#{1,6}\s/g, '')
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-        .split('\n\n')
-        .filter((p: string) => p.trim())
-        .map((p: string) => `<p style="margin: 0 0 25px 0; font-family: 'Times New Roman', Georgia, serif; font-size: 18px; line-height: 1.8; color: #1f2937;">${p.replace(/\n/g, '<br>')}</p>`)
-        .join('\n');
-
-    const legalDocs = await generateLegalPDFs('en'); // or order.lang
+    const legalDocs = await generateLegalPDFs(order.lang || 'en');
 
     const attachments = [
         ...(invoicePdf ? [{ filename: invoiceFilename, content: invoicePdf }] : []),
@@ -257,15 +268,13 @@ async function sendFulfillmentEmail(
         ...legalDocs.map(doc => ({ filename: doc.filename, content: Buffer.from(doc.content) }))
     ];
 
+    const email = buildFulfillmentEmail(order, content, link, emailOptions);
+
     await transporter.sendMail({
         from: `"Astralo ✨" <${SMTP_USER}>`,
         to: order.customerEmail,
-        subject: `Your ${order.productName} from Astralo ✨`,
-        html: `
-            <h1>Your Horoscope is Ready</h1>
-            ${formattedHoroscope}
-            ${link ? `<br><br><a href="${link}">View Invoice/Receipt</a>` : ''}
-        `,
+        subject: email.subject,
+        html: email.html,
         attachments
     });
 }

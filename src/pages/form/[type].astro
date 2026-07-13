@@ -4,13 +4,12 @@ import Footer from '../../components/Footer.astro';
 import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import { ArrowLeft, Sparkles, User, Calendar, Clock, MapPin, Heart, Shield, Zap, Mail } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../../lib/i18n';
-import { getProductPriceInEuros, getProductOriginalPriceInEuros, type ProductKey, isValidProductKey } from '../../lib/products';
+import { getProductCopy, getProductKeys, getProductPriceInEuros, type ProductKey, isValidProductKey } from '../../lib/products';
 
 export const prerender = true;
 
 export function getStaticPaths() {
-  const types = ['daily', 'weekly', 'monthly', 'partner'];
-  return types.map(type => ({ params: { type } }));
+  return getProductKeys().map(type => ({ params: { type } }));
 }
 
 const { type } = Astro.params;
@@ -24,14 +23,13 @@ if (!type || !isValidProductKey(type)) {
 
 const selectedType = {
   id: type,
-  price: getProductPriceInEuros(type as ProductKey),
-  originalPrice: getProductOriginalPriceInEuros(type as ProductKey)
+  price: getProductPriceInEuros(type as ProductKey)
 };
 if (!selectedType) {
   return Astro.redirect('/');
 }
 
-const productName = t.products[type as keyof typeof t.products]?.name || type;
+const productName = getProductCopy(type as ProductKey, currentLang, t).name;
 ---
 
 <Layout title={`${productName} - Astralo`} lang={currentLang} noIndex={true}>
@@ -47,9 +45,8 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
           <img src="/stripe-logo.webp" alt="Stripe" class="h-5" />
         </span>
         <span class="hidden sm:flex items-center gap-2 border-l border-black/20 pl-4">
-          <span><strong>Limited offer</strong></span>
+          <span>⚡ {t.promo.delivery}</span>
         </span>
-        <span class="hidden md:inline">• ⚡ {t.promo.delivery}</span>
       </div>
     </div>
 
@@ -87,9 +84,8 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
             {t.form.description}
           </p>
           
-          <!-- Price with discount -->
+          <!-- Price -->
           <div class="mt-5 inline-flex items-center gap-3 glass px-5 py-3 rounded-xl">
-            <span class="text-white/40 text-sm line-through">{selectedType.originalPrice.toFixed(2)}€</span>
             <span class="text-2xl font-bold text-amber-400">
               {selectedType.price.toFixed(2)}€
             </span>
@@ -295,7 +291,10 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
               <button type="submit" id="submit-btn" class="group relative w-full bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-5 rounded-xl transition-colors">
                 <span class="flex items-center justify-center gap-3">
                   <Sparkles class="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                  <span class="text-lg">{t.form.submit} - {selectedType.price.toFixed(2)}€</span>
+                  <span class="flex flex-col items-center leading-tight">
+                    <span class="text-base sm:text-lg whitespace-nowrap">{t.form.submit}</span>
+                    <span class="text-sm opacity-80">{selectedType.price.toFixed(2)}€</span>
+                  </span>
                   <Zap class="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
@@ -358,6 +357,11 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
       return {};
     }
   }
+
+  function getGaClientId() {
+    const getter = window['astraloGetGaClientId'];
+    return typeof getter === 'function' ? getter() : '';
+  }
   
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -375,6 +379,7 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
       productKey: type,
       lang: currentLang,
       currentUrl: window.location.href,
+      gaClientId: getGaClientId(),
       ...getAttributionData(),
       ...data,
     };
@@ -414,9 +419,28 @@ const productName = t.products[type as keyof typeof t.products]?.name || type;
       }
 
       if (result.url) {
+        if (typeof track === 'function') {
+          track('checkout_created', {
+            currency: 'EUR',
+            value: Number(Number(selectedPrice).toFixed(2)),
+            language: currentLang,
+            item_id: type,
+            item_name: productName,
+          });
+        }
         window.location.href = result.url;
       }
     } catch (error) {
+      const track = window['astraloTrack'];
+      if (typeof track === 'function') {
+        track('checkout_error', {
+          language: currentLang,
+          item_id: type,
+          item_name: productName,
+          error_message: error && error.message ? error.message : 'Payment initialization failed',
+        });
+      }
+
       overlay.classList.add('opacity-0', 'pointer-events-none');
       modal.classList.remove('scale-100');
       modal.classList.add('scale-95');

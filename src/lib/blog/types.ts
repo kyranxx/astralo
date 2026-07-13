@@ -4,6 +4,7 @@
 
 export interface BlogPostTranslation {
     title: string;
+    seoTitle?: string;
     excerpt: string;
     category: string;
     metaDescription: string;

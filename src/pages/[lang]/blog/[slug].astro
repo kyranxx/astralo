@@ -7,31 +7,44 @@
 
 import Layout from '../../../layouts/Layout.astro';
 import Footer from '../../../components/Footer.astro';
-import EmailCapture from '../../../components/EmailCapture.astro';
-import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen, List } from 'lucide-astro';
-import { getSupportedLocales, isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
-import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogUiTranslations } from '../../../lib/blog';
+import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen } from 'lucide-astro';
+import { isValidLocale, getTranslations, type SupportedLocale } from '../../../lib/i18n';
+import {
+  getArticleTranslation,
+  getExactArticleTranslation,
+  getArticleMeta,
+  getAllArticleSlugs,
+  getArticleLanguageCodes,
+  getArticleSlugsForLang,
+  getBlogDisplayTitle,
+  getBlogUiTranslations,
+  getBlogSeoTitle,
+} from '../../../lib/blog';
+import { buildInternalCampaignUrl } from '../../../lib/internal-campaign';
 import {
   buildArticleSchema,
   buildBreadcrumbSchema,
+  buildLocaleUrl,
   getProductLandingPath,
   getSuggestedProductForArticle,
   rewriteBlogOfferLinks,
   siteUrl,
 } from '../../../lib/seo';
 import { isStaleMonthlyHoroscopeSlug } from '../../../lib/indexing';
+import { getProductCopy } from '../../../lib/products';
 
 export const prerender = true;
 
 // Generate all paths: lang × slug combinations
 export function getStaticPaths() {
-  const locales = getSupportedLocales();
   const slugs = getAllArticleSlugs();
   
   const paths = [];
-  for (const lang of locales) {
-    for (const slug of slugs) {
-      paths.push({ params: { lang, slug } });
+  for (const slug of slugs) {
+    for (const lang of getArticleLanguageCodes(slug)) {
+      if (lang !== 'en') {
+        paths.push({ params: { lang, slug } });
+      }
     }
   }
   return paths;
@@ -39,28 +52,27 @@ export function getStaticPaths() {
 
 const { lang, slug } = Astro.params;
 const currentLang = (isValidLocale(lang) ? lang : 'en') as SupportedLocale;
+const blogSlug = slug as string;
 const t = getTranslations(currentLang);
 const ui = getBlogUiTranslations(currentLang);
 
-const meta = getArticleMeta(slug as string);
-const localizedPost = getArticleTranslation(slug as string, currentLang);
+const meta = getArticleMeta(blogSlug);
+const localizedPost = getExactArticleTranslation(blogSlug, currentLang);
 
 if (!meta || !localizedPost) {
   return Astro.redirect(`/${currentLang}/blog`);
 }
 
-// Strip ALL emojis from titles to prevent encoding issues
-const stripEmojis = (str: string) => str.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|[\u{1F000}-\u{1F02F}]|[\u{200D}]|[\u{2B00}-\u{2BFF}]/gu, '').trim();
-
-const displayTitle = stripEmojis(localizedPost.title) || localizedPost.title;
+const displayTitle = getBlogDisplayTitle(localizedPost.title);
 const post = {
   ...localizedPost,
   ...meta,
   displayTitle
 };
+const seoTitle = getBlogSeoTitle(displayTitle, localizedPost.seoTitle);
 
 // Related posts (exclude current)
-const allSlugs = getAllArticleSlugs();
+const allSlugs = getArticleSlugsForLang(currentLang);
 // Simple related posts logic: same category or just next ones
 const relatedPosts = allSlugs
   .filter(s => s !== slug)
@@ -68,13 +80,18 @@ const relatedPosts = allSlugs
     const m = getArticleMeta(s);
     const p = getArticleTranslation(s, currentLang);
     if (!m || !p) return null;
-    return { ...m, ...p, displayTitle: stripEmojis(p.title) || p.title };
+    return { ...m, ...p, displayTitle: getBlogDisplayTitle(p.title) };
   })
   .filter(p => p && p.category === post.category)
   .slice(0, 2);
 
 // Generate share URLs
 const currentUrl = `${siteUrl}/${currentLang}/blog/${slug}`;
+const blogAlternateLanguageUrls = getArticleLanguageCodes(blogSlug).map((code) => ({
+  code,
+  hreflang: code,
+  href: buildLocaleUrl(`/${currentLang}/blog/${blogSlug}`, code),
+}));
 const safeEncode = (str: string) => {
   try {
     return encodeURIComponent(str);
@@ -88,10 +105,11 @@ const shareUrls = {
   facebook: `https://www.facebook.com/sharer/sharer.php?u=${safeEncode(currentUrl)}`,
   linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${safeEncode(currentUrl)}`
 };
-const productKey = getSuggestedProductForArticle(slug as string);
+const productKey = getSuggestedProductForArticle(blogSlug);
+const suggestedProduct = getProductCopy(productKey, currentLang, t);
 const landingPath = getProductLandingPath(currentLang, productKey);
-const renderedContent = rewriteBlogOfferLinks(post.content, currentLang, slug as string);
-const noIndex = isStaleMonthlyHoroscopeSlug(slug as string);
+const renderedContent = rewriteBlogOfferLinks(post.content, currentLang, blogSlug);
+const noIndex = isStaleMonthlyHoroscopeSlug(blogSlug);
 const contentParts = renderedContent.split('</p>');
 const injectionPoint = Math.min(3, Math.floor(contentParts.length / 2));
 const firstHalf = contentParts.slice(0, injectionPoint).join('</p>') + (contentParts.length > injectionPoint ? '</p>' : '');
@@ -104,7 +122,7 @@ const pageSchema = [
     meta,
   }),
   buildBreadcrumbSchema([
-    { name: 'Home', url: `${siteUrl}/${currentLang}` },
+    { name: ui.home, url: `${siteUrl}/${currentLang}` },
     { name: ui.blogTitle, url: `${siteUrl}/${currentLang}/blog` },
     { name: displayTitle, url: currentUrl },
   ]),
@@ -112,10 +130,11 @@ const pageSchema = [
 ---
 
 <Layout 
-  title={`${displayTitle} | Astralo`}
+  title={`${seoTitle} | Astralo`}
   description={post.metaDescription}
   keywords={post.keywords}
   lang={currentLang}
+  alternateLanguageUrls={blogAlternateLanguageUrls}
   schema={pageSchema}
   ogType="article"
   publishedTime={meta.date}
@@ -135,7 +154,7 @@ const pageSchema = [
             <ArrowLeft class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             <span class="text-sm">{ui.backToBlog}</span>
           </a>
-          <a href={`/${currentLang}/`}><img src="/logo.webp" alt="Astralo" class="h-9" style="aspect-ratio: 3.41;" fetchpriority="high" /></a>
+          <a href={`/${currentLang}`}><img src="/logo.webp" alt="Astralo" class="h-9" style="aspect-ratio: 3.41;" fetchpriority="high" /></a>
           <div class="w-24"></div>
         </div>
       </div>
@@ -171,7 +190,6 @@ const pageSchema = [
             </div>
             <div>
               <p class="text-white font-bold text-lg">{post.author}</p>
-              <p class="text-white/50 text-sm">{ui.expertAstrologer}</p>
             </div>
           </div>
           
@@ -180,22 +198,22 @@ const pageSchema = [
             <span class="text-white/50 text-sm hidden sm:inline font-medium">{ui.share}:</span>
             <a href={shareUrls.twitter} target="_blank" rel="noopener noreferrer" 
                class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
-               title="Share on Twitter">
+               title={ui.share} aria-label={`${ui.share} Twitter`}>
               <Twitter class="w-5 h-5" />
             </a>
             <a href={shareUrls.facebook} target="_blank" rel="noopener noreferrer"
                class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
-               title="Share on Facebook">
+               title={ui.share} aria-label={`${ui.share} Facebook`}>
               <Facebook class="w-5 h-5" />
             </a>
             <a href={shareUrls.linkedin} target="_blank" rel="noopener noreferrer"
                class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
-               title="Share on LinkedIn">
+               title={ui.share} aria-label={`${ui.share} LinkedIn`}>
               <Linkedin class="w-5 h-5" />
             </a>
             <button id="copy-link" 
                     class="w-10 h-10 rounded-full glass flex items-center justify-center text-white/70 hover:text-amber-400 hover:bg-white/10 transition-all hover:scale-110"
-                    title="Copy link">
+                    title={ui.share} aria-label={ui.share}>
               <Link2 class="w-5 h-5" />
             </button>
           </div>
@@ -217,25 +235,6 @@ const pageSchema = [
             ))}
           </ul>
         </div>
-        )}
-
-        <!-- Table of Contents -->
-        {post.tableOfContents && post.tableOfContents.length > 0 && (
-          <div class="glass rounded-2xl p-8 mb-12 border border-white/5">
-            <div class="flex items-center gap-3 mb-6">
-              <List class="w-6 h-6 text-amber-400" />
-              <h3 class="text-xl font-bold text-white">{ui.tableOfContents}</h3>
-            </div>
-            <nav class="space-y-3">
-              {post.tableOfContents.map((item: { id: string; title: string }, index: number) => (
-                <a href={`#${item.id}`} 
-                   class="flex items-center gap-4 text-white/70 hover:text-amber-400 transition-colors py-1 group">
-                  <span class="text-white/20 text-sm font-mono group-hover:text-amber-500/50 transition-colors">{String(index + 1).padStart(2, '0')}</span>
-                  <span class="text-lg">{item.title}</span>
-                </a>
-              ))}
-            </nav>
-          </div>
         )}
 
         <!-- Content -->
@@ -263,48 +262,30 @@ const pageSchema = [
                   {t.header.badge}
                 </div>
                 <h3 class="text-3xl sm:text-4xl font-black text-white mb-3 tracking-tight">{ui.getPersonalized}</h3>
-                <p class="text-white/70 text-lg leading-relaxed">{t.products[productKey].description}</p>
+                <p class="text-white/70 text-lg leading-relaxed">{suggestedProduct.description}</p>
               </div>
 
-              <a href={landingPath} class="mt-6 md:mt-0 inline-flex items-center justify-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-2xl hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20 whitespace-nowrap">
+              <a
+                href={buildInternalCampaignUrl(landingPath, {
+                  source: 'blog',
+                  campaign: blogSlug,
+                  content: 'mid_article_cta',
+                })}
+                class="mt-6 md:mt-0 inline-flex items-center justify-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-2xl hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20 whitespace-nowrap"
+                data-astralo-track-click="blog_product_click"
+                data-blog-slug={blogSlug}
+                data-click-surface="mid_article_cta"
+                data-product-key={productKey}
+                data-language={currentLang}
+              >
                 <Star class="w-5 h-5" />
-                {ui.orderNow}
+                {t.cta.orderNow}
               </a>
             </div>
           </div>
 
           <div set:html={secondHalf} />
         </div>
-
-        <!-- Key Takeaways Box -->
-        {post.keyTakeaways && (
-        <div class="glass-strong rounded-2xl p-8 mt-16 border border-green-500/30 bg-green-500/5">
-          <div class="flex items-center gap-3 mb-6">
-            <Star class="w-6 h-6 text-green-400" />
-            <h3 class="text-xl font-bold text-white">{ui.keyTakeaways}</h3>
-          </div>
-          <ul class="space-y-4">
-            {post.keyTakeaways.map((point: string) => (
-              <li class="flex items-start gap-3 text-white/90 leading-relaxed text-lg">
-                <span class="text-green-400 mt-1.5 font-bold">★</span>
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        )}
-
-        <!-- CTA -->
-        <div class="mt-16 glass-strong rounded-2xl p-10 text-center border border-amber-500/30 bg-gradient-to-br from-amber-500/10 to-transparent">
-          <h3 class="text-3xl font-bold text-white mb-4">{ui.getPersonalized}</h3>
-          <p class="text-white/80 mb-8 text-lg">{t.products[productKey].description}</p>
-          <a href={landingPath} class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-black font-bold text-lg rounded-full hover:bg-amber-400 transition-all hover:scale-105 shadow-xl hover:shadow-amber-500/20">
-            <Star class="w-5 h-5" />
-            {ui.orderNow}
-          </a>
-        </div>
-
-        <EmailCapture lang={currentLang} inline={true} />
 
         <!-- Related Posts -->
         {relatedPosts.length > 0 && (
@@ -391,5 +372,21 @@ const pageSchema = [
     } catch (err) {
       console.error('Failed to copy link:', err);
     }
+  });
+
+  document.querySelectorAll('[data-astralo-track-click]').forEach((element) => {
+    element.addEventListener('click', () => {
+      const track = window['astraloTrack'];
+      if (typeof track !== 'function') return;
+
+      const target = element;
+      track(target.dataset.astraloTrackClick || 'internal_click', {
+        blog_slug: target.dataset.blogSlug || '',
+        click_surface: target.dataset.clickSurface || '',
+        item_id: target.dataset.productKey || '',
+        language: target.dataset.language || '',
+        link_url: target.getAttribute('href') || '',
+      });
+    });
   });
 </script>

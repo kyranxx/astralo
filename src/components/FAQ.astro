@@ -8,6 +8,7 @@
 import { ChevronDown, HelpCircle } from 'lucide-astro';
 import { getTranslations, type SupportedLocale } from '../lib/i18n';
 import { stripUnsupportedSocialProof } from '../lib/marketing-copy';
+import { getProductPricingSummary } from '../lib/products';
 
 interface Props {
   lang?: SupportedLocale;
@@ -38,7 +39,7 @@ const faqItems = [
   },
   {
     question: t.faq?.q5 || "How much do horoscopes cost?",
-    answer: t.faq?.a5 || "We offer four products: Daily Horoscope at €0.99, Weekly Horoscope at €2.99, Monthly Horoscope at €7.99, and Partner Compatibility at €7.99. All prices include instant delivery."
+    answer: getProductPricingSummary(lang)
   },
   {
     question: t.faq?.q6 || "What information do I need to order?",

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import { CheckCircle, Mail, Home, Sparkles, Star, ChevronLeft } from 'lucide-astro';
 import { isValidLocale, getTranslations, type SupportedLocale } from '../lib/i18n';
-import { getProductPriceInEuros } from '../lib/products';
+import { getProductKeys, getProductName } from '../lib/products';
 
 // Get lang from URL params
 const langParam = Astro.url.searchParams.get('lang') || 'en';
@@ -731,26 +731,17 @@ const successT = {
 // Get translations for current lang, fallback to English
 const st = successT[currentLang as keyof typeof successT] || successT.en;
 
-const horoscopeTypes = [
-  { id: "daily", name: t.products.daily.name },
-  { id: "weekly", name: t.products.weekly.name },
-  { id: "monthly", name: t.products.monthly.name },
-  { id: "partner", name: t.products.partner.name },
-];
-const productPriceMap = {
-  daily: getProductPriceInEuros('daily'),
-  weekly: getProductPriceInEuros('weekly'),
-  monthly: getProductPriceInEuros('monthly'),
-  partner: getProductPriceInEuros('partner'),
-};
-
+const horoscopeTypes = getProductKeys().map((productKey) => ({
+  id: productKey,
+  name: getProductName(productKey, currentLang),
+}));
 const sessionId = Astro.url.searchParams.get('session_id');
 
 if (!sessionId) {
-  return Astro.redirect(currentLang === 'en' ? '/' : `/${currentLang}/`);
+  return Astro.redirect(currentLang === 'en' ? '/' : `/${currentLang}`);
 }
 
-const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
+const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}`;
 ---
 
 <Layout title={`${t.success.title} - Astralo`} lang={currentLang} noIndex={true}>
@@ -906,7 +897,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
   </div>
 </Layout>
 
-<script is:inline define:vars={{ sessionId, horoscopeTypes, productPriceMap, st }}>
+<script is:inline define:vars={{ sessionId, horoscopeTypes, st }}>
   let horoscopeData = null;
 
   // Progress stages
@@ -945,33 +936,17 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
     return product ? product.name : 'Your Horoscope';
   }
 
-  function trackPurchase(data, productName) {
-    if (!data || !data.product || !sessionId) return;
+  function trackCheckoutReturn() {
+    if (!sessionId) return;
 
-    const storageKey = `astralo_purchase_tracked_${sessionId}`;
+    const storageKey = `astralo_checkout_return_tracked_${sessionId}`;
     if (localStorage.getItem(storageKey)) return;
 
     const track = window['astraloTrack'];
     if (typeof track !== 'function') return;
 
-    const mappedPrice = productPriceMap[data.product];
-    const normalizedPrice = Number(Number(mappedPrice || data.price || 0).toFixed(2));
-
-    track('purchase', {
+    track('checkout_return', {
       transaction_id: sessionId,
-      currency: 'EUR',
-      value: normalizedPrice,
-      language: data.lang || 'en',
-      items: [
-        {
-          item_id: data.product,
-          item_name: productName || resolveProductName(data.product),
-          item_category: 'horoscope',
-          item_variant: data.lang || 'en',
-          price: normalizedPrice,
-          quantity: 1,
-        }
-      ]
     });
 
     localStorage.setItem(storageKey, 'true');
@@ -1007,13 +982,13 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       console.log('🚀 Horoscope data received');
       
       // Check if horoscope was already generated for this session (prevents duplicate on page reload)
-      if (data.error === 'already_processed') {
+      if (data.error === 'already_processed' && data.emailSent !== false) {
         console.log('🚀 Horoscope already generated, showing success state');
-        trackPurchase(data, resolveProductName(data.product));
+        const productName = resolveProductName(data.product);
         document.getElementById('loading-state').classList.add('hidden');
         document.getElementById('success-state').classList.remove('hidden');
-        document.getElementById('product-name').textContent = 'Horoscope';
-        document.getElementById('customer-email').textContent = 'your email';
+        document.getElementById('product-name').textContent = productName;
+        document.getElementById('customer-email').textContent = data.email || 'your email';
         document.getElementById('email-status').textContent = st.emailSent;
         document.getElementById('email-status').classList.remove('text-white/60');
         document.getElementById('email-status').classList.add('text-green-400');
@@ -1027,7 +1002,6 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
       
       const product = horoscopeTypes.find(t => t.id === data.product);
       const productName = product ? product.name : 'Your Horoscope';
-      trackPurchase(data, productName);
       document.getElementById('product-name').textContent = productName;
       document.getElementById('customer-email').textContent = data.email;
 
@@ -1068,6 +1042,7 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
         customerName: data.name,
         horoscopeContent: data.horoscope,
         productName: productName,
+        sessionId,
         lang: data.lang || 'en',
         birthDate: data.birthDate || '',
         birthPlace: data.birthPlace || '',
@@ -1109,5 +1084,6 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}/`;
     }
   }
 
+  trackCheckoutReturn();
   fetchHoroscope();
 </script>

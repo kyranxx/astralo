@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const sv: Translations = {
     meta: {
-        title: 'Astralo - Gratis Dagligt Horoskop Idag 2026 | Exakta Stjärnteckenprognoser',
-        description: 'Få ditt GRATIS personliga horoskop idag! ⭐ Dagliga, veckovisa och månatliga prognoser. Kärlekskompatibilitet, karriärråd. 50 000+ nöjda kunder. Omedelbar leverans!',
+        title: "Astralo - Gratis Dagligt Horoskop Idag 2026 | Exakta Stjärnteckenprognoser",
+        description: "Få ditt GRATIS personliga horoskop idag! ⭐ Dagliga, veckovisa och månatliga prognoser. Kärlekskompatibilitet, karriärråd. Omedelbar leverans!",
         keywords: 'dagligt horoskop, gratis horoskop, horoskop idag, veckohoroskop, månadshoroskop, kärlekshoroskop, stjärntecken, astrologi, horoskop 2026, personligt horoskop',
     },
     header: {
@@ -11,20 +11,20 @@ const sv: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'BEGRÄNSAT ERBJUDANDE: 50% rabatt på alla horoskop!',
+        offer: "Personliga Horoskop",
         delivery: 'Omedelbar leverans',
-        customers: '50 000+ nöjda kunder',
+        customers: "Omedelbar leverans",
         secure: 'Säker betalning',
     },
     hero: {
         title: 'Ditt Personliga Horoskop',
         subtitle: 'Äntligen ett verkligt korrekt horoskop • Skapat speciellt för dig',
-        features: '✨ Omedelbar leverans • 🔒 Säkra betalningar • ⭐ 50 000+ nöjda kunder',
+        features: "✨ Omedelbar leverans • 🔒 Säker betalning • ⭐ Personliga Horoskop",
     },
     products: {
         daily: {
-            name: 'Dagligt Horoskop',
-            description: 'Ditt personliga dagliga horoskop med detaljerade förutsägelser för de kommande 24 timmarna',
+            name: 'Dagens horoskop',
+            description: 'Ditt personliga horoskop idag med detaljerade förutsägelser för de kommande 24 timmarna',
             wordCount: '~200 ord',
             benefits: ['🍀 Lyckotal', '📅 Bästa tiden', '💎 Rekommenderad färg', '⭐ Dagens råd'],
         },
@@ -64,7 +64,7 @@ const sv: Translations = {
         technology: { title: 'Avancerad Teknik', description: 'Toppmodern teknik för exakta prognoser' },
         instant: { title: 'Omedelbart', description: 'Ditt horoskop klart på några minuter' },
         professional: { title: 'Professionellt', description: 'Skapat enligt astrologiska principer' },
-        verified: { title: 'Verifierat', description: '50 000+ nöjda kunder' },
+        verified: { title: 'Verifierat', description: "Personliga Horoskop" },
     },
     form: {
         title: 'Få ditt horoskop',
@@ -130,19 +130,19 @@ const sv: Translations = {
         q1: 'Vad är Astralo?',
         a1: 'Astralo är en professionell online horoskoptjänst som tillhandahåller personliga astrologiska tolkningar baserade på dina exakta födelsedata (datum, tid och plats). Vi erbjuder dagliga, veckovisa, månatliga horoskop och partneranalys, levererade omedelbart som vackert utformade PDF-dokument till din e-post.',
         q2: 'Hur exakta är Astralos horoskop?',
-        a2: 'Astralos horoskop skapas med avancerade astrologiska algoritmer baserade på dina exakta födelsedata. Med över 50 000 nöjda kunder och ett betyg på 4,9/5 stjärnor ger våra personliga tolkningar detaljerad information för underhållningsändamål.',
+        a2: "Astralos horoskop skapas med avancerade astrologiska algoritmer baserade på dina exakta födelsedata.",
         q3: 'Hur snabbt får jag mitt horoskop?',
         a3: 'Ditt personliga horoskop genereras och levereras omedelbart till din e-post inom 2-5 minuter efter betalning. Du får ett professionellt PDF-dokument med din kompletta astrologiska tolkning.',
         q4: 'Vilka betalningsmetoder accepterar ni?',
         a4: 'Vi accepterar alla större kredit- och betalkort (Visa, Mastercard, American Express) via Stripe, en säker PCI-DSS Level 1-certifierad betalningsprocessor. Alla transaktioner är skyddade med SSL-kryptering.',
         q5: 'Hur mycket kostar horoskopen?',
-        a5: 'Vi erbjuder fyra produkter: Dagligt Horoskop för 0,99 €, Veckohoroskop för 1,99 €, Månadshoroskop för 4,99 € och Partnerhoroskop för 2,99 €. Alla priser inkluderar omedelbar leverans.',
+        a5: 'Vi erbjuder fyra produkter: Dagens horoskop för 0,99 €, Veckohoroskop för 1,99 €, Månadshoroskop för 4,99 € och Partnerhoroskop för 2,99 €. Alla priser inkluderar omedelbar leverans.',
         q6: 'Vilken information behöver jag för att beställa?',
         a6: 'För att få ditt personliga horoskop behöver du: ditt fullständiga namn, e-postadress, födelsedatum, födelsetid (valfritt men rekommenderat) och födelseort. För partnerhoroskop behöver du också din partners födelsedata.',
     },
     emailCapture: {
         title: '✨ Få gratis födelsehoroskop och veckoprognos',
-        subtitle: 'Gå med i 50 000+ andra som får personliga kosmiska insikter och gratisrapporter varje måndag!',
+        subtitle: "Få gratis födelsehoroskop och veckoprognos. Omedelbar leverans.",
         placeholder: 'Ange din e-post',
         button: 'Få min gratistolkning',
         consent: 'Jag godkänner att få kosmiska insikter och accepterar integritetspolicyn.',
@@ -150,12 +150,12 @@ const sv: Translations = {
         error: 'Något gick fel. Försök igen.',
     },
     ads: {
-        sticky: 'Sista timmarna: 50% specialrabatt upplåst',
+        sticky: "Personliga Horoskop",
         claim: 'Hämta nu',
-        limited: 'Begränsat erbjudande',
+        limited: "Omedelbar leverans",
         unlock: 'Lås upp din',
         waiting: 'väntar på dig...',
-        join: 'Gå med i 50 000+ själar som fann klarhet i stjärnorna.',
+        join: "Personliga Horoskop",
         getFor: 'Få det för',
     },
 };

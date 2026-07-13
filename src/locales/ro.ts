@@ -2,8 +2,8 @@ import type { Translations } from './types';
 
 const ro: Translations = {
     meta: {
-        title: 'Astralo - Horoscop Zilnic Gratuit 2026 | Predicții Zodii Precise',
-        description: 'Obțineți horoscopul GRATUIT azi! ⭐ Horoscop zilnic, săptămânal și lunar. Horoscop dragoste, compatibilitate și carieră. 50.000+ clienți mulțumiți. Livrare instantană!',
+        title: "Astralo - Horoscop Zilnic Gratuit 2026 | Predicții Zodii Precise",
+        description: "Obțineți horoscopul GRATUIT azi! ⭐ Horoscop zilnic, săptămânal și lunar. Horoscop dragoste, compatibilitate și carieră. Livrare instantană!",
         keywords: 'horoscop zilnic, horoscop gratuit, horoscop 2026, zodii, horoscop dragoste, compatibilitate zodii, horoscop săptămânal, horoscop lunar, astrologie, berbec horoscop, taur horoscop, gemeni horoscop, horoscop precis',
     },
     header: {
@@ -11,15 +11,15 @@ const ro: Translations = {
         online: 'Online',
     },
     promo: {
-        offer: 'OFERTĂ LIMITATĂ: 50% reducere la toate horoscoapele!',
+        offer: "Horoscoape Personalizate",
         delivery: 'Livrare instantanee pe email',
-        customers: '50.000+ clienți mulțumiți',
+        customers: "Livrare instantanee pe email",
         secure: 'Plată securizată cu Stripe',
     },
     hero: {
         title: 'Horoscopul Tău Personal',
         subtitle: 'În sfârșit un horoscop cu adevărat precis • Creat special pentru tine',
-        features: '✨ Livrare instantanee • 🔒 Plăți securizate • ⭐ 50.000+ clienți mulțumiți',
+        features: "✨ Livrare instantanee pe email • 🔒 Plată securizată cu Stripe • ⭐ Horoscoape Personalizate",
     },
     products: {
         daily: {
@@ -64,7 +64,7 @@ const ro: Translations = {
         technology: { title: 'Tehnologie Avansată', description: 'Tehnologie de ultimă generație pentru predicții precise' },
         instant: { title: 'Instant', description: 'Horoscopul tău gata în câteva minute' },
         professional: { title: 'Profesional', description: 'Creat conform principiilor astrologice' },
-        verified: { title: 'Verificat', description: '50.000+ clienți mulțumiți' },
+        verified: { title: 'Verificat', description: "Horoscoape Personalizate" },
     },
     form: {
         title: 'Obține horoscopul tău',
@@ -130,7 +130,7 @@ const ro: Translations = {
         q1: 'Ce este Astralo?',
         a1: 'Astralo este un serviciu profesional de horoscop online care oferă lecturi astrologice personalizate bazate pe datele tale exacte de naștere (dată, oră și loc). Oferim horoscoape zilnice, săptămânale, lunare și analiza compatibilității de cuplu, livrate instantaneu ca documente PDF frumos concepute prin email.',
         q2: 'Cât de precise sunt horoscoapele Astralo?',
-        a2: 'Horoscoapele Astralo sunt create folosind algoritmi astrologici avansați bazați pe datele tale precise de naștere. Cu peste 50.000 de clienți mulțumiți și o evaluare de 4,9/5 stele, lecturile noastre personalizate oferă informații detaliate în scopuri de divertisment.',
+        a2: "Horoscoapele Astralo sunt create folosind algoritmi astrologici avansați bazați pe datele tale precise de naștere.",
         q3: 'Cât durează să primesc horoscopul?',
         a3: 'Horoscopul tău personalizat este generat și livrat instantaneu pe email în 2-5 minute de la plată. Vei primi un document PDF profesional cu lectura ta astrologică completă.',
         q4: 'Ce metode de plată acceptați?',
@@ -142,7 +142,7 @@ const ro: Translations = {
     },
     emailCapture: {
         title: '✨ Obține Gratuit Astrograma și Previziunile Săptămânale',
-        subtitle: 'Alătură-te celor peste 50.000 de persoane care primesc previziuni cosmice personalizate și rapoarte gratuite în fiecare luni!',
+        subtitle: "Obține Gratuit Astrograma și Previziunile Săptămânale. Livrare instantanee pe email.",
         placeholder: 'Introdu adresa de email',
         button: 'Vreau lectura gratuită',
         consent: 'Sunt de acord să primesc previziuni cosmice și accept politica de confidențialitate.',
@@ -150,12 +150,12 @@ const ro: Translations = {
         error: 'Ceva nu a mers bine. Te rugăm să încerci din nou.',
     },
     ads: {
-        sticky: 'Ultimele ore: 50% reducere specială deblocată',
+        sticky: "Horoscoape Personalizate",
         claim: 'Revendică acum',
-        limited: 'Ofertă limitată',
+        limited: "Livrare instantanee pe email",
         unlock: 'Deblochează-ți',
         waiting: 'te așteaptă...',
-        join: 'Alătură-te celor peste 50.000 de suflete care au găsit claritate în stele.',
+        join: "Horoscoape Personalizate",
         getFor: 'Obține-l pentru',
     },
 };

@@ -6,7 +6,7 @@ import sitemap, { ChangeFreqEnum } from "@astrojs/sitemap";
 import vercel from '@astrojs/vercel';
 
 const monthlyBlogPattern = /\/(?:[a-z]{2}\/)?blog\/monthly-horoscope-([a-z]+)-(\d{4})\/?$/;
-const zodiacLandingPattern = /\/(?:[a-z]{2}\/)?horoscope\/(?:daily|weekly|monthly|partner)\/[^/]+\/?$/;
+const zodiacLandingPattern = /\/(?:[a-z]{2}\/)?horoscope\/(?:daily|weekly|monthly|partner|lifetime)\/[^/]+\/?$/;
 /** @type {Record<string, number>} */
 const monthNameToIndex = {
   january: 0,
@@ -91,6 +91,7 @@ export default defineConfig({
         // Exclude API, admin, success, form pages, and /en/ redirects
         if (page.includes('/api/')) return false;
         if (page.includes('/admin')) return false;
+        if (page.includes('/docs/')) return false;
         if (page.includes('/success')) return false;
         if (page.includes('/form/')) return false;
         if (page.match(/\/[a-z]{2}\/legal\/(?:terms|privacy|refund|cookies)\/?$/)) return false;
@@ -108,46 +109,41 @@ export default defineConfig({
           item.url = url;
         }
 
-        // Determine page type and set appropriate SEO values
+        // Determine page type and set appropriate SEO values.
+        // Do not emit lastmod here; sitemap dates should reflect real content updates,
+        // not every build.
         // Homepage - highest priority
         if (url === 'https://astralo.online' || url.match(/\/[a-z]{2}$/)) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 1.0;
         }
         // Blog posts - high priority, updated frequently
         else if (url.includes('/blog/') && !url.endsWith('/blog')) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 0.9;
         }
         // Blog index
         else if (url.endsWith('/blog')) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.DAILY;
           item.priority = 0.9;
         }
         // Product landing pages - key commercial URLs
         else if (url.includes('/horoscope/')) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.95;
         }
         // Free lead magnet - key email capture URL
         else if (url.endsWith('/free-horoscope')) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.9;
         }
         // Legal pages - lower priority, rarely change
         else if (url.includes('/legal/')) {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.MONTHLY;
           item.priority = 0.3;
         }
         // Default for other pages
         else {
-          item.lastmod = new Date().toISOString();
           item.changefreq = ChangeFreqEnum.WEEKLY;
           item.priority = 0.6;
         }
