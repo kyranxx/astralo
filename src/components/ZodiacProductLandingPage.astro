@@ -149,7 +149,7 @@ const pageSchema = [
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-amber-500 px-6 py-4 text-black font-bold text-base hover:bg-amber-400 transition-colors"
                             >
                                 <Zap class="w-5 h-5" />
-                                <span>{t.form.submit}</span>
+                                <span>{t.cta.orderNow}</span>
                             </a>
 
                             <div class="mt-6 pt-6 border-t border-white/10 space-y-3 text-left text-sm text-white/70">
@@ -223,7 +223,7 @@ const pageSchema = [
                         ))}
                     </div>
                     <div class="grid sm:grid-cols-2 gap-4">
-                        {product.benefits.map((benefit) => (
+                        {product.benefits.slice(0, 3).map((benefit) => (
                             <div class="flex items-center gap-3 rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white/85">
                                 <span class="text-lg leading-none">{benefit.split(' ')[0]}</span>
                                 <span>{benefit.split(' ').slice(1).join(' ')}</span>

@@ -174,6 +174,6 @@ export const en: BlogPostTranslation = {
       <br><strong>Venus-Mars Exchanges:</strong> Incredible sexual attraction.
       <br><strong>Saturn Contacts:</strong> The glue that holds people together for a lifetime (even through tough times).</p>
       
-      <p>Astralo's <a href="/horoscope/partner?utm_source=blog&amp;utm_medium=internal&amp;utm_campaign=zodiac-compatibility-complete-guide&amp;utm_content=synastry_context_link">partner horoscope report</a> helps you move beyond a single percentage and explore the relationship themes that matter to you.</p>
+      <p>Astralo's <a href="/horoscope/partner?ref_source=blog&amp;ref_medium=internal&amp;ref_campaign=zodiac-compatibility-complete-guide&amp;ref_content=synastry_context_link">partner horoscope report</a> helps you move beyond a single percentage and explore the relationship themes that matter to you.</p>
     `
 };

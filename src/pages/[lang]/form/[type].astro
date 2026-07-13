@@ -149,7 +149,7 @@ const productName = getProductCopy(type as ProductKey, currentLang, t).name;
             {type === 'partner' ? (
               <div class="space-y-8">
                 {/* Person 1 */}
-                <div class="space-y-5">
+                <div class="space-y-5" data-partner-step="1" data-next-label={t.form.secondPerson || 'Second Person'}>
                   <div class="flex items-center gap-3 pb-4 border-b border-white/10">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-400/20 to-blue-600/20 flex items-center justify-center">
                       <User class="w-5 h-5 text-blue-400" />
@@ -203,7 +203,7 @@ const productName = getProductCopy(type as ProductKey, currentLang, t).name;
                 </div>
 
                 {/* Person 2 */}
-                <div class="space-y-5">
+                <div class="space-y-5" data-partner-step="2" data-back-label={t.form.back || 'Back'}>
                   <div class="flex items-center gap-3 pb-4 border-b border-white/10">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400/20 to-pink-600/20 flex items-center justify-center">
                       <Heart class="w-5 h-5 text-pink-400" />
@@ -295,7 +295,7 @@ const productName = getProductCopy(type as ProductKey, currentLang, t).name;
             )}
 
             {/* Submit Button */}
-            <div class="pt-6">
+            <div class="pt-6" data-submit-section>
               <button type="submit" id="submit-btn" class="group relative w-full bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-5 rounded-xl transition-colors">
                 <span class="flex items-center justify-center gap-3">
                   <Sparkles class="w-6 h-6 group-hover:rotate-12 transition-transform" />
@@ -356,6 +356,67 @@ const productName = getProductCopy(type as ProductKey, currentLang, t).name;
 <script is:inline define:vars={{ type, currentLang, productName, selectedPrice: selectedType.price }}>
   const form = document.getElementById('payment-form');
   const attributionKey = 'astralo_attribution';
+
+  let formStartTracked = false;
+  form.addEventListener('focusin', () => {
+    if (formStartTracked) return;
+    formStartTracked = true;
+    const track = window['astraloTrack'];
+    if (typeof track === 'function') {
+      track('form_start', {
+        item_id: type,
+        item_name: productName,
+        language: currentLang,
+        value: Number(Number(selectedPrice).toFixed(2)),
+        currency: 'EUR',
+      });
+    }
+  });
+
+  if (type === 'partner') {
+    const stepOne = form.querySelector('[data-partner-step="1"]');
+    const stepTwo = form.querySelector('[data-partner-step="2"]');
+    const submitSection = form.querySelector('[data-submit-section]');
+
+    if (stepOne && stepTwo && submitSection) {
+      const nextButton = document.createElement('button');
+      nextButton.type = 'button';
+      nextButton.className = 'mt-6 w-full rounded-xl bg-amber-500 px-6 py-4 font-bold text-black hover:bg-amber-400';
+      nextButton.textContent = `${stepOne.dataset.nextLabel || 'Second person'} →`;
+
+      const backButton = document.createElement('button');
+      backButton.type = 'button';
+      backButton.className = 'mb-5 text-sm font-semibold text-[#6b4b28] hover:underline';
+      backButton.textContent = `← ${stepTwo.dataset.backLabel || 'Back'}`;
+
+      stepOne.appendChild(nextButton);
+      stepTwo.prepend(backButton);
+      stepTwo.classList.add('hidden');
+      submitSection.classList.add('hidden');
+
+      nextButton.addEventListener('click', () => {
+        const requiredInputs = Array.from(stepOne.querySelectorAll('input[required]'));
+        const invalidInput = requiredInputs.find((input) => !input.checkValidity());
+        if (invalidInput) {
+          invalidInput.reportValidity();
+          return;
+        }
+
+        stepOne.classList.add('hidden');
+        stepTwo.classList.remove('hidden');
+        submitSection.classList.remove('hidden');
+        stepTwo.querySelector('input')?.focus();
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      backButton.addEventListener('click', () => {
+        stepTwo.classList.add('hidden');
+        submitSection.classList.add('hidden');
+        stepOne.classList.remove('hidden');
+        stepOne.querySelector('input')?.focus();
+      });
+    }
+  }
 
   function getAttributionData() {
     try {

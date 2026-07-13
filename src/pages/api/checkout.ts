@@ -101,6 +101,10 @@ export const POST: APIRoute = async ({ request }) => {
             gclid: data.gclid,
             fbclid: data.fbclid,
             msclkid: data.msclkid,
+            ref_source: data.ref_source,
+            ref_medium: data.ref_medium,
+            ref_campaign: data.ref_campaign,
+            ref_content: data.ref_content,
             gaClientId: data.gaClientId,
             currentUrl: data.currentUrl,
         };

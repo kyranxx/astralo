@@ -27,7 +27,7 @@ test('builds internal campaign URLs for blog-to-product attribution', async () =
             campaign: 'monthly-horoscope-june-2026',
             content: 'mid_article_cta',
         }),
-        '/horoscope/monthly?utm_source=blog&utm_medium=internal&utm_campaign=monthly-horoscope-june-2026&utm_content=mid_article_cta'
+        '/horoscope/monthly?ref_source=blog&ref_medium=internal&ref_campaign=monthly-horoscope-june-2026&ref_content=mid_article_cta'
     );
 });
 
@@ -40,6 +40,6 @@ test('preserves existing query params when adding internal campaign tags', async
             campaign: 'astral-horoskop',
             content: 'product_grid_monthly',
         }),
-        '/de/horoscope/monthly?from=hero&utm_source=blog&utm_medium=internal&utm_campaign=astral-horoskop&utm_content=product_grid_monthly'
+        '/de/horoscope/monthly?from=hero&ref_source=blog&ref_medium=internal&ref_campaign=astral-horoskop&ref_content=product_grid_monthly'
     );
 });
