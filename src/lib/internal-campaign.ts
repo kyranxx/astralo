@@ -7,10 +7,10 @@ export interface InternalCampaignOptions {
 
 export function buildInternalCampaignUrl(path: string, options: InternalCampaignOptions): string {
     const params = new URLSearchParams({
-        utm_source: options.source || 'internal',
-        utm_medium: options.medium || 'internal',
-        utm_campaign: options.campaign,
-        utm_content: options.content,
+        ref_source: options.source || 'internal',
+        ref_medium: options.medium || 'internal',
+        ref_campaign: options.campaign,
+        ref_content: options.content,
     });
 
     const separator = path.includes('?') ? '&' : '?';

@@ -27,7 +27,7 @@ test('keeps blog campaign context when a free-horoscope signup came from an arti
     } = await loadLeadAttributionModule();
 
     const attribution = getLeadAttributionFromSearch(
-        '?utm_source=blog&utm_medium=internal&utm_campaign=monthly-horoscope-july-2026&utm_content=final_free_horoscope_cta'
+        '?ref_source=blog&ref_medium=internal&ref_campaign=monthly-horoscope-july-2026&ref_content=final_free_horoscope_cta'
     );
 
     assert.equal(

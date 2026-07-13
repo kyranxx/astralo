@@ -42,7 +42,7 @@ const latestArticles = getLatestArticleSlugsForLang(currentLang, 3)
 
 const productUiMeta: Record<ProductKey, { icon: keyof typeof iconMap; popular?: boolean }> = {
   daily: { icon: 'Sun' },
-  weekly: { icon: 'Calendar', popular: true },
+  weekly: { icon: 'Calendar' },
   monthly: { icon: 'Moon' },
   partner: { icon: 'Heart' },
   lifetime: { icon: 'Sparkles' },
@@ -384,33 +384,31 @@ const testimonials = getTestimonials(currentLang);
             </p>
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
               <a
-                href={freeHoroscopePath}
-                class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-black font-bold hover:bg-amber-100 transition-colors"
-              >
-                {t.emailCapture?.button || 'Get My Free Horoscope'}
-              </a>
-              <a
                 href="#horoscopes"
-                class="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-white font-medium hover:border-amber-400/40 transition-colors"
+                class="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-6 py-3 text-black font-bold hover:bg-amber-400 transition-colors"
               >
                 {t.cta.orderNow}
+              </a>
+              <a
+                href={freeHoroscopePath}
+                class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-slate-800 font-medium hover:border-amber-500 transition-colors"
+              >
+                {t.emailCapture?.button || 'Get My Free Horoscope'}
               </a>
             </div>
           </div>
         </div>
 
         {localizedSeoSection && (
-          <section class="mb-12 sm:mb-16 max-w-5xl mx-auto">
-            <div class="glass-strong rounded-2xl border border-white/10 p-5 sm:p-8">
+          <details class="supporting-details glass-strong rounded-2xl border border-white/10 mb-8 max-w-5xl mx-auto">
+            <summary>{localizedSeoSection.title}</summary>
+            <section class="px-5 pb-5 sm:px-8 sm:pb-8">
               <div class="flex items-center gap-2 mb-3 text-amber-400 text-sm font-semibold uppercase tracking-wider">
                 <Sparkles class="w-4 h-4" />
                 <span>{localizedSeoSection.eyebrow}</span>
               </div>
               <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-6 lg:gap-8 items-start">
                 <div>
-                  <h2 class="text-2xl sm:text-3xl font-black text-white mb-4">
-                    {localizedSeoSection.title}
-                  </h2>
                   <p class="text-white/75 leading-relaxed mb-5">
                     {localizedSeoSection.intro}
                   </p>
@@ -445,12 +443,12 @@ const testimonials = getTestimonials(currentLang);
                   </a>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </details>
         )}
 
         <!-- Horoscope Cards -->
-        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-5 mb-12 sm:mb-16 max-w-6xl mx-auto">
+        <div id="horoscopes" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 mb-12 sm:mb-16 max-w-6xl mx-auto">
           {horoscopeTypes.map((type, index) => {
             const Icon = iconMap[type.icon as keyof typeof iconMap];
             return (
@@ -458,12 +456,6 @@ const testimonials = getTestimonials(currentLang);
                 href={type.landingPath}
                 class={`horoscope-card group block relative glass-strong rounded-2xl p-4 sm:p-6 transition-all duration-300 hover:-translate-y-1 no-underline border border-white/10 hover:border-amber-400/30 overflow-hidden animate-on-load animate-delay-${index + 1}`}
               >
-                {type.popular && (
-                  <div class="absolute -top-1 -right-1 bg-gradient-to-br from-amber-400 to-amber-600 text-black text-[9px] sm:text-[10px] font-black px-2 sm:px-4 py-1 sm:py-1.5 rounded-bl-xl sm:rounded-bl-2xl shadow-lg z-20 uppercase tracking-tighter">
-                    {t.cta.popular}
-                  </div>
-                )}
-                
                 <div class="flex flex-col h-full relative z-10">
                   {/* Icon & Title Area - Fixed height for alignment across cards */}
                   <div class="text-center mb-3 sm:mb-5 min-h-[6.5rem] sm:min-h-[8rem] flex flex-col justify-end">
@@ -487,8 +479,8 @@ const testimonials = getTestimonials(currentLang);
                   </div>
 
                   {/* Benefits List - Hidden on mobile for compact view, show on sm+ */}
-                  <div class="hidden sm:block space-y-2 mb-6 min-h-[5.5rem]">
-                    {type.benefits.slice(0, 4).map((benefit) => (
+                  <div class="hidden sm:block space-y-2 mb-6 min-h-[3.25rem]">
+                    {type.benefits.slice(0, 2).map((benefit) => (
                       <div class="flex items-center gap-2 text-white/70 group-hover:text-white/90 transition-colors">
                         <span class="text-base flex-shrink-0">{benefit.split(' ')[0]}</span>
                         <span class="text-sm font-medium truncate">

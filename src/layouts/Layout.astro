@@ -70,7 +70,8 @@ const isLocaleHomePath = /^\/[a-z]{2}$/.test(cleanPath);
 const isCommercePath = cleanPath === '/'
     || isLocaleHomePath
     || /^\/(?:[a-z]{2}\/)?(?:form|horoscope|free-horoscope)(?:\/|$)/.test(cleanPath);
-const showFeedbackWidget = !isCommercePath;
+const isBlogArticlePath = /^\/(?:[a-z]{2}\/)?blog\/[^/]+$/.test(cleanPath);
+const showFeedbackWidget = !isCommercePath && !isBlogArticlePath;
 const computedCanonicalUrl = normalizeCanonicalUrl(canonicalUrl || `${siteUrl}${cleanPath}`);
 const alternateLanguageUrls = noIndex ? [] : (providedAlternateLanguageUrls || buildAlternateLanguageUrls(currentPath));
 const defaultAlternateUrl = alternateLanguageUrls.find(({ code }) => code === 'en')?.href || siteUrl;
@@ -155,7 +156,7 @@ const backgroundImageType = backgroundImage.endsWith('.png')
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#0a0a1a" />
+        <meta name="theme-color" content="#fffdf9" />
 
         {pageSchema.map((entry) => (
             <script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />
@@ -163,13 +164,13 @@ const backgroundImageType = backgroundImage.endsWith('.png')
 
         <style is:inline>
             *,*::before,*::after{box-sizing:border-box}
-            body{margin:0;background:#0a0a1a;color:#fff;font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
+            body{margin:0;background:#faf7f2;color:#281f32;font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
             img{max-width:100%;height:auto;display:block}
             a{color:inherit;text-decoration:none}
             h1,h2,h3,h4{margin:0;font-weight:700}
-            .cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0a0a1a 0%,#1a0f2e 50%,#0f1729 100%);z-index:-2}
-            .cosmic-overlay{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:.28;z-index:-1;mix-blend-mode:normal;filter:brightness(.72) saturate(.82)}
-            .glass-strong{background:rgba(12,10,18,.74);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.11)}
+            .cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#fffdf9 0%,#f8f3ed 100%);z-index:-2}
+            .cosmic-overlay{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:.035;z-index:-1;mix-blend-mode:normal;filter:grayscale(1) contrast(.7)}
+            .glass-strong{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(71,49,88,.13)}
             .min-h-screen{min-height:100vh}
             .flex{display:flex}
             .flex-col{flex-direction:column}
@@ -209,7 +210,7 @@ const backgroundImageType = backgroundImage.endsWith('.png')
             })();
         </script>
     </head>
-    <body>
+    <body class="theme-light">
         <div class="sticky top-0 z-[60] bg-amber-500/95 py-1.5 px-4 text-center shadow-sm">
             <div class="flex items-center justify-center gap-2 sm:gap-4 text-black text-[11px] sm:text-xs font-bold uppercase tracking-wider">
                 <span>{t.promo.delivery}</span>
@@ -283,6 +284,7 @@ const backgroundImageType = backgroundImage.endsWith('.png')
             (function () {
                 var storageKey = 'astralo_attribution';
                 var campaignKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid'];
+                var internalKeys = ['ref_source', 'ref_medium', 'ref_campaign', 'ref_content'];
 
                 try {
                     var params = new URLSearchParams(window.location.search);
@@ -297,6 +299,14 @@ const backgroundImageType = backgroundImage.endsWith('.png')
                         if (value) {
                             next[key] = value;
                             hasCampaignParams = true;
+                        }
+                    }
+
+                    for (var j = 0; j < internalKeys.length; j++) {
+                        var internalKey = internalKeys[j];
+                        var internalValue = params.get(internalKey);
+                        if (internalValue) {
+                            next[internalKey] = internalValue;
                         }
                     }
 

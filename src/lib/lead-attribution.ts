@@ -23,10 +23,10 @@ export function getLeadAttributionFromSearch(search: string): LeadAttribution {
     const params = new URLSearchParams(search || '');
 
     return {
-        utmSource: cleanAttributionValue(params.get('utm_source')),
-        utmMedium: cleanAttributionValue(params.get('utm_medium')),
-        utmCampaign: cleanAttributionValue(params.get('utm_campaign')),
-        utmContent: cleanAttributionValue(params.get('utm_content')),
+        utmSource: cleanAttributionValue(params.get('utm_source') || params.get('ref_source')),
+        utmMedium: cleanAttributionValue(params.get('utm_medium') || params.get('ref_medium')),
+        utmCampaign: cleanAttributionValue(params.get('utm_campaign') || params.get('ref_campaign')),
+        utmContent: cleanAttributionValue(params.get('utm_content') || params.get('ref_content')),
     };
 }
 

@@ -129,7 +129,7 @@ const pageSchema = [
                             </div>
 
                             <div class="grid sm:grid-cols-2 gap-3">
-                                {product.benefits.map((benefit) => (
+                                {product.benefits.slice(0, 3).map((benefit) => (
                                     <div class="flex items-center gap-3 rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white/85">
                                         <span class="text-lg leading-none">{benefit.split(' ')[0]}</span>
                                         <span>{benefit.split(' ').slice(1).join(' ')}</span>
@@ -149,7 +149,7 @@ const pageSchema = [
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-amber-500 px-6 py-4 text-black font-bold text-base hover:bg-amber-400 transition-colors"
                             >
                                 <Zap class="w-5 h-5" />
-                                <span>{t.form.submit}</span>
+                                <span>{t.cta.orderNow}</span>
                             </a>
                             <a
                                 href={freeHoroscopePath}
@@ -177,38 +177,40 @@ const pageSchema = [
                 </section>
 
                 {productSeoContent && (
-                    <section class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
-                        <div class="max-w-3xl mb-8">
-                            <p class="text-amber-300 text-xs font-bold uppercase mb-3">{productSeoContent.eyebrow}</p>
-                            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">{productSeoContent.title}</h2>
-                            <p class="text-white/70 leading-relaxed">{productSeoContent.intro}</p>
-                        </div>
+                    <details class="supporting-details glass-strong rounded-2xl border border-white/10">
+                        <summary>{productSeoContent.title}</summary>
+                        <section class="px-6 pb-6 sm:px-8 sm:pb-8">
+                            <div class="max-w-3xl mb-6">
+                                <p class="text-amber-300 text-xs font-bold uppercase mb-3">{productSeoContent.eyebrow}</p>
+                                <p class="text-white/70 leading-relaxed">{productSeoContent.intro}</p>
+                            </div>
 
-                        <div class="grid md:grid-cols-3 gap-5 mb-8">
-                            {productSeoContent.points.map((point) => (
-                                <article class="border-l border-amber-400/40 pl-4">
-                                    <h3 class="text-lg font-bold text-white mb-2">{point.title}</h3>
-                                    <p class="text-white/65 text-sm leading-relaxed">{point.body}</p>
-                                </article>
-                            ))}
-                        </div>
+                            <div class="grid md:grid-cols-3 gap-5 mb-8">
+                                {productSeoContent.points.map((point) => (
+                                    <article class="border-l border-amber-400/40 pl-4">
+                                        <h3 class="text-lg font-bold text-white mb-2">{point.title}</h3>
+                                        <p class="text-white/65 text-sm leading-relaxed">{point.body}</p>
+                                    </article>
+                                ))}
+                            </div>
 
-                        <div class="grid md:grid-cols-3 gap-5 border-t border-white/10 pt-6">
-                            {productSeoContent.faqs.map((faq) => (
-                                <article>
-                                    <h3 class="text-white font-bold mb-2">{faq.question}</h3>
-                                    <p class="text-white/65 text-sm leading-relaxed">{faq.answer}</p>
-                                </article>
-                            ))}
-                        </div>
-                    </section>
+                            <div class="grid md:grid-cols-3 gap-5 border-t border-white/10 pt-6">
+                                {productSeoContent.faqs.map((faq) => (
+                                    <article>
+                                        <h3 class="text-white font-bold mb-2">{faq.question}</h3>
+                                        <p class="text-white/65 text-sm leading-relaxed">{faq.answer}</p>
+                                    </article>
+                                ))}
+                            </div>
+                        </section>
+                    </details>
                 )}
 
                 <section class="grid lg:grid-cols-[1fr_.9fr] gap-8">
                     <div class="glass-strong rounded-2xl p-6 sm:p-8 border border-white/10">
                         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">{t.pdfPreview?.title || 'What You Will Receive'}</h2>
                         <p class="text-white/70 leading-relaxed mb-6">
-                            {seoDescription}
+                            {t.pdfPreview?.description || seoDescription}
                         </p>
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div class="rounded-2xl bg-white/5 border border-white/10 p-5">

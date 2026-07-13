@@ -61,7 +61,7 @@ test('English compatibility guide keeps its table, sign summaries, honest copy, 
     assert.match(source, /seoTitle: 'Zodiac Compatibility 2026: Sign Match Table'/);
     assert.match(source, /id="zodiac-compatibility-table"/);
     assert.match(source, /<table/);
-    assert.match(source, /utm_content=synastry_context_link/);
+    assert.match(source, /ref_content=synastry_context_link/);
     assert.doesNotMatch(source, /advanced algorithms|expert astrologers/i);
 
     for (const sign of [

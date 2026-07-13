@@ -42,6 +42,10 @@ export const CheckoutSchema = z.object({
     gclid: z.string().max(200).optional(),
     fbclid: z.string().max(200).optional(),
     msclkid: z.string().max(200).optional(),
+    ref_source: z.string().max(200).optional(),
+    ref_medium: z.string().max(200).optional(),
+    ref_campaign: z.string().max(200).optional(),
+    ref_content: z.string().max(200).optional(),
     gaClientId: z.string().max(100).optional(),
 
     // Payment source URL for redirection (security check)

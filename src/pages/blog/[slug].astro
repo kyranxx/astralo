@@ -8,13 +8,12 @@
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import { ArrowLeft, Calendar, Clock, Star, Twitter, Facebook, Linkedin, Link2, BookOpen } from 'lucide-astro';
-import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogDisplayTitle, getBlogSeoTitle, getArticleLanguageCodes } from '../../lib/blog';
+import { getArticleTranslation, getArticleMeta, getAllArticleSlugs, getBlogDisplayTitle, getBlogSeoTitle, getArticleLanguageCodes, getBlogUiTranslations } from '../../lib/blog';
 import BlogCTA from '../../components/BlogCTA.astro';
 import {
   buildArticleSchema,
   buildBreadcrumbSchema,
   buildLocaleUrl,
-  getProductLandingPath,
   getSuggestedProductForArticle,
   rewriteBlogOfferLinks,
   siteUrl,
@@ -67,7 +66,7 @@ const blogAlternateLanguageUrls = getArticleLanguageCodes(blogSlug).map((code) =
 }));
 const shareText = encodeURIComponent(post.displayTitle);
 const productKey = getSuggestedProductForArticle(blogSlug);
-const landingPath = getProductLandingPath('en', productKey);
+const ui = getBlogUiTranslations('en');
 const renderedContent = rewriteBlogOfferLinks(post.content, 'en', blogSlug);
 const noIndex = isStaleMonthlyHoroscopeSlug(blogSlug);
 
@@ -106,7 +105,6 @@ const pageSchema = [
   ogType="article"
   publishedTime={meta.date}
   modifiedTime={meta.date}
-  floatingProductKey={productKey}
   noIndex={noIndex}
 >
   <!-- Reading Progress Bar -->
@@ -130,7 +128,7 @@ const pageSchema = [
     <!-- Article -->
     <main class="flex-1 px-4 py-12">
       <!-- Added glass-strong background panel for readability -->
-      <article class="max-w-4xl mx-auto glass-strong p-6 md:p-12 rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl">
+      <article class="max-w-3xl mx-auto glass-strong p-6 md:p-12 rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl">
         <!-- Meta -->
         <div class="flex flex-wrap items-center gap-4 mb-8 text-sm">
           <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full font-medium tracking-wide">{post.category}</span>
@@ -145,7 +143,7 @@ const pageSchema = [
         </div>
 
         <!-- Title with Emoji -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-8 leading-tight tracking-tight">
           <span class="mr-3">{post.emoji}</span>{post.displayTitle}
         </h1>
 
@@ -202,6 +200,19 @@ const pageSchema = [
             ))}
           </ul>
         </div>
+        )}
+
+        {post.tableOfContents?.length > 0 && (
+          <details class="supporting-details rounded-2xl border border-white/10 bg-white mb-10">
+            <summary>{ui.tableOfContents}</summary>
+            <nav class="px-5 pb-5" aria-label={ui.tableOfContents}>
+              <ol class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                {post.tableOfContents.map((item: { id: string; title: string }) => (
+                  <li><a href={`#${item.id}`} class="text-[#704000] hover:underline">{item.title}</a></li>
+                ))}
+              </ol>
+            </nav>
+          </details>
         )}
 
         <!-- Content -->
@@ -314,10 +325,10 @@ const pageSchema = [
 
   document.querySelectorAll('[data-astralo-track-click]').forEach((element) => {
     element.addEventListener('click', () => {
-      const track = window['astraloTrack'];
+      const track = (window as Window & { astraloTrack?: (eventName: string, params?: Record<string, string>) => void }).astraloTrack;
       if (typeof track !== 'function') return;
 
-      const target = element;
+      const target = element as HTMLElement;
       track(target.dataset.astraloTrackClick || 'internal_click', {
         blog_slug: target.dataset.blogSlug || '',
         click_surface: target.dataset.clickSurface || '',
