@@ -3,17 +3,17 @@
 > Astralo is a multilingual astrology website selling personalized horoscope readings delivered by email as digital PDF reports.
 
 ## Main URLs
-- Home: https://astralo.online/
-- Blog: https://astralo.online/blog
-- RSS: https://astralo.online/rss.xml
+- [Home](https://astralo.online/)
+- [Blog](https://astralo.online/blog)
+- [RSS feed](https://astralo.online/rss.xml)
 
 ## Commercial Pages
-- Daily Horoscope: https://astralo.online/horoscope/daily
-- Weekly Horoscope: https://astralo.online/horoscope/weekly
-- Monthly Horoscope: https://astralo.online/horoscope/monthly
-- Partner Horoscope: https://astralo.online/horoscope/partner
-- Zodiac Sign Variants: https://astralo.online/horoscope/monthly/aries
-- Localized Sign Variants: https://astralo.online/de/horoscope/monthly/aries
+- [Daily Horoscope](https://astralo.online/horoscope/daily)
+- [Weekly Horoscope](https://astralo.online/horoscope/weekly)
+- [Monthly Horoscope](https://astralo.online/horoscope/monthly)
+- [Partner Horoscope](https://astralo.online/horoscope/partner)
+- [Zodiac Sign Variants](https://astralo.online/horoscope/monthly/aries)
+- [Localized Sign Variants](https://astralo.online/de/horoscope/monthly/aries)
 
 ## What Astralo Sells
 - Daily horoscope readings with short-term guidance
@@ -33,7 +33,9 @@
 - Birth chart education
 
 ## Contact
-- Support: mailto:apollotechsro@gmail.com
+- [Support](mailto:apollotechsro@gmail.com)
 
 ## More
-- Full guide: https://astralo.online/llms-full.txt
+- [Full guide](https://astralo.online/llms-full.txt)
+- [Sitemap](https://astralo.online/sitemap-index.xml)
+- [API documentation](https://astralo.online/docs/api)

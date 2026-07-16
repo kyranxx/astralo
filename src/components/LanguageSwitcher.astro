@@ -64,7 +64,7 @@ const allLangs = orderedLangs;
 ---
 
 <div class="lang-switcher">
-  <button class="lang-btn" id="langToggle" aria-label="Select language">
+  <button class="lang-btn" id="langToggle" aria-label={`${currentLocale.nativeName} (${lang.toUpperCase()}). Select language`}>
     <img src={getFlagUrl(lang)} alt={currentLocale.name} class="flag" width="20" height="15" />
     <span class="code">{lang.toUpperCase()}</span>
     <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

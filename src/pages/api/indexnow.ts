@@ -1,97 +1,50 @@
 import type { APIRoute } from 'astro';
+import { readSitemapUrls, submitIndexNowUrls, validateAstraloUrls } from '../../lib/indexnow';
 
-/**
- * IndexNow API Endpoint
- * Notifies Bing, Yandex, Seznam, and Naver about new/updated URLs
- * 
- * Usage: POST /api/indexnow with JSON body: { urls: ["https://..."] }
- * Or GET /api/indexnow?url=https://...
- * 
- * Requires INDEXNOW_KEY environment variable
- */
+export const maxDuration = 60;
 
-const INDEXNOW_ENDPOINTS = [
-    'https://api.indexnow.org/indexnow',
-    'https://www.bing.com/indexnow',
-    'https://yandex.com/indexnow',
-];
+const { CRON_SECRET, INDEXNOW_KEY } = import.meta.env;
 
-export const GET: APIRoute = async ({ url }) => {
-    const targetUrl = url.searchParams.get('url');
+function isAuthorized(request: Request): boolean {
+    return Boolean(CRON_SECRET && request.headers.get('authorization') === `Bearer ${CRON_SECRET}`);
+}
 
-    if (!targetUrl) {
-        return new Response(JSON.stringify({ error: 'Missing url parameter' }), {
-            status: 400,
-            headers: { 'Content-Type': 'application/json' }
-        });
+export const GET: APIRoute = async ({ request, url }) => {
+    if (!isAuthorized(request)) return json({ error: 'Unauthorized' }, 401);
+    if (!INDEXNOW_KEY) return json({ error: 'INDEXNOW_KEY not configured' }, 500);
+
+    try {
+        const requestedUrl = url.searchParams.get('url');
+        const urls = requestedUrl ? validateAstraloUrls([requestedUrl]) : await readSitemapUrls();
+        if (urls.length === 0) return json({ error: 'No valid Astralo URLs found' }, 400);
+
+        const batches = await submitIndexNowUrls(urls, INDEXNOW_KEY);
+        return json({ message: 'IndexNow submission accepted', submitted: urls.length, batches });
+    } catch (error) {
+        return json({ error: error instanceof Error ? error.message : 'IndexNow submission failed' }, 502);
     }
-
-    return notifyIndexNow([targetUrl]);
 };
 
 export const POST: APIRoute = async ({ request }) => {
+    if (!isAuthorized(request)) return json({ error: 'Unauthorized' }, 401);
+    if (!INDEXNOW_KEY) return json({ error: 'INDEXNOW_KEY not configured' }, 500);
+
     try {
         const body = await request.json();
-        const urls = body.urls || [body.url];
+        const supplied = Array.isArray(body.urls) ? body.urls : [body.url];
+        const urls = validateAstraloUrls(supplied.filter((value): value is string => typeof value === 'string'));
+        if (urls.length === 0) return json({ error: 'No valid Astralo URLs provided' }, 400);
 
-        if (!urls || urls.length === 0) {
-            return new Response(JSON.stringify({ error: 'No URLs provided' }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' }
-            });
-        }
-
-        return notifyIndexNow(urls);
-    } catch (e) {
-        return new Response(JSON.stringify({ error: 'Invalid JSON body' }), {
-            status: 400,
-            headers: { 'Content-Type': 'application/json' }
-        });
+        const batches = await submitIndexNowUrls(urls, INDEXNOW_KEY);
+        return json({ message: 'IndexNow submission accepted', submitted: urls.length, batches });
+    } catch (error) {
+        return json({ error: error instanceof Error ? error.message : 'Invalid request' }, 400);
     }
 };
 
-async function notifyIndexNow(urls: string[]): Promise<Response> {
-    const key = import.meta.env.INDEXNOW_KEY || process.env.INDEXNOW_KEY;
-
-    if (!key) {
-        return new Response(JSON.stringify({
-            error: 'INDEXNOW_KEY not configured',
-            info: 'Generate a key at https://www.bing.com/indexnow and add it to environment variables'
-        }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' }
-        });
-    }
-
-    const host = 'astralo.online';
-    const results: Record<string, string> = {};
-
-    // Notify all IndexNow endpoints
-    for (const endpoint of INDEXNOW_ENDPOINTS) {
-        try {
-            const response = await fetch(endpoint, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    host,
-                    key,
-                    keyLocation: `https://${host}/${key}.txt`,
-                    urlList: urls
-                })
-            });
-
-            results[endpoint] = response.ok ? 'success' : `error: ${response.status}`;
-        } catch (e) {
-            results[endpoint] = `error: ${e instanceof Error ? e.message : 'unknown'}`;
-        }
-    }
-
-    return new Response(JSON.stringify({
-        message: 'IndexNow notifications sent',
-        urls,
-        results
-    }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' }
+function json(body: unknown, status = 200): Response {
+    return new Response(JSON.stringify(body), {
+        status,
+        headers: { 'Content-Type': 'application/json' },
     });
 }

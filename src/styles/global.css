@@ -348,7 +348,8 @@ select.input option {
 
 .theme-light .site-footer,
 .theme-light #payment-overlay,
-.theme-light #email-capture-popup {
+.theme-light #email-capture-popup,
+.theme-light #cookieConsent {
   color: white;
 }
 
@@ -359,14 +360,21 @@ select.input option {
 
 .theme-light .site-footer .text-white,
 .theme-light #payment-overlay .text-white,
-.theme-light #email-capture-popup .text-white {
+.theme-light #email-capture-popup .text-white,
+.theme-light #cookieConsent .text-white {
   color: white !important;
 }
 
 .theme-light .site-footer [class*="text-white/"],
 .theme-light #payment-overlay [class*="text-white/"],
-.theme-light #email-capture-popup [class*="text-white/"] {
+.theme-light #email-capture-popup [class*="text-white/"],
+.theme-light #cookieConsent [class*="text-white/"] {
   color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.theme-light .site-footer .text-amber-400,
+.theme-light #cookieConsent .text-amber-400 {
+  color: #fbbf24 !important;
 }
 
 .supporting-details {
