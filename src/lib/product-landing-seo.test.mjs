@@ -122,3 +122,31 @@ test('Portuguese weekly paid landing has visible Search Console intent content',
     assert.match(template, /productSeoContent\.faqs\.map/);
     assert.match(template, /\.\.\.\(productSeoContent\?\.faqs \|\| \[\]\)/);
 });
+
+test('Search Console opportunity pages expose localized visible supporting content', async () => {
+    const { getProductLandingSeoContent } = await loadModule('/src/lib/product-landing-seo.ts');
+    const template = await readFile('src/components/ProductLandingPage.astro', 'utf8');
+    const opportunities = [
+        ['en', 'weekly', /weekly horoscope/i],
+        ['en', 'monthly', /monthly horoscope/i],
+        ['fi', 'daily', /päivittäinen horoskooppi/i],
+        ['fi', 'monthly', /kuukausihoroskooppi/i],
+        ['sv', 'weekly', /veckohoroskop/i],
+        ['da', 'monthly', /måned/i],
+        ['nl', 'daily', /daghoroscoop/i],
+        ['tr', 'weekly', /haftalık burç/i],
+        ['bg', 'monthly', /месечен хороскоп/i],
+        ['es', 'weekly', /horóscopo semanal/i],
+        ['he', 'weekly', /הורוסקופ שבועי/],
+    ];
+
+    for (const [lang, productKey, expectedTerm] of opportunities) {
+        const content = getProductLandingSeoContent(lang, productKey);
+        assert.ok(content, `Missing ${lang}/${productKey} supporting content`);
+        assert.match(`${content.eyebrow} ${content.title} ${content.intro}`, expectedTerm);
+        assert.ok(content.points.length >= 3, `${lang}/${productKey} needs useful supporting points`);
+        assert.ok(content.faqs.length >= 2, `${lang}/${productKey} needs useful FAQs`);
+    }
+
+    assert.match(template, /<details open class="supporting-details/);
+});
