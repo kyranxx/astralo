@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 import { productPrices, getProductName, getProductKeys } from '../../lib/products';
 import { CheckoutSchema, validateReferer } from '../../lib/validation';
+import { verifySupabaseReachability } from '../../lib/supabase';
 
 export const GET: APIRoute = async () => {
     return new Response(JSON.stringify({ message: 'Method Not Allowed' }), { status: 405 });
@@ -19,6 +20,20 @@ export const POST: APIRoute = async ({ request }) => {
         return new Response(JSON.stringify({
             error: 'Paid readings are temporarily unavailable while we restore delivery. Please try again later.',
             errorCode: 'fulfillment_paused',
+        }), {
+            status: 503,
+            headers: { 'Content-Type': 'application/json', 'Retry-After': '3600' },
+        });
+    }
+
+    // 2. Refuse new paid sessions while order storage is unreachable, so a
+    // customer can never pay without the order being saved and fulfilled.
+    const database = await verifySupabaseReachability({ timeoutMs: 4000 });
+    if (!database.ok) {
+        console.error('[checkout] blocked because order storage is unreachable:', database.message);
+        return new Response(JSON.stringify({
+            error: 'Paid readings are temporarily unavailable while we restore order delivery. Please try again later.',
+            errorCode: 'database_unavailable',
         }), {
             status: 503,
             headers: { 'Content-Type': 'application/json', 'Retry-After': '3600' },

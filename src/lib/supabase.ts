@@ -55,7 +55,9 @@ export const supabase = supabaseClient;
  * no longer resolves, which would otherwise show as "configured" and hide
  * a total database outage.
  */
-export async function verifySupabaseReachability(): Promise<{ configured: boolean; ok: boolean; message: string }> {
+export async function verifySupabaseReachability(
+    options: { timeoutMs?: number } = {},
+): Promise<{ configured: boolean; ok: boolean; message: string }> {
     if (!supabaseUrl || !supabaseServiceKey) {
         return {
             configured: false,
@@ -66,7 +68,7 @@ export async function verifySupabaseReachability(): Promise<{ configured: boolea
 
     try {
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 8000);
+        const timeout = setTimeout(() => controller.abort(), options.timeoutMs ?? 8000);
 
         // Any HTTP response (even 401) proves the project host is reachable.
         const response = await fetch(`${supabaseUrl}/rest/v1/`, {
