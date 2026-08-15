@@ -315,6 +315,63 @@ export async function findOrderById(orderId: string): Promise<Order | null> {
     return data ? rowToOrder(data) : null;
 }
 
+// Find order by Stripe payment intent ID (for refund webhooks)
+export async function findOrderByPaymentIntentId(paymentIntentId: string): Promise<Order | null> {
+    if (!paymentIntentId) return null;
+
+    const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .eq('stripe_payment_intent_id', paymentIntentId)
+        .maybeSingle();
+
+    if (error) {
+        console.error('Error finding order by payment intent ID:', error);
+        return null;
+    }
+
+    return data ? rowToOrder(data) : null;
+}
+
+/**
+ * Atomically claim product-email fulfillment for an order.
+ * Only the first caller wins; concurrent webhook/client/admin delivery
+ * paths cannot double-send. Returns true when this caller claimed it.
+ */
+export async function claimEmailFulfillment(orderId: string, claimedAt: string): Promise<boolean> {
+    const { data, error } = await supabase
+        .from('orders')
+        .update({ email_sent_at: claimedAt, updated_at: claimedAt })
+        .eq('id', orderId)
+        .is('email_sent_at', null)
+        .select('id')
+        .maybeSingle();
+
+    if (error) {
+        console.error('Error claiming email fulfillment:', error);
+        return false;
+    }
+
+    return Boolean(data);
+}
+
+/**
+ * Release a previously claimed fulfillment so recovery can retry it.
+ * Only releases when the stored value still matches the claim this
+ * caller made, so a later success is never undone.
+ */
+export async function releaseEmailFulfillmentClaim(orderId: string, claimedAt: string): Promise<void> {
+    const { error } = await supabase
+        .from('orders')
+        .update({ email_sent_at: null, updated_at: new Date().toISOString() })
+        .eq('id', orderId)
+        .eq('email_sent_at', claimedAt);
+
+    if (error) {
+        console.error('Error releasing email fulfillment claim:', error);
+    }
+}
+
 // Get statistics from Supabase with optional date filtering
 export async function getStatistics(startDate?: string, endDate?: string) {
     // Import statistics utilities

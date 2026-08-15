@@ -1,9 +1,10 @@
 
-import { supabase } from './supabase'; // You might need to adjust this path
+import { supabase } from './supabase';
 import { generateHoroscopeImage } from './png-generator';
 import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from './pdf-generator';
 import type { Order } from './orders';
+import { claimEmailFulfillment, releaseEmailFulfillmentClaim } from './orders';
 import type { ProductKey } from './products';
 import { generateHoroscopeText } from './horoscope-ai';
 import { buildFulfillmentEmail, type FulfillmentEmailOptions } from './fulfillment-email-template';
@@ -153,55 +154,70 @@ export async function fulfillOrder(
 ) {
     console.log(`🚀 Starting fulfillment for Order ${order.id}`);
 
-    // 1. Check if content already exists
-    let content = order.horoscopeContent;
-    if (!content) {
-        console.log(`Generating content for Order ${order.id}...`);
-        try {
-            content = await generateHoroscopeContent(order);
-            // Save immediately
-            await supabase.from('orders').update({
-                horoscope_content: content,
-                updated_at: new Date().toISOString()
-            }).eq('id', order.id);
-            console.log(`Content saved for Order ${order.id}`);
-        } catch (e) {
-            console.error(`Generation failed for Order ${order.id}:`, e);
-            throw e;
-        }
-    } else {
-        console.log(`Content already exists for Order ${order.id}`);
+    // Claim fulfillment atomically before any expensive work, so concurrent
+    // webhook / client / recovery delivery paths cannot double-send.
+    const claimedAt = new Date().toISOString();
+    const claimed = await claimEmailFulfillment(order.id, claimedAt);
+    if (!claimed) {
+        console.log(`Fulfillment already claimed or delivered for Order ${order.id}, skipping`);
+        return;
     }
 
-    // 2. Generate PNGs (Attachment)
-    console.log(`Generating images for Order ${order.id}...`);
-    let horoscopeImages: { filename: string; content: Buffer }[] = [];
     try {
-        horoscopeImages = await generateHoroscopeImage({
-            customerName: order.customerName,
-            productName: order.productName,
-            horoscopeContent: content,
-            birthDate: order.birthDate,
-            birthPlace: order.birthPlace || '',
-            birthTime: order.birthTime || '',
-            lang: order.lang,
-        });
-    } catch (e) {
-        console.error(`Image generation failed for Order ${order.id}:`, e);
-        // Continue - do not fail fulfillment just because image failed
+        // 1. Check if content already exists
+        let content = order.horoscopeContent;
+        if (!content) {
+            console.log(`Generating content for Order ${order.id}...`);
+            try {
+                content = await generateHoroscopeContent(order);
+                // Save immediately
+                await supabase.from('orders').update({
+                    horoscope_content: content,
+                    updated_at: new Date().toISOString()
+                }).eq('id', order.id);
+                console.log(`Content saved for Order ${order.id}`);
+            } catch (e) {
+                console.error(`Generation failed for Order ${order.id}:`, e);
+                throw e;
+            }
+        } else {
+            console.log(`Content already exists for Order ${order.id}`);
+        }
+
+        // 2. Generate PNGs (Attachment)
+        console.log(`Generating images for Order ${order.id}...`);
+        let horoscopeImages: { filename: string; content: Buffer }[] = [];
+        try {
+            horoscopeImages = await generateHoroscopeImage({
+                customerName: order.customerName,
+                productName: order.productName,
+                horoscopeContent: content,
+                birthDate: order.birthDate,
+                birthPlace: order.birthPlace || '',
+                birthTime: order.birthTime || '',
+                lang: order.lang,
+            });
+        } catch (e) {
+            console.error(`Image generation failed for Order ${order.id}:`, e);
+            // Continue - do not fail fulfillment just because image failed
+        }
+
+        // 3. Send Email
+        console.log(`Sending email for Order ${order.id}...`);
+        await sendFulfillmentEmail(order, content, horoscopeImages, invoicePdfBuffer, invoiceFilename, downloadUrl, emailOptions);
+
+        // 4. Update Status
+        await supabase.from('orders').update({
+            status: 'completed',
+            updated_at: new Date().toISOString()
+        }).eq('id', order.id);
+
+        console.log(`✅ Fulfillment complete for Order ${order.id}`);
+    } catch (error) {
+        // Release the claim so order-recovery can retry this delivery.
+        await releaseEmailFulfillmentClaim(order.id, claimedAt);
+        throw error;
     }
-
-    // 3. Send Email
-    console.log(`Sending email for Order ${order.id}...`);
-    await sendFulfillmentEmail(order, content, horoscopeImages, invoicePdfBuffer, invoiceFilename, downloadUrl, emailOptions);
-
-    // 4. Update Status
-    await supabase.from('orders').update({
-        status: 'completed',
-        email_sent_at: new Date().toISOString()
-    }).eq('id', order.id);
-
-    console.log(`✅ Fulfillment complete for Order ${order.id}`);
 }
 
 export async function sendFulfillmentPreviewToOwner(

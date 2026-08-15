@@ -24,19 +24,21 @@ const baseOrder = {
 };
 
 test('cached horoscope response retries product email when email was not sent', () => {
-    const response = buildHoroscopeResponseFromOrder(baseOrder, 0.99);
+    const response = buildHoroscopeResponseFromOrder(baseOrder, 0.99, 'tok_test');
 
     assert.equal(response.error, undefined);
     assert.equal(response.emailSent, false);
     assert.equal(response.horoscope, 'Cached horoscope');
     assert.equal(response.email, 'customer@example.com');
+    assert.equal(response.fulfillmentToken, 'tok_test');
+    assert.equal(response.birthDate, undefined);
 });
 
 test('cached horoscope response skips email retry only when email was sent', () => {
     const response = buildHoroscopeResponseFromOrder({
         ...baseOrder,
         emailSentAt: '2026-05-27T10:05:00.000Z',
-    }, 0.99);
+    }, 0.99, 'tok_test');
 
     assert.equal(response.error, 'already_processed');
     assert.equal(response.emailSent, true);

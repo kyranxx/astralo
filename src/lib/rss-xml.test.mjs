@@ -23,10 +23,9 @@ async function renderRssXml() {
 test('RSS feed excludes stale monthly horoscope articles', async () => {
     const xml = await renderRssXml();
 
-    assert.doesNotMatch(xml, /monthly-horoscope-january-2026/);
-    assert.doesNotMatch(xml, /monthly-horoscope-february-2026/);
-    assert.doesNotMatch(xml, /monthly-horoscope-march-2026/);
-    assert.doesNotMatch(xml, /monthly-horoscope-april-2026/);
-    assert.doesNotMatch(xml, /monthly-horoscope-june-2026/);
-    assert.match(xml, /monthly-horoscope-july-2026/);
+    // All 2026 monthly articles published before the current month are stale.
+    assert.doesNotMatch(xml, /monthly-horoscope-(january|february|march|april|may|june|july)-2026/);
+    // Evergreen articles stay in the feed.
+    assert.match(xml, /daily-horoscope-guide/);
+    assert.match(xml, /zodiac-compatibility-complete-guide/);
 });

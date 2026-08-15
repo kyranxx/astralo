@@ -1,6 +1,6 @@
 import type { Order } from './orders.ts';
 
-export function buildHoroscopeResponseFromOrder(order: Order, price: number) {
+export function buildHoroscopeResponseFromOrder(order: Order, price: number, fulfillmentToken: string) {
     const response = {
         horoscope: order.horoscopeContent || '',
         product: order.productKey,
@@ -8,9 +8,7 @@ export function buildHoroscopeResponseFromOrder(order: Order, price: number) {
         name: order.customerName,
         price,
         lang: order.lang,
-        birthDate: order.birthDate,
-        birthPlace: order.birthPlace || '',
-        birthTime: order.birthTime || '',
+        fulfillmentToken,
         emailSent: Boolean(order.emailSentAt),
     };
 

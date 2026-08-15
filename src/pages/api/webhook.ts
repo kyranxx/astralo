@@ -7,7 +7,9 @@ import {
 import { fulfillOrder } from '../../lib/fulfillment';
 import {
   addOrder,
+  findOrderByPaymentIntentId,
   findOrderBySessionId,
+  updateOrder,
   type Order
 } from '../../lib/orders';
 import { sendGa4PurchaseEvent } from '../../lib/server-analytics';
@@ -110,10 +112,37 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response(JSON.stringify(result), { status: 200 });
     }
 
-    // Handle refunds from Stripe dashboard
+    // Handle refunds from Stripe dashboard or refunds API
     if (event.type === 'charge.refunded') {
-      // Find order by payment intent and mark as refunded
-      // This handles refunds made directly in Stripe dashboard
+      const charge = event.data.object as Stripe.Charge;
+      const paymentIntentId = typeof charge.payment_intent === 'string'
+        ? charge.payment_intent
+        : charge.payment_intent?.id;
+      const refund = charge.refunds?.data?.[0];
+
+      if (paymentIntentId) {
+        const order = await findOrderByPaymentIntentId(paymentIntentId);
+        if (order && order.status !== 'refunded') {
+          await updateOrder(order.id, {
+            status: 'refunded',
+            refundedAt: refund?.created
+              ? new Date(refund.created * 1000).toISOString()
+              : new Date().toISOString(),
+            refundReason: refund?.reason || 'requested_by_customer',
+            stripeRefundId: refund?.id || '',
+          });
+          console.log(`Order ${order.id} marked refunded (${refund?.id || paymentIntentId})`);
+          return new Response(JSON.stringify({ received: true, refunded: true }), { status: 200 });
+        }
+
+        if (order) {
+          console.log(`Order ${order.id} already marked refunded, ignoring duplicate refund event`);
+        } else {
+          console.warn('charge.refunded webhook: no order found for payment intent', paymentIntentId);
+        }
+      }
+
+      return new Response(JSON.stringify({ received: true, refunded: false }), { status: 200 });
     }
 
   } catch (error: any) {

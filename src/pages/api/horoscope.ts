@@ -6,6 +6,7 @@ import { getProductPriceInEuros, isValidProductKey, type ProductKey } from '../.
 import { addOrder, findOrderBySessionId } from '../../lib/orders';
 import { buildOrderFromCheckoutSession, isPaidCheckoutSession } from '../../lib/stripe-order';
 import { buildHoroscopeResponseFromOrder } from '../../lib/horoscope-response';
+import { createFulfillmentToken } from '../../lib/fulfillment-auth';
 
 const stripeKey = import.meta.env.STRIPE_SECRET_KEY;
 
@@ -68,8 +69,9 @@ export const POST: APIRoute = async ({ request }) => {
         if (existingOrder && existingOrder.horoscopeContent) {
             console.log('🔮 Horoscope API: Order already has content, returning cached data');
             const price = getResponsePrice(existingOrder.productKey);
+            const fulfillmentToken = createFulfillmentToken(sessionId, existingOrder.customerEmail);
 
-            return new Response(JSON.stringify(buildHoroscopeResponseFromOrder(existingOrder, price)), { status: 200 });
+            return new Response(JSON.stringify(buildHoroscopeResponseFromOrder(existingOrder, price, fulfillmentToken)), { status: 200 });
         }
     } catch (dbError) {
         console.error('🔮 Horoscope API: Unexpected DB error:', dbError);
@@ -272,10 +274,7 @@ CONTENT RULES:
             price,
             lang: language,
             emailSent: false,
-            // Include birth data for email image generation
-            birthDate: formData.birthDate || formData.birthDate1,
-            birthPlace: formData.birthPlace || formData.birthPlace1,
-            birthTime: formData.birthTime || formData.birthTime1
+            fulfillmentToken: createFulfillmentToken(sessionId, customerEmail),
         });
 
         return new Response(responseData, { status: 200 });

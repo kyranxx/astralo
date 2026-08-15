@@ -1039,16 +1039,10 @@ const homeUrl = currentLang === 'en' ? '/' : `/${currentLang}`;
       // Debug: log what we're sending to the email API
       const emailPayload = {
         email: data.email,
-        customerName: data.name,
-        horoscopeContent: data.horoscope,
-        productName: productName,
         sessionId,
-        lang: data.lang || 'en',
-        birthDate: data.birthDate || '',
-        birthPlace: data.birthPlace || '',
-        birthTime: data.birthTime || ''
+        token: data.fulfillmentToken || '',
       };
-      console.log('📧 Email payload - hasEmail:', !!emailPayload.email, '| hasHoroscope:', !!emailPayload.horoscopeContent, '| length:', emailPayload.horoscopeContent?.length || 0, '| lang:', emailPayload.lang);
+      console.log('📧 Email payload - hasEmail:', !!emailPayload.email, '| hasToken:', !!emailPayload.token);
       
       const response = await fetch('/api/send-email', {
         method: 'POST',

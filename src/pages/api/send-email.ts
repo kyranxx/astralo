@@ -2,8 +2,10 @@ import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
 import { generateLegalPDFs } from '../../lib/pdf-generator';
 import { generateHoroscopeImage } from '../../lib/png-generator';
-import { findOrderBySessionId, updateOrder } from '../../lib/orders';
+import { claimEmailFulfillment, findOrderBySessionId, releaseEmailFulfillmentClaim, updateOrder } from '../../lib/orders';
 import { validateReferer } from '../../lib/validation';
+import { verifyFulfillmentToken } from '../../lib/fulfillment-auth';
+import { generateHoroscopeContent } from '../../lib/fulfillment';
 
 // Set max duration for Vercel Serverless Functions to 60 seconds (requires Pro plan, will be 10s on Hobby)
 export const maxDuration = 60;
@@ -29,25 +31,32 @@ export const POST: APIRoute = async ({ request }) => {
         },
     });
 
+    let claimedOrderId: string | null = null;
+    let claimedAtValue: string | null = null;
+
     try {
         const data = await request.json();
-        const { email, horoscopeContent, productName, customerName, lang, birthDate, birthPlace, birthTime, sessionId } = data;
+        const { email, sessionId, token } = data;
 
         console.log('📧 Send Email API - Received data:', {
             hasEmail: !!email,
-            hasHoroscopeContent: !!horoscopeContent,
-            horoscopeLength: horoscopeContent?.length || 0,
-            productName,
-            customerName,
-            lang
+            hasSessionId: !!sessionId,
+            hasToken: !!token,
         });
 
-        if (!email || !horoscopeContent || !sessionId) {
-            console.error('📧 Send Email API - Missing required fields:', { email: !!email, horoscopeContent: !!horoscopeContent, sessionId: !!sessionId });
+        if (!email || !sessionId || !token) {
+            console.error('📧 Send Email API - Missing required fields:', { hasEmail: !!email, hasSessionId: !!sessionId, hasToken: !!token });
             return new Response(JSON.stringify({
                 error: 'Missing required fields',
-                details: { hasEmail: !!email, hasHoroscopeContent: !!horoscopeContent, hasSessionId: !!sessionId }
+                details: { hasEmail: !!email, hasSessionId: !!sessionId, hasToken: !!token }
             }), { status: 400 });
+        }
+
+        // Require a signed token bound to this session and customer email, so a
+        // leaked session id alone cannot be used to send mail from Astralo SMTP.
+        if (!verifyFulfillmentToken(sessionId, email, token)) {
+            console.warn('📧 Send Email API - Invalid fulfillment token rejected');
+            return new Response(JSON.stringify({ error: 'Invalid or expired fulfillment token' }), { status: 401 });
         }
 
         const order = await findOrderBySessionId(sessionId);
@@ -58,6 +67,26 @@ export const POST: APIRoute = async ({ request }) => {
         if (order.customerEmail && order.customerEmail.toLowerCase() !== String(email).toLowerCase()) {
             return new Response(JSON.stringify({ error: 'Email does not match paid order' }), { status: 403 });
         }
+
+        // Claim delivery atomically before any expensive work, so the webhook
+        // path and this browser path cannot both send the product email.
+        claimedOrderId = order.id;
+        claimedAtValue = new Date().toISOString();
+        const claimed = await claimEmailFulfillment(order.id, claimedAtValue);
+        if (!claimed) {
+            console.log('📧 Send Email API - Fulfillment already delivered or in progress, skipping');
+            return new Response(JSON.stringify({ success: true, alreadySent: true }), { status: 200 });
+        }
+
+        // Load all product data from the saved order only; never trust
+        // client-supplied content or birth data.
+        const horoscopeContent = order.horoscopeContent || await generateMissingOrderContent(order);
+        const productName = order.productName;
+        const customerName = order.customerName;
+        const lang = order.lang;
+        const birthDate = order.birthDate;
+        const birthPlace = order.birthPlace || '';
+        const birthTime = order.birthTime || '';
 
         // Expanded translations for all languages
         const translations: Record<string, {
@@ -585,8 +614,14 @@ export const POST: APIRoute = async ({ request }) => {
 
         const t = translations[lang] || translations.en;
 
+        // Escape untrusted text first, then apply the safe markdown transforms.
+        const escapedHoroscope = String(horoscopeContent)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+
         // Format horoscope content for HTML (preserve paragraphs and emojis, remove markdown)
-        const formattedHoroscope = horoscopeContent
+        const formattedHoroscope = escapedHoroscope
             .replace(/#{1,6}\s/g, '') // Remove markdown headers
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Convert bold markdown to HTML
             .replace(/\*(.*?)\*/g, '<em>$1</em>') // Convert italic markdown to HTML
@@ -606,6 +641,11 @@ export const POST: APIRoute = async ({ request }) => {
                 return `<p style="margin: 0 0 25px 0; font-family: 'Times New Roman', Georgia, serif; font-size: 18px; line-height: 1.8; color: #1f2937;">${p.replace(/\n/g, '<br>')}</p>`;
             })
             .join('\n');
+
+        const safeCustomerName = String(customerName || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
 
         // Determine RTL direction for Arabic and Hebrew
         const isRTL = ['ar', 'he'].includes(lang);
@@ -690,7 +730,7 @@ export const POST: APIRoute = async ({ request }) => {
                                     
                                     <!-- Greeting -->
                                     <h2 style="margin: 0 0 15px 0; font-family: 'Times New Roman', Georgia, serif; font-size: 28px; color: #0f0f23; font-weight: normal; line-height: 1.2; text-align: ${isRTL ? 'right' : 'left'};">
-                                        ${t.greeting}${customerName ? `, <span style="color: #7c3aed;">${customerName}</span>` : ''} ✨
+                                        ${t.greeting}${safeCustomerName ? `, <span style="color: #7c3aed;">${safeCustomerName}</span>` : ''} ✨
                                     </h2>
                                     <p style="margin: 0 0 35px 0; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #4b5563; text-align: ${isRTL ? 'right' : 'left'};">
                                         ${t.thank}
@@ -836,13 +876,28 @@ export const POST: APIRoute = async ({ request }) => {
 
         await updateOrder(order.id, {
             status: 'completed',
-            emailSentAt: new Date().toISOString(),
         });
 
         return new Response(JSON.stringify({ success: true }), { status: 200 });
 
     } catch (error: any) {
         console.error('Email sending error:', error);
+
+        // Release the claim so order-recovery can retry this delivery.
+        if (claimedOrderId && claimedAtValue) {
+            await releaseEmailFulfillmentClaim(claimedOrderId, claimedAtValue);
+        }
+
         return new Response(JSON.stringify({ error: error.message }), { status: 500 });
     }
 };
+
+async function generateMissingOrderContent(order: any): Promise<string> {
+    const content = await generateHoroscopeContent(order);
+    const { supabase } = await import('../../lib/supabase');
+    await supabase.from('orders').update({
+        horoscope_content: content,
+        updated_at: new Date().toISOString()
+    }).eq('id', order.id);
+    return content;
+}

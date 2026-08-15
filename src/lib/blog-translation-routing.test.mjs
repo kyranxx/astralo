@@ -22,8 +22,6 @@ test('July 2026 article has an exact translation for every supported language', 
     const {
         getArticleLanguageCodes,
         getExactArticleTranslation,
-        getLatestArticleSlugs,
-        getLatestArticleSlugsForLang,
     } = await loadBlogModule();
 
     const supportedLocales = [
@@ -35,7 +33,29 @@ test('July 2026 article has an exact translation for every supported language', 
     assert.deepEqual(new Set(getArticleLanguageCodes('monthly-horoscope-july-2026')), new Set(supportedLocales));
     for (const locale of supportedLocales) {
         assert.ok(getExactArticleTranslation('monthly-horoscope-july-2026', locale));
-        assert.equal(getLatestArticleSlugsForLang(locale, 1)[0], 'monthly-horoscope-july-2026');
     }
-    assert.equal(getLatestArticleSlugs(1)[0], 'monthly-horoscope-july-2026');
+});
+
+test('latest article lists exclude stale monthly horoscope articles', async () => {
+    const {
+        getLatestArticleSlugs,
+        getLatestArticleSlugsForLang,
+    } = await loadBlogModule();
+
+    // Monthly articles older than the current month must never surface as "latest".
+    const staleMonthlyPattern = /^monthly-horoscope-(january|february|march|april|may|june|july)-2026$/;
+
+    const latest = getLatestArticleSlugs(10);
+    assert.ok(latest.length > 0);
+    for (const slug of latest) {
+        assert.doesNotMatch(slug, staleMonthlyPattern);
+    }
+
+    for (const locale of ['en', 'sk', 'cs', 'de', 'fr', 'es', 'pt', 'pl', 'hu', 'fi', 'no', 'sv']) {
+        const localeLatest = getLatestArticleSlugsForLang(locale, 10);
+        assert.ok(localeLatest.length > 0);
+        for (const slug of localeLatest) {
+            assert.doesNotMatch(slug, staleMonthlyPattern);
+        }
+    }
 });
