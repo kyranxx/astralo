@@ -16,6 +16,7 @@ import {
 } from '../../lib/auth';
 import { getCheckoutReadiness } from '../../lib/checkout-readiness';
 import { verifyOpenAIProvider } from '../../lib/horoscope-ai';
+import { verifySupabaseReachability } from '../../lib/supabase';
 import { fulfillOrder, generateHoroscopeContent, sendFulfillmentPreviewToOwner } from '../../lib/fulfillment';
 import { buildFulfillmentEmail } from '../../lib/fulfillment-email-template';
 
@@ -116,7 +117,11 @@ export const GET: APIRoute = async ({ request, url }) => {
                 return createJsonResponse(order);
 
             case 'readiness':
-                return createJsonResponse(getCheckoutReadiness(undefined, await verifyOpenAIProvider()));
+                return createJsonResponse(getCheckoutReadiness(
+                    undefined,
+                    await verifyOpenAIProvider(),
+                    await verifySupabaseReachability(),
+                ));
 
             default:
                 return createErrorResponse('Invalid action', 400);

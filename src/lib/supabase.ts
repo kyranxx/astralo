@@ -49,6 +49,53 @@ try {
 
 export const supabase = supabaseClient;
 
+/**
+ * Verify the configured Supabase project actually answers HTTP requests.
+ * A paused or deleted project keeps its config values valid while its host
+ * no longer resolves, which would otherwise show as "configured" and hide
+ * a total database outage.
+ */
+export async function verifySupabaseReachability(): Promise<{ configured: boolean; ok: boolean; message: string }> {
+    if (!supabaseUrl || !supabaseServiceKey) {
+        return {
+            configured: false,
+            ok: false,
+            message: 'Supabase credentials are not configured.',
+        };
+    }
+
+    try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 8000);
+
+        // Any HTTP response (even 401) proves the project host is reachable.
+        const response = await fetch(`${supabaseUrl}/rest/v1/`, {
+            method: 'GET',
+            headers: {
+                apikey: supabaseServiceKey,
+                Authorization: `Bearer ${supabaseServiceKey}`,
+                Accept: 'application/json',
+            },
+            signal: controller.signal,
+        });
+
+        clearTimeout(timeout);
+
+        return {
+            configured: true,
+            ok: true,
+            message: `Supabase project responds (HTTP ${response.status}).`,
+        };
+    } catch (error) {
+        const detail = error instanceof Error ? error.message : 'Unknown network error';
+        return {
+            configured: true,
+            ok: false,
+            message: `Supabase project is unreachable: ${detail}. Check that the project is resumed in the Supabase dashboard.`,
+        };
+    }
+}
+
 // Database types
 export interface OrderRow {
     id: string;

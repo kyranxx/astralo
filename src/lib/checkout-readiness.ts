@@ -40,6 +40,7 @@ export interface CheckoutReadinessConfig {
 export function getCheckoutReadiness(
     config: CheckoutReadinessConfig = getRuntimeConfig(),
     providerHealth?: { configured: boolean; ok: boolean; message: string },
+    supabaseHealth?: { configured: boolean; ok: boolean; message: string },
 ): CheckoutReadiness {
     const stripeKeyMode = getStripeKeyMode(config.STRIPE_SECRET_KEY);
     const checks: CheckoutReadinessCheck[] = [
@@ -79,6 +80,15 @@ export function getCheckoutReadiness(
             invalidMessage: 'Supabase service role key is invalid.',
             okMessage: 'Supabase service role key is configured.',
         }),
+        ...(supabaseHealth?.configured ? [requiredCheck({
+            id: 'supabase_project_live',
+            label: 'Supabase live project check',
+            configured: true,
+            valid: supabaseHealth.ok,
+            missingMessage: supabaseHealth.message,
+            invalidMessage: supabaseHealth.message,
+            okMessage: supabaseHealth.message,
+        })] : []),
         requiredCheck({
             id: 'openai_api_key',
             label: 'OpenAI API key',

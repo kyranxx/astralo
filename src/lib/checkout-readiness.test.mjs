@@ -89,3 +89,29 @@ test('blocks checkout readiness when OpenAI is missing or its live check fails',
     assert.equal(unreachable.canAcceptPaidOrders, false);
     assert.ok(unreachable.checks.some((check) => check.id === 'openai_provider_live' && check.severity === 'critical'));
 });
+
+test('blocks checkout readiness when the Supabase project is unreachable', async () => {
+    const { getCheckoutReadiness } = await loadReadinessModule();
+    const unreachable = getCheckoutReadiness(readyConfig, undefined, {
+        configured: true,
+        ok: false,
+        message: 'Supabase project is unreachable.',
+    });
+
+    assert.equal(unreachable.status, 'blocked');
+    assert.equal(unreachable.canAcceptPaidOrders, false);
+    assert.equal(unreachable.readyForProofOrder, false);
+    assert.ok(unreachable.checks.some((check) => check.id === 'supabase_project_live' && check.severity === 'critical'));
+});
+
+test('keeps checkout ready when the Supabase live check succeeds', async () => {
+    const { getCheckoutReadiness } = await loadReadinessModule();
+    const reachable = getCheckoutReadiness(readyConfig, undefined, {
+        configured: true,
+        ok: true,
+        message: 'Supabase project responds.',
+    });
+
+    assert.equal(reachable.status, 'ready');
+    assert.ok(reachable.checks.some((check) => check.id === 'supabase_project_live' && check.severity === 'ok'));
+});
